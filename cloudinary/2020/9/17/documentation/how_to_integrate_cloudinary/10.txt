@@ -1,0 +1,1 @@
+bower install cloudinary_ng#1.x --save

@@ -1,0 +1,10 @@
+<cl-video public-id="cld_rubiks_guy" >
+  <cl-transformation height="320" crop="scale">
+  </cl-transformation>
+  <cl-transformation height="320" width="480" background="blurred:400:15" crop="pad">
+  </cl-transformation>
+  <cl-transformation effect="volume:mute">
+  </cl-transformation>
+  <cl-transformation effect="accelerate:100">
+  </cl-transformation>
+</cl-video>

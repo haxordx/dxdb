@@ -1,0 +1,2 @@
+//For Gradle, add to dependencies section of build.gradle
+compile group: 'com.cloudinary', name: 'cloudinary-http44', version: '[Cloudinary API version, e.g. 1.1.3]'

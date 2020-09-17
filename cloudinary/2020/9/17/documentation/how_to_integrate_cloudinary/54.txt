@@ -1,0 +1,5 @@
+<Image publicId="business_man.png" >
+  <Transformation width="200" height="200" gravity="face" crop="thumb" />
+  <Transformation radius="20" border="5px_solid_black" />
+  <Transformation overlay="cloudinary_icon" opacity="50" width="0.25" flags="relative" gravity="north_east" y="10" x="10" />
+</Image>

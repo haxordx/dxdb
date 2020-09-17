@@ -1,0 +1,4 @@
+<cld-video publicId="frisbee_dog" >
+  <cld-transformation height="250" width="150" gravity="auto" crop="fill" />
+  <cld-transformation quality="auto" />
+</cld-video>

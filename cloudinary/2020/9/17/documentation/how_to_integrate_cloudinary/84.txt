@@ -1,0 +1,3 @@
+MediaManager.get().url().transformation(new Transformation()
+  .height(250).width(150).gravity("auto").crop("fill").chain()
+  .quality("auto")).resourceType("video").generate("frisbee_dog.mp4");

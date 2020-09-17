@@ -1,0 +1,3 @@
+Map config = new HashMap();
+config.put("cloud_name", "myCloudName");
+MediaManager.init(this, config);

@@ -1,0 +1,5 @@
+cl_image_tag("business_man.png", array("transformation"=>array(
+  array("width"=>200, "height"=>200, "gravity"=>"face", "crop"=>"thumb"),
+  array("radius"=>20, "border"=>"5px_solid_black"),
+  array("overlay"=>"cloudinary_icon", "opacity"=>50, "width"=>"0.25", "flags"=>"relative", "gravity"=>"north_east", "y"=>10, "x"=>10)
+  )))

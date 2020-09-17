@@ -1,0 +1,8 @@
+//Add to composer.json
+{
+  "require": {
+    "cloudinary/cloudinary_php": "dev-master"
+  }
+}
+//Then run:
+php composer.phar install

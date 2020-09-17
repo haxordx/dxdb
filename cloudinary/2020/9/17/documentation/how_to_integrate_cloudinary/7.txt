@@ -1,0 +1,7 @@
+# For NPM:   
+npm install jquery --save
+npm install blueimp-file-upload --save
+npm install cloudinary-jquery-file-upload --save
+
+# For Bower: 
+bower install cloudinary-jquery --save

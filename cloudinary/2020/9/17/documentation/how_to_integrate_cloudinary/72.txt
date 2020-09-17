@@ -1,0 +1,5 @@
+cloudinary.createUrl().setResourceType("video").setTransformation(CLDTransformation()
+  .setHeight(320).setCrop("scale").chain()
+  .setHeight(320).setWidth(480).setBackground("blurred:400:15").setCrop("pad").chain()
+  .setEffect("volume:mute").chain()
+  .setEffect("accelerate:100")).generate("cld_rubiks_guy.mp4")

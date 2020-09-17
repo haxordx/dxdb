@@ -1,0 +1,5 @@
+$.cloudinary.image("business_man.png", {transformation: [
+  {width: 200, height: 200, gravity: "face", crop: "thumb"},
+  {radius: 20, border: "5px_solid_black"},
+  {overlay: new cloudinary.Layer().publicId("cloudinary_icon"), opacity: 50, width: "0.25", flags: "relative", gravity: "north_east", y: 10, x: 10}
+  ]})

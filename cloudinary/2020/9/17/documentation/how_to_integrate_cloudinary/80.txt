@@ -1,0 +1,4 @@
+<Video publicId="frisbee_dog" >
+  <Transformation height="250" width="150" gravity="auto" crop="fill" />
+  <Transformation quality="auto" />
+</Video>

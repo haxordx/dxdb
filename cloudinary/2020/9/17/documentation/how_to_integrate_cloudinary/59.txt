@@ -1,0 +1,4 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation()
+  .setWidth(200).setHeight(200).setGravity("face").setCrop("thumb").chain()
+  .setRadius(20).setBorder("5px_solid_black").chain()
+  .setOverlay("cloudinary_icon").setOpacity(50).setWidth(0.25).setFlags("relative").setGravity("north_east").setY(10).setX(10)).generate("business_man.png")!, cloudinary: cloudinary)

@@ -1,0 +1,6 @@
+cloudinary.videoTag('cld_rubiks_guy', {transformation: [
+  {height: 320, crop: "scale"},
+  {height: 320, width: 480, background: "blurred:400:15", crop: "pad"},
+  {effect: "volume:mute"},
+  {effect: "accelerate:100"}
+  ]}).toHtml();

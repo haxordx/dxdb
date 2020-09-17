@@ -1,0 +1,4 @@
+cloudinary.url().transformation(new Transformation()
+  .width(200).height(200).gravity("face").crop("thumb").chain()
+  .radius(20).border("5px_solid_black").chain()
+  .overlay(new Layer().publicId("cloudinary_icon")).opacity(50).width(0.25).flags("relative").gravity("north_east").y(10).x(10)).imageTag("sample_woman.png");

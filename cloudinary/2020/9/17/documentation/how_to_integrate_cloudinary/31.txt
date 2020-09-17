@@ -1,0 +1,2 @@
+cloudinary.uploader().upload(new File("https://www.example.com/mysample.jpg"),
+  ObjectUtils.asMap("public_id", "sample_woman"));

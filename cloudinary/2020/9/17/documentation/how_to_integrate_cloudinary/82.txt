@@ -1,0 +1,6 @@
+<cl-video public-id="frisbee_dog" >
+  <cl-transformation height="250" width="150" gravity="auto" crop="fill">
+  </cl-transformation>
+  <cl-transformation quality="auto">
+  </cl-transformation>
+</cl-video>

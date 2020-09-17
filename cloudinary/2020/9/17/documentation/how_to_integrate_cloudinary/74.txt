@@ -1,0 +1,4 @@
+cl_video_tag("frisbee_dog", array("transformation"=>array(
+  array("height"=>250, "width"=>150, "gravity"=>"auto", "crop"=>"fill"),
+  array("quality"=>"auto")
+  )))

@@ -1,0 +1,8 @@
+<cl-image public-id="sample_woman.png" >
+  <cl-transformation width="200" height="200" gravity="face" crop="thumb">
+  </cl-transformation>
+  <cl-transformation radius="20" border="5px_solid_black">
+  </cl-transformation>
+  <cl-transformation overlay="cloudinary_icon" opacity="50" width="0.25" flags="relative" gravity="north_east" y="10" x="10">
+  </cl-transformation>
+</cl-image>

@@ -1,0 +1,2 @@
+let config = CLDConfiguration(cloudName: "CLOUD_NAME", secure: "true")
+let cloudinary = CLDCloudinary(configuration: config)

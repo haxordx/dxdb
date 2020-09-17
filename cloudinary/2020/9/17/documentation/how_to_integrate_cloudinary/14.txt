@@ -1,0 +1,11 @@
+development: 
+  cloud_name: "demo"
+  api_key: YOUR_KEY
+  api_secret: YOUR_SECRET
+  secure: true
+
+production:
+  cloud_name: "demo"
+  api_key: YOUR_KEY
+  api_secret: YOUR_SECRET
+  secure:true

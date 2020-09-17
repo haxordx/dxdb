@@ -1,0 +1,2 @@
+//For Gradle, add to dependencies section of build.gradle
+compile group: 'com.cloudinary', name: 'cloudinary-android', version: '1.24.0'

@@ -1,0 +1,4 @@
+CloudinaryVideo("frisbee_dog").video(transformation=[
+  {'height': 250, 'width': 150, 'gravity': "auto", 'crop': "fill"},
+  {'quality': "auto"}
+  ])

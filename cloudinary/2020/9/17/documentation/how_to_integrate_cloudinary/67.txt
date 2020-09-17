@@ -1,0 +1,6 @@
+<Video publicId="cld_rubiks_guy" >
+  <Transformation height="320" crop="scale" />
+  <Transformation height="320" width="480" background="blurred:400:15" crop="pad" />
+  <Transformation effect="volume:mute" />
+  <Transformation effect="accelerate:100" />
+</Video>

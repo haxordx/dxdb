@@ -1,0 +1,6 @@
+<cld-video publicId="cld_rubiks_guy" >
+  <cld-transformation height="320" crop="scale" />
+  <cld-transformation height="320" width="480" background="blurred:400:15" crop="pad" />
+  <cld-transformation effect="volume:mute" />
+  <cld-transformation effect="accelerate:100" />
+</cld-video>

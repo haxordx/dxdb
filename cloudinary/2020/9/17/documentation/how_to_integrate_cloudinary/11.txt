@@ -1,0 +1,2 @@
+//Add CloudinaryDotNet using Nuget Package Manager or if using Package Manager Console: 
+Install-Package CloudinaryDotNet

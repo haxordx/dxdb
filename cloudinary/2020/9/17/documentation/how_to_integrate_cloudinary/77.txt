@@ -1,0 +1,3 @@
+cloudinary.url().transformation(new Transformation()
+  .height(250).width(150).gravity("auto").crop("fill").chain()
+  .quality("auto")).videoTag("frisbee_dog");
