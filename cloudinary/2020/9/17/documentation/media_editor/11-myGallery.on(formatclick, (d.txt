@@ -1,0 +1,3 @@
+myGallery.on("formatclick", (data) => {
+  console.log("FormatClick: ", data.label);
+});

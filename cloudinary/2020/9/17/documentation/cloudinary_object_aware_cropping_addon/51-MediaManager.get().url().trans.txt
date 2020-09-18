@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().gravity("cat:dog").crop("crop")).generate("docs/one_cat_one_dog.jpg");

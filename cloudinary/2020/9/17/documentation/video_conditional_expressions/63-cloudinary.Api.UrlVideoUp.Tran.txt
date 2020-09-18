@@ -1,0 +1,3 @@
+cloudinary.Api.UrlVideoUp.Transform(new Transformation()
+  .If("ar_gt_1.2").Height(320).Width(480).Background("black").Crop("pad").Chain()
+  .If("else").Height(320).Width(480).Background("blurred:400:15").Crop("pad")).BuildVideoTag("docs/parrot")

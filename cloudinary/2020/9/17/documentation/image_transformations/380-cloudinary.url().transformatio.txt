@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().x(355).y(410).width(300).height(200).crop("crop")).imageTag("brown_sheep.jpg");

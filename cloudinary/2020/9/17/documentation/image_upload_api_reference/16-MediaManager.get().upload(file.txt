@@ -1,0 +1,1 @@
+MediaManager.get().upload(file).unsigned(upload_preset).dispatch();

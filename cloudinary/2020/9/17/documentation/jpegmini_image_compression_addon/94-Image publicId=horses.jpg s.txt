@@ -1,0 +1,5 @@
+<Image publicId="horses.jpg" signUrl="true">
+  <Transformation effect="saturation:50" radius="20" width="400" crop="scale" />
+  <Transformation gravity="south_east" overlay="logo_jpegmini" opacity="80" width="100" x="10" y="10" />
+  <Transformation quality="jpegmini" />
+</Image>

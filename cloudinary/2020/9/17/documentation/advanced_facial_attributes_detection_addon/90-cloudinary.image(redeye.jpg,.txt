@@ -1,0 +1,4 @@
+cloudinary.image("redeye.jpg", {transformation: [
+  {effect: "adv_redeye"},
+  {width: 300, height: 80, gravity: "adv_eyes", crop: "thumb"}
+  ]})

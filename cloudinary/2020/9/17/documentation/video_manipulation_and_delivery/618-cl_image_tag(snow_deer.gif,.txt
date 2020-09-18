@@ -1,0 +1,4 @@
+cl_image_tag("snow_deer.gif", array("resource_type"=>"video", "transformation"=>array(
+  array("width"=>480, "start_offset"=>"3", "end_offset"=>"5", "effect"=>"boomerang", "crop"=>"scale"),
+  array("effect"=>"loop")
+  )))

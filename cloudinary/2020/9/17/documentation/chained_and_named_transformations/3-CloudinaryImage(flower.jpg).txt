@@ -1,0 +1,4 @@
+CloudinaryImage("flower.jpg").image(transformation=[
+  {'width': 300, 'height': 300, 'crop': "crop"},
+  {'width': 150, 'radius': "max", 'crop': "scale"}
+  ])

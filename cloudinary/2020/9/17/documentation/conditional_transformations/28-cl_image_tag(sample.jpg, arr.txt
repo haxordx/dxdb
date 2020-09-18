@@ -1,0 +1,4 @@
+cl_image_tag("sample.jpg", array("transformation"=>array(
+  array("if"=>"ils_gt_0.5", "width"=>120, "height"=>150, "crop"=>"pad"),
+  array("if"=>"else", "width"=>120, "height"=>150, "crop"=>"fill")
+  )))

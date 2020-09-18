@@ -1,0 +1,5 @@
+// Apply a sepia effect to each poster
+vplayer.posterOptions({ transformation: { effect: ['sepia'] } })
+
+// Set a fixed poster with a sepia effect to all videos:
+vplayer.posterOptions({ publicId: 'sample', transformation: { effect: ['sepia'] } })

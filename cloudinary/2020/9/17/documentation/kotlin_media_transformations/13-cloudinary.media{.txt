@@ -1,0 +1,5 @@
+cloudinary.media{
+    publicId("pond_reflect")
+    format(Format.auto())
+    quality(Quality.auto())
+}

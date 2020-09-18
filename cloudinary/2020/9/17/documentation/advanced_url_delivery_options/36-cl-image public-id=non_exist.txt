@@ -1,0 +1,4 @@
+<cl-image public-id="non_existing_id.png" >
+  <cl-transformation default-image="avatar.png">
+  </cl-transformation>
+</cl-image>

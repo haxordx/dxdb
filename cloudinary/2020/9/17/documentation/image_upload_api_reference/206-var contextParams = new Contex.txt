@@ -1,0 +1,4 @@
+var contextParams = new ContextParams(){
+  PublicIds = new List<string>(){"dog","lion"},
+  Command = ContextCommand.RemoveAll};
+var contextResult = cloudinary.Context(contextParams);

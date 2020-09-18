@@ -1,0 +1,5 @@
+Cloudinary::Uploader.upload("my_file_name.docx",
+  :public_id => "sample_document.docx",
+  :resource_type => 'raw', 
+  :raw_convert => 'aspose',
+  :notification_url => "https://mysite.example.com/hooks")

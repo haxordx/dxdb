@@ -1,0 +1,3 @@
+<cld-image publicId="face_left.jpg" >
+  <cld-transformation width="200" height="200" gravity="auto" crop="fill" />
+</cld-image>

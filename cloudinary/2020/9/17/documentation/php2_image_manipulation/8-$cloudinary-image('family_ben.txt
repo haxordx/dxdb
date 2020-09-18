@@ -1,0 +1,2 @@
+$cloudinary->image('family_bench.jpg')
+  ->resize(Resize::fill(250, 250)->gravity(Gravity::faces()));

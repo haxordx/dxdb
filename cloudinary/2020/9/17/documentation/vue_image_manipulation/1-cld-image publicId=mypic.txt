@@ -1,0 +1,1 @@
+<cld-image publicId="mypic" />

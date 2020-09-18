@@ -1,0 +1,1 @@
+cloudinary.image("remote_media/commons/a/ae/Olympic_flag.jpg")

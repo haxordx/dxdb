@@ -1,0 +1,1 @@
+cloudinary.image("https://cnn.com", {type: "url2png"})

@@ -1,0 +1,2 @@
+{% load cloudinary %}      
+{% cloudinary photo.image format="jpg" width=120 height=80 crop="fill" %}

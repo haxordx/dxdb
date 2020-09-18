@@ -1,0 +1,4 @@
+cloudinary.api.update("sample",
+  resource_type = "video",
+  categorization = "google_video_tagging", 
+  auto_tagging = 0.6)

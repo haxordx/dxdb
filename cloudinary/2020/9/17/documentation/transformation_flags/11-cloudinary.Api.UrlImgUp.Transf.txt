@@ -1,0 +1,1 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation().Height(150).Flags("ignore_aspect_ratio").Crop("scale")).BuildImageTag("cloudinary_icon.jpg")

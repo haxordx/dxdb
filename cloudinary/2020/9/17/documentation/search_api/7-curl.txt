@@ -1,0 +1,8 @@
+curl \
+  -H "Content-Type: application/json" \
+  -d '{
+        "expression": "resource_type:image AND tags=kitten AND uploaded_at>1d AND bytes>1m",
+        "sort_by": [{"public_id": "desc"}],
+        "max_results":30
+      }' \
+  https://<API_KEY>:<API_SECRET>@api.cloudinary.com/v1_1/<cloud_name>/resources/search

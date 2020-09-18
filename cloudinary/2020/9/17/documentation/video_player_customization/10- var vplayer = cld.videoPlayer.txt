@@ -1,0 +1,11 @@
+ var vplayer = cld.videoPlayer("demo-player", {
+   publicId: 'book',
+   loop: true,
+   controls: true,
+   autoplayMode: 'on-scroll',
+   floatingWhenNotVisible: 'left',
+   fontFace: 'Yatra One',
+   transformation: { width: 400, crop: 'limit' },
+   posterOptions: {publicId: 'mypic', transformation { effect: ['sepia']}},
+   sourceTypes: ["hls", "mp4"]
+ })

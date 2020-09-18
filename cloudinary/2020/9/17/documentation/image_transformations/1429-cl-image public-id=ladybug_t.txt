@@ -1,0 +1,4 @@
+<cl-image public-id="ladybug_top.jpg" >
+  <cl-transformation overlay="lut:iwltbap_aspen.3dl">
+  </cl-transformation>
+</cl-image>

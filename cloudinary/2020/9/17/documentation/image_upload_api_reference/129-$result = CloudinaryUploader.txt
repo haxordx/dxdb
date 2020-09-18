@@ -1,0 +1,1 @@
+$result = \Cloudinary\Uploader::remove_all_tags($public_ids, $options = array());

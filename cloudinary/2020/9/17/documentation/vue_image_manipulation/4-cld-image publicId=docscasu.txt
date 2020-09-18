@@ -1,0 +1,2 @@
+<cld-image publicId="docs/casual" version="1573726751" cloud_name="demo" secure="true" alt="Casual Jacket" height="500" width="500" crop="fill" />
+</cld-image>

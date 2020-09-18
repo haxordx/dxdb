@@ -1,0 +1,7 @@
+\Cloudinary\Uploader::text("Sample Name",
+  array(
+    "public_id" => "dark_name",
+    "font_family" => "Arial", 
+    "font_size" => 12,
+    "font_color" => "black", 
+    "opacity" => 90));

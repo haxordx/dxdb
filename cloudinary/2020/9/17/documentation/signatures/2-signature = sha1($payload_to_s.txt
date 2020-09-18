@@ -1,0 +1,1 @@
+signature = sha1($payload_to_sign . $api_secret)

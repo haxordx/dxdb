@@ -1,0 +1,6 @@
+cloudinary.uploader.explicit("bb_bunny", 
+  resource_type = "video", type = "upload", 
+  eager = 
+   [
+     {"streaming_profile": "hd", "format": "m3u8"},
+   ])

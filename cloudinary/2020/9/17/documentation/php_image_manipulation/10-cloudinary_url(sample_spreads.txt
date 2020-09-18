@@ -1,0 +1,3 @@
+cloudinary_url("sample_spreadsheet.xls", 
+  array("resource_type" => "raw"));
+// Output: "https://res.cloudinary.com/demo/raw/upload/sample_spreadsheet.xls"

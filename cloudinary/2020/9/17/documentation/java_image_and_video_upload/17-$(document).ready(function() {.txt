@@ -1,0 +1,11 @@
+$(document).ready(function() {
+    $(".cloudinary-fileupload").fileupload()
+    .on("cloudinarydone", function (e, data) {
+        // Data contains the response from Cloudinary
+        // Lets add bytes to the form to process on server side:
+        var form = $("#myform");
+        form.append("<input type='hidden' name='bytes' value='"+data.bytes+"'/>");
+        // We can also automatically submit the form if we want.
+        $.post(form.attr("action"), form.serialize());
+    });
+}

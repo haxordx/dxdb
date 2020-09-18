@@ -1,0 +1,16 @@
+{
+  "public_id": "dog_couch",
+  "version": 1551099901,
+   ...
+   ...
+  "url": "http://res.cloudinary.com/demo/image/upload/v1551101478/dog_couch.jpg",
+  "secure_url": "https://res.cloudinary.com/demo/image/upload/v1551101478/dog_couch.jpg",
+  "info": {
+    "background_removal": {
+      "cloudinary_ai": {
+        "status": "pending"
+      }
+    }
+  },
+  "original_filename": "dog_couch"
+}

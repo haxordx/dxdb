@@ -1,0 +1,1 @@
+Map result = cloudinary.uploader().addContext(StringDictionary context, String[] public_ids, Map options);

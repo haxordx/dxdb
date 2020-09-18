@@ -1,0 +1,21 @@
+  System.config({
+    ...
+    map: {
+      // Cloudinary lib
+      '@cloudinary/angular': 'npm:@cloudinary/angular-5.x',
+      'cloudinary-core': 'npm:cloudinary-core',
+
+    },
+    packages: {
+      ...
+      "@cloudinary/angular": {
+        main: 'index.js',
+        defaultExtension: 'js'
+      },
+      "cloudinary-core": {
+        main: 'cloudinary-jquery-file-upload.js',
+        defaultExtension: 'js'
+      }
+
+    }
+  });

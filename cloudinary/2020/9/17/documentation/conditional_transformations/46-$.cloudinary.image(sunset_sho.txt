@@ -1,0 +1,1 @@
+$.cloudinary.image("sunset_shoes.jpg", {if: "ctx:!productType!_eq_!shoes!", width: 200, aspect_ratio: "1:1", gravity: "auto", crop: "fill"})

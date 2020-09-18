@@ -1,0 +1,1 @@
+\Cloudinary\Uploader::upload("https://www.example.com/sample.jpg");

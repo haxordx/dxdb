@@ -1,0 +1,4 @@
+<Image publicId="backpack.jpg" >
+  <Transformation if="!sale:in_stock!_in_tags" overlay="sale_icon" width="180" gravity="south_east" x="30" y="30" />
+  <Transformation width="250" crop="scale" />
+</Image>

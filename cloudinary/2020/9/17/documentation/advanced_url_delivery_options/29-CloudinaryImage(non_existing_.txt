@@ -1,0 +1,1 @@
+CloudinaryImage("non_existing_id.png").image(default_image="avatar.png")

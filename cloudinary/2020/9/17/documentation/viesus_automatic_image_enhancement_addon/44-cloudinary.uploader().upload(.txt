@@ -1,0 +1,5 @@
+cloudinary.uploader().upload("local_file.jpg", 
+  ObjectUtils.asMap(
+    "public_id", "beach", 
+    "eager", Arrays.asList(
+      new Transformation().effect("viesus_correct").crop("scale").width(400))));

@@ -1,0 +1,4 @@
+<Image publicId="horses.jpg" >
+  <Transformation width="300" crop="scale" />
+  <Transformation effect="shadow" x="w / 50" y="w / 50" crop="fill" />
+</Image>

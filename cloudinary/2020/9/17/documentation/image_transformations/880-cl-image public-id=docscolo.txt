@@ -1,0 +1,4 @@
+<cl-image public-id="docs/colorblind_green_red.jpg" >
+  <cl-transformation effect="simulate_colorblind:deuteranopia">
+  </cl-transformation>
+</cl-image>

@@ -1,0 +1,4 @@
+<cl-image public-id="kitten_fighting.gif" >
+  <cl-transformation page="2">
+  </cl-transformation>
+</cl-image>

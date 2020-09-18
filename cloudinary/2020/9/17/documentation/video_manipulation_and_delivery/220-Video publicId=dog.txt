@@ -1,0 +1,3 @@
+<Video publicId="dog" >
+  <Transformation width="350" height="200" x="230" y="20" crop="crop" />
+</Video>

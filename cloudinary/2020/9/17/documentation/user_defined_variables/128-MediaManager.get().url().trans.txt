@@ -1,0 +1,7 @@
+MediaManager.get().url().transformation(new Transformation()
+  .variables(variable("$overlay","ref:!docs:sale!")).chain()
+  .customFunction(new CustomFunction()
+    .functionType("wasm")
+    .source("docs:pnglayer.wasm")).chain()
+  .border("1px_solid_black"))
+  .generate("docs/casual.jpg");

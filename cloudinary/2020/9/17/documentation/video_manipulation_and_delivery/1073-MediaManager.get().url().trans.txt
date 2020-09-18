@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().overlay(new Layer().publicId("lut:iwltbap_aspen.3dl"))).resourceType("video").generate("dog.mp4");

@@ -1,0 +1,1 @@
+curl https://<PROVISIONING_KEY>:<PROVISIONING_SECRET>@api.cloudinary.com/v1_1/provisioning/accounts/<ACCOUNT_ID>/sub_accounts

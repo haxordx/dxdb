@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().density(20)).generate("multi_page_pdf.jpg");

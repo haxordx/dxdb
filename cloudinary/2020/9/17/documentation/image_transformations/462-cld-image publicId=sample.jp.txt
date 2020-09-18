@@ -1,0 +1,3 @@
+<cld-image publicId="sample.jpg" >
+  <cld-transformation aspectRatio="16:9" crop="fill" />
+</cld-image>

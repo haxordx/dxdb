@@ -1,0 +1,1 @@
+$.cloudinary.image("coupled.jpg", {flags: "region_relative", gravity: "adv_eyes", overlay: new cloudinary.Layer().publicId("glasses"), width: "1.5"})

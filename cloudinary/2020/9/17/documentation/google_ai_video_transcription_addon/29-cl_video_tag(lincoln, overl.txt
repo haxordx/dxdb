@@ -1,0 +1,1 @@
+cl_video_tag("lincoln", :overlay=>{:resource_type=>"subtitles", :public_id=>"lincoln.transcript"})

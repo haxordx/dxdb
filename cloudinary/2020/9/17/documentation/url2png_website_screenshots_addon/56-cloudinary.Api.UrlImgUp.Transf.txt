@@ -1,0 +1,4 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation()
+  .Radius(50).Width(400).Height(400).Gravity("north").Border("2px_solid_rgb:999").Crop("fill").Chain()
+  .Effect("shadow:20").Color("#ccc").Chain()
+  .Angle(30).Color("#ec9800").Effect("colorize").Overlay(new Layer().PublicId("url2png_logo"))).Action("url2png").BuildImageTag("https://en.wikipedia.org/wiki/jpg")

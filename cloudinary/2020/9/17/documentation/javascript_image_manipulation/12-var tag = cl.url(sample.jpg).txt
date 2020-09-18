@@ -1,0 +1,1 @@
+var tag = cl.url("sample.jpg");

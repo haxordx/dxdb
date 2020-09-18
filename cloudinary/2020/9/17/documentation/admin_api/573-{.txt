@@ -1,0 +1,22 @@
+{
+    "presets": [
+      {
+        "name": "pd1e4lst",
+        "unsigned": true,
+        "settings": 
+          {
+            "transformation": "c_crop,g_custom/ar_1,c_pad,w_1.0"
+          }
+      }, 
+      {
+        "name": "remote_media",
+        "unsigned": false,
+        "settings": 
+          {
+            "tags": "test"
+            "allowed_formats": "jpg,png",
+            "eager": "c_fill,g_face,h_150,w_200"
+          }
+      }, 
+    ]
+}

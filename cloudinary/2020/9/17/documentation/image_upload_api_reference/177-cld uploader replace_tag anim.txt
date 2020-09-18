@@ -1,0 +1,1 @@
+cld uploader replace_tag "animal" '["dog", "lion"]'

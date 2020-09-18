@@ -1,0 +1,14 @@
+<form>
+    @Model.Cloudinary.Api.BuildUploadForm("image_id", "auto",
+          new SortedDictionary<string, object>()
+          {
+            { "callback", cors_location },
+            { "tags", "directly_uploaded" },
+            { "crop", "limit" },
+            { "width", 1000 },
+            { "height", 1000 },
+            { "eager", new Dictionary<string,object>() 
+              {{ "crop","fill" }, { "width",150 }, { "height", 100 } }}
+          },
+          new Dictionary<string, string>() { { "style", "margin-top: 30px" } })
+</form>

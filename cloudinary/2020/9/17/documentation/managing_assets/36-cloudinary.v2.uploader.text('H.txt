@@ -1,0 +1,3 @@
+cloudinary.v2.uploader.text('Hello World', 
+  function(error, result) 
+  {console.log(result, error) });

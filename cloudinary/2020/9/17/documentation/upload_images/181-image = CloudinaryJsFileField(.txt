@@ -1,0 +1,2 @@
+image = CloudinaryJsFileField(
+  attrs = { 'multiple': 1 })

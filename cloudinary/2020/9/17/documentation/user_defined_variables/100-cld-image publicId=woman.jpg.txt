@@ -1,0 +1,3 @@
+<cld-image publicId="woman.jpg" :variables="[['$width', '115']]">
+  <cld-transformation transformation={["passport_photo"]} />
+</cld-image>

@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().height(200).width(150).crop("imagga_scale")).signed(true).generate("family_bench.jpg");

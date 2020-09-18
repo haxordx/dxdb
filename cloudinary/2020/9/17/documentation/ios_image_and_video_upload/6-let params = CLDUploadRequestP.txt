@@ -1,0 +1,4 @@
+let params = CLDUploadRequestParams()
+    .setResourseType("video").setUploadPreset("samplePreset")
+let request = cloudinary.createUploader().uploadLarge(
+    url: "myVid.mp4", params: params, chunkSize: 6 * 1024 * 1024)

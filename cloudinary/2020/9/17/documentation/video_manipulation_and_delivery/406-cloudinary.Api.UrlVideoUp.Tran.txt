@@ -1,0 +1,7 @@
+cloudinary.Api.UrlVideoUp.Transform(new Transformation()
+  .Width(300).Height(200).Duration("5").Crop("scale").Chain()
+  .Overlay(new Layer().PublicId("video:dog")).Width(300).Height(200).Chain()
+  .Duration("5").Chain()
+  .Overlay(new Layer().PublicId("video:transition1")).Effect("transition").Chain()
+  .Flags("layer_apply").Chain()
+  .Flags("layer_apply")).BuildVideoTag("kitten_fighting")

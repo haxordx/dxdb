@@ -1,0 +1,7 @@
+var uploadParams = new ImageUploadParams(){
+  File = new FileDescription(@"couple.jpg"),
+  Colors = true,
+  Phash = true,
+  Metadata = true
+  QualityAnalysis = true};
+var uploadResult = cloudinary.Upload(uploadParams);

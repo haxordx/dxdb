@@ -1,0 +1,1 @@
+cloudinary.url().imageTag("Cld_Sample_PSD.psd");

@@ -1,0 +1,6 @@
+cloudinary.openUploadWidget({
+  cloudName: "demo", uploadPreset: "preset1",
+  sources: [ 'local', 'url', 'image_search'],
+  googleApiKey: 'AIrFcR8hKiRo',
+  searchBySites: ["all", "cloudinary.com"],
+  searchByRights: true }, (error, result) => { });

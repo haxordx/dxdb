@@ -1,0 +1,1 @@
+vplayer.sourceTypes(['dash', 'mp4/h265'])

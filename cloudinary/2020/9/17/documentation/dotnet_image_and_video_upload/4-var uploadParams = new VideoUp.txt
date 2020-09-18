@@ -1,0 +1,13 @@
+var uploadParams = new VideoUploadParams()
+{
+  File = new FileDescription(@"dog.mp4"),
+  PublicId = "my_folder/my_sub_folder/dog_closeup",
+  EagerTransforms = new List<Transformation>()
+  {
+    new Transformation().Width(300).Height(300).Crop("pad").AudioCodec("none"),
+    new Transformation().Width(160).Height(100).Crop("crop").Gravity("south").AudioCodec("none")),
+  }
+  EagerAsync = true,
+  EagerNotificationUrl = "https://mysite.example.com/my_notification_endpoint"
+};
+var uploadResult = cloudinary.Upload(uploadParams);

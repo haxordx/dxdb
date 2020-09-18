@@ -1,0 +1,5 @@
+MediaManager.get().upload("local_file.jpg")
+  .option("public_id", "brown_sheep")
+  .option("eager", Arrays.asList(
+      new Transformation().quality("jpegmini").crop("fill")
+        .width(200).height(150))).dispatch();

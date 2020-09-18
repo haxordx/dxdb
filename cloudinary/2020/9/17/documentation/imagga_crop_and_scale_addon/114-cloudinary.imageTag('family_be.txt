@@ -1,0 +1,4 @@
+cloudinary.imageTag('family_bench.jpg', {signUrl: true, transformation: [
+  {effect: "saturation:50", height: 300, radius: 20, width: 450, crop: "imagga_crop"},
+  {gravity: "south_west", overlay: new cloudinary.Layer().publicId("imagga_logo"), opacity: 80, width: 100, x: 10, y: 10}
+  ]}).toHtml();

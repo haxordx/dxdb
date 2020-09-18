@@ -1,0 +1,2 @@
+:
+api.createStreamingProfile(String name, Map options);

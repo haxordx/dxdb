@@ -1,0 +1,3 @@
+MediaManager.get().uploadLarge("my_large_video.mp4")
+  .option("resource_type", "video").
+  .option("chunk_size", 6000000).dispatch();

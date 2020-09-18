@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().width(80).height(400).gravity("auto").background("auto").crop("fill_pad")).generate("lady.jpg");

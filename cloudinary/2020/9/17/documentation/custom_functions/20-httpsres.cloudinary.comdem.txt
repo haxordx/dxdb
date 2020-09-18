@@ -1,0 +1,1 @@
+https://res.cloudinary.com/demo/image/upload/fn_wasm:my_example.wasm/sample.jpg

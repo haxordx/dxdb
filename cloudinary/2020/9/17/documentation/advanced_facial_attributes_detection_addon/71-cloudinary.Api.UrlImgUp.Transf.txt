@@ -1,0 +1,1 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation().Width(100).Height(40).Gravity("adv_eyes").Crop("thumb")).BuildImageTag("face1.jpg")

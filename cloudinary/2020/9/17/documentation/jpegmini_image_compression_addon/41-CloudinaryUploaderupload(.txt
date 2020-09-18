@@ -1,0 +1,5 @@
+\Cloudinary\Uploader::upload("local_file.jpg", 
+  array(
+    "public_id" => "brown_sheep",
+    "eager" => array("quality" => "jpegmini", "crop" => "fill",
+      "width" => 200, "height" => 150)));

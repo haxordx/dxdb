@@ -1,0 +1,1 @@
+\Cloudinary\Uploader::upload("ftp://user1:mypass@ftp.example.com/sample.jpg");

@@ -1,0 +1,1 @@
+var listResourcesResult = cloudinary.Api.ListResourcesByModerationStatus("aws_rek", "rejected"));

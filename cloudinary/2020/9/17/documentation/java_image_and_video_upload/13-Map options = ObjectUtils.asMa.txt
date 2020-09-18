@@ -1,0 +1,3 @@
+Map options = ObjectUtils.asMap("resource_type", "auto");
+Map htmlOptions = ObjectUtils.asMap("alt", "sample");
+String html = cloudinary.uploader().imageUploadTag("image_id", options, htmlOptions);

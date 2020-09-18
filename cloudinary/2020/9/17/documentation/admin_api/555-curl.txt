@@ -1,0 +1,3 @@
+curl \
+  -X DELETE \
+  https://<API_KEY>:<API_SECRET>@api.cloudinary.com/v1_1/<cloud_name>/upload_mappings/wiki

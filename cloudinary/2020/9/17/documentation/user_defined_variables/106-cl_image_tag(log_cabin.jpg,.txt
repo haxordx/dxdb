@@ -1,0 +1,1 @@
+cl_image_tag("log_cabin.jpg", array("transformation"=>array("image_ratings"), "variables"=>array("$rating"=>"!thumbs-up!")))

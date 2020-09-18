@@ -1,0 +1,1 @@
+cld admin restore (public_ids)

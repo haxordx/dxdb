@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().quality("jpegmini:1").width(400).crop("scale")).signed(true).generate("horses.jpg");

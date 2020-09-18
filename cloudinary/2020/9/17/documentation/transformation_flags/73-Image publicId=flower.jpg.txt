@@ -1,0 +1,5 @@
+<Image publicId="flower.jpg" >
+  <Transformation overlay="face_left" />
+  <Transformation width="200" height="200" gravity="face" radius="max" crop="thumb" />
+  <Transformation flags="layer_apply" gravity="north_east" />
+</Image>

@@ -1,0 +1,5 @@
+var uploadParams = new RawUploadParams(){  // by default, ResourceType is already set to "raw"
+  UseFilename = true,
+  Type = "authenticated",
+  File = new FileDescription(@"my_example.wasm")};
+var uploadResult = cloudinary.Upload(uploadParams);

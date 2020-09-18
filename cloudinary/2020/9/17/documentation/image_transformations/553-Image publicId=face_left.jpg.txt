@@ -1,0 +1,3 @@
+<Image publicId="face_left.jpg" >
+  <Transformation width="200" height="200" gravity="auto" crop="fill" />
+</Image>

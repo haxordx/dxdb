@@ -1,0 +1,13 @@
+{ 
+  "notification_type": "info",
+  "info_kind": "pixelz",
+  "info_status": "complete",
+  "public_id": "wood_chair",
+  "uploaded_at": "2014-10-26T11:35:22Z",
+  "version": 1414316122,
+  "url": 
+    "https://res.cloudinary.com/demo/image/upload/v1393688588/wood_chair.jpg",
+  "secure_url":
+    "https://res.cloudinary.com/demo/image/upload/v1393688588/wood_chair.jpg",
+  "etag": "a56e9e88c2add15cac1775c1f687bf73"
+}

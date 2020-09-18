@@ -1,0 +1,4 @@
+cloudinary.uploader().createZip(
+    ObjectUtils.asMap(
+        'tags', 'lion', 
+        'resource_type', 'image'));

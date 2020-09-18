@@ -1,0 +1,3 @@
+<cl-image public-id="remote_media/commons/a/ae/Olympic_flag.jpg" sign-url="true" type="authenticated">
+
+</cl-image>

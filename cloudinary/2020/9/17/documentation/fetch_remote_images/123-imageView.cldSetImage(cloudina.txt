@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setType( "youtube").generate("o-urnlaJpOA.jpg")!, cloudinary: cloudinary)

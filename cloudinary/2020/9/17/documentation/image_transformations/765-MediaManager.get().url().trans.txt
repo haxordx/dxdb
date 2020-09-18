@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().border("5px_solid_red")).generate("sample.jpg");

@@ -1,0 +1,1 @@
+cloudinary.image("long_multi_page_pdf")

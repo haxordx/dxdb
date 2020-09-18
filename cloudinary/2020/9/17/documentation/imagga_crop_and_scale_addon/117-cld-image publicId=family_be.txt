@@ -1,0 +1,4 @@
+<cld-image publicId="family_bench.jpg" signUrl="true">
+  <cld-transformation effect="saturation:50" height="300" radius="20" width="450" crop="imagga_crop" />
+  <cld-transformation gravity="south_west" overlay="imagga_logo" opacity="80" width="100" x="10" y="10" />
+</cld-image>

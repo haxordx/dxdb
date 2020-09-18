@@ -1,0 +1,8 @@
+CloudinaryImage("docs/casual.jpg").image(
+  variables = {"$overlay": "ref:!docs:sale!"},
+  custom_function = {
+    "function_type" = "wasm", 
+    "source" = "docs:pnglayer.wasm"}, 
+  transformation=[
+    {'border': "1px_solid_black"}
+  ])

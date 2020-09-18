@@ -1,0 +1,1 @@
+cl_image_tag("sample.jpg", :overlay=>"cloudinary_icon", :gravity=>"north_west", :y=>20)

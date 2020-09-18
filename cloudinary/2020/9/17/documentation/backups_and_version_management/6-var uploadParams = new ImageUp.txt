@@ -1,0 +1,4 @@
+var uploadParams = new ImageUploadParams(){
+  File = new FileDescription(@"sample.jpg"),
+  Backup = true};
+var uploadResult = cloudinary.Upload(uploadParams);

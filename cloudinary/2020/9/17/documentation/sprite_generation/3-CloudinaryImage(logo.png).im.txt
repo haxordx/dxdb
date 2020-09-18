@@ -1,0 +1,1 @@
+CloudinaryImage("logo.png").image(type="sprite")

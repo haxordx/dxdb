@@ -1,0 +1,14 @@
+{
+ "public_id": "sample_spreadsheet.xls",
+ "version": 1371928603,
+ "signature": "9088291a2c12202767cfa7c5e874afee72be78cd",
+ "resource_type": "raw",
+ "created_at": "2017-06-22T19:16:43Z",
+ "tags": [],
+ "bytes": 6144,
+ "type": "upload",
+ "etag": "107bf134b5afd11cc7544d60108d87b", 
+ "url": "http://res.cloudinary.com/demo/raw/upload/v1371928603/sample_spreadsheet.xls",
+ "secure_url": "https://res.cloudinary.com/demo/raw/upload/v1371928603/sample_spreadsheet.xls"
+ "original_filename": "sample_spreadsheet"
+}

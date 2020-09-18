@@ -1,0 +1,1 @@
+cloudinary.Api.UrlVideoUp.Transform(new Transformation().Overlay(new SubtitlesLayer().PublicId("folder-permissions-tutorial.en-us.azure.transcript"))).BuildVideoTag("folder-permissions-tutorial")

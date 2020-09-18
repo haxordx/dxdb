@@ -1,0 +1,4 @@
+<cl-image public-id="sheep.jpg" >
+  <cl-transformation height="200" width="300" radius="20" crop="fill">
+  </cl-transformation>
+</cl-image>

@@ -1,0 +1,6 @@
+CloudinaryImage("park").image(transformation=[
+  {'effect': "lightroom:xmp:soft_mist.xmp"},
+  {'radius': 50, 'quality': "auto", 'border': "40px_solid_orange"},
+  {'angle': 5},
+  {'width': 400, 'crop': "scale"}
+  ])

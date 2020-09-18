@@ -1,0 +1,3 @@
+<Image publicId="DamagedHelmet3D.gltz" >
+  <Transformation flags="draco" />
+</Image>

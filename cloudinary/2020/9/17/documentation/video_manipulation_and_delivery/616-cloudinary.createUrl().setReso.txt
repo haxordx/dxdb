@@ -1,0 +1,1 @@
+cloudinary.createUrl().setResourceType("video").setTransformation(CLDTransformation().setWidth(500).setEffect("reverse").setCrop("scale")).generate("pencil_sketch.mp4")

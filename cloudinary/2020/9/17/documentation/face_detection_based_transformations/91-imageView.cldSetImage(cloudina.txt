@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation().setWidth(150).setHeight(150).setGravity("face").setCrop("thumb")).generate("couple.jpg")!, cloudinary: cloudinary)

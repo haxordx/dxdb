@@ -1,0 +1,5 @@
+<Image publicId="woman.jpg" variables={[["$height", "200"]]}>
+  <Transformation if="ar_lt_1.0" />
+  <Transformation if="else" />
+  <Transformation height="$height" crop="scale" />
+</Image>

@@ -1,0 +1,3 @@
+<Video publicId="dog" >
+  <Transformation aspectRatio="2.5" crop="crop" />
+</Video>

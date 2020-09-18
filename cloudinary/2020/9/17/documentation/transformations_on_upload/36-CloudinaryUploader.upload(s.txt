@@ -1,0 +1,7 @@
+Cloudinary::Uploader.upload("sample.jpg",
+  :eager => [
+    { :width => 300, :height => 300, :crop => :pad}, 
+    { :width => 160, :height => 100, :crop => :crop, :gravity => :south}], 
+  :eager_async => true, 
+  :eager_notification_url => "https://mysite.example.com/eager_endpoint",
+  :notification_url => "https://mysite.example.com/upload_endpoint")

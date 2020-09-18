@@ -1,0 +1,6 @@
+api.resource("sample", 
+  ObjectUtils.asMap(
+    "faces", true,
+    "colors", true, 
+    "image_metadata", true,
+    "versions", true));

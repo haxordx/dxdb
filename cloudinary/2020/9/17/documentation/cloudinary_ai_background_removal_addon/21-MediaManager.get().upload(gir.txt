@@ -1,0 +1,4 @@
+MediaManager.get().upload("girl_hair.jpg")
+  .option("public_id", "girl_hair_fine")
+  .option("background_removal", "cloudinary_ai:fine_edges")
+  .option("notification_url", "https://mysite.example.com/hooks").dispatch();

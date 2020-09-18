@@ -1,0 +1,6 @@
+player.playlistByTag("demo",
+{ sourceParams: { angle: 10 }, autoAdvance: 0, repeat: true, presentUpcoming: 5 })
+.then(function(player) 
+{
+            console.log("Playlist loaded")
+ })

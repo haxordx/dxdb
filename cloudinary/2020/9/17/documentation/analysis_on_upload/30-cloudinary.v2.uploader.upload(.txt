@@ -1,0 +1,4 @@
+cloudinary.v2.uploader.upload("sample.jpg", 
+  { moderation: "manual",
+    notification_url: "https://mysite.example.com/mod_endpoint" }, 
+  function(error, result) {console.log(result, error); });

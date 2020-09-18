@@ -1,0 +1,3 @@
+<cld-image publicId="city_pic.jpg" signUrl="true">
+  <cld-transformation effect="lightroom:whitebalance_tungsten" />
+</cld-image>

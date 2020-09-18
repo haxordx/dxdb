@@ -1,0 +1,1 @@
+cloudinary.Api.UrlVideoUp.Transform(new Transformation().Overlay(new SubtitlesLayer().FontFamily("times").FontSize(20).PublicId("folder-permissions-tutorial.en-us.azure.transcript")).Color("blue").Gravity("north")).BuildVideoTag("folder-permissions-tutorial")

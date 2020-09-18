@@ -1,0 +1,5 @@
+cloudinary.v2.uploader.upload("dog_couch.jpg", 
+  { public_id: "dog_couch",
+    background_removal: "cloudinary_ai",
+    notification_url: "https://mysite.example.com/hooks" },
+  function(error, result){console.log(result);});

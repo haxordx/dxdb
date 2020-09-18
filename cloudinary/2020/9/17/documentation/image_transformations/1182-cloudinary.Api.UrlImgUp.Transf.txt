@@ -1,0 +1,1 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation().Overlay(new Layer().PublicId("cloudinary_icon")).Width(0.8).Flags("relative")).BuildImageTag("sample.jpg")

@@ -1,0 +1,4 @@
+<cl-image public-id="sample.jpg" >
+  <cl-transformation transformation={{["demo_combined"]}}>
+  </cl-transformation>
+</cl-image>

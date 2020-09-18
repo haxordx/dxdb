@@ -1,0 +1,28 @@
+{
+    productId: 1,
+    productName: "Sunglasses",
+    startTime: 0,
+    endTime: 2,
+    publicId:
+    "docs/shoppable_sunglasses",
+    hotspots: [
+    {
+        time: "00:02",
+        x: "50%",
+        y: "50%",
+        tooltipPosition: "left",
+        clickUrl: "https://slo-fashion.com/"
+    }
+    ],
+    onHover: {
+    action: "overlay",
+    args: "Click to see this product in the video"
+    },
+    onClick: {
+    action: "seek",
+    pause: 5,
+    args: {
+        time: "00:01"
+        }
+    }
+}

@@ -1,0 +1,1 @@
+cl_image_tag("http://www.youtube.com/watch?v=aNwnPElsJGE", :type=>"youtube")

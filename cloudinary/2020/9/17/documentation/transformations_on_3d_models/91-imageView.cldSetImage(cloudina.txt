@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setFormat("gltf").generate("foyer-table")!, cloudinary: cloudinary)

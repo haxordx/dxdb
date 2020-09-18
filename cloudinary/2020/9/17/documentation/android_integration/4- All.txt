@@ -1,0 +1,18 @@
+// All:
+<dependency>
+    <groupId>com.cloudinary</groupId>
+    <artifactId>cloudinary-android</artifactId>
+    <version>1.28.2</version>
+</dependency>
+
+// Download + Preprocess:
+<dependency>
+    <groupId>com.cloudinary</groupId>
+    <artifactId>cloudinary-android-download</artifactId>
+    <version>1.28.2</version>
+</dependency>
+<dependency>
+    <groupId>com.cloudinary</groupId>
+    <artifactId>cloudinary-android-preprocess</artifactId>
+    <version>1.28.2</version>
+</dependency>

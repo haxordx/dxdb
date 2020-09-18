@@ -1,0 +1,4 @@
+<cl-image public-id="sample.jpg" >
+  <cl-transformation effect="screen" overlay="cloudinary_icon">
+  </cl-transformation>
+</cl-image>

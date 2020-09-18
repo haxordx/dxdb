@@ -1,0 +1,23 @@
+{
+  "transcript": "four score and seven years ago",
+  "confidence": 0.940843403339386,
+  "words": [
+    { "word": "four", "start_time": 1.6, "end_time": 2.1 },
+    { "word": "score", "start_time": 2.1, "end_time": 2.6 },
+    { "word": "and", "start_time": 2.6, "end_time": 2.7 },
+    { "word": "seven", "start_time": 2.7, "end_time": 3.1 },
+    { "word": "years", "start_time": 3.1, "end_time": 3.4 },
+    { "word": "ago", "start_time": 3.4, "end_time": 3.7 }     
+  ],
+},
+{
+  "transcript": "our forefathers",
+  "confidence": 0.933131217956543,
+  "words": [
+
+    { "word": "our", "start_time": 4.9, "end_time": 5.2 },
+    { "word": "forefathers", "start_time": 5.2, "end_time": 6.0 }
+  ],
+},
+{
+  "transcript": .....

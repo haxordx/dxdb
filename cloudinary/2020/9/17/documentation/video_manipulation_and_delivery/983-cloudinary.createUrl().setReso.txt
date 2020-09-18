@@ -1,0 +1,3 @@
+cloudinary.createUrl().setResourceType("video").setTransformation(CLDTransformation()
+  .setAudioCodec("none").chain()
+  .setOverlay("video:electronic").setEffect("volume:-50")).generate("dog.mp4")

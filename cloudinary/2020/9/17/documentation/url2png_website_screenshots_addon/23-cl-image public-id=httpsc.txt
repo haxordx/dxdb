@@ -1,0 +1,4 @@
+<cl-image public-id="https://cnn.com" sign-url="true" type="url2png">
+  <cl-transformation gravity="north" height="200" width="150" crop="fill">
+  </cl-transformation>
+</cl-image>

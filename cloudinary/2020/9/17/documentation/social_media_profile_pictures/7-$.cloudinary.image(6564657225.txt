@@ -1,0 +1,1 @@
+$.cloudinary.image("65646572251.jpg", {type: "facebook"})

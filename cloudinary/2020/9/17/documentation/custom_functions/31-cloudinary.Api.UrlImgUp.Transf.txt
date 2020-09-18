@@ -1,0 +1,4 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation()
+    .Signed(true)
+    .CustomFunction(CustomFunction.Remote("https://my.example.custom/function")))
+  .BuildImageTag("sample.jpg")

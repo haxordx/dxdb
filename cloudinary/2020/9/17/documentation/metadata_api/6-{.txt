@@ -1,0 +1,5 @@
+{
+    "type": "strlen",
+    "min": <positive integer>,
+    "max": <positive integer>
+}

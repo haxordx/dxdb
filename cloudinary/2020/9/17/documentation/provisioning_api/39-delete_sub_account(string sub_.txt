@@ -1,0 +1,1 @@
+delete_sub_account(string sub_account_id, object options);

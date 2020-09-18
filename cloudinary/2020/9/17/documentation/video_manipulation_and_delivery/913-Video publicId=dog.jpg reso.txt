@@ -1,0 +1,3 @@
+<Video publicId="dog.jpg" resourceType="video">
+  <Transformation startOffset="8.5" />
+</Video>

@@ -1,0 +1,1 @@
+$result = \Cloudinary\Uploader::explicit($public_id, $options = array());

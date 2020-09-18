@@ -1,0 +1,3 @@
+<cld-video publicId="dog" >
+  <cld-transformation height="200" crop="scale" />
+</cld-video>

@@ -1,0 +1,4 @@
+<cl-image public-id="sample.jpg" >
+  <cl-transformation width="300" flags="keep_iptc" crop="scale">
+  </cl-transformation>
+</cl-image>

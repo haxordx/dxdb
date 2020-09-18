@@ -1,0 +1,7 @@
+{
+ "notification_type": "resource_tags_changed",
+ "source": "ui",
+ "resources": [
+   { "public_id": "sailing_angel", "resource_type": "image", "type": "upload", "added": [ "boat" ], "removed": [ "angel" ] }
+ ]
+}

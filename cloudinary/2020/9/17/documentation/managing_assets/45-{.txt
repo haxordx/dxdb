@@ -1,0 +1,8 @@
+{
+ public_id: '12355d88728f5dc6886d96847c0c7ced',
+ version: '1571216138',
+ width: 124, 
+ height: 15,
+ url: 'http://res.cloudinary.com/demo/image/upload/v1571216138/12355d88728f5dc6886d96847c0c7ced.png',
+ secure_url: 'https://res.cloudinary.com/demo/image/upload/v1571216138/12355d88728f5dc6886d96847c0c7ced.png'
+}

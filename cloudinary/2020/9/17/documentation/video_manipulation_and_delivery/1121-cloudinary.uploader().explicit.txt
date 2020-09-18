@@ -1,0 +1,5 @@
+cloudinary.uploader().explicit("bb_bunny", ObjectUtils.asMap(
+            "resource_type", "video", "type", "upload", 
+            "eager", Arrays.asList(
+              new Transformation().streaming_profile("hd").format("m3u8"),
+              )));

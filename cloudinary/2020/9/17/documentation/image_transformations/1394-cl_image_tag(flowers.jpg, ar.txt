@@ -1,0 +1,4 @@
+cl_image_tag("flowers.jpg", array("transformation"=>array(
+  array("width"=>500, "crop"=>"scale"),
+  array("overlay"=>array("public_id"=>"sample_text_style", "text"=>"Stylish%20text"), "gravity"=>"south")
+  )))

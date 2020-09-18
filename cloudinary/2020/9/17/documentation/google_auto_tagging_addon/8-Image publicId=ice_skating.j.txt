@@ -1,0 +1,3 @@
+<Image publicId="ice_skating.jpg" >
+
+</Image>

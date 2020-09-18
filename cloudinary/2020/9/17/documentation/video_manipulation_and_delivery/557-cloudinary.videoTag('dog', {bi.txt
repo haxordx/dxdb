@@ -1,0 +1,1 @@
+cloudinary.videoTag('dog', {bitRate: "250k"}).toHtml();

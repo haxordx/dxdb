@@ -1,0 +1,13 @@
+<script src="https://media-editor.cloudinary.com/all.js" type="text/javascript"></script>
+
+<script>
+const myEditor = cloudinary.mediaEditor();
+myEditor.update({
+  publicIds: ["sample"],
+  cloudName: "demo", 
+});
+myEditor.show();
+myEditor.on("export",function(data){
+  console.log(data);
+})
+</script>

@@ -1,0 +1,4 @@
+<cl-video public-id="ship" >
+  <cl-transformation width="300" gravity="auto" aspect-ratio="1:1" crop="fill">
+  </cl-transformation>
+</cl-video>

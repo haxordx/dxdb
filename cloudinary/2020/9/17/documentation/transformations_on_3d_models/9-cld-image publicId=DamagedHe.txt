@@ -1,0 +1,4 @@
+<cld-image publicId="DamagedHelmet3D" >
+  <cld-transformation fetchFormat="gif" />
+  <cld-transformation aspectRatio="1" background="#a17ec5" flags="animated" height="200" crop="fill" />
+</cld-image>

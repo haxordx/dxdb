@@ -1,0 +1,5 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation()
+  .setIf("w_lt_800").chain()
+  .setEffect("blur:800").setUnderlay("%24img").setWidth(800).setHeight("$height").setCrop("scale").chain()
+  .setEffect("brightness:40").setFlags("layer_apply").chain()
+  .setIf("end")).generate("butterfly")!, cloudinary: cloudinary)

@@ -1,0 +1,1 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation().Effect("simulate_colorblind:deuteranopia")).BuildImageTag("docs/colorblind_green_red.jpg")

@@ -1,0 +1,6 @@
+CloudinaryVideo("dog").video(transformation=[
+  {'angle': 180},
+  {'width': 300, 'height': 200, 'crop': "fill"},
+  {'overlay': "video:dog", 'flags': "splice", 'width': 300, 'height': 200, 'start_offset': "0", 'duration': "5", 'crop': "fill"},
+  {'flags': "layer_apply"}
+  ])

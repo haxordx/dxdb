@@ -1,0 +1,6 @@
+"data": [
+  { "tag": { "en": "windmill" },
+    "confidence": 0.9753 },
+  { "tag": { "en": "waterway" },
+    "confidence": 0.9287 },
+  ...

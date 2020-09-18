@@ -1,0 +1,1 @@
+cl_video_tag("rafting", :width=>"iw / 5", :crop=>"scale")

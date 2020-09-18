@@ -1,0 +1,9 @@
+.amazon_logo, .apple_logo, .google_logo, .microsoft_logo {
+  background: 
+    url('https://res.cloudinary.com/demo/image/sprite/v1315740225/logo.png') 
+    no-repeat;
+}      
+.amazon_logo { background-position: 0px 0px; width: 162px; height: 38px; }
+.apple_logo { background-position: 0px -40px; width: 206px; height: 250px; }
+.google_logo { background-position: 0px -292px; width: 275px; height: 95px; }
+.microsoft_logo { background-position: 0px -632px; width: 216px; height: 70px; }

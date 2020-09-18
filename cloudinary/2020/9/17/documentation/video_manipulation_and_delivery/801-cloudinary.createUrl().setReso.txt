@@ -1,0 +1,3 @@
+cloudinary.createUrl().setResourceType("video").setTransformation(CLDTransformation()
+  .setEffect("fade:2000").chain()
+  .setEffect("fade:-4000")).generate("dog.mp4")

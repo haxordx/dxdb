@@ -1,0 +1,3 @@
+<Image publicId="sample.png" >
+  <Transformation width="300" flags="png8" crop="scale" />
+</Image>

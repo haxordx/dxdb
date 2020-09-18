@@ -1,0 +1,3 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation()
+  .setWidth(300).setCrop("limit").chain()
+  .setIf("iw_gt_300").setColor("white").setGravity("south_east").setOverlay("text:Arial_15_bold:Image%20scaled%20down%20to%20300px")).generate("sample.jpg")!, cloudinary: cloudinary)

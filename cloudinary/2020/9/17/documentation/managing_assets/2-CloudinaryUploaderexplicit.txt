@@ -1,0 +1,7 @@
+\Cloudinary\Uploader::explicit("sample3", 
+  array(
+    "type" => "private", 
+    "eager" => array(
+      array("width" => 200, "crop" => "scale"),
+      array("width" => 360, "height" => 200, 
+        "crop" => "crop", "gravity" => "north"))));

@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().overlay(new Layer().publicId("golden_star")).gravity("faces").width(1.0).flags("region_relative")).generate("young_couple.jpg");

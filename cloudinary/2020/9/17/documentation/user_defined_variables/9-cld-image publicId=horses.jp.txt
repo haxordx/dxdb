@@ -1,0 +1,4 @@
+<cld-image publicId="horses.jpg" >
+  <cld-transformation width="300" crop="scale" />
+  <cld-transformation effect="shadow" x="w / 50" y="w / 50" crop="fill" />
+</cld-image>

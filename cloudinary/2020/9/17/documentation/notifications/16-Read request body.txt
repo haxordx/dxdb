@@ -1,0 +1,25 @@
+//Read request body
+$body = file_get_contents('php://input');
+$api_secret = 'replace_with_real_api_secret';
+
+if (!validateSignature(getallheaders(), $body, $api_secret)) {
+    die("Validation failed");
+}
+//Use the response for your needs
+
+function validateSignature($headers, $upload_response, $api_secret)
+{
+    $signed_payload = $upload_response . $headers["X-Cld-Timestamp"];
+        // Compute signature with SHA-1 function and compare to header value   
+    if (sha1($signed_payload . $api_secret) !== $headers['X-Cld-Signature']) {
+        // Signatures DON'T match
+        return false;
+    }
+        // Compare the current time to the received timestamp
+    if ($headers["X-Cld-Timestamp"] <= strtotime('-2 hours')) {
+        // Signatures match, but older than 2 hours
+        return false;
+    }
+        // Signatures match, and timestamp is valid
+    return true;
+}

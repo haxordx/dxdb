@@ -1,0 +1,1 @@
+cld uploader upload my_example.wasm use_filename=true type=authenticated resource_type=raw

@@ -1,0 +1,4 @@
+cloudinary.videoTag('dog', {transformation: [
+  {overlay: new cloudinary.Layer().publicId("cloudinary_icon"), width: 200, gravity: "east", startOffset: "1", endOffset: "11"},
+  {overlay: new cloudinary.TextLayer().fontFamily("arial").fontSize(40).text("Sample%20Video"), gravity: "south", y: 60, startOffset: "2"}
+  ]}).toHtml();

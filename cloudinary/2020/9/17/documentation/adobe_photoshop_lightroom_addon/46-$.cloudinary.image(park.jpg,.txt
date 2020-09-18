@@ -1,0 +1,1 @@
+$.cloudinary.image("park.jpg", {effect: "lightroom:xmp:warm_shadow.xmp"})

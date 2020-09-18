@@ -1,0 +1,4 @@
+var uploadParams = new ImageUploadParams() {
+  File = new FileDescription(@"sample.jpg"),
+  Transformation = new Transformation().Width(2000).Height(1000).Crop("limit")};
+var uploadResult = cloudinary.Upload(uploadParams);

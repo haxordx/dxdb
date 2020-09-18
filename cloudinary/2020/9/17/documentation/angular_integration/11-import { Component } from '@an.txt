@@ -1,0 +1,8 @@
+import { Component } from '@angular/core';
+import { Cloudinary } from '@cloudinary/angular-5.x'; 
+export class AppComponent {
+  constructor(private cloudinary: Cloudinary) {
+    // <img src="https://res.cloudinary.com/demo/image/upload/dog.jpg" />
+    console.log(cloudinary.cloudinaryInstance.image('dog')); 
+  }
+}

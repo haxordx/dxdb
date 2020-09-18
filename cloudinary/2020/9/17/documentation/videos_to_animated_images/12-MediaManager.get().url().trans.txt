@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().videoSampling("40").delay("200").height(200).effect("loop").crop("scale")).resourceType("video").generate("cld_rubix.gif");

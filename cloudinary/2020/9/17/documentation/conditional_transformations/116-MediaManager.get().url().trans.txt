@@ -1,0 +1,8 @@
+MediaManager.get().url().transformation(new Transformation()
+  .if("w_lte_400").chain()
+  .height(220).width(180).crop("fill").chain()
+  .effect("red").chain()
+  .if("else").chain()
+  .height(190).width(300).crop("fill").chain()
+  .effect("oil_paint").chain()
+  .if("end")).generate("sample.jpg");

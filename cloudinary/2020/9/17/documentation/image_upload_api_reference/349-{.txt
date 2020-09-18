@@ -1,0 +1,19 @@
+{
+  "asset_id": "f658a81a606a6b2edb164cc2f0983620",
+  "public_id": "sample_text_image",
+  "version": 1473692896,
+  "version_id": "9b5cfabc0972be386ecb2f15aeeff920",
+  "signature": ""abcdefghijklmnopqrstuvwxyz12345"",
+  "width": 342,
+  "height": 41,
+  "format": "png",
+  "resource_type": "image",
+  "created_at": "2017-08-12T15:08:16Z",
+  "tags": [],
+  "bytes": 3670,
+  "type": "text",
+  "placeholder": false,
+  "url": "http://res.cloudinary.com/demo/image/text/v1473692896/sample_text_image.png",
+  "secure_url": "https://res.cloudinary.com/demo/image/text/v1473692896/sample_text_image.png",
+  "access_mode": "public"
+}

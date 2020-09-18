@@ -1,0 +1,3 @@
+<Image publicId="butterfly.jpg" >
+  <Transformation gravity="face" crop="crop" />
+</Image>

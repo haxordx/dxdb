@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation().setWidth(200).setHeight(200).setGravity("auto").setCrop("crop")).generate("fat_cat.jpg")!, cloudinary: cloudinary)

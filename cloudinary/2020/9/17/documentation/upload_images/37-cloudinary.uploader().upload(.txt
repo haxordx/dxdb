@@ -1,0 +1,4 @@
+cloudinary.uploader().upload("sample.jpg", 
+  ObjectUtils.asMap(
+    "folder", "my_folder/my_sub_folder/", 
+    "public_id", "my_name"));

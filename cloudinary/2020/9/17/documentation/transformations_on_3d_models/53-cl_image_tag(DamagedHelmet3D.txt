@@ -1,0 +1,4 @@
+cl_image_tag("DamagedHelmet3D", :transformation=>[
+  {:fetch_format=>"png"},
+  {:angle=>90, :aspect_ratio=>"1", :background=>"#a17ec5", :gravity=>"auto", :height=>200, :crop=>"fill"}
+  ])

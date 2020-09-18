@@ -1,0 +1,1 @@
+$.cloudinary.image("sample.jpg", {effect: "blur:300"})

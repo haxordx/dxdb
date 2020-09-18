@@ -1,0 +1,57 @@
+{
+  "public_id": "couple",
+  "version": 1436702762,
+  "signature": "1cc5524ae9acde77c458a434e32f6d26a8d4b55c",
+  "width": 400,
+  "height": 300,
+  "format": "jpg",
+  "resource_type": "image",
+  "created_at": "2017-07-12T12:06:02Z",
+  "tags": [],
+  "bytes": 206960,
+  "type": "upload",
+  "etag": "9359a0f3ec878d32e06a456c4224b52b",
+  "url": "http://res.cloudinary.com/demo/image/upload/v1436702762/couple.jpg",
+  "secure_url": "https://res.cloudinary.com/demo/image/upload/v1436702762/couple.jpg",
+  "image_metadata": {
+    "PerspectiveHorizontal": "0",
+    "RedHue": "0",
+    "Exposure": "0.00",
+    ...
+    ...
+    ...
+    "ExposureTime": "1/320"
+  },
+  "illustration_score": 0.9,
+  "colors": [
+    ["#152E02", 7.9], ["#2E4F06", 6.3], ["#3A6604", 5.6], ["#EEF2F3", 5.2], ["#598504", 4.6], ["#0D1903", 4.6], ["#DCDFDB", 4.4], ["#7AA403", 3.9], ["#DBE98A", 3.8], ["#4C7208", 3.5], ["#8DAC30", 3.3], ["#6C9406", 3.2], ["#6E912F", 3.2], ["#B0C95F", 3.1], ["#89AF07", 3.1], ["#9E744E", 2.9], ["#CD9A6F", 2.8], ["#D8B395", 2.5], ["#719357", 2.4], ["#ACCDBC", 2.3], ["#8E6437", 2.3], ["#E2E0A0", 2.3], ["#2C4B16", 2.3], ["#656950", 2.1], ["#25370A", 2.0], ["#73A092", 1.9], ["#4E3721", 1.6], ["#A0AD9A", 1.6], ["#BBD258", 1.5], ["#5B602B", 1.3], ["#302B1D", 1.3], ["#9CA25C", 1.2]
+  ], 
+  "predominant": {
+    "google": [
+      ["green", 65.3], 
+      ["white", 11.4], 
+      ["brown", 6.6], 
+      ["yellow", 5.9], 
+      ["orange", 5.5], 
+      ["gray", 0.5]], 
+    "cloudinary":[
+      ["olive", 39.4], 
+      ["green", 25.1], 
+      ["white", 11.4], 
+      ["yellow", 5.9], 
+      ["orange", 5.5], 
+      ["brown", 5.2], 
+      ["lime", 2.2], 
+      ["gray", 0.5]
+    ]
+  },
+  "phash": "ebb822db6d10f1e",
+  "coordinates": {
+    "custom": [[80, 140, 220, 111]],
+    "faces": [[98, 74, 61, 83], [139, 130, 52, 71]]    
+  },
+  "quality_analysis": {
+    "focus": 0.8
+  },
+  "original_filename": "couple"
+}

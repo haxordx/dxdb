@@ -1,0 +1,1 @@
+CloudinaryImage("family_bench.jpg").image(height=200, width=150, crop="imagga_scale", sign_url=True)

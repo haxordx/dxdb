@@ -1,0 +1,1 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation().Width(400).AspectRatio("1").Gravity("auto:skateboard").Crop("thumb")).Signed(true).BuildImageTag("Skater.jpg")

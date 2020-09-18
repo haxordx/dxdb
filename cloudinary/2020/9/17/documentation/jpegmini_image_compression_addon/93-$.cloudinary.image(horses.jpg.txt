@@ -1,0 +1,5 @@
+$.cloudinary.image("horses.jpg", {transformation: [
+  {effect: "saturation:50", radius: 20, width: 400, crop: "scale"},
+  {gravity: "south_east", overlay: new cloudinary.Layer().publicId("logo_jpegmini"), opacity: 80, width: 100, x: 10, y: 10},
+  {quality: "jpegmini"}
+  ]})

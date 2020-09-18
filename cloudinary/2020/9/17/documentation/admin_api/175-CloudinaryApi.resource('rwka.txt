@@ -1,0 +1,2 @@
+Cloudinary::Api.resource('rwkaliebnufp3bxyrvyo.txt',
+  :resource_type => :raw)

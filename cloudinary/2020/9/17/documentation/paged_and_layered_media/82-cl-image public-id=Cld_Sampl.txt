@@ -1,0 +1,4 @@
+<cl-image public-id="Cld_Sample_PSD.jpg" >
+  <cl-transformation width="300" effect="grayscale" crop="scale">
+  </cl-transformation>
+</cl-image>

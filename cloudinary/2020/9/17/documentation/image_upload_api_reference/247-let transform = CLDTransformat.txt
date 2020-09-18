@@ -1,0 +1,2 @@
+let transform = CLDTransformation().setPage("all")
+let result = cloudinary.createManagementApi().explode("sample", transformation: transform)

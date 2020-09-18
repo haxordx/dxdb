@@ -1,0 +1,8 @@
+api.createUploadPreset(
+  ObjectUtils.asMap(
+    "name", "my_preset",
+    "unsigned", true, 
+    "categorization", "google_tagging,google_video_tagging",
+    "auto_tagging", 0.75,
+    "background_removal", "cloudinary_ai",  
+    "folder", "new-products"));

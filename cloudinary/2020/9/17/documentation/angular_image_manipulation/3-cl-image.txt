@@ -1,0 +1,18 @@
+<cl-image 
+  public-id="mypic" 
+  class="thumbnail inline" 
+  angle="20" 
+  format="jpg">
+  <cl-transformation 
+    height="150" 
+    width="150" 
+    crop="crop" 
+    effect="sepia" 
+    radius="20">
+  </cl-transformation>
+  <cl-transformation 
+    overlay="text:arial_60:This is my picture" 
+    gravity="north" 
+    y="20">
+  </cl-transformation>
+</cl-image>

@@ -1,0 +1,1 @@
+let result = cloudinary.createManagementApi().addTag(tag, publicIds: publicIds, params: params)

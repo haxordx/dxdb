@@ -1,0 +1,4 @@
+CloudinaryImage("docs/rmv_bgd/woman.png").image(transformation=[
+  {'height': 375, 'crop': "scale"},
+  {'underlay': "docs:bg_beach", 'gravity': "south", 'width': 800}
+  ])

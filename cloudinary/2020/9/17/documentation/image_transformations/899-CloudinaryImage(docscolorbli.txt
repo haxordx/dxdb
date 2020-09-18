@@ -1,0 +1,1 @@
+CloudinaryImage("docs/colorblind_green_red.jpg").image(effect="assist_colorblind:xray")

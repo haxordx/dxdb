@@ -1,0 +1,4 @@
+$.cloudinary.video("dog", {transformation: [
+  {width: 100, crop: "scale"},
+  {dpr: "2.0"}
+  ]})

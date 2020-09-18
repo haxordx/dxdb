@@ -1,0 +1,1 @@
+cloudinary.v2.uploader.destroy(public_id, options, callback);

@@ -1,0 +1,3 @@
+<cld-image publicId="woman.jpg" :variables="[['$newwidth', '10 + iw * 0.3']]">
+  <cld-transformation width="$newwidth" crop="scale" />
+</cld-image>

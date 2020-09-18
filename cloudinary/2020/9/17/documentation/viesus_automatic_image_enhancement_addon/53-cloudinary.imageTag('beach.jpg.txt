@@ -1,0 +1,1 @@
+cloudinary.imageTag('beach.jpg', {effect: "viesus_correct", width: 400, crop: "scale"}).toHtml();

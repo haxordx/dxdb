@@ -1,0 +1,4 @@
+<cl-image public-id="Skater.jpg" sign-url="true">
+  <cl-transformation width="400" aspect-ratio="1" gravity="auto:skateboard" crop="thumb">
+  </cl-transformation>
+</cl-image>

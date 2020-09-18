@@ -1,0 +1,5 @@
+result = cloudinary.search()
+  .expression("cat AND -tags:kitten")
+  .sortBy("public_id","desc")
+  .aggregate("format")
+  .execute();

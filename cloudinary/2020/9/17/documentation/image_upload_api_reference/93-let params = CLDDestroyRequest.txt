@@ -1,0 +1,3 @@
+let params = CLDDestroyRequestParams()
+  .setResourceType("video")
+let result = cloudinary.createManagementApi().destroy("sample", params: params)

@@ -1,0 +1,1 @@
+cl_image_tag("non_existing_id.png", array("default_image"=>"avatar.png"))

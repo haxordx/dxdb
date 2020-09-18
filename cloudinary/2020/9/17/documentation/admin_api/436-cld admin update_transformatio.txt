@@ -1,0 +1,1 @@
+cld admin update_transformation "w_150,h_100,c_fill" allowed_for_strict=true

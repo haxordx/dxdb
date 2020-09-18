@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().density(20)).imageTag("multi_page_pdf.jpg");

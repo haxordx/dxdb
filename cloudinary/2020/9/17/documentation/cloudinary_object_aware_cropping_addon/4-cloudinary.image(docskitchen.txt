@@ -1,0 +1,1 @@
+cloudinary.image("docs/kitchen1.jpg", {width: 600, aspect_ratio: "1", gravity: "auto:sink", crop: "thumb"})

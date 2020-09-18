@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation().setEffect("sharpen")).generate("sample.jpg")!, cloudinary: cloudinary)

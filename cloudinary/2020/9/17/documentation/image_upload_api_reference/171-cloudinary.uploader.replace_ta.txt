@@ -1,0 +1,1 @@
+cloudinary.uploader.replace_tag('animal', ['dog', 'lion'])

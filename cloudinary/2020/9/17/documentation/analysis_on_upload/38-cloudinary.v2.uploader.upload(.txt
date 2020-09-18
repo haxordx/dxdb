@@ -1,0 +1,4 @@
+cloudinary.v2.uploader.upload("user_photo.jpg",
+  { quality_analysis: true,
+    eval: "if (resource_info.quality_analysis.focus < 0.5) { upload_options['tags'] = 'blurry' }" },
+  function(error, result) { console.log(result, error); });

@@ -1,0 +1,2 @@
+cl_image_tag("woman.jpg", :width => :auto,  :dpr => :auto, :responsive => :true,
+  :crop => "scale", :responsive_placeholder => "blank")

@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation().setWidth(80).setHeight(400).setGravity("auto").setBackground("auto").setCrop("fill_pad")).generate("lady.jpg")!, cloudinary: cloudinary)

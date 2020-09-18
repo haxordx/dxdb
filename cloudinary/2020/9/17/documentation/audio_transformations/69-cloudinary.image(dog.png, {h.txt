@@ -1,0 +1,1 @@
+cloudinary.image("dog.png", {height: 200, width: 500, flags: "waveform", resource_type: "video"})

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+for image in *.jpg
+do
+   cld uploader upload "$image" folder="birds" tags="bird,feathers,beak"   
+done
+
+cld uploader multi bird delay=1300

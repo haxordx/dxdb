@@ -1,0 +1,1 @@
+api.createFolder(String folder, Map options);

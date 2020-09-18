@@ -1,0 +1,2 @@
+cloudinary.CloudinaryImage("sample.jpg").image(type = "authenticated", auth_token = dict(key = "MyKey", duration = 300),
+  sign_url = True)

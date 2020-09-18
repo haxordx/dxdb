@@ -1,0 +1,2 @@
+var publicIds = new List<string>(){"user_photo_1", "user_photo_2" };
+cloudinary.ListResourceByPublicIds(publicIds);

@@ -1,0 +1,6 @@
+<Image 
+  public-id="sample" 
+  loading="lazy"
+  width="400"
+  height="300">
+</Image>

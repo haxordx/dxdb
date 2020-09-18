@@ -1,0 +1,3 @@
+var getResource = new GetResourceParams("rwkaliebnufp3bxyrvyo.txt"){
+ResourceType = "raw" };
+var info = cloudinary.GetResource(getResource);

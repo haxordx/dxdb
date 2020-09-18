@@ -1,0 +1,1 @@
+cloudinary.createUrl().setResourceType("video").setTransformation(CLDTransformation().setOverlay("subtitles:times_20:folder-permissions-tutorial.en-us.azure.transcript").setColor("blue").setGravity("north")).generate("folder-permissions-tutorial.mp4")

@@ -1,0 +1,1 @@
+cl_image_tag("smartphone2.jpg", array("effect"=>"blur_region:800", "gravity"=>"ocr_text", "sign_url"=>true))

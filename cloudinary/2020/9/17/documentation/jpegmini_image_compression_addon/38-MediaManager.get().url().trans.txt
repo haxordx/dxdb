@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().height(150).quality("jpegmini").width(200).crop("fill")).signed(true).generate("brown_sheep.jpg");

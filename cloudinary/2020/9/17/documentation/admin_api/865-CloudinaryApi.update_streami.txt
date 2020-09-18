@@ -1,0 +1,6 @@
+Cloudinary::Api.update_streaming_profile("custom_square",  
+:representations => 
+  [{:transformation => {:crop => "limit", :width => "1200", :height => "1200", :bit_rate => "5m"}},
+   {:transformation => {:crop => "limit", :width => "900", :height => "900", :bit_rate => "3500k"}},
+   {:transformation => {:crop => "limit", :width => "600", :height => "600", :bit_rate => "1500k"}},
+   {:transformation => {:crop => "limit", :width => "320", :height => "320", :bit_rate => "192k"}}])

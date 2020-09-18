@@ -1,0 +1,3 @@
+cld config -url cloudinary://123456789012345:abcdefghijklmnopqrstuvwxyzA@cloud_name
+
+cld -C cloud_name uploader upload "family.jpg" tags="mum,dad,grandpa,grandma"

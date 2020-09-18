@@ -1,0 +1,3 @@
+<Image publicId="kitten_fighting.gif" >
+  <Transformation flags="lossy" />
+</Image>

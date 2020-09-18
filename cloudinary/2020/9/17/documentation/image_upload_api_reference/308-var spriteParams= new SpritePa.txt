@@ -1,0 +1,2 @@
+var spriteParams= new SpriteParams("logo");
+var spriteResult = cloudinary.MakeSprite(spriteParams);

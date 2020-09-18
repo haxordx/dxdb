@@ -1,0 +1,4 @@
+cl_image_tag("docs/rmv_bgd/woman.png", array("transformation"=>array(
+  array("height"=>375, "crop"=>"scale"),
+  array("underlay"=>"docs:bg_beach", "gravity"=>"south", "width"=>800)
+  )))

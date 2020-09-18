@@ -1,0 +1,1 @@
+cloudinary.imageTag('sample.jpg', {overlay: new cloudinary.FetchLayer().url("http://cloudinary.com/images/old_logo.png7")}).toHtml();

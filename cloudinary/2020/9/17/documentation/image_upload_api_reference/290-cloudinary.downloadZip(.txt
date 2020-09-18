@@ -1,0 +1,4 @@
+cloudinary.downloadZip(
+  ObjectUtils.asMap(
+    'public_ids', Arrays.asList('dog', 'cat', 'lion'), 
+    'resource_type', 'image'));

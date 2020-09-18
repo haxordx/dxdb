@@ -1,0 +1,2 @@
+\Cloudinary\Uploader::upload("concert_ticket.jpg", 
+  array("ocr" => "adv_ocr"));

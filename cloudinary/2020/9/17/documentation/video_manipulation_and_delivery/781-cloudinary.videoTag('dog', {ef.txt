@@ -1,0 +1,1 @@
+cloudinary.videoTag('dog', {effect: "deshake:32"}).toHtml();

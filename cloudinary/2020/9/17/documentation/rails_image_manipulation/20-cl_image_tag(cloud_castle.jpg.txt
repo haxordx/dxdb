@@ -1,0 +1,1 @@
+cl_image_tag("cloud_castle.jpg", :width=>350, :fetch_format=>:auto, :crop=>"scale")

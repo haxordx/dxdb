@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().width(200).height(300).gravity("auto").crop("fill")).imageTag("basketball_in_net.jpg");

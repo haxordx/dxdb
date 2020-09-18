@@ -1,0 +1,4 @@
+cloudinary.v2.api.update("golfer", 
+  { detection: "aws_rek_face", 
+    auto_tagging: 0.9},
+  function(error, result){console.log(result);});

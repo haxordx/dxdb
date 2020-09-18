@@ -1,0 +1,4 @@
+var renameParams = new RenameParams(){
+  FromPublicId = "old_name",
+  ToPublicId = "new_name"};
+var renameResult = cloudinary.Rename(renameParams);

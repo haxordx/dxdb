@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().gravity("face").width(150).height(150).zoom(0.7).crop("thumb")).generate("woman.jpg");

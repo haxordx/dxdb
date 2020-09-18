@@ -1,0 +1,4 @@
+cl_image_tag("sample.jpg", array("transformation"=>array(
+  array("width"=>100, "crop"=>"scale"),
+  array("angle"=>-20)
+  )))

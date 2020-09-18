@@ -1,0 +1,5 @@
+$api->update_upload_preset("wiki",
+  array(
+    "unsigned" => true, 
+    "tags" => "remote", 
+    "allowed_formats" => "jpg,png"));

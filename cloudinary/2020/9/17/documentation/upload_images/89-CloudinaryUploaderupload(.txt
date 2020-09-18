@@ -1,0 +1,2 @@
+\Cloudinary\Uploader::upload("sample_spreadsheet.xls", 
+  array("resource_type" => "auto"));

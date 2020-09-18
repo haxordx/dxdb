@@ -1,0 +1,10 @@
+\Cloudinary\Uploader::explicit("sample", 
+  array(
+    "type" => "upload", 
+    "eager" => array(
+      array(
+        "width" => 400, "height" => 400,
+        "crop" => "crop", "gravity" => "face"),
+      array(
+        "width" => 660, "height" => 400,
+        "crop" => "pad", "background" => "blue"))));

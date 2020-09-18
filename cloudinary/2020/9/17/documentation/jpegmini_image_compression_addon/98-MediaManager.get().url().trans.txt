@@ -1,0 +1,4 @@
+MediaManager.get().url().transformation(new Transformation()
+  .effect("saturation:50").radius(20).width(400).crop("scale").chain()
+  .gravity("south_east").overlay(new Layer().publicId("logo_jpegmini")).opacity(80).width(100).x(10).y(10).chain()
+  .quality("jpegmini")).signed(true).generate("horses.jpg");

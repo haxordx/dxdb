@@ -1,0 +1,1 @@
+cloudinary.createUrl().setResourceType("video").setTransformation(CLDTransformation().setOverlay("subtitles:sample_sub_en.srt")).generate("dog.mp4")

@@ -1,0 +1,10 @@
+<cl-image public-id="sample.jpg" >
+  <cl-transformation width="500" crop="scale">
+  </cl-transformation>
+  <cl-transformation overlay="cloudinary_icon" width="150">
+  </cl-transformation>
+  <cl-transformation effect="blackwhite">
+  </cl-transformation>
+  <cl-transformation flags="layer_apply" gravity="north_east">
+  </cl-transformation>
+</cl-image>

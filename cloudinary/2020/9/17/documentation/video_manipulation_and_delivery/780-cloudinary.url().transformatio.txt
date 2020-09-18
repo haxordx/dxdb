@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().effect("deshake:32")).videoTag("dog");

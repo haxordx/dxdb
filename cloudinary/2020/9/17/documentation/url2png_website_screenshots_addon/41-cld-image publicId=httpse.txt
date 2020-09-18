@@ -1,0 +1,3 @@
+<cld-image publicId="https://en.wikipedia.org/wiki/jpg" signUrl="true" type="url2png">
+  <cld-transformation gravity="north" height="200" width="150" crop="fill" />
+</cld-image>

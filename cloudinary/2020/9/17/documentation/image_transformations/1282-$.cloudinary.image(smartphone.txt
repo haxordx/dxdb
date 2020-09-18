@@ -1,0 +1,4 @@
+$.cloudinary.image("smartphone.png", {transformation: [
+  {height: 200, width: 200, crop: "fill"},
+  {effect: "brightness:100", height: 200, underlay: new cloudinary.Layer().publicId("site_bg"), width: 200}
+  ]})

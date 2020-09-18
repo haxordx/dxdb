@@ -1,0 +1,5 @@
+<Image publicId="wood_chair.jpg" >
+  <Transformation width="200" height="200" effect="saturation:50" crop="pad" />
+  <Transformation effect="shadow" />
+  <Transformation border="1px_solid_rgb:666" />
+</Image>

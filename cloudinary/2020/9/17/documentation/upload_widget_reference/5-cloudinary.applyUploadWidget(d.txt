@@ -1,0 +1,2 @@
+cloudinary.applyUploadWidget(document.getElementById('opener'), 
+  { cloudName: "demo", uploadPreset: "preset1" }, (error, result) => { });

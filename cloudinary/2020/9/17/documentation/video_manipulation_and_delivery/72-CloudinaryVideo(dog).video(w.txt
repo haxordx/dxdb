@@ -1,0 +1,1 @@
+CloudinaryVideo("dog").video(width=500, fetch_format="auto", crop="scale")

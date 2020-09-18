@@ -1,0 +1,1 @@
+const myEditor = cloudinary.mediaEditor({appendTo: document.getElementById("my-widget-container");});

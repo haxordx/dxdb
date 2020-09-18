@@ -1,0 +1,9 @@
+...
+"info": {   
+   "raw_convert": {
+      "azure_video_indexer": {
+        "status": "pending"
+      }
+    }
+ }
+...

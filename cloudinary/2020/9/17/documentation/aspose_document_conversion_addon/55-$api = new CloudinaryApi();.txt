@@ -1,0 +1,5 @@
+$api = new \Cloudinary\Api();
+$api->update("sample_spreadsheet.xls",
+  array(
+    "raw_convert" => "aspose",
+    "resource_type" => "raw"));

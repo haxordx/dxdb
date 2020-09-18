@@ -1,0 +1,6 @@
+var updateParams = new UpdateParams("puppy") 
+{
+  Categorization = "google_tagging:ru",
+  AutoTagging = 0.9
+};
+var updateResult = cloudinary.UpdateResource(updateParams);

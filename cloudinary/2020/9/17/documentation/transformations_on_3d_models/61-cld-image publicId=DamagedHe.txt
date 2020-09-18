@@ -1,0 +1,4 @@
+<cld-image publicId="DamagedHelmet3D" >
+  <cld-transformation fetchFormat="png" />
+  <cld-transformation angle="90" aspectRatio="1" background="#a17ec5" gravity="auto" height="200" crop="fill" />
+</cld-image>

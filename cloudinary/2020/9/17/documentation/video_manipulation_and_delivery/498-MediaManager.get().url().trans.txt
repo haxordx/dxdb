@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().width(300).radius("max").crop("scale")).resourceType("video").generate("dog.mp4");

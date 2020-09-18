@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation().setEffect("tint:equalize:80:red:50p:blue:60p:yellow:40p")).generate("greece_landscape.jpg")!, cloudinary: cloudinary)

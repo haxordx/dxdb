@@ -1,0 +1,17 @@
+<script src="https://your-local-host.domain/cloudinary_js/jquery.ui.widget.js"></script>
+<script src="https://your-local-host.domain/cloudinary_js/jquery.iframe-transport.js"></script>
+<script src="https://your-local-host.domain/cloudinary_js/jquery.fileupload.js"></script>
+<script src="https://your-local-host.domain/cloudinary_js/jquery.cloudinary.js"></script>
+<script src="https://your-local-host.domain/cloudinary_js/canvas-to-blob.min.js"></script>
+<script src="https://your-local-host.domain/cloudinary_js/jquery.fileupload-image.js"></script>
+<script src="https://your-local-host.domain/cloudinary_js/jquery.fileupload-process.js"></script>
+<script src="https://your-local-host.domain/cloudinary_js/jquery.fileupload-validate.js"></script>
+<script src="https://your-local-host.domain/cloudinary_js/load-image.all.min.js"></script>
+<script type='text/javascript'>
+  $.cloudinary.config({
+    "cloud_name": "your_cloud_name",
+    "api_key": "your_api_key",
+    "private_cdn": false,
+    "cdn_subdomain": false
+);
+</script>

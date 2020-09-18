@@ -1,0 +1,1 @@
+eager=c_crop,w_400,h_400,g_face/w_50,h_50,c_scale|w_30,h_30,c_crop,g_south

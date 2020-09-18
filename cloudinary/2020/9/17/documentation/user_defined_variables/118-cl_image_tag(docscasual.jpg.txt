@@ -1,0 +1,7 @@
+cl_image_tag("docs/casual.jpg",
+  :variables => [["$overlay", "ref:!docs:sale!"]],
+  :custom_function => {
+    :function_type => "wasm", 
+    :source => "docs:pnglayer.wasm"},
+  :transformation => [{
+    :border => "1px_solid_black"}])

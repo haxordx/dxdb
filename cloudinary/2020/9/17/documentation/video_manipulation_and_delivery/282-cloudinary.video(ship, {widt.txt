@@ -1,0 +1,1 @@
+cloudinary.video("ship", {width: 300, gravity: "auto", aspect_ratio: "1:1", crop: "fill"})

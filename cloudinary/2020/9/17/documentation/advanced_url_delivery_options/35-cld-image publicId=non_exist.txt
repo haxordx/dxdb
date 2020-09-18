@@ -1,0 +1,3 @@
+<cld-image publicId="non_existing_id.png" >
+  <cld-transformation defaultImage="avatar.png" />
+</cld-image>

@@ -1,0 +1,3 @@
+MediaManager.get().url().transformation(new Transformation()
+  .width(700).height(700).crop("fill").chain()
+  .effect("style_transfer").overlay(new Layer().publicId("sailing_angel"))).generate("golden_gate.jpg");

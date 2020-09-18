@@ -1,0 +1,8 @@
+<Image publicId="sample.jpg" >
+  <Transformation overlay="couple" />
+  <Transformation gravity="faces" width="120" height="150" crop="crop" />
+  <Transformation radius="max" />
+  <Transformation flags="layer_apply" gravity="north_east" />
+  <Transformation overlay="cloudinary_icon" width="0.8" flags="relative" opacity="50" effect="brightness:100" />
+  <Transformation overlay={{fontFamily: "impact", fontSize: 40, fontWeight: "bold", text: "Sample%20image"}} gravity="south" y="20" />
+</Image>

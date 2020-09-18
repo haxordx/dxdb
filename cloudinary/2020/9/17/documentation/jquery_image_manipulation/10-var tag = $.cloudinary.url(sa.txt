@@ -1,0 +1,1 @@
+var tag = $.cloudinary.url("sample.jpg");

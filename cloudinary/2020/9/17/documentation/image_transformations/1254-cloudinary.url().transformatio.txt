@@ -1,0 +1,7 @@
+cloudinary.url().transformation(new Transformation()
+  .width(500).crop("scale").chain()
+  .overlay(new Layer().publicId("cloudinary_icon")).width(150).chain()
+  .effect("blackwhite").chain()
+  .overlay(new Layer().publicId("cloudinary_icon")).width(50).chain()
+  .flags("layer_apply").chain()
+  .flags("layer_apply").gravity("north_east")).imageTag("sample.jpg");

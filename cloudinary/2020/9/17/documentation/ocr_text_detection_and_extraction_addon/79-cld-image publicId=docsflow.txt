@@ -1,0 +1,3 @@
+<cld-image publicId="docs/flower_shop.jpg" >
+  <cld-transformation gravity="auto:ocr_text_avoid" height="400" aspectRatio="0.8" crop="fill" />
+</cld-image>

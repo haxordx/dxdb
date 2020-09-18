@@ -1,0 +1,9 @@
+{
+ "public_id":"sample_document.docx",
+ "version":1393687686,
+ "resource_type":"raw",
+ "type":"upload",
+ "url":"http://res.cloudinary.com/demo/raw/upload/v1399208539/sample_document.docx",
+ "info":{"raw_convert":{"aspose":{"status":"pending"}}},
+  ...
+}

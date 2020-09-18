@@ -1,0 +1,6 @@
+var uploadParams = new ImageUploadParams() 
+{
+  File = new FileDescription(@"rolling_stones.jpg"),
+  Detection = "aws_rek_face"
+};
+var uploadResult = cloudinary.Upload(uploadParams);

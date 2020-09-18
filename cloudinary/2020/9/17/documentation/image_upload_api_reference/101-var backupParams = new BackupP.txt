@@ -1,0 +1,3 @@
+var backupParams = new BackupParams() 
+{ string AssetId, string VersionId };
+var url = cloudinary.DownloadBackedupAsset(backupParams);

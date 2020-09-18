@@ -1,0 +1,2 @@
+cl_image_tag("sample.jpg",  array("width" => "auto", "client_hints" => "true",
+  "crop" => "fill", "gravity" => "auto", "sizes" => "100vw"));

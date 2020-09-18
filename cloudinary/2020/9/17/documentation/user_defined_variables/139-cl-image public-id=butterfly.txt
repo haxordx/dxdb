@@ -1,0 +1,10 @@
+<cl-image public-id="butterfly" variables="[['$img', 'current'], ['$height', 'ih']]">
+  <cl-transformation if="w_lt_800">
+  </cl-transformation>
+  <cl-transformation effect="blur:800" underlay="%24img" width="800" height="$height" crop="scale">
+  </cl-transformation>
+  <cl-transformation effect="brightness:40" flags="layer_apply">
+  </cl-transformation>
+  <cl-transformation if="end">
+  </cl-transformation>
+</cl-image>

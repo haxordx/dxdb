@@ -1,0 +1,4 @@
+<cl-image public-id="docs/flower_shop.jpg" >
+  <cl-transformation gravity="auto:ocr_text_avoid" height="400" aspect-ratio="0.8" crop="fill">
+  </cl-transformation>
+</cl-image>

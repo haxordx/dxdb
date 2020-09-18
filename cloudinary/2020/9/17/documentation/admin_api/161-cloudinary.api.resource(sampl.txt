@@ -1,0 +1,5 @@
+cloudinary.api.resource("sample",
+  faces = True, 
+  colors = True, 
+  image_metadata = True,
+  versions = True)

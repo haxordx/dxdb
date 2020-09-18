@@ -1,0 +1,3 @@
+<cld-image publicId="woman.jpg" >
+  <cld-transformation quality="auto" />
+</cld-image>

@@ -1,0 +1,2 @@
+cloudinary.api.update_resources_access_mode_by_prefix("public", "to-publish", 
+  resource_type = "video")

@@ -1,0 +1,3 @@
+<Image publicId="BillClinton.jpg" type="twitter_name">
+
+</Image>

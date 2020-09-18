@@ -1,0 +1,1 @@
+$.cloudinary.image("remote_media/commons/2/29/Marcelo_Facini.jpg")

@@ -1,0 +1,3 @@
+<Image publicId="beach.jpg" >
+  <Transformation effect="viesus_correct" />
+</Image>

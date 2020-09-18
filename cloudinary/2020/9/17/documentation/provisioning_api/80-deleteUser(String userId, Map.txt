@@ -1,0 +1,1 @@
+deleteUser(String userId, Map options);

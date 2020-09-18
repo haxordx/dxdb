@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().effect("lightroom:xmp:authenticated:my_presets:warm_shadow_auth.xmp")).generate("park.jpg");

@@ -1,0 +1,4 @@
+<Image publicId="sample_document.docx.jpg" >
+  <Transformation width="300" page="4" effect="sepia" radius="50" border="2px_solid_rgb:999" crop="scale" />
+  <Transformation overlay="aspose_cloud_logo" width="0.9" flags="relative" opacity="70" gravity="south" y="20" />
+</Image>

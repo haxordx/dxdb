@@ -1,0 +1,1 @@
+https://res.cloudinary.com/demo/image/upload/c_imagga_scale,w_150,h_200/family_bench.jpg

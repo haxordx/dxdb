@@ -1,0 +1,4 @@
+<cl-video public-id="folder-permissions-tutorial" >
+  <cl-transformation overlay="subtitles:folder-permissions-tutorial.en-us.azure.transcript">
+  </cl-transformation>
+</cl-video>

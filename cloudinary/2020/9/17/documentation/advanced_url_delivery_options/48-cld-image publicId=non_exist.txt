@@ -1,0 +1,4 @@
+<cld-image publicId="non_existing_id.png" >
+  <cld-transformation width="200" angle="45" crop="scale" />
+  <cld-transformation defaultImage="avatar.png" />
+</cld-image>

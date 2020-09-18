@@ -1,0 +1,6 @@
+var uploadParams = new VideoUploadParams()
+{
+  File = new FileDescription(@"Paris.mp4"),
+  RawConvert = "azure_video_indexer:fr-FR"
+};
+var uploadResult = cloudinary.Upload(uploadParams);

@@ -1,0 +1,7 @@
+var textParams = new TextParams("Sample text string"){
+  PublicId = "sample_text_image",
+  FontFamily = "Roboto",
+  FontSize = 42,
+  FontColor = "red",
+  FontWeight= "bold"};
+var textResult = cloudinary.Text(textParams);

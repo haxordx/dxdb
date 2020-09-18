@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().effect("lightroom:whitebalance_tungsten")).signed(true).imageTag("city_pic.jpg");

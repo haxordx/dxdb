@@ -1,0 +1,4 @@
+<cld-video publicId="dog" >
+  <cld-transformation audioCodec="none" />
+  <cld-transformation overlay="video:electronic" effect="volume:-50" />
+</cld-video>

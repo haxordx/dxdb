@@ -1,0 +1,6 @@
+<Image publicId="park" >
+  <Transformation effect="lightroom:xmp:soft_mist.xmp" />
+  <Transformation radius="50" quality="auto" border="40px_solid_orange" />
+  <Transformation angle="5" />
+  <Transformation width="400" crop="scale" />
+</Image>

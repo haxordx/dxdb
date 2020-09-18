@@ -1,0 +1,7 @@
+let params = CLDUploadRequestParams()
+  .setResourceType(.video)
+  .setRawConvert("google_speech:fr-CA")
+var mySig = MyFunction(params)  // your own function that returns a signature generated on your backend
+params.setSignature(CLDSignature(signature: mySig.signature, timestamp: mySig.timestamp))
+let request = cloudinary.createUploader().signedUpload(
+  url: "abt_cloudinary_french.mp4", params: params)

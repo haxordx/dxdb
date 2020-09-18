@@ -1,0 +1,2 @@
+composer config repositories.cloudinary_php_v2 vcs https://github.com/cloudinary/cloudinary_php_v2.git
+composer require cloudinary/cloudinary_php:2.0.0-beta

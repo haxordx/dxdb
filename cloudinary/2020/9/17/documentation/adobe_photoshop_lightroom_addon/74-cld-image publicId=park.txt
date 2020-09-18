@@ -1,0 +1,6 @@
+<cld-image publicId="park" >
+  <cld-transformation effect="lightroom:xmp:soft_mist.xmp" />
+  <cld-transformation radius="50" quality="auto" border="40px_solid_orange" />
+  <cld-transformation angle="5" />
+  <cld-transformation width="400" crop="scale" />
+</cld-image>

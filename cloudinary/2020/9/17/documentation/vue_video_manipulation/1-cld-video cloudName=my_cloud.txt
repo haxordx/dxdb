@@ -1,0 +1,3 @@
+<cld-video cloudName="my_cloud" publicId="watchme">
+  <cld-transformation overlay="text:arial_60:watchme" gravity="north" y="20" />
+</cld-video>

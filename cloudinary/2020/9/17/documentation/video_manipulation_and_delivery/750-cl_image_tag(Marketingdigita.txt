@@ -1,0 +1,4 @@
+cl_image_tag("Marketing/digital-asset-management-with-cloudinary.gif", :resource_type=>"video", :transformation=>[
+  {:effect=>"preview:duration_8"},
+  {:width=>1600, :height=>800, :effect=>"loop", :crop=>"crop"}
+  ])

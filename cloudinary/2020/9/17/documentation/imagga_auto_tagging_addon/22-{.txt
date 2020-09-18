@@ -1,0 +1,19 @@
+{
+...
+"info": {
+    "categorization": {
+      "imagga_tagging": {
+        "status": "complete",
+        "data": [
+          {  "tag": "sea turtle",  "confidence": 1.0 },
+          {  "tag": "loggerhead",  "confidence": 1.0 },
+          {  "tag": "turtle",  "confidence": 0.8903 },
+          {  "tag": "crab",  "confidence": 0.3089  },
+          {  "tag": "king crab", "confidence": 0.2722 },
+          {  "tag": "crustacean", "confidence": 0.1587 },
+          {  "tag": "dungeness crab", "confidence": 0.1102 },
+          {  "tag": "sea", "confidence": 0.1049 },
+          {  "tag": "water", "confidence": 0.0986 },
+          {  "tag": "ocean", "confidence": 0.0849 },
+          {  "tag": "arthropod", "confidence": 0.0764 },
+          {  "tag": "fish", "confidence": 0.0755 }]}}}

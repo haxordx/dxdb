@@ -1,0 +1,7 @@
+private val myTransformation = transformation {
+  resize(scale {
+    width(150)
+    height(150)
+  })
+  effect(Effect.sepia())
+}

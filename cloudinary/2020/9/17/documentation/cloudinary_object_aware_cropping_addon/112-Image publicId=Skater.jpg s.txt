@@ -1,0 +1,3 @@
+<Image publicId="Skater.jpg" signUrl="true">
+  <Transformation width="400" aspectRatio="1" gravity="auto:skateboard" crop="thumb" />
+</Image>

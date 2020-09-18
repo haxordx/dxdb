@@ -1,0 +1,1 @@
+cloudinary.api.restore_metadata_field_datasource(external_id, external_ids, **options)

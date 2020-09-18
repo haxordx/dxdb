@@ -1,0 +1,1 @@
+cloudinary.v2.api.create_upload_preset(options, callback);

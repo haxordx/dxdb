@@ -1,0 +1,4 @@
+MediaManager.get().url().transformation(new Transformation()
+  .width(500).crop("scale").chain()
+  .overlay(new Layer().publicId("video:docs:bluescreen_watches")).effect("make_transparent:10").color("#3d8d48").width(1.0).flags("relative").chain()
+  .duration("15")).resourceType("video").generate("docs/sunset_waves.mp4");

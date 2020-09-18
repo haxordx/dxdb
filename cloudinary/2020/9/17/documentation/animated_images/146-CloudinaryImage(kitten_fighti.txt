@@ -1,0 +1,1 @@
+CloudinaryImage("kitten_fighting.gif").image(flags="lossy", quality=50)

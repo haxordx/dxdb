@@ -1,0 +1,3 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation()
+  .Height(375).Crop("scale").Chain()
+  .Underlay(new Layer().PublicId("docs:bg_beach")).Gravity("south").Width(800)).BuildImageTag("docs/rmv_bgd/woman.png")

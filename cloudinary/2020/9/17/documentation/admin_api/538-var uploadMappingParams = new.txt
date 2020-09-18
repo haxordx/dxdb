@@ -1,0 +1,4 @@
+var uploadMappingParams = new UploadMappingParams(){
+  Folder = "wiki",
+  Template = "https://u.wiki.com/images/";
+cloudinary.UploadMapping(uploadMappingParams);

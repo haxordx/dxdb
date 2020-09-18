@@ -1,0 +1,1 @@
+cloudinary.imageTag('https://cnn.com', {type: "url2png"}).toHtml();

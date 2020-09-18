@@ -1,0 +1,2 @@
+var cloudinary = require("cloudinary-core"); // If your code is for ES5
+import {Cloudinary} from “cloudinary-core”;    // If your code is for ES6 or higher

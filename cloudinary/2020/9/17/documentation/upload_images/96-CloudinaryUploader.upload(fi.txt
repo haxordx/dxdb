@@ -1,0 +1,3 @@
+Cloudinary::Uploader.upload(file, 
+  :resource_type => :video,
+  : <optional_parameters...>)

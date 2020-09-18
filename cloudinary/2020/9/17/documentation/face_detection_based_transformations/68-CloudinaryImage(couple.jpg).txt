@@ -1,0 +1,1 @@
+CloudinaryImage("couple.jpg").image()

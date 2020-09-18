@@ -1,0 +1,6 @@
+<cl-image public-id="couple.jpg" variables="[['$bcolor', '!red!']]">
+  <cl-transformation if="fc_gt_0">
+  </cl-transformation>
+  <cl-transformation border="5px_solid_$bcolor" height="120" width="120" crop="fill">
+  </cl-transformation>
+</cl-image>

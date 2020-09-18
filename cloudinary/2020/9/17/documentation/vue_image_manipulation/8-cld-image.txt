@@ -1,0 +1,7 @@
+<cld-image 
+  public-id="sample" 
+  loading="lazy">
+  <cld-placeholder 
+    type="vectorize">
+  </cld-placeholder>
+</cld-image>

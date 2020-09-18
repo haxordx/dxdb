@@ -1,0 +1,1 @@
+CloudinaryImage("https://en.wikipedia.org/wiki/jpg").image(gravity="north", height=200, width=150, crop="fill", sign_url=True, type="url2png")

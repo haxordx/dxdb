@@ -1,0 +1,3 @@
+<Image publicId="city_pic.jpg" >
+  <Transformation effect="lightroom:whitebalance_shade" />
+</Image>

@@ -1,0 +1,1 @@
+let result = cloudinary.createManagementApi().text(text, params: params)

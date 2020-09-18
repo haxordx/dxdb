@@ -1,0 +1,3 @@
+cloudinary.url().transformation(new Transformation()
+  .height(200).crop("scale").chain()
+  .effect("outline:15:200").color("orange")).imageTag("balloon.png");

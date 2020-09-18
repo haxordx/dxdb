@@ -1,0 +1,6 @@
+<cld-video publicId="dog" >
+  <cld-transformation angle="180" />
+  <cld-transformation width="300" height="200" crop="fill" />
+  <cld-transformation overlay="video:dog" flags="splice" width="300" height="200" startOffset="0" duration="5" crop="fill" />
+  <cld-transformation flags="layer_apply" />
+</cld-video>

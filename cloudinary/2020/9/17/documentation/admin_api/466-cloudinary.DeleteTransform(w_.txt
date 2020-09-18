@@ -1,0 +1,1 @@
+cloudinary.DeleteTransform("w_150,h_100,c_fill");

@@ -1,0 +1,4 @@
+<cl-image public-id="cloud_castle.jpg" >
+  <cl-transformation width="350" fetch-format="auto" crop="scale">
+  </cl-transformation>
+</cl-image>

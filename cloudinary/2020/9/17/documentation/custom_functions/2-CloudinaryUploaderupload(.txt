@@ -1,0 +1,5 @@
+\Cloudinary\Uploader::upload("my_example.wasm", 
+  array(
+    "use_filename" => TRUE,
+    "type" => "authenticated",
+    "resource_type" => "raw"));

@@ -1,0 +1,5 @@
+cloudinary.url().transformation(new Transformation()
+  .angle(180).chain()
+  .width(300).height(200).crop("fill").chain()
+  .overlay(new Layer().publicId("video:dog")).flags("splice").width(300).height(200).startOffset("0").duration("5").crop("fill").chain()
+  .flags("layer_apply")).videoTag("dog");

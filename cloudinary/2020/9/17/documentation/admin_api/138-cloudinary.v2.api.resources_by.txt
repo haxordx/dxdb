@@ -1,0 +1,2 @@
+cloudinary.v2.api.resources_by_moderation('webpurify', 'approved',
+  function(error, result) {console.log(result, error); });

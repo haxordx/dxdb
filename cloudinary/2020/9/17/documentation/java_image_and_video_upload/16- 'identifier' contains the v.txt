@@ -1,0 +1,11 @@
+// 'identifier' contains the value put in the hidden input field
+// which includes the signature returned from Cloudinary.
+StoredFile storedFile = new StoredFile();
+storedFile.setPreloadedFile(identifier);
+
+if (!storedFile.getComputedSignature(cloudinary).equals(storedFile.getSignature())) {
+throw new Exception("Invalid upload signature");
+} else {
+    // Successful result
+    ...
+}

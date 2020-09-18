@@ -1,0 +1,6 @@
+//...
+    events: {
+    //...
+      local_stream: function (stream) {
+        liveStream.attach(document.getElementById("video"), stream);
+      }

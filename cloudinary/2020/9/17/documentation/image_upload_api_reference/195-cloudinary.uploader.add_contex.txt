@@ -1,0 +1,1 @@
+cloudinary.uploader.add_context('alt=Animal|class=Mammalia', ['dog', 'lion'])

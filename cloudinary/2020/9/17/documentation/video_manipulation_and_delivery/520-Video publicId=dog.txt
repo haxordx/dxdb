@@ -1,0 +1,4 @@
+<Video publicId="dog" >
+  <Transformation width="300" crop="scale" />
+  <Transformation overlay="video:dog" width="100" gravity="north_east" radius="max" />
+</Video>

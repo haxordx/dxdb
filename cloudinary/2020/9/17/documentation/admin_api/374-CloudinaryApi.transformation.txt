@@ -1,0 +1,1 @@
+Cloudinary::Api.transformation(transformation, options = {})

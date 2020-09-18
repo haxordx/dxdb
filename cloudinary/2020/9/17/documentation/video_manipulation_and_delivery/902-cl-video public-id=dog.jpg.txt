@@ -1,0 +1,3 @@
+<cl-video public-id="dog.jpg" resource-type="video">
+
+</cl-video>

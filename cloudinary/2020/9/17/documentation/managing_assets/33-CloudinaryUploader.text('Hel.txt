@@ -1,0 +1,1 @@
+Cloudinary::Uploader.text('Hello World')

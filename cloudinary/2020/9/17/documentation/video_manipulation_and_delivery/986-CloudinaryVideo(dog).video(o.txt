@@ -1,0 +1,1 @@
+CloudinaryVideo("dog").video(overlay={'font_family': "arial", 'font_size': 60, 'text': "Cool%20Video"}, gravity="south", y=80, start_offset="2", end_offset="5")

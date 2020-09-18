@@ -1,0 +1,4 @@
+<cl-image public-id="redeye.jpg" >
+  <cl-transformation width="300" height="80" gravity="adv_eyes" crop="thumb">
+  </cl-transformation>
+</cl-image>

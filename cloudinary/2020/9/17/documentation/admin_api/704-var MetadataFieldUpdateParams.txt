@@ -1,0 +1,4 @@
+var MetadataFieldUpdateParams = new StringMetadataFieldUpdateParams(){
+  Label = "Now in stock",
+  Mandatory = true  };
+cloudinary.UpdateMetadataField("in_stock", MetadataFieldUpdateParams);

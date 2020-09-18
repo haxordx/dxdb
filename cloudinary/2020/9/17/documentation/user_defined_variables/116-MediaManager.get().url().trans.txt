@@ -1,0 +1,2 @@
+MediaManager.get().url().transformation(new Transformation()
+.variables(variable("$rating","!thumbs-up!")).chain().named("image_ratings")).generate("log_cabin.jpg");

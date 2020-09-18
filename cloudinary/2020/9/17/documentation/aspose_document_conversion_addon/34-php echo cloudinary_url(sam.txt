@@ -1,0 +1,1 @@
+<?php echo cloudinary_url("sample_document.docx.pdf" ); ?>

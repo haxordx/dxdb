@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation().setFlags("draco")).generate("DamagedHelmet3D.gltz")!, cloudinary: cloudinary)

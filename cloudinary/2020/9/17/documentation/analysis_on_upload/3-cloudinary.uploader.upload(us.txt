@@ -1,0 +1,2 @@
+cloudinary.uploader.upload("user_photo.jpg",
+  quality_analysis = 1)

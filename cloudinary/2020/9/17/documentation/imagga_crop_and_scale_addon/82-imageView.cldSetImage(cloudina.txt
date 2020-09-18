@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation().setHeight(240).setWidth(260).setCrop("imagga_scale")).generate("sample_van.jpg", signUrl: true)!, cloudinary: cloudinary)

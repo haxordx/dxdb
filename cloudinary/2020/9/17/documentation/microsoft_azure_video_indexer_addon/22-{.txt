@@ -1,0 +1,11 @@
+{ 
+  ...
+  "info": { 
+    "categorization": { 
+      "azure_video_indexer": { 
+        "status": "pending" 
+      }
+    }
+  },
+  ...
+}

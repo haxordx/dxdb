@@ -1,0 +1,2 @@
+cloudinary.image("sample.jpg",  { type: "authenticated",  auth_token: {key: "MyKey", duration: 300 },
+  sign_url: true })

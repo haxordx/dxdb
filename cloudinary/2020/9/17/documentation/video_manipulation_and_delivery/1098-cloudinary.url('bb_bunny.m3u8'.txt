@@ -1,0 +1,1 @@
+cloudinary.url('bb_bunny.m3u8', {streamingProfile: "hd"}, {resource_type: 'video'});

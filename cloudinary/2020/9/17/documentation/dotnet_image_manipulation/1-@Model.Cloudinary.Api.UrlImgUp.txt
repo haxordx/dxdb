@@ -1,0 +1,2 @@
+@Model.Cloudinary.Api.UrlImgUp.BuildImageTag("sample.jpg", 
+    new CloudinaryDotNet.StringDictionary("alt=Sample Image"));

@@ -1,0 +1,1 @@
+CloudinaryImage("docs/casual").image(width=500, height=500, crop=fill, version="1573726751", cloud_name="demo", secure="true", width=300, alt="Casual Jacket")

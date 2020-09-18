@@ -1,0 +1,3 @@
+<Image publicId="smartphone2.jpg" >
+  <Transformation effect="blur_region:800" gravity="ocr_text" />
+</Image>

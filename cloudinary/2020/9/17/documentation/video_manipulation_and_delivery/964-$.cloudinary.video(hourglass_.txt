@@ -1,0 +1,1 @@
+$.cloudinary.video("hourglass_timer", {overlay: new cloudinary.Layer().publicId("video:electronic")})

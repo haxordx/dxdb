@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setType( "facebook").generate("65646572251.jpg")!, cloudinary: cloudinary)

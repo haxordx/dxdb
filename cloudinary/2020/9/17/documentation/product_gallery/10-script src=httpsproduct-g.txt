@@ -1,0 +1,17 @@
+<script src="https://product-gallery.cloudinary.com/all.js" type="text/javascript">
+</script>  
+
+<div id="my-gallery2" style="max-width:80%;margin:auto">
+</div>
+
+<script type="text/javascript">  
+const myGallery2= cloudinary.galleryWidget({
+  container: "#my-gallery2",
+  cloudName: "demo",
+  mediaAssets: [
+    {publicId: "DamagedHelmet3D", mediaType: "3d"}
+  ]
+});
+
+myGallery2.render();
+</script>

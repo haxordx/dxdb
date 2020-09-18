@@ -1,0 +1,9 @@
+CloudinaryImage("sample.jpg").image(transformation=[
+  {'if': "w_lte_400"},
+  {'height': 220, 'width': 180, 'crop': "fill"},
+  {'effect': "red"},
+  {'if': "else"},
+  {'height': 190, 'width': 300, 'crop': "fill"},
+  {'effect': "oil_paint"},
+  {'if': "end"}
+  ])

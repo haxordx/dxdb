@@ -1,0 +1,8 @@
+<cl-image public-id="wood_chair.jpg" >
+  <cl-transformation width="200" height="200" effect="saturation:50" crop="pad">
+  </cl-transformation>
+  <cl-transformation effect="shadow">
+  </cl-transformation>
+  <cl-transformation border="1px_solid_rgb:666">
+  </cl-transformation>
+</cl-image>

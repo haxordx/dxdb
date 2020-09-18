@@ -1,0 +1,4 @@
+cloudinary.imageTag('sample.jpg', {
+  customFunction: new cloudinary.CustomFunction()
+    .functionType("wasm")
+    .source("my_example.wasm")}).toHtml();

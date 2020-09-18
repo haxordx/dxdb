@@ -1,0 +1,4 @@
+cloudinary.createUrl().resourceType("video")
+  .setTransformation(CLDTransformation()
+    .setHeight(360).setWidth(480).setQuality(70).setDuration(10).setCrop("pad"))
+  .generate("dog.mp4")

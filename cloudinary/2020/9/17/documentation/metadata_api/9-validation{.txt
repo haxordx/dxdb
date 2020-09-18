@@ -1,0 +1,13 @@
+"validation":{
+    "type":  "and"
+    "rules": [{ 
+        "type": "greater_than",
+        "value": 10,
+        "equals": true
+    },
+    { 
+        "type": "less_than",
+        "value": 50,
+        "equals": true
+    }]
+}

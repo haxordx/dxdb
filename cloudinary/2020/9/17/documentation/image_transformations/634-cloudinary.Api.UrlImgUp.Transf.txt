@@ -1,0 +1,1 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation().Width(150).Height(100).Radius("25:0").Crop("fill")).BuildImageTag("Pi.png")

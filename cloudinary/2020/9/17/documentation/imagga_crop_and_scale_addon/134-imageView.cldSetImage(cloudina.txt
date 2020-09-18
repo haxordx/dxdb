@@ -1,0 +1,3 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation()
+  .setWidth(400).setCrop("scale").chain()
+  .setHeight(150).setOverlay("family_bench.png").setRadius("max").setWidth(150).setCrop("imagga_scale")).generate("coast.jpg", signUrl: true)!, cloudinary: cloudinary)

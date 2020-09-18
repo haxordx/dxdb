@@ -1,0 +1,2 @@
+var multiParams = new MultiParams("topic"){Format = "pdf", Transformation = new Transformation().Width(800).Crop("lfill").Gravity("auto")};
+var multiResult = cloudinary.Multi(multiParams);

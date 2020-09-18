@@ -1,0 +1,3 @@
+<Video publicId="dog" >
+  <Transformation overlay="cloudinary_icon" startOffset="6.5" endOffset="10" opacity="50" effect="brightness:200" />
+</Video>

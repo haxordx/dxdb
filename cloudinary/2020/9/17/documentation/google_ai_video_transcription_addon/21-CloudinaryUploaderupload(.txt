@@ -1,0 +1,4 @@
+\Cloudinary\Uploader::upload("lincoln.mp4", 
+  array(
+    "resource_type" => "video", 
+    "raw_convert" => "google_speech:srt:vtt"));

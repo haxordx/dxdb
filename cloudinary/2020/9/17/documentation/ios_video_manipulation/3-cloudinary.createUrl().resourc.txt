@@ -1,0 +1,6 @@
+cloudinary.createUrl().resourceType("video")
+  .setTransformation(CLDTransformation()
+    .setWidth(0.4).setAngle(20).chain()
+    .setOverlay("cloudinary_icon")
+      .setOpacity(50).setWidth(60).setGravity("south_east").setY(15).setX(60))
+  .generate("dog.mp4")

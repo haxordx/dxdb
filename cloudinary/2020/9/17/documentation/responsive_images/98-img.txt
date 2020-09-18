@@ -1,0 +1,3 @@
+<img 
+    src="https://res.cloudinary.com/demo/image/upload/w_auto,g_auto,c_fill/sample.jpg"
+    sizes="100vw"  />

@@ -1,0 +1,3 @@
+<cld-image publicId="sample.jpg" >
+  <cld-transformation border="5px_solid_red" />
+</cld-image>

@@ -1,0 +1,3 @@
+<cld-image publicId="sample.jpg" >
+  <cld-transformation transformation={["fit_100x150"]} />
+</cld-image>

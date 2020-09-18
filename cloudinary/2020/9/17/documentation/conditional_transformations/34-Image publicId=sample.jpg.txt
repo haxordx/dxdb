@@ -1,0 +1,4 @@
+<Image publicId="sample.jpg" >
+  <Transformation if="ils_gt_0.5" width="120" height="150" crop="pad" />
+  <Transformation if="else" width="120" height="150" crop="fill" />
+</Image>

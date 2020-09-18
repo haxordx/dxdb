@@ -1,0 +1,4 @@
+{
+    "type": "and",
+    "rules": [ <validation_object>, <validation_object>, … ]
+}

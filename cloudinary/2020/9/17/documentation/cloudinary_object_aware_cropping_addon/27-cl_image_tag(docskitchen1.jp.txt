@@ -1,0 +1,1 @@
+cl_image_tag("docs/kitchen1.jpg", :gravity=>"sink", :aspect_ratio=>"1", :crop=>"crop")

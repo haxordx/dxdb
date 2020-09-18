@@ -1,0 +1,6 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation()
+  .Width(150).Height(150).Gravity("face").Crop("thumb").Chain()
+  .Radius(20).Chain()
+  .Effect("sepia").Chain()
+  .Overlay(new Layer().PublicId("cloudinary_icon")).Gravity("south_east").X(5).Y(5).Width(50).Opacity(60).Effect("brightness:200").Chain()
+  .Angle(10)).Secure(true).BuildImageTag("front_face.png")

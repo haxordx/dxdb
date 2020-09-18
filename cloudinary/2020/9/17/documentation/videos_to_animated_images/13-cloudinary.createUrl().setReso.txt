@@ -1,0 +1,1 @@
+cloudinary.createUrl().setResourceType("video").setTransformation(CLDTransformation().setVideoSampling("40").setDelay("200").setHeight(200).setEffect("loop").setCrop("scale")).generate("cld_rubix.gif")

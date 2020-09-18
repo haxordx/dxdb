@@ -1,0 +1,5 @@
+cloudinary.v2.api.update_upload_preset('wiki',
+  { unsigned: true,
+    tags: "remote", 
+    allowed_formats: "jpg,png"},
+  function(error, result){console.log(result);});

@@ -1,0 +1,4 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation()
+  .setGravity("face").setRadius(75).setBorder("10px_solid_grey").setCrop("crop").chain()
+  .setOverlay("young_couple").setWidth(150).setHeight(150).setRadius("max").setGravity("faces").setBorder("3px_solid_black").setCrop("thumb").chain()
+  .setFlags("layer_apply").setGravity("north_east")).generate("lady.jpg")!, cloudinary: cloudinary)

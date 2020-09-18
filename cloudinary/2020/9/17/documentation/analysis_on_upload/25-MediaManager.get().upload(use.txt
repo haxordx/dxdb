@@ -1,0 +1,2 @@
+MediaManager.get().upload("user_photo.jpg")
+  .option("moderation", "manual").dispatch();

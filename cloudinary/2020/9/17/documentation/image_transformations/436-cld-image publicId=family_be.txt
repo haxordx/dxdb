@@ -1,0 +1,3 @@
+<cld-image publicId="family_bench.jpg" >
+  <cld-transformation crop="imagga_crop" />
+</cld-image>

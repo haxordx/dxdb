@@ -1,0 +1,1 @@
+cl_video_tag("folder-permissions-tutorial", array("overlay"=>array("resource_type"=>"subtitles", "public_id"=>"folder-permissions-tutorial.en-us.azure.transcript")))

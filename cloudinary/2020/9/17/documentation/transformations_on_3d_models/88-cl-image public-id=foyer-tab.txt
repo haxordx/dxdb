@@ -1,0 +1,3 @@
+<cl-image public-id="foyer-table" format="gltf">
+
+</cl-image>

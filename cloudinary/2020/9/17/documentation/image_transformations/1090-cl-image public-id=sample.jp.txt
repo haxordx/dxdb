@@ -1,0 +1,4 @@
+<cl-image public-id="sample.jpg" >
+  <cl-transformation effect="improve:outdoor">
+  </cl-transformation>
+</cl-image>

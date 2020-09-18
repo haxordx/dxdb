@@ -1,0 +1,1 @@
+[{tag: "shirt"}]   // by default mediaType: "image"

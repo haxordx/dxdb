@@ -1,0 +1,2 @@
+MediaManager.get().upload("rolling_stones.jpg")
+  .option("detection", "aws_rek_face").dispatch();

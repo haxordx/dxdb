@@ -1,0 +1,3 @@
+<Image publicId="kitten_fighting.gif" >
+  <Transformation delay="200" />
+</Image>

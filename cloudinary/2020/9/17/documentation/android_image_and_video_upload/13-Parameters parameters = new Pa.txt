@@ -1,0 +1,13 @@
+Parameters parameters = new Parameters();
+parameters.setFrameRate(30);
+parameters.setWidth(1280);
+parameters.setHeight(720);
+parameters.setKeyFramesInterval(3);
+parameters.setTargetAudioBitrateKbps(128);
+parameters.setTargetVideoBitrateKbps((int) (3 * 1024 * 1024));
+
+MediaManager.get().upload(videoFile)
+    .unsigned("sample_video_preset")
+    .preprocess(new VideoPreprocessChain()
+    .addStep(new Transcode(parameters)))
+  .dispatch(context);

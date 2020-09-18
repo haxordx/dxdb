@@ -1,0 +1,1 @@
+cl_image_tag("woman.jpg", array("overlay"=>array("public_id"=>"%24style", "text"=>"%20%20%24%28award%29%20%20Place%20"), "gravity"=>"south", "y"=>10, "background"=>"gray", "radius"=>10, "opacity"=>75, "color"=>"$color", "variables"=>array("$award"=>"!First!", "$color"=>"!rgb:FFFFFF!", "$style"=>"!Arial_45!")))

@@ -1,0 +1,4 @@
+<cl-image public-id="sample.jpg" >
+  <cl-transformation effect="saturation:50">
+  </cl-transformation>
+</cl-image>

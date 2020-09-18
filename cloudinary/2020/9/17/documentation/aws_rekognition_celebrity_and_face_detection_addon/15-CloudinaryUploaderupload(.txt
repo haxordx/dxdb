@@ -1,0 +1,2 @@
+\Cloudinary\Uploader::upload("rolling_stones.jpg", 
+  array("detection" => "aws_rek_face"));

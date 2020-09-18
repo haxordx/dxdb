@@ -1,0 +1,6 @@
+cloudinary.videoTag('dog', {transformation: [
+  {angle: 180},
+  {width: 300, height: 200, crop: "fill"},
+  {overlay: new cloudinary.Layer().publicId("video:dog"), flags: "splice", width: 300, height: 200, startOffset: "0", duration: "5", crop: "fill"},
+  {flags: "layer_apply"}
+  ]}).toHtml();

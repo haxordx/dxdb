@@ -1,0 +1,4 @@
+cloudinary.imageTag('cloudinary_team.jpg', {transformation: [
+  {width: 700, radius: "max", crop: "scale"},
+  {flags: "region_relative", gravity: "adv_eyes", overlay: new cloudinary.Layer().publicId("harlequinmask"), width: "1.7"}
+  ]}).toHtml();

@@ -1,0 +1,38 @@
+{
+  "image1": 
+  {
+    "asset_id": "9ec64ab330767f4c1e939e2b4fcbaeac",
+    "public_id": "image1", 
+    "version": 1574260348, 
+    "version_id": "8a7d06c83656a2a2d1d559f2ea5661f7",
+    "signature": "b7f24977706edff33686e053e5a57a1684ff260b", 
+    "width": 5472, 
+    "height": 3648, 
+    "format": "jpg", 
+    "resource_type": "image", 
+    "created_at": "2019-11-20T14:32:28Z", 
+    "tags": [], 
+    "bytes": 3477251, 
+    "type": "upload", 
+    "placeholder": false,
+    "access_mode": "public"
+  }
+  "image2": 
+  {
+    "asset_id": "835d1cf89bd7c1b84dc4f53d35bc235f",
+    "public_id": "image2", 
+    "version": 1574261348, 
+    "version_id": "80541d2d17a4485b84a7d264b3e778d0",
+    "signature": "1aa2b977b02adffa268ae05a22aa57a1682fa202", 
+    "width": 5234, 
+    "height": 3234, 
+    "format": "jpg", 
+    "resource_type": "image", 
+    "created_at": "2019-10-20T12:34:18Z", 
+    "tags": [], 
+    "bytes": 2427151, 
+    "type": "upload", 
+    "placeholder": false,
+    "access_mode": "public"
+  }
+}

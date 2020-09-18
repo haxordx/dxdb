@@ -1,0 +1,1 @@
+cloudinary.videoTag('dog', {startOffset: "6.5", endOffset: "10"}).toHtml();

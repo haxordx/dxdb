@@ -1,0 +1,4 @@
+cloudinary.api().update("sample", 
+  ObjectUtils.asMap(
+    "categorization", "imagga_tagging", 
+    "auto_tagging", 0.5));

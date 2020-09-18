@@ -1,0 +1,3 @@
+cloudinary.url().transformation(new Transformation()
+  .page("name:record_cover;Shadow").chain()
+  .width(300).crop("scale")).imageTag("Cld_Sample_PSD.jpg");

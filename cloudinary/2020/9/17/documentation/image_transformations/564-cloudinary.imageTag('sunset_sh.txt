@@ -1,0 +1,1 @@
+cloudinary.imageTag('sunset_shoes.jpg', {width: 150, height: 150, gravity: "auto:0", crop: "thumb"}).toHtml();

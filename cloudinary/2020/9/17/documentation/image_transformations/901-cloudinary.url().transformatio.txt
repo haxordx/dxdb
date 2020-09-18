@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().effect("assist_colorblind:xray")).imageTag("docs/colorblind_green_red.jpg");

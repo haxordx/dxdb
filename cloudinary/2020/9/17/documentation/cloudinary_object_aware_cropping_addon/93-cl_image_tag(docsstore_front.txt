@@ -1,0 +1,1 @@
+cl_image_tag("docs/store_front.jpg", array("width"=>500, "aspect_ratio"=>"1.0", "gravity"=>"auto:person_avoid", "crop"=>"fill"))

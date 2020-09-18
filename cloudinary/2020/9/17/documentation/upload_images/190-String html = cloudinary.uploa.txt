@@ -1,0 +1,2 @@
+String html = cloudinary.uploader().imageUploadTag(
+  "image_id", ObjectUtils.asMap("return_delete_token", true));

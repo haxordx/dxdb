@@ -1,0 +1,2 @@
+\Cloudinary\Api::update("coupled", 
+  array("detection" => "adv_face"));

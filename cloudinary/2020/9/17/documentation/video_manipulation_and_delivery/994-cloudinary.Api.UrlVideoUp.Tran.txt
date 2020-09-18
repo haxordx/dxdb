@@ -1,0 +1,1 @@
+cloudinary.Api.UrlVideoUp.Transform(new Transformation().Overlay(new TextLayer().FontFamily("arial").FontSize(60).Text("Cool%20Video")).Gravity("south").Y(80).StartOffset("2").EndOffset("5")).BuildVideoTag("dog")

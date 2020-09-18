@@ -1,0 +1,4 @@
+<cl-video public-id="dog" >
+  <cl-transformation quality="50">
+  </cl-transformation>
+</cl-video>

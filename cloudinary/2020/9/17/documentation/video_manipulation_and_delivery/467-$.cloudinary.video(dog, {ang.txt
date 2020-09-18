@@ -1,0 +1,1 @@
+$.cloudinary.video("dog", {angle: 20})

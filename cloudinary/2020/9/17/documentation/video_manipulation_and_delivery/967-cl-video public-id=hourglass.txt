@@ -1,0 +1,4 @@
+<cl-video public-id="hourglass_timer" >
+  <cl-transformation overlay="video:electronic">
+  </cl-transformation>
+</cl-video>

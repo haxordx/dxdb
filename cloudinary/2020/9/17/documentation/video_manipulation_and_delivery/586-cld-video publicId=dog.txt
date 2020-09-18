@@ -1,0 +1,3 @@
+<cld-video publicId="dog" >
+  <cld-transformation videoCodec="auto" />
+</cld-video>

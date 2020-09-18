@@ -1,0 +1,1 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation().Width(500).Border("5px_solid_black").Crop("scale")).Action("youtube").BuildImageTag("o-urnlaJpOA.jpg")

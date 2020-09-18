@@ -1,0 +1,1 @@
+cloudinary.image("65646572251.jpg", {width: 80, height: 120, gravity: "face", crop: "fill", type: "facebook"})

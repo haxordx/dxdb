@@ -1,0 +1,12 @@
+{
+    "mappings": [
+      {
+        "folder": "wiki", 
+        "template": "https://u.wiki.example.com/wiki-images/"
+      },
+      {
+        "folder": "exam", 
+        "template": "https://images.example.com/product_assets/images/"
+      }, 
+    ]
+}

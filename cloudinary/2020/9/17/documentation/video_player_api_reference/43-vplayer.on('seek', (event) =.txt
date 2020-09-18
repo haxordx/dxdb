@@ -1,0 +1,3 @@
+vplayer.on('seek', (event) => {
+    console.log("Start: " + event.eventData.seekStart + " End: " + event.eventData.seekEnd) 
+})

@@ -1,0 +1,3 @@
+<cld-video publicId="dog" >
+  <cld-transformation effect="deshake:32" />
+</cld-video>

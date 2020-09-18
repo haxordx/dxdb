@@ -1,0 +1,3 @@
+<Image publicId="park.jpg" >
+  <Transformation effect="lightroom:xmp:authenticated:my_presets:warm_shadow_auth.xmp" />
+</Image>

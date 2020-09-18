@@ -1,0 +1,6 @@
+<cld-image publicId="flower.jpg" secure="true">
+  <cld-transformation height="100" width="150" x="380" y="250" crop="crop" />
+  <cld-transformation height="100" width="130" crop="fill" />
+  <cld-transformation angle="20" />
+  <cld-transformation width="0.8" crop="scale" />
+</cld-image>

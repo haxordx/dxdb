@@ -1,0 +1,1 @@
+curl https://api.cloudinary.com/v1_1/demo/image/context -X POST --data 'context=alt%3DAnimal%7Cclass%3DMammalia&public_ids[]=dog&public_ids[]=lion&command=add&timestamp=173719931&api_key=436464676&signature=a788d68f86a6f868af'

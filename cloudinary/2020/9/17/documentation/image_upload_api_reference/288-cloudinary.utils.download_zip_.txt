@@ -1,0 +1,3 @@
+cloudinary.utils.download_zip_url(
+  public_ids = ['dog','cat','lion'], 
+  resource_type = 'image')

@@ -1,0 +1,3 @@
+cld admin create_transformation circle_face "c_thumb,w_250,h_250,g_face,r_max,q_auto"
+
+cld admin create_upload_preset name=circle_face_on_upload transformation=circle_face

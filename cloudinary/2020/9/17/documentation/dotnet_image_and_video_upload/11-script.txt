@@ -1,0 +1,3 @@
+<script>
+    $.cloudinary.config("cloud_name", "your_cloud_name");
+</script>

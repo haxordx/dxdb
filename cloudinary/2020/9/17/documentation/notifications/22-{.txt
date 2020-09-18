@@ -1,0 +1,11 @@
+{
+  "notification_type": "delete",
+  "resources": [
+    {
+      "resource_type": "image",
+      "type": "fetch",
+      "public_id": "https://res.cloudinary.com/lamedscloud/image/upload/faces/flatmates_test.jpg",
+      "version": 1547517350
+    }
+  ]
+}

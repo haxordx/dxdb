@@ -1,0 +1,1 @@
+$.cloudinary.image("non_existing_id.png", {default_image: "avatar.png"})

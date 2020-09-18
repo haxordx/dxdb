@@ -1,0 +1,11 @@
+{ 
+  ...
+  "info": { 
+    "categorization": { 
+      "google_video_tagging": { 
+        "status": "pending" 
+      }
+    }
+  },
+  ...
+}

@@ -1,0 +1,1 @@
+cld uploader text "Sample text string" public_id="sample_text_image" font_family="Roboto" font_size=42 font_color="red" font_weight="bold"

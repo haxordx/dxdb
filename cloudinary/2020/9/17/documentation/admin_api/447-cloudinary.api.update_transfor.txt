@@ -1,0 +1,2 @@
+cloudinary.api.update_transformation("my_named",
+  dict(crop = "scale", width = 103))

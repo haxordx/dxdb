@@ -1,0 +1,8 @@
+<cl-video public-id="docs/sunset_waves" >
+  <cl-transformation width="500" crop="scale">
+  </cl-transformation>
+  <cl-transformation overlay="video:docs:bluescreen_watches" effect="make_transparent:10" color="#3d8d48" width="1.0" flags="relative">
+  </cl-transformation>
+  <cl-transformation duration="15">
+  </cl-transformation>
+</cl-video>

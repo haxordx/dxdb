@@ -1,0 +1,6 @@
+cl_image_tag("small_dinosaur.jpg", array("transformation"=>array(
+  array("if"=>"w_lt_600"),
+  array("overlay"=>array("font_family"=>"Arial", "font_size"=>20, "text"=>"Image%20shown%20in%20full%20scale"), "color"=>"white", "gravity"=>"south_east"),
+  array("effect"=>"blur:400", "underlay"=>"small_dinosaur", "width"=>600, "crop"=>"scale"),
+  array("if"=>"end")
+  )))

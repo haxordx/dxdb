@@ -1,0 +1,6 @@
+\Cloudinary\Uploader::upload("couple.jpg", 
+  array( 
+    "colors" => TRUE,
+    "phash" => TRUE,
+    "image_metadata" => TRUE
+    "quality_analysis" => TRUE));

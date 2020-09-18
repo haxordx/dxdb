@@ -1,0 +1,3 @@
+<cld-image publicId="multi_page_pdf.jpg" >
+  <cld-transformation density="20" />
+</cld-image>

@@ -1,0 +1,16 @@
+let myRef = React.createRef();
+
+// and then in render()
+<Video
+  innerRef={myRef}
+  publicId='sample'
+/>
+
+// to control the video element
+
+someFunction(){
+  const video = myRef.current; //get the video element
+  video.play();
+  video.pause();
+  console.log(video.src);
+}

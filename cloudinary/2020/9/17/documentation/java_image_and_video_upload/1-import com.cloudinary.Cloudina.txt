@@ -1,0 +1,3 @@
+import com.cloudinary.Cloudinary;
+Cloudinary cloudinary = new Cloudinary();
+cloudinary.upload(fileRef, ObjectUtils.emptyMap());

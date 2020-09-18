@@ -1,0 +1,4 @@
+<Image publicId="bike.jpg" useRootPath="true" clientHints="true">
+  <Transformation aspectRatio="16:9" crop="fill" />
+  <Transformation width="auto:breakpoints:json" crop="scale" />
+</Image>

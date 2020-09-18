@@ -1,0 +1,1 @@
+cloudinary.uploader.rename('old_name', 'new_name')

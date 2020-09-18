@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().effect("blur_region:800").gravity("ocr_text")).signed(true).generate("smartphone2.jpg");

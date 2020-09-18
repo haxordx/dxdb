@@ -1,0 +1,1 @@
+cloudinary.Api.UrlVideoUp.Transform(new Transformation().Height(250).Width(400).Flags("waveform").StartOffset("2").EndOffset("4").Color("blue").Background("transparent")).BuildImageTag("dog.png")

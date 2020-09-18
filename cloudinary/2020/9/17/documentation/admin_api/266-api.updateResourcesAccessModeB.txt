@@ -1,0 +1,2 @@
+api.updateResourcesAccessModeByPrefix("public", "to-publish", 
+  ObjectUtils.asMap("resource_type", "video"));

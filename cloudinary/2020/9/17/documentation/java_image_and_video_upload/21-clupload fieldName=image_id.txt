@@ -1,0 +1,2 @@
+<cl:upload fieldName="image_id" callback="${customCorsLocation}" tags="directly_uploaded"
+    transformation="c_limit,w_1000,h_1000" eager="c_fill,w_150,h_150" resourceType="auto"/>

@@ -1,0 +1,3 @@
+cloudinary.v2.uploader.upload("guitarist.jpg", 
+  {categorization: "aws_rek_tagging"},
+  function(error, result){console.log(result);});

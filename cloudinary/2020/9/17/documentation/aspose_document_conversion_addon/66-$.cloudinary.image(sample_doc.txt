@@ -1,0 +1,4 @@
+$.cloudinary.image("sample_document.docx.jpg", {transformation: [
+  {width: 300, page: 4, effect: "sepia", radius: 50, border: "2px_solid_rgb:999", crop: "scale"},
+  {overlay: new cloudinary.Layer().publicId("aspose_cloud_logo"), width: "0.9", flags: "relative", opacity: 70, gravity: "south", y: 20}
+  ]})

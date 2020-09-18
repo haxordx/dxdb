@@ -1,0 +1,3 @@
+let request = cloudinary.createUploader().signedUpload(url: fileUrl, params:params);
+  ...
+request.cancel();

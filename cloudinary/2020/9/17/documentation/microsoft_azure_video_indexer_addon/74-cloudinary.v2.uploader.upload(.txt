@@ -1,0 +1,4 @@
+cloudinary.v2.uploader.upload("folder-permissions-tutorial.mp4",
+  { resource_type: "video", 
+    raw_convert: "azure_video_indexer:srt:vtt" }),
+  function(error, result) {console.log(result, error) });

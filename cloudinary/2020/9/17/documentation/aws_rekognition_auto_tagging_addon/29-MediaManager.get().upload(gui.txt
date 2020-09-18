@@ -1,0 +1,3 @@
+MediaManager.get().upload("guitarist.jpg")
+  .option("categorization", "aws_rek_tagging")
+  .option("auto_tagging", "0.7").dispatch();

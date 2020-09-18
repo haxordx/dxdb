@@ -1,0 +1,1 @@
+CloudinaryImage("foyer-table").image(format="gltf")

@@ -1,0 +1,9 @@
+<cld-image publicId="sample.jpg" >
+  <cld-transformation if="w_lte_400" />
+  <cld-transformation height="220" width="180" crop="fill" />
+  <cld-transformation effect="red" />
+  <cld-transformation if="else" />
+  <cld-transformation height="190" width="300" crop="fill" />
+  <cld-transformation effect="oil_paint" />
+  <cld-transformation if="end" />
+</cld-image>

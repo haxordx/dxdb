@@ -1,0 +1,4 @@
+var uploadParams = new ImageUploadParams(){
+  File = new FileDescription(@"user_photo.jpg"),
+  Moderation = "manual"};
+var uploadResult = cloudinary.Upload(uploadParams);

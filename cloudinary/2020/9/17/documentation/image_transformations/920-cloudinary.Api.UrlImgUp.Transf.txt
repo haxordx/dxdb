@@ -1,0 +1,1 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation().Effect("replace_color:maroon:80:2b38aa")).BuildImageTag("blue_burlap.png")

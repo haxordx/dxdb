@@ -1,0 +1,3 @@
+myGallery.on('thumbclick', (data) => {
+  console.log('ThumbClick', data);
+});

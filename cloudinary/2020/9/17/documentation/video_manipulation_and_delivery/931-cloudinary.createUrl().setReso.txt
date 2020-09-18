@@ -1,0 +1,1 @@
+cloudinary.createUrl().setResourceType("video").setTransformation(CLDTransformation().setStartOffset("4").setWidth(350).setHeight(350).setRadius(20).setEffect("grayscale").setBorder("5px_solid_black").setCrop("crop")).generate("dog.jpg")

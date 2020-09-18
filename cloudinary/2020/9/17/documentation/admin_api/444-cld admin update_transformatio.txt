@@ -1,0 +1,1 @@
+cld admin update_transformation '{"width": 150, "height": 100, "crop": "fill"}' allowed_for_strict=true

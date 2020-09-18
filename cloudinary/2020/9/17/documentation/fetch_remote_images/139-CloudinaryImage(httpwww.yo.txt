@@ -1,0 +1,1 @@
+CloudinaryImage("http://www.youtube.com/watch?v=aNwnPElsJGE").image(type="youtube")

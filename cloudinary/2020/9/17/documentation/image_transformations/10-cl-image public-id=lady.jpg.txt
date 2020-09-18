@@ -1,0 +1,6 @@
+<cl-image public-id="lady.jpg" >
+  <cl-transformation width="400" height="400" gravity="face" radius="max" crop="crop">
+  </cl-transformation>
+  <cl-transformation width="200" crop="scale">
+  </cl-transformation>
+</cl-image>

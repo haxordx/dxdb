@@ -1,0 +1,4 @@
+<cl-image public-id="sample.jpg" >
+  <cl-transformation color="#009900" effect="shadow:50" x="10" y="10">
+  </cl-transformation>
+</cl-image>

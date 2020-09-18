@@ -1,0 +1,3 @@
+Cloudinary::Api.resources(
+  :type => :upload,
+  :max_results => 30)

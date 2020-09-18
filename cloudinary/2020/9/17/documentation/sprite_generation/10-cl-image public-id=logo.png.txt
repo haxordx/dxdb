@@ -1,0 +1,3 @@
+<cl-image public-id="logo.png" type="sprite">
+
+</cl-image>

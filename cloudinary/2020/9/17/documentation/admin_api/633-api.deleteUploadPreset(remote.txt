@@ -1,0 +1,2 @@
+api.deleteUploadPreset("remote_media",
+  ObjectUtils.emptyMap());

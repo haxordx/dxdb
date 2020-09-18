@@ -1,0 +1,1 @@
+result = cloudinary.uploader.remove_all_tags(public_ids, **options)

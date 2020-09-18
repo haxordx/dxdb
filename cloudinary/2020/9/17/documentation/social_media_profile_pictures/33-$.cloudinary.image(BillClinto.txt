@@ -1,0 +1,1 @@
+$.cloudinary.image("BillClinton.jpg", {type: "twitter_name"})

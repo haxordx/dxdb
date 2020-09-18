@@ -1,0 +1,1 @@
+CloudinaryImage("cloudinary_icon.jpg").image(height=150, flags="ignore_aspect_ratio", crop="scale")

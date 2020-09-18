@@ -1,0 +1,8 @@
+String requestId = MediaManager.get().upload(imageFile)
+   .unsigned("sample_app_preset")
+   .policy(new UploadPolicy.Builder()
+      .maxRetries(7)
+      .backoffCriteria(300000, UploadPolicy.BackoffPolicy.LINEAR)
+      .networkPolicy(UploadPolicy.NetworkType.UNMETERED)
+      .build())
+   .dispatch();

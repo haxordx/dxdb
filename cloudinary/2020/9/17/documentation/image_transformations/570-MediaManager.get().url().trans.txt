@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().width(150).height(150).gravity("auto:0").crop("thumb")).generate("sunset_shoes.jpg");

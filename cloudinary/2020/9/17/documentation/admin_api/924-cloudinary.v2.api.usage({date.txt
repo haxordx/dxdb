@@ -1,0 +1,2 @@
+cloudinary.v2.api.usage({date: '10-11-2019'}, 
+  function(error, result){console.log(result);});

@@ -1,0 +1,1 @@
+cloudinary.api.delete_datasource_entries(external_id, external_ids, **options)

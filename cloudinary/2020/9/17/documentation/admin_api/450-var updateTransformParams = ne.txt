@@ -1,0 +1,4 @@
+var updateTransformParams = new UpdateTransformParams(){
+  Transformation = "my_named",
+  UnsafeTransform = new Transformation().Crop("scale").Width(103)};
+cloudinary.UpdateTransform(updateTransformParams);

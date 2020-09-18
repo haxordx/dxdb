@@ -1,0 +1,4 @@
+cloudinary.url().transformation(new Transformation()
+    .overlay("video:ski_jump").flags("splice").effect("reverse").chain()
+    .overlay("video:ski_jump").flags("splice").effect("accelerate:-50").chain()
+    .effect("brightness:10").radius("max")).videoTag("ski_jump", asMap("controls", true));

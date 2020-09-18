@@ -1,0 +1,1 @@
+[{tag: "my-360-tag", mediaType: "spin"}]

@@ -1,0 +1,4 @@
+<cl-video public-id="dog" >
+  <cl-transformation overlay="video:kitten_fighting" effect="fade:3000" width="100">
+  </cl-transformation>
+</cl-video>

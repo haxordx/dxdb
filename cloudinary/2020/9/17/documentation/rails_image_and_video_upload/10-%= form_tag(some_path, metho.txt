@@ -1,0 +1,4 @@
+<%= form_tag(some_path, :method => :post) do  %>
+  <%= cl_image_upload_tag(:image_id) %>
+  ...
+<% end %>

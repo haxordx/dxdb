@@ -1,0 +1,1 @@
+cloudinary.imageTag('family_bench.jpg').toHtml();

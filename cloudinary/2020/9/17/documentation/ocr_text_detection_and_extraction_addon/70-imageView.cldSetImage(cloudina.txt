@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation().setGravity("ocr_text").setHeight(250).setWidth(250).setCrop("fill")).generate("snacktime.jpg")!, cloudinary: cloudinary)

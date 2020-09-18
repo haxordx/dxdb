@@ -1,0 +1,13 @@
+{
+  "cloud_name": "product3",
+  "name": "Product3 Application",
+  "enabled": true,
+  "id": "555asdf0000zxcvb3456qwerty",
+  "api_access_keys": [
+    {
+      "key": "135792468054321",
+      "secret": "w4aTi5Y0u6k3YN0773lL1nGyUt0Da8"
+    }
+  ],
+  "created_at": "2016-09-27T11:15:35Z"
+}

@@ -1,0 +1,4 @@
+let tr = CLDTransformation().setWidth(100).setCrop(.fit).chain().setAngle(15)
+let url = cloudinary.createUrl().setTransformation(tr).generate("sample.jpg")
+
+// returns: https://res.cloudinary.com/demo/image/upload/c_fit,w_10/a_15/sample.jpg

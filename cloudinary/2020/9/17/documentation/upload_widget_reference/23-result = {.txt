@@ -1,0 +1,7 @@
+result = {
+    event: "show-completed",
+    info: {
+      items: [{id, name, size, type, status, done, progress, file: {}, uploadInfo: {} 
+           // uploadInfo is the information returned from the upload response
+    }, {...}] 
+}};

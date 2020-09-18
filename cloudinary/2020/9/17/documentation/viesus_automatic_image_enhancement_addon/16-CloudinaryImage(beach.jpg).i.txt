@@ -1,0 +1,1 @@
+CloudinaryImage("beach.jpg").image(effect="viesus_correct")

@@ -1,0 +1,1 @@
+implementation 'com.cloudinary:kotlin-url-gen:0.0.1-beta.1''

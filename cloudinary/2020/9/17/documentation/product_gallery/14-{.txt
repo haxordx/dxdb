@@ -1,0 +1,6 @@
+{
+  background: "#FFFFFF", // only relevant for pad crop mode
+  crop: "pad",           // only fill or pad mode is supported
+  dpr:  1 or 2,          // automatically determined according to the requesting device
+  duration: 30
+}

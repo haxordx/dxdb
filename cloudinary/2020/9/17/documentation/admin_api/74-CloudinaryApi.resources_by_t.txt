@@ -1,0 +1,1 @@
+Cloudinary::Api.resources_by_tag(tag, options = {})

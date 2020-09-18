@@ -1,0 +1,3 @@
+CloudinaryModule.forRoot(Cloudinary, 
+    {cloud_name: 'mycompany', upload_preset: 'mypreset', private_cdn: true, 
+     cname: 'mycompany.images.com'}),

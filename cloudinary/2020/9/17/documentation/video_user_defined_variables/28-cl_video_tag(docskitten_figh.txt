@@ -1,0 +1,5 @@
+cl_video_tag("docs/kitten_fighting2", array("variables"=>array("$qualtag"=>"!Pro!"), "transformation"=>array(
+  array("if"=>"$qualtag_in_tags", "quality"=>80),
+  array("if"=>"else", "quality"=>30),
+  array("width"=>500, "crop"=>"scale")
+  )))

@@ -1,0 +1,3 @@
+cloudinary.openUploadWidget({
+  cloudName: "demo", uploadPreset: "preset1",
+  sources: [ 'local', 'url', 'shutterstock']}, (error, result) => { });

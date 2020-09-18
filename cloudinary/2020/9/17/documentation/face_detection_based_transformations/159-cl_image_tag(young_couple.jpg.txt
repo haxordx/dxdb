@@ -1,0 +1,1 @@
+cl_image_tag("young_couple.jpg", array("effect"=>"pixelate_faces:9"))

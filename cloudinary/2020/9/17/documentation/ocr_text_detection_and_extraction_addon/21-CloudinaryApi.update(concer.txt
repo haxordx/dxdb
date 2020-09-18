@@ -1,0 +1,2 @@
+Cloudinary::Api.update("concert_ticket", 
+  :ocr => "adv_ocr")

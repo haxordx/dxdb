@@ -1,0 +1,5 @@
+var updateParams = new UpdateParams("hwepb67oxzh4lrigssld")
+{
+  ModerationStatus = "rejected"
+};
+var updateResult = cloudinary.Update(updateParams);

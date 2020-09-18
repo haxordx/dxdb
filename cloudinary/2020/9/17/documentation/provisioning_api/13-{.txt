@@ -1,0 +1,30 @@
+{
+  "sub_accounts": [
+    {
+      "cloud_name": "product2",
+      "name": "Product2 Application",
+      "enabled": true,
+      "id": "0aaaaa1bbbbb2ccccc3ddddd4eeeee5f",
+      "api_access_keys": [
+        {
+          "key": "543210987654321",
+          "secret": "T415i5mYs3cr3TkeYN0tR3a77y0o0"
+        }
+      ],
+      "created_at": "2016-03-15T11:44:48Z"
+    },
+    {
+    "cloud_name": "product1",
+    "name": "Product1 Application",
+    "enabled": true,
+    "id": "abcde1fghij2klmno3pqrst4uvwxy5z",
+    "api_access_keys": [
+      {
+        "key": "123456789012345",
+        "secret": "asdf1JKL2xyz3ABc4s3c5reT01DfaKe"
+      }
+      ],
+      "created_at": "2016-09-27T08:00:16Z"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+var checkParams = new SortedDictionary<string, object>();
+checkParams.Add("public_id", "sample");
+checkParams.Add("version", "1312461204");
+string expectedSign = cloudinary.Api.SignParameters(checkParams);

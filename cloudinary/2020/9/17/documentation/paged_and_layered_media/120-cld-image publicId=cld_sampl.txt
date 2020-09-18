@@ -1,0 +1,3 @@
+<cld-image publicId="cld_sample_smart_PSD.jpg" >
+  <cld-transformation page="embedded:name:skyline-3242040_1920.jpg" />
+</cld-image>

@@ -1,0 +1,1 @@
+cloudinary.provisioning.account.create_user("John", "john@example.com", "technical_admin")

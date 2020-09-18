@@ -1,0 +1,5 @@
+\Cloudinary\Uploader::upload("dog_couch.jpg", 
+  array(
+    "public_id" => "dog_couch",
+    "background_removal" => "cloudinary_ai",
+    "notification_url" => "https://mysite.example.com/hooks"));

@@ -1,0 +1,2 @@
+$api->resource("rwkaliebnufp3bxyrvyo.txt",
+  array("resource_type" => "raw"));

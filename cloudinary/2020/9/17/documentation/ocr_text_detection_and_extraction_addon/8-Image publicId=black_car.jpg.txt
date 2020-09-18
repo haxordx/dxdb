@@ -1,0 +1,4 @@
+<Image publicId="black_car.jpg" >
+  <Transformation width="1520" height="1440" gravity="west" x="50" crop="crop" />
+  <Transformation effect="pixelate_region:15" gravity="ocr_text" />
+</Image>

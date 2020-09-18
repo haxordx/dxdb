@@ -1,0 +1,3 @@
+<cld-image publicId="blue_burlap.png" >
+  <cld-transformation effect="replace_color:maroon:80:2b38aa" />
+</cld-image>

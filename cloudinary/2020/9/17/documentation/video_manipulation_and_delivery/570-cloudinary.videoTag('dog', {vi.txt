@@ -1,0 +1,1 @@
+cloudinary.videoTag('dog', {videoCodec: "h264:baseline:3.1"}).toHtml();

@@ -1,0 +1,3 @@
+     var player = cld.videoPlayer('demo-player', {
+     transformation: {crop: 'limit', width: 200}
+   })

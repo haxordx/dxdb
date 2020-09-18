@@ -1,0 +1,4 @@
+<cl-image public-id="sample.jpg" >
+  <cl-transformation transformation={{["fit_100x150"]}}>
+  </cl-transformation>
+</cl-image>

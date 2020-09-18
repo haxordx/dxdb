@@ -1,0 +1,14 @@
+(new VideoTag(
+    (new Video('ski_jump'))->setTransformation(
+        (new Transformation())
+            ->concatenate(
+                Source::video('ski_jump')
+                    ->effect(Effect::reverse())
+            )
+            ->concatenate(
+                Source::video('ski_jump')
+                    ->effect(Effect::accelerate(-50))
+            )
+            ->effect(Adjust::brightness(10))
+            ->roundCorners(RoundCorners::max())))
+)->setAttributes(['controls']);

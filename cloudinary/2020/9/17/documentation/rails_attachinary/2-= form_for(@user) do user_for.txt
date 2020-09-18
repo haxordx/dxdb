@@ -1,0 +1,6 @@
+= form_for(@user) do |user_form|
+    = user_form.text_field(:name)
+    = attachinary_file_field_tag 'user[avatar]', @user, :avatar
+    = attachinary_file_field_tag 'user[photos]', @user, :photos
+
+    = user_form.submit("Save")

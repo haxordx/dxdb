@@ -1,0 +1,1 @@
+cloudinary.imageTag('guitarist.jpg').toHtml();

@@ -1,0 +1,4 @@
+<cld-video publicId="kitten_fighting" >
+  <cld-transformation width="300" height="200" crop="fill" />
+  <cld-transformation overlay="video:dog" flags="splice" width="300" height="200" crop="fill" />
+</cld-video>

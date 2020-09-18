@@ -1,0 +1,1 @@
+cloudinary.imageTag('log_cabin.jpg', {transformation: ["image_ratings"], variables: [["$rating", "!thumbs-up!"]]}).toHtml();

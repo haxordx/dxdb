@@ -1,0 +1,4 @@
+<cl-image public-id="snacktime.jpg" >
+  <cl-transformation gravity="ocr_text" height="250" width="250" crop="fill">
+  </cl-transformation>
+</cl-image>

@@ -1,0 +1,4 @@
+cloudinary.uploader().upload("local_file.jpg",
+  ObjectUtils.asMap("public_id", "family_bench", 
+    "eager", Arrays.asList(
+      new Transformation().crop("imagga_scale").width(150).height(200))));

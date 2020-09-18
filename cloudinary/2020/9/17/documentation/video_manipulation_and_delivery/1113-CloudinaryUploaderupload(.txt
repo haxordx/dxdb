@@ -1,0 +1,12 @@
+\Cloudinary\Uploader::upload("big_buck_bunny.mp4", array(
+            "resource_type" => "video", 
+            "eager" => array(
+              "format" => "m3u8",
+              "transformation" => array(
+                array("crop" => "crop", "aspect_ratio" => "16:9"),
+                array("streaming_profile" => "hd"),
+                array("overlay" => "logowatermark", "width" => 100))),
+            "eager_async" => true,
+            "eager_notification_url" => "https://mysite.example.com/notify_endpoint",
+            "public_id => "bb_bunny"
+            ));

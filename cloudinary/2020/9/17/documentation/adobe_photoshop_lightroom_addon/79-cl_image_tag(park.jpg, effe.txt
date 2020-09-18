@@ -1,0 +1,1 @@
+cl_image_tag("park.jpg", :effect=>"lightroom:xmp:authenticated:my_presets:warm_shadow_auth.xmp")

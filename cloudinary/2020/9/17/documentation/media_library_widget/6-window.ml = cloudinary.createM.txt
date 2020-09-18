@@ -1,0 +1,1 @@
+window.ml = cloudinary.createMediaLibrary(config, {insertHandler: insertHandler}, "#my_btn")

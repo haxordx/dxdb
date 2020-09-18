@@ -1,0 +1,4 @@
+<cl-image public-id="docs/kitchen1.jpg" >
+  <cl-transformation width="600" aspect-ratio="1" gravity="auto:sink" crop="thumb">
+  </cl-transformation>
+</cl-image>

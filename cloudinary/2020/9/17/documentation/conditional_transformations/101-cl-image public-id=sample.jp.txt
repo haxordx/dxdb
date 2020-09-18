@@ -1,0 +1,6 @@
+<cl-image public-id="sample.jpg" >
+  <cl-transformation if="w_lte_200" height="120" width="80" crop="fill">
+  </cl-transformation>
+  <cl-transformation if="else" height="90" width="100" crop="fill">
+  </cl-transformation>
+</cl-image>

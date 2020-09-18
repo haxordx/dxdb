@@ -1,0 +1,3 @@
+<Image publicId="city_pic.jpg" >
+  <Transformation effect="lightroom:saturation_-100:clarity_25:contrast_73:vignetteamount_60" />
+</Image>

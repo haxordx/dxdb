@@ -1,0 +1,4 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation()
+  .setOverlay("face_left").chain()
+  .setWidth(200).setHeight(200).setGravity("face").setRadius("max").setCrop("thumb").chain()
+  .setFlags("layer_apply").setGravity("north_east")).generate("flower.jpg")!, cloudinary: cloudinary)

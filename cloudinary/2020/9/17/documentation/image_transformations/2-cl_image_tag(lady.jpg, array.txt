@@ -1,0 +1,4 @@
+cl_image_tag("lady.jpg", array("transformation"=>array(
+  array("width"=>400, "height"=>400, "gravity"=>"face", "radius"=>"max", "crop"=>"crop"),
+  array("width"=>200, "crop"=>"scale")
+  )))

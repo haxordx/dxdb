@@ -1,0 +1,5 @@
+CloudinaryVideo("docs/sunset_waves").video(transformation=[
+  {'width': 500, 'crop': "scale"},
+  {'overlay': "video:docs:bluescreen_watches", 'effect': "make_transparent:20", 'color': "#0e80d8", 'width': "0.6", 'flags': "relative", 'gravity': "north"},
+  {'duration': "15"}
+  ])

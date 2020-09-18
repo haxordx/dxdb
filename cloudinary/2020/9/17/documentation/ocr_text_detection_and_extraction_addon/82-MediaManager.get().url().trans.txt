@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().gravity("auto:ocr_text_avoid").height(400).aspectRatio("0.8").crop("fill")).generate("docs/flower_shop.jpg");

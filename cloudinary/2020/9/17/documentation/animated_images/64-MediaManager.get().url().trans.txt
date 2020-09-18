@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().delay("200")).generate("kitten_fighting.gif");

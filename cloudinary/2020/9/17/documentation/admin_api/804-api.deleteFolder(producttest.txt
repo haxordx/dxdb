@@ -1,0 +1,1 @@
+api.deleteFolder("product/test", ObjectUtils.emptyMap());

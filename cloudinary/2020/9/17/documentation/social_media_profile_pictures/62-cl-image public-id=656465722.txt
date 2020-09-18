@@ -1,0 +1,4 @@
+<cl-image public-id="65646572251.jpg" type="facebook">
+  <cl-transformation width="80" height="120" gravity="face" crop="fill">
+  </cl-transformation>
+</cl-image>

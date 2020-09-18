@@ -1,0 +1,1 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation().Effect("oil_paint:70")).BuildImageTag("sample.jpg")

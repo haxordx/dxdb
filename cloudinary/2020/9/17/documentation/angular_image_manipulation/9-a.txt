@@ -1,0 +1,11 @@
+<a
+  clHref="{URL_of_public_image}" 
+  type="fetch" 
+  effect="sepia">
+  <cl-transformation 
+    height="16" 
+    width="16" 
+    crop="fit">
+  </cl-transformation>
+  Click here
+</a>

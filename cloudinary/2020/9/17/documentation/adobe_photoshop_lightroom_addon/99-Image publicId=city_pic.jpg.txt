@@ -1,0 +1,3 @@
+<Image publicId="city_pic.jpg" signUrl="true">
+  <Transformation effect="lightroom:whitebalance_tungsten" />
+</Image>

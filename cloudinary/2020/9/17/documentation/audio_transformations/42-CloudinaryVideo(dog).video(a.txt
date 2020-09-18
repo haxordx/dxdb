@@ -1,0 +1,1 @@
+CloudinaryVideo("dog").video(audio_codec="none")

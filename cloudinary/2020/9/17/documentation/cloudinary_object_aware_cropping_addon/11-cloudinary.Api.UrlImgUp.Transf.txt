@@ -1,0 +1,1 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation().Width(600).AspectRatio("1").Gravity("auto:sink").Crop("thumb")).BuildImageTag("docs/kitchen1.jpg")

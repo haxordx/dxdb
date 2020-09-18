@@ -1,0 +1,3 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation()
+  .Width(300).Crop("scale").Chain()
+  .Effect("shadow").X("w / 50").Y("w / 50").Crop("fill")).BuildImageTag("horses.jpg")

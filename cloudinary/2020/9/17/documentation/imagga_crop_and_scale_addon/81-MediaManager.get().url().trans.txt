@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().height(240).width(260).crop("imagga_scale")).signed(true).generate("sample_van.jpg");

@@ -1,0 +1,13 @@
+import java.util.Arrays;
+...
+Transformation incoming = new Transformation().crop("limit").width(1000).height(1000);
+List<Transformation> eager = Arrays.asList(new Transformation().crop("fill").width(150).height(150));
+Map options = ObjectUtils.asMap(
+    "callback", customCorsLocation,
+    "tags", "directly_uploaded",
+    "transformation", incoming,
+    "eager": eager,
+    "resource_type", "auto"
+);
+Map htmlOptions = ObjectUtils.asMap("style", "margin-top: 30px");
+String html = cloudinary.uploader().imageUploadTag("image_id", options, htmlOptions);

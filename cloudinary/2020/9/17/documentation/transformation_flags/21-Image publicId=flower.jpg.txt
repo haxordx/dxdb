@@ -1,0 +1,3 @@
+<Image publicId="flower.jpg" >
+  <Transformation overlay="cloudinary_icon" width="0.2" flags="relative" />
+</Image>

@@ -1,0 +1,4 @@
+\Cloudinary\Uploader::upload("my_file.mp4", 
+  array(
+    "resource_type" => "video", 
+    "moderation" => "google_video_moderation"));

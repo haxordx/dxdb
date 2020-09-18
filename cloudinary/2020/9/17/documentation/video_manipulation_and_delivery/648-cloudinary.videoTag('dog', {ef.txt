@@ -1,0 +1,1 @@
+cloudinary.videoTag('dog', {effect: "progressbar:frame:FF0000:12"}).toHtml();

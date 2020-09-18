@@ -1,0 +1,8 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation()
+  .setWidth(500).setCrop("scale").chain()
+  .setEffect("brightness:70").chain()
+  .setOverlay("woman").setGravity("face").setCrop("crop").chain()
+  .setWidth(150).setCrop("scale").chain()
+  .setEffect("saturation:50").chain()
+  .setEffect("shadow").chain()
+  .setFlags("layer_apply")).generate("sample.jpg")!, cloudinary: cloudinary)

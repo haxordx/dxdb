@@ -1,0 +1,13 @@
+cloudinary.media{
+    publicId("actor.jpg")
+    effect(Effect.cartoonify())
+    roundCorners(RoundCorners.max())
+    outline{
+        width(100)
+        color(Color.LIGHTBLUE)
+    }
+    background(Color.LIGHTBLUE))
+    resize(Resize.pad {
+        height(300)
+    })
+}

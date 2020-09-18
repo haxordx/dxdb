@@ -1,0 +1,3 @@
+var listResourcesParams = new ListResourcesParams(){
+  Type = "facebook"};
+var listResourcesResult = cloudinary.ListResources(listResourcesParams);

@@ -1,0 +1,14 @@
+<cl-image public-id="sample.jpg" >
+  <cl-transformation overlay="couple">
+  </cl-transformation>
+  <cl-transformation gravity="faces" width="120" height="150" crop="crop">
+  </cl-transformation>
+  <cl-transformation radius="max">
+  </cl-transformation>
+  <cl-transformation flags="layer_apply" gravity="north_east">
+  </cl-transformation>
+  <cl-transformation overlay="cloudinary_icon" width="0.8" flags="relative" opacity="50" effect="brightness:100">
+  </cl-transformation>
+  <cl-transformation overlay="text:impact_40_bold:Sample%20image" gravity="south" y="20">
+  </cl-transformation>
+</cl-image>

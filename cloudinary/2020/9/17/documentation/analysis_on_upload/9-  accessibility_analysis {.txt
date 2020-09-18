@@ -1,0 +1,11 @@
+  "accessibility_analysis": {
+    "colorblind_accessibility_analysis": {
+      "distinct_edges": 0.93,
+      "distinct_colors": 0.33,
+      "most_indistinct_pair": [
+        "#BCB0AA",
+        "#B2BEC9"
+      ]
+    },
+    "colorblind_accessibility_score": 0.63
+  },

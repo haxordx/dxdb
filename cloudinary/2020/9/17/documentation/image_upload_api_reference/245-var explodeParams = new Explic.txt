@@ -1,0 +1,2 @@
+var explodeParams = new ExplicitParams("sample", new Transformation().Path("all"));
+var explodeResult = cloudinary.Explode(explodeParams);

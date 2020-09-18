@@ -1,0 +1,4 @@
+curl \
+  -d 'transformation=w_150,h_100,c_fill' \
+  -X POST \
+  https://<API_KEY>:<API_SECRET>@api.cloudinary.com/v1_1/<CLOUD_NAME>/transformations/small_fill

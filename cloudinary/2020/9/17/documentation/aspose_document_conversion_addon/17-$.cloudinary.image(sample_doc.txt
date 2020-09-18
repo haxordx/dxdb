@@ -1,0 +1,1 @@
+$.cloudinary.image("sample_document.docx.png")

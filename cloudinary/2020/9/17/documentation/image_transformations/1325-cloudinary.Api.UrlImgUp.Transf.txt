@@ -1,0 +1,3 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation()
+  .Width(500).Crop("scale").Chain()
+  .Overlay(new TextLayer().FontFamily("Verdana").FontSize(75).FontWeight("bold").TextDecoration("underline").LetterSpacing(14).Text("Flowers"))).BuildImageTag("flowers.jpg")

@@ -1,0 +1,5 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation()
+  .If("w_lt_800").Chain()
+  .Effect("blur:800").Underlay(new Layer().PublicId("%24img")).Width(800).Height("$height").Crop("scale").Chain()
+  .Effect("brightness:40").Flags("layer_apply").Chain()
+  .If("end")).BuildImageTag("butterfly")

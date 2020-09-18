@@ -1,0 +1,4 @@
+var createTransformParams = new CreateTransformParams(){
+  Name = "small_fill",
+  Transformation = new Transformation().Width(150).Height(100).Crop("fill")};
+cloudinary.CreateTransform(createTransformParams);

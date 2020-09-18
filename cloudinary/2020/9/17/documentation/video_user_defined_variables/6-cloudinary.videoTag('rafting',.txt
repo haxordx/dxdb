@@ -1,0 +1,1 @@
+cloudinary.videoTag('rafting', {width: "iw / 5", crop: "scale"}).toHtml();

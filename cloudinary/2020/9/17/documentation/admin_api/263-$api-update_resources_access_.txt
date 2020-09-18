@@ -1,0 +1,2 @@
+$api->update_resources_access_mode_by_prefix("public", "to-publish", 
+  array("resource_type" => "video"));

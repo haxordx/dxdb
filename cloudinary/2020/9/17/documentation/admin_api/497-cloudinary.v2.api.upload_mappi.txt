@@ -1,0 +1,1 @@
+cloudinary.v2.api.upload_mapping(folder, callback);

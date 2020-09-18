@@ -1,0 +1,2 @@
+<input name="file" type="file" class="cloudinary-fileupload" data-cloudinary-field="image_id" 
+   data-form-data=" ... upload options as html-escaped JSON data ... " ></input>

@@ -1,0 +1,4 @@
+<cl-video public-id="dog.png" resource-type="video">
+  <cl-transformation height="250" width="400" flags="waveform" start-offset="2" end-offset="4" color="blue" background="transparent">
+  </cl-transformation>
+</cl-video>

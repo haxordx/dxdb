@@ -1,0 +1,4 @@
+<cl-image public-id="coupled.jpg" >
+  <cl-transformation flags="region_relative" gravity="adv_faces" overlay="silver_face_mask" width="1.1">
+  </cl-transformation>
+</cl-image>

@@ -1,0 +1,1 @@
+cloudinary.imageTag('remote_media/commons/a/ae/Olympic_flag.jpg', {width: 200, height: 200, gravity: "face", radius: "max", effect: "sharpen", crop: "thumb"}).toHtml();

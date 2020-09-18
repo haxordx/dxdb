@@ -1,0 +1,3 @@
+<cld-image publicId="sheep.jpg" >
+  <cld-transformation height="200" width="300" radius="20" crop="fill" />
+</cld-image>

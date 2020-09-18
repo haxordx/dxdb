@@ -1,0 +1,1 @@
+\Cloudinary\Utils::private_download_url('my_picID', 'jpg');

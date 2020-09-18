@@ -1,0 +1,6 @@
+{ 
+  "event": "flipvertically", 
+  "action": "preview", 
+  "label": "flip vertically", 
+  "params": {} 
+}

@@ -1,0 +1,3 @@
+<Image publicId="greece_landscape.jpg" >
+  <Transformation effect="tint:100:red:blue:yellow" />
+</Image>

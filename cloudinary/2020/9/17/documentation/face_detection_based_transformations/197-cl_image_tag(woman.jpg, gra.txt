@@ -1,0 +1,1 @@
+cl_image_tag("woman.jpg", :gravity=>"face", :crop=>"crop")

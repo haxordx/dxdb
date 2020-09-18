@@ -1,0 +1,3 @@
+Map result = cloudinary.uploader().createArchive(Map options);
+-Or-
+Map result = createArchive(Map options, String targetFormat);

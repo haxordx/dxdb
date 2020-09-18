@@ -1,0 +1,1 @@
+http://res.cloudinary.com/demo/video/upload/c_pad,du_10,h_360,q_70,w_480/dog.mp4

@@ -1,0 +1,7 @@
+cloudinary.media {
+    publicId("sample")
+    resize(fill { 
+        width(200)
+        height(300)
+    })
+}

@@ -1,0 +1,2 @@
+CloudinaryImage("sample.jpg").image(
+  transformation=[{"width":400, "crop" : "pad"}])

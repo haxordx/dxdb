@@ -1,0 +1,3 @@
+<Image publicId="sunset_shoes.jpg" >
+  <Transformation if="ctx:!productType!_eq_!shoes!" width="200" aspectRatio="1:1" gravity="auto" crop="fill" />
+</Image>

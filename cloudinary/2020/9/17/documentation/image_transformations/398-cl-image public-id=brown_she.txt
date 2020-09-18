@@ -1,0 +1,6 @@
+<cl-image public-id="brown_sheep.jpg" >
+  <cl-transformation x="355" y="410" width="300" height="200" crop="crop">
+  </cl-transformation>
+  <cl-transformation width="150" height="100" crop="scale">
+  </cl-transformation>
+</cl-image>

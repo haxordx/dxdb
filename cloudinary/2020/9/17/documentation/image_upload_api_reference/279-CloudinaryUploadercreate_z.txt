@@ -1,0 +1,4 @@
+\Cloudinary\Uploader::create_zip(
+  array(
+    'tags' => 'lion', 
+    'resource_type' => 'image'));

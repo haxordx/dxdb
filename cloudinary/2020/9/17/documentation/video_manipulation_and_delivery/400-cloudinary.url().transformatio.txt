@@ -1,0 +1,7 @@
+cloudinary.url().transformation(new Transformation()
+  .width(300).height(200).duration("5").crop("scale").chain()
+  .overlay(new Layer().publicId("video:dog")).width(300).height(200).chain()
+  .duration("5").chain()
+  .overlay(new Layer().publicId("video:transition1")).effect("transition").chain()
+  .flags("layer_apply").chain()
+  .flags("layer_apply")).videoTag("kitten_fighting");

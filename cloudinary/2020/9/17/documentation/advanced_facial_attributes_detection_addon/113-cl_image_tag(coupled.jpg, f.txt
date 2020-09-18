@@ -1,0 +1,1 @@
+cl_image_tag("coupled.jpg", :flags=>"region_relative", :gravity=>"adv_eyes", :overlay=>"glasses", :width=>1.5)

@@ -1,0 +1,7 @@
+cloudinary.uploader().unsignedImageUploadTag("video_id", "my_upload_preset",
+        com.cloudinary.utils.ObjectUtils.asMap("resource_type", "video",
+            "public_id", "my_video",
+            "tags", Arrays.asList("user_218", "screencast"),
+        ),
+        com.cloudinary.utils.ObjectUtils.emptyMap()
+    );

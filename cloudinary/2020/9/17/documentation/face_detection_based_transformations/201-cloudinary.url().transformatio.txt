@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().gravity("face").crop("crop")).imageTag("woman.jpg");

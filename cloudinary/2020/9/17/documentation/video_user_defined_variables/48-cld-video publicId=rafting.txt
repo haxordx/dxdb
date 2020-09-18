@@ -1,0 +1,3 @@
+<cld-video publicId="rafting" :variables="[['$qualtag', '!important!'], ['$delwidth', '450']]">
+  <cld-transformation transformation={["highqual-if-tagged"]} />
+</cld-video>

@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().gravity("north").height(200).width(150).crop("fill")).signed(true).type("url2png").generate("https://cnn.com");

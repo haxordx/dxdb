@@ -1,0 +1,4 @@
+<cl-image public-id="horses.jpg" sign-url="true">
+  <cl-transformation quality="jpegmini" width="400" crop="scale">
+  </cl-transformation>
+</cl-image>

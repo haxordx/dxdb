@@ -1,0 +1,1 @@
+CloudinaryImage("woman.jpg").image(quality="auto:low")

@@ -1,0 +1,1 @@
+cloudinary.imageTag('sample.jpg', {effect: "oil_paint:70"}).toHtml();

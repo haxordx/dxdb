@@ -1,0 +1,3 @@
+cloudinary.v2.api.resource('toy_dr4lvl', 
+  { versions: true},
+  function(error, result) {console.log(result, error); });

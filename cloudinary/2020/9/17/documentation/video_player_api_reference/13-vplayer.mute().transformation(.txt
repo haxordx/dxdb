@@ -1,0 +1,1 @@
+vplayer.mute().transformation({ effect: ["sepia"]} ).source(...).play()

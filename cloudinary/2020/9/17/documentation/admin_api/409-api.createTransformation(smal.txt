@@ -1,0 +1,2 @@
+api.createTransformation("small_fill", "w_150,h_100,c_fill",
+  ObjectUtils.emptyMap());

@@ -1,0 +1,3 @@
+cloudinary.uploader.upload("sample_file.jpg", 
+  "use_filename" = 1, 
+  "unique_filename" = 0)

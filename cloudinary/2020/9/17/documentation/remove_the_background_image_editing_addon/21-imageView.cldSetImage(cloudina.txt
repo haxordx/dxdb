@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation().setWidth(300).setCrop("scale")).generate("wood_chair_orig.jpg")!, cloudinary: cloudinary)

@@ -1,0 +1,9 @@
+let params = CLDUploadRequestParams()
+  .setRawConvert("aspose")
+  .setPublicId("sample_document.docx")
+  .setResourceType(.raw)
+  .setNotificationUrl("https://mysite.example.com/hooks")
+var mySig = MyFunction(params)  // your own function that returns a signature generated on your backend
+params.setSignature(CLDSignature(signature: mySig.signature, timestamp: mySig.timestamp))
+let request = cloudinary.createUploader().signedUpload(
+  url: "my_file_name.docx", params: params)

@@ -1,0 +1,5 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation()
+  .setEffect("lightroom:xmp:soft_mist.xmp").chain()
+  .setRadius(50).setQuality("auto").setBorder("40px_solid_orange").chain()
+  .setAngle(5).chain()
+  .setWidth(400).setCrop("scale")).generate("park")!, cloudinary: cloudinary)

@@ -1,0 +1,5 @@
+SearchResult result = cloudinary.Search()
+  .Expression("resource_type:image AND tags=kitten AND uploaded_at>1d AND bytes>1m")
+  .SortBy("public_id","desc")
+  .MaxResults(30)
+  .Execute();

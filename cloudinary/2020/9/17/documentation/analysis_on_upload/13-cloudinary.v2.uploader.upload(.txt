@@ -1,0 +1,6 @@
+cloudinary.v2.uploader.upload("couple.jpg", 
+  { colors: true,
+    phash: true,
+    image_metadata: true 
+    quality_analysis: true }, 
+  function(error, result) {console.log(result, error); });

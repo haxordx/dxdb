@@ -1,0 +1,3 @@
+<Video publicId="lincoln" >
+  <Transformation overlay={{fontFamily: "impact", fontSize: 15, publicId: "lincoln.transcript", resourceType: "subtitles"}} color="khaki" background="#331a00" gravity="south_west" />
+</Video>

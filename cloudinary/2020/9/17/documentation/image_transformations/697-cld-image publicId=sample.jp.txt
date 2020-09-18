@@ -1,0 +1,4 @@
+<cld-image publicId="sample.jpg" >
+  <cld-transformation width="100" crop="scale" />
+  <cld-transformation angle="-20" />
+</cld-image>

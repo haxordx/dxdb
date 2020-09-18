@@ -1,0 +1,3 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation()
+  .Height(700).Width(700).Crop("fill").Chain()
+  .Effect("style_transfer:preserve_color:40").Overlay(new Layer().PublicId("lighthouse"))).BuildImageTag("beach_2_kids.jpg")

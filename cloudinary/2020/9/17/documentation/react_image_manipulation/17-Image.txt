@@ -1,0 +1,11 @@
+<Image
+  dpr="auto"
+  responsive
+  width="auto"
+  crop="scale"
+  responsiveUseBreakpoints="true"
+  publicId="myphoto"
+  angle="20">
+  <Transformation effect="art:hokusai" />
+  <Transformation border="3px_solid_rgb:00390b" radius="20" />
+</Image>

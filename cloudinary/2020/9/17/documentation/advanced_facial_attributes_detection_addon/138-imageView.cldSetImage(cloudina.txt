@@ -1,0 +1,3 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation()
+  .setWidth(700).setRadius("max").setCrop("scale").chain()
+  .setFlags("region_relative").setGravity("adv_eyes").setOverlay("harlequinmask").setWidth(1.7)).generate("cloudinary_team.jpg")!, cloudinary: cloudinary)

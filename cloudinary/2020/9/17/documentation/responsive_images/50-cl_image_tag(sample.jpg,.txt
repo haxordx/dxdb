@@ -1,0 +1,5 @@
+cl_image_tag("sample.jpg", 
+  array("client_hints"=>true, "sizes"=>"100vw", "transformation"=>array(
+    array("aspect_ratio"=>"16:9", "crop"=>"fill"),
+    array("width"=>"auto", "crop"=>"scale"),
+    array("width"=>1000, "crop"=>"limit"))))

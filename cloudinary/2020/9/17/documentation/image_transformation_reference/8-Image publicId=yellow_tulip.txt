@@ -1,0 +1,10 @@
+<Image publicId="yellow_tulip.jpg" >
+  <Transformation width="220" height="140" crop="fill" />
+  <Transformation overlay="brown_sheep" width="220" height="140" x="220" crop="fill" />
+  <Transformation overlay="horses" width="220" height="140" y="140" x="-110" crop="fill" />
+  <Transformation overlay="white_chicken" width="220" height="140" y="70" x="110" crop="fill" />
+  <Transformation overlay="butterfly.png" height="200" x="-10" angle="10" />
+  <Transformation width="400" height="260" radius="20" crop="crop" />
+  <Transformation overlay={{fontFamily: "Parisienne", fontSize: 35, fontWeight: "bold", text: "Memories%20from%20our%20trip"}} color="#990C47" y="155" />
+  <Transformation effect="shadow" />
+</Image>

@@ -1,0 +1,3 @@
+$api->update_transformation(
+  array("width" => 150, "height" => 100,"crop" => "fill"),
+  array("allowed_for_strict" => 0));

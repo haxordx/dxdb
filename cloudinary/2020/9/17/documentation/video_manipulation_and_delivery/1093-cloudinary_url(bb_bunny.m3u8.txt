@@ -1,0 +1,1 @@
+cloudinary_url("bb_bunny.m3u8", :streaming_profile=>"hd", :resource_type=>"video")

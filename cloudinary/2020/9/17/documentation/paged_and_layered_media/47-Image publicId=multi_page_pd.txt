@@ -1,0 +1,3 @@
+<Image publicId="multi_page_pdf.jpg" >
+  <Transformation density="20" />
+</Image>

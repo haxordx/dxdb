@@ -1,0 +1,1 @@
+$.cloudinary.video("dog", {overlay: new cloudinary.Layer().publicId("video:kitten_fighting"), effect: "fade:3000", width: 100})

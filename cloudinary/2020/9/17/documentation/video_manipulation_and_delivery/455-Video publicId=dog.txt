@@ -1,0 +1,3 @@
+<Video publicId="dog" >
+  <Transformation angle="90" />
+</Video>

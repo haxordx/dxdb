@@ -1,0 +1,9 @@
+$.cloudinary.video("kitten_fighting", {transformation: [
+  {duration: "5", width: 300, height: 200, crop: "scale"},
+  {overlay: new cloudinary.Layer().publicId("video:dog"), width: 300, height: 200},
+  {duration: "5"},
+  {overlay: new cloudinary.Layer().publicId("video:transition1"), effect: "transition"},
+  {effect: "accelerate:5s", angle: 180},
+  {flags: "layer_apply"},
+  {flags: "layer_apply"}
+  ]})

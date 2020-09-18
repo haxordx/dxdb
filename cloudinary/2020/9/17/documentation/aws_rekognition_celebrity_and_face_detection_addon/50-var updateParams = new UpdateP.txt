@@ -1,0 +1,6 @@
+var updateParams = new UpdateParams("golfer")
+{
+  Detection = "aws_rek_face",
+  AutoTagging = 0.9
+};
+var updateResult = cloudinary.Update(updateParams);

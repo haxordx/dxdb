@@ -1,0 +1,1 @@
+cl_image_tag("dog.png", array("height"=>200, "width"=>500, "flags"=>"waveform", "color"=>"black", "background"=>"white", "resource_type"=>"video"))

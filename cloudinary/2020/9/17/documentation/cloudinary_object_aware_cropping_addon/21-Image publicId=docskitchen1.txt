@@ -1,0 +1,3 @@
+<Image publicId="docs/kitchen1.jpg" >
+  <Transformation gravity="sink" crop="crop" />
+</Image>

@@ -1,0 +1,1 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation().Overlay(new Layer().PublicId("call_text")).Flags("region_relative").Width(1.1).Gravity("ocr_text")).BuildImageTag("home_4_sale.jpg")

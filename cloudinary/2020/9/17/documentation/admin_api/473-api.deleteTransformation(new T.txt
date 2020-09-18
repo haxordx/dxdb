@@ -1,0 +1,2 @@
+api.deleteTransformation(new Transformation().width(150).height(100).
+  crop("fill").generate(), ObjectUtils.emptyMap());

@@ -1,0 +1,2 @@
+MediaManager.get().upload("my_large_video.mp4")
+  .option("resource_type", "video").dispatch();

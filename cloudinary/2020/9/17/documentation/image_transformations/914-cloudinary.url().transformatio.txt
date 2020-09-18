@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().effect("replace_color:maroon:80:2b38aa")).imageTag("blue_burlap.png");

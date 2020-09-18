@@ -1,0 +1,4 @@
+<cld-video publicId="dog" >
+  <cld-transformation overlay="cloudinary_icon" width="200" gravity="east" startOffset="1" endOffset="11" />
+  <cld-transformation overlay={{fontFamily: "arial", fontSize: 40, text: "Sample%20Video"}} gravity="south" y="60" startOffset="2" />
+</cld-video>

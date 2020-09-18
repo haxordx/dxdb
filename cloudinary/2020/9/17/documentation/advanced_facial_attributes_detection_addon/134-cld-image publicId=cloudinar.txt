@@ -1,0 +1,4 @@
+<cld-image publicId="cloudinary_team.jpg" >
+  <cld-transformation width="700" radius="max" crop="scale" />
+  <cld-transformation flags="region_relative" gravity="adv_eyes" overlay="harlequinmask" width="1.7" />
+</cld-image>

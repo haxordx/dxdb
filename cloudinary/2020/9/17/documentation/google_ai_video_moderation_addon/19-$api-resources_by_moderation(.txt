@@ -1,0 +1,1 @@
+$api->resources_by_moderation("google_video_moderation", "rejected", array("resource_type" => "video"));

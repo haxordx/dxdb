@@ -1,0 +1,5 @@
+MediaManager.get().url().transformation(new Transformation()
+  .width(200).crop("scale").chain()
+  .effect("outline:20:200").color("red").chain()
+  .effect("outline:15:200").color("orange").chain()
+  .effect("outline:10:200").color("yellow")).generate("shoes.png");

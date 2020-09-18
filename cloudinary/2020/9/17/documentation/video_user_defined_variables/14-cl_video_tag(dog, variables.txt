@@ -1,0 +1,4 @@
+cl_video_tag("dog", :variables=>[["$mainvideowidth", "500"], ["$overlaywidth", "$mainvideowidth / 3"]], :transformation=>[
+  {:width=>"$mainvideowidth", :crop=>"scale"},
+  {:overlay=>"video:kitten_fighting", :width=>"$overlaywidth", :gravity=>"south_east"}
+  ])

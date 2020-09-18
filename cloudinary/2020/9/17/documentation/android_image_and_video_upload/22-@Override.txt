@@ -1,0 +1,25 @@
+@Override
+protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+    super.onActivityResult(requestCode, resultCode, data);
+    if (resultCode == RESULT_OK) {
+        if (requestCode == UPLOAD_WIDGET_REQUEST_CODE) {
+            List<UploadWidget.Result> results = data.getParcelableArrayListExtra(UploadWidget.RESULT_EXTRA);
+            for (UploadWidget.Result result: results) {
+                UploadRequest request = UploadWidget.preprocessResult(result); 
+      // customize the request as necessary - add options, set upload policy, etc.            
+                ...    
+      // dispatch the request. 
+                request.dispatch(this);
+            }
+      // If the widget was launched using DISPATCH or START_NOW, no further 
+      // code is needed. In fact the entire onActivityResult Callback is not necessary. 
+      // If handles to the in-progress upload are needed (for instance to track progress 
+      // or cancel requests), those are available as part of the result set:
+           for (UploadWidget.Result result : results) {
+               // note: this field will only be populated when using DISPATCH or START_NOW:
+               String requestId = result.requestId;
+               ...
+           }
+        } else if (requestCode == ...
+    }
+}

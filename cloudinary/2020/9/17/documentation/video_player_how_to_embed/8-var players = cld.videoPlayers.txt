@@ -1,0 +1,3 @@
+var players = cld.videoPlayers('.cld-video-player', 
+ {<...constructor params here...>}
+)

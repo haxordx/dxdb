@@ -1,0 +1,3 @@
+<cld-image publicId="young_couple.jpg" >
+  <cld-transformation effect="pixelate_faces:9" />
+</cld-image>

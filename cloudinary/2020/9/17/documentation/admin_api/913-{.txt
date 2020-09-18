@@ -1,0 +1,6 @@
+{
+  "tags": [
+    "arrow_animation",
+    "logo"
+  ]
+}

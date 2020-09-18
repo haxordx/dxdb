@@ -1,0 +1,5 @@
+js
+<cld-video publicId="docs/foyer-table" resourceType="image">
+  <cld-transformation fetchFormat="mp4" />
+  <cld-transformation background="#d5d2ca" height="300" flags="animated" crop="scale" />
+</cld-video>

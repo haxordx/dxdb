@@ -1,0 +1,4 @@
+cloudinary.createUrl().setResourceType("video").setTransformation(CLDTransformation()
+  .setWidth(500).setCrop("scale").chain()
+  .setOverlay("video:docs:bluescreen_watches").setEffect("make_transparent:20").setColor("#0e80d8").setWidth(0.6).setFlags("relative").setGravity("north").chain()
+  .setDuration("15")).generate("docs/sunset_waves.mp4")

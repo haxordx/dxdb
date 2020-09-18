@@ -1,0 +1,1 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation().Width(500).AspectRatio("1.0").Gravity("auto:person_avoid").Crop("fill")).BuildImageTag("docs/store_front.jpg")

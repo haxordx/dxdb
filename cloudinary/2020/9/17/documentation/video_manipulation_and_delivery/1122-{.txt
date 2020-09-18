@@ -1,0 +1,21 @@
+{
+  "public_id": "bb_bunny",
+  "version": 1466426766,
+  "signature": "245679585758d518703ab50142b1c88685e17777",
+  "width": 640,
+  "height": 360,
+  "format": "mp4",
+  "resource_type": "video",
+  "created_at": "2017-06-20T12:46:06Z",
+  "bytes": 5510872,
+  "type": "upload",
+  "url": "http://res.cloudinary.com/demo/video/upload/v1466426766/bb_bunny.mp4",
+  "secure_url": "https://res.cloudinary.com/demo/video/upload/v1466426766/bb_bunny.mp4",
+  "eager": [
+    {
+      "transformation": "sp_hd/m3u8",
+      "url": "http://res.cloudinary.com/demo/video/upload/sp_hd/v1466426766/bb_bunny.m3u8",
+      "secure_url": "https://res.cloudinary.com/demo/video/upload/sp_hd/v1466426766/bb_bunny.m3u8"
+    }
+  ]
+}

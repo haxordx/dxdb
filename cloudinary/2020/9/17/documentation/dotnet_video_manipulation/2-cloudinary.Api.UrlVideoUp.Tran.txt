@@ -1,0 +1,4 @@
+cloudinary.Api.UrlVideoUp.Transform(new Transformation()
+    .Overlay("video:ski_jump").Flags("splice").Effect("reverse").Chain()
+    .Overlay("video:ski_jump").Flags("splice").Effect("accelerate:-50").Chain()
+    .Effect("brightness:10").Radius("max")).BuildVideoTag("ski_jump", new StringDictionary("controls"));

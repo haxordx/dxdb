@@ -1,0 +1,21 @@
+const myEditor= cloudinary.mediaEditor();
+myEditor.update({
+  cloudName: "demo", 
+  publicIds: ["flower"],
+  widgetSteps: ["export"],
+  export: {
+    "formats": [
+      "jpg",
+      "png",
+      "webp"
+    ],
+    "quality": [
+      "auto",
+      10,
+      55,
+      "low"
+    ],
+    "download": true,
+    "share": true
+  };  
+});

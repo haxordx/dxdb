@@ -1,0 +1,1 @@
+cloudinary.createUrl().setResourceType("video").setTransformation(CLDTransformation().setNamed("highqual-if-tagged")).generate("rafting.mp4")

@@ -1,0 +1,6 @@
+<iframe
+  src="your-embed-url"
+  width="500px"
+  allow="autoplay; fullscreen"
+  frameborder="0">
+</iframe>

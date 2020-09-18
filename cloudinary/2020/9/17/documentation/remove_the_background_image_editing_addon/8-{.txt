@@ -1,0 +1,12 @@
+{ 
+  "public_id": "wood_chair",
+  "version": 1414316122,
+  "resource_type": "image",
+  "type": "upload",
+  "url": "http://res.cloudinary.com/demo/image/upload/v1414316122/wood_chair.jpg",
+  "info": 
+    { "background_removal":
+      { "remove_the_background":
+        { "status": "pending" }}},
+  ...
+}

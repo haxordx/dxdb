@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation().setQuality("jpegmini:1").setWidth(400).setCrop("scale")).generate("horses.jpg", signUrl: true)!, cloudinary: cloudinary)

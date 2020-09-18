@@ -1,0 +1,4 @@
+<cl-image public-id="sample.jpg" >
+  <cl-transformation quality="60">
+  </cl-transformation>
+</cl-image>

@@ -1,0 +1,3 @@
+var uploadParams = new RawUploadParams(){  // by default, ResourceType is already set to "raw"
+  File = new FileDescription(@"sample_spreadsheet.xls")};
+var uploadResult = cloudinary.Upload(uploadParams);

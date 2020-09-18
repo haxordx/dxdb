@@ -1,0 +1,2 @@
+data-cld-source='{"publicId": "oceans", "transformation": {"streaming_profile": "hd", "effect": "vignette:50"}}'
+data-cld-source-types='["hls"]'

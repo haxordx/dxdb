@@ -1,0 +1,6 @@
+var uploadParams = new ImageUploadParams(){
+  File = new FileDescription(@"sample.jpg"),
+  Unsigned = true,
+  UploadPreset = "unsigned_1",
+  CloudName = "demo"};
+var uploadResult = cloudinary.Upload(uploadParams);

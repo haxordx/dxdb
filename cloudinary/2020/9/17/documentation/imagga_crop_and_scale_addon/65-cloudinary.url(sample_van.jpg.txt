@@ -1,0 +1,3 @@
+cloudinary.url("sample_van.jpg",
+  { crop: "imagga_scale", width: 260, height: 240,
+    sign_url: true });

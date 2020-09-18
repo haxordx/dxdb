@@ -1,0 +1,6 @@
+<Image publicId="shoes.png" >
+  <Transformation width="200" crop="scale" />
+  <Transformation effect="outline:20:200" color="red" />
+  <Transformation effect="outline:15:200" color="orange" />
+  <Transformation effect="outline:10:200" color="yellow" />
+</Image>

@@ -1,0 +1,12 @@
+{
+    "folders": [
+      {
+        "name": "red",
+        "path": "product/shoe/red"
+      }, 
+      {
+        "name": "white",
+        "path": "product/shoe/white"
+      }   
+    ]
+ }

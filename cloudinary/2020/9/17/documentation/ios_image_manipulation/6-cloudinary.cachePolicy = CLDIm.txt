@@ -1,0 +1,2 @@
+cloudinary.cachePolicy = CLDImageCachePolicy.disk
+cloudinary.cacheMaxDiskCapacity = 50 * 1024 * 1024

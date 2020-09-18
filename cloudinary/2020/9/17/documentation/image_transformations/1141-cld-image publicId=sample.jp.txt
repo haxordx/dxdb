@@ -1,0 +1,3 @@
+<cld-image publicId="sample.jpg" >
+  <cld-transformation overlay="cloudinary_icon" />
+</cld-image>

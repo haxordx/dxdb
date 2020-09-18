@@ -1,0 +1,1 @@
+public ImageUploadResult Upload(ImageUploadParams parameters);

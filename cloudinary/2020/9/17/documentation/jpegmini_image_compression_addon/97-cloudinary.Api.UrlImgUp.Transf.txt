@@ -1,0 +1,4 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation()
+  .Effect("saturation:50").Radius(20).Width(400).Crop("scale").Chain()
+  .Gravity("south_east").Overlay(new Layer().PublicId("logo_jpegmini")).Opacity(80).Width(100).X(10).Y(10).Chain()
+  .Quality("jpegmini")).Signed(true).BuildImageTag("horses.jpg")

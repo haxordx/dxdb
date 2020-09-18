@@ -1,0 +1,11 @@
+MediaManager.get().responsiveUrl(AUTO_FILL)
+    .stepSize(200)
+    .minDimension(200)
+    .maxDimension(1000)
+    .generate("sample", imageView, new ResponsiveUrl.Callback() {
+      @Override
+      public void onUrlReady(Url url) {
+        // Use your favorite image download library to fetch the image, picasso example:
+        Picasso.with(context).load(url.generate()).into(imageView);
+      }
+    });

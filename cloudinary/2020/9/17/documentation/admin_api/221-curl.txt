@@ -1,0 +1,4 @@
+curl \
+ -d "tags=important&moderation_status=approved" \
+ -X POST \
+ https://<API_KEY>:<API_SECRET>@api.cloudinary.com/v1_1/<cloud_name>/resources/image/upload/image1

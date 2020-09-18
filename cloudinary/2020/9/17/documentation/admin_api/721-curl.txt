@@ -1,0 +1,14 @@
+curl \
+  -H "Content-Type: application/json" \
+  -d '{  
+    "values":[{  
+      "external_id":"color1",
+      "value":"orange"
+    },
+    {  
+      "external_id":"color2",
+      "value":"black"
+    }]
+  }' \
+  -X PUT \
+  https://<API_KEY>:<API_SECRET>@api.cloudinary.com/v1_1/<cloud_name>/metadata_fields/color_id/datasource

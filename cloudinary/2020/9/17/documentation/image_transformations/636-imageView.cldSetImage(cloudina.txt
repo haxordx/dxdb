@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation().setWidth(150).setHeight(100).setRadius("25:0").setCrop("fill")).generate("Pi.png")!, cloudinary: cloudinary)

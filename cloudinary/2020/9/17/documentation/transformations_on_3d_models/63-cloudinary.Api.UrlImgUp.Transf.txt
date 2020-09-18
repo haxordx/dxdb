@@ -1,0 +1,3 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation()
+  .FetchFormat("png").Chain()
+  .Angle(90).AspectRatio("1").Background("#a17ec5").Gravity("auto").Height(200).Crop("fill")).BuildImageTag("DamagedHelmet3D")

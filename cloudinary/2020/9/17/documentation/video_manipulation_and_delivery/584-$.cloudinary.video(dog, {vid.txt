@@ -1,0 +1,1 @@
+$.cloudinary.video("dog", {video_codec: "auto"})

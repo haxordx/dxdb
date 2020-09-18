@@ -1,0 +1,2 @@
+api.resources(
+  ObjectUtils.asMap("resource_type", "raw"));

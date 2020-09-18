@@ -1,0 +1,2 @@
+String html = cloudinary.url().format("jpg").version(version).transformation(
+    new Transformation().width(120).height(80).crop("fill")).imageTag(publicId, ObjectUtils.emptyMap());

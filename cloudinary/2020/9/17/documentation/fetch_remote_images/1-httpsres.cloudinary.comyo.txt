@@ -1,0 +1,1 @@
+https://res.cloudinary.com/<your Cloudinary account's cloud name>/image/fetch/

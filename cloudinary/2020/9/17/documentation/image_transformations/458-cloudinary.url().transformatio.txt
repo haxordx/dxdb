@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().aspectRatio("16:9").crop("fill")).imageTag("sample.jpg");

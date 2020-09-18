@@ -1,0 +1,3 @@
+cloudinary.createUploader().upload(url: fileUrl)
+// or
+cloudinary.createUploader().upload(data: data)

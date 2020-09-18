@@ -1,0 +1,1 @@
+result = cloudinary.uploader.text(text, **options)

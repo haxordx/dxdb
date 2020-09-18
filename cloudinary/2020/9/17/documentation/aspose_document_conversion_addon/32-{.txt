@@ -1,0 +1,13 @@
+{
+  "notification_type": "info",
+  "info_kind": "aspose",
+  "info_status": "complete",
+  "public_id": "sample_document.docx",
+  "uploaded_at": "2014-03-01T15:43:08Z",
+  "version": 1393688588,
+  "url":
+    "https://res.cloudinary.com/demo/raw/upload/v1393688588/sample_document.docx",
+  "secure_url":
+    "https://res.cloudinary.com/demo/raw/upload/v1393688588/sample_document.docx",
+  "etag": "c558a878b3b309d42b8d97c82c6f924d"
+}

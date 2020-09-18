@@ -1,0 +1,8 @@
+{
+    "updated": {
+      "image1": "updated",
+      "image2": "updated"
+    },
+    "failed": {
+    },
+}

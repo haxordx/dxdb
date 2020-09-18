@@ -1,0 +1,1 @@
+cl_image_tag("brown_sheep.jpg", :height=>150, :quality=>"jpegmini", :width=>200, :crop=>"fill", :sign_url=>true)

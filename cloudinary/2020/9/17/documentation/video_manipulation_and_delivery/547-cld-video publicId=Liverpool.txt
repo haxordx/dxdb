@@ -1,0 +1,3 @@
+<cld-video publicId="Liverpool_vs_Roma_full" >
+  <cld-transformation duration="30" quality="70:qmax_20" />
+</cld-video>

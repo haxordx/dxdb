@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().height(200).width(300).radius(20).crop("fill")).generate("sheep.jpg");

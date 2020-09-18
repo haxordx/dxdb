@@ -1,0 +1,5 @@
+$cld->imageTag('brown_sheep.jpg')
+  ->resize(Resize::crop(300, 200)->x(355)->y(410))
+  ->resize(Resize::fill(130, 100))
+  ->rotate(20)
+  ->resize(Resize::scale(0.5));

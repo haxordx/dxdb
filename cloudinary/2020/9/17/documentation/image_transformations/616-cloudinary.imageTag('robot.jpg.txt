@@ -1,0 +1,1 @@
+cloudinary.imageTag('robot.jpg', {quality: "auto"}).toHtml();

@@ -1,0 +1,1 @@
+cloudinary.Api.UrlVideoUp.Transform(new Transformation().Effect("loop:2")).BuildVideoTag("ski_jump")

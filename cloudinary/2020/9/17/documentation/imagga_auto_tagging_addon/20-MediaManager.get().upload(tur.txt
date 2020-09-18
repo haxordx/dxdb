@@ -1,0 +1,2 @@
+MediaManager.get().upload("turtles.jpg")
+  .option("categorization", "imagga_tagging").dispatch();

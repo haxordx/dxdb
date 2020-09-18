@@ -1,0 +1,3 @@
+<Image publicId="docs/plain_face.jpg" >
+  <Transformation gravity="face" width="500" flags="getinfo" crop="thumb" />
+</Image>

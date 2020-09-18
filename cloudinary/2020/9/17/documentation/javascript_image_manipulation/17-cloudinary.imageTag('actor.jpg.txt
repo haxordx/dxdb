@@ -1,0 +1,7 @@
+cloudinary.imageTag('actor.jpg', {transformation: [
+  {effect: "cartoonify"},
+  {radius: "max"},
+  {effect: "outline:100", color: "lightblue"},
+  {background: "lightblue"},
+  {height: 300, crop: "scale"}
+  ]}).toHtml();

@@ -1,0 +1,3 @@
+@Model.Cloudinary.Api.UrlImgUp.Transform(
+  new Transformation().Width("auto").Dpr("auto").IsResponsive(True).Crop("scale").Angle(20))
+  .BuildImageTag("sample.jpg");

@@ -1,0 +1,1 @@
+player.source({'oceans', info: { title: 'My Title', subtitle: 'Something about the video', description: 'More detail about the video' } })

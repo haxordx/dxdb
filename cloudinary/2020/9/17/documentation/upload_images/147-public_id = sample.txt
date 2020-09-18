@@ -1,0 +1,6 @@
+public_id = "sample"
+version = "1315060510"
+secret = "abcd"
+
+to_sign = 'public_id=' + public_id + '&' + 'version=' + version
+signature = Base64.urlsafe_encode64(Digest::SHA1.digest(to_sign + secret))

@@ -1,0 +1,1 @@
+CloudinaryImage("docs/one_cat_one_dog.jpg").image(gravity="cat:dog", crop="crop")

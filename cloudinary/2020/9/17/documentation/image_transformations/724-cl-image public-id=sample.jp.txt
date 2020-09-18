@@ -1,0 +1,8 @@
+<cl-image public-id="sample.jpg" >
+  <cl-transformation width="200" height="200" radius="max" crop="fill">
+  </cl-transformation>
+  <cl-transformation angle="30">
+  </cl-transformation>
+  <cl-transformation effect="trim">
+  </cl-transformation>
+</cl-image>

@@ -1,0 +1,3 @@
+var uploadParams = new VideoUploadParams(){
+  File = new FileDescription(@"audio_sample.mp3")};
+var uploadResult = cloudinary.Upload(uploadParams);

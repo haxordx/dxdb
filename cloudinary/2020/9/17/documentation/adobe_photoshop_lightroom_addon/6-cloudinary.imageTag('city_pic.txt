@@ -1,0 +1,1 @@
+cloudinary.imageTag('city_pic.jpg', {effect: "lightroom:whitebalance_shade"}).toHtml();

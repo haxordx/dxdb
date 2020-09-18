@@ -1,0 +1,2 @@
+cloudinary.uploader.upload("local_file.jpg",
+  moderation = "webpurify")

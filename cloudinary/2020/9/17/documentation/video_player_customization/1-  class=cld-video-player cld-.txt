@@ -1,0 +1,1 @@
+  class="cld-video-player cld-video-player-skin-light"

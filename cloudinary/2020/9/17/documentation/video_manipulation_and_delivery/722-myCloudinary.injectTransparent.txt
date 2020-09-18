@@ -1,0 +1,6 @@
+myCloudinary.injectTransparentVideoElement(container, 'docs/transparent_girl', {
+  loop: true,
+  playsinline: true,
+  width: 400,
+  quality: "auto:best"
+})

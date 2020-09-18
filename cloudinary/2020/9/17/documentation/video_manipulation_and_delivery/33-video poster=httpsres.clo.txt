@@ -1,0 +1,5 @@
+<video poster="https://res.cloudinary.com/demo/video/upload/dog.jpg">
+  <source src="https://res.cloudinary.com/demo/video/upload/dog.webm" type="video/webm"/>
+  <source src="https://res.cloudinary.com/demo/video/upload/dog.mp4" type="video/mp4"/>
+  <source src="https://res.cloudinary.com/demo/video/upload/dog.ogv" type="video/ogg"/>
+</video>

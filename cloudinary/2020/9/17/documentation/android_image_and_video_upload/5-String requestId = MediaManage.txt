@@ -1,0 +1,5 @@
+String requestId = MediaManager.get().upload("dog.jpg")
+   .unsigned("preset1")
+   .option("public_id", "my_dog")
+   .option("tags", "animal")
+   .dispatch();

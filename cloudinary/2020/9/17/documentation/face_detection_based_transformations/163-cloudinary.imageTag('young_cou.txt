@@ -1,0 +1,1 @@
+cloudinary.imageTag('young_couple.jpg', {effect: "pixelate_faces:9"}).toHtml();

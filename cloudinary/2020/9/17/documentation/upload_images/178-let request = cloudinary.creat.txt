@@ -1,0 +1,2 @@
+let request = cloudinary.createUploader().upload(
+  url: "sample.jpg", uploadPreset: "unsigned_1")

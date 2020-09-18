@@ -1,0 +1,1 @@
+CloudinaryImage("guitarist.jpg").image()

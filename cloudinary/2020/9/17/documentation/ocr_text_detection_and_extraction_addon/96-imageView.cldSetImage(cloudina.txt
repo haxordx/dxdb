@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation().setEffect("blur_region:800").setGravity("ocr_text")).generate("smartphone2.jpg", signUrl: true)!, cloudinary: cloudinary)

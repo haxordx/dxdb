@@ -1,0 +1,3 @@
+cloudinary_url("sample.jpg", 
+  array("width" => 100, "height" => 150, "crop" => "fill"));       
+// Output: "https://res.cloudinary.com/demo/image/upload/c_fill,h_150,w_100/sample.jpg"

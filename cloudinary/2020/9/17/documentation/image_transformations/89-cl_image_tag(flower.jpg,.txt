@@ -1,0 +1,2 @@
+cl_image_tag("flower.jpg", 
+  :transformation=>[{:raw_transformation=> "o_90,w_1000,c_fill,g_south_east/l_my_image,fl_relative,w_1.0"}])

@@ -1,0 +1,7 @@
+var uploadParams = new ImageUploadParams() 
+{
+  File = new FileDescription(@"guitarist.jpg"),
+  Categorization = "aws_rek_tagging",
+  AutoTagging = 0.7
+};
+var uploadResult = cloudinary.Upload(uploadParams);

@@ -1,0 +1,1 @@
+cloudinary.v2.api.restore(public_ids, options, callback);

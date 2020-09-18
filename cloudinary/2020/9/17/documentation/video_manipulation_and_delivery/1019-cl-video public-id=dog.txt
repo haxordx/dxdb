@@ -1,0 +1,4 @@
+<cl-video public-id="dog" >
+  <cl-transformation overlay="subtitles:sample_sub_en.srt">
+  </cl-transformation>
+</cl-video>

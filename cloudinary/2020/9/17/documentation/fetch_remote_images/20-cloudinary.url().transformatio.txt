@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().width(300).height(300).gravity("face").radius("max").crop("fill").fetchFormat("auto")).type("fetch").imageTag("https://upload.wikimedia.org/wikipedia/commons/1/13/Benedict_Cumberbatch_2011.png");

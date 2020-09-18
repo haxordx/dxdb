@@ -1,0 +1,3 @@
+myEditor.update({
+  publicIds: ["running_shoes"]
+});

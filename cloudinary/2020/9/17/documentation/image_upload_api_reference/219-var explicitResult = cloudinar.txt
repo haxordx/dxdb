@@ -1,0 +1,1 @@
+var explicitResult = cloudinary.Explicit(ExplicitParams params); // params includes PublicId

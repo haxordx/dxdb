@@ -1,0 +1,1 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation().Named("demo_combined")).BuildImageTag("sample.jpg")

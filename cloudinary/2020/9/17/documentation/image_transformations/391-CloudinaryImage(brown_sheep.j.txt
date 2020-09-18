@@ -1,0 +1,4 @@
+CloudinaryImage("brown_sheep.jpg").image(transformation=[
+  {'x': 355, 'y': 410, 'width': 300, 'height': 200, 'crop': "crop"},
+  {'width': 150, 'height': 100, 'crop': "scale"}
+  ])

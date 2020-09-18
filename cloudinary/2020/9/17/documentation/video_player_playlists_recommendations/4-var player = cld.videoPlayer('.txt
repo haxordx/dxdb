@@ -1,0 +1,5 @@
+var player = cld.videoPlayer('doc-player', {
+  playlistWidget: {
+    direction: 'vertical',
+    total:5
+    }

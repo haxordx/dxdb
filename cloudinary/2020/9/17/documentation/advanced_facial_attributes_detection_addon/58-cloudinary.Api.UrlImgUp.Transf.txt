@@ -1,0 +1,1 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation().Gravity("adv_face").Height(100).Width(100).Crop("thumb")).Signed(true).BuildImageTag("coupled.jpg")

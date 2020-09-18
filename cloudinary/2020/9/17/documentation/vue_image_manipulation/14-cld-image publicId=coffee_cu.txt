@@ -1,0 +1,14 @@
+<cld-image publicId="coffee_cup.jpg" >
+  <cld-transformation width="400" height="250" gravity="south" crop="fill" />
+  <cld-transformation overlay="nice_couple" width="1.3" height="1.3" gravity="faces" flags="region_relative" crop="crop" />
+  <cld-transformation effect="saturation:50" />
+  <cld-transformation effect="vignette" />
+  <cld-transformation flags="layer_apply" width="100" radius="max" gravity="center" y="20" x="-20" crop="scale" />
+  <cld-transformation overlay="balloon" height="55" />
+  <cld-transformation effect="hue:-20" angle="5" />
+  <cld-transformation flags="layer_apply" x="30" y="5" />
+  <cld-transformation overlay={{fontFamily: "Cookie", fontSize: 40, fontWeight: "bold", text: "Love"}} effect="colorize" color="#f08" />
+  <cld-transformation angle="20" flags="layer_apply" x="-45" y="44" />
+  <cld-transformation width="300" height="250" x="30" crop="crop" />
+  <cld-transformation radius="60" />
+</cld-image>

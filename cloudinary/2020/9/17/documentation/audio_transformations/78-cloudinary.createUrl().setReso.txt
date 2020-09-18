@@ -1,0 +1,1 @@
+cloudinary.createUrl().setResourceType("video").setTransformation(CLDTransformation().setHeight(200).setWidth(500).setFlags("waveform")).generate("dog.png")

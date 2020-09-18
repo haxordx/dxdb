@@ -1,0 +1,4 @@
+<Image publicId="sample.jpg" >
+  <Transformation width="100" crop="scale" />
+  <Transformation angle={["vflip", 45]} />
+</Image>

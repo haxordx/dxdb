@@ -1,0 +1,1 @@
+cloudinary.createUrl().setResourceType("video").setTransformation(CLDTransformation().setOverlay("cloudinary_icon").setStartOffset("6.5").setEndOffset("10").setOpacity(50).setEffect("brightness:200")).generate("dog.mp4")

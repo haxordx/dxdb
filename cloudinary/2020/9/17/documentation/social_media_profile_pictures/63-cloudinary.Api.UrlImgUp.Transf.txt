@@ -1,0 +1,1 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation().Width(80).Height(120).Gravity("face").Crop("fill")).Action("facebook").BuildImageTag("65646572251.jpg")

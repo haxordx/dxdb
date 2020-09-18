@@ -1,0 +1,6 @@
+<cl-image public-id="sample.jpg" >
+  <cl-transformation width="300" crop="limit">
+  </cl-transformation>
+  <cl-transformation if="iw_gt_300" color="white" gravity="south_east" overlay="text:Arial_15_bold:Image%20scaled%20down%20to%20300px">
+  </cl-transformation>
+</cl-image>

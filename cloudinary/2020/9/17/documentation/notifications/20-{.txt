@@ -1,0 +1,5 @@
+{
+  "notification_type": "rename",
+  "from_public_id": "testing",
+  "to_public_id": "testing-newname"
+}

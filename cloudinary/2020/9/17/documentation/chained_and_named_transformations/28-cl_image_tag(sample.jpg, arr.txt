@@ -1,0 +1,1 @@
+cl_image_tag("sample.jpg", array("transformation"=>array("fit_100x150")))

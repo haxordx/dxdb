@@ -1,0 +1,3 @@
+cloudinary.api.update("hwepb67oxzh4lrigssld",
+  resource_type = "video", 
+  moderation_status = "rejected")

@@ -1,0 +1,2 @@
+cloudinary.uploader().upload("rolling_stones.jpg", 
+  ObjectUtils.asMap("detection", "aws_rek_face"));

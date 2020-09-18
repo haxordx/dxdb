@@ -1,0 +1,4 @@
+<cl-video public-id="dog" >
+  <cl-transformation effect="deshake:32">
+  </cl-transformation>
+</cl-video>

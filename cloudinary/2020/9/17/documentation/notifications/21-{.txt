@@ -1,0 +1,6 @@
+{
+  "notification_type": "create_folder",
+  "source": "ui",
+  "folder_path": "workflow",
+  "folder_name": "workflow"
+}

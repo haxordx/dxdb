@@ -1,0 +1,4 @@
+<cl-image public-id="face_left.png" >
+  <cl-transformation width="200" height="200" gravity="face" radius="max" crop="thumb">
+  </cl-transformation>
+</cl-image>

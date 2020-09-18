@@ -1,0 +1,17 @@
+$api->add_metadata_field(
+  array(
+    "external_id" => "color_id",
+    "label" => "Colors",
+    "type" => "set",
+    "mandatory" => "true",
+    "default_value" => ["color1", "color2"],
+    "datasource" => array(
+      "values" => array(
+        array("external_id" => "color1", "value" => "red"),
+        array("external_id" => "color2", "value" => "green"),
+        array("external_id" => "color3", "value" => "blue"),
+        array("external_id" => "color4", "value" => "yellow"),
+      )
+    )
+  )
+);

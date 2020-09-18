@@ -1,0 +1,1 @@
+api.deleteResourcesByTag(String tag, Map options);

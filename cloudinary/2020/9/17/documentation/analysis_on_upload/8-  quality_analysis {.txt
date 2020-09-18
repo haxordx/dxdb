@@ -1,0 +1,17 @@
+  "quality_analysis": {
+    "jpeg_quality": 0.76,
+    "jpeg_chroma": 0.25,
+    "focus": 0.16,
+    "noise": 1.0,
+    "contrast": 0.85,
+    "exposure": 0.97,
+    "saturation": 1.0,
+    "lighting": 1.0,
+    "pixel_score": 0.27,
+    "color_score": 0.91,
+    "dct": 0.29,
+    "blockiness": 1.0,
+    "chroma_subsampling": 0.06,
+    "resolution": 0.08
+  },
+  "quality_score": 0.47,

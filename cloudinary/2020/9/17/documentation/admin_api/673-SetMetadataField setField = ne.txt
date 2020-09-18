@@ -1,0 +1,12 @@
+SetMetadataField setField = new SetMetadataField();
+setField.setExternalId("color_id");
+setField.setLabel("Colors");
+setField.setMandatory(true);
+setField.setDefaultValue(Arrays.asList("color1", "color2"));
+setField.setDataSource(new MetadataDataSource(Arrays.asList(
+  new Entry("color1", "red"),
+  new Entry("color2", "green"),
+  new Entry("color3", "blue"),
+  new Entry("color4", "yellow")
+)));
+api.addMetadataField(setField);

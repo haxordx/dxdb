@@ -1,0 +1,2 @@
+cloudinary.uploader().upload("coupled.jpg", 
+  ObjectUtils.asMap("detection", "adv_face"));

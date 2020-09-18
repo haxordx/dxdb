@@ -1,0 +1,2 @@
+Cloudinary::Uploader.add_tag('animal', 
+  ['dog', 'lion'])

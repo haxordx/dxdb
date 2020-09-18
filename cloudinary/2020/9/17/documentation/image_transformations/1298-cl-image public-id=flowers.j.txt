@@ -1,0 +1,6 @@
+<cl-image public-id="flowers.jpg" >
+  <cl-transformation width="500" crop="scale">
+  </cl-transformation>
+  <cl-transformation overlay="text:Arial_80:Flowers">
+  </cl-transformation>
+</cl-image>

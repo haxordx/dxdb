@@ -1,0 +1,4 @@
+\Cloudinary\Api::update("puppy", 
+  array(
+    "categorization" => "google_tagging:ru", 
+    "auto_tagging" => 0.9));

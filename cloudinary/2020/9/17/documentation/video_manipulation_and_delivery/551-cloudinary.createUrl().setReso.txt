@@ -1,0 +1,1 @@
+cloudinary.createUrl().setResourceType("video").setTransformation(CLDTransformation().setDuration("30").setQuality("70:qmax_20")).generate("Liverpool_vs_Roma_full.webm")

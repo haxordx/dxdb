@@ -1,0 +1,4 @@
+<Video cloudName="demo" publicId="dog" controls="true" >
+  <Transformation width="0.4" angle="20" />
+  <Transformation overlay="cloudinary_icon" opacity="50" width="60" gravity="south_east" y="15" x="60" />
+</Video>

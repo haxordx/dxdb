@@ -1,0 +1,2 @@
+import cloudinary.api
+cloudinary.api.resource("sample")

@@ -1,0 +1,3 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation()
+  .setEffect("lightroom:saturation_-100:clarity_25:contrast_73:vignetteamount_60").chain()
+  .setWidth(500).setQuality("auto").setEffect("distort:0:0:500:100:500:232:0:332").setCrop("scale")).generate("city_pic.jpg")!, cloudinary: cloudinary)

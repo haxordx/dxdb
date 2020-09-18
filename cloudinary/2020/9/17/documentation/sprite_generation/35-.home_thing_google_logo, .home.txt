@@ -1,0 +1,18 @@
+.home_thing_google_logo, .home_thing_apple_logo, 
+.home_thing_microsoft_logo, .home_thing_amazon_logo {
+  background: 
+    url('https://res.cloudinary.com/demo/image/sprite/p_home_thing_/v1315743843/logo.png') 
+    no-repeat;
+}
+.home_thing_google_logo { 
+    background-position: 0px 0px; width: 275px; height: 95px; 
+}
+.home_thing_apple_logo { 
+    background-position: 0px -97px; width: 206px; height: 250px; 
+}
+.home_thing_microsoft_logo { 
+    background-position: 0px -349px; width: 216px; height: 70px; 
+}
+.home_thing_amazon_logo { 
+    background-position: 0px -421px; width: 162px; height: 38px; 
+}

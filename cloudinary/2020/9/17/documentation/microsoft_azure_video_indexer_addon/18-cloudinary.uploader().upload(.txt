@@ -1,0 +1,4 @@
+cloudinary.uploader().upload("jack.mp4", 
+  ObjectUtils.asMap(
+    "resource_type", "video", 
+    "categorization", "azure_video_indexer"));

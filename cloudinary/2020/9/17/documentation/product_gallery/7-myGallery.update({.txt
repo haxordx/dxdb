@@ -1,0 +1,3 @@
+myGallery.update({
+  mediaAssets: [{ tag: "sack" }]
+});

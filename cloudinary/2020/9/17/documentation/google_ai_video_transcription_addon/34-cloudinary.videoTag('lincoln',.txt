@@ -1,0 +1,1 @@
+cloudinary.videoTag('lincoln', {overlay: new cloudinary.SubtitlesLayer().publicId("lincoln.transcript")}).toHtml();

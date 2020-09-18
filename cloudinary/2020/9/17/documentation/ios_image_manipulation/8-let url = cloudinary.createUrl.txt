@@ -1,0 +1,4 @@
+let url = cloudinary.createUrl()
+  .setTransformation(CLDTransformation()
+    .setWidth(250).setHeight(250).setGravity("faces").setCrop("fill"))
+  .generate("family_bench.jpg")

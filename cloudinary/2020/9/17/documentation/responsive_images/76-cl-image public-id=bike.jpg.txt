@@ -1,0 +1,6 @@
+<cl-image public-id="bike.jpg" use-root-path="true" client-hints="true">
+  <cl-transformation aspect-ratio="16:9" crop="fill">
+  </cl-transformation>
+  <cl-transformation width="auto:breakpoints:json" crop="scale">
+  </cl-transformation>
+</cl-image>

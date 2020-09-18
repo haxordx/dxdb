@@ -1,0 +1,9 @@
+<application
+  ...
+  <service 
+    android:name="com.myapp.UploadListner" />
+  <meta-data
+    android:name="cloudinaryCallbackService"
+    android:value="com.myapp.UploadListner" />
+  ...
+</application>

@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation().setWidth(150).setHeight(150).setGravity("auto:0").setCrop("thumb")).generate("sunset_shoes.jpg")!, cloudinary: cloudinary)

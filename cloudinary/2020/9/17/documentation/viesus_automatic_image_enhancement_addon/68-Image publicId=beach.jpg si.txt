@@ -1,0 +1,5 @@
+<Image publicId="beach.jpg" signUrl="true">
+  <Transformation effect="viesus_correct" gravity="south" radius="20" width="1000" crop="crop" />
+  <Transformation gravity="north_east" overlay="viesus_logo" opacity="50" width="100" x="10" y="10" crop="scale" />
+  <Transformation width="600" crop="scale" />
+</Image>

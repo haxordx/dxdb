@@ -1,0 +1,2 @@
+cloudinary.url().transformation(new Transformation()
+.variables(variable("$newwidth","10 + iw * 0.3")).chain().width("$newwidth").crop("scale")).imageTag("woman.jpg");

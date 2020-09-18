@@ -1,0 +1,2 @@
+cloudinary.utils().privateDownload("my_picID", "jpg", 
+    ObjectUtils.emptyMap());

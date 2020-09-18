@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().gravity("face").width(500).flags("getinfo").crop("thumb")).imageTag("docs/plain_face.jpg");

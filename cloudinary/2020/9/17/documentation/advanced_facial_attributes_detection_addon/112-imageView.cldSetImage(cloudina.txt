@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation().setFlags("region_relative").setGravity("adv_faces").setOverlay("silver_face_mask").setWidth(1.1)).generate("coupled.jpg")!, cloudinary: cloudinary)

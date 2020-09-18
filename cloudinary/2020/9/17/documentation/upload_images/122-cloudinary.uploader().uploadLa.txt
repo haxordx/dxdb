@@ -1,0 +1,2 @@
+cloudinary.uploader().uploadLarge("my_large_video.mp4",
+  ObjectUtils.asMap("resource_type", "video"));

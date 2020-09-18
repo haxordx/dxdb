@@ -1,0 +1,5 @@
+<Video publicId="dog" >
+  <Transformation width="300" height="200" crop="scale" />
+  <Transformation width="300" height="200" overlay="sample" flags="splice" duration="3" />
+  <Transformation startOffset="0" flags="layer_apply" />
+</Video>

@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().overlay(new Layer().publicId("video:kitten_fighting")).effect("fade:3000").width(100)).videoTag("dog");

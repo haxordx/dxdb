@@ -1,0 +1,4 @@
+<cld-image publicId="sample.jpg" >
+  <cld-transformation if="w_lte_200" height="120" width="80" crop="fill" />
+  <cld-transformation if="else" height="90" width="100" crop="fill" />
+</cld-image>

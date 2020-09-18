@@ -1,0 +1,6 @@
+<cl-image public-id="docs/plain_face.jpg" >
+  <cl-transformation overlay="golden_star" gravity="north_west" width="20" x="314" y="148">
+  </cl-transformation>
+  <cl-transformation width="500" crop="scale">
+  </cl-transformation>
+</cl-image>

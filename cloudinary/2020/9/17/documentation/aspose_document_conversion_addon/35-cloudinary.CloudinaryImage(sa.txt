@@ -1,0 +1,1 @@
+cloudinary.CloudinaryImage("sample_document.docx.pdf").build_url()

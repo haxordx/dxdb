@@ -1,0 +1,5 @@
+cloudinary.uploader().upload("ftp://user1:mypass@ftp.example.com/sample.jpg", 
+  ObjectUtils.asMap(
+    "eager", Arrays.asList(
+      new Transformation().width(400).height(300).crop("pad"),
+      new Transformation().width(260).height(200).crop("crop").gravity("north"))));

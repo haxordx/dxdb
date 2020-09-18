@@ -1,0 +1,6 @@
+<cl-image public-id="docs/foyer-table" >
+<cl-transformation format="gltz">
+</cl-transformation>
+<cl-transformation flags="draco">
+</cl-transformation>
+</cl-image>

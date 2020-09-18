@@ -1,0 +1,5 @@
+cl_image_tag("horses.jpg", array("sign_url"=>true, "transformation"=>array(
+  array("effect"=>"saturation:50", "radius"=>20, "width"=>400, "crop"=>"scale"),
+  array("gravity"=>"south_east", "overlay"=>"logo_jpegmini", "opacity"=>80, "width"=>100, "x"=>10, "y"=>10),
+  array("quality"=>"jpegmini")
+  )))

@@ -1,0 +1,3 @@
+<cld-image publicId="long_multi_page_pdf" >
+
+</cld-image>

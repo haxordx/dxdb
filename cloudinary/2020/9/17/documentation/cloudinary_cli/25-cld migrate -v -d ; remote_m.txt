@@ -1,0 +1,1 @@
+cld migrate -v -d ";" remote_media url_file.txt

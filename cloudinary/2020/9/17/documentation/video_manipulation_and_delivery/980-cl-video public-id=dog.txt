@@ -1,0 +1,6 @@
+<cl-video public-id="dog" >
+  <cl-transformation audio-codec="none">
+  </cl-transformation>
+  <cl-transformation overlay="video:electronic" effect="volume:-50">
+  </cl-transformation>
+</cl-video>

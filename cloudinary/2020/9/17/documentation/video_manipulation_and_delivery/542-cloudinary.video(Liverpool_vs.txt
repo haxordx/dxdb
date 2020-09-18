@@ -1,0 +1,1 @@
+cloudinary.video("Liverpool_vs_Roma_full", {duration: "30", quality: "70:qmax_20"})

@@ -1,0 +1,1 @@
+cl_video_tag("kitten_fighting", array("resource_type"=>"image"))

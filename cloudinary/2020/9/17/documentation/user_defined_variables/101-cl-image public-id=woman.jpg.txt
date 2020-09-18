@@ -1,0 +1,4 @@
+<cl-image public-id="woman.jpg" variables="[['$width', '115']]">
+  <cl-transformation transformation={{["passport_photo"]}}>
+  </cl-transformation>
+</cl-image>

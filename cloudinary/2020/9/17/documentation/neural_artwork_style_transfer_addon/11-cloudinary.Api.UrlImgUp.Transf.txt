@@ -1,0 +1,3 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation()
+  .Width(700).Height(700).Crop("fill").Chain()
+  .Effect("style_transfer").Overlay(new Layer().PublicId("sailing_angel"))).BuildImageTag("golden_gate.jpg")

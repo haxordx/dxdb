@@ -1,0 +1,5 @@
+const myGallery= cloudinary.galleryWidget({ 
+  container: "#my-gallery", 
+  cloudName: "demo", 
+  mediaAssets: [{ tag: "shoe", mediaType: "video" }]   
+});

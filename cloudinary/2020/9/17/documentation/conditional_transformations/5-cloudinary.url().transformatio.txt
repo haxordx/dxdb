@@ -1,0 +1,3 @@
+cloudinary.url().transformation(new Transformation()
+  .width(300).crop("limit").chain()
+  .if("iw_gt_300").color("white").gravity("south_east").overlay(new TextLayer().fontFamily("Arial").fontSize(15).fontWeight("bold").text("Image%20scaled%20down%20to%20300px"))).imageTag("sample.jpg");

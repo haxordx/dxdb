@@ -1,0 +1,4 @@
+player.sourcesByTag("demo")
+  .then(function(sources) { 
+    player.playlist(sources)
+  })

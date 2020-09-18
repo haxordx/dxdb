@@ -1,0 +1,4 @@
+<Image publicId="coast.jpg" signUrl="true">
+  <Transformation width="400" crop="scale" />
+  <Transformation height="150" overlay="family_bench.png" radius="max" width="150" crop="imagga_scale" />
+</Image>

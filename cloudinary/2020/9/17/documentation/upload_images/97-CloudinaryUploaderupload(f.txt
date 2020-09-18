@@ -1,0 +1,4 @@
+\Cloudinary\Uploader::upload(file, 
+  array(
+    "resource_type" => "video", 
+    "<optional_parameters...>"));

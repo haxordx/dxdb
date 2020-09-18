@@ -1,0 +1,7 @@
+cloudinary.uploader().upload("big_buck_bunny.mp4", 
+        ObjectUtils.asMap("resource_type", "video",
+        "eager", Arrays.asList(
+              new Transformation().format("m3u8").width(960).height(540).crop("limit").videoCodec("h264:main:3.1").bitRate("3500k")),
+        "eager_async", true,
+        "eager_notification_url", "https://mysite.example.com/notify_endpoint"
+        "public_id", "bb_bunny"));

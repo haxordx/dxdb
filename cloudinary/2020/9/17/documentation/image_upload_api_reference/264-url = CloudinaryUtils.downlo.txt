@@ -1,0 +1,1 @@
+url = Cloudinary::Utils.download_zip_url(options = {})

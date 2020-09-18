@@ -1,0 +1,3 @@
+<cl-image public-id="http://www.youtube.com/watch?v=aNwnPElsJGE" type="youtube">
+
+</cl-image>

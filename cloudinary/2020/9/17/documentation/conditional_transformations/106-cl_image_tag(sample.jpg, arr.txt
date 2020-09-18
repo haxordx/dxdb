@@ -1,0 +1,9 @@
+cl_image_tag("sample.jpg", array("transformation"=>array(
+  array("if"=>"w_lte_400"),
+  array("height"=>220, "width"=>180, "crop"=>"fill"),
+  array("effect"=>"red"),
+  array("if"=>"else"),
+  array("height"=>190, "width"=>300, "crop"=>"fill"),
+  array("effect"=>"oil_paint"),
+  array("if"=>"end")
+  )))

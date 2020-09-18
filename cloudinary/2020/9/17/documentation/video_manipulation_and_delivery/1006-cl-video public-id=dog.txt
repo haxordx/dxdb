@@ -1,0 +1,6 @@
+<cl-video public-id="dog" >
+  <cl-transformation overlay="cloudinary_icon" width="200" gravity="east" start-offset="1" end-offset="11">
+  </cl-transformation>
+  <cl-transformation overlay="text:arial_40:Sample%20Video" gravity="south" y="60" start-offset="2">
+  </cl-transformation>
+</cl-video>

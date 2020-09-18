@@ -1,0 +1,1 @@
+cloudinary.Api.UrlImgUp.BuildImageTag("puppy.jpg")

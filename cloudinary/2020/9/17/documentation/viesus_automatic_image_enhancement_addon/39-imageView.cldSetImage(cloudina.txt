@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation().setEffect("viesus_correct").setWidth(400).setCrop("scale")).generate("beach.jpg", signUrl: true)!, cloudinary: cloudinary)

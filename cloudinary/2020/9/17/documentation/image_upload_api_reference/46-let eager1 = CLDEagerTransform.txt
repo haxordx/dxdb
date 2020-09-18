@@ -1,0 +1,8 @@
+let eager1 = CLDEagerTransformation()
+  .setWidth(400).setHeight(300).setCrop("pad")
+let eager2 = CLDEagerTransformation()
+  .setWidth(260).setHeight(200).setCrop("crop").setGravity("north")
+let params = CLDUploadRequestParams().setEager([eager1, eager2])
+var mySig = MyFunction(params)  // your own function that returns a signature generated on your backend
+params.setSignature(CLDSignature(signature: mySig.signature, timestamp: mySig.timestamp))
+let request = cloudinary.createUploader().signedUpload(url: "ftp://user1:mypass@ftp.example.com/sample.jpg", params: params)

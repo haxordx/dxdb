@@ -1,0 +1,5 @@
+cloudinary.api.create_upload_preset(
+  name = "my_preset",
+  unsigned = True, 
+  tags = "remote", 
+  allowed_formats = "jpg,png")

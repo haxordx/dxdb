@@ -1,0 +1,1 @@
+cloudinary.video("imagecon_grigsby_intro", {effect: "preview:duration_12:max_seg_3:min_seg_dur_3"})

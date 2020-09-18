@@ -1,0 +1,6 @@
+var uploadParams = new VideoUploadParams()
+{
+  File = new FileDescription(@"abt_cloudinary_french.mp4"),
+  RawConvert = "google_speech:fr-CA"
+};
+var uploadResult = cloudinary.Upload(uploadParams);

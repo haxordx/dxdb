@@ -1,0 +1,5 @@
+String requestId = MediaManager.get().upload("dog.jpg")
+   .unsigned("preset1")
+   .option("connect_timeout", 10000)
+   .option("read_timeout", 10000)
+   .dispatch();

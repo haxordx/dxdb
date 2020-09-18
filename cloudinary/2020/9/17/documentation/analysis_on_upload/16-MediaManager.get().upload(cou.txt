@@ -1,0 +1,5 @@
+MediaManager.get().upload("couple.jpg")
+  .option("colors", true)
+  .option("phash", true)
+  .option("image_metadata", true)
+  .option("quality_analysis", true).dispatch();

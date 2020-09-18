@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().gravity("dog:cat").crop("crop")).imageTag("docs/one_cat_one_dog.jpg");

@@ -1,0 +1,1 @@
+var demoplayer = cld.videoPlayer('demo-player', {<...constructor params here...>} )

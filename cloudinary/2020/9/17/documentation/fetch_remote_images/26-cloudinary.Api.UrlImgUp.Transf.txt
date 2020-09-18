@@ -1,0 +1,1 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation().Width(300).Height(300).Gravity("face").Radius("max").Crop("fill").FetchFormat("auto")).Action("fetch").BuildImageTag("https://upload.wikimedia.org/wikipedia/commons/1/13/Benedict_Cumberbatch_2011.png")

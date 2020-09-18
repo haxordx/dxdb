@@ -1,0 +1,14 @@
+{
+  "notification_type": "resource_metadata_changed",
+  "source": "api",
+  "resources": {
+    "eng/Image 2019-12-16 at 8.39.08 AM": {
+      "previous_metadata": {},
+      "new_metadata": {
+        "onjmg1uxnmk69vssmmfp": "y0g4xju6awyrhumbyvbx"
+      },
+      "resource_type": "image",
+      "type": "upload"
+    }
+  }
+}

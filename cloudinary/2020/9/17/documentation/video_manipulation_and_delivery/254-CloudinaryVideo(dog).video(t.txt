@@ -1,0 +1,4 @@
+CloudinaryVideo("dog").video(transformation=[
+  {'width': 100, 'crop': "scale"},
+  {'dpr': "2.0"}
+  ])

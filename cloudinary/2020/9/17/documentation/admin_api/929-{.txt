@@ -1,0 +1,25 @@
+{
+  "plan": "Basic",
+  "last_updated": "2019-11-10",
+  "transformations": {"usage": 1218018, "credits_usage": 1.22}, 
+  "objects": {"usage": 1217216}, 
+  "bandwidth": {"usage": 268903064875, "credits_usage": 0.24}, 
+  "storage": {"usage": 10298444599, "credits_usage": 0.01}, 
+  "credits": {"usage": 1.47}, 
+  "requests": 877212,
+  "resources": 1239,
+  "derived_resources": 10091,
+  "url2png": {"usage": 15, "limit": 50},
+  "webpurify": {"usage": 28, "limit": 50},
+  "aspose": {"usage": 40, "limit": 50},
+  "style_transfer": {"usage": 76, "limit": 5000},
+  "azure_video_indexer": {"usage": 2340, "limit": 5000}, 
+  "object_detection": {"usage": 340, "limit": 500},
+  "media_limits": { 
+    "image_max_size_bytes": 157286400, 
+    "video_max_size_bytes": 3145728000, 
+    "raw_max_size_bytes": 2097152000, 
+    "image_max_px": 100000000, 
+    "asset_max_total_px": 300000000 
+  }
+}

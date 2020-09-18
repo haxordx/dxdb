@@ -1,0 +1,5 @@
+CloudinaryVideo("docs/kitten_fighting2").video(variables={"$qualtag": "!Pro!"}, transformation=[
+  {'if': "$qualtag_in_tags", 'quality': 80},
+  {'if': "else", 'quality': 30},
+  {'width': 500, 'crop': "scale"}
+  ])

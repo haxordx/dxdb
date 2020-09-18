@@ -1,0 +1,1 @@
+CloudinaryImage("kitten_fighting.gif").image(width=200, crop="scale")

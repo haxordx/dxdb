@@ -1,0 +1,4 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation()
+  .Width(200).Height(200).Effect("saturation:50").Crop("pad").Chain()
+  .Effect("shadow").Chain()
+  .Border("1px_solid_rgb:666")).BuildImageTag("wood_chair.jpg")

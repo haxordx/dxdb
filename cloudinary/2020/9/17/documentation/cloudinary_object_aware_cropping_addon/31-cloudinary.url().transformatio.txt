@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().gravity("sink").aspectRatio("1").crop("crop")).imageTag("docs/kitchen1.jpg");

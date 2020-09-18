@@ -1,0 +1,3 @@
+<Video publicId="dog.webp" resourceType="video">
+  <Transformation videoSampling="10" delay="100" width="250" flags={["awebp", "animated"]} crop="scale" />
+</Video>

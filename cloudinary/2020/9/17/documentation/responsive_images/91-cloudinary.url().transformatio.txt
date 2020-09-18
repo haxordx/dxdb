@@ -1,0 +1,2 @@
+cloudinary.url().transformation(new Transformation().width("auto").client_hints("true").crop("scale")
+  .quality("auto").sizes("100vw")).imageTag("sample.jpg");

@@ -1,0 +1,1 @@
+$.cloudinary.image("log_cabin.jpg", {transformation: ["image_ratings"], variables: [["$rating", "!thumbs-up!"]]})

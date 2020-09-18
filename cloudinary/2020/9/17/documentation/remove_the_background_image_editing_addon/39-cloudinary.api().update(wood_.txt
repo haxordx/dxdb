@@ -1,0 +1,2 @@
+cloudinary.api().update("wood_chair", 
+  ObjectUtils.asMap("background_removal", "pixelz" ));

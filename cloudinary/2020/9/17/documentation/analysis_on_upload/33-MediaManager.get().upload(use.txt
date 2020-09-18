@@ -1,0 +1,3 @@
+MediaManager.get().upload("user_photo.jpg")
+  .option("moderation", "manual")
+  .option("notification_url", "https://mysite.example.com/mod_endpoint").dispatch();

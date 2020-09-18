@@ -1,0 +1,8 @@
+var explicitParams = new ExplicitParams("sample"){
+  Type = "upload",
+  EagerTransforms = new List<Transformation>(){
+    new Transformation().Width(400).Height(400)
+      .Crop("crop").Gravity("face"),
+    new Transformation().Width(660).Height(400)
+      .Crop("pad").Background("blue")}};
+var explicitResult = cloudinary.Explicit(explicitParams);

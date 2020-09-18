@@ -1,0 +1,4 @@
+<cld-video publicId="dog" >
+  <cld-transformation width="300" crop="scale" />
+  <cld-transformation overlay="video:dog" width="100" gravity="north_east" radius="max" />
+</cld-video>

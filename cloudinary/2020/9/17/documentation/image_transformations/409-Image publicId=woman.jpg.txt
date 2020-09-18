@@ -1,0 +1,3 @@
+<Image publicId="woman.jpg" >
+  <Transformation gravity="face" width="150" height="150" crop="thumb" />
+</Image>

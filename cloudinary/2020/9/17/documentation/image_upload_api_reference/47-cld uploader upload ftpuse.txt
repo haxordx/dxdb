@@ -1,0 +1,1 @@
+cld uploader upload "ftp://user1:mypass@ftp.example.com/sample.jpg" eager='[{"width": 400, "height": 300, "crop": "pad"},{"width": 260, "height": 200, "crop": "crop", "gravity": "north"}]'

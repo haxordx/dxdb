@@ -1,0 +1,5 @@
+$.cloudinary.image("sample.jpg", {transformation: [
+  {transformation: ["jpg_with_quality_30"]},
+  {transformation: ["crop_400x400"]},
+  {transformation: ["fit_100x150"]}
+  ]})

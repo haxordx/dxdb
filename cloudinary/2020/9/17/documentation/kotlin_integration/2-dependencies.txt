@@ -1,0 +1,9 @@
+<dependencies>
+  ...
+  <dependency>
+    <groupId>com.cloudinary</groupId>
+    <artifactId>kotlin-url-gen</artifactId>
+    <version>0.0.1-beta.1</version>
+    <type>pom</type>
+  </dependency>
+</dependencies>

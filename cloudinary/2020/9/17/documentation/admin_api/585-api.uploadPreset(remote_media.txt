@@ -1,0 +1,2 @@
+api.uploadPreset("remote_media",
+  ObjectUtils.emptyMap());

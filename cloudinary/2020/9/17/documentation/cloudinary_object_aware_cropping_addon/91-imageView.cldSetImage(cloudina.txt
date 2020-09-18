@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation().setGravity("dog:bird").setWidth(600).setHeight(800).setCrop("crop")).generate("docs/cat_and_birds.jpg")!, cloudinary: cloudinary)

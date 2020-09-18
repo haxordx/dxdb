@@ -1,0 +1,4 @@
+<cl-image public-id="sample.jpg" >
+  <cl-transformation effect="oil_paint:70">
+  </cl-transformation>
+</cl-image>

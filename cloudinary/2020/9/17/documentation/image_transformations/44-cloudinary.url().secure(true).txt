@@ -1,0 +1,1 @@
+cloudinary.url().secure(true).imageTag("sample.jpg");

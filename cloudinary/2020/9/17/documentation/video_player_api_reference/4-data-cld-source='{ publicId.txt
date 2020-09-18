@@ -1,0 +1,1 @@
+data-cld-source='{ "publicId": "mymovie", "transformation": { "width": 500 } }'

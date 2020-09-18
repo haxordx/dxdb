@@ -1,0 +1,4 @@
+<cld-image publicId="beach_2_kids.jpg" >
+  <cld-transformation height="700" width="700" crop="fill" />
+  <cld-transformation effect="style_transfer:preserve_color:40" overlay="lighthouse" />
+</cld-image>

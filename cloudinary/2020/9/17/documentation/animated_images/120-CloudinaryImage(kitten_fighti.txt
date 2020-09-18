@@ -1,0 +1,1 @@
+CloudinaryImage("kitten_fighting.gif").image(fetch_format="auto")

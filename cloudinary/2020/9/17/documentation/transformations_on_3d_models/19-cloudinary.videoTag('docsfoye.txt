@@ -1,0 +1,4 @@
+cloudinary.videoTag('docs/foyer-table', resource_type: "image", {transformation: [
+  {fetchFormat: "mp4"},
+  {background: "#d5d2ca", height: 300, flags: "animated", crop: "scale"}
+  ]}).toHtml();

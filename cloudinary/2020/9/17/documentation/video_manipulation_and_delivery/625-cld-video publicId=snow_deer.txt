@@ -1,0 +1,4 @@
+<cld-video publicId="snow_deer.gif" resourceType="video">
+  <cld-transformation width="480" startOffset="3" endOffset="5" effect="boomerang" crop="scale" />
+  <cld-transformation effect="loop" />
+</cld-video>

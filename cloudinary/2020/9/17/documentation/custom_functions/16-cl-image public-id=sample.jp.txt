@@ -1,0 +1,6 @@
+<cl-image public-id="sample.jpg">
+  <cl-transformation customFunction={
+   "function_type": "wasm",
+    "source": "my_example.wasm"}>
+  </cl-transformation>
+</cl-image>

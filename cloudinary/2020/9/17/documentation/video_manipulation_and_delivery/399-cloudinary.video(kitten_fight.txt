@@ -1,0 +1,8 @@
+cloudinary.video("kitten_fighting", {transformation: [
+  {width: 300, height: 200, duration: "5", crop: "scale"},
+  {overlay: "video:dog", width: 300, height: 200},
+  {duration: "5"},
+  {overlay: "video:transition1", effect: "transition"},
+  {flags: "layer_apply"},
+  {flags: "layer_apply"}
+  ]})

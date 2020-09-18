@@ -1,0 +1,4 @@
+<cl-image public-id="sample_van.jpg" sign-url="true">
+  <cl-transformation height="240" width="260" crop="imagga_scale">
+  </cl-transformation>
+</cl-image>

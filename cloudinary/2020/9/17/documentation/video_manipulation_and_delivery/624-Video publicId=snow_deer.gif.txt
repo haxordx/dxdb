@@ -1,0 +1,4 @@
+<Video publicId="snow_deer.gif" resourceType="video">
+  <Transformation width="480" startOffset="3" endOffset="5" effect="boomerang" crop="scale" />
+  <Transformation effect="loop" />
+</Video>

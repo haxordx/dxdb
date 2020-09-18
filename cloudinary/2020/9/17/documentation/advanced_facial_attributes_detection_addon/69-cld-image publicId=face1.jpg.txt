@@ -1,0 +1,3 @@
+<cld-image publicId="face1.jpg" >
+  <cld-transformation width="100" height="40" gravity="adv_eyes" crop="thumb" />
+</cld-image>

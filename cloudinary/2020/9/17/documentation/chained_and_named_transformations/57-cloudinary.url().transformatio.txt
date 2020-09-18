@@ -1,0 +1,4 @@
+cloudinary.url().transformation(new Transformation()
+  .named("jpg_with_quality_30").chain()
+  .named("crop_400x400").chain()
+  .named("fit_100x150")).imageTag("sample.jpg");

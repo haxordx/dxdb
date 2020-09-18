@@ -1,0 +1,3 @@
+<cld-video publicId="ski_jump" >
+  <cld-transformation effect="loop:2" />
+</cld-video>

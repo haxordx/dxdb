@@ -1,0 +1,18 @@
+{
+  ...
+  "tags": [ "dog", "dog like mammal", "dog breed", "mammal" ]
+  "info": {
+    "categorization": {
+      "google_tagging": {
+        "status": "complete",
+        "data": [
+         {"tag": "dog", "confidence": 0.9611},
+         {"tag": "dog like mammal", "confidence": 0.9508},
+         {"tag": "dog breed", "confidence": 0.9396},
+         {"tag": "mammal", "confidence": 0.923},
+         {"tag": "dog breed group", "confidence": 0.8883},
+         {"tag": "borador", "confidence": 0.8145},
+         {"tag": "grass", "confidence": 0.7731},
+         {"tag": "puppy", "confidence": 0.7715},
+         ...
+}

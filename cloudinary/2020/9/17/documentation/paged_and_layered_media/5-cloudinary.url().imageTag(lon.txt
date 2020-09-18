@@ -1,0 +1,1 @@
+cloudinary.url().imageTag("long_multi_page_pdf");

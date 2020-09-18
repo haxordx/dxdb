@@ -1,0 +1,2 @@
+cloudinary.uploader().upload("concert_ticket.jpg", 
+  ObjectUtils.asMap("ocr", "adv_ocr"));

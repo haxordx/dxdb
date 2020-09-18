@@ -1,0 +1,3 @@
+cloudinary.url().transformation(new Transformation()
+  .width(400).height(400).gravity("face").radius("max").crop("crop").chain()
+  .width(200).crop("scale")).imageTag("lady.jpg");

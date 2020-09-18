@@ -1,0 +1,15 @@
+{
+  "moderation_response": "rejected",
+  "moderation_status": "rejected",
+  "moderation_kind": "webpurify",
+  "moderation_updated_at": "2014-03-02T20:47:48Z",
+  "public_id": "nuzn4riqxhhzfyfljjxv",
+  "uploaded_at": "2014-03-02T20:47:47Z",
+  "version": 1571217178,
+  "url":
+    "http://res.cloudinary.com/demo/image/upload/v1571217178/nuzn4riqxhhzfyfljjxv.jpg",
+  "secure_url":
+    "https://res.cloudinary.com/demo/image/upload/v1571217178/nuzn4riqxhhzfyfljjxv.jpg",
+  "etag":"06778590d96907b60b5fa83795e7df3b",
+  "notification_type":"moderation"
+}

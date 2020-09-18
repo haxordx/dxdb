@@ -1,0 +1,4 @@
+<Image publicId="golden_gate.jpg" >
+  <Transformation width="700" height="700" crop="fill" />
+  <Transformation effect="style_transfer" overlay="sailing_angel" />
+</Image>

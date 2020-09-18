@@ -1,0 +1,2 @@
+$api->update_transformation("w_150,h_100,c_fill",
+  array("allowed_for_strict" => 1));

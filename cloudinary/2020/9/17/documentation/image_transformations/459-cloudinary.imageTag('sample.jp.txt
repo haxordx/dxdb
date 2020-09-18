@@ -1,0 +1,1 @@
+cloudinary.imageTag('sample.jpg', {aspectRatio: "16:9", crop: "fill"}).toHtml();

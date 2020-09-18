@@ -1,0 +1,1 @@
+Cloudinary::Api.delete_datasource_entries("color_id", ["color1"])

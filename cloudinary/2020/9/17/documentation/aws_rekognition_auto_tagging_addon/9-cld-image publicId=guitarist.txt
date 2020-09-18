@@ -1,0 +1,3 @@
+<cld-image publicId="guitarist.jpg" >
+
+</cld-image>

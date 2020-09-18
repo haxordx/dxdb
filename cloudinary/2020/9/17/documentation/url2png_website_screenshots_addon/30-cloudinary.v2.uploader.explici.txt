@@ -1,0 +1,3 @@
+cloudinary.v2.uploader.explicit("https://en.wikipedia.org/wiki/Jpg", 
+  { type: "url2png" },
+  function(error, result){console.log(result);});

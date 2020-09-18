@@ -1,0 +1,1 @@
+cloudinary.imageTag('flower.jpg', {overlay: new cloudinary.Layer().publicId("cloudinary_icon"), width: "0.2", flags: "relative"}).toHtml();

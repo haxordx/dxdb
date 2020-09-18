@@ -1,0 +1,4 @@
+<cl-image public-id="blue_burlap.png" >
+  <cl-transformation effect="replace_color:maroon:80:2b38aa">
+  </cl-transformation>
+</cl-image>

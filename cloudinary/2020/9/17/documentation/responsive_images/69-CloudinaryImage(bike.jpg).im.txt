@@ -1,0 +1,4 @@
+CloudinaryImage("bike.jpg").image(use_root_path=True, client_hints=True, transformation=[
+  {'aspect_ratio': "16:9", 'crop': "fill"},
+  {'width': "auto:breakpoints:json", 'crop': "scale"}
+  ])

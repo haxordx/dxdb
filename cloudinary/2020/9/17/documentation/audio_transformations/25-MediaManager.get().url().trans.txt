@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().startOffset("0").duration("3")).resourceType("video").generate("dog.mp3");

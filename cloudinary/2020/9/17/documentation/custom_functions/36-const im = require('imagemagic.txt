@@ -1,0 +1,81 @@
+const im = require('imagemagick');
+const multipart = require('aws-lambda-multipart-parser');
+const fs = require('fs');
+const fail = (message) => {
+    console.log(message);
+    throw new Error(message);
+};
+const perform = (operation, args) => new Promise((resolve, reject) => im[operation](args, (err, res) => {
+    if (err) {
+        console.log(`${operation} operation failed:`, err);
+        reject(err);
+    } else {
+        console.log(`${operation} completed successfully`);
+        resolve(res);
+    }
+}));
+const postProcessResource = (resource, fn) => {
+    let ret = null;
+    if (resource) {
+        if (fn) {
+            ret = fn(resource);
+        }
+        try {
+            fs.unlinkSync(resource);
+        } catch (err) {
+            // Ignore
+        }
+    }
+    return ret;
+};
+const transform = async (file) => {
+    // current time as string
+    const date = (new Date()).toDateString();
+    // transformation in imagemagick: resize to 314px, overlay text at x=5px, y=20px.
+    const customArgs = ['-resize', '314x', '-fill', 'blue', '-draw', `text 5,20 '${date}'`];
+    // prepare input and output files
+    let inputFile = null;
+    let outputFile = null;
+    inputFile = `/tmp/inputFile`;
+    fs.writeFileSync(inputFile, file);
+    customArgs.unshift(inputFile);
+    outputFile = `/tmp/outputFile.jpg`;
+    customArgs.push(outputFile);
+    // actual conversion
+    const output = await perform('convert', customArgs);
+    postProcessResource(inputFile);
+    if (outputFile) {
+        return postProcessResource(outputFile, (file) => new Buffer(fs.readFileSync(file)));
+    }
+    // Return the command line output as a debugging aid
+    return output;
+};
+exports.handler = async (event, context, callback) => {
+    const parsedRequest = multipart.parse(event, false);
+    const file = parsedRequest.file.content;
+    return transform(file).then((result) => {
+      // return the image and new metadata.   
+      if (event.queryStringParameters && event.queryStringParameters.cldb) {
+          const bodyLengthBuf = new Buffer(4);
+          const bodyLength = result.length;
+          bodyLengthBuf.writeUInt32BE(bodyLength);
+          const metadata = Buffer.from(JSON.stringify({"coordinates": {"custom": [[45,57,100,120]]}}));
+          const metadataLengthBuf = new Buffer(4);
+          const metadataLength = metadata.length;
+          metadataLengthBuf.writeUInt32BE(metadataLength);
+          result = Buffer.concat([Buffer.from('CLDB'), bodyLengthBuf, result, metadataLengthBuf, metadata], 3*4 + metadataLength + bodyLength);
+      }
+      callback(null, {
+        statusCode: 200,
+        headers: { 'Content-Type': 'image/jpeg', 'Content-Length': result.length},
+        isBase64Encoded: true,
+        body: result.toString('base64')
+      });
+    }).catch((error) => {
+      callback(null, {
+        statusCode: 502,
+        headers:    { 'Content-Type': 'application/json' },
+        body:    `{"error": "Error manipulating image ${error}"}`
+      });
+    });
+};

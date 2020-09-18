@@ -1,0 +1,5 @@
+var getResource = new GetResourceParams("sample"){
+  Faces = true,
+
+Colors = ImageMetadata = Versions = true };
+var info = cloudinary.GetResource(getResource);

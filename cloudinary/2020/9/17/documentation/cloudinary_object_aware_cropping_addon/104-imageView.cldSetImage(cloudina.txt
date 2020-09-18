@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation().setWidth(500).setAspectRatio("1.0").setGravity("auto:person_avoid").setCrop("fill")).generate("docs/store_front.jpg")!, cloudinary: cloudinary)

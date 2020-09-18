@@ -1,0 +1,4 @@
+cloudinary.api.update_upload_preset("wiki",
+  unsigned = True, 
+  tags = "remote", 
+  allowed_formats = "jpg,png")

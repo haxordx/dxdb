@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().quality("jpegmini").width(400).crop("scale")).signed(true).imageTag("horses.jpg");

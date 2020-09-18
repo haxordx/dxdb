@@ -1,0 +1,1 @@
+CloudinaryImage("woman.jpg").image(transformation=["passport_photo"], variables={"$width": "115"})

@@ -1,0 +1,11 @@
+var metadataFieldCreateParams = new SetMetadataFieldCreateParams("color_id"){
+  Label = "Colors",
+  Mandatory = true,
+  DefaultValue = new List<string>{"color1" ,"color2"},
+  DataSource = new MetadataDataSourceParams(new List<EntryParams>{
+    new EntryParams("color1", "red"),
+    new EntryParams("color2", "green"),
+    new EntryParams("color3", "blue"),
+    new EntryParams("color4", "yellow")})
+};
+cloudinary.AddMetadataField(metadataFieldCreateParams);

@@ -1,0 +1,3 @@
+cloudinary.uploader.upload("user_photo.jpg",
+  quality_analysis = 1,
+  eval = "if (resource_info.quality_analysis.focus < 0.5) { upload_options['tags'] = 'blurry' }")

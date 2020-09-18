@@ -1,0 +1,3 @@
+MediaManager.get().upload("turtles.jpg")
+  .option("categorization", "imagga_tagging")
+  .option("auto_tagging", "0.4").dispatch();

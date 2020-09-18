@@ -1,0 +1,3 @@
+var widget = cloudinary.createUploadWidget({ 
+  cloudName: "demo", uploadPreset: "preset1" }, (error, result) => { });
+widget.open();

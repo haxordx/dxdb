@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation().setHeight(150).setQuality("jpegmini").setWidth(200).setCrop("fill")).generate("brown_sheep.jpg")!, cloudinary: cloudinary)

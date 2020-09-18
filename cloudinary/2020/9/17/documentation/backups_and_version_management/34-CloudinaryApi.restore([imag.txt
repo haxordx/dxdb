@@ -1,0 +1,1 @@
+Cloudinary::Api.restore(["image1", "image2"])

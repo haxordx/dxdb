@@ -1,0 +1,1 @@
+cloudinary.UpdateMetadataDataSourceEntries(string externalId, MetadataDataSourceParams entries)

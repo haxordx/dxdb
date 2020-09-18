@@ -1,0 +1,3 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation()
+  .setWidth(100).setCrop("scale").chain()
+  .setAngle("vflip", "45")).generate("sample.jpg")!, cloudinary: cloudinary)

@@ -1,0 +1,8 @@
+#SDK 1.x
+cloudinary_url("actor", array("transformation"=>array(
+  array("effect"=>"cartoonify"),
+  array("radius"=>"max"),
+  array("effect"=>"outline:100", "color"=>"lightblue"),
+  array("background"=>"lightblue"),
+  array("height"=>300, "crop"=>"scale")
+  )))

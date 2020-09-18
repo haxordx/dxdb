@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().defaultImage("avatar.png")).imageTag("non_existing_id.png");

@@ -1,0 +1,1 @@
+cloudinary.v2.uploader.text(text, options, callback);

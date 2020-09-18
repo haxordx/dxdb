@@ -1,0 +1,2 @@
+var tr = cloudinary.Transformation.new();
+tr.width(10).crop('fit').chain().angle(15)     // "c_fit,w_10/a_15"

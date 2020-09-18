@@ -1,0 +1,46 @@
+"info": {
+  "ocr": {
+    "adv_ocr": {
+      "status": "complete",
+      "data": [
+        { "textAnnotations": [
+            { "locale": "en",
+              "boundingPoly": {
+                "vertices": [
+                  { "y": 373,
+                    "x": 297 },
+                  { "y": 373,
+                    "x": 1306 },
+                  { "y": 2735,
+                    "x": 1306 },
+                  { "y": 2735,
+                    "x": 297 }
+                ]
+              },
+              "description": "CREDIT CARD VOUCHER\nANY RESTAURANT\nANYWHERE\n(69) 
+                69696969\nDATE\n02/02/2014\nTIME\n11:11\nCARD TYPE\nMC\nACCT\n1234 1234 
+                1234 1111\nTRANS KEY\nHYU87 89798234\nAUTH CODE:\n12345\nEXP 
+                DATE:\n12/15\nCHECK:\n1341\nTABLE\n12\nSERVER\n34 
+                MONIKA\nSubtotal\n$1969.69\nGratuity\nTotal\nSignature:\nCustomer Copy\n"
+            },
+            { "boundingPoly": {
+                "vertices": [
+                  { "y": 373,
+                    "x": 561 },
+                  { "y": 373,
+                    "x": 726 },
+                  { "y": 426,
+                    "x": 726 },
+                  { "y": 426,
+                    "x": 561 }
+                ]
+              },
+              "description": "CREDIT"
+            },
+            { "boundingPoly": {
+                "vertices": [
+                  {
+        ...
+        ...
+        ...
+}

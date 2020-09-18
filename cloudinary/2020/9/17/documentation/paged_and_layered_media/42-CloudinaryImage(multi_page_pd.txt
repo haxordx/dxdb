@@ -1,0 +1,1 @@
+CloudinaryImage("multi_page_pdf.jpg").image(density=20)

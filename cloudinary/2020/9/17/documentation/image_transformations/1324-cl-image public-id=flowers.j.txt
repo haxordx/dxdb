@@ -1,0 +1,6 @@
+<cl-image public-id="flowers.jpg" >
+  <cl-transformation width="500" crop="scale">
+  </cl-transformation>
+  <cl-transformation overlay="text:Verdana_75_bold_underline_letter_spacing_14:Flowers">
+  </cl-transformation>
+</cl-image>

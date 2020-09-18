@@ -1,0 +1,4 @@
+<Image publicId="non_existing_id.png" >
+  <Transformation width="200" angle="45" crop="scale" />
+  <Transformation defaultImage="avatar.png" />
+</Image>

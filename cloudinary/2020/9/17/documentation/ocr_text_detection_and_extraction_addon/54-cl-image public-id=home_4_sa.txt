@@ -1,0 +1,4 @@
+<cl-image public-id="home_4_sale.jpg" >
+  <cl-transformation overlay="call_text" flags="region_relative" width="1.1" gravity="ocr_text">
+  </cl-transformation>
+</cl-image>

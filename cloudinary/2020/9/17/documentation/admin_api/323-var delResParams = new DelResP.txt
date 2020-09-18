@@ -1,0 +1,4 @@
+var delResParams = new DelResParams(){
+  Type = "facebook",
+  All = true};
+cloudinary.DeleteResources(delResParams);

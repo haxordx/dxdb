@@ -1,0 +1,3 @@
+<Image publicId="pi.png" >
+  <Transformation width="250" height="150" radius="max" crop="fill" />
+</Image>

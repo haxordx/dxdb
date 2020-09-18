@@ -1,0 +1,1 @@
+cloudinary.v2.api.transformations(options, callback);

@@ -1,0 +1,1 @@
+cl_image_tag("sample.jpg", array("overlay"=>array("url"=>"http://cloudinary.com/images/old_logo.png7")))

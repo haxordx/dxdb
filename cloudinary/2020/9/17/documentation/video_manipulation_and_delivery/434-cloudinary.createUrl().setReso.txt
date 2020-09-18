@@ -1,0 +1,8 @@
+cloudinary.createUrl().setResourceType("video").setTransformation(CLDTransformation()
+  .setDuration("5").setWidth(300).setHeight(200).setCrop("scale").chain()
+  .setOverlay("video:dog").setWidth(300).setHeight(200).chain()
+  .setDuration("5").chain()
+  .setOverlay("video:transition1").setEffect("transition").chain()
+  .setEffect("accelerate:5s").setAngle(180).chain()
+  .setFlags("layer_apply").chain()
+  .setFlags("layer_apply")).generate("kitten_fighting.mp4")

@@ -1,0 +1,7 @@
+var explicitParams = new ExplicitParams("sample3"){
+  Type = "private",
+  EagerTransforms = new List<Transformation>(){
+   new Transformation().Width(200).crop("scale"),
+   new Transformation().Width(360).Height(200)
+     .Crop("crop").Gravity("north")}};
+var explicitResult = cloudinary.Explicit(explicitParams);

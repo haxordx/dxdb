@@ -1,0 +1,11 @@
+{
+    "info_kind": "cloudinary_ai",
+    "info_status": "complete",
+    "public_id": "dog_couch",
+    "uploaded_at": "2019-02-25T17:33:45Z",
+    "version": 1551104931,
+    "url": "http://res.cloudinary.com/demo/image/upload/v1551104931/dog_couch.png",
+    "secure_url": "https://res.cloudinary.com/demo/image/upload/v1551104931/dog_couch.png",
+    "etag": "6567d798ca4087468dc7d23bcb8a45ec",
+    "notification_type": "info"
+}

@@ -1,0 +1,10 @@
+Url baseUrl = MediaManager.get().url();
+baseUrl.secure(true).transformation(new Transformation().angle(30).effect("blur", 50).fetchFormat("webp"));
+MediaManager.get().responsiveUrl(AUTO_FILL)
+    .generate(baseUrl, imageView, new ResponsiveUrl.Callback() {
+      @Override
+      public void onUrlReady(Url url) {
+         // Use your favorite image download library to fetch the image, picasso example:
+         Picasso.with(context).load(url.generate()).into(imageView);
+      }
+    });

@@ -1,0 +1,5 @@
+<cld-image publicId="sample.jpg" >
+  <cld-transformation transformation={["jpg_with_quality_30"]} />
+  <cld-transformation transformation={["crop_400x400"]} />
+  <cld-transformation transformation={["fit_100x150"]} />
+</cld-image>

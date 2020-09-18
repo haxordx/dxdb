@@ -1,0 +1,4 @@
+var vplayer = cld.videoPlayer("my-video", { playedEventPercents: [10, 50, 90] })
+
+vplayer.on('percentsplayed', (event) => {
+  console.log(event.eventData.percent + " percents played")

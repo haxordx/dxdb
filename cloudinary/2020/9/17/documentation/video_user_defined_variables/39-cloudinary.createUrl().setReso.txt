@@ -1,0 +1,4 @@
+cloudinary.createUrl().setResourceType("video").setTransformation(CLDTransformation()
+  .setIf("$qualtag_in_tags").setQuality(80).chain()
+  .setIf("else").setQuality(30).chain()
+  .setWidth(500).setCrop("scale")).generate("docs/kitten_fighting2.mp4")

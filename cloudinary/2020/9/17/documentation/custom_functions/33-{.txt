@@ -1,0 +1,16 @@
+{
+  "current_page": 1,
+  "tags": [],
+  "coordinates": {
+    "eyedea": {
+      "coords": [],
+      "kind": "eyedea",
+      "on_original": true,
+      "failed": false
+    }
+  },
+  "variables": {
+    "z": 5,
+    "foo": 10
+  }
+}

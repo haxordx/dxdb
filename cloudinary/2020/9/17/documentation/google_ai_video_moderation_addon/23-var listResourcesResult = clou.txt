@@ -1,0 +1,1 @@
+var listResourcesResult = cloudinary.ListResourcesByModerationStatus("google_video_moderation", "rejected");

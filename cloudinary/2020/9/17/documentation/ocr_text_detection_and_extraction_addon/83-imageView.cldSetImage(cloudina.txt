@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation().setGravity("auto:ocr_text_avoid").setHeight(400).setAspectRatio("0.8").setCrop("fill")).generate("docs/flower_shop.jpg")!, cloudinary: cloudinary)

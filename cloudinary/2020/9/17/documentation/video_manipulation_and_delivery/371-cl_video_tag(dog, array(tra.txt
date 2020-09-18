@@ -1,0 +1,6 @@
+cl_video_tag("dog", array("transformation"=>array(
+  array("angle"=>180),
+  array("width"=>300, "height"=>200, "crop"=>"fill"),
+  array("overlay"=>"video:dog", "flags"=>"splice", "width"=>300, "height"=>200, "start_offset"=>"0", "duration"=>"5", "crop"=>"fill"),
+  array("flags"=>"layer_apply")
+  )))

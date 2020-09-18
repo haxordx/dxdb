@@ -1,0 +1,14 @@
+<cl-video public-id="kitten_fighting" >
+  <cl-transformation width="300" height="200" duration="5" crop="scale">
+  </cl-transformation>
+  <cl-transformation overlay="video:dog" width="300" height="200">
+  </cl-transformation>
+  <cl-transformation duration="5">
+  </cl-transformation>
+  <cl-transformation overlay="video:transition1" effect="transition">
+  </cl-transformation>
+  <cl-transformation flags="layer_apply">
+  </cl-transformation>
+  <cl-transformation flags="layer_apply">
+  </cl-transformation>
+</cl-video>

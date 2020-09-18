@@ -1,0 +1,3 @@
+MediaManager.get().url().transformation(new Transformation()
+  .width(700).radius("max").crop("scale").chain()
+  .flags("region_relative").gravity("adv_eyes").overlay(new Layer().publicId("harlequinmask")).width(1.7)).generate("cloudinary_team.jpg");

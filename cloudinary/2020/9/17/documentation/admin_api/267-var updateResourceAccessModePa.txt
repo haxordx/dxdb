@@ -1,0 +1,4 @@
+var updateResourceAccessModeParams = new UpdateResourceAccessModeParams(){
+  AccessMode = "public",
+  ResourceType = "video"};
+cloudinary.UpdateResourceAccessModeByPrefix("to-publish", updateResourceAccessModeParams);

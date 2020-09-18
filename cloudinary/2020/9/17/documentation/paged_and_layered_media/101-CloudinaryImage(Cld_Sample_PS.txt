@@ -1,0 +1,4 @@
+CloudinaryImage("Cld_Sample_PSD.jpg").image(transformation=[
+  {'page': "name:record_cover;Shadow"},
+  {'width': 300, 'crop': "scale"}
+  ])

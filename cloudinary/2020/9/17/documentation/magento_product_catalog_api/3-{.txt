@@ -1,0 +1,10 @@
+{
+   "urls": [
+    {
+       "url": "https://res.cloudinary.com/demo/image/upload/v123/sample.jpg"
+    },
+    {
+       "url": "https://res.cloudinary.com/demo/video/upload/v123/dog.mp4"
+    }
+   ]
+}

@@ -1,0 +1,4 @@
+MediaManager.get().url().resourceType("video")
+    .transformation(new Transformation()
+        .width(400).crop("pad"))
+    .generate("sample.mp4")

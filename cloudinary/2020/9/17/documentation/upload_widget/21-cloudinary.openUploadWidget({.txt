@@ -1,0 +1,16 @@
+cloudinary.openUploadWidget({
+  cloudName: "demo", uploadPreset: "preset1",
+  language: "en",  
+  text: {
+    "en": {
+        "queue": {
+            "title": "Files to upload",
+            "title_uploading_with_counter": "Uploading {{num}} files"
+        },
+        "crop": {
+            "title": "Crop your image"
+
+        }
+    }
+  }
+}, (error, result) => { });

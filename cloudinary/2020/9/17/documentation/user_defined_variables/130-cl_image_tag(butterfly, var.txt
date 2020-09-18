@@ -1,0 +1,6 @@
+cl_image_tag("butterfly", :variables=>[["$img", "current"], ["$height", "ih"]], :transformation=>[
+  {:if=>"w_lt_800"},
+  {:effect=>"blur:800", :underlay=>"%24img", :width=>800, :height=>"$height", :crop=>"scale"},
+  {:effect=>"brightness:40", :flags=>"layer_apply"},
+  {:if=>"end"}
+  ])

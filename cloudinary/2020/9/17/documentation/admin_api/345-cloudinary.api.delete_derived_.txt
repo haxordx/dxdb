@@ -1,0 +1,1 @@
+cloudinary.api.delete_derived_resources(**derived_resource_ids, **options)

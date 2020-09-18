@@ -1,0 +1,6 @@
+<Image publicId="flower.jpg" secure="true">
+  <Transformation height="100" width="150" x="380" y="250" crop="crop" />
+  <Transformation height="100" width="130" crop="fill" />
+  <Transformation angle="20" />
+  <Transformation width="0.8" crop="scale" />
+</Image>

@@ -1,0 +1,4 @@
+{
+    "folder": "wiki", 
+    "template": "https://u.wiki.example.com/wiki-images/"
+}

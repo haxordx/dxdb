@@ -1,0 +1,1 @@
+result = Cloudinary::Uploader.rename(from_public_id, to_public_id, options = {})

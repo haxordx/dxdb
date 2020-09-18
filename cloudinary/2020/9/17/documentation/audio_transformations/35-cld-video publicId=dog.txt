@@ -1,0 +1,3 @@
+<cld-video publicId="dog" >
+  <cld-transformation audioFrequency="22050" />
+</cld-video>

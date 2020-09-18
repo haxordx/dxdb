@@ -1,0 +1,4 @@
+<Image publicId="docs/rmv_bgd/woman.png" >
+  <Transformation height="375" crop="scale" />
+  <Transformation underlay="docs:bg_beach" gravity="south" width="800" />
+</Image>

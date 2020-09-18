@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation().setWidth(400).setAspectRatio("1").setGravity("auto:skateboard").setCrop("thumb")).generate("Skater.jpg", signUrl: true)!, cloudinary: cloudinary)

@@ -1,0 +1,5 @@
+\Cloudinary\Api::update("sample", 
+  array(
+    "resource_type" => "video",
+    "categorization" => "azure_video_indexer", 
+    "auto_tagging" => 0.6));

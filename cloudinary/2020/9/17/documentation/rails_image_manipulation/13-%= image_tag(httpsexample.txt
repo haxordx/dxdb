@@ -1,0 +1,3 @@
+<%= image_tag("https://example.com/logo.png", :type => "fetch") %>
+
+<%# Output: <img src="https://res.cloudinary.com/demo/image/fetch/https://example.com/logo.png" /> %>

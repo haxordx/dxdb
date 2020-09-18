@@ -1,0 +1,3 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation()
+  .setWidth(300).setHeight(300).setCrop("crop").chain()
+  .setWidth(150).setRadius("max").setCrop("scale")).generate("flower.jpg")!, cloudinary: cloudinary)

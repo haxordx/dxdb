@@ -1,0 +1,4 @@
+<cl-image public-id="cloudinary_icon.jpg" >
+  <cl-transformation height="150" flags="ignore_aspect_ratio" crop="scale">
+  </cl-transformation>
+</cl-image>

@@ -1,0 +1,1 @@
+https://res.cloudinary.com/demo/image/upload/e_blur:100/mypic.jpg

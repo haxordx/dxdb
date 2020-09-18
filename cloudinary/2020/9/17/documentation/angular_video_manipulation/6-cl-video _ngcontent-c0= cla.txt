@@ -1,0 +1,14 @@
+<cl-video _ngcontent-c0="" class="my-videos" controls="true" loop="true" public-id="dog" 
+ ng-reflect-public-id="dog">
+  <video _ngcontent_c0="" public_id="dog" ng_reflect_public_id="dog" 
+   poster="https://res.cloudinary.com/demo/video/upload/c_pad,du_10,h_360,q_70,w_480/dog.jpg" 
+   controls="true" loop="true">
+    <source src="https://res.cloudinary.com/demo/video/upload/c_pad,du_10,h_360,q_70,w_480/dog.webm" 
+     type="video/webm">
+    <source src="https://res.cloudinary.com/demo/video/upload/c_pad,du_10,h_360,q_70,w_480/dog.mp4" 
+     type="video/mp4">
+    <source src="https://res.cloudinary.com/demo/video/upload/c_pad,du_10,h_360,q_70,w_480/dog.ogv" 
+     type="video/ogg">
+Your browser does not support HTML5 video tags.
+  </video>
+</cl-video>

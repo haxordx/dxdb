@@ -1,0 +1,1 @@
+cloudinary.GetUploadPreset("remote_media");

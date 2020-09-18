@@ -1,0 +1,1 @@
+cloudinary.videoTag('dog', {aspectRatio: "2.5", crop: "crop"}).toHtml();

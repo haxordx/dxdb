@@ -1,0 +1,2 @@
+cloudinary.uploader.explode('sample', 
+    page = 'all')

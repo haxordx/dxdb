@@ -1,0 +1,77 @@
+var source = {
+    shoppable: {    
+        transformation: {
+            crop: "pad",
+            aspect_ratio: "1"
+        },
+        products: [
+        {
+            productId: 1,
+            productName: "Sunglasses",
+            startTime: 0,
+            endTime: 2,
+            publicId:
+            "docs/shoppable_sunglasses",
+            hotspots: [
+            {
+                time: "00:02",
+                x: "50%",
+                y: "50%",
+                tooltipPosition: "left",
+                clickUrl: "https://slo-fashion.com/"
+            }
+            ],
+            onHover: {
+            action: "overlay",
+            args: "Click to see this product in the video"
+            },
+            onClick: {
+            action: "seek",
+            pause: 5,
+            args: {
+                time: "00:01"
+                }
+            }
+        },
+        {
+            productId: 2,
+            productName: "Green Dress",
+            startTime: 2,
+            endTime: 5,
+            publicId: "docs/shoppable_dress",
+            onClick: {
+            action: "goto",
+            pause: true,
+            args: {
+                url: "https://slo-fashion.com/"
+                }
+            }
+        },
+        {
+            productId: 3,
+            productName: "Brown Bag",
+            startTime: 7,
+            endTime: 11,
+            publicId:
+            "docs/shoppable_bag",
+            onHover: {
+            action: "switch",
+            args: {
+                publicId:
+                "docs/shoppable_bag2"
+                }
+            },
+            onClick: {
+            action: "goto",
+            pause: true,
+            args: {
+                url:
+                "https://slo-fashion.com/"
+                }
+            }
+        }
+        ]
+    }
+}
+
+player.source("docs/shoppable_demo", source)

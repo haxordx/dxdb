@@ -1,0 +1,3 @@
+<cl-image public-id="DamagedHelmet3D" format="glb">
+
+</cl-image>

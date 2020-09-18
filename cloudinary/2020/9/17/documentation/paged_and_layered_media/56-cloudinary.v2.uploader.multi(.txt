@@ -1,0 +1,3 @@
+cloudinary.v2.uploader.multi("topic",
+  {format: "pdf", transformation: {width: 800, crop: "lfill", gravity: "auto"}}, 
+  function(error,result) {console.log(result, error) });

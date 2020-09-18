@@ -1,0 +1,6 @@
+var uploadParams = new ImageUploadParams() 
+{
+  File = new FileDescription(@"turtles.jpg"),
+  Categorization = "imagga_tagging"
+};
+var uploadResult = cloudinary.Upload(uploadParams);

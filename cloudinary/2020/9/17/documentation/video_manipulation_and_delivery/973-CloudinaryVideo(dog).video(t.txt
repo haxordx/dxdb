@@ -1,0 +1,4 @@
+CloudinaryVideo("dog").video(transformation=[
+  {'audio_codec': "none"},
+  {'overlay': "video:electronic", 'effect': "volume:-50"}
+  ])

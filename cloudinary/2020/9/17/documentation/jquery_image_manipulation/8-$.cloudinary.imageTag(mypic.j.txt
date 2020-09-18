@@ -1,0 +1,6 @@
+$.cloudinary.imageTag("mypic.jpg").transformation()
+  .height(150).width(150).crop("crop").effect("sepia").radius(20).chain()
+  .overlay(new cloudinary
+    .TextLayer().fontFamily("Arial").fontSize(60).text("This is my picture"))
+  .gravity("north").y(20).chain()
+  .angle(20).toHtml()

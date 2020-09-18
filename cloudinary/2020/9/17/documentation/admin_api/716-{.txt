@@ -1,0 +1,5 @@
+{  
+    "external_id":"color2",
+    "value":"black"
+  }]
+})

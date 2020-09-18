@@ -1,0 +1,4 @@
+<cl-image public-id="kitten_fighting.gif" >
+  <cl-transformation flags="lossy" quality="50">
+  </cl-transformation>
+</cl-image>

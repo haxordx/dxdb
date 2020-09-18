@@ -1,0 +1,3 @@
+cloudinary.uploader.upload("local_file.jpg",
+  public_id = "family_bench",
+  eager = { 'crop': "imagga_scale", 'width': 150, 'height': 200 })

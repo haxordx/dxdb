@@ -1,0 +1,4 @@
+<cl-image public-id="smartphone2.jpg" >
+  <cl-transformation effect="blur_region:800" gravity="ocr_text">
+  </cl-transformation>
+</cl-image>

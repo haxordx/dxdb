@@ -1,0 +1,5 @@
+cl_image_tag("woman.jpg", array("variables"=>array("$height"=>"200"), "transformation"=>array(
+  array("if"=>"ar_lt_1.0"),
+  array("if"=>"else"),
+  array("height"=>"$height", "crop"=>"scale")
+  )))

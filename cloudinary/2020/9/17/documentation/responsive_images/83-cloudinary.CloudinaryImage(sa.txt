@@ -1,0 +1,2 @@
+cloudinary.CloudinaryImage("sample.jpg").image(width = "auto", crop = "scale",
+  client_hints = "true", fetch_format = "auto", sizes = "100vw")

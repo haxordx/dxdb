@@ -1,0 +1,3 @@
+cloudinary.createUrl().setResourceType("video").setTransformation(CLDTransformation()
+  .setWidth("$mainvideowidth").setCrop("scale").chain()
+  .setOverlay("video:kitten_fighting").setWidth("$overlaywidth").setGravity("south_east")).generate("dog.mp4")

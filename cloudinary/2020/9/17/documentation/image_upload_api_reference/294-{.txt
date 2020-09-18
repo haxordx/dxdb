@@ -1,0 +1,19 @@
+{
+  "asset_id": "08e80d01729e8e238d605f6bc7aa1b92",
+  "public_id": "oe5bz4vbtdg0ijr323on.zip",
+  "version": 1570980108,
+  "version_id": "9a048093cdbb048d0829bdb46c378e43",
+  "signature": "abcdefghijklmnopqrstuvwxyz12345",
+  "resource_type": "raw",
+  "created_at": "2017-08-12T14:03:31Z",
+  "tags": [],
+  "bytes": 1153022,
+  "type": "upload",
+  "etag": "00e3a782aa2c390dc605d0548d067177",
+  "placeholder": false,
+  "url": "http://res.cloudinary.com/demo/raw/upload/v1570980108/oe5bz4vbtdg0ijr323on.zip",
+  "secure_url": "https://res.cloudinary.com/demo/raw/upload/v1570980108/oe5bz4vbtdg0ijr323on.zip",
+  "access_mode": "public",
+  "resource_count": 6,
+  "file_count": 6
+}

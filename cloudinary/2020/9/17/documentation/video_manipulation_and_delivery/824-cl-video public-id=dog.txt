@@ -1,0 +1,8 @@
+<cl-video public-id="dog" >
+  <cl-transformation effect="blur:500">
+  </cl-transformation>
+  <cl-transformation overlay="video:dog" width="600">
+  </cl-transformation>
+  <cl-transformation width="500" crop="scale">
+  </cl-transformation>
+</cl-video>

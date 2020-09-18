@@ -1,0 +1,2 @@
+cloudinary.uploader().unsignedUpload("sample.jpg", "unsigned_1",
+  ObjectUtils.asMap("cloud_name", "demo"));

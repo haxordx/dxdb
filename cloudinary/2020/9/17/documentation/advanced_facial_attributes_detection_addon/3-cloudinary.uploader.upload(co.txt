@@ -1,0 +1,2 @@
+cloudinary.uploader.upload("coupled.jpg",
+  detection = "adv_face")

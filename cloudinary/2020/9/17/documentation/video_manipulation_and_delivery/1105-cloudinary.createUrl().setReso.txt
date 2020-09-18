@@ -1,0 +1,1 @@
+cloudinary.createUrl().setResourceType("video").setTransformation(CLDTransformation().setStreamingProfile("hd")).generate("bb_bunny.m3u8")

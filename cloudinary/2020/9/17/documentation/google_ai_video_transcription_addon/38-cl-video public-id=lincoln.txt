@@ -1,0 +1,4 @@
+<cl-video public-id="lincoln" >
+  <cl-transformation overlay="subtitles:lincoln.transcript">
+  </cl-transformation>
+</cl-video>

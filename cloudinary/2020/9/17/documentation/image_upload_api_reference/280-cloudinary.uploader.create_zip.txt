@@ -1,0 +1,3 @@
+cloudinary.uploader.create_zip(
+  tags = 'lion', 
+  resource_type = 'image')

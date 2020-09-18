@@ -1,0 +1,1 @@
+cloudinary.imageTag('koala5.jpg').toHtml();

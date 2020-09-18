@@ -1,0 +1,3 @@
+cloudinary.Api.UrlVideoUp.Transform(new Transformation()
+  .Effect("preview:duration_8").Chain()
+  .Width(1600).Height(800).Effect("loop").Crop("crop")).BuildImageTag("Marketing/digital-asset-management-with-cloudinary.gif")

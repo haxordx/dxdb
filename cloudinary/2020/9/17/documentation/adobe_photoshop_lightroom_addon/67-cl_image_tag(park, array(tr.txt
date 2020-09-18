@@ -1,0 +1,6 @@
+cl_image_tag("park", array("transformation"=>array(
+  array("effect"=>"lightroom:xmp:soft_mist.xmp"),
+  array("radius"=>50, "quality"=>"auto", "border"=>"40px_solid_orange"),
+  array("angle"=>5),
+  array("width"=>400, "crop"=>"scale")
+  )))

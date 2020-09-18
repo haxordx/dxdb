@@ -1,0 +1,1 @@
+[{publicId: "bag", transformation: {effect: "cartoonify"}}]

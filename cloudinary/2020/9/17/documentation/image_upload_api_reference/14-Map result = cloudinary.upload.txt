@@ -1,0 +1,1 @@
+Map result = cloudinary.uploader().unsignedUpload(String file, String uploadPreset, Map options);

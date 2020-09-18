@@ -1,0 +1,6 @@
+cloudinary.createUrl().resourceType.("video")
+  .setTransformation(CLDTransformation()
+    .setWidth(400).setCrop("pad"))
+  .generate("sample.mp4")
+
+// returns: http://res.cloudinary.com/demo/video/upload/c_pad,w_400/sample.mp4

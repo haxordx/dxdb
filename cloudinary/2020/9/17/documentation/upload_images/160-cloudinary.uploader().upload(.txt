@@ -1,0 +1,2 @@
+cloudinary.uploader().upload("sample.jpg", 
+  ObjectUtils.asMap("type", "authenticated"));

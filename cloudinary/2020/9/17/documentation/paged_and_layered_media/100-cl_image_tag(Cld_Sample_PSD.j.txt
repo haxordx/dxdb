@@ -1,0 +1,4 @@
+cl_image_tag("Cld_Sample_PSD.jpg", array("transformation"=>array(
+  array("page"=>"name:record_cover;Shadow"),
+  array("width"=>300, "crop"=>"scale")
+  )))

@@ -1,0 +1,1 @@
+MediaManager.get().url().type("youtube").generate("http://www.youtube.com/watch?v=aNwnPElsJGE");

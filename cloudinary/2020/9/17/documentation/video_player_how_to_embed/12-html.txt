@@ -1,0 +1,7 @@
+<html>
+  <body>
+    <!-- Your web page code -->
+    <iframe></iframe>
+    <!-- Some more of your web page code -->
+  </body>
+</html>

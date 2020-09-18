@@ -1,0 +1,8 @@
+$.cloudinary.image("sample.jpg", {transformation: [
+  {width: 500, crop: "scale"},
+  {overlay: new cloudinary.Layer().publicId("cloudinary_icon"), width: 150},
+  {effect: "blackwhite"},
+  {overlay: new cloudinary.Layer().publicId("cloudinary_icon"), width: 50},
+  {flags: "layer_apply"},
+  {flags: "layer_apply", gravity: "north_east"}
+  ]})

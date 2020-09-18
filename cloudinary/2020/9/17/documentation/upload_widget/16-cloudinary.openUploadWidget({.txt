@@ -1,0 +1,10 @@
+cloudinary.openUploadWidget({
+  cloudName: "demo", uploadPreset: "preset1",
+  preBatch: (cb, data) => {
+    if (data.files[0].name === "TopSecret") {
+      cb({cancel: true}); 
+    },
+    else { 
+      cb(); 
+    }
+  }, (error, result) => { });

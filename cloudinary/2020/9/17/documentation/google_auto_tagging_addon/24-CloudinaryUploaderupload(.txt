@@ -1,0 +1,2 @@
+\Cloudinary\Uploader::upload("ice_skating.jpg", 
+  array("categorization" => "google_tagging", "auto_tagging" => 0.6));

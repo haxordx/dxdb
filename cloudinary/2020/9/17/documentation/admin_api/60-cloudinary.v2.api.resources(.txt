@@ -1,0 +1,3 @@
+cloudinary.v2.api.resources(
+  { resource_type: 'raw' }, 
+  function(error, result) {console.log(result, error); });

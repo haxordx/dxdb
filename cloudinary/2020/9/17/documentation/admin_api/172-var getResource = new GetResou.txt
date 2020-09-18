@@ -1,0 +1,3 @@
+var getResource = new GetResourceParams("4"){
+Type = "facebook" };
+var info = cloudinary.GetResource(getResource);

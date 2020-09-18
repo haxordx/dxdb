@@ -1,0 +1,1 @@
+cl.imageTag("sample.jpg", { crop: "fill", width: 500, height: 500, version: "1573726751", cloud_name: "demo", secure: "true", alt: "Casual Jacket"}).toHtml();

@@ -1,0 +1,3 @@
+<cld-image publicId="DamagedHelmet3D.gltz" >
+  <cld-transformation flags="draco" />
+</cld-image>

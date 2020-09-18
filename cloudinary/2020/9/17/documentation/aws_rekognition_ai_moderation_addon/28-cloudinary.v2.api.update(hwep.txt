@@ -1,0 +1,3 @@
+cloudinary.v2.api.update("hwepb67oxzh4lrigssld",
+  { moderation_status: "rejected" }, 
+  function(result) { console.log(result); });

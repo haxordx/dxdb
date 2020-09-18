@@ -1,0 +1,6 @@
+cloudinary.createUrl().resourceType("video")
+  .setTransformation(CLDTransformation()
+    .setOverlay("video:ski_jump").setFlags("splice").setEffect("reverse").chain()
+    .setOverlay("video:ski_jump").setFlags("splice").setEffect("accelerate:-50").chain()
+    .setEffect("brightness:10").setRadius("max"))
+  .generate("ski_jump.mp4")

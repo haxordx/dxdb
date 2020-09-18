@@ -1,0 +1,3 @@
+cloudinary.api.update_transformation(
+  dict(width = 150, height = 100, crop = "fill"), 
+  dict(allowed_for_strict = False))

@@ -1,0 +1,1 @@
+:acl => "/video/authenticated/t_authorized/*"

@@ -1,0 +1,12 @@
+{
+  "user_groups": [
+    {
+      "id": "63a12e42952d888d9cabe7fb38888885",
+      "name": "user_group_1"
+    },
+    {
+      "id": "1cc3808888154263ac1e5eb2e5c52d61",
+      "name": "user_group_1"
+    }
+  ]
+}

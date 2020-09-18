@@ -1,0 +1,23 @@
+{
+  "public_id": "f5lq8lfq8pfj0xmd9dak",
+  "version": 1579789579,
+  "signature": "db9c44fd6d579e60360adecbbf1a5584153c984e",
+  "width": 1920,
+  "height": 1281,
+  "format": "jpg",
+  "resource_type": "image",
+  "created_at": "2020-01-23T14:26:19Z",
+  "tags": [],
+  "pages": 1,
+  "bytes": 310479,
+  "type": "upload",
+  "etag": "a8f8236455d352b8cee6aba0e3fbc87e",
+  "placeholder": false,
+  "url": "http://res.cloudinary.com/demo/image/upload/v1579789579/f5lq8lfq8pfj0xmd9dak.jpg",
+  "secure_url": "https://res.cloudinary.com/demo/image/upload/v1579789579/f5lq8lfq8pfj0xmd9dak.jpg",
+  "access_mode": "public",
+  "quality_analysis": {
+    "focus": 0.7031299471855164
+  },
+  "original_filename": "user_photo"
+}

@@ -1,0 +1,1 @@
+cloudinary.v2.api.update(public_id, options, callback);

@@ -1,0 +1,2 @@
+\Cloudinary\Uploader::upload("sample.jpg", 
+  array("notification_url" => "https://mysite.example.com/my_notification_endpoint"));

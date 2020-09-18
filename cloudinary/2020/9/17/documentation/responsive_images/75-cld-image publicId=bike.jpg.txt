@@ -1,0 +1,4 @@
+<cld-image publicId="bike.jpg" useRootPath="true" clientHints="true">
+  <cld-transformation aspectRatio="16:9" crop="fill" />
+  <cld-transformation width="auto:breakpoints:json" crop="scale" />
+</cld-image>

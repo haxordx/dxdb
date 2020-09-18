@@ -1,0 +1,1 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation().Flags("region_relative").Gravity("adv_faces").Overlay(new Layer().PublicId("silver_face_mask")).Width(1.1)).BuildImageTag("coupled.jpg")

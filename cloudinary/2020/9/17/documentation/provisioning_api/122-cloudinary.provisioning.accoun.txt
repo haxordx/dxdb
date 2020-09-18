@@ -1,0 +1,3 @@
+cloudinary.provisioning.account.add_user_to_group("7f08f1f1fc910bf1f25274aef11d27", "230df1d1fa913bf1f35e74a1f41e25")
+  .then((response) => { console.log(response); })
+  .catch((err) => { console.log(err); });

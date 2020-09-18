@@ -1,0 +1,10 @@
+<cl-image public-id="docs/casual.jpg">
+  <cl-transformation [attr.variables]="[['$overlay', 'ref:!docs:sale!']]">
+  </cl-transformation>
+  <cl-transformation customFunction={
+    "function_type": "wasm",
+    "source": "docs:pnglayer.wasm"}>
+  </cl-transformation>
+  <cl-transformation border="1px_solid_black">
+  </cl-transformation>
+</cl-image>

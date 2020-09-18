@@ -1,0 +1,3 @@
+Cloudinary::Api.update("sample_spreadsheet.xls",
+  :raw_convert => "aspose",
+  :resource_type => :raw)

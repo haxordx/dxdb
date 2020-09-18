@@ -1,0 +1,7 @@
+var myGallery = cloudinary.galleryWidget({ 
+  container: "#my-gallery", 
+  cloudName: "demo", 
+  carouselStyle: "thumbnails",   // default value: included for clarity
+  thumbnailProps: { width: 75, height: 75, spacing: 4, navigationColor: "green"},
+  mediaAssets: [{ tag: "bag" }] });
+myGallery.render();

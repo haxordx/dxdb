@@ -1,0 +1,4 @@
+<cld-image publicId="docs/plain_face.jpg" >
+  <cld-transformation overlay="golden_star" gravity="north_west" width="20" x="314" y="148" />
+  <cld-transformation width="500" crop="scale" />
+</cld-image>

@@ -1,0 +1,2 @@
+<?php echo (new ImageTag (new Image ($photo['public_id'])))
+   ->resize(Resize::fill(120, 80)); ?>

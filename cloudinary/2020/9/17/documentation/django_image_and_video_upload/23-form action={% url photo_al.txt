@@ -1,0 +1,6 @@
+<form action="{% url "photo_album.views.direct_upload_complete" %}" method="post">
+  {% csrf_token %}
+  {{ direct_form }}
+  {# alternatively, use: {% cloudinary_direct_upload_field "image", request=request %} #}
+  <input type="submit" value="Submit" />
+</form>

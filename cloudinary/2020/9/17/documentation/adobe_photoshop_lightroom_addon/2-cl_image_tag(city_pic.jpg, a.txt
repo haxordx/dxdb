@@ -1,0 +1,1 @@
+cl_image_tag("city_pic.jpg", array("effect"=>"lightroom:whitebalance_shade"))

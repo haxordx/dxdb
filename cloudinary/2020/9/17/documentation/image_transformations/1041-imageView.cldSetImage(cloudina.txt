@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation().setColor("#009900").setEffect("shadow:50").setX(10).setY(10)).generate("sample.jpg")!, cloudinary: cloudinary)

@@ -1,0 +1,3 @@
+cloudinary.url().transformation(new Transformation()
+  .width(300).crop("scale").chain()
+  .effect("shadow").x("w / 50").y("w / 50").crop("fill")).imageTag("horses.jpg");

@@ -1,0 +1,4 @@
+cl_image_tag("bike.jpg", 
+  array("client_hints"=>true, "sizes"=>"100vw", "transformation"=>array(
+    array("aspect_ratio"=>"16:9", "crop"=>"fill"),
+    array("width"=>"auto:breakpoints", "crop"=>"scale"))))

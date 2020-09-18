@@ -1,0 +1,4 @@
+cl_image_tag("flowers.jpg", array("transformation"=>array(
+  array("width"=>500, "crop"=>"scale"),
+  array("overlay"=>"cloudinary_icon", "gravity"=>"north_east", "opacity"=>50, "width"=>200, "effect"=>"anti_removal:90")
+  )))

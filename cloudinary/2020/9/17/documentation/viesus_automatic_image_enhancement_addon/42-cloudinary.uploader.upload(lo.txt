@@ -1,0 +1,3 @@
+cloudinary.uploader.upload("local_file.jpg",
+  public_id = "beach",  
+  eager = { 'effect': 'viesus_correct', 'crop': "scale", 'width': 400 })

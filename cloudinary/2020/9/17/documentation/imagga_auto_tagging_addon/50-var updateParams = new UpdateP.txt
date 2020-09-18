@@ -1,0 +1,6 @@
+var updateParams = new UpdateParams("sample") 
+{
+  Categorization = "imagga_tagging",
+  AutoTagging = 0.5
+};
+var updateResult = cloudinary.Update(updateParams);

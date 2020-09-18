@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().width(500).aspectRatio("1.0").gravity("auto:person_avoid").crop("fill")).generate("docs/store_front.jpg");

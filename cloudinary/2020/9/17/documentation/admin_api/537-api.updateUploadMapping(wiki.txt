@@ -1,0 +1,2 @@
+api.updateUploadMapping("wiki",
+  ObjectUtils.asMap("template", "https://u.wiki.com/images/"), ObjectUtils.emptyMap());

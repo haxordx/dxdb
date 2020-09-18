@@ -1,0 +1,5 @@
+cl_image_tag("https://en.wikipedia.org/wiki/jpg", array("type"=>"url2png", "transformation"=>array(
+  array("radius"=>50, "width"=>400, "height"=>400, "gravity"=>"north", "border"=>"2px_solid_rgb:999", "crop"=>"fill"),
+  array("effect"=>"shadow:20", "color"=>"#ccc"),
+  array("angle"=>30, "color"=>"#ec9800", "effect"=>"colorize", "overlay"=>"url2png_logo")
+  )))

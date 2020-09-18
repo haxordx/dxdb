@@ -1,0 +1,10 @@
+<cl-image public-id="flower.jpg" secure="true">
+  <cl-transformation height="100" width="150" x="380" y="250" crop="crop">
+  </cl-transformation>
+  <cl-transformation height="100" width="130" crop="fill">
+  </cl-transformation>
+  <cl-transformation angle="20">
+  </cl-transformation>
+  <cl-transformation width="0.8" crop="scale">
+  </cl-transformation>
+</cl-image>

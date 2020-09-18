@@ -1,0 +1,3 @@
+<cld-video publicId="dog.png" resourceType="video">
+  <cld-transformation height="200" width="500" flags="waveform" />
+</cld-video>

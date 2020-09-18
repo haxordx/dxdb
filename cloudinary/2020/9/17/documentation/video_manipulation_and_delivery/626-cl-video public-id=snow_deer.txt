@@ -1,0 +1,6 @@
+<cl-video public-id="snow_deer.gif" resource-type="video">
+  <cl-transformation width="480" start-offset="3" end-offset="5" effect="boomerang" crop="scale">
+  </cl-transformation>
+  <cl-transformation effect="loop">
+  </cl-transformation>
+</cl-video>

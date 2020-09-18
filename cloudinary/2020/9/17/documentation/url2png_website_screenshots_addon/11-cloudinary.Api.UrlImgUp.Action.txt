@@ -1,0 +1,1 @@
+cloudinary.Api.UrlImgUp.Action("url2png").BuildImageTag("https://cnn.com")

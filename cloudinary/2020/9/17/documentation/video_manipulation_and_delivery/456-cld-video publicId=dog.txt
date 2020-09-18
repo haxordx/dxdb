@@ -1,0 +1,3 @@
+<cld-video publicId="dog" >
+  <cld-transformation angle="90" />
+</cld-video>

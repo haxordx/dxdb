@@ -1,0 +1,4 @@
+<cl-image public-id="o-urnlaJpOA.jpg" type="youtube">
+  <cl-transformation width="500" border="5px_solid_black" crop="scale">
+  </cl-transformation>
+</cl-image>

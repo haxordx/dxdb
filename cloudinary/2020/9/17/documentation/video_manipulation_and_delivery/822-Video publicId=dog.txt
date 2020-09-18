@@ -1,0 +1,5 @@
+<Video publicId="dog" >
+  <Transformation effect="blur:500" />
+  <Transformation overlay="video:dog" width="600" />
+  <Transformation width="500" crop="scale" />
+</Video>

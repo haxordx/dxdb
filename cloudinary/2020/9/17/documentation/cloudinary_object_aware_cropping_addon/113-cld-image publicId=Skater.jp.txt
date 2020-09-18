@@ -1,0 +1,3 @@
+<cld-image publicId="Skater.jpg" signUrl="true">
+  <cld-transformation width="400" aspectRatio="1" gravity="auto:skateboard" crop="thumb" />
+</cld-image>

@@ -1,0 +1,1 @@
+cld admin update_upload_preset (name)

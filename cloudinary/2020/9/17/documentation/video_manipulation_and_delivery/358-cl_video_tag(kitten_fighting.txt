@@ -1,0 +1,4 @@
+cl_video_tag("kitten_fighting", array("transformation"=>array(
+  array("width"=>300, "height"=>200, "crop"=>"fill"),
+  array("overlay"=>"video:dog", "flags"=>"splice", "width"=>300, "height"=>200, "start_offset"=>"0", "crop"=>"fill")
+  )))

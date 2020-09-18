@@ -1,0 +1,7 @@
+Cloudinary::Uploader.explicit("sample", 
+  :type => "upload",
+  :eager => [
+    { :width => 400, :height => 400, 
+      :crop => :crop, :gravity => :face}, 
+    { :width => 660, :height => 400, 
+      :crop => :pad, :background => "blue"}])

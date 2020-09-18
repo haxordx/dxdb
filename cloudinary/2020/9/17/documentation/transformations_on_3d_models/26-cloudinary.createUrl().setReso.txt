@@ -1,0 +1,3 @@
+cloudinary.createUrl().setResourceType("image").setTransformation(CLDTransformation()
+  .setFetchFormat("mp4").chain()
+  .setBackground("#d5d2ca").setHeight(300).setFlags("animated").setCrop("scale")).generate("docs/foyer-table")

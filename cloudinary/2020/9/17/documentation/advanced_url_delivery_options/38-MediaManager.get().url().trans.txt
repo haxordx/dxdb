@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().defaultImage("avatar.png")).generate("non_existing_id.png");

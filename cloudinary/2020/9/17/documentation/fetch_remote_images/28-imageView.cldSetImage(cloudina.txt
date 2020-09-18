@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setType( "fetch").setTransformation(CLDTransformation().setWidth(300).setHeight(300).setGravity("face").setRadius("max").setCrop("fill").setFetchFormat("auto")).generate("https://upload.wikimedia.org/wikipedia/commons/1/13/Benedict_Cumberbatch_2011.png")!, cloudinary: cloudinary)

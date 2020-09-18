@@ -1,0 +1,16 @@
+<cl-image public-id="sample.jpg" >
+  <cl-transformation width="500" crop="scale">
+  </cl-transformation>
+  <cl-transformation effect="brightness:70">
+  </cl-transformation>
+  <cl-transformation overlay="woman" gravity="face" crop="crop">
+  </cl-transformation>
+  <cl-transformation width="150" crop="scale">
+  </cl-transformation>
+  <cl-transformation effect="saturation:50">
+  </cl-transformation>
+  <cl-transformation effect="shadow">
+  </cl-transformation>
+  <cl-transformation flags="layer_apply">
+  </cl-transformation>
+</cl-image>

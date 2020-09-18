@@ -1,0 +1,7 @@
+let downloader:CLDDownloader = cloudinary.createDownloader()
+let myImage = downloader.fetchImage(url, progress: { (bytes, totalBytes, totalBytesExpected) in
+    // Handle progress
+  }) { (responseImage, error) in
+    // responseImage is an instance of UIImage
+    // error is an instance of NSError
+  }

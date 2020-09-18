@@ -1,0 +1,3 @@
+\Cloudinary\Uploader::upload("sample.jpg", array("responsive_breakpoints" => array( 
+  "create_derived" => true, "bytes_step" => 20000, "min_width" => 200, "max_width" => 1000, 
+  "transformation" => array( "crop" => "fill", "aspect_ratio" => "16:9", "gravity" => "auto" ))))

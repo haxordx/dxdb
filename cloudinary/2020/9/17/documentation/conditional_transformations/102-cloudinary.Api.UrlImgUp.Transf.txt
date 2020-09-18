@@ -1,0 +1,3 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation()
+  .If("w_lte_200").Height(120).Width(80).Crop("fill").Chain()
+  .If("else").Height(90).Width(100).Crop("fill")).BuildImageTag("sample.jpg")

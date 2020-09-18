@@ -1,0 +1,6 @@
+curl \
+  -H "Content-Type: application/json" \
+  -d '{
+        "role": "admin"
+      }' \
+  https://<PROVISIONING_KEY>:<PROVISIONING_SECRET>@api.cloudinary.com/v1_1/provisioning/accounts/16a8ff3b-736b-49a6-85c0-03b69d5a357b/users/7f08f1f1fc910bf1f25274aef11d27

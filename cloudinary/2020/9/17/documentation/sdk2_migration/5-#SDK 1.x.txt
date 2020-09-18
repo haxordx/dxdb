@@ -1,0 +1,2 @@
+#SDK 1.x
+\Cloudinary\Uploader::upload("my_image.jpg")

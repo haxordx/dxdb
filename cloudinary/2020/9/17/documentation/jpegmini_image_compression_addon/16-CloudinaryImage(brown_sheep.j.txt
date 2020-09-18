@@ -1,0 +1,1 @@
+CloudinaryImage("brown_sheep.jpg").image(quality="jpegmini")

@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setUseRootPath( true).setTransformation(CLDTransformation().setOverlay("docs:zoom_map").setEffect("displace").setX(50).setY(50)).generate("sample")!, cloudinary: cloudinary)

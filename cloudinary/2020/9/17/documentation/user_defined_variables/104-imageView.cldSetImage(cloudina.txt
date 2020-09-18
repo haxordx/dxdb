@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation().setNamed("passport_photo")).generate("woman.jpg")!, cloudinary: cloudinary)

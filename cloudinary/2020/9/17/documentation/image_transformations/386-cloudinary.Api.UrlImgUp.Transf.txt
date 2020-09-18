@@ -1,0 +1,1 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation().X(355).Y(410).Width(300).Height(200).Crop("crop")).BuildImageTag("brown_sheep.jpg")

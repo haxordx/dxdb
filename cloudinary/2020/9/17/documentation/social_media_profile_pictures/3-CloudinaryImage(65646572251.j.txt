@@ -1,0 +1,1 @@
+CloudinaryImage("65646572251.jpg").image(type="facebook")

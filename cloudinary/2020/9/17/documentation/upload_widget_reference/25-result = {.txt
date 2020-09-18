@@ -1,0 +1,4 @@
+result = {
+    event: "success",
+    info: {}  // information returned from the upload api method
+};

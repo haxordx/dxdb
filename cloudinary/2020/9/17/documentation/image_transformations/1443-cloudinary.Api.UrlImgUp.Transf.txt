@@ -1,0 +1,7 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation()
+  .Overlay(new Layer().PublicId("couple")).Chain()
+  .Gravity("faces").Width(120).Height(150).Crop("crop").Chain()
+  .Radius("max").Chain()
+  .Flags("layer_apply").Gravity("north_east").Chain()
+  .Overlay(new Layer().PublicId("cloudinary_icon")).Width(0.8).Flags("relative").Opacity(50).Effect("brightness:100").Chain()
+  .Overlay(new TextLayer().FontFamily("impact").FontSize(40).FontWeight("bold").Text("Sample%20image")).Gravity("south").Y(20)).BuildImageTag("sample.jpg")

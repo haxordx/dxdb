@@ -1,0 +1,2 @@
+use Cloudinary\Api\Admin\AdminApi;
+$result = (new AdminApi())->resource("dog.mp4");

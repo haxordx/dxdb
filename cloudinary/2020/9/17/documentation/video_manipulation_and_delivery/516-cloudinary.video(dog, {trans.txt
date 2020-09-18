@@ -1,0 +1,4 @@
+cloudinary.video("dog", {transformation: [
+  {width: 300, crop: "scale"},
+  {overlay: "video:dog", width: 100, gravity: "north_east", radius: "max"}
+  ]})

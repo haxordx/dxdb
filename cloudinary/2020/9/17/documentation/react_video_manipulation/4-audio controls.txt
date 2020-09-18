@@ -1,0 +1,9 @@
+<audio controls>
+  <source 
+     src="https://res.cloudinary.com/my_cloud/video/upload/du_2/e_volume:30/dog.wav" 
+     type="audio/wav">
+  <source 
+     src="https://res.cloudinary.com/my_cloud/video/upload/du_2/e_volume:45/dog.mp3" 
+     type="audio/mp3">
+  Cannot play audio
+</audio>

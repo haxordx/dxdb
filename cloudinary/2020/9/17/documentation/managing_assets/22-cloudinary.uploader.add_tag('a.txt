@@ -1,0 +1,2 @@
+cloudinary.uploader.add_tag('animal', 
+  ['dog', 'lion'])

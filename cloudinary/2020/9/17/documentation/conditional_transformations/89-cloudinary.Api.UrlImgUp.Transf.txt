@@ -1,0 +1,5 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation()
+  .If("w_lt_600").Chain()
+  .Overlay(new TextLayer().FontFamily("Arial").FontSize(20).Text("Image%20shown%20in%20full%20scale")).Color("white").Gravity("south_east").Chain()
+  .Effect("blur:400").Underlay(new Layer().PublicId("small_dinosaur")).Width(600).Crop("scale").Chain()
+  .If("end")).BuildImageTag("small_dinosaur.jpg")

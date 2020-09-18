@@ -1,0 +1,4 @@
+<cl-image public-id="woman.jpg" variables="[['$w', '200'], ['$ar', '0.8']]">
+  <cl-transformation width="$w" aspect-ratio="$ar" gravity="face" crop="fill">
+  </cl-transformation>
+</cl-image>

@@ -1,0 +1,1 @@
+cloudinary.createUrl().setResourceType("video").setTransformation(CLDTransformation().setStartOffset("0").setDuration("3")).generate("dog.mp3")

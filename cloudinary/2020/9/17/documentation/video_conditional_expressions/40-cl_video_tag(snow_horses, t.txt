@@ -1,0 +1,8 @@
+cl_video_tag("snow_horses", :transformation=>[
+  {:width=>500, :crop=>"scale"},
+  {:if=>"!cloudinary!_in_tags"},
+  {:overlay=>"cloudinary_icon", :width=>100, :gravity=>"north_east", :opacity=>50, :effect=>"brightness:100"},
+  {:overlay=>{:font_family=>"arial", :font_size=>15, :text=>"By%20Cloudinary"}, :gravity=>"north_east", :y=>10, :x=>105},
+  {:if=>"end"},
+  {:duration=>"5"}
+  ])

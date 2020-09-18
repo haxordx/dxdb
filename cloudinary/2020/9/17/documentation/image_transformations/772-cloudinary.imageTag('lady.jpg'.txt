@@ -1,0 +1,5 @@
+cloudinary.imageTag('lady.jpg', {transformation: [
+  {gravity: "face", radius: 75, border: "10px_solid_grey", crop: "crop"},
+  {overlay: new cloudinary.Layer().publicId("young_couple"), width: 150, height: 150, radius: "max", gravity: "faces", border: "3px_solid_black", crop: "thumb"},
+  {flags: "layer_apply", gravity: "north_east"}
+  ]}).toHtml();

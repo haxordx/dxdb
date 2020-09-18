@@ -1,0 +1,1 @@
+cld uploader remove_tag $tag $public_ids $options

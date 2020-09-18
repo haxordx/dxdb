@@ -1,0 +1,2 @@
+cloudinary.uploader().upload("gs://my_samples/sample.jpg", 
+  ObjectUtils.emptyMap());

@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().effect("simulate_colorblind:deuteranopia")).imageTag("docs/colorblind_green_red.jpg");

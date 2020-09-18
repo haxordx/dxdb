@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().overlay(new TextLayer().fontFamily("arial").fontSize(60).text("Cool%20Video")).gravity("south").y(80).startOffset("2").endOffset("5")).videoTag("dog");

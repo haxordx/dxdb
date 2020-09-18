@@ -1,0 +1,4 @@
+CloudinaryImage("horses.jpg").image(transformation=[
+  {'width': 300, 'crop': "scale"},
+  {'effect': "shadow", 'x': "w / 50", 'y': "w / 50", 'crop': "fill"}
+  ])

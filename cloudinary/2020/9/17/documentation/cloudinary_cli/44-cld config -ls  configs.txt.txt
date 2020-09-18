@@ -1,0 +1,3 @@
+cld config -ls > configs.txt
+
+while read in; do cld config -rm "$in"; done < configs.txt

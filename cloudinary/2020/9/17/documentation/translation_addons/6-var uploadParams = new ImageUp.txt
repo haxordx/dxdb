@@ -1,0 +1,5 @@
+var uploadParams = new ImageUploadParams(){
+  File = new FileDescription(@"windmill_day.jpg"),
+  Categorization = "google_tagging:en:fr:es",
+  AutoTagging = 0.6 };
+var uploadResult = cloudinary.Upload(uploadParams);

@@ -1,0 +1,3 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation()
+  .setWidth(200).setHeight(200).setAngle("hflip").setCrop("fit").chain()
+  .setOverlay("cloudinary_icon").setWidth(0.4).setFlags("relative").setGravity("north").setX(15).setY(35).setAngle(4).setEffect("brightness:200").setOpacity(70)).generate("wood_chair.jpg")!, cloudinary: cloudinary)

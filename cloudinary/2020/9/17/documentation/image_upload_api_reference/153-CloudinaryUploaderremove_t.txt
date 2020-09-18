@@ -1,0 +1,1 @@
+\Cloudinary\Uploader::remove_tag('animal', array('dog', 'lion'));

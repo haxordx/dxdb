@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setType( "youtube").setTransformation(CLDTransformation().setWidth(500).setBorder("5px_solid_black").setCrop("scale")).generate("o-urnlaJpOA.jpg")!, cloudinary: cloudinary)

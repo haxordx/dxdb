@@ -1,0 +1,4 @@
+CloudinaryImage("sample.jpg").image(
+  custom_function = {
+    "function_type" = "wasm", 
+    "source" = "my_example.wasm"})

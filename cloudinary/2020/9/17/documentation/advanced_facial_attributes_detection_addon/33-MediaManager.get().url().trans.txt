@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().gravity("adv_faces").width(150).height(150).crop("thumb")).generate("coupled.jpg");

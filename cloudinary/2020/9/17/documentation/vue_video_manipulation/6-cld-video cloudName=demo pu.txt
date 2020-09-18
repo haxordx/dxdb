@@ -1,0 +1,5 @@
+<cld-video cloudName="demo" publicId="ski_jump" controls="true" >
+  <cld-transformation overlay="video:ski_jump" flags="splice" effect="reverse" />
+  <cld-transformation overlay="video:ski_jump" flags="splice" effect="accelerate:-50" />
+  <cld-transformation effect="brightness:10" radius="max" />
+</cld-video>

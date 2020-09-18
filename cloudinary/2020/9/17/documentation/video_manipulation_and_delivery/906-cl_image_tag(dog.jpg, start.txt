@@ -1,0 +1,1 @@
+cl_image_tag("dog.jpg", :start_offset=>"8.5", :resource_type=>"video")

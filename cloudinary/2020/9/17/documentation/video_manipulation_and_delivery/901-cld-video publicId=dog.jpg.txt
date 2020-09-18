@@ -1,0 +1,3 @@
+<cld-video publicId="dog.jpg" resourceType="video">
+
+</cld-video>

@@ -1,0 +1,4 @@
+cloudinary.videoTag('snow_deer.gif', {transformation: [
+  {width: 480, startOffset: "3", endOffset: "5", effect: "boomerang", crop: "scale"},
+  {effect: "loop"}
+  ]}).toHtml();

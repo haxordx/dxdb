@@ -1,0 +1,9 @@
+const presets = ["signed", "video", "eager"];
+const getMyUploadPresets = (cb) => cb(presets);
+
+cloudinary.openUploadWidget({
+  cloudName: "demo", 
+  uploadPreset: "preset1",   // default preset
+  showAdvancedOptions: true,
+  getUploadPresets: getMyUploadPresets
+  },  (error, result) => { });

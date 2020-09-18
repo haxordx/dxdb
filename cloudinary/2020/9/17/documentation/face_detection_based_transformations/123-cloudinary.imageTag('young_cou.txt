@@ -1,0 +1,1 @@
+cloudinary.imageTag('young_couple.jpg', {overlay: new cloudinary.Layer().publicId("golden_star"), gravity: "faces", width: "1.0", flags: "region_relative"}).toHtml();

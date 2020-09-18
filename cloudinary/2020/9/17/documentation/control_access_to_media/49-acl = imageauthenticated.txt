@@ -1,0 +1,1 @@
+:acl => "/image/authenticated/l_text:Arial_45_bold:" + current_user + ",co_white/fl_no_overflow,fl_layer_apply/*"

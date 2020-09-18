@@ -1,0 +1,4 @@
+<Image publicId="flowers.jpg" >
+  <Transformation width="500" crop="scale" />
+  <Transformation overlay={{text: "Stylish%20text", publicId: "sample_text_style"}} gravity="south" />
+</Image>

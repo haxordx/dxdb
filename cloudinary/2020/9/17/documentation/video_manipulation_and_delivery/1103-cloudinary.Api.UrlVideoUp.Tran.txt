@@ -1,0 +1,1 @@
+cloudinary.Api.UrlVideoUp.Transform(new Transformation().StreamingProfile("hd")).BuildUrl("bb_bunny.m3u8")

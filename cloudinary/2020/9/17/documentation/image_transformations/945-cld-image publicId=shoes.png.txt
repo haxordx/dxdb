@@ -1,0 +1,6 @@
+<cld-image publicId="shoes.png" >
+  <cld-transformation width="200" crop="scale" />
+  <cld-transformation effect="outline:20:200" color="red" />
+  <cld-transformation effect="outline:15:200" color="orange" />
+  <cld-transformation effect="outline:10:200" color="yellow" />
+</cld-image>

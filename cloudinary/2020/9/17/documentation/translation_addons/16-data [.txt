@@ -1,0 +1,6 @@
+"data": [
+  { "tag": "windmill", 
+    "confidence": 0.9753 },
+  { "tag": "waterway",
+    "confidence": 0.9287 },
+ ...

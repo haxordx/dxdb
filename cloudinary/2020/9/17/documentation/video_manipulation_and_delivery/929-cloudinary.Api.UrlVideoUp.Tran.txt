@@ -1,0 +1,1 @@
+cloudinary.Api.UrlVideoUp.Transform(new Transformation().StartOffset("4").Width(350).Height(350).Radius(20).Effect("grayscale").Border("5px_solid_black").Crop("crop")).BuildImageTag("dog.jpg")

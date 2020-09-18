@@ -1,0 +1,3 @@
+MediaManager.get().url().transformation(new Transformation()
+  .height(200).crop("scale").chain()
+  .effect("outline:15:200").color("orange")).generate("balloon.png");

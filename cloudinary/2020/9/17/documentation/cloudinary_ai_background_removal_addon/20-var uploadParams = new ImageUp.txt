@@ -1,0 +1,6 @@
+var uploadParams = new ImageUploadParams(){
+  File = new FileDescription(@"girl_hair.jpg"),
+  PublicId = "girl_hair_fine",
+  BackgroundRemoval = "cloudinary_ai:fine_edges",
+  NotificationUrl = "https://mysite.example.com/hooks"};
+var uploadResult = cloudinary.Upload(uploadParams);

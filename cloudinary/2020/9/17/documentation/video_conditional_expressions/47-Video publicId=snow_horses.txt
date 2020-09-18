@@ -1,0 +1,8 @@
+<Video publicId="snow_horses" >
+  <Transformation width="500" crop="scale" />
+  <Transformation if="!cloudinary!_in_tags" />
+  <Transformation overlay="cloudinary_icon" width="100" gravity="north_east" opacity="50" effect="brightness:100" />
+  <Transformation overlay={{fontFamily: "arial", fontSize: 15, text: "By%20Cloudinary"}} gravity="north_east" y="10" x="105" />
+  <Transformation if="end" />
+  <Transformation duration="5" />
+</Video>

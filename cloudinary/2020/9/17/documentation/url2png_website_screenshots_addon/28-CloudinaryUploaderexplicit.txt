@@ -1,0 +1,2 @@
+\Cloudinary\Uploader::explicit(""https://en.wikipedia.org/wiki/Jpg", 
+  array("type" => "url2png"));

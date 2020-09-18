@@ -1,0 +1,1 @@
+cl_image_tag("sample_document.docx.png")

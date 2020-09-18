@@ -1,0 +1,4 @@
+cloudinary.uploader().upload("user_photo.jpg", 
+  Cloudinary.asMap(
+    "quality_analysis", true,
+    "eval", "if (resource_info.quality_analysis.focus < 0.5) { upload_options['tags'] = 'blurry' }"));

@@ -1,0 +1,1 @@
+cl_image_tag("sample.jpg", array("height"=>200, "crop"=>"scale"))

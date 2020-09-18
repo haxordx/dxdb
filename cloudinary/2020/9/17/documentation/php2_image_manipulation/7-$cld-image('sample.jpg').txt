@@ -1,0 +1,8 @@
+$cld->image('sample.jpg')
+  ->resize(Resize::fill(100,150))->toUrl();       
+// Output: "https://res.cloudinary.com/demo/image/upload/c_fill,h_150,w_100/sample.jpg"
+
+$cld->image('sample.png') 
+  ->resize(Resize::scale(200, 200))
+  ->effect(Effect::sepia())->toUrl();
+// Output: "https://res.cloudinary.com/demo/image/upload/c_scale,h_200,w_200/e_sepia/sample.png"

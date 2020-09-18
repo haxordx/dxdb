@@ -1,0 +1,2 @@
+Cloudinary::Api.update("hwepb67oxzh4lrigssld", 
+  :moderation_status => "approved")

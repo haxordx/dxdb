@@ -1,0 +1,4 @@
+cloudinary.image("flowers.jpg", {transformation: [
+  {width: 500, crop: "scale"},
+  {overlay: "cloudinary_icon", opacity: 50, width: 100, effect: "brightness:200", flags: "tiled"}
+  ]})

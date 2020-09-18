@@ -1,0 +1,1 @@
+cloudinary.url().type("youtube").imageTag("http://www.youtube.com/watch?v=aNwnPElsJGE");

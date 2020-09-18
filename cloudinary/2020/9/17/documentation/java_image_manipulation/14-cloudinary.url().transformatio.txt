@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().width(350).fetchFormat("auto").crop("scale")).imageTag("cloud_castle.jpg");

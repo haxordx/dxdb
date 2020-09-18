@@ -1,0 +1,2 @@
+cloudinary.v2.uploader.upload("/home/sample.jpg", 
+  function(error, result) {console.log(result, error); });

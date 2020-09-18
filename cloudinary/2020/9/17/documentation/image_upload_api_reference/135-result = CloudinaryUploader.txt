@@ -1,0 +1,1 @@
+result = Cloudinary::Uploader.replace_tag(tag, public_ids, options = {})

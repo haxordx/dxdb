@@ -1,0 +1,4 @@
+MediaManager.get().upload("dog_couch.jpg")
+  .option("public_id", "dog_couch")
+  .option("background_removal", "cloudinary_ai")
+  .option("notification_url", "https://mysite.example.com/hooks").dispatch();

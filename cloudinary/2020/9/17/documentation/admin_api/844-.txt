@@ -1,0 +1,9 @@
+:
+api.createStreamingProfile("custom_square", "Custom square resolution",
+  Arrays.asList(
+    ObjectUtils.asMap("transformation", new 
+      Transformation().crop("limit").width(1200).height(1200).bitRate("5m")),
+    ObjectUtils.asMap("transformation", new 
+      Transformation().crop("limit").width(900).height(900).bitRate("3500k")),
+    ObjectUtils.asMap("transformation", new 
+      Transformation().crop("limit").width(600).height(600).bitRate("1500k"))));

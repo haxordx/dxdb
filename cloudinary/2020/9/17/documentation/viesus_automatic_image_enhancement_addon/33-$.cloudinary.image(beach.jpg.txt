@@ -1,0 +1,1 @@
+$.cloudinary.image("beach.jpg", {effect: "viesus_correct", width: 400, crop: "scale"})

@@ -1,0 +1,1 @@
+cloudinary.url().type("facebook").imageTag("65646572251.jpg");

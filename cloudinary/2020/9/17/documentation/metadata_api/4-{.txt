@@ -1,0 +1,5 @@
+{
+    "type": "less_than",
+    "value": <value_by_type>,
+    "equals": <boolean>
+}

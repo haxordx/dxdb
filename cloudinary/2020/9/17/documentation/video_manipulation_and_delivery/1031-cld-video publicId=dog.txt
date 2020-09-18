@@ -1,0 +1,3 @@
+<cld-video publicId="dog" >
+  <cld-transformation overlay={{fontFamily: "arial", fontSize: 20, publicId: "sample_sub_en.srt", resourceType: "subtitles"}} />
+</cld-video>

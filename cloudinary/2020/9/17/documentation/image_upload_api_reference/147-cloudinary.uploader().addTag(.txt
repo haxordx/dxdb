@@ -1,0 +1,2 @@
+cloudinary.uploader().addTag("animal",
+  ["dog", "lion"], ObjectUtils.emptyMap());

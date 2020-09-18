@@ -1,0 +1,1 @@
+CloudinaryImage("DamagedHelmet3D").image(fetch_format="glb")

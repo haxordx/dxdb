@@ -1,0 +1,8 @@
+cl_image_tag("sample.jpg", :transformation=>[
+  {:width=>500, :crop=>"scale"},
+  {:overlay=>"cloudinary_icon", :width=>150},
+  {:effect=>"blackwhite"},
+  {:overlay=>"cloudinary_icon", :width=>50},
+  {:flags=>"layer_apply"},
+  {:flags=>"layer_apply", :gravity=>"north_east"}
+  ])

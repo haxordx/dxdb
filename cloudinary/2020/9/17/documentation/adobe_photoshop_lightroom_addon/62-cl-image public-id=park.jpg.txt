@@ -1,0 +1,4 @@
+<cl-image public-id="park.jpg" >
+  <cl-transformation effect="lightroom:xmp:my_presets:warm_shadow.xmp">
+  </cl-transformation>
+</cl-image>

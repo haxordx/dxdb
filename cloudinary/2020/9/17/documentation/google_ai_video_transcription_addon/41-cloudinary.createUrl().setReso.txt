@@ -1,0 +1,1 @@
+cloudinary.createUrl().setResourceType("video").setTransformation(CLDTransformation().setOverlay("subtitles:lincoln.transcript")).generate("lincoln.mp4")

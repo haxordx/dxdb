@@ -1,0 +1,3 @@
+Cloudinary::Uploader.upload("local_file.jpg", 
+  :moderation => "webpurify",
+  :notification_url => "https://mysite.example.com/hooks")

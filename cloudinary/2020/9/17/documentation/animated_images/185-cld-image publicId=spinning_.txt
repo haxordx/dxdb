@@ -1,0 +1,3 @@
+<cld-image publicId="spinning_text.gif" type="multi">
+  <cld-transformation delay="100" />
+</cld-image>

@@ -1,0 +1,1 @@
+MediaManager.get().upload("/home/sample.jpg").dispatch();

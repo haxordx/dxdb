@@ -1,0 +1,4 @@
+<Image publicId="flowers.jpg" >
+  <Transformation width="500" crop="scale" />
+  <Transformation overlay="cloudinary_icon" gravity="north_east" opacity="50" width="200" effect="anti_removal:90" />
+</Image>

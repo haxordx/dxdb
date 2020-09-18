@@ -1,0 +1,1 @@
+cloudinary.Api.SignParameters(IDictionary<string, object> parameters)

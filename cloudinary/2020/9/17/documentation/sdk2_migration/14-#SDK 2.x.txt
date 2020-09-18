@@ -1,0 +1,2 @@
+#SDK 2.x
+VideoThumbnailTag::fromParams("dog.jpg", array("start_offset"=>"4", "width"=>350, "height"=>350, "radius"=>20, "effect"=>"grayscale", "border"=>"5px_solid_black", "crop"=>"crop", "resource_type"=>"video"));

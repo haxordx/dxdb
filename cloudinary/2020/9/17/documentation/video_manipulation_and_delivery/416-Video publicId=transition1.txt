@@ -1,0 +1,3 @@
+<Video publicId="transition1" >
+  <Transformation width="300" crop="scale" />
+</Video>

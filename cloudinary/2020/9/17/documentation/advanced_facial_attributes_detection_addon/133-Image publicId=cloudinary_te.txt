@@ -1,0 +1,4 @@
+<Image publicId="cloudinary_team.jpg" >
+  <Transformation width="700" radius="max" crop="scale" />
+  <Transformation flags="region_relative" gravity="adv_eyes" overlay="harlequinmask" width="1.7" />
+</Image>

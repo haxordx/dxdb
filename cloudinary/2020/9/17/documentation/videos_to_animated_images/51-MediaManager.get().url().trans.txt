@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().width(250).flags("animated").fetchFormat("auto").crop("scale")).resourceType("video").generate("dog.gif");

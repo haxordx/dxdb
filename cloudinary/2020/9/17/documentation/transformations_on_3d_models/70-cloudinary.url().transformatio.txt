@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().flags("draco")).imageTag("DamagedHelmet3D.gltz");

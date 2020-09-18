@@ -1,0 +1,3 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation()
+  .FetchFormat("gif").Chain()
+  .AspectRatio("1").Background("#a17ec5").Flags("animated").Height(200).Crop("fill")).BuildImageTag("DamagedHelmet3D")

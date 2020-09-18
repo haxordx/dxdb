@@ -1,0 +1,4 @@
+cloudinary.imageTag('sample.jpg', {transformation: [
+  {width: 100, crop: "scale"},
+  {angle: -20}
+  ]}).toHtml();

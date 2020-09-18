@@ -1,0 +1,4 @@
+var delResParams = new DelResParams(){
+  PublicIds = new List<string>{"4"},
+  Type = "facebook"};
+cloudinary.DeleteResources(delResParams);

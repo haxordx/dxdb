@@ -1,0 +1,4 @@
+#EXTM3U
+#EXT-X-STREAM-INF:BANDWIDTH=5000000,RESOLUTION=480x320,NAME="Nice Dog - iPhone 4"    https://res.cloudinary.com/demo/video/upload/c_lpad,w_960,h_640,vs_2,q_70,br_5m,vc_h264:main:3.1/dog.m3u8
+
+#EXT-X-STREAM-INF:BANDWIDTH=1500000,RESOLUTION=480x320,NAME="Nice Dog - iPhone 1"    https://res.cloudinary.com/demo/video/upload/c_lpad,w_480,h_320,vs_2,q_70,br_1400k,vc_h264:baseline:3.0/dog.m3u8

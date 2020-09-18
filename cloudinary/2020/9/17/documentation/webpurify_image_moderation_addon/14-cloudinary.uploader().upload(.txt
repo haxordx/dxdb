@@ -1,0 +1,4 @@
+cloudinary.uploader().upload("local_file.jpg", 
+  ObjectUtils.asMap(
+    "moderation", "webpurify",
+    "notification_url", "https://mysite.example.com/hooks"));

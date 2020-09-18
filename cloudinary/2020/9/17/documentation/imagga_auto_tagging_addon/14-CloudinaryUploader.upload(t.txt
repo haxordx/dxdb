@@ -1,0 +1,2 @@
+Cloudinary::Uploader.upload("turtles.jpg", 
+  :categorization => "imagga_tagging")

@@ -1,0 +1,4 @@
+<cl-image public-id="pi.png" >
+  <cl-transformation width="250" height="150" radius="max" crop="fill">
+  </cl-transformation>
+</cl-image>

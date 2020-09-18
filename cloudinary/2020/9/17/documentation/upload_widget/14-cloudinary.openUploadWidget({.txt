@@ -1,0 +1,4 @@
+cloudinary.openUploadWidget({
+  cloudName: "demo", uploadPreset: "preset1",
+  sources: [ 'local', 'url', 'google_drive'],
+  googleDriveClientId: '1wsds35jrt34dsssw21' }, (error, result) => { });

@@ -1,0 +1,1 @@
+cl_sprite_tag("logo", :width => 150, :height => 60, :crop => :fit)

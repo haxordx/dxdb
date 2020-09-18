@@ -1,0 +1,1 @@
+cld uploader rename photo1 photo2 -o to_type private -o invalidate true

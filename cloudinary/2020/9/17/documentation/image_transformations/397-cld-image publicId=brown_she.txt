@@ -1,0 +1,4 @@
+<cld-image publicId="brown_sheep.jpg" >
+  <cld-transformation x="355" y="410" width="300" height="200" crop="crop" />
+  <cld-transformation width="150" height="100" crop="scale" />
+</cld-image>

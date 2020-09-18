@@ -1,0 +1,1 @@
+cl_image_tag("basketball_in_net.jpg", :width=>200, :height=>300, :gravity=>"auto", :crop=>"fill")

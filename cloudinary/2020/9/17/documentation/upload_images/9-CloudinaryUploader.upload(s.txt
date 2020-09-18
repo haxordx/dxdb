@@ -1,0 +1,1 @@
+Cloudinary::Uploader.upload("sample.jpg")

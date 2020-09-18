@@ -1,0 +1,4 @@
+<cl-image public-id="docs/colorblind_green_red.jpg" >
+  <cl-transformation effect="assist_colorblind:xray">
+  </cl-transformation>
+</cl-image>

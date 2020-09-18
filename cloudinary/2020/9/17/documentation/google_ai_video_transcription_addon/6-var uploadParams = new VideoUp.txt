@@ -1,0 +1,6 @@
+var uploadParams = new VideoUploadParams()
+{
+  File = new FileDescription(@"lincoln.mp4"),
+  RawConvert = "google_speech"
+};
+var uploadResult = cloudinary.Upload(uploadParams);

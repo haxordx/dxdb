@@ -1,0 +1,6 @@
+vplayer.playlist([
+  'book', 
+  { publicId: 'oceans', 
+    transformation: { width: 500, crop: 'pad' } },
+  'dog'
+], autoAdvance: 10, repeat: true)

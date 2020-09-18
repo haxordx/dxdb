@@ -1,0 +1,4 @@
+cl_video_tag("dog", array("variables"=>array("$mainvideowidth"=>"500", "$overlaywidth"=>"$mainvideowidth / 3"), "transformation"=>array(
+  array("width"=>"$mainvideowidth", "crop"=>"scale"),
+  array("overlay"=>"video:kitten_fighting", "width"=>"$overlaywidth", "gravity"=>"south_east")
+  )))

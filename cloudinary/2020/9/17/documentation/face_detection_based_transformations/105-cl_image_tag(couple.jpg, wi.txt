@@ -1,0 +1,1 @@
+cl_image_tag("couple.jpg", :width=>100, :height=>150, :gravity=>"faces", :crop=>"fill")

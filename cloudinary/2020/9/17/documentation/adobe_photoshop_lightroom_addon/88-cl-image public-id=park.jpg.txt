@@ -1,0 +1,4 @@
+<cl-image public-id="park.jpg" >
+  <cl-transformation effect="lightroom:xmp:authenticated:my_presets:warm_shadow_auth.xmp">
+  </cl-transformation>
+</cl-image>

@@ -1,0 +1,4 @@
+<cl-video public-id="dog" >
+  <cl-transformation effect="progressbar:color_FF0000:width_12:type_frame">
+  </cl-transformation>
+</cl-video>

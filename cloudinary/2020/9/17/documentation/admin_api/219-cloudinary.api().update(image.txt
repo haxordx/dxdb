@@ -1,0 +1,4 @@
+cloudinary.api().update("image1",
+  ObjectUtils.asMap(
+    "tags", "important",
+    "moderation_status", "approved"));

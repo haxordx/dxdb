@@ -1,0 +1,5 @@
+<video crossorigin autobuffer controls muted 
+  poster="https://res.cloudinary.com/demo/video/upload/w_800/folder-permissions-tutorial.jpg" >
+     <source id="mp4" src="https://res.cloudinary.com/demo/video/upload/w_800/folder-permissions-tutorial.mp4" type="video/mp4">
+     <track label="English" kind="subtitles" srclang="en" src="https://res.cloudinary.com/demo/raw/upload/folder-permissions-tutorial.en-us.azure.vtt" default>
+</video>

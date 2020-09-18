@@ -1,0 +1,3 @@
+#SDK 2.x
+use Cloudinary\Api\Admin\AdminApi;
+$result = (new AdminApi())->resource("sample");

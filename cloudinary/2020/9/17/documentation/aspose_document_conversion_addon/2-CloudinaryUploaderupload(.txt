@@ -1,0 +1,5 @@
+\Cloudinary\Uploader::upload("my_file_name.docx",
+  array(
+   "public_id" => "sample_document.docx",
+   "resource_type" => "raw",
+   "raw_convert" => "aspose"));

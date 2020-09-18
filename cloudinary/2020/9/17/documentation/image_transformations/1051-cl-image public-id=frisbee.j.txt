@@ -1,0 +1,4 @@
+<cl-image public-id="frisbee.jpg" >
+  <cl-transformation overlay="text:impact_150:Your%20Brand%20Name%20or%20Logo%20Here" effect="distort:arc:-120" color="white" gravity="south" y="840" opacity="60">
+  </cl-transformation>
+</cl-image>

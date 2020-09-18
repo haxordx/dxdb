@@ -1,0 +1,4 @@
+<Image publicId="flowers.jpg" >
+  <Transformation width="500" crop="scale" />
+  <Transformation overlay={{fontFamily: "Times", fontSize: 60, text: "Cool%20image"}} gravity="south" y="20" />
+</Image>

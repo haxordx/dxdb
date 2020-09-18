@@ -1,0 +1,6 @@
+var uploadPresetParams = new UploadPresetParams(){
+  Name = "my_preset",
+  Unsigned = true,
+  Tags = "remote",
+  AllowedFormats = "jpg,png"};
+cloudinary.CreateUploadPreset(uploadPresetParams);

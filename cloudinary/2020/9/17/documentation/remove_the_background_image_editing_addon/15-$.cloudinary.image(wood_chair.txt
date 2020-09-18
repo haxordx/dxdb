@@ -1,0 +1,1 @@
+$.cloudinary.image("wood_chair_orig.jpg", {width: 300, crop: "scale"})

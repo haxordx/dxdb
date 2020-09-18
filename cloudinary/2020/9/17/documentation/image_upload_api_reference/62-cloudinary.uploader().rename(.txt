@@ -1,0 +1,2 @@
+cloudinary.uploader().rename("canyon", "grand_canyon", 
+  ObjectUtils.emptyMap());

@@ -1,0 +1,1 @@
+CloudinaryVideo("dog").video(width=300, effect="noise:50", crop="scale")

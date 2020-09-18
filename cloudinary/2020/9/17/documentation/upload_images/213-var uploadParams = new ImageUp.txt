@@ -1,0 +1,3 @@
+var uploadParams = new ImageUploadParams(){  // by default, ResourceType is already set to "image"
+  File = new FileDescription(@"sample_3D.zip")};
+var uploadResult = cloudinary.Upload(uploadParams);

@@ -1,0 +1,2 @@
+mediaAssets: [{ tag: "shirt", transformation: 
+  { transformation: [{ overlay: "cloudinary_icon", gravity: "north_east" }]}}]

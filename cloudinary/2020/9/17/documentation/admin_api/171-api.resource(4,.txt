@@ -1,0 +1,2 @@
+api.resource("4", 
+  ObjectUtils.asMap("type", "facebook"));

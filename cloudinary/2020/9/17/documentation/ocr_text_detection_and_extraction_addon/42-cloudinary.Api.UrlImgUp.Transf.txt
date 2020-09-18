@@ -1,0 +1,1 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation().Effect("blur_region:800").Gravity("ocr_text")).BuildImageTag("smartphone2.jpg")

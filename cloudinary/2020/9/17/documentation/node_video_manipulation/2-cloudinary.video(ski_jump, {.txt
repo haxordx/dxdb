@@ -1,0 +1,5 @@
+cloudinary.video("ski_jump", {controls:true, transformation: [
+    {overlay: "video:ski_jump", flags: "splice", effect: "reverse"},
+    {overlay: "video:ski_jump", flags: "splice", effect: "accelerate:-50"},
+    {effect: "brightness:10", radius: "max"}
+    ]})

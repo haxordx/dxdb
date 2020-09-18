@@ -1,0 +1,4 @@
+<cld-image publicId="sample.jpg" >
+  <cld-transformation height="300" width="300" background="auto:predominant" crop="pad" />
+  <cld-transformation effect="gradient_fade:symmetric_pad" x="0.5" />
+</cld-image>

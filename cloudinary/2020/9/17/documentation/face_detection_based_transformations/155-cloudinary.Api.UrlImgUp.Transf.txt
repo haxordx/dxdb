@@ -1,0 +1,3 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation()
+  .Overlay(new Layer().PublicId("golden_star")).Gravity("north_west").Width(20).X(314).Y(148).Chain()
+  .Width(500).Crop("scale")).BuildImageTag("docs/plain_face.jpg")

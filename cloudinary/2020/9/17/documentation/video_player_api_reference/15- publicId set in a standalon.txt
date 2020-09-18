@@ -1,0 +1,6 @@
+// publicId set in a standalone param
+vplayer.source('mymovie', { transformation: { angle: 45 }, sourceTypes: ["mp4", "ogg"] })
+
+// publicId set in the options param
+vplayer.source({ publicId: 'mymovie', transformation: { angle: 45 }, 
+    sourceTypes: ["mp4", "ogg"] })

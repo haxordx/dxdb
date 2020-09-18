@@ -1,0 +1,1 @@
+$.cloudinary.delete_by_token(delete_token)

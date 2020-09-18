@@ -1,0 +1,1 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation().Width(300).Page(2).Crop("scale")).BuildImageTag("multi_page_pdf.png")

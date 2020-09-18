@@ -1,0 +1,4 @@
+cloudinary.image("snow_deer.gif", {resource_type: "video", transformation: [
+  {width: 480, start_offset: "3", end_offset: "5", effect: "boomerang", crop: "scale"},
+  {effect: "loop"}
+  ]})

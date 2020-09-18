@@ -1,0 +1,4 @@
+<Video publicId="docs/pencil_sketch_sm" >
+  <Transformation if="w_gt_400" overlay="thumbs-up-small" width="150" gravity="north_east" x="10" y="10" />
+  <Transformation width="400" crop="limit" />
+</Video>

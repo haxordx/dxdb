@@ -1,0 +1,3 @@
+MediaManager.get().url().transformation(new Transformation()
+  .width(300).crop("scale").chain()
+  .overlay(new Layer().publicId("video:dog")).width(100).gravity("north_east").radius("max")).resourceType("video").generate("dog.mp4");

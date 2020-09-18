@@ -1,0 +1,3 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation()
+  .setX(355).setY(410).setWidth(300).setHeight(200).setCrop("crop").chain()
+  .setWidth(150).setHeight(100).setCrop("scale")).generate("brown_sheep.jpg")!, cloudinary: cloudinary)

@@ -1,0 +1,1 @@
+cld sync --push my_images my_cld_images/my_images

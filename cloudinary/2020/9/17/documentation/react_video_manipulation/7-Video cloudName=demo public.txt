@@ -1,0 +1,5 @@
+<Video cloudName="demo" publicId="ski_jump" controls="true" >
+  <Transformation overlay="video:ski_jump" flags="splice" effect="reverse" />
+  <Transformation overlay="video:ski_jump" flags="splice" effect="accelerate:-50" />
+  <Transformation effect="brightness:10" radius="max" />
+</Video>

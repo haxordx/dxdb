@@ -1,0 +1,2 @@
+var vidElem = document.querySelector("video#demo-player")
+var vplayer = cld.videoPlayer(vidElem, {<...constructor params here...>})

@@ -1,0 +1,3 @@
+<cld-image publicId="couple.jpg" >
+  <cld-transformation overlay="golden_star" gravity="faces" width="1.1" flags="region_relative" />
+</cld-image>

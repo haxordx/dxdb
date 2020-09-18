@@ -1,0 +1,4 @@
+cloudinary.imageTag('DamagedHelmet3D', {transformation: [
+  {fetchFormat: "png"},
+  {angle: 90, aspectRatio: "1", background: "#a17ec5", gravity: "auto", height: 200, crop: "fill"}
+  ]}).toHtml();

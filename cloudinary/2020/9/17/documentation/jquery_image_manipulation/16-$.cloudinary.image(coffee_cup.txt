@@ -1,0 +1,14 @@
+$.cloudinary.image("coffee_cup.jpg", {transformation: [
+  {width: 400, height: 250, gravity: "south", crop: "fill"},
+  {overlay: new cloudinary.Layer().publicId("nice_couple"), width: "1.3", height: "1.3", gravity: "faces", flags: "region_relative", crop: "crop"},
+  {effect: "saturation:50"},
+  {effect: "vignette"},
+  {flags: "layer_apply", width: 100, radius: "max", gravity: "center", y: 20, x: -20, crop: "scale"},
+  {overlay: new cloudinary.Layer().publicId("balloon"), height: 55},
+  {effect: "hue:-20", angle: 5},
+  {flags: "layer_apply", x: 30, y: 5},
+  {overlay: new cloudinary.TextLayer().fontFamily("Cookie").fontSize(40).fontWeight("bold").text("Love"), effect: "colorize", color: "#f08"},
+  {angle: 20, flags: "layer_apply", x: -45, y: 44},
+  {width: 300, height: 250, x: 30, crop: "crop"},
+  {radius: 60}
+  ]})

@@ -1,0 +1,3 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation()
+  .Height(200).Crop("scale").Chain()
+  .Effect("outline:15:200").Color("orange")).BuildImageTag("balloon.png")

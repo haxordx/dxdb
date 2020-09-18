@@ -1,0 +1,2 @@
+<?php echo cl_image_upload_tag("image_id", 
+  array("html" => array("multiple" => TRUE ))); ?>

@@ -1,0 +1,4 @@
+<cld-image publicId="balloon.png" >
+  <cld-transformation height="200" crop="scale" />
+  <cld-transformation effect="outline:15:200" color="orange" />
+</cld-image>

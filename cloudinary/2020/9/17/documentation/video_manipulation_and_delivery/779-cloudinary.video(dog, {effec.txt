@@ -1,0 +1,1 @@
+cloudinary.video("dog", {effect: "deshake:32"})

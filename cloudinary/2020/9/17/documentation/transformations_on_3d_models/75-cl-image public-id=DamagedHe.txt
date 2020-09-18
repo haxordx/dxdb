@@ -1,0 +1,4 @@
+<cl-image public-id="DamagedHelmet3D.gltz" >
+  <cl-transformation flags="draco">
+  </cl-transformation>
+</cl-image>

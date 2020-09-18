@@ -1,0 +1,7 @@
+string tag = cloudinary.Api.UrlImgUp.Secure(true)
+    .Transform(new Transformation().Width(100).Height(150).Crop("fill"))
+    .BuildImageTag("sample.jpg");
+
+// Result: 
+//   "<img src='https://res.cloudinary.com/demo/image/upload/c_fill,h_150,w_100/sample.jpg' 
+//         width='100' height='150'/>"

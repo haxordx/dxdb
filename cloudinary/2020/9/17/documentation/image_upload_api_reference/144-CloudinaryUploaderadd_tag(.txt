@@ -1,0 +1,1 @@
+\Cloudinary\Uploader::add_tag('animal', array('dog', 'lion'));

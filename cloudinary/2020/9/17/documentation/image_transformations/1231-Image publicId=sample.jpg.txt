@@ -1,0 +1,9 @@
+<Image publicId="sample.jpg" >
+  <Transformation width="500" crop="scale" />
+  <Transformation effect="brightness:70" />
+  <Transformation overlay="woman" gravity="face" crop="crop" />
+  <Transformation width="150" crop="scale" />
+  <Transformation effect="saturation:50" />
+  <Transformation effect="shadow" />
+  <Transformation flags="layer_apply" />
+</Image>

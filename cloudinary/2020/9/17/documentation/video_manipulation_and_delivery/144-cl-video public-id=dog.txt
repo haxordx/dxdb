@@ -1,0 +1,4 @@
+<cl-video public-id="dog" >
+  <cl-transformation width="250" height="250" crop="fit">
+  </cl-transformation>
+</cl-video>

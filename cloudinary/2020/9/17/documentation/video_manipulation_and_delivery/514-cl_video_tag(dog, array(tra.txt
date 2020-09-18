@@ -1,0 +1,4 @@
+cl_video_tag("dog", array("transformation"=>array(
+  array("width"=>300, "crop"=>"scale"),
+  array("overlay"=>"video:dog", "width"=>100, "gravity"=>"north_east", "radius"=>"max")
+  )))

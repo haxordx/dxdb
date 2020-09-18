@@ -1,0 +1,1 @@
+cloudinary.videoTag('dog', {quality: 50}).toHtml();

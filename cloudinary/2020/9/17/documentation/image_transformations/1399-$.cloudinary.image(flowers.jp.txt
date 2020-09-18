@@ -1,0 +1,4 @@
+$.cloudinary.image("flowers.jpg", {transformation: [
+  {width: 500, crop: "scale"},
+  {overlay: new cloudinary.TextLayer().text("Stylish%20text").publicId("sample_text_style"), gravity: "south"}
+  ]})

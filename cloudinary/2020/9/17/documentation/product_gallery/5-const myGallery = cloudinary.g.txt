@@ -1,0 +1,5 @@
+const myGallery = cloudinary.galleryWidget({ 
+  container: "#my-gallery", 
+  cloudName: "demo", 
+  mediaAssets: [{ tag: "clock" }]    // by default mediaType: "image"
+});

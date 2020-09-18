@@ -1,0 +1,6 @@
+let eager1 = CLDEagerTransformation()
+  .setWidth(400).setHeight(400).setCrop("crop").setGravity("face")
+let eager2 = CLDEagerTransformation()
+  .setWidth(660).setHeight(400).setCrop("pad").setBackround("blue")
+let params = CLDExplicitRequestParams().setEager([eager1, eager2])
+let result = cloudinary.createManagementApi().explicit(publicId, params: params)

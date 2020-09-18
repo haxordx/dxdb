@@ -1,0 +1,3 @@
+const config = { cloud_name: "demo", public_id: "elephants", cloudinary: { cname: "myCname" }, player: { loop: true }, source: { source_types: ['mp4/h265', 'mp4']} };
+const params = qs.stringify(config);
+const url = "https://player.cloudinary.com/embed/?"+ params;

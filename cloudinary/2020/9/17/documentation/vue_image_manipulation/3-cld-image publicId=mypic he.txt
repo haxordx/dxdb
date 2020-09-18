@@ -1,0 +1,6 @@
+<cld-image publicId="mypic" height="150" width="150" crop="fill" />
+  <cld-transformation radius="20" />
+  <cld-transformation effect="sepia" />
+  <cld-transformation overlay="text:arial_60:This is my picture" gravity="north" y="20" />
+  <cld-transformation angle="20" />
+</cld-image>

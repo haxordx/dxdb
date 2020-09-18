@@ -1,0 +1,8 @@
+\Cloudinary\Uploader::upload("sample.jpg", 
+  array( 
+    "eager" => array(
+        array("width" => 300, "height" => 300, "crop" => "pad"),
+        array("width" => 160, "height" => 100, "crop" => "crop")),
+    "eager_async" => TRUE,
+    "eager_notification_url" => "https://mysite.example.com/eager_endpoint",
+    "notification_url" => "https://mysite.example.com/upload_endpoint"));

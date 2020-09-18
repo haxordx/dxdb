@@ -1,0 +1,3 @@
+var updateParams = new UpdateParams("wood_chair"){
+  BackgroundRemoval = "pixelz"};
+var updateResult = cloudinary.UpdateResource(updateParams);

@@ -1,0 +1,3 @@
+<img class="cld-responsive" 
+    data-src="https://res.cloudinary.com/demo/image/upload/w_auto,dpr_auto,c_scale/woman.jpg"
+    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"  />

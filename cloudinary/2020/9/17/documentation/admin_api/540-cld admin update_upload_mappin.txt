@@ -1,0 +1,1 @@
+cld admin update_upload_mapping "wiki" template="https://u.wiki.com/images/"

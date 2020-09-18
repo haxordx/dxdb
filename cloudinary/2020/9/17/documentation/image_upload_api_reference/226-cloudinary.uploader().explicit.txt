@@ -1,0 +1,8 @@
+cloudinary.uploader().explicit("sample", 
+  ObjectUtils.asMap(
+    "type", "upload",
+    "eager", Arrays.asList(
+      new Transformation().width(400).height(400)
+        .crop("crop").gravity("face"),
+      new Transformation().width(660).height(400)
+        .crop("pad").background("blue"))));

@@ -1,0 +1,1 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation().Crop("imagga_crop")).BuildImageTag("family_bench.jpg")

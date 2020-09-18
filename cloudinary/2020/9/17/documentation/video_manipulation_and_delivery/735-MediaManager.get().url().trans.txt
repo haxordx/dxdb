@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().effect("preview:duration_5")).resourceType("video").generate("elephants.mp4");

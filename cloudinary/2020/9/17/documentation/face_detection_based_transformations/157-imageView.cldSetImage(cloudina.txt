@@ -1,0 +1,3 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation()
+  .setOverlay("golden_star").setGravity("north_west").setWidth(20).setX(314).setY(148).chain()
+  .setWidth(500).setCrop("scale")).generate("docs/plain_face.jpg")!, cloudinary: cloudinary)

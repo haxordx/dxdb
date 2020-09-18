@@ -1,0 +1,1 @@
+MediaManager.get().url().type("twitter_name").generate("BillClinton.jpg");

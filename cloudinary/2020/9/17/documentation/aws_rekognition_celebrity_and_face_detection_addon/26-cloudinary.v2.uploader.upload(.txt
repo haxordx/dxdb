@@ -1,0 +1,4 @@
+cloudinary.v2.uploader.upload("rolling_stones.jpg", 
+  { detection: "aws_rek_face", 
+    auto_tagging: 0.7},
+  function(error, result){console.log(result);});

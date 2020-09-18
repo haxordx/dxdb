@@ -1,0 +1,1 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation().Delay("100")).Action("multi").BuildImageTag("spinning_text.gif")

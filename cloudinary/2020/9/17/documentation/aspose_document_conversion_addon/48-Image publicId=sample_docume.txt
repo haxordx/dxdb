@@ -1,0 +1,3 @@
+<Image publicId="sample_document.docx.jpg" >
+  <Transformation width="300" page="2" crop="scale" />
+</Image>

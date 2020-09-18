@@ -1,0 +1,3 @@
+cloudinary.v2.uploader.upload("local_file.jpg", 
+  { moderation: "webpurify" },
+  function(error, result){console.log(result);});

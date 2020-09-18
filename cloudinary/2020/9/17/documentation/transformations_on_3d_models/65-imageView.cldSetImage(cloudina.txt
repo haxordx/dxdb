@@ -1,0 +1,3 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation()
+  .setFetchFormat("png").chain()
+  .setAngle(90).setAspectRatio("1").setBackground("#a17ec5").setGravity("auto").setHeight(200).setCrop("fill")).generate("DamagedHelmet3D")!, cloudinary: cloudinary)

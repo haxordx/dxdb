@@ -1,0 +1,4 @@
+\Cloudinary\Uploader::upload("sample_file.jpg", 
+  array(
+    "use_filename" => TRUE, 
+    "unique_filename" => FALSE));

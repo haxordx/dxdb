@@ -1,0 +1,1 @@
+cloudinary.Api.UrlVideoUp.Transform(new Transformation().Overlay(new SubtitlesLayer().FontFamily("arial").FontSize(70).PublicId("sample_sub_en.srt")).Color("#ffff00").Background("black")).BuildVideoTag("dog")

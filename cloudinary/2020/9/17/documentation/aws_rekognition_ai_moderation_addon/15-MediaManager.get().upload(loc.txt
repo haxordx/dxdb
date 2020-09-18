@@ -1,0 +1,2 @@
+MediaManager.get().upload("local_file.jpg")
+  .option("moderation", "aws_rek:female_swimwear_or_underwear:0.85:explicit_nudity:0.7:revealing_clothes:ignore").dispatch();

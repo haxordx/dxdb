@@ -1,0 +1,3 @@
+<Image publicId="blue_burlap.png" >
+  <Transformation effect="replace_color:maroon:80:2b38aa" />
+</Image>

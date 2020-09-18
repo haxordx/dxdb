@@ -1,0 +1,3 @@
+<Image publicId="woman.jpg" variables={[["$newwidth", "10 + iw * 0.3"]]}>
+  <Transformation width="$newwidth" crop="scale" />
+</Image>

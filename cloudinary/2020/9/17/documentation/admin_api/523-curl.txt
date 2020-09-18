@@ -1,0 +1,4 @@
+curl \
+ -d "folder=my_map&template=https://www.example.com/images/" \
+ -X POST \
+ https://<API_KEY>:<API_SECRET>@api.cloudinary.com/v1_1/<cloud_name>/upload_mappings

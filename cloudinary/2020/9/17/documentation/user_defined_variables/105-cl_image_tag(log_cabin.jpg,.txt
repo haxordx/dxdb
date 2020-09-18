@@ -1,0 +1,1 @@
+cl_image_tag("log_cabin.jpg", :transformation=>["image_ratings"], :variables=>[["$rating", "!thumbs-up!"]])

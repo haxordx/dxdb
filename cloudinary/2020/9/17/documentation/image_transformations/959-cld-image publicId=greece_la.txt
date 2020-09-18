@@ -1,0 +1,3 @@
+<cld-image publicId="greece_landscape.jpg" >
+  <cld-transformation effect="tint:100:red:blue:yellow" />
+</cld-image>

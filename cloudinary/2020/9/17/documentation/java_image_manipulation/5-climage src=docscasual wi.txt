@@ -1,0 +1,11 @@
+<cl:image src="docs/casual" width="500" height="500" crop="fill" cloudName="demo" secure="true" version="1573726751" alt="Casual Jacket" />
+
+// or
+
+cloudinary.url()
+  .transformation(new Transformation().width(500).height(500).crop("fill"))
+  .cloudName("demo")
+  .secure(true)
+  .version(1573726751)
+  .imageTag("docs/casual", Cloudinary.asMap(
+          "alt","Casual Jacket"));

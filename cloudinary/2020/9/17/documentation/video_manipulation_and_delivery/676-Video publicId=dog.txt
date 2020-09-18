@@ -1,0 +1,3 @@
+<Video publicId="dog" >
+  <Transformation effect="progressbar:bar:blue:6" />
+</Video>

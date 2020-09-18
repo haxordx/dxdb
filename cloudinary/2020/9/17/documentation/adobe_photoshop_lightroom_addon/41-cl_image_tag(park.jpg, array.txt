@@ -1,0 +1,1 @@
+cl_image_tag("park.jpg", array("effect"=>"lightroom:xmp:warm_shadow.xmp"))

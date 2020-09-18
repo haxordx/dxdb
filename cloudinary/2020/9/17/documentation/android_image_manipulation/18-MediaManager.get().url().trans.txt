@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().quality("auto").fetchFormat("auto")).generate("pond_reflect.jpg");

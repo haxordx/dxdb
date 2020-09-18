@@ -1,0 +1,1 @@
+cl_image_tag("logo.png", array("type"=>"sprite"))

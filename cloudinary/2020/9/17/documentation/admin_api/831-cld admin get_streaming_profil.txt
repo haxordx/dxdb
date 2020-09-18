@@ -1,0 +1,1 @@
+cld admin get_streaming_profile "custom_square"

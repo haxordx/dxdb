@@ -1,0 +1,3 @@
+var tagParams = new TagParams() 
+{ List<string> PublicIds, TagCommand.RemoveAll };
+var tagResult = cloudinary.Tag(tagParams);

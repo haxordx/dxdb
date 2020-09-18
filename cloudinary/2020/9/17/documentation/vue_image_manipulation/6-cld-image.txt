@@ -1,0 +1,6 @@
+<cld-image 
+  public-id="sample" 
+  loading="lazy"
+  width="400"
+  height="300">
+</cld-image>

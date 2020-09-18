@@ -1,0 +1,4 @@
+<cl-image public-id="docs/plain_face.jpg" >
+  <cl-transformation gravity="face" width="500" flags="getinfo" crop="thumb">
+  </cl-transformation>
+</cl-image>

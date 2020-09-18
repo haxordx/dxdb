@@ -1,0 +1,3 @@
+<Video publicId="dog" >
+  <Transformation overlay={{publicId: "sample_sub_en.srt", resourceType: "subtitles"}} />
+</Video>

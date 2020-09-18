@@ -1,0 +1,2 @@
+cloudinary.uploader.upload_large("my_large_video.mp4", 
+  resource_type = "video")

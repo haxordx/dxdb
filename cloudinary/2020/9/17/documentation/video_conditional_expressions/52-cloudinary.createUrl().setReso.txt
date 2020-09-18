@@ -1,0 +1,7 @@
+cloudinary.createUrl().setResourceType("video").setTransformation(CLDTransformation()
+  .setWidth(500).setCrop("scale").chain()
+  .setIf("!cloudinary!_in_tags").chain()
+  .setOverlay("cloudinary_icon").setWidth(100).setGravity("north_east").setOpacity(50).setEffect("brightness:100").chain()
+  .setOverlay("text:arial_15:By%20Cloudinary").setGravity("north_east").setY(10).setX(105).chain()
+  .setIf("end").chain()
+  .setDuration("5")).generate("snow_horses.mp4")

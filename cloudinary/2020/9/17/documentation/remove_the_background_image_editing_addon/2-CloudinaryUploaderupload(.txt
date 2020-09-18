@@ -1,0 +1,4 @@
+\Cloudinary\Uploader::upload("wood_chair.jpg", 
+  array(
+    "public_id" => "wood_chair",
+    "background_removal" => "pixelz"));

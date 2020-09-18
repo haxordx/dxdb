@@ -1,0 +1,3 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation()
+  .setWidth(300).setPage(4).setEffect("sepia").setRadius(50).setBorder("2px_solid_rgb:999").setCrop("scale").chain()
+  .setOverlay("aspose_cloud_logo").setWidth(0.9).setFlags("relative").setOpacity(70).setGravity("south").setY(20)).generate("sample_document.docx.jpg")!, cloudinary: cloudinary)

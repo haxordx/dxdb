@@ -1,0 +1,1 @@
+cloudinary.Api.UrlVideoUp.Transform(new Transformation().Overlay(new SubtitlesLayer().FontFamily("impact").FontSize(15).PublicId("lincoln.transcript")).Color("khaki").Background("#331a00").Gravity("south_west")).BuildVideoTag("lincoln")

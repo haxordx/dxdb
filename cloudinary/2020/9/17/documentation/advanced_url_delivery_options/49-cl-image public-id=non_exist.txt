@@ -1,0 +1,6 @@
+<cl-image public-id="non_existing_id.png" >
+  <cl-transformation width="200" angle="45" crop="scale">
+  </cl-transformation>
+  <cl-transformation default-image="avatar.png">
+  </cl-transformation>
+</cl-image>

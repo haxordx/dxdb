@@ -1,0 +1,4 @@
+cl.imageTag("myphoto")
+    .dpr("auto").responsive(true).width("auto").crop("scale").angle(20).chain()
+    .effect("art:hokusai").border("3px_solid_rgb:00390b").radius("20")
+    .toHtml()

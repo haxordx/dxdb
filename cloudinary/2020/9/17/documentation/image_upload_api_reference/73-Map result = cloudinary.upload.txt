@@ -1,0 +1,1 @@
+Map result = cloudinary.uploader().destroy(String public_id, Map options);

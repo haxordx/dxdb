@@ -1,0 +1,3 @@
+<cld-image publicId="https://upload.wikimedia.org/wikipedia/commons/1/13/Benedict_Cumberbatch_2011.png" type="fetch">
+  <cld-transformation width="300" height="300" gravity="face" radius="max" crop="fill" fetchFormat="auto" />
+</cld-image>

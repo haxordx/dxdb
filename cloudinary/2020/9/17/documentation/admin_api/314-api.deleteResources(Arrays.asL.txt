@@ -1,0 +1,2 @@
+api.deleteResources(Arrays.asList("image1", "image2"),
+<OBJECT></OBJECT>bjectUtils.asMap("keep_original", true));

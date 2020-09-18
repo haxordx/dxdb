@@ -1,0 +1,1 @@
+cloudinary.imageTag('e3264cf16f34ecd3c7c564f5668cbc1e.jpg', {type: "gravatar"}).toHtml();

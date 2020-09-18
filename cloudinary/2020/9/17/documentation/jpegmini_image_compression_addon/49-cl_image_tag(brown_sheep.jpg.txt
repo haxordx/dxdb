@@ -1,0 +1,1 @@
+cl_image_tag("brown_sheep.jpg", array("height"=>150, "quality"=>"jpegmini", "width"=>200, "crop"=>"fill"))

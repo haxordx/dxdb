@@ -1,0 +1,1 @@
+result = Cloudinary::Uploader.create_zip(options = {})

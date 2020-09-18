@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().effect("progressbar:color_FF0000:width_12:type_frame")).resourceType("video").generate("dog.mp4");

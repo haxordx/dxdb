@@ -1,0 +1,1 @@
+CloudinaryImage("sample.jpg").image(overlay={'url': "http://cloudinary.com/images/old_logo.png7"})

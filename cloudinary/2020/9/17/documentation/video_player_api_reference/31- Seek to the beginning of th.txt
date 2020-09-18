@@ -1,0 +1,2 @@
+// Seek to the beginning of the video
+vplayer.currentTime(0)

@@ -1,0 +1,6 @@
+cloudinary.v2.api.create_upload_preset(
+  { name: "my_preset", 
+    unsigned: true, 
+    tags: "remote", 
+    allowed_formats: "jpg,png" },
+  function(error, result){console.log(result);});

@@ -1,0 +1,6 @@
+<Video publicId="dog" >
+  <Transformation angle="180" />
+  <Transformation width="300" height="200" crop="fill" />
+  <Transformation overlay="video:dog" flags="splice" width="300" height="200" startOffset="0" duration="5" crop="fill" />
+  <Transformation flags="layer_apply" />
+</Video>

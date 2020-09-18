@@ -1,0 +1,1 @@
+CloudinaryImage("flower.jpg").image(overlay="cloudinary_icon", width="0.2", flags="relative")

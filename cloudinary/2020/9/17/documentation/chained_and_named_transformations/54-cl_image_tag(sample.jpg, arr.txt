@@ -1,0 +1,5 @@
+cl_image_tag("sample.jpg", array("transformation"=>array(
+  array("transformation"=>array("jpg_with_quality_30")),
+  array("transformation"=>array("crop_400x400")),
+  array("transformation"=>array("fit_100x150"))
+  )))

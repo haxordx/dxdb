@@ -1,0 +1,3 @@
+Transformation tr = new Transformation();
+tr.crop("fit").width(100);      // "c_fit,w_100"
+String url = MediaManager.get().url().transformation(tr).generate("mypic.jpg")

@@ -1,0 +1,4 @@
+<cl-image public-id="couple.jpg" >
+  <cl-transformation overlay="golden_star" gravity="faces" width="1.1" flags="region_relative">
+  </cl-transformation>
+</cl-image>

@@ -1,0 +1,5 @@
+var uploadParams = new ImageUploadParams(){
+  File = new FileDescription(@"wood_chair.jpg"),
+  PublicId = "wood_chair",
+  BackgroundRemoval = "pixelz"};
+var uploadResult = cloudinary.Upload(uploadParams);

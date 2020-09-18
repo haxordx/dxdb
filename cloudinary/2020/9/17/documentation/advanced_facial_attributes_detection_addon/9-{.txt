@@ -1,0 +1,94 @@
+{
+...
+ "info"=>
+  {"detection"=>
+    {"adv_face"=>
+      {"status"=>"complete",
+       "data"=>
+        [{"bounding_box"=>
+           {"top"=>95.0, "left"=>104.0,  "width"=>48.0, "height"=>48.0},
+          "attributes"=>
+           {"smile"=>0.999,
+            "head_pose"=>{"pitch"=>0.0, "roll"=>-7.9, "yaw"=>10.8},
+            "gender"=>"male",
+            "age"=>55.8,
+            "facial_hair"=>{"moustache"=>0.0, "beard"=>0.0, "sideburns"=>0.0},
+            "glasses"=>"NoGlasses",
+            "emotion"=>
+             {"anger"=>0.0,
+              "contempt"=>0.0,
+              "disgust"=>0.001,
+              "fear"=>0.0,
+              "happiness"=>0.999,
+              "neutral"=>0.0,
+              "sadness"=>0.0,
+              "surprise"=>0.0},
+            "blur"=>{"blurLevel"=>"medium", "value"=>0.41},
+            "exposure"=>{"exposureLevel"=>"goodExposure", "value"=>0.66},
+            "noise"=>{"noiseLevel"=>"low", "value"=>0.0},
+            "makeup"=>{"eyeMakeup"=>false, "lipMakeup"=>false},
+            "accessories"=>[],
+            "occlusion"=>
+             {"foreheadOccluded"=>false,
+              "eyeOccluded"=>false,
+              "mouthOccluded"=>false},
+            "hair"=>
+             {"bald"=>0.21,
+              "invisible"=>false,
+              "hairColor"=>
+               [{"color"=>"gray", "confidence"=>0.98},
+                {"color"=>"black", "confidence"=>0.67},
+                {"color"=>"brown", "confidence"=>0.39},
+                {"color"=>"other", "confidence"=>0.38},
+                {"color"=>"blond", "confidence"=>0.18},
+                {"color"=>"red", "confidence"=>0.12}]}},
+          "facial_landmarks"=>
+           {"mouth"=>
+             {"left"=>{"x"=>118.1, "y"=>132.0},
+              "right"=>{"x"=>139.2, "y"=>129.4},
+              "under_lip"=>
+               {"bottom"=>{"x"=>130.6, "y"=>135.2},
+                "top"=>{"x"=>130.2, "y"=>132.2}},
+              "upper_lip"=>
+               {"bottom"=>{"x"=>130.2, "y"=>129.2},
+                "top"=>{"x"=>129.9, "y"=>127.3}}},
+            "eyebrow"=>
+             {"left_outer"=>{"x"=>105.7, "y"=>108.2},
+              "left_inner"=>{"x"=>121.9, "y"=>105.5},
+              "right_inner"=>{"x"=>131.6, "y"=>104.4},
+              "right_outer"=>{"x"=>145.9, "y"=>104.7}},
+            "eye"=>
+             {"left_outer"=>{"x"=>111.9, "y"=>111.3},
+              "left_top"=>{"x"=>115.5, "y"=>109.3},
+              "left_bottom"=>{"x"=>115.6, "y"=>111.6},
+              "left_inner"=>{"x"=>119.3, "y"=>110.7},
+              "right_inner"=>{"x"=>132.9, "y"=>108.9},
+              "right_top"=>{"x"=>136.4, "y"=>107.0},
+              "right_bottom"=>{"x"=>136.4, "y"=>109.4},
+              "right_outer"=>{"x"=>139.8, "y"=>108.6},
+              "left_pupil"=>{"x"=>115.0, "y"=>110.4},
+              "right_pupil"=>{"x"=>136.3, "y"=>107.8}},
+            "nose"=>
+             {"tip"=>{"x"=>130.1, "y"=>119.2},
+              "root_left"=>{"x"=>123.5, "y"=>110.4},
+              "root_right"=>{"x"=>130.2, "y"=>109.5},
+              "left_alar_top"=>{"x"=>122.8, "y"=>117.1},
+              "right_alar_top"=>{"x"=>133.1, "y"=>116.1},
+              "left_alar_out_tip"=>{"x"=>120.7, "y"=>120.6},
+              "right_alar_out_tip"=>{"x"=>136.2, "y"=>119.2}}}},
+        {"bounding_box"=>
+          {"top"=>148.0, "left"=>144.0, "width"=>43.0, "height"=>43.0},
+          "attributes"=>
+           {"smile"=>1.0,
+            "head_pose"=>{"pitch"=>0.0, "roll"=>-12.6, "yaw"=>-14.9},
+            "gender"=>"female",
+            "age"=>40.2,
+            ...
+            ...
+            ...
+           }
+        }
+      }]
+    }
+  }
+}

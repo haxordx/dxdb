@@ -1,0 +1,4 @@
+<cld-image publicId="docs/rmv_bgd/woman.png" >
+  <cld-transformation height="375" crop="scale" />
+  <cld-transformation underlay="docs:bg_beach" gravity="south" width="800" />
+</cld-image>

@@ -1,0 +1,6 @@
+<Image publicId="sample.jpg" >
+  <Transformation width="500" crop="scale" />
+  <Transformation overlay="cloudinary_icon" width="150" />
+  <Transformation effect="blackwhite" />
+  <Transformation flags="layer_apply" gravity="north_east" />
+</Image>

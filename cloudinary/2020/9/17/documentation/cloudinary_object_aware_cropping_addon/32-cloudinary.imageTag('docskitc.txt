@@ -1,0 +1,1 @@
+cloudinary.imageTag('docs/kitchen1.jpg', {gravity: "sink", aspectRatio: "1", crop: "crop"}).toHtml();

@@ -1,0 +1,2 @@
+cloudinary.uploader().upload("audio_sample.mp3", 
+  ObjectUtils.asMap("resource_type", "video"));

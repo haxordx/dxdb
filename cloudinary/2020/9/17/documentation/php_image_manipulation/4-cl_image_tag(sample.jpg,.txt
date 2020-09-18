@@ -1,0 +1,3 @@
+cl_image_tag("sample.jpg", 
+  array("transformation" => 
+    array("width" => 400, "crop" => "pad")));

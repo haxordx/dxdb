@@ -1,0 +1,2 @@
+Cloudinary::Uploader.upload("concert_ticket.jpg",  
+  :ocr => "adv_ocr")

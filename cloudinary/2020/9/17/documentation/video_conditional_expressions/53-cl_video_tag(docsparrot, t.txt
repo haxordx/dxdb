@@ -1,0 +1,4 @@
+cl_video_tag("docs/parrot", :transformation=>[
+  {:if=>"ar_gt_1.2", :height=>320, :width=>480, :background=>"black", :crop=>"pad"},
+  {:if=>"else", :height=>320, :width=>480, :background=>"blurred:400:15", :crop=>"pad"}
+  ])

@@ -1,0 +1,5 @@
+"validation":{ 
+    "type": "less_than",
+    "value": 50,
+    "equals": true
+}

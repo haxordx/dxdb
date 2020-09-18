@@ -1,0 +1,5 @@
+cloudinary.url().transformation(new Transformation()
+.variables(variable("$height","200")).chain()
+  .if("ar_lt_1.0").chain()
+  .if("else").chain()
+  .height("$height").crop("scale")).imageTag("woman.jpg");

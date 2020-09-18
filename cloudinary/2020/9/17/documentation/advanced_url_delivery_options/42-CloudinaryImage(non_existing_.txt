@@ -1,0 +1,4 @@
+CloudinaryImage("non_existing_id.png").image(transformation=[
+  {'width': 200, 'angle': 45, 'crop': "scale"},
+  {'default_image': "avatar.png"}
+  ])

@@ -1,0 +1,1 @@
+cloudinary.uploader().multi('logo', ObjectUtils.emptyMap());

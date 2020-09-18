@@ -1,0 +1,1 @@
+cl_image_tag("woman.jpg", array("transformation"=>array("passport_photo"), "variables"=>array("$width"=>"115")))

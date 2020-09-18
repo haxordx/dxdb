@@ -1,0 +1,1 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation().Overlay(new TextLayer().Text("%20%20%24%28award%29%20%20Place%20").PublicId("%24style")).Gravity("south").Y(10).Background("gray").Radius(10).Opacity(75).Color("$color")).BuildImageTag("woman.jpg")

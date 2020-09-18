@@ -1,0 +1,9 @@
+$result = $api->resources();
+var_dump($result->rate_limit_allowed);
+php > int(500)
+var_dump($result->rate_limit_allowed);
+php > int(500)
+var_dump($result->rate_limit_remaining);
+php > int(499)
+var_dump($result->rate_limit_reset_at);
+php > int(1570089600)

@@ -1,0 +1,1 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation().Quality("jpegmini:1").Width(400).Crop("scale")).Signed(true).BuildImageTag("horses.jpg")

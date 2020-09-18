@@ -1,0 +1,4 @@
+var updateTransformParams = new UpdateTransformParams(){
+  Transformation = "w_150,h_100,c_fill",
+  Strict = true};
+cloudinary.UpdateTransform(updateTransformParams);

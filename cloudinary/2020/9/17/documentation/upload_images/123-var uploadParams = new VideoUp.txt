@@ -1,0 +1,3 @@
+var uploadParams = new VideoUploadParams(){ // This class sets the resource type to Video
+  File = new FileDescription(@"my_large_video.mp4")};
+var uploadResult = cloudinary.UploadLarge(uploadParams);

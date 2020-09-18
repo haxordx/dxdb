@@ -1,0 +1,15 @@
+<div id="container" style="margin: 0 auto;display: block; width:400px"></div>
+<script src='https://unpkg.com/cloudinary-core@2.11.1/cloudinary-core-shrinkwrap.min.js' type='text/javascript'></script>
+<script type="text/javascript">
+  let myCloudinary = new cloudinary.Cloudinary({cloud_name: 'demo'});
+  let container = document.getElementById('container');
+  myCloudinary.injectTransparentVideoElement(container, 'docs/transparent_girl', {
+    loop: true,
+    playsinline: true,
+    max_timeout_ms: 15000,
+    width: 400,
+    quality: "auto:best"
+  }).catch((err) => {
+    console.log(err);
+  });
+</script>

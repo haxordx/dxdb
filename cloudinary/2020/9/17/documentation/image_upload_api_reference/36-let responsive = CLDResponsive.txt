@@ -1,0 +1,6 @@
+let responsive = CLDResponsiveBreakpoints(createDerived: true, bytesStep: 2000, minWidth: 200, maxWidth: 1000)
+let params = CLDUploadRequestParams().setResponsiveBreakpoints(responsive)
+var mySig = MyFunction(params)  // your own function that returns a signature generated on your backend
+params.setSignature(CLDSignature(signature: mySig.signature, timestamp: mySig.timestamp))
+let request = cloudinary.createUploader().signedUpload(
+  url: "https://www.example.com/sample.jpg", params: params)

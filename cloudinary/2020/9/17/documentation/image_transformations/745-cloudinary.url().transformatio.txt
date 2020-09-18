@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().overlay(new Layer().publicId("cloudinary_icon")).width(300).gravity("north_east").opacity(60)).imageTag("sample.jpg");

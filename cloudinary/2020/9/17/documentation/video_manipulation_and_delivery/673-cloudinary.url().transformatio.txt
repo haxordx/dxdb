@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().effect("progressbar:bar:blue:6")).videoTag("dog");

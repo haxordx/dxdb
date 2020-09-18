@@ -1,0 +1,5 @@
+{
+    "external_id": <string>,
+    "value": <string>,
+    "state": "active" | "inactive"
+}

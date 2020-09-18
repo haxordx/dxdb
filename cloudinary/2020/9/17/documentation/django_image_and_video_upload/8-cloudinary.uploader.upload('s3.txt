@@ -1,0 +1,1 @@
+cloudinary.uploader.upload('s3://my-bucket/my-path/my-file.jpg')

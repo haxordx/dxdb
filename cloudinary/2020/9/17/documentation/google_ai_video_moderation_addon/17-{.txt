@@ -1,0 +1,17 @@
+{
+...
+"moderation_response":
+  {"moderation_confidence": "POSSIBLE",
+   "frames":
+     [{"pornography_likelihood": "POSSIBLE",
+       "time_offset": 0.510936},
+      {"pornography_likelihood": "LIKELY",
+      "time_offset": 2.832345},
+      ...
+      {"pornography_likelihood": "VERY_LIKELY",
+      "time_offset": 14.014693}],
+   "moderation_status": "rejected",
+   "moderation_kind": "google_video_moderation",
+   "moderation_updated_at": "2018-11-13T12:37:30Z"}
+ ...
+}

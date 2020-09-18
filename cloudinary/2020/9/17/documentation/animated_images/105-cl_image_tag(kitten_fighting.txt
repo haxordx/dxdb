@@ -1,0 +1,1 @@
+cl_image_tag("kitten_fighting.webp", :flags=>"awebp")

@@ -1,0 +1,3 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation()
+  .setWidth(300).setCrop("scale").chain()
+  .setEffect("shadow").setX("w / 50").setY("w / 50").setCrop("fill")).generate("horses.jpg")!, cloudinary: cloudinary)

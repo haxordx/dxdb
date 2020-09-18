@@ -1,0 +1,4 @@
+curl \
+  -d "folder=wiki&template=https://u.wiki.com/images/" \
+  -X PUT \
+  https://<API_KEY>:<API_SECRET>@api.cloudinary.com/v1_1/<cloud_name>/upload_mappings

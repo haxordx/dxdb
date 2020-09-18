@@ -1,0 +1,7 @@
+result = cloudinary.api.resources()
+result.rate_limit_allowed
+>>>500
+result.rate_limit_remaining
+>>>499
+result.rate_limit_reset_at
+>>>(2019, 10, 3, 08, 0, 0, 0, 1, -1)

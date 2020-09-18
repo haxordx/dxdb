@@ -1,0 +1,4 @@
+cloudinary.image("flowers.jpg", {transformation: [
+  {width: 500, crop: "scale"},
+  {overlay: {font_family: "Arial", font_size: 80, text: "Flowers"}}
+  ]})

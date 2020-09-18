@@ -1,0 +1,5 @@
+CloudinaryImage("beach.jpg").image(sign_url=True, transformation=[
+  {'effect': "viesus_correct", 'gravity': "south", 'radius': 20, 'width': 1000, 'crop': "crop"},
+  {'gravity': "north_east", 'overlay': "viesus_logo", 'opacity': 50, 'width': 100, 'x': 10, 'y': 10, 'crop': "scale"},
+  {'width': 600, 'crop': "scale"}
+  ])

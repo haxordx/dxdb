@@ -1,0 +1,3 @@
+{
+    "values": [ <datasource_entry>, <datasource_entry>, … ]
+}

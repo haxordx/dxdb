@@ -1,0 +1,5 @@
+#SDK 1.x
+require "cloudinary.php";
+require "api.php";
+$api = new \Cloudinary\Api();
+$result = $api->resource("sample");

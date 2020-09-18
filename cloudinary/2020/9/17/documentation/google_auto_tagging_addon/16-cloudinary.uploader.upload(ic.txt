@@ -1,0 +1,2 @@
+cloudinary.uploader.upload("ice_skating.jpg",
+  categorization = "google_tagging")

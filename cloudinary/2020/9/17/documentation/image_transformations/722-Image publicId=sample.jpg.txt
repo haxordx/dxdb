@@ -1,0 +1,5 @@
+<Image publicId="sample.jpg" >
+  <Transformation width="200" height="200" radius="max" crop="fill" />
+  <Transformation angle="30" />
+  <Transformation effect="trim" />
+</Image>

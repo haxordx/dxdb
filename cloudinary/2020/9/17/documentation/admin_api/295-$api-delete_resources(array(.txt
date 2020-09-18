@@ -1,0 +1,2 @@
+$api->delete_resources(array("4"), 
+  array("type" => "facebook"));

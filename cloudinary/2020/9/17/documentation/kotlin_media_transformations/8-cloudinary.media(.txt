@@ -1,0 +1,8 @@
+cloudinary.media(
+    publicId("family_bench.jpg")
+    resize(Resize.fill {
+      width(750)
+      height(750)
+      gravity(Gravity.faces())
+    })
+}

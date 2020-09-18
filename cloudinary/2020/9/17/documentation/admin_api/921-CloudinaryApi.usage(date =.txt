@@ -1,0 +1,1 @@
+Cloudinary::Api.usage(:date => "10-11-2019")

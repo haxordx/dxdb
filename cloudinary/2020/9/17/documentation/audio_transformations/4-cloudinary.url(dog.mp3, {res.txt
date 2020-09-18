@@ -1,0 +1,1 @@
+cloudinary.url("dog.mp3", {resource_type: "video"})

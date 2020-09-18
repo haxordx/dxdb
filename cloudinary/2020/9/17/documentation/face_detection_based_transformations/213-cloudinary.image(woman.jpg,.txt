@@ -1,0 +1,1 @@
+cloudinary.image("woman.jpg", {gravity: "face", zoom: "1.3", crop: "crop"})

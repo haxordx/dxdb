@@ -1,0 +1,5 @@
+<cld-video cloudName="my_cloud" publicId="dinosaur">
+  <cld-poster publicId="small_dinosaur">
+    <cld-transformation radius="20" />
+  </cld-poster>
+</cld-video>

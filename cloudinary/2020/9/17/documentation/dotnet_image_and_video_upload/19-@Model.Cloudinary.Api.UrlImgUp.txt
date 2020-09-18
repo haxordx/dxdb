@@ -1,0 +1,2 @@
+@Model.Cloudinary.Api.UrlImgUp.Format("jpg").Transform(
+    new Transformation().Width(120).Height(80).Crop("fill")).BuildUrl(Model.Photo.PublicId)

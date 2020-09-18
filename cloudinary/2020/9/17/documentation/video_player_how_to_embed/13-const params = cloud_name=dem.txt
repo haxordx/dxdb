@@ -1,0 +1,2 @@
+const params = "cloud_name=demo&public_id=elephants&vpv=1.4.0";
+const url = "https://player.cloudinary.com/embed/?"+ params;

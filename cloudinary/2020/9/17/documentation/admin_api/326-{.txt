@@ -1,0 +1,7 @@
+{
+    "deleted": {
+        "image1": "deleted",
+        "image2": "deleted"
+    },
+    "partial": false
+}

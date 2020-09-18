@@ -1,0 +1,85 @@
+{
+    "asset_id": "d86882d7788f5d1d702cb63418f082a6",
+    "public_id": "sample",
+    "format": "jpg",
+    "version": 1312461204,
+    "resource_type": "image",
+    "type": "upload",
+    "created_at": "2011-08-04T12:33:24Z",
+    "bytes": 120253,
+    "width": 864,
+    "height": 576,
+    "access_mode": "public",
+    "url": "http://res.cloudinary.com/demo/image/upload/v1312461204/sample.jpg",
+    "secure_url": "https://.../image/upload/v1312461204/sample.jpg",
+    "tags": [
+      "flower",
+      "plant",
+      "naturet"
+    ],
+    "context": {
+      "custom": {
+        "alt": "sample flower",
+        "caption": "beautiful flower"
+      }
+    },
+    "next_cursor": "041a39fc10971b9eabd4993470f6bfaf",
+    "derived": [
+      {
+        "transformation": "c_fill,w_100,h_100",
+        "format": "jpg",
+        "bytes": 7112,
+        "id": "8267a869b62a93a59248f35d7f124c1f",
+        "url": "http://.../demo/image/upload/c_fill,w_100,h_100/v1312461204/sample.jpg",
+        "secure_url": "https://.../image/upload/c_fill,w_100,h_100/v1312461204/sample.jpg"
+      },
+      {
+        "transformation": "w_230,h_168,c_fit",
+        "format": "jpg",
+        "bytes": 19173,
+        "id": "383e22a57167445552a3cdc16f0a0c85",
+        "url": "http://.../demo/image/upload/w_230,h_168,c_fit/v1312461204/sample.jpg",
+        "secure_url": "https://.../image/upload/w_230,h_168,c_fit/v1312461204/sample.jpg"
+      }
+    ],
+
+    "faces": [[98,74,61,83], [140,130,52,71]],
+
+    "colors": [["#162E02",6.7], ["#385B0C",6.3], ["#F3285C",5.0], ["#B3CB6E",5.0], ["#688F1C",4.4], ["#324D07",4.4], ["#8EAA34",4.3], ["#4F6D0D",4.2], ["#789446",4.1], ["#DF1327",3.9], ["#A10B12",3.7], ["#273804",3.4], ["#0D1802",3.4], ["#D5E191",3.2], ["#646E20",3.1], ["#94AF4D",2.9], ["#FB54A9",2.8], ["#48570B",2.7], ["#ACC655",2.7], ["#FCA2D9",2.7], ["#63110A",2.6], ["#E9B327",2.2], ["#6D644D",2.1], ["#6D8D12",2.0], ["#8F9F27",1.9], ["#C3573E",1.8], ["#CFD76E",1.6], ["#A0B058",1.6], ["#FCD0E9",1.6], ["#728F2D",1.4], ["#F958A1",1.4], ["#D1B694",1.0]],
+
+    "predominant": {
+      "google": [
+        [
+          "yellow",
+          52.9
+        ],
+        [
+          "pink",
+          13.5
+        ],
+        [
+          "red",
+          12.0
+        ],
+        [
+          "black",
+          10.1
+        ],
+        [
+          "green",
+          6.3
+        ]
+      ]
+    },
+
+    "versions": [
+        {
+            "version_id": "d214063097a43d1d1293db61a397f60f",
+            "version": "1312461204",
+            "format": "jpg",
+            "size": 109669,
+            "time": "2011-08-04T12:33:24+00:00",
+            "restorable": false
+        }
+    ]
+}

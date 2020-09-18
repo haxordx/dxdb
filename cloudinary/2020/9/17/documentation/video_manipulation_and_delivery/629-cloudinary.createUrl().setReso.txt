@@ -1,0 +1,3 @@
+cloudinary.createUrl().setResourceType("video").setTransformation(CLDTransformation()
+  .setWidth(480).setStartOffset("3").setEndOffset("5").setEffect("boomerang").setCrop("scale").chain()
+  .setEffect("loop")).generate("snow_deer.gif")

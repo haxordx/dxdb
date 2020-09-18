@@ -1,0 +1,4 @@
+cloudinary.media{
+    publicId("cloud_castle")
+    format(Format.auto())
+}

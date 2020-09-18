@@ -1,0 +1,9 @@
+Found 7 items in local folder 'my_images'
+Found 5 items in Cloudinary folder 'my_cld_images/my_images'
+Skipping 5 items
+Deleting 2 local files...
+Deleted '/Users/me/my_images/swan.jpg'
+Deleted '/Users/me/my_images/kingfisher.jpg'
+Deleting empty folders...
+Downloading 0 files from Cloudinary
+Done!

@@ -1,0 +1,4 @@
+imageView.cldSetImage(cloudinary.createUrl().setType( "url2png").setTransformation(CLDTransformation()
+  .setRadius(50).setWidth(400).setHeight(400).setGravity("north").setBorder("2px_solid_rgb:999").setCrop("fill").chain()
+  .setEffect("shadow:20").setColor("#ccc").chain()
+  .setAngle(30).setColor("#ec9800").setEffect("colorize").setOverlay("url2png_logo")).generate("https://en.wikipedia.org/wiki/jpg")!, cloudinary: cloudinary)

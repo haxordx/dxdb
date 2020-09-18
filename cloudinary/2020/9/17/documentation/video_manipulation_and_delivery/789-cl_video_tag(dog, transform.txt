@@ -1,0 +1,4 @@
+cl_video_tag("dog", :transformation=>[
+  {:effect=>"fade:2000"},
+  {:effect=>"fade:-4000"}
+  ])

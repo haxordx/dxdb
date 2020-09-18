@@ -1,0 +1,5 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation()
+  .Variable("$overlay", "ref:!docs:sale!").Chain()
+  .CustomFunction(CustomFunction.Wasm("docs:pnglayer.wasm")).Chain()
+  .Border("1px_solid_black"))
+  .BuildImageTag("docs/casual.jpg")

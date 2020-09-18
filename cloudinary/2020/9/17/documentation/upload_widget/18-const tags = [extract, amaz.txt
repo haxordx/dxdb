@@ -1,0 +1,11 @@
+const tags = ["extract", "amazing", "apple", "dog", "grass", "planes", "rocket", "rock", "movies", 
+  "music", "sad", "light", "open", "mosaic", "entertainment", "test", "testament", "beach", 
+  "vacation", "weather", "letter", "orchard"];
+const getMyTags = (cb, prefix) => cb(prefix ? tags.filter((t) => !t.indexOf(prefix)) : tags);
+
+cloudinary.openUploadWidget({
+  cloudName: "demo", 
+  uploadPreset: "preset1",
+  showAdvancedOptions: true,        
+  getTags: getMyTags, //provide callback to retrieve tagging suggestions
+  }, (error, result) => { });

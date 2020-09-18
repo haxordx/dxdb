@@ -1,0 +1,1 @@
+CloudinaryImage("Cld_Sample_PSD.jpg").image(width=300, effect="grayscale", crop="scale")

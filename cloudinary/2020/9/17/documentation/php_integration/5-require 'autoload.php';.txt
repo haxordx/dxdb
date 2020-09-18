@@ -1,0 +1,2 @@
+require 'autoload.php';
+require 'Helpers.php'; //optional for using the cl_image_tag and cl_video_tag helper methods

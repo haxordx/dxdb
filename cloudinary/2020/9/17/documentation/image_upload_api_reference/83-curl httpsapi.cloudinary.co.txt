@@ -1,0 +1,1 @@
+curl https://api.cloudinary.com/v1_1/demo/image/destroy -X POST --data 'public_id=sample&timestamp=173719931&api_key=436464676&signature=a788d68f86a6f868af'

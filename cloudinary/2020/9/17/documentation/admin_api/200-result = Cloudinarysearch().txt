@@ -1,0 +1,5 @@
+result = \Cloudinary\search()
+  ->expression('cat AND -tags:kitten')
+  ->sort_by('public_id','desc')
+  ->aggregate('format')
+  ->execute();

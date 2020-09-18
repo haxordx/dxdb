@@ -1,0 +1,1 @@
+CloudinaryVideo("transition1").video(width=300, crop="scale")

@@ -1,0 +1,10 @@
+string input = m_cloudinary.Api.BuildUploadForm("video_id", "video",
+    new Dictionary<string, object>() {
+        { "eager", "sp_full_hd/83u8"},
+        { "eager_async", true },
+        { "eager_notification_url", "https://mysite.example.com/notify_endpoint" }
+    },
+    new Dictionary<string, string>() {
+        { "id", "my_upload_tag" }
+    }
+);

@@ -1,0 +1,4 @@
+curl \
+  -d 'allowed_for_strict=true' \
+  -X PUT \
+  https://<API_KEY>:<API_SECRET>@api.cloudinary.com/v1_1/<CLOUD_NAME>/transformations/w_150,h_100,c_fill

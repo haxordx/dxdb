@@ -1,0 +1,2 @@
+cloudinary.uploader.upload("sample_spreadsheet.xls", 
+  resource_type = "raw")

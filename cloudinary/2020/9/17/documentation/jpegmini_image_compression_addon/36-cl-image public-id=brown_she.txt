@@ -1,0 +1,4 @@
+<cl-image public-id="brown_sheep.jpg" sign-url="true">
+  <cl-transformation height="150" quality="jpegmini" width="200" crop="fill">
+  </cl-transformation>
+</cl-image>

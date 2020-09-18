@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().width(300).crop("scale")).resourceType("video").generate("transition1.mp4");

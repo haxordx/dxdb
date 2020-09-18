@@ -1,0 +1,1 @@
+cl_video_tag("snow_horses", array("if"=>"ar_gt_0.65_and_w_gt_1000", "aspect_ratio"=>"0.65", "height"=>1000, "crop"=>"fill"))

@@ -1,0 +1,4 @@
+<Image publicId="docs/rmv_bgd/router.png" >
+  <Transformation height="105" crop="scale" />
+  <Transformation effect="shadow:50" x="10" y="10" />
+</Image>

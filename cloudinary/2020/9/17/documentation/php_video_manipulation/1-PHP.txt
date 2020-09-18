@@ -1,0 +1,6 @@
+PHP:
+cl_video_tag("dog", array("controls"=>true, "transformation"=>array(
+    array("width"=>0.4, "angle"=>20),
+    array("overlay"=>"cloudinary_icon", "opacity"=>50, 
+    "width"=>60, "gravity"=>"south_east", "y"=>15, "x"=>60)
+    )));

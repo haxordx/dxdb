@@ -1,0 +1,4 @@
+cl_image_tag("sample.jpg", :transformation=>[
+  {:width=>100, :crop=>"scale"},
+  {:angle=>90}
+  ])

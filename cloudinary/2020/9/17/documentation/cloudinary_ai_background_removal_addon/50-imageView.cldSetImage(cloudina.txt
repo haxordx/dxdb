@@ -1,0 +1,3 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation()
+  .setHeight(375).setCrop("scale").chain()
+  .setUnderlay("docs:bg_beach").setGravity("south").setWidth(800)).generate("docs/rmv_bgd/woman.png")!, cloudinary: cloudinary)

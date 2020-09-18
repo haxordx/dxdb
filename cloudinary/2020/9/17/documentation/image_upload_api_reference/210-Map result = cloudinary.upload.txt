@@ -1,0 +1,1 @@
+Map result = cloudinary.uploader().updateMetadata(Map metadata, String[] public_ids, Map options);

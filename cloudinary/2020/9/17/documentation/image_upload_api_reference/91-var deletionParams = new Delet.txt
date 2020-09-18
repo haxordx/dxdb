@@ -1,0 +1,3 @@
+var deletionParams = new DeletionParams("sample"){
+  ResourceType = "video"};
+var deletionResult = cloudinary.Destroy(deletionParams);

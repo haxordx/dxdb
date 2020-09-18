@@ -1,0 +1,2 @@
+import static org.apache.commons.codec.digest.MessageDigestAlgorithms.SHA_224;
+string signature = DigestUtils.sha1Hex(payload_to_sign + api_secret)

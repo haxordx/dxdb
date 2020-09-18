@@ -1,0 +1,4 @@
+<cl-video public-id="cld_rubix.gif" resource-type="video">
+  <cl-transformation video-sampling="40" delay="200" height="200" effect="loop" crop="scale">
+  </cl-transformation>
+</cl-video>

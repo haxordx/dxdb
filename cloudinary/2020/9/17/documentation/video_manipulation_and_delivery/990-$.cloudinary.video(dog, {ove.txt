@@ -1,0 +1,1 @@
+$.cloudinary.video("dog", {overlay: new cloudinary.TextLayer().fontFamily("arial").fontSize(60).text("Cool%20Video"), gravity: "south", y: 80, start_offset: "2", end_offset: "5"})

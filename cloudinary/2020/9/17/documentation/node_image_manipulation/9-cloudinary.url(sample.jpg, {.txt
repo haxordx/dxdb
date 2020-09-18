@@ -1,0 +1,2 @@
+cloudinary.url("sample.jpg", {width: 100, height: 150, crop: "fill"})      
+// Output: "https://res.cloudinary.com/demo/image/upload/w_100,h_150,c_fill/sample.jpg"

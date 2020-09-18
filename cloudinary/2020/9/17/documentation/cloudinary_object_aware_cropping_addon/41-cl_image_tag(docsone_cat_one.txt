@@ -1,0 +1,1 @@
+cl_image_tag("docs/one_cat_one_dog.jpg", array("gravity"=>"cat:dog", "crop"=>"crop"))

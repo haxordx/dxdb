@@ -1,0 +1,3 @@
+<Video publicId="hourglass_timer" >
+  <Transformation overlay="video:electronic" />
+</Video>

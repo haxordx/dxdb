@@ -1,0 +1,10 @@
+cl_image_tag("yellow_tulip.jpg", :transformation=>[
+  {:width=>220, :height=>140, :crop=>"fill"},
+  {:overlay=>"brown_sheep", :width=>220, :height=>140, :x=>220, :crop=>"fill"},
+  {:overlay=>"horses", :width=>220, :height=>140, :y=>140, :x=>-110, :crop=>"fill"},
+  {:overlay=>"white_chicken", :width=>220, :height=>140, :y=>70, :x=>110, :crop=>"fill"},
+  {:overlay=>"butterfly.png", :height=>200, :x=>-10, :angle=>10},
+  {:width=>400, :height=>260, :radius=>20, :crop=>"crop"},
+  {:overlay=>{:font_family=>"Parisienne", :font_size=>35, :font_weight=>"bold", :text=>"Memories%20from%20our%20trip"}, :color=>"#990C47", :y=>155},
+  {:effect=>"shadow"}
+  ])

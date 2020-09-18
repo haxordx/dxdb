@@ -1,0 +1,4 @@
+cloudinary.url().transformation(new Transformation()
+  .width(500).crop("scale").chain()
+  .overlay(new Layer().publicId("video:docs:bluescreen_watches")).effect("make_transparent:20").color("#0e80d8").width(0.6).flags("relative").gravity("north").chain()
+  .duration("15")).videoTag("docs/sunset_waves");

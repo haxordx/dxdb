@@ -1,0 +1,10 @@
+import {attachCamera, detachCamera} from '@cloudinary/js-streaming';
+const video = document.getElementById("video");
+const facingMode =  { exact: "user" };
+
+// Show camera in an html <video> element
+// facingMode is optional
+attachCamera(video, facingMode).then(stream=>console.log(stream));
+
+// Remove camera from an html <video> element
+detachCamera(video).then(videoElement=>console.log(videoElement));

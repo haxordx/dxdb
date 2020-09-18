@@ -1,0 +1,4 @@
+<cl-video public-id="dog" controls="true" >
+      <cl-transformation width="0.4" angle="20"></cl-transformation>
+      <cl-transformation overlay="cloudinary_icon" opacity="50" width="60" gravity="south_east" y="15" x="60"></cl-transformation>
+</cl-video>

@@ -1,0 +1,6 @@
+{
+  "info_kind":"azure_video_indexer",
+  "info_status":"complete",
+  "public_id":"folder-permissions-tutorial",
+  ...
+}

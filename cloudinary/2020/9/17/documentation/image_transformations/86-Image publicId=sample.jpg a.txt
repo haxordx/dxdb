@@ -1,0 +1,2 @@
+<Image publicId="sample.jpg" alt="A sample photo" className="Samples">
+</Image>

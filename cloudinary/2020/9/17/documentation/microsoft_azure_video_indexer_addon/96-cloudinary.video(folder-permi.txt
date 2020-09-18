@@ -1,0 +1,1 @@
+cloudinary.video("folder-permissions-tutorial", {overlay: {font_family: "times", font_size: 20, resource_type: "subtitles", public_id: "folder-permissions-tutorial.en-us.azure.transcript"}, color: "blue", gravity: "north"})

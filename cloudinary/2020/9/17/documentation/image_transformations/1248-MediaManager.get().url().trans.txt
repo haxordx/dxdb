@@ -1,0 +1,5 @@
+MediaManager.get().url().transformation(new Transformation()
+  .width(500).crop("scale").chain()
+  .overlay(new Layer().publicId("cloudinary_icon")).width(150).chain()
+  .effect("blackwhite").chain()
+  .flags("layer_apply").gravity("north_east")).generate("sample.jpg");

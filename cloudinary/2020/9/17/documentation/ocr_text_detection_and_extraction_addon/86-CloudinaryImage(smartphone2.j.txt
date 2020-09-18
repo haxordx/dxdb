@@ -1,0 +1,1 @@
+CloudinaryImage("smartphone2.jpg").image(effect="blur_region:800", gravity="ocr_text", sign_url=True)

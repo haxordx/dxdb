@@ -1,0 +1,11 @@
+const myEditor= cloudinary.mediaEditor();
+myEditor.update({
+  cloudName: "demo", 
+  publicIds: ["sample"],
+  widgetSteps: ["resizeAndCrop"],
+  resizeAndCrop: {
+    presets: ["facebookAd", "twitterAd", 
+      {label: "Cover Ad", width: 500, height: 1000 }], 
+    guidelinesUrl: "https://my.example.com/cropping_help.jpg"
+  }
+});

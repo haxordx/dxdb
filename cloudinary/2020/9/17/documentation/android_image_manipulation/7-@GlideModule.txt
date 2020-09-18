@@ -1,0 +1,2 @@
+@GlideModule
+public class MyAppGlideModule extends AppGlideModule { }

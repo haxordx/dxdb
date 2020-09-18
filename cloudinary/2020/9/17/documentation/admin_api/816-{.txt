@@ -1,0 +1,44 @@
+{
+  "data": [
+    {
+      "name": "4k",
+      "display_name": "4K (2160p)",
+      "predefined": true
+    },
+    {
+      "name": "full_hd",
+      "display_name": "Full HD (1080p)",
+      "predefined": true
+    },
+    {
+      "name": "hd",
+      "display_name": "HD (720p)",
+      "predefined": true
+    },
+    {
+      "name": "sd",
+      "display_name": "SD (480p)",
+      "predefined": true
+    },
+    {
+      "name": "full_hd_wifi",
+      "display_name": "Full HD WiFi (1080p)",
+      "predefined": true
+    },
+    {
+      "name": "full_hd_lean",
+      "display_name": "Full HD Lean (1080p)",
+      "predefined": true
+    },
+    {
+      "name": "hd_lean",
+      "display_name": "HD Lean (720p)",
+      "predefined": true
+    },
+    {
+      "name": "custom_square",
+      "display_name": "Custom square resolution",
+      "predefined": false
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+Cloudinary::Uploader.upload("local_file.jpg", 
+  :public_id => "brown_sheep",
+  :eager => { :quality => "jpegmini", :crop => "fill", 
+    :width => 200, :height => 150 })

@@ -1,0 +1,99 @@
+{
+  "public_id": "myfolder/squirrel",
+  "version": 1548832642,
+  "width": 1212,
+  "height": 866,
+  "format": "jpg",
+  "resource_type": "image",
+  "created_at": "2019-01-30T07:17:22Z",
+  "tags": [
+    "critter",
+    "animal",
+    "rodent",
+    "organism",
+    "mammal",
+    "squirrel",
+  ],
+  "pages": 1,
+  "bytes": 142139,
+  "type": "upload",
+  "etag": "f7d130b5ad921adb2c949c6e0d86e59d",
+  "placeholder": false,
+  "url": "http://res.cloudinary.com/demo/image/upload/v1548832642/myfolder/1.jpg",
+  "secure_url": "https://res.cloudinary.com/demo/image/upload/v1548832642/myfolder/1.jpg",
+  "access_mode": "public",
+  "moderation": [
+    {
+      "status": "pending",
+      "kind": "manual"
+    }
+  ],
+  "info": {
+    "categorization": {
+      "imagga_tagging": {
+        "status": "complete",
+        "data": [
+          {
+            "tag": {
+              "en": "critter"
+            },
+            "confidence": 1
+          },
+          {
+            "tag": {
+              "en": "animal"
+            },
+            "confidence": 1
+          },
+          {
+            "tag": {
+              "en": "rodent"
+            },
+            "confidence": 0.7187
+          },
+          {
+            "tag": {
+              "en": "organism"
+            },
+            "confidence": 0.6881
+          },
+          {
+            "tag": {
+              "en": "mammal"
+            },
+            "confidence": 0.5457
+          },
+          {
+            "tag": {
+              "en": "squirrel"
+            },
+            "confidence": 0.533
+          },
+        ]
+      }
+    },
+    "detection": {
+      "aws_rek_face": {
+        "status": "complete",
+        "data": {
+          "celebrity_faces": [],
+          "unrecognized_faces": [],
+          "orientation_correction": "ROTATE_0"
+        }
+      }
+    }
+  },
+  "faces": [],
+  "phash": "4d32a4db14629beb",
+  "coordinates": {
+    "faces": []
+  },
+  "illustration_score": 0,
+  "semi_transparent": false,
+  "grayscale": false,
+  "quality_analysis": {
+    "focus": 1
+  },
+  "original_filename": "grey-squirrel",
+  "notification_type": "upload"
+}

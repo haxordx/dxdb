@@ -1,0 +1,1 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation().If("ctx:!productType!_eq_!shoes!").Width(200).AspectRatio("1:1").Gravity("auto").Crop("fill")).BuildImageTag("sunset_shoes.jpg")

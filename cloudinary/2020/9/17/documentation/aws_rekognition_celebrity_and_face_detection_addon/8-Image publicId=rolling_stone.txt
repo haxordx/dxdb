@@ -1,0 +1,3 @@
+<Image publicId="rolling_stones.jpg" >
+
+</Image>

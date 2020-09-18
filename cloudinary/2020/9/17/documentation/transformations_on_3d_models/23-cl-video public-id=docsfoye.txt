@@ -1,0 +1,6 @@
+<cl-video public-id="docs/foyer-table" resource-type="image">
+  <cl-transformation fetch-format="mp4">
+  </cl-transformation>
+  <cl-transformation background="#d5d2ca" height="300" flags="animated" crop="scale">
+  </cl-transformation>
+</cl-video>

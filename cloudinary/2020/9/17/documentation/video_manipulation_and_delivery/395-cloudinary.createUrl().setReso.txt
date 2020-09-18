@@ -1,0 +1,4 @@
+cloudinary.createUrl().setResourceType("video").setTransformation(CLDTransformation()
+  .setWidth(300).setHeight(200).setCrop("scale").chain()
+  .setWidth(300).setHeight(200).setOverlay("sample").setFlags("splice").setDuration("3").chain()
+  .setStartOffset("0").setFlags("layer_apply")).generate("dog.mp4")

@@ -1,0 +1,3 @@
+<cld-image publicId="coupled.jpg" >
+  <cld-transformation flags="region_relative" gravity="adv_eyes" overlay="glasses" width="1.5" />
+</cld-image>

@@ -1,0 +1,4 @@
+cloudinary.api().update("woman", 
+  ObjectUtils.asMap(
+    "background_removal", "cloudinary_ai",
+    "notification_url", "https://mysite.example.com/hooks" ));

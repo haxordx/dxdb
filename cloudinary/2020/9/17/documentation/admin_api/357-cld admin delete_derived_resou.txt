@@ -1,0 +1,1 @@
+cld admin delete_derived_resources "8267a869b62a93a59248f35d7f124c1f","383e22a57167445552a3cdc16f0a0c85"

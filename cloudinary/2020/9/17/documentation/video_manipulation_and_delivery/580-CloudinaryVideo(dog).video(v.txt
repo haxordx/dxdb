@@ -1,0 +1,1 @@
+CloudinaryVideo("dog").video(video_codec="auto")

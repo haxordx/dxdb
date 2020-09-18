@@ -1,0 +1,1 @@
+CloudinaryImage("sample.jpg").image(width=250, height=250, crop="mpad")

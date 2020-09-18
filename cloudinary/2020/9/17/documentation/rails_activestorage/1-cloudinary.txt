@@ -1,0 +1,3 @@
+cloudinary:      
+  service: Cloudinary
+  # Any other settings you want, to be sent on all requests, can be included here as well.

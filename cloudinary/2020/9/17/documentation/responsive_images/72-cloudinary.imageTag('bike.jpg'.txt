@@ -1,0 +1,4 @@
+cloudinary.imageTag('bike.jpg', {useRootPath: true, clientHints: true, transformation: [
+  {aspectRatio: "16:9", crop: "fill"},
+  {width: "auto:breakpoints:json", crop: "scale"}
+  ]}).toHtml();

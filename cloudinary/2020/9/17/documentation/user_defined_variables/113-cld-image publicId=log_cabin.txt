@@ -1,0 +1,3 @@
+<cld-image publicId="log_cabin.jpg" :variables="[['$rating', '!thumbs-up!']]">
+  <cld-transformation transformation={["image_ratings"]} />
+</cld-image>

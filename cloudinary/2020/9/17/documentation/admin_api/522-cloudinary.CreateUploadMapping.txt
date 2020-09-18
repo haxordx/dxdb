@@ -1,0 +1,1 @@
+cloudinary.CreateUploadMapping("my_map", "https://www.example.com/images/");

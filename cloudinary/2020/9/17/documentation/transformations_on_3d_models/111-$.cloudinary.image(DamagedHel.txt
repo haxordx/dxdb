@@ -1,0 +1,1 @@
+$.cloudinary.image("DamagedHelmet3D", {fetch_format: "glb"})

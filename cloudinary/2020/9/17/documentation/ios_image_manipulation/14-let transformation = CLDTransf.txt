@@ -1,0 +1,5 @@
+let transformation = CLDTransformation().setFetchFormat("jpg")
+let params = CLDResponsiveParams(autoWidth: true, autoHeight: true, cropMode: "fill", gravity: "auto")         
+photoImageView.cldSetImage(publicId: "sample", 
+    cloudinary: cld, resourceType: "image", 
+    responsiveParams: params, transformation: transformation)

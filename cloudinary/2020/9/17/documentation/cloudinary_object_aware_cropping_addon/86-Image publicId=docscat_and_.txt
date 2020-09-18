@@ -1,0 +1,3 @@
+<Image publicId="docs/cat_and_birds.jpg" >
+  <Transformation gravity="dog:bird" width="600" height="800" crop="crop" />
+</Image>

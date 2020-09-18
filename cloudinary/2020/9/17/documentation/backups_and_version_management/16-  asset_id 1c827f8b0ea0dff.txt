@@ -1,0 +1,34 @@
+  "asset_id": "1c827f8b0ea0dff67945e288483ce5c0",
+  "public_id": "toy_dr4lvl",
+  "format": "jpg",
+  "version": 1589464726,
+  "resource_type": "image",
+  ...
+  ...
+  "versions": [
+    {
+      "version_id": "742ff6d17e189a453bdd4a74ead3e08e",
+      "version": "1589357114",
+      "format": "jpg",
+      "size": 72661,
+      "time": "2020-05-13T08:05:14+00:00",
+      "restorable": true
+    },
+    {
+      "version_id": "c3fe4be5921eb89acd9af738c892f654",
+      "version": "1589464242",
+      "format": "jpg",
+      "size": 50127,
+      "time": "2020-05-14T13:50:42+00:00",
+      "restorable": true
+    },
+    {
+      "version_id": "8f91be6973e5d7a54318dcdf000c1f19",
+      "version": "1589464726",
+      "format": "jpg",
+      "size": 72661,
+      "time": "2020-05-14T13:58:46+00:00",
+      "restorable": false
+    }
+  ]
+}

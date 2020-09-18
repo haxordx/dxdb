@@ -1,0 +1,3 @@
+<cld-image publicId="sample.jpg" >
+  <cld-transformation flags="attachment:pretty_flower" fetchFormat="auto" />
+</cld-image>

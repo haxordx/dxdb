@@ -1,0 +1,3 @@
+<cl-image public-id="brown_sheep.jpg" >
+
+</cl-image>

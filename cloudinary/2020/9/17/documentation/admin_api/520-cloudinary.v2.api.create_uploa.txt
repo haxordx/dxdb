@@ -1,0 +1,3 @@
+cloudinary.v2.api.create_upload_mapping('my_map',
+  { template: "https://www.example.com/images/" },
+  function(error, result){console.log(result);});

@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation().setGravity("face").setCrop("crop")).generate("butterfly.jpg")!, cloudinary: cloudinary)

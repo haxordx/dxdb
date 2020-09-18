@@ -1,0 +1,10 @@
+$api->create_streaming_profile("custom_square_combo", 
+  array(
+    "display_name" => "Custom square resolution with combination of codecs",
+    "representations" => array(
+      array("crop" => "limit", "width" => 1200, "height" => 1200, "video_codec" => "h265", "bit_rate" => "5m"),
+      array("crop" => "limit", "width" => 900, "height" => 900, "video_codec" => "h265", "bit_rate" => "3500k"),
+      array("crop" => "limit", "width" => 600, "height" => 600, "video_codec" => "h265", "bit_rate" => "1500k"),
+      array("crop" => "limit", "width" => 1200, "height" => 1200, "video_codec" => "vp9", "bit_rate" => "5m"),
+      array("crop" => "limit", "width" => 900, "height" => 900, "video_codec" => "vp9", "bit_rate" => "3500k"),
+      array("crop" => "limit", "width" => 600, "height" => 600, "video_codec" => "vp9", "bit_rate" => "1500k"))));

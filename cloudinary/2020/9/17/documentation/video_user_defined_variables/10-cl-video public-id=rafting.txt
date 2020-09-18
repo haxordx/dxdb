@@ -1,0 +1,4 @@
+<cl-video public-id="rafting" >
+  <cl-transformation width="iw / 5" crop="scale">
+  </cl-transformation>
+</cl-video>

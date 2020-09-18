@@ -1,0 +1,3 @@
+<cld-video publicId="dog" >
+  <cld-transformation startOffset="10p" duration="30p" />
+</cld-video>

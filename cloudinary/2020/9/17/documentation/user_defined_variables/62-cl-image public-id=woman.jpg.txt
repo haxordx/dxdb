@@ -1,0 +1,4 @@
+<cl-image public-id="woman.jpg" variables="[['$newwidth', '10 + iw * 0.3']]">
+  <cl-transformation width="$newwidth" crop="scale">
+  </cl-transformation>
+</cl-image>

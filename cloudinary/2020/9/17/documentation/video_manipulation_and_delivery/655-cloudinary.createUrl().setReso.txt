@@ -1,0 +1,1 @@
+cloudinary.createUrl().setResourceType("video").setTransformation(CLDTransformation().setEffect("progressbar:frame:FF0000:12")).generate("dog.mp4")

@@ -1,0 +1,1 @@
+$api->delete_transformation("w_150,h_100,c_fill");

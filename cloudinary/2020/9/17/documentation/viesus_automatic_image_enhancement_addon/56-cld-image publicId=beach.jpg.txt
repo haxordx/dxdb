@@ -1,0 +1,3 @@
+<cld-image publicId="beach.jpg" >
+  <cld-transformation effect="viesus_correct" width="400" crop="scale" />
+</cld-image>

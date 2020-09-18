@@ -1,0 +1,4 @@
+CloudinaryImage("city_pic.jpg").image(transformation=[
+  {'effect': "lightroom:saturation_-100:clarity_25:contrast_73:vignetteamount_60"},
+  {'width': 500, 'quality': "auto", 'effect': "distort:0:0:500:100:500:232:0:332", 'crop': "scale"}
+  ])

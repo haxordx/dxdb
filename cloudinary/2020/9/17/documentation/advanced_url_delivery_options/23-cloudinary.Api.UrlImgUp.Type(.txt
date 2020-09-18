@@ -1,0 +1,1 @@
+cloudinary.Api.UrlImgUp.Type("list").BuildImageTag("logo.json")

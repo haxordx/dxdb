@@ -1,0 +1,2 @@
+$api->create_transformation("small_fill2",
+  array("width" => 150, "height" => 100, "crop" => "fill"));

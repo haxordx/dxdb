@@ -1,0 +1,4 @@
+result = {
+    event: "publicid",
+    info: { id: "my-public-id" }
+};

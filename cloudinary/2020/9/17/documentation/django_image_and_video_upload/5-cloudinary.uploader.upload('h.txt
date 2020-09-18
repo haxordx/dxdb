@@ -1,0 +1,1 @@
+cloudinary.uploader.upload('/home/my_image.jpg')

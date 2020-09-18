@@ -1,0 +1,4 @@
+<cl-image public-id="multi_page_pdf.jpg" >
+  <cl-transformation density="20">
+  </cl-transformation>
+</cl-image>

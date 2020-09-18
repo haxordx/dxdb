@@ -1,0 +1,1 @@
+Cloudinary::cloudinary_url("sample.jpg", array("width"=>300, "height"=>100, "crop"=>"scale"))

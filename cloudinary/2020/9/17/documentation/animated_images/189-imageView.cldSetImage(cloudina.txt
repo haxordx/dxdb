@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setType( "multi").setTransformation(CLDTransformation().setDelay("100")).generate("spinning_text.gif")!, cloudinary: cloudinary)

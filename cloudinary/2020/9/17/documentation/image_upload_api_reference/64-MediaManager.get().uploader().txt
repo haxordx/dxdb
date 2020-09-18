@@ -1,0 +1,2 @@
+MediaManager.get().uploader().rename("canyon", "grand_canyon", 
+  ObjectUtils.emptyMap());

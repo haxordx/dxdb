@@ -1,0 +1,1 @@
+cloudinary.url().type("youtube").imageTag("o-urnlaJpOA.jpg");

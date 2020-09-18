@@ -1,0 +1,3 @@
+<cld-image publicId="docs/one_cat_one_dog.jpg" >
+  <cld-transformation gravity="dog:cat" crop="crop" />
+</cld-image>

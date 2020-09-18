@@ -1,0 +1,1 @@
+cl_image_tag("coupled.jpg", :gravity=>"adv_faces", :width=>150, :height=>150, :crop=>"thumb")

@@ -1,0 +1,3 @@
+<cld-image publicId="home_4_sale.jpg" >
+  <cld-transformation overlay="call_text" flags="region_relative" width="1.1" gravity="ocr_text" />
+</cld-image>

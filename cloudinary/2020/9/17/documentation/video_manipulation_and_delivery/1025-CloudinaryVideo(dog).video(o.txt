@@ -1,0 +1,1 @@
+CloudinaryVideo("dog").video(overlay={'font_family': "arial", 'font_size': 20, 'resource_type': "subtitles", 'public_id': "sample_sub_en.srt"})

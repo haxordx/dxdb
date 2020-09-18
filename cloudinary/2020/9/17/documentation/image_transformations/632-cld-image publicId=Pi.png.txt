@@ -1,0 +1,3 @@
+<cld-image publicId="Pi.png" >
+  <cld-transformation width="150" height="100" radius="25:0" crop="fill" />
+</cld-image>

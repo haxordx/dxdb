@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation().setOverlay("golden_star").setGravity("faces").setWidth(1.0).setFlags("region_relative")).generate("young_couple.jpg")!, cloudinary: cloudinary)

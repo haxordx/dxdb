@@ -1,0 +1,4 @@
+var listResourcesByPrefixParams = new listResourcesByPrefixParams(){
+  Type = "upload",
+  Prefix = "sample"};
+var listResourcesResult = cloudinary.ListResources(listResourcesByPrefixParams);

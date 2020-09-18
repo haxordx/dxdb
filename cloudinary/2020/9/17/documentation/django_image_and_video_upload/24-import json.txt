@@ -1,0 +1,19 @@
+import json      
+from django import forms
+from django.http import HttpResponse
+from django.views.decorators.csrf import csrf_exempt      
+from .models import Photo
+from .forms import PhotoDirectForm
+
+...
+
+@csrf_exempt
+def direct_upload_complete(request):
+  form = PhotoDirectForm(request.POST)
+  if form.is_valid():
+    form.save()
+    ret = dict(photo_id = form.instance.id)
+  else:
+    ret = dict(errors = form.errors)
+
+  return HttpResponse(json.dumps(ret), content_type='application/json')

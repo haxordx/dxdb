@@ -1,0 +1,3 @@
+Cloudinary::Api.update("puppy", 
+  :categorization => "google_tagging:ru", 
+  :auto_tagging => 0.9)

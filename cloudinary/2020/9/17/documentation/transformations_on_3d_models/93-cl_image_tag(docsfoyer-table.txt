@@ -1,0 +1,4 @@
+cl_image_tag("docs/foyer-table", array("transformation"=>array(
+array("format"=>"gltz"),
+array("flags"=>"draco")
+)))

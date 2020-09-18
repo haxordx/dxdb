@@ -1,0 +1,6 @@
+var uploadParams = new ImageUploadParams()
+{
+  File = new FileDescription(@"concert_ticket.jpg"),
+  Ocr = "adv_ocr"
+};
+var uploadResult = cloudinary.Upload(uploadParams);

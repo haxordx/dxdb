@@ -1,0 +1,4 @@
+{
+  animate: 'end',
+  animateDuration: 3000
+}

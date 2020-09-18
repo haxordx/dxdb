@@ -1,0 +1,2 @@
+image = CloudinaryJsFileField(
+  options = { 'return_delete_token': 1 })

@@ -1,0 +1,1 @@
+cloudinary.createUrl().setResourceType("video").setTransformation(CLDTransformation().setEffect("preview:duration_12:max_seg_3:min_seg_dur_3")).generate("imagecon_grigsby_intro.mp4")

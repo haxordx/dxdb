@@ -1,0 +1,4 @@
+<cl-image public-id="beach.jpg" >
+  <cl-transformation effect="viesus_correct">
+  </cl-transformation>
+</cl-image>

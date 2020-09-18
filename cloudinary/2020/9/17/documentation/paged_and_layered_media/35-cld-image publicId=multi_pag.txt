@@ -1,0 +1,3 @@
+<cld-image publicId="multi_page_pdf.png" >
+  <cld-transformation width="300" page="2" crop="scale" />
+</cld-image>

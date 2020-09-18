@@ -1,0 +1,5 @@
+cl_video_tag("docs/sunset_waves", array("transformation"=>array(
+  array("width"=>500, "crop"=>"scale"),
+  array("overlay"=>"video:docs:bluescreen_watches", "effect"=>"make_transparent:20", "color"=>"#0e80d8", "width"=>"0.6", "flags"=>"relative", "gravity"=>"north"),
+  array("duration"=>"15")
+  )))

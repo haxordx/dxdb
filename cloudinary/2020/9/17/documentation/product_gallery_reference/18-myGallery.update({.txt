@@ -1,0 +1,4 @@
+myGallery.update({
+  mediaAssets: [{ tag: "sack" }],
+  aspectRatio: "3:4"
+});

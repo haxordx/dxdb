@@ -1,0 +1,1 @@
+Cloudinary::Uploader.rename('canyon', 'grand_canyon')

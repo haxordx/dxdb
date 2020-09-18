@@ -1,0 +1,8 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation()
+  .Width(500).Crop("scale").Chain()
+  .Effect("brightness:70").Chain()
+  .Overlay(new Layer().PublicId("woman")).Gravity("face").Crop("crop").Chain()
+  .Width(150).Crop("scale").Chain()
+  .Effect("saturation:50").Chain()
+  .Effect("shadow").Chain()
+  .Flags("layer_apply")).BuildImageTag("sample.jpg")

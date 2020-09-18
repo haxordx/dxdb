@@ -1,0 +1,8 @@
+<cld-video publicId="kitten_fighting" >
+  <cld-transformation width="300" height="200" duration="5" crop="scale" />
+  <cld-transformation overlay="video:dog" width="300" height="200" />
+  <cld-transformation duration="5" />
+  <cld-transformation overlay="video:transition1" effect="transition" />
+  <cld-transformation flags="layer_apply" />
+  <cld-transformation flags="layer_apply" />
+</cld-video>

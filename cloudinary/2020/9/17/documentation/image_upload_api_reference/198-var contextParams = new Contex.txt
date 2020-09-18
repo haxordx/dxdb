@@ -1,0 +1,5 @@
+var contextParams = new ContextParams(){
+  PublicIds = new List<string>(){"dog","lion"},
+  Context = "alt=Animal|class=Mammalia",
+  Command = ContextCommand.Add};
+var contextResult = cloudinary.Context(contextParams);

@@ -1,0 +1,5 @@
+cloudinary.uploader().upload("my_file_name.docx", 
+  ObjectUtils.asMap(
+    "public_id", "sample_document.docx",
+    "resource_type", "raw",
+    "raw_convert", "aspose"));

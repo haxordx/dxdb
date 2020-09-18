@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().aspectRatio("2.5").crop("crop")).videoTag("dog");

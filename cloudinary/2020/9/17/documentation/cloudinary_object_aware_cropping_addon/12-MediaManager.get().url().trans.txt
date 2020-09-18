@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().width(600).aspectRatio("1").gravity("auto:sink").crop("thumb")).generate("docs/kitchen1.jpg");

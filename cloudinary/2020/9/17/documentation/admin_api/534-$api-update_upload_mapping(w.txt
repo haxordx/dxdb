@@ -1,0 +1,2 @@
+$api->update_upload_mapping("wiki",
+  array("template" => "https://u.wiki.com/images/"));

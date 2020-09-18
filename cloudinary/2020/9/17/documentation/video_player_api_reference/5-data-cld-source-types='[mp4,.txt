@@ -1,0 +1,1 @@
+data-cld-source-types='["mp4", "ogg", "webm"]'

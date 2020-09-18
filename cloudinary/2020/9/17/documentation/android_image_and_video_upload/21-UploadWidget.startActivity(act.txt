@@ -1,0 +1,2 @@
+UploadWidget.startActivity(activity, UPLOAD_WIDGET_REQUEST_CODE,
+       new UploadWidget.Options(UploadWidget.Action.START_NOW, null));

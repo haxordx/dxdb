@@ -1,0 +1,6 @@
+<cl-image public-id="beach_2_kids.jpg" >
+  <cl-transformation height="700" width="700" crop="fill">
+  </cl-transformation>
+  <cl-transformation effect="style_transfer:preserve_color:40" overlay="lighthouse">
+  </cl-transformation>
+</cl-image>

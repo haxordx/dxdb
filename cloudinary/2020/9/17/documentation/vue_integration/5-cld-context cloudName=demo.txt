@@ -1,0 +1,6 @@
+<cld-context cloudName="demo">
+  <div>
+    <cld-image publicId="sample" width="50" crop="scale" />
+  </div>
+  <cld-image publicId="sample" width="0.5" crop="scale" />
+</cld-context>

@@ -1,0 +1,2 @@
+{ "upload_preset":  "user_upload1", 
+  "callback": "https://www.example.com/cloudinary_cors.html"}

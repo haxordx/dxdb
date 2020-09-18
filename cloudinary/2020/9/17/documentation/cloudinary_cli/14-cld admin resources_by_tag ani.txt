@@ -1,0 +1,1 @@
+cld admin resources_by_tag animals -o max_results 10 -o resource_type video

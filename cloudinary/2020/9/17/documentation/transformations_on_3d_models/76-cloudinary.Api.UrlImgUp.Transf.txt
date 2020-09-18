@@ -1,0 +1,1 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation().Flags("draco")).BuildImageTag("DamagedHelmet3D.gltz")

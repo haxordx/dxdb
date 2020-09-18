@@ -1,0 +1,6 @@
+<cl-video public-id="dog" >
+  <cl-transformation effect="fade:2000">
+  </cl-transformation>
+  <cl-transformation effect="fade:-4000">
+  </cl-transformation>
+</cl-video>

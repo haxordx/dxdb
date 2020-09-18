@@ -1,0 +1,9 @@
+...
+"info": {   
+   "raw_convert": {
+      "google_speech": {
+        "status": "pending"
+      }
+    }
+ }
+...

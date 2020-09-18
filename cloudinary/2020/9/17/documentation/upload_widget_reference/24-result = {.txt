@@ -1,0 +1,4 @@
+result = {
+event: "source-changed",
+info: { source: "local" | "url" | "facebook"   //etc.   
+}};

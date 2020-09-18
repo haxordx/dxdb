@@ -1,0 +1,4 @@
+\Cloudinary\Uploader::upload("jack.mp4", 
+  array(
+    "resource_type" => "video", 
+    "categorization" => "azure_video_indexer"));

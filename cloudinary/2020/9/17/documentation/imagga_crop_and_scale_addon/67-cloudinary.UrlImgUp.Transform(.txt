@@ -1,0 +1,3 @@
+cloudinary.UrlImgUp.Transform(
+  new Transformation().Crop("imagga_scale")
+    .Width(260).Height(240)).Signed(true).BuildUrl("sample_van.jpg")

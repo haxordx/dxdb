@@ -1,0 +1,6 @@
+// All:
+compile group: 'com.cloudinary', name: 'cloudinary-android', version: '1.28.2'
+
+// Download + Preprocess:
+compile group: 'com.cloudinary', name: 'cloudinary-android-preprocess', version: '1.28.2'
+compile group: 'com.cloudinary', name: 'cloudinary-android-download', version: '1.28.2'

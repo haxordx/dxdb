@@ -1,0 +1,3 @@
+var uploadParams = new UploadParams(){
+  Tags = "animal"};
+var uploadResult = cloudinary.Upload(uploadParams);

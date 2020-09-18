@@ -1,0 +1,1 @@
+public static function upload($file, $options = array())

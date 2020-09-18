@@ -1,0 +1,5 @@
+cloudinary.url().transformation(new Transformation()
+.variables(variable("$qualtag","!Pro!")).chain()
+  .if("$qualtag_in_tags").quality(80).chain()
+  .if("else").quality(30).chain()
+  .width(500).crop("scale")).videoTag("docs/kitten_fighting2");

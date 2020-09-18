@@ -1,0 +1,17 @@
+cloudinary.media{
+    publicId("brown_sheep")
+    resize(Resize.crop {
+        width(300)
+        height(200)
+        x(355)
+        y(410)
+    })
+    resize(Resize.fill {
+        width(130)
+        height(100)
+    })
+    rotate(angle(20))
+    resize(Resize.scale {
+        width(0.5)
+    })
+}

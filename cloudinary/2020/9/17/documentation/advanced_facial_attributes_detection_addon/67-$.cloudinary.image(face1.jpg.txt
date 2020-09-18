@@ -1,0 +1,1 @@
+$.cloudinary.image("face1.jpg", {width: 100, height: 40, gravity: "adv_eyes", crop: "thumb"})

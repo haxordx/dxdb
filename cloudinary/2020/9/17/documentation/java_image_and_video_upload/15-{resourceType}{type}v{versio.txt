@@ -1,0 +1,1 @@
+{resourceType}/{type}/v{version}/{filename}\#{signature}

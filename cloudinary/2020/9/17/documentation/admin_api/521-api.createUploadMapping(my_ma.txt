@@ -1,0 +1,2 @@
+api.createUploadMapping("my_map",
+  ObjectUtils.asMap("template", "https://www.example.com/images/"));

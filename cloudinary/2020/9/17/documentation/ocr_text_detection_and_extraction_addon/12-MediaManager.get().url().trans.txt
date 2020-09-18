@@ -1,0 +1,3 @@
+MediaManager.get().url().transformation(new Transformation()
+  .width(1520).height(1440).gravity("west").x(50).crop("crop").chain()
+  .effect("pixelate_region:15").gravity("ocr_text")).generate("black_car.jpg");

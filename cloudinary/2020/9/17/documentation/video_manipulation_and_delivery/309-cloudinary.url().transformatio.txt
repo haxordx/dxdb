@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().startOffset("6.5").endOffset("10")).videoTag("dog");

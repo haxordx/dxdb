@@ -1,0 +1,8 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation()
+  .If("w_lte_400").Chain()
+  .Height(220).Width(180).Crop("fill").Chain()
+  .Effect("red").Chain()
+  .If("else").Chain()
+  .Height(190).Width(300).Crop("fill").Chain()
+  .Effect("oil_paint").Chain()
+  .If("end")).BuildImageTag("sample.jpg")

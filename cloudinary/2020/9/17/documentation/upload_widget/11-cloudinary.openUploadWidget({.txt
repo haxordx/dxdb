@@ -1,0 +1,4 @@
+cloudinary.openUploadWidget({
+  cloudName: "demo", uploadPreset: "preset1",
+  sources: [ 'local', 'url', 'facebook'],
+  facebookAppId: '2dds35jdw21' }, (error, result) => { });

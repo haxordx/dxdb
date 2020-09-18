@@ -1,0 +1,3 @@
+<cld-image publicId="arrow_animation.gif" type="multi">
+
+</cld-image>

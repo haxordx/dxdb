@@ -1,0 +1,2 @@
+cloudinary.url("sample_spreadsheet.xls", {resource_type: "raw"})
+// Output: "https://res.cloudinary.com/demo/raw/upload/sample_spreadsheet.xls"

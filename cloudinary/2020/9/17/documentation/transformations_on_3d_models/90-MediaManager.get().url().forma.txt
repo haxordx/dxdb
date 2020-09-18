@@ -1,0 +1,1 @@
+MediaManager.get().url().format("gltf").generate("foyer-table");

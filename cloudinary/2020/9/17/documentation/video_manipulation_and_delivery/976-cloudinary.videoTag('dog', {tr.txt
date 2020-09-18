@@ -1,0 +1,4 @@
+cloudinary.videoTag('dog', {transformation: [
+  {audioCodec: "none"},
+  {overlay: new cloudinary.Layer().publicId("video:electronic"), effect: "volume:-50"}
+  ]}).toHtml();

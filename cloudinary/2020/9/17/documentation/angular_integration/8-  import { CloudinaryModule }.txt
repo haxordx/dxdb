@@ -1,0 +1,2 @@
+  import { CloudinaryModule } from '@cloudinary/angular-5.x';
+  import * as  Cloudinary from 'cloudinary-core';

@@ -1,0 +1,4 @@
+<Image publicId="beach_2_kids.jpg" >
+  <Transformation height="700" width="700" crop="fill" />
+  <Transformation effect="style_transfer:preserve_color:40" overlay="lighthouse" />
+</Image>

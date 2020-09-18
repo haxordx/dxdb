@@ -1,0 +1,8 @@
+<cld-image publicId="sample.jpg" >
+  <cld-transformation overlay="couple" />
+  <cld-transformation gravity="faces" width="120" height="150" crop="crop" />
+  <cld-transformation radius="max" />
+  <cld-transformation flags="layer_apply" gravity="north_east" />
+  <cld-transformation overlay="cloudinary_icon" width="0.8" flags="relative" opacity="50" effect="brightness:100" />
+  <cld-transformation overlay={{fontFamily: "impact", fontSize: 40, fontWeight: "bold", text: "Sample%20image"}} gravity="south" y="20" />
+</cld-image>

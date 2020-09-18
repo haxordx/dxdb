@@ -1,0 +1,4 @@
+POST /my_notification_endpoint HTTP/1.1
+X-Cld-Timestamp: 1368881627
+X-Cld-Signature: 29a383e289bc569310a8ca9899019a3167b4909e
+Content-Type: application/json

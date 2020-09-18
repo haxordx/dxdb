@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().height(300).width(300).background("auto:predominant_gradient_contrast:4").crop("pad")).generate("horse.jpg");

@@ -1,0 +1,5 @@
+"validation":{ 
+    "type": "greater_than",
+    "value": "2018-10-15",
+    "equals": true
+}

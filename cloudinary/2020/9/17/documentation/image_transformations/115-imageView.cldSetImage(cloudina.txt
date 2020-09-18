@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation().setWidth(150).setHeight(100).setCrop("scale")).generate("sample.gif")!, cloudinary: cloudinary)

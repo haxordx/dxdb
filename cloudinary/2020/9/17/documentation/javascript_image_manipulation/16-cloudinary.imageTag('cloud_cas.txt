@@ -1,0 +1,1 @@
+cloudinary.imageTag('cloud_castle.jpg', {width: 350, fetchFormat: "auto", crop: "scale"}).toHtml();

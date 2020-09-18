@@ -1,0 +1,1 @@
+cloudinary.imageTag('sample.jpg', {width: 300, flags: "keep_iptc", crop: "scale"}).toHtml();

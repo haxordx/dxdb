@@ -1,0 +1,4 @@
+<cl-video public-id="rafting" variables="[['$qualtag', '!important!'], ['$delwidth', '450']]">
+  <cl-transformation transformation={{["highqual-if-tagged"]}}>
+  </cl-transformation>
+</cl-video>

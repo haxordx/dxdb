@@ -1,0 +1,6 @@
+<cld-image publicId="butterfly" :variables="[['$img', 'current'], ['$height', 'ih']]">
+  <cld-transformation if="w_lt_800" />
+  <cld-transformation effect="blur:800" underlay="%24img" width="800" height="$height" crop="scale" />
+  <cld-transformation effect="brightness:40" flags="layer_apply" />
+  <cld-transformation if="end" />
+</cld-image>

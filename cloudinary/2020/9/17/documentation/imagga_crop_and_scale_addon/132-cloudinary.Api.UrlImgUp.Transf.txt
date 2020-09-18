@@ -1,0 +1,3 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation()
+  .Width(400).Crop("scale").Chain()
+  .Height(150).Overlay(new Layer().PublicId("family_bench.png")).Radius("max").Width(150).Crop("imagga_scale")).Signed(true).BuildImageTag("coast.jpg")

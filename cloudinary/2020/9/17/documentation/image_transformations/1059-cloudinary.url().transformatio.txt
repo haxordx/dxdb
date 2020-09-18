@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().width(300).effect("distort:40:25:280:60:260:155:35:165").crop("scale")).imageTag("sample.jpg");

@@ -1,0 +1,3 @@
+<Image publicId="kitten_fighting.webp" >
+  <Transformation flags="awebp" />
+</Image>

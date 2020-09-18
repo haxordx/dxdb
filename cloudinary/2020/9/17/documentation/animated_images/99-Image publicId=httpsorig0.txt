@@ -1,0 +1,3 @@
+<Image publicId="https://orig00.deviantart.net/1928/f/2013/002/e/5/rubix_by_retsamys-d5q4qb6" format="mp4" type="fetch" resourceType="image">
+  <Transformation width="300" crop="scale" />
+</Image>

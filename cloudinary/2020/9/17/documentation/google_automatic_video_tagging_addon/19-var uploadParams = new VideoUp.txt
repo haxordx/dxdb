@@ -1,0 +1,6 @@
+var uploadParams = new VideoUploadParams() 
+{
+  File = new FileDescription(@"turtle.mp4"),
+  Categorization = "google_video_tagging"
+};
+var uploadResult = cloudinary.Upload(uploadParams);

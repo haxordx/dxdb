@@ -1,0 +1,4 @@
+cl_image_tag("cloudinary_team.jpg", array("transformation"=>array(
+  array("width"=>700, "radius"=>"max", "crop"=>"scale"),
+  array("flags"=>"region_relative", "gravity"=>"adv_eyes", "overlay"=>"harlequinmask", "width"=>"1.7")
+  )))

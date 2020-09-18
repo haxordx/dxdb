@@ -1,0 +1,4 @@
+cloud_name:     <CLOUD_NAME>
+api_key:        <API_KEY>
+api_secret:     ***************<LAST_4_DIGITS>
+private_cdn:    <True|False>

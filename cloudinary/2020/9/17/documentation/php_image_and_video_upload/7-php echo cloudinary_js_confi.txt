@@ -1,0 +1,1 @@
+<?php echo cloudinary_js_config(); ?>

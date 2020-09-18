@@ -1,0 +1,4 @@
+<cl-image public-id="cld_sample_smart_PSD.jpg" >
+  <cl-transformation page="embedded:name:skyline-3242040_1920.jpg">
+  </cl-transformation>
+</cl-image>

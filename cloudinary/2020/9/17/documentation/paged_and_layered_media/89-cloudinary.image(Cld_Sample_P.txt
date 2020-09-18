@@ -1,0 +1,4 @@
+cloudinary.image("Cld_Sample_PSD.jpg", {transformation: [
+  {page: "2-4;6;8"},
+  {width: 300, crop: "scale"}
+  ]})

@@ -1,0 +1,1 @@
+<img src="https://res.cloudinary.com/{cloud_name}/image/upload/c_fill,e_sepia,h_150,r_20,w_150/g_north,l_text:arial_60:This is my picture,y_20/a_20/mypic.jpg">

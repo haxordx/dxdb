@@ -1,0 +1,5 @@
+\Cloudinary\Uploader::explicit("bb_bunny", array(
+            "resource_type" => "video", "type" => "upload"
+            "eager" => array(
+              array("streaming_profile" => "hd", "format" => "m3u8"),
+              )));

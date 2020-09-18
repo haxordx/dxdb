@@ -1,0 +1,5 @@
+var vplayer = cld.videoPlayer("my-video", { playedEventTimes: [60, 120, 180] })
+
+vplayer.on('timeplayed', (event) => {
+    console.log(event.eventData.time + " seconds played") 
+})

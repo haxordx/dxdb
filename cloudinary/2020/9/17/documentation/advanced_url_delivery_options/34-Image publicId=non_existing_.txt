@@ -1,0 +1,3 @@
+<Image publicId="non_existing_id.png" >
+  <Transformation defaultImage="avatar.png" />
+</Image>

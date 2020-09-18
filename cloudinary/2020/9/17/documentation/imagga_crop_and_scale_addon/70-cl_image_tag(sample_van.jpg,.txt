@@ -1,0 +1,1 @@
+cl_image_tag("sample_van.jpg", :height=>240, :width=>260, :crop=>"imagga_scale", :sign_url=>true)

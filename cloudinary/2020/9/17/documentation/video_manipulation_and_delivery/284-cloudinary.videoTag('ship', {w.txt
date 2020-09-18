@@ -1,0 +1,1 @@
+cloudinary.videoTag('ship', {width: 300, gravity: "auto", aspectRatio: "1:1", crop: "fill"}).toHtml();

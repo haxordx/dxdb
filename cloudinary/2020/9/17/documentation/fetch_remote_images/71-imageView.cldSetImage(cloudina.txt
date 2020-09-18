@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation().setWidth(200).setHeight(200).setGravity("face").setRadius("max").setEffect("sharpen").setCrop("thumb")).generate("remote_media/commons/a/ae/Olympic_flag.jpg")!, cloudinary: cloudinary)

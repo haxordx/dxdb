@@ -1,0 +1,4 @@
+cloudinary.uploader().upload("lincoln.mp4", 
+  ObjectUtils.asMap(
+    "resource_type", "video", 
+    "raw_convert", "google_speech:srt:vtt"));

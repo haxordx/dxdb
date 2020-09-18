@@ -1,0 +1,4 @@
+.../video/upload/lincoln.mp4    // the source video
+.../raw/upload/lincoln.transcript
+.../raw/upload/lincoln.srt
+.../raw/upload/lincoln.vtt

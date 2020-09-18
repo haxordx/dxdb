@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation().setEffect("lightroom:xmp:authenticated:my_presets:warm_shadow_auth.xmp")).generate("park.jpg")!, cloudinary: cloudinary)

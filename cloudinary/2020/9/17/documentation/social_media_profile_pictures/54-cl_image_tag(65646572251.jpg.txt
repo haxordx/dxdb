@@ -1,0 +1,1 @@
+cl_image_tag("65646572251.jpg", array("width"=>80, "height"=>120, "gravity"=>"face", "crop"=>"fill", "type"=>"facebook"))

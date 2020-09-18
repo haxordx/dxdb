@@ -1,0 +1,3 @@
+<Video publicId="imagecon_grigsby_intro" >
+  <Transformation effect="preview:duration_12:max_seg_3:min_seg_dur_3" />
+</Video>

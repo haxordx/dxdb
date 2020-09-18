@@ -1,0 +1,1 @@
+cloudinary.v2.api.get_streaming_profile(name, callback);

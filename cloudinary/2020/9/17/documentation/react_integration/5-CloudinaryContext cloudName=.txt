@@ -1,0 +1,6 @@
+<CloudinaryContext cloudName="demo">
+  <div>
+    <Image publicId="sample" width="50" crop="scale" />
+  </div>
+  <Image publicId="sample" width="0.5" crop="scale" />
+</CloudinaryContext>

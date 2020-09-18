@@ -1,0 +1,1 @@
+cloudinary.api.restore(["image1", "image2"], versions = ["c3fe4be5921eb89acd9af738c892f654", "d214063097a43d1d1293db61a397f60f"])

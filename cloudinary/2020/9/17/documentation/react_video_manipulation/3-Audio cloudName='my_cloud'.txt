@@ -1,0 +1,11 @@
+<Audio cloudName='my_cloud'
+    sourceTypes={['wav', 'mp3']}
+    publicId='dog'
+    controls
+    fallback="Cannot play audio"
+    sourceTransformation={{
+      wav: {effect: "volume:30"},
+      mp3: {effect: "volume:45"}
+    }}>
+  <Transformation duration="2"/>
+</Audio>

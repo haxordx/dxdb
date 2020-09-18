@@ -1,0 +1,7 @@
+<img 
+  clsrc="https://cloudinary.com/images/logo.png" 
+  fetch-format="auto" 
+  quality="auto"   
+  type="fetch" 
+  ng-reflect-clSrc="https://cloudinary.com/images/logo.png" 
+  src="https://res.cloudinary.com/{your_cloud_name}/image/fetch/f_auto,q_auto/https://cloudinary.com/images/logo.png">

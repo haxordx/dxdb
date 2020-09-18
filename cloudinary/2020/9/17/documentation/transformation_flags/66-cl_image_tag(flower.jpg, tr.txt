@@ -1,0 +1,5 @@
+cl_image_tag("flower.jpg", :transformation=>[
+  {:overlay=>"face_left"},
+  {:width=>200, :height=>200, :gravity=>"face", :radius=>"max", :crop=>"thumb"},
+  {:flags=>"layer_apply", :gravity=>"north_east"}
+  ])

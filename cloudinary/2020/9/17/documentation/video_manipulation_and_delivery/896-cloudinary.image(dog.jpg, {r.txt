@@ -1,0 +1,1 @@
+cloudinary.image("dog.jpg", {resource_type: "video"})

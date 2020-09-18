@@ -1,0 +1,12 @@
+let myRef = React.createRef();
+
+// and then in render()
+<Image
+  innerRef={myRef}
+  publicId='sample'
+/>
+
+// to access the image URL after the component is mounted
+
+const imageElement = myRef.current;    // Get the img element
+const url = imageElement.src;

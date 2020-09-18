@@ -1,0 +1,1 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation().Width(350).FetchFormat("auto").Crop("scale")).BuildImageTag("cloud_castle.jpg")

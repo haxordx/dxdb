@@ -1,0 +1,4 @@
+<cl-video public-id="ski_jump" >
+  <cl-transformation effect="loop:2">
+  </cl-transformation>
+</cl-video>

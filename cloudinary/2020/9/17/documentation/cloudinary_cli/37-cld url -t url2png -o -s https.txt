@@ -1,0 +1,1 @@
+cld url -t url2png -o -s https://cloudinary.com w_300,h_250,g_north,c_fill,e_grayscale

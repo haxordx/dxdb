@@ -1,0 +1,1 @@
+cloudinary.Api.UrlVideoUp.Transform(new Transformation().If("ar_gt_0.65_and_w_gt_1000").AspectRatio("0.65").Height(1000).Crop("fill")).BuildVideoTag("snow_horses")

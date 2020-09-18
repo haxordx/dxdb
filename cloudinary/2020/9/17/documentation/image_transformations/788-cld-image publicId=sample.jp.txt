@@ -1,0 +1,3 @@
+<cld-image publicId="sample.jpg" >
+  <cld-transformation width="300" height="300" background="green" crop="pad" />
+</cld-image>

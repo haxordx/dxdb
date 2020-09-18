@@ -1,0 +1,1 @@
+Map result = cloudinary.uploader().removeAllContext(String[] public_ids, Map options);

@@ -1,0 +1,4 @@
+<cl-image public-id="woman.jpg" variables="[['$award', '!First!'], ['$color', '!rgb:FFFFFF!'], ['$style', '!Arial_45!']]">
+  <cl-transformation overlay="text:%24style:%20%20%24%28award%29%20%20Place%20" gravity="south" y="10" background="gray" radius="10" opacity="75" color="$color">
+  </cl-transformation>
+</cl-image>

@@ -1,0 +1,7 @@
+var uploadParams = new VideoUploadParams() 
+{
+  File = new FileDescription(@"jack.mp4"),
+  Categorization = "azure_video_indexer",
+  AutoTagging = 0.6
+};
+var uploadResult = cloudinary.Upload(uploadParams);

@@ -1,0 +1,4 @@
+cloudinary.imageTag('sample.jpg', {transformation: [
+  {aspectRatio: "4:3", crop: "fill"},
+  {width: "auto", dpr: "auto", crop: "scale"}
+  ]}).toHtml();

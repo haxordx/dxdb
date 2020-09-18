@@ -1,0 +1,2 @@
+boolean canceled = MediaManager.get().cancelRequest(requestId);
+// returns True if successful

@@ -1,0 +1,4 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation()
+  .setEffect("viesus_correct").setGravity("south").setRadius(20).setWidth(1000).setCrop("crop").chain()
+  .setGravity("north_east").setOverlay("viesus_logo").setOpacity(50).setWidth(100).setX(10).setY(10).setCrop("scale").chain()
+  .setWidth(600).setCrop("scale")).generate("beach.jpg", signUrl: true)!, cloudinary: cloudinary)

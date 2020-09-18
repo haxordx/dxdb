@@ -1,0 +1,1 @@
+cl_image_tag("docs/flower_shop.jpg", :gravity=>"auto:ocr_text_avoid", :height=>400, :aspect_ratio=>"0.8", :crop=>"fill")

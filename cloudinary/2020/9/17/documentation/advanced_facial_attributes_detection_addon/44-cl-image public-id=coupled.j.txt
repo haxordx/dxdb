@@ -1,0 +1,4 @@
+<cl-image public-id="coupled.jpg" >
+  <cl-transformation gravity="adv_face" width="100" height="100" crop="thumb">
+  </cl-transformation>
+</cl-image>

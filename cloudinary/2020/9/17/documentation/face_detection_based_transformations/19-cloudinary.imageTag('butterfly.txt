@@ -1,0 +1,1 @@
+cloudinary.imageTag('butterfly.jpg', {width: 200, height: 200, crop: "fill"}).toHtml();

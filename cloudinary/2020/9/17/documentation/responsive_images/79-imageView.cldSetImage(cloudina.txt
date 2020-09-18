@@ -1,0 +1,3 @@
+imageView.cldSetImage(cloudinary.createUrl().setUseRootPath( true).setTransformation(CLDTransformation()
+  .setAspectRatio("16:9").setCrop("fill").chain()
+  .setWidth("auto:breakpoints:json").setCrop("scale")).generate("bike.jpg")!, cloudinary: cloudinary)

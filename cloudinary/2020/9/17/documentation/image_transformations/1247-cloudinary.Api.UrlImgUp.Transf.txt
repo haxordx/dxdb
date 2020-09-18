@@ -1,0 +1,5 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation()
+  .Width(500).Crop("scale").Chain()
+  .Overlay(new Layer().PublicId("cloudinary_icon")).Width(150).Chain()
+  .Effect("blackwhite").Chain()
+  .Flags("layer_apply").Gravity("north_east")).BuildImageTag("sample.jpg")

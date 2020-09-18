@@ -1,0 +1,1 @@
+cloudinary.imageTag('greece_landscape.jpg', {effect: "tint:100:red:blue:yellow"}).toHtml();

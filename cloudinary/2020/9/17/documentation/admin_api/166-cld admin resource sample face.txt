@@ -1,0 +1,1 @@
+cld admin resource sample faces=true colors=true image_metadata=true versions=true

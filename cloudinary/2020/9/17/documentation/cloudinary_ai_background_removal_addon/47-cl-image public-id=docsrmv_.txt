@@ -1,0 +1,6 @@
+<cl-image public-id="docs/rmv_bgd/woman.png" >
+  <cl-transformation height="375" crop="scale">
+  </cl-transformation>
+  <cl-transformation underlay="docs:bg_beach" gravity="south" width="800">
+  </cl-transformation>
+</cl-image>

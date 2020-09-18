@@ -1,0 +1,2 @@
+let transformation = CLDTransformation().setCrop(.scale).setWidth(400)
+photoImageView.cldSetImage(publicId: "dog", cloudinary: cld, transformation: transformation)

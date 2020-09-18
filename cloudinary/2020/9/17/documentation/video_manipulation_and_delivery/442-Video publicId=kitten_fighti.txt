@@ -1,0 +1,16 @@
+<Video publicId="kitten_fighting" >
+  <Transformation width="300" height="200" duration="5" crop="scale" />
+  <Transformation overlay="video:dog" width="300" height="200" />
+  <Transformation duration="5" />
+  <Transformation overlay="video:transition1" effect="transition" />
+  <Transformation flags="layer_apply" />
+  <Transformation flags="layer_apply" />
+  <Transformation overlay="video:snow_deer" width="300" height="200" />
+  <Transformation duration="5" />
+  <Transformation overlay="video:transition2" effect="transition" />
+  <Transformation flags="layer_apply" />
+  <Transformation flags="layer_apply" />
+  <Transformation overlay="video:dog" flags="splice" width="300" height="200" />
+  <Transformation duration="5" />
+  <Transformation flags="layer_apply" />
+</Video>

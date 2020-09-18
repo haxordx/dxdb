@@ -1,0 +1,4 @@
+    Home
+    +--my_images_on_cloudinary
+    |  +-- my_images
+    |  |   +-- <all assets and sub-folders of my_images>

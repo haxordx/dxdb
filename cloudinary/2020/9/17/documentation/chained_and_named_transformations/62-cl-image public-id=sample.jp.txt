@@ -1,0 +1,8 @@
+<cl-image public-id="sample.jpg" >
+  <cl-transformation transformation={{["jpg_with_quality_30"]}}>
+  </cl-transformation>
+  <cl-transformation transformation={{["crop_400x400"]}}>
+  </cl-transformation>
+  <cl-transformation transformation={{["fit_100x150"]}}>
+  </cl-transformation>
+</cl-image>

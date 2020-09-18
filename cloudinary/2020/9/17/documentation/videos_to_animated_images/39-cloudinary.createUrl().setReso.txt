@@ -1,0 +1,1 @@
+cloudinary.createUrl().setResourceType("video").setTransformation(CLDTransformation().setVideoSampling("10").setDelay("100").setWidth(250).setFlags("awebp", "animated").setCrop("scale")).generate("dog.webp")

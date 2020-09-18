@@ -1,0 +1,8 @@
+<cl-image public-id="woman.jpg" variables="[['$height', '200']]">
+  <cl-transformation if="ar_lt_1.0">
+  </cl-transformation>
+  <cl-transformation if="else">
+  </cl-transformation>
+  <cl-transformation height="$height" crop="scale">
+  </cl-transformation>
+</cl-image>

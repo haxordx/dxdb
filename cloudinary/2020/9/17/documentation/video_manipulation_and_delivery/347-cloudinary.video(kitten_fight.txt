@@ -1,0 +1,4 @@
+cloudinary.video("kitten_fighting", {transformation: [
+  {width: 300, height: 200, crop: "fill"},
+  {overlay: "video:dog", flags: "splice", width: 300, height: 200, crop: "fill"}
+  ]})

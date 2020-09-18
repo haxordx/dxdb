@@ -1,0 +1,4 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation()
+  .setWidth(200).setHeight(200).setRadius("max").setCrop("fill").chain()
+  .setAngle(30).chain()
+  .setEffect("trim")).generate("sample.jpg")!, cloudinary: cloudinary)

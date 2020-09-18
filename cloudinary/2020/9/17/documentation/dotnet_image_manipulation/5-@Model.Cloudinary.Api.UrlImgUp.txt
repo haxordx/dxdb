@@ -1,0 +1,3 @@
+@Model.Cloudinary.Api.UrlImgUp.Transform(
+    new Transformation().Width(500).Height(500).Crop("fill").Version("1573726751").CloudName("Demo").Secure(true))
+    .BuildImageTag("docs/casual", new CloudinaryDotNet.StringDictionary("alt=Casual Jacket"));

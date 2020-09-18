@@ -1,0 +1,1 @@
+cld -v ERROR admin --save output.txt resources_by_moderation metascan rejected -o max_results 40 -o resource_type raw

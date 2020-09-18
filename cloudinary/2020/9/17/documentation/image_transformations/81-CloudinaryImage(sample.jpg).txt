@@ -1,0 +1,1 @@
+CloudinaryImage("sample.jpg").image(alt="A sample photo", className="Samples")

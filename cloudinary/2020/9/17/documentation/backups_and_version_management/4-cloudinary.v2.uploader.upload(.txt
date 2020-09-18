@@ -1,0 +1,3 @@
+cloudinary.v2.uploader.upload("sample.jpg", 
+  { backup: true }, 
+  function(error, result) {console.log(result, error); });

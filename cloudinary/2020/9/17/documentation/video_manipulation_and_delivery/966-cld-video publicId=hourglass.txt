@@ -1,0 +1,3 @@
+<cld-video publicId="hourglass_timer" >
+  <cld-transformation overlay="video:electronic" />
+</cld-video>

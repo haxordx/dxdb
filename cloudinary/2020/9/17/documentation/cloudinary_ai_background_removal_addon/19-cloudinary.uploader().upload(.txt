@@ -1,0 +1,5 @@
+cloudinary.uploader().upload("girl_hair.jpg", 
+  ObjectUtils.asMap(
+    "public_id", "girl_hair_fine",
+    "background_removal", "cloudinary_ai:fine_edges",
+    "notification_url", "https://mysite.example.com/hooks"));

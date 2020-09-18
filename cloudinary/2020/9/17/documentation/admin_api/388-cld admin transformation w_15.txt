@@ -1,0 +1,1 @@
+cld admin transformation "w_150,h_100,c_fill"

@@ -1,0 +1,4 @@
+cloudinary.url().transformation(new Transformation()
+.variables(variable("$mainvideowidth","500"),variable("$overlaywidth","$mainvideowidth / 3")).chain()
+  .width("$mainvideowidth").crop("scale").chain()
+  .overlay(new Layer().publicId("video:kitten_fighting")).width("$overlaywidth").gravity("south_east")).videoTag("dog");

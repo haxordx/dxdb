@@ -1,0 +1,6 @@
+<Image publicId="butterfly" variables={[["$img", "current"], ["$height", "ih"]]}>
+  <Transformation if="w_lt_800" />
+  <Transformation effect="blur:800" underlay="%24img" width="800" height="$height" crop="scale" />
+  <Transformation effect="brightness:40" flags="layer_apply" />
+  <Transformation if="end" />
+</Image>

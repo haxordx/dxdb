@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().width(250).flags("animated").fetchFormat("auto").crop("scale")).resourceType("video").imageTag("dog.gif");

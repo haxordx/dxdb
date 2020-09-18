@@ -1,0 +1,8 @@
+curl \
+  -H "Content-Type: application/json" \
+  -d '{
+        "expression": "cat",
+        "with_field": ["context", "tags"],
+        "max_results": 10
+      }' \
+  https://<API_KEY>:<API_SECRET>@api.cloudinary.com/v1_1/<cloud_name>/resources/search

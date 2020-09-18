@@ -1,0 +1,1 @@
+cld admin update_transformation my_named unsafe_update='{"crop": "scale", "width": 103}'

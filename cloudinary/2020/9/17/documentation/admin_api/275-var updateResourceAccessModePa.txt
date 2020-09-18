@@ -1,0 +1,3 @@
+var updateResourceAccessModeParams = new UpdateResourceAccessModeParams(){
+  AccessMode = "public"};
+cloudinary.UpdateResourceAccessModeByTag("20170216", updateResourceAccessModeParams);

@@ -1,0 +1,17 @@
+Transformation myTransformation = new Transformation();
+myTransformation.effect("sepia").radius(20)  
+
+MediaManager.get().download(this) // context
+  .load(“sample”)    //public ID or URL
+  .transformation(myTransformation)
+  .responsive(FIT)   
+  .placeholder(R.drawable.placeholder)
+  .callback(new DownloadRequestCallback() {
+     @Override
+     public void onSuccess() {
+                    }
+     @Override
+     public void onFailure(Throwable t) {
+                    }
+  })
+  .into(imageView);

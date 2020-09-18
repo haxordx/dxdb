@@ -1,0 +1,1 @@
+https://res.cloudinary.com/demo/image/sprite/logo.css

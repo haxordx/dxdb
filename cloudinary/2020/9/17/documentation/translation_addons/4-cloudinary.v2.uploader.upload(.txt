@@ -1,0 +1,4 @@
+cloudinary.v2.uploader.upload("windmill_day.jpg", 
+  { categorization: "google_tagging:en:fr:es", 
+    auto_tagging: 0.6 },
+  function(error, result) {console.log(result, error) });

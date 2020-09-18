@@ -1,0 +1,4 @@
+cloudinary.url().transformation(new Transformation()
+  .width(200).height(200).effect("saturation:50").crop("pad").chain()
+  .effect("shadow").chain()
+  .border("1px_solid_rgb:666")).imageTag("wood_chair.jpg");

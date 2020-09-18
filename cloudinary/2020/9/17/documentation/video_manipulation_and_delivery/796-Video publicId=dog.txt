@@ -1,0 +1,4 @@
+<Video publicId="dog" >
+  <Transformation effect="fade:2000" />
+  <Transformation effect="fade:-4000" />
+</Video>

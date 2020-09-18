@@ -1,0 +1,18 @@
+"datasource": {
+    "values": [{
+        "external_id": "color1", 
+        "value": "red"
+    },
+    {   
+        "external_id": "color2", 
+        "value": "green"
+    },
+    {
+        "external_id": "color3", 
+        "value": "blue"
+    },
+    {
+        "external_id": "color4", 
+        "value": "yellow"
+    }]
+}

@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setType( "facebook").setTransformation(CLDTransformation().setWidth(80).setHeight(120).setGravity("face").setCrop("fill")).generate("65646572251.jpg")!, cloudinary: cloudinary)

@@ -1,0 +1,1 @@
+cl_video_tag("ski_jump", array("effect"=>"loop:2"))

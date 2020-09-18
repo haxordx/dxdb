@@ -1,0 +1,1 @@
+cloudinary.imageTag('family_bench.jpg', {height: 380, width: 380, crop: "imagga_crop", signUrl: true}).toHtml();

@@ -1,0 +1,42 @@
+var account = new Account(
+    "my_cloud_name",
+    "my_api_key",
+    "my_api_secret");
+
+var cloudinary = new Cloudinary(account);
+var getResult = cloudinary.GetResource("sample");
+
+/*
+* RESPONSE (GetResourceResult):
+* {
+*  "public_id":"sample",
+*  "format":"jpg",
+*  "version":1375283820,
+*  "resource_type":"image",
+*  "type":"upload",
+*  "created_at":"2017-07-31T15:16:53Z",
+*  "bytes":759100,
+*  "width":1920,
+*  "height":1200,
+*  "url":"http://res.cloudinary.com/.../upload/v1375283820/sample.jpg",
+*  "secure_url":"https://res.cloudinary.com/.../upload/v1375283820/sample.jpg",
+*  "next_cursor":"fe2b0ab2d84c668edaa38d9a528884c8",
+*  "derived":[
+*  {
+*    "transformation":"w_10/a_10/png",
+*    "format":"png",
+*    "bytes":432,
+*    "id":"e76bf3dcb7bb81aa7f5a34a5a90ed2b3",
+*    "url":"http://res.cloudinary.com/.../upload/w_10/a_10/v1375283820/sample.png",
+*    "secure_url":"https://res.cloudinary.com/.../upload/w_10/a_10/v1375283820/sample.png"
+*  },
+*  {
+*    "transformation":"w_100",
+*    "format":"jpg",
+*    "bytes":3434,
+*    "id":"94a81bec64d7ac730febfe84595ff23d",
+*    "url":"http://res.cloudinary.com/.../upload/w_100/v1375283820/sample.jpg",
+*    "secure_url":"https://res.cloudinary.com/.../upload/w_100/v1375283820/sample.jpg"
+*  }]
+* }
+*/

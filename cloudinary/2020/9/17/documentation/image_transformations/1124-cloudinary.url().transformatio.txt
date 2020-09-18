@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().effect("oil_paint:70")).imageTag("sample.jpg");

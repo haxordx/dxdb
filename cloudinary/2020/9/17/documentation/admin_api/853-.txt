@@ -1,0 +1,15 @@
+:
+api.createStreamingProfile("custom_square_combo", "Custom square resolution with combination of codecs",
+  Arrays.asList(
+    ObjectUtils.asMap("transformation", new 
+      Transformation().crop("limit").width(1200).height(1200).videoCodec("h265").bitRate("5m")),
+    ObjectUtils.asMap("transformation", new 
+      Transformation().crop("limit").width(900).height(900).videoCodec("h265").bitRate("3500k")),
+    ObjectUtils.asMap("transformation", new 
+      Transformation().crop("limit").width(600).height(600).videoCodec("h265").bitRate("1500k")),
+    ObjectUtils.asMap("transformation", new 
+      Transformation().crop("limit").width(1200).height(1200).videoCodec("vp9").bitRate("5m")),
+    ObjectUtils.asMap("transformation", new 
+      Transformation().crop("limit").width(900).height(900).videoCodec("vp9").bitRate("3500k")),
+    ObjectUtils.asMap("transformation", new 
+      Transformation().crop("limit").width(600).height(600).videoCodec("vp9").bitRate("1500k"))));

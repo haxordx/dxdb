@@ -1,0 +1,4 @@
+<cl-image public-id="logo.png" type="sprite">
+  <cl-transformation width="150" height="60" crop="fit">
+  </cl-transformation>
+</cl-image>

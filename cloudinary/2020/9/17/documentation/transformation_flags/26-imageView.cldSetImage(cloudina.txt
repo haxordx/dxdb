@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation().setOverlay("cloudinary_icon").setWidth(0.2).setFlags("relative")).generate("flower.jpg")!, cloudinary: cloudinary)

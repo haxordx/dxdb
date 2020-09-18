@@ -1,0 +1,6 @@
+let eager = CLDEagerTransformation()
+  .setWidth(150).setHeight(200).setCrop("imagga_scale")
+let params = CLDUploadRequestParams().setEager([eager])
+var mySig = MyFunction(params)  // your own function that returns a signature generated on your backend
+params.setSignature(CLDSignature(signature: mySig.signature, timestamp: mySig.timestamp))
+let request = cloudinary.createUploader().signedUpload(url: "local_file.jpg", params: params)

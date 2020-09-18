@@ -1,0 +1,5 @@
+<cl-video public-id="ski_jump" controls="true" >
+        <cl-transformation overlay="video:ski_jump" flags="splice" effect="reverse"></cl-transformation>
+        <cl-transformation overlay="video:ski_jump" flags="splice" effect="accelerate:-50"></cl-transformation>
+        <cl-transformation effect="brightness:10" radius="max"></cl-transformation>
+</cl-video>

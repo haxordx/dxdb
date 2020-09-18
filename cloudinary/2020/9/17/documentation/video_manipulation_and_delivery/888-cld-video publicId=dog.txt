@@ -1,0 +1,3 @@
+<cld-video publicId="dog" >
+  <cld-transformation width="500" effect="vignette:50" crop="scale" />
+</cld-video>

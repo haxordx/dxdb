@@ -1,0 +1,1 @@
+cl_image_tag("sample.jpg", array("width"=>250, "height"=>250, "gravity"=>"south_east", "crop"=>"fill"))

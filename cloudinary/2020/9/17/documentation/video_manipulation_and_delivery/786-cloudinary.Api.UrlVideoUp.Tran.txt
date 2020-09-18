@@ -1,0 +1,1 @@
+cloudinary.Api.UrlVideoUp.Transform(new Transformation().Effect("deshake:32")).BuildVideoTag("dog")

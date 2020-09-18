@@ -1,0 +1,3 @@
+<Video publicId="dog" >
+  <Transformation quality="50" />
+</Video>

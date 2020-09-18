@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setType( "fetch").generate("https://upload.wikimedia.org/wikipedia/commons/1/13/Benedict_Cumberbatch_2011.png")!, cloudinary: cloudinary)

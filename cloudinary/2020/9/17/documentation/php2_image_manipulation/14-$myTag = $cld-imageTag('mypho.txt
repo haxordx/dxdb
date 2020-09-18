@@ -1,0 +1,8 @@
+$myTag = $cld->imageTag('myphoto')
+  ->resize(Resize::scale())->width('auto')->dpr('auto')
+  ->rotate(Rotate::angle(20))
+  ->border(Border::solid()->width(3)->color(Color::RED)
+  ->roundCorners(RoundCorners::max())
+  ->effect(Effect::artisticFilter(ArtisticFilter::HOKUSAI)));
+$myTag->config->tag->responsive = true;
+$myTag->config->tag->responsivePlaceholder = 'blank';

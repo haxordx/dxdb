@@ -1,0 +1,1 @@
+[{tag: "bag", mediaType: "image"}, {tag: "luggage", mediaType: "video"}]

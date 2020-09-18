@@ -1,0 +1,2 @@
+Cloudinary::Uploader.upload("local_file.jpg", 
+  :moderation => "aws_rek")

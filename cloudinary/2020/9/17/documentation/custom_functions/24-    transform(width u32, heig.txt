@@ -1,0 +1,1 @@
+    transform(width: u32, height: u32, image_ptr: *mut u8, meta_ptr: *mut u8, meta_size: usize) -> u32

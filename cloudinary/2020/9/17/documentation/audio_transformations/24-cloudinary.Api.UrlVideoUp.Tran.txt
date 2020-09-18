@@ -1,0 +1,1 @@
+cloudinary.Api.UrlVideoUp.Transform(new Transformation().StartOffset("0").Duration("3")).BuildUrl("dog.mp3")

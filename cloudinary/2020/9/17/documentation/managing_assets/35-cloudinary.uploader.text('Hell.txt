@@ -1,0 +1,1 @@
+cloudinary.uploader.text('Hello World')

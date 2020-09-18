@@ -1,0 +1,5 @@
+<cld-image publicId="lady.jpg" >
+  <cld-transformation gravity="face" radius="75" border="10px_solid_grey" crop="crop" />
+  <cld-transformation overlay="young_couple" width="150" height="150" radius="max" gravity="faces" border="3px_solid_black" crop="thumb" />
+  <cld-transformation flags="layer_apply" gravity="north_east" />
+</cld-image>

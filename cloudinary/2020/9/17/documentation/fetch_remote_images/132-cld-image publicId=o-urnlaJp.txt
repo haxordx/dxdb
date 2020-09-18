@@ -1,0 +1,3 @@
+<cld-image publicId="o-urnlaJpOA.jpg" type="youtube">
+  <cld-transformation width="500" border="5px_solid_black" crop="scale" />
+</cld-image>

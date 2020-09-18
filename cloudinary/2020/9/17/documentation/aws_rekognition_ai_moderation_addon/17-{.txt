@@ -1,0 +1,16 @@
+{
+...
+ "moderation": 
+  [{"response": 
+     {"moderation_labels": 
+       [{"confidence": 94.9907455444336,
+         "name": "Suggestive",
+         "parent_name": ""},
+        {"confidence": 94.9907455444336,
+         "name": "Female Swimwear Or Underwear",
+         "parent_name": "Suggestive"}]},
+    "status": "rejected",
+    "kind": "aws_rek",
+    "updated_at": "2017-08-03T08:26:58Z"}],
+ ...
+}

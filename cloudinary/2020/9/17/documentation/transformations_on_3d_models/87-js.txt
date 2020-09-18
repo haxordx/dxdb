@@ -1,0 +1,4 @@
+js
+<cld-image publicId="foyer-table" format="gltf">
+
+</cld-image>

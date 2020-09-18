@@ -1,0 +1,5 @@
+$.cloudinary.video("dog", {transformation: [
+  {effect: "blur:500"},
+  {overlay: new cloudinary.Layer().publicId("video:dog"), width: 600},
+  {width: 500, crop: "scale"}
+  ]})

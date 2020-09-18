@@ -1,0 +1,6 @@
+result = {
+    event: "retry",
+    info: {
+      ids: [],
+      all: true | false   //whether retry-all was clicked
+}};

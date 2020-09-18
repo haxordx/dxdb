@@ -1,0 +1,3 @@
+cloudinary.api.update("sample",
+  categorization = "imagga_tagging", 
+  auto_tagging = 0.5)

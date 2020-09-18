@@ -1,0 +1,5 @@
+\Cloudinary\Uploader::upload("ftp://user1:mypass@ftp.example.com/sample.jpg", 
+  array( 
+    "eager" => array(
+      array("width" => 400, "height" => 300, "crop" => "pad"),
+      array("width" => 260, "height" => 200, "crop" => "crop", "gravity" => "north"))));

@@ -1,0 +1,5 @@
+<?php echo cl_video_tag("dog", 
+  array("width" => 200, "height" => 150, 
+    "crop" => "crop", "loop" => true, 
+    "autoplay" => true, "poster" => false,
+    "fallback_content" => "Your browser does not support HTML5 video tags")); ?>

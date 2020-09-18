@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation().setEffect("lightroom:whitebalance_shade")).generate("city_pic.jpg")!, cloudinary: cloudinary)

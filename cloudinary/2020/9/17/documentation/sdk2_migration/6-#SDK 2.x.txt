@@ -1,0 +1,2 @@
+#SDK 2.x
+(new UploadApi())->upload('my_image.jpg')

@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().angle(90)).resourceType("video").generate("dog.mp4");

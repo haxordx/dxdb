@@ -1,0 +1,3 @@
+<cld-image publicId="spiral_animated.gif" >
+  <cld-transformation effect="loop:2" />
+</cld-image>

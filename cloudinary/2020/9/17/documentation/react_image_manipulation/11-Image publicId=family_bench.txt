@@ -1,0 +1,3 @@
+<Image publicId="family_bench.jpg" >
+  <Transformation width="250" height="250" gravity="faces" crop="fill" />
+</Image>

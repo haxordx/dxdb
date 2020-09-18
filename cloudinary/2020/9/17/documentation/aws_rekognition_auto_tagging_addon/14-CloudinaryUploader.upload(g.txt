@@ -1,0 +1,2 @@
+Cloudinary::Uploader.upload("guitarist.jpg", 
+  :categorization => "aws_rek_tagging")

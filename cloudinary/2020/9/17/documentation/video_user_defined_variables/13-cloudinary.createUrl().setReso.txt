@@ -1,0 +1,1 @@
+cloudinary.createUrl().setResourceType("video").setTransformation(CLDTransformation().setWidth("iw / 5").setCrop("scale")).generate("rafting.mp4")

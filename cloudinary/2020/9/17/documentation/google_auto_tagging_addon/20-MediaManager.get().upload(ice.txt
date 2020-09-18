@@ -1,0 +1,2 @@
+MediaManager.get().upload("ice_skating.jpg")
+  .option("categorization", "google_tagging").dispatch();

@@ -1,0 +1,6 @@
+var uploadParams = new ImageUploadParams() 
+{
+  File = new FileDescription(@"ice_skating.jpg"),
+  Categorization = "google_tagging"
+};
+var uploadResult = cloudinary.Upload(uploadParams);

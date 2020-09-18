@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().width(400).aspectRatio("1").gravity("auto:skateboard").crop("thumb")).signed(true).imageTag("Skater.jpg");

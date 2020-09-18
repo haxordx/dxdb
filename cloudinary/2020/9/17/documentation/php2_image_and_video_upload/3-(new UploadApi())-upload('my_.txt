@@ -1,0 +1,1 @@
+(new UploadApi())->upload('my_image.jpg')

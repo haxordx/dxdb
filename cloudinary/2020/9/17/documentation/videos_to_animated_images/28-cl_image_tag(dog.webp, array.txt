@@ -1,0 +1,1 @@
+cl_image_tag("dog.webp", array("video_sampling"=>"10", "delay"=>"100", "width"=>250, "flags"=>array("awebp", "animated"), "crop"=>"scale", "resource_type"=>"video"))

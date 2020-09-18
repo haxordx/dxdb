@@ -1,0 +1,1 @@
+cld uploader remove_all_context $public_ids $options

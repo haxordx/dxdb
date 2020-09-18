@@ -1,0 +1,5 @@
+cloudinary.imageTag('sample.jpg', {transformation: [
+  {width: 200, height: 200, radius: "max", crop: "fill"},
+  {angle: 30},
+  {effect: "trim"}
+  ]}).toHtml();

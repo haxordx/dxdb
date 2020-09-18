@@ -1,0 +1,5 @@
+# transformation parameters passed as a hash:
+cl.imageTag("sample.jpg", { width: 400, crop: "pad"}).toHtml();
+
+# transformation parameters passed with the Transformation builder:
+cl.imageTag("sample.jpg", cl.transformation().crop(‘scale’).width(400)).toHtml();

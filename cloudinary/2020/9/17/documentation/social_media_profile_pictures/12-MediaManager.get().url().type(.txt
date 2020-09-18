@@ -1,0 +1,1 @@
+MediaManager.get().url().type("facebook").generate("65646572251.jpg");

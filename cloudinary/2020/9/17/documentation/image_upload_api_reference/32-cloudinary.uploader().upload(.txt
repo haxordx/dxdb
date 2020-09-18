@@ -1,0 +1,8 @@
+cloudinary.uploader().upload("https://www.example.com/sample.jpg", 
+  ObjectUtils.asMap(
+    "responsive_breakpoints", 
+      new ResponsiveBreakpoint()
+       .createDerived("true")
+       .bytesStep(20000)
+       .minWidth(200)
+       .maxWidth(1000)));

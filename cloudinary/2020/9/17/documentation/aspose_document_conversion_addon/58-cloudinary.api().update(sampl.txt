@@ -1,0 +1,4 @@
+cloudinary.api().update("sample_spreadsheet.xls", 
+  ObjectUtils.asMap(
+    "raw_convert", "aspose",
+    "resource_type", "raw"));

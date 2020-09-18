@@ -1,0 +1,1 @@
+deleteUserGroup(String groupId, Map options);

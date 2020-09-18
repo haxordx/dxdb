@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation().setOverlay("text:AlexBrush-Regular.ttf_100:Happy%20New%20Year%20%202017%20").setColor("white").setGravity("north_west").setX(30).setY(30)).generate("fireworks.jpg")!, cloudinary: cloudinary)

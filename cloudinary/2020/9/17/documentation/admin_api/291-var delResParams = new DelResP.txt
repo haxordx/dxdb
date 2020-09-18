@@ -1,0 +1,3 @@
+var delResParams = new DelResParams(){
+  PublicIds = new List<string>{"image1", "image2"}};
+cloudinary.DeleteResources(delResParams);

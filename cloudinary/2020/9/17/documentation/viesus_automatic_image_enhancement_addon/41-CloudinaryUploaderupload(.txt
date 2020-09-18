@@ -1,0 +1,5 @@
+\Cloudinary\Uploader::upload("local_file.jpg", 
+  array(
+    "public_id" = "beach",
+    "eager" => 
+      array("effect" => "viesus_correct", "crop" => "scale", "width" => 400)));

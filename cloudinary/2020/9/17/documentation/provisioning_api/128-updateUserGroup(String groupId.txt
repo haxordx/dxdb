@@ -1,0 +1,1 @@
+updateUserGroup(String groupId, String name, Map options);

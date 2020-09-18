@@ -1,0 +1,5 @@
+cloudinary.v2.uploader.upload("my_file_name.docx",
+  { public_id: "sample_document.docx",
+    resource_type: "raw",
+    raw_convert: "aspose" },
+  function(error, result){console.log(result);});

@@ -1,0 +1,4 @@
+<cl-image public-id="docs/one_cat_one_dog.jpg" >
+  <cl-transformation gravity="dog:cat" crop="crop">
+  </cl-transformation>
+</cl-image>

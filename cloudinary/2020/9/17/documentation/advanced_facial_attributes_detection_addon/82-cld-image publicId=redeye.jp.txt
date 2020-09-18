@@ -1,0 +1,3 @@
+<cld-image publicId="redeye.jpg" >
+  <cld-transformation width="300" height="80" gravity="adv_eyes" crop="thumb" />
+</cld-image>

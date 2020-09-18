@@ -1,0 +1,2 @@
+cloudinary.uploader().explicit("https://en.wikipedia.org/wiki/Jpg", 
+  ObjectUtils.asMap("type", "url2png"));

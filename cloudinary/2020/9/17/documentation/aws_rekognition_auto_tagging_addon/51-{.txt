@@ -1,0 +1,13 @@
+{
+  ...
+  "tags": [ "Animal", "Koala", "Mammal" ]
+  "info": {
+    "categorization": {
+      "aws_rek_tagging": {
+        "status": "complete",
+        "data": [
+          { "tag": "Animal", "confidence": 0.9933 },
+          { "tag": "Koala", "confidence": 0.9933 },
+          { "tag": "Mammal", "confidence": 0.9933 },
+         ...
+}

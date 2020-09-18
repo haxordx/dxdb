@@ -1,0 +1,7 @@
+var textParams = new TextParams("Sample Name"){
+  PublicId = "dark_name",
+  FontFamily = "Arial",
+  FontSize = 12,
+  FontColor = "black",
+  Opacity = 90};
+var textResult = cloudinary.Text(textParams);

@@ -1,0 +1,1 @@
+<%= url_for(@user.avatar, width: 300, height: 200, effect: "cartoonify") %>

@@ -1,0 +1,4 @@
+<cl-image public-id="young_couple.jpg" >
+  <cl-transformation effect="pixelate_faces:9">
+  </cl-transformation>
+</cl-image>

@@ -1,0 +1,4 @@
+\Cloudinary\Uploader::upload("turtle.mp4", 
+  array(
+    "resource_type" => "video", 
+    "categorization" => "google_video_tagging"));

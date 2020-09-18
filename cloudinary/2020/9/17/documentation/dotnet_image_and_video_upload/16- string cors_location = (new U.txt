@@ -1,0 +1,2 @@
+ string cors_location = (new UriBuilder(Request.Url.AbsoluteUri)
+     { Path = Url.Content("~/Content/cloudinary_cors.html") }).ToString();

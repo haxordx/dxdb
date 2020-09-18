@@ -1,0 +1,4 @@
+cloudinary.uploader().multi("topic", 
+  ObjectUtils.asMap(
+    "format", "pdf"
+    "transformation", new Transformation().width(800).crop("lfill").gravity("auto"));

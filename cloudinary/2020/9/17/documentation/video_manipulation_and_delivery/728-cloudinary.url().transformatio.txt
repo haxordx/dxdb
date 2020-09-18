@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().effect("preview:duration_5")).videoTag("elephants");

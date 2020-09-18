@@ -1,0 +1,7 @@
+let liveStream;
+//...
+// initLiveStream code
+//...
+}).then(result => {
+    liveStream = result;
+});

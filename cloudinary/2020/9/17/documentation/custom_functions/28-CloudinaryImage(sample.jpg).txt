@@ -1,0 +1,5 @@
+CloudinaryImage("sample.jpg").image(
+  sign_url = True,
+  custom_function = {
+    "function_type" = "remote", 
+    "source" = "https://my.example.custom/function"})

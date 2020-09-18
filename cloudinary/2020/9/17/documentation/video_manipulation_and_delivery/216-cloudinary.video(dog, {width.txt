@@ -1,0 +1,1 @@
+cloudinary.video("dog", {width: 350, height: 200, x: 230, y: 20, crop: "crop"})

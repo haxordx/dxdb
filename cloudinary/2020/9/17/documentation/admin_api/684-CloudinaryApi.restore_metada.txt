@@ -1,0 +1,1 @@
+Cloudinary::Api.restore_metadata_field_datasource("color_id", ["color1"])

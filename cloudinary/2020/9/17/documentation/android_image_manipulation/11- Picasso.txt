@@ -1,0 +1,8 @@
+// Picasso
+MediaManager.get().setDownloadRequestBuilderFactory(new PicassoDownloadRequestBuilderFactory());
+
+// Fresco:
+MediaManager.get().setDownloadRequestBuilderFactory(new FrescoDownloadRequestBuilderFactory());
+
+// Glide:
+MediaManager.get().setDownloadRequestBuilderFactory(new GlideDownloadRequestBuilderFactory());

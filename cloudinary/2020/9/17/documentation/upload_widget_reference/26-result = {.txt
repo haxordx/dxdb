@@ -1,0 +1,5 @@
+result = {
+    event: "tags",
+    info: {
+      tags: ["dog", "family", "home"] }   //tags currently in the field
+};

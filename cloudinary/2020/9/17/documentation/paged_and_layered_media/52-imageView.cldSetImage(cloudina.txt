@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation().setDensity(20)).generate("multi_page_pdf.jpg")!, cloudinary: cloudinary)

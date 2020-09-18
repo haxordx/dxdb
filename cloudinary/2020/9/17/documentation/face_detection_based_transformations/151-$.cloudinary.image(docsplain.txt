@@ -1,0 +1,4 @@
+$.cloudinary.image("docs/plain_face.jpg", {transformation: [
+  {overlay: new cloudinary.Layer().publicId("golden_star"), gravity: "north_west", width: 20, x: 314, y: 148},
+  {width: 500, crop: "scale"}
+  ]})

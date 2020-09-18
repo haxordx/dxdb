@@ -1,0 +1,4 @@
+<cl-image public-id="family_bench.jpg" >
+  <cl-transformation crop="imagga_crop">
+  </cl-transformation>
+</cl-image>

@@ -1,0 +1,8 @@
+var uploadParams = new VideoUploadParams()
+    {
+        File = new FileDescription(@"dog.mp4"),        
+        PublicId = "my_folder/my_sub_folder/my_dog",
+        Overwrite = true,
+        NotificationUrl = "https://mysite/my_notification_endpoint"
+    };
+    var uploadResult = cloudinary.Upload(uploadParams);

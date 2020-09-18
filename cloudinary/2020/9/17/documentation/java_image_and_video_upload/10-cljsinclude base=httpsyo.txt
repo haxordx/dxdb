@@ -1,0 +1,2 @@
+<cl:jsinclude base="https://your-local-host.domain/cloudinary_js/"
+            full="true"/>

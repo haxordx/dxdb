@@ -1,0 +1,3 @@
+<Image publicId="DamagedHelmet3D" fetchFormat="png">
+
+</Image>

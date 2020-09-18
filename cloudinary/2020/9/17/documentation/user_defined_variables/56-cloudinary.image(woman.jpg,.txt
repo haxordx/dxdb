@@ -1,0 +1,1 @@
+cloudinary.image("woman.jpg", {width: "$newwidth", crop: "scale", variables: [["$newwidth", "10 + iw * 0.3"]]})

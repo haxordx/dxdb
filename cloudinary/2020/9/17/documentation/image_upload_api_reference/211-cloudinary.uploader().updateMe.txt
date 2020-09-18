@@ -1,0 +1,6 @@
+cloudinary.uploader().updateMetadata(
+    ObjectUtils.asMap(
+        countryFieldId, 
+        new String[]{"id_us", "id_uk", "id_france"}),
+    new String[]{"pants", "shirt"}, 
+    null);

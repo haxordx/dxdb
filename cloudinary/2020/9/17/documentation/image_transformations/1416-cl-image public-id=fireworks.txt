@@ -1,0 +1,4 @@
+<cl-image public-id="fireworks.jpg" >
+  <cl-transformation overlay="text:AlexBrush-Regular.ttf_100:Happy%20New%20Year%20%202017%20" color="white" gravity="north_west" x="30" y="30">
+  </cl-transformation>
+</cl-image>

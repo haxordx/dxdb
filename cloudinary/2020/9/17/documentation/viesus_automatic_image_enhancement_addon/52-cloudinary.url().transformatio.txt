@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().effect("viesus_correct").width(400).crop("scale")).imageTag("beach.jpg");

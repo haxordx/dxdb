@@ -1,0 +1,6 @@
+{
+  type: 'flyout',
+  level: 3,
+  viewerPosition: 'top',
+  lensOpacity: 0.3
+}

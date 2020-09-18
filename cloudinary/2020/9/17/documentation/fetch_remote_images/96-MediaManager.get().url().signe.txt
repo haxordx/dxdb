@@ -1,0 +1,1 @@
+MediaManager.get().url().signed(true).type("authenticated").generate("remote_media/commons/a/ae/Olympic_flag.jpg");

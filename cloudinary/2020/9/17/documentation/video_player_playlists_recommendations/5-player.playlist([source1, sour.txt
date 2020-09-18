@@ -1,0 +1,1 @@
+player.playlist([source1, source2], { autoAdvance: true, repeat: true, presentUpcoming: 8 });

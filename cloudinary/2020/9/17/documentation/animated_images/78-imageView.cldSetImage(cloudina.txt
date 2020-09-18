@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation().setEffect("loop:2")).generate("spiral_animated.gif")!, cloudinary: cloudinary)

@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().opacity(30)).generate("sample.jpg");

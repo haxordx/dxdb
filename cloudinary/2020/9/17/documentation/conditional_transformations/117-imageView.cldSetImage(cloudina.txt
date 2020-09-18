@@ -1,0 +1,8 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation()
+  .setIf("w_lte_400").chain()
+  .setHeight(220).setWidth(180).setCrop("fill").chain()
+  .setEffect("red").chain()
+  .setIf("else").chain()
+  .setHeight(190).setWidth(300).setCrop("fill").chain()
+  .setEffect("oil_paint").chain()
+  .setIf("end")).generate("sample.jpg")!, cloudinary: cloudinary)

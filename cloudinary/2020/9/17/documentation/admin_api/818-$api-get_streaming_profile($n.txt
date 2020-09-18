@@ -1,0 +1,1 @@
+$api->get_streaming_profile($name);

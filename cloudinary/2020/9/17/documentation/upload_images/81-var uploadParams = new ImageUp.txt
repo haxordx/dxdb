@@ -1,0 +1,3 @@
+var uploadParams = new ImageUploadParams(){
+  File = new FileDescription(@"ftp://user1:mypass@ftp.example.com/sample.jpg")};
+var uploadResult = cloudinary.Upload(uploadParams);

@@ -1,0 +1,1 @@
+cloudinary.Api.UrlImgUp.Action("multi").BuildImageTag("arrow_animation.gif")

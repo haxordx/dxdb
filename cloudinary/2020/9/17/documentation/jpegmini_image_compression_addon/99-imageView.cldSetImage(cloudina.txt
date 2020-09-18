@@ -1,0 +1,4 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation()
+  .setEffect("saturation:50").setRadius(20).setWidth(400).setCrop("scale").chain()
+  .setGravity("south_east").setOverlay("logo_jpegmini").setOpacity(80).setWidth(100).setX(10).setY(10).chain()
+  .setQuality("jpegmini")).generate("horses.jpg", signUrl: true)!, cloudinary: cloudinary)

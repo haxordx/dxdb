@@ -1,0 +1,5 @@
+cloudinary.url().transformation(new Transformation()
+  .effect("lightroom:xmp:soft_mist.xmp").chain()
+  .radius(50).quality("auto").border("40px_solid_orange").chain()
+  .angle(5).chain()
+  .width(400).crop("scale")).imageTag("park");

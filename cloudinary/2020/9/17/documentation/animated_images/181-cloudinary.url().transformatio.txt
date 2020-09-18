@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().delay("100")).type("multi").imageTag("spinning_text.gif");

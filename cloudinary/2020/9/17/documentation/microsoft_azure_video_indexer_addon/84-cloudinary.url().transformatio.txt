@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().overlay(new SubtitlesLayer().publicId("folder-permissions-tutorial.en-us.azure.transcript"))).videoTag("folder-permissions-tutorial");

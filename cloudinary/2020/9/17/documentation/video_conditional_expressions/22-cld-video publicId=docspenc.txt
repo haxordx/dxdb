@@ -1,0 +1,4 @@
+<cld-video publicId="docs/pencil_sketch_sm" >
+  <cld-transformation if="w_gt_400" overlay="thumbs-up-small" width="150" gravity="north_east" x="10" y="10" />
+  <cld-transformation width="400" crop="limit" />
+</cld-video>

@@ -1,0 +1,5 @@
+MediaManager.get().upload("my_file_name.docx")
+  .option("public_id", "sample_document.docx")
+  .option("resource_type", "raw")
+  .option("raw_convert", "aspose")
+  .option("notification_url", "https://mysite.example.com/hooks").dispatch();

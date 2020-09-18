@@ -1,0 +1,3 @@
+<Image publicId="family_bench.jpg" signUrl="true">
+  <Transformation height="380" width="380" crop="imagga_crop" />
+</Image>

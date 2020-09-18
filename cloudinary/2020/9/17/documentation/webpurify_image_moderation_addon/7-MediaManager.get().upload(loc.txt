@@ -1,0 +1,2 @@
+MediaManager.get().upload("local_file.jpg")
+  .option("moderation", "webpurify").dispatch();

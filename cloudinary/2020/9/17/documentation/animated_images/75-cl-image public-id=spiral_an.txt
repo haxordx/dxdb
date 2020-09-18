@@ -1,0 +1,4 @@
+<cl-image public-id="spiral_animated.gif" >
+  <cl-transformation effect="loop:2">
+  </cl-transformation>
+</cl-image>

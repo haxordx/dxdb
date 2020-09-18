@@ -1,0 +1,4 @@
+MediaManager.get().url().transformation(new Transformation()
+  .width(200).height(200).radius("max").crop("fill").chain()
+  .angle(30).chain()
+  .effect("trim")).generate("sample.jpg");

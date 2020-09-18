@@ -1,0 +1,45 @@
+coordinates = {}
+(0..10).each do |frame|
+  x_offset = frame * 10
+  y_back   = 10*(frame < 5 ? -frame : frame - 10)
+  y_front  = y_back*2
+
+  front    = [ x_offset, y_front, 
+               100 - x_offset, -y_back,
+               100 - x_offset, 100+y_back,
+               x_offset, 100 - y_front ]
+            .map { |i| "#{i}p" }.join(":")
+
+  back     = [ x_offset, -y_back, 
+               100 - x_offset, y_back*2,
+               100 - x_offset, 100 - y_back*2,
+               x_offset, 100 + y_back ]
+            .map { |i| "#{i}p" }.join(":")
+
+  coordinates[frame]      = front
+  coordinates[20 - frame] = back
+end
+
+(0..19).each do |frame|
+  x_offset = frame < 10 ? frame*10 : 200 - frame*10
+  myurl    = Cloudinary::Utils.cloudinary_url(
+    "base.png",
+    :transformation => [
+      { :width  => 510, :height => 300, :crop => "scale",
+        :background => "white" },
+      { :overlay => "text:roboto_150_bold:Spinning text", 
+        :color => "#0071BA", :width => 500, :height => 100 },
+      { :effect => "distort:#{coordinates[frame]}" },
+      { :crop => "crop", gravity: "center", 
+        :width => ((500*(100-2*x_offset)/100.0).abs.to_i), 
+        :height => 300 },
+      { :flags => "layer_apply" }])
+
+  Cloudinary::Uploader.upload(
+     myurl,
+     :public_id => "spinning_text_#{'%02d' % frame}",
+     :tags      => "spinning_text"
+  ) if x_offset != 50
+end
+
+Cloudinary::Uploader.multi("spinning_text", :delay => 100)

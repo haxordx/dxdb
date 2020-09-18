@@ -1,0 +1,1 @@
+cloudinary.videoTag('elephants', {effect: "preview:duration_5"}).toHtml();

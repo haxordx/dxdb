@@ -1,0 +1,3 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation()
+  .setEffect("adv_redeye").chain()
+  .setWidth(300).setHeight(80).setGravity("adv_eyes").setCrop("thumb")).generate("redeye.jpg")!, cloudinary: cloudinary)

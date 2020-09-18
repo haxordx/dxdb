@@ -1,0 +1,2 @@
+Cloudinary::Uploader.upload("audio_sample.mp3", 
+  :resource_type => :video)

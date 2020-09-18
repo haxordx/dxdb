@@ -1,0 +1,1 @@
+\Cloudinary\Api::resource("puppy");

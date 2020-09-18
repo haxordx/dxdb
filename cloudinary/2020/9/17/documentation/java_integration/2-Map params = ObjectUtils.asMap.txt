@@ -1,0 +1,7 @@
+Map params = ObjectUtils.asMap(
+    "public_id", "my_folder/my_sub_folder/my_dog", 
+    "overwrite", true,
+    "notification_url", "https://mysite/notify_endpoint",
+    "resource_type", "video"         
+);
+Map uploadResult = cloudinary.uploader().upload(new File("doc.mp4"), params);

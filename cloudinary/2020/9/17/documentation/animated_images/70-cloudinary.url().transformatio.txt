@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().effect("loop:2")).imageTag("spiral_animated.gif");

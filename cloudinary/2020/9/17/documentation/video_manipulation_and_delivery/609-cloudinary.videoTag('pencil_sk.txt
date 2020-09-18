@@ -1,0 +1,1 @@
+cloudinary.videoTag('pencil_sketch', {width: 500, effect: "reverse", crop: "scale"}).toHtml();

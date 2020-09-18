@@ -1,0 +1,2 @@
+MediaManager.get().upload("concert_ticket.jpg")
+  .option("ocr", "adv_ocr").dispatch();

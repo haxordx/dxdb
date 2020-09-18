@@ -1,0 +1,3 @@
+<Image publicId="home_4_sale.jpg" >
+  <Transformation overlay="call_text" flags="region_relative" width="1.1" gravity="ocr_text" />
+</Image>

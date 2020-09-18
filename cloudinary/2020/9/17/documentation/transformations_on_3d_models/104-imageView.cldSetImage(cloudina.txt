@@ -1,0 +1,3 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation()
+.setFormat("gltz").chain()
+.setFlags("draco")).generate("docs/foyer-table")!, cloudinary: cloudinary)

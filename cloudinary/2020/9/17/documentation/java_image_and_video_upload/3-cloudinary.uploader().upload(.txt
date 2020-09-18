@@ -1,0 +1,8 @@
+cloudinary.uploader().upload("dog.mp4", 
+    ObjectUtils.asMap("resource_type", "video",
+    "public_id", "my_folder/my_sub_folder/dog_closeup",
+    "eager", Arrays.asList(
+        new Transformation().width(300).height(300).crop("pad").audioCodec("none"),
+        new Transformation().width(160).height(100).crop("crop").gravity("south").audioCodec("none")),
+    "eager_async", true,
+    "eager_notification_url", "https://mysite.example.com/notify_endpoint"));

@@ -1,0 +1,3 @@
+<Video publicId="cld_rubix.gif" resourceType="video">
+  <Transformation videoSampling="40" delay="200" height="200" effect="loop" crop="scale" />
+</Video>

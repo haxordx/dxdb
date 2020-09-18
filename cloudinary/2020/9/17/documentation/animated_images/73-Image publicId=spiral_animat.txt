@@ -1,0 +1,3 @@
+<Image publicId="spiral_animated.gif" >
+  <Transformation effect="loop:2" />
+</Image>

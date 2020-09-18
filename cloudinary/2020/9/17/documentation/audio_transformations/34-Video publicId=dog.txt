@@ -1,0 +1,3 @@
+<Video publicId="dog" >
+  <Transformation audioFrequency="22050" />
+</Video>

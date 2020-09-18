@@ -1,0 +1,1 @@
+cloudinary.api.subfolders("product/shoe")

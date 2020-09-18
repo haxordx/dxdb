@@ -1,0 +1,4 @@
+<cld-video publicId="Marketing/digital-asset-management-with-cloudinary.gif" resourceType="video">
+  <cld-transformation effect="preview:duration_8" />
+  <cld-transformation width="1600" height="800" effect="loop" crop="crop" />
+</cld-video>

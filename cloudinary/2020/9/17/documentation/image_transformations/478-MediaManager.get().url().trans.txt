@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().width(400).aspectRatio("4:3").crop("fill")).generate("sample.jpg");

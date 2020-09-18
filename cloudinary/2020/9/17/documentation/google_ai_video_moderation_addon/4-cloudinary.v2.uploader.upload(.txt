@@ -1,0 +1,4 @@
+cloudinary.v2.uploader.upload("my_file.mp4", 
+  { resource_type: "video", 
+    moderation: "google_video_moderation"},
+  function(error, result){console.log(result);});

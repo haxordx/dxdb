@@ -1,0 +1,6 @@
+result = cloudinary.search()
+  .expression("cat")
+  .withField("context")
+  .withField("tags")
+  .maxResults(10)
+  .execute();

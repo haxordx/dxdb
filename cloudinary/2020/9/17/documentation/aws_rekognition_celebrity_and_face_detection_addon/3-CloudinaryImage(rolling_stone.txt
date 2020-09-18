@@ -1,0 +1,1 @@
+CloudinaryImage("rolling_stones.jpg").image()

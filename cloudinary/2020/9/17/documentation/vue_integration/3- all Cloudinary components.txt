@@ -1,0 +1,23 @@
+// all Cloudinary components:
+import Cloudinary from "cloudinary-vue";
+Vue.use(Cloudinary, {
+  configuration: { cloudName: "demo" }
+});
+
+// specify which components to install:
+import Cloudinary, { CldImage } from "cloudinary-vue";
+Vue.use(Cloudinary, {
+  configuration: { cloudName: "demo" },
+  components: [ "CldImage" ]
+});
+
+// define them in object of components, and rename any component if needed:
+import Cloudinary, { CldImage, CldTransformation } from "cloudinary-vue";
+Vue.use(Cloudinary, {
+  configuration: { cloudName: "demo" },
+  components: {
+    CldImage: true,
+    CldTransformation: "CldXf"
+    //^ a custom name
+  }
+});

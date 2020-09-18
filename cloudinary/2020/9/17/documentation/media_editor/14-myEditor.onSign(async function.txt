@@ -1,0 +1,5 @@
+myEditor.onSign(async function(data) {
+  const { publicId, resourceType, type, transformation } = data;
+  const url = generateUrl(publicId, resourceType, type, transformation)
+  return url
+});

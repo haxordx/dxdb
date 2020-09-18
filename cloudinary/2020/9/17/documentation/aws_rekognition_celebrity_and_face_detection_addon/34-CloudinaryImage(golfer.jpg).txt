@@ -1,0 +1,1 @@
+CloudinaryImage("golfer.jpg").image()

@@ -1,0 +1,5 @@
+var uploadParams = new ImageUploadParams(){
+  File = new FileDescription(@"sample.jpg"),
+  Moderation = "manual",
+  NotificationUrl = "https://mysite.example.com/mod_endpoint"};
+var uploadResult = cloudinary.Upload(uploadParams);

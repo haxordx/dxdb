@@ -1,0 +1,5 @@
+<Image publicId="sample.jpg" >
+  <Transformation transformation={["jpg_with_quality_30"]} />
+  <Transformation transformation={["crop_400x400"]} />
+  <Transformation transformation={["fit_100x150"]} />
+</Image>

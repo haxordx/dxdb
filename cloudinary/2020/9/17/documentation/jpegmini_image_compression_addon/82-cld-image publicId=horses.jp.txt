@@ -1,0 +1,3 @@
+<cld-image publicId="horses.jpg" signUrl="true">
+  <cld-transformation quality="jpegmini:1" width="400" crop="scale" />
+</cld-image>

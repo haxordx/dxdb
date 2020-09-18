@@ -1,0 +1,1 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation().Overlay(new TextLayer().FontFamily("ttf").FontSize(100).Text("Happy%20New%20Year%20%202017%20")).Color("white").Gravity("north_west").X(30).Y(30)).BuildImageTag("fireworks.jpg")

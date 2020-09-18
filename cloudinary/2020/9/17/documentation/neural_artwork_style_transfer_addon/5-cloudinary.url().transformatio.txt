@@ -1,0 +1,3 @@
+cloudinary.url().transformation(new Transformation()
+  .width(700).height(700).crop("fill").chain()
+  .effect("style_transfer").overlay(new Layer().publicId("sailing_angel"))).imageTag("golden_gate.jpg");

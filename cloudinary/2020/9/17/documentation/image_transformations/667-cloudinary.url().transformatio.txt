@@ -1,0 +1,3 @@
+cloudinary.url().transformation(new Transformation()
+  .width(200).height(200).gravity("face").radius("max").overlay(new Layer().publicId("face_left")).crop("thumb").chain()
+  .flags("layer_apply").gravity("north_east")).imageTag("flower.jpg");

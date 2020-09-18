@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().generate("family_bench.jpg")!, cloudinary: cloudinary)

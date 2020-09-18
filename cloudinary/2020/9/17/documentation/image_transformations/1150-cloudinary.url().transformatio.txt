@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().overlay(new FetchLayer().url("http://cloudinary.com/images/old_logo.png7"))).imageTag("sample.jpg");

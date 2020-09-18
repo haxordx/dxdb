@@ -1,0 +1,1 @@
+cloudinary.video("dog", {overlay: {resource_type: "subtitles", public_id: "sample_sub_en.srt"}})

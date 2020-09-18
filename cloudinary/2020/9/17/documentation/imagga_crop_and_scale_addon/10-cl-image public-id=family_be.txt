@@ -1,0 +1,3 @@
+<cl-image public-id="family_bench.jpg" >
+
+</cl-image>

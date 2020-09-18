@@ -1,0 +1,1 @@
+CloudinaryImage("home_4_sale.jpg").image(overlay="call_text", flags="region_relative", width="1.1", gravity="ocr_text")

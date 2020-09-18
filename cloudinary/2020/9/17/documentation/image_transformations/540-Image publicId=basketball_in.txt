@@ -1,0 +1,3 @@
+<Image publicId="basketball_in_net.jpg" >
+  <Transformation width="200" height="300" gravity="auto" crop="fill" />
+</Image>

@@ -1,0 +1,4 @@
+<Video publicId="dog" >
+  <Transformation overlay="cloudinary_icon" width="200" gravity="east" startOffset="1" endOffset="11" />
+  <Transformation overlay={{fontFamily: "arial", fontSize: 40, text: "Sample%20Video"}} gravity="south" y="60" startOffset="2" />
+</Video>

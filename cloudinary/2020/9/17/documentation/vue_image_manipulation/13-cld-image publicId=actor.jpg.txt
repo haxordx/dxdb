@@ -1,0 +1,7 @@
+<cld-image publicId="actor.jpg" >
+  <cld-transformation effect="cartoonify" />
+  <cld-transformation radius="max" />
+  <cld-transformation effect="outline:100" color="lightblue" />
+  <cld-transformation background="lightblue" />
+  <cld-transformation height="300" crop="scale" />
+</cld-image>

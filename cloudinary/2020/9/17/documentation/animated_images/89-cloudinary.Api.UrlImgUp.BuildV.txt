@@ -1,0 +1,1 @@
+cloudinary.Api.UrlImgUp.BuildVideoTag("kitten_fighting")

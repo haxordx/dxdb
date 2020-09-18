@@ -1,0 +1,1 @@
+cloudinary.api.update_upload_preset(name, **options)

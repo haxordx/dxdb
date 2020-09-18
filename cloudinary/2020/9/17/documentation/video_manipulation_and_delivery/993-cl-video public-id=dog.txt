@@ -1,0 +1,4 @@
+<cl-video public-id="dog" >
+  <cl-transformation overlay="text:arial_60:Cool%20Video" gravity="south" y="80" start-offset="2" end-offset="5">
+  </cl-transformation>
+</cl-video>

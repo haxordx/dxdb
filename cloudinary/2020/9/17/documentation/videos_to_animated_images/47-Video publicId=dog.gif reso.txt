@@ -1,0 +1,3 @@
+<Video publicId="dog.gif" resourceType="video">
+  <Transformation width="250" flags="animated" fetchFormat="auto" crop="scale" />
+</Video>

@@ -1,0 +1,1 @@
+CloudinaryImage("docs/flower_shop.jpg").image(gravity="auto:ocr_text_avoid", height=400, aspect_ratio="0.8", crop="fill")

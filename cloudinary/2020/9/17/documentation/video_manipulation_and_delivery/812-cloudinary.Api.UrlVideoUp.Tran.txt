@@ -1,0 +1,1 @@
+cloudinary.Api.UrlVideoUp.Transform(new Transformation().Overlay(new Layer().PublicId("video:kitten_fighting")).Effect("fade:3000").Width(100)).BuildVideoTag("dog")

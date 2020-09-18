@@ -1,0 +1,1 @@
+cld admin delete_all_resources type="facebook"

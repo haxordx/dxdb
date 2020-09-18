@@ -1,0 +1,3 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation()
+  .setHeight(105).setCrop("scale").chain()
+  .setEffect("shadow:50").setX(10).setY(10)).generate("docs/rmv_bgd/router.png")!, cloudinary: cloudinary)

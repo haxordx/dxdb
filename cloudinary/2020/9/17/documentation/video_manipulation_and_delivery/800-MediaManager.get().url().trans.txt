@@ -1,0 +1,3 @@
+MediaManager.get().url().transformation(new Transformation()
+  .effect("fade:2000").chain()
+  .effect("fade:-4000")).resourceType("video").generate("dog.mp4");

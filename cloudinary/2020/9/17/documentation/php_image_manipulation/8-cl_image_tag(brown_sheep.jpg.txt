@@ -1,0 +1,6 @@
+cl_image_tag("brown_sheep.jpg", array("transformation"=>array(
+  array("x"=>355, "y"=>410, "width"=>300, "height"=>200, "crop"=>"crop"),
+  array("width"=>130, "height"=>100, "crop"=>"fill"),
+  array("angle"=>20),
+  array("width"=>"0.5", "crop"=>"scale")
+  )))

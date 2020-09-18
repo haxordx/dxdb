@@ -1,0 +1,4 @@
+cloudinary.Api.UrlVideoUp.Transform(new Transformation()
+  .If("$qualtag_in_tags").Quality(80).Chain()
+  .If("else").Quality(30).Chain()
+  .Width(500).Crop("scale")).BuildVideoTag("docs/kitten_fighting2")

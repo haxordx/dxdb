@@ -1,0 +1,4 @@
+MediaManager.get().url().transformation(new Transformation()
+  .effect("blur:500").chain()
+  .overlay(new Layer().publicId("video:dog")).width(600).chain()
+  .width(500).crop("scale")).resourceType("video").generate("dog.mp4");

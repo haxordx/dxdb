@@ -1,0 +1,1 @@
+cloudinary.apiSignRequest(Map<String, Object> paramsToSign, String apiSecret);

@@ -1,0 +1,4 @@
+cl_image_tag("coast.jpg", :sign_url=>true, :transformation=>[
+  {:width=>400, :crop=>"scale"},
+  {:height=>150, :overlay=>"family_bench.png", :radius=>"max", :width=>150, :crop=>"imagga_scale"}
+  ])

@@ -1,0 +1,4 @@
+$.cloudinary.image("backpack.jpg", {transformation: [
+  {if: "!sale:in_stock!_in_tags", overlay: new cloudinary.Layer().publicId("sale_icon"), width: 180, gravity: "south_east", x: 30, y: 30},
+  {width: 250, crop: "scale"}
+  ]})

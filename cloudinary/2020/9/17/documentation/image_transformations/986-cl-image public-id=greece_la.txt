@@ -1,0 +1,4 @@
+<cl-image public-id="greece_landscape.jpg" >
+  <cl-transformation effect="tint:equalize:80:red:50p:blue:60p:yellow:40p">
+  </cl-transformation>
+</cl-image>

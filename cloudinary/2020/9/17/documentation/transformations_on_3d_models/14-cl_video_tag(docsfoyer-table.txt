@@ -1,0 +1,5 @@
+cl_video_tag("docs/foyer-table", 
+  :resource_type=>"image",
+  :transformation=>[
+    {:fetch_format=>"mp4"},
+    {:background=>"#d5d2ca", :height=>300, :flags=>"animated", :crop=>"scale"}])

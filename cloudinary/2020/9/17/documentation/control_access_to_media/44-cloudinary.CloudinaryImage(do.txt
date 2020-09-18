@@ -1,0 +1,2 @@
+cloudinary.CloudinaryImage("dog.mp4").video(type = "authenticated", auth_token = dict(key = "MyKey", 
+  expiration = 1514764800), sign_url = True)

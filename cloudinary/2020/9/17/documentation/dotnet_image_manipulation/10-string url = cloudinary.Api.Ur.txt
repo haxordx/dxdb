@@ -1,0 +1,4 @@
+string url = cloudinary.Api.UrlImgUp.ResourceType("raw")
+    .BuildUrl("sample_spreadsheet.xls");
+
+// Result: "https://res.cloudinary.com/demo/raw/upload/sample_spreadsheet.xls"

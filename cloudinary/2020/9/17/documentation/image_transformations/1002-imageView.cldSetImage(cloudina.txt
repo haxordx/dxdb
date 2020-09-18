@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation().setEffect("blur:300")).generate("sample.jpg")!, cloudinary: cloudinary)

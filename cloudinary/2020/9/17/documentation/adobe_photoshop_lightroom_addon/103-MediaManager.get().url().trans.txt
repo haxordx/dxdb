@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().effect("lightroom:whitebalance_tungsten")).signed(true).generate("city_pic.jpg");

@@ -1,0 +1,6 @@
+cloudinary.image("small_dinosaur.jpg", {transformation: [
+  {if: "w_lt_600"},
+  {overlay: {font_family: "Arial", font_size: 20, text: "Image%20shown%20in%20full%20scale"}, color: "white", gravity: "south_east"},
+  {effect: "blur:400", underlay: "small_dinosaur", width: 600, crop: "scale"},
+  {if: "end"}
+  ]})

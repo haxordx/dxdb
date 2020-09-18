@@ -1,0 +1,2 @@
+cloudinary.api().restore(Arrays.asList("image1", "image2"), ObjectUtils.asMap("versions", Arrays.asList("c3fe4be5921eb89acd9af738c892f654", "d214063097a43d1d1293db61a397f60f")),
+  ObjectUtils.emptyMap());

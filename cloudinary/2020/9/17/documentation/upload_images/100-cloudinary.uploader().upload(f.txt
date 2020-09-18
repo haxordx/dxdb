@@ -1,0 +1,4 @@
+cloudinary.uploader().upload(file, 
+  ObjectUtils.asMap(
+    "resource_type", "video", 
+    "<optional_parameters...>"));

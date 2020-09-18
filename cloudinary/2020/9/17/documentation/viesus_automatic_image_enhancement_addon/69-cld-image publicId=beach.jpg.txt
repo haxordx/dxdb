@@ -1,0 +1,5 @@
+<cld-image publicId="beach.jpg" signUrl="true">
+  <cld-transformation effect="viesus_correct" gravity="south" radius="20" width="1000" crop="crop" />
+  <cld-transformation gravity="north_east" overlay="viesus_logo" opacity="50" width="100" x="10" y="10" crop="scale" />
+  <cld-transformation width="600" crop="scale" />
+</cld-image>

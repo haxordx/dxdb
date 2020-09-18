@@ -1,0 +1,4 @@
+<cl-image public-id="spinning_text.gif" type="multi">
+  <cl-transformation delay="100">
+  </cl-transformation>
+</cl-image>

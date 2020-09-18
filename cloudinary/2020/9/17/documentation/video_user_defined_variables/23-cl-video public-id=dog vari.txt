@@ -1,0 +1,6 @@
+<cl-video public-id="dog" variables="[['$mainvideowidth', '500'], ['$overlaywidth', '$mainvideowidth / 3']]">
+  <cl-transformation width="$mainvideowidth" crop="scale">
+  </cl-transformation>
+  <cl-transformation overlay="video:kitten_fighting" width="$overlaywidth" gravity="south_east">
+  </cl-transformation>
+</cl-video>

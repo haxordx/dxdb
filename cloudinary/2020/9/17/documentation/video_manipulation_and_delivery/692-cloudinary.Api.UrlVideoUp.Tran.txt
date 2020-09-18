@@ -1,0 +1,4 @@
+cloudinary.Api.UrlVideoUp.Transform(new Transformation()
+  .Width(500).Crop("scale").Chain()
+  .Overlay(new Layer().PublicId("video:docs:bluescreen_watches")).Effect("make_transparent:20").Color("#0e80d8").Width(0.6).Flags("relative").Gravity("north").Chain()
+  .Duration("15")).BuildVideoTag("docs/sunset_waves")

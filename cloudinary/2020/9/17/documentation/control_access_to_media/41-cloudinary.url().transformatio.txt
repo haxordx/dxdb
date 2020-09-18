@@ -1,0 +1,2 @@
+cloudinary.url().transformation(new Transformation().type("authenticated").authToken(new AuthToken("MyKey").duration(300)).
+  signed(true)).imageTag("sample.jpg");

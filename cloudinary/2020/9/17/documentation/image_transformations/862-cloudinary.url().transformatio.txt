@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().effect("saturation:50")).imageTag("sample.jpg");

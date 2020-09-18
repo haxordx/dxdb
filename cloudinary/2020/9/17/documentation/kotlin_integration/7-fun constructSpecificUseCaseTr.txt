@@ -1,0 +1,9 @@
+fun constructSpecificUseCaseTransformation() =
+   transformation {
+       gradientFade { strength(3) }
+       adjust(opacity(80))
+       border {
+           width(4)
+           color (Color.RED)
+       }
+   }

@@ -1,0 +1,7 @@
+cloudinary.openUploadWidget({
+  cloudName: "demo", uploadPreset: "preset1",
+  encryption: {
+    key: "ff234fe526725753fa45b53325", 
+    iv: "cd8a46d72e26a365dca78ef"
+  }
+}, (error, result) => { });

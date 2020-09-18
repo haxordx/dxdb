@@ -1,0 +1,3 @@
+<cld-image publicId="rolling_stones.jpg" >
+
+</cld-image>

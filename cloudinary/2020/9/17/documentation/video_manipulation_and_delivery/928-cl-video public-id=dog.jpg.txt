@@ -1,0 +1,4 @@
+<cl-video public-id="dog.jpg" resource-type="video">
+  <cl-transformation start-offset="4" width="350" height="350" radius="20" effect="grayscale" border="5px_solid_black" crop="crop">
+  </cl-transformation>
+</cl-video>

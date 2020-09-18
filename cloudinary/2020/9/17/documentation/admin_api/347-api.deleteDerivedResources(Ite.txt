@@ -1,0 +1,1 @@
+api.deleteDerivedResources(Iterable<String> derivedResourceIds, Map options)

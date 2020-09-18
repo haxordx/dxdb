@@ -1,0 +1,1 @@
+cloudinary.createUrl().setResourceType("video").setTransformation(CLDTransformation().setWidth(300).setGravity("auto").setAspectRatio("1:1").setCrop("fill")).generate("ship.mp4")

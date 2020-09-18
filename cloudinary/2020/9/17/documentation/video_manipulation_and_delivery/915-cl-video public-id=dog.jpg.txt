@@ -1,0 +1,4 @@
+<cl-video public-id="dog.jpg" resource-type="video">
+  <cl-transformation start-offset="8.5">
+  </cl-transformation>
+</cl-video>

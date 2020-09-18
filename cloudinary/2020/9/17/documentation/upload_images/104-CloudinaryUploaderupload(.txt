@@ -1,0 +1,2 @@
+\Cloudinary\Uploader::upload("audio_sample.mp3", 
+  array("resource_type" => "video"));

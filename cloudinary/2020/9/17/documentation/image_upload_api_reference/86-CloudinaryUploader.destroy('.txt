@@ -1,0 +1,1 @@
+Cloudinary::Uploader.destroy('sample', :resource_type => 'video')

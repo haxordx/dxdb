@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation().setCrop("imagga_crop")).generate("family_bench.jpg")!, cloudinary: cloudinary)

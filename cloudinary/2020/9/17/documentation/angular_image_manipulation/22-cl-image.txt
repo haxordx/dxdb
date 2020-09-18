@@ -1,0 +1,6 @@
+<cl-image
+    public-id={{photo.public_id}}
+    (mouseenter)="photo.isMouseOver = true"
+    (mouseleave)="photo.isMouseOver = false"
+    [attr.opacity]="photo.isMouseOver ? '50' : null">
+</cl-image>

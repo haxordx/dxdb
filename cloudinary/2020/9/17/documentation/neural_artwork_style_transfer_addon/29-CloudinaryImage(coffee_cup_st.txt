@@ -1,0 +1,1 @@
+CloudinaryImage("coffee_cup_st.jpg").image(effect="style_transfer", overlay="davinci_mona_lisa", sign_url=True)

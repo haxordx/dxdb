@@ -1,0 +1,11 @@
+{ 
+   "notification_type":"resource_context_changed",
+   "source":"api",
+   "resources": {   
+       "women_model2": {
+          "added":[{"name":"key1","value":"mykey1"}],
+          "removed":[],
+          "updated":[]
+       }
+    }
+}

@@ -1,0 +1,5 @@
+MediaManager.get().setGlobalUploadPolicy(
+   new GlobalUploadPolicy.Builder()
+      .maxConcurrentRequests(3)
+      .networkPolicy(UploadPolicy.NetworkType.UNMETERED)
+   .build());

@@ -1,0 +1,4 @@
+<Video publicId="kitten_fighting" >
+  <Transformation width="300" height="200" crop="fill" />
+  <Transformation overlay="video:dog" flags="splice" width="300" height="200" startOffset="0" crop="fill" />
+</Video>

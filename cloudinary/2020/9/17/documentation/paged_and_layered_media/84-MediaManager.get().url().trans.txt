@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().width(300).effect("grayscale").crop("scale")).generate("Cld_Sample_PSD.jpg");

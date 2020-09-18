@@ -1,0 +1,5 @@
+var updateParams = new UpdateParams("coupled")
+{
+  Detection = "adv_face"
+};
+var updateResult = cloudinary.Update(updateParams);

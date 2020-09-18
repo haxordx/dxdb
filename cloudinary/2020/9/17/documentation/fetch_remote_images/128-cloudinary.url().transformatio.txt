@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().width(500).border("5px_solid_black").crop("scale")).type("youtube").imageTag("o-urnlaJpOA.jpg");

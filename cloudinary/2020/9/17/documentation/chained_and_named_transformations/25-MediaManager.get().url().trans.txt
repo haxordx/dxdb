@@ -1,0 +1,5 @@
+MediaManager.get().url().transformation(new Transformation()
+  .height(100).width(150).x(380).y(250).crop("crop").chain()
+  .height(100).width(130).crop("fill").chain()
+  .angle(20).chain()
+  .width(0.8).crop("scale")).secure(true).generate("flower.jpg");

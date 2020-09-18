@@ -1,0 +1,2 @@
+int totalCanceled = MediaManager.get().cancelAllRequests();
+// returns the number of canceled requests

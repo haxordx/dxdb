@@ -1,0 +1,4 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation()
+  .Effect("viesus_correct").Gravity("south").Radius(20).Width(1000).Crop("crop").Chain()
+  .Gravity("north_east").Overlay(new Layer().PublicId("viesus_logo")).Opacity(50).Width(100).X(10).Y(10).Crop("scale").Chain()
+  .Width(600).Crop("scale")).Signed(true).BuildImageTag("beach.jpg")

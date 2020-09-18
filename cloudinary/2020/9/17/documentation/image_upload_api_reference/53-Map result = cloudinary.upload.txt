@@ -1,0 +1,1 @@
+Map result = cloudinary.uploader().rename(String from_public_id, String to_public_id, Map options);

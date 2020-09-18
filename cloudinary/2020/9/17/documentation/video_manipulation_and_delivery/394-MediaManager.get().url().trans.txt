@@ -1,0 +1,4 @@
+MediaManager.get().url().transformation(new Transformation()
+  .width(300).height(200).crop("scale").chain()
+  .width(300).height(200).overlay(new Layer().publicId("sample")).flags("splice").duration("3").chain()
+  .startOffset("0").flags("layer_apply")).resourceType("video").generate("dog.mp4");

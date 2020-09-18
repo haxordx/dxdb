@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation().setNamed("image_ratings")).generate("log_cabin.jpg")!, cloudinary: cloudinary)

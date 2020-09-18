@@ -1,0 +1,3 @@
+api.updateTransformation("my_named",
+  ObjectUtils.asMap("unsafe_update",
+  new Transformation().crop("scale").width(103).generate());

@@ -1,0 +1,5 @@
+CloudinaryImage("sample.jpg").image(client_hints=True, sizes="100vw", transformation=[
+  {"aspect_ratio": "16:9", "crop": "fill"},
+  {"width": "auto", "crop": "scale"},
+  {"width": 1000, "crop": "limit"}
+])

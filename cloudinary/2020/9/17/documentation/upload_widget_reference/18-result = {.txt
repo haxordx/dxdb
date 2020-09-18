@@ -1,0 +1,4 @@
+result = {
+    event: "display-changed",
+    info: "shown" | "hidden" | "minimized" | "expanded"  
+};

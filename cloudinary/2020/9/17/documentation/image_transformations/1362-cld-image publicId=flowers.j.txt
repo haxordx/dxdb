@@ -1,0 +1,4 @@
+<cld-image publicId="flowers.jpg" >
+  <cld-transformation width="500" crop="scale" />
+  <cld-transformation overlay={{fontFamily: "Verdana", fontSize: 50, fontWeight: "bold", text: "Cool%0Aimage"}} gravity="west" x="10" />
+</cld-image>

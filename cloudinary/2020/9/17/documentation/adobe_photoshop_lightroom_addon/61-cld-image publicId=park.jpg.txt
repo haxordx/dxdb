@@ -1,0 +1,3 @@
+<cld-image publicId="park.jpg" >
+  <cld-transformation effect="lightroom:xmp:my_presets:warm_shadow.xmp" />
+</cld-image>

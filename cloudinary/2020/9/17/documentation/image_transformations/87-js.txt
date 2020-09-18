@@ -1,0 +1,3 @@
+js
+<CLDImage publicId="sample.jpg" alt="A sample photo" className="Samples">
+</CLDImage>

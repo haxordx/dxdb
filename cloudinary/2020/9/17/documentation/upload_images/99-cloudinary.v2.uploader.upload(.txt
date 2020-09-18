@@ -1,0 +1,4 @@
+cloudinary.v2.uploader.upload(file, 
+  { resource_type: "video", 
+    <optional_parameters...> },
+  function(error, result) { console.log(result, error); });

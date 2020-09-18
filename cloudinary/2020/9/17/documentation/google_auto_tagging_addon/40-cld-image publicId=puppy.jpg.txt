@@ -1,0 +1,3 @@
+<cld-image publicId="puppy.jpg" >
+
+</cld-image>

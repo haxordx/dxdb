@@ -1,0 +1,1 @@
+remove_user_from_group(group_id, user_id, **options)

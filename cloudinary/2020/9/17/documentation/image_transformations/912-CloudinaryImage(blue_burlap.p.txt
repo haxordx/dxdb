@@ -1,0 +1,1 @@
+CloudinaryImage("blue_burlap.png").image(effect="replace_color:maroon:80:2b38aa")

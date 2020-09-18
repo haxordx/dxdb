@@ -1,0 +1,4 @@
+cl_image_tag("sample.jpg", array("transformation"=>array(
+  array("width"=>300, "crop"=>"limit"),
+  array("if"=>"iw_gt_300", "color"=>"white", "gravity"=>"south_east", "overlay"=>array("font_family"=>"Arial", "font_size"=>15, "font_weight"=>"bold", "text"=>"Image%20scaled%20down%20to%20300px"))
+  )))

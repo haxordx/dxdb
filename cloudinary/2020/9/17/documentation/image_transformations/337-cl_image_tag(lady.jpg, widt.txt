@@ -1,0 +1,1 @@
+cl_image_tag("lady.jpg", :width=>80, :height=>400, :gravity=>"auto", :background=>"auto", :crop=>"fill_pad")

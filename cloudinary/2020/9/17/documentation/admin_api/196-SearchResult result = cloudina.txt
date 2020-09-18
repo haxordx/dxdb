@@ -1,0 +1,6 @@
+SearchResult result = cloudinary.Search()
+  .Expression("cat")
+  .WithField("context")
+  .WithField("tags")
+  .MaxResults(10)
+  .Execute();

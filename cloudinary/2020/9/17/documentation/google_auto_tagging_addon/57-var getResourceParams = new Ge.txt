@@ -1,0 +1,2 @@
+var getResourceParams = new GetResourceParams("puppy");
+var getResourceResult = cloudinary.GetResource(getResourceParams);

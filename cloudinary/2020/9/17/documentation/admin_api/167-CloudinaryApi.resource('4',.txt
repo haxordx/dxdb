@@ -1,0 +1,2 @@
+Cloudinary::Api.resource('4', 
+  :type => :facebook)

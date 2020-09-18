@@ -1,0 +1,1 @@
+CloudinaryImage("young_couple.jpg").image(effect="pixelate_faces:9")

@@ -1,0 +1,3 @@
+MediaManager.get().url().transformation(new Transformation()
+  .x(355).y(410).width(300).height(200).crop("crop").chain()
+  .width(150).height(100).crop("scale")).generate("brown_sheep.jpg");

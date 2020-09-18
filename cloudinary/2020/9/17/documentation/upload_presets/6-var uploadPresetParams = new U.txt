@@ -1,0 +1,8 @@
+var uploadPresetParams = new UploadPresetParams(){
+  Name = "my_preset",
+  Unsigned = true,
+  Categorization = "google_tagging,google_video_tagging",
+  AutoTagging = 0.75,
+  BackgroundRemoval = "cloudinary_ai",  
+  Folder = "new-products"};
+cloudinary.CreateUploadPreset(uploadPresetParams);

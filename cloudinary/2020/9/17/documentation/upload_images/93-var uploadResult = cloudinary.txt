@@ -1,0 +1,2 @@
+var uploadResult = cloudinary.Upload("auto", null,
+  new FileDescription(@"sample_spreadsheet.xls"));

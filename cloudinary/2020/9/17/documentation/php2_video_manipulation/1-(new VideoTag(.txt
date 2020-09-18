@@ -1,0 +1,13 @@
+(new VideoTag(
+    (new Video('dog'))->setTransformation(
+        (new Transformation())
+            ->rotate(Rotate::angle(20))
+            ->resize(Resize::scale(0.4))
+            ->overlay(
+                Source::image('cloudinary_icon')
+                    ->resize(Resize::scale(220, 140))
+                    ->adjust(Adjust::opacity(50)),
+                Position::southEast()->x(60)->y(15)
+            )
+    )
+))->setAttributes(['controls']);

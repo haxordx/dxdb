@@ -1,0 +1,3 @@
+<cld-image publicId="sample_document.docx.jpg" >
+  <cld-transformation width="300" page="2" crop="scale" />
+</cld-image>

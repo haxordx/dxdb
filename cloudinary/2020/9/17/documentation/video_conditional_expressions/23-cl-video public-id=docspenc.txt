@@ -1,0 +1,6 @@
+<cl-video public-id="docs/pencil_sketch_sm" >
+  <cl-transformation if="w_gt_400" overlay="thumbs-up-small" width="150" gravity="north_east" x="10" y="10">
+  </cl-transformation>
+  <cl-transformation width="400" crop="limit">
+  </cl-transformation>
+</cl-video>

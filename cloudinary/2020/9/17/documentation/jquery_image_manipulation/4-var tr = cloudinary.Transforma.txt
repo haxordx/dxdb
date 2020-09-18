@@ -1,0 +1,2 @@
+var tr = cloudinary.Transformation.new();
+tr.crop("fit").width(100);      // "c_fit,w_100"

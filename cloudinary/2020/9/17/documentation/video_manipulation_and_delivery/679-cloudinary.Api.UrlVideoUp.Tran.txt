@@ -1,0 +1,1 @@
+cloudinary.Api.UrlVideoUp.Transform(new Transformation().Effect("progressbar:bar:blue:6")).BuildVideoTag("dog")

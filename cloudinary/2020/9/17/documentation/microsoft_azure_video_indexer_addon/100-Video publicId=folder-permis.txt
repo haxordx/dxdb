@@ -1,0 +1,3 @@
+<Video publicId="folder-permissions-tutorial" >
+  <Transformation overlay={{fontFamily: "times", fontSize: 20, publicId: "folder-permissions-tutorial.en-us.azure.transcript", resourceType: "subtitles"}} color="blue" gravity="north" />
+</Video>

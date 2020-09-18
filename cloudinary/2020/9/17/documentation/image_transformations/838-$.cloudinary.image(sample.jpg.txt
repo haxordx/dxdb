@@ -1,0 +1,4 @@
+$.cloudinary.image("sample.jpg", {transformation: [
+  {height: 300, width: 300, background: "auto:predominant", crop: "pad"},
+  {effect: "gradient_fade:symmetric_pad", x: "0.5"}
+  ]})

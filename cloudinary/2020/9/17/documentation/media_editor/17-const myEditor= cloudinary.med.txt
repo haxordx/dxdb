@@ -1,0 +1,42 @@
+const myEditor= cloudinary.mediaEditor();
+myEditor.update({
+  cloudName: "demo", 
+  publicIds: ["flower"],
+  widgetSteps: ["imageOverlay"],
+  imageOverlay: {
+    overlays: [
+       {
+        "publicId": "logo",
+        "label": "Logo",
+        "transformation": [{ "effect": "blackwhite" }],
+        "placementOptions": [{
+            "x": 10,
+            "y": 10,
+            "width": 400,
+            "height": 400,
+            "gravity": "north_west"
+          },
+          {
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 400,
+            "gravity": "north_east"
+          }
+        ]
+      },
+      {
+        "publicId": "logo_text",
+        "label": "Logo with Text",
+        "transformation": [{ "effect": "negative" }],
+        "placementOptions": [{
+            "x": 0,
+            "y": 0,
+            "width": 400,
+            "height": 400,
+            "gravity": "north_east"
+       }
+    ],
+    guidelinesUrl: "https://my.example.com/overlay_help.jpg"
+  };  
+});

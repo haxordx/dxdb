@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().width(80).height(120).gravity("face").crop("fill")).type("facebook").generate("65646572251.jpg");

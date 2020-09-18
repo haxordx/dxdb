@@ -1,0 +1,4 @@
+<cl-image public-id="sample.jpg" >
+  <cl-transformation width="300" height="300" background="green" crop="pad">
+  </cl-transformation>
+</cl-image>

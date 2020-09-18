@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation().setBorder("5px_solid_red")).generate("sample.jpg")!, cloudinary: cloudinary)

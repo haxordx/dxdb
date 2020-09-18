@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().overlay(new Layer().publicId("docs:zoom_map")).effect("displace").x(50).y(50)).useRootPath(true).generate("sample");

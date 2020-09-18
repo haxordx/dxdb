@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setType( "url2png").generate("https://cnn.com")!, cloudinary: cloudinary)

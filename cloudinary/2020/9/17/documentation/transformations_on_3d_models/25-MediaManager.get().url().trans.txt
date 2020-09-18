@@ -1,0 +1,3 @@
+MediaManager.get().url().transformation(new Transformation()
+  .fetchFormat("mp4").chain()
+  .background("#d5d2ca").height(300).flags("animated").crop("scale")).resourceType("image").generate("docs/foyer-table");

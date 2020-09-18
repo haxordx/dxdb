@@ -1,0 +1,4 @@
+MediaManager.get().upload("/home/sample.jpg")
+  .option("eager", Arrays.asList(
+      new Transformation().width(400).height(300).crop("pad"),
+      new Transformation().width(260).height(200).crop("crop").gravity("north"))).dispatch();

@@ -1,0 +1,4 @@
+var listResourcesParams = new ListResourcesParams(){
+  Type = "upload",
+  MaxResults = 30};
+var listResourcesResult = cloudinary.ListResources(listResourcesParams);

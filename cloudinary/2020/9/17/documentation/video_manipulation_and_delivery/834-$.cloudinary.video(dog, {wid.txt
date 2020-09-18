@@ -1,0 +1,1 @@
+$.cloudinary.video("dog", {width: 500, effect: "contrast:50", crop: "scale"})

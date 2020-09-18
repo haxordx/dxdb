@@ -1,0 +1,4 @@
+cl_image_tag("redeye.jpg", array("transformation"=>array(
+  array("effect"=>"adv_redeye"),
+  array("width"=>300, "height"=>80, "gravity"=>"adv_eyes", "crop"=>"thumb")
+  )))

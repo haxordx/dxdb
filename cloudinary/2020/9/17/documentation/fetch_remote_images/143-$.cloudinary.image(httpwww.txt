@@ -1,0 +1,1 @@
+$.cloudinary.image("http://www.youtube.com/watch?v=aNwnPElsJGE", {type: "youtube"})

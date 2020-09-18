@@ -1,0 +1,4 @@
+cl_video_tag("dog", :transformation=>[
+  {:overlay=>"cloudinary_icon", :width=>200, :gravity=>"east", :start_offset=>"1", :end_offset=>"11"},
+  {:overlay=>{:font_family=>"arial", :font_size=>40, :text=>"Sample%20Video"}, :gravity=>"south", :y=>60, :start_offset=>"2"}
+  ])

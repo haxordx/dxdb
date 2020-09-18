@@ -1,0 +1,5 @@
+<Image publicId="sample.jpg">
+  <Transformation customFunction={{
+    functionType: "wasm",
+    source: "my_example.wasm"}} />
+</Image>

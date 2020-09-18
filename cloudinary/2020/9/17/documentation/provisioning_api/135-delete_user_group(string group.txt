@@ -1,0 +1,1 @@
+delete_user_group(string group_id, object options);

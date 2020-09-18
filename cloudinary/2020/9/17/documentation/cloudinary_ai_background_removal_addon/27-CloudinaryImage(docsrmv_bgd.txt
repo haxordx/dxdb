@@ -1,0 +1,4 @@
+CloudinaryImage("docs/rmv_bgd/router.png").image(transformation=[
+  {'height': 105, 'crop': "scale"},
+  {'effect': "shadow:50", 'x': 10, 'y': 10}
+  ])

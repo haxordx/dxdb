@@ -1,0 +1,3 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation()
+  .setWidth(500).setCrop("scale").chain()
+  .setOverlay("cloudinary_icon").setOpacity(50).setWidth(100).setEffect("brightness:200").setFlags("tiled")).generate("flowers.jpg")!, cloudinary: cloudinary)

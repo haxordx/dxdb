@@ -1,0 +1,1 @@
+MediaManager.get().url().type("sprite").generate("logo.png");

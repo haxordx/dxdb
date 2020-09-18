@@ -1,0 +1,1 @@
+cloudinary.image("coupled.jpg", {gravity: "adv_face", height: 100, width: 100, crop: "thumb", sign_url: true})

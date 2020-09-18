@@ -1,0 +1,1 @@
+cloudinary.Api.UrlVideoUp.Transform(new Transformation().AudioCodec("none")).BuildVideoTag("dog")

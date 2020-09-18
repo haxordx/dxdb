@@ -1,0 +1,1 @@
+cloudinary.imageTag('https://upload.wikimedia.org/wikipedia/commons/4/46/Jennifer_Lawrence_at_the_83rd_Academy_Awards.jpg', {width: 400, crop: "scale", format: "png", type: "fetch"}).toHtml();

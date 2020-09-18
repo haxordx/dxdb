@@ -1,0 +1,10 @@
+<cl-image public-id="shoes.png" >
+  <cl-transformation width="200" crop="scale">
+  </cl-transformation>
+  <cl-transformation effect="outline:20:200" color="red">
+  </cl-transformation>
+  <cl-transformation effect="outline:15:200" color="orange">
+  </cl-transformation>
+  <cl-transformation effect="outline:10:200" color="yellow">
+  </cl-transformation>
+</cl-image>

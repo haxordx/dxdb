@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().generate("kitten_fighting.mp4")!, cloudinary: cloudinary)

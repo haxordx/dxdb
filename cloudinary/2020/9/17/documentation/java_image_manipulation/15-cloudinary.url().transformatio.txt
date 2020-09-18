@@ -1,0 +1,6 @@
+cloudinary.url().transformation(new Transformation()
+  .effect("cartoonify").chain()
+  .radius("max").chain()
+  .effect("outline:100").color("lightblue").chain()
+  .background("lightblue").chain()
+  .height(300).crop("scale")).imageTag("actor.jpg");

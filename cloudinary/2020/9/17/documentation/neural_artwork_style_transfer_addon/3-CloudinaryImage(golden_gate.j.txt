@@ -1,0 +1,4 @@
+CloudinaryImage("golden_gate.jpg").image(transformation=[
+  {'width': 700, 'height': 700, 'crop': "fill"},
+  {'effect': "style_transfer", 'overlay': "sailing_angel"}
+  ])

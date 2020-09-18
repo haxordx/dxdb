@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setType( "twitter_name").generate("BillClinton.jpg")!, cloudinary: cloudinary)

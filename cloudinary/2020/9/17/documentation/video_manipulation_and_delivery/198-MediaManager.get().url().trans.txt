@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().height(320).width(480).background("blurred:400:15").crop("pad")).resourceType("video").generate("cld_rubiks_guy.mp4");

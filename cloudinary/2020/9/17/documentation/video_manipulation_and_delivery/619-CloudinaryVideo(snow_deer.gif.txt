@@ -1,0 +1,4 @@
+CloudinaryVideo("snow_deer.gif").image(transformation=[
+  {'width': 480, 'start_offset': "3", 'end_offset': "5", 'effect': "boomerang", 'crop': "scale"},
+  {'effect': "loop"}
+  ])

@@ -1,0 +1,5 @@
+api.updateMetadataFieldDatasource("color_id", 
+  new MetadataDataSource(Arrays.asList(
+    new Entry("color1", "orange"),
+    new Entry("color2", "black")))
+);

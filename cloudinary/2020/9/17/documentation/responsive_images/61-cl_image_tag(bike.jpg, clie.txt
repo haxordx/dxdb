@@ -1,0 +1,3 @@
+cl_image_tag("bike.jpg", :client_hints=>true, :sizes=>"100vw", :transformation=>[
+  {:aspect_ratio=>"16:9", :crop=>"fill"},
+  {:width=>"auto:breakpoints_200_1920_30_15", :crop=>"scale"}])

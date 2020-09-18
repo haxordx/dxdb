@@ -1,0 +1,1 @@
+curl -d "file=https://www.example.com/sample.jpg&api_key=1234&eager=w_400,h_300,c_pad|w_260,h_200,c_crop&public_id=sample_image&timestamp=1315060510&signature=bfd09f95f331f558cbd1320e67aa8d488770583e" -X POST http://api.cloudinary.com/v1_1/demo/image/upload

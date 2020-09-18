@@ -1,0 +1,5 @@
+cl_video_tag("ski_jump", array("controls"=>true, "transformation"=>array(
+    array("overlay"=>"video:ski_jump", "flags"=>"splice", "effect"=>"reverse"),
+    array("overlay"=>"video:ski_jump", "flags"=>"splice", "effect"=>"accelerate:-50"),
+    array("effect"=>"brightness:10", "radius"=>"max")
+    )));

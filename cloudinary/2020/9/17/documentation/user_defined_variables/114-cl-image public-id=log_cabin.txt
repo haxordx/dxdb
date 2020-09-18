@@ -1,0 +1,4 @@
+<cl-image public-id="log_cabin.jpg" variables="[['$rating', '!thumbs-up!']]">
+  <cl-transformation transformation={{["image_ratings"]}}>
+  </cl-transformation>
+</cl-image>

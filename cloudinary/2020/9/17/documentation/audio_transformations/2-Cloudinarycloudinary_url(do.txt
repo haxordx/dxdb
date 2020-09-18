@@ -1,0 +1,1 @@
+Cloudinary::cloudinary_url("dog.mp3", array("resource_type"=>"video"))

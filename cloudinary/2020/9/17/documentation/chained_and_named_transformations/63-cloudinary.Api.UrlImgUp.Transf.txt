@@ -1,0 +1,4 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation()
+  .Named("jpg_with_quality_30").Chain()
+  .Named("crop_400x400").Chain()
+  .Named("fit_100x150")).BuildImageTag("sample.jpg")

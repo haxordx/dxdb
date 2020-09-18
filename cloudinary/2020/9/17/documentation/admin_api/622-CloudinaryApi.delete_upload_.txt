@@ -1,0 +1,1 @@
+Cloudinary::Api.delete_upload_preset(name)

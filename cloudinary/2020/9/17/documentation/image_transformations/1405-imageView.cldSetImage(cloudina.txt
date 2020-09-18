@@ -1,0 +1,3 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation()
+  .setWidth(500).setCrop("scale").chain()
+  .setOverlay("text:sample_text_style:Stylish%20text").setGravity("south")).generate("flowers.jpg")!, cloudinary: cloudinary)

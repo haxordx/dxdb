@@ -1,0 +1,1 @@
+ApiUtils::signParameters($api_secret, $params_to_sign);

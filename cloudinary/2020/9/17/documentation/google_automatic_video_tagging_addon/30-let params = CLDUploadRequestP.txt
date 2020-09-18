@@ -1,0 +1,8 @@
+let params = CLDUploadRequestParams()
+  .setCategorization("google_video_tagging")
+  .setResourceType(.video)
+  .setAutoTagging(0.4)
+var mySig = MyFunction(params)  // your own function that returns a signature generated on your backend
+params.setSignature(CLDSignature(signature: mySig.signature, timestamp: mySig.timestamp))
+let request = cloudinary.createUploader().signedUpload(
+  url: "turtle.mp4", params: params)

@@ -1,0 +1,1 @@
+$.cloudinary.image("couple.jpg", {width: 100, height: 150, gravity: "faces", crop: "fill"})

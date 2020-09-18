@@ -1,0 +1,2 @@
+Cloudinary::Uploader.upload("sample_3D.zip", 
+  :resource_type => :image)

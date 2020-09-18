@@ -1,0 +1,4 @@
+<Image publicId="docs/foyer-table" >
+<Transformation format="gltz" />
+<Transformation flags="draco" />
+</Image>

@@ -1,0 +1,3 @@
+Cloudinary::Uploader.upload("wood_chair.jpg",
+  :public_id => "wood_chair",
+  :background_removal => 'pixelz')

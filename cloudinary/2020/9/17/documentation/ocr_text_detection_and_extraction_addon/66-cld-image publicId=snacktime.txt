@@ -1,0 +1,3 @@
+<cld-image publicId="snacktime.jpg" >
+  <cld-transformation gravity="ocr_text" height="250" width="250" crop="fill" />
+</cld-image>

@@ -1,0 +1,3 @@
+cloudinary.url().transformation(new Transformation()
+  .if("!sale:in_stock!_in_tags").overlay(new Layer().publicId("sale_icon")).width(180).gravity("south_east").x(30).y(30).chain()
+  .width(250).crop("scale")).imageTag("backpack.jpg");

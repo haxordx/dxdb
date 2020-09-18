@@ -1,0 +1,5 @@
+result = Cloudinary::Search
+  .expression('resource_type:image AND tags=kitten AND uploaded_at>1d AND bytes>1m')
+  .sort_by('public_id','desc')
+  .max_results(30)
+  .execute

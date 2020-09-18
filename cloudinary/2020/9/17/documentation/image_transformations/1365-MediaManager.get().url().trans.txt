@@ -1,0 +1,3 @@
+MediaManager.get().url().transformation(new Transformation()
+  .width(500).crop("scale").chain()
+  .overlay(new TextLayer().fontFamily("Verdana").fontSize(50).fontWeight("bold").text("Cool%0Aimage")).gravity("west").x(10)).generate("flowers.jpg");

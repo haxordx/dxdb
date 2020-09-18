@@ -1,0 +1,3 @@
+cloudinary.v2.uploader.add_tag('animal', 
+  [ 'dog', 'lion' ],
+  function(error, result) { console.log(result, error) });

@@ -1,0 +1,5 @@
+cloudinary.uploader().upload("dog_couch.jpg", 
+  ObjectUtils.asMap(
+    "public_id", "dog_couch",
+    "background_removal", "cloudinary_ai",
+    "notification_url", "https://mysite.example.com/hooks"));

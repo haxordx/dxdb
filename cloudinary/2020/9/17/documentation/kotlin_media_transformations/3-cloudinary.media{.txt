@@ -1,0 +1,5 @@
+cloudinary.media{
+  publicId("sample_spreadsheet.xls")
+  resourceType("raw")
+}
+// Output: "https://res.cloudinary.com/demo/raw/upload/sample_spreadsheet.xls"

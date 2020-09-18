@@ -1,0 +1,4 @@
+<img 
+    class="cld-responsive" 
+    data-src="https://res.cloudinary.com/demo/image/upload/w_auto,c_scale/smiling_man.jpg"
+    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"  />

@@ -1,0 +1,1 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation().DefaultImage("avatar.png")).BuildImageTag("non_existing_id.png")

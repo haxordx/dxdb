@@ -1,0 +1,1 @@
+CloudinaryImage("young_couple.jpg").image(overlay="golden_star", gravity="faces", width="1.0", flags="region_relative")

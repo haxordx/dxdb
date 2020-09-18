@@ -1,0 +1,4 @@
+var updateParams = new UpdateParams("woman"){
+  BackgroundRemoval = "cloudinary_ai",
+  NotificationUrl = "https://mysite.example.com/hooks"};
+var updateResult = cloudinary.UpdateResource(updateParams);

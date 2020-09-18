@@ -1,0 +1,10 @@
+<cl-image public-id="small_dinosaur.jpg" >
+  <cl-transformation if="w_lt_600">
+  </cl-transformation>
+  <cl-transformation overlay="text:Arial_20:Image%20shown%20in%20full%20scale" color="white" gravity="south_east">
+  </cl-transformation>
+  <cl-transformation effect="blur:400" underlay="small_dinosaur" width="600" crop="scale">
+  </cl-transformation>
+  <cl-transformation if="end">
+  </cl-transformation>
+</cl-image>

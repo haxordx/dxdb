@@ -1,0 +1,1 @@
+$.cloudinary.video("lincoln", {overlay: new cloudinary.SubtitlesLayer().publicId("lincoln.transcript")})

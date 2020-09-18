@@ -1,0 +1,1 @@
+$.cloudinary.video("dog", {overlay: new cloudinary.Layer().publicId("video:dog"), start_offset: "4.5", end_offset: "8", angle: 90, width: 200, gravity: "east"})

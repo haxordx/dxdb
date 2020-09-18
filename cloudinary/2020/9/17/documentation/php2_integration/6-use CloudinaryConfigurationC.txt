@@ -1,0 +1,21 @@
+use Cloudinary\Configuration\Configuration;
+
+// configure globally via a JSON object
+
+
+Configuration::instance([
+  'account' => [
+    'cloud_name' => 'my_cloud_name', 
+    'api_key' => 'my_key', 
+    'api_secret' => 'my_secret'],
+  'url' => [
+    'secure' => true]]);
+
+
+//  Or configure programatically
+
+$config = Configuration::instance();
+$config->account->cloudName = 'my_cloud_name';
+$config->account->apiKey = 'my_key';
+$config->account->apiSecret = 'my_secret';
+$config->url->secure = true;

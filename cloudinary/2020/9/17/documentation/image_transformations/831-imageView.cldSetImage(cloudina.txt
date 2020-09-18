@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation().setHeight(300).setWidth(300).setBackground("auto:predominant_gradient:4:palette_red_green_blue_orange").setCrop("pad")).generate("horse.jpg")!, cloudinary: cloudinary)

@@ -1,0 +1,1 @@
+var listResult = cloudinary.ListResourcesByTag("animal");

@@ -1,0 +1,4 @@
+cl_video_tag("dog", array("transformation"=>array(
+  array("width"=>100, "crop"=>"scale"),
+  array("dpr"=>"2.0")
+  )))

@@ -1,0 +1,3 @@
+<cld-image publicId="https://upload.wikimedia.org/wikipedia/commons/4/46/Jennifer_Lawrence_at_the_83rd_Academy_Awards.jpg" format="png" type="fetch">
+  <cld-transformation width="400" crop="scale" />
+</cld-image>

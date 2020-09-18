@@ -1,0 +1,4 @@
+\Cloudinary\Uploader::upload("sample.jpg", 
+  array( 
+    "moderation" => "manual",
+    "notification_url" => "https://mysite.example.com/mod_endpoint"));

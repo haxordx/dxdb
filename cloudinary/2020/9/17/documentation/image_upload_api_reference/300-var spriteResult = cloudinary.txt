@@ -1,0 +1,1 @@
+var spriteResult = cloudinary.MakeSprite(SpriteParams params);

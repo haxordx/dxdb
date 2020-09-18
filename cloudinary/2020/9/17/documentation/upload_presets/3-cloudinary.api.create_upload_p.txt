@@ -1,0 +1,7 @@
+cloudinary.api.create_upload_preset(
+  name = "my_preset",
+  unsigned = True, 
+  categorization = "google_tagging,google_video_tagging",
+  auto_tagging = 0.75,
+  background_removal = "cloudinary_ai",  
+  folder = "new-products")

@@ -1,0 +1,1 @@
+CloudinaryImage("BillClinton.jpg").image(type="twitter_name")

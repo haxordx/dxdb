@@ -1,0 +1,5 @@
+cl_image_tag("sample.jpg", array("transformation"=>array(
+  array("width"=>200, "height"=>200, "radius"=>"max", "crop"=>"fill"),
+  array("angle"=>30),
+  array("effect"=>"trim")
+  )))

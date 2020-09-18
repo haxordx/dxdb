@@ -1,0 +1,3 @@
+<cld-image publicId="sample.gif" >
+
+</cld-image>

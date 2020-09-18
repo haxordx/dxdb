@@ -1,0 +1,4 @@
+cloudinary.v2.uploader.upload("local_file.jpg", 
+  { moderation: "webpurify",
+    notification_url: "https://mysite.example.com/hooks" },
+  function(error, result){console.log(result);});

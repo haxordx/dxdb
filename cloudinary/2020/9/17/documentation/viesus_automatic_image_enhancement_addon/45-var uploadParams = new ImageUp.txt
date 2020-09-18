@@ -1,0 +1,6 @@
+var uploadParams = new ImageUploadParams(){
+  File = new FileDescription(@"local_file.jpg"),
+  PublicId = "beach",
+  EagerTransforms = new List<Transformation>(){
+   new Transformation().Effect("viesus_correct").Crop("scale").Width(400)}};
+var uploadResult = cloudinary.Upload(uploadParams);

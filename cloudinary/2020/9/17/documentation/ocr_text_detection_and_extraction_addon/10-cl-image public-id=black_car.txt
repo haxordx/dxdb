@@ -1,0 +1,6 @@
+<cl-image public-id="black_car.jpg" >
+  <cl-transformation width="1520" height="1440" gravity="west" x="50" crop="crop">
+  </cl-transformation>
+  <cl-transformation effect="pixelate_region:15" gravity="ocr_text">
+  </cl-transformation>
+</cl-image>

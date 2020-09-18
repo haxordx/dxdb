@@ -1,0 +1,1 @@
+CloudinaryImage("pond_reflect.jpg").image(quality="auto", fetch_format="auto")

@@ -1,0 +1,1 @@
+CloudinaryImage("docs/colorblind_green_red.jpg").image(effect="simulate_colorblind:deuteranopia")

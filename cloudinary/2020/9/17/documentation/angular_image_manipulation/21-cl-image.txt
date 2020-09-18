@@ -1,0 +1,10 @@
+<cl-image
+    dpr="auto"
+    responsive
+    width="auto"
+    crop="scale"
+    public-id="myphoto"
+    angle="20">
+        <cl-transformation effect="art:hokusai"></cl-transformation>
+        <cl-transformation border="3px_solid_rgb:00390b" radius="20"></cl-transformation>
+</cl-image>

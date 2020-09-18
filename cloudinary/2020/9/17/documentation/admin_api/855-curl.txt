@@ -1,0 +1,4 @@
+curl \
+  -d 'name=custom_square_combo&display_name=Custom%20square%20resolution%20with%20combination%20of%20codecs&representations=\[\{%22transformation%22:%22c_limit,w_1200,h_1200,vc_h264,br_5m%22\},\{%22transformation%22:%22c_limit,w_900,h_900,vc_h264,br_3500k%22\},\{%22transformation%22:%22c_limit,w_600,h_600,vc_h264,br_1500k%22\},\{%22transformation%22:%22c_limit,w_1200,h_1200,vc_vp9,br_5m%22\},\{%22transformation%22:%22c_limit,w_900,h_900,vc_vp9,br_3500k%22\},\{%22transformation%22:%22c_limit,w_600,h_600,vc_vp9,br_1500k%22\}\]'
+  -X POST \
+  https://<API_KEY>:<API_SECRET>@api.cloudinary.com/v1_1/<CLOUD_NAME>/streaming_profiles

@@ -1,0 +1,1 @@
+cloudinary.video("dog", {aspect_ratio: "2.5", crop: "crop"})

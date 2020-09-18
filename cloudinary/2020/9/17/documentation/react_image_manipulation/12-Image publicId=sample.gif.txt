@@ -1,0 +1,3 @@
+<Image publicId="sample.gif" >
+
+</Image>

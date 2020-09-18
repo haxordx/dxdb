@@ -1,0 +1,7 @@
+var uploadParams = new ImageUploadParams(){
+  File = new FileDescription(@"local_file.jpg"),
+  PublicId = "brown_sheep",
+  EagerTransforms = new List<Transformation>(){
+   new Transformation().Quality("jpegmini").Crop("fill")
+     Width(200).Height(150)}};
+var uploadResult = cloudinary.Upload(uploadParams);

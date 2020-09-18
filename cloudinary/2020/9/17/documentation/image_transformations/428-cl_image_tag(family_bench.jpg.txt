@@ -1,0 +1,1 @@
+cl_image_tag("family_bench.jpg", :crop=>"imagga_crop")

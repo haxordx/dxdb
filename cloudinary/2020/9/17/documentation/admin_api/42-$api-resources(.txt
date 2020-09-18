@@ -1,0 +1,4 @@
+$api->resources(
+array(
+  "type" => "upload", 
+  "prefix" => "sample"));

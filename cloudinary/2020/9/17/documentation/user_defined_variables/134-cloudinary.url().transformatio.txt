@@ -1,0 +1,6 @@
+cloudinary.url().transformation(new Transformation()
+.variables(variable("$img","current"),variable("$height","ih")).chain()
+  .if("w_lt_800").chain()
+  .effect("blur:800").underlay(new Layer().publicId("%24img")).width(800).height("$height").crop("scale").chain()
+  .effect("brightness:40").flags("layer_apply").chain()
+  .if("end")).imageTag("butterfly");

@@ -1,0 +1,2 @@
+resources_by_ids
+Cloudinary::Api.resources_by_ids(["user_photo_1", "user_photo_2"])

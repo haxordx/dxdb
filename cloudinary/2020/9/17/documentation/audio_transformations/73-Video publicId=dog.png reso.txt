@@ -1,0 +1,3 @@
+<Video publicId="dog.png" resourceType="video">
+  <Transformation height="200" width="500" flags="waveform" />
+</Video>

@@ -1,0 +1,4 @@
+MediaManager.get().upload("jack.mp4")
+  .option("resource_type", "video")
+  .option("categorization", "azure_video_indexer")
+  .option("auto_tagging", "0.6").dispatch();

@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().width(200).height(150).gravity("north_west").crop("crop")).generate("sample.jpg");

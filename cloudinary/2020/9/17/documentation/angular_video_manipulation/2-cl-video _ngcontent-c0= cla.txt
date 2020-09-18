@@ -1,0 +1,7 @@
+<cl-video _ngcontent-c0="" class="my-videos" controls="true" public-id="watchme" secure="true" ng-reflect-public-id="watchme">
+<video _ngcontent_c0="" class="my-videos" controls="true" public_id="watchme" ng_reflect_public_id="watchme" poster="https://res.cloudinary.com/my_other_cloud/video/upload/g_north,l_text:arial_60:watchme,y_20/watchme.jpg">
+<source src="https://res.cloudinary.com/my_other_cloud/video/upload/g_north,l_text:arial_60:watchme,y_20/watchme.webm" type="video/webm">
+<source src="https://res.cloudinary.com/my_other_cloud/video/upload/g_north,l_text:arial_60:watchme,y_20/watchme.mp4" type="video/mp4">
+<source src="https://res.cloudinary.com/my_other_cloud/video/upload/g_north,l_text:arial_60:watchme,y_20/watchme.ogv" type="video/ogg">
+</video>
+</cl-video>

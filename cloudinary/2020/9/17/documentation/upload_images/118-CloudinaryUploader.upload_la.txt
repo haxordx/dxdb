@@ -1,0 +1,2 @@
+Cloudinary::Uploader.upload_large("my_large_video.mp4", 
+    :resource_type => "video")

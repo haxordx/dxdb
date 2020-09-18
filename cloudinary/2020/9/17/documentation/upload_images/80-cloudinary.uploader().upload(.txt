@@ -1,0 +1,2 @@
+cloudinary.uploader().upload("ftp://user1:mypass@ftp.example.com/sample.jpg", 
+  ObjectUtils.emptyMap());

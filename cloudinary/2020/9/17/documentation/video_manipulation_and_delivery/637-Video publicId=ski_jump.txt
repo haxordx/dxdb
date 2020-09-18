@@ -1,0 +1,3 @@
+<Video publicId="ski_jump" >
+  <Transformation effect="loop:2" />
+</Video>

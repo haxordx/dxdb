@@ -1,0 +1,1 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation().Width(150).Height(150).Gravity("auto:0").Crop("thumb")).BuildImageTag("sunset_shoes.jpg")

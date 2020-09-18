@@ -1,0 +1,8 @@
+{
+  background: "#FFFFFF", // only relevant for pad crop mode
+  crop: "pad",           // only fill or pad mode is supported
+  dpr:  1 or 2,          // automatically determined according to the requesting device
+  fetch_format: "auto", 
+  quality: "auto",
+  gravity: "auto"        // only relevant for fill crop mode (default is "center" for 360 spin sets)
+}

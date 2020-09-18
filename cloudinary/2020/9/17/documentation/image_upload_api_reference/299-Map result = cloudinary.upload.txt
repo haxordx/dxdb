@@ -1,0 +1,1 @@
+Map result = cloudinary.uploader().generateSprite(String tag, Map options);

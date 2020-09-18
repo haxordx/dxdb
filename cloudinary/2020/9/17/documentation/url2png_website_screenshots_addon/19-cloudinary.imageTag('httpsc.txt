@@ -1,0 +1,1 @@
+cloudinary.imageTag('https://cnn.com', {gravity: "north", height: 200, width: 150, crop: "fill", signUrl: true, type: "url2png"}).toHtml();

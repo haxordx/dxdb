@@ -1,0 +1,4 @@
+<cl-image public-id="sample.jpg" client-hints="true">
+  <cl-transformation width="300" height="200" dpr="auto" crop="fill">
+  </cl-transformation>
+</cl-image>

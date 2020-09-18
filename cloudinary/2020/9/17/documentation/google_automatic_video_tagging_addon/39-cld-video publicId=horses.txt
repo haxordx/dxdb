@@ -1,0 +1,3 @@
+<cld-video publicId="horses" >
+
+</cld-video>

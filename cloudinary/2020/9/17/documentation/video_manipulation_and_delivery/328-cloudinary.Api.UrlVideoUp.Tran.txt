@@ -1,0 +1,1 @@
+cloudinary.Api.UrlVideoUp.Transform(new Transformation().StartOffset("10p").Duration("30p")).BuildVideoTag("dog")

@@ -1,0 +1,4 @@
+<Image publicId="DamagedHelmet3D" >
+  <Transformation fetchFormat="png" />
+  <Transformation angle="90" aspectRatio="1" background="#a17ec5" gravity="auto" height="200" crop="fill" />
+</Image>

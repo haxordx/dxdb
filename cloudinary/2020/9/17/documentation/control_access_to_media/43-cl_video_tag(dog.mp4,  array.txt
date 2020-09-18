@@ -1,0 +1,2 @@
+cl_video_tag("dog.mp4",  array("auth_token" => array("key" => "MyKey", "expiration" => 1514764800), 
+  "type" => "authenticated", "sign_url" => true));

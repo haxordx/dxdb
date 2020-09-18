@@ -1,0 +1,3 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation()
+  .Width(700).Radius("max").Crop("scale").Chain()
+  .Flags("region_relative").Gravity("adv_eyes").Overlay(new Layer().PublicId("harlequinmask")).Width(1.7)).BuildImageTag("cloudinary_team.jpg")

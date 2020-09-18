@@ -1,0 +1,5 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation()
+  .setWidth(200).setCrop("scale").chain()
+  .setEffect("outline:20:200").setColor("red").chain()
+  .setEffect("outline:15:200").setColor("orange").chain()
+  .setEffect("outline:10:200").setColor("yellow")).generate("shoes.png")!, cloudinary: cloudinary)

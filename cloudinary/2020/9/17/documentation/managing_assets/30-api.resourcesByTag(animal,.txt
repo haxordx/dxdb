@@ -1,0 +1,2 @@
+api.resourcesByTag("animal", 
+  ObjectUtils.emptyMap());

@@ -1,0 +1,1 @@
+CloudinaryImage("park.jpg").image(effect="lightroom:xmp:warm_shadow.xmp")

@@ -1,0 +1,3 @@
+<Image publicId="young_couple.jpg" >
+  <Transformation effect="pixelate_faces:9" />
+</Image>

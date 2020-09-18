@@ -1,0 +1,9 @@
+cloudinary.uploader().imageUploadTag("video_id", 
+        com.cloudinary.utils.ObjectUtils.asMap("resource_type", "video",
+            "eager", Arrays.asList(
+                new EagerTransformation().format("83u8").rawTransformation("sp_full_hd")),
+            "eager_async", true,
+            "eager_notification_url", "https://mysite.example.com/notify_endpoint",
+        ),
+        com.cloudinary.utils.ObjectUtils.asMap("id", "my_upload_tag")
+    );

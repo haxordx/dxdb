@@ -1,0 +1,1 @@
+https://res.cloudinary.com/<your_cloud_name>/<resource_type>/list/<tag>.json

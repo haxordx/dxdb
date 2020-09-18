@@ -1,0 +1,6 @@
+$cloudinary->image('actor.jpg')
+  ->effect(Effect::cartoonify())
+  ->roundCorners(RoundCorners::max())
+  ->effect(Effect::outline(Outline::OUTER, 100)->color(Color::LIGHTBLUE))
+  ->background(Color::LIGHTBLUE)
+  ->resize(Resize::scale()->height(300));

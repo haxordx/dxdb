@@ -1,0 +1,4 @@
+let params = CLDUploadRequestParams()
+    .setUploadPreset("samplePreset").setPublicId("MyDog").setTags("animal")
+let request = cloudinary.createUploader().upload(
+    url: "dog.jpg", params: params)

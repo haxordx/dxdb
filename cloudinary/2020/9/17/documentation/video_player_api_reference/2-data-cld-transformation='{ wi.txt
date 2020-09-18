@@ -1,0 +1,1 @@
+data-cld-transformation='{ "width": 200, "crop": "limit" }' 

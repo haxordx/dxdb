@@ -1,0 +1,20 @@
+{
+  "public_id": "illra05q2jkghemh5gkw",
+  "version": 1549349780,
+  "width": 1000,
+  "height": 257,
+  "format": "png",
+  "resource_type": "image",
+  "created_at": "2019-02-05T06:56:20Z",
+  "tags": [],
+  "pages": 1,
+  "bytes": 20420,
+  "type": "upload",
+  "etag": "3defbddd14101621303dd7ff84370747",
+  "placeholder": false,
+  "url": "http://mendoza-res.cloudinary.com/image/upload/v1549349780/illra05q2jkghemh5gkw.png",
+  "secure_url": "https://mendoza-res.cloudinary.com/image/upload/v1549349780/illra05q2jkghemh5gkw.png",
+  "access_mode": "public",
+  "original_filename": "cloudinary",
+  "notification_type": "upload"
+}

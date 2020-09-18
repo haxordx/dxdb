@@ -1,0 +1,4 @@
+cl_image_tag("golden_gate.jpg", array("transformation"=>array(
+  array("width"=>700, "height"=>700, "crop"=>"fill"),
+  array("effect"=>"style_transfer", "overlay"=>"sailing_angel")
+  )))

@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation().setEffect("lightroom:whitebalance_tungsten")).generate("city_pic.jpg", signUrl: true)!, cloudinary: cloudinary)

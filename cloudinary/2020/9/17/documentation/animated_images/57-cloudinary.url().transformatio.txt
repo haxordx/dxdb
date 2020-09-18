@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().delay("200")).imageTag("kitten_fighting.gif");

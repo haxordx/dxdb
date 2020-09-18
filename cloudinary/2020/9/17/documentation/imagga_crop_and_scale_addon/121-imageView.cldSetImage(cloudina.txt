@@ -1,0 +1,3 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation()
+  .setEffect("saturation:50").setHeight(300).setRadius(20).setWidth(450).setCrop("imagga_crop").chain()
+  .setGravity("south_west").setOverlay("imagga_logo").setOpacity(80).setWidth(100).setX(10).setY(10)).generate("family_bench.jpg", signUrl: true)!, cloudinary: cloudinary)

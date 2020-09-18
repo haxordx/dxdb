@@ -1,0 +1,3 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation()
+  .Width(1520).Height(1440).Gravity("west").X(50).Crop("crop").Chain()
+  .Effect("pixelate_region:15").Gravity("ocr_text")).BuildImageTag("black_car.jpg")

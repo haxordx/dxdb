@@ -1,0 +1,2 @@
+cloudinary.url().transformation(new Transformation().width("auto").responsive("true").
+  crop("scale").responsive_placeholder("blank")).imageTag("smiling_man.jpg");

@@ -1,0 +1,4 @@
+cloudinary.api().update("golfer", 
+  ObjectUtils.asMap(
+    "detection", "aws_rek_face", 
+    "auto_tagging", 0.9));

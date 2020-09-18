@@ -1,0 +1,4 @@
+<cl-image public-id="couple.jpg" >
+  <cl-transformation width="150" height="150" gravity="face" crop="thumb">
+  </cl-transformation>
+</cl-image>

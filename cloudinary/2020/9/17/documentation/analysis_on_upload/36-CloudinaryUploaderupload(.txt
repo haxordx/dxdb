@@ -1,0 +1,4 @@
+\Cloudinary\Uploader::upload("user_photo.jpg",
+  array( 
+    "quality_analysis" => TRUE,
+    "eval" => "if (resource_info.quality_analysis.focus < 0.5) { upload_options['tags'] = 'blurry' }" ));

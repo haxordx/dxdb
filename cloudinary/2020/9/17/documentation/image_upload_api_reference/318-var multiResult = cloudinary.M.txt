@@ -1,0 +1,1 @@
+var multiResult = cloudinary.Multi(MultiParams params);

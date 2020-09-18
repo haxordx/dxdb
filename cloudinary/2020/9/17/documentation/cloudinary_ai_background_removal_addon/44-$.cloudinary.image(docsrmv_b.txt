@@ -1,0 +1,4 @@
+$.cloudinary.image("docs/rmv_bgd/woman.png", {transformation: [
+  {height: 375, crop: "scale"},
+  {underlay: new cloudinary.Layer().publicId("docs:bg_beach"), gravity: "south", width: 800}
+  ]})

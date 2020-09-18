@@ -1,0 +1,4 @@
+CloudinaryVideo("dog").video(controls=True, transformation=[
+    {"width": 0.4, "angle": 20},
+    {"overlay": "cloudinary_icon", "opacity": 50, "width": 60, "gravity": "south_east", "y": 15, "x": 60}
+    ])

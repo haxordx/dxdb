@@ -1,0 +1,3 @@
+<Image publicId="kitten_fighting.gif" >
+  <Transformation width="200" height="200" radius="max" crop="crop" />
+</Image>

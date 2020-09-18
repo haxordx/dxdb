@@ -1,0 +1,3 @@
+vlength=vplayer.duration()
+middle=vlength/2
+vplayer.currentTime(middle)

@@ -1,0 +1,10 @@
+<cl-video public-id="dog" >
+  <cl-transformation angle="180">
+  </cl-transformation>
+  <cl-transformation width="300" height="200" crop="fill">
+  </cl-transformation>
+  <cl-transformation overlay="video:dog" flags="splice" width="300" height="200" start-offset="0" duration="5" crop="fill">
+  </cl-transformation>
+  <cl-transformation flags="layer_apply">
+  </cl-transformation>
+</cl-video>

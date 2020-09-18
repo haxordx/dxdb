@@ -1,0 +1,4 @@
+cloudinary.uploader().upload("turtles.jpg", 
+  ObjectUtils.asMap(
+    "categorization", "imagga_tagging", 
+    "auto_tagging", "0.4"));

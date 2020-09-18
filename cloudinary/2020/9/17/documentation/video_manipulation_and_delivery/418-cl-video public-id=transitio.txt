@@ -1,0 +1,4 @@
+<cl-video public-id="transition1" >
+  <cl-transformation width="300" crop="scale">
+  </cl-transformation>
+</cl-video>

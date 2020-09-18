@@ -1,0 +1,2 @@
+config.gem 'carrierwave', :version => '~> 0.4.10'
+config.gem 'cloudinary'

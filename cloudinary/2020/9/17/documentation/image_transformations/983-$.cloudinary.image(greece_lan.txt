@@ -1,0 +1,1 @@
+$.cloudinary.image("greece_landscape.jpg", {effect: "tint:equalize:80:red:50p:blue:60p:yellow:40p"})

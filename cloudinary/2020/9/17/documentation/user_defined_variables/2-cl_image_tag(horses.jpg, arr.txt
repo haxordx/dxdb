@@ -1,0 +1,4 @@
+cl_image_tag("horses.jpg", array("transformation"=>array(
+  array("width"=>300, "crop"=>"scale"),
+  array("effect"=>"shadow", "x"=>"w / 50", "y"=>"w / 50", "crop"=>"fill")
+  )))

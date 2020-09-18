@@ -1,0 +1,1 @@
+api.transformations("w_150,h_100,c_fill", ObjectUtils.emptyMap());

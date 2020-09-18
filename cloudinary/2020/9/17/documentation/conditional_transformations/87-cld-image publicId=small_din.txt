@@ -1,0 +1,6 @@
+<cld-image publicId="small_dinosaur.jpg" >
+  <cld-transformation if="w_lt_600" />
+  <cld-transformation overlay={{fontFamily: "Arial", fontSize: 20, text: "Image%20shown%20in%20full%20scale"}} color="white" gravity="south_east" />
+  <cld-transformation effect="blur:400" underlay="small_dinosaur" width="600" crop="scale" />
+  <cld-transformation if="end" />
+</cld-image>

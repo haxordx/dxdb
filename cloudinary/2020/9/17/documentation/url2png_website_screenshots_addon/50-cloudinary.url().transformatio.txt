@@ -1,0 +1,4 @@
+cloudinary.url().transformation(new Transformation()
+  .radius(50).width(400).height(400).gravity("north").border("2px_solid_rgb:999").crop("fill").chain()
+  .effect("shadow:20").color("#ccc").chain()
+  .angle(30).color("#ec9800").effect("colorize").overlay(new Layer().publicId("url2png_logo"))).type("url2png").imageTag("https://en.wikipedia.org/wiki/jpg");

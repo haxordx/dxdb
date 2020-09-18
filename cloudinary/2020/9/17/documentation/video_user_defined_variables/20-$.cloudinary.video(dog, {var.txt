@@ -1,0 +1,4 @@
+$.cloudinary.video("dog", {variables: [["$mainvideowidth", "500"], ["$overlaywidth", "$mainvideowidth / 3"]], transformation: [
+  {width: "$mainvideowidth", crop: "scale"},
+  {overlay: new cloudinary.Layer().publicId("video:kitten_fighting"), width: "$overlaywidth", gravity: "south_east"}
+  ]})

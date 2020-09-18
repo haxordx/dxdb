@@ -1,0 +1,3 @@
+<Video publicId="dog" >
+  <Transformation bitRate="250k" />
+</Video>

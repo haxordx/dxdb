@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().overlay(new SubtitlesLayer().publicId("sample_sub_en.srt"))).resourceType("video").generate("dog.mp4");

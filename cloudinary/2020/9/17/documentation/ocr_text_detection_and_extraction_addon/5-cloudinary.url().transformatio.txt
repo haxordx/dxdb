@@ -1,0 +1,3 @@
+cloudinary.url().transformation(new Transformation()
+  .width(1520).height(1440).gravity("west").x(50).crop("crop").chain()
+  .effect("pixelate_region:15").gravity("ocr_text")).imageTag("black_car.jpg");

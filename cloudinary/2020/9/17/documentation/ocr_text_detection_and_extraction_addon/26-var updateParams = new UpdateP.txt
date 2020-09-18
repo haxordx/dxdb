@@ -1,0 +1,5 @@
+var updateParams = new UpdateParams("concert_ticket")
+{
+  Ocr = "adv_ocr"
+};
+var updateResult = cloudinary.Update(updateParams);

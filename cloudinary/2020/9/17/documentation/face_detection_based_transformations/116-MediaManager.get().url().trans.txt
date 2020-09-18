@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().width(100).height(150).gravity("faces").crop("fill")).generate("couple.jpg");

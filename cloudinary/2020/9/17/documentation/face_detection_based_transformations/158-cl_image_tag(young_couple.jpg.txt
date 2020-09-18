@@ -1,0 +1,1 @@
+cl_image_tag("young_couple.jpg", :effect=>"pixelate_faces:9")

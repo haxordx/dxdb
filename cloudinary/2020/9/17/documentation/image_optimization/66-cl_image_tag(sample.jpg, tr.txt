@@ -1,0 +1,4 @@
+cl_image_tag("sample.jpg", :transformation=>[
+  {:aspect_ratio=>"4:3", :crop=>"fill"},
+  {:width=>"auto", :dpr=>"auto", :crop=>"scale"}
+  ])

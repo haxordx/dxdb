@@ -1,0 +1,4 @@
+cloudinary.image("black_car.jpg", {transformation: [
+  {width: 1520, height: 1440, gravity: "west", x: 50, crop: "crop"},
+  {effect: "pixelate_region:15", gravity: "ocr_text"}
+  ]})

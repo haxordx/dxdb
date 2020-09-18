@@ -1,0 +1,4 @@
+<cl-image public-id="city_pic.jpg" >
+  <cl-transformation effect="lightroom:whitebalance_shade">
+  </cl-transformation>
+</cl-image>

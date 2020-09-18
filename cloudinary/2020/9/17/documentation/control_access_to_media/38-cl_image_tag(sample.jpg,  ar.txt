@@ -1,0 +1,2 @@
+cl_image_tag("sample.jpg",  array("auth_token" => array("key" => "MyKey", "duration" => 300), "type" => "authenticated",  
+  "sign_url" => true));

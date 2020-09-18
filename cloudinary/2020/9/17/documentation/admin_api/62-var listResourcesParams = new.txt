@@ -1,0 +1,3 @@
+var listResourcesParams = new ListResourcesParams(){
+  ResourceType = "raw"};
+var listResourcesResult = cloudinary.ListResources(listResourcesParams);

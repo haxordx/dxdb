@@ -1,0 +1,5 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation()
+  .setWidth(500).setCrop("scale").chain()
+  .setOverlay("cloudinary_icon").setWidth(150).chain()
+  .setEffect("blackwhite").chain()
+  .setFlags("layer_apply").setGravity("north_east")).generate("sample.jpg")!, cloudinary: cloudinary)

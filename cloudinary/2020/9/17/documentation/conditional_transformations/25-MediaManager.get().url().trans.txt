@@ -1,0 +1,3 @@
+MediaManager.get().url().transformation(new Transformation()
+  .if("ils_gt_0.5").width(120).height(150).crop("pad").chain()
+  .if("else").width(120).height(150).crop("fill")).generate("cloudinary_icon.jpg");

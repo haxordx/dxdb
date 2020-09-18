@@ -1,0 +1,1 @@
+CloudinaryImage("fireworks.jpg").image(overlay={'font_family': "ttf", 'font_size': 100, 'text': "Happy%20New%20Year%20%202017%20"}, color="white", gravity="north_west", x=30, y=30)

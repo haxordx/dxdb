@@ -1,0 +1,6 @@
+cloudinary.v2.api.resource('sample', 
+  { faces: true, 
+    colors: true, 
+    image_metadata: true,
+    versions: true },
+  function(error, result) {console.log(result, error); });

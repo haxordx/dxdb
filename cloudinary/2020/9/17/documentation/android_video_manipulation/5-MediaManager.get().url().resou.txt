@@ -1,0 +1,4 @@
+MediaManager.get().url().resourceType("video")
+    .transformation(new Transformation()
+        .height(360).width(480).quality(70).duration(10).crop("pad"))
+    .generate("dog.mp4")

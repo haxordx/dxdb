@@ -1,0 +1,1 @@
+\Cloudinary\Uploader::replace_tag('animal', array('dog', 'lion'));

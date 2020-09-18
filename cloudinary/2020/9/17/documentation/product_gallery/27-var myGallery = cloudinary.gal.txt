@@ -1,0 +1,11 @@
+var myGallery = cloudinary.galleryWidget({
+  container: "#my-gallery",
+  cloudName: "demo",
+  mediaAssets: [{ tag: "bag" }],
+  carouselStyle: "thumbnails",   // default value: included for clarity
+  carouselLocation: "left",     // default value: included for clarity
+  viewportBreakpoints: [
+  { breakpoint: 600, carouselStyle: "thumbnails", carouselLocation: "bottom" },
+  { breakpoint: 300, carouselStyle: "indicators", carouselLocation: "bottom", navigation: "always" } ]
+});
+myGallery.render();

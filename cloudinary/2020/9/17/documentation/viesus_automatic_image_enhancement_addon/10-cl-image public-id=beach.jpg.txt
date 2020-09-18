@@ -1,0 +1,3 @@
+<cl-image public-id="beach.jpg" >
+
+</cl-image>

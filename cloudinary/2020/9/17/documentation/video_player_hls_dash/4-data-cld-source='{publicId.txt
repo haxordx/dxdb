@@ -1,0 +1,3 @@
+data-cld-source='{"publicId": "oceans"}'
+data-cld-source-types='["hls","dash"]'
+data-cld-source-transformation='{ "hls": { "streaming_profile": "hd_hls" }, "dash": { "streaming_profile: "hd_dash" }, "effect": "vignette:50" }'

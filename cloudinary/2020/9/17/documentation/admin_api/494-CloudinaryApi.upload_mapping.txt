@@ -1,0 +1,1 @@
+Cloudinary::Api.upload_mapping(folder)

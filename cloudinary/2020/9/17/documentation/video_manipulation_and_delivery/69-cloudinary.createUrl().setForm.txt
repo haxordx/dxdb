@@ -1,0 +1,1 @@
+cloudinary.createUrl().setFormat("webm").setResourceType("video").generate("dog.mp4")

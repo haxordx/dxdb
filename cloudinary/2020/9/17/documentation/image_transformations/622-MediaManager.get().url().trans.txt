@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().quality("auto")).generate("robot.jpg");

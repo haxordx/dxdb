@@ -1,0 +1,1 @@
+cloudinary.RestoreMetadataDataSourceEntries("color_id", new List<string>{"color1"});

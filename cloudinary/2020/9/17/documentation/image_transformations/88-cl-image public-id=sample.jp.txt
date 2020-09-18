@@ -1,0 +1,2 @@
+<cl-image public-id="sample.jpg" alt="A sample photo" className="Samples">
+</cl-image>

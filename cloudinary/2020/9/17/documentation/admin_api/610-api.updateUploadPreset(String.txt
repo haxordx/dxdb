@@ -1,0 +1,1 @@
+api.updateUploadPreset(String name, Map options);

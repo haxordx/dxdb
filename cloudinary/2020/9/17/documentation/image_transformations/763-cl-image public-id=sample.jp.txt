@@ -1,0 +1,4 @@
+<cl-image public-id="sample.jpg" >
+  <cl-transformation border="5px_solid_red">
+  </cl-transformation>
+</cl-image>

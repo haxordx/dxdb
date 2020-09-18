@@ -1,0 +1,6 @@
+result = {
+    event: "abort",
+    info: {
+      ids: [],
+      all: true | false   //whether abort-all was clicked
+}};

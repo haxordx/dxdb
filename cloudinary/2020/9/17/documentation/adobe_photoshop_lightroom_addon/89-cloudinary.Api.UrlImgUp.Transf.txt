@@ -1,0 +1,1 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation().Effect("lightroom:xmp:authenticated:my_presets:warm_shadow_auth.xmp")).BuildImageTag("park.jpg")

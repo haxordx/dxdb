@@ -1,0 +1,3 @@
+<cld-video publicId="snow_horses" >
+  <cld-transformation if="ar_gt_0.65_and_w_gt_1000" aspectRatio="0.65" height="1000" crop="fill" />
+</cld-video>

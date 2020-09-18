@@ -1,0 +1,4 @@
+cl_image_tag("DamagedHelmet3D", array("transformation"=>array(
+  array("fetch_format"=>"png"),
+  array("angle"=>90, "aspect_ratio"=>"1", "background"=>"#a17ec5", "gravity"=>"auto", "height"=>200, "crop"=>"fill")
+  )))

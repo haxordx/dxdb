@@ -1,0 +1,4 @@
+<cld-image publicId="coast.jpg" signUrl="true">
+  <cld-transformation width="400" crop="scale" />
+  <cld-transformation height="150" overlay="family_bench.png" radius="max" width="150" crop="imagga_scale" />
+</cld-image>

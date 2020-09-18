@@ -1,0 +1,15 @@
+cloudinary.api.add_metadata_field({          
+  "external_id": "color_id",
+  "label": "Colors",
+  "type": "set" ,
+  "mandatory": "true",
+  "default_value": ["color1","color2"],
+  "datasource": {
+    "values": [
+      {"external_id": "color1", "value": "red"},
+      {"external_id": "color2", "value": "green"},
+      {"external_id": "color3", "value": "blue"},
+      {"external_id": "color4", "value": "yellow"}
+    ]
+  }
+})

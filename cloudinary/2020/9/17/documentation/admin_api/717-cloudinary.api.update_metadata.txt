@@ -1,0 +1,5 @@
+cloudinary.api.update_metadata_field_datasource("color_id", [  
+  "values":[{  
+    "external_id":"color1",
+    "value":"orange"
+  },

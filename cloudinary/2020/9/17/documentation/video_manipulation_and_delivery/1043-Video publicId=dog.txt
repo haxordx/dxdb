@@ -1,0 +1,3 @@
+<Video publicId="dog" >
+  <Transformation overlay={{fontFamily: "arial", fontSize: 70, publicId: "sample_sub_en.srt", resourceType: "subtitles"}} color="#ffff00" background="black" />
+</Video>

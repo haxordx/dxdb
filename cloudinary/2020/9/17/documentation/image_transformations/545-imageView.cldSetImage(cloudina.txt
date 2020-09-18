@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation().setWidth(200).setHeight(300).setGravity("auto").setCrop("fill")).generate("basketball_in_net.jpg")!, cloudinary: cloudinary)

@@ -1,0 +1,7 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation()
+  .setOverlay("couple").chain()
+  .setGravity("faces").setWidth(120).setHeight(150).setCrop("crop").chain()
+  .setRadius("max").chain()
+  .setFlags("layer_apply").setGravity("north_east").chain()
+  .setOverlay("cloudinary_icon").setWidth(0.8).setFlags("relative").setOpacity(50).setEffect("brightness:100").chain()
+  .setOverlay("text:impact_40_bold:Sample%20image").setGravity("south").setY(20)).generate("sample.jpg")!, cloudinary: cloudinary)

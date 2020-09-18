@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation().setOverlay("call_text").setFlags("region_relative").setWidth(1.1).setGravity("ocr_text")).generate("home_4_sale.jpg")!, cloudinary: cloudinary)

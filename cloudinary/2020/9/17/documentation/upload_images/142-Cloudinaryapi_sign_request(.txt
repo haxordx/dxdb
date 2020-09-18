@@ -1,0 +1,2 @@
+\Cloudinary::api_sign_request(
+  array("public_id" => "sample", "version" => "1312461204"), "my_api_secret")

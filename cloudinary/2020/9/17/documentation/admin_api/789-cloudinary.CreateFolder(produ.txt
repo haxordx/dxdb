@@ -1,0 +1,1 @@
+cloudinary.CreateFolder("product/test");

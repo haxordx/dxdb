@@ -1,0 +1,4 @@
+cloudinary.Api.UrlVideoUp.Transform(new Transformation()
+    .FetchFormat("mp4").Chain()
+    .Background("#d5d2ca").Height(300).Flags("animated").Crop("scale")).ResourceType("image")
+    .BuildVideoTag("docs/foyer-table");

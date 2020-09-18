@@ -1,0 +1,12 @@
+<cl-image public-id="actor.jpg" >
+  <cl-transformation effect="cartoonify">
+  </cl-transformation>
+  <cl-transformation radius="max">
+  </cl-transformation>
+  <cl-transformation effect="outline:100" color="lightblue">
+  </cl-transformation>
+  <cl-transformation background="lightblue">
+  </cl-transformation>
+  <cl-transformation height="300" crop="scale">
+  </cl-transformation>
+</cl-image>

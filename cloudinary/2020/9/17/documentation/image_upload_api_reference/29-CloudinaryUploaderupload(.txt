@@ -1,0 +1,8 @@
+\Cloudinary\Uploader::upload("https://www.example.com/sample.jpg", 
+  array(
+    "responsive_breakpoints" => 
+      array( 
+        "create_derived" => true, 
+        "bytes_step" => 20000, 
+        "min_width" => 200, 
+        "max_width" => 1000 )));

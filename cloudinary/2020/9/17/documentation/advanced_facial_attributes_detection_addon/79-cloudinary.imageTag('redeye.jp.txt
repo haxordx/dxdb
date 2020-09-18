@@ -1,0 +1,1 @@
+cloudinary.imageTag('redeye.jpg', {width: 300, height: 80, gravity: "adv_eyes", crop: "thumb"}).toHtml();

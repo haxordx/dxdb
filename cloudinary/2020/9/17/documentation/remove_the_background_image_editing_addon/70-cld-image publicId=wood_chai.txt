@@ -1,0 +1,4 @@
+<cld-image publicId="wood_chair.jpg" >
+  <cld-transformation width="200" height="200" angle="hflip" crop="fit" />
+  <cld-transformation overlay="cloudinary_icon" width="0.4" flags="relative" gravity="north" x="15" y="35" angle="4" effect="brightness:200" opacity="70" />
+</cld-image>

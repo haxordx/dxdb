@@ -1,0 +1,4 @@
+cl_image_tag("flowers.jpg", :transformation=>[
+  {:width=>500, :crop=>"scale"},
+  {:overlay=>{:font_family=>"Times", :font_size=>90, :font_weight=>"bold", :text=>"Cool%20image"}, :gravity=>"south", :y=>80, :color=>"#FFFF00"}
+  ])

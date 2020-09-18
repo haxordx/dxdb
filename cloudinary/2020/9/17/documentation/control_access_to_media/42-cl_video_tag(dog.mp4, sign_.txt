@@ -1,0 +1,2 @@
+cl_video_tag("dog.mp4", :sign_url => true, :auth_token => { :key => "MyKey", :expiration => 1514764800 }, 
+  :type => "authenticated")

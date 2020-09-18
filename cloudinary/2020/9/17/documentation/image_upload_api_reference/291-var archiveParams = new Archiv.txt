@@ -1,0 +1,4 @@
+var archiveParams = new ArchiveParams(){
+  ResourceType = "image",
+  PublicIds = new List<string>(){"dog", "cat", "lion"}};
+string url = cloudinary.DownloadArchiveUrl(archiveParams);

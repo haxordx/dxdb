@@ -1,0 +1,3 @@
+<cld-image publicId="sample_van.jpg" >
+
+</cld-image>

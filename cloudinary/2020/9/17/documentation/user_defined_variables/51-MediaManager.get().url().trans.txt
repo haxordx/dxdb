@@ -1,0 +1,2 @@
+MediaManager.get().url().transformation(new Transformation()
+.variables(variable("$w","200"),variable("$ar","0.8")).chain().width("$w").aspectRatio("$ar").gravity("face").crop("fill")).generate("woman.jpg");

@@ -1,0 +1,1 @@
+cl_video_tag("dog", :overlay=>"cloudinary_icon", :start_offset=>"6.5", :end_offset=>"10", :opacity=>50, :effect=>"brightness:200")

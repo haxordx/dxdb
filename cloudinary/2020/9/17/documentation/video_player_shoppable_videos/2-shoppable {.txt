@@ -1,0 +1,15 @@
+shoppable: {
+    startState: "openOnPlay",
+    autoClose: 2,
+    showPostPlayOverlay: true,
+    width: "15%",
+    bannerMsg: "Start shopping for your outfit",
+    toggleIcon:
+    "https://res.cloudinary.com/demo/image/upload/docs/trolley",
+    transformation: {
+    quality: "auto:eco",
+    fetch_format: "auto",
+    crop: "pad",
+    aspect_ratio: "1"
+    },
+    products: [ /*products array*/ ]

@@ -1,0 +1,46 @@
+{
+  "info_kind": "azure_video_indexer",
+  "info_status": "complete",
+  "public_id": "jack",
+  "uploaded_at": "2019-02-25T10:35:25Z",
+  "version": 1551090925,
+  "url": "http://res.cloudinary.com/demo/video/upload/v1551090925/jack.mp4",
+  "secure_url": "https://res.cloudinary.com/demo/video/upload/v1551090925/jack.mp4",
+  "etag": "58caa750581129cdca6ac4496653e186",
+  "notification_type": "info",
+  "info_data": {
+    "en-US": {
+      "labels": [
+        {
+          "id": 0,
+          "name": "brown",
+          "language": "en-US",
+          "instances": [
+            {
+              "confidence": 0.9379,
+              "adjustedStart": "0:00:00",
+              "adjustedEnd": "0:00:13.413",
+              "start": "0:00:00",
+              "end": "0:00:13.413",
+              "duration": "0:00:13.413"
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "name": "dog",
+          "language": "en-US",
+          "instances": [
+            {
+              "confidence": 1,
+              "adjustedStart": "0:00:00",
+              "adjustedEnd": "0:00:13.413",
+              "start": "0:00:00",
+              "end": "0:00:13.413",
+              "duration": "0:00:13.413"
+            }
+          ]
+        },
+        {
+    ...
+}

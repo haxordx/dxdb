@@ -1,0 +1,2 @@
+$api->resources_by_context("mycontextkey", "mycontextvalue"
+  array("resource_type" => "video"));

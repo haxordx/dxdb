@@ -1,0 +1,3 @@
+cloudinary.v2.uploader.upload("sample_spreadsheet.xls", 
+  { resource_type: "auto" }, 
+  function(error, result) {console.log(result, error); });

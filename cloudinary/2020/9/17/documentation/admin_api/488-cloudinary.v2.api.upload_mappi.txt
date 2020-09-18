@@ -1,0 +1,1 @@
+cloudinary.v2.api.upload_mappings(function(error, result){console.log(result);});

@@ -1,0 +1,6 @@
+var uploadParams = new ImageUploadParams() 
+{
+  File = new FileDescription(@"local_file.jpg"),
+  Moderation = "aws_rek"
+};
+var uploadResult = cloudinary.Upload(uploadParams);

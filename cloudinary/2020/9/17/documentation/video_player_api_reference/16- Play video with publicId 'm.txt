@@ -1,0 +1,23 @@
+// Play video with publicId 'movie2', followed by a video with
+// publicId 'mymovie' and an override transformation, followed
+// by a video with a publicId 'movie3'.
+// Automatically advance from finished video to the next after
+// 10 seconds.
+// Restart the playlist from the beginning when finished.
+
+vplayer.playlist([
+    'movie2', 
+    { publicId: 'mymovie', 
+        transformation: { width: 500, crop: 'pad' } },
+    'movie3'
+], autoAdvance: 10, repeat: true)
+
+// Same as before, without any delay between videos and 
+// stops after playing the last video.
+
+vplayer.playlist([
+    'movie2', 
+    { publicId: 'mymovie', 
+        transformation: { width: 500, crop: 'pad' } },
+    'movie3'
+], autoAdvance: 0, repeat: false)

@@ -1,0 +1,8 @@
+cl_image_tag("sample.jpg", :transformation=>[
+  {:overlay=>"couple"},
+  {:gravity=>"faces", :width=>120, :height=>150, :crop=>"crop"},
+  {:radius=>"max"},
+  {:flags=>"layer_apply", :gravity=>"north_east"},
+  {:overlay=>"cloudinary_icon", :width=>0.8, :flags=>"relative", :opacity=>50, :effect=>"brightness:100"},
+  {:overlay=>{:font_family=>"impact", :font_size=>40, :font_weight=>"bold", :text=>"Sample%20image"}, :gravity=>"south", :y=>20}
+  ])

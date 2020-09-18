@@ -1,0 +1,5 @@
+cloudinary.url().transformation(new Transformation()
+  .variables(variable("$overlay","ref:!docs:sale!")).chain()
+  .customFunction(wasm("docs:pnglayer.wasm")).chain()
+  .border("1px_solid_black"))
+  .imageTag("docs/casual.jpg");

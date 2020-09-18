@@ -1,0 +1,2 @@
+require 'digest'
+signature = Digest::SHA1.digest(payload_to_sign + api_secret)

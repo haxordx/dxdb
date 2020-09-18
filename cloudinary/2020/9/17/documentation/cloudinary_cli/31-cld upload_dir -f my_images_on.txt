@@ -1,0 +1,1 @@
+cld upload_dir -f my_images_on_cloudinary -o overwrite true my_images

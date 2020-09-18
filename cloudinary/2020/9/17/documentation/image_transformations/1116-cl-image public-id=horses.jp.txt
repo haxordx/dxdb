@@ -1,0 +1,4 @@
+<cl-image public-id="horses.jpg" >
+  <cl-transformation effect="art:zorro">
+  </cl-transformation>
+</cl-image>

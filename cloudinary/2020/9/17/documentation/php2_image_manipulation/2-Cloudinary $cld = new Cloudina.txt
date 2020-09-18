@@ -1,0 +1,2 @@
+Cloudinary $cld = new Cloudinary();
+$cld->imageTag('sample');

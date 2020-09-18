@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setType( "list").generate("logo.json")!, cloudinary: cloudinary)

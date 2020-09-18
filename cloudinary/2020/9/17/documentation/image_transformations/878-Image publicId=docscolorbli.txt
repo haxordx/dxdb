@@ -1,0 +1,3 @@
+<Image publicId="docs/colorblind_green_red.jpg" >
+  <Transformation effect="simulate_colorblind:deuteranopia" />
+</Image>

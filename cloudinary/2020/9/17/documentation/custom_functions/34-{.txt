@@ -1,0 +1,9 @@
+{
+  "statusCode": 200,
+  "headers": {
+    "Content-Type": "image/jpeg",
+    "Content-Length": "result.length"
+  },
+  "isBase64Encoded": true,             // base64 is restriction imposed by API Gateway
+  "body": "result.toString('base64')"   // image data encoded as base64 with padding
+}

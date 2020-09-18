@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setFormat("mp4").setType( "fetch").setTransformation(CLDTransformation().setWidth(300).setCrop("scale")).generate("https://orig00.deviantart.net/1928/f/2013/002/e/5/rubix_by_retsamys-d5q4qb6.gif")!, cloudinary: cloudinary)

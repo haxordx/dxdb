@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().videoSampling("10").delay("100").width(250).flags("awebp", "animated").crop("scale")).resourceType("video").generate("dog.webp");

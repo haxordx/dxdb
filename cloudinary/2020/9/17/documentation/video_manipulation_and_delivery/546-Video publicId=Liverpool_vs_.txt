@@ -1,0 +1,3 @@
+<Video publicId="Liverpool_vs_Roma_full" >
+  <Transformation duration="30" quality="70:qmax_20" />
+</Video>

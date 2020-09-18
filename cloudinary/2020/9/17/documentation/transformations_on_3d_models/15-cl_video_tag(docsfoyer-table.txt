@@ -1,0 +1,6 @@
+cl_video_tag("docs/foyer-table", array(
+"resource_type"=>"image",
+"transformation"=>array(
+  array("fetch_format"=>"mp4"),
+  array("background"=>"#d5d2ca", "height"=>300, "flags"=>"animated", "crop"=>"scale")
+));

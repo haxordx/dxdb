@@ -1,0 +1,10 @@
+<cld-image publicId="yellow_tulip.jpg" >
+  <cld-transformation width="220" height="140" crop="fill" />
+  <cld-transformation overlay="brown_sheep" width="220" height="140" x="220" crop="fill" />
+  <cld-transformation overlay="horses" width="220" height="140" y="140" x="-110" crop="fill" />
+  <cld-transformation overlay="white_chicken" width="220" height="140" y="70" x="110" crop="fill" />
+  <cld-transformation overlay="butterfly.png" height="200" x="-10" angle="10" />
+  <cld-transformation width="400" height="260" radius="20" crop="crop" />
+  <cld-transformation overlay={{fontFamily: "Parisienne", fontSize: 35, fontWeight: "bold", text: "Memories%20from%20our%20trip"}} color="#990C47" y="155" />
+  <cld-transformation effect="shadow" />
+</cld-image>

@@ -1,0 +1,3 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation()
+  .Width(500).Crop("scale").Chain()
+  .Overlay(new Layer().PublicId("cloudinary_icon")).Gravity("north_east").Opacity(50).Width(200).Effect("anti_removal:90")).BuildImageTag("flowers.jpg")

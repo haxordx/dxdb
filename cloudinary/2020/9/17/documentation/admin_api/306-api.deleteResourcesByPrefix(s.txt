@@ -1,0 +1,2 @@
+api.deleteResourcesByPrefix("sunday", 
+  ObjectUtils.emptyMap());

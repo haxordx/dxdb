@@ -1,0 +1,4 @@
+curl \
+  -d "access_mode=public&prefix=to-publish" \
+  -X POST \
+  https://<API_KEY>:<API_SECRET>@api.cloudinary.com/v1_1/<cloud_name>/resources/video/upload/update_access_mode

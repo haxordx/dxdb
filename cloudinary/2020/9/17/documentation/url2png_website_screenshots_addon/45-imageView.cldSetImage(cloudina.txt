@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setType( "url2png").setTransformation(CLDTransformation().setGravity("north").setHeight(200).setWidth(150).setCrop("fill")).generate("https://en.wikipedia.org/wiki/jpg", signUrl: true)!, cloudinary: cloudinary)

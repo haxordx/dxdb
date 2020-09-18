@@ -1,0 +1,1 @@
+cld admin metadata_field_by_field_id "in_stock"

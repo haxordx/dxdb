@@ -1,0 +1,3 @@
+<cl-image public-id="65646572251.jpg" type="facebook">
+
+</cl-image>

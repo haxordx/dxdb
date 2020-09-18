@@ -1,0 +1,4 @@
+\Cloudinary\Utils::download_zip_url(
+  array(
+    'public_ids' => array('dog', 'cat', 'lion'), 
+    'resource_type' => 'image'));

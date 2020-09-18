@@ -1,0 +1,3 @@
+<form action="uploaded.php" method="post">
+  <?php echo cl_image_upload_tag('image_id', array("callback" => $cors_location)); ?>
+</form>

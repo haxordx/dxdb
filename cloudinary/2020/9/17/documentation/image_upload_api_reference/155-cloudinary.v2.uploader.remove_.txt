@@ -1,0 +1,2 @@
+cloudinary.v2.uploader.remove_tag('animal', [ 'dog', 'lion' ],
+  function(error, result) { console.log(result, error) });

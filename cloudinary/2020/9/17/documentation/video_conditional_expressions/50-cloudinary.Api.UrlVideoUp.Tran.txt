@@ -1,0 +1,7 @@
+cloudinary.Api.UrlVideoUp.Transform(new Transformation()
+  .Width(500).Crop("scale").Chain()
+  .If("!cloudinary!_in_tags").Chain()
+  .Overlay(new Layer().PublicId("cloudinary_icon")).Width(100).Gravity("north_east").Opacity(50).Effect("brightness:100").Chain()
+  .Overlay(new TextLayer().FontFamily("arial").FontSize(15).Text("By%20Cloudinary")).Gravity("north_east").Y(10).X(105).Chain()
+  .If("end").Chain()
+  .Duration("5")).BuildVideoTag("snow_horses")

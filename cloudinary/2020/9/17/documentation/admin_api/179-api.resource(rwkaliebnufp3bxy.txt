@@ -1,0 +1,2 @@
+api.resource("rwkaliebnufp3bxyrvyo.txt",
+  ObjectUtils.asMap("resource_type", "raw"));

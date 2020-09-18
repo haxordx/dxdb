@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation().setOverlay("text:%24style:%20%20%24%28award%29%20%20Place%20").setGravity("south").setY(10).setBackground("gray").setRadius(10).setOpacity(75).setColor("$color")).generate("woman.jpg")!, cloudinary: cloudinary)

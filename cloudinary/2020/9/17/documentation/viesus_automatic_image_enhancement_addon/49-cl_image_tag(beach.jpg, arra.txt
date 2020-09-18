@@ -1,0 +1,1 @@
+cl_image_tag("beach.jpg", array("effect"=>"viesus_correct", "width"=>400, "crop"=>"scale"))

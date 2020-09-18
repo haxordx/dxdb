@@ -1,0 +1,1 @@
+$.cloudinary.url("sample.jpg", { width: 400, crop: "pad"})

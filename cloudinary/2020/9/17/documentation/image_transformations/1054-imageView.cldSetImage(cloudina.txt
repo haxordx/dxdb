@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation().setOverlay("text:impact_150:Your%20Brand%20Name%20or%20Logo%20Here").setEffect("distort:arc:-120").setColor("white").setGravity("south").setY(840).setOpacity(60)).generate("frisbee.jpg")!, cloudinary: cloudinary)

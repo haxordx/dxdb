@@ -1,0 +1,1 @@
+curl https://api.cloudinary.com/v1_1/demo/image/upload -X POST --data 'file=https://www.example.com/sample.jpg&responsive_breakpoint=[{"create_derived":true,"bytes_step":20000,"min_width":200,"max_width":1000}]&timestamp=173719931&api_key=436464676&signature=a788d68f86a6f868af'

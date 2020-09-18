@@ -1,0 +1,26 @@
+...
+
+// Get the timestamp and signature from your server-side code
+let ts = responseFromServer.timestamp;
+let sig = responseFromServer.signature;
+
+...
+// [...same code as in unsigned example...]
+
+  for (let i = 0; i < files.length; i++) {
+    let file = files[i];
+    formData.append("file", file);
+    formData.append("api_key", "123456789012345");
+    formData.append("timestamp", ts);
+    formData.append("signature", sig);
+    // Append any other optional parameters (remember these must also be included in your signature generation code)
+
+    fetch(url, {
+      method: "POST",
+      body: formData
+    })
+   ...
+  } 
+
+//etc...
+...

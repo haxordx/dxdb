@@ -1,0 +1,6 @@
+var myGallery = cloudinary.galleryWidget({ 
+  container: "#my-gallery", 
+  cloudName: "demo", 
+  mediaAssets: [{ tag: "bag" }],
+  imageBreakpoint: 200 });
+myGallery.render();

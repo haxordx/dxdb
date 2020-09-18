@@ -1,0 +1,4 @@
+CloudinaryImage("flowers.jpg").image(transformation=[
+  {'width': 500, 'crop': "scale"},
+  {'overlay': "cloudinary_icon", 'gravity': "north_east", 'opacity': 50, 'width': 200, 'effect': "anti_removal:90"}
+  ])

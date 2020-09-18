@@ -1,0 +1,4 @@
+cl_image_tag("docs/plain_face.jpg", array("transformation"=>array(
+  array("overlay"=>"golden_star", "gravity"=>"north_west", "width"=>20, "x"=>314, "y"=>148),
+  array("width"=>500, "crop"=>"scale")
+  )))

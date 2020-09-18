@@ -1,0 +1,3 @@
+<cl-image public-id="ice_skating.jpg" >
+
+</cl-image>

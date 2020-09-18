@@ -1,0 +1,2 @@
+var textParams = new TextParams("Hello World");
+var textResult = cloudinary.Text(textParams);

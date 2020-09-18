@@ -1,0 +1,1 @@
+cld admin transformation '{"width": 500, "height": 100, "crop": "fill"}'

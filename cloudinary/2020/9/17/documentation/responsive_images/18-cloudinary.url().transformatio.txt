@@ -1,0 +1,2 @@
+cloudinary.url().transformation(new Transformation().width("auto").dpr("auto").responsive("true"). 
+  crop("scale").responsive_placeholder("blank")).imageTag("woman.jpg");

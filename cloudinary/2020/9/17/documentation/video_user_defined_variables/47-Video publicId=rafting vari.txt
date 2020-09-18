@@ -1,0 +1,3 @@
+<Video publicId="rafting" variables={[["$qualtag", "!important!"], ["$delwidth", "450"]]}>
+  <Transformation transformation={["highqual-if-tagged"]} />
+</Video>

@@ -1,0 +1,1 @@
+CloudinaryVideo("folder-permissions-tutorial").video(overlay={'resource_type': "subtitles", 'public_id': "folder-permissions-tutorial.en-us.azure.transcript"})

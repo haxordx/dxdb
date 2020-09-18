@@ -1,0 +1,3 @@
+<Video publicId="dog" >
+  <Transformation effect="volume:50" />
+</Video>

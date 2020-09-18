@@ -1,0 +1,3 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation()
+  .setFetchFormat("gif").chain()
+  .setAspectRatio("1").setBackground("#a17ec5").setFlags("animated").setHeight(200).setCrop("fill")).generate("DamagedHelmet3D")!, cloudinary: cloudinary)

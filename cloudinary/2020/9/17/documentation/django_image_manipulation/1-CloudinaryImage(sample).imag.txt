@@ -1,0 +1,1 @@
+CloudinaryImage("sample").image()

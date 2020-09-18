@@ -1,0 +1,3 @@
+defaultBreakpoints = function(width) {  // width - the current width of the containing element
+  return 50 * Math.ceil(width / 50);
+};

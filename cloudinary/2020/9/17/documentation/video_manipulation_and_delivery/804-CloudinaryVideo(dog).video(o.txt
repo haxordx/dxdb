@@ -1,0 +1,1 @@
+CloudinaryVideo("dog").video(overlay="video:kitten_fighting", effect="fade:3000", width=100)

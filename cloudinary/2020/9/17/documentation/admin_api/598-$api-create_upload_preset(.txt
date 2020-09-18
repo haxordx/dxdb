@@ -1,0 +1,6 @@
+$api->create_upload_preset(
+  array(
+    "name" => "my_preset", 
+    "unsigned" => true, 
+    "tags" => "remote", 
+    "allowed_formats" => "jpg,png"));

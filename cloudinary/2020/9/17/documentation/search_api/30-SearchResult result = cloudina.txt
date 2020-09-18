@@ -1,0 +1,5 @@
+SearchResult result = cloudinary.Search()
+  .Expression("cat AND -tags:kitten")
+  .SortBy("public_id","desc")
+  .Aggregate("format")
+  .Execute();

@@ -1,0 +1,6 @@
+result = Cloudinary::Search
+  .expression('cat')
+  .with_field('context')
+  .with_field('tags')
+  .max_results(10)
+  .execute

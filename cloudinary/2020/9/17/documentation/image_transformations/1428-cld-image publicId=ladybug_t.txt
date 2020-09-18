@@ -1,0 +1,3 @@
+<cld-image publicId="ladybug_top.jpg" >
+  <cld-transformation overlay="lut:iwltbap_aspen.3dl" />
+</cld-image>

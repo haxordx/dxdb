@@ -1,0 +1,1 @@
+cl_image_tag("ladybug_top.jpg", :overlay=>"lut:iwltbap_aspen.3dl")

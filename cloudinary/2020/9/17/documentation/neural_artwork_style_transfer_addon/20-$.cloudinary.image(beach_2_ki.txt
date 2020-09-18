@@ -1,0 +1,4 @@
+$.cloudinary.image("beach_2_kids.jpg", {transformation: [
+  {height: 700, width: 700, crop: "fill"},
+  {effect: "style_transfer:preserve_color:40", overlay: new cloudinary.Layer().publicId("lighthouse")}
+  ]})

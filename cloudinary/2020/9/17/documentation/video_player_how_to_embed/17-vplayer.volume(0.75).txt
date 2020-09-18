@@ -1,0 +1,1 @@
+vplayer.volume(0.75)

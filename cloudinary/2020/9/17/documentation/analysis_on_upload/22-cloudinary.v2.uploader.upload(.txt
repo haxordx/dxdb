@@ -1,0 +1,3 @@
+cloudinary.v2.uploader.upload("user_photo.jpg",
+  { moderation: 'manual' },
+  function(error, result) { console.log(result, error); });

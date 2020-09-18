@@ -1,0 +1,10 @@
+$(document).ready(function() {
+  $('.cloudinary-fileupload').cloudinary_fileupload({
+    disableImageResize: false,
+    imageMaxWidth: 800,                   // 800 is an example value - no default
+    imageMaxHeight: 600,                  // 600 is an example value - no default
+    maxFileSize: 20000000,                // 20 MB is an example value - no default
+    loadImageMaxFileSize: 20000000,       // default is 10 MB
+    acceptFileTypes: /(\.|\/)(gif|jpe?g|png|bmp|ico)$/i
+  });
+});

@@ -1,0 +1,3 @@
+Cloudinary::Uploader.upload("windmill_day.jpg", 
+  :categorization => "google_tagging:en:fr:es", 
+  :auto_tagging => 0.6)

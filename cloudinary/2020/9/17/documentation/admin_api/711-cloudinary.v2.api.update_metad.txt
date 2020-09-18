@@ -1,0 +1,1 @@
+cloudinary.v2.api.update_metadata_field_datasource(external_id, entries, options, callback);

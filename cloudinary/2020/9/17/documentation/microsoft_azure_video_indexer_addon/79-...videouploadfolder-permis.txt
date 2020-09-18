@@ -1,0 +1,4 @@
+.../video/upload/folder-permissions-tutorial.mp4    // the source video
+.../raw/upload/folder-permissions-tutorial.en-us.azure.transcript
+.../raw/upload/folder-permissions-tutorial.en-us.azure.srt
+.../raw/upload/folder-permissions-tutorial.en-us.azure.vtt

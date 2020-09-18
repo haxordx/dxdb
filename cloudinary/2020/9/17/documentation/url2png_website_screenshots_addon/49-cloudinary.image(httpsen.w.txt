@@ -1,0 +1,5 @@
+cloudinary.image("https://en.wikipedia.org/wiki/jpg", {type: "url2png", transformation: [
+  {radius: 50, width: 400, height: 400, gravity: "north", border: "2px_solid_rgb:999", crop: "fill"},
+  {effect: "shadow:20", color: "#ccc"},
+  {angle: 30, color: "#ec9800", effect: "colorize", overlay: "url2png_logo"}
+  ]})

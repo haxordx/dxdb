@@ -1,0 +1,1 @@
+cloudinary.uploader().upload(Object file, Map options);

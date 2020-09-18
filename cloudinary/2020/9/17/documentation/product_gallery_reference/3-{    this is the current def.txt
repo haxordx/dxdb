@@ -1,0 +1,7 @@
+{   // this is the current default breakpoint
+  breakpoint: 520,
+  navigation: 'always',
+  carouselLocation: 'bottom',
+  thumbnailProps: {
+   selectedBorderPosition: 'bottom' }
+}

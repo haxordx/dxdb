@@ -1,0 +1,1 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation().Effect("viesus_correct")).BuildImageTag("beach.jpg")

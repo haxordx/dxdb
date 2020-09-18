@@ -1,0 +1,4 @@
+<Image publicId="docs/plain_face.jpg" >
+  <Transformation overlay="golden_star" gravity="north_west" width="20" x="314" y="148" />
+  <Transformation width="500" crop="scale" />
+</Image>

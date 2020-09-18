@@ -1,0 +1,3 @@
+<cld-image publicId="coffee_cup_st.jpg" signUrl="true">
+  <cld-transformation effect="style_transfer" overlay="davinci_mona_lisa" />
+</cld-image>

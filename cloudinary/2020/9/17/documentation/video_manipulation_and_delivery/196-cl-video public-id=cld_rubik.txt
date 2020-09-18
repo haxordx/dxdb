@@ -1,0 +1,4 @@
+<cl-video public-id="cld_rubiks_guy" >
+  <cl-transformation height="320" width="480" background="blurred:400:15" crop="pad">
+  </cl-transformation>
+</cl-video>

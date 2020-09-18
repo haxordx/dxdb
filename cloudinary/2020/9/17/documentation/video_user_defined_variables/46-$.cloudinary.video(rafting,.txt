@@ -1,0 +1,1 @@
+$.cloudinary.video("rafting", {transformation: ["highqual-if-tagged"], variables: [["$qualtag", "!important!"], ["$delwidth", "450"]]})

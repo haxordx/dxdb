@@ -1,0 +1,6 @@
+cl_image_tag("sample.jpg", array("transformation"=>array(
+  array("width"=>500, "crop"=>"scale"),
+  array("overlay"=>"cloudinary_icon", "width"=>150),
+  array("effect"=>"blackwhite"),
+  array("flags"=>"layer_apply", "gravity"=>"north_east")
+  )))

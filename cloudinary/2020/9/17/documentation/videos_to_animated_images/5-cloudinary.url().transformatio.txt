@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().videoSampling("40").delay("200").height(200).effect("loop").crop("scale")).resourceType("video").imageTag("cld_rubix.gif");

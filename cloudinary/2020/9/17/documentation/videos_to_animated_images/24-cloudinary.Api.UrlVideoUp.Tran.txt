@@ -1,0 +1,1 @@
+cloudinary.Api.UrlVideoUp.Transform(new Transformation().VideoSampling("1.1s").Delay("200").Width(200).Effect("loop:2").Crop("scale")).BuildImageTag("dog.gif")

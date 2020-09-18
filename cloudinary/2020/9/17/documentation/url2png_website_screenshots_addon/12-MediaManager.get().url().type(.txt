@@ -1,0 +1,1 @@
+MediaManager.get().url().type("url2png").generate("https://cnn.com");

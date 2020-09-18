@@ -1,0 +1,1 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation().Effect("tint:equalize:80:red:50p:blue:60p:yellow:40p")).BuildImageTag("greece_landscape.jpg")

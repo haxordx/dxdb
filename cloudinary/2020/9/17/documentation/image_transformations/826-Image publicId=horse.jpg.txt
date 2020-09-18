@@ -1,0 +1,3 @@
+<Image publicId="horse.jpg" >
+  <Transformation height="300" width="300" background="auto:predominant_gradient:4:palette_red_green_blue_orange" crop="pad" />
+</Image>

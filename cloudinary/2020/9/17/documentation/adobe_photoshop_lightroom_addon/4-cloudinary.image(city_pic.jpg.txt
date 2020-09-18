@@ -1,0 +1,1 @@
+cloudinary.image("city_pic.jpg", {effect: "lightroom:whitebalance_shade"})

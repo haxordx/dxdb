@@ -1,0 +1,1 @@
+MediaManager.get().url().format("webm").resourceType("video").generate("dog.mp4");

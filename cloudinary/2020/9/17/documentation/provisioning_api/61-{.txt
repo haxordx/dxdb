@@ -1,0 +1,12 @@
+{
+  "id": "7f08f1f1fc910bf1f25274aef11d27",
+  "name": "foobar",
+  "role": "master_admin",
+  "email": "email@domain.com",
+  "pending": true,
+  "enabled": true,
+  "created_at": "2019-09-12T11:53:57Z",
+  "all_sub_accounts": false,
+  "groups": [],
+  "sub_account_ids": "555asdf0000zxcvb3456qwerty"
+}

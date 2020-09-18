@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().width(115).height(135).gravity("faces").crop("thumb")).imageTag("couple.jpg");

@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().height(300).width(300).crop("fill")).signed(true).type("authenticated").imageTag("secret_couple.jpg");

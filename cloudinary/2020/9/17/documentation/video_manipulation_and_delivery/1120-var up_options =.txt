@@ -1,0 +1,6 @@
+var up_options = 
+  {resource_type: "video", type: "upload",
+   eager: [
+    { streaming_profile: "hd", format: "m3u8" }, 
+   ] };
+cloudinary.v2.uploader.explicit("bb_bunny", up_options, function(result) {console.log(result); } );

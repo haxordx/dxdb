@@ -1,0 +1,1 @@
+$.cloudinary.image("https://cnn.com", {gravity: "north", height: 200, width: 150, crop: "fill", type: "url2png"})

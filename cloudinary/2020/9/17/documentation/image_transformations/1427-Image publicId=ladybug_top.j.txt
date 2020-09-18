@@ -1,0 +1,3 @@
+<Image publicId="ladybug_top.jpg" >
+  <Transformation overlay="lut:iwltbap_aspen.3dl" />
+</Image>

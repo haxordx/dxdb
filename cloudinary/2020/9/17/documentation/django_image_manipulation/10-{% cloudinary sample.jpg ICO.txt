@@ -1,0 +1,1 @@
+{% cloudinary "sample.jpg" ICON_EFFECTS %}

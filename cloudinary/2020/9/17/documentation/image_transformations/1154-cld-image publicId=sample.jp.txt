@@ -1,0 +1,3 @@
+<cld-image publicId="sample.jpg" >
+  <cld-transformation overlay={{url: "http://cloudinary.com/images/old_logo.png7"}} />
+</cld-image>

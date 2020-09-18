@@ -1,0 +1,1 @@
+cloudinary.image("cld_rubix.gif", {video_sampling: "40", delay: "200", height: 200, effect: "loop", crop: "scale", resource_type: "video"})

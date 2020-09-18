@@ -1,0 +1,4 @@
+<cl-image public-id="coffee_cup_st.jpg" sign-url="true">
+  <cl-transformation effect="style_transfer" overlay="davinci_mona_lisa">
+  </cl-transformation>
+</cl-image>

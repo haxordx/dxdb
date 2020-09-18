@@ -1,0 +1,18 @@
+<cl-image public-id="yellow_tulip.jpg" >
+  <cl-transformation width="220" height="140" crop="fill">
+  </cl-transformation>
+  <cl-transformation overlay="brown_sheep" width="220" height="140" x="220" crop="fill">
+  </cl-transformation>
+  <cl-transformation overlay="horses" width="220" height="140" y="140" x="-110" crop="fill">
+  </cl-transformation>
+  <cl-transformation overlay="white_chicken" width="220" height="140" y="70" x="110" crop="fill">
+  </cl-transformation>
+  <cl-transformation overlay="butterfly.png" height="200" x="-10" angle="10">
+  </cl-transformation>
+  <cl-transformation width="400" height="260" radius="20" crop="crop">
+  </cl-transformation>
+  <cl-transformation overlay="text:Parisienne_35_bold:Memories%20from%20our%20trip" color="#990C47" y="155">
+  </cl-transformation>
+  <cl-transformation effect="shadow">
+  </cl-transformation>
+</cl-image>

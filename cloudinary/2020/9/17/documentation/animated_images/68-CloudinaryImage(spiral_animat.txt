@@ -1,0 +1,1 @@
+CloudinaryImage("spiral_animated.gif").image(effect="loop:2")

@@ -1,0 +1,6 @@
+//  pass a closure using the response method 
+let request = cloudinary.createUploader().upload(
+    url: fileUrl, uploadPreset: "samplePreset")
+  .response( { response, error in
+      // Handle response
+  } )

@@ -1,0 +1,9 @@
+cl_image_tag("sample.jpg", array("transformation"=>array(
+  array("width"=>500, "crop"=>"scale"),
+  array("effect"=>"brightness:70"),
+  array("overlay"=>"woman", "gravity"=>"face", "crop"=>"crop"),
+  array("width"=>150, "crop"=>"scale"),
+  array("effect"=>"saturation:50"),
+  array("effect"=>"shadow"),
+  array("flags"=>"layer_apply")
+  )))

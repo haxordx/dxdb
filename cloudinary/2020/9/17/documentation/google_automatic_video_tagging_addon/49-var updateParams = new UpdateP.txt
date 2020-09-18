@@ -1,0 +1,7 @@
+var updateParams = new UpdateParams("sample") 
+{
+  Categorization = "google_video_tagging",
+  ResourceType = "video",
+  AutoTagging = 0.6
+};
+var updateResult = cloudinary.UpdateResource(updateParams);

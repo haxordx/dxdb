@@ -1,0 +1,1 @@
+cloudinary.createUrl().setResourceType("video").setTransformation(CLDTransformation().setEffect("preview:duration_5")).generate("elephants.mp4")

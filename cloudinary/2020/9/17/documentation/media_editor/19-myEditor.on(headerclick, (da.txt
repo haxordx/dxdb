@@ -1,0 +1,3 @@
+myEditor.on("headerclick", (data) => {
+  console.log("HeaderClick: ", data);
+});

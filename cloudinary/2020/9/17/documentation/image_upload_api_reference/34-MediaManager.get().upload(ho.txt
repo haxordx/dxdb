@@ -1,0 +1,6 @@
+MediaManager.get().upload("/home/sample.jpg")
+  .option("responsive_breakpoints", new ResponsiveBreakpoint()
+       .createDerived("true")
+       .bytesStep(20000)
+       .minWidth(200)
+       .maxWidth(1000)).dispatch();

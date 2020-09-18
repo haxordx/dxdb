@@ -1,0 +1,1 @@
+cloudinary.video("ski_jump", {effect: "loop:2"})

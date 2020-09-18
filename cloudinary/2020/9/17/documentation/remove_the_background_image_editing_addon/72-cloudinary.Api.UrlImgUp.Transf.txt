@@ -1,0 +1,3 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation()
+  .Width(200).Height(200).Angle("hflip").Crop("fit").Chain()
+  .Overlay(new Layer().PublicId("cloudinary_icon")).Width(0.4).Flags("relative").Gravity("north").X(15).Y(35).Angle(4).Effect("brightness:200").Opacity(70)).BuildImageTag("wood_chair.jpg")

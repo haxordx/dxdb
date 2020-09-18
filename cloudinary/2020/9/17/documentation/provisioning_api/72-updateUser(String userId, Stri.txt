@@ -1,0 +1,1 @@
+updateUser(String userId, String name, String email, String role, List<String> subAccountsIds, Map options);

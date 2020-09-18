@@ -1,0 +1,1 @@
+cloudinary.v2.uploader.create_zip(options, callback);

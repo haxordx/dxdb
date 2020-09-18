@@ -1,0 +1,4 @@
+<cl-image public-id="sample.jpg" >
+  <cl-transformation opacity="30">
+  </cl-transformation>
+</cl-image>

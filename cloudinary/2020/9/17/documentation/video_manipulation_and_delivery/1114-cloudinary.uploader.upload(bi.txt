@@ -1,0 +1,12 @@
+cloudinary.uploader.upload("big_buck_bunny.mp4", 
+            resource_type = "video",
+            eager = [
+              {"format": "m3u8", 
+              "transformation": [
+                {"crop":"crop", aspect_ratio:"16:9"}
+                {"streaming_profile": "hd"},
+                {"overlay": "logowatermark", ":"width": 100}]
+               }],
+            eager_async = true,
+            eager_notification_url = "https://mysite.example.com/notify_endpoint",
+            public_id = "bb_bunny")

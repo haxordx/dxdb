@@ -1,0 +1,111 @@
+{
+  "input": {
+    "width": 640,
+    "height": 426,
+    "bytes": 49727
+  },
+  "landmarks": [
+    [
+      {
+        "face_center": {
+          "x": 402,
+          "y": 218
+        },
+        "l_canthus_r_eye": {
+          "x": 371,
+          "y": 176
+        },
+        "r_canthus_l_eye": {
+          "x": 421,
+          "y": 177
+        },
+        "mouth_r": {
+          "x": 365,
+          "y": 254
+        },
+        "mouth_l": {
+          "x": 425,
+          "y": 256
+        },
+        "r_canthus_r_eye": {
+          "x": 333,
+          "y": 170
+        },
+        "l_canthus_l_eye": {
+          "x": 457,
+          "y": 174
+        },
+        "nose_tip": {
+          "x": 399,
+          "y": 224
+        },
+        "l_eyebrow_l": {
+          "x": 465,
+          "y": 151
+        },
+        "l_eyebrow_c": {
+          "x": 444,
+          "y": 151
+        },
+        "l_eyebrow_r": {
+          "x": 418,
+          "y": 158
+        },
+        "r_eyebrow_l": {
+          "x": 376,
+          "y": 158
+        },
+        "r_eyebrow_c": {
+          "x": 350,
+          "y": 151
+        },
+        "r_eyebrow_r": {
+          "x": 324,
+          "y": 158
+        },
+        "nose_root": {
+          "x": 397,
+          "y": 172
+        },
+        "nose_l": {
+          "x": 413,
+          "y": 220
+        },
+        "nose_r": {
+          "x": 376,
+          "y": 220
+        },
+        "mouth_t": {
+          "x": 397,
+          "y": 247
+        },
+        "mouth_b": {
+          "x": 397,
+          "y": 268
+        },
+        "chin": {
+          "x": 392,
+          "y": 302
+        },
+        "forehead_apex": {
+          "x": 400,
+          "y": 100
+        }
+      }
+    ]
+  ],
+  "resize": [
+    {
+      "x": 140,
+      "y": 34,
+      "width": 500,
+      "height": 333
+    }
+  ],
+  "output": {
+    "format": "jpg",
+    "bytes": 49255,
+    "width": 500,
+    "height": 333
+  }
+}

@@ -1,0 +1,6 @@
+<cld-image 
+  public-id="sample">
+  <cld-placeholder 
+    type="pixelate">
+  </cld-placeholder>
+</cld-image>

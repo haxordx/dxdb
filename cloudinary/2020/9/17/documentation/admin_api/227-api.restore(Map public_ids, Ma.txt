@@ -1,0 +1,1 @@
+api.restore(Map public_ids, Map options);

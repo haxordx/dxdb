@@ -1,0 +1,15 @@
+{
+  "moderation_response": "approved",
+  "moderation_status": "approved",
+  "moderation_kind": "webpurify",
+  "moderation_updated_at": "2014-03-02T09:33:43Z",
+  "public_id": "l8yvniicjhmyxuuqqyqy",
+  "uploaded_at": "2014-03-02T09:33:42Z",
+  "version": 1571216958,
+  "url": 
+    "http://res.cloudinary.com/demo/image/upload/v1571216958/l8yvniicjhmyxuuqqyqy.jpg",
+  "secure_url": 
+    "https://res.cloudinary.com/demo/image/upload/v1571216958/l8yvniicjhmyxuuqqyqy.jpg",
+  "etag": "83340520d28b704ca4f4b019effb33dc",
+  "notification_type": "moderation" 
+}

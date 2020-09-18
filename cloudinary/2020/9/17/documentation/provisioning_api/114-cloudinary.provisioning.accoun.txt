@@ -1,0 +1,3 @@
+cloudinary.provisioning.account.create_user_group("Designers)
+  .then((response) => { console.log(response); })
+  .catch((err) => { console.log(err); });

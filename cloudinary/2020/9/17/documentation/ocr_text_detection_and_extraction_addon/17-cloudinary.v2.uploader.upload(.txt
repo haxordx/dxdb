@@ -1,0 +1,3 @@
+cloudinary.v2.uploader.upload("concert_ticket.jpg", 
+  { ocr: "adv_ocr" },
+  function(error, result) {console.log(result); });

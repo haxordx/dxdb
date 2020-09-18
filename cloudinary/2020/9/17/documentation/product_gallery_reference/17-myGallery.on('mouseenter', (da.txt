@@ -1,0 +1,3 @@
+myGallery.on('mouseenter', (data) => {
+  console.log('MouseEnter', data);
+});

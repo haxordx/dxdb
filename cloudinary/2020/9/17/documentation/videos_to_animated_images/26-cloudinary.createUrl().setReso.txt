@@ -1,0 +1,1 @@
+cloudinary.createUrl().setResourceType("video").setTransformation(CLDTransformation().setVideoSampling("1.1s").setDelay("200").setWidth(200).setEffect("loop:2").setCrop("scale")).generate("dog.gif")

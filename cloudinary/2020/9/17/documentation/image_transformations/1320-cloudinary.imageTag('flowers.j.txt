@@ -1,0 +1,4 @@
+cloudinary.imageTag('flowers.jpg', {transformation: [
+  {width: 500, crop: "scale"},
+  {overlay: new cloudinary.TextLayer().fontFamily("Verdana").fontSize(75).fontWeight("bold").textDecoration("underline").letterSpacing(14).text("Flowers")}
+  ]}).toHtml();

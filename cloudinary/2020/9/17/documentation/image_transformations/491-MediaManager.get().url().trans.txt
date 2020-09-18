@@ -1,0 +1,4 @@
+MediaManager.get().url().transformation(new Transformation()
+  .width(100).height(100).gravity("face").radius("max").crop("thumb").chain()
+  .overlay(new Layer().publicId("cloudinary_icon")).effect("brightness:200").flags("relative").width(0.5).opacity(60).chain()
+  .dpr(2.0)).generate("lady.jpg");

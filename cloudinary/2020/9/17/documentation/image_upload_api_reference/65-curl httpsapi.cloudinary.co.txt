@@ -1,0 +1,1 @@
+curl https://api.cloudinary.com/v1_1/demo/image/rename -X POST --data 'from_public_id=canyon&to_public_id=grand_canyon&timestamp=173719931&api_key=436464676&signature=a788d68f86a6f868af'

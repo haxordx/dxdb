@@ -1,0 +1,1 @@
+cloudinary.imageTag('pi.png', {width: 250, height: 150, radius: "max", crop: "fill"}).toHtml();

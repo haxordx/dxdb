@@ -1,0 +1,1 @@
+String requestId = MediaManager.get().upload("imageFile.jpg").dispatch();

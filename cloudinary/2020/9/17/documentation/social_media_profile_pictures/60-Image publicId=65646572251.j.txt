@@ -1,0 +1,3 @@
+<Image publicId="65646572251.jpg" type="facebook">
+  <Transformation width="80" height="120" gravity="face" crop="fill" />
+</Image>

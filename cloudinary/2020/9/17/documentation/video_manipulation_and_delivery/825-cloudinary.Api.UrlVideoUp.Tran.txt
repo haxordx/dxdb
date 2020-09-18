@@ -1,0 +1,4 @@
+cloudinary.Api.UrlVideoUp.Transform(new Transformation()
+  .Effect("blur:500").Chain()
+  .Overlay(new Layer().PublicId("video:dog")).Width(600).Chain()
+  .Width(500).Crop("scale")).BuildVideoTag("dog")

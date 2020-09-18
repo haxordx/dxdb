@@ -1,0 +1,2 @@
+api.resources(
+  ObjectUtils.asMap("type", "upload", "max_results", 30));

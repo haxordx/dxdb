@@ -1,0 +1,3 @@
+cloudinary.url().transformation(new Transformation()
+  .width(500).crop("scale").chain()
+  .overlay(new TextLayer().fontFamily("Times").fontSize(60).text("Cool%20image")).gravity("south").y(20)).imageTag("flowers.jpg");

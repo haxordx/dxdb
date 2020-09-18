@@ -1,0 +1,1 @@
+GET https://api.cloudinary.com/v1_1/demo/resources/video

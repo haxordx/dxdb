@@ -1,0 +1,4 @@
+cl_image_tag("sample.jpg", array(
+  "custom_function" => array(
+    "function_type" => "wasm", 
+    "source" => "my_example.wasm")))

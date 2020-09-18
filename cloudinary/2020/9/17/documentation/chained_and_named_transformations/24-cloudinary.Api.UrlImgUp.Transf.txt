@@ -1,0 +1,5 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation()
+  .Height(100).Width(150).X(380).Y(250).Crop("crop").Chain()
+  .Height(100).Width(130).Crop("fill").Chain()
+  .Angle(20).Chain()
+  .Width(0.8).Crop("scale")).Secure(true).BuildImageTag("flower.jpg")

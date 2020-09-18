@@ -1,0 +1,4 @@
+<cl-image public-id="kitten_fighting.gif" >
+  <cl-transformation width="200" height="200" radius="max" crop="crop">
+  </cl-transformation>
+</cl-image>

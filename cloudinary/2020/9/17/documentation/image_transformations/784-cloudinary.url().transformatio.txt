@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().width(300).height(300).background("green").crop("pad")).imageTag("sample.jpg");

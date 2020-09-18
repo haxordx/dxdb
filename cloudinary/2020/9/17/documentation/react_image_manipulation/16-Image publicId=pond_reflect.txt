@@ -1,0 +1,3 @@
+<Image publicId="pond_reflect.jpg" >
+  <Transformation quality="auto" fetchFormat="auto" />
+</Image>

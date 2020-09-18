@@ -1,0 +1,1 @@
+cl_video_tag("dog", :width=>500, :effect=>"vignette:50", :crop=>"scale")

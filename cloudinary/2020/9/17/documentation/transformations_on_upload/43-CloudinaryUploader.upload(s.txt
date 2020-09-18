@@ -1,0 +1,2 @@
+Cloudinary::Uploader.upload("sample.jpg", 
+  :width => 2000, :height => 1000, :crop => :limit)

@@ -1,0 +1,4 @@
+cloudinary.v2.uploader.upload("turtle.mp4", 
+  { resource_type: "video", 
+    categorization: "google_video_tagging" },
+  function(error, result) {console.log(result, error) });

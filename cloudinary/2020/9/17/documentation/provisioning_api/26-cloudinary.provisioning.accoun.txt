@@ -1,0 +1,3 @@
+cloudinary.provisioning.account.create_sub_account("demo account", null, null, false)
+  .then((response) => { console.log(response); })
+  .catch((err) => { console.log(err); });

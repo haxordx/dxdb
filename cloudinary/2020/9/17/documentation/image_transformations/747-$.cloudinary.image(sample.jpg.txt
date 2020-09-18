@@ -1,0 +1,1 @@
+$.cloudinary.image("sample.jpg", {overlay: new cloudinary.Layer().publicId("cloudinary_icon"), width: 300, gravity: "north_east", opacity: 60})

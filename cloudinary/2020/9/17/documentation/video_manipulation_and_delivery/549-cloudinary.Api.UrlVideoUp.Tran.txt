@@ -1,0 +1,1 @@
+cloudinary.Api.UrlVideoUp.Transform(new Transformation().Duration("30").Quality("70:qmax_20")).BuildVideoTag("Liverpool_vs_Roma_full")

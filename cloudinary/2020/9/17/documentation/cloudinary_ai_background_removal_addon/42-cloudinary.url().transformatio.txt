@@ -1,0 +1,3 @@
+cloudinary.url().transformation(new Transformation()
+  .height(375).crop("scale").chain()
+  .underlay(new Layer().publicId("docs:bg_beach")).gravity("south").width(800)).imageTag("docs/rmv_bgd/woman.png");

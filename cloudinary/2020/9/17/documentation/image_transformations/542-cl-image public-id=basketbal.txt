@@ -1,0 +1,4 @@
+<cl-image public-id="basketball_in_net.jpg" >
+  <cl-transformation width="200" height="300" gravity="auto" crop="fill">
+  </cl-transformation>
+</cl-image>

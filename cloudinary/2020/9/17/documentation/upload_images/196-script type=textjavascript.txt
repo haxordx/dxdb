@@ -1,0 +1,4 @@
+<script type="text/javascript">  
+  cloudinary.openUploadWidget({ cloud_name: 'demo', upload_preset: 'a5vxnzbp'}, 
+    function(error, result) { console.log(error, result) });
+</script>

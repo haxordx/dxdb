@@ -1,0 +1,1 @@
+cloudinary.Api.UrlVideoUp.Transform(new Transformation().Height(300).Width(300).Crop("fill")).Signed(true).Action("authenticated").BuildVideoTag("dog")

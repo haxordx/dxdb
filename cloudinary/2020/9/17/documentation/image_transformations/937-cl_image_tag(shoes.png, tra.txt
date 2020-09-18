@@ -1,0 +1,6 @@
+cl_image_tag("shoes.png", :transformation=>[
+  {:width=>200, :crop=>"scale"},
+  {:effect=>"outline:20:200", :color=>"red"},
+  {:effect=>"outline:15:200", :color=>"orange"},
+  {:effect=>"outline:10:200", :color=>"yellow"}
+  ])

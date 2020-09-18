@@ -1,0 +1,8 @@
+let url = cloudinary.createUrl()
+  .setTransformation(CLDTransformation()
+    .setEffect("cartoonify").chain()
+    .setRadius("max").chain()
+    .setEffect("outline:100").setColor("lightblue").chain()
+    .setBackground("lightblue").chain()
+    .setHeight(300).setCrop("scale"))
+  .generate("actor.jpg")

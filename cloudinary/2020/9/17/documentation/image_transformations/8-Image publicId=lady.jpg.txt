@@ -1,0 +1,4 @@
+<Image publicId="lady.jpg" >
+  <Transformation width="400" height="400" gravity="face" radius="max" crop="crop" />
+  <Transformation width="200" crop="scale" />
+</Image>

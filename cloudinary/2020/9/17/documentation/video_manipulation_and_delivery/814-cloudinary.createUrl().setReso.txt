@@ -1,0 +1,1 @@
+cloudinary.createUrl().setResourceType("video").setTransformation(CLDTransformation().setOverlay("video:kitten_fighting").setEffect("fade:3000").setWidth(100)).generate("dog.mp4")

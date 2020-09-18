@@ -1,0 +1,6 @@
+cloudinary.imageTag('butterfly', {variables: [["$img", "current"], ["$height", "ih"]], transformation: [
+  {if: "w_lt_800"},
+  {effect: "blur:800", underlay: new cloudinary.Layer().publicId("%24img"), width: 800, height: "$height", crop: "scale"},
+  {effect: "brightness:40", flags: "layer_apply"},
+  {if: "end"}
+  ]}).toHtml();

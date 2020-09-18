@@ -1,0 +1,1 @@
+cl_video_tag("lincoln", :overlay=>{:font_family=>"impact", :font_size=>15, :resource_type=>"subtitles", :public_id=>"lincoln.transcript"}, :color=>"khaki", :background=>"#331a00", :gravity=>"south_west")

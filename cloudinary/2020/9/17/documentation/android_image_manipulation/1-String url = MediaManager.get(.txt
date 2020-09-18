@@ -1,0 +1,1 @@
+String url = MediaManager.get().url().generate("sample.jpg")

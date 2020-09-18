@@ -1,0 +1,3 @@
+<cld-image publicId="sunset_shoes.jpg" >
+  <cld-transformation if="ctx:!productType!_eq_!shoes!" width="200" aspectRatio="1:1" gravity="auto" crop="fill" />
+</cld-image>

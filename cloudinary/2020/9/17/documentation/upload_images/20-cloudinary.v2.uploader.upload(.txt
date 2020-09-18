@@ -1,0 +1,3 @@
+cloudinary.v2.uploader.upload("sample.jpg", 
+  { public_id: "sample_id" }, 
+  function(error, result) {console.log(result, error); });

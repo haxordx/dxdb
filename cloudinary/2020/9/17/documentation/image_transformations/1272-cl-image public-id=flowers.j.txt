@@ -1,0 +1,6 @@
+<cl-image public-id="flowers.jpg" >
+  <cl-transformation width="500" crop="scale">
+  </cl-transformation>
+  <cl-transformation overlay="cloudinary_icon" gravity="north_east" opacity="50" width="200" effect="anti_removal:90">
+  </cl-transformation>
+</cl-image>

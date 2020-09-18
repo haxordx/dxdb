@@ -1,0 +1,4 @@
+myEditor.update({ 
+  cloudName: "demo",    
+  publicIds: ["sample"],
+});

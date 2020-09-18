@@ -1,0 +1,4 @@
+cl_image_tag("docs/rmv_bgd/router.png", array("transformation"=>array(
+  array("height"=>105, "crop"=>"scale"),
+  array("effect"=>"shadow:50", "x"=>10, "y"=>10)
+  )))

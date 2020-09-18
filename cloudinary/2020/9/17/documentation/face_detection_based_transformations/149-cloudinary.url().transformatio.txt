@@ -1,0 +1,3 @@
+cloudinary.url().transformation(new Transformation()
+  .overlay(new Layer().publicId("golden_star")).gravity("north_west").width(20).x(314).y(148).chain()
+  .width(500).crop("scale")).imageTag("docs/plain_face.jpg");

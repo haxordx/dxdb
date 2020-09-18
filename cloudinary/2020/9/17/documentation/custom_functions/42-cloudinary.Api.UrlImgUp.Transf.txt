@@ -1,0 +1,4 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation()
+    .Signed(true)
+    .customPreFunction(CustomFunction.Remote("https://my.preprocess.custom/function")))
+  .BuildImageTag("sample.jpg")

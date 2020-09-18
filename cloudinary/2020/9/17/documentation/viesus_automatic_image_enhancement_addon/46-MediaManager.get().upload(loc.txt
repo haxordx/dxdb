@@ -1,0 +1,4 @@
+MediaManager.get().upload("local_file.jpg")
+  .option("public_id", "beach")
+  .option("eager", Arrays.asList(
+      new Transformation().effect("viesus_correct").crop("scale").width(400))).dispatch();

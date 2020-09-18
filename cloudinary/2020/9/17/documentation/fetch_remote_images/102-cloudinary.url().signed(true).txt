@@ -1,0 +1,1 @@
+cloudinary.url().signed(true).imageTag("remote_media/commons/a/ae/Olympic_flag.jpg");

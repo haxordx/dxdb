@@ -1,0 +1,4 @@
+cloudinary.uploader().upload("abt_cloudinary_french.mp4", 
+  ObjectUtils.asMap(
+    "resource_type", "video", 
+    "raw_convert", "google_speech:fr-CA"));

@@ -1,0 +1,3 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation()
+  .setIf("!sale:in_stock!_in_tags").setOverlay("sale_icon").setWidth(180).setGravity("south_east").setX(30).setY(30).chain()
+  .setWidth(250).setCrop("scale")).generate("backpack.jpg")!, cloudinary: cloudinary)

@@ -1,0 +1,19 @@
+// Setting video sources:
+var source1 = { publicId: 'movie1', info: { title: 'My main movie', 
+   subtitle: 'Something to know about the main movie' } }
+var source2 = { publicId: 'movie2', info: { title: 'Another great video', 
+   subtitle: 'A great subtitle', 
+   description: 'An interesting description of this video....' } }
+var source3 = { publicId: 'movie3', info: { title: 'Another interesting video1', 
+   subtitle: 'Subtitle for video3', description: 'An interesting description of this video....' } }
+var source4 = { publicId: 'movie4', info: { title: 'Another interesting video2', 
+   subtitle: 'Subtitle for video4', description: 'An interesting description of this video....' } }
+var source5 = { publicId: 'movie5', info: { title: 'Another interesting video3', 
+   subtitle: 'Subtitle for video5', description: 'An interesting description of this video....' } }
+
+// Specifying the recommendations for source1 as a fixed array of sources:
+source1.recommendations = [source2, source3, source4, source5]
+
+// Initializing the player with recommendations turned on
+var player = cld.videoPlayer('example-player', { autoShowRecommendations: true });
+player.source(source1);

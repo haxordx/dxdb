@@ -1,0 +1,4 @@
+<Video publicId="docs/foyer-table" resourceType="image">
+  <Transformation fetchFormat="mp4" />
+  <Transformation background="#d5d2ca" height="300" flags="animated" crop="scale" />
+</Video>

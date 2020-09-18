@@ -1,0 +1,8 @@
+:
+
+api.updateStreamingProfile("custom_square", null,
+  Arrays.asList(
+    new Transformation().crop("limit").width(1200).height(1200).bit_rate("5m"),
+    new Transformation().crop("limit").width(900).height(900).bit_rate("3500k"),
+    new Transformation().crop("limit").width(600).height(600).bit_rate("1500k"),
+    new Transformation().crop("limit").width(320).height(320).bit_rate("192k")));

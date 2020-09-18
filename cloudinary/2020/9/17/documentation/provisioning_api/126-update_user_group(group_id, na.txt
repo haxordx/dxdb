@@ -1,0 +1,1 @@
+update_user_group(group_id, name, **options)

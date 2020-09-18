@@ -1,0 +1,6 @@
+cl_image_tag("flower.jpg", array("secure"=>true, "transformation"=>array(
+  array("height"=>100, "width"=>150, "x"=>380, "y"=>250, "crop"=>"crop"),
+  array("height"=>100, "width"=>130, "crop"=>"fill"),
+  array("angle"=>20),
+  array("width"=>"0.8", "crop"=>"scale")
+  )))

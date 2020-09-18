@@ -1,0 +1,14 @@
+Map config = new HashMap();
+config.put("cloud_name", "myCloudName");
+MediaManager.init(this, new SignatureProvider(){
+  @Override
+  public Signature provideSignature(Map options) {
+    // replace the following with a function that calls your backend signature generation endpoint
+    SignResult res = signUpload(options);  // example name of a function that implements a synchronous HTTPS call
+    return new Signature(res.getSignature(), res.getApiKey(), res.getTimestamp());
+  }
+  @Override
+  public String getName() {
+    return "SampleSignatureProvider"; // for logging purposes
+  }
+}, config);

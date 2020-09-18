@@ -1,0 +1,7 @@
+{
+  "x": 0.8, 
+  "y": 0.8, 
+  "width": 300, 
+  "height": 300, 
+  "gravity": "north_west"
+}

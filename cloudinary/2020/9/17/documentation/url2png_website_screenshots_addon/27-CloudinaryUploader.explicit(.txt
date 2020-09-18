@@ -1,0 +1,2 @@
+Cloudinary::Uploader.explicit("https://en.wikipedia.org/wiki/Jpg", 
+  :type => "url2png")

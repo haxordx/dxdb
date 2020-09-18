@@ -1,0 +1,3 @@
+<cl-image public-id="kitten_fighting.gif" >
+
+</cl-image>

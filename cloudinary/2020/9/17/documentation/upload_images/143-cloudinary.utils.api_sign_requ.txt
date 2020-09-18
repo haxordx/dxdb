@@ -1,0 +1,2 @@
+cloudinary.utils.api_sign_request(
+  dict(public_id: "sample", version: "1312461204"), "my_api_secret")

@@ -1,0 +1,5 @@
+<Video publicId="docs/kitten_fighting2" variables={[["$qualtag", "!Pro!"]]}>
+  <Transformation if="$qualtag_in_tags" quality="80" />
+  <Transformation if="else" quality="30" />
+  <Transformation width="500" crop="scale" />
+</Video>

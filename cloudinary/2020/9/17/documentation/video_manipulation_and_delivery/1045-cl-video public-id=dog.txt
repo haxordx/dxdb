@@ -1,0 +1,4 @@
+<cl-video public-id="dog" >
+  <cl-transformation overlay="subtitles:arial_70:sample_sub_en.srt" color="#ffff00" background="black">
+  </cl-transformation>
+</cl-video>

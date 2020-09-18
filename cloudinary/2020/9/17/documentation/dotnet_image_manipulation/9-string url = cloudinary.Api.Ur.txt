@@ -1,0 +1,5 @@
+string url = cloudinary.Api.UrlImgUp.Transform(
+    new Transformation().Width(100).Height(150).Crop("fill"))
+    .BuildUrl("sample.jpg");
+
+// Result: "https://res.cloudinary.com/demo/image/upload/c_fill,h_150,w_100/sample.jpg"

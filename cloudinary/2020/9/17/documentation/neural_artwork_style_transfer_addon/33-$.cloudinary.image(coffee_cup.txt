@@ -1,0 +1,1 @@
+$.cloudinary.image("coffee_cup_st.jpg", {effect: "style_transfer", overlay: new cloudinary.Layer().publicId("davinci_mona_lisa")})

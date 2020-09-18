@@ -1,0 +1,2 @@
+$api->create_upload_mapping("my_map",
+  array("template" => "https://www.example.com/images/"));

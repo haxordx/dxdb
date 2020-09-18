@@ -1,0 +1,1 @@
+cloudinary.imageTag('rolling_stones.jpg').toHtml();

@@ -1,0 +1,1 @@
+cloudinary.Api.UrlVideoUp.Transform(new Transformation().Height(320).Width(480).Background("blurred:400:15").Crop("pad")).BuildVideoTag("cld_rubiks_guy")

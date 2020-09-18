@@ -1,0 +1,4 @@
+<%@taglib uri="https://cloudinary.com/jsp/taglib" prefix="cl" %>
+...
+<cl:jsinclude/>
+<cl:jsconfig/>

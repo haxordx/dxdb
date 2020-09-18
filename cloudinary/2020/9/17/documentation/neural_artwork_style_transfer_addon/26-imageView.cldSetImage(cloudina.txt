@@ -1,0 +1,3 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation()
+  .setHeight(700).setWidth(700).setCrop("fill").chain()
+  .setEffect("style_transfer:preserve_color:40").setOverlay("lighthouse")).generate("beach_2_kids.jpg")!, cloudinary: cloudinary)

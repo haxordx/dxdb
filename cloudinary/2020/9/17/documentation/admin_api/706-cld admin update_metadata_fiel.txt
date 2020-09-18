@@ -1,0 +1,1 @@
+cld admin update_metadata_field 'in_stock' '{"label": "Now in stock", "mandatory": true}'

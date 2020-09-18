@@ -1,0 +1,1 @@
+\Cloudinary\Uploader::upload("my_image.jpg")

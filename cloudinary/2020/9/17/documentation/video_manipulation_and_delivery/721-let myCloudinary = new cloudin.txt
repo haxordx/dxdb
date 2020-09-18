@@ -1,0 +1,1 @@
+let myCloudinary = new cloudinary.Cloudinary({cloud_name: 'demo'});

@@ -1,0 +1,3 @@
+cloudinary.url().transformation(new Transformation()
+.format("gltz").chain()
+.flags("draco")).imageTag("docs/foyer-table");

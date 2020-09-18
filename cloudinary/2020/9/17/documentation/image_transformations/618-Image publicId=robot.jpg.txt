@@ -1,0 +1,3 @@
+<Image publicId="robot.jpg" >
+  <Transformation quality="auto" />
+</Image>

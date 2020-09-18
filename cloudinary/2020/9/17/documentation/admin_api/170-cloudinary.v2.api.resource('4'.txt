@@ -1,0 +1,3 @@
+cloudinary.v2.api.resource('4', 
+  { type: 'facebook' },
+  function(error, result) {console.log(result, error); });

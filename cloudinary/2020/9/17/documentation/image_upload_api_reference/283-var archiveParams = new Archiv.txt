@@ -1,0 +1,4 @@
+var archiveParams = new ArchiveParams(){
+  ResourceType = "image",
+  Tags = "lion"};
+var archiveResult = cloudinary.CreateZip(archiveParams);

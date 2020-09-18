@@ -1,0 +1,6 @@
+string input = m_cloudinary.Api.BuildUnsignedUploadForm("video_id", "my_upload_preset", null,
+    new Dictionary<string, object>() {
+        { "public_id", "my_video" },
+        { "tags", "user_218,screencast" }
+    }, null
+);

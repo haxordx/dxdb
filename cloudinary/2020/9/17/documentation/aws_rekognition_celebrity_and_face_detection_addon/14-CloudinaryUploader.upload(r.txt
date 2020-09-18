@@ -1,0 +1,2 @@
+Cloudinary::Uploader.upload("rolling_stones.jpg", 
+  :detection => "aws_rek_face")

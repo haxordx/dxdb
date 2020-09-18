@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().generate("beach.jpg")!, cloudinary: cloudinary)

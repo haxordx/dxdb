@@ -1,0 +1,6 @@
+cloudinary.Api.UrlVideoUp.Transform(new Transformation()
+    .Height(360).Width(480).Quality(70).Duration("10").Crop("pad"))
+    .FallbackContent("Your browser does not support HTML5 video tags.")
+    .BuildVideoTag("dog", new StringDictionary(
+       "controls",
+       "loop"));

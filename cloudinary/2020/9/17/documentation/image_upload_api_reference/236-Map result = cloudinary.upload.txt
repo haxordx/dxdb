@@ -1,0 +1,1 @@
+Map result = cloudinary.uploader().explode(String public_id, Map options);

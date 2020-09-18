@@ -1,0 +1,3 @@
+cloudinary.createUrl().setResourceType("video").setTransformation(CLDTransformation()
+  .setIf("w_gt_400").setOverlay("thumbs-up-small").setWidth(150).setGravity("north_east").setX(10).setY(10).chain()
+  .setWidth(400).setCrop("limit")).generate("marmots.mp4")

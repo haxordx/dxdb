@@ -1,0 +1,1 @@
+cloudinary.videoTag('dog.png', {height: 250, width: 400, flags: "waveform", startOffset: "2", endOffset: "4", color: "blue", background: "transparent"}).toHtml();

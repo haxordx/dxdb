@@ -1,0 +1,1 @@
+cloudinary.DeleteMetadataDataSourceEntries(string externalId, List<string> externalIds)

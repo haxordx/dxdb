@@ -1,0 +1,5 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation()
+  .setIf("w_lt_600").chain()
+  .setOverlay("text:Arial_20:Image%20shown%20in%20full%20scale").setColor("white").setGravity("south_east").chain()
+  .setEffect("blur:400").setUnderlay("small_dinosaur").setWidth(600).setCrop("scale").chain()
+  .setIf("end")).generate("small_dinosaur.jpg")!, cloudinary: cloudinary)

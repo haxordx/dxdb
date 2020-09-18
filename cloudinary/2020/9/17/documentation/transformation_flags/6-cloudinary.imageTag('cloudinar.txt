@@ -1,0 +1,1 @@
+cloudinary.imageTag('cloudinary_icon.jpg', {height: 150, flags: "ignore_aspect_ratio", crop: "scale"}).toHtml();

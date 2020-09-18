@@ -1,0 +1,4 @@
+let params = CLDUploadRequestParams()
+    .setUploadPreset("sample_preset").setPublicId("my_dog").setFolder("my_folder/my_sub_folder/")
+       .setResourceType("video")setOverwrite(true).setNotificationUrl(https://mysite.example.com/notify_endpoint)
+let request = cloudinary.createUploader().upload(file: fileUrl, params: params)

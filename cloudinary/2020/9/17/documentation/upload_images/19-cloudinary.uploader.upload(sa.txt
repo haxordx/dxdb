@@ -1,0 +1,2 @@
+cloudinary.uploader.upload("sample.jpg", 
+  public_id = "sample_id")

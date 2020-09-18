@@ -1,0 +1,1 @@
+cloudinary.UploadMappings();

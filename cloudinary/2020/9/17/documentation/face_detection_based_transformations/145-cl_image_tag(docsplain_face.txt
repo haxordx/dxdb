@@ -1,0 +1,4 @@
+cl_image_tag("docs/plain_face.jpg", :transformation=>[
+  {:overlay=>"golden_star", :gravity=>"north_west", :width=>20, :x=>314, :y=>148},
+  {:width=>500, :crop=>"scale"}
+  ])

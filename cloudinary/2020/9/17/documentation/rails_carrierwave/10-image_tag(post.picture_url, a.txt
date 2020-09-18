@@ -1,0 +1,3 @@
+image_tag(post.picture_url, :alt => post.short_name)
+
+image_tag(post.picture_url(:thumbnail), :width => 50, :height => 50)

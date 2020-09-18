@@ -1,0 +1,1 @@
+CLDB + length_of_image_buffer + image_buffer + length_of_metadata buffer + metadata_buffer

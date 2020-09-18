@@ -1,0 +1,8 @@
+{
+  css_url: 'https://res.cloudinary.com/demo/image/sprite/v1315740225/logo.css',
+  image_url: 'https://res.cloudinary.com/demo/image/sprite/v1315740225/logo.png',
+  secure_css_url: 
+    'https://res.cloudinary.com/demo/image/sprite/v1315740225/logo.css',
+  public_id: 'logo',
+  version: '1315740225',
+}

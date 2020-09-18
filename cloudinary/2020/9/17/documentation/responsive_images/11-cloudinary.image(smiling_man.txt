@@ -1,0 +1,2 @@
+cloudinary.image("smiling_man.jpg",  { width: "auto", responsive: "true",
+  crop: "scale", responsive_placeholder: "blank" })

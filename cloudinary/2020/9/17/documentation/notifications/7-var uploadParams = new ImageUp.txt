@@ -1,0 +1,4 @@
+var uploadParams = new ImageUploadParams(){
+  File = new FileDescription(@"sample.jpg"),
+  NotificationUrl = "https://mysite.example.com/my_notification_endpoint"};
+var uploadResult = cloudinary.Upload(uploadParams);

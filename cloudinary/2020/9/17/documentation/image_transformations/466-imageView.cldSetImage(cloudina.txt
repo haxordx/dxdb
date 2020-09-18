@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation().setAspectRatio("16:9").setCrop("fill")).generate("sample.jpg")!, cloudinary: cloudinary)

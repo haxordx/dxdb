@@ -1,0 +1,1 @@
+cloudinary.videoTag('folder-permissions-tutorial', {overlay: new cloudinary.SubtitlesLayer().publicId("folder-permissions-tutorial.en-us.azure.transcript")}).toHtml();

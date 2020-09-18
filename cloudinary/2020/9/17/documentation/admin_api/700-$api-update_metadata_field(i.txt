@@ -1,0 +1,4 @@
+$api->update_metadata_field("in_stock", 
+  array(
+    "label" => "Now in stock",
+    "mandatory" => true  ));

@@ -1,0 +1,1 @@
+cl_image_tag("cld_rubix.gif", array("video_sampling"=>"40", "delay"=>"200", "height"=>200, "effect"=>"loop", "crop"=>"scale", "resource_type"=>"video"))

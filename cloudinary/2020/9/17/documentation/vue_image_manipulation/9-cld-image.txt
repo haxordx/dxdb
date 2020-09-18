@@ -1,0 +1,4 @@
+<cld-image 
+  public-id="sample" 
+  accessibility= "colorblind">
+</cld-image>

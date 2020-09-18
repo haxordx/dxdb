@@ -1,0 +1,1 @@
+$.cloudinary.video("dog", {width: 400, aspect_ratio: "4:3", crop: "fill"})

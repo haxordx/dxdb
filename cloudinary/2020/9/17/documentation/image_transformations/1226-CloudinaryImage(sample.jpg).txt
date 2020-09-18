@@ -1,0 +1,9 @@
+CloudinaryImage("sample.jpg").image(transformation=[
+  {'width': 500, 'crop': "scale"},
+  {'effect': "brightness:70"},
+  {'overlay': "woman", 'gravity': "face", 'crop': "crop"},
+  {'width': 150, 'crop': "scale"},
+  {'effect': "saturation:50"},
+  {'effect': "shadow"},
+  {'flags': "layer_apply"}
+  ])

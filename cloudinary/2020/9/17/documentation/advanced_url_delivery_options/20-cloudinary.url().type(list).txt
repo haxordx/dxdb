@@ -1,0 +1,1 @@
+cloudinary.url().type("list").generate("logo.json");

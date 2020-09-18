@@ -1,0 +1,5 @@
+{
+  primary: '#FFF',
+  onPrimary: 'yellow',
+  active: '#000000'
+}

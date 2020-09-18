@@ -1,0 +1,4 @@
+<cld-image publicId="flowers.jpg" >
+  <cld-transformation width="500" crop="scale" />
+  <cld-transformation overlay={{text: "Stylish%20text", publicId: "sample_text_style"}} gravity="south" />
+</cld-image>

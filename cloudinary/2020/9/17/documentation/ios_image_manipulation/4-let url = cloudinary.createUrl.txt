@@ -1,0 +1,7 @@
+let url = cloudinary.createUrl().setTransformation(CLDTransformation()
+   .setHeight(150).setWidth(150).setCrop(.crop).setEffect(.sepia).setRadius(20).chain()
+   .setOverlayWithLayer(CLDTextLayer()
+      .setFontFamily("Arial").setFontSize(60).setText("This is my picture"))
+   .setGravity(.north).setY(20).chain()
+   .setAngle(20))
+   .generate("mypic.jpg")

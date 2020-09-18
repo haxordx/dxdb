@@ -1,0 +1,8 @@
+<cl-image public-id="https://en.wikipedia.org/wiki/jpg" type="url2png">
+  <cl-transformation radius="50" width="400" height="400" gravity="north" border="2px_solid_rgb:999" crop="fill">
+  </cl-transformation>
+  <cl-transformation effect="shadow:20" color="#ccc">
+  </cl-transformation>
+  <cl-transformation angle="30" color="#ec9800" effect="colorize" overlay="url2png_logo">
+  </cl-transformation>
+</cl-image>

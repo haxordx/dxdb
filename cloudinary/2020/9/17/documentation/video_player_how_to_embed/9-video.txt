@@ -1,0 +1,11 @@
+<video
+  id="example-player"
+  controls
+  muted
+  class="cld-video-player cld-video-player-skin-dark"
+  data-cld-public-id="myvideo">
+</video>
+
+
+var cld = cloudinary.Cloudinary.new({ cloud_name: 'mycloud' });
+var player = cld.videoPlayer('example-player');

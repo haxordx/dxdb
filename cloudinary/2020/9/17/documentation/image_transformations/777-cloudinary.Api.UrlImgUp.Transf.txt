@@ -1,0 +1,4 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation()
+  .Gravity("face").Radius(75).Border("10px_solid_grey").Crop("crop").Chain()
+  .Overlay(new Layer().PublicId("young_couple")).Width(150).Height(150).Radius("max").Gravity("faces").Border("3px_solid_black").Crop("thumb").Chain()
+  .Flags("layer_apply").Gravity("north_east")).BuildImageTag("lady.jpg")

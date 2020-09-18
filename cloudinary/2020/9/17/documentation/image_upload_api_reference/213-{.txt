@@ -1,0 +1,6 @@
+{
+  "public_ids": [
+    "shirt",
+    "pants"
+  ]
+}

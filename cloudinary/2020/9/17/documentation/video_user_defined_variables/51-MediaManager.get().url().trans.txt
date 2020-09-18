@@ -1,0 +1,2 @@
+MediaManager.get().url().transformation(new Transformation()
+.variables(variable("$qualtag","!important!"),variable("$delwidth","450")).chain().named("highqual-if-tagged")).resourceType("video").generate("rafting.mp4");

@@ -1,0 +1,1 @@
+cloudinary.v2.api.get_streaming_profile('custom_square', function(error, result){console.log(result);});

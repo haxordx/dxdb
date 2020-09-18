@@ -1,0 +1,9 @@
+cloudinary.url().transformation(new Transformation()
+  .width(220).height(140).crop("fill").chain()
+  .overlay(new Layer().publicId("brown_sheep")).width(220).height(140).x(220).crop("fill").chain()
+  .overlay(new Layer().publicId("horses")).width(220).height(140).y(140).x(-110).crop("fill").chain()
+  .overlay(new Layer().publicId("white_chicken")).width(220).height(140).y(70).x(110).crop("fill").chain()
+  .overlay(new Layer().publicId("butterfly.png")).height(200).x(-10).angle(10).chain()
+  .width(400).height(260).radius(20).crop("crop").chain()
+  .overlay(new TextLayer().fontFamily("Parisienne").fontSize(35).fontWeight("bold").text("Memories%20from%20our%20trip")).color("#990C47").y(155).chain()
+  .effect("shadow")).imageTag("yellow_tulip.jpg");

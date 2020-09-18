@@ -1,0 +1,8 @@
+cloudinary.imageTag('sample.jpg', {transformation: [
+  {overlay: new cloudinary.Layer().publicId("couple")},
+  {gravity: "faces", width: 120, height: 150, crop: "crop"},
+  {radius: "max"},
+  {flags: "layer_apply", gravity: "north_east"},
+  {overlay: new cloudinary.Layer().publicId("cloudinary_icon"), width: "0.8", flags: "relative", opacity: 50, effect: "brightness:100"},
+  {overlay: new cloudinary.TextLayer().fontFamily("impact").fontSize(40).fontWeight("bold").text("Sample%20image"), gravity: "south", y: 20}
+  ]}).toHtml();

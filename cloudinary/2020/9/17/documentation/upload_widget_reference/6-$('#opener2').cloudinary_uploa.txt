@@ -1,0 +1,1 @@
+$('#opener2').cloudinary_upload_widget({ cloudName: "demo", uploadPreset: "preset1" });

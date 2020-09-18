@@ -1,0 +1,1 @@
+cl_image_tag("sample.jpg", array("border"=>"5px_solid_red"))

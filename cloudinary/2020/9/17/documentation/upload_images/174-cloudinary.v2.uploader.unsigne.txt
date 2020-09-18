@@ -1,0 +1,3 @@
+cloudinary.v2.uploader.unsigned_upload("sample.jpg", "unsigned_1", 
+  { cloud_name: "demo" }, 
+  function(error, result) {console.log(result, error) });

@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().startOffset("8.5")).resourceType("video").imageTag("dog.jpg");

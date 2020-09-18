@@ -1,0 +1,1 @@
+$.cloudinary.image("Cld_Sample_PSD.psd")

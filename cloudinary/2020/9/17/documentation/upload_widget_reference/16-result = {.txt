@@ -1,0 +1,4 @@
+result = {
+    event: "batch-cancelled",
+    info: { reason: "MAX_EXCEEDED" | "INVALID_PUBLIC_ID" }
+};

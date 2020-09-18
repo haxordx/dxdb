@@ -1,0 +1,3 @@
+<cld-image publicId="https://cnn.com" type="url2png">
+
+</cld-image>

@@ -1,0 +1,5 @@
+<cld-image publicId="wood_chair.jpg" >
+  <cld-transformation width="200" height="200" effect="saturation:50" crop="pad" />
+  <cld-transformation effect="shadow" />
+  <cld-transformation border="1px_solid_rgb:666" />
+</cld-image>

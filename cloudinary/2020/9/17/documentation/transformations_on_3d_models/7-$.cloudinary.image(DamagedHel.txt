@@ -1,0 +1,4 @@
+$.cloudinary.image("DamagedHelmet3D", {transformation: [
+  {fetch_format: "gif"},
+  {aspect_ratio: "1", background: "#a17ec5", flags: "animated", height: 200, crop: "fill"}
+  ]})

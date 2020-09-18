@@ -1,0 +1,4 @@
+<cl-video public-id="dog" >
+  <cl-transformation video-codec="h264:baseline:3.1">
+  </cl-transformation>
+</cl-video>

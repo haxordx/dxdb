@@ -1,0 +1,3 @@
+cloudinary.url().transformation(
+  new Transformation().crop("imagga_scale").
+    width(260).height(240)).signed(true).generate("sample_van.jpg");

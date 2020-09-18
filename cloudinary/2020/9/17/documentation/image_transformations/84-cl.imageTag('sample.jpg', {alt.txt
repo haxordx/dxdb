@@ -1,0 +1,1 @@
+cl.imageTag('sample.jpg', {alt: "A sample photo", className: "Samples"}).toHtml();

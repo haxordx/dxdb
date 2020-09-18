@@ -1,0 +1,2 @@
+$api = new \Cloudinary\Api();
+$api->resources_by_moderation("aws_rek", "rejected");

@@ -1,0 +1,6 @@
+<cl-image public-id="DamagedHelmet3D" >
+  <cl-transformation fetch-format="gif">
+  </cl-transformation>
+  <cl-transformation aspect-ratio="1" background="#a17ec5" flags="animated" height="200" crop="fill">
+  </cl-transformation>
+</cl-image>

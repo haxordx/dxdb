@@ -1,0 +1,1 @@
+cloudinary.v2.api.upload_presets(function(error, result){console.log(result);});

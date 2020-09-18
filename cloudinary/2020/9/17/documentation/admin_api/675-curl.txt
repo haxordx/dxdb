@@ -1,0 +1,19 @@
+curl \
+  -H "Content-Type: application/json" \
+  -d '{          
+    "external_id": "color_id",
+    "label": "Colors",
+    "type": "set" ,
+    "mandatory": "true",
+    "default_value": ["color1","color2"],
+    "datasource": {
+      "values": [
+        {"external_id": "color1", "value": "red"},
+        {"external_id": "color2", "value": "green"},
+        {"external_id": "color3", "value": "blue"},
+        {"external_id": "color4", "value": "yellow"}
+      ]
+    }
+  }' \  
+  -X POST \
+  https://<API_KEY>:<API_SECRET>@api.cloudinary.com/v1_1/<cloud_name>/metadata_fields

@@ -1,0 +1,2 @@
+@Model.Cloudinary.GetCloudinaryJsConfig(
+    true, @"https://your-local-host.domain/cloudinary_js/")

@@ -1,0 +1,7 @@
+<Image publicId="docs/casual.jpg">
+  <Transformation variables={[["$overlay", "ref:!docs:sale!"]]}/>
+  <Transformation customFunction={{
+    functionType: "wasm",
+    source: "docs:pnglayer.wasm"}} />
+  <Transformation border="1px_solid_black" />
+</Image>

@@ -1,0 +1,1 @@
+CloudinaryImage("coupled.jpg").image(gravity="adv_face", width=100, height=100, crop="thumb")

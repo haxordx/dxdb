@@ -1,0 +1,4 @@
+<cl-image public-id="sunset_shoes.jpg" >
+  <cl-transformation width="150" height="150" gravity="auto:0" crop="thumb">
+  </cl-transformation>
+</cl-image>

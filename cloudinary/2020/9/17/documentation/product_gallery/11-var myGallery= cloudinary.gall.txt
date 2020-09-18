@@ -1,0 +1,15 @@
+var myGallery= cloudinary.galleryWidget({
+  container: "#my-gallery",
+  cloudName: "demo",
+  displayProps: {
+    mode: "expanded",
+    topOffset: 70 // to account for the menu element at the top of this documentation page
+  },
+  aspectRatio: "4:3", // most of the assets are in landscape orientation
+  mediaAssets: [
+    {tag: "electric_car_product_gallery_demo"}, // by default mediaType: "image"
+    {tag: "electric_car_product_gallery_demo", mediaType: "video"}, 
+    {tag: "electric_car_360_product_gallery_demo", mediaType: "spin"}
+  ]
+});
+myGallery.render();

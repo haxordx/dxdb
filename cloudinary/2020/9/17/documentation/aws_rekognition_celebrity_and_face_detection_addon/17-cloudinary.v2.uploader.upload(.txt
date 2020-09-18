@@ -1,0 +1,3 @@
+cloudinary.v2.uploader.upload("rolling_stones.jpg", 
+  { detection: "aws_rek_face" }, 
+  function(error, result){console.log(result);});

@@ -1,0 +1,6 @@
+Dim account = New Account(
+    "my_cloud_name",
+    "my_api_key",
+    "my_api_secret")
+
+Dim cloudinary = New Cloudinary(account)

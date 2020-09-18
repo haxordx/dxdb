@@ -1,0 +1,7 @@
+let params = CLDUploadRequestParams()
+  .setCategorization("imagga_tagging")
+  .setAutoTagging(0.4)
+var mySig = MyFunction(params)  // your own function that returns a signature generated on your backend
+params.setSignature(CLDSignature(signature: mySig.signature, timestamp: mySig.timestamp))
+let request = cloudinary.createUploader().signedUpload(
+  url: "turtles.jpg", params: params)

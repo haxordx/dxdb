@@ -1,0 +1,3 @@
+<Image publicId="horses.jpg" >
+  <Transformation effect="art:zorro" />
+</Image>

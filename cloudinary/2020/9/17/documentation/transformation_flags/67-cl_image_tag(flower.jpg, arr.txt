@@ -1,0 +1,5 @@
+cl_image_tag("flower.jpg", array("transformation"=>array(
+  array("overlay"=>"face_left"),
+  array("width"=>200, "height"=>200, "gravity"=>"face", "radius"=>"max", "crop"=>"thumb"),
+  array("flags"=>"layer_apply", "gravity"=>"north_east")
+  )))

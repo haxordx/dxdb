@@ -1,0 +1,4 @@
+cl_image_tag("sample.jpg", array("variables"=>array("$bcolor"=>"!red!"), "transformation"=>array(
+  array("if"=>"fc_gt_0"),
+  array("border"=>"5px_solid_$bcolor", "height"=>120, "width"=>120, "crop"=>"fill")
+  )))

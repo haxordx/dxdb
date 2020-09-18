@@ -1,0 +1,1 @@
+$api->restore(array("image1", "image2"));

@@ -1,0 +1,1 @@
+$api->add_metadata_field($field, $options = array());

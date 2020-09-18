@@ -1,0 +1,3 @@
+var contextParams = new ContextParams() 
+{ string Context, List<string> PublicIds, ContextCommand.Add };
+var contextResult = cloudinary.Context(contextParams);

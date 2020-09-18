@@ -1,0 +1,2 @@
+Cloudinary::Api.create_upload_mapping("my_map",
+  :template => "https://www.example.com/images/")

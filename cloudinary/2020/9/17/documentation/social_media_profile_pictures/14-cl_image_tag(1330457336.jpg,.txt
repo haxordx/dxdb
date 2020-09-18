@@ -1,0 +1,1 @@
+cl_image_tag("1330457336.jpg", :type=>"twitter")

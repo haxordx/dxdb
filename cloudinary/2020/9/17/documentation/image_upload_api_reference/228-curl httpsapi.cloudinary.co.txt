@@ -1,0 +1,1 @@
+curl https://api.cloudinary.com/v1_1/demo/image/explicit -X POST --data 'type=upload&public_id==sample&eager=w_400,h_400,c_crop,g_face|w_660,h_400,c_pad,b_blue&timestamp=173719931&api_key=436464676&signature=a788d68f86a6f868af'

@@ -1,0 +1,3 @@
+<cld-image publicId="cloud_castle.jpg" >
+  <cld-transformation width="350" fetchFormat="auto" crop="scale" />
+</cld-image>

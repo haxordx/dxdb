@@ -1,0 +1,1 @@
+cloudinary.v2.uploader.image_upload_tag('image_id', {callback: cloudinary_cors});

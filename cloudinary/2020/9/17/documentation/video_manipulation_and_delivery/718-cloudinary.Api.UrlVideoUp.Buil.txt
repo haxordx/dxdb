@@ -1,0 +1,1 @@
+cloudinary.Api.UrlVideoUp.BuildVideoTag("docs/transparent_talking")

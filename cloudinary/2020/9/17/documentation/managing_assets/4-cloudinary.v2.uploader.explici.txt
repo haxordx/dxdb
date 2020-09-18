@@ -1,0 +1,7 @@
+cloudinary.v2.uploader.explicit("sample3", 
+  { type: "private",
+    eager: [
+      { width: 200, crop: "scale" }, 
+      { width: 360, height: 200, 
+          crop: "crop", gravity: "north"} ] }, 
+  function(error, result) {console.log(result, error); } );

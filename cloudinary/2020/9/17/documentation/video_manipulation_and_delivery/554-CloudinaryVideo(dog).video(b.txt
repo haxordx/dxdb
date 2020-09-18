@@ -1,0 +1,1 @@
+CloudinaryVideo("dog").video(bit_rate="250k")

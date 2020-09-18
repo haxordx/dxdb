@@ -1,0 +1,3 @@
+<Image publicId="brown_sheep.jpg" >
+  <Transformation x="355" y="410" width="300" height="200" crop="crop" />
+</Image>

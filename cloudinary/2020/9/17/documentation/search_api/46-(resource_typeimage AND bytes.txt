@@ -1,0 +1,1 @@
+(resource_type:image AND bytes>10000000) OR (resource_type:video AND duration>180)

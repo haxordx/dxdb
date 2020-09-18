@@ -1,0 +1,1 @@
+$.cloudinary.video("lincoln", {overlay: new cloudinary.SubtitlesLayer().fontFamily("impact").fontSize(15).publicId("lincoln.transcript"), color: "khaki", background: "#331a00", gravity: "south_west"})

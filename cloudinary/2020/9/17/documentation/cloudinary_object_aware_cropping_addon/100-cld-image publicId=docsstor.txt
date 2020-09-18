@@ -1,0 +1,3 @@
+<cld-image publicId="docs/store_front.jpg" >
+  <cld-transformation width="500" aspectRatio="1.0" gravity="auto:person_avoid" crop="fill" />
+</cld-image>

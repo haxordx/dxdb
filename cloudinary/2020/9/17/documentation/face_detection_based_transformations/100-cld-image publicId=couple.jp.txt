@@ -1,0 +1,3 @@
+<cld-image publicId="couple.jpg" >
+  <cld-transformation width="115" height="135" gravity="faces" crop="thumb" />
+</cld-image>

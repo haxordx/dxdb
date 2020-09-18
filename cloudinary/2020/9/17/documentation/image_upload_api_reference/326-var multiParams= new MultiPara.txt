@@ -1,0 +1,2 @@
+var multiParams= new MultiParams("logo");
+var multiResult = cloudinary.Multi(multiParams);

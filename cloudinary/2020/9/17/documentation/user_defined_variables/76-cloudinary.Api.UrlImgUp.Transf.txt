@@ -1,0 +1,4 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation()
+  .If("ar_lt_1.0").Chain()
+  .If("else").Chain()
+  .Height("$height").Crop("scale")).BuildImageTag("woman.jpg")

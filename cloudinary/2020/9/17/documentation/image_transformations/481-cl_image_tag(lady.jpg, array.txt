@@ -1,0 +1,5 @@
+cl_image_tag("lady.jpg", array("transformation"=>array(
+  array("width"=>100, "height"=>100, "gravity"=>"face", "radius"=>"max", "crop"=>"thumb"),
+  array("overlay"=>"cloudinary_icon", "effect"=>"brightness:200", "flags"=>"relative", "width"=>"0.5", "opacity"=>60),
+  array("dpr"=>"2.0")
+  )))

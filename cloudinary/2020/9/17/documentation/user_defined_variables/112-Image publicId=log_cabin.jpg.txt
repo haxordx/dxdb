@@ -1,0 +1,3 @@
+<Image publicId="log_cabin.jpg" variables={[["$rating", "!thumbs-up!"]]}>
+  <Transformation transformation={["image_ratings"]} />
+</Image>

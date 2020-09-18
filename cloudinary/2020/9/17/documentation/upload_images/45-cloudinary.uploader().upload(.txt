@@ -1,0 +1,4 @@
+cloudinary.uploader().upload("sample_file.jpg",
+  ObjectUtils.asMap(
+    "use_filename", "true", 
+    "unique_filename", "false"));

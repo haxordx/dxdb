@@ -1,0 +1,1 @@
+cloudinary.imageTag('multi_page_pdf.jpg', {density: 20}).toHtml();

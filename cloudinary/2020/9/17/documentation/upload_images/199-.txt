@@ -1,0 +1,13 @@
+...
+    formData.append("file", file);
+    formData.append("api_key", "1234");
+    formData.append("eager", "w_400,h_300,c_pad|w_260,h_200,c_crop");
+    formData.append("public_id", "sample_image");
+    formData.append("timestamp", "1315060510");
+    formData.append("signature", "bfd09f95f331f558cbd1320e67aa8d488770583e");
+
+    fetch(url, {
+      method: "POST",
+      body: formData
+    })
+...

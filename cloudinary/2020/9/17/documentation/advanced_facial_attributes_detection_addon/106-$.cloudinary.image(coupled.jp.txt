@@ -1,0 +1,1 @@
+$.cloudinary.image("coupled.jpg", {flags: "region_relative", gravity: "adv_faces", overlay: new cloudinary.Layer().publicId("silver_face_mask"), width: "1.1"})

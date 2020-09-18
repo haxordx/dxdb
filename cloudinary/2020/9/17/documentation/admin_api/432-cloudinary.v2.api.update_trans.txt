@@ -1,0 +1,3 @@
+cloudinary.v2.api.update_transformation('w_150,h_100,c_fill',
+  { allowed_for_strict: true },
+  function(error, result) {console.log(result, error); });

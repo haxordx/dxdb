@@ -1,0 +1,1 @@
+https://res.cloudinary.com/demo/image/authenticated/l_text:Arial_45_bold:John Smith,co_white/fl_no_overflow,fl_layer_apply/sample.jpg

@@ -1,0 +1,4 @@
+cl_image_tag("flowers.jpg", array("transformation"=>array(
+  array("width"=>500, "crop"=>"scale"),
+  array("overlay"=>array("font_family"=>"Verdana", "font_size"=>50, "font_weight"=>"bold", "text"=>"Cool%0Aimage"), "gravity"=>"west", "x"=>10)
+  )))

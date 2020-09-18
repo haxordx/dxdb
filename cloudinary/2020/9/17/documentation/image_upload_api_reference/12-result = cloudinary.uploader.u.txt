@@ -1,0 +1,1 @@
+result = cloudinary.uploader.unsigned_upload(file, upload_preset, **options)

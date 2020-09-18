@@ -1,0 +1,2 @@
+MediaManager.get().upload("sample.jpg")
+  .option("type", "authenticated").dispatch();

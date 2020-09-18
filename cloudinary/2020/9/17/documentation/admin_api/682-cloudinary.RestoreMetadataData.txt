@@ -1,0 +1,1 @@
+cloudinary.RestoreMetadataDataSourceEntries(string externalId, List<string> externalIds)

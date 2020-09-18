@@ -1,0 +1,1 @@
+cloudinary.url().format("gltf").imageTag("foyer-table");

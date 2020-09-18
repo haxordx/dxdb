@@ -1,0 +1,2 @@
+cloudinary.uploader().addContext("alt=Animal|class=Mammalia",
+  ["dog", "lion"], ObjectUtils.emptyMap());

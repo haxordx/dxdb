@@ -1,0 +1,2 @@
+cloudinary.api.update("coupled",
+  detection = "adv_face")

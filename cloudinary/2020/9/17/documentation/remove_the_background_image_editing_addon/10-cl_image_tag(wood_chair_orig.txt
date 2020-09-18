@@ -1,0 +1,1 @@
+cl_image_tag("wood_chair_orig.jpg", array("width"=>300, "crop"=>"scale"))

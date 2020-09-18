@@ -1,0 +1,2 @@
+cloudinary.api().update("hwepb67oxzh4lrigssld", 
+  ObjectUtils.asMap("moderation_status", "rejected"));

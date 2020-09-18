@@ -1,0 +1,2 @@
+cloudinary.v2.api.resources(
+function(error, result) {console.log(result, error); });

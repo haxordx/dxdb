@@ -1,0 +1,3 @@
+cloudinary.url().resourceType("raw").generate("sample_spreadsheet.xls");
+
+// "https://res.cloudinary.com/demo/raw/upload/sample_spreadsheet.xls"

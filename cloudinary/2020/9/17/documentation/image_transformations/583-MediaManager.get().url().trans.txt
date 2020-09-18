@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().width(200).height(200).gravity("auto").crop("crop")).generate("fat_cat.jpg");

@@ -1,0 +1,1 @@
+add_user_to_group(user_group_id, user_id, **options)

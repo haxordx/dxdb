@@ -1,0 +1,6 @@
+var publicIds = new List<string>(){"image1", "image2"};
+var versionIds = new List<string>(){"c3fe4be5921eb89acd9af738c892f654", "d214063097a43d1d1293db61a397f60f" };
+var restoreParams = new RestoreParams(){
+  PublicIds = publicIds,
+  Versions = versionIds};
+cloudinary.Restore(restoreParams);

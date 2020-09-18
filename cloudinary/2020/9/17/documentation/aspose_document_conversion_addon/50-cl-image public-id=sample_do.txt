@@ -1,0 +1,4 @@
+<cl-image public-id="sample_document.docx.jpg" >
+  <cl-transformation width="300" page="2" crop="scale">
+  </cl-transformation>
+</cl-image>

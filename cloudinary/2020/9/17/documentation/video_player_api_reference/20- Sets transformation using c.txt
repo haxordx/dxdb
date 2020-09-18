@@ -1,0 +1,7 @@
+// Sets transformation using cloudinary.Transformation
+var trans = new cloudinary.Transformation
+trans.width(500).height(600).crop('limit')
+vplayer.transformation(trans)
+
+// Sets transformation using a simple Object
+vplayer.transformation({ width: 500, height: 600, crop: 'limit' })

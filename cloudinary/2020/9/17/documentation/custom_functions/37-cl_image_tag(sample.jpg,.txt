@@ -1,0 +1,5 @@
+cl_image_tag("sample.jpg", 
+  :sign_url => true,
+  :custom_pre_function => {
+    :function_type => "remote", 
+    :source => "https://my.preprocess.custom/function"})

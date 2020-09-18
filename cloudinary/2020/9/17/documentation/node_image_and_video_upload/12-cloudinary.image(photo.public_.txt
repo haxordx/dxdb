@@ -1,0 +1,1 @@
+cloudinary.image(photo.public_id, { format: "jpg", crop: "fill", width: 120, height: 80 });

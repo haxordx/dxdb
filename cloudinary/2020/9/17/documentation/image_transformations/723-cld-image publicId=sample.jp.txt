@@ -1,0 +1,5 @@
+<cld-image publicId="sample.jpg" >
+  <cld-transformation width="200" height="200" radius="max" crop="fill" />
+  <cld-transformation angle="30" />
+  <cld-transformation effect="trim" />
+</cld-image>

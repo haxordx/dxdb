@@ -1,0 +1,4 @@
+$api->update("hwepb67oxzh4lrigssld", 
+  array(
+    "resource_type" => "video", 
+    "moderation_status" => "rejected"));

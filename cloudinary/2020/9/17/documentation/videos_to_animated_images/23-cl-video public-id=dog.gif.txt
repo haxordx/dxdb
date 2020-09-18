@@ -1,0 +1,4 @@
+<cl-video public-id="dog.gif" resource-type="video">
+  <cl-transformation video-sampling="1.1s" delay="200" width="200" effect="loop:2" crop="scale">
+  </cl-transformation>
+</cl-video>

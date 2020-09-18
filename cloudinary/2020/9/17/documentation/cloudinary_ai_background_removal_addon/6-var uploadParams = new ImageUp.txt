@@ -1,0 +1,6 @@
+var uploadParams = new ImageUploadParams(){
+  File = new FileDescription(@"dog_couch.jpg"),
+  PublicId = "dog_couch",
+  BackgroundRemoval = "cloudinary_ai",
+  NotificationUrl = "https://mysite.example.com/hooks"};
+var uploadResult = cloudinary.Upload(uploadParams);

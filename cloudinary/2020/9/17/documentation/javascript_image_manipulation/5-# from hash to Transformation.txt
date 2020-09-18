@@ -1,0 +1,5 @@
+# from hash to Transformation
+var t = cl.transformation({crop: 'scale', width: 400});
+
+# from Transformation to hash
+t.toOptions();

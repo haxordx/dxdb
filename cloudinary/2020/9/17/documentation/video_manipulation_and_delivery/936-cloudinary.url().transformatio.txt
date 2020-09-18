@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().overlay(new Layer().publicId("cloudinary_icon")).startOffset("6.5").endOffset("10").opacity(50).effect("brightness:200")).videoTag("dog");

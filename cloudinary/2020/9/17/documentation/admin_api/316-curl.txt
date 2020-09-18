@@ -1,0 +1,4 @@
+curl \
+  -d "public_ids[]=image1&public_ids[]=image2&keep_original=1" \
+  -X DELETE \
+  https://<API_KEY>:<API_SECRET>@api.cloudinary.com/v1_1/<cloud_name>/resources/image/upload

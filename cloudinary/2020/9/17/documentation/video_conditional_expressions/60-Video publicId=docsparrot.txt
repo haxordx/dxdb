@@ -1,0 +1,4 @@
+<Video publicId="docs/parrot" >
+  <Transformation if="ar_gt_1.2" height="320" width="480" background="black" crop="pad" />
+  <Transformation if="else" height="320" width="480" background="blurred:400:15" crop="pad" />
+</Video>

@@ -1,0 +1,1 @@
+cloudinary.DeleteMetadataField("in_stock");

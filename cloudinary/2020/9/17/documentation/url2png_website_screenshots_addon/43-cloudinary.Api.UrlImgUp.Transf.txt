@@ -1,0 +1,1 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation().Gravity("north").Height(200).Width(150).Crop("fill")).Signed(true).Action("url2png").BuildImageTag("https://en.wikipedia.org/wiki/jpg")

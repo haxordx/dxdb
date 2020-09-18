@@ -1,0 +1,4 @@
+cl_video_tag("dog", array("transformation"=>array(
+  array("effect"=>"fade:2000"),
+  array("effect"=>"fade:-4000")
+  )))

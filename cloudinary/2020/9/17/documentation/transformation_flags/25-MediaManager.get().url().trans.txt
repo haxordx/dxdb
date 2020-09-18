@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().overlay(new Layer().publicId("cloudinary_icon")).width(0.2).flags("relative")).generate("flower.jpg");

@@ -1,0 +1,1 @@
+cloudinary.imageTag('sample.jpg', {if: "ar_gt_3:4_and_w_gt_300_and_h_gt_200", width: 300, height: 200, crop: "crop"}).toHtml();

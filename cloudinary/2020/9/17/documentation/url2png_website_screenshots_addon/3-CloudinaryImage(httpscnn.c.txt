@@ -1,0 +1,1 @@
+CloudinaryImage("https://cnn.com").image(type="url2png")

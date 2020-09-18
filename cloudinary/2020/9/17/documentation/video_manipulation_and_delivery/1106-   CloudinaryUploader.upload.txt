@@ -1,0 +1,4 @@
+   Cloudinary::Uploader.upload("big_buck_bunny.mp4", :resource_type => :video,
+     :eager => [{:format => "mpd", :transformation => 
+      [{:video_sampling => 3}, {:streaming_profile => "hd"}] }]
+     :public_id => "bb_bunny")

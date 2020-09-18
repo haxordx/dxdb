@@ -1,0 +1,4 @@
+result = {
+    event: "queues-end",
+    info: {} // information about all files processed by the api
+};

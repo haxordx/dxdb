@@ -1,0 +1,2 @@
+<?php echo cl_image_upload_tag("image_id", 
+  array("return_delete_token" => TRUE )); ?>

@@ -1,0 +1,1 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation().Gravity("auto:ocr_text_avoid").Height(400).AspectRatio("0.8").Crop("fill")).BuildImageTag("docs/flower_shop.jpg")

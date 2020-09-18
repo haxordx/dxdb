@@ -1,0 +1,1 @@
+result = cloudinary.uploader.add_context(context, public_ids, **options)

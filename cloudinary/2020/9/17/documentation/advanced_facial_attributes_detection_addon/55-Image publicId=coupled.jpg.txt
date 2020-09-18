@@ -1,0 +1,3 @@
+<Image publicId="coupled.jpg" signUrl="true">
+  <Transformation gravity="adv_face" height="100" width="100" crop="thumb" />
+</Image>

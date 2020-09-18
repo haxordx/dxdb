@@ -1,0 +1,3 @@
+var updateParams = new UpdateParams("hwepb67oxzh4lrigssld"){
+  ModerationStatus = "approved"};
+var updateResult = cloudinary.Update(updateParams);

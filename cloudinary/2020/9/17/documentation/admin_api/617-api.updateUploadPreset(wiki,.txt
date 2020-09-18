@@ -1,0 +1,5 @@
+api.updateUploadPreset("wiki",
+  ObjectUtils.asMap(
+    "unsigned", true, 
+    "tags" => "remote", 
+    "allowed_formats" => "jpg,png"));

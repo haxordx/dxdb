@@ -1,0 +1,4 @@
+\Cloudinary\Api::update("golfer", 
+  array(
+    "detection" => "aws_rek_face", 
+    "auto_tagging" => 0.9));

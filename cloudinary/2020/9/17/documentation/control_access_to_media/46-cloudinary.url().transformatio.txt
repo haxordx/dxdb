@@ -1,0 +1,2 @@
+cloudinary.url().transformation(new Transformation().type("authenticated").authToken(new 
+  AuthToken("MyKey").expiration(1514764800)).signed(true)).videoTag("dog.mp4");

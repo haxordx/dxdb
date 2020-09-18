@@ -1,0 +1,4 @@
+cl_image_tag("balloon.png", array("transformation"=>array(
+  array("height"=>200, "crop"=>"scale"),
+  array("effect"=>"outline:15:200", "color"=>"orange")
+  )))

@@ -1,0 +1,4 @@
+CloudinaryVideo("dog").video(loop=True, controls=True, 
+ transformation = 
+        {"height": 360, "width":480, "quality": 70, "duration": 10, "crop": "pad"}, 
+ fallback_content="Your browser does not support HTML5 video tags.")

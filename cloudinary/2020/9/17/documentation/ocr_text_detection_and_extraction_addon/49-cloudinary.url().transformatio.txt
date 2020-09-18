@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().overlay(new Layer().publicId("call_text")).flags("region_relative").width(1.1).gravity("ocr_text")).imageTag("home_4_sale.jpg");

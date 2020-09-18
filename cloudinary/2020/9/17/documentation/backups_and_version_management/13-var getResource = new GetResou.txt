@@ -1,0 +1,3 @@
+var getResource = new GetResourceParams("toy_dr4lvl"){
+Versions = true };
+var info = cloudinary.GetResource(getResource);

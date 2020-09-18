@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().effect("style_transfer").overlay(new Layer().publicId("davinci_mona_lisa"))).signed(true).imageTag("coffee_cup_st.jpg");

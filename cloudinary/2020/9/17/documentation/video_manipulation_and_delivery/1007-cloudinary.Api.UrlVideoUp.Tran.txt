@@ -1,0 +1,3 @@
+cloudinary.Api.UrlVideoUp.Transform(new Transformation()
+  .Overlay(new Layer().PublicId("cloudinary_icon")).Width(200).Gravity("east").StartOffset("1").EndOffset("11").Chain()
+  .Overlay(new TextLayer().FontFamily("arial").FontSize(40).Text("Sample%20Video")).Gravity("south").Y(60).StartOffset("2")).BuildVideoTag("dog")

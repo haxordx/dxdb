@@ -1,0 +1,8 @@
+var uploadParams = new ImageUploadParams()
+{
+    File = new FileDescription(@"mypicture.jpg")
+};
+
+Task<ImageUploadResult> imageUploadTask = cloudinary.UploadAsync(uploadParams);
+
+var uploadResult = await imageUploadTask;

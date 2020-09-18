@@ -1,0 +1,5 @@
+cloudinary.uploader().upload("wood_chair.jpg", 
+  ObjectUtils.asMap(
+    "public_id", "wood_chair", 
+    "background_removal", "pixelz", 
+    "notification_url", "https://mysite.example.com/hooks"));

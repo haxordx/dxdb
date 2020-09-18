@@ -1,0 +1,4 @@
+$.cloudinary.videoTag("dog", {controls: true}).transformation()
+  .width(0.4).angle(20).chain()
+  .overlay("cloudinary_icon").opacity(50).width(60).gravity("south_east").y(15).x(60)
+  .toHtml()

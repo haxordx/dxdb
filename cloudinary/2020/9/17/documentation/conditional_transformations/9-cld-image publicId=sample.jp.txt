@@ -1,0 +1,4 @@
+<cld-image publicId="sample.jpg" >
+  <cld-transformation width="300" crop="limit" />
+  <cld-transformation if="iw_gt_300" color="white" gravity="south_east" overlay={{fontFamily: "Arial", fontSize: 15, fontWeight: "bold", text: "Image%20scaled%20down%20to%20300px"}} />
+</cld-image>

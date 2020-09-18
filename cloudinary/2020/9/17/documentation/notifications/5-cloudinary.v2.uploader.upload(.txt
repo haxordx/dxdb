@@ -1,0 +1,3 @@
+cloudinary.v2.uploader.upload("sample.jpg", 
+  { notification_url: "https://mysite.example.com/my_notification_endpoint" }, 
+  function(error, result) {console.log(result, error); });

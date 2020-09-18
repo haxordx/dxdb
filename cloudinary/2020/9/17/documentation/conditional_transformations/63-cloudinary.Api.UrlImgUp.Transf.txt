@@ -1,0 +1,3 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation()
+  .If("!sale:in_stock!_in_tags").Overlay(new Layer().PublicId("sale_icon")).Width(180).Gravity("south_east").X(30).Y(30).Chain()
+  .Width(250).Crop("scale")).BuildImageTag("backpack.jpg")

@@ -1,0 +1,1 @@
+CloudinaryImage("snacktime.jpg").image(gravity="ocr_text", height=250, width=250, crop="fill")

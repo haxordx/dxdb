@@ -1,0 +1,3 @@
+<cld-video publicId="lincoln" >
+  <cld-transformation overlay={{publicId: "lincoln.transcript", resourceType: "subtitles"}} />
+</cld-video>

@@ -1,0 +1,1 @@
+cloudinary.imageTag('docs/plain_face.jpg', {gravity: "face", width: 500, flags: "getinfo", crop: "thumb"}).toHtml();

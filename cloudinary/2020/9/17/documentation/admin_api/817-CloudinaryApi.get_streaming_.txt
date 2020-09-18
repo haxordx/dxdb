@@ -1,0 +1,1 @@
+Cloudinary::Api.get_streaming_profile(name)

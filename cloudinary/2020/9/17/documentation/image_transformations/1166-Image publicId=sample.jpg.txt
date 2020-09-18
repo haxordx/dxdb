@@ -1,0 +1,3 @@
+<Image publicId="sample.jpg" >
+  <Transformation overlay="cloudinary_icon" width="0.9" gravity="north_east" opacity="70" effect="brightness:50" crop="scale" />
+</Image>

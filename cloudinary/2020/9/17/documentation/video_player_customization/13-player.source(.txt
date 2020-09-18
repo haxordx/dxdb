@@ -1,0 +1,19 @@
+player.source(
+  'outdoors',
+  {
+    textTracks: {
+      captions: {
+        label: 'English(captions)',
+        language: 'en',
+        default: true,
+        url: 'https://res.cloudinary.com/demo/raw/upload/outdoors.vtt'
+      },
+      subtitles: [
+        {
+          label: 'English',
+          language: 'en',
+          url: 'https://res.cloudinary.com/demo/raw/upload/outdoors.vtt'
+        }
+      ]
+    }
+  });

@@ -1,0 +1,1 @@
+$.cloudinary.image("foyer-table", {format: "gltf"})

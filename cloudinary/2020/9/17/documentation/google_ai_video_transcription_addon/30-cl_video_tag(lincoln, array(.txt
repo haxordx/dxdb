@@ -1,0 +1,1 @@
+cl_video_tag("lincoln", array("overlay"=>array("resource_type"=>"subtitles", "public_id"=>"lincoln.transcript")))

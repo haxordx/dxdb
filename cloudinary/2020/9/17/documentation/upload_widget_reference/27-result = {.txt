@@ -1,0 +1,6 @@
+result = {
+    event: "upload-added",
+    info: {
+      file: { lastModified, lastModifiedDate, name, size, type },
+      publicId: "public-id" }
+};

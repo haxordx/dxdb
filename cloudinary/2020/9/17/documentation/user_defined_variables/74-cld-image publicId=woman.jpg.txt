@@ -1,0 +1,5 @@
+<cld-image publicId="woman.jpg" :variables="[['$height', '200']]">
+  <cld-transformation if="ar_lt_1.0" />
+  <cld-transformation if="else" />
+  <cld-transformation height="$height" crop="scale" />
+</cld-image>

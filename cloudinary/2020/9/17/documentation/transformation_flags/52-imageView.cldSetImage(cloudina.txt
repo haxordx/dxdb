@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation().setFlags("attachment:pretty_flower").setFetchFormat("auto")).generate("sample.jpg")!, cloudinary: cloudinary)

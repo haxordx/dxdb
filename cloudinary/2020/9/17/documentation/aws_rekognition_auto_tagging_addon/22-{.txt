@@ -1,0 +1,15 @@
+{
+...
+"info": {
+    "categorization": {
+      "aws_rek_tagging": {
+        "status": "complete",
+        "data": [
+         [{"tag": "People", "confidence": 0.9922},
+          {"tag": "Person", "confidence": 0.9922},
+          {"tag": "Human", "confidence": 0.9921},
+          {"tag": "Electric Guitar", "confidence": 0.7046},
+          {"tag": "Guitar", "confidence": 0.7046},
+          {"tag": "Musical Instrument", "confidence": 0.7046},
+          {"tag": "Musician", "confidence": 0.5754},
+          {"tag": "Performer", "confidence": 0.5754}]}}}}

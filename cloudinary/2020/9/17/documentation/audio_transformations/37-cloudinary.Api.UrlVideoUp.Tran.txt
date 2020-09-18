@@ -1,0 +1,1 @@
+cloudinary.Api.UrlVideoUp.Transform(new Transformation().AudioFrequency("22050")).BuildVideoTag("dog")

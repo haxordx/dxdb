@@ -1,0 +1,2 @@
+let tr = CLDTransformation().setWidth(260).setHeight(240).setCrop("imagga_scale")
+let url = cloudinary.createUrl().setTransformation(tr).generate("sample.jpg", signUrl: true)

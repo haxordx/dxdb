@@ -1,0 +1,4 @@
+<cl-image public-id="multi_page_pdf.jpg" >
+  <cl-transformation width="300" crop="scale">
+  </cl-transformation>
+</cl-image>

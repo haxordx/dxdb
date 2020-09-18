@@ -1,0 +1,10 @@
+Cloudinary::Api.update_metadata_field_datasource("color_id", {  
+  :"values" => [{  
+    :"external_id" => "color1",
+    :"value" => "orange"
+  },
+  {  
+    :"external_id" => "color2",
+    :"value" => "black"
+  }]
+})

@@ -1,0 +1,1 @@
+cl_video_tag("dog", array("overlay"=>"video:kitten_fighting", "effect"=>"fade:3000", "width"=>100))

@@ -1,0 +1,10 @@
+{
+   "urls": [
+    {
+       "url": "https://res.cloudinary.com/demo/image/upload/v123/sample.jpg",
+       "roles": ["image","small_image","thumbnail"],
+       "label": "Amazing Product",
+       "disabled": false
+    }
+   ]
+}

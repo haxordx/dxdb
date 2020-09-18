@@ -1,0 +1,5 @@
+cloudinary.image("myphoto", 
+  { transformation: [
+    { dpr: "auto", responsive: true, width: "auto", crop: "scale", angle: 20 }, 
+    { effect: "art:hokusai", border: "3px_solid_rgb:00390b", radius: 20 }
+  ]})

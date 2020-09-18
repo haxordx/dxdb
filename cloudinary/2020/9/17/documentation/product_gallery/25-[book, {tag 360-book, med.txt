@@ -1,0 +1,1 @@
+["book", {tag: "360-book", mediaType: "spin"}, {publicId: "book-vid", mediaType: "video"}]

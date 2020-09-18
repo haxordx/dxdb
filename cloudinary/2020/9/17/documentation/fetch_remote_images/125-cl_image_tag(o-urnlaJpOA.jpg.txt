@@ -1,0 +1,1 @@
+cl_image_tag("o-urnlaJpOA.jpg", array("width"=>500, "border"=>"5px_solid_black", "crop"=>"scale", "type"=>"youtube"))

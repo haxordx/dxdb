@@ -1,0 +1,5 @@
+var uploadParams = new RawUploadParams(){
+  File = new FileDescription(@"my_file_name.docx"),
+  PublicId = "sample_document.docx",
+  RawConvert = "aspose"};
+var uploadResult = cloudinary.Upload(uploadParams);

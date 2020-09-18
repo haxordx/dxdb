@@ -1,0 +1,1 @@
+cloudinary.image("brown_sheep.jpg", {x: 355, y: 410, width: 300, height: 200, crop: "crop"})

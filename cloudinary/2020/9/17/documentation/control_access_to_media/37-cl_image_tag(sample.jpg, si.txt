@@ -1,0 +1,2 @@
+cl_image_tag("sample.jpg", :sign_url => true, :auth_token => { :key => "MyKey", :duration => 300 }, 
+  :type => "authenticated")

@@ -1,0 +1,2 @@
+MediaManager.get().upload("coupled.jpg")
+  .option("detection", "adv_face").dispatch();

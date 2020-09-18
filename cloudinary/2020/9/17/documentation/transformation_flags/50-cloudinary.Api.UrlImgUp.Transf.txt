@@ -1,0 +1,1 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation().Flags("attachment:pretty_flower").FetchFormat("auto")).BuildImageTag("sample.jpg")

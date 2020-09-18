@@ -1,0 +1,1 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation().Effect("style_transfer").Overlay(new Layer().PublicId("davinci_mona_lisa"))).Signed(true).BuildImageTag("coffee_cup_st.jpg")

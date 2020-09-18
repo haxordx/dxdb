@@ -1,0 +1,7 @@
+<Image publicId="actor.jpg" >
+  <Transformation effect="cartoonify" />
+  <Transformation radius="max" />
+  <Transformation effect="outline:100" color="lightblue" />
+  <Transformation background="lightblue" />
+  <Transformation height="300" crop="scale" />
+</Image>

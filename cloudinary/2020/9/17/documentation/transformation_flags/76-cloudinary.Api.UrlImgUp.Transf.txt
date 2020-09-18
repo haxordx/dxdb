@@ -1,0 +1,4 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation()
+  .Overlay(new Layer().PublicId("face_left")).Chain()
+  .Width(200).Height(200).Gravity("face").Radius("max").Crop("thumb").Chain()
+  .Flags("layer_apply").Gravity("north_east")).BuildImageTag("flower.jpg")

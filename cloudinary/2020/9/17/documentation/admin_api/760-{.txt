@@ -1,0 +1,12 @@
+{
+    "folders": [
+      {
+        "name": "cloud",
+        "path": "cloud"
+      }, 
+      {
+        "name": "brooks",
+        "path": "brooks"
+      }   
+    ]
+}

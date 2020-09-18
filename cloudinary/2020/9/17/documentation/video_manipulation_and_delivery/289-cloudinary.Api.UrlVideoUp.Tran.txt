@@ -1,0 +1,1 @@
+cloudinary.Api.UrlVideoUp.Transform(new Transformation().Width(300).Gravity("auto").AspectRatio("1:1").Crop("fill")).BuildVideoTag("ship")

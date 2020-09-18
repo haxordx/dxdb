@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation().setOverlay("cloudinary_icon").setGravity("north_west").setY(20)).generate("sample.jpg")!, cloudinary: cloudinary)

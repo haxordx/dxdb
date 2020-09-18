@@ -1,0 +1,6 @@
+CloudinaryImage("sample.jpg").image(transformation=[
+  {'width': 500, 'crop': "scale"},
+  {'overlay': "cloudinary_icon", 'width': 150},
+  {'effect': "blackwhite"},
+  {'flags': "layer_apply", 'gravity': "north_east"}
+  ])

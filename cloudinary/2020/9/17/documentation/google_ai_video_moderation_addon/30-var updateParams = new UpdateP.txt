@@ -1,0 +1,4 @@
+var updateParams = new UpdateParams("hwepb67oxzh4lrigssld"){
+  ResourceType = "video",
+  ModerationStatus = "rejected"};
+var updateResult = cloudinary.Update(updateParams);

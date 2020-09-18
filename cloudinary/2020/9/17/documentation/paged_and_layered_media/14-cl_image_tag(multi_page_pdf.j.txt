@@ -1,0 +1,1 @@
+cl_image_tag("multi_page_pdf.jpg", :width=>300, :crop=>"scale")

@@ -1,0 +1,6 @@
+<cl-image public-id="coast.jpg" sign-url="true">
+  <cl-transformation width="400" crop="scale">
+  </cl-transformation>
+  <cl-transformation height="150" overlay="family_bench.png" radius="max" width="150" crop="imagga_scale">
+  </cl-transformation>
+</cl-image>

@@ -1,0 +1,3 @@
+var vplayer = cld.videoPlayer({ ... , analytics: { 
+  events: ['play', 'pause', 'ended', { type: 'percentsplayed', percents: [10, 40, 70, 90] }, 'error']
+} })

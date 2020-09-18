@@ -1,0 +1,35 @@
+{
+  "public_id": "windmill",
+  "version": 1544977046,
+  "signature": "cc5cb6d1b14e44cd0bfab89a96904de4db4316cc",
+   ...
+  "tags": [ "windmill", "moulin à vent", "molino", "waterway", "voie navigable", 
+    "camino acuático", "grassland", "prairie", "pradera", "sky", "ciel", "cielo",  ... ],
+  "bytes": 139200,
+   ...
+  "info": {
+    "categorization": {
+      "google_tagging": {
+        "status": "complete",
+        "data": [
+          { "tag": {
+              "en": "windmill",
+              "fr": "moulin à vent",
+              "es": "molino" },
+            "confidence": 0.9753 },
+          { "tag": {
+              "en": "waterway",
+              "fr": "voie navigable",
+              "es": "camino acuático" },
+            "confidence": 0.9287 },
+          { "tag": {
+              "en": "grassland",
+              "fr": "prairie",
+              "es": "pradera" },
+            "confidence": 0.9145 },
+          ...
+        ],
+      },
+    },
+  "original_filename": "windmill_day"
+}

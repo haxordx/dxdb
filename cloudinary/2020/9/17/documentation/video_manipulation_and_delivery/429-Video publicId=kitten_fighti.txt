@@ -1,0 +1,9 @@
+<Video publicId="kitten_fighting" >
+  <Transformation duration="5" width="300" height="200" crop="scale" />
+  <Transformation overlay="video:dog" width="300" height="200" />
+  <Transformation duration="5" />
+  <Transformation overlay="video:transition1" effect="transition" />
+  <Transformation effect="accelerate:5s" angle="180" />
+  <Transformation flags="layer_apply" />
+  <Transformation flags="layer_apply" />
+</Video>

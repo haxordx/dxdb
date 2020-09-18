@@ -1,0 +1,1 @@
+cloudinary.videoTag('dog.gif', {width: 250, flags: "animated", fetchFormat: "auto", crop: "scale"}).toHtml();

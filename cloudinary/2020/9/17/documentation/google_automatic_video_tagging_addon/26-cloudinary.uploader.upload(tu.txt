@@ -1,0 +1,4 @@
+cloudinary.uploader.upload("turtle.mp4",
+  resource_type = "video",
+  categorization = "google_video_tagging", 
+  auto_tagging = 0.4)

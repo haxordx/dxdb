@@ -1,0 +1,3 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation()
+  .Height(300).Width(300).Background("auto:predominant").Crop("pad").Chain()
+  .Effect("gradient_fade:symmetric_pad").X(0.5)).BuildImageTag("sample.jpg")

@@ -1,0 +1,4 @@
+<cl-image public-id="sample.jpg" >
+  <cl-transformation effect="blur:300">
+  </cl-transformation>
+</cl-image>

@@ -1,0 +1,1 @@
+cloudinary.imageTag('sample.png', {width: 300, flags: "png8", crop: "scale"}).toHtml();

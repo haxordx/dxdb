@@ -1,0 +1,1 @@
+$.cloudinary.image("robot.jpg", {quality: "auto"})

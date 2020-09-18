@@ -1,0 +1,2 @@
+cloudinary.url().transformation(new Transformation()
+.variables(variable("$award","!First!"),variable("$color","!rgb:FFFFFF!"),variable("$style","!Arial_45!")).chain().overlay(new TextLayer().text("%20%20%24%28award%29%20%20Place%20").publicId("%24style")).gravity("south").y(10).background("gray").radius(10).opacity(75).color("$color")).imageTag("woman.jpg");

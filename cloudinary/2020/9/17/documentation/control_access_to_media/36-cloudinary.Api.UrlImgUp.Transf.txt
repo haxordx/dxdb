@@ -1,0 +1,1 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation().Height(300).Width(300).Crop("scale")).Signed(true).Action("authenticated").BuildImageTag("sample-authenticated.jpg")

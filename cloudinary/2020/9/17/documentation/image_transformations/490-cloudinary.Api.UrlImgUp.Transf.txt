@@ -1,0 +1,4 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation()
+  .Width(100).Height(100).Gravity("face").Radius("max").Crop("thumb").Chain()
+  .Overlay(new Layer().PublicId("cloudinary_icon")).Effect("brightness:200").Flags("relative").Width(0.5).Opacity(60).Chain()
+  .Dpr(2.0)).BuildImageTag("lady.jpg")

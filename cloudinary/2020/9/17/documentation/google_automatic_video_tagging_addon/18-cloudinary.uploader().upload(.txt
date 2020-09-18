@@ -1,0 +1,4 @@
+cloudinary.uploader().upload("turtle.mp4", 
+  ObjectUtils.asMap(
+    "resource_type", "video", 
+    "categorization", "google_video_tagging"));

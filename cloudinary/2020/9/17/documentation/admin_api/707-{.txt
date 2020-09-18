@@ -1,0 +1,8 @@
+{
+    "type": "integer",
+    "external_id": "in_stock",
+    "label": "Now in stock",
+    "mandatory": true,
+    "default_value": 100,
+    "validation": null
+}

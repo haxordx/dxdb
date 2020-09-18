@@ -1,0 +1,3 @@
+Cloudinary::Uploader.upload("sample_file.jpg", 
+  :use_filename => true, 
+  :unique_filename => false)

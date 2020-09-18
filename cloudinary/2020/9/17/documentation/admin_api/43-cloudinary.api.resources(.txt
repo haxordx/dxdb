@@ -1,0 +1,3 @@
+cloudinary.api.resources(
+type = "upload", 
+prefix = "sample")

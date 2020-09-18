@@ -1,0 +1,3 @@
+<cld-image publicId="frisbee.jpg" >
+  <cld-transformation overlay={{fontFamily: "impact", fontSize: 150, text: "Your%20Brand%20Name%20or%20Logo%20Here"}} effect="distort:arc:-120" color="white" gravity="south" y="840" opacity="60" />
+</cld-image>

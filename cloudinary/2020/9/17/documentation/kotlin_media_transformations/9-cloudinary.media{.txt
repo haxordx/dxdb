@@ -1,0 +1,4 @@
+cloudinary.media{
+    publicId("sample")
+    format(Format.png())
+}

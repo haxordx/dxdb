@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().effect("preview:duration_12:max_seg_3:min_seg_dur_3")).videoTag("imagecon_grigsby_intro");

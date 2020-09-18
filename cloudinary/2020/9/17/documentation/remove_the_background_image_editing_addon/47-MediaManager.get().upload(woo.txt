@@ -1,0 +1,4 @@
+MediaManager.get().upload("wood_chair.jpg")
+  .option("public_id", "wood_chair")
+  .option("background_removal", "pixelz")
+  .option("notification_url", "https://mysite.example.com/hooks").dispatch();

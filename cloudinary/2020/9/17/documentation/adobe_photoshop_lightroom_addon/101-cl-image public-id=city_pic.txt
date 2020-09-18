@@ -1,0 +1,4 @@
+<cl-image public-id="city_pic.jpg" sign-url="true">
+  <cl-transformation effect="lightroom:whitebalance_tungsten">
+  </cl-transformation>
+</cl-image>

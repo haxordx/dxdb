@@ -1,0 +1,4 @@
+curl \
+  -d 'unsafe_update=c_scale,w_103' \
+  -X PUT \
+  https://<API_KEY>:<API_SECRET>@api.cloudinary.com/v1_1/<CLOUD_NAME>/transformations/my_named

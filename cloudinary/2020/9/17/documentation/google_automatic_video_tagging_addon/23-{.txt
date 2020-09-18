@@ -1,0 +1,27 @@
+{
+...
+"info_kind": {
+  "google_video_tagging": {
+    "info_status": "complete",
+    "info_data": [
+     {"tag": "sea turtle", 
+      "categories": ["turtle"],
+      "start_time_offset": 0.0, 
+      "end_time_offset": 13.47364, 
+      "confidence": 0.9922,
+      "shot_level": false},
+     {"tag": "turtle", 
+      "categories": ["reptile"],
+      "start_time_offset": 0.0, 
+      "end_time_offset": 13.47364, 
+      "confidence": 0.9922,
+      "shot_level": true},
+     {"tag": "animal", 
+      "categories": [],
+      "start_time_offset": 0.0, 
+      "end_time_offset": 23.36044, 
+      "confidence": 0.9715,
+      "shot_level": false},
+      ... 
+    ]
+...

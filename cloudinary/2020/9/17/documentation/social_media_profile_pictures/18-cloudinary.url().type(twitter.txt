@@ -1,0 +1,1 @@
+cloudinary.url().type("twitter").imageTag("1330457336.jpg");

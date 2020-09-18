@@ -1,0 +1,4 @@
+cloudinary.openUploadWidget({
+  cloudName: "demo", uploadPreset: "preset1",
+  sources: [ 'local', 'url', 'dropbox'],
+  dropboxAppKey: '1dsf42dl1i2' },  (error, result) => { });

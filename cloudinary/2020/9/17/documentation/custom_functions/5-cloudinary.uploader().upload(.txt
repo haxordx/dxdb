@@ -1,0 +1,5 @@
+cloudinary.uploader().upload("my_example.wasm", 
+  ObjectUtils.asMap(
+    "use_filename", "true",
+    "type", "authenticated",
+    "resource_type", "raw"));

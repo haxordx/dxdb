@@ -1,0 +1,4 @@
+<cld-image publicId="sample.jpg" >
+  <cld-transformation width="100" crop="scale" />
+  <cld-transformation angle={["vflip", 45]} />
+</cld-image>

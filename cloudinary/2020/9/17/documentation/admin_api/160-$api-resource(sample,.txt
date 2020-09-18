@@ -1,0 +1,6 @@
+$api->resource("sample",
+  array(
+    "faces" => TRUE, 
+    "colors" => TRUE, 
+    "image_metadata" => TRUE,
+    "versions" => TRUE));

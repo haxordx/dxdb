@@ -1,0 +1,1 @@
+cl_image_tag("greece_landscape.jpg", array("effect"=>"tint:equalize:80:red:blue:yellow"))

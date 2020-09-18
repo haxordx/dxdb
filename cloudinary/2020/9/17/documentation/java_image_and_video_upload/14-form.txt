@@ -1,0 +1,3 @@
+<form>
+    <cl:upload resourceType="auto" fieldName="image_id" alt="sample"/>
+</form>

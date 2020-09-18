@@ -1,0 +1,3 @@
+<cld-video publicId="dog" >
+  <cld-transformation effect="volume:50" />
+</cld-video>

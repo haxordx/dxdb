@@ -1,0 +1,7 @@
+let params = CLDTextRequestParams()
+  .setPublicId("sample_text_image")
+  .setFontFamily("Roboto")
+  .setFontSize("42")
+  .setFontColor("red")
+  .setFontWeight(.bold)
+let result = cloudinary.createManagementApi().multi("Sample text string", params: params)

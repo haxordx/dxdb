@@ -1,0 +1,4 @@
+cloudinary.v2.uploader.create_zip(
+  { tags: 'lion', 
+    resource_type: 'image'},
+  function(error,result) {console.log(result, error) });

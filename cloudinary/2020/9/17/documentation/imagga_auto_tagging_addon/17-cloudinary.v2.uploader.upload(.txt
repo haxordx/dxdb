@@ -1,0 +1,3 @@
+cloudinary.v2.uploader.upload("turtles.jpg", 
+  { categorization: "imagga_tagging" }),
+  function(error, result) {console.log(result, error) });

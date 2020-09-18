@@ -1,0 +1,1 @@
+cloudinary.url().fetch_format("png").imageTag("DamagedHelmet3D");

@@ -1,0 +1,1 @@
+.\get_cloudinary_js.ps1 c:\my_site

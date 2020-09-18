@@ -1,0 +1,3 @@
+:
+$api->update_transformation("my_named",
+  array("crop" => "scale", "width" => 103));

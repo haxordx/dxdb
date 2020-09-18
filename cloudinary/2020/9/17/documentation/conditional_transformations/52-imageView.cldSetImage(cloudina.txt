@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation().setIf("ctx:!productType!_eq_!shoes!").setWidth(200).setAspectRatio("1:1").setGravity("auto").setCrop("fill")).generate("sunset_shoes.jpg")!, cloudinary: cloudinary)

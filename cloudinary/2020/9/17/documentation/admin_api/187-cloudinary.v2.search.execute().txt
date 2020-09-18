@@ -1,0 +1,1 @@
+cloudinary.v2.search.execute().then(result=>console.log(result));

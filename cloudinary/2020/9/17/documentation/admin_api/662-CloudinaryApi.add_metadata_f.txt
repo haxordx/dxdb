@@ -1,0 +1,1 @@
+Cloudinary::Api.add_metadata_field(field, options = {})

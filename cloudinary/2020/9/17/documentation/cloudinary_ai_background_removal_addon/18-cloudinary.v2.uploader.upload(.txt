@@ -1,0 +1,5 @@
+cloudinary.v2.uploader.upload("girl_hair.jpg", 
+  { public_id: "girl_hair_fine",
+    background_removal: "cloudinary_ai:fine_edges",
+    notification_url: "https://mysite.example.com/hooks" },
+  function(error, result){console.log(result);});

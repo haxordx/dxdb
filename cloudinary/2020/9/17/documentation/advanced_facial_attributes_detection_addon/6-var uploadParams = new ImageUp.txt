@@ -1,0 +1,6 @@
+var uploadParams = new ImageUploadParams() 
+{
+  File = new FileDescription(@"coupled.jpg"),
+  Detection = "adv_face"
+};
+var uploadResult = cloudinary.Upload(uploadParams);

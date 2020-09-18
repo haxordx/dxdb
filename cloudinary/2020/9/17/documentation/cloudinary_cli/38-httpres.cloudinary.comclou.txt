@@ -1,0 +1,1 @@
+http://res.cloudinary.com/cloud_name/image/url2png/s--6WjWrdiu--/w_300,h_250,g_north,c_fill,e_grayscale/https://cloudinary.com

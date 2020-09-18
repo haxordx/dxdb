@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().effect("pixelate_faces:9")).generate("young_couple.jpg");

@@ -1,0 +1,3 @@
+cloudinary.url().transformation(new Transformation()
+  .width(400).crop("scale").chain()
+  .height(150).overlay(new Layer().publicId("family_bench.png")).radius("max").width(150).crop("imagga_scale")).signed(true).imageTag("coast.jpg");

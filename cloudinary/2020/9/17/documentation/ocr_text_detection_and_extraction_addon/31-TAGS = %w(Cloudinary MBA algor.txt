@@ -1,0 +1,13 @@
+TAGS = %w(Cloudinary MBA algorithm).freeze
+if result['info']['ocr']['adv_ocr']['status'] == 'complete'
+  data = result['info']['ocr']['adv_ocr']['data']
+  texts = data.map{|blocks| 
+    annotations = blocks['textAnnotations'] || []
+    first_annotation = annotations.first || {}
+    (first_annotation['description'] || '').strip
+  }.compact.join(" ")
+  tags = TAGS.select{|tag| texts =~ /\b#{tag}\b/i}
+  unless tags.empty?
+    Cloudinary::Uploader.explicit(result['public_id'], type: 'upload', tags: tags)
+  end
+end

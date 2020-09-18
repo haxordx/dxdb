@@ -1,0 +1,5 @@
+cloudinary.uploader.upload("couple.jpg", 
+  colors = True,
+  phash = True,
+  image_metadata = True,
+  quality_analysis = True)

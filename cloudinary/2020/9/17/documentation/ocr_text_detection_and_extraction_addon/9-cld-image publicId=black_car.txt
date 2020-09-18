@@ -1,0 +1,4 @@
+<cld-image publicId="black_car.jpg" >
+  <cld-transformation width="1520" height="1440" gravity="west" x="50" crop="crop" />
+  <cld-transformation effect="pixelate_region:15" gravity="ocr_text" />
+</cld-image>

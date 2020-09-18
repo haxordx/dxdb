@@ -1,0 +1,5 @@
+<cld-video publicId="dog" >
+  <cld-transformation width="300" height="200" crop="scale" />
+  <cld-transformation width="300" height="200" overlay="sample" flags="splice" duration="3" />
+  <cld-transformation startOffset="0" flags="layer_apply" />
+</cld-video>

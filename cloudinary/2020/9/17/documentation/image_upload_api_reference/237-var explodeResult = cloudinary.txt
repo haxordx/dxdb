@@ -1,0 +1,1 @@
+var explodeResult = cloudinary.Explode(ExplodeParams params); // params includes PublicId

@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().width(500).effect("vignette:50").crop("scale")).videoTag("dog");

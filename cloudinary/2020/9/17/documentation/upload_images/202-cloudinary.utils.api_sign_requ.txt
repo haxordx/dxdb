@@ -1,0 +1,1 @@
+cloudinary.utils.api_sign_request(params_to_sign, api_secret)

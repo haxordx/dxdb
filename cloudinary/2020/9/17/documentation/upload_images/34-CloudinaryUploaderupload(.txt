@@ -1,0 +1,4 @@
+\Cloudinary\Uploader::upload("sample.jpg", 
+  array(
+    "folder" => "my_folder/my_sub_folder/", 
+    "public_id" => "my_name"));

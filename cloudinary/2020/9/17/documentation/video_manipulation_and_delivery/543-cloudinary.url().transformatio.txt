@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().duration("30").quality("70:qmax_20")).videoTag("Liverpool_vs_Roma_full");

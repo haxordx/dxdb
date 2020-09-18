@@ -1,0 +1,3 @@
+<Image publicId="sample_van.jpg" >
+
+</Image>

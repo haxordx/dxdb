@@ -1,0 +1,3 @@
+<img 
+    src="https://res.cloudinary.com/demo/image/upload/ar_16:9,c_fill/c_scale,w_auto:breakpoints_200_1920_30_15/bike.jpg"
+    sizes="100vw"  />

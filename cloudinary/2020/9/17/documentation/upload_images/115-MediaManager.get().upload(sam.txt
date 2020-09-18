@@ -1,0 +1,2 @@
+MediaManager.get().upload("sample_spreadsheet.xls")
+  .option("resource_type", "raw").dispatch();

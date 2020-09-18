@@ -1,0 +1,6 @@
+<cld-image publicId="sample.jpg" >
+  <cld-transformation width="500" crop="scale" />
+  <cld-transformation overlay="cloudinary_icon" width="150" />
+  <cld-transformation effect="blackwhite" />
+  <cld-transformation flags="layer_apply" gravity="north_east" />
+</cld-image>

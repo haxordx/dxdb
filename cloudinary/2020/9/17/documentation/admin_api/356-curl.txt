@@ -1,0 +1,4 @@
+curl \
+  -d "derived_resource_ids[]=8267a869b62a93a59248f35d7f124c1f&derived_resource_ids[]=383e22a57167445552a3cdc16f0a0c85" \
+  -X DELETE \
+  https://<API_KEY>:<API_SECRET>@api.cloudinary.com/v1_1/<cloud_name>/derived_resources

@@ -1,0 +1,8 @@
+String requestId = MediaManager.get().upload("dog.mp4")
+   .unsigned("preset1")
+   .option("resource_type", "video")
+   .option("folder", "my_folder/my_sub_folder/")
+   .option("public_id", "my_dog")
+   .option("overwrite", true)
+   .option("notification_url", "https://mysite.example.com/notify_endpoint")
+   .dispatch();

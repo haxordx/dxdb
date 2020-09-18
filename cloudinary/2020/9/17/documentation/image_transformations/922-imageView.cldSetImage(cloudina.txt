@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation().setEffect("replace_color:maroon:80:2b38aa")).generate("blue_burlap.png")!, cloudinary: cloudinary)

@@ -1,0 +1,4 @@
+SetMetadataField setField = new SetMetadataField();
+setField.setLabel("Now in stock");
+setField.setMandatory(true);
+api.updateMetadataField("in_stock", setField);

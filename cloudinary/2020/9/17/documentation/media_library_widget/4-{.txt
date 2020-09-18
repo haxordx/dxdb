@@ -1,0 +1,23 @@
+{
+  assets: [{
+  "public_id": "sample",
+  "resource_type": "image",
+  "type": "upload",
+  "format": "jpg",
+  "version": 1511474034,
+  "url": "http://res.cloudinary.com/demo/image/upload/v1511474034/sample.jpg",
+  "secure_url": "https://res.cloudinary.com/demo/image/upload/v1511474034/sample.jpg",
+  "width": 864,
+  "height": 576,
+  "bytes": 120257,
+  "duration": null,
+  "tags": [],
+  "context": [],
+  "created_at": "2017-11-23T21:53:54Z",
+  "derived": [
+    {
+      "url": "http://res.cloudinary.com/demo/image/upload/c_scale,e_grayscale,f_auto,q_auto,w_100/v1511474034/sample.jpg",
+      "secure_url": "https://res.cloudinary.com/demo/image/upload/c_scale,e_grayscale,f_auto,q_auto,w_100/v1511474034/sample.jpg"
+    }
+  ]
+}]}

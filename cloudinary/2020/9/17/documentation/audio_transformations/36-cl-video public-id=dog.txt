@@ -1,0 +1,4 @@
+<cl-video public-id="dog" >
+  <cl-transformation audio-frequency="22050">
+  </cl-transformation>
+</cl-video>

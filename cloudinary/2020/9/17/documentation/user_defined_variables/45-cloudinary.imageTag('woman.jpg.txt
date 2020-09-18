@@ -1,0 +1,1 @@
+cloudinary.imageTag('woman.jpg', {width: "$w", aspectRatio: "$ar", gravity: "face", crop: "fill", variables: [["$w", "200"], ["$ar", "0.8"]]}).toHtml();

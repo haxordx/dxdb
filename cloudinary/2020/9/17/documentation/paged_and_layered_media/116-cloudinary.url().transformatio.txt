@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().page("embedded:name:skyline-3242040_1920.jpg")).imageTag("cld_sample_smart_PSD.jpg");

@@ -1,0 +1,3 @@
+<Video publicId="dog" >
+  <Transformation overlay="video:dog" startOffset="4.5" endOffset="8" angle="90" width="200" gravity="east" />
+</Video>

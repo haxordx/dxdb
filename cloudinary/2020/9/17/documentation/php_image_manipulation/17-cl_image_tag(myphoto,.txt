@@ -1,0 +1,5 @@
+cl_image_tag("myphoto", 
+  array("transformation" => 
+    array(
+      array("dpr" => "auto", "responsive" => TRUE, "width" => "auto", "crop" => "scale", "angle" => 20), 
+      array("effect" => "art:hokusai", ":"border" => "3px_solid_rgb:00390b", "radius" => 20))));

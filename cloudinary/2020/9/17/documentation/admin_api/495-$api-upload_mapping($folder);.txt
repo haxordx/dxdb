@@ -1,0 +1,1 @@
+$api->upload_mapping($folder);

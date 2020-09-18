@@ -1,0 +1,4 @@
+cloudinary.image("docs/foyer-table", {transformation: [
+{format: "gltz"},
+{flags: "draco"}
+]})

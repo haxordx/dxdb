@@ -1,0 +1,4 @@
+$api->update("image1",
+  array(
+    "tags" => "important", 
+    "moderation_status" => "approved"));

@@ -1,0 +1,2 @@
+var tag = $.cloudinary.imageTag("sample");
+tag.toHtml();

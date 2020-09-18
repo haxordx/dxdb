@@ -1,0 +1,5 @@
+$api = new \Cloudinary\Api();
+$api->update("woman", 
+  array(
+  "background_removal" => "cloudinary_ai",
+  "notification_url" => "https://mysite.example.com/hooks"));

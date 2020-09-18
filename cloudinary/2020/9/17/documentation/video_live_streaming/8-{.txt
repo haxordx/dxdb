@@ -1,0 +1,16 @@
+{
+    "public_id": "zeotgizr0ywj9w8owms7",
+    "version": 1579706079,
+    "signature": "2f25a24948aaf35e9c357355893978f5aa880dda",
+    "format": "live",
+    "resource_type": "video",
+    "created_at": "2020-01-22T15:14:39Z",
+    "tags": [],
+    "bytes": 87,
+    "type": "upload",
+    "placeholder": false,
+    "url": "http://res.cloudinary.com/mycloudname/video/upload/v1579706079/zeotgizr0ywj9w8owms7.live",
+    "secure_url": "https://res.cloudinary.com/mycloudname/video/upload/v1579706079/zeotgizr0ywj9w8owms7.live",
+    "access_mode": "public",
+    "original_filename": "blob"
+}

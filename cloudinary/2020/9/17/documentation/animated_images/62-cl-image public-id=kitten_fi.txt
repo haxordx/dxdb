@@ -1,0 +1,4 @@
+<cl-image public-id="kitten_fighting.gif" >
+  <cl-transformation delay="200">
+  </cl-transformation>
+</cl-image>

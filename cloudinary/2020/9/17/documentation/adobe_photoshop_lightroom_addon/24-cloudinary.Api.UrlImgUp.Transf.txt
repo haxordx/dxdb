@@ -1,0 +1,1 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation().Effect("lightroom:saturation_-100:clarity_25:contrast_73:vignetteamount_60")).BuildImageTag("city_pic.jpg")

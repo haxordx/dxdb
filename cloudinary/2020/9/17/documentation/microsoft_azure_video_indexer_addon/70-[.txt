@@ -1,0 +1,15 @@
+[
+  {
+    "confidence":0.9312,
+    "transcript":"Many organizations that use cloudinary have thousands if not millions of digital assets stored in their system.",
+    "start_time":7.11,
+    "end_time":15.1
+  },
+  {
+    "confidence":0.9312,
+    "transcript":"However, certain users on the account may not need to access all the images videos and raw files. Because of this cloudinary offers the ability to add a layer of",
+    "start_time":15.1,
+    "end_time":26.59
+  },
+ ...
+]

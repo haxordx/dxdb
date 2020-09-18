@@ -1,0 +1,1 @@
+Map result = cloudinary.uploader().removeTag(String tag, String public_ids, Map options);

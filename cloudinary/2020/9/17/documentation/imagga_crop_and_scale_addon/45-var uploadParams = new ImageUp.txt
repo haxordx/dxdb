@@ -1,0 +1,6 @@
+var uploadParams = new ImageUploadParams(){
+  File = new FileDescription(@"local_file.jpg"),
+  PublicId = "family_bench",
+  EagerTransforms = new List<Transformation>(){
+   new Transformation().Crop("imagga_scale").Width(150).Height(200)}};
+var uploadResult = cloudinary.Upload(uploadParams);

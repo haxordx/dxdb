@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().named("fit_100x150")).generate("sample.jpg");

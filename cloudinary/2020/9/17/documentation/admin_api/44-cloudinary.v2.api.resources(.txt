@@ -1,0 +1,4 @@
+cloudinary.v2.api.resources(
+{ type: 'upload', 
+  prefix: 'sample' }, 
+function(error, result) {console.log(result, error); });

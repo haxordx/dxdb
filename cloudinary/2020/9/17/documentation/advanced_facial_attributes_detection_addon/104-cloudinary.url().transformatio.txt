@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().flags("region_relative").gravity("adv_faces").overlay(new Layer().publicId("silver_face_mask")).width(1.1)).imageTag("coupled.jpg");

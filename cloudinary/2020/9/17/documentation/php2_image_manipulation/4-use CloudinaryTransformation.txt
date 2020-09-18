@@ -1,0 +1,3 @@
+use Cloudinary\Transformation\Resize;
+
+$cld->imageTag('sample')->resize(Resize::pad(400));

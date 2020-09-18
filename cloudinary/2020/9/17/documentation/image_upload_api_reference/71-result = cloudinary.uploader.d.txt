@@ -1,0 +1,1 @@
+result = cloudinary.uploader.destroy(public_id, **options)

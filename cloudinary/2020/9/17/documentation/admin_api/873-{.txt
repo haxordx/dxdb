@@ -1,0 +1,30 @@
+{
+  "message": "updated",
+  "data": {
+    "name": "custom_square",
+    "display_name": "Custom square resolution",
+    "predefined": false,
+    "representations": [
+      {
+        "transformation": {
+          "width": 1200, "height": 1200, "bit_rate": "5m", "video_codec": "h264:main:3.1"
+        }
+      },
+      {
+        "transformation": {
+          "width": 900, "height": 900, "bit_rate": "3500k", "video_codec": "h264:main:3.1"
+        }
+      },
+      {
+        "transformation": {
+          "width": 600, "height": 600, "bit_rate": "1500k", "video_codec": "h264:baseline:3.0"
+        }
+      }
+      {
+        "transformation": {
+          "width": 320, "height": 320, "bit_rate": "192k", "video_codec": "h264:baseline:3.0"
+        }
+      }                
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+let params = CLDUploadRequestParams()
+    .setUploadPreset("samplePreset")
+let request = cloudinary.createUploader().upload(
+    url: "imageFile.jpg", params: params)

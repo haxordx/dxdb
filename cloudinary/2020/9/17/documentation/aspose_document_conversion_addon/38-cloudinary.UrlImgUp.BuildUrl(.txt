@@ -1,0 +1,1 @@
+cloudinary.UrlImgUp.BuildUrl("sample_document.docx.pdf");

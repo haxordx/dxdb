@@ -1,0 +1,4 @@
+<img
+  src="https://res.cloudinary.com/demo/image/upload/c_thumb,w_100,h_100,g_face,r_max/l_cloudinary_icon,e_brightness:200,w_50,o_60/dpr_2.0/lady.jpg"
+  height=100
+  width=100 />

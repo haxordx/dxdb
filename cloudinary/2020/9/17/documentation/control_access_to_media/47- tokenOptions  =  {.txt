@@ -1,0 +1,7 @@
+ tokenOptions  =  { 
+        :key => "MY_KEY", 
+        :duration => 300, 
+        :acl => "/image/authenticated/*",
+        :ip => "111.222.111.222"
+ }
+ cookieToken = Cloudinary::Utils.generate_auth_token(tokenOptions)

@@ -1,0 +1,3 @@
+<cld-image publicId="docs/kitchen1.jpg" >
+  <cld-transformation width="600" aspectRatio="1" gravity="auto:sink" crop="thumb" />
+</cld-image>

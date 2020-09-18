@@ -1,0 +1,1 @@
+MediaManager.get().url().generate("woman.jpg");

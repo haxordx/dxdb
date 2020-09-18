@@ -1,0 +1,4 @@
+{
+  shape: 'square',
+  size: 60
+}

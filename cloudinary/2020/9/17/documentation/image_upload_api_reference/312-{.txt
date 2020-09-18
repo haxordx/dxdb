@@ -1,0 +1,27 @@
+{
+  "css_url": "http://res.cloudinary.com/demo/image/sprite/v1473689611/logo.css",
+  "secure_css_url": "https://res.cloudinary.com/demo/image/sprite/v1473689611/logo.css",
+  "image_url": "http://res.cloudinary.com/demo/image/sprite/v1473689611/logo.png",
+  "secure_image_url": "https://res.cloudinary.com/demo/image/sprite/v1473689611/logo.png",
+  "json_url": "http://res.cloudinary.com/demo/image/sprite/v1473689611/logo.json",
+  "secure_json_url": "https://res.cloudinary.com/demo/image/sprite/v1473689611/logo.json",
+  "version": 1473689611,
+  "public_id": "logo",
+  "image_infos": {
+    "logo_slogan": {
+      "width": 300,
+      "height": 165,
+      "x": 0,
+      "y": 0 },
+    "https://res.cloudinary.com/demo/image/upload/v1549540112/logo2.png": {
+      "width": 32,
+      "height": 32,
+      "x": 0,
+      "y": 167 },
+    "https://cloudinary.com/images/logo.png": {
+      "width": 165,
+      "height": 165,
+      "x": 0,
+      "y": 201 }
+  }
+}

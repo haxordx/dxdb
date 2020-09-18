@@ -1,0 +1,4 @@
+cloudinary.v2.api.update("image1", 
+  { tags: "important", 
+    moderation_status: "approved"},
+    function(error, result) {console.log(result, error); });

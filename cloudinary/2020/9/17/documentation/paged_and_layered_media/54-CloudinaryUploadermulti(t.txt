@@ -1,0 +1,3 @@
+\Cloudinary\Uploader::multi("topic", 
+  array("format"=>"pdf", "transformation"=>array("width"=>800,"crop"=>"lfill","gravity"=>"auto")
+  ));

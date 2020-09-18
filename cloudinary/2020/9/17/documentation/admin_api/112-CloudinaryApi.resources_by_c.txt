@@ -1,0 +1,2 @@
+Cloudinary::Api.resources_by_context('mycontextkey', 'mycontextvalue',
+  :resource_type => :video)

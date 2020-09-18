@@ -1,0 +1,4 @@
+js
+<cld-image publicId="DamagedHelmet3D" fetchFormat="glb">
+
+</cld-image>

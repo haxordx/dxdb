@@ -1,0 +1,3 @@
+$api = new \Cloudinary\Api();
+$api->update("wood_chair", 
+  array("background_removal" => "pixelz"));

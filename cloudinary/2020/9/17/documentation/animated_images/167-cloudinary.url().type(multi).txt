@@ -1,0 +1,1 @@
+cloudinary.url().type("multi").imageTag("arrow_animation.gif");

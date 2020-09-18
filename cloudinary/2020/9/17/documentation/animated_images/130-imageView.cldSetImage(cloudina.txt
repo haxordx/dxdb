@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation().setFetchFormat("auto")).generate("kitten_fighting.gif")!, cloudinary: cloudinary)

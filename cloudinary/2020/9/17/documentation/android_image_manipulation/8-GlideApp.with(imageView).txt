@@ -1,0 +1,6 @@
+GlideApp.with(imageView)
+  .load(new CloudinaryRequest.Builder(“sample”)
+    .transformation(new Transformation().effect(“blur”))
+    .responsive(AUTO_FILL)
+    .build())
+  .into(imageView);

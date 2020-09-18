@@ -1,0 +1,5 @@
+<form>
+    @Model.Cloudinary.Api.BuildUploadForm("image_id", "auto",
+        new SortedDictionary<string, object>() { { "callback", cors_location } },
+        null)
+</form>

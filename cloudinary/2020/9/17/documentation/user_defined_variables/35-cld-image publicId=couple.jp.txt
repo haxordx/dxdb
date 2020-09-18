@@ -1,0 +1,4 @@
+<cld-image publicId="couple.jpg" :variables="[['$bcolor', '!red!']]">
+  <cld-transformation if="fc_gt_0" />
+  <cld-transformation border="5px_solid_$bcolor" height="120" width="120" crop="fill" />
+</cld-image>

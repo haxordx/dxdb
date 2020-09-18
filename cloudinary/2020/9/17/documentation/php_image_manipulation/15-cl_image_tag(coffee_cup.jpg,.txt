@@ -1,0 +1,14 @@
+cl_image_tag("coffee_cup.jpg", array("transformation"=>array(
+  array("width"=>400, "height"=>250, "gravity"=>"south", "crop"=>"fill"),
+  array("overlay"=>"nice_couple", "width"=>"1.3", "height"=>"1.3", "gravity"=>"faces", "flags"=>"region_relative", "crop"=>"crop"),
+  array("effect"=>"saturation:50"),
+  array("effect"=>"vignette"),
+  array("flags"=>"layer_apply", "width"=>100, "radius"=>"max", "gravity"=>"center", "y"=>20, "x"=>-20, "crop"=>"scale"),
+  array("overlay"=>"balloon", "height"=>55),
+  array("effect"=>"hue:-20", "angle"=>5),
+  array("flags"=>"layer_apply", "x"=>30, "y"=>5),
+  array("overlay"=>array("font_family"=>"Cookie", "font_size"=>40, "font_weight"=>"bold", "text"=>"Love"), "effect"=>"colorize", "color"=>"#f08"),
+  array("angle"=>20, "flags"=>"layer_apply", "x"=>-45, "y"=>44),
+  array("width"=>300, "height"=>250, "x"=>30, "crop"=>"crop"),
+  array("radius"=>60)
+  )))

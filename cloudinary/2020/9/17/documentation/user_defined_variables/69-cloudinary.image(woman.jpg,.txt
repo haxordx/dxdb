@@ -1,0 +1,5 @@
+cloudinary.image("woman.jpg", {variables: [["$height", "200"]], transformation: [
+  {if: "ar_lt_1.0"},
+  {if: "else"},
+  {height: "$height", crop: "scale"}
+  ]})

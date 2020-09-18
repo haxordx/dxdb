@@ -1,0 +1,3 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation()
+  .setWidth(700).setHeight(700).setCrop("fill").chain()
+  .setEffect("style_transfer").setOverlay("sailing_angel")).generate("golden_gate.jpg")!, cloudinary: cloudinary)

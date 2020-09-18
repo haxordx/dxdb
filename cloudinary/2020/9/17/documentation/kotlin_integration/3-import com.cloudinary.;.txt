@@ -1,0 +1,3 @@
+import com.cloudinary.*; 
+...
+private val cloudinary = Cloudinary("cloudinary://<your-api-key>:<your-api-secret>@<your-cloud-name>")

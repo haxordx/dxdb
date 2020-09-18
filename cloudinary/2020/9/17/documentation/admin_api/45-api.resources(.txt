@@ -1,0 +1,4 @@
+api.resources(
+ObjectUtils.asMap(
+  "type", "upload", 
+  "prefix", "sample"));

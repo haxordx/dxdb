@@ -1,0 +1,2 @@
+const cloudName = "{your-cloud-name}";
+const uploadPreset = "{your-upload-preset}";

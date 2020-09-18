@@ -1,0 +1,1 @@
+cloudinary.image("multi_page_pdf.jpg", {width: 300, crop: "scale"})

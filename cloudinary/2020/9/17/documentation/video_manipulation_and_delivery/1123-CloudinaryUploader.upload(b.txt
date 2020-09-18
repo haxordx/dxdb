@@ -1,0 +1,12 @@
+Cloudinary::Uploader.upload("big_buck_bunny.mp4", 
+    :resource_type => :video,
+    :eager => 
+       [{:format => "m3u8", :transformation => 
+            [
+              {:width => 960, :height => 540, :crop => :limit, :video_codec => "h264:main:3.1", :bit_rate =>"3500k"},
+              {:overlay => "watermark", :width => 100}
+            ] 
+        }], 
+     :eager_async => true, 
+     :eager_notification_url => "https://mysite.example.com/notify_endpoint")
+     :public_id => "bb_bunny"

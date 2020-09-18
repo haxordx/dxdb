@@ -1,0 +1,3 @@
+<Image publicId="woman.jpg" >
+  <Transformation quality="auto" />
+</Image>

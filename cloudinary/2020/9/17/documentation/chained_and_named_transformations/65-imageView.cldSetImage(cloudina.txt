@@ -1,0 +1,4 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation()
+  .setNamed("jpg_with_quality_30").chain()
+  .setNamed("crop_400x400").chain()
+  .setNamed("fit_100x150")).generate("sample.jpg")!, cloudinary: cloudinary)

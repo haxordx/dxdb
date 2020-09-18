@@ -1,0 +1,3 @@
+cloudinary.Api.UrlVideoUp.Transform(new Transformation()
+  .Width(480).StartOffset("3").EndOffset("5").Effect("boomerang").Crop("scale").Chain()
+  .Effect("loop")).BuildImageTag("snow_deer.gif")

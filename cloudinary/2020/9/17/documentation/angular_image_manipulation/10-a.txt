@@ -1,0 +1,12 @@
+<a 
+  clhref="{URL_of_public_image}" 
+  effect="sepia" 
+  type="fetch"   
+  href="https://res.cloudinary.com/demo/image/fetch/c_fit,h_16,w_16/e_sepia/{URL_of_public_image}">
+    <cl-transformation 
+      crop="fit" 
+      height="16" 
+      width="16">
+  </cl-transformation>
+  Click here
+</a>

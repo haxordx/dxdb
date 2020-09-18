@@ -1,0 +1,1 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation().Overlay(new TextLayer().FontFamily("impact").FontSize(150).Text("Your%20Brand%20Name%20or%20Logo%20Here")).Effect("distort:arc:-120").Color("white").Gravity("south").Y(840).Opacity(60)).BuildImageTag("frisbee.jpg")

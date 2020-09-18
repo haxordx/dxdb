@@ -1,0 +1,3 @@
+cloudinary.url().transformation(new Transformation()
+  .height(200).width(200).crop("fill").chain()
+  .effect("brightness:100").height(200).underlay(new Layer().publicId("site_bg")).width(200)).imageTag("smartphone.png");

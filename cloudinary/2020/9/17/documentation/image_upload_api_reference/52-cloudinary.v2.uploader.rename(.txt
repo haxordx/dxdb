@@ -1,0 +1,1 @@
+cloudinary.v2.uploader.rename(from_public_id, to_public_id, options, callback);

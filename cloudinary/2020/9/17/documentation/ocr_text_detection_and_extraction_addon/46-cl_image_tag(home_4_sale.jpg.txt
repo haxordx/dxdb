@@ -1,0 +1,1 @@
+cl_image_tag("home_4_sale.jpg", array("overlay"=>"call_text", "flags"=>"region_relative", "width"=>"1.1", "gravity"=>"ocr_text"))

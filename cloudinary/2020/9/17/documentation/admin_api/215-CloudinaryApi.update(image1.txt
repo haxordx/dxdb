@@ -1,0 +1,3 @@
+Cloudinary::Api.update("image1",
+  :tags => "important",
+  :moderation_status => "approved")

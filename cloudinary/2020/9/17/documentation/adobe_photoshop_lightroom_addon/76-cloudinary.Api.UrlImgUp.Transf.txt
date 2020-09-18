@@ -1,0 +1,5 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation()
+  .Effect("lightroom:xmp:soft_mist.xmp").Chain()
+  .Radius(50).Quality("auto").Border("40px_solid_orange").Chain()
+  .Angle(5).Chain()
+  .Width(400).Crop("scale")).BuildImageTag("park")

@@ -1,0 +1,5 @@
+cld config -n accountx cloudinary://123456789012345:abcdefghijklmnopqrstuvwxyzA@cloud_name
+
+cld -C accountx admin upload_presets
+
+cld config -rm accountx

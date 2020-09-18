@@ -1,0 +1,4 @@
+cl_image_tag("sample.jpg", array("transformation"=>array(
+  array("height"=>300, "width"=>300, "background"=>"auto:predominant", "crop"=>"pad"),
+  array("effect"=>"gradient_fade:symmetric_pad", "x"=>"0.5")
+  )))

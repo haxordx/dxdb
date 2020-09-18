@@ -1,0 +1,3 @@
+<Image publicId="docs/colorblind_green_red.jpg" >
+  <Transformation effect="assist_colorblind:8" />
+</Image>

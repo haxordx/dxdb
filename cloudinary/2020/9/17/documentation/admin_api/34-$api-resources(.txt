@@ -1,0 +1,2 @@
+$api->resources(
+  array("type" => "upload", "max_results" => 30));

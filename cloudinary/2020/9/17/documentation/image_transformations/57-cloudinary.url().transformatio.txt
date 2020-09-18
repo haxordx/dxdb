@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().width(300).height(100).crop("scale")).generate("sample.jpg")

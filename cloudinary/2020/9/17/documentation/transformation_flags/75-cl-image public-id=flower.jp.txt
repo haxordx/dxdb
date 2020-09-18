@@ -1,0 +1,8 @@
+<cl-image public-id="flower.jpg" >
+  <cl-transformation overlay="face_left">
+  </cl-transformation>
+  <cl-transformation width="200" height="200" gravity="face" radius="max" crop="thumb">
+  </cl-transformation>
+  <cl-transformation flags="layer_apply" gravity="north_east">
+  </cl-transformation>
+</cl-image>

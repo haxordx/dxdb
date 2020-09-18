@@ -1,0 +1,1 @@
+CloudinaryVideo("elephants").video(effect="preview:duration_5")

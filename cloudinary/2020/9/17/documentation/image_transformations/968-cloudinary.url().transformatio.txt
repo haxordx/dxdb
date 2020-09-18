@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().effect("tint:equalize:80:red:blue:yellow")).imageTag("greece_landscape.jpg");

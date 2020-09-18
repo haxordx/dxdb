@@ -1,0 +1,1 @@
+let result = cloudinary.createManagementApi().removeTag(tag, publicIds: publicIds, params: params)

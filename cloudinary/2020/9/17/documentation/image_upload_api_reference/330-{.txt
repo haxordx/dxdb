@@ -1,0 +1,6 @@
+{
+  "url": "http://res.cloudinary.com/demo/image/multi/v1473690796/logo.gif",
+  "secure_url": "https://res.cloudinary.com/demo/image/multi/v1473690796/logo.gif",
+  "public_id": "logo",
+  "version": 1473690796
+}

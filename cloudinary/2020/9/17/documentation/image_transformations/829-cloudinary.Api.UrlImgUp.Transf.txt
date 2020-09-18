@@ -1,0 +1,1 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation().Height(300).Width(300).Background("auto:predominant_gradient:4:palette_red_green_blue_orange").Crop("pad")).BuildImageTag("horse.jpg")

@@ -1,0 +1,3 @@
+<cld-image publicId="woman.jpg" >
+  <cld-transformation gravity="face" crop="crop" />
+</cld-image>

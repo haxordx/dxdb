@@ -1,0 +1,1 @@
+$.cloudinary.image("family_bench.jpg", {height: 200, width: 150, crop: "imagga_scale"})

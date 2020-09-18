@@ -1,0 +1,2 @@
+MediaManager.get().url().transformation(new Transformation()
+.variables(variable("$newwidth","10 + iw * 0.3")).chain().width("$newwidth").crop("scale")).generate("woman.jpg");

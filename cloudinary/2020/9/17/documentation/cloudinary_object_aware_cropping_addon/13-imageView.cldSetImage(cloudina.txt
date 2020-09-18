@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation().setWidth(600).setAspectRatio("1").setGravity("auto:sink").setCrop("thumb")).generate("docs/kitchen1.jpg")!, cloudinary: cloudinary)

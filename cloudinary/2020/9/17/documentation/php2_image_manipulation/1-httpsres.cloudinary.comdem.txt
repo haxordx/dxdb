@@ -1,0 +1,1 @@
+https://res.cloudinary.com/demo/image/upload/co_lightblue,e_outline:outer:100/mypic.jpg

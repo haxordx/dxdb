@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().width(150).height(60).crop("fit")).type("sprite").generate("logo.png");

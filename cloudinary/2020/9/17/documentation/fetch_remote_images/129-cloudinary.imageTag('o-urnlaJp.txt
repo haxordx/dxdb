@@ -1,0 +1,1 @@
+cloudinary.imageTag('o-urnlaJpOA.jpg', {width: 500, border: "5px_solid_black", crop: "scale", type: "youtube"}).toHtml();

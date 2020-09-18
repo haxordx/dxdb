@@ -1,0 +1,3 @@
+cloudinary.provisioning.account.sub_accounts(true, null, "product")
+  .then((response) => { console.log(response); })
+  .catch((err) => { console.log(err); });

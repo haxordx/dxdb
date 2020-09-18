@@ -1,0 +1,1 @@
+cl_image_tag("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVmwds9qedbHZ__uc1E40a-s70KtNiiLVKiaKymGszYdIDtzJfzw", :type=>"fetch")

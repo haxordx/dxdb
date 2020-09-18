@@ -1,0 +1,1 @@
+cloudinary.imageTag('smartphone2.jpg', {effect: "blur_region:800", gravity: "ocr_text", signUrl: true}).toHtml();

@@ -1,0 +1,14 @@
+{
+  "notification_type": "resource_tags_changed",
+  "source": "ui",
+  "resources": [
+    {
+      "public_id": "testing",
+      "resource_type": "image",
+      "type": "upload",
+      "added": [
+        "random"
+      ]
+    }
+  ]
+}

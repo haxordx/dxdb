@@ -1,0 +1,4 @@
+cl_image_tag("coast.jpg", array("sign_url"=>true, "transformation"=>array(
+  array("width"=>400, "crop"=>"scale"),
+  array("height"=>150, "overlay"=>"family_bench.png", "radius"=>"max", "width"=>150, "crop"=>"imagga_scale")
+  )))

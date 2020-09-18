@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().named("jpg_with_quality_30").width(100).height(50).crop("fit")).imageTag("sample.jpg");

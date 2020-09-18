@@ -1,0 +1,1 @@
+CloudinaryImage("Skater.jpg").image(width=400, aspect_ratio="1", gravity="auto:skateboard", crop="thumb", sign_url=True)

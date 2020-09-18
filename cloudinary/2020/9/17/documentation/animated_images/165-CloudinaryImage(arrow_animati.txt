@@ -1,0 +1,1 @@
+CloudinaryImage("arrow_animation.gif").image(type="multi")

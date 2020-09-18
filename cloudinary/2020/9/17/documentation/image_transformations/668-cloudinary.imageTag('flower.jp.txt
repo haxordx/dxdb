@@ -1,0 +1,4 @@
+cloudinary.imageTag('flower.jpg', {transformation: [
+  {width: 200, height: 200, gravity: "face", radius: "max", overlay: new cloudinary.Layer().publicId("face_left"), crop: "thumb"},
+  {flags: "layer_apply", gravity: "north_east"}
+  ]}).toHtml();

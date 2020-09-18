@@ -1,0 +1,3 @@
+var explicitParams = new ExplicitParams("https://en.wikipedia.org/wiki/Jpg"){
+  Type = "url2png"};
+var explicitResult = cloudinary.Explicit(explicitParams);

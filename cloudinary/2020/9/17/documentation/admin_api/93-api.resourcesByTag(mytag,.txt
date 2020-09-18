@@ -1,0 +1,2 @@
+api.resourcesByTag("mytag", 
+  ObjectUtils.asMap("resource_type", "raw"));

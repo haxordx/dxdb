@@ -1,0 +1,11 @@
+var metadataDataSourceParams = new MetadataDataSourceParams(){  
+  Values = [{  
+    ExternalId = "color1",
+    Value = "orange"
+  },
+  {  
+    ExternalId = "color2",
+    Value = "black"
+  }]
+};
+cloudinary.UpdateMetadataDataSourceEntries("color_id", metadataDataSourceParams);

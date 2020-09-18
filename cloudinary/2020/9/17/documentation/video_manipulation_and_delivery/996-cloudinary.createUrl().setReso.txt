@@ -1,0 +1,1 @@
+cloudinary.createUrl().setResourceType("video").setTransformation(CLDTransformation().setOverlay("text:arial_60:Cool%20Video").setGravity("south").setY(80).setStartOffset("2").setEndOffset("5")).generate("dog.mp4")

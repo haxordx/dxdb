@@ -1,0 +1,6 @@
+<cl-image public-id="flowers.jpg" >
+  <cl-transformation width="500" crop="scale">
+  </cl-transformation>
+  <cl-transformation overlay="text:Times_60:Cool%20image" gravity="south" y="20">
+  </cl-transformation>
+</cl-image>

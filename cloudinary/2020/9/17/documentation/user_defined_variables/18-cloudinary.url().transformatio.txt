@@ -1,0 +1,4 @@
+cloudinary.url().transformation(new Transformation()
+.variables(variable("$bcolor","!red!")).chain()
+  .if("fc_gt_0").chain()
+  .border("5px_solid_$bcolor").height(120).width(120).crop("fill")).imageTag("sample.jpg");

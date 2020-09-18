@@ -1,0 +1,2 @@
+var tag = cl.imageTag("sample");
+tag.toHtml();

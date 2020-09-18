@@ -1,0 +1,3 @@
+<Image publicId="sample.jpg" >
+  <Transformation effect="improve:outdoor" />
+</Image>

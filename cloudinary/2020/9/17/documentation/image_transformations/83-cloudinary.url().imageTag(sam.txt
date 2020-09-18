@@ -1,0 +1,1 @@
+cloudinary.url().imageTag("sample.jpg", ObjectUtils.asMap("alt","A sample photo","className","Samples"));

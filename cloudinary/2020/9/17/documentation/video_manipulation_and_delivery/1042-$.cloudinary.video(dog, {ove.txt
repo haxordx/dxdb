@@ -1,0 +1,1 @@
+$.cloudinary.video("dog", {overlay: new cloudinary.SubtitlesLayer().fontFamily("arial").fontSize(70).publicId("sample_sub_en.srt"), color: "#ffff00", background: "black"})

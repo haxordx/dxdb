@@ -1,0 +1,9 @@
+cl_video_tag("kitten_fighting", array("transformation"=>array(
+  array("duration"=>"5", "width"=>300, "height"=>200, "crop"=>"scale"),
+  array("overlay"=>"video:dog", "width"=>300, "height"=>200),
+  array("duration"=>"5"),
+  array("overlay"=>"video:transition1", "effect"=>"transition"),
+  array("effect"=>"accelerate:5s", "angle"=>180),
+  array("flags"=>"layer_apply"),
+  array("flags"=>"layer_apply")
+  )))

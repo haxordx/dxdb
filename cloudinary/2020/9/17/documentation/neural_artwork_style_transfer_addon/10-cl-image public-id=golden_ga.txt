@@ -1,0 +1,6 @@
+<cl-image public-id="golden_gate.jpg" >
+  <cl-transformation width="700" height="700" crop="fill">
+  </cl-transformation>
+  <cl-transformation effect="style_transfer" overlay="sailing_angel">
+  </cl-transformation>
+</cl-image>

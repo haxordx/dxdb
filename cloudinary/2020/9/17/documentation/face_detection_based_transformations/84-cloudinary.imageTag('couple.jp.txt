@@ -1,0 +1,1 @@
+cloudinary.imageTag('couple.jpg', {width: 150, height: 150, gravity: "face", crop: "thumb"}).toHtml();

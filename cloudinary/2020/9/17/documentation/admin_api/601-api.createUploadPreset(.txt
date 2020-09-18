@@ -1,0 +1,6 @@
+api.createUploadPreset(
+  ObjectUtils.asMap(
+    "name", "my_preset",
+    "unsigned", true, 
+    "tags" => "remote", 
+    "allowed_formats" => "jpg,png"));

@@ -1,0 +1,4 @@
+cloudinary.videoTag('dog', {transformation: [
+  {width: 100, crop: "scale"},
+  {dpr: "2.0"}
+  ]}).toHtml();

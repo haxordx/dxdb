@@ -1,0 +1,4 @@
+cloudinary.url().transformation(new Transformation()
+    .signed(true)
+    .customPreFunction(remote("https://my.preprocess.custom/function")))
+  .imageTag("sample.jpg");

@@ -1,0 +1,1 @@
+cloudinary.url().fetch_format("glb").imageTag("DamagedHelmet3D");

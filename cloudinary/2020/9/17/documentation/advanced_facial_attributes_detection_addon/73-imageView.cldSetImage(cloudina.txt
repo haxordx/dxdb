@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation().setWidth(100).setHeight(40).setGravity("adv_eyes").setCrop("thumb")).generate("face1.jpg")!, cloudinary: cloudinary)

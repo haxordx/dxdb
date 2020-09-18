@@ -1,0 +1,3 @@
+var deletionParams = new DeletionParams(){
+  PublicId = "sample"};
+var deletionResult = cloudinary.Destroy(deletionParams);

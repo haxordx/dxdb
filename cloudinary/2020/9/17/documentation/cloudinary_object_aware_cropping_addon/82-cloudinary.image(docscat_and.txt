@@ -1,0 +1,1 @@
+cloudinary.image("docs/cat_and_birds.jpg", {gravity: "dog:bird", width: 600, height: 800, crop: "crop"})

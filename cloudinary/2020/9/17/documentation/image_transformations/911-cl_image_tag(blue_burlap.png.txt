@@ -1,0 +1,1 @@
+cl_image_tag("blue_burlap.png", array("effect"=>"replace_color:maroon:80:2b38aa"))

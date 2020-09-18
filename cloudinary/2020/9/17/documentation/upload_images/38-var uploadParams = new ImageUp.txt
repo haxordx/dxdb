@@ -1,0 +1,5 @@
+var uploadParams = new ImageUploadParams(){
+  File = new FileDescription(@"sample.jpg"),
+  PublicId = "my_name",
+  Folder = "my_folder/my_sub_folder/"};
+var uploadResult = cloudinary.Upload(uploadParams);

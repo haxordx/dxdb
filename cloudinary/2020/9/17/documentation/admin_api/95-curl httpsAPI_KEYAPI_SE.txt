@@ -1,0 +1,1 @@
+curl https://<API_KEY>:<API_SECRET>@api.cloudinary.com/v1_1/<cloud_name>/resources/raw/tags/mytag

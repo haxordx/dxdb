@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().effect("blur:300")).generate("sample.jpg");

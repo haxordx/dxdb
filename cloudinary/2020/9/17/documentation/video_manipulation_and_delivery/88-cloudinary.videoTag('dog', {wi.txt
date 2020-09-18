@@ -1,0 +1,1 @@
+cloudinary.videoTag('dog', {width: 150, height: 100, crop: "scale"}).toHtml();

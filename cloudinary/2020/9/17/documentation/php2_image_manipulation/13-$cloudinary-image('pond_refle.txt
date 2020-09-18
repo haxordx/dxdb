@@ -1,0 +1,3 @@
+$cloudinary->image('pond_reflect.jpg')
+  ->format(Format::auto())
+  ->quality(Quality::auto());

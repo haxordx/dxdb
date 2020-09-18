@@ -1,0 +1,1 @@
+create_user(string name, string email, string role, string[] sub_accounts_ids, object options);

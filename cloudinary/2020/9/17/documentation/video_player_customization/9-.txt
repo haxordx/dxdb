@@ -1,0 +1,13 @@
+   ...  
+   loop
+   controls
+   data-cld-public-id="book"
+   data-cld-font-face="Yatra One"
+   data-cld-autoplay-mode="on-scroll"
+   data-cld-floating-when-not-visible="left"
+   data-cld-transformation='{ "width": 400, "crop": "limit",  
+     streaming_profile": "hd" }'
+   data-cld-poster-options= '{ "publicId": "mypic" "transformation": 
+    {"effect": ["sepia"] } }'
+   data-cld-source-types='["hls", "mp4"]'
+   ...

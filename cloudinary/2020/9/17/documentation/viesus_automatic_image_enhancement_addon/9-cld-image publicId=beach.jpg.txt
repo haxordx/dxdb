@@ -1,0 +1,3 @@
+<cld-image publicId="beach.jpg" >
+
+</cld-image>

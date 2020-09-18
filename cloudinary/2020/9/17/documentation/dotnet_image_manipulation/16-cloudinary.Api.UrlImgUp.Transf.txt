@@ -1,0 +1,6 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation()
+  .Effect("cartoonify").Chain()
+  .Radius("max").Chain()
+  .Effect("outline:100").Color("lightblue").Chain()
+  .Background("lightblue").Chain()
+  .Height(300).Crop("scale")).BuildImageTag("actor.jpg")

@@ -1,0 +1,7 @@
+ApiResponse result = api.resources(ObjectUtils.emptyMap());
+System.out.println(result.apiRateLimit().getLimit());
+=> 500
+System.out.println(result.apiRateLimit().getRemaining());
+=> 499
+System.out.println(result.apiRateLimit().getReset());
+=> 2019-10-03 10:00:00 +0200

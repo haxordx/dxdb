@@ -1,0 +1,3 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation()
+  .setWidth(200).setAngle(45).setCrop("scale").chain()
+  .setDefaultImage("avatar.png")).generate("non_existing_id.png")!, cloudinary: cloudinary)

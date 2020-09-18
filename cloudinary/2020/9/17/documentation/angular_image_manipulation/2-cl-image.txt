@@ -1,0 +1,8 @@
+<cl-image 
+  _ngcontent-ywn-2="" 
+  public-id="mypic" 
+  class="thumbnail inline" 
+  format="jpg" 
+  ng-reflect-public-id="mypic">
+    <img src="https://res.cloudinary.com/{cloud_name}/image/upload/mypic.jpg">
+</cl-image>

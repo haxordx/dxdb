@@ -1,0 +1,4 @@
+$.cloudinary.image("sample.jpg", {transformation: [
+  {width: 300, crop: "limit"},
+  {if: "iw_gt_300", color: "white", gravity: "south_east", overlay: new cloudinary.TextLayer().fontFamily("Arial").fontSize(15).fontWeight("bold").text("Image%20scaled%20down%20to%20300px")}
+  ]})

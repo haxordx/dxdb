@@ -1,0 +1,14 @@
+// Create a toggle button that turns the responsive behavior on or off.
+<button id="toggle-fluid" class="btn btn-default">Disable Fluid</button>
+
+var player = cld.videoPlayer('example-player');
+var source = { publicId: 'oceans'};
+player.source(source).play();
+
+// Handle Fluid toggle button
+document.querySelector("button#toggle-fluid").addEventListener("click", function() {
+isFluid = !player.fluid()
+player.fluid(isFluid);
+
+this.innerHTML = isFluid ? 'Disable Fluid' : 'Enable Fluid'
+});

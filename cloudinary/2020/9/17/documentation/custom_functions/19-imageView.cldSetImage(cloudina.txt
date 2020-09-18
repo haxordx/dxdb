@@ -1,0 +1,6 @@
+imageView.cldSetImage(cloudinary.createUrl()
+  .setTransformation(CLDTransformation()
+    .setCustomFunction(CLDCustomFunction()
+      .setFunctionType("wasm")
+      .setSource("my_example.wasm")))
+  .generate("sample.jpg")!, cloudinary: cloudinary)

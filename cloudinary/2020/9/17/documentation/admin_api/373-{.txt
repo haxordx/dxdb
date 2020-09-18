@@ -1,0 +1,29 @@
+{
+    "transformations": [
+    {
+        "name": "t_Aspen_LUT",
+        "allowed_for_strict": true,
+        "used": false,
+        "named": true
+    },
+    {
+        "name": "w_110,h_100,c_fill",
+        "allowed_for_strict": false,
+        "used": false,
+        "named": false
+    },
+    {
+        "name": "c_thumb,g_face,h_100,w_80",
+        "allowed_for_strict": false,
+        "used": true,
+        "named": false
+    },
+    {
+        "name": "c_fill,h_75,w_75/jpg",
+        "allowed_for_strict": false,
+        "used": true,
+        "named": false
+    }
+    ],
+    "next_cursor": "8edbc61040178db60b0973ca9494bf3a"
+}

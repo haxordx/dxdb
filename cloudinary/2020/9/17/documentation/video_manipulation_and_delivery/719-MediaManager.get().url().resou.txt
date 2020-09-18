@@ -1,0 +1,1 @@
+MediaManager.get().url().resourceType("video").generate("docs/transparent_talking.webm");

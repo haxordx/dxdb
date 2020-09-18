@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().width(350).crop("scale")).format("gif").generate("cloud_castle.jpg");

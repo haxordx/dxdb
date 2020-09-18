@@ -1,0 +1,4 @@
+cloudinary.imageTag('sample.jpg', {transformation: [
+  {if: "ils_gt_0.5", width: 120, height: 150, crop: "pad"},
+  {if: "else", width: 120, height: 150, crop: "fill"}
+  ]}).toHtml();

@@ -1,0 +1,1 @@
+cloudinary.Api.UrlVideoUp.Transform(new Transformation().Width(500).Effect("saturation:-50").Crop("scale")).BuildVideoTag("dog")

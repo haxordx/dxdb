@@ -1,0 +1,1 @@
+CloudinaryImage("city_pic.jpg").image(effect="lightroom:whitebalance_tungsten", sign_url=True)

@@ -1,0 +1,4 @@
+var updateParams = new UpdateParams("image1"){
+  Tags = "important",
+  ModerationStatus = "approved"};
+var updateResult = cloudinary.Update(updateParams);

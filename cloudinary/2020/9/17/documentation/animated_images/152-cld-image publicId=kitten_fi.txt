@@ -1,0 +1,3 @@
+<cld-image publicId="kitten_fighting.gif" >
+  <cld-transformation flags="lossy" quality="50" />
+</cld-image>

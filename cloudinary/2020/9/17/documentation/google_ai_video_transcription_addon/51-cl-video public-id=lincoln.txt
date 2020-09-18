@@ -1,0 +1,4 @@
+<cl-video public-id="lincoln" >
+  <cl-transformation overlay="subtitles:impact_15:lincoln.transcript" color="khaki" background="#331a00" gravity="south_west">
+  </cl-transformation>
+</cl-video>

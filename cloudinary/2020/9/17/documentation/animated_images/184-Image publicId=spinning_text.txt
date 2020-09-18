@@ -1,0 +1,3 @@
+<Image publicId="spinning_text.gif" type="multi">
+  <Transformation delay="100" />
+</Image>

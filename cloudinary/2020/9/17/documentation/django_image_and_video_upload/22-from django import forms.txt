@@ -1,0 +1,11 @@
+from django import forms
+from django.http import HttpResponse
+
+from cloudinary.forms import cl_init_js_callbacks      
+from .models import Photo
+from .forms import PhotoDirectForm
+
+def upload_prompt(request):
+  context = dict(direct_form = PhotoDirectForm())
+  cl_init_js_callbacks(context['direct_form'], request)
+  return render(request, 'upload_prompt.html', context)

@@ -1,0 +1,1 @@
+Map result = cloudinary.uploader().text(String text, Map options);

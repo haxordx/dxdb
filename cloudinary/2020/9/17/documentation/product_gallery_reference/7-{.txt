@@ -1,0 +1,4 @@
+{
+  style: 'custom',
+  url: 'https://www.example.come/my_loading_spinner.svg'
+}

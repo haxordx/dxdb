@@ -1,0 +1,4 @@
+<cl-image public-id="sample.jpg" >
+  <cl-transformation flags="attachment:pretty_flower" fetch-format="auto">
+  </cl-transformation>
+</cl-image>

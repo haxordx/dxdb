@@ -1,0 +1,8 @@
+<cl-image public-id="horses.jpg" sign-url="true">
+  <cl-transformation effect="saturation:50" radius="20" width="400" crop="scale">
+  </cl-transformation>
+  <cl-transformation gravity="south_east" overlay="logo_jpegmini" opacity="80" width="100" x="10" y="10">
+  </cl-transformation>
+  <cl-transformation quality="jpegmini">
+  </cl-transformation>
+</cl-image>

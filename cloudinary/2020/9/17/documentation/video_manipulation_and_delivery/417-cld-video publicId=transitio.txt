@@ -1,0 +1,3 @@
+<cld-video publicId="transition1" >
+  <cld-transformation width="300" crop="scale" />
+</cld-video>

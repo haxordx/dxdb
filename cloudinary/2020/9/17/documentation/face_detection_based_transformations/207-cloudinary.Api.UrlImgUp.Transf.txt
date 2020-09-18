@@ -1,0 +1,1 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation().Gravity("face").Crop("crop")).BuildImageTag("woman.jpg")

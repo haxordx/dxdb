@@ -1,0 +1,1 @@
+CloudinaryImage("docs/store_front.jpg").image(width=500, aspect_ratio="1.0", gravity="auto:person_avoid", crop="fill")

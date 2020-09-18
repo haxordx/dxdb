@@ -1,0 +1,5 @@
+<cld-image publicId="https://en.wikipedia.org/wiki/jpg" type="url2png">
+  <cld-transformation radius="50" width="400" height="400" gravity="north" border="2px_solid_rgb:999" crop="fill" />
+  <cld-transformation effect="shadow:20" color="#ccc" />
+  <cld-transformation angle="30" color="#ec9800" effect="colorize" overlay="url2png_logo" />
+</cld-image>

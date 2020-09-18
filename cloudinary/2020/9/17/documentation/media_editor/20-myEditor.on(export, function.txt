@@ -1,0 +1,5 @@
+myEditor.on("export", function(data) {
+console.log("URL: ", data.assets[0].url);
+console.log("Secure URL: ", data.assets[0].secureUrl);
+console.log("Download URL: ", data.assets[0].downloadUrl);
+});

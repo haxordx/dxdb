@@ -1,0 +1,1 @@
+cloudinary.api.delete_metadata_field(external_id, **options)

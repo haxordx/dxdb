@@ -1,0 +1,4 @@
+cl_image_tag("couple.jpg", :variables=>[["$bcolor", "!red!"]], :transformation=>[
+  {:if=>"fc_gt_0"},
+  {:border=>"5px_solid_$bcolor", :height=>120, :width=>120, :crop=>"fill"}
+  ])

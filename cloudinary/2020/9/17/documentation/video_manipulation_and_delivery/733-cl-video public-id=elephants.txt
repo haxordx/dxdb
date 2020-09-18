@@ -1,0 +1,4 @@
+<cl-video public-id="elephants" >
+  <cl-transformation effect="preview:duration_5">
+  </cl-transformation>
+</cl-video>

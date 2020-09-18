@@ -1,0 +1,4 @@
+<cl-image public-id="docs/store_front.jpg" >
+  <cl-transformation width="500" aspect-ratio="1.0" gravity="auto:person_avoid" crop="fill">
+  </cl-transformation>
+</cl-image>

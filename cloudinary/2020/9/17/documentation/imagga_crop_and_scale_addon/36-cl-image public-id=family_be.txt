@@ -1,0 +1,4 @@
+<cl-image public-id="family_bench.jpg" sign-url="true">
+  <cl-transformation height="200" width="150" crop="imagga_scale">
+  </cl-transformation>
+</cl-image>

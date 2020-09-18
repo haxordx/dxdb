@@ -1,0 +1,1 @@
+let result = cloudinary.createManagementApi().destroy(public_id, params: params)

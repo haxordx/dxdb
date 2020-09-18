@@ -1,0 +1,3 @@
+<cld-image publicId="flower.jpg" >
+  <cld-transformation overlay="cloudinary_icon" width="0.2" flags="relative" />
+</cld-image>

@@ -1,0 +1,8 @@
+String requestId = MediaManager.get().upload(imageFile)
+  .unsigned("sample_app_preset")
+  .preprocess(new ImagePreprocessChain()
+    .loadWith(new BitmapDecoder(1000, 1000))
+    .addStep(new Limit(1000, 1000))
+    .addStep(new DimensionsValidator(10,10,1000,1000))
+    .saveWith(new BitmapEncoder(BitmapEncoder.Format.WEBP, 80)))
+  .dispatch(context);

@@ -1,0 +1,2 @@
+Cloudinary::Uploader.upload("sample.jpg", 
+  :public_id => "sample_id")

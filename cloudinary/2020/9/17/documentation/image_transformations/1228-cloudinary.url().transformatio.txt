@@ -1,0 +1,8 @@
+cloudinary.url().transformation(new Transformation()
+  .width(500).crop("scale").chain()
+  .effect("brightness:70").chain()
+  .overlay(new Layer().publicId("woman")).gravity("face").crop("crop").chain()
+  .width(150).crop("scale").chain()
+  .effect("saturation:50").chain()
+  .effect("shadow").chain()
+  .flags("layer_apply")).imageTag("sample.jpg");

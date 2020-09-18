@@ -1,0 +1,5 @@
+cl_image_tag("wood_chair.jpg", array("transformation"=>array(
+  array("width"=>200, "height"=>200, "effect"=>"saturation:50", "crop"=>"pad"),
+  array("effect"=>"shadow"),
+  array("border"=>"1px_solid_rgb:666")
+  )))

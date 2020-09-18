@@ -1,0 +1,1 @@
+$.cloudinary.image("home_4_sale.jpg", {overlay: new cloudinary.Layer().publicId("call_text"), flags: "region_relative", width: "1.1", gravity: "ocr_text"})

@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().overlay(new Layer().publicId("cloudinary_icon")).width(0.2).flags("relative")).imageTag("flower.jpg");

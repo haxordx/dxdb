@@ -1,0 +1,1 @@
+cloudinary.url().resourceType("image").videoTag("kitten_fighting");

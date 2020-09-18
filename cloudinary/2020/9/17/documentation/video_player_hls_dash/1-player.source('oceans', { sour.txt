@@ -1,0 +1,3 @@
+player.source('oceans', { sourceTypes: ['hls'], transformation: {
+ streaming_profile: 'hd',
+ effect: 'vignette:50' } })

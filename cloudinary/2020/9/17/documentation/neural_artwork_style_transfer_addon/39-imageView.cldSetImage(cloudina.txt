@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation().setEffect("style_transfer").setOverlay("davinci_mona_lisa")).generate("coffee_cup_st.jpg", signUrl: true)!, cloudinary: cloudinary)

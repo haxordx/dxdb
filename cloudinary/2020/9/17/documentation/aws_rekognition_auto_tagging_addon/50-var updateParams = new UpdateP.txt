@@ -1,0 +1,6 @@
+var updateParams = new UpdateParams("koala5") 
+{
+  Categorization = "aws_rek_tagging",
+  AutoTagging = 0.9
+};
+var updateResult = cloudinary.Update(updateParams);

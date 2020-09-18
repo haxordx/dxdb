@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().gravity("dog:auto:bird").width(600).height(800).crop("crop")).generate("docs/cat_and_birds.jpg");

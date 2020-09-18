@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().border("5px_solid_red")).imageTag("sample.jpg");

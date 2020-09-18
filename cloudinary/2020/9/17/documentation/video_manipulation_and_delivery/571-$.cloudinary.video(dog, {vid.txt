@@ -1,0 +1,1 @@
+$.cloudinary.video("dog", {video_codec: "h264:baseline:3.1"})

@@ -1,0 +1,4 @@
+cl_image_tag("envelope.jpg", :transformation=>[
+  {:width=>300, :crop=>"scale"},
+  {:width=>200, :y=>30, :angle=>9, :height=>150, :gravity=>"north", :overlay=>{:font_family=>"Times", :font_size=>18, :font_weight=>"bold", :text_align=>"center", :text=>"Lorem%20ipsum%20dolor%20sit%20amet%20consectetur%20adipisicing%20elit%20sed%20do%20eiusmod%20tempor%20incididunt%20ut%20labore%20et%20dolore%20magna%20aliqua.%20Ut%20enim%20ad%20minim%20veniam%20quis%20nostrud%20exercitation%20ullamco%20laboris%20nisi%20ut%20aliquip%20ex%20ea%20commodo%20consequat."}, :crop=>"fit"}
+  ])

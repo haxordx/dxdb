@@ -1,0 +1,2 @@
+Cloudinary::Uploader.upload("user_photo.jpg", 
+  :moderation => 'manual')

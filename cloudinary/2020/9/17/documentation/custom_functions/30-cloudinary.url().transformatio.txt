@@ -1,0 +1,4 @@
+cloudinary.url().transformation(new Transformation()
+    .signed(true)
+    .customFunction(remote("https://my.example.custom/function")))
+  .imageTag("sample.jpg");

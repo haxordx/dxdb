@@ -1,0 +1,1 @@
+CloudinaryImage("butterfly.jpg").image(gravity="face", crop="crop")

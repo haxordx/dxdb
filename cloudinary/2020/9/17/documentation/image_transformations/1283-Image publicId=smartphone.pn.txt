@@ -1,0 +1,4 @@
+<Image publicId="smartphone.png" >
+  <Transformation height="200" width="200" crop="fill" />
+  <Transformation effect="brightness:100" height="200" underlay="site_bg" width="200" />
+</Image>

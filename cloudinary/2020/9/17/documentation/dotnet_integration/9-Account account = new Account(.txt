@@ -1,0 +1,6 @@
+Account account = new Account(
+    "my_cloud_name",
+    "my_api_key",
+    "my_api_secret");
+
+Cloudinary cloudinary = new Cloudinary(account);

@@ -1,0 +1,1 @@
+$.cloudinary.image("frisbee.jpg", {overlay: new cloudinary.TextLayer().fontFamily("impact").fontSize(150).text("Your%20Brand%20Name%20or%20Logo%20Here"), effect: "distort:arc:-120", color: "white", gravity: "south", y: 840, opacity: 60})

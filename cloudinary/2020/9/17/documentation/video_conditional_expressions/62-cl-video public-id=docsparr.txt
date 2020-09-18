@@ -1,0 +1,6 @@
+<cl-video public-id="docs/parrot" >
+  <cl-transformation if="ar_gt_1.2" height="320" width="480" background="black" crop="pad">
+  </cl-transformation>
+  <cl-transformation if="else" height="320" width="480" background="blurred:400:15" crop="pad">
+  </cl-transformation>
+</cl-video>

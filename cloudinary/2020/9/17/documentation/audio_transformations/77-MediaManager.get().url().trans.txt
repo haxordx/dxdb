@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().height(200).width(500).flags("waveform")).resourceType("video").generate("dog.png");

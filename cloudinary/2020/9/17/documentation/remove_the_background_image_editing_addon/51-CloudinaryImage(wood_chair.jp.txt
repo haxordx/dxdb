@@ -1,0 +1,5 @@
+CloudinaryImage("wood_chair.jpg").image(transformation=[
+  {'width': 200, 'height': 200, 'effect': "saturation:50", 'crop': "pad"},
+  {'effect': "shadow"},
+  {'border': "1px_solid_rgb:666"}
+  ])

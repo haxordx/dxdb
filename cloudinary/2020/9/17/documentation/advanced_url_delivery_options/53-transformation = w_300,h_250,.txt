@@ -1,0 +1,7 @@
+transformation = "w_300,h_250,e_grayscale"
+public_id = "sample.png"
+secret = "abcd"
+
+to_sign = ([transformation, public_id]).join("/")
+signature = 's--' + Base64.urlsafe_encode64(Digest::SHA1.digest(to_sign + secret))[0,8] + '--'
+url = 'https://res.cloudinary.com/demo/image/upload/' + ([signature, to_sign]).join("/")

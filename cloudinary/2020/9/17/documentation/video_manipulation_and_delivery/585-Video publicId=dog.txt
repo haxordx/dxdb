@@ -1,0 +1,3 @@
+<Video publicId="dog" >
+  <Transformation videoCodec="auto" />
+</Video>

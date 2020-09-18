@@ -1,0 +1,7 @@
+<iframe
+  src="https://player.cloudinary.com/embed/?cloud_name=demo&public_id=elephants&fluid=true&controls=true&source_types%5B0%5D=mp4"
+  width="640"
+  allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+  allowfullscreen
+  frameborder="0"
+></iframe>

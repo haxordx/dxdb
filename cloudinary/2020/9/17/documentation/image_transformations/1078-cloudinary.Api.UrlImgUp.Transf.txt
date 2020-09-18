@@ -1,0 +1,1 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation().Overlay(new Layer().PublicId("docs:zoom_map")).Effect("displace").X(50).Y(50)).UseRootPath(true).BuildImageTag("sample")

@@ -1,0 +1,1 @@
+CloudinaryImage("greece_landscape.jpg").image(effect="tint:100:red:blue:yellow")

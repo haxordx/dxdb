@@ -1,0 +1,4 @@
+result = Cloudinary::Uploader.upload(some_image_file_path, ocr: 'adv_ocr')
+
+if result['info']['ocr']['adv_ocr']['status'] == 'complete'
+  data = result['info']['ocr']['adv_ocr']['data']

@@ -1,0 +1,1 @@
+curl https://api.cloudinary.com/v1_1/demo/image/text -X POST --data 'public_id=sample_text_image&font_family=Roboto&font_size=42&font_color=red&font_weight=bold&timestamp=173719931&api_key=436464676&signature=a788d68f86a6f868af'

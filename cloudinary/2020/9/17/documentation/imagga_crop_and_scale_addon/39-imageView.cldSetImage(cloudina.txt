@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation().setHeight(200).setWidth(150).setCrop("imagga_scale")).generate("family_bench.jpg", signUrl: true)!, cloudinary: cloudinary)

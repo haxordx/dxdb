@@ -1,0 +1,1 @@
+$.cloudinary.video("rafting", {width: "iw / 5", crop: "scale"})

@@ -1,0 +1,3 @@
+<cld-image publicId="woman.jpg" :variables="[['$w', '200'], ['$ar', '0.8']]">
+  <cld-transformation width="$w" aspectRatio="$ar" gravity="face" crop="fill" />
+</cld-image>

@@ -1,0 +1,3 @@
+<cl-image public-id="1330457336.jpg" type="twitter">
+
+</cl-image>

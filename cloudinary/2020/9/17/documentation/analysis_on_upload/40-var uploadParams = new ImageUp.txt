@@ -1,0 +1,5 @@
+var uploadParams = new ImageUploadParams(){
+  File = new FileDescription(@"user_photo.jpg"),
+  QualityAnalysis = true,
+  Eval = "if (resource_info.quality_analysis.focus < 0.5) { upload_options['tags'] = 'blurry' }"};
+var uploadResult = cloudinary.Upload(uploadParams);

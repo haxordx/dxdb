@@ -1,0 +1,6 @@
+cloudinary.uploader().upload("local_file.jpg", 
+  ObjectUtils.asMap(
+    "public_id", "brown_sheep", 
+    "eager", Arrays.asList(
+      new Transformation().quality("jpegmini").crop("fill")
+        .width(200).height(150))));

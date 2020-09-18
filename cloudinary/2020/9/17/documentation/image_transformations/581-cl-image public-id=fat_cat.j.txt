@@ -1,0 +1,4 @@
+<cl-image public-id="fat_cat.jpg" >
+  <cl-transformation width="200" height="200" gravity="auto" crop="crop">
+  </cl-transformation>
+</cl-image>

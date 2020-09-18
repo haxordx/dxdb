@@ -1,0 +1,4 @@
+CloudinaryImage("balloon.png").image(transformation=[
+  {'height': 200, 'crop': "scale"},
+  {'effect': "outline:15:200", 'color': "orange"}
+  ])

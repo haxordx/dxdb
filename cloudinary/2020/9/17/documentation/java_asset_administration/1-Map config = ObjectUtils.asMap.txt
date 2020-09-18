@@ -1,0 +1,6 @@
+Map config = ObjectUtils.asMap(
+  "cloud_name", "my_cloud_name",
+  "api_key", "my_api_key",
+  "api_secret", "my_api_secret");
+Cloudinary cloudinary = new Cloudinary(config);
+Map result = cloudinary.api().resource("sample", ObjectUtils.emptyMap());

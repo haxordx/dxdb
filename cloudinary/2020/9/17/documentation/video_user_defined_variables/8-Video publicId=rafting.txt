@@ -1,0 +1,3 @@
+<Video publicId="rafting" >
+  <Transformation width="iw / 5" crop="scale" />
+</Video>

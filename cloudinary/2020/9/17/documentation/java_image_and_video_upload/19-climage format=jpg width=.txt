@@ -1,0 +1,1 @@
+<cl:image format="jpg" width="120" height="80" crop="fill" src="${publicId}"/>

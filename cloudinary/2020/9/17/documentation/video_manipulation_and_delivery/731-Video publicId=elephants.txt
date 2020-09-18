@@ -1,0 +1,3 @@
+<Video publicId="elephants" >
+  <Transformation effect="preview:duration_5" />
+</Video>

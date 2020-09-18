@@ -1,0 +1,6 @@
+<cl-video public-id="Marketing/digital-asset-management-with-cloudinary.gif" resource-type="video">
+  <cl-transformation effect="preview:duration_8">
+  </cl-transformation>
+  <cl-transformation width="1600" height="800" effect="loop" crop="crop">
+  </cl-transformation>
+</cl-video>

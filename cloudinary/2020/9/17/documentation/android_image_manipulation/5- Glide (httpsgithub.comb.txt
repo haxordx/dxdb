@@ -1,0 +1,12 @@
+// Glide (https://github.com/bumptech/glide): 
+ImageView imageView = (ImageView) findViewById(R.id.my_image_view);
+GlideApp.with(this).load(MediaManager.get().url().generate("sample.jpg")).into(imageView);
+
+// Fresco (https://github.com/facebook/fresco):
+Uri uri = Uri.parse(MediaManager.get().url().generate("sample.jpg"));
+SimpleDraweeView draweeView = (SimpleDraweeView) findViewById(R.id.my_image_view);
+draweeView.setImageURI(uri);
+
+// Picasso (https://square.github.io/picasso):
+ImageView imageView = (ImageView) findViewById(R.id.my_image_view);
+Picasso.with(context).load(MediaManager.get().url().generate("sample.jpg")).into(imageView);

@@ -1,0 +1,1 @@
+api.deleteMetadataField("in_stock");

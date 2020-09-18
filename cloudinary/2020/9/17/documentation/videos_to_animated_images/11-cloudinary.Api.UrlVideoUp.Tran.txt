@@ -1,0 +1,1 @@
+cloudinary.Api.UrlVideoUp.Transform(new Transformation().VideoSampling("40").Delay("200").Height(200).Effect("loop").Crop("scale")).BuildImageTag("cld_rubix.gif")

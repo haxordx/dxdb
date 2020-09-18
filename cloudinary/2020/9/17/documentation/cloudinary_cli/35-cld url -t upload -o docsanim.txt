@@ -1,0 +1,1 @@
+cld url -t upload -o docs/animals_on_road.jpg w_400,c_thumb,g_auto,e_vectorize:10:0.6/e_vignette:40

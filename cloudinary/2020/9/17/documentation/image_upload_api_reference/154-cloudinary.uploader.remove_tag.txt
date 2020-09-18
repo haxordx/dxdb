@@ -1,0 +1,1 @@
+cloudinary.uploader.remove_tag('animal', ['dog', 'lion'])

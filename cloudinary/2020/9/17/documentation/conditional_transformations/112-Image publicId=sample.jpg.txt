@@ -1,0 +1,9 @@
+<Image publicId="sample.jpg" >
+  <Transformation if="w_lte_400" />
+  <Transformation height="220" width="180" crop="fill" />
+  <Transformation effect="red" />
+  <Transformation if="else" />
+  <Transformation height="190" width="300" crop="fill" />
+  <Transformation effect="oil_paint" />
+  <Transformation if="end" />
+</Image>

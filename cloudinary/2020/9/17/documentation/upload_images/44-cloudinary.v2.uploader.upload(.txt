@@ -1,0 +1,4 @@
+cloudinary.v2.uploader.upload("sample_file.jpg",
+  { use_filename: true, 
+    unique_filename: false },
+  function(error, result) { console.log(result, error); });

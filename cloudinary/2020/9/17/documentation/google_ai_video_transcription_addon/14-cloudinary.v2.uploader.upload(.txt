@@ -1,0 +1,4 @@
+cloudinary.v2.uploader.upload("abt_cloudinary_french.mp4", 
+  { resource_type: "video", 
+    raw_convert: "google_speech:fr-CA" }),
+  function(error, result) {console.log(result, error) });

@@ -1,0 +1,1 @@
+cl_image_tag("65646572251.jpg", :type=>"facebook")

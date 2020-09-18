@@ -1,0 +1,3 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation()
+  .Width(300).Page(4).Effect("sepia").Radius(50).Border("2px_solid_rgb:999").Crop("scale").Chain()
+  .Overlay(new Layer().PublicId("aspose_cloud_logo")).Width(0.9).Flags("relative").Opacity(70).Gravity("south").Y(20)).BuildImageTag("sample_document.docx.jpg")

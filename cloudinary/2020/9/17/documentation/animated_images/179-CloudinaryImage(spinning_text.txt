@@ -1,0 +1,1 @@
+CloudinaryImage("spinning_text.gif").image(delay="100", type="multi")

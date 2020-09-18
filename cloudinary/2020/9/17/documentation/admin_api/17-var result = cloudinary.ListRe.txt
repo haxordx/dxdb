@@ -1,0 +1,7 @@
+var result = cloudinary.ListResources();
+result.Limit
+// returns 500
+result.Remaining
+// returns 499
+result.Reset
+//returns  2019-10-03 10:00:00 +0200

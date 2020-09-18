@@ -1,0 +1,4 @@
+String requestId = MediaManager.get().upload("samplepic.jpg")
+   .unsigned("sample_preset")
+   .option("public_id", "sample1")
+   .dispatch();

@@ -1,0 +1,8 @@
+if result['info']['ocr']['adv_ocr']['status'] == 'complete'
+  data = result['info']['ocr']['adv_ocr']['data']
+  folder = data.all?{|i| i.empty?} ?  'no_text' : 'with_text'
+  Cloudinary::Uploader.rename(
+    result['public_id'], # from_public_id
+    "#{folder}/#{result['public_id']}" # to_public_id
+  )
+end

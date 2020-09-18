@@ -1,0 +1,4 @@
+<cl-image public-id="butterfly.jpg" >
+  <cl-transformation width="200" height="200" crop="fill">
+  </cl-transformation>
+</cl-image>

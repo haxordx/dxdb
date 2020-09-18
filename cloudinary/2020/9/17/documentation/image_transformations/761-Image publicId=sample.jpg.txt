@@ -1,0 +1,3 @@
+<Image publicId="sample.jpg" >
+  <Transformation border="5px_solid_red" />
+</Image>

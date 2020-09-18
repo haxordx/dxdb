@@ -1,0 +1,3 @@
+<cld-image publicId="couple.jpg" >
+
+</cld-image>

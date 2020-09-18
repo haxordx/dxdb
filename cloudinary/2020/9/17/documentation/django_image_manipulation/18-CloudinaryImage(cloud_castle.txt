@@ -1,0 +1,1 @@
+CloudinaryImage("cloud_castle.jpg").image(width=350, fetch_format="auto", crop="scale")

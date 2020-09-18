@@ -1,0 +1,9 @@
+var uploadParams = new ImageUploadParams(){
+  File = new FileDescription(@"sample.jpg"),
+  EagerTransforms = new List<Transformation>(){
+   new Transformation().Width(300).Height(300).Crop("pad"),
+   new Transformation().Width(160).Height(100).Crop("crop").Gravity("south")},
+  EagerAsync = true,
+  EagerNotificationUrl = "https://mysite.example.com/eager_endpoint",
+  NotificationUrl = "https://mysite.example.com/upload_endpoint"};
+var uploadResult = cloudinary.Upload(uploadParams);

@@ -1,0 +1,2 @@
+cloudinary.openUploadWidget({
+  cloudName: "demo", uploadPreset: "preset1" }, (error, result) => { });

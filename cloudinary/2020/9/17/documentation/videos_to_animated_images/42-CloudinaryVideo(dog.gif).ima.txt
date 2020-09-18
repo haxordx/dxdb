@@ -1,0 +1,1 @@
+CloudinaryVideo("dog.gif").image(width=250, flags="animated", fetch_format="auto", crop="scale")

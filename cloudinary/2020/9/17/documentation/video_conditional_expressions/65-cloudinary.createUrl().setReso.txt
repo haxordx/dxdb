@@ -1,0 +1,3 @@
+cloudinary.createUrl().setResourceType("video").setTransformation(CLDTransformation()
+  .setIf("ar_gt_1.2").setHeight(320).setWidth(480).setBackground("black").setCrop("pad").chain()
+  .setIf("else").setHeight(320).setWidth(480).setBackground("blurred:400:15").setCrop("pad")).generate("docs/parrot.mp4")

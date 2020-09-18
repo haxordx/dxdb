@@ -1,0 +1,2 @@
+cloudinary.CloudinaryImage("woman.jpg").image(width = "auto", dpr = "auto", 
+  crop = "scale", responsive = "true", responsive_placeholder = "blank")

@@ -1,0 +1,5 @@
+<cld-image publicId="horses.jpg" signUrl="true">
+  <cld-transformation effect="saturation:50" radius="20" width="400" crop="scale" />
+  <cld-transformation gravity="south_east" overlay="logo_jpegmini" opacity="80" width="100" x="10" y="10" />
+  <cld-transformation quality="jpegmini" />
+</cld-image>

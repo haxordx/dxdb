@@ -1,0 +1,4 @@
+cl_image_tag("flowers.jpg", :transformation=>[
+  {:width=>500, :crop=>"scale"},
+  {:overlay=>{:font_family=>"Verdana", :font_size=>75, :font_weight=>"bold", :text_decoration=>"underline", :letter_spacing=>14, :text=>"Flowers"}}
+  ])

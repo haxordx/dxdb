@@ -1,0 +1,5 @@
+<Video publicId="docs/sunset_waves" >
+  <Transformation width="500" crop="scale" />
+  <Transformation overlay="video:docs:bluescreen_watches" effect="make_transparent:20" color="#0e80d8" width="0.6" flags="relative" gravity="north" />
+  <Transformation duration="15" />
+</Video>

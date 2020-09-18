@@ -1,0 +1,4 @@
+<Image publicId="sample.jpg" >
+  <Transformation aspectRatio="4:3" crop="fill" />
+  <Transformation width="auto" dpr="auto" crop="scale" />
+</Image>

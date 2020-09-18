@@ -1,0 +1,9 @@
+const myEditor= cloudinary.mediaEditor();
+myEditor.update({
+  cloudName: "demo", 
+  publicIds: ["sample"],
+  widgetSteps: [     
+    "resizeAndCrop",
+    "export"
+  ]
+});

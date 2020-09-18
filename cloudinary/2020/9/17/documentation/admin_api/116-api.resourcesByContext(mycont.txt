@@ -1,0 +1,2 @@
+api.resourcesByContext("mycontextkey", "mycontextvalue", 
+  ObjectUtils.asMap("resource_type", "video"));

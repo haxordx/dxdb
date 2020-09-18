@@ -1,0 +1,10 @@
+{
+    "name": "remote_media",
+    "unsigned": false,
+    "settings": 
+      {
+        "tags": "test",
+        "allowed_formats": "jpg,png",
+        "eager": "c_fill,g_face,h_150,w_200"
+      }
+}

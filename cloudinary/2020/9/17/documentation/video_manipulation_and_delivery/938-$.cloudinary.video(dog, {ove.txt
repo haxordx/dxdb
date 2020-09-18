@@ -1,0 +1,1 @@
+$.cloudinary.video("dog", {overlay: new cloudinary.Layer().publicId("cloudinary_icon"), start_offset: "6.5", end_offset: "10", opacity: 50, effect: "brightness:200"})

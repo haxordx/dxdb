@@ -1,0 +1,1 @@
+$.cloudinary.image("sample_van.jpg", {height: 240, width: 260, crop: "imagga_scale"})

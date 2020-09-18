@@ -1,0 +1,1 @@
+e_tint:[amount]:[color1]:[color2]:...:[color10].

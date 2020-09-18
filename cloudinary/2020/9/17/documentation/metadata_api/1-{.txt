@@ -1,0 +1,9 @@
+{
+    "external_id": <string>,
+    "type": <field_type_enum>,
+    "label": <string>,
+    "mandatory": <boolean>,
+    "default_value": <field_type_value>,
+    "validation": <validation_object>,
+    "datasource": <datasource_object>  //enum and set types
+}

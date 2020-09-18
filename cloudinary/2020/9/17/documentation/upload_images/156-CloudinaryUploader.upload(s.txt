@@ -1,0 +1,2 @@
+Cloudinary::Uploader.upload("sample.jpg", 
+  :type => :authenticated)

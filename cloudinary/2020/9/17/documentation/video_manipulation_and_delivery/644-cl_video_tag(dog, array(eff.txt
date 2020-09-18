@@ -1,0 +1,1 @@
+cl_video_tag("dog", array("effect"=>"progressbar:frame:FF0000:12"))

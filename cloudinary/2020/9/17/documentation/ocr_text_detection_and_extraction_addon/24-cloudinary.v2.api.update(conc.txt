@@ -1,0 +1,3 @@
+cloudinary.v2.api.update("concert_ticket", 
+  { ocr: "adv_ocr" },
+  function(error, result) {console.log(result); });

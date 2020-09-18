@@ -1,0 +1,2 @@
+cloudinary.uploader.unsigned_upload("sample.jpg", "unsigned_1", 
+  cloud_name = 'demo')

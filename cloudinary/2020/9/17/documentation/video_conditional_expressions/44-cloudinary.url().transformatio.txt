@@ -1,0 +1,7 @@
+cloudinary.url().transformation(new Transformation()
+  .width(500).crop("scale").chain()
+  .if("!cloudinary!_in_tags").chain()
+  .overlay(new Layer().publicId("cloudinary_icon")).width(100).gravity("north_east").opacity(50).effect("brightness:100").chain()
+  .overlay(new TextLayer().fontFamily("arial").fontSize(15).text("By%20Cloudinary")).gravity("north_east").y(10).x(105).chain()
+  .if("end").chain()
+  .duration("5")).videoTag("snow_horses");

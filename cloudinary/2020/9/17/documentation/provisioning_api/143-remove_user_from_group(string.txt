@@ -1,0 +1,1 @@
+remove_user_from_group(string group_id, string user_id, object options);

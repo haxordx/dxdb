@@ -1,0 +1,3 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation()
+  .setWidth(1520).setHeight(1440).setGravity("west").setX(50).setCrop("crop").chain()
+  .setEffect("pixelate_region:15").setGravity("ocr_text")).generate("black_car.jpg")!, cloudinary: cloudinary)

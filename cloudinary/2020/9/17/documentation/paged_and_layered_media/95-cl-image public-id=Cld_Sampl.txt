@@ -1,0 +1,6 @@
+<cl-image public-id="Cld_Sample_PSD.jpg" >
+  <cl-transformation page="2-4;6;8">
+  </cl-transformation>
+  <cl-transformation width="300" crop="scale">
+  </cl-transformation>
+</cl-image>

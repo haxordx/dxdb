@@ -1,0 +1,3 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation()
+  .CustomFunction(CustomFunction.Wasm("my_example.wasm")))
+  .BuildImageTag("sample.jpg")

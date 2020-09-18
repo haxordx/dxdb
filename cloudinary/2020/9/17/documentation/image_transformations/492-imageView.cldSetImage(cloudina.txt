@@ -1,0 +1,4 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation()
+  .setWidth(100).setHeight(100).setGravity("face").setRadius("max").setCrop("thumb").chain()
+  .setOverlay("cloudinary_icon").setEffect("brightness:200").setFlags("relative").setWidth(0.5).setOpacity(60).chain()
+  .setDpr(2.0)).generate("lady.jpg")!, cloudinary: cloudinary)

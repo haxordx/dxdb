@@ -1,0 +1,6 @@
+\Cloudinary\Uploader::upload("local_file.jpg",
+  array(
+    "public_id" => "family_bench",
+    "eager" =>
+      array( "crop" => "imagga_scale", "width" => 150, "height" => 200 )
+    ));

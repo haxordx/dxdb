@@ -1,0 +1,5 @@
+{
+  context: [Map of string keys to string values],
+  tags: [Array of strings],
+  variables: [Map of string keys to string values]
+}

@@ -1,0 +1,10 @@
+<cl-image public-id="park" >
+  <cl-transformation effect="lightroom:xmp:soft_mist.xmp">
+  </cl-transformation>
+  <cl-transformation radius="50" quality="auto" border="40px_solid_orange">
+  </cl-transformation>
+  <cl-transformation angle="5">
+  </cl-transformation>
+  <cl-transformation width="400" crop="scale">
+  </cl-transformation>
+</cl-image>

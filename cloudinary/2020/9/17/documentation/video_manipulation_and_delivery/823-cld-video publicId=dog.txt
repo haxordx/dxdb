@@ -1,0 +1,5 @@
+<cld-video publicId="dog" >
+  <cld-transformation effect="blur:500" />
+  <cld-transformation overlay="video:dog" width="600" />
+  <cld-transformation width="500" crop="scale" />
+</cld-video>

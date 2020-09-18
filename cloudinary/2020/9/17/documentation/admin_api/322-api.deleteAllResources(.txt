@@ -1,0 +1,2 @@
+api.deleteAllResources(
+  ObjectUtils.asMap("type", "facebook"));

@@ -1,0 +1,1 @@
+CloudinaryImage("DamagedHelmet3D.gltz").image(flags="draco")

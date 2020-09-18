@@ -1,0 +1,4 @@
+Cloudinary::Uploader.upload("AlexBrush-Regular.ttf", 
+    resource_type: 'raw', # Custom fonts must be upload as 'raw'
+    type: 'authenticated', # Custom fonts must be upload as 'authenticated'
+    public_id: 'AlexBrush-Regular.ttf')

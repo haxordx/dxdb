@@ -1,0 +1,7 @@
+MediaManager.get().url().resourceType("video")
+    .transformation(new Transformation()
+        .overlay("video:ski_jump").flags("splice").effect("reverse").chain()
+        .overlay("video:ski_jump").flags("splice").effect("accelerate:-50").chain()
+        .effect("volume:mute")
+        .effect("brightness:10").radius("max"))
+    .generate("ski_jump.mp4")

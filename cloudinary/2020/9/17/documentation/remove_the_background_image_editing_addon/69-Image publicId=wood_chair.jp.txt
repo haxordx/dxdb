@@ -1,0 +1,4 @@
+<Image publicId="wood_chair.jpg" >
+  <Transformation width="200" height="200" angle="hflip" crop="fit" />
+  <Transformation overlay="cloudinary_icon" width="0.4" flags="relative" gravity="north" x="15" y="35" angle="4" effect="brightness:200" opacity="70" />
+</Image>

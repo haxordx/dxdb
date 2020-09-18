@@ -1,0 +1,1 @@
+cl_image_tag("woman.jpg", :width=>"$w", :aspect_ratio=>"$ar", :gravity=>"face", :crop=>"fill", :variables=>[["$w", "200"], ["$ar", "0.8"]])

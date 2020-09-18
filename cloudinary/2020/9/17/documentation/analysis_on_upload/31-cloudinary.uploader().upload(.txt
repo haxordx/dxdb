@@ -1,0 +1,4 @@
+cloudinary.uploader().upload("sample.jpg", 
+  ObjectUtils.asMap(
+    "moderation", "manual",
+    "notification_url", "https://mysite.example.com/mod_endpoint"));

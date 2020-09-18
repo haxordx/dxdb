@@ -1,0 +1,1 @@
+cl_image_tag("dog.gif", array("width"=>250, "flags"=>"animated", "fetch_format"=>"auto", "crop"=>"scale", "resource_type"=>"video"))

@@ -1,0 +1,4 @@
+$.cloudinary.image("coast.jpg", {transformation: [
+  {width: 400, crop: "scale"},
+  {height: 150, overlay: new cloudinary.Layer().publicId("family_bench.png"), radius: "max", width: 150, crop: "imagga_scale"}
+  ]})

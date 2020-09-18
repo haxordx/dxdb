@@ -1,0 +1,9 @@
+<cld-image publicId="sample.jpg" >
+  <cld-transformation width="500" crop="scale" />
+  <cld-transformation effect="brightness:70" />
+  <cld-transformation overlay="woman" gravity="face" crop="crop" />
+  <cld-transformation width="150" crop="scale" />
+  <cld-transformation effect="saturation:50" />
+  <cld-transformation effect="shadow" />
+  <cld-transformation flags="layer_apply" />
+</cld-image>

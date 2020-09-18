@@ -1,0 +1,1 @@
+CloudinaryImage("redeye.jpg").image(width=300, height=80, gravity="adv_eyes", crop="thumb")

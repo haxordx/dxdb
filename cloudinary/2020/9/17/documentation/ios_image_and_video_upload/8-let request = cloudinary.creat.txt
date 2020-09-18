@@ -1,0 +1,4 @@
+let request = cloudinary.createUploader().upload(
+    url: fileUrl, uploadPreset: "samplePreset", progress: { (bytes, totalBytes, totalBytesExpected) in
+      // Handle progress
+    })

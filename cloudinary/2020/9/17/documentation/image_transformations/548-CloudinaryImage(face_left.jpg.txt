@@ -1,0 +1,1 @@
+CloudinaryImage("face_left.jpg").image(width=200, height=200, gravity="auto", crop="fill")

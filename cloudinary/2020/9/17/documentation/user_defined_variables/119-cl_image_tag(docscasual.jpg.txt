@@ -1,0 +1,10 @@
+cl_image_tag("docs/casual.jpg", 
+array(
+  "variables" => array(
+    "$overlay" => "ref:!docs:sale!"),
+  "custom_function" => array(
+    "function_type" => "wasm", 
+    "source" => "docs:pnglayer.wasm"),
+  "transformation" => array(
+    array("border" => "1px_solid_black")
+  )))

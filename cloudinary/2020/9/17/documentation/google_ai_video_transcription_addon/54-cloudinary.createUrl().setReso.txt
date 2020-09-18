@@ -1,0 +1,1 @@
+cloudinary.createUrl().setResourceType("video").setTransformation(CLDTransformation().setOverlay("subtitles:impact_15:lincoln.transcript").setColor("khaki").setBackground("#331a00").setGravity("south_west")).generate("lincoln.mp4")

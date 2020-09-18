@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().width(400).height(150).background("green").crop("lpad")).generate("sample.jpg");

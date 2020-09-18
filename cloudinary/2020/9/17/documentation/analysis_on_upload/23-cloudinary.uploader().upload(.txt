@@ -1,0 +1,2 @@
+cloudinary.uploader().upload("user_photo.jpg", 
+  Cloudinary.asMap("moderation", "manual"));

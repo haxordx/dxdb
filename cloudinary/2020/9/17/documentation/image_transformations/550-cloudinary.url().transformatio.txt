@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().width(200).height(200).gravity("auto").crop("fill")).imageTag("face_left.jpg");

@@ -1,0 +1,1 @@
+cloudinary.imageTag('non_existing_id.png', {defaultImage: "avatar.png"}).toHtml();

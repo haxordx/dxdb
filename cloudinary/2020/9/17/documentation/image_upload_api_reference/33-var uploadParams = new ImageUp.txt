@@ -1,0 +1,9 @@
+var uploadParams = new ImageUploadParams(){
+  File = new FileDescription(@"https://www.example.com/sample.jpg"),
+  ResponsiveBreakpoints = new List<ResponsiveBreakpoint> { 
+    new ResponsiveBreakpoint()
+      .CreateDerived(true)
+      .BytesStep(20000)
+      .MinWidth(200)
+      .MaxWidth(1000)}};
+var uploadResult = cloudinary.Upload(uploadParams);

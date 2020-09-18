@@ -1,0 +1,1 @@
+cloudinary.v2.uploader.explicit(public_id, options, callback);

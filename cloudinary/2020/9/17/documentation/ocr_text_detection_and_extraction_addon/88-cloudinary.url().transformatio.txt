@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().effect("blur_region:800").gravity("ocr_text")).signed(true).imageTag("smartphone2.jpg");

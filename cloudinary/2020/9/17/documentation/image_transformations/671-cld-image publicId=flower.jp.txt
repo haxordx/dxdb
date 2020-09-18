@@ -1,0 +1,4 @@
+<cld-image publicId="flower.jpg" >
+  <cld-transformation width="200" height="200" gravity="face" radius="max" overlay="face_left" crop="thumb" />
+  <cld-transformation flags="layer_apply" gravity="north_east" />
+</cld-image>

@@ -1,0 +1,1 @@
+cloudinary.image("city_pic.jpg", {effect: "lightroom:saturation_-100:clarity_25:contrast_73:vignetteamount_60"})

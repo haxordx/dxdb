@@ -1,0 +1,11 @@
+{
+  ...
+  "tags": [ "Tiger Woods" ]
+  "info": {
+    "categorization": {
+      "aws_rek_face": {
+        "status": "complete",
+        "data": [
+          { "name": "Tiger Woods", "match_confidence": 100,
+         ...
+}

@@ -1,0 +1,4 @@
+CloudinaryImage("coast.jpg").image(sign_url=True, transformation=[
+  {'width': 400, 'crop': "scale"},
+  {'height': 150, 'overlay': "family_bench.png", 'radius': "max", 'width': 150, 'crop': "imagga_scale"}
+  ])

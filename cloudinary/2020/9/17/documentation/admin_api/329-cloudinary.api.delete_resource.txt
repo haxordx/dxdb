@@ -1,0 +1,1 @@
+cloudinary.api.delete_resources_by_tag(tag, **options)

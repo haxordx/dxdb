@@ -1,0 +1,1 @@
+cloudinary.imageTag('sample.jpg', {opacity: 30}).toHtml();

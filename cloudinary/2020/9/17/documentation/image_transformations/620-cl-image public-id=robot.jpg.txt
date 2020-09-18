@@ -1,0 +1,4 @@
+<cl-image public-id="robot.jpg" >
+  <cl-transformation quality="auto">
+  </cl-transformation>
+</cl-image>

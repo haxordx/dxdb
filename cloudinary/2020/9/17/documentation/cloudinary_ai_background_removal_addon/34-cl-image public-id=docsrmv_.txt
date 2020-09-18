@@ -1,0 +1,6 @@
+<cl-image public-id="docs/rmv_bgd/router.png" >
+  <cl-transformation height="105" crop="scale">
+  </cl-transformation>
+  <cl-transformation effect="shadow:50" x="10" y="10">
+  </cl-transformation>
+</cl-image>

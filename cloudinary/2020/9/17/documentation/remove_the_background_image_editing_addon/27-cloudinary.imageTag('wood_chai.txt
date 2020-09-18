@@ -1,0 +1,1 @@
+cloudinary.imageTag('wood_chair.jpg', {width: 300, crop: "scale"}).toHtml();

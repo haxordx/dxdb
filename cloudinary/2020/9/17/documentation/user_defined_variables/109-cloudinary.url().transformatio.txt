@@ -1,0 +1,2 @@
+cloudinary.url().transformation(new Transformation()
+.variables(variable("$rating","!thumbs-up!")).chain().named("image_ratings")).imageTag("log_cabin.jpg");

@@ -1,0 +1,3 @@
+MediaManager.get().upload("my_file.mp4")
+  .option("resource_type", "video")
+  .option("moderation", "google_video_moderation").dispatch();

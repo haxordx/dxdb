@@ -1,0 +1,4 @@
+var uploadParams = new VideoUploadParams(){
+  File = new FileDescription(@"my_file.mp4"),
+  Moderation = "google_video_moderation"};
+var uploadResult = cloudinary.Upload(uploadParams);

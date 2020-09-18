@@ -1,0 +1,4 @@
+<Image publicId="Cld_Sample_PSD.jpg" >
+  <Transformation page="2-4;6;8" />
+  <Transformation width="300" crop="scale" />
+</Image>

@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation().setFlags("region_relative").setGravity("adv_eyes").setOverlay("glasses").setWidth(1.7)).generate("coupled.jpg")!, cloudinary: cloudinary)

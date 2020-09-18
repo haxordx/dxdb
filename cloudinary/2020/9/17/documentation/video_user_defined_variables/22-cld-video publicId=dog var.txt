@@ -1,0 +1,4 @@
+<cld-video publicId="dog" :variables="[['$mainvideowidth', '500'], ['$overlaywidth', '$mainvideowidth / 3']]">
+  <cld-transformation width="$mainvideowidth" crop="scale" />
+  <cld-transformation overlay="video:kitten_fighting" width="$overlaywidth" gravity="south_east" />
+</cld-video>

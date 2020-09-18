@@ -1,0 +1,14 @@
+<Image publicId="coffee_cup.jpg" >
+  <Transformation width="400" height="250" gravity="south" crop="fill" />
+  <Transformation overlay="nice_couple" width="1.3" height="1.3" gravity="faces" flags="region_relative" crop="crop" />
+  <Transformation effect="saturation:50" />
+  <Transformation effect="vignette" />
+  <Transformation flags="layer_apply" width="100" radius="max" gravity="center" y="20" x="-20" crop="scale" />
+  <Transformation overlay="balloon" height="55" />
+  <Transformation effect="hue:-20" angle="5" />
+  <Transformation flags="layer_apply" x="30" y="5" />
+  <Transformation overlay={{fontFamily: "Cookie", fontSize: 40, fontWeight: "bold", text: "Love"}} effect="colorize" color="#f08" />
+  <Transformation angle="20" flags="layer_apply" x="-45" y="44" />
+  <Transformation width="300" height="250" x="30" crop="crop" />
+  <Transformation radius="60" />
+</Image>

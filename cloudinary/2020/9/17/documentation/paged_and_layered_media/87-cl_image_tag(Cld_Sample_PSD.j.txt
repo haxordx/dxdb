@@ -1,0 +1,4 @@
+cl_image_tag("Cld_Sample_PSD.jpg", array("transformation"=>array(
+  array("page"=>"2-4;6;8"),
+  array("width"=>300, "crop"=>"scale")
+  )))

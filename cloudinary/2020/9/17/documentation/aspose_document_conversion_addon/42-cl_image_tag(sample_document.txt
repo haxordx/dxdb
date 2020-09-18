@@ -1,0 +1,1 @@
+cl_image_tag("sample_document.docx.jpg", array("width"=>300, "page"=>2, "crop"=>"scale"))

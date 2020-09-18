@@ -1,0 +1,7 @@
+<Image publicId="front_face.png" secure="true">
+  <Transformation width="150" height="150" gravity="face" crop="thumb" />
+  <Transformation radius="20" />
+  <Transformation effect="sepia" />
+  <Transformation overlay="cloudinary_icon" gravity="south_east" x="5" y="5" width="50" opacity="60" effect="brightness:200" />
+  <Transformation angle="10" />
+</Image>

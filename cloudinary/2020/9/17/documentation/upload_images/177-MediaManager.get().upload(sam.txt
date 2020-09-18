@@ -1,0 +1,3 @@
+MediaManager.get().upload("sample.jpg")
+  .unsigned("unsigned_1")
+  .option("cloud_name", "demo").dispatch();

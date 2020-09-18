@@ -1,0 +1,4 @@
+<cl-video public-id="dog" >
+  <cl-transformation width="300" effect="accelerate:100" crop="scale">
+  </cl-transformation>
+</cl-video>

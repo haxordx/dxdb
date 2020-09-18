@@ -1,0 +1,7 @@
+{
+  "public_id": "iswyvngmifc",
+  "version": 1393751993,
+  "url": "http:/res.cloudinary.com/demo/image/upload/v1393751993/iswyvngmi8avzvomdpfc.jpg",
+  "moderation": [{ "status": "pending", "kind": "webpurify" }],
+  ...
+}

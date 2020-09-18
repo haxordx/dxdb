@@ -1,0 +1,8 @@
+cloudinary.createUrl()
+  .setTransformation(CLDTransformation()
+    .setWidth(150).setHeight(150).setGravity("face").setRadius(20).setEffect("sepia")
+       .setCrop("thumb").chain()
+    .setOverlay("cloudinary_icon").setGravity("south_east").setX(5).setY(5).setWidth(50).setOpacity(60)
+       .setEffect("brightness:200").chain()
+    .setAngle(10))
+  .generate("front_face.png")

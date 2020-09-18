@@ -1,0 +1,1 @@
+Cloudinary::Uploader.upload("gs://my_samples/sample.jpg")

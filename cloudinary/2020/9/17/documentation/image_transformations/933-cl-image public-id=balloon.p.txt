@@ -1,0 +1,6 @@
+<cl-image public-id="balloon.png" >
+  <cl-transformation height="200" crop="scale">
+  </cl-transformation>
+  <cl-transformation effect="outline:15:200" color="orange">
+  </cl-transformation>
+</cl-image>

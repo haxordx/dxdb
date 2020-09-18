@@ -1,0 +1,24 @@
+{
+...
+ "info":
+  {"categorization":
+    {"google_tagging":
+      {"status": "complete",
+       "data":
+        [{"tag": "skating", "confidence": 0.9689},
+         {"tag": "footwear", "confidence": 0.9587},
+         {"tag": "ice skating", "confidence": 0.9513},
+         {"tag": "ice rink", "confidence": 0.9469},
+         {"tag": "ice skate", "confidence": 0.9271},
+         {"tag": "winter", "confidence": 0.911},
+         {"tag": "fun", "confidence": 0.8944},
+         {"tag": "girl", "confidence": 0.8183},
+         {"tag": "ice", "confidence": 0.8045},
+         {"tag": "winter sport", "confidence": 0.7912},
+         {"tag": "recreation", "confidence": 0.7568},
+         {"tag": "child", "confidence": 0.7532},
+         {"tag": "leisure", "confidence": 0.7076},
+         {"tag": "play", "confidence": 0.6854},
+         {"tag": "snow", "confidence": 0.6167},
+         {"tag": "road", "confidence": 0.5823},
+         {"tag": "sports", "confidence": 0.5223}]}}}

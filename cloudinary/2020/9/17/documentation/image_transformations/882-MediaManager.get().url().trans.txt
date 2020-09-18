@@ -1,0 +1,1 @@
+MediaManager.get().url().transformation(new Transformation().effect("simulate_colorblind:deuteranopia")).generate("docs/colorblind_green_red.jpg");

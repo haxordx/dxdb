@@ -1,0 +1,2 @@
+Cloudinary::Api.create_transformation('small_fill2',
+  {:width => 150, :height => 100, :crop => :fill})

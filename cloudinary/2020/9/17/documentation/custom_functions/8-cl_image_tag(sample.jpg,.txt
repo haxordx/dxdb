@@ -1,0 +1,4 @@
+cl_image_tag("sample.jpg",
+  :custom_function => {
+    :function_type => "wasm", 
+    :source => "my_example.wasm"})

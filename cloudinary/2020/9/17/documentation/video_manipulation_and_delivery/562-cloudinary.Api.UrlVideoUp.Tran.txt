@@ -1,0 +1,1 @@
+cloudinary.Api.UrlVideoUp.Transform(new Transformation().BitRate("250k")).BuildVideoTag("dog")

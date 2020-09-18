@@ -1,0 +1,4 @@
+$.cloudinary.video("dog", {transformation: [
+  {audio_codec: "none"},
+  {overlay: new cloudinary.Layer().publicId("video:electronic"), effect: "volume:-50"}
+  ]})

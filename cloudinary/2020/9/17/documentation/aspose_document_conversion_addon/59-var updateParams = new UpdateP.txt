@@ -1,0 +1,4 @@
+var updateParams = new UpdateParams("sample_spreadsheet.xls"){
+  RawConvert = "aspose",
+  ResourceType = "raw"};
+var updateResult = cloudinary.Update(updateParams);

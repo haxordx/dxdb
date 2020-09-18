@@ -1,0 +1,5 @@
+"validation":{ 
+    "type": "strlen",
+    "min": 5,
+    "max": 20
+}

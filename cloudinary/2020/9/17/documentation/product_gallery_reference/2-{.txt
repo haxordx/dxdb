@@ -1,0 +1,7 @@
+{
+  tag: 'bag',
+  mediaType: 'video',
+  transformation: { 
+    crop: "fill", 
+    transformation: [{ overlay: "cloudinary_icon", gravity: "south_east" }]}
+}

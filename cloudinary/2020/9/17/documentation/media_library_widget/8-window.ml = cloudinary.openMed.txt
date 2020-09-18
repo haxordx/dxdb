@@ -1,0 +1,16 @@
+window.ml = cloudinary.openMediaLibrary({
+  cloud_name: 'my_company',
+  api_key: '1234567890',
+  username: 'Alice_Wonderlin@mycompany.com',
+  timestamp: '1234567890',
+  signature: 'abcdefgh',
+  inline_container: '.cms-container',
+  multiple: true,
+  max_files: 8,
+  }, {
+       insertHandler: function (data) {
+         data.assets.forEach(asset => { console.log("Inserted asset:", 
+           JSON.stringify(asset, null, 2)) })
+       }
+     }
+  )

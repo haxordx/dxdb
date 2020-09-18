@@ -1,0 +1,5 @@
+cloudinary.CloudinaryVideo("dog").video( 
+  width = 300, height = 300, 
+  crop = "pad", background = "blue", 
+  preload = "none", controls = True,
+  fallback_content = "Your browser does not support HTML5 video tags")

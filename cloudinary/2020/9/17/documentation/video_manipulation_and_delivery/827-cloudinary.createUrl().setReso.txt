@@ -1,0 +1,4 @@
+cloudinary.createUrl().setResourceType("video").setTransformation(CLDTransformation()
+  .setEffect("blur:500").chain()
+  .setOverlay("video:dog").setWidth(600).chain()
+  .setWidth(500).setCrop("scale")).generate("dog.mp4")

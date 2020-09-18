@@ -1,0 +1,2 @@
+cloudinary.image("sample.jpg",  { width: "auto", client_hints: "true", crop: "scale",
+  sizes: "100vw" })

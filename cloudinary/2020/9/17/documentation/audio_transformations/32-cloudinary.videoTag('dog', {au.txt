@@ -1,0 +1,1 @@
+cloudinary.videoTag('dog', {audioFrequency: "22050"}).toHtml();

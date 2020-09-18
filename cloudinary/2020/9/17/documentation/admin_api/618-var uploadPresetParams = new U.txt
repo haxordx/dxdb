@@ -1,0 +1,6 @@
+var uploadPresetParams = new UploadPresetParams(){
+  Name = "wiki",
+  Unsigned = true,
+  Tags = "remote",
+  AllowedFormats = "jpg,png"};
+cloudinary.UpdateUploadPreset(uploadPresetParams);

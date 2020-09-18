@@ -1,0 +1,15 @@
+{
+  ...
+  "tags": [ "pink", "flower" ]
+  "info": {
+    "categorization": {
+      "imagga_tagging": {
+        "status": "complete",
+        "data": [
+          { "tag": "pink", "confidence": 0.822 },
+          { "tag": "flower", "confidence": 0.6306 },
+          { "tag": "flowers", "confidence": 0.3778 },
+          { "tag": "plant", "confidence": 0.3667
+         ...
+
+}

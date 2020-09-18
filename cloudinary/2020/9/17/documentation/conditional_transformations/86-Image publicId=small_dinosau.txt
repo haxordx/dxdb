@@ -1,0 +1,6 @@
+<Image publicId="small_dinosaur.jpg" >
+  <Transformation if="w_lt_600" />
+  <Transformation overlay={{fontFamily: "Arial", fontSize: 20, text: "Image%20shown%20in%20full%20scale"}} color="white" gravity="south_east" />
+  <Transformation effect="blur:400" underlay="small_dinosaur" width="600" crop="scale" />
+  <Transformation if="end" />
+</Image>

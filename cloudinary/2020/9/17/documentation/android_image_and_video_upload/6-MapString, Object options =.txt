@@ -1,0 +1,7 @@
+Map<String, Object> options = new HashMap<>();
+options.put("public_id", "my_dog");
+options.put("tags", "animal");
+String requestId = MediaManager.get().upload("dog.jpg")
+   .options(options)
+   .unsigned("preset1")
+   .dispatch();

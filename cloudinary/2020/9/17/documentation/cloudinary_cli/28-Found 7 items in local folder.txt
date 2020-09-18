@@ -1,0 +1,11 @@
+Found 7 items in local folder 'my_images'
+Found 0 items in Cloudinary folder 'my_cld_images/my_images'
+Uploading 7 items to Cloudinary folder 'my_cld_images/my_images'
+Successfully uploaded /Users/me/my_images/hummingbird.jpg as my_cld_images/my_images/hummingbird
+Successfully uploaded /Users/me/my_images/jay.jpg as my_cld_images/my_images/jay
+Successfully uploaded /Users/me/my_images/bird.jpg as my_cld_images/my_images/bird
+Successfully uploaded /Users/me/my_images/kingfisher.jpg as my_cld_images/my_images/kingfisher
+Successfully uploaded /Users/me/my_images/ara.jpg as my_cld_images/my_images/ara
+Successfully uploaded /Users/me/my_images/parrot.jpg as my_cld_images/my_images/parrot
+Successfully uploaded /Users/me/my_images/swan.jpg as my_cld_images/my_images/swan
+Done!

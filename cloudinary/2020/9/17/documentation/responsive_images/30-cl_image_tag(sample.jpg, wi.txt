@@ -1,0 +1,1 @@
+cl_image_tag("sample.jpg", :width=>300, :height=>200, :dpr=>"auto", :crop=>"fill", :client_hints=>true)

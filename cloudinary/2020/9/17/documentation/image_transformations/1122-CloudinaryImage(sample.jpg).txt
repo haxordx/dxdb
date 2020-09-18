@@ -1,0 +1,1 @@
+CloudinaryImage("sample.jpg").image(effect="oil_paint:70")

@@ -1,0 +1,1 @@
+cloudinary.Api.UrlVideoUp.Transform(new Transformation().VideoSampling("10").Delay("100").Width(250).Flags("awebp", "animated").Crop("scale")).BuildImageTag("dog.webp")

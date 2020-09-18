@@ -1,0 +1,3 @@
+<cld-image publicId="sample_van.jpg" signUrl="true">
+  <cld-transformation height="240" width="260" crop="imagga_scale" />
+</cld-image>

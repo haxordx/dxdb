@@ -1,0 +1,4 @@
+<cl-image public-id="city_pic.jpg" >
+  <cl-transformation effect="lightroom:saturation_-100:clarity_25:contrast_73:vignetteamount_60">
+  </cl-transformation>
+</cl-image>

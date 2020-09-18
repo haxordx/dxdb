@@ -1,0 +1,1 @@
+MediaManager.get().url().type("multi").generate("arrow_animation.gif");

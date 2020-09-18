@@ -1,0 +1,2 @@
+cloudinary.uploader().upload("ice_skating.jpg", ObjectUtils.asMap(
+  "categorization", "google_tagging"));

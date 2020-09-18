@@ -1,0 +1,6 @@
+import {Cloudinary} from 'cloudinary-core';
+const cloudinaryCore = new cloudinary.Cloudinary({cloud_name: 'demo'});
+//...
+computed: {
+    cloudinarySrc() {return cloudinaryCore.url('sample');}
+}

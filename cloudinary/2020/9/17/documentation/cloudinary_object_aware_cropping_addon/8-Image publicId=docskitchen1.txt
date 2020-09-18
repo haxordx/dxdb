@@ -1,0 +1,3 @@
+<Image publicId="docs/kitchen1.jpg" >
+  <Transformation width="600" aspectRatio="1" gravity="auto:sink" crop="thumb" />
+</Image>

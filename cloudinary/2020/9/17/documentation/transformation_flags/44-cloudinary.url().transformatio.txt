@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().flags("attachment:pretty_flower").fetchFormat("auto")).imageTag("sample.jpg");

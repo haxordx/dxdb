@@ -1,0 +1,1 @@
+CloudinaryImage("basketball_in_net.jpg").image(width=200, height=300, gravity="auto", crop="fill")

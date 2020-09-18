@@ -1,0 +1,1 @@
+imageView.cldSetImage(cloudinary.createUrl().setTransformation(CLDTransformation().setHeight(150).setFlags("ignore_aspect_ratio").setCrop("scale")).generate("cloudinary_icon.jpg")!, cloudinary: cloudinary)

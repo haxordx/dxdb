@@ -1,0 +1,1 @@
+cloudinary.DeleteDerivedResources(List<string> DerivedResourceIds);

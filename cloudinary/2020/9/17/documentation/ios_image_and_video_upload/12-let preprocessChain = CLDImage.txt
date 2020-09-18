@@ -1,0 +1,9 @@
+let preprocessChain = CLDImagePreprocessChain()
+  .addStep(CLDPreprocessHelpers.limit(width: 500, height: 500))
+  .addStep(CLDPreprocessHelpers.dimensionsValidator(minWidth: 10, maxWidth: 500, minHeight: 10, maxHeight: 500)
+  .setEncoder(CLDPreprocessHelpers.customImageEncoder(format: EncodingFormat.PNG, quality: 70))
+let request = cloudinary.createUploader().upload(
+    url: file, uploadPreset: "samplePreset", preprocessChain: preprocessChain)
+  .response({ (response, error) in
+      // handle response
+  })

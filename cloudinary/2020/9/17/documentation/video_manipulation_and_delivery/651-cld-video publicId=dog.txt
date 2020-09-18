@@ -1,0 +1,3 @@
+<cld-video publicId="dog" >
+  <cld-transformation effect="progressbar:frame:FF0000:12" />
+</cld-video>

@@ -1,0 +1,1 @@
+cloudinary.url().imageTag("rolling_stones.jpg");

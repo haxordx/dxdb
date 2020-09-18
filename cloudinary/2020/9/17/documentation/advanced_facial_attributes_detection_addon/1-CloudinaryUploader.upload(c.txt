@@ -1,0 +1,2 @@
+Cloudinary::Uploader.upload("coupled.jpg", 
+  :detection => "adv_face")

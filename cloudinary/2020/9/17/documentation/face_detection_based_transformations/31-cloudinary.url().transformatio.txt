@@ -1,0 +1,1 @@
+cloudinary.url().transformation(new Transformation().width(200).height(200).gravity("face").crop("fill")).imageTag("butterfly.jpg");

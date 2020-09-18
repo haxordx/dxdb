@@ -1,0 +1,5 @@
+<cld-video publicId="docs/kitten_fighting2" :variables="[['$qualtag', '!Pro!']]">
+  <cld-transformation if="$qualtag_in_tags" quality="80" />
+  <cld-transformation if="else" quality="30" />
+  <cld-transformation width="500" crop="scale" />
+</cld-video>

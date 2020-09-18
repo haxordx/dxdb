@@ -1,0 +1,3 @@
+<cld-video publicId="pencil_sketch" >
+  <cld-transformation width="500" effect="reverse" crop="scale" />
+</cld-video>

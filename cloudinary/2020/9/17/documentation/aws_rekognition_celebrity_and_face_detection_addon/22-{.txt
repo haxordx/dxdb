@@ -1,0 +1,33 @@
+{
+...
+"info": 
+  {"detection": 
+    {"aws_rek_face": 
+      {"status": "complete",
+       "data": 
+        {"celebrity_faces": 
+          [{ 
+            "name": "Ronnie Wood",
+            "match_confidence": 100.0
+            "face":
+             {"bounding_box":
+               {"width"...
+              },
+              "landmarks":
+               [{"type": "eyeLeft",
+                 "x": …
+               }],
+            ...
+           },
+                 ...
+            "name": "Charlie Watts",
+            "match_confidence": 100.0},
+                 ...
+            "name": "Mick Jagger",
+            "match_confidence": 100.0},
+                 ...
+            "name": "Keith Richards",
+            "match_confidence": 98.0}],
+         "unrecognized_faces": [],
+         ...
+}}}}}

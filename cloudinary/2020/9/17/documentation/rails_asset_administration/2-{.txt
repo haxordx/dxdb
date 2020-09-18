@@ -1,0 +1,27 @@
+{
+ "bytes" : 120264,
+  "created_at" : "2017-07-01T11:10:57Z",
+  "derived" : [ 
+    { "bytes" : 5729,
+      "format" : "jpg",
+      "id" : "1892cd020611691462a8dc6616f81881",
+      "secure_url" : "https://.../c_fill,w_100,h_100/v1312461204/sample.jpg",
+      "transformation" : "c_fit,h_150,w_100",
+      "url" : "https://.../image/upload/c_fill,w_100,h_100/v1312461204/sample.jpg" }
+    { "bytes" : 19173,
+      "format" : "jpg",
+      "id" : "383e22a57167445552a3cdc16f0a0c85",
+      "secure_url" : "https://.../upload/w_230,h_168,c_fit/v1312461204/sample.jpg",
+      "transformation" : "w_230,h_168,c_fit",
+      "url" : "https://.../image/upload/w_230,h_168,c_fit/v1312461204/sample.jpg" }],
+  "format" : "jpg",
+  "height" : 576,
+  "next_cursor" : "c87e7b39f7fdd66ec31985196b455c40",
+  "public_id" : "sample",
+  "resource_type" : "image",
+  "secure_url" : "https://.../demo/image/upload/v1371282172/sample.jpg",
+  "type" : "upload",
+  "url" : "https://res.cloudinary.com/demo/image/upload/v1371282172/sample.jpg",
+  "version" : 1371282172,
+  "width" : 864
+}

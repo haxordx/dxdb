@@ -1,0 +1,3 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation()
+  .AspectRatio("16:9").Crop("fill").Chain()
+  .Width("auto:breakpoints:json").Crop("scale")).UseRootPath(true).ClientHints(true).BuildImageTag("bike.jpg")

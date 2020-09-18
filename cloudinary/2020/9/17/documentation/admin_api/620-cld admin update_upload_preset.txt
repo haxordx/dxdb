@@ -1,0 +1,1 @@
+cld admin update_upload_preset "wiki" unsigned="true" tags="remote" allowed_formats="jpg,png"

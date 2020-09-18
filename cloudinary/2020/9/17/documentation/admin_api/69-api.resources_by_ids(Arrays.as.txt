@@ -1,0 +1,2 @@
+api.resources_by_ids(Arrays.asList("user_photo_1", "user_photo_2"),
+  ObjectUtils.emptyMap());

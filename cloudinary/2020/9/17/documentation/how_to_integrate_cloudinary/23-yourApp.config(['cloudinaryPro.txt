@@ -1,0 +1,6 @@
+yourApp.config(['cloudinaryProvider', function (cloudinaryProvider) {
+  cloudinaryProvider
+      .set("cloud_name", "mycompany")
+      .set("secure", true)
+      .set("upload_preset", "my_preset");
+}]);

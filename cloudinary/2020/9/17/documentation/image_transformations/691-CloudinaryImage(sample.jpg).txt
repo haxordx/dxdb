@@ -1,0 +1,4 @@
+CloudinaryImage("sample.jpg").image(transformation=[
+  {'width': 100, 'crop': "scale"},
+  {'angle': -20}
+  ])

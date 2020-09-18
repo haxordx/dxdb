@@ -1,0 +1,27 @@
+{
+  "name": "w_150,h_100,c_fill",
+  "allowed_for_strict": false,
+  "used": true,
+  "named": false,
+  "info": [
+    {
+      "width": 150,
+      "height": 100,
+      "crop": "fill"
+    }
+  ],
+  "derived": [
+    {
+      "public_id": "sample",
+      "resource_type": "image",
+      "type": "upload",
+      "format": "jpg",
+      "url":
+        "http://.../demo/image/upload/w_150,h_100,c_fill/v1341141057/sample.jpg",
+      "secure_url":
+        "https://.../demo/image/upload/w_150,h_100,c_fill/v1341141057/sample.jpg",
+      "bytes": 10202,
+      "id": "2adf1841874c7b2326d1f90cbedbc914"
+    }
+  ]
+}

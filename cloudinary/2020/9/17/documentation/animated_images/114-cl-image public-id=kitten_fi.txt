@@ -1,0 +1,4 @@
+<cl-image public-id="kitten_fighting.webp" >
+  <cl-transformation flags="awebp">
+  </cl-transformation>
+</cl-image>

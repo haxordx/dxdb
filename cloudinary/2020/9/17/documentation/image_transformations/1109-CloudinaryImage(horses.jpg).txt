@@ -1,0 +1,1 @@
+CloudinaryImage("horses.jpg").image(effect="art:zorro")

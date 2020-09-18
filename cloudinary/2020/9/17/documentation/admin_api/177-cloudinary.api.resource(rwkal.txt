@@ -1,0 +1,2 @@
+cloudinary.api.resource("rwkaliebnufp3bxyrvyo.txt",
+  resource_type = "raw")

@@ -1,0 +1,1 @@
+CloudinaryVideo("dog.webp").image(video_sampling="10", delay="100", width=250, flags=["awebp", "animated"], crop="scale")

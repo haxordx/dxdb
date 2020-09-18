@@ -1,0 +1,1 @@
+cloudinary.image("sample.jpg", {transformation: ["fit_100x150"]})

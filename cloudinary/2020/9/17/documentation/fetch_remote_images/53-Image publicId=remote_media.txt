@@ -1,0 +1,3 @@
+<Image publicId="remote_media/commons/a/ae/Olympic_flag.jpg" >
+
+</Image>

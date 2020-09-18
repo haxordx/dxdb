@@ -1,0 +1,5 @@
+{
+    "success": true,
+    "path": "product/test",
+    "name": "test"
+}

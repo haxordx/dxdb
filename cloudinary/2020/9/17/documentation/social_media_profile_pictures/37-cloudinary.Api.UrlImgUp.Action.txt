@@ -1,0 +1,1 @@
+cloudinary.Api.UrlImgUp.Action("twitter_name").BuildImageTag("BillClinton.jpg")

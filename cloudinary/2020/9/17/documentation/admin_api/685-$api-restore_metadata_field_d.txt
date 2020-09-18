@@ -1,0 +1,1 @@
+$api->restore_metadata_field_datasource("color_id", array("color1"));

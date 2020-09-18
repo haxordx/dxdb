@@ -1,0 +1,3 @@
+cloudinary.url().transformation(new Transformation()
+  .height(700).width(700).crop("fill").chain()
+  .effect("style_transfer:preserve_color:40").overlay(new Layer().publicId("lighthouse"))).imageTag("beach_2_kids.jpg");

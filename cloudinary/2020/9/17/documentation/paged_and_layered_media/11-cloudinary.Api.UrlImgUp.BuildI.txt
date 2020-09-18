@@ -1,0 +1,1 @@
+cloudinary.Api.UrlImgUp.BuildImageTag("long_multi_page_pdf")

@@ -1,0 +1,5 @@
+var handler = function (event) {
+    console.log(event.eventData.percent + " percents played")
+}
+
+vplayer.on('percentsplayed', handler)

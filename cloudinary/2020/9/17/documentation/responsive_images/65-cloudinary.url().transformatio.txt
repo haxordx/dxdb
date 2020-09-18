@@ -1,0 +1,4 @@
+cloudinary.url().transformation(new Transformation()
+  .aspectRatio("16:9").crop("fill").chain()
+  .width("auto:breakpoints_200_1920_30_15").crop("scale")
+  .clientHints(true).sizes("100vw").imageTag("bike.jpg"))

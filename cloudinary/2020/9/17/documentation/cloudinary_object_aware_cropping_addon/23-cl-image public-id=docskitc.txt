@@ -1,0 +1,4 @@
+<cl-image public-id="docs/kitchen1.jpg" >
+  <cl-transformation gravity="sink" crop="crop">
+  </cl-transformation>
+</cl-image>

@@ -1,0 +1,4 @@
+cl_image_tag("sample.jpg", :transformation=>[
+  {:if=>"w_lte_200", :height=>120, :width=>80, :crop=>"fill"},
+  {:if=>"else", :height=>90, :width=>100, :crop=>"fill"}
+  ])

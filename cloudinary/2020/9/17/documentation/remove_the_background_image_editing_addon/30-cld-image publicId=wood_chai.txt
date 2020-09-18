@@ -1,0 +1,3 @@
+<cld-image publicId="wood_chair.jpg" >
+  <cld-transformation width="300" crop="scale" />
+</cld-image>

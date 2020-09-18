@@ -1,0 +1,1 @@
+Cloudinary::Api.restore(public_ids = {}, options = {})

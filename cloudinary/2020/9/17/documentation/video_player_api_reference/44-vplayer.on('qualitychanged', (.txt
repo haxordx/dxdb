@@ -1,0 +1,3 @@
+vplayer.on('qualitychanged', (event) => {
+    console.log("Quality changed from: " + event.eventData.from + " to: " + event.eventData.to)  
+})

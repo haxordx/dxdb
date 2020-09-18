@@ -1,0 +1,5 @@
+cloudinary.Api.UrlImgUp.Transform(new Transformation()
+  .Width(200).Crop("scale").Chain()
+  .Effect("outline:20:200").Color("red").Chain()
+  .Effect("outline:15:200").Color("orange").Chain()
+  .Effect("outline:10:200").Color("yellow")).BuildImageTag("shoes.png")

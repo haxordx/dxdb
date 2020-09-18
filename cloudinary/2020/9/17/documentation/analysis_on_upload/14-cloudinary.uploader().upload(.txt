@@ -1,0 +1,6 @@
+cloudinary.uploader().upload("couple.jpg", 
+  ObjectUtils.asMap(
+    "colors", true,
+    "phash", true,
+    "image_metadata", true
+    "quality_analysis", true));

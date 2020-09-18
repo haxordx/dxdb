@@ -1,0 +1,1 @@
+curl https://api.cloudinary.com/v1_1/demo/image/metadata -X POST --data 'metadata=countryFieldId%3D[\"id_us\",\"id_uk\",\"id_france"]&public_ids[]=pants&public_ids[]=shirt&timestamp=173719931&api_key=436264276&signature=a788d62f86a2f862af'

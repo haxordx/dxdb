@@ -1,0 +1,1 @@
+cloudinary.createUrl().setResourceType("video").setTransformation(CLDTransformation().setEffect("loop:2")).generate("ski_jump.mp4")

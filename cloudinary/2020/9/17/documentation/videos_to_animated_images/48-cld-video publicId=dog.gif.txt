@@ -1,0 +1,3 @@
+<cld-video publicId="dog.gif" resourceType="video">
+  <cld-transformation width="250" flags="animated" fetchFormat="auto" crop="scale" />
+</cld-video>
