@@ -1,0 +1,4 @@
+curl -v -X GET https://api.sandbox.paypal.com/v1/payments/payment?count=10&start_index=0&sort_by=create_time \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer Access-Token"
+bashcopy

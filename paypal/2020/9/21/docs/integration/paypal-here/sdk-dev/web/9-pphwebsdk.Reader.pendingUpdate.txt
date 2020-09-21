@@ -1,0 +1,2 @@
+pphwebsdk.Reader.pendingUpdateInstall();
+javascriptcopy

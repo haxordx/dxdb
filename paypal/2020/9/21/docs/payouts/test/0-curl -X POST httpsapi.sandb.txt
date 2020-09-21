@@ -1,0 +1,23 @@
+curl -X POST https://api.sandbox.paypal.com/v1/payments/payouts \
+  -H "content-type: application/json" \
+  -H "Authorization: Bearer Access-Token" \
+  -d '{
+  "sender_payout_header":
+  {
+    "sender_batch_id": "1524086406556",
+    "email_subject": "This email is related to simulation"
+  },
+  "items": [
+  {
+    "recipient_type": "EMAIL",
+    "receiver": "payouts-simulator-receiver@paypal.com",
+    "note": "ERRPYO002",
+    "sender_item_id": "15240864065560",
+    "amount":
+    {
+      "currency": "USD",
+      "value": "1.00"
+    }
+  }]
+}'
+bashcopy

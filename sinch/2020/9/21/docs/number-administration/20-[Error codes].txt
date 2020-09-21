@@ -1,0 +1,4 @@
+[Error codes]
+    ParameterValidation (40001) - Invalid number type: {NUMBER_TYPE}.  Type must be one of: sms, voice.
+    ForbiddenRequest (40300)    - The current user is not the owner of the organisation: {ORGANISATION_ID}
+    InvalidScheme (40301)       - The authorization scheme 'instance' is required.

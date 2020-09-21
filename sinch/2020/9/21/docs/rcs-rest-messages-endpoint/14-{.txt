@@ -1,0 +1,9 @@
+{
+  "file": object(FileInfo),
+  "thumbnail": object(FileInfo),
+  "height": enum(
+    "SHORT",
+    "MEDIUM",
+    "TALL"
+  )
+}

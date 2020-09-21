@@ -1,0 +1,6 @@
+// Specify the client capabilities.
+sinchClient.setSupportCalling(true);
+sinchClient.setSupportManagedPush(true);
+// or
+sinchClient.setSupportActiveConnectionInBackground(true);
+sinchClient.startListeningOnActiveConnection()

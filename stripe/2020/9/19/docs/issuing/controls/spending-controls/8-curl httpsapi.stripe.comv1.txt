@@ -1,0 +1,10 @@
+curl https://api.stripe.com/v1/issuing/cards/ic_1Cm3paIyNTgGDVfzBqq1uqxR \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d "spending_controls[allowed_categories][0]"=automated_fuel_dispensers \
+  -d "spending_controls[spending_limits][0][amount]"=8000 \
+  -d "spending_controls[spending_limits][0][interval]"=per_authorization
+curl https://api.stripe.com/v1/issuing/cards/ic_1Cm3paIyNTgGDVfzBqq1uqxR \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d "spending_controls[allowed_categories][0]"=automated_fuel_dispensers \
+  -d "spending_controls[spending_limits][0][amount]"=8000 \
+  -d "spending_controls[spending_limits][0][interval]"=per_authorization

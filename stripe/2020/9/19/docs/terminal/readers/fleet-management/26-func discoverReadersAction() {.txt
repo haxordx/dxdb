@@ -1,0 +1,19 @@
+func discoverReadersAction() {
+  let config = DiscoveryConfiguration(
+    deviceType: .verifoneP400,
+    discoveryMethod: .internet,
+    location: "<LOCATION_ID>",
+    simulated: false)
+  self.discoverCancelable = Terminal.shared.discoverReaders(config, delegate: self) { error in
+    // Handle discovery error
+  }
+}func discoverReadersAction() {
+  let config = DiscoveryConfiguration(
+    deviceType: .verifoneP400,
+    discoveryMethod: .internet,
+    location: "<LOCATION_ID>",
+    simulated: false)
+  self.discoverCancelable = Terminal.shared.discoverReaders(config, delegate: self) { error in
+    // Handle discovery error
+  }
+}

@@ -1,0 +1,8 @@
+curl https://api.stripe.com/v1/subscriptions \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d customer=cus_GWZ4fLmuDlz4Ye \
+  -d "items[0][price]"=plan_abc
+curl https://api.stripe.com/v1/subscriptions \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d customer=cus_GWZ4fLmuDlz4Ye \
+  -d "items[0][price]"=plan_abc

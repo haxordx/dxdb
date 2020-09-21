@@ -1,0 +1,97 @@
+{
+  "rate_response": {
+    "rates": [
+      {
+        "rate_id": "se-24276453",
+        "rate_type": "shipment",
+        "carrier_id": "se-117400",
+        "shipping_amount": {
+          "currency": "usd",
+          "amount": 48.14
+        },
+        "tax_amount": {
+          "currency": "usd",
+          "amount": 10.21
+        },
+        "insurance_amount": {
+          "currency": "usd",
+          "amount": 0.0
+        },
+        "confirmation_amount": {
+          "currency": "usd",
+          "amount": 0.0
+        },
+        "other_amount": {
+          "currency": "usd",
+          "amount": 0.0
+        },
+        "zone": 7,
+        "package_type": "package",
+        "delivery_days": 2,
+        "guaranteed_service": false,
+        "estimated_delivery_date": "2019-12-13T00:00:00Z",
+        "carrier_delivery_days": "2",
+        "ship_date": "2019-12-09T00:00:00Z",
+        "negotiated_rate": false,
+        "service_type": "FedEx International Priority®",
+        "service_code": "fedex_international_priority",
+        "trackable": true,
+        "carrier_code": "fedex",
+        "carrier_nickname": "My FedEx Account",
+        "carrier_friendly_name": "FedEx",
+        "validation_status": "valid",
+        "warning_messages": [],
+        "error_messages": []
+      },
+      {
+        "rate_id": "se-24276454",
+        "rate_type": "shipment",
+        "carrier_id": "se-117400",
+        "shipping_amount": {
+          "currency": "usd",
+          "amount": 12.72
+        },
+        "tax_amount": {
+          "currency": "usd",
+          "amount": 10.21
+        },
+        "insurance_amount": {
+          "currency": "usd",
+          "amount": 0.0
+        },
+        "confirmation_amount": {
+          "currency": "usd",
+          "amount": 0.0
+        },
+        "other_amount": {
+          "currency": "usd",
+          "amount": 0.0
+        },
+        "zone": 7,
+        "package_type": "medium_flat_rate_box",
+        "delivery_days": 2,
+        "guaranteed_service": false,
+        "estimated_delivery_date": "2019-12-13T00:00:00Z",
+        "carrier_delivery_days": "2",
+        "ship_date": "2019-12-09T00:00:00Z",
+        "negotiated_rate": false,
+        "service_type": "FedEx International Economy®",
+        "service_code": "fedex_international_economy",
+        "trackable": true,
+        "carrier_code": "fedex",
+        "carrier_nickname": "My FedEx Account",
+        "carrier_friendly_name": "FedEx",
+        "validation_status": "valid",
+        "warning_messages": [],
+        "error_messages": []
+      }
+    ]
+  }
+} 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

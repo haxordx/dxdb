@@ -1,0 +1,21 @@
+var inventory = await sails.getDatastore()
+.leaseConnection(async (db)=> {
+  var location = await Location.findOne({ id: inputs.locationId })
+  .usingConnection(db);
+  if (!location) {
+    let err = new Error('Cannot find location with that id (`'+inputs.locationId+'`)');
+    err.code = 'E_NO_SUCH_LOCATION';
+    throw err;
+  }
+
+  // Get all products at the location
+  var productOfferings = await ProductOffering.find({ location: inputs.locationId })
+  .populate('productType')
+  .usingConnection(db);
+
+  return productOfferings;
+})
+.intercept('E_NO_SUCH_LOCATION', 'notFound');
+
+// All done!  Whatever we were doing with that database connection worked.
+// Now we can proceed with our business.

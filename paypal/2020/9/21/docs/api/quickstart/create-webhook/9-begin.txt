@@ -1,0 +1,6 @@
+begin
+  webhook = webhook.create
+  logger.info "Webhook[#{webhook.id}] created successfully"
+rescue ResourceNotFound => err
+  logger.error webhook.error.inspect
+endcopy

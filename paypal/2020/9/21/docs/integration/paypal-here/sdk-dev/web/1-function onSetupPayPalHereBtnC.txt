@@ -1,0 +1,7 @@
+function onSetupPayPalHereBtnClicked() {
+  pphwebsdk.Setup.startUIFlow().then(function (completionStep) {
+      // PPHWebInterface has been installed and, if clicked, a test of the connected card reader was completed.
+      // setup is complete
+  });
+}
+javascriptcopy

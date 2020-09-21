@@ -1,0 +1,85 @@
+{
+  "name": "Magazine Subscription",
+  "description": "Monthly agreement with a regular monthly payment definition and two-month trial payment definition.",
+  "plan":
+  {
+    "id": "P-3NL67884YE672133CEXBTJTA",
+    "state": "ACTIVE",
+    "name": "Magazine Subscription",
+    "description": "Monthly agreement with a regular monthly payment definition and two-month trial payment definition.",
+    "type": "FIXED",
+    "payment_definitions": [
+    {
+      "id": "PD-7AP59297JL233383BEXBTJTA",
+      "name": "Regular monthly payment definition",
+      "type": "REGULAR",
+      "frequency": "Month",
+      "amount":
+      {
+        "currency": "USD",
+        "value": "5.99"
+      },
+      "cycles": "10",
+      "charge_models": [
+      {
+        "id": "CHM-0808282002866834SEXBTJTA",
+        "type": "TAX",
+        "amount":
+        {
+          "currency": "USD",
+          "value": "0.29"
+        }
+      },
+      {
+        "id": "CHM-86952323Y27891226EXBTJTA",
+        "type": "SHIPPING",
+        "amount":
+        {
+          "currency": "USD",
+          "value": "0.2"
+        }
+      }],
+      "frequency_interval": "1"
+    },
+    {
+      "id": "PD-3F67327340580952AEXBTJTA",
+      "name": "Free trial payment definition",
+      "type": "TRIAL",
+      "frequency": "Month",
+      "amount":
+      {
+        "currency": "USD",
+        "value": "0"
+      },
+      "cycles": "2",
+      "charge_models": [],
+      "frequency_interval": "1"
+    }],
+    "merchant_preferences":
+    {
+      "setup_fee":
+      {
+        "currency": "USD",
+        "value": "0.4"
+      },
+      "max_fail_attempts": "2",
+      "return_url": "https://example.com/return",
+      "cancel_url": "https://example.com/cancel",
+      "auto_bill_amount": "YES",
+      "initial_fail_amount_action": "CONTINUE"
+    }
+  },
+  "start_date": "2017-12-22T09:13:49Z",
+  "links": [
+  {
+    "href": "https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=EC-7WN97463LN263864T",
+    "rel": "approval_url",
+    "method": "REDIRECT"
+  },
+  {
+    "href": "https://api.sandbox.paypal.com/v1/payments/billing-agreements/EC-7WN97463LN263864T/agreement-execute",
+    "rel": "execute",
+    "method": "POST"
+  }]
+}
+jsoncopy

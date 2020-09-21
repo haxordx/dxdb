@@ -1,0 +1,37 @@
+
+"requirements": {
+    ...
+    "currently_due": [
+        "address.city",
+        "address.line1",
+        "address.postal_code",
+        "address.state",
+        "dob.day",
+        "dob.month",
+        "dob.year",
+        "phone",
+        "email",
+        "relationship.executive",
+        "ssn_last_4"
+
+    ],
+    ...
+}
+"requirements": {
+    ...
+    "currently_due": [
+        "address.city",
+        "address.line1",
+        "address.postal_code",
+        "address.state",
+        "dob.day",
+        "dob.month",
+        "dob.year",
+        "phone",
+        "email",
+        "relationship.executive",
+        "ssn_last_4"
+
+    ],
+    ...
+}

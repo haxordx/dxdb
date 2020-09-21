@@ -1,0 +1,4 @@
+call = incomingCall;
+call.answer();
+call.addCallListener(new SinchCallListener());
+button.setText("Hang Up");

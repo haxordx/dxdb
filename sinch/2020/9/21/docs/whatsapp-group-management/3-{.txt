@@ -1,0 +1,12 @@
+{
+    "admins": [
+        "1805550000"
+    ],
+    "creator": "1805550000",
+    "members": [
+        "1805550000",
+        "46732001122"
+    ],
+    "subject": "Sinch Team WhatsApp Group",
+    "creation_time": "2019-09-23T07:56:22.000Z"
+}

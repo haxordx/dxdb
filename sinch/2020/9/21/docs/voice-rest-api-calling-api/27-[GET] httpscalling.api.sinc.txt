@@ -1,0 +1,1 @@
+[GET] https://calling.api.sinch.com/calling/v1/calls/id/4398599d1ba84ef3bde0a82dfb61abed

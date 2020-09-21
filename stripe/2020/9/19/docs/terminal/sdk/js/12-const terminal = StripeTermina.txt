@@ -1,0 +1,7 @@
+const terminal = StripeTerminal.create({
+  onFetchConnectionToken: fetchConnectionToken,
+  onUnexpectedReaderDisconnect: unexpectedDisconnect,
+});const terminal = StripeTerminal.create({
+  onFetchConnectionToken: fetchConnectionToken,
+  onUnexpectedReaderDisconnect: unexpectedDisconnect,
+});

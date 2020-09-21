@@ -1,0 +1,14 @@
+var users = await User.find().populate('pets');
+  // The users object would look something like the following
+  // [{
+  //   id: 123,
+  //   firstName: 'Foo',
+  //   lastName: 'Bar',
+  //   pets: [{
+  //     id: 1,
+  //     breed: 'labrador',
+  //     type: 'dog',
+  //     name: 'fido',
+  //     user: 123
+  //   }]
+  // }]

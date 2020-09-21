@@ -1,0 +1,3 @@
+<connectionStrings>
+  <add name="DefaultConnection" connectionString="Data Source=server,1433;Initial Catalog=conferencecalling;User Id=username;Password=pwd" providerName="System.Data.SqlClient" />
+</connectionStrings>

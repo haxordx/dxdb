@@ -1,0 +1,7 @@
+module.exports.policies = {
+  '*': true,
+  DoveController: {
+    find: false,
+    findOne: false
+  }
+};

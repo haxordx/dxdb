@@ -1,0 +1,1 @@
+npm uninstall grunt-contrib-jst --save-dev

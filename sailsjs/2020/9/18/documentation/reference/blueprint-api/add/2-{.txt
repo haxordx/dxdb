@@ -1,0 +1,15 @@
+{
+  "id": 7,
+  "name": "Dolly",
+  "createdAt": 1485462079725,
+  "updatedAt": 1485476060873,
+  "involvedInPurchases": [
+    {
+      "amount": 10000,
+      "createdAt": 1485476060873,
+      "updatedAt": 1485476060873,
+      "id": 47,
+      "cashier": 7
+    }
+  ]
+}

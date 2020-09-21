@@ -1,0 +1,16 @@
+require "uri"
+require "net/http"
+
+url = URI("https://api.shipengine.com/v1/rates/estimate")
+
+https = Net::HTTP.new(url.host, url.port);
+https.use_ssl = true
+
+request = Net::HTTP::Post.new(url)
+request["Host"] = "api.shipengine.com"
+request["API-Key"] = "__YOUR_API_KEY_HERE__"
+request["Content-Type"] = "application/json"
+request.body = "{\n  \"carrier_ids\": [\n    \"se-123890\"\n  ],\n  \"from_country_code\": \"US\",\n  \"from_postal_code\": \"78756\",\n  \"to_country_code\": \"US\",\n  \"to_postal_code\": \"95128\",\n  \"to_city_locality\": \"San Jose\",\n  \"to_state_province\": \"CA\",\n  \"weight\": {\n    \"value\": 1.0,\n    \"unit\": \"ounce\"\n  },\n  \"dimensions\": {\n    \"unit\": \"inch\",\n    \"length\": 5.0,\n    \"width\": 5.0,\n    \"height\": 5.0\n  },\n  \"confirmation\": \"none\",\n  \"address_residential_indicator\": \"no\"\n}"
+
+response = https.request(request)
+puts response.read_body

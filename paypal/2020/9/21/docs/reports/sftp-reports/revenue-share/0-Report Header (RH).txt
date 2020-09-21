@@ -1,0 +1,13 @@
+Report Header (RH)
+File Header (FH)
+Section Header (SH)
+Column Header (CH)
+Row Data (SB)
+...
+Row Data (SB)
+Section Footer (SF)
+Section Record Count (SC)
+Report Footer (RF)
+Report Record Count (RC)
+File Footer (FF)
+copy

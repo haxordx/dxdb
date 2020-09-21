@@ -1,0 +1,3 @@
+var sinchClient = new SinchClient({applicationKey: '...', capabilities: {calling: true, video: true}}); // Notice the video capability
+var call = sinchClient.callUser('<remote user id>');
+call.addEventListener(...);

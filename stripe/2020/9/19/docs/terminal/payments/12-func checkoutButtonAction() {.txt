@@ -1,0 +1,24 @@
+func checkoutButtonAction() {
+    // ... Fetch the client secret from your backend
+    Terminal.shared.retrievePaymentIntent(clientSecret: clientSecret) { retrieveResult, retrieveError in
+        if let error = retrieveError {
+            print("retrievePaymentIntent failed: \(error)")
+        }
+        else if let paymentIntent = retrieveResult {
+            print("retrievePaymentIntent succeeded: \(paymentIntent)")
+            // ...
+        }
+    }
+}
+func checkoutButtonAction() {
+    // ... Fetch the client secret from your backend
+    Terminal.shared.retrievePaymentIntent(clientSecret: clientSecret) { retrieveResult, retrieveError in
+        if let error = retrieveError {
+            print("retrievePaymentIntent failed: \(error)")
+        }
+        else if let paymentIntent = retrieveResult {
+            print("retrievePaymentIntent succeeded: \(paymentIntent)")
+            // ...
+        }
+    }
+}

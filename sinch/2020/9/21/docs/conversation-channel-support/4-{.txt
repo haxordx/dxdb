@@ -1,0 +1,12 @@
+{
+  "app_id": "{{APP_ID}}",
+  "recipient": {
+    "contact_id": "{{CONTACT_ID}}"
+  },
+  "message": {
+    "text_message": {
+      "text": "Text message from Sinch Conversation API."
+    }
+  },
+  "channel_priority_order": ["MESSENGER"]
+}

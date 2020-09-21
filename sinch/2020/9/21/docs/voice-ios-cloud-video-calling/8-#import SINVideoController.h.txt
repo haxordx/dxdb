@@ -1,0 +1,5 @@
+#import "SINVideoController.h" // To use SINUIImageFromPixelBuffer()
+
+// Get CVPixelBufferRef from -[SINVideoFrameCallback onFrame:completionHandler:] callback
+CVPixelBufferRef pixelBuffer = ...
+UIImage *image = SINUIImageFromPixelBuffer(pixelBuffer);

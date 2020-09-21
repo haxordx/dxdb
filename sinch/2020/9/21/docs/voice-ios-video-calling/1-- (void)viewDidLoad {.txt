@@ -1,0 +1,7 @@
+- (void)viewDidLoad {
+  [super viewDidLoad];
+
+  id<SINVideoController> videoController = ... // get video controller from SINClient.
+
+  [self.localVideoView addSubview:[videoController localView]];
+}

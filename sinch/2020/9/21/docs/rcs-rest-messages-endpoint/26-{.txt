@@ -1,0 +1,18 @@
+{
+  "type": enum(
+    "mt_text",
+    "mt_binary"
+  )
+  "from": string,
+  "text": string,
+  "udh": string
+  "campaign_id": string,
+  "delivery_report": enum(
+    "none",
+    "summary",
+    "full",
+    "per_recipient"
+  ),
+  "expire_at": timestamp,
+  "callback_url": string
+}

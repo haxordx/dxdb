@@ -1,0 +1,20 @@
+  var identity = pphwebsdk.Identity.create(access_token).refreshUrl(refresh_url).environment(environment);
+
+  var payment_config = pphwebsdk.PaymentConfiguration.create();
+  payment_config.subscribe
+    .onRefundSuccess(function (txnRecord) {
+      //Payment success
+    })
+    .onRefundFailure(function (err) {
+      //Payment failed - handle error scenario
+    });
+
+  var reader = payment_config.reader();
+  reader.connectionType(pphwebsdk.Types.ReaderConnectionType.USB);
+  reader.manufacturer(pphwebsdk.Types.Manufacturers.MIURA);
+
+  var order = pphwebsdk.Order.create().on(txnId).with(ppInvoiceId).for(totalAmount);
+
+  var payment = pphwebsdk.Payment.create(identity, payment_config);
+  payment.for(order).as(pphwebsdk.Types.PaymentMethod.CARD).refund();
+javascriptcopy

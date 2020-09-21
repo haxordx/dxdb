@@ -1,0 +1,13 @@
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSString *alertTitle = [NSString stringWithFormat:@"Calling %@...", [self.detailItem firstName]];
+
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    NSString *alertMessage = cell.textLabel.text;
+
+    UIAlertView *messageAlert = [[UIAlertView alloc]
+                                 initWithTitle:alertTitle message:alertMessage delegate:self cancelButtonTitle:@"Hang up" otherButtonTitles:nil];
+
+    [messageAlert show];
+    // 1
+}

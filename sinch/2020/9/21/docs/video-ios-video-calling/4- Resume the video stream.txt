@@ -1,0 +1,2 @@
+// Resume the video stream.
+[call resumeVideo];

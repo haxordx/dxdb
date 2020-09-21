@@ -1,0 +1,44 @@
+public class LoginActivity extends BaseActivity implements SinchService.StartFailedListener, PushTokenRegistrationCallback, UserRegistrationCallback {
+
+    private void loginClicked() {
+        ...
+        UserController userController = Sinch.getUserControllerBuilder()
+                                             .context(getApplicationContext())
+                                             .applicationKey("<application key>")
+                                             .userId("<user id>")
+                                             .environmentHost("ocra.api.sinch.com")
+                                             .build();
+        userController.registerUser(this, this);
+    }
+
+    @Override
+    public void onUserRegistrationFailed(SinchError sinchError) {
+        dismissSpinner();
+        Toast.makeText(this, "Registration failed!", Toast.LENGTH_LONG).show();
+    }
+
+    @Override
+    public void onUserRegistered() {
+        // Instance is registered, but we'll wait for another callback, assuring that the push token is
+        // registered as well, meaning we can receive incoming calls.
+    }
+
+    @Override
+    public void tokenRegistrationFailed(SinchError sinchError) {
+        dismissSpinner();
+        Toast.makeText(this, "Push token registration failed - incoming calls can't be received!", Toast.LENGTH_LONG).show();
+    }
+
+    @Override
+    public void tokenRegistered() {
+        dismissSpinner();
+        startClientAndOpenPlaceCallActivity();
+    }
+
+    @Override
+    public void onCredentialsRequired(ClientRegistration clientRegistration) {
+        // NOTE: This implementation just emulates what should be an async procedure, with JWT.create() being
+        // run on your backend.
+        clientRegistration.register(JWT.create(<application key>, <application secret>, mUserId));
+    }
+}

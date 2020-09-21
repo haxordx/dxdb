@@ -1,0 +1,3 @@
+50000 - Unable to update number
+40001 - Unable to update numbers
+40003 - Invalid Application Key

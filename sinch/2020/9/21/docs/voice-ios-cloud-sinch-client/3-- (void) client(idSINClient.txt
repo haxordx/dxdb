@@ -1,0 +1,8 @@
+- (void) client:(id<SINClient>)client requiresRegistrationCredentials:(id<SINClientRegistration>)registrationCallback
+{
+  NSString *jwt = [SINJWT jwtForUserRegistrationWithApplicationKey:@"<application key>"
+                                                 applicationSecret:@"<application secret>"
+                                                            userId:client.userId];
+
+  [registrationCallback registerWithJWT:jwt];
+}

@@ -1,0 +1,34 @@
+function retrieveCustomerPaymentMethod(paymentMethodId) {
+  return fetch('/retrieve-customer-payment-method', {
+    method: 'post',
+    headers: {
+      'Content-type': 'application/json',
+    },
+    body: JSON.stringify({
+      paymentMethodId: paymentMethodId,
+    }),
+  })
+    .then((response) => {
+      return response.json();
+    })
+    .then((response) => {
+      return response;
+    });
+}
+function retrieveCustomerPaymentMethod(paymentMethodId) {
+  return fetch('/retrieve-customer-payment-method', {
+    method: 'post',
+    headers: {
+      'Content-type': 'application/json',
+    },
+    body: JSON.stringify({
+      paymentMethodId: paymentMethodId,
+    }),
+  })
+    .then((response) => {
+      return response.json();
+    })
+    .then((response) => {
+      return response;
+    });
+}

@@ -1,0 +1,9 @@
+RetailSDK.getTransactionManager().startOfflinePayment(new TransactionManager.OfflinePaymentStatusCallback()
+{
+  @Override
+  public void offlinePaymentStatus(RetailSDKException error, OfflinePaymentInfo info)
+  {
+    // Code to handle success or failure
+  }
+});
+copy

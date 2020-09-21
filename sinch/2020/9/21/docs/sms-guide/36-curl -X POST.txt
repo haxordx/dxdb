@@ -1,0 +1,7 @@
+curl -X POST \
+     -H "Authorization: Bearer {token}" \
+     -H "Content-Type: application/json"  -d '
+      {
+          "name": "New group name"
+}' \
+  "https://us.sms.api.sinch.com/xms/v1/{service_plan_id}/groups/{group_id}"

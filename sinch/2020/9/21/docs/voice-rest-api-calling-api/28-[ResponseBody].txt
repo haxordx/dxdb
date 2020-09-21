@@ -1,0 +1,16 @@
+[ResponseBody]
+    GetCallResultResponse
+
+[GetCallResultResponse]
+    identity - from
+    identity - to
+    string - domain
+    string - callId
+    int - duration
+    string - status
+    string - result
+    string - reason
+    time - timestamp
+    object - custom
+    money - userRate
+    money - debit

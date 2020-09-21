@@ -1,0 +1,10 @@
+override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier(...)
+
+        let region = regions[indexPath.row];
+
+        cell.textLabel?.text  = entry.countryDisplayName;
+        cell.detailTextLabel?.text = String(format:"(+%@)", entry.countryCallingCode);
+
+        return cell;
+}

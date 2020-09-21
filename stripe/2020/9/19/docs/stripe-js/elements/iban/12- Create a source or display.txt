@@ -1,0 +1,63 @@
+// Create a source or display an error when the form is submitted.
+const form = document.getElementById('payment-form');
+
+form.addEventListener('submit', async (event) => {
+  event.preventDefault();
+
+  const sourceData = {
+    type: 'sepa_debit',
+    currency: 'eur',
+    owner: {
+      name: document.querySelector('input[name="name"]').value,
+      email: document.querySelector('input[name="email"]').value,
+    },
+    mandate: {
+      // Automatically send a mandate notification email to your customer
+      // once the source is charged.
+      notification_method: 'email',
+    },
+  };
+
+  // Call `stripe.createSource` with the IBAN Element and additional options.
+  const {source, error} = await stripe.createSource(iban, sourceData);
+
+  if (error) {
+    // Inform the customer that there was an error.
+    const errorElement = document.getElementById('error-message');
+    errorElement.textContent = error.message;
+  } else {
+    // Send the Source to your server.
+    stripeSourceHandler(source);
+  }
+});// Create a source or display an error when the form is submitted.
+const form = document.getElementById('payment-form');
+
+form.addEventListener('submit', async (event) => {
+  event.preventDefault();
+
+  const sourceData = {
+    type: 'sepa_debit',
+    currency: 'eur',
+    owner: {
+      name: document.querySelector('input[name="name"]').value,
+      email: document.querySelector('input[name="email"]').value,
+    },
+    mandate: {
+      // Automatically send a mandate notification email to your customer
+      // once the source is charged.
+      notification_method: 'email',
+    },
+  };
+
+  // Call `stripe.createSource` with the IBAN Element and additional options.
+  const {source, error} = await stripe.createSource(iban, sourceData);
+
+  if (error) {
+    // Inform the customer that there was an error.
+    const errorElement = document.getElementById('error-message');
+    errorElement.textContent = error.message;
+  } else {
+    // Send the Source to your server.
+    stripeSourceHandler(source);
+  }
+});

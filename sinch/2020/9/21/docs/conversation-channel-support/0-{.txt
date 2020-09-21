@@ -1,0 +1,12 @@
+{
+  "channel_priority_order": ["MESSENGER"],
+  "channel_credentials": [
+    {
+      "channel": "MESSENGER",
+      "static_token": {
+        "token": "{{FACEBOOK_PAGE_TOKEN}}"
+      }
+    }
+  ],
+  "display_name": "App name"
+}

@@ -1,0 +1,16 @@
+{
+    "to": [
+        "46732001122"
+    ],
+    "message": {
+        "type": "template",
+        "template_name": "test_template",
+        "language": "en",
+        "body_params": [
+            "param here"
+        ],
+        "media": {
+            "type": "text"
+        }
+    }
+}

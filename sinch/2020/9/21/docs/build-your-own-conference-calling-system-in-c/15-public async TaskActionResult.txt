@@ -1,0 +1,8 @@
+public async Task<ActionResult> UnMute(int id, Guid conferenceid, string participant) {
+    await GetParticipant(conferenceid.ToString(), participant).Unmute();
+    return RedirectToAction("Details", new { id = id });
+}
+public async Task<ActionResult> Mute(int id, Guid conferenceid, string participant) {
+    await GetParticipant(conferenceid.ToString(), participant).Mute();
+    return RedirectToAction("Details", new {id = id});
+}

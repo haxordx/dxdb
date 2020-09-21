@@ -1,0 +1,6 @@
+curl https://api.stripe.com/v1/products \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d name="Starter Dashboard"
+curl https://api.stripe.com/v1/products \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d name="Starter Dashboard"

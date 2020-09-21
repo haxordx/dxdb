@@ -1,0 +1,7 @@
+curl -iX POST https://api.shipengine.com/v1/labels/rates/se-2128728 \
+-H 'API-Key: __YOUR_API_KEY_HERE__' \
+-H 'Content-Type: application/json' \
+-d '{
+  "label_format":"pdf",
+  "label_layout": "4x6"
+}'

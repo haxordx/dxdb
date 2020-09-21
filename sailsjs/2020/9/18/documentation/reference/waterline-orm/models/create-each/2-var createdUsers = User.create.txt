@@ -1,0 +1,2 @@
+var createdUsers = User.createEach([{name:'Finn'}, {name: 'Jake'}]).fetch();
+sails.log(`Created ${createdUsers.length} user${createdUsers.length===1?'':'s'}.`);

@@ -1,0 +1,7 @@
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    if ([[NSUserDefaults standardUserDefaults] stringForKey:@"conferenceId"] == nil){
+        self.invite.hidden = YES;
+    }
+    // Do any additional setup after loading the view.
+}

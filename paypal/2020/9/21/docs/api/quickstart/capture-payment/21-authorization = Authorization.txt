@@ -1,0 +1,14 @@
+authorization = Authorization.find(auth_id)
+capture = authorization.capture({
+  :amount => {
+    :currency => "USD",
+    :total => "10"
+  },
+  :is_final_capture => true
+})
+
+if capture.success?
+  logger.info "Capture[#{capture.id}]"
+else
+  logger.error capture.error.inspect
+endcopy

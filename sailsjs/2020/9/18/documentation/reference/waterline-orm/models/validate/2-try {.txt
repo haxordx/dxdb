@@ -1,0 +1,14 @@
+try {
+  var normalizedBalance = BankAccount.validate('balance', '$349.86');
+} catch (err) {
+  switch (err.code) {
+    case 'E_VALIDATION':
+      // => '[Error: Invalid `bankAccount`]'
+      _.each(e.all, function(woe){
+        sails.log(woe.attrName+': '+woe.message);
+      });
+      break;
+    default:
+      throw err;
+  }
+}

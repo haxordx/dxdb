@@ -1,0 +1,16 @@
+#import <UIKit/UIKit.h>
+#import <Sinch/Sinch.h>
+#import "CFriend.h"
+
+@interface DetailViewController : UIViewController <SINCallClientDelegate, SINCallDelegate>
+
+@property (strong, nonatomic) CFriend *detailItem;
+@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+@property (weak, nonatomic) IBOutlet UIButton *AnswerButton;
+@property (weak, nonatomic) IBOutlet UIButton *HangupButton;
+@property (nonatomic, readwrite, strong) id<SINCall> call;
+
+- (IBAction)AnswerAction:(id)sender;
+- (IBAction)HangupAction:(id)sender;
+
+@end

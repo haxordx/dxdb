@@ -1,0 +1,55 @@
+class CheckoutViewController: UIViewController {
+
+    // ...
+
+    // Create or confirm a PaymentIntent on the server
+    func pay(withPaymentMethod paymentMethodId: String? = nil, withPaymentIntent paymentIntentId: String? = nil) {
+        // ...
+            // Payment requires additional action
+            else if clientSecret != nil && requiresAction == true && self != nil {
+                let paymentHandler = STPPaymentHandler.shared()
+                paymentHandler.handleNextAction(forPayment: clientSecret!, authenticationContext: self!, returnURL: nil) { status, paymentIntent, handleActionError in
+                    switch (status) {
+                    case .failed:
+                        self?.displayAlert(title: "Payment failed", message: handleActionError?.localizedDescription ?? "")
+                        break                    case .canceled:
+                        self?.displayAlert(title: "Payment canceled", message: handleActionError?.localizedDescription ?? "")
+                        break
+                    case .succeeded:
+                        if let paymentIntent = paymentIntent, paymentIntent.status == STPPaymentIntentStatus.requiresConfirmation {
+                            print("Re-confirming PaymentIntent after handling action")
+                            self?.pay(withPaymentIntent: paymentIntent.stripeId)
+                        }
+                        else {
+                            self?.displayAlert(title: "Payment succeeded", message: paymentIntent?.description ?? "", restartDemo: true)
+                        }
+                        break
+                    @unknown default:
+                        fatalError()
+                        break
+                    }
+                }
+            }
+        // ...
+    }
+}
+
+extension CheckoutViewController: STPAuthenticationContext {
+    func authenticationPresentingViewController() -> UIViewController {
+        return self
+    }
+}class CheckoutViewController: UIViewController {
+
+    // ...
+
+    // Create or confirm a PaymentIntent on the server
+    func pay(withPaymentMethod paymentMethodId: String? = nil, withPaymentIntent paymentIntentId: String? = nil) {
+        // ...
+            // Payment requires additional action
+            else if clientSecret != nil && requiresAction == true && self != nil {
+                let paymentHandler = STPPaymentHandler.shared()
+                paymentHandler.handleNextAction(forPayment: clientSecret!, authenticationContext: self!, returnURL: nil) { status, paymentIntent, handleActionError in
+                    switch (status) {
+                    case .failed:
+                        self?.displayAlert(title: "Payment failed", message: handleActionError?.localizedDescription ?? "")
+                        break

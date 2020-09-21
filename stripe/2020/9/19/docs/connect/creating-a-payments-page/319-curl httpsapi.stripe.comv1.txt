@@ -1,0 +1,14 @@
+curl https://api.stripe.com/v1/payment_intents \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d "payment_method_types[]"=card \
+  -d amount=1000 \
+  -d currency=usd \
+  -d application_fee_amount=123 \
+  -H "Stripe-Account: {{CONNECTED_STRIPE_ACCOUNT_ID}}"
+curl https://api.stripe.com/v1/payment_intents \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d "payment_method_types[]"=card \
+  -d amount=1000 \
+  -d currency=usd \
+  -d application_fee_amount=123 \
+  -H "Stripe-Account: {{CONNECTED_STRIPE_ACCOUNT_ID}}"

@@ -1,0 +1,2 @@
+id<SINCall> call = [self.callClient callUserWithId:[callingFriend username]];
+[controller setCall:call];

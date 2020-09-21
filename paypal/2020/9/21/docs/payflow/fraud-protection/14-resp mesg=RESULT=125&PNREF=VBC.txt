@@ -1,0 +1,4 @@
+resp mesg=RESULT=125&PNREF=VBCA25032988&RESPMSG=Declined by Fraud Service&AUTHCODE=890PNI&
+AVSADDR=Y&AVSZIP=Y&IAVS=Y&PREFPSMSG=No Rules Triggered&POSTFPSMSG=Reject InternationalAVS
+    !!ERROR 15:30:41 result=125 TRXTYPE=A!!
+copy

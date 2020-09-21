@@ -1,0 +1,6 @@
+public ManagedPush getManagedPush(String username) {
+     // create client, but you don't need to start it
+     initClient(username);
+     // retrieve ManagedPush
+     return Beta.createManagedPush(mSinchClient);
+}

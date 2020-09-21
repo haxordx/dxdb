@@ -1,0 +1,48 @@
+import UIKit
+import StripeTerminal
+
+class PaymentViewController: UIViewController {
+
+    // Action for a "Checkout" button
+    func checkoutAction() {
+        let params = PaymentIntentParameters(amount: 1000, currency: "usd")
+        params.onBehalfOf = "{CONNECTED_ACCOUNT_ID}"
+        params.transferDataDestination = "{CONNECTED_ACCOUNT_ID}"
+        params.applicationFeeAmount = 200
+        Terminal.shared.createPaymentIntent(params) { createResult, createError in
+            if let error = createError {
+                print("createPaymentIntent failed: (error)")
+            } else if let paymentIntent = createResult {
+                print("createPaymentIntent succeeded")
+                // ...
+            }
+        }
+    }
+
+    // ...
+}
+
+import UIKit
+import StripeTerminal
+
+class PaymentViewController: UIViewController {
+
+    // Action for a "Checkout" button
+    func checkoutAction() {
+        let params = PaymentIntentParameters(amount: 1000, currency: "usd")
+        params.onBehalfOf = "{CONNECTED_ACCOUNT_ID}"
+        params.transferDataDestination = "{CONNECTED_ACCOUNT_ID}"
+        params.applicationFeeAmount = 200
+        Terminal.shared.createPaymentIntent(params) { createResult, createError in
+            if let error = createError {
+                print("createPaymentIntent failed: (error)")
+            } else if let paymentIntent = createResult {
+                print("createPaymentIntent succeeded")
+                // ...
+            }
+        }
+    }
+
+    // ...
+}
+

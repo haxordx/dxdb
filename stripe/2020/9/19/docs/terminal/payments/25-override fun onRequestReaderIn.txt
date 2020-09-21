@@ -1,0 +1,15 @@
+override fun onRequestReaderInput(options: ReaderInputOptions) {
+  // Placeholder for updating your app's checkout UI
+  Toast.makeText(activity, options.toString(), Toast.LENGTH_SHORT).show()
+}
+
+override fun onRequestReaderDisplayMessage(message: ReaderDisplayMessage) {
+  Toast.makeText(activity, message.toString(), Toast.LENGTH_SHORT).show()
+}override fun onRequestReaderInput(options: ReaderInputOptions) {
+  // Placeholder for updating your app's checkout UI
+  Toast.makeText(activity, options.toString(), Toast.LENGTH_SHORT).show()
+}
+
+override fun onRequestReaderDisplayMessage(message: ReaderDisplayMessage) {
+  Toast.makeText(activity, message.toString(), Toast.LENGTH_SHORT).show()
+}

@@ -1,0 +1,2 @@
+// Specify the client capabilities.
+sinchClient.setSupportManagedPush(true);

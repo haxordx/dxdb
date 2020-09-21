@@ -1,0 +1,19 @@
+curl -X POST 'https://api.sandbox.paypal.com/v1/customer/disputes' \
+-H 'Authorization: Bearer <<ACCESS TOKEN>>' \
+-H 'Content-Type: multipart/related' \
+-H 'PayPal-Auth-Assertion: <<JWT TOKEN>>' \
+-F 'input={"disputed_transactions":[{
+                  "buyer_transaction_id":"<<BUYER TRANSACTION ID>>"
+        }],
+        "reason": "MERCHANDISE_OR_SERVICE_NOT_RECEIVED",
+        "dispute_amount": {}"currency_code":"USD", "value": "7.50" },
+        "extensions": {
+                      "merchant_contacted": true,
+                      "merchant_contacted_outcome": "NO_RESPONSE",
+                      "merchandize_dispute_properties": {
+                                  "issue_type": "PRODUCT"
+                      }
+        }
+};
+type=application/json'
+bashcopy

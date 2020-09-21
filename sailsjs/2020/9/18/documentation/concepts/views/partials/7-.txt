@@ -1,0 +1,14 @@
+/**
+ * views/partials/inbox-message.ejs
+ *
+ * An individual inbox message.
+ *
+ * @needs {Dictionary} message
+ *   @property {Number} id
+ *   @property {String} subject
+ *
+ */%>
+<li class="inbox-message" data-id="<%= message.id %>">
+  <a href="/messages/<%= message.id %>"><%= message.subject %></a>
+  <button class="fa fa-trash" is="delete-btn" aria-label="Delete"></button>
+</li>

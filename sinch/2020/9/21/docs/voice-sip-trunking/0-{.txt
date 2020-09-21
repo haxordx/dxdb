@@ -1,0 +1,5 @@
+{
+    "name" : "SetCookie",
+    "key" : "X-My-Header",
+    "value" : "This is my header"
+}

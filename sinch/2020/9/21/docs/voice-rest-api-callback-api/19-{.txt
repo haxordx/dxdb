@@ -1,0 +1,10 @@
+{
+    "action":
+    {
+        "name" : "connectMXP",
+        "destination":{
+          "type":"username",
+          "endpoint":"hello"
+        }
+    }
+}

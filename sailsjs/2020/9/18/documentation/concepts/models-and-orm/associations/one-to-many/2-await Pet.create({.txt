@@ -1,0 +1,8 @@
+await Pet.create({
+  breed: 'labrador',
+  type: 'dog',
+  name: 'fido',
+
+  // Set the User's Primary Key to associate the Pet with the User.
+  owner: 123
+});

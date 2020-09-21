@@ -1,0 +1,2 @@
+id<SINCallClient> callClient = [sinchClient callClient];
+id<SINCall> call = [callClient callConferenceWithId:@"<conferenceId>"];

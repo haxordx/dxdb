@@ -1,0 +1,9 @@
+{
+    "action": "allow",
+    "callout": {
+        "locale": "en-US",
+         "ttsMenu": "Please press 1 to verify your phone",
+         "pin": "1",
+         "timeout": 60
+    }
+}

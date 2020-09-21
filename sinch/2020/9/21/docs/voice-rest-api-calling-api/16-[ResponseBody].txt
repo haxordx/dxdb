@@ -1,0 +1,6 @@
+[ResponseBody]
+    UrlItem url
+
+[UrlItem]
+    string - primary
+    string - fallback

@@ -1,0 +1,6 @@
+[HttpPost]
+public async Task<LoginObject> Sign(string username, string password) {}
+public class LoginObject {
+    [JsonProperty("userTicket")]
+    public string UserTicket { get; set; }
+}

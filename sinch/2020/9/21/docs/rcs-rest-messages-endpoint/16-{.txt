@@ -1,0 +1,15 @@
+{
+  "type": "action",
+  "display_text": string,
+  "postback": object(Postback),
+  "action": {
+    "type": enum(
+      "dial_phone_number",
+      "show_location",
+      "request_location_push",
+      "open_url",
+      "create_calendar_event"
+    )
+    ... // type specific fields
+  }
+}

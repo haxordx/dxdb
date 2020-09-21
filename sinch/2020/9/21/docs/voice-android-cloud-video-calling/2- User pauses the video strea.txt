@@ -1,0 +1,5 @@
+// User pauses the video stream
+call.pauseVideo();
+
+// User resumes the video stream
+call.resumeVideo();

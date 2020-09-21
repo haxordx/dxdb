@@ -1,0 +1,5 @@
+<response>
+    <status>Failure</status>
+    <error-code>E241</error-code>
+    <error-info>Invalid mms-id / MMS do not exist</error-info>
+</response>

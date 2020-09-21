@@ -1,0 +1,19 @@
+{
+  "batch_header": {
+    "payout_batch_id": "Y4JB5BNLE8Z88",
+    "batch_status": "PENDING",
+    "sender_batch_header": {
+      "sender_batch_id": "2014021801",
+      "recipient_type": "EMAIL",
+      "email_subject": "You have money!",
+      "email_message": "You received a payment. Thanks for using our service!"
+    }
+  },
+  "links": [{
+    "href": "https://api.sandbox.paypal.com/v1/payments/payouts/Y4JB5BNLE8Z88",
+    "rel": "self",
+    "method": "GET",
+    "encType": "application/json"
+  }]
+}
+jsoncopy

@@ -1,0 +1,22 @@
+...
+"outcome":
+{
+  "network_status": "not_sent_to_network",
+  "reason": "highest_risk_level",
+  "risk_level": "highest",
+  "risk_score": "92", // Provided only with Stripe Radar for Fraud Teams
+  "seller_message": "Stripe blocked this charge as too risky.",
+  "type": "blocked",
+}
+...
+...
+"outcome":
+{
+  "network_status": "not_sent_to_network",
+  "reason": "highest_risk_level",
+  "risk_level": "highest",
+  "risk_score": "92", // Provided only with Stripe Radar for Fraud Teams
+  "seller_message": "Stripe blocked this charge as too risky.",
+  "type": "blocked",
+}
+...

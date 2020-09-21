@@ -1,0 +1,15 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ap="https://svcs.paypal.com/types/ap">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <ap:GetPrePaymentDisclosureRequest>
+      <requestEnvelope>
+        <!--Optional:-->
+        <detailLevel>?</detailLevel>
+        <errorLanguage>en_US</errorLanguage>
+        <!--You may enter ANY elements at this point-->
+      </requestEnvelope>
+      <payKey>AP-05072631H6034030W</payKey>
+    </ap:GetPrePaymentDisclosureRequest>
+  </soapenv:Body>
+</soapenv:Envelope>
+copy

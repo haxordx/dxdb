@@ -1,0 +1,7 @@
+"payment_preferences": {
+    "setup_fee": {
+      "value": "10",
+      "currency_code": "USD"
+    },
+  },
+bashcopy

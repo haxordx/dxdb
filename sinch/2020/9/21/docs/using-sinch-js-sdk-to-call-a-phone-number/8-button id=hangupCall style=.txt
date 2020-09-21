@@ -1,0 +1,4 @@
+<button id="hangupCall" style="display: none">Hangup</button>
+<audio id="incoming" autoplay></audio>
+<audio id="ringtone" src="ringtone.wav" loop ></audio>
+<div id="status"></div>

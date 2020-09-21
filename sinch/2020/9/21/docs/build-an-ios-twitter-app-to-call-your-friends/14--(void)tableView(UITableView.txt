@@ -1,0 +1,8 @@
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    DetailViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"callScreen"];
+    CFriend *callingFriend = self.objects[indexPath.row];
+    [controller setCallFriend:callingFriend];
+    // 4
+    [self presentViewController:controller animated:YES completion:nil];
+}

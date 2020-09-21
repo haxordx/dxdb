@@ -1,0 +1,5 @@
+- (void)clientDidStart:(id<SINClient>)client {
+    NSLog(@"Sinch client started successfully (version: %@)", [Sinch version]);
+    ///add the VoIP registration
+    [self voipRegistration];
+}

@@ -1,0 +1,6 @@
+var newUserRecord = await User.create({
+  emailAddress: inputs.emailAddress,
+  fullName: inputs.fullName,
+})
+.intercept('E_UNIQUE', ()=>{ return new Error('There is already an account using that email address!') })
+.fetch();

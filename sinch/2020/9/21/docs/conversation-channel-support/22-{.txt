@@ -1,0 +1,7 @@
+{
+    "message": {
+        "text_message": {
+            "text": "Text message from Sinch Conversation API."
+        }
+    }
+}

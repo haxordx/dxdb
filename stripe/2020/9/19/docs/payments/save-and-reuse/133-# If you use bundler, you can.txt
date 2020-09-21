@@ -1,0 +1,3 @@
+# If you use bundler, you can add this line to your Gemfile
+gem 'stripe'# If you use bundler, you can add this line to your Gemfile
+gem 'stripe'

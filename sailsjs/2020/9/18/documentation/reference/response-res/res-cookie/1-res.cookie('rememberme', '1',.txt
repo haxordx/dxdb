@@ -1,0 +1,1 @@
+res.cookie('rememberme', '1', { maxAge: 900000, httpOnly: true });

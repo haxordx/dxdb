@@ -1,0 +1,3 @@
+verb: 'destroyed',
+id: <the record primary key>,
+previous: <a dictionary of the attribute values of the destroyed record (including populated associations)>

@@ -1,0 +1,19 @@
+select
+  date_format(created, '%Y-%m-%d') as day,
+  id,
+  amount,
+  currency,
+  source_id,
+  type
+from balance_transactions
+order by day desc
+limit 5select
+  date_format(created, '%Y-%m-%d') as day,
+  id,
+  amount,
+  currency,
+  source_id,
+  type
+from balance_transactions
+order by day desc
+limit 5

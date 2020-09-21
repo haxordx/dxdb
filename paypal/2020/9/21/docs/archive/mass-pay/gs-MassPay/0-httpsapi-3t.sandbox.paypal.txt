@@ -1,0 +1,4 @@
+https://api-3t.sandbox.paypal.com/nvp
+METHOD=MassPay
+VERSION=90
+copy

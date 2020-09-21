@@ -1,0 +1,42 @@
+const form = document.getElementById('setup-form');
+const accountholderName = document.getElementById('accountholder-name');
+const email = document.getElementById('email');
+const submitButton = document.getElementById('submit-button');
+const clientSecret = submitButton.dataset.secret;
+
+form.addEventListener('submit', async (event) => {
+  event.preventDefault();
+  stripe.confirmAuBecsDebitSetup(
+    clientSecret,
+    {
+      payment_method: {
+        au_becs_debit: auBankAccount,
+        billing_details: {
+          name: accountholderName.value,
+          email: email.value
+        }
+      }
+    }
+  );
+});
+const form = document.getElementById('setup-form');
+const accountholderName = document.getElementById('accountholder-name');
+const email = document.getElementById('email');
+const submitButton = document.getElementById('submit-button');
+const clientSecret = submitButton.dataset.secret;
+
+form.addEventListener('submit', async (event) => {
+  event.preventDefault();
+  stripe.confirmAuBecsDebitSetup(
+    clientSecret,
+    {
+      payment_method: {
+        au_becs_debit: auBankAccount,
+        billing_details: {
+          name: accountholderName.value,
+          email: email.value
+        }
+      }
+    }
+  );
+});

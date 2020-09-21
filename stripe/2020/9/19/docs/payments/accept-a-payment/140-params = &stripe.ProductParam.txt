@@ -1,0 +1,8 @@
+params := &stripe.ProductParams{
+  Name: stripe.String("T-shirt"),
+}
+p, _ := product.New(params)
+params := &stripe.ProductParams{
+  Name: stripe.String("T-shirt"),
+}
+p, _ := product.New(params)

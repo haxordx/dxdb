@@ -1,0 +1,6 @@
+[GET]       /configuration/numbers/
+[POST]      /configuration/numbers/
+[DELETE]    /configuration/numbers/
+[GET]       /configuration/callbacks/applications/{applicationkey}
+[POST]      /configuration/callbacks/applications/{applicationkey}
+[GET]       /calling/query/number/{number}

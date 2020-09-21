@@ -1,0 +1,9 @@
+<form method="post" name="pphsignup_form" action="https://www.paypal.com/signup-pph">
+  <input type="hidden" name="partnertype" value="sdk">
+  <input type="hidden" name="partner_id" value="{My-Bn-Code-Id}">
+  <input type="hidden" name="partner_name" value="{SDK-Partner-Id}">
+  <input type="hidden" name="swiper" value="n">
+  <input type="hidden" name="logourl" value="https://pathtologourl.com/logo.jpg">
+  <input type="submit" name="submit" value="Sign Up for PPH">
+</form>
+htmlcopy

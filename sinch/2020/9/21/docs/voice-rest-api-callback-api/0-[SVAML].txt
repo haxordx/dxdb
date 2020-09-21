@@ -1,0 +1,15 @@
+[SVAML]
+    Instruction[] - instructions
+    Action - action
+
+[Instruction]
+{
+    string - name
+    ... // instruction-specific properties
+}
+
+[Action]
+{
+    string - name
+    ... // action-specific properties
+}

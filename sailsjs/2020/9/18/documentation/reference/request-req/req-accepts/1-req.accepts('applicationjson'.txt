@@ -1,0 +1,8 @@
+req.accepts('application/json');
+// -> 'application/json'
+
+req.accepts('json');
+// -> 'json'
+
+req.accepts('image/png');
+// -> false

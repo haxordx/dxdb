@@ -1,0 +1,4 @@
+  var order = pphwebsdk.Order.create();
+  order.item('Cake').price(1.00).quantity(3);
+  order.item('Coffee').price(2.00).quantity(3);
+javascriptcopy

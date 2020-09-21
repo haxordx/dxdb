@@ -1,0 +1,5 @@
+<script src="/js/dependencies/sails.io.js"></script>
+<script type="text/javascript">
+  io.sails.url = 'https://myapp.com';
+</script>
+<!-- ...other scripts... -->

@@ -1,0 +1,2 @@
+40400 - Call not found
+50000 - Internal error

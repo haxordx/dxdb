@@ -1,0 +1,25 @@
+curl https://api.stripe.com/v1/accounts/acct_xxx/persons/person_xxx \
+  -u {PLATFORM_SECRET_KEY}: \
+  -d address[city]=Schenectady \
+  -d address[line1]="123 State St" \
+  -d address[postal_code]=12345 \
+  -d address[state]=NY \
+  -d dob[day]=10 \
+  -d dob[month]=11 \
+  -d dob[year]=1980 \
+  -d ssn_last_4=0000 \
+  -d phone=8888675309 \
+  -d email="jenny@bestcookieco.com" \
+  -d relationship[executive]=truecurl https://api.stripe.com/v1/accounts/acct_xxx/persons/person_xxx \
+  -u {PLATFORM_SECRET_KEY}: \
+  -d address[city]=Schenectady \
+  -d address[line1]="123 State St" \
+  -d address[postal_code]=12345 \
+  -d address[state]=NY \
+  -d dob[day]=10 \
+  -d dob[month]=11 \
+  -d dob[year]=1980 \
+  -d ssn_last_4=0000 \
+  -d phone=8888675309 \
+  -d email="jenny@bestcookieco.com" \
+  -d relationship[executive]=true

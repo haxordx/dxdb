@@ -1,0 +1,6 @@
+SinchClient sinchClient = Sinch.getSinchClientBuilder().context(context)
+                              ...
+                              .build();
+...                              
+sinchClient.setSupportManagedPush(true);
+sinchClient.start();

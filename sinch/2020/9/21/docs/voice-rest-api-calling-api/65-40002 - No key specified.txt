@@ -1,0 +1,3 @@
+40002 - No key specified
+40400 - Recording not found
+50000 - Internal error

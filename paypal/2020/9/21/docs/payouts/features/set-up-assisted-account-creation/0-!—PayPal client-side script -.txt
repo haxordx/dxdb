@@ -1,0 +1,27 @@
+<!—PayPal client-side script -->
+<script src="https://www.paypalobjects.com/payouts/js/payouts_aac.js"></script>
+
+<!-- Set up a container for ACC to be rendered into -->
+<div id="container"></div>
+
+<script>
+    // Render the AAC component
+    paypal.PayoutsAAC.render({
+        // Use sandbox for testing
+        env: "<sandbox/production>",
+        clientId: {
+          production: "<production clientId>",
+          sandbox: "<sandbox clientId>"
+        },
+        merchantId: "<Merchant Account ID>",
+        pageType: "<signup/login>",
+        onLogin: function(response) {
+          if (response.err) {
+            console.log(response.err)
+          } else {
+            console.log(response.body.code);
+          }
+        }
+      }, '#container');
+</script>
+copy

@@ -1,0 +1,54 @@
+{
+  "to": [
+    "46732001122",
+    "group:447506616260-1565342732"
+  ],
+  "message": {
+    "type": "contacts",
+    "contacts": [
+      {
+        "addresses": [
+          {
+            "city": "Menlo Park",
+            "country": "United States",
+            "country_code": "us",
+            "state": "CA",
+            "street": "1 Hacker Way",
+            "type": "HOME",
+            "zip": "94025"
+          }
+        ],
+        "birthday": "2012-08-18",
+        "emails": [
+          {
+            "email": "test@fb.com",
+            "type": "WORK"
+          }
+        ],
+        "name": {
+          "first_name": "John",
+          "formatted_name": "John Smith",
+          "last_name": "Smith"
+        },
+        "org": {
+          "company": "WhatsApp",
+          "department": "Design",
+          "title": "Manager"
+        },
+        "phones": [
+          {
+            "phone": "+1 (650) 555-1234",
+            "type": "WORK",
+            "wa_id": "16505551234"
+          }
+        ],
+        "urls": [
+          {
+            "url": "https://www.facebook.com",
+            "type": "WORK"
+          }
+        ]
+      }
+    ]
+  }
+}

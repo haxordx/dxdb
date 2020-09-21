@@ -1,0 +1,21 @@
+<script>
+  function onboardedCallback(authCode, sharedId) {
+    fetch('/seller-server/login-seller', {
+      method: 'POST',
+      headers: {
+        'content-type': 'application/json'
+      },
+      body: JSON.stringify({
+        authCode: authCode,
+        sharedId: sharedId
+      })
+    }).then(function(res) {
+      if (!response.ok) {
+        alert("Something went wrong!");
+      }
+    });
+  }
+</script>
+<a target="_blank" data-paypal-onboard-complete="onboardedCallback" href="<Action-URL>&displayMode=minibrowser" data-paypal-button="true">Sign up for PayPal</a>
+<script id="paypal-js" src="https://www.sandbox.paypal.com/webapps/merchantboarding/js/lib/lightbox/partner.js"></script>  
+htmlcopy

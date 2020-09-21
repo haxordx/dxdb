@@ -1,0 +1,20 @@
+String userTicket = "{\"identity\":{\"type\":\"username\""
+            + ",\"endpoint\":\"" + username + "\"},\"expiresIn\":"
+            + expiresIn + ",\"applicationKey\":\"" + applicationKey
+            + "\",\"created\":\"" + timestamp + "\"}";
+
+String userTicketBase64 = Base64.encodeBase64String(userTicket.getBytes());
+
+String signature = "";
+try {
+    Mac sha256HMAC = Mac.getInstance("HmacSHA256");
+    SecretKeySpec secretKey = new SecretKeySpec(Base64.decodeBase64(applicationSecret.getBytes()), "HmacSHA256");
+       sha256HMAC.init(secretKey);
+       signature = Base64.encodeBase64String(sha256HMAC.doFinal(userTicket.getBytes()));
+} catch (Exception e) {
+    e.printStackTrace();
+}
+
+HttpSession session = request.getSession();
+session.setAttribute("ticket", userTicketBase64 + ":" + signature);
+response.sendRedirect("success.jsp"); //still need to create this file

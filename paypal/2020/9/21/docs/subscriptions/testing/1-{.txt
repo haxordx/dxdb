@@ -1,0 +1,19 @@
+{
+  "name": "NOT_AUTHORIZED",
+  "debugId": "b1d1f06c7246c",
+  "message": "Authorization failed due to insufficient permissions.",
+  "details": [
+      {
+          "issue": "PERMISSION_DENIED",
+          "description": "You do not have permission to access or perform operations on this resource."
+      }
+  ],
+  "links": [
+      {
+          "href": "https://developer.paypal.com/docs/api/v1/billing/subscriptions#PERMISSION_DENIED",
+          "rel": "information_link",
+          "method": "GET"
+      }
+  ]
+}
+copy

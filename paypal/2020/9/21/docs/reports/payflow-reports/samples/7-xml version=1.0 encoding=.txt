@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<reportingEngineResponse>
+   <baseResponse>
+      <responseCode>100</responseCode>
+      <responseMsg>Request has completed successfully</responseMsg>
+   </baseResponse>
+   <getMetaDataResponse>
+      <numberOfRows>13</numberOfRows>
+      <numberOfPages>1</numberOfPages>
+      <pageSize>50</pageSize>
+      <numberOfColumns>11</numberOfColumns>
+      <columnMetaData>
+         <dataName>Transaction ID</dataName>
+         <dataType>string</dataType>
+      </columnMetaData>
+      <columnMetaData>
+         <dataName>Trans Time</dataName>
+         <dataType>date</dataType>
+      </columnMetaData>
+      <columnMetaData>
+         <dataName>Trans Type</dataName>
+         <dataType>string</dataType>
+      </columnMetaData>
+      <columnMetaData>
+         <dataName>Tender Type</dataName>
+         <dataType>string</dataType>
+      </columnMetaData>
+      <columnMetaData>
+         <dataName>Account Number</dataName>
+         <dataType>string</dataType>
+      </columnMetaData>
+      <columnMetaData>
+         <dataName>Expires</dataName>
+         <dataType>string</dataType>
+      </columnMetaData>
+      <columnMetaData>
+         <dataName>Amount</dataName>
+         <dataType>string</dataType>
+      </columnMetaData>
+      <columnMetaData>
+         <dataName>Result</dataName>
+         <dataType>number</dataType>
+      </columnMetaData>
+      <columnMetaData>
+         <dataName>Reponse Msg</dataName>
+         <dataType>string</dataType>
+      </columnMetaData>
+      <columnMetaData>
+         <dataName>Comment1</dataName>
+         <dataType>string</dataType>
+      </columnMetaData>
+      <columnMetaData>
+         <dataName>Comment2</dataName>
+         <dataType>string</dataType>
+      </columnMetaData>
+   </getMetaDataResponse>
+</reportingEngineResponse>
+xmlcopy

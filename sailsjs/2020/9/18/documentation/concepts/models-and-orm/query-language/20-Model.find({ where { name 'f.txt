@@ -1,0 +1,1 @@
+Model.find({ where: { name: 'foo' }, skip: 10 });

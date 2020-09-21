@@ -1,0 +1,6 @@
+var handleSuccess = function() {...};
+var handleFail = function() {...};
+
+SinchClient.start(loginObj)
+    .then(handleSuccess)
+    .fail(handleFail);

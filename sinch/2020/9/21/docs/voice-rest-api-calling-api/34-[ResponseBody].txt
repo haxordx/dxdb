@@ -1,0 +1,11 @@
+[ResponseBody]
+    GetConfrenceInfoResponse
+
+[GetConferenceInfoResponse]
+    Participant[] - participants
+
+[Participant]
+    string - cli
+    string - id
+    int - duration
+    bool - muted

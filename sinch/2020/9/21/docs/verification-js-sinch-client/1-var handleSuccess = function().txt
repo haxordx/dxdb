@@ -1,0 +1,4 @@
+var handleSuccess = function() {...};
+var handleFail = function() {...};
+
+sinchClient.start(loginObj, handleSuccess, handleFail);

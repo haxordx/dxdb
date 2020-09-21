@@ -1,0 +1,4 @@
+[HttpGet]
+public List<NumberConfig> Get() {
+    return NumberConfigContext.Current();
+}

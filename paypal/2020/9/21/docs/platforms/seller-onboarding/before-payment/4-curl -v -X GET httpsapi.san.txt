@@ -1,0 +1,4 @@
+curl -v -X GET https://api.sandbox.paypal.com/v1/customer/partners/{partner_merchant_id}/merchant-integrations/{seller_merchant_id} \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer Access-Token"
+bashcopy

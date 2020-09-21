@@ -1,0 +1,20 @@
+$webhook = new \PayPal\Api\Webhook();
+
+// Set webhook notification URL
+$webhook->setUrl("https://f615ef32.ngrok.io");
+
+// Set webhooks to subscribe to
+$webhookEventTypes = array();
+$webhookEventTypes[] = new \PayPal\Api\WebhookEventType(
+  '{
+    "name":"PAYMENT.SALE.COMPLETED"
+  }'
+);
+
+$webhookEventTypes[] = new \PayPal\Api\WebhookEventType(
+  '{
+    "name":"PAYMENT.SALE.DENIED"
+  }'
+);
+
+$webhook->setEventTypes($webhookEventTypes);copy

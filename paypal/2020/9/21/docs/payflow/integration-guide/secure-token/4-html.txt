@@ -1,0 +1,12 @@
+<html>
+ <head>
+  <title>PageTitle</title>
+ </head>
+ <body>
+  <form method="post" action="https://payflowlink.paypal.com">
+   <input type=hidden value="Fj+1AFUWft0+I0CUFOKh5WA==" name=SECURETOKEN/>
+   <input type=hidden value="9a9ea8208de1413abc3d60c86cb1f4c5" name=SECURETOKENID/>
+  </form>
+ </body>
+</html>
+copy

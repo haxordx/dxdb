@@ -1,0 +1,15 @@
+curl -v -X PATCH https://api.sandbox.paypal.com/v1/payment-experience/web-profiles/XP-RFV4-PVD8-AGHJ-8E5J \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer Access-Token" \
+-H "PayPal-Request-Id: abcdefgh123" \
+-d '[
+  {
+    "op": "add",
+    "path": "/presentation/brand_name",
+    "value": "new_brand_name"
+  },
+  {
+    "op": "remove",
+    "path": "/flow_config/landing_page_type"
+  }
+]'copy

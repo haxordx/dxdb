@@ -1,0 +1,1 @@
+sails.LOOKS_LIKE_ASSET_RX;

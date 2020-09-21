@@ -1,0 +1,11 @@
+// User.js
+module.exports = {
+  datastore: 'ourMySQL',
+  attributes: {
+    email: 'string',
+    wishlist: {
+      collection: 'product',
+      via: 'wishlistedBy'
+    }
+  }
+};

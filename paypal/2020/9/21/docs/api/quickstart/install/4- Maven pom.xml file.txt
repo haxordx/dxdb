@@ -1,0 +1,14 @@
+// Maven pom.xml file
+<dependency>
+  <groupId>com.paypal.sdk</groupId>
+  <artifactId>rest-api-sdk</artifactId>
+  <version>LATEST</version>
+</dependency>
+
+// Gradle
+repositories {
+  mavenCentral()
+}
+dependencies {
+  compile 'com.paypal.sdk:rest-api-sdk:+'
+}copy

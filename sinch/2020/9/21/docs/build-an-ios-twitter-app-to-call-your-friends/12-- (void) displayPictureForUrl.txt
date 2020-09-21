@@ -1,0 +1,15 @@
+- (void) displayPictureForUrl:(NSString *)urlString {
+    NSURL *url = [NSURL URLWithString:urlString];
+    NSData *imageData = [NSData dataWithContentsOfURL:url];
+    UIImage *img = [UIImage imageWithData:imageData];
+    CGSize size = img.size;
+    CGRect rectFrame = CGRectMake(self.view.frame.size.width/2 - size.width * 0.75, 90, size.width * 1.5, size.height * 1.5);
+    UIImageView* imgv = [[UIImageView alloc] initWithImage:img];
+    imgv.frame = rectFrame;
+
+    // make picture into circle
+    imgv.layer.cornerRadius = size.width/2;
+    imgv.layer.masksToBounds = YES;
+
+    [self.view addSubview:imgv];
+}

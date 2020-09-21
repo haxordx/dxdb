@@ -1,0 +1,10 @@
+curl -v -X POST https://api.sandbox.paypal.com/v1/payments/capture/2F6652020G264741U/refund \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer Access-Token" \
+-d '{
+  "amount": {
+    "total": "100.00",
+    "currency": "USD"
+  },
+  "invoice_number": "INV-7654321"
+}'copy

@@ -1,0 +1,3 @@
+..., {
+  checkoutAction: '/checkout?_csrf='+encodeURIComponent('USER_CSRF_TOKEN')
+}

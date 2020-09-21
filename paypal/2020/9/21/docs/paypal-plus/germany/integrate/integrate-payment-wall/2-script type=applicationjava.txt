@@ -1,0 +1,9 @@
+<script type="application/javascript">
+    var ppp = PAYPAL.apps.PPP({
+    "approvalUrl": "'.$approval_url.'",
+    "placeholder": "ppplus",
+    "mode": "sandbox",
+    "country": "DE"
+    });
+</script>
+copy

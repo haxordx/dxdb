@@ -1,0 +1,4 @@
+[Money]
+    currency - currencyId
+    decimal - amount
+    string? – formatted

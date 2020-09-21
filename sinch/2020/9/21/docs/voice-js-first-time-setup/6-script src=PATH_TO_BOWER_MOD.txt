@@ -1,0 +1,1 @@
+<script src="PATH_TO_BOWER_MODULES/sinch-rtc/sinch.min.js"></script>

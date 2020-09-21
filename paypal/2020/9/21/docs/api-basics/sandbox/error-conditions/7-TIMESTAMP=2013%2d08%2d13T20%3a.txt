@@ -1,0 +1,14 @@
+TIMESTAMP=2013%2d08%2d13T20%3a16%3a56Z
+  &CORRELATIONID=a7cbf2d4d83dc
+  &ACK=Failure
+  &L_ERRORCODE0=10555
+  &L_SHORTMESSAGE0=Filter%20Decline
+  &L_LONGMESSAGE0=This%20transaction%20cannot%20be%20processed%2e
+  &L_SEVERITYCODE0=Error
+  &L_ERRORCODE1=10755
+  &L_SHORTMESSAGE1=Unsupported%20Currency%2e
+  &L_LONGMESSAGE1=This%20transaction%20cannot%20be%20processed%20due%20to%20an%20unsupported%20currency%2e
+  &L_SEVERITYCODE1=Error
+  &VERSION=100
+  &BUILD=7161310
+copy

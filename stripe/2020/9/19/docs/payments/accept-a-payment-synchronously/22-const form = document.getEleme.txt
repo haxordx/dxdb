@@ -1,0 +1,36 @@
+const form = document.getElementById('payment-form');
+
+form.addEventListener('submit', async (event) => {
+  // We don't want to let default form submission happen here,
+  // which would refresh the page.
+  event.preventDefault();
+
+  const result = await stripe.createPaymentMethod({
+    type: 'card',
+    card: cardElement,
+    billing_details: {
+      // Include any additional collected billing details.
+      name: 'Jenny Rosen',
+    },
+  })
+
+  stripePaymentMethodHandler(result);
+});
+const form = document.getElementById('payment-form');
+
+form.addEventListener('submit', async (event) => {
+  // We don't want to let default form submission happen here,
+  // which would refresh the page.
+  event.preventDefault();
+
+  const result = await stripe.createPaymentMethod({
+    type: 'card',
+    card: cardElement,
+    billing_details: {
+      // Include any additional collected billing details.
+      name: 'Jenny Rosen',
+    },
+  })
+
+  stripePaymentMethodHandler(result);
+});

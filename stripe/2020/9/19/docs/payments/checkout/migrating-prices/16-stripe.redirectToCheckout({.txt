@@ -1,0 +1,23 @@
+stripe.redirectToCheckout({
+  items: [{
+    sku: '{{SKU_ID}}',
+  lineItems: [{
+    price: '{{PRICE_OR_SKU_ID}}',
+    quantity: 1
+  }],
+  mode: 'payment',
+  successUrl: 'https://example.com/success',
+  cancelUrl: 'https://example.com/cancel',
+})
+.then((result) => {});stripe.redirectToCheckout({
+  items: [{
+    sku: '{{SKU_ID}}',
+  lineItems: [{
+    price: '{{PRICE_OR_SKU_ID}}',
+    quantity: 1
+  }],
+  mode: 'payment',
+  successUrl: 'https://example.com/success',
+  cancelUrl: 'https://example.com/cancel',
+})
+.then((result) => {});

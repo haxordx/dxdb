@@ -1,0 +1,1 @@
+var originalRecord = await Something.archiveOne(criteria);

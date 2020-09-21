@@ -1,0 +1,2 @@
+var verification:Verification!;
+var applicationKey = "your key";

@@ -1,0 +1,8 @@
+{
+    "action": "allow",
+    "sms":
+        {
+            "code": "12345" ,
+            "acceptLanguage": ["es-ES"]
+        }
+}

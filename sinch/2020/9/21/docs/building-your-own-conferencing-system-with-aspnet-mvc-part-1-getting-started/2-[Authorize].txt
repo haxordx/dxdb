@@ -1,0 +1,27 @@
+[Authorize]
+[Route("~/Conference/Create")]
+[HttpGet]
+public async Task<ActionResult> Create() {
+    var model = new CreateConferenceModel();
+    //Set up some standard values to make it look nice in the UI
+    model.Conference = new Conference();
+    model.Conference.ConferenceEndDate = DateTime.Today.AddDays(5);
+    model.Conference.OwnerId = User.Identity.Name;
+
+    string code = "";
+    using (var db = new ConferenceContext()) {
+    //Hacky - this has a potential for slowing down stuff considerably and produce errors.
+        Random rng = new Random();
+        int value = rng.Next(100, 9999); //1
+        code = value.ToString("0000");
+        while (db.Conferences
+            .Any(m => m.PinCode == code 
+            && (m.ConferenceEndDate <= DateTime.Today || m.ValidForever))) {
+            value = rng.Next(100, 9999); //1
+            code = value.ToString("0000");
+        }
+
+    }
+    model.Conference.PinCode = code;
+    return View(model);
+}

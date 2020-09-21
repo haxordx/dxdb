@@ -1,0 +1,6 @@
+curl https://api.stripe.com/v1/credit_notes/cn_w82laPzlw48z/void \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -X POST
+curl https://api.stripe.com/v1/credit_notes/cn_w82laPzlw48z/void \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -X POST

@@ -1,0 +1,4 @@
+if (this.req.me.preferredLocale) {
+  this.req.setLocale(this.req.me.preferredLocale);
+}
+return exits.success();

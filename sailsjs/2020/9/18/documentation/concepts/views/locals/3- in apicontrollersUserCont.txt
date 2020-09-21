@@ -1,0 +1,10 @@
+// in api/controllers/UserController.js...
+
+  profile: function (req, res) {
+    // ...
+    return res.view('backOffice/profile', {
+      user: theUser,
+      corndogs: theUser.corndogCollection
+    });
+  },
+  // ...

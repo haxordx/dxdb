@@ -1,0 +1,5 @@
+curl https://api.stripe.com/v1/sources \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d type=ach_credit_transfer \
+  -d currency=usd \
+  -d "owner[email]"="jenny.rosen@example.com"

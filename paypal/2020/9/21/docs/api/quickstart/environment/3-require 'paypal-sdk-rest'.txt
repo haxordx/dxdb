@@ -1,0 +1,9 @@
+require 'paypal-sdk-rest'
+include PayPal::SDK::REST
+include PayPal::SDK::Core::Logging
+
+PayPal::SDK.configure(
+  :mode => 'sandbox', #sandbox or live
+  :client_id => 'YOUR APPLICATION CLIENT ID',
+  :client_secret => 'YOUR APPLICATION CLIENT SECRET',
+  :ssl_options => { } )copy

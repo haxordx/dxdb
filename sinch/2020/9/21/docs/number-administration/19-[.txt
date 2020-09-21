@@ -1,0 +1,44 @@
+[
+   {
+      "groupId":1,
+      "country":"France",
+      "countryId":"FR",
+      "city":"PARIS",
+      "type":"Voice",
+      "availability":7,
+      "areaCode":"01",
+      "cost":{
+            "amount":2.00,
+            "currencyId":"USD"
+      },
+      "capabilities":["voice"]
+   },
+   {
+      "groupId":2,
+      "country":"UK",
+      "countryId":"GB",
+      "city":"LONDON",
+      "type":"Voice",
+      "availability":2,
+      "areaCode":"020",
+      "cost":{
+            "amount":2.00,
+            "currencyId":"USD"
+      },
+      "capabilities":["voice"]
+   },
+   {
+      "groupId":75,
+      "country":"US",
+      "countryId":"US",
+      "city":"New Orleans",
+      "type":"Sms",
+      "availability":5,
+      "areaCode":"504",
+      "cost":{
+            "amount":2.00,
+            "currencyId":"USD"
+      },
+      "capabilities":["sms"]
+   }
+]

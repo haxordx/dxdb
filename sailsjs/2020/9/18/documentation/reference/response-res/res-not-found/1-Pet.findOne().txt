@@ -1,0 +1,7 @@
+Pet.findOne()
+.where({ name: 'fido' })
+.exec(function(err, fido) {
+  if (err) return res.serverError(err);
+  if (!fido) return res.notFound();
+  // ...
+})

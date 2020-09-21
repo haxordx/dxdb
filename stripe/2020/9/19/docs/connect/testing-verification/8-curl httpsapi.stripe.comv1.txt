@@ -1,0 +1,13 @@
+curl https://api.stripe.com/v1/accounts/acct_xxx/persons \
+  -u {PLATFORM_SECRET_KEY}: \
+  -d first_name=Kathleen \
+  -d last_name=Banks \
+  -d email="kathleen@bestcookieco.com" \
+  -d relationship[owner]=true \
+  -d relationship[percent_ownership]=80curl https://api.stripe.com/v1/accounts/acct_xxx/persons \
+  -u {PLATFORM_SECRET_KEY}: \
+  -d first_name=Kathleen \
+  -d last_name=Banks \
+  -d email="kathleen@bestcookieco.com" \
+  -d relationship[owner]=true \
+  -d relationship[percent_ownership]=80

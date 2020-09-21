@@ -1,0 +1,22 @@
+// On the server, in your subscribe action…
+
+if (!orgId) { throw 'badRequest'; }
+
+if (!this.req.isSocket) { throw {badRequest: 'This action is designed for use with WebSockets.'}; }
+
+let me = await User.findOne({
+  id: this.req.session.userId
+})
+.populate('globalAdminOfOrganizations');
+
+// Subscribe to general notifications.
+Organization.subscribe(this.req, orgId);
+
+// If this user is a global admin of this organization, then also subscribe them to
+// an additional private room (this is used for additional notifications intended only
+// for global admins):
+if (globalAdminOfOrganizations.includes(orgId)) {
+  let privateRoom = Organization.getRoomName(`${orgId}-admins-only`);
+  sails.sockets.join(this.req, privateRoom);
+}
+

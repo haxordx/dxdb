@@ -1,0 +1,50 @@
+#import "APPReaderViewController.h"
+#import <StripeTerminal/StripeTerminal.h>
+
+@interface APPViewController () <SCPTerminalDelegate>
+
+@property (nonatomic, nullable, strong) SCPCancelable *discoverCancelable;
+
+// ...
+
+@end
+
+@implementation APPReaderViewController
+    - (void)viewDidLoad {
+        [super viewDidLoad];
+        [SCPTerminal shared].delegate = self;
+    }
+
+    // ...
+
+    #pragma mark – SCPTerminalDelegate
+
+    - (void)terminal:(SCPTerminal *)terminal didReportUnexpectedReaderDisconnect:(SCPReader *)reader {
+        NSLog(@"Disconnected from reader: %@", reader);
+    }
+}
+#import "APPReaderViewController.h"
+#import <StripeTerminal/StripeTerminal.h>
+
+@interface APPViewController () <SCPTerminalDelegate>
+
+@property (nonatomic, nullable, strong) SCPCancelable *discoverCancelable;
+
+// ...
+
+@end
+
+@implementation APPReaderViewController
+    - (void)viewDidLoad {
+        [super viewDidLoad];
+        [SCPTerminal shared].delegate = self;
+    }
+
+    // ...
+
+    #pragma mark – SCPTerminalDelegate
+
+    - (void)terminal:(SCPTerminal *)terminal didReportUnexpectedReaderDisconnect:(SCPReader *)reader {
+        NSLog(@"Disconnected from reader: %@", reader);
+    }
+}

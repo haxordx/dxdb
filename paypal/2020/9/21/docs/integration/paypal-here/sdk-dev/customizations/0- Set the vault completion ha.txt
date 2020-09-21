@@ -1,0 +1,9 @@
+// Set the vault completion handler before calling beginPayment to receive vault record with id
+tc.setVaultCompletedHandler({ (error, vaultRecord) in
+    if error != nil {
+        // handle error accordingly
+    } else {
+        // handle success with vaultRecord
+    }
+})
+copy

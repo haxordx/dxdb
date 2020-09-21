@@ -1,0 +1,29 @@
+from paypalrestsdk import BillingPlan
+
+billing_plan = BillingPlan({
+  "name": "Testing1-Regular1",
+  "description": "Create Plan for Regular",
+  "type": "INFINITE",
+  "payment_definitions": [{
+    "name": "Standard Plan",
+    "type": "REGULAR",
+    "frequency_interval": "1",
+    "frequency": "MONTH",
+    "cycles": "0",
+    "amount": {
+      "currency": "USD",
+      "value": "20"
+    }
+  }],
+  "merchant_preferences": {
+    "auto_bill_amount": "yes",
+    "cancel_url": "http://localhost:3000/cancel",
+    "initial_fail_amount_action": "continue",
+    "max_fail_attempts": "1",
+    "return_url": "http://localhost:3000/processagreement",
+    "setup_fee": {
+      "currency": "USD",
+      "value": "25"
+    }
+  }
+})copy

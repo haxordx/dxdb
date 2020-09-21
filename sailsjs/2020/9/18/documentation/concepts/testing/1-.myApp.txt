@@ -1,0 +1,19 @@
+./myApp
+├── api/
+├── assets/
+├── ...
+├── test/
+│  ├── integration/
+│  │  ├── controllers/
+│  │  │  └── UserController.test.js
+│  │  ├── models/
+│  │  │  └── User.test.js
+│  │  └── helpers/
+|  |     └── ...
+│  ├── fixtures/
+|  │  └── ...
+│  ├── lifecycle.test.js
+│  └── mocha.opts
+├── ...
+└── views/
+

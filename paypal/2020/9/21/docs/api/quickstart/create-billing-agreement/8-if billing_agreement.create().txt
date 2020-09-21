@@ -1,0 +1,10 @@
+if billing_agreement.create():
+  # Extract redirect url
+  for link in billing_agreement.links:
+    if link.method == "REDIRECT":
+      # Capture redirect url
+      redirect_url = str(link.href)
+
+      # REDIRECT USER TO redirect_url
+else:
+  print(billing_agreement.error)copy

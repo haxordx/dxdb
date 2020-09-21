@@ -1,0 +1,4 @@
+resp mesg=RESULT=125&PNREF=VB0A25030756&RESPMSG=Declined by Fraud Service&PREFPSMSG=
+Reject CeilingAmount
+    !!ERROR 13:11:4 result=125 TRXTYPE=A!!
+copy

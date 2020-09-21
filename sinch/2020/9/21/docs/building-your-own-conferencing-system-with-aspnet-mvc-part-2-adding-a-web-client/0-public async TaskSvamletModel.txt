@@ -1,0 +1,53 @@
+public async Task<SvamletModel> Post(CallbackEventModel model) {
+    var sinch = SinchFactory.CreateCallbackResponseFactory(Locale.EnUs);
+    var reader = sinch.CreateEventReader();
+    var evt = reader.ReadModel(model);
+    var builder = sinch.CreateIceSvamletBuilder();
+    switch (evt.Event) {
+        case Event.IncomingCall:
+            if (model.OriginationType == "MXP") { 
+                //Its a browser calling in, just look up the PIN code
+                await ConnectToConference(model.To.Endpoint, model.From, builder); 
+            } else { // A phone is calling in, play a promopt
+                builder.AddNumberInputMenu("menu1", "Enter 4 digit pin", 4, "Enter 4 digit pin", 3,
+                    TimeSpan.FromSeconds(60));
+                builder.RunMenu("menu1");
+            }
+            break;
+        case Event.PromptInput: 
+            // Only regular phones will come here
+            await ConnectToConference(model.MenuResult.Value, model.From, builder);
+            break;
+        case Event.AnsweredCall: 
+            // Since we cant opt out from callbacks because of the prompts, 
+            //we need to respond to Answered call as well. 
+            builder.Continue();
+            break;
+        case Event.DisconnectedCall: 
+        // This would be a good place to notify 
+        //other people in the conf that some one left
+            break;
+        default:
+            break;
+    }
+    return builder.Build().Model;
+}
+
+private async Task ConnectToConference(string  pinCode, string cli, IIceSvamletBuilder builder) {
+    using (var db = new ConferenceContext()) {
+        // find the correct conference (current setup only allows for 10 000 unique 
+        // conferences per day, because I wanted to limit the pin code length to 4)
+        var conference =
+            await db.Conferences
+            .FirstOrDefaultAsync(c => c.PinCode == pinCode 
+            && (c.ConferenceEndDate >= DateTime.Today || c.ValidForever== true));
+
+        if (conference != null) { 
+            // connect the caller to the conrefence with the correct CLI
+            builder.ConnectConference(conference.ConferenceId.ToString()).WithCli(cli);
+            builder.Say(", Welcome to the conference");
+        } else {
+            builder.Say("Invalid code").Hangup(HangupCause.Normal);
+        }
+    }
+}

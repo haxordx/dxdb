@@ -1,0 +1,12 @@
+curl https://api.stripe.com/v1/terminals/readers \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d registration_code="{READER_REGISTRATION_CODE}" \
+  -d location="{LOCATION_ID}" \
+  -d label="Alice's Reader" \
+  -H "Stripe-Account: {CONNECTED_ACCOUNT_ID}"
+curl https://api.stripe.com/v1/terminals/readers \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d registration_code="{READER_REGISTRATION_CODE}" \
+  -d location="{LOCATION_ID}" \
+  -d label="Alice's Reader" \
+  -H "Stripe-Account: {CONNECTED_ACCOUNT_ID}"

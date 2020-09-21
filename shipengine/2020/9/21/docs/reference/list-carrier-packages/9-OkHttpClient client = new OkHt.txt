@@ -1,0 +1,9 @@
+OkHttpClient client = new OkHttpClient().newBuilder()
+  .build();
+Request request = new Request.Builder()
+  .url("https://api.shipengine.com/v1/carriers/se-123890/packages")
+  .method("GET", null)
+  .addHeader("Host", "api.shipengine.com")
+  .addHeader("API-Key", "__YOUR_API_KEY_HERE__")
+  .build();
+Response response = client.newCall(request).execute();

@@ -1,0 +1,25 @@
+{
+  "tracking_number": "1Z932R800390810600",
+  "status_code": "DE",
+  "status_description": "Delivered",
+  "carrier_status_code": "D",
+  "carrier_status_description": "DELIVERED",
+  "shipped_date": "2019-07-27T11:59:03.289Z",
+  "estimated_delivery_date": "2019-07-27T11:59:03.289Z",
+  "actual_delivery_date": "2019-07-27T11:59:03.289Z",
+  "exception_description": null,
+  "events": [
+    {
+      "occurred_at": "2019-09-13T12:32:00Z",
+      "carrier_occurred_at": "2019-09-13T05:32:00",
+      "description": "Arrived at USPS Facility",
+      "city_locality": "OCEANSIDE",
+      "state_province": "CA",
+      "postal_code": "92056",
+      "country_code": "",
+      "company_name": "",
+      "signer": "",
+      "event_code": "U1"
+    }
+  ]
+}

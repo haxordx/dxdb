@@ -1,0 +1,22 @@
+...
+"outcome":
+{
+  "network_status": "approved_by_network",
+  "reason": null,
+  "seller_message": "The charge was authorized.",
+  "risk_level": "normal",
+  "risk_score": "23", // Provided only with Stripe Radar for Fraud Teams
+  "type": "authorized",
+}
+...
+...
+"outcome":
+{
+  "network_status": "approved_by_network",
+  "reason": null,
+  "seller_message": "The charge was authorized.",
+  "risk_level": "normal",
+  "risk_score": "23", // Provided only with Stripe Radar for Fraud Teams
+  "type": "authorized",
+}
+...

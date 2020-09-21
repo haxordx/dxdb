@@ -1,0 +1,11 @@
+if (ContextCompat.checkSelfPermission(getActivity(),
+  Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+    String[] permissions = {Manifest.permission.ACCESS_FINE_LOCATION};
+    // REQUEST_CODE_LOCATION should be defined on your app level
+    ActivityCompat.requestPermissions(getActivity(), permissions, REQUEST_CODE_LOCATION);
+}if (ContextCompat.checkSelfPermission(getActivity(),
+  Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+    String[] permissions = {Manifest.permission.ACCESS_FINE_LOCATION};
+    // REQUEST_CODE_LOCATION should be defined on your app level
+    ActivityCompat.requestPermissions(getActivity(), permissions, REQUEST_CODE_LOCATION);
+}

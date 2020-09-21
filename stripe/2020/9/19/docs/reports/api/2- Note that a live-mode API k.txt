@@ -1,0 +1,4 @@
+// Note that a live-mode API key is required.
+\Stripe\Reporting\ReportType::retrieve('balance.summary.1');
+// Note that a live-mode API key is required.
+\Stripe\Reporting\ReportType::retrieve('balance.summary.1');

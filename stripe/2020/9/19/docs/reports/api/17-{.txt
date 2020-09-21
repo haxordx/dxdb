@@ -1,0 +1,29 @@
+{
+  id: "frr_123",
+  object: "reporting.report_run",
+  livemode: true,
+  report_type: "balance_change_from_activity.itemized.3",
+  parameters: {
+    columns: [ "created", "reporting_category", "net" ],
+    interval_start: 1577865600,      # 2020-01-01 00:00 PST
+    interval_end: 1580544000,        # 2020-02-01 00:00 PST
+    timezone: "America/Los_Angeles",
+  },
+  created: 1580832900, # 2020-02-04 08:15 PST
+  status: "pending",
+  result: nil,
+}{
+  id: "frr_123",
+  object: "reporting.report_run",
+  livemode: true,
+  report_type: "balance_change_from_activity.itemized.3",
+  parameters: {
+    columns: [ "created", "reporting_category", "net" ],
+    interval_start: 1577865600,      # 2020-01-01 00:00 PST
+    interval_end: 1580544000,        # 2020-02-01 00:00 PST
+    timezone: "America/Los_Angeles",
+  },
+  created: 1580832900, # 2020-02-04 08:15 PST
+  status: "pending",
+  result: nil,
+}

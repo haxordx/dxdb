@@ -1,0 +1,14 @@
+// Retrieve messageClient for a particular sinchClient
+var messageClient = sinchClient.getMessageClient();
+
+// Define custom event listener
+var myEventListener = {
+    onMessageDelivered: function(messageDeliveryInfo) {
+        // Perform action on message
+        console.log(messageDeliveryInfo);
+    },
+    ...
+}
+
+// Add event listener
+messageClient.addEventListener(myEventListener);

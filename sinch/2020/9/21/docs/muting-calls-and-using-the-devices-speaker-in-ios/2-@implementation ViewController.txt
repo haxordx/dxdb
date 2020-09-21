@@ -1,0 +1,4 @@
+@implementation ViewController{
+id<SINCall>_call;
+id<SINClient>_client;
+}

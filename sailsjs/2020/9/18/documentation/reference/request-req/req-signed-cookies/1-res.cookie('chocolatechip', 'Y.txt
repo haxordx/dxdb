@@ -1,0 +1,1 @@
+res.cookie('chocolatechip', 'Yummy', {signed:true});

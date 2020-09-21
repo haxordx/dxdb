@@ -1,0 +1,10 @@
+{
+    verb: 'created',
+  id: 1,
+  data: {
+    id: 1,
+    name: 'joe',
+    createdAt: '2014-08-01T05:50:19.855Z'
+    updatedAt: '2014-08-01T05:50:19.855Z'
+  }
+}

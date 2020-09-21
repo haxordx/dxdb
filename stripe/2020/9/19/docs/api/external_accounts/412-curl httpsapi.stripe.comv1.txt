@@ -1,0 +1,3 @@
+curl https://api.stripe.com/v1/accounts/acct_1032D82eZvKYlo2C/external_accounts/ba_1HT7Gw2eZvKYlo2CD5lw4yjF \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -X DELETE

@@ -1,0 +1,3 @@
+curl https://api.stripe.com/v1/disputes/dp_1HTG9k2eZvKYlo2Cr7NxZ2h2/close \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -X POST

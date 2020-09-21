@@ -1,0 +1,53 @@
+- (void)startRefund {
+    SCPRefundParameters refundParams = [SCPRefundParameters initWithChargeId:@"ch_1FLyVV2eZvKYlo2C9Z8rmX02"
+                                                                      amount:@1000
+                                                                    currency:@"cad"];
+
+    self.refundCancelable = [[SCPTerminal shared] collectRefundPaymentMethod:refundParams
+                                                                  completion:^(SCPError *collectError) {
+        if (collectError) {
+            // Handle collect error
+            NSLog(@"collectRefundPaymentMethod failed: %@", collectError);
+        } else {
+            // Process refund
+            [[SCPTerminal shared] processRefund:^(SCPRefund *processResult, SCPProcessRefundError *processError) {
+                if (processError) {
+                    // Handle process error
+                    NSLog(@"processRefund failed: %@", processError);
+                } else if (processResult) {
+                    if (processResult.status == SCPRefundStatusSucceeded) {
+                        NSLog(@"Process refund successful! %@", processResult)
+                    } else {
+                        NSLog(@"Refund pending or unsuccessful.")
+                    }
+                }
+            }];
+        }
+    }];
+}- (void)startRefund {
+    SCPRefundParameters refundParams = [SCPRefundParameters initWithChargeId:@"ch_1FLyVV2eZvKYlo2C9Z8rmX02"
+                                                                      amount:@1000
+                                                                    currency:@"cad"];
+
+    self.refundCancelable = [[SCPTerminal shared] collectRefundPaymentMethod:refundParams
+                                                                  completion:^(SCPError *collectError) {
+        if (collectError) {
+            // Handle collect error
+            NSLog(@"collectRefundPaymentMethod failed: %@", collectError);
+        } else {
+            // Process refund
+            [[SCPTerminal shared] processRefund:^(SCPRefund *processResult, SCPProcessRefundError *processError) {
+                if (processError) {
+                    // Handle process error
+                    NSLog(@"processRefund failed: %@", processError);
+                } else if (processResult) {
+                    if (processResult.status == SCPRefundStatusSucceeded) {
+                        NSLog(@"Process refund successful! %@", processResult)
+                    } else {
+                        NSLog(@"Refund pending or unsuccessful.")
+                    }
+                }
+            }];
+        }
+    }];
+}

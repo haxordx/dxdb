@@ -1,0 +1,35 @@
+  var identity = pphwebsdk.Identity.create(access_token).refreshUrl(refresh_url).environment(environment);
+
+  var payment_config = pphwebsdk.PaymentConfiguration.create();
+  payment_config.subscribe
+    .onConnectReaderSuccess(function (details) {
+      //Details of card reader provided
+    })
+    .onConnectReaderFailure(function (err) {
+      //Unable to connect to reader - handle error scenario
+    })
+    .onMerchantInitializeSuccess(function (merchant) {
+      //Merchant initialized successfully
+    })
+    .onMerchantInitializeFailure(function (err) {
+      //Unable to intialize merchant - handle error scenario
+    })
+    .onPaymentSuccess(function (txnRecord) {
+      //Payment success
+    })
+    .onPaymentFailure(function (err) {
+      //Payment failed - handle error scenario
+    });
+
+  var reader = payment_config.reader();
+  reader.connectionType(pphwebsdk.Types.ReaderConnectionType.USB);
+  reader.manufacturer(pphwebsdk.Types.Manufacturers.MIURA);
+
+  var order = pphwebsdk.Order.create();
+  order.item('Cake').price(1.00).quantity(3);
+  order.item('Coffee').price(2.00).quantity(3);
+  order.tip(1.00);
+
+  var payment = pphwebsdk.Payment.create(identity, payment_config);
+  payment.for(order).as(pphwebsdk.Types.PaymentMethod.CARD).sale();
+javascriptcopy

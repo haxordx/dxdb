@@ -1,0 +1,3 @@
+// To remove a User from a pet's collection of owners where the User has an id of
+// 10 and the Pet has an id of 300.
+await Pet.removeFromCollection(300, 'owners', 10);

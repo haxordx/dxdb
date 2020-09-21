@@ -1,0 +1,1 @@
+call = callClient.callPhoneNumber($('input#phoneNumber').val(), {}, destination.stream);

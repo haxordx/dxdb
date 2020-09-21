@@ -1,0 +1,231 @@
+RESULT=126(0)&PNREF=VFHA28926593&RESPMSG=Under review by Fraud Service(Approved)&AUTHCODE=041PNI&AVSADDR=Y
+&AVSZIP=N&CVV2MATCH=X&HOSTCODE=A&PROCAVS=A&PROCCVV2=X&IAVS=N
+&PREFPSMSG=Review: More than one rule was triggered for Review&FPS_PREXMLDATA[2898]=
+<triggeredRules>
+ <rule num="1">
+  <ruleId>2</ruleId>
+  <ruleAlias>CeilingAmount</ruleAlias>
+  <ruleDescription>Total Purchase Price Ceiling</ruleDescription>
+  <action>R</action>
+  <triggeredMessage>The purchase amount of 7501 is greater than the ceiling value set of 7500</triggeredMessage>
+  <rulevendorparms>
+   <ruleParameter num="1">
+    <name>CeilingValue</name>
+    <value type="USD">75.00</value>
+   </ruleParameter>
+  </rulevendorparms>
+ </rule>
+ <rule num="2">
+  <ruleId>6</ruleId>
+  <ruleAlias>HighOrderNumber</ruleAlias>
+  <ruleDescription>Total ItemCeiling</ruleDescription>
+  <action>R</action>
+  <triggeredMessage>16 items were ordered, which is over the maximum allowed quantity of 15</triggeredMessage>
+  <rulevendorparms>
+   <ruleParameter num="1">
+    <name>Value</name>
+    <value type="Integer">15</value>
+   </ruleParameter>
+  </rulevendorparms>
+ </rule>
+ <rule num="3">
+  <ruleId>7</ruleId>
+  <ruleAlias>BillShipMismatch</ruleAlias>
+  <ruleDescription>Shipping/BillingMismatch</ruleDescription>
+  <action>R</action>
+  <triggeredMessage>The billing and shipping addresses did not match</triggeredMessage>
+ </rule>
+ <rule num="4">
+  <ruleId>13</ruleId>
+  <ruleAlias>HighRiskBinCheck</ruleAlias>
+  <ruleDescription>BIN Risk List Match</ruleDescription>
+  <action>R</action>
+  <triggeredMessage>The card number is in a high risk bin list</triggeredMessage>
+ </rule>
+ <rule num="5">
+  <ruleId>37</ruleId>
+  <ruleAlias>HighRiskZIPCheck</ruleAlias>
+  <ruleDescription>Zip Risk List Match</ruleDescription>
+  <action>R</action>
+  <triggeredMessage>High risk shipping zip</triggeredMessage>
+ </rule>
+ <rule num="6">
+  <ruleId>16</ruleId>
+  <ruleAlias>BillUSPostalAddressCheck</ruleAlias>
+  <ruleDescription>USPS Address Validation Failure</ruleDescription>
+  <action>R</action>
+  <triggeredMessage>The billing address is not a valid US Address</triggeredMessage>
+  <rulevendorparms>
+   <ruleParameter num="1">
+    <name>AddressToVerify</name>
+    <value type="String">bill</value>
+   </ruleParameter>
+  </rulevendorparms>
+ </rule>
+ <rule num="7">
+  <ruleId>10</ruleId>
+  <ruleAlias>HighRiskEmailCheck</ruleAlias>
+  <ruleDescription>Email Service Provider Risk List Match</ruleDescription>
+  <action>R</action>
+  <triggeredMessage>The email address fraud@asiamail.com in bill Email was found in a high
+risk email providerlist</triggeredMessage>
+ </rule>
+ <rule num="8">
+  <ruleId>38</ruleId>
+  <ruleAlias>GeoLocationCheck</ruleAlias>
+  <ruleDescription>Geo-Location Failure</ruleDescription>
+  <action>R</action>
+  <triggeredMessage>GeoLocation difference: Bill Address and IP, GeoLocation difference: Ship Address and
+IP</triggeredMessage>
+ </rule>
+ <rule num="9">
+  <ruleId>8</ruleId>
+  <ruleAlias>NonUSIPAddress</ruleAlias>
+  <ruleDescription>International IP Address</ruleDescription>
+  <action>R</action>
+  <triggeredMessage>The IP address is from: CZ</triggeredMessage>
+ </rule>
+ <rule num="1">
+  <ruleId>1</ruleId>
+  <ruleAlias>AVS</ruleAlias>
+  <ruleDescription>AVS Failure</ruleDescription><action>R</action>
+  <triggeredMessage>AVS check failed: Full Security</triggeredMessage>
+  <rulevendorparms>
+   <ruleParameternum="1">
+    <name>Value</name>
+    <value type="String">Full</value>
+   </ruleParameter>
+  </rulevendorparms>
+ </rule>
+ <rule num="2">
+  <ruleId>23</ruleId>
+  <ruleAlias>CSCFailure</ruleAlias>
+  <ruleDescription>CSC Failure</ruleDescription>
+  <action>R</action>
+  <triggeredMessage>CSC check failed, returned X</triggeredMessage>
+  <rulevendorparms>
+   <ruleParameter num="1">
+    <name>Value</name>
+    <value type="String">Full</value>
+   </ruleParameter>
+  </rulevendorparms>
+ </rule>
+</triggeredRules>
+
+RESULT=126&PNREF=VFHA28926593&RESPMSG=Under review by Fraud Service&
+AUTHCODE=041PNI&AVSADDR=Y&AVSZIP=N&CVV2MATCH=X&HOSTCODE=A&
+PROCAVS=A&PROCCVV2=X&IAVS=N&PREFPSMSG=Review: More than one rule was triggered for Review
+&FPS_PREXMLDATA[2898]=
+<triggeredRules>
+    <rule num="1">
+        <ruleId>2</ruleId>
+        <ruleAlias>CeilingAmount</ruleAlias>
+    <ruleDescription>Total Purchase Price Ceiling</ruleDescription>
+    <action>R</action>
+    <triggeredMessage>The purchase amount of 7501 is greater than the ceiling value set of 7500</triggeredMessage>
+    <rulevendorparms>
+        <ruleParameter num="1">
+            <name>CeilingValue</name>
+            <value type="USD">75.00</value>
+        </ruleParameter>
+    </rulevendorparms>
+</rule>
+<rule num="2">
+    <ruleId>6</ruleId>
+    <ruleAlias>HighOrderNumber</ruleAlias>
+    <ruleDescription>Total Item Ceiling</ruleDescription>
+    <action>R</action>
+    <triggeredMessage>16 items were ordered, which is over the maximum allowed quantity of 15</triggeredMessage>
+    <rulevendorparms>
+        <ruleParameter num="1">
+            <name>Value</name>
+            <value type="Integer">15</value>
+        </ruleParameter></rulevendorparms>
+    </rule>
+    <rule num="3">
+        <ruleId>7</ruleId>
+        <ruleAlias>BillShipMismatch</ruleAlias>
+        <ruleDescription>Shipping/Billing Mismatch</ruleDescription>
+        <action>R</action>
+        <triggeredMessage>The billing and shipping addresses did not match</triggeredMessage>
+    </rule>
+    <rule num="4">
+        <ruleId>13</ruleId>
+        <ruleAlias>HighRiskBinCheck</ruleAlias>
+        <ruleDescription>BIN Risk List Match</ruleDescription>
+        <action>R</action>
+        <triggeredMessage>The card number is in a high risk bin list</triggeredMessage>
+    </rule>
+        <rule num="5">
+        <ruleId>37</ruleId>
+        <ruleAlias>HighRiskZIPCheck</ruleAlias>
+        <ruleDescription>Zip Risk List Match</ruleDescription>
+        <action>R</action>
+        <triggeredMessage>High risk shipping zip</triggeredMessage>
+    </rule>
+    <rule num="6">
+        <ruleId>16</ruleId>
+        <ruleAlias>BillUSPostalAddressCheck</ruleAlias>
+        <ruleDescription>USPS Address Validation Failure</ruleDescription>
+        <action>R</action>
+        <triggeredMessage>The billing address is not a valid US Address</triggeredMessage>
+        <rulevendorparms>
+            <ruleParameter num="1">
+                <name>AddressToVerify</name>
+                <value type="String">bill</value>
+            </ruleParameter>
+        </rulevendorparms>
+    </rule>
+    <rule num="7">
+        <ruleId>10</ruleId>
+        <ruleAlias>HighRiskEmailCheck</ruleAlias>
+            <ruleDescription>Email Service Provider Risk List Match</ruleDescription>
+            <action>R</action>
+         <triggeredMessage>The email address fraud@asiamail.com in billEmail was found in a high risk email provider list</
+triggeredMessage>
+        </rule>
+        <rule num="8">
+            <ruleId>38</ruleId>
+            <ruleAlias>GeoLocationCheck</ruleAlias>
+            <ruleDescription>Geo-Location Failure</ruleDescription>
+            <action>R</action>
+            <triggeredMessage>GeoLocation difference: Bill Address and IP, GeoLocation difference: 
+            Ship Address and IP</triggeredMessage>
+        </rule>
+        <rule num="9">
+            <ruleId>8</ruleId>
+            <ruleAlias>NonUSIPAddress</ruleAlias>
+            <ruleDescription>International IP Address</ruleDescription>
+            <action>R</action>
+            <triggeredMessage>The IP address is from: CZ</triggeredMessage>
+        </rule>
+</triggeredRules>
+&POSTFPSMSG=Review: 
+More than one rule was triggered for Review&FPS_POSTXMLDATA[682]=
+<triggeredRules>
+    <rule num="1">
+        <ruleId>1</ruleId>
+        <ruleAlias>AVS</ruleAlias>
+        <ruleDescription>AVS Failure</ruleDescription>
+        <action>R</action><triggeredMessage>AVS check failed: Full Security</triggeredMessage>
+        <rulevendorparms>
+            <ruleParameter num="1">
+                <name>Value</name>
+                <value type="String">Full</value>
+            </ruleParameter>
+        </rulevendorparms>
+    </rule>
+    <rule num="2">
+        <ruleId>23</ruleId>
+        <ruleAlias>CSCFailure</ruleAlias>
+        <ruleDescription>CSC Failure</ruleDescription>
+        <action>R</action>
+        <triggeredMessage>CSC check failed, returned X</triggeredMessage>
+        <rulevendorparms>
+            <ruleParameter num="1"><name>Value</name>
+                <value type="String">Full</value>
+            </ruleParameter>
+        </rulevendorparms>
+    </rule>
+</triggeredRules>
+copy

@@ -1,0 +1,9 @@
+payment_config.card()
+  .number("cardNumber")
+  .cvv("cardCVV")
+  .expiry("MMYYYY")
+  .done();
+
+var keyPayment = pphwebsdk.Payment.create(identity, payment_config);
+keyPayment.for(order).as(pphwebsdk.Types.PaymentMethod.KEYIN).sale();
+copy

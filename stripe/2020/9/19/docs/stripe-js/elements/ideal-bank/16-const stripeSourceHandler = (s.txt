@@ -1,0 +1,7 @@
+const stripeSourceHandler = (source) => {
+  // Redirect the customer to the authorization URL.
+  document.location.href = source.redirect.url;
+}const stripeSourceHandler = (source) => {
+  // Redirect the customer to the authorization URL.
+  document.location.href = source.redirect.url;
+}

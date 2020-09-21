@@ -1,0 +1,15 @@
+curl -v -X POST https://api.sandbox.paypal.com/v2/checkout/orders \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer Access-Token" \
+-d '{
+  "intent": “AUTHORIZE”,
+  "purchase_units": [
+    {
+      "amount": {
+        "currency_code": "USD",
+        "value": “220.00"
+      }
+    }
+  ]
+}'
+copy

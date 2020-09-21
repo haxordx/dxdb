@@ -1,0 +1,2 @@
+var callClient = sinchClient.getCallClient();
+   var call;

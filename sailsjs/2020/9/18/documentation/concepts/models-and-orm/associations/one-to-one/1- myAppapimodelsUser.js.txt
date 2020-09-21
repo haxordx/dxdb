@@ -1,0 +1,15 @@
+// myApp/api/models/User.js
+module.exports = {
+  attributes: {
+    name: {
+      type: 'string'
+    },
+    age: {
+      type: 'number'
+    },
+    pet: {
+      collection:'pet',
+      via: 'owner'
+    }
+  }
+}

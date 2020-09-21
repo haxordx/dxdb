@@ -1,0 +1,2 @@
+- (void)callDidResumeVideoTrack:(id<SINCall>)call {
+  // Implement what to be done when remote user resumes video stream.

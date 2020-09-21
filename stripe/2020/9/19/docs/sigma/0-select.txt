@@ -1,0 +1,19 @@
+select
+  date_format(created, '%Y-%m-%d') as day,
+  id,
+  amount,
+  currency,
+  source_id
+from balance_transactions
+where type = 'refund'
+order by day desc
+limit 5select
+  date_format(created, '%Y-%m-%d') as day,
+  id,
+  amount,
+  currency,
+  source_id
+from balance_transactions
+where type = 'refund'
+order by day desc
+limit 5

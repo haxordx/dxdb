@@ -1,0 +1,21 @@
+{
+  "request_id": "5a8d3073-2626-4a64-983d-29c5d55dce5e",
+  "errors": [
+    {
+      "error_source": "shipengine",
+      "error_type": "business_rules",
+      "error_code": "unspecified",
+      "message": "carrier_id se-12345 not found",
+      "field_name": "carrier_id",
+      "field_value": "se-12345"
+    },
+    {
+      "error_source": "shipengine",
+      "error_type": "validation",
+      "error_code": "invalid_field_value",
+      "message": "Invalid service_code",
+      "field_name": "service_code",
+      "field_value": "carrier_pigeon"
+    }
+  ]
+}

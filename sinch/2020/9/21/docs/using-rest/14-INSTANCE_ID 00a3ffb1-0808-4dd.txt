@@ -1,0 +1,9 @@
+INSTANCE_ID: 00a3ffb1-0808-4dd4-9c7d-e4383d82e445 ~
+INSTANCE_SECRET: bRo76GRddEyetgJDTgkLHA==
+
+PUT v1/organisations/id/8888123/numbers/shop HTTP/1.1
+Host: api.sinch.com
+x-timestamp: 2015-06-20T11:43:10.944Z
+Content-Type: application/json
+
+{“groupId”:13,“quantity”:1}

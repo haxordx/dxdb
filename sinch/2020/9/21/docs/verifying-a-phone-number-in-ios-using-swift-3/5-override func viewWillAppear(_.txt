@@ -1,0 +1,5 @@
+override func viewWillAppear(_ animated: Bool) {
+        phoneNumber.becomeFirstResponder();
+        disableUI(false);
+
+}

@@ -1,0 +1,1 @@
+$message = "This test message will be sent to {$recipient_phone_numbers} from {$assigned_phone_number}";

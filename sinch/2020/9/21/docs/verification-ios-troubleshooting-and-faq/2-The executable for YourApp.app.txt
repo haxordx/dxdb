@@ -1,0 +1,5 @@
+The executable for YourApp.app/Frameworks/SinchVerification.framework contains unsupported architectures '[x86_64, i386]'.
+
+Invalid Segment Alignment. The app binary at 'YourApp.app/Frameworks/SinchVerification.framework/SinchVerification' does not have proper segment alignment. Try rebuilding the app with the latest Xcode version
+
+The binary is invalid. The encryption info in the LC_ENCRYPTION_INFO load command is either missing or invalid, or the binary is already encrypted. This binary does not seem to have been built with Apple's linker.

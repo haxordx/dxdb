@@ -1,0 +1,35 @@
+"requirements": {
+    ...
+    "currently_due": [
+        "person.person_xxx.address.city",
+        "person.person_xxx.address.line1",
+        "person.person_xxx.address.postal_code",
+        "person.person_xxx.address.state",
+        "person.person_xxx.dob.day",
+        "person.person_xxx.dob.month",
+        "person.person_xxx.dob.year",
+        "person.person_xxx.phone",
+        "person.person_xxx.email",
+        "person.person_xxx.relationship.executive",
+        "person.person_xxx.ssn_last_4"
+        "relationship.owner",
+    ],
+    ...
+}"requirements": {
+    ...
+    "currently_due": [
+        "person.person_xxx.address.city",
+        "person.person_xxx.address.line1",
+        "person.person_xxx.address.postal_code",
+        "person.person_xxx.address.state",
+        "person.person_xxx.dob.day",
+        "person.person_xxx.dob.month",
+        "person.person_xxx.dob.year",
+        "person.person_xxx.phone",
+        "person.person_xxx.email",
+        "person.person_xxx.relationship.executive",
+        "person.person_xxx.ssn_last_4"
+        "relationship.owner",
+    ],
+    ...
+}

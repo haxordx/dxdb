@@ -1,0 +1,8 @@
+sale = Sale.find("7DY409201T7922549")
+
+refund = sale.refund({
+  :amount => {
+    :total => "1.31",
+    :currency => "USD"
+  }
+})copy

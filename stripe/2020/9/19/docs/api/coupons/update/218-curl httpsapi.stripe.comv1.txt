@@ -1,0 +1,3 @@
+curl https://api.stripe.com/v1/coupons/co_1HTFve2eZvKYlo2CtDMTiZ3L \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -X DELETE

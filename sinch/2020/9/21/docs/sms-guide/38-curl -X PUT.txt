@@ -1,0 +1,11 @@
+curl -X PUT \
+     -H "Authorization: Bearer {token}" \
+     -H "Content-Type: application/json"  -d '
+      {
+          "members": [
+              "123456789",
+              "987654321"
+          ],
+      "name": "New name"
+}' \
+  "https://us.sms.api.sinch.com/xms/v1/{service_plan_id}/groups/{group_id}"

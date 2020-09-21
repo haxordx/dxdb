@@ -1,0 +1,5 @@
+curl https://api.stripe.com/v1/tokens \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d "account[individual][first_name]"=Jane \
+  -d "account[individual][last_name]"=Doe \
+  -d "account[tos_shown_and_accepted]"=true

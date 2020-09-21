@@ -1,0 +1,9 @@
+- (IBAction)ContinueAction:(id)sender {
+    if ([FBSDKAccessToken currentAccessToken]) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"UserDidLoginNotification"
+                      object:nil
+                    userInfo:@{@"userId" : [[FBSDKAccessToken currentAccessToken] userID]}];
+
+        [self performSegueWithIdentifier:@"showMaster" sender:nil];
+    }
+}

@@ -1,0 +1,37 @@
+# Create payment object
+payment = Payment.new({
+  :intent =>  "authorize",
+
+  # Set payment type
+  :payer =>  {
+    :payment_method =>  "paypal"
+  },
+
+  # Set redirect urls
+  :redirect_urls => {
+    :return_url => "http://localhost/payment/execute",
+    :cancel_url => "http://localhost:3000/"
+  },
+
+  # Set transaction object
+  :transactions =>  [{
+
+    # Items
+    :item_list => {
+      :items => [{
+        :name => "item",
+        :sku => "item",
+        :price => "10",
+        :currency => "USD",
+        :quantity => 1
+      }]
+    },
+
+    # Amount - must match item list breakdown price
+    :amount =>  {
+      :total =>  "10",
+      :currency =>  "USD"
+    },
+    :description =>  "payment description."
+  }]
+})copy

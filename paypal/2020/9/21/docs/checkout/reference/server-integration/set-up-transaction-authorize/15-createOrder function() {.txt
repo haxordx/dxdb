@@ -1,0 +1,13 @@
+createOrder: function() {
+  return fetch('/my-server/create-paypal-transaction', {
+    method: 'post',
+    headers: {
+      'content-type': 'application/json'
+    }
+  }).then(function(res) {
+    return res.json();
+  }).then(function(data) {
+    return data.orderID; // Use the same key name for order ID on the client and server
+  });
+}
+copy

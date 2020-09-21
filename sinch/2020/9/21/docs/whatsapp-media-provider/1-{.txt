@@ -1,0 +1,7 @@
+{
+    "name": "your-bearer-provider",
+    "type": "www",
+    "config": {
+        "bearer": "AbCdEf123456"
+    }
+ }

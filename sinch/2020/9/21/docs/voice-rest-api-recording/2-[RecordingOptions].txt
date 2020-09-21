@@ -1,0 +1,5 @@
+[RecordingOptions]
+string - destinationUrl
+string - credentials
+string - format
+bool - notificationEvents

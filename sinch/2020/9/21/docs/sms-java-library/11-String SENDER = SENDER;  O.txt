@@ -1,0 +1,9 @@
+String SENDER = "SENDER"; // Optional
+String [] RECIPIENTS = {"1232323131", "3213123"}  ;
+MtBatchTextSmsResult batch =
+          conn.createBatch(
+              SinchSMSApi.batchTextSms()
+                  .sender(SENDER)
+                  .addRecipient(RECIPIENTS)
+                  .body("Something good")
+                  .build()

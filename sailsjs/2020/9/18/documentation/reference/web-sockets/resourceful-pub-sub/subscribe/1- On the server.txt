@@ -1,0 +1,15 @@
+// On the server:
+
+if (!this.req.isSocket) {
+  throw {badRequest: 'Only a client socket can subscribe to Louies.  But you look like an HTTP request to me.'};
+}
+
+// Let's say our client socket has a problem with people named "louie".
+
+// First we'll find all users named "louie" (or "louis" even-- we should be thorough)
+let usersNamedLouie = await User.find({ or: [{name: 'louie'},{name: 'louis'}] });
+
+// Now we'll subscribe our client socket to each of these records.
+User.subscribe(this.req, _.pluck(usersNamedLouie, 'id'));
+
+// All done!  We might send down some data, or just an empty 200 (OK) response.

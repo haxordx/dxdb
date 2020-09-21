@@ -1,0 +1,11 @@
+callButton.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+        if (call == null) {
+            call = sinchClient.getCallClient().callPhoneNumber("+46000000000");
+            callButton.setText("Hang Up");
+        } else {
+            call.hangup();
+        }
+    }
+});

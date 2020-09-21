@@ -1,0 +1,24 @@
+order = Order.find(orderid)
+
+response = order.authorize({
+  "amount": {
+    "currency": "USD",
+    "total": "30.03"
+  }
+})
+
+if order.success():
+  capture = order.capture({
+    "amount": {
+      "currency": "USD",
+      "total": "30.03"
+    },
+    "is_final_capture": True
+  })
+
+  if capture.success():
+    print("Capture[%s] successfully" % (capture.id))
+  else:
+    print(capture.error)
+else:
+  print(order.error)copy

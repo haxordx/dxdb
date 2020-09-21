@@ -1,0 +1,24 @@
+{
+  "message_id": string,
+  "to": string,
+  "message": {
+    "type": enum(
+      "text",
+      "file",
+      "standalone_rich_card",
+      "carousel_rich_card"
+    ),
+    ... // type specific fields
+  },
+  "suggestions": [
+    {
+      "type": enum(
+        "action",
+        "reply"
+      )
+      ... // type specific fields
+    }
+  ],
+  "expire": object(ExpireInfo),
+  "fallback": object(FallbackInfo)
+}

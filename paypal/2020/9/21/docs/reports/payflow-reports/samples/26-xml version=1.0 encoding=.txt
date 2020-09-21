@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reportingEngineRequest>
+   <authRequest>
+      <user>User</user>
+      <vendor>Vendor</vendor>
+      <partner>Partner</partner>
+      <password>Password</password>
+   </authRequest>
+   <runSearchRequest>
+      <searchName>TransactionIDSearch</searchName>
+      <reportParam>
+         <paramName>transaction_id</paramName>
+         <paramValue>V89A0A000264</paramValue>
+      </reportParam>
+      <pageSize>50</pageSize>
+   </runSearchRequest>
+</reportingEngineRequest>copy

@@ -1,0 +1,22 @@
+SCPConnectionConfiguration *connectionConfig = [[SCPConnectionConfiguration alloc] initWithFailIfInUse:YES];
+
+[[SCPTerminal shared] connectReader:selectedReader
+                   connectionConfig:connectionConfig
+                         completion:^(SCPReader *reader, NSError *error) {
+    if (reader != nil) {
+        NSLog(@"Successfully connected to reader: %@", reader);
+    } else {
+        NSLog(@"connectReader failed: %@", error);
+    }
+}];
+SCPConnectionConfiguration *connectionConfig = [[SCPConnectionConfiguration alloc] initWithFailIfInUse:YES];
+
+[[SCPTerminal shared] connectReader:selectedReader
+                   connectionConfig:connectionConfig
+                         completion:^(SCPReader *reader, NSError *error) {
+    if (reader != nil) {
+        NSLog(@"Successfully connected to reader: %@", reader);
+    } else {
+        NSLog(@"connectReader failed: %@", error);
+    }
+}];

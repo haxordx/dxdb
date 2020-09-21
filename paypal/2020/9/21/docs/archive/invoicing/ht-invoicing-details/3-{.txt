@@ -1,0 +1,48 @@
+{
+  "responseEnvelope": {
+    "ack": "Success",
+    #...
+  },
+  "invoice": {
+    "merchantEmail": "caller_1334790960_biz@yourdomain.com",
+    "payerEmail": "sender_1334790586_per@yourdomain.com",
+    "number": "1192",
+    "itemList": {
+      "item": [{
+        "name": "BananaPlant",
+        "quantity": "1.000",
+        "unitPrice": "12.00"
+      }, {
+        "name": "PeachPlant",
+        "quantity": "2.000",
+        "unitPrice": "14.00"
+      }]
+    },
+    "currencyCode": "USD",
+    "invoiceDate": "2012-04-24T12:00:00.000-07:00",
+    "dueDate": "2012-04-24T12:00:00.000-07:00",
+    "paymentTerms": "DueOnReceipt",
+    "discountAmount": "0.00",
+    "shippingAmount": "0.00"
+  },
+  "invoiceDetails": { "status":"Paid",
+    "totalAmount": "40.00",
+    "origin": "API",
+    "createdDate": "2012-04-24T16:19:16.000-07:00",
+    "createdBy": "caller_1334790960_biz@yourdomain.com",
+    "lastUpdatedDate": "2012-04-24T16:19:16.000-07:00",
+    "firstSentDate": "2012-04-24T16:19:17.000-07:00",
+    "lastSentDate": "2012-04-24T16:19:17.000-07:00",
+    "lastSentBy": "caller_1334790960_biz@yourdomain.com",
+    "paidDate": "2012-04-24T16:36:14.000-07:00"
+  },
+  "paymentDetails": {
+    "viaPayPal": "true",
+    "paypalPayment": {
+      "transactionID": "04H79913MT186660J",
+      "date": "2012-04-24T16:36:14.000-07:00"
+    }
+  },
+  "invoiceURL": "https://www.sandbox.paypal.com/us/cgi-bin/?cmd=_inv-details&id=invoiceId"
+}
+copy

@@ -1,0 +1,13 @@
+// Note: TokenProvider is a class defined by your app implementing the ConnectionTokenProvider interface
+Terminal.initTerminal(applicationContext, LogLevel.VERBOSE, new TokenProvider(), new TerminalListener() {
+  @Override
+  public void onUnexpectedReaderDisconnect(Reader reader) {
+    System.out.println("Disconnected from reader");
+  }
+})// Note: TokenProvider is a class defined by your app implementing the ConnectionTokenProvider interface
+Terminal.initTerminal(applicationContext, LogLevel.VERBOSE, new TokenProvider(), new TerminalListener() {
+  @Override
+  public void onUnexpectedReaderDisconnect(Reader reader) {
+    System.out.println("Disconnected from reader");
+  }
+})

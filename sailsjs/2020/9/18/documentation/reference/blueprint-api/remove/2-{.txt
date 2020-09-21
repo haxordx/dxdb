@@ -1,0 +1,20 @@
+{
+  "id": 16,
+  "name": "Parmer and N. Lamar",
+  "createdAt": 1485552033435,
+  "updatedAt": 1485552048794,
+  "employeesOfTheMonth": [
+    {
+      "id": 12,
+      "name": "Motoki",
+      "createdAt": 1485462079725,
+      "updatedAt": 1485476060873
+    },
+    {
+      "id": 4,
+      "name": "Timothy",
+      "createdAt": 1485462079727,
+      "updatedAt": 1485476090874
+    }
+  ]
+}

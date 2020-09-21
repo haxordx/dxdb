@@ -1,0 +1,28 @@
+curl -v -X PATCH https://api.sandbox.paypal.com/v1/payments/payment/PAY-5YK922393D847794YKER7MUI \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer Access-Token" \
+-d '[
+  {
+    "op": "replace",
+    "path": "/transactions/0/amount",
+    "value": {
+      "total": "18.37",
+      "currency": "EUR",
+      "details": {
+        "subtotal": "13.37",
+        "shipping": "5.00"
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/transactions/0/item_list/shipping_address",
+    "value": {
+      "recipient_name": "Anna Gruneberg",
+      "line1": "Kathwarinenhof 1",
+      "city": "Flensburg",
+      "postal_code": "24939",
+      "country_code": "DE"
+    }
+  }
+]'copy

@@ -1,0 +1,24 @@
+HTTP Headers
+------------
+-H "X-PAYPAL-SECURITY-USERID: insert_developer_user_name"
+-H "X-PAYPAL-SECURITY-PASSWORD: insert_developer_password"
+-H "X-PAYPAL-SECURITY-SIGNATURE: insert_developer_signature"
+-H "X-PAYPAL-REQUEST-DATA-FORMAT: NV"
+-H "X-PAYPAL-RESPONSE-DATA-FORMAT: NV"
+-H "X-PAYPAL-APPLICATION-ID: APP-80W284485P519543T"    #Standard sandbox app ID
+
+Endpoint
+--------
+https://svcs.sandbox.paypal.com/AdaptivePayments/ExecutePayment
+
+Input Parameters
+----------------
+payKey=AP-9HY848657G6071234    #Value of the pay key, received in the Pay call above
+&requestEnvelope.errorLanguage=en_US
+
+Response
+--------
+responseEnvelope.ack=Success
+&paymentExecStatus=COMPLETED
+...
+copy

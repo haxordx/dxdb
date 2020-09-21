@@ -1,0 +1,7 @@
+sinchClient.newUser(signUpObj, function(ticket) {
+       //On success, start the client
+       sinchClient.start(ticket, function() {
+       global_username = signUpObj.username;
+       //On success, show the UI
+   }).fail(handleError);
+ });

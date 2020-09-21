@@ -1,0 +1,18 @@
+#pragma mark - SCPReaderDisplayDelegate
+
+- (void)terminal:(SCPTerminal *)terminal didRequestReaderInput:(SCPReaderInputOptions)inputOptions {
+    self.readerMessageLabel.text = [SCPTerminal stringFromReaderInputOptions:inputOptions];
+}
+
+- (void)terminal:(SCPTerminal *)terminal didRequestReaderDisplayMessage:(SCPReaderDisplayMessage)displayMessage {
+    self.readerMessageLabel.text = [SCPTerminal stringFromReaderDisplayMessage:displayMessage];
+}
+#pragma mark - SCPReaderDisplayDelegate
+
+- (void)terminal:(SCPTerminal *)terminal didRequestReaderInput:(SCPReaderInputOptions)inputOptions {
+    self.readerMessageLabel.text = [SCPTerminal stringFromReaderInputOptions:inputOptions];
+}
+
+- (void)terminal:(SCPTerminal *)terminal didRequestReaderDisplayMessage:(SCPReaderDisplayMessage)displayMessage {
+    self.readerMessageLabel.text = [SCPTerminal stringFromReaderDisplayMessage:displayMessage];
+}

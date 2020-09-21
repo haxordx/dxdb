@@ -1,0 +1,1 @@
+docker run --rm -it stripe/stripe-cli:latestdocker run --rm -it stripe/stripe-cli:latest

@@ -1,0 +1,7 @@
+{
+    "action":
+    {
+        "name" : "ConnectConf",
+        "conferenceId" : "myConference123"
+    }
+}

@@ -1,0 +1,23 @@
+private static function buildRequestBody()
+{
+  return array(
+    'intent' => 'AUTHORIZE',
+    'purchase_units' =>
+      array(
+        0 =>
+          array(
+            'amount' =>
+              array(
+                'currency_code' => 'USD',
+                'value' => '220.00'
+              )
+          ),
+          array(
+            'payee' =>
+              array(
+                'email_address' => 'payee@email.com'
+              )
+          )
+      )
+  );
+}copy

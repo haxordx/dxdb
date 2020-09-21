@@ -1,0 +1,8 @@
+{
+  "type": "status_report_rcs",
+  "message_id": "bc6776ee-7bde-4d6e-9c1e-102e87f92520",
+  "at": "2017-10-31T13:06:30Z",
+  "status_report": {
+    "type": "delivered"
+  }
+}

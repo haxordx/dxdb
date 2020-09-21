@@ -1,0 +1,16 @@
+const stripe = require('stripe')('{{PLATFORM_SECRET_KEY}}');
+const customer = await stripe.customers.create(
+  {email: 'person@example.edu'},
+  {stripeAccount: '{{CONNECTED_STRIPE_ACCOUNT_ID}}'}
+);
+
+// Fetching an account just needs the ID as a parameter
+const account = await stripe.accounts.retrieve('{{CONNECTED_STRIPE_ACCOUNT_ID}}');
+const stripe = require('stripe')('{{PLATFORM_SECRET_KEY}}');
+const customer = await stripe.customers.create(
+  {email: 'person@example.edu'},
+  {stripeAccount: '{{CONNECTED_STRIPE_ACCOUNT_ID}}'}
+);
+
+// Fetching an account just needs the ID as a parameter
+const account = await stripe.accounts.retrieve('{{CONNECTED_STRIPE_ACCOUNT_ID}}');

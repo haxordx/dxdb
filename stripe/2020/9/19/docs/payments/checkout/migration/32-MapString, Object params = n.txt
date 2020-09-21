@@ -1,0 +1,43 @@
+Map<String, Object> params = new HashMap<String, Object>();
+
+ArrayList<String> paymentMethodTypes = new ArrayList<>();
+paymentMethodTypes.add("card");
+params.put("payment_method_types", paymentMethodTypes);
+
+HashMap<String, Object> subscriptionData = new HashMap<String, Object>();
+ArrayList<HashMap<String, Object>> lineItems = new ArrayList<>();
+HashMap<String, Object> lineItem = new HashMap<String, Object>();
+
+lineItem.put("price", "{PRICE_ID}");
+lineItem.put("quantity", 1);
+params.put("line_items", lineItems);
+params.put("mode", "subscription");
+
+subscriptionData.put("trial_period_days", 30);
+params.put("subscription_data", subscriptionData);
+
+params.put("success_url", "https://example.com/success");
+params.put("cancel_url", "https://example.com/cancel");
+
+Session session = Session.create(params);Map<String, Object> params = new HashMap<String, Object>();
+
+ArrayList<String> paymentMethodTypes = new ArrayList<>();
+paymentMethodTypes.add("card");
+params.put("payment_method_types", paymentMethodTypes);
+
+HashMap<String, Object> subscriptionData = new HashMap<String, Object>();
+ArrayList<HashMap<String, Object>> lineItems = new ArrayList<>();
+HashMap<String, Object> lineItem = new HashMap<String, Object>();
+
+lineItem.put("price", "{PRICE_ID}");
+lineItem.put("quantity", 1);
+params.put("line_items", lineItems);
+params.put("mode", "subscription");
+
+subscriptionData.put("trial_period_days", 30);
+params.put("subscription_data", subscriptionData);
+
+params.put("success_url", "https://example.com/success");
+params.put("cancel_url", "https://example.com/cancel");
+
+Session session = Session.create(params);

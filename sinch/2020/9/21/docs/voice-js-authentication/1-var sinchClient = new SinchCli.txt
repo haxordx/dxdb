@@ -1,0 +1,10 @@
+var sinchClient = new SinchClient({
+  applicationKey: 'MY_APPLICATION_KEY',
+  capabilities: { messaging: true },
+});
+
+sinchClient
+  .start({ username: 'alice', password: 'somethingSecure' })
+  .then(function () {
+    // Perform actions to do when authenticated, such as displaying user interface
+  });

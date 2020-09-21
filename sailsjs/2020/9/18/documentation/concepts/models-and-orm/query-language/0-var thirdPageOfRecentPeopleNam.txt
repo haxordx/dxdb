@@ -1,0 +1,6 @@
+var thirdPageOfRecentPeopleNamedMary = await Model.find({
+  where: { name: 'mary' },
+  skip: 20,
+  limit: 10,
+  sort: 'createdAt DESC'
+});

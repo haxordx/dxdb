@@ -1,0 +1,6 @@
+starRating: {
+  type: 'number',
+  min: 1,
+  max: 5,
+  required: true,
+}

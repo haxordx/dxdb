@@ -1,0 +1,2 @@
+40001 - Illegal SVAML
+50000 - Internal error

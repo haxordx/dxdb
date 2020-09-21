@@ -1,0 +1,18 @@
+{
+    "message": {
+        "template_message": {
+            "channel_template": {
+                "WHATSAPP": {
+                    "template_id": "text_template",
+                    "language_code": "fr",
+                    "parameters": {
+                        "header[1]text": "Value of header parameter",
+                        "body[1]text": "Value of first parameter",
+                        "body[2]text": "Value of second parameter",
+                        "body[3]text": "Value of third parameter"
+                    }
+                }
+            }
+        }
+    }
+}

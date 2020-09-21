@@ -1,0 +1,16 @@
+curl https://api.stripe.com/v1/prices \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d currency=usd \
+  -d "recurring[interval]"=month \
+  -d "recurring[usage_type]"=metered \
+  -d "product_data[name]"="Gold special" \
+  -d nickname="Gold special price" \
+  -d unit_amount=3000
+curl https://api.stripe.com/v1/prices \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d currency=usd \
+  -d "recurring[interval]"=month \
+  -d "recurring[usage_type]"=metered \
+  -d "product_data[name]"="Gold special" \
+  -d nickname="Gold special price" \
+  -d unit_amount=3000

@@ -1,0 +1,4 @@
+// User answers the call
+call.answer();
+// Stop playing ringing tone
+...

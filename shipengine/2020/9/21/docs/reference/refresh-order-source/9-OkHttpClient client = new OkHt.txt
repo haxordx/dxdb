@@ -1,0 +1,12 @@
+OkHttpClient client = new OkHttpClient().newBuilder()
+  .build();
+MediaType mediaType = MediaType.parse("application/json");
+RequestBody body = RequestBody.create(mediaType, "{\n  \"order_source_id\": \"__YOUR_ORDER_SOURCE_ID_HERE__\",\n  \"order_source_nickname\": \"My Shopify account\",\n  \"order_source_code\": \"shopify\",\n  \"order_source_friendly_name\": \"Shopify\",\n  \"refresh_info\": {\n    \"status\": \"preparing_update\",\n    \"last_refresh_attempt\": null,\n    \"refresh_date\": \"2018-02-10T20:55:46.673Z\"\n  },\n  \"active\": true\n}");
+Request request = new Request.Builder()
+  .url("https://api.shipengine.com/v-beta/order_sources/__YOUR_ORDER_SOURCE_ID_HERE__/refresh")
+  .method("PUT", body)
+  .addHeader("Host", "api.shipengine.com")
+  .addHeader("API-Key", "__YOUR_API_KEY_HERE__")
+  .addHeader("Content-Type", "application/json")
+  .build();
+Response response = client.newCall(request).execute();

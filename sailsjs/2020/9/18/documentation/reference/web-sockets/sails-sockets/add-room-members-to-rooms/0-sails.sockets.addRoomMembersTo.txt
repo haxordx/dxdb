@@ -1,0 +1,1 @@
+sails.sockets.addRoomMembersToRooms(sourceRoom, destRooms, cb);

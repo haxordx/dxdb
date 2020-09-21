@@ -1,0 +1,7 @@
+{
+  "hobby": "kickin",
+  "id": 47,
+  "name": "Applejack",
+  "createdAt": 1485462079725,
+  "updatedAt": 1485476060873
+}

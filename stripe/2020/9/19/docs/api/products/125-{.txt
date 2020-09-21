@@ -1,0 +1,18 @@
+{
+  "id": "prod_I35VCWOMCTVhpP",
+  "object": "product",
+  "active": true,
+  "attributes": [],
+  "created": 1600496054,
+  "description": null,
+  "images": [],
+  "livemode": false,
+  "metadata": {
+    "order_id": "6735"
+  },
+  "name": "Emerald Business",
+  "statement_descriptor": null,
+  "type": "service",
+  "unit_label": null,
+  "updated": 1600496054
+}

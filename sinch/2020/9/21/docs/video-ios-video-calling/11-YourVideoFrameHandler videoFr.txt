@@ -1,0 +1,3 @@
+YourVideoFrameHandler* videoFrameHandler;
+id<SINVideoController> videoController = ... // Get video controller from SINClient.
+[videoController setVideoFrameCallback: videoFrameHandler];

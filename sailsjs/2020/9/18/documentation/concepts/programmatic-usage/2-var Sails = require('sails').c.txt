@@ -1,0 +1,8 @@
+var Sails = require('sails').constructor;
+
+var rc = require('sails/accessible/rc');
+
+var mySailsApp = new Sails();
+mySailsApp.lift(rc('sails'), function(err) {
+
+});

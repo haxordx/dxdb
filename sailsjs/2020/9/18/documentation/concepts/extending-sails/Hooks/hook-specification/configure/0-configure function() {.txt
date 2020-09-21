@@ -1,0 +1,11 @@
+configure: function() {
+
+   // If SSL is on, use the HTTPS endpoint
+   if (sails.config[this.configKey].ssl == true) {
+      sails.config[this.configKey].url = "https://" + sails.config[this.configKey].domain;
+   }
+   // Otherwise use HTTP
+   else {
+      sails.config[this.configKey].url = "http://" + sails.config[this.configKey].domain;
+   }
+}

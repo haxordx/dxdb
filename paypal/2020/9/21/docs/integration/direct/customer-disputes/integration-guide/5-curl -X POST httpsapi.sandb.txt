@@ -1,0 +1,8 @@
+curl -X POST https://api.sandbox.paypal.com/v1/customer/disputes/validate-eligibility \
+-H 'Authorization: Bearer <<Access Token>>' \
+-H 'Content-Type: application/json' \
+-H 'PayPal-Auth-Assertion: <<JWT Token>>' \
+-d '{
+"encrypted_transaction_id": "<<Seller Transaction ID>>"
+}'
+bashcopy

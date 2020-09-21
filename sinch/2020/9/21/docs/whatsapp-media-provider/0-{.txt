@@ -1,0 +1,10 @@
+{
+    "name": "your-basic-provider",
+    "type": "www",
+    "config": {
+        "basic": {
+            "username": "user",
+            "password": "AbCdEf123456"
+        }
+    }
+ }

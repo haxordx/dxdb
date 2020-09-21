@@ -1,0 +1,34 @@
+{
+  "to": [
+    "46732019282"
+  ],
+  "message": {
+    "type": "template",
+    "template_name": "deal_offer",
+    "language": "en",
+    "body_params": [
+      "John",
+      "books",
+      "By train",
+      "By car",
+      "By drone"
+    ],
+    "media" : {
+      "type": "text"
+    },
+    "buttons" : [
+      {
+        "type": "quick_reply",
+        "payload": "books train"
+      },
+      {
+        "type": "quick_reply",
+        "payload": "books car"
+      },
+      {
+        "type": "quick_reply",
+        "payload": "books drone"
+      }
+    ],
+  }
+}

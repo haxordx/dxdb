@@ -1,0 +1,8 @@
+curl https://api.stripe.com/v1/payouts \
+  -u {PLATFORM_SECRET_KEY}: \
+  -d amount=1000 \
+  -d currency=jod
+curl https://api.stripe.com/v1/payouts \
+  -u {PLATFORM_SECRET_KEY}: \
+  -d amount=1000 \
+  -d currency=jod

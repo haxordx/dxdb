@@ -1,0 +1,8 @@
+"recipient_type": "EMAIL", "amount": {
+  "value": 10.00,
+  "currency": "EUR"
+},
+  "receiver": "example@email.com",
+  "note": "Thanks from Acme Inc ",
+  "sender_item_id": "item1"
+copy

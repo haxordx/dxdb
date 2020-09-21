@@ -1,0 +1,21 @@
+select
+  id,
+  amount,
+  fee,
+  currency
+from balance_transactions -- this table is the canonical record of changes to your Stripe balance
+where
+  created < data_load_time and
+  created >= data_load_time - interval '1' month
+order by created desc
+limit 10select
+  id,
+  amount,
+  fee,
+  currency
+from balance_transactions -- this table is the canonical record of changes to your Stripe balance
+where
+  created < data_load_time and
+  created >= data_load_time - interval '1' month
+order by created desc
+limit 10

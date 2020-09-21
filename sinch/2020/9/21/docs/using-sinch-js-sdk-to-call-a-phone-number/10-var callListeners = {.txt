@@ -1,0 +1,39 @@
+var callListeners = {
+    //1. start playing sound and display status
+    onCallProgressing: function (call) {
+        $('#ringtone').prop("currentTime", 0);
+        $('#ringtone').trigger("play");
+        $('#status').append('<div id="stats">Ringing...</div>');
+    },
+    //2. Call is pickedup (or voicemail)
+    onCallEstablished: function (call) {
+        $('audio#incoming').attr('src', call.incomingStreamURL);
+        $('audio#ringtone').trigger("pause");
+        //Report call stats
+        var callDetails = call.getDetails();
+        $('#status').append('<div id="stats">Answered at: '
+        + new Date(callDetails.establishedTime) + '</div>');
+    },
+    //3. Call ended, stop all sounds, and revert back
+    onCallEnded: function (call) {
+        /** you need to make sure the ringback is not
+        playing incase the call ended from progress (no answer)**/
+        $('audio#ringtone').trigger("pause");
+        $('audio#incoming').attr('src', '');
+        $('#callNumber').removeAttr('disabled');
+        $('input#phoneNumber').removeAttr('disabled');
+        $("#hangupCall").hide();
+        //Report call stats
+        var callDetails = call.getDetails();
+        $('#status').append('<div id="stats">Ended: '
+        + new Date(callDetails.endedTime) + '</div>');
+        $('#status').append('<div id="stats">Duration (s): '
+        + callDetails.duration + '</div>');
+        $('#status')
+          .append('<div id="stats">End cause: ' + callDetails.endCause + '</div>');
+        if (call.error) {
+            $('div#callLog')
+          .append('<div id="stats">Failure message: ' + call.error.message + '</div>');
+        }
+    }
+};

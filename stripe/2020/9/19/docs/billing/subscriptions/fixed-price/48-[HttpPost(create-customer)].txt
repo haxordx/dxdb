@@ -1,0 +1,28 @@
+[HttpPost("create-customer")]
+public ActionResult<CreateCustomerResponse> CreateCustomer([FromBody] CreateCustomerRequest req)
+{
+    var options = new CustomerCreateOptions
+    {
+        Email = req.Email,
+    };
+    var service = new CustomerService();
+    var customer = service.Create(options);
+    return new CreateCustomerResponse
+    {
+        Customer = customer,
+    };
+}
+[HttpPost("create-customer")]
+public ActionResult<CreateCustomerResponse> CreateCustomer([FromBody] CreateCustomerRequest req)
+{
+    var options = new CustomerCreateOptions
+    {
+        Email = req.Email,
+    };
+    var service = new CustomerService();
+    var customer = service.Create(options);
+    return new CreateCustomerResponse
+    {
+        Customer = customer,
+    };
+}

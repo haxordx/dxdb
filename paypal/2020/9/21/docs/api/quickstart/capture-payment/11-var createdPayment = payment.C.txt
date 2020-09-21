@@ -1,0 +1,11 @@
+var createdPayment = payment.Create(apiContext);
+
+var links = createdPayment.links.GetEnumerator();
+while (links.MoveNext())
+{
+  var link = links.Current;
+  if (link.rel.ToLower().Trim().Equals("approval_url"))
+  {
+    // REDIRECT USER TO link.href
+  }
+}copy

@@ -1,0 +1,4 @@
+stripe products create \
+  --name="Dashboard Setup"
+stripe products create \
+  --name="Dashboard Setup"

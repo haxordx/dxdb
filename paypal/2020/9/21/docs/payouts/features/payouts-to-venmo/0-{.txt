@@ -1,0 +1,17 @@
+{
+  "sender_batch_header": {
+    "sender_batch_id": "123B"
+  },
+  "items": [{
+    "recipient_type": "PHONE",
+    "amount": {
+      "value": "10.50",
+      "currency": "USD"
+    },
+    "note": "Thanks for your patronage!",
+    "receiver": "999-999-9999",
+    "sender_item_id": "1001",
+    "recipient_wallet": "Venmo"
+  }]
+}
+copy

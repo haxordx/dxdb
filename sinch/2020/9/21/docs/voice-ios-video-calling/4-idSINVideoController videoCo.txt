@@ -1,0 +1,3 @@
+id<SINVideoController> videoController = ... // get video controller from SINClient.
+
+[videoController remoteView].contentMode = UIViewContentModeScaleAspectFill;

@@ -1,0 +1,2 @@
+const request = new checkoutNodeJssdk.orders.OrdersCreateRequest();
+request.headers["PayPal-Partner-Attribution-Id"] = "PARTNER_ID_ASSIGNED_BY_YOUR_PARTNER_MANAGER";copy

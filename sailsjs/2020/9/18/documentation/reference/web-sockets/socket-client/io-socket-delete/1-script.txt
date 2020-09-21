@@ -1,0 +1,5 @@
+<script>
+io.socket.delete('/users/9', function (resData) {
+  resData; // => {id:9, name: 'Timmy Mendez', occupation: 'psychic'}
+});
+</script>

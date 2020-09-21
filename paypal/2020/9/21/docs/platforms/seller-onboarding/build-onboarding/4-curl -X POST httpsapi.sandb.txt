@@ -1,0 +1,4 @@
+curl -X POST https://api.sandbox.paypal.com/v1/oauth2/token \
+  -u Shared-ID: \
+  -d 'grant_type=authorization_code&code=<Auth-Code>&code_verifier=<Seller-Nonce>'
+  copy

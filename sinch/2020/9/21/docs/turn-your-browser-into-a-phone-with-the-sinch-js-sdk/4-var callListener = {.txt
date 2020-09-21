@@ -1,0 +1,15 @@
+var callListener = {
+    onCallProgressing: function(call) {
+        $('div#callLog').append("<div>Ringing...</div>");
+    },
+    onCallEstablished: function(call) {
+        $('audio#incoming').attr('src', call.incomingStreamURL);
+        $('div#callLog').append("<div>Call answered</div>");
+    },
+    onCallEnded: function(call) {
+        $('audio#incoming').removeAttr('src');
+        $('button#call').removeAttr('disabled');
+        $('button#answer').removeAttr('disabled');
+        $('div#callLog').append("<div>Call ended</div>");
+    }
+}

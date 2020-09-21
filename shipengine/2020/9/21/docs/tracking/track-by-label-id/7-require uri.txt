@@ -1,0 +1,15 @@
+require "uri"
+require "net/http"
+
+url = URI("https://api.shipengine.com/v1/labels/se-324658/track")
+
+https = Net::HTTP.new(url.host, url.port);
+https.use_ssl = true
+
+request = Net::HTTP::Get.new(url)
+request["Host"] = "api.shipengine.com"
+request["API-Key"] = "__YOUR_API_KEY_HERE__"
+request["Cache-Control"] = "no-cache"
+
+response = https.request(request)
+puts response.read_body

@@ -1,0 +1,17 @@
+{
+  "manifests": [
+    {
+      "manifest_id": "se-17618625",
+      "form_id": "se-28529731",
+      "created_at": "2019-07-12T13:37:39.050Z",
+      "ship_date": "2019-07-25T05:00:00.000Z",
+      "shipments": 100,
+      "warehouse_id": "se-28529731",
+      "submission_id": "9475711899564878915476",
+      "carrier_id": "se-123890",
+      "manifest_download": {
+        "href": "https://api.shipengine.com/v1/downloads/0/ygFY9HxD50m52JMLZnnURA/manifest-11024.pdf"
+      }
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+var orderId = '9W723769WF684170J';
+
+var capture_details = {
+  amount: {
+    currency: 'USD',
+    total: '30.03'
+  }
+};
+
+paypal.order.authorize(orderId, capture_details, function (error, authorization){
+  if (error) {
+    console.error(JSON.stringify(error));
+  } else {
+    paypal.order.capture(orderId, capture_details, function (error, capture) {
+      if (error) {
+        console.error(error);
+      } else {
+        console.log("ORDER CAPTURE SUCCESS");
+        console.log(JSON.stringify(capture));
+      }
+    });
+  }
+});copy

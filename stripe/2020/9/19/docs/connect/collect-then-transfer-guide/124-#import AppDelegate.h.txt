@@ -1,0 +1,19 @@
+#import "AppDelegate.h"
+#import <Stripe/Stripe.h>
+
+@implementation AppDelegate
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [Stripe setDefaultPublishableKey:@"pk_test_TYooMQauvdEDq54NiTphI7jx"];
+    // do any other necessary launch configuration
+    return YES;
+}
+@end#import "AppDelegate.h"
+#import <Stripe/Stripe.h>
+
+@implementation AppDelegate
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [Stripe setDefaultPublishableKey:@"pk_test_TYooMQauvdEDq54NiTphI7jx"];
+    // do any other necessary launch configuration
+    return YES;
+}
+@end

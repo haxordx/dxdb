@@ -1,0 +1,4 @@
+{
+    "action": "allow",
+    "sms": { "code": "12345" }
+}

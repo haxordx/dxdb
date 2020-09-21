@@ -1,0 +1,6 @@
+{
+   myapihook: {
+      timeout: 5000,
+      domain: "www.myapi.com"
+   }
+}

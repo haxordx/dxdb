@@ -1,0 +1,14 @@
+req.acceptsLanguages('en');
+// -> 'en'
+
+req.acceptsLanguages('es');
+// -> false
+
+req.acceptsLanguages('en-us', 'en', 'en-gb');
+// -> 'en-us'
+
+req.acceptsLanguages('en-gb', 'en', 'en-us');
+// -> 'en-gb'
+
+req.acceptsLanguages('es', 'fr');
+// -> false

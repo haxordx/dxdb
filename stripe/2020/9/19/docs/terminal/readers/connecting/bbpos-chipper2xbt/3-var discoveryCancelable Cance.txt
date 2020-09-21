@@ -1,0 +1,53 @@
+var discoveryCancelable: Cancelable? = null
+
+fun onDiscoverReaders() {
+  var config = DiscoveryConfiguration(0, DeviceType.CHIPPER_2X, false)
+  // Save this cancelable to an instance variable
+  discoveryCancelable = Terminal.getInstance().discoverReaders(config, { readers: List<Reader> ->
+      // Display the discovered readers to the user
+  }, object : Callback {
+    override fun onSuccess() {
+      System.out.println("Finished discovering readers")
+    }
+
+    override fun onFailure(e: TerminalException) {
+      e.printStackTrace()
+    }
+  })
+}
+
+override fun onStop() {
+  // If you're leaving the activity or fragment without selecting a reader,
+  // make sure you cancel the discovery process or the SDK will be stuck in
+  // a discover readers phase
+  discoveryCancelable?.cancel(object : Callback {
+    override fun onSuccess() { }
+    override fun onFailure(e: TerminalException) { }
+  })
+}var discoveryCancelable: Cancelable? = null
+
+fun onDiscoverReaders() {
+  var config = DiscoveryConfiguration(0, DeviceType.CHIPPER_2X, false)
+  // Save this cancelable to an instance variable
+  discoveryCancelable = Terminal.getInstance().discoverReaders(config, { readers: List<Reader> ->
+      // Display the discovered readers to the user
+  }, object : Callback {
+    override fun onSuccess() {
+      System.out.println("Finished discovering readers")
+    }
+
+    override fun onFailure(e: TerminalException) {
+      e.printStackTrace()
+    }
+  })
+}
+
+override fun onStop() {
+  // If you're leaving the activity or fragment without selecting a reader,
+  // make sure you cancel the discovery process or the SDK will be stuck in
+  // a discover readers phase
+  discoveryCancelable?.cancel(object : Callback {
+    override fun onSuccess() { }
+    override fun onFailure(e: TerminalException) { }
+  })
+}

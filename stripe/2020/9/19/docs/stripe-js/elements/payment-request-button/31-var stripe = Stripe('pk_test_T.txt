@@ -1,0 +1,7 @@
+var stripe = Stripe('pk_test_TYooMQauvdEDq54NiTphI7jx', {
+  apiVersion: "2020-08-27",
+  stripeAccount: 'CONNECTED_STRIPE_ACCOUNT_ID',
+});var stripe = Stripe('pk_test_TYooMQauvdEDq54NiTphI7jx', {
+  apiVersion: "2020-08-27",
+  stripeAccount: 'CONNECTED_STRIPE_ACCOUNT_ID',
+});

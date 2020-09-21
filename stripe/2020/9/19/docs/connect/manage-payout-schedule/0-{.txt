@@ -1,0 +1,19 @@
+{
+  ...
+  "payouts": {
+    ...
+    "schedule": {
+      "delay_days": 7,
+      "interval": "daily"
+    },
+  ...
+}{
+  ...
+  "payouts": {
+    ...
+    "schedule": {
+      "delay_days": 7,
+      "interval": "daily"
+    },
+  ...
+}

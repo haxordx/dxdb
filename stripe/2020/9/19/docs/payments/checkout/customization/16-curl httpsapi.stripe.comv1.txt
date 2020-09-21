@@ -1,0 +1,22 @@
+curl https://api.stripe.com/v1/checkout/sessions \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d billing_address_collection=auto \
+  -d "shipping_address_collection[allowed_countries][]"=US \
+  -d "shipping_address_collection[allowed_countries][]"=CA \
+  -d "payment_method_types[]"=card \
+  -d "line_items[][price]"="{{PRICE_ID}}" \
+  -d "line_items[][quantity]"=1 \
+  -d mode=payment \
+  -d success_url="https://example.com/success" \
+  -d cancel_url="https://example.com/cancel"
+curl https://api.stripe.com/v1/checkout/sessions \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d billing_address_collection=auto \
+  -d "shipping_address_collection[allowed_countries][]"=US \
+  -d "shipping_address_collection[allowed_countries][]"=CA \
+  -d "payment_method_types[]"=card \
+  -d "line_items[][price]"="{{PRICE_ID}}" \
+  -d "line_items[][quantity]"=1 \
+  -d mode=payment \
+  -d success_url="https://example.com/success" \
+  -d cancel_url="https://example.com/cancel"

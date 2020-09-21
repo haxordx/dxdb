@@ -1,0 +1,6 @@
+<postback>
+    <origin>MMS_MT</origin>
+    <code>E002</code>
+    <mms-id>35674</mms-id>
+    <audio-name>http://www.yoursite.com/audio/1.mp3</audio-name>
+</postback>

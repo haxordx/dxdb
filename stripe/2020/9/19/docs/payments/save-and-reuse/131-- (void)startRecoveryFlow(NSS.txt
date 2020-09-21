@@ -1,0 +1,26 @@
+- (void)startRecoveryFlow:(NSString *)clientSecret {
+    // ...continued from previous step
+    // Reuse the existing PaymentIntent's client secret
+    STPPaymentIntentParams *paymentIntentParams = [STPPaymentIntentParams alloc] initWithClientSecret:clientSecret]
+    if ([paymentIntent.lastPaymentError.code isEqualToString:STPPaymentIntentLastPaymentErrorCodeAuthenticationFailure]) {
+        // Payment failed because authentication is required, reuse the PaymentMethod
+        paymentIntentParams.paymentMethodId = paymentIntent.lastPaymentError.paymentMethod.stripeId;
+    } else {
+        // Collect a new PaymentMethod from the customer...
+    }
+
+    // Submit the payment...
+}
+- (void)startRecoveryFlow:(NSString *)clientSecret {
+    // ...continued from previous step
+    // Reuse the existing PaymentIntent's client secret
+    STPPaymentIntentParams *paymentIntentParams = [STPPaymentIntentParams alloc] initWithClientSecret:clientSecret]
+    if ([paymentIntent.lastPaymentError.code isEqualToString:STPPaymentIntentLastPaymentErrorCodeAuthenticationFailure]) {
+        // Payment failed because authentication is required, reuse the PaymentMethod
+        paymentIntentParams.paymentMethodId = paymentIntent.lastPaymentError.paymentMethod.stripeId;
+    } else {
+        // Collect a new PaymentMethod from the customer...
+    }
+
+    // Submit the payment...
+}

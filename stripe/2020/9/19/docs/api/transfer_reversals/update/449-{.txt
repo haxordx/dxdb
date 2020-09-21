@@ -1,0 +1,21 @@
+{
+  "object": "list",
+  "url": "/v1/transfers/tr_1HSfyO2eZvKYlo2C3PtQNkbG/reversals",
+  "has_more": false,
+  "data": [
+    {
+      "id": "trr_1GfHDg2eZvKYlo2CcHxWjrwF",
+      "object": "transfer_reversal",
+      "amount": 100,
+      "balance_transaction": "txn_1032HU2eZvKYlo2CEPtcnUvl",
+      "created": 1588648400,
+      "currency": "usd",
+      "destination_payment_refund": "pyr_1GfHDgI9Pbw6jkMZo83sSLra",
+      "metadata": {},
+      "source_refund": null,
+      "transfer": "tr_1GfEh92eZvKYlo2CFCRI6zga"
+    },
+    {...},
+    {...}
+  ]
+}

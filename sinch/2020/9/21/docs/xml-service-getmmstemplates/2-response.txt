@@ -1,0 +1,5 @@
+<response>
+    <status>Failure</status>
+    <error-code>E214</error-code>
+    <error-info>start-date is invalid</error-info>
+</response>

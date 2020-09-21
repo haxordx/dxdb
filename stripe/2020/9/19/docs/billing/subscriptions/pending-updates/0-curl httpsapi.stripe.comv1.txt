@@ -1,0 +1,12 @@
+curl https://api.stripe.com/v1/subscriptions/sub_49ty4767H20z6a \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d payment_behavior=pending_if_incomplete \
+  -d proration_behavior=always_invoice \
+  -d "items[0][id]"=si_09IkI4u3ZypJUk5onGUZpe8O \
+  -d "items[0][price]"=price_CBb6IXqvTLXp3f
+curl https://api.stripe.com/v1/subscriptions/sub_49ty4767H20z6a \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d payment_behavior=pending_if_incomplete \
+  -d proration_behavior=always_invoice \
+  -d "items[0][id]"=si_09IkI4u3ZypJUk5onGUZpe8O \
+  -d "items[0][price]"=price_CBb6IXqvTLXp3f

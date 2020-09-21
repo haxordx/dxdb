@@ -1,0 +1,42 @@
+import com.clxcommunications.xms.ApiConnection;
+import com.clxcommunications.xms.ApiException;
+import com.clxcommunications.xms.ClxApi;
+import com.clxcommunications.xms.api.MtBatchTextSmsResult;
+
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+public class SendMessage {
+    private static final Logger log = Logger.getLogger(SendMessage.class.getName());
+
+    private static final String SERVICE_PLAN_ID = "{YOUR_SERVICE_PLAN_ID}";
+    private static final String API_TOKEN = "{YOUR_API_TOKEN}";
+    private static final String RECIPIENT_PHONE_NUMBER = "{YOUR_PHONE_NUMBER}";
+
+    public static void main(String[] args) throws IOException {
+
+        ApiConnection conn = ApiConnection.builder()
+                .servicePlanId(SERVICE_PLAN_ID)
+                .token(API_TOKEN)
+                .start();
+
+        try {
+            MtBatchTextSmsResult result =
+                    conn.createBatch(ClxApi.batchTextSms()
+                            .sender("ignored")
+                            .addRecipient(RECIPIENT_PHONE_NUMBER)
+                            .body("Hello from Sinch!")
+                            .build());
+
+            log.log(Level.INFO, "SMS sent with batch ID " + result.id());
+
+        } catch (InterruptedException e) {
+            log.log(Level.SEVERE, "Send interrupted.", e);
+        } catch (ApiException e) {
+            log.log(Level.SEVERE, "SMS could not be sent.", e);
+        } finally {
+            conn.close();  
+        }
+    }                
+}

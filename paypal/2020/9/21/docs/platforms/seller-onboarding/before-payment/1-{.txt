@@ -1,0 +1,17 @@
+{
+  "links": [
+    {
+      "href": "https://api.sandbox.paypal.com/v2/customer/partner-referrals/NDZlMjQ1YTItMGQwNi00ZjlkLWJjNmYtYjcwODNiMWEzOTk0c203SWFJeU9NQ3gvcDEvbUVaS21rWFAvSWdlV1JKWktGRGxPUFA1MEZtUT12Mg==",
+      "rel": "self",
+      "method": "GET",
+      "description": "Read Referral Data shared by the Caller."
+    },
+    {
+      "href": "https://www.sandbox.paypal.com/us/merchantsignup/partner/onboardingentry?token=NDZlMjQ1YTItMGQwNi00ZjlkLWJjNmYtYjcwODNiMWEzOTk0c203SWFJeU9NQ3gvcDEvbUVaS21rWFAvSWdlV1JKWktGRGxPUFA1MEZtUT12Mg==",
+      "rel": "action_url",
+      "method": "GET",
+      "description": "Target WEB REDIRECT URL for the next action. Customer should be redirected to this URL in the browser."
+    }
+  ]
+}
+jsoncopy

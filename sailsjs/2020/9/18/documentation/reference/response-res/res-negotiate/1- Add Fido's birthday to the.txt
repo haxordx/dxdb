@@ -1,0 +1,7 @@
+// Add Fido's birthday to the database:
+Pet.update({name: 'fido'})
+  .set({birthday: new Date('01/01/2010')})
+  .exec(function (err, fido) {
+    if (err) return res.negotiate(err);
+    return res.ok(fido);
+  });

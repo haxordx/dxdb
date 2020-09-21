@@ -1,0 +1,46 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import {Elements} from '@stripe/react-stripe-js';
+import {loadStripe} from '@stripe/stripe-js';
+
+import CheckoutForm from './CheckoutForm';
+
+// Make sure to call `loadStripe` outside of a component’s render to avoid
+// recreating the `Stripe` object on every render.
+// Call `loadStripe` with the same connected account ID used when creating
+// the PaymentIntent.
+const stripePromise = loadStripe("pk_test_TYooMQauvdEDq54NiTphI7jx",
+  {stripeAccount: "{{CONNECTED_STRIPE_ACCOUNT_ID}}"});
+
+function App() {
+  return (
+    <Elements stripe={stripePromise}>
+      <CheckoutForm />
+    </Elements>
+  );
+};
+
+ReactDOM.render(<App />, document.getElementById('root'));
+import React from 'react';
+import ReactDOM from 'react-dom';
+import {Elements} from '@stripe/react-stripe-js';
+import {loadStripe} from '@stripe/stripe-js';
+
+import CheckoutForm from './CheckoutForm';
+
+// Make sure to call `loadStripe` outside of a component’s render to avoid
+// recreating the `Stripe` object on every render.
+// Call `loadStripe` with the same connected account ID used when creating
+// the PaymentIntent.
+const stripePromise = loadStripe("pk_test_TYooMQauvdEDq54NiTphI7jx",
+  {stripeAccount: "{{CONNECTED_STRIPE_ACCOUNT_ID}}"});
+
+function App() {
+  return (
+    <Elements stripe={stripePromise}>
+      <CheckoutForm />
+    </Elements>
+  );
+};
+
+ReactDOM.render(<App />, document.getElementById('root'));

@@ -1,0 +1,6 @@
+#import <Sinch/Sinch.h>
+
+// Instantiate a Sinch client
+id<SINClient> sinchClient = [Sinch clientWithApplicationKey:@"<application key>"
+                                            environmentHost:@"ocra.api.sinch.com"
+                                                     userId:@"<user id>"];

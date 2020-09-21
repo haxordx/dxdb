@@ -1,0 +1,5 @@
+@interface DetailViewController (){
+    id<SINClient> _client;
+    id<SINCall> _call;
+}
+@end

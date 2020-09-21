@@ -1,0 +1,6 @@
+curl https://api.stripe.com/v1/transfers \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d amount=400 \
+  -d currency=usd \
+  -d destination=acct_1032D82eZvKYlo2C \
+  -d transfer_group=ORDER_95

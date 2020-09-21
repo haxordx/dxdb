@@ -1,0 +1,4 @@
+#import "SINVideoController.h" // To use SINUIImageFromVideoFrame()
+
+id<SINVideoFrame> videoFrame = ... // Get SINVideoFrame from onFrame: callback
+UIImage *image = SINUIImageFromVideoFrame(videoFrame);

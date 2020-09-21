@@ -1,0 +1,24 @@
+curl -v -X POST https://api.sandbox.paypal.com/v1/identity/account-settings \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer Access-Token" \
+-d '{
+  "account_property": "BRAINTREE_MERCHANT",
+  "features": {
+    "categories": [
+      {
+        "name": "PAYMENT",
+        "groups": [
+          {
+            "name": "AUTH_SETTLE",
+            "preferences": [
+              {
+                "name": "ENABLE_ENHANCED_AUTH_SETTLE",
+                "value": "true"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}'copy

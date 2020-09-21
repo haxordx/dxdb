@@ -1,0 +1,1 @@
+https://svcs.sandbox.paypal.com/AdaptivePayments/Paycopy

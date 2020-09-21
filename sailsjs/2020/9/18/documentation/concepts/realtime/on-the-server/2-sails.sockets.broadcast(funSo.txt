@@ -1,0 +1,1 @@
+sails.sockets.broadcast("funSockets", "hello", "Hello to all my fun sockets!");

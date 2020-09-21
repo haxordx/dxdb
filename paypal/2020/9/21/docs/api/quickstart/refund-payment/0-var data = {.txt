@@ -1,0 +1,6 @@
+var data = {
+  amount: {
+    total: '1.31',
+    currency: 'USD'
+  }
+};copy

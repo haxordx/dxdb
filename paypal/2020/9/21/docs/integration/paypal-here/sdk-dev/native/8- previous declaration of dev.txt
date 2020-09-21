@@ -1,0 +1,24 @@
+// previous declaration of deviceManager
+let deviceManager = PayPalRetailSDK.deviceManager()
+
+// code to connect to last known reader or find another
+deviceManager.connect(toLastActiveReader: { (error, paymentDevice) -> Void in
+    // Code to handle success or failure
+    // On error, check the error and retry
+    // On success for a Bluetooth reader, check for software update
+})
+
+// code to search and connect
+deviceManager.searchAndConnect({ (error, paymentDevice) -> Void in
+    // Code to handle success or failure
+    // On error, check the error and retry
+    // On success for a Bluetooth reader, check for software update
+})
+
+// code to auto-connect to the last known reader
+let lastActiveReader = deviceManager?.getLastActiveBluetoothReader()
+deviceManager.scanAndAutoConnect(toBluetoothReader: lastActiveReader, callback: { (error, paymentDevice) in
+    // Code to handle success or failure
+    // On error, check error and connect by another method
+    // On success for a Bluetooth reader, check for software update
+})copy

@@ -1,0 +1,9 @@
+curl https://api.stripe.com/v1/issuing/cards/ic_1Cm3paIyNTgGDVfzBqq1uqxR \
+-u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+-d "expand[]"=number \
+-d "expand[]"=cvc \
+-Gcurl https://api.stripe.com/v1/issuing/cards/ic_1Cm3paIyNTgGDVfzBqq1uqxR \
+-u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+-d "expand[]"=number \
+-d "expand[]"=cvc \
+-G

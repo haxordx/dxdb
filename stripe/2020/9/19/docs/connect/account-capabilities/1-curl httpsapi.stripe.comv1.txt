@@ -1,0 +1,4 @@
+curl https://api.stripe.com/v1/accounts/{{CONNECTED_STRIPE_ACCOUNT_ID}} \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc:
+curl https://api.stripe.com/v1/accounts/{{CONNECTED_STRIPE_ACCOUNT_ID}} \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc:

@@ -1,0 +1,4 @@
+curl https://api.clxcommunications.com/rcs/v1/my-agent-id/messages/2bf270e4-08a4-409b-8e0f-85293f6d1709 \
+  -X DELETE \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer zIMEJGfwD4oJ4qObPPjwZxwiP5cKARXRJpt9Kf6GSv7uOesvRV" \

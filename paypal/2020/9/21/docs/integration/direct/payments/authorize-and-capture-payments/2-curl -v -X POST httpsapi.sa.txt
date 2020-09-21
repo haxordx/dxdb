@@ -1,0 +1,11 @@
+curl -v -X POST https://api.sandbox.paypal.com/v1/payments/authorization/9T287484DP554682S/capture \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer Access-Token" \
+  -d '{
+  "amount": {
+    "currency": "USD",
+    "total": "4.54"
+  },
+  "is_final_capture": true
+}'
+bashcopy

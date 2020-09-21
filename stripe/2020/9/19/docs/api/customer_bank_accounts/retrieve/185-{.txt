@@ -1,0 +1,5 @@
+{
+  "id": "ba_1HT7Gw2eZvKYlo2CD5lw4yjF",
+  "object": "bank_account",
+  "deleted": true
+}

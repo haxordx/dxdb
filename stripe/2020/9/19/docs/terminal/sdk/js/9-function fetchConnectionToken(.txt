@@ -1,0 +1,19 @@
+function fetchConnectionToken() {
+  // Your backend should call /v1/terminal/connection_tokens and return the JSON response from Stripe
+  return fetch('https://{YOUR_BACKEND_URL}/connection_token', { method: "POST" })
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(data) {
+      return data.secret;
+    });
+}function fetchConnectionToken() {
+  // Your backend should call /v1/terminal/connection_tokens and return the JSON response from Stripe
+  return fetch('https://{YOUR_BACKEND_URL}/connection_token', { method: "POST" })
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(data) {
+      return data.secret;
+    });
+}

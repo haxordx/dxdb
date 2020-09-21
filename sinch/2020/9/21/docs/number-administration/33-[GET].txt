@@ -1,0 +1,13 @@
+[GET]
+
+URL:
+https://portalapi.sinch.com/v1/organisations/id/{organisationId}/numbers
+
+eg:
+https://portalapi.sinch.com/v1/organisations/id/8888123/numbers
+
+[body]
+    empty
+
+eg:
+{}

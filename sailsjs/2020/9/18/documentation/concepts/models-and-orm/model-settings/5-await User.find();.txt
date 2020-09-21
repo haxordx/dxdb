@@ -1,0 +1,2 @@
+await User.find();
+// => SELECT * FROM user;

@@ -1,0 +1,6 @@
+$product = \Stripe\Product::create([
+  'name' => 'T-shirt',
+]);
+$product = \Stripe\Product::create([
+  'name' => 'T-shirt',
+]);

@@ -1,0 +1,3 @@
+//Create a PHP project in your directory, then run the following command to install the PayPal JavaScript SDK.
+composer require paypal/paypal-checkout-sdk 1.0.1
+copy

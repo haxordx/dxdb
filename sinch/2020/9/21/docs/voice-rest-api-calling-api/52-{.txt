@@ -1,0 +1,12 @@
+{
+  "method": "ttsCallout",
+  "ttsCallout": {
+    "cli": "46000000000",
+    "destination": { "type": "number", "endpoint": "46000000001" },
+    "domain": "pstn",
+    "custom": "customData",
+    "locale": "en-US",
+    "prompts": "#tts[Hello, we will now play a pre-recorded file.];myprerecordedfile;#tts[We hope you liked listening to the file.]",
+    "enabledice": true
+  }
+}

@@ -1,0 +1,10 @@
+let token;
+
+for (let link of response.links) {
+  if (link.rel === 'approval_url') {
+    token = link.href.match(/EC-\w+/)[0];
+  }
+}
+
+// Now return the `token` to the client
+javascriptcopy

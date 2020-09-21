@@ -1,0 +1,14 @@
+curl -v -X POST https://api.sandbox.paypal.com/v1/notifications/webhooks \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer Access-Token" \
+-d '{
+  "url": "https://example.com/example_webhook",
+  "event_types": [
+    {
+      "name": "PAYMENT.AUTHORIZATION.CREATED"
+    },
+    {
+      "name": "PAYMENT.AUTHORIZATION.VOIDED"
+    }
+  ]
+}'copy

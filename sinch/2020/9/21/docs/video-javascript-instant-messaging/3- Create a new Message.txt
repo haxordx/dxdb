@@ -1,0 +1,2 @@
+// Create a new Message
+var message = messageClient.newMessage({email: 'alice@example.com'}, 'Hello World')

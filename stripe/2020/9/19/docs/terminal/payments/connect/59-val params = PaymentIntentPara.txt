@@ -1,0 +1,34 @@
+val params = PaymentIntentParameters.Builder()
+  .setAmount(100)
+  .setCurrency("usd")
+  .setOnBehalfOf("{CONNECTED_ACCOUNT_ID}")
+  .setTransferDataDestination("{CONNECTED_ACCOUNT_ID}")
+  .setApplicationFeeAmount(200)
+  .build();
+
+Terminal.getInstance().createPaymentIntent(params, object: PaymentIntentCallback {
+  override fun onSuccess(paymentIntent: PaymentIntent) {
+    // Placeholder for collecting a payment method with paymentIntent
+  }
+
+  override fun onFailure(exception: TerminalException) {
+    // Placeholder for handling exception
+  }
+})
+val params = PaymentIntentParameters.Builder()
+  .setAmount(100)
+  .setCurrency("usd")
+  .setOnBehalfOf("{CONNECTED_ACCOUNT_ID}")
+  .setTransferDataDestination("{CONNECTED_ACCOUNT_ID}")
+  .setApplicationFeeAmount(200)
+  .build();
+
+Terminal.getInstance().createPaymentIntent(params, object: PaymentIntentCallback {
+  override fun onSuccess(paymentIntent: PaymentIntent) {
+    // Placeholder for collecting a payment method with paymentIntent
+  }
+
+  override fun onFailure(exception: TerminalException) {
+    // Placeholder for handling exception
+  }
+})

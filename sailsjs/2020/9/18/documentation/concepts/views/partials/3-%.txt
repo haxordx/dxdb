@@ -1,0 +1,31 @@
+<%
+/**
+ * views/partials/navbar.ejs
+ *
+ * The navbar at the top of the page.
+ *
+ * @needs {Dictionary} currentUser
+ *   @property {Boolean} isLoggedIn
+ *   @property {String} username
+ */%>
+<nav class="navbar">
+  <div class="links">
+    <a href="/">Dashboard</a>
+    <a href="/inbox">Inbox</a>
+  </div>
+  <span class="login-or-signup"><%
+  // If the user accessing this page is logged in...
+  if (currentUser.isLoggedIn) {
+  %>
+    You are signed in as <a href="/<%= currentUser.username %>"><%= currentUser.username %></a>.
+  <%
+  }
+  // Otherwise the user accessing this page must be a visitor:
+  else {
+  %>
+    <a href="/login">Log in</a>
+  <%
+  }
+  %>
+  </span>
+</nav>

@@ -1,0 +1,6 @@
+//Use Sinch SDK to authenticate a user
+sinchClient.start(signInObj, function () {
+    //On success, show the UI
+    showUI();
+}).fail(handleError);
+});

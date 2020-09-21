@@ -1,0 +1,9 @@
+var client = new RestClient("https://api.shipengine.com/v1/rates/bulk");
+client.Timeout = -1;
+var request = new RestRequest(Method.POST);
+request.AddHeader("Host", "api.shipengine.com");
+request.AddHeader("API-Key", "__YOUR_API_KEY_HERE__");
+request.AddHeader("Content-Type", "application/json");
+request.AddParameter("application/json", "{\n  \"shipment_ids\": [\n    \"se-2127226\",\n    \"se-2127227\"\n  ],\n  \"rate_options\": {\n    \"carrier_ids\": [\n      \"se-123890\",\n      \"se-121861\"\n    ]\n  }\n}",  ParameterType.RequestBody);
+IRestResponse response = client.Execute(request);
+Console.WriteLine(response.Content);

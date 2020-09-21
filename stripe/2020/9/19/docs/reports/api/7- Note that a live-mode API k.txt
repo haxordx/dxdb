@@ -1,0 +1,6 @@
+// Note that a live-mode API key is required.
+var service = new ReportTypeService();
+service.Get("balance.summary.1");
+// Note that a live-mode API key is required.
+var service = new ReportTypeService();
+service.Get("balance.summary.1");

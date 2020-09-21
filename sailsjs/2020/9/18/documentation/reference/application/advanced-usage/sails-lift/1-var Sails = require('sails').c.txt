@@ -1,0 +1,15 @@
+var Sails = require('sails').constructor;
+var sailsApp = new Sails();
+
+sailsApp.lift({
+  log: { level: 'warn' }
+}, function (err) {
+  if (err) {
+    console.log('Error occurred lifting Sails app:', err);
+    return;
+  }
+
+  // --•
+  console.log('Sails app lifted successfully!');
+
+});

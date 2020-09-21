@@ -1,0 +1,26 @@
+public class MyApp extends Application {
+    @Override
+    public void onCreate() {
+        super.onCreate();
+
+        Stripe.setAdvancedFraudSignalsEnabled(false);
+
+        PaymentConfiguration.init(
+            getApplicationContext(),
+            "pk_test_TYooMQauvdEDq54NiTphI7jx"
+        );
+    }
+}
+public class MyApp extends Application {
+    @Override
+    public void onCreate() {
+        super.onCreate();
+
+        Stripe.setAdvancedFraudSignalsEnabled(false);
+
+        PaymentConfiguration.init(
+            getApplicationContext(),
+            "pk_test_TYooMQauvdEDq54NiTphI7jx"
+        );
+    }
+}

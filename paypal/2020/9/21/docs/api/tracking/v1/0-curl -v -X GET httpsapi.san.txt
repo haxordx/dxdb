@@ -1,0 +1,3 @@
+curl -v -X GET https://api.sandbox.paypal.com/v1/shipping/trackers/8MC585209K746392H-443844607820 \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer Access-Token"copy

@@ -1,0 +1,1 @@
+https://api.whatsapp.com/send?phone=447537453580&text=Text%20message%20content

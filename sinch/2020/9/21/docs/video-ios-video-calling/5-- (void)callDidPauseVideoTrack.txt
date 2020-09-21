@@ -1,0 +1,2 @@
+- (void)callDidPauseVideoTrack:(id<SINCall>)call {
+  // Implement what to be done when remote user pause video stream.

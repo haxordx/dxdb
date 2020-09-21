@@ -1,0 +1,29 @@
+{
+  "id": "8AA831015G517922L",
+  "create_time": "2017-06-25T21:39:15Z",
+  "update_time": "2017-06-25T21:39:17Z",
+  "state": "AUTHORIZED",
+  "amount": {
+    "total": "7.00",
+    "currency": "USD"
+  },
+  "parent_payment": "PAY-7LD317540C810384EKHFAGYA",
+  "valid_until": "2017-07-24T21:39:15Z",
+  "links": [
+    {
+      "href": "https://api.sandbox.paypal.com/v1/payments/authorization/8AA831015G517922L",
+      "rel": "self",
+      "method": "GET"
+    },
+    {
+      "href": "https://api.sandbox.paypal.com/v1/payments/payment/PAY-7LD317540C810384EKHFAGYA",
+      "rel": "parent_payment",
+      "method": "GET"
+    },
+    {
+      "href": "https://api.sandbox.paypal.com/v1/payments/authorization/8AA831015G517922L/capture",
+      "rel": "capture",
+      "method": "POST"
+    }
+  ]
+}copy

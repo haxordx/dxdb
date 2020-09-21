@@ -1,0 +1,9 @@
+[ResponseBody]
+    RecordingFileInfo[]
+
+[RecordingFileInfo]
+    string - key
+    string - url
+    timestamp - createdOn
+    timestamp - expiresOn
+    object - headers

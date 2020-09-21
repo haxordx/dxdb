@@ -1,0 +1,4 @@
+'/foo': [
+  { policy: 'my-policy' },
+  { view: 'dashboard' }
+]

@@ -1,0 +1,21 @@
+import Foundation
+
+var semaphore = DispatchSemaphore (value: 0)
+
+var request = URLRequest(url: URL(string: "https://api.shipengine.com/v1/carriers/se-123890/packages")!,timeoutInterval: Double.infinity)
+request.addValue("api.shipengine.com", forHTTPHeaderField: "Host")
+request.addValue("__YOUR_API_KEY_HERE__", forHTTPHeaderField: "API-Key")
+
+request.httpMethod = "GET"
+
+let task = URLSession.shared.dataTask(with: request) { data, response, error in 
+  guard let data = data else {
+    print(String(describing: error))
+    return
+  }
+  print(String(data: data, encoding: .utf8)!)
+  semaphore.signal()
+}
+
+task.resume()
+semaphore.wait()

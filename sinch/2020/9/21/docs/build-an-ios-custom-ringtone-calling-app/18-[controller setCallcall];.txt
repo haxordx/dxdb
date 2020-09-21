@@ -1,0 +1,3 @@
+[controller setCall:call];
+[controller setContact:self.UsernameTextField.text];
+[controller setUrlString:self.RingtoneTextField.text];

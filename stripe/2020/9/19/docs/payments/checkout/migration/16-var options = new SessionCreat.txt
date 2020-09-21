@@ -1,0 +1,51 @@
+var options = new SessionCreateOptions
+{
+  PaymentMethodTypes = new List<string>
+  {
+    "card",
+  },
+  LineItems = new List<SessionLineItemOptions>
+  {
+    new SessionLineItemOptions
+    {
+      PriceData = new SessionLineItemPriceDataOptions
+      {
+        Product = "{{PRODUCT_ID}}",
+        UnitAmount = 1500,
+        Currency = "usd",
+      },
+      Quantity = 1,
+    },
+  },
+  Mode = "payment",
+  SuccessUrl = "https://example.com/success",
+  CancelUrl = "https://example.com/cancel",
+};
+
+var service = new SessionService();
+Session session = service.Create(options);var options = new SessionCreateOptions
+{
+  PaymentMethodTypes = new List<string>
+  {
+    "card",
+  },
+  LineItems = new List<SessionLineItemOptions>
+  {
+    new SessionLineItemOptions
+    {
+      PriceData = new SessionLineItemPriceDataOptions
+      {
+        Product = "{{PRODUCT_ID}}",
+        UnitAmount = 1500,
+        Currency = "usd",
+      },
+      Quantity = 1,
+    },
+  },
+  Mode = "payment",
+  SuccessUrl = "https://example.com/success",
+  CancelUrl = "https://example.com/cancel",
+};
+
+var service = new SessionService();
+Session session = service.Create(options);

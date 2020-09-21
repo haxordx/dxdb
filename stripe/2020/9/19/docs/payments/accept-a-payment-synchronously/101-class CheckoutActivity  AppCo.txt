@@ -1,0 +1,66 @@
+class CheckoutActivity : AppCompatActivity() {
+    private lateinit var stripe: Stripe
+    // ...
+
+    private fun pay() {
+        val weakActivity = WeakReference<Activity>(this)
+        // Collect card details on the client
+        val cardInputWidget =
+            findViewById<CardInputWidget>(R.id.cardInputWidget)
+        val params = cardInputWidget.paymentMethodCreateParams
+        if (params == null) {
+            return
+        }
+
+        // Configure the SDK with your Stripe publishable key so that it can make requests to the Stripe API
+        stripe = Stripe(applicationContext, PaymentConfiguration.getInstance(applicationContext).publishableKey)
+        stripe.createPaymentMethod(params, object : ApiResultCallback<PaymentMethod> {
+            // Create PaymentMethod failed
+            override fun onError(e: Exception) {
+                displayAlert(weakActivity.get(), "Payment failed", "Error: $e")
+            }
+            override fun onSuccess(result: PaymentMethod) {
+                // Create a PaymentIntent on the server with a PaymentMethod
+                print("Created PaymentMethod")
+                pay(result.id, null)
+            }
+        })
+    }
+
+    private fun pay(paymentMethod: String?, paymentIntent: String?) {
+        // ...
+    }
+}
+class CheckoutActivity : AppCompatActivity() {
+    private lateinit var stripe: Stripe
+    // ...
+
+    private fun pay() {
+        val weakActivity = WeakReference<Activity>(this)
+        // Collect card details on the client
+        val cardInputWidget =
+            findViewById<CardInputWidget>(R.id.cardInputWidget)
+        val params = cardInputWidget.paymentMethodCreateParams
+        if (params == null) {
+            return
+        }
+
+        // Configure the SDK with your Stripe publishable key so that it can make requests to the Stripe API
+        stripe = Stripe(applicationContext, PaymentConfiguration.getInstance(applicationContext).publishableKey)
+        stripe.createPaymentMethod(params, object : ApiResultCallback<PaymentMethod> {
+            // Create PaymentMethod failed
+            override fun onError(e: Exception) {
+                displayAlert(weakActivity.get(), "Payment failed", "Error: $e")
+            }
+            override fun onSuccess(result: PaymentMethod) {
+                // Create a PaymentIntent on the server with a PaymentMethod
+                print("Created PaymentMethod")
+                pay(result.id, null)
+            }
+        })
+    }
+
+    private fun pay(paymentMethod: String?, paymentIntent: String?) {
+        // ...
+    }
+}

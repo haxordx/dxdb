@@ -1,0 +1,4 @@
+[PayPalRetailSDK.transactionManager getOfflinePaymentStatus:^(PPRetailError *error, PPRetailOfflinePaymentInfo *info) {
+    // Code to handle success or failure
+}];
+copy

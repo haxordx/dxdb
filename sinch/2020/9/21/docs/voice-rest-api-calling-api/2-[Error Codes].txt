@@ -1,0 +1,8 @@
+[Error Codes]
+    40001 - Illegal parameters
+    40002 - Missing parameter
+    40003 - Invalid request
+    40301 - Invalid authorization scheme for calling the method
+    40108 - Invalid credentials
+    40400 - Unable to get user
+    50000 - Internal error

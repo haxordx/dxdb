@@ -1,0 +1,12 @@
+OkHttpClient client = new OkHttpClient().newBuilder()
+  .build();
+MediaType mediaType = MediaType.parse("application/json");
+RequestBody body = RequestBody.create(mediaType, "{\n  \"shipment\": {\n    \"service_code\": \"usps_priority_mail\",\n    \"ship_to\": {\n      \"name\": \"Amanda Miller\",\n      \"phone\": \"555-555-5555\",\n      \"address_line1\": \"525 S Winchester Blvd\",\n      \"city_locality\": \"San Jose\",\n      \"state_province\": \"CA\",\n      \"postal_code\": \"95128\",\n      \"country_code\": \"US\",\n      \"address_residential_indicator\": \"yes\"\n    },\n    \"ship_from\": {\n      \"company_name\": \"Example Corp.\",\n      \"name\": \"John Doe\",\n      \"phone\": \"111-111-1111\",\n      \"address_line1\": \"4009 Marathon Blvd\",\n      \"address_line2\": \"Suite 300\",\n      \"city_locality\": \"Austin\",\n      \"state_province\": \"TX\",\n      \"postal_code\": \"78756\",\n      \"country_code\": \"US\",\n      \"address_residential_indicator\": \"no\"\n    },\n    \"packages\": [\n      {\n        \"weight\": {\n          \"value\": 1.0,\n          \"unit\": \"ounce\"\n        },\n        \"label_messages\": {\n            \"reference1\":\"customer reference number 1\",\n            \"reference2\":\"invoice number 1\",\n            \"reference3\":\"purchase order number 1\"\n        }\n      }\n    ]\n  }\n}");
+Request request = new Request.Builder()
+  .url("https://api.shipengine.com/v1/labels")
+  .method("POST", body)
+  .addHeader("Host", "api.shipengine.com")
+  .addHeader("API-Key", "__YOUR_API_KEY_HERE__")
+  .addHeader("Content-Type", "application/json")
+  .build();
+Response response = client.newCall(request).execute();

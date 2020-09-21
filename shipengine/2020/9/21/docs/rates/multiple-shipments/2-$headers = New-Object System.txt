@@ -1,0 +1,9 @@
+$headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
+$headers.Add("Host", "api.shipengine.com")
+$headers.Add("API-Key", "__YOUR_API_KEY_HERE__")
+$headers.Add("Content-Type", "application/json")
+
+$body = "{`n  `"shipment_ids`": [`n    `"se-2127226`",`n    `"se-2127227`"`n  ],`n  `"rate_options`": {`n    `"carrier_ids`": [`n      `"se-123890`",`n      `"se-121861`"`n    ]`n  }`n}"
+
+$response = Invoke-RestMethod 'https://api.shipengine.com/v1/rates/bulk' -Method 'POST' -Headers $headers -Body $body
+$response | ConvertTo-Json

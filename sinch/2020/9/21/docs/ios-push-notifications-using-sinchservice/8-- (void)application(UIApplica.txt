@@ -1,0 +1,3 @@
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+  [sinchService.push application:application didReceiveRemoteNotification:userInfo];
+}

@@ -1,0 +1,17 @@
+// Warning: This is only safe to use on large datasets if both models are in the same database,
+// and the adapter supports optimized populates.
+// (e.g. cannot do this with the `User` model in PostgreSQL and the `Sword` model in MongoDB)
+var usersNamedFinn = await User.find({ name:'Finn' })
+.populate('currentSwords', {
+  where: {
+    color: 'purple'
+  },
+  limit: 3,
+  sort: 'hipness DESC'
+});
+
+// Note that Finns without any swords are still included -- their `currentSwords` arrays will just be empty.
+sails.log('Wow, there are %d users named Finn.', usersNamedFinn.length);
+sails.log('Check it out, some of them probably have non-empty arrays of purple swords:', usersNamedFinn);
+
+return res.json(usersNamedFinn);

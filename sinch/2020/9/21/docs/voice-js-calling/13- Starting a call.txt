@@ -1,0 +1,5 @@
+// Starting a call
+var call = callClient.callPhoneNumber('<remote participant>');
+
+// User changed his/her mind, let’s hangup
+call.hangup();

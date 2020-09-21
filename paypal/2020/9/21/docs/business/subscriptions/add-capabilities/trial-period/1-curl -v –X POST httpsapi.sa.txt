@@ -1,0 +1,47 @@
+curl -v –X POST https://api.sandbox.paypal.com/v1/billing/plans \
+-H "Accept: application/json" \
+-H "Authorization: Bearer Access-Token" \
+-H "Content-Type: application/json" \
+-H "PayPal-Request-Id: PLAN-18062020-003" \
+-d '{
+     "name": "Music Tutorial Premium Plus",
+    "description": "Offering a premium music tutorial with download feature",
+    "product_id": "PROD-5RN21878H3527870P",
+    "billing_cycles": [
+        {
+            "frequency": {
+                "interval_unit": "WEEK",
+                "interval_count": 3
+            },
+            "tenure_type": "TRIAL",
+            "sequence": 1,
+            "total_cycles": 1,
+            "pricing_scheme": {
+                "fixed_price": {
+                    "value": "5",
+                    "currency_code": "USD"
+                }
+            }
+        },
+        {
+            "frequency": {
+                "interval_unit": "WEEK",
+                "interval_count": 1
+            },
+            "tenure_type": "REGULAR",
+            "sequence": 2,
+            "total_cycles": 0,
+            "pricing_scheme": {
+                "fixed_price": {
+                    "value": "10",
+                    "currency_code": "USD"
+                }
+            }
+        }
+    ],
+    "payment_preferences": {
+        "auto_bill_outstanding": true,
+        "payment_failure_threshold": 1
+    }
+ }`
+bashcopy

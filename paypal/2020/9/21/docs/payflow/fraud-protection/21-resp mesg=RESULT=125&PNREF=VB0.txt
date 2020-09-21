@@ -1,0 +1,4 @@
+resp mesg=RESULT=125&PNREF=VB0A25031150&RESPMSG=Declined by Fraud Service&PREFPSMSG=
+Reject BillShipMismatch
+    !!ERROR 13:34:27 result=125 TRXTYPE=A!!
+copy

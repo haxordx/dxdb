@@ -1,0 +1,21 @@
+curl https://api.stripe.com/v1/accounts/acct_xxx \
+  -u {PLATFORM_SECRET_KEY}: \
+  -d business_profile[mcc]=5045 \
+  -d business_profile[url]=https://bestcookieco.com \
+  -d company[address][city]=Schenectady \
+  -d company[address][line1]="123 State St" \
+  -d company[address][postal_code]=12345 \
+  -d company[address][state]=NY \
+  -d company[tax_id]=000000000 \
+  -d company[name]="The Best Cookie Co" \
+  -d company[phone]=8888675309curl https://api.stripe.com/v1/accounts/acct_xxx \
+  -u {PLATFORM_SECRET_KEY}: \
+  -d business_profile[mcc]=5045 \
+  -d business_profile[url]=https://bestcookieco.com \
+  -d company[address][city]=Schenectady \
+  -d company[address][line1]="123 State St" \
+  -d company[address][postal_code]=12345 \
+  -d company[address][state]=NY \
+  -d company[tax_id]=000000000 \
+  -d company[name]="The Best Cookie Co" \
+  -d company[phone]=8888675309

@@ -1,0 +1,5 @@
+{
+    "name" : "SetCookie",
+    "key" : "cookiename",
+    "value" : "cookievalue"
+}

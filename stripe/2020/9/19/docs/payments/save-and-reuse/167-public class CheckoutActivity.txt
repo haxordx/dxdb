@@ -1,0 +1,16 @@
+public class CheckoutActivity extends AppCompatActivity {
+    private String setupIntentClientSecret;
+
+    private void loadPage() {
+        // Request a SetupIntent from your server and store its client secret
+        // Click Open on GitHub to see a full implementation
+    }
+}
+public class CheckoutActivity extends AppCompatActivity {
+    private String setupIntentClientSecret;
+
+    private void loadPage() {
+        // Request a SetupIntent from your server and store its client secret
+        // Click Open on GitHub to see a full implementation
+    }
+}

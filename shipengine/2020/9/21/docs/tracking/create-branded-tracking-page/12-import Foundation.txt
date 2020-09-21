@@ -1,0 +1,26 @@
+import Foundation
+
+var semaphore = DispatchSemaphore (value: 0)
+
+let parameters = "{\n  \"tracking_pages\" :[\n  {\n    \"branded_tracking_theme_guid\"   : \"fc16e39d-9722-4514-aff5-75e1f24c5bbd\",\n    \"tracking_number\" : \"012345678910\",\n    \"carrier_code\" : \"ups\",\n    \"service_code\" : \"ups_ground\",\n    \"to_city_locality\" :\"austin\",\n    \"to_state_province\" : \"tx\",\n    \"to_postal_code\" : \"78756\",\n    \"to_country_code\" : \"US\",\n    \"from_city_locality\" :\"denver\",\n    \"from_state_province\" : \"CO\",\n      \"from_postal_code\" : \"80014\",\n    \"from_country_code\" : \"US\"\n\n  }\n  ]\n}"
+let postData = parameters.data(using: .utf8)
+
+var request = URLRequest(url: URL(string: "https://api.shipengine.com/v-beta/tracking_page")!,timeoutInterval: Double.infinity)
+request.addValue("api.shipengine.com", forHTTPHeaderField: "Host")
+request.addValue("__YOUR_API_KEY_HERE__", forHTTPHeaderField: "API-Key")
+request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+
+request.httpMethod = "POST"
+request.httpBody = postData
+
+let task = URLSession.shared.dataTask(with: request) { data, response, error in 
+  guard let data = data else {
+    print(String(describing: error))
+    return
+  }
+  print(String(data: data, encoding: .utf8)!)
+  semaphore.signal()
+}
+
+task.resume()
+semaphore.wait()

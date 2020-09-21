@@ -1,0 +1,13 @@
+try {
+  // Create agreement
+  $agreement = $agreement->create($apiContext);
+
+  // Extract approval URL to redirect user
+  $approvalUrl = $agreement->getApprovalLink();
+} catch (PayPal\Exception\PayPalConnectionException $ex) {
+  echo $ex->getCode();
+  echo $ex->getData();
+  die($ex);
+} catch (Exception $ex) {
+  die($ex);
+}copy

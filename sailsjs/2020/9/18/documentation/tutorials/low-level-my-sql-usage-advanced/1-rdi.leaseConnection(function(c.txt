@@ -1,0 +1,11 @@
+rdi.leaseConnection(function(connection, proceed) {
+  db.query('SELECT * from `user`;', function(err, results, fields) {
+    if (err) {
+      return proceed(err);
+    }
+
+    proceed(undefined, results);
+  });
+}, function(err, results) {
+  // Handle results here after the connection has been closed
+})

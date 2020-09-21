@@ -1,0 +1,17 @@
+unsubscribeFromUsersNamedLenny: function (req, res) {
+
+  if (!req.isSocket) {
+    return res.badRequest();
+  }
+
+  User.find({name: 'Lenny'}).exec(function(err, lennies) {
+    if (err) { return res.serverError(err); }
+
+    var lennyIds = _.pluck(lennies, 'id');
+
+    User.unsubscribe(req, lennyIds);
+
+    return res.ok();
+
+  });
+},

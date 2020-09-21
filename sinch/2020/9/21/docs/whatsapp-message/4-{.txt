@@ -1,0 +1,30 @@
+{
+  "to": [
+    "46732001122",
+    "group:447506616260-1565342732"
+  ],
+  "message": {
+    "type": "template",
+    "template_name": "some_template_name",
+    "language": "en",
+    "header_params": [
+      "some_parameter"
+    ],
+    "body_params": [
+      "some_first_parameter",
+      "some_second_parameter"
+    ],
+    "media" : {
+      "type": "text"
+    },
+    "buttons" : [
+      {
+        "type": "quick_reply",
+        "payload": "some_quick_reply_payload"
+      },
+      {
+        "type": "quick_reply"
+      }
+    ]
+  }
+}

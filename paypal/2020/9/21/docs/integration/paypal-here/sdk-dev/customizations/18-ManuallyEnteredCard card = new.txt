@@ -1,0 +1,10 @@
+ManuallyEnteredCard card = new ManuallyEnteredCard();
+card.setCardNumber("1234123412341234");
+card.setCVV("123");
+card.setExpiration("MMYYYY");
+card.setPostalCode("12345");
+
+// Be sure to add the following options before calling `currentTransaction.beginPayment(options)`
+options.setPaymentType(TransactionBeginOptionsPaymentTypes.keyIn);
+options.setManualCard(card);
+copy

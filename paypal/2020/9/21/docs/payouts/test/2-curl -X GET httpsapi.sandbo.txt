@@ -1,0 +1,4 @@
+curl -X GET https://api.sandbox.paypal.com/v1/payments/payouts/ERRPYO015 \
+  -H "content-type: application/json" \
+  -H "Authorization: Bearer Access-Token"
+bashcopy

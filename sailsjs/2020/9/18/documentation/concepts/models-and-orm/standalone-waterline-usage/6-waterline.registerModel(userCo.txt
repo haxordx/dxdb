@@ -1,0 +1,2 @@
+waterline.registerModel(userCollection);
+waterline.registerModel(petCollection);

@@ -1,0 +1,2 @@
+call = null;
+button.setText("Call");

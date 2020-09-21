@@ -1,0 +1,5 @@
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    [self initSinchClient];
+}

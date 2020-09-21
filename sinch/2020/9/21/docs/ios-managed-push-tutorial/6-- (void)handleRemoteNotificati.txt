@@ -1,0 +1,9 @@
+- (void)handleRemoteNotification:(NSDictionary *)userInfo {
+  if (!_client) {
+    NSString *userId = [[NSUserDefaults standardUserDefaults] objectForKey:@"userId"];
+    if (userId) {
+      [self initSinchClientWithUserId:userId];
+    }
+  }
+  [self.client relayRemotePushNotification:userInfo];
+}

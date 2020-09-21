@@ -1,0 +1,4 @@
+id: <the parent record primary key value>,
+verb: 'addedTo',
+attribute: <the parent record collection attribute name>,
+addedIds: <the now-added child records' primary key values>

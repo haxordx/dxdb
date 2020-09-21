@@ -1,0 +1,2 @@
+curl https://api.stripe.com/v1/tokens/tok_1HTGDy2eZvKYlo2CUUHD2q0C \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc:

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reportingEngineRequest>
+   <authRequest>
+      <user>User</user>
+      <vendor>Vendor</vendor>
+      <partner>Partner</partner>
+      <password>Password</password>
+   </authRequest>
+   <runReportRequest>
+      <reportName>RBProfilePMDReport</reportName>
+      <reportParam>
+         <paramName>start_date</paramName>
+         <paramValue>2013-06-22 00:00:00</paramValue>
+      </reportParam>
+      <reportParam>
+         <paramName>end_date</paramName>
+         <paramValue>2013-08-30 00:00:00</paramValue>
+      </reportParam>
+   <pageSize>50</pageSize>
+   </runReportRequest>
+   </reportingEngineRequest>copy

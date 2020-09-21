@@ -1,0 +1,50 @@
+# 1. Import the PayPal SDK client that was created in `Set up Server-Side SDK`.
+require_relative './paypal_client'
+include PayPalCheckoutSdk::Payments
+module Samples
+  class RefundCapture
+
+    #2. Set up your server to receive a call from the client
+    # This sample function performs capturing a refund.
+    # Pass a valid capture ID as an argument to this function.
+    def refund_capture (capture_id, debug=false)
+      request = CapturesRefundRequest::new(capture_id)
+      request.prefer("return=representation")
+      # Populate the request body to do a partial refund.
+      request.request_body({
+        amount: {
+          value: '20.00',
+          currency_code: 'USD'
+        }
+      });
+      begin
+        #3. Call PayPal to refund an capture
+        response = PayPalClient::client::execute(request)
+      if debug
+      puts "Status Code: " + response.status_code.to_s
+      puts "Status: " + response.result.status
+      puts "Order ID: " + response.result.id
+      puts "Intent: " + response.result.intent
+        puts "Links:"
+        for link in response.result.links
+          # This could also be called as link.rel or link.href, but
+          # as method is a reserved keyword for Ruby. Avoid calling link.method
+          puts "\t#{link["rel"]}: #{link["href"]}\tCall Type: #{link["method"]}"
+        end
+        puts PayPalClient::openstruct_to_hash(response.result).to_json
+      end
+      rescue BraintreeHttp::HttpError => ioe
+        # Exception occurred while processing the refund.
+        puts " Status Code: " + ioe.status_code.to_s
+        puts " Debug Id: " + ioe.result.debug_id
+        puts " Response: " + PayPalClient::openstruct_to_hash(ioe.result).to_json
+      end
+      return response
+    end
+  end
+end
+# This driver function invokes the refund capture function.
+# Replace the Capture ID value with the capture ID.
+if __FILE__ == $0
+  Samples::RefundCapture::new::refund_capture(&apos REPLACE-WITH-VALID-CAPTURE-ID', true)
+endcopy

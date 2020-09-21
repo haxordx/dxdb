@@ -1,0 +1,15 @@
+Content-MD5 = Base64 ( MD5 ( UTF8 ( [BODY] ) ) )
+    jANzQ+rgAHyf1MWQFSwvYw==
+
+StringToSign
+POST
+jANzQ+rgAHyf1MWQFSwvYw==
+application/json
+x-timestamp:2014-06-04T13:41:58Z
+/v1/sms/+46700000000
+
+Signature = Base64 ( HMAC-SHA256 ( Base64-Decode ( ApplicationSecret ), UTF8 ( StringToSign ) ) )
+    qDXMwzfaxCRS849c/2R0hg0nphgdHciTo7OdM6MsdnM=
+
+HTTP Authorization Header Authorization: Application
+    5F5C418A0F914BBC8234A9BF5EDDAD97:qDXMwzfaxCRS849c/2R0hg0nphgdHciTo7OdM6MsdnM=

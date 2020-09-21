@@ -1,0 +1,24 @@
+// Not recommended: setting global API key state
+\Stripe\Stripe::setApiKey('{{CONNECTED_ACCOUNT_SECRET_KEY}}');
+\Stripe\Customer::create([
+  'email' => 'person@example.edu',
+]);
+
+// Recommended: sending API key with every request
+\Stripe\Customer::create([
+  'email' => 'person@example.edu',
+], [
+  'api_key' => '{{CONNECTED_ACCOUNT_SECRET_KEY}}', // account's access token from the Connect flow
+]);
+// Not recommended: setting global API key state
+\Stripe\Stripe::setApiKey('{{CONNECTED_ACCOUNT_SECRET_KEY}}');
+\Stripe\Customer::create([
+  'email' => 'person@example.edu',
+]);
+
+// Recommended: sending API key with every request
+\Stripe\Customer::create([
+  'email' => 'person@example.edu',
+], [
+  'api_key' => '{{CONNECTED_ACCOUNT_SECRET_KEY}}', // account's access token from the Connect flow
+]);

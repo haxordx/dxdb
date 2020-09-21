@@ -1,0 +1,6 @@
+...
+BUTTONTYPE value=AUTOBILLING
+L_BUTTONVAR0 value="item_name=Item-123"
+L_BUTTONVAR0 value="min_amount=12.34"
+...
+copy

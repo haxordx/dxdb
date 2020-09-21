@@ -1,0 +1,3 @@
+Transaction Amount =
+Total Tax Amount + Total Freight Amount + Total Handling Amount + Total Line Item Amount.
+copy

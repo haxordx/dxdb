@@ -1,0 +1,28 @@
+func disableUI(_ disable: Bool){
+        var alpha:CGFloat = 1.0;
+        if (disable) {
+            alpha = 0.5;
+            phoneNumber.resignFirstResponder();
+            spinner.startAnimating();
+            self.status.text="";
+            let delayTime =
+                        DispatchTime.now() +
+                        Double(Int64(30 * Double(NSEC_PER_SEC)))
+                        / Double(NSEC_PER_SEC)
+            DispatchQueue.main.asyncAfter(
+            deadline: delayTime, execute:
+            { () -> Void in
+                self.disableUI(false);
+            });
+        }
+        else{
+            self.phoneNumber.becomeFirstResponder();
+            self.spinner.stopAnimating();
+
+        }
+        self.phoneNumber.isEnabled = !disable;
+        self.smsButton.isEnabled = !disable;
+        self.calloutButton.isEnabled = !disable;
+        self.calloutButton.alpha = alpha;
+        self.smsButton.alpha = alpha;
+    }

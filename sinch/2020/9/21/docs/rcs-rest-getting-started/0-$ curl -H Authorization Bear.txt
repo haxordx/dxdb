@@ -1,0 +1,2 @@
+$ curl -H "Authorization: Bearer {token}" \
+"https://api.clxcommunications.com/rcs/v1/{endpoint}"

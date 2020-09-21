@@ -1,0 +1,19 @@
+paypal.Buttons({
+  onApprove: function (data, actions) {
+    return fetch('/my-server/capture-paypal-transaction', {
+      headers: {
+        'content-type': 'application/json'
+      },
+      body: JSON.stringify({
+        orderID: data.orderID
+      })
+    }).then(function(res) {
+      return res.json();
+    }).then(function(details) {
+      if (details.error === 'INSTRUMENT_DECLINED') {
+        return actions.restart();
+      }
+    });
+  }
+}).render('#paypal-button-container');
+jscopy

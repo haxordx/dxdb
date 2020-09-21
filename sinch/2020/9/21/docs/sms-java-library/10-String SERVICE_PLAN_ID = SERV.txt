@@ -1,0 +1,7 @@
+String SERVICE_PLAN_ID = "SERVICE_PLAN_ID";
+String TOKEN = "SERVICE_TOKEN";
+ApiConnection conn =
+        ApiConnection.builder()
+            .servicePlanId(SERVICE_PLAN_ID)
+            .token(TOKEN)
+            .start()

@@ -1,0 +1,7 @@
+stripe products create \
+  --name="Basic" \
+  --type=service \
+  --description="Basic option for email API platform"stripe products create \
+  --name="Basic" \
+  --type=service \
+  --description="Basic option for email API platform"

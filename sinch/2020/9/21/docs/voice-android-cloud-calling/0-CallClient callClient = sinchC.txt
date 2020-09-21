@@ -1,0 +1,4 @@
+CallClient callClient = sinchClient.getCallClient();
+Call call = callClient.callUser("<remote user id>");
+// Or for video call: Call call = callClient.callUserVideo("<remote user id>");
+call.addCallListener(...);

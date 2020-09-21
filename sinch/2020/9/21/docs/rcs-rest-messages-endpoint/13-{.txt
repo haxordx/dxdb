@@ -1,0 +1,15 @@
+{
+  // At least one of title, description and media must be specified
+  "title": string,
+  "description": string,
+  "media": object(RichCardMedia),
+  "suggestions": [
+    {
+      "type": enum(
+        "reply",
+        "action"
+      )
+      ... // type specific fields
+    }
+  ]
+}

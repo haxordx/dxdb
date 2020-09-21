@@ -1,0 +1,4 @@
+var showUI = function () {
+        $('#auth').hide();
+        $('#call').show();
+    }

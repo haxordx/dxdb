@@ -1,0 +1,4 @@
+'GET /foo/go': 'FooController.myGoAction',
+'GET /foo/go': 'foo.myGoAction',
+'GET /foo/go': { controller: 'foo', action: 'myGoAction' },
+'GET /foo/go': { controller: 'FooController', action:'myGoAction' },

@@ -1,0 +1,13 @@
+{
+  curl -v -X PATCH https://api.sandbox.paypal.com/v1/billing/plans/P-7GL4271244454362WXNWU5NQ \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer Access-Token" \
+  -d '[
+    {
+      "op": "replace",
+      "path": "/payment_preferences/payment_failure_threshold",
+      "value": 7
+    }
+  ]
+}'
+copy

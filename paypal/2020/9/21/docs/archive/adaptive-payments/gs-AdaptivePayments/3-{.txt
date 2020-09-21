@@ -1,0 +1,10 @@
+{
+  "responseEnvelope": {
+    "timestamp": "2011-08-20T15:12:20.833-07:00", // Time stamp
+    "ack": "Success", // Status
+    "correlationId": "nnnnnnnnnnnn", // Correlation ID
+    "build": "nnnnnnn" // Server version
+  },
+  "payKey": "Your-payKey", // Key used to authorize payment
+  "paymentExecStatus": "CREATED" // Status of payment
+}copy

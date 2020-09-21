@@ -1,0 +1,25 @@
+var billingPlan = "1234567890";
+var billingAgreementAttributes;
+var isoDate = new Date();
+
+isoDate.setSeconds(isoDate.getSeconds() + 4);
+isoDate.toISOString().slice(0, 19) + 'Z';
+
+billingAgreementAttributes = {
+  name: 'Standard Membership',
+  description: 'Food of the World Club Standard Membership',
+  start_date: isoDate,
+  plan: {
+    id: billingPlan
+  },
+  payer: {
+    payment_method: 'paypal'
+  },
+  shipping_address: {
+    line1: 'W 34th St',
+    city: 'New York',
+    state: 'NY',
+    postal_code: '10001',
+    country_code: 'US'
+  }
+};copy

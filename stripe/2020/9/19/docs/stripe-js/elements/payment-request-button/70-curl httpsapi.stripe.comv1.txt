@@ -1,0 +1,7 @@
+curl https://api.stripe.com/v1/apple_pay/domains \
+  -u {PLATFORM_SECRET_KEY}: \
+  -H "Stripe-Account: {{CONNECTED_STRIPE_ACCOUNT_ID}}" \
+  -d domain_name="example.com"curl https://api.stripe.com/v1/apple_pay/domains \
+  -u {PLATFORM_SECRET_KEY}: \
+  -H "Stripe-Account: {{CONNECTED_STRIPE_ACCOUNT_ID}}" \
+  -d domain_name="example.com"

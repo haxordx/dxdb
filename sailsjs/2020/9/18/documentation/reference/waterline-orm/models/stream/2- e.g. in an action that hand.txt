@@ -1,0 +1,18 @@
+// e.g. in an action that handles `GET /sitemap.xml`:
+
+var sitemapXml = '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">';
+
+await BlogPost.stream()
+.limit(50000)
+.sort('title ASC')
+.eachRecord((blogPost)=>{
+  sitemapXml += (
+    '<url>\n'+
+    '  <loc>https://blog.example.com/' + _.escape(encodeURIComponent(blogPost.slug))+'</loc>\n'+
+    '  <lastmod>'+_.escape(blogPost.updatedAt)+'</lastmod>\n'+
+    '<changefreq>monthly</changefreq>\n'+
+    '</url>'
+  );
+});
+
+sitemapXml += '</urlset>';

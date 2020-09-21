@@ -1,0 +1,3 @@
+@property (weak, nonatomic) IBOutlet UITextField *phoneNumber;
+@property (weak, nonatomic) IBOutlet UIButton *callButton;
+- (IBAction)call:(id)sender;

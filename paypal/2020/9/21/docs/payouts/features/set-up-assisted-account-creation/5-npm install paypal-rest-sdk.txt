@@ -1,0 +1,17 @@
+npm install paypal-rest-sdk
+
+var paypal = require('paypal-rest-sdk');
+paypal.configure({
+  'mode': 'sandbox', //sandbox or live
+  'client_id': '',
+  'client_secret': ''
+});
+// Get tokeninfo with Authorize code
+paypal.openIdConnect.tokeninfo.create("Replace with authorize code", function(error, tokeninfo){
+  console.log(tokeninfo);
+});
+// Get userinfo with Access code
+paypal.openIdConnect.userinfo.get("Replace with access_code", function(error, userinfo){
+  console.log(userinfo);
+});
+copy

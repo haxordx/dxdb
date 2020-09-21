@@ -1,0 +1,27 @@
+private static OrderRequest BuildRequestBody()
+{
+  OrderRequest orderRequest = new OrderRequest()
+  {
+    Intent = "AUTHORIZE",
+    ApplicationContext = new ApplicationContext
+    {
+
+    },                
+    PurchaseUnits = new List<PurchaseUnitRequest>
+    {
+      new PurchaseUnitRequest {
+        Amount = new AmountWithBreakdown
+        {
+          CurrencyCode = "USD",
+          Value = "220.00"
+        },
+        Payee = new Payee
+        {
+          EmailAddress = "example@paypal.com"
+        }          
+      }
+    }
+  };
+
+  return orderRequest;
+}copy

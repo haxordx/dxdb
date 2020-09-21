@@ -1,0 +1,2 @@
+await Something.replaceCollection(parentId, association)
+.members(childIds);

@@ -1,0 +1,5 @@
+curl https://api.stripe.com/v1/charges/ch_1HTG8O2eZvKYlo2COz7Ogg7Z \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d "expand[]"=customer \
+  -d "expand[]"="invoice.subscription" \
+  -G

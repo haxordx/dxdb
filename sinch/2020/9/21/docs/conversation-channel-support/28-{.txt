@@ -1,0 +1,22 @@
+{
+  "app_id": "01E8RCZPK7HFV70FFDWFFK0EXK",
+  "accepted_time": "2020-06-22T10:55:39.534687Z",
+  "message": {
+    "id": "01EBDTPPG3Q3EH14H7DY8X09MG",
+    "direction": "TO_APP",
+    "contact_message": {
+      "text_message": {
+        "text": "Hi from contact"
+      }
+    },
+    "channel_identity": {
+      "channel": "WHATSAPP",
+      "identity": "46712312312",
+      "app_id": ""
+    },
+    "conversation_id": "01EB199XQ2CBY50K6WZD9S1A22",
+    "contact_id": "01EB197NDA4W7V15NPRCVV0S79",
+    "metadata": "",
+    "accept_time": "2020-06-22T10:55:39.521500Z"
+  }
+}

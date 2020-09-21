@@ -1,0 +1,11 @@
+var config = {
+  adapters: {
+    'disk': sailsDiskAdapter
+  },
+
+  datastores: {
+    default: {
+      adapter: 'disk'
+    }
+  }
+};

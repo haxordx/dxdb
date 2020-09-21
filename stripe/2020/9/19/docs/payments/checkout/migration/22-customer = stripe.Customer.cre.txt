@@ -1,0 +1,23 @@
+customer = stripe.Customer.create(
+  email='customer@example.com',
+  source=data['stripeToken'],
+)
+
+subscription = stripe.Subscription.create(
+  customer=customer.id,
+  items=[{
+    'price': '{PRICE_ID}',
+  }],
+  trial_period_days=30,
+)customer = stripe.Customer.create(
+  email='customer@example.com',
+  source=data['stripeToken'],
+)
+
+subscription = stripe.Subscription.create(
+  customer=customer.id,
+  items=[{
+    'price': '{PRICE_ID}',
+  }],
+  trial_period_days=30,
+)

@@ -1,0 +1,1 @@
+ $ curl https://9d62bf5a.ngrok.io/sms/deliveryReport

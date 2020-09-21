@@ -1,0 +1,51 @@
+package main
+
+import (
+  "html/template"
+  "net/http"
+
+  stripe "github.com/stripe/stripe-go/v71"
+)
+
+type CheckoutData struct {
+  ClientSecret string
+}
+
+func main() {
+  checkoutTmpl := template.Must(template.ParseFiles("views/checkout.html"))
+
+  http.HandleFunc("/checkout", func(w http.ResponseWriter, r *http.Request) {
+    intent := // ... Fetch or create the PaymentIntent
+    data := CheckoutData{
+      ClientSecret: intent.ClientSecret,
+    }
+    checkoutTmpl.Execute(w, data)
+  })
+
+  http.ListenAndServe(":3000", nil)
+}package main
+
+import (
+  "html/template"
+  "net/http"
+
+  stripe "github.com/stripe/stripe-go/v71"
+)
+
+type CheckoutData struct {
+  ClientSecret string
+}
+
+func main() {
+  checkoutTmpl := template.Must(template.ParseFiles("views/checkout.html"))
+
+  http.HandleFunc("/checkout", func(w http.ResponseWriter, r *http.Request) {
+    intent := // ... Fetch or create the PaymentIntent
+    data := CheckoutData{
+      ClientSecret: intent.ClientSecret,
+    }
+    checkoutTmpl.Execute(w, data)
+  })
+
+  http.ListenAndServe(":3000", nil)
+}

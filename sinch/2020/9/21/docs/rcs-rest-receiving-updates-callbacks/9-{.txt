@@ -1,0 +1,8 @@
+{
+  "type": "user_agent_event_rcs",
+  "from": MSIDSN,
+  "event": {
+    "type": enum("composing"),
+    ... // type specific fields
+  }
+}

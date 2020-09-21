@@ -1,0 +1,11 @@
+curl -X POST \
+     -H "Authorization: Bearer {token}" \
+     -H "Content-Type: application/json"  -d '
+      {
+          "from": "{Number you have on your account}",
+          "to": [
+              "123456789"
+          ],
+          "body": "Hi there! How are you?"
+      }' \
+  "https://us.sms.api.sinch.com/xms/v1/{service_plan_id}/batches"

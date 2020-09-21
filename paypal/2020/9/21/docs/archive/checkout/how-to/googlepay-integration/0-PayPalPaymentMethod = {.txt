@@ -1,0 +1,13 @@
+PayPalPaymentMethod = {
+  "type": "PAYPAL",
+  "parameters": {
+    "purchase_context": {
+      "purchase_units": [{
+        "payee": {
+          "merchant_id": " paypal_merchant_id"
+        }
+      }]
+    }
+  }
+};
+javascriptcopy

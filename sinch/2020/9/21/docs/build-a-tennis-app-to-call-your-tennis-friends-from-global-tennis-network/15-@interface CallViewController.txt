@@ -1,0 +1,1 @@
+@interface CallViewController : UIViewController <SINCallClientDelegate, SINCallDelegate>

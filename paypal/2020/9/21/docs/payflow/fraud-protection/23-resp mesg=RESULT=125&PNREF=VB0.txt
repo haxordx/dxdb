@@ -1,0 +1,4 @@
+resp mesg=RESULT=125&PNREF=VB0A25030952&RESPMSG=Declined by Fraud Service&PREFPSMSG=
+Reject HighOrderNumber
+    !!ERROR 13:19:25 result=125 TRXTYPE=A!!
+copy

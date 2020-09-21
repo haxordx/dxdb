@@ -1,0 +1,18 @@
+{
+  "app_id": "01E9DQJFPWGZ2T05XTVZAD0BYB",
+  "accepted_time": "2020-05-28T14:30:47.850538Z",
+  "message": {
+    "id": "01E9DV2N92BMDD034JZ0AQ0VKB",
+    "direction": "TO_APP",
+    "contact_message": {
+      "text_message": {
+        "text": "Hello World"
+      }
+    },
+    "channel": "MESSENGER",
+    "conversation_id": "01E9DV2N8C6CK41XFPGQPN0NWE",
+    "contact_id": "01E9DV2N7TYPJ50V0FYC08110D",
+    "metadata": "",
+    "accept_time": "2020-05-28T14:30:47.841429Z"
+  }
+}

@@ -1,0 +1,20 @@
+// Create agreement
+try {
+  agreement = agreement.create(apiContext);
+
+  for (Links links : agreement.getLinks()) {
+    if ("approval_url".equals(links.getRel())) {
+      URL url = new URL(links.getHref());
+
+      //REDIRECT USER TO url
+
+      break;
+    }
+  }
+} catch (PayPalRESTException e) {
+  System.err.println(e.getDetails());
+} catch (MalformedURLException e) {
+  e.printStackTrace();
+} catch (UnsupportedEncodingException e) {
+  e.printStackTrace();
+}copy

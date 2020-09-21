@@ -1,0 +1,10 @@
+// SinchClient is not needed to be created at all!
+if (SinchHelpers.isSinchPushPayload(remoteMessage.getData())) {
+  NotificationResult result = SinchHelpers.queryPushNotificationPayload(applicationContext, remoteMessage.getData());
+  if (result.isCall()) {
+    CallNotificationResult callResult = result.getCallResult();
+    Map<String, String> customHeaders = callResult.getHeaders());
+    // analyse headers, decide whether to process message/call and start Sinch client or ignore
+    ...
+  }
+}

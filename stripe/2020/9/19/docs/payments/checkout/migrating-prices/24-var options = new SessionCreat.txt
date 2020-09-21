@@ -1,0 +1,47 @@
+var options = new SessionCreateOptions {
+    PaymentMethodTypes = new List<string> {
+        "card",
+    },
+    SubscriptionData = new SessionSubscriptionDataOptions {
+        Items = new List<SessionSubscriptionDataItemOptions> {
+            new SessionSubscriptionDataItemOptions {
+                Plan = "{{PLAN_OR_PRICE_ID}}",
+            },
+        },
+    },
+    LineItems = new List<SessionLineItemOptions> {
+        new SessionLineItemOptions {
+            Price = "{{PRICE_OR_PLAN_ID}}",
+            Quantity = 1,
+        },
+    },
+    Mode = "subscription",
+    SuccessUrl = "https://example.com/success?session_id={CHECKOUT_SESSION_ID}",
+    CancelUrl = "https://example.com/cancel",
+};
+
+var service = new SessionService();
+Session session = service.Create(options);var options = new SessionCreateOptions {
+    PaymentMethodTypes = new List<string> {
+        "card",
+    },
+    SubscriptionData = new SessionSubscriptionDataOptions {
+        Items = new List<SessionSubscriptionDataItemOptions> {
+            new SessionSubscriptionDataItemOptions {
+                Plan = "{{PLAN_OR_PRICE_ID}}",
+            },
+        },
+    },
+    LineItems = new List<SessionLineItemOptions> {
+        new SessionLineItemOptions {
+            Price = "{{PRICE_OR_PLAN_ID}}",
+            Quantity = 1,
+        },
+    },
+    Mode = "subscription",
+    SuccessUrl = "https://example.com/success?session_id={CHECKOUT_SESSION_ID}",
+    CancelUrl = "https://example.com/cancel",
+};
+
+var service = new SessionService();
+Session session = service.Create(options);

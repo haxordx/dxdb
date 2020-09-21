@@ -1,0 +1,36 @@
+import StripeTerminal
+
+class ReaderDiscoveryViewController: UIViewController, DiscoveryDelegate {
+  func discoverReadersAction() {
+      let config = DiscoveryConfiguration(
+        discoveryMethod: .internet,
+        simulated: false
+      )
+
+      self.discoverCancelable = Terminal.shared.discoverReaders(config, delegate: self) { error in
+          if let error = error {
+              print("discoverReaders failed: \(error)")
+          } else {
+              print("discoverReaders succeeded")
+          }
+      }
+  }
+}
+import StripeTerminal
+
+class ReaderDiscoveryViewController: UIViewController, DiscoveryDelegate {
+  func discoverReadersAction() {
+      let config = DiscoveryConfiguration(
+        discoveryMethod: .internet,
+        simulated: false
+      )
+
+      self.discoverCancelable = Terminal.shared.discoverReaders(config, delegate: self) { error in
+          if let error = error {
+              print("discoverReaders failed: \(error)")
+          } else {
+              print("discoverReaders succeeded")
+          }
+      }
+  }
+}

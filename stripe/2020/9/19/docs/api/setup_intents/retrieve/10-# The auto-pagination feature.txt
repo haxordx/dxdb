@@ -1,0 +1,2 @@
+# The auto-pagination feature is specific to Stripe's
+  # libraries and cannot be used directly with curl.

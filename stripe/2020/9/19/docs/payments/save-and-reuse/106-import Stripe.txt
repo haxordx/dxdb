@@ -1,0 +1,19 @@
+import Stripe
+
+class CheckoutViewController: UIViewController {
+    var setupIntentClientSecret: String?
+
+    func startCheckout() {
+        // Request a SetupIntent from your server and store its client secret
+        // Click Open on GitHub to see a full implementation
+    }
+}import Stripe
+
+class CheckoutViewController: UIViewController {
+    var setupIntentClientSecret: String?
+
+    func startCheckout() {
+        // Request a SetupIntent from your server and store its client secret
+        // Click Open on GitHub to see a full implementation
+    }
+}

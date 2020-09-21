@@ -1,0 +1,4 @@
+'get /admin/email-template-previews/*': {
+  action: 'admin/view-email-template-preview',
+  skipAssets: true
+}

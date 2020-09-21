@@ -1,0 +1,4 @@
+fetchRecordsOnUpdate: true,
+fetchRecordsOnDestroy: true,
+fetchRecordsOnCreate: true,
+fetchRecordsOnCreateEach: true,

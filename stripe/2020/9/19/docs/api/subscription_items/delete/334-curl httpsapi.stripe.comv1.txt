@@ -1,0 +1,4 @@
+curl https://api.stripe.com/v1/subscription_items \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d subscription=sub_4S0AFir3Rl6Zgu \
+  -G

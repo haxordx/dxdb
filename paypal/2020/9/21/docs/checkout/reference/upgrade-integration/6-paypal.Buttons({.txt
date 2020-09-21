@@ -1,0 +1,17 @@
+paypal.Buttons({
+  createBillingAgreement: function() {
+    var CREATE_BILLING_AGREEMENT_URL = 'https://mystore.com/api/paypal/create-billing-agreement';
+
+    return fetch(CREATE_BILLING_AGREEMENT_URL, {
+      method: 'post',
+      headers: {
+        'content-type': 'application/json'
+      }
+    }).then(function(res) {
+      return res.json();
+    }).then(function(data) {
+      return data.billingToken;
+    });
+  }
+}).render('#paypal-button-container');
+copy

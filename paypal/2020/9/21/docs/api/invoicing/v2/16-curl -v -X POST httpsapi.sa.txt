@@ -1,0 +1,11 @@
+curl -v -X POST https://api.sandbox.paypal.com/v2/invoicing/invoices/INV2-Z56S-5LLA-Q52L-CPZ5/payments \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer Access-Token" \
+-d '{
+  "method": "BANK_TRANSFER",
+  "payment_date": "2018-05-01",
+  "amount": {
+    "currency_code": "USD",
+    "value": "10.00"
+  }
+}'copy

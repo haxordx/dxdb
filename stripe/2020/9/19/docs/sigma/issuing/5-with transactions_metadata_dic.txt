@@ -1,0 +1,37 @@
+with transactions_metadata_dictionary as (
+  select
+    issuing_transaction_id,
+    map_agg(key, value) metadata_dictionary
+  from issuing_transactions_metadata
+  group by 1
+)
+
+select
+  date_format(it.created, '%Y-%m-%d') as day,
+  it.id,
+  it.amount,
+  metadata_dictionary['my_label'] as my_label_value
+from issuing_transactions it
+left join transactions_metadata_dictionary
+  on it.id = transactions_metadata_dictionary.issuing_transaction_id
+where element_at(metadata_dictionary, 'my_label') is not null
+order by day desc
+limit 3with transactions_metadata_dictionary as (
+  select
+    issuing_transaction_id,
+    map_agg(key, value) metadata_dictionary
+  from issuing_transactions_metadata
+  group by 1
+)
+
+select
+  date_format(it.created, '%Y-%m-%d') as day,
+  it.id,
+  it.amount,
+  metadata_dictionary['my_label'] as my_label_value
+from issuing_transactions it
+left join transactions_metadata_dictionary
+  on it.id = transactions_metadata_dictionary.issuing_transaction_id
+where element_at(metadata_dictionary, 'my_label') is not null
+order by day desc
+limit 3

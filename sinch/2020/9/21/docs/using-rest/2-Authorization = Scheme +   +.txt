@@ -1,0 +1,13 @@
+Authorization = Scheme + " " + ApplicationKey + “:” + Signature
+
+Scheme = “Application”
+
+Signature = Base64 ( HMAC-SHA256 ( Base64-Decode ( ApplicationSecret ), UTF8 ( StringToSign ) ) );
+
+StringToSign = HTTP-Verb + “\n” +
+Content-MD5 + “\n” +
+Content-Type + “\n” +
+CanonicalizedHeaders + “\n” +
+CanonicalizedResource;
+
+Content-MD5 = Base64 ( MD5 ( UTF8 ( [BODY] ) ) )

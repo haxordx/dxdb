@@ -1,0 +1,10 @@
+// User
+module.exports = {
+  attributes: {
+    emailAddress: {
+      type: 'string',
+      unique: true,
+      required: true
+    }
+  }
+};

@@ -1,0 +1,27 @@
+Map<String, Object> customerParams = new HashMap<String, Object>();
+customerParams.put("email", "customer@example.com");
+customerParams.put("source", request.stripeToken);
+Customer customer = Customer.create(customerParams);
+
+Map<String, Object> subscriptionParams = new HashMap<String, Object>();
+subscriptionParams.put("customer", customer.id);
+HashMap<String, Object> items = new HashMap<String, Object>();
+HashMap<String, Object> item = new HashMap<String, Object>();
+item.put("price", "{PRICE_ID}");
+items.put("0", item);
+subscriptionParams.put("items", items);
+subscriptionParams.put("trial_period_days", 30);
+Subscription subscription = Subscription.create(subscriptionParams);Map<String, Object> customerParams = new HashMap<String, Object>();
+customerParams.put("email", "customer@example.com");
+customerParams.put("source", request.stripeToken);
+Customer customer = Customer.create(customerParams);
+
+Map<String, Object> subscriptionParams = new HashMap<String, Object>();
+subscriptionParams.put("customer", customer.id);
+HashMap<String, Object> items = new HashMap<String, Object>();
+HashMap<String, Object> item = new HashMap<String, Object>();
+item.put("price", "{PRICE_ID}");
+items.put("0", item);
+subscriptionParams.put("items", items);
+subscriptionParams.put("trial_period_days", 30);
+Subscription subscription = Subscription.create(subscriptionParams);

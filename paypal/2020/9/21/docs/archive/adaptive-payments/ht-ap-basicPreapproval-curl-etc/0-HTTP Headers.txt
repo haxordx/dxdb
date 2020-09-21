@@ -1,0 +1,31 @@
+HTTP Headers
+------------
+-H "X-PAYPAL-SECURITY-USERID: insert_developer_user_name"
+-H "X-PAYPAL-SECURITY-PASSWORD: insert_developer_password"
+-H "X-PAYPAL-SECURITY-SIGNATURE: insert_developer_signature"
+-H "X-PAYPAL-REQUEST-DATA-FORMAT: NV"
+-H "X-PAYPAL-RESPONSE-DATA-FORMAT: NV"
+-H "X-PAYPAL-APPLICATION-ID: APP-80W284485P519543T"    #Standard sandbox app ID
+
+Endpoint
+--------
+https://svcs.sandbox.paypal.com/AdaptivePayments/Preapproval
+
+Input Parameters
+----------------
+returnUrl=https://example.com/success   #For use if the customer proceeds with approval
+&cancelUrl=https://example.com/cancel   #For use if the customer decides not to proceed with approval
+&startingDate=2012-04-27T10:45:52Z    #First date on which the pre-approval is valid
+&endingDate=2013-02-02T20:40:52Z    #Last date on which the pre-approval is valid
+&maxAmountPerPayment=35.00    #The maximum amount per payment under the pre-approval
+&maxNumberOfPayments=20    #The maximum number of payments under the pre-approval
+&maxTotalAmountOfAllPayments=800.00    #The max of all payments; must be less than, or equal to, $2,000 (or equivalent)
+¤cyCode=USD    #The currency, e.g. US dollars
+&requestEnvelope.errorLanguage=en_US
+
+Response
+--------
+responseEnvelope.ack=Success
+&preapprovalKey=PA-5KY19448VE6821234    #Value of the pre-approval key, for use in subsequent steps
+...
+copy

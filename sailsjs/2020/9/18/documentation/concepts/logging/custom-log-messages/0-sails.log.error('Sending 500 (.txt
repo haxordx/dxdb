@@ -1,0 +1,2 @@
+sails.log.error('Sending 500 ("Server Error") response.');
+// -> error: Sending 500 ("Server Error") response.

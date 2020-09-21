@@ -1,0 +1,6 @@
+curl https://api.stripe.com/v1/setup_intents \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d "payment_method_types[]"=au_becs_debit
+curl https://api.stripe.com/v1/setup_intents \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d "payment_method_types[]"=au_becs_debit

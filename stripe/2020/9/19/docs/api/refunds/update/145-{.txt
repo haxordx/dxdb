@@ -1,0 +1,25 @@
+{
+  "object": "list",
+  "url": "/v1/refunds",
+  "has_more": false,
+  "data": [
+    {
+      "id": "re_1HTGDb2eZvKYlo2CGnTniT8U",
+      "object": "refund",
+      "amount": 100,
+      "balance_transaction": null,
+      "charge": "ch_1HTGDb2eZvKYlo2Cnw6FmI73",
+      "created": 1600560951,
+      "currency": "usd",
+      "metadata": {},
+      "payment_intent": null,
+      "reason": null,
+      "receipt_number": null,
+      "source_transfer_reversal": null,
+      "status": "succeeded",
+      "transfer_reversal": null
+    },
+    {...},
+    {...}
+  ]
+}

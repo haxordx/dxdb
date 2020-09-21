@@ -1,0 +1,10 @@
+TIMESTAMP=2013%2d08%2d13T00%3a29%3a00Z
+  &CORRELATIONID=78d43b44c9e0e
+  &ACK=Failure
+  &VERSION=100
+  &BUILD=7161310
+  &L_ERRORCODE0=10610
+  &L_SHORTMESSAGE0=Amount%20limit%20exceeded%2e
+  &L_LONGMESSAGE0=Amount%20specified%20exceeds%20allowable%20limit%2e
+  &L_SEVERITYCODE0=Error
+copy

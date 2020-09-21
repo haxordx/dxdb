@@ -1,0 +1,2 @@
+var updatedRecord = await Something.updateOne(criteria)
+.set(valuesToSet);

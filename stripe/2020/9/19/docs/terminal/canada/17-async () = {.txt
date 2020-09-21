@@ -1,0 +1,37 @@
+async () => {
+    const result = await this.terminal.collectRefundPaymentMethod(
+        "ch_1FLyVV2eZvKYlo2C9Z8rmX02",
+        2000,
+        "cad"
+    );
+
+    if (result.error) {
+        // Placeholder for handling result.error
+    } else {
+        const refund = await terminal.processRefund();
+        if (refund.error) {
+            // Placeholder for handling refund.error
+        } else {
+            console.log("Charge fully refunded!");
+            return refund;
+        }
+    }
+}async () => {
+    const result = await this.terminal.collectRefundPaymentMethod(
+        "ch_1FLyVV2eZvKYlo2C9Z8rmX02",
+        2000,
+        "cad"
+    );
+
+    if (result.error) {
+        // Placeholder for handling result.error
+    } else {
+        const refund = await terminal.processRefund();
+        if (refund.error) {
+            // Placeholder for handling refund.error
+        } else {
+            console.log("Charge fully refunded!");
+            return refund;
+        }
+    }
+}

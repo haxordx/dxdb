@@ -1,0 +1,52 @@
+    private void startRecoveryFlow(@NonNull String clientSecret) {
+        // ...continued from previous step
+        final String lastPaymentMethodId;
+        if (lastPaymentError != null && lastPaymentError.getPaymentMethod() != null) {
+            lastPaymentMethodId = lastPaymentError.getPaymentMethod().id;
+        } else {
+            lastPaymentMethodId = null;
+        }
+
+        if (lastPaymentError != null &&
+                "authentication_required".equals(lastPaymentError.getCode()) &&
+                lastPaymentMethodId != null) {
+            // Payment failed because authentication is required, reuse the PaymentMethod
+            final ConfirmPaymentIntentParams params =
+                    ConfirmPaymentIntentParams.createWithPaymentMethodId(
+                            lastPaymentMethodId,
+                            clientSecret // Reuse the existing PaymentIntent
+                    );
+            // Submit the payment...
+            stripe.confirmPayment(this, params);
+        } else {
+            // Collect a new PaymentMethod from the customer...
+        }
+    }
+}
+
+    private void startRecoveryFlow(@NonNull String clientSecret) {
+        // ...continued from previous step
+        final String lastPaymentMethodId;
+        if (lastPaymentError != null && lastPaymentError.getPaymentMethod() != null) {
+            lastPaymentMethodId = lastPaymentError.getPaymentMethod().id;
+        } else {
+            lastPaymentMethodId = null;
+        }
+
+        if (lastPaymentError != null &&
+                "authentication_required".equals(lastPaymentError.getCode()) &&
+                lastPaymentMethodId != null) {
+            // Payment failed because authentication is required, reuse the PaymentMethod
+            final ConfirmPaymentIntentParams params =
+                    ConfirmPaymentIntentParams.createWithPaymentMethodId(
+                            lastPaymentMethodId,
+                            clientSecret // Reuse the existing PaymentIntent
+                    );
+            // Submit the payment...
+            stripe.confirmPayment(this, params);
+        } else {
+            // Collect a new PaymentMethod from the customer...
+        }
+    }
+}
+

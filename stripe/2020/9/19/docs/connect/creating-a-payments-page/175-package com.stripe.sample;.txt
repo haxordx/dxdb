@@ -1,0 +1,145 @@
+package com.stripe.sample;
+
+import com.stripe.Stripe;
+import com.stripe.model.checkout.Session;
+import com.stripe.model.Event;
+import com.stripe.model.EventDataObjectDeserializer;
+import com.stripe.exception.SignatureVerificationException;
+import com.stripe.net.Webhook;
+import com.google.gson.JsonSyntaxException;
+import spark.Response;
+
+// Using Spark.
+import static spark.Spark.*;
+
+public class Server {
+  public static void main(String[] args) {
+    port(4242);
+
+    // Set your secret key. Remember to switch to your live secret key in production!
+    // See your keys here: https://dashboard.stripe.com/account/apikeys
+    Stripe.apiKey = "sk_test_4eC39HqLyjWDarjtT1zdp7dc";
+    post("/webhook", (request, response) -> {
+      String payload = request.body();
+      String sigHeader = request.headers("Stripe-Signature");
+
+      // Uncomment and replace with a real secret. You can find your endpoint's
+      // secret in your webhook settings.
+      // String webhookSecret = "whsec_..."
+
+      Event event = null;
+
+      // Verify webhook signature and extract the event.
+      // See https://stripe.com/docs/webhooks/signatures for more information.
+      try {
+        event = Webhook.constructEvent(
+          payload, sigHeader, webhookSecret
+        );
+      } catch (JsonSyntaxException e) {
+      // Invalid payload.
+        response.status(400);
+        return "";
+      } catch (SignatureVerificationException e) {
+      // Invalid Signature.
+        response.status(400);
+        return "";
+      }
+
+      if ("checkout.session.completed".equals(event.getType())) {
+        // Deserialize the nested object inside the event
+        EventDataObjectDeserializer dataObjectDeserializer = event.getDataObjectDeserializer();
+        Session session = null;
+        if (dataObjectDeserializer.getObject().isPresent()) {
+          session = (Session) dataObjectDeserializer.getObject().get();
+          String connectedAccountId = event.getAccount();
+          handleCompletedCheckoutSession(connectedAccountId, session);
+        } else {
+          // Deserialization failed, probably due to an API version mismatch.
+          // Refer to the Javadoc documentation on `EventDataObjectDeserializer` for
+          // instructions on how to handle this case, or return an error here.
+        }
+      }
+
+      response.status(200);
+      return "";
+    });
+  }
+
+  private static void handleCompletedCheckoutSession(String connectedAccountId, Session session) {
+    // Fulfill the purchase.
+    System.out.println("Connected account ID: " + connectedAccountId);
+    System.out.println(session.getId());
+  }
+}package com.stripe.sample;
+
+import com.stripe.Stripe;
+import com.stripe.model.checkout.Session;
+import com.stripe.model.Event;
+import com.stripe.model.EventDataObjectDeserializer;
+import com.stripe.exception.SignatureVerificationException;
+import com.stripe.net.Webhook;
+import com.google.gson.JsonSyntaxException;
+import spark.Response;
+
+// Using Spark.
+import static spark.Spark.*;
+
+public class Server {
+  public static void main(String[] args) {
+    port(4242);
+
+    // Set your secret key. Remember to switch to your live secret key in production!
+    // See your keys here: https://dashboard.stripe.com/account/apikeys
+    Stripe.apiKey = "sk_test_4eC39HqLyjWDarjtT1zdp7dc";
+    post("/webhook", (request, response) -> {
+      String payload = request.body();
+      String sigHeader = request.headers("Stripe-Signature");
+
+      // Uncomment and replace with a real secret. You can find your endpoint's
+      // secret in your webhook settings.
+      // String webhookSecret = "whsec_..."
+
+      Event event = null;
+
+      // Verify webhook signature and extract the event.
+      // See https://stripe.com/docs/webhooks/signatures for more information.
+      try {
+        event = Webhook.constructEvent(
+          payload, sigHeader, webhookSecret
+        );
+      } catch (JsonSyntaxException e) {
+      // Invalid payload.
+        response.status(400);
+        return "";
+      } catch (SignatureVerificationException e) {
+      // Invalid Signature.
+        response.status(400);
+        return "";
+      }
+
+      if ("checkout.session.completed".equals(event.getType())) {
+        // Deserialize the nested object inside the event
+        EventDataObjectDeserializer dataObjectDeserializer = event.getDataObjectDeserializer();
+        Session session = null;
+        if (dataObjectDeserializer.getObject().isPresent()) {
+          session = (Session) dataObjectDeserializer.getObject().get();
+          String connectedAccountId = event.getAccount();
+          handleCompletedCheckoutSession(connectedAccountId, session);
+        } else {
+          // Deserialization failed, probably due to an API version mismatch.
+          // Refer to the Javadoc documentation on `EventDataObjectDeserializer` for
+          // instructions on how to handle this case, or return an error here.
+        }
+      }
+
+      response.status(200);
+      return "";
+    });
+  }
+
+  private static void handleCompletedCheckoutSession(String connectedAccountId, Session session) {
+    // Fulfill the purchase.
+    System.out.println("Connected account ID: " + connectedAccountId);
+    System.out.println(session.getId());
+  }
+}

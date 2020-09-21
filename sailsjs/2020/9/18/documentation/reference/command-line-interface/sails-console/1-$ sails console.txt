@@ -1,0 +1,8 @@
+$ sails console
+
+info: Starting app in interactive mode...
+
+info: Welcome to the Sails console.
+info: ( to exit, type <CTRL>+<C> )
+
+sails>

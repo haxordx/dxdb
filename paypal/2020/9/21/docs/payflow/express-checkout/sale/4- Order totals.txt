@@ -1,0 +1,23 @@
+// Order totals
+AMT=13.00
+TAXAMT=6.00
+ITEMAMT=7.00 // item totals  
+FREIGHTAMT=3.00
+DISCOUNT=3.00  //this will be considered as -3 as it’s a discount field.
+
+// Line item details – line item 1
+L_NAME0=Burton Lucky Pants - Womens
+L_DESC0=Item 1 desc
+L_ITEMNUMBER0=123456
+L_COST0=1.00
+L_TAXAMT0=1.00
+L_QTY0=5
+
+// Line item details – line item 2
+L_NAME1=Arbor Roundhouse CX Snowboard 2013
+L_DESC1=Item 2 desc
+L_ITEMNUMBER1=98765
+L_COST1=2.00
+L_TAXAMT1=1.00
+L_QTY1=1
+copy

@@ -1,0 +1,4 @@
+curl -v -X GET https://api.sandbox.paypal.com/v1/reporting/transactions?transaction_id=5TY05013RG002845M&fields=all&page_size=100&page=1 \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer Access-Token"
+bashcopy

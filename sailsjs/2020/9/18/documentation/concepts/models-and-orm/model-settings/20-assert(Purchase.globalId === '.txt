@@ -1,0 +1,8 @@
+assert(Purchase.globalId === 'Purchase');
+assert(sails.models.purchase.globalId === 'Purchase');
+if (sails.config.globals.models) {
+  assert(sails.models.purchase === Purchase);
+}
+else {
+  assert(typeof Purchase === 'undefined');
+}

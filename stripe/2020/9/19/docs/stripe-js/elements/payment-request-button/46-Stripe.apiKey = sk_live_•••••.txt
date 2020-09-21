@@ -1,0 +1,15 @@
+Stripe.apiKey = "sk_live_••••••••••••••••••••••••";
+
+ApplePayDomainCreateParams params =
+  ApplePayDomainCreateParams.builder()
+    .setDomainName("example.com")
+    .build();
+
+ApplePayDomain domain = ApplePayDomain.create(params);Stripe.apiKey = "sk_live_••••••••••••••••••••••••";
+
+ApplePayDomainCreateParams params =
+  ApplePayDomainCreateParams.builder()
+    .setDomainName("example.com")
+    .build();
+
+ApplePayDomain domain = ApplePayDomain.create(params);

@@ -1,0 +1,54 @@
+
+class CheckoutViewController: UIViewController {
+
+    // ...
+
+    @objc
+    func pay() {
+        // Collect card details on the client
+        let cardParams = cardTextField.cardParams
+        let paymentMethodParams = STPPaymentMethodParams(card: cardParams, billingDetails: nil, metadata: nil)
+        STPAPIClient.shared().createPaymentMethod(with: paymentMethodParams) { [weak self] paymentMethod, error in
+            // Create PaymentMethod failed
+            if let createError = error {
+                self?.displayAlert(title: "Payment failed", message: createError.localizedDescription)
+            }
+            if let paymentMethodId = paymentMethod?.stripeId {
+                self?.pay(withPaymentMethod: paymentMethodId)
+            }
+        }
+    }
+
+    func pay(withPaymentMethod paymentMethodId: String? = nil, withPaymentIntent paymentIntentId: String? = nil) {
+        // ...continued in the next step
+    }
+
+    // ...
+}
+
+class CheckoutViewController: UIViewController {
+
+    // ...
+
+    @objc
+    func pay() {
+        // Collect card details on the client
+        let cardParams = cardTextField.cardParams
+        let paymentMethodParams = STPPaymentMethodParams(card: cardParams, billingDetails: nil, metadata: nil)
+        STPAPIClient.shared().createPaymentMethod(with: paymentMethodParams) { [weak self] paymentMethod, error in
+            // Create PaymentMethod failed
+            if let createError = error {
+                self?.displayAlert(title: "Payment failed", message: createError.localizedDescription)
+            }
+            if let paymentMethodId = paymentMethod?.stripeId {
+                self?.pay(withPaymentMethod: paymentMethodId)
+            }
+        }
+    }
+
+    func pay(withPaymentMethod paymentMethodId: String? = nil, withPaymentIntent paymentIntentId: String? = nil) {
+        // ...continued in the next step
+    }
+
+    // ...
+}

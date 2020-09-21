@@ -1,0 +1,18 @@
+// Find the 5 hottest oven brands on the market
+Oven.find().sort('heat ASC').exec(function (err, ovens){
+  if (err) return res.serverError(err);
+
+  return res.view('oven/top5', {
+    hottestOvens: ovens
+  });
+  // -> responds using the view at `views/oven/top5.ejs`,
+  // and with the oven data we looked up as view locals.
+  //
+  // e.g. in the view, we might have something like:
+  // ...
+  // <% _.each(hottestOvens, function (aHotOven) { %>
+  //  <li><%= aHotOven.name %></li>
+  // <% }) %>
+  // ...
+});
+

@@ -1,0 +1,6 @@
+var records = await Order.find();
+
+console.log('Found %d records', records.length);
+if (records.length > 0) {
+  console.log('Found at least one record, and its `id` is:',records[0].id);
+}

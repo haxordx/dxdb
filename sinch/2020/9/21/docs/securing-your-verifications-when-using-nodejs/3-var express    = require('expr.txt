@@ -1,0 +1,23 @@
+var express    = require('express');        // call express
+var bodyParser = require('body-parser');
+
+function logResponseBody(req, res, next) {
+// intercept all requests and set response type to json, and log it for debug
+  res.setHeader('Content-Type', 'application/json');
+  console.log(JSON.stringify(req.body, null, 2));
+  next();
+}
+
+var app = express();
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(logResponseBody);
+var port = process.env.PORT || 8080;        // set our port
+var router = express.Router();
+
+router.post('/sinch', function(req, res) {
+    res.json({ message: 'Here we need to respond correct SVAML' });
+});
+app.use('/api', router);
+app.listen(port);
+module.exports = app;

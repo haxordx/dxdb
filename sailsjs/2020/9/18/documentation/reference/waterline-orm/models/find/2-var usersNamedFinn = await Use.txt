@@ -1,0 +1,4 @@
+var usersNamedFinn = await User.find({
+  where: {name:'Finn'},
+  select: ['name', 'email']
+});

@@ -1,0 +1,3 @@
+- (id<SINCallClient>)callClient {
+    return [[(AppDelegate *)[[UIApplication sharedApplication] delegate] sinch] callClient];
+}

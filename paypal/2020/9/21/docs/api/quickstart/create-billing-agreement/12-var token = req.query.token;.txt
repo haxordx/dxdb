@@ -1,0 +1,11 @@
+var token = req.query.token;
+
+paypal.billingAgreement.execute(token, {}, function (error, billingAgreement){
+  if (error){
+    console.error(JSON.stringify(error));
+    throw error;
+  } else {
+    console.log(JSON.stringify(billingAgreement));
+    console.log('Billing Agreement Created Successfully');
+  }
+});copy

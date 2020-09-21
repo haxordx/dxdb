@@ -1,0 +1,47 @@
+[
+  {
+    "shipment_id": "se-2102034",
+    "status": "completed",
+    "created_at": "2019-07-25T15:24:46.657Z",
+    "rates": [
+      {
+        "rate_id": "se-11744390",
+        "rate_type": "shipment",
+        "carrier_id": "se-123890",
+        "shipping_amount": {
+          "currency": "usd",
+          "amount": 9.37
+        },
+        "insurance_amount": {
+          "currency": "usd",
+          "amount": 0.00
+        },
+        "confirmation_amount": {
+          "currency": "usd",
+          "amount": 0.00
+        },
+        "other_amount": {
+          "currency": "usd",
+          "amount": 0.00
+        },
+        "delivery_days": 3,
+        "guaranteed_service": false,
+        "delivery_date": "2019-07-25T05:00:00.000Z",
+        "carrier_delivery_days": "Friday by 11:00 PM",
+        "ship_date": "2019-07-25T05:00:00.000ZPlus3$",
+        "negotiated_rate": false,
+        "service_type": "UPS® Ground",
+        "service_code": "ups_ground",
+        "trackable": true,
+        "validation_status": "valid",
+        "warning_messages": [],
+        "error_messages": [],
+        "carrier_code": "ups",
+        "carrier_nickname": "UPS-28A1R9",
+        "carrier_friendly_name": "UPS"
+      }
+    ],
+    "invalid_rates": [],
+    "errors": null
+  }
+]

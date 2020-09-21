@@ -1,0 +1,6 @@
+curl -v -X POST https://api.sandbox.paypal.com/v1/identity/account-settings/deactivate \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer Access-Token" \
+-d '{
+  "account_property": "BRAINTREE_MERCHANT"
+}'copy

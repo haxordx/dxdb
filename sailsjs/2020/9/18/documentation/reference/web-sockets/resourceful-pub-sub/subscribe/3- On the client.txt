@@ -1,0 +1,6 @@
+// On the client:
+
+// Whenever a `user` event is received, say something.
+io.socket.on('user', function(msg) {
+  console.log('Got a message about a Louie: ', msg);
+});

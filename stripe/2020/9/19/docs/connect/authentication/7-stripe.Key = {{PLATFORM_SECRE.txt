@@ -1,0 +1,18 @@
+stripe.Key = "{{PLATFORM_SECRET_KEY}}"
+params := &stripe.CustomerParams{
+  Email: stripe.String("person@example.edu"),
+}
+params.SetStripeAccount("{{CONNECTED_STRIPE_ACCOUNT_ID}}")
+cus, _ := customer.New(params)
+
+// Fetching an account just needs the ID as a parameter
+acct, _ := account.GetByID("{{CONNECTED_STRIPE_ACCOUNT_ID}}", nil);
+stripe.Key = "{{PLATFORM_SECRET_KEY}}"
+params := &stripe.CustomerParams{
+  Email: stripe.String("person@example.edu"),
+}
+params.SetStripeAccount("{{CONNECTED_STRIPE_ACCOUNT_ID}}")
+cus, _ := customer.New(params)
+
+// Fetching an account just needs the ID as a parameter
+acct, _ := account.GetByID("{{CONNECTED_STRIPE_ACCOUNT_ID}}", nil);

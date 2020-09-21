@@ -1,0 +1,2 @@
+CURRENCYCODE=USD
+copy

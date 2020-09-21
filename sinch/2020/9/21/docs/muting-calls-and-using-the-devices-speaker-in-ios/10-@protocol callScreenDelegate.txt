@@ -1,0 +1,9 @@
+@protocol callScreenDelegate <NSObject>
+
+-(void)mute;
+-(void)unMute;
+-(void)speaker;
+-(void)speakerOff;
+-(void)hangup;
+
+@end

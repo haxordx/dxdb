@@ -1,0 +1,3 @@
+curl https://api.stripe.com/v1/customers \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d description="My First Test Customer (created for API docs)"

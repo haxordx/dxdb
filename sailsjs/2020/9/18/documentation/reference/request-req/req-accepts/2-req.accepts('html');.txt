@@ -1,0 +1,8 @@
+req.accepts('html');
+// -> 'html'
+
+req.accepts('text/html');
+// -> 'text/html'
+
+req.accepts('json');
+// -> false

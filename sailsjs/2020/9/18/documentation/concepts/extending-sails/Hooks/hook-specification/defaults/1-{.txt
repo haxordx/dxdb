@@ -1,0 +1,5 @@
+{
+   __configKey__: {
+      name: "Super Bob"
+   }
+}

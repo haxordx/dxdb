@@ -1,0 +1,1 @@
+/v1/invoices/:id/mask_test_obfuscated_offline_key

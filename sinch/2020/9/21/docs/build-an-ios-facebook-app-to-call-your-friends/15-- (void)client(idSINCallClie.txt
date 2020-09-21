@@ -1,0 +1,26 @@
+- (void)client:(id<SINCallClient>)client didReceiveIncomingCall:(id<SINCall>)call {
+
+    UIViewController *top = self.window.rootViewController;
+
+    FBSDKGraphRequest *requestFriends = [[FBSDKGraphRequest alloc]
+                                         initWithGraphPath:[call remoteUserId]
+                                         parameters:nil
+                                         HTTPMethod:@"GET"];
+    [requestFriends startWithCompletionHandler:^(FBSDKGraphRequestConnection *connection,
+                                                 id result,
+                                                 NSError *error) {
+        if (!error && result)
+        {
+            NSString *friendName = [result objectForKey:@"name"];
+
+            DetailViewController *controller = [top.storyboard instantiateViewControllerWithIdentifier:@"callScreen"];
+            CFriend *callingFriend = [CFriend addFriendWithName:friendName FriendID:[call remoteUserId]];
+            [controller setDetailItem:callingFriend];
+
+            // 1
+
+            [self.window.rootViewController presentViewController:controller animated:YES completion:nil];
+        }
+
+    }];
+}

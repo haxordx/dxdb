@@ -1,0 +1,21 @@
+#import <Stripe/Stripe.h>
+
+@implementation ViewController
+
+- (void)beginPushProvisioning {
+  PKAddPaymentPassRequestConfiguration *config = [STPPushProvisioningContext requestConfigurationWithName:@"Jenny Rosen" description:@"RocketRides Card" last4:@"4242" brand:STPCardBrandVisa];
+  PKAddPaymentPassViewController *controller = [[STPFakeAddPaymentPassViewController alloc] initWithRequestConfiguration:config delegate:self];
+  [self presentViewController:controller animated:YES completion:nil];
+}
+
+@end#import <Stripe/Stripe.h>
+
+@implementation ViewController
+
+- (void)beginPushProvisioning {
+  PKAddPaymentPassRequestConfiguration *config = [STPPushProvisioningContext requestConfigurationWithName:@"Jenny Rosen" description:@"RocketRides Card" last4:@"4242" brand:STPCardBrandVisa];
+  PKAddPaymentPassViewController *controller = [[STPFakeAddPaymentPassViewController alloc] initWithRequestConfiguration:config delegate:self];
+  [self presentViewController:controller animated:YES completion:nil];
+}
+
+@end

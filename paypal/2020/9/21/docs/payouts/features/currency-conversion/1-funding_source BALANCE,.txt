@@ -1,0 +1,16 @@
+"funding_source": "BALANCE", "amount": {
+  "currency": "EUR",
+  "value": "10.00"
+}, "fees": {
+  "currency": "EUR",
+  "value": "0.20"
+}, "currency_conversion": {
+  "from_amount": {
+    "currency": "USD",
+    "value": "11.43"
+  },
+  "to_amount": {
+    "currency": "EUR",
+    "value": "10.20"
+  }
+copy

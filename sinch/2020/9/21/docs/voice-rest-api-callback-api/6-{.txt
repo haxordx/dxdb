@@ -1,0 +1,8 @@
+{
+    "name": "StartRecording",
+    "options": {
+    "destination": "s3://my-bucket/",
+    "credentials": "AKIAIOSFODNN7EXAMPLE:wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY:eu-central-1",
+    "notificationEvents": true
+  }
+}

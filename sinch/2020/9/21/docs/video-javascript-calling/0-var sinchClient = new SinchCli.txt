@@ -1,0 +1,4 @@
+var sinchClient = new SinchClient({
+  applicationKey: '...',
+  capabilities: { calling: true },
+});

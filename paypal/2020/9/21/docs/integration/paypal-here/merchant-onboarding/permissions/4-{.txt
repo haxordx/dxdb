@@ -1,0 +1,6 @@
+{
+  "token_type": "Bearer",
+  "expires_in": "28800",
+  "refresh_token": "Refresh-Token-Value"
+  "access_token": "Access-Token-Value"
+}copy

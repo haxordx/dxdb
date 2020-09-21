@@ -1,0 +1,16 @@
+// ...
+  'get /profile': {
+    view: 'backOffice/profile',
+    locals: {
+      user: {
+        fullName: 'Frank',
+        emailAddress: 'frank@enfurter.com'
+      },
+      corndogs: [
+        { name: 'beef corndog' },
+        { name: 'chicken corndog' },
+        { name: 'soy corndog' }
+      ]
+    }
+  },
+  // ...

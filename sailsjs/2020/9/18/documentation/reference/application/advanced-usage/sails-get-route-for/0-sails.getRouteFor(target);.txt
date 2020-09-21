@@ -1,0 +1,1 @@
+sails.getRouteFor(target);

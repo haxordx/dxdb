@@ -1,0 +1,10 @@
+- (void)configureView {
+    // Update the user interface for the detail item.
+    if (self.detailItem) {
+        self.ContactTitle.title = [NSString stringWithFormat:@"%@ %@", self.detailItem.firstName, self.detailItem.lastName];
+        self.CityStateLabel.text = [NSString stringWithFormat:@"%@, %@", self.detailItem.city, self.detailItem.state];
+        self.CountryLabel.text = self.detailItem.country;
+        self.LevelLabel.text = [NSString stringWithFormat:@"Level: %@", self.detailItem.level];
+        [self displayPictureForUser];
+    }
+}

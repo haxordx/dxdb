@@ -1,0 +1,24 @@
+[ResponseBody]
+    RequestEventResponse
+
+[RequestEventResponse]
+{
+    string - action
+    Sms? - sms
+    FlashCall? - flashCall
+    Callout? - callout
+}
+
+[Sms]
+    string - code
+    string[]? - acceptLanguage
+
+[FlashCall]
+    string? - cli
+    int? - dialTimeout
+
+[Callout]
+    string? - locale
+    string? - ttsMenu
+    string? - wavFile
+    string? - pin

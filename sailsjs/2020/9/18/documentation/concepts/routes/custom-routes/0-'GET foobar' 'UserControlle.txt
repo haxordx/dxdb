@@ -1,0 +1,2 @@
+'GET /foo/bar': 'UserController.subscribe'
+^^^address^^^  ^^^^^^^^^^target^^^^^^^^^^

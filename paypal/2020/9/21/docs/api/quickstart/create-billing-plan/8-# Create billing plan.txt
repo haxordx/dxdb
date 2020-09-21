@@ -1,0 +1,12 @@
+# Create billing plan
+if billing_plan.create():
+  print("Billing Plan [%s] created successfully" % billing_plan.id)
+
+  # Activate billing plan
+  if billing_plan.activate():
+    billing_plan = BillingPlan.find(billing_plan.id)
+    print("Billing Plan [%s] state changed to %s" % (billing_plan.id, billing_plan.state))
+  else:
+    print(billing_plan.error)
+else:
+  print(billing_plan.error)copy

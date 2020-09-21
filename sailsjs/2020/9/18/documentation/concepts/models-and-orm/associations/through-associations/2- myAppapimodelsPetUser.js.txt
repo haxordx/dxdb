@@ -1,0 +1,11 @@
+// myApp/api/models/PetUser.js
+module.exports = {
+  attributes: {
+    owner:{
+      model:'user'
+    },
+    pet: {
+      model: 'pet'
+    }
+  }
+}

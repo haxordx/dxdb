@@ -1,0 +1,7 @@
+var client = new RestClient("https://api.shipengine.com/v1/batches/se-1013790");
+client.Timeout = -1;
+var request = new RestRequest(Method.GET);
+request.AddHeader("Host", "api.shipengine.com");
+request.AddHeader("API-Key", "__YOUR_API_KEY_HERE__");
+IRestResponse response = client.Execute(request);
+Console.WriteLine(response.Content);

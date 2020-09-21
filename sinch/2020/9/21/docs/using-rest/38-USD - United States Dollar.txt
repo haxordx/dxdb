@@ -1,0 +1,3 @@
+"USD" - United States Dollar
+"GBP" - United Kingdom Pound
+"EUR" - Euro Member Countries

@@ -1,0 +1,17 @@
+<div class="container">
+    <div id="auth" class="col-md-6">
+        <h2>Login or register</h2>
+        <form id="userForm">
+            <input id="username" placeholder="username"><br>
+            <input id="password" type="password" placeholder="password"><br>
+            <button id="loginUser">Login</button>
+            <button id="createUser">Create</button>
+        </form>
+    </div>
+    <div id="call" class="col-md-6">
+        <h2>Make a call</h2>
+        <input type="text" id="phoneNumber" />
+        <button id="callNumber">Call</button>
+    </div>
+    <div class="col-md-12" id="error"></div>
+</div>

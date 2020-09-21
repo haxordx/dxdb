@@ -1,0 +1,10 @@
+RetailSDK.getTransactionManager().startReplayOfflineTxns(new TransactionManager.OfflinePaymentStatusCallback()
+{
+  @Override
+  public void offlinePaymentStatus(RetailSDKException error, OfflinePaymentInfo info)
+  {
+    // Code to handle success or failure of the offline replay
+    TransactionActivity.this.offlinePaymentCompleted(error, info);
+  }
+});
+copy

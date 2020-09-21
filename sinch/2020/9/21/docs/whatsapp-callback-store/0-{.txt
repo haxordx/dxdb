@@ -1,0 +1,15 @@
+{
+  "results": [
+    {
+      "type": "whatsapp",
+      "statuses":[
+        {
+          "status":"success",
+          "state":"delivered",
+          "message_id":"01DPNXZ0WCF9XD19MH84XD0P62",
+          "recipient": "+46732001122",
+        }
+      ]
+    }
+  ]
+}

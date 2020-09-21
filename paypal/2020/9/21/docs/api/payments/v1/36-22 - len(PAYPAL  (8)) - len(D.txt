@@ -1,0 +1,1 @@
+22 - len(PAYPAL * (8)) - len(Descriptor in Payment Receiving Preferences of Merchant account + 1)copy

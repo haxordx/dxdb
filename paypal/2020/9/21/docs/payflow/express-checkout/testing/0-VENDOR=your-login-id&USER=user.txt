@@ -1,0 +1,2 @@
+VENDOR=your-login-id&USER=user-id&PWD=user-password&PARTNER=your-partner-id
+copy

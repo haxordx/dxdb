@@ -1,0 +1,11 @@
+- (IBAction)onUserSelectedBackCamera:(id)sender {
+  id<SINVideoController> videoController = ... // get video controller from SINClient.
+
+  videoController.captureDevicePosition = AVCaptureDevicePositionBack;
+}
+
+- (IBAction)onUserSelectedFrontCamera:(id)sender {
+  id<SINVideoController> videoController = ... // get video controller from SINClient.
+
+  videoController.captureDevicePosition = AVCaptureDevicePositionFront;
+}

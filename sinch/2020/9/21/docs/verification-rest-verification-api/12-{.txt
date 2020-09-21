@@ -1,0 +1,4 @@
+{
+    "id":"1234567876",
+    "flashCall":{"cliFilter":"(.*)70123(.*)","interceptionTimeout":120}
+}

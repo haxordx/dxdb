@@ -1,0 +1,1 @@
+var numRecords = await Model.count(criteria);

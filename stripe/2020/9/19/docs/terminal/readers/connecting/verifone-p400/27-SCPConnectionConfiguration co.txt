@@ -1,0 +1,10 @@
+SCPConnectionConfiguration *connectionConfig = [[SCPConnectionConfiguration alloc] initWithFailIfInUse:YES];
+
+[[SCPTerminal shared] connectReader:selectedReader connectionConfig:connectionConfig completion:^(SCPReader *reader, NSError *error) {
+    // ...
+}
+SCPConnectionConfiguration *connectionConfig = [[SCPConnectionConfiguration alloc] initWithFailIfInUse:YES];
+
+[[SCPTerminal shared] connectReader:selectedReader connectionConfig:connectionConfig completion:^(SCPReader *reader, NSError *error) {
+    // ...
+}

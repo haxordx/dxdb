@@ -1,0 +1,1 @@
+open -a path/to/chrome yourfilename.html --args --allow-file-access-from-files

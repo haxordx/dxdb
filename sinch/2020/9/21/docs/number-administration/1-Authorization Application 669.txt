@@ -1,0 +1,6 @@
+Authorization: Application 669762D5-2B10-44E0-8418-BC9EE4457555
+x-timestamp: {now}
+
+eg:
+Authorization: Application 669762D5-2B10-44E0-8418-BC9EE4457555
+x-timestamp: 2015-06-20T11:43:10.944Z

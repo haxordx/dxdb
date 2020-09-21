@@ -1,0 +1,9 @@
+stripe prices create \
+  -d product=prod_HGd6W1VUqqXGvr \
+  -d unit_amount=500 \
+  -d currency=usd \
+  -d "recurring[interval]"=monthstripe prices create \
+  -d product=prod_HGd6W1VUqqXGvr \
+  -d unit_amount=500 \
+  -d currency=usd \
+  -d "recurring[interval]"=month

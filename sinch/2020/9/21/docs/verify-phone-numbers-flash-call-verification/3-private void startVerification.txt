@@ -1,0 +1,6 @@
+private void startVerification(String phoneNumber) {
+    Config config = SinchVerification.config().applicationKey("your_app_key").context(getApplicationContext()).build();
+    VerificationListener listener = new MyVerificationListener();
+    verification = SinchVerification.createFlashCallVerification(config, phoneNumber, listener);
+    verification.initiate();
+}

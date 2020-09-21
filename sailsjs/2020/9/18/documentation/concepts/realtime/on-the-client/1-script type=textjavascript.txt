@@ -1,0 +1,7 @@
+<script type="text/javascript" src="/js/dependencies/sails.io.js" autoConnect="false"></script>
+<script type="text/javascript">
+var mySocket = io.sails.connect();
+mySocket.on('connect', function onConnect () {
+  console.log("Socket connected!");
+});
+</script>

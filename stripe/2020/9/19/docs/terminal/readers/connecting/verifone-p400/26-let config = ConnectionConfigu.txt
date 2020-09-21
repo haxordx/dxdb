@@ -1,0 +1,8 @@
+let config = ConnectionConfiguration(failIfInUse: true)
+Terminal.shared.connectReader(selectedReader, connectionConfig: config) { reader, error in
+    // ...
+}
+let config = ConnectionConfiguration(failIfInUse: true)
+Terminal.shared.connectReader(selectedReader, connectionConfig: config) { reader, error in
+    // ...
+}

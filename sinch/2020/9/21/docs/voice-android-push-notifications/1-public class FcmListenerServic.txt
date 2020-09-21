@@ -1,0 +1,10 @@
+public class FcmListenerService extends FirebaseMessagingService {
+
+@Override
+public void onMessageReceived(RemoteMessage remoteMessage){
+    if (SinchHelpers.isSinchPushPayload(remoteMessage.getData())) {
+        // it's Sinch message - relay it to SinchClient
+    } else {
+        // it's NOT Sinch message - process yourself
+    }
+  }}

@@ -1,0 +1,35 @@
+{
+  "valid_until": "2016-05-26T00:00:00Z",
+  "first_name": "Joe",
+  "last_name": "Shopper",
+  "expire_month": "11",
+  "state": "ok",
+  "billing_address": {
+    "city": "Johnstown",
+    "state": "OH",
+    "postal_code": "43210",
+    "country_code": "US",
+    "line1": "52 N. Main St."
+  },
+  "expire_year": "2018",
+  "number": "0000000000000000",
+  "type": "visa",
+  "id": "CARD-54E6956910402550WKGRL6EA",
+  "links": [
+    {
+      "href": "https://api.sandbox.paypal.com/v1/vault/credit-card/CARD-54E6956910402550WKGRL6EA",
+      "method": "GET",
+      "rel": "self"
+    },
+    {
+      "href": "https://api.sandbox.paypal.com/v1/vault/credit-card/CARD-54E6956910402550WKGRL6EA",
+      "method": "DELETE",
+      "rel": "delete"
+    },
+    {
+      "href": "https://api.sandbox.paypal.com/v1/vault/credit-card/CARD-54E6956910402550WKGRL6EA",
+      "method": "PATCH",
+      "rel": "patch"
+    }
+  ]
+}copy

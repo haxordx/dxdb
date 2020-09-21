@@ -1,0 +1,4 @@
+funding: {
+ allowed: [ paypal.FUNDING.CREDIT ]
+}
+jscopy

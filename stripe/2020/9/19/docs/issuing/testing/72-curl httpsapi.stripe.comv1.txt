@@ -1,0 +1,24 @@
+curl https://api.stripe.com/v1/payment_methods \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d type=card \
+  -d "card[number]"=4000009990000006 \
+  -d "card[exp_month]"=8 \
+  -d "card[exp_year]"=2022 \
+  -d "card[cvc]"=123 \
+  -d "billing_details[address][line1]"="1234 Main Street" \
+  -d "billing_details[address][city]"="San Francisco" \
+  -d "billing_details[address][state]"=CA \
+  -d "billing_details[address][postal_code]"=94111 \
+  -d "billing_details[address][country]"=US
+curl https://api.stripe.com/v1/payment_methods \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d type=card \
+  -d "card[number]"=4000009990000006 \
+  -d "card[exp_month]"=8 \
+  -d "card[exp_year]"=2022 \
+  -d "card[cvc]"=123 \
+  -d "billing_details[address][line1]"="1234 Main Street" \
+  -d "billing_details[address][city]"="San Francisco" \
+  -d "billing_details[address][state]"=CA \
+  -d "billing_details[address][postal_code]"=94111 \
+  -d "billing_details[address][country]"=US

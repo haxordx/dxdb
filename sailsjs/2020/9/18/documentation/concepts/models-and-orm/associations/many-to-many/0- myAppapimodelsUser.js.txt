@@ -1,0 +1,18 @@
+// myApp/api/models/User.js
+// A user may have many pets
+module.exports = {
+  attributes: {
+    firstName: {
+      type: 'string'
+    },
+    lastName: {
+      type: 'string'
+    },
+
+    // Add a reference to Pet
+    pets: {
+      collection: 'pet',
+      via: 'owners'
+    }
+  }
+};

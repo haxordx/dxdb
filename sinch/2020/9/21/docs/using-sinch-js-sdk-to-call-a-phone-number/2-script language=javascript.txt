@@ -1,0 +1,43 @@
+<script language="javascript">
+$("#call").hide(); //hide the call ui
+//1. Set up sinchClient
+var sinchClient = new SinchClient({
+    applicationKey: '<your application key>',
+    capabilities: { calling: true },
+    },
+});
+//2. Create user and start sinch for that user
+$('button#createUser').on('click', function (event) {
+    event.preventDefault();
+    clearError();
+    $('button#loginUser').attr('disabled', true);
+    $('button#createUser').attr('disabled', true);
+    var signUpObj = {};
+    signUpObj.username = $('input#username').val();
+    signUpObj.password = $('input#password').val();
+    //Use Sinch SDK to create a new user
+    sinchClient.newUser(signUpObj, function (ticket) {
+        //On success, start the client
+        sinchClient.start(ticket, function () {
+            global_username = signUpObj.username;
+            //On success, show the UI
+        })
+    })
+});
+//3. Login user and and start client
+$('button#loginUser').on('click', function (event) {
+    event.preventDefault();
+    clearError();
+    $('button#loginUser').attr('disabled', true);
+    $('button#createUser').attr('disabled', true);
+    var signInObj = {};
+    signInObj.username = $('input#username').val();
+    signInObj.password = $('input#password').val();
+
+    //Use Sinch SDK to authenticate a user
+    sinchClient.start(signInObj, function () {
+        global_username = signInObj.username;
+        //On success, show the UI
+    })
+});
+</script>

@@ -1,0 +1,9 @@
+- (void)callDidEstablish:(id<SINCall>)call {
+  id<SINAudioController> audioController = [self.sinchClient audioController];
+  [[self audioController] stopPlayingSoundFile];
+}
+
+- (void)callDidEnd:(id<SINCall>)call {
+  id<SINAudioController> audioController = [self.sinchClient audioController];
+  [[self audioController] stopPlayingSoundFile];
+}

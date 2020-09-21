@@ -1,0 +1,2 @@
+res.status(418);
+res.send('I am a teapot');

@@ -1,0 +1,37 @@
+paymentRequest.on('shippingaddresschange', function(ev) {
+  if (ev.shippingAddress.country !== 'US') {
+    ev.updateWith({status: 'invalid_shipping_address'});
+  } else {
+    // Perform server-side request to fetch shipping options
+    fetch('/calculateShipping', {
+      data: JSON.stringify({
+        shippingAddress: ev.shippingAddress
+      })
+    }).then(function(response) {
+      return response.json();
+    }).then(function(result) {
+      ev.updateWith({
+        status: 'success',
+        shippingOptions: result.supportedShippingOptions,
+      });
+    });
+  }
+});paymentRequest.on('shippingaddresschange', function(ev) {
+  if (ev.shippingAddress.country !== 'US') {
+    ev.updateWith({status: 'invalid_shipping_address'});
+  } else {
+    // Perform server-side request to fetch shipping options
+    fetch('/calculateShipping', {
+      data: JSON.stringify({
+        shippingAddress: ev.shippingAddress
+      })
+    }).then(function(response) {
+      return response.json();
+    }).then(function(result) {
+      ev.updateWith({
+        status: 'success',
+        shippingOptions: result.supportedShippingOptions,
+      });
+    });
+  }
+});

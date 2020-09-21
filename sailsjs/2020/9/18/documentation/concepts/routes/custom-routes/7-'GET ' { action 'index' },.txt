@@ -1,0 +1,6 @@
+'GET /': { action: 'index' },   // Use the action in api/controllers/index.js
+
+'GET /foo/go': { action: 'foo/go-action' } // Use the action in api/controllers/foo/go-action.js OR
+                                           // the "go-action" action in api/controllers/FooController.js
+
+'GET /bar/go': 'foo/go-action' // Binds to the same action as above, using shorthand notation

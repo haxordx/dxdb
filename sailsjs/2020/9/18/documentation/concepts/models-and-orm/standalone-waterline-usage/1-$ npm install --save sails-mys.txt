@@ -1,0 +1,2 @@
+$ npm install --save sails-mysql
+$ npm install --save-dev sails-disk

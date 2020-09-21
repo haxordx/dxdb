@@ -1,0 +1,8 @@
+var NAMES_OF_PETS_SQL = `
+SELECT ${Pet.tableName}.${Pet.schema.name.columnName}
+FROM ${Pet.tableName}
+WHERE
+  ${Pet.tableName}.${Pet.schema.speciesLabel.columnName} = $1
+  OR
+  ${Pet.tableName}.${Pet.schema.speciesLabel.columnName} = $2
+`;

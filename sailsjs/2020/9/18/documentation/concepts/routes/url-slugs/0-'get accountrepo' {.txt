@@ -1,0 +1,5 @@
+'get /:account/:repo': {
+  controller: 'RepoController',
+  action: 'show',
+  skipAssets: true
+}

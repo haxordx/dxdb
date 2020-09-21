@@ -1,0 +1,5 @@
+res.type('.html');
+res.type('html');
+res.type('json');
+res.type('application/json');
+res.type('png');

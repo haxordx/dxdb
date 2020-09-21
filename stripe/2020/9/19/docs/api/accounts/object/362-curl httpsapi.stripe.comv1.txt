@@ -1,0 +1,6 @@
+curl https://api.stripe.com/v1/accounts/acct_1032D82eZvKYlo2C \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc:
+
+# Or, to retrieve details of your account:
+$ curl https://api.stripe.com/v1/account \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc:

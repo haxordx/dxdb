@@ -1,0 +1,42 @@
+{
+  "id": "5CY176817C379973E",
+  "create_time": "2018-08-15T17:11:32Z",
+  "update_time": "2018-08-15T17:11:32Z",
+  "state": "COMPLETED",
+  "amount": {
+    "total": "2.34",
+    "currency": "USD"
+  },
+  "refund_from_transaction_fee": {
+    "currency": "USD",
+    "value": "0.06"
+  },
+  "total_refunded_amount": {
+    "currency": "USD",
+    "value": "2.34"
+  },
+  "refund_from_received_amount": {
+    "currency": "USD",
+    "value": "2.28"
+  },
+  "sale_id": " 2MU78835H4515710F ",
+  "parent_payment": "PAY-9EH2230144138005NLN2F4EA",
+  "invoice_number": "INV-1234567",
+  "links": [
+    {
+      "href": "https://sandbox.paypal.com/v1/payments/refund/5CY176817C379973E",
+      "rel": "self",
+      "method": "GET"
+    },
+    {
+      "href": "https://sandbox.paypal.com/v1/payments/payment/PAY-9EH2230144138005NLN2F4EA",
+      "rel": "parent_payment",
+      "method": "GET"
+    },
+    {
+      "href": "https://sandbox.paypal.com/v1/payments/sale/ 2MU78835H4515710F",
+      "rel": "sale",
+      "method": "GET"
+    }
+  ]
+}copy

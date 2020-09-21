@@ -1,0 +1,5 @@
+# Token obtained when creating the agreement (following redirect)
+token = "EC-8GY76409P74839940"
+
+billing_agreement_response = BillingAgreement.execute(token)
+print("BillingAgreement[%s] executed successfully" % (billing_agreement_response.id))copy

@@ -1,0 +1,15 @@
+var svamlResponse = {
+  instructions: [
+    {
+      name: "Say",
+      text: "Welcome to the hotline",
+      locale: "en-US",
+    },
+  ],
+  action: {
+    name: "ConnectConf",
+    conferenceId: "myconference1",
+    cli: "",
+    suppressCallbacks: true,
+  },
+};

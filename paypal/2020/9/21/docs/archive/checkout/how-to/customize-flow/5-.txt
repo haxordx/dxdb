@@ -1,0 +1,45 @@
+
+paypal.Button.render({
+  env: 'sandbox', // sandbox | production
+    client: {
+      sandbox:    'xxxxxxxxxx',
+      production: 'xxxxxxxxxx'
+    },
+
+  // Show the buyer a 'Pay Now' button in the checkout flow
+  commit: true,
+
+  // payment() is called when the button is clicked
+  payment: function(data, actions) {
+    // Make a call to the REST API to set up the payment
+    return actions.payment.create({
+      payment: {
+        transactions: [
+          {
+            amount: { total: '0.01', currency: 'USD' }        
+          }
+        ],
+        redirect_urls: {
+          return_url: 'https://example.com',
+          cancel_url: 'https://example.com'
+        }
+      }
+    });
+  },
+
+  // onAuthorize() is called when the buyer approves the payment
+  onAuthorize: function(data, actions) {
+
+    // Make a call to the REST API to execute the payment
+    return actions.payment.execute().then(function() {
+      actions.redirect();
+      }
+    );
+  },
+
+  onCancel: function(data, actions) {
+    actions.redirect();
+    }
+
+}, '#paypal-button-container');
+javascriptcopy

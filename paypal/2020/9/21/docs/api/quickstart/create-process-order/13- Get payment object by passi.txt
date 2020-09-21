@@ -1,0 +1,21 @@
+// Get payment object by passing paymentId
+$paymentId = $_GET['paymentId'];
+$payment = Payment::get($paymentId, $apiContext);
+
+// Execute payment with payer id
+$execution = new PaymentExecution();
+$execution->setPayerId($_GET['PayerID']);
+
+try {
+  // Execute payment
+  $result = $payment->execute($execution, $apiContext);
+
+  // Extract order
+  $order = $payment->transactions[0]->related_resources[0]->order;
+} catch (PayPal\Exception\PayPalConnectionException $ex) {
+  echo $ex->getCode();
+  echo $ex->getData();
+  die($ex);
+} catch (Exception $ex) {
+  die($ex);
+}copy

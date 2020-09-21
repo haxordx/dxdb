@@ -1,0 +1,138 @@
+{
+  "object": "list",
+  "url": "/v1/files",
+  "has_more": false,
+  "data": [
+    {
+      "id": "file_1FvSUR2eZvKYlo2C8zHSKeSA",
+      "object": "file",
+      "created": 1577728635,
+      "expires_at": null,
+      "filename": "blob",
+      "links": {
+        "object": "list",
+        "data": [
+          {
+            "id": "link_1HTFv02eZvKYlo2CaZ2nSNWh",
+            "object": "file_link",
+            "created": 1600559798,
+            "expired": false,
+            "expires_at": null,
+            "file": "file_1FvSUR2eZvKYlo2C8zHSKeSA",
+            "livemode": false,
+            "metadata": {},
+            "url": "https://files.stripe.com/links/fl_test_wHq6gBOPlr3vSZotrtVjHIHb"
+          },
+          {
+            "id": "link_1HTFuw2eZvKYlo2Cfyf8N0kU",
+            "object": "file_link",
+            "created": 1600559794,
+            "expired": false,
+            "expires_at": null,
+            "file": "file_1FvSUR2eZvKYlo2C8zHSKeSA",
+            "livemode": false,
+            "metadata": {},
+            "url": "https://files.stripe.com/links/fl_test_OTXVuxxewPUqUdrDhHURHutZ"
+          },
+          {
+            "id": "link_1HTFus2eZvKYlo2CxIOPmVV2",
+            "object": "file_link",
+            "created": 1600559790,
+            "expired": false,
+            "expires_at": null,
+            "file": "file_1FvSUR2eZvKYlo2C8zHSKeSA",
+            "livemode": false,
+            "metadata": {},
+            "url": "https://files.stripe.com/links/fl_test_ELtH7PvROnRMkRn1kA3ONMhu"
+          },
+          {
+            "id": "link_1HTFup2eZvKYlo2CPUrY88aP",
+            "object": "file_link",
+            "created": 1600559787,
+            "expired": false,
+            "expires_at": null,
+            "file": "file_1FvSUR2eZvKYlo2C8zHSKeSA",
+            "livemode": false,
+            "metadata": {},
+            "url": "https://files.stripe.com/links/fl_test_mIswgsauV5hX1shPLbw655Lz"
+          },
+          {
+            "id": "link_1HTFuo2eZvKYlo2CEglSrBOW",
+            "object": "file_link",
+            "created": 1600559786,
+            "expired": false,
+            "expires_at": null,
+            "file": "file_1FvSUR2eZvKYlo2C8zHSKeSA",
+            "livemode": false,
+            "metadata": {},
+            "url": "https://files.stripe.com/links/fl_test_6v7OJV7V8v3QXxFmMoWd1K2k"
+          },
+          {
+            "id": "link_1HTFuj2eZvKYlo2CWereTm3k",
+            "object": "file_link",
+            "created": 1600559781,
+            "expired": false,
+            "expires_at": null,
+            "file": "file_1FvSUR2eZvKYlo2C8zHSKeSA",
+            "livemode": false,
+            "metadata": {},
+            "url": "https://files.stripe.com/links/fl_test_j2hszHrW9uApBvo328cY92qe"
+          },
+          {
+            "id": "link_1HTFuc2eZvKYlo2CS0ooOdZO",
+            "object": "file_link",
+            "created": 1600559774,
+            "expired": false,
+            "expires_at": null,
+            "file": "file_1FvSUR2eZvKYlo2C8zHSKeSA",
+            "livemode": false,
+            "metadata": {},
+            "url": "https://files.stripe.com/links/fl_test_z5MTADoh1Kzm9x3D0GuSVxSp"
+          },
+          {
+            "id": "link_1HTFuY2eZvKYlo2Cw7odoGUE",
+            "object": "file_link",
+            "created": 1600559770,
+            "expired": false,
+            "expires_at": null,
+            "file": "file_1FvSUR2eZvKYlo2C8zHSKeSA",
+            "livemode": false,
+            "metadata": {},
+            "url": "https://files.stripe.com/links/fl_test_aVMK40jlsaY7CTNq6htYsSAy"
+          },
+          {
+            "id": "link_1HTFuV2eZvKYlo2C3DsEeWwA",
+            "object": "file_link",
+            "created": 1600559767,
+            "expired": false,
+            "expires_at": null,
+            "file": "file_1FvSUR2eZvKYlo2C8zHSKeSA",
+            "livemode": false,
+            "metadata": {},
+            "url": "https://files.stripe.com/links/fl_test_OXw67nHgcKbGQu5zy3p41tgC"
+          },
+          {
+            "id": "link_1HTFuR2eZvKYlo2C2qf0FXVf",
+            "object": "file_link",
+            "created": 1600559763,
+            "expired": false,
+            "expires_at": null,
+            "file": "file_1FvSUR2eZvKYlo2C8zHSKeSA",
+            "livemode": false,
+            "metadata": {},
+            "url": "https://files.stripe.com/links/fl_test_1272r2IheulLeOxWra9bXCmH"
+          }
+        ],
+        "has_more": true,
+        "url": "/v1/file_links?file=file_1FvSUR2eZvKYlo2C8zHSKeSA"
+      },
+      "purpose": "business_logo",
+      "size": 64970,
+      "title": null,
+      "type": "jpg",
+      "url": "https://files.stripe.com/v1/files/file_1FvSUR2eZvKYlo2C8zHSKeSA/contents"
+    },
+    {...},
+    {...}
+  ]
+}

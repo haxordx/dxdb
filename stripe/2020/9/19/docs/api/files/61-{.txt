@@ -1,0 +1,130 @@
+{
+  "id": "file_1FvSUR2eZvKYlo2C8zHSKeSA",
+  "object": "file",
+  "created": 1577728635,
+  "expires_at": null,
+  "filename": "blob",
+  "links": {
+    "object": "list",
+    "data": [
+      {
+        "id": "link_1HTFxV2eZvKYlo2CcNqcjThy",
+        "object": "file_link",
+        "created": 1600559953,
+        "expired": false,
+        "expires_at": null,
+        "file": "file_1FvSUR2eZvKYlo2C8zHSKeSA",
+        "livemode": false,
+        "metadata": {},
+        "url": "https://files.stripe.com/links/fl_test_eWKixN4YWzw2FShHip0ObPJI"
+      },
+      {
+        "id": "link_1HTFxU2eZvKYlo2CoHU1p8ky",
+        "object": "file_link",
+        "created": 1600559952,
+        "expired": false,
+        "expires_at": null,
+        "file": "file_1FvSUR2eZvKYlo2C8zHSKeSA",
+        "livemode": false,
+        "metadata": {},
+        "url": "https://files.stripe.com/links/fl_test_S8O6C0SwuzitDMUx3zEN6csd"
+      },
+      {
+        "id": "link_1HTFxQ2eZvKYlo2CvHX0MrJ1",
+        "object": "file_link",
+        "created": 1600559948,
+        "expired": false,
+        "expires_at": null,
+        "file": "file_1FvSUR2eZvKYlo2C8zHSKeSA",
+        "livemode": false,
+        "metadata": {},
+        "url": "https://files.stripe.com/links/fl_test_QdKuxuASFUhYUvhJmxyOFz6h"
+      },
+      {
+        "id": "link_1HTFxN2eZvKYlo2CTstnlsiW",
+        "object": "file_link",
+        "created": 1600559945,
+        "expired": false,
+        "expires_at": null,
+        "file": "file_1FvSUR2eZvKYlo2C8zHSKeSA",
+        "livemode": false,
+        "metadata": {},
+        "url": "https://files.stripe.com/links/fl_test_kyTerhB2oaQ6IMGgicxdP2oY"
+      },
+      {
+        "id": "link_1HTFxL2eZvKYlo2CGd1IUtir",
+        "object": "file_link",
+        "created": 1600559943,
+        "expired": false,
+        "expires_at": null,
+        "file": "file_1FvSUR2eZvKYlo2C8zHSKeSA",
+        "livemode": false,
+        "metadata": {},
+        "url": "https://files.stripe.com/links/fl_test_7NdncQzuXUPK6TsDtoT0R0V7"
+      },
+      {
+        "id": "link_1HTFxL2eZvKYlo2C6NkMsJZN",
+        "object": "file_link",
+        "created": 1600559943,
+        "expired": false,
+        "expires_at": null,
+        "file": "file_1FvSUR2eZvKYlo2C8zHSKeSA",
+        "livemode": false,
+        "metadata": {},
+        "url": "https://files.stripe.com/links/fl_test_SIKlqfOheTwD7ZLPdTwjD2n0"
+      },
+      {
+        "id": "link_1HTFxJ2eZvKYlo2CtXrXEcyk",
+        "object": "file_link",
+        "created": 1600559941,
+        "expired": false,
+        "expires_at": null,
+        "file": "file_1FvSUR2eZvKYlo2C8zHSKeSA",
+        "livemode": false,
+        "metadata": {},
+        "url": "https://files.stripe.com/links/fl_test_do8nTNEfzHe6NurFxUPB9uz1"
+      },
+      {
+        "id": "link_1HTFxF2eZvKYlo2C8anKfFhC",
+        "object": "file_link",
+        "created": 1600559937,
+        "expired": false,
+        "expires_at": null,
+        "file": "file_1FvSUR2eZvKYlo2C8zHSKeSA",
+        "livemode": false,
+        "metadata": {},
+        "url": "https://files.stripe.com/links/fl_test_1yBi4kHRUME2bHemra4zTw6O"
+      },
+      {
+        "id": "link_1HTFxB2eZvKYlo2CrL20bLiK",
+        "object": "file_link",
+        "created": 1600559933,
+        "expired": false,
+        "expires_at": null,
+        "file": "file_1FvSUR2eZvKYlo2C8zHSKeSA",
+        "livemode": false,
+        "metadata": {},
+        "url": "https://files.stripe.com/links/fl_test_uNDQKBd2WFBV2fFdJfgcZsqC"
+      },
+      {
+        "id": "link_1HTFx72eZvKYlo2CVNSCeLsl",
+        "object": "file_link",
+        "created": 1600559929,
+        "expired": false,
+        "expires_at": null,
+        "file": "file_1FvSUR2eZvKYlo2C8zHSKeSA",
+        "livemode": false,
+        "metadata": {},
+        "url": "https://files.stripe.com/links/fl_test_CFoVxcmiG8eMj9rbCo5wKiFp"
+      }
+    ],
+    "has_more": true,
+    "url": "/v1/file_links?file=file_1FvSUR2eZvKYlo2C8zHSKeSA"
+  },
+  "purpose": "dispute_evidence",
+  "size": 64970,
+  "title": null,
+  "type": "jpg",
+  "url": "https://files.stripe.com/v1/files/file_1FvSUR2eZvKYlo2C8zHSKeSA/contents",
+  "file": "{a file descriptor}"
+}

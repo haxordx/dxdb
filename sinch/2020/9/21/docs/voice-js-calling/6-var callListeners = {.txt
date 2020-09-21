@@ -1,0 +1,17 @@
+var callListeners = {
+  onCallProgressing: function (call) {
+    $('audio#ringback').prop('currentTime', 0); //Ensure ringback start from beginning
+    $('audio#ringback').trigger('play'); //Play ringback when call is progressing
+  },
+  onCallEstablished: function (call) {
+    $('audio#ringback').trigger('pause'); //End ringback
+
+    $('audio#incoming').attr('src', call.incomingStreamURL); //Connect incoming stream to audio element
+  },
+  onCallEnded: function (call) {
+    $('audio#ringback').trigger('pause'); //End the ringback
+    $('audio#incoming').attr('src', ''); //Ensure no incoming stream is playing
+
+    //Optional: Enable user interface to make another call
+  },
+};

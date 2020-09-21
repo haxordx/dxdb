@@ -1,0 +1,12 @@
+curl -v -X POST https://api.sandbox.paypal.com/v2/payments/captures/2GG279541U471931P/refund \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer Access-Token" \
+-H "PayPal-Request-Id: 123e4567-e89b-12d3-a456-426655440020" \
+-H "PayPal-Auth-Assertion: eyJhbGciOiJub25lIn0.eyJpc3MiOiJjbGllbnRfaWQiLCJlbWFpbCI6Im15LWVtYWlsQGV4YW1wbGUuY29tIn0." \
+-d '{
+  "amount": {
+    "value": "10.99",
+    "currency_code": "USD"
+  }
+}'
+bashcopy

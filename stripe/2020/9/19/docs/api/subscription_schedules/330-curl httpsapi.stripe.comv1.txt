@@ -1,0 +1,8 @@
+curl https://api.stripe.com/v1/subscription_schedules \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d customer=cus_I3HcwHEKBfQLG1 \
+  -d start_date=1601165561 \
+  -d end_behavior=release \
+  -d "phases[0][items][0][price]"=plan_DGenmbl4GbrTTa \
+  -d "phases[0][items][0][quantity]"=1 \
+  -d "phases[0][iterations]"=12

@@ -1,0 +1,17 @@
+{
+  "id": "XP-RFV4-PVD8-AGHJ-8E5J",
+  "name": "exampleProfile",
+  "temporary": false,
+  "presentation": {
+    "logo_image": "https://example.com/logo_image/"
+  },
+  "input_fields": {
+    "no_shipping": 1,
+    "address_override": 1
+  },
+  "flow_config": {
+    "landing_page_type": "billing",
+    "bank_txn_pending_url": "https://example.com/flow_config/",
+    "user_action": "commit"
+  }
+}copy

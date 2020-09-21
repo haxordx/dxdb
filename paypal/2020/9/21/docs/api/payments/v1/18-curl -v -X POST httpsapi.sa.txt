@@ -1,0 +1,9 @@
+curl -v -X POST https://api.sandbox.paypal.com/v1/payments/authorization/2DC87612EK520411B/reauthorize \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer Access-Token" \
+-d '{
+  "amount": {
+    "total": "7.00",
+    "currency": "USD"
+  }
+}'copy

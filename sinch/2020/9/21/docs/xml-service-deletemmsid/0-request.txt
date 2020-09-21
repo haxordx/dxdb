@@ -1,0 +1,5 @@
+<request>
+    <action>deleteMMSID</action>
+    <api-key>qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ</api-key>
+    <mms-id>35674</mms-id>
+</request>

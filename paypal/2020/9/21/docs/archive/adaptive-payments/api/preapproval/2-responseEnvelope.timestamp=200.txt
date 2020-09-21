@@ -1,0 +1,6 @@
+responseEnvelope.timestamp=2009-08-14T09%3A00%3A37.748-07%3A00
+&responseEnvelope.ack=Success
+&responseEnvelope.correlationId=7967b2d03745a
+&responseEnvelope.build=DEV
+&preapprovalKey=PA-9JR04288NR0519129
+copy

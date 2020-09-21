@@ -1,0 +1,37 @@
+// Initialize Stripe.js with the same connected account ID used when creating
+// the Checkout Session.
+const stripe = Stripe('pk_test_TYooMQauvdEDq54NiTphI7jx', {
+  stripeAccount: '{{CONNECTED_STRIPE_ACCOUNT_ID}}'
+});
+
+const checkoutButton = document.getElementById('checkout-button');
+
+checkoutButton.addEventListener('click', () => {
+  stripe.redirectToCheckout({
+    // Make the id field from the Checkout Session creation API response
+    // available to this file, so you can provide it as argument here
+    // instead of the {{CHECKOUT_SESSION_ID}} placeholder.
+    sessionId: '{{CHECKOUT_SESSION_ID}}'
+  })
+  // If `redirectToCheckout` fails due to a browser or network
+  // error, display the localized error message to your customer
+  // using `error.message`.
+});// Initialize Stripe.js with the same connected account ID used when creating
+// the Checkout Session.
+const stripe = Stripe('pk_test_TYooMQauvdEDq54NiTphI7jx', {
+  stripeAccount: '{{CONNECTED_STRIPE_ACCOUNT_ID}}'
+});
+
+const checkoutButton = document.getElementById('checkout-button');
+
+checkoutButton.addEventListener('click', () => {
+  stripe.redirectToCheckout({
+    // Make the id field from the Checkout Session creation API response
+    // available to this file, so you can provide it as argument here
+    // instead of the {{CHECKOUT_SESSION_ID}} placeholder.
+    sessionId: '{{CHECKOUT_SESSION_ID}}'
+  })
+  // If `redirectToCheckout` fails due to a browser or network
+  // error, display the localized error message to your customer
+  // using `error.message`.
+});

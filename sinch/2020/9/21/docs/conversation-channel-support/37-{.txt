@@ -1,0 +1,21 @@
+{
+  "message": {
+    "choice_message": {
+      "text_message": {
+        "text": "What do you want to do?"
+      },
+      "choices": [
+        {
+          "location_message": {
+            "title": "Location Choice Message",
+            "label": "Enriching Engagement",
+            "coordinates": {
+              "latitude": 55.610479,
+              "longitude": 13.002873
+            }
+          }
+        }
+      ]
+    }
+  }
+}

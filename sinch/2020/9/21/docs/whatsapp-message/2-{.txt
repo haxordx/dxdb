@@ -1,0 +1,19 @@
+{
+    "to": [
+        "46732001122"
+    ],
+    "message": {
+        "type": "template",
+        "template_name": "demo_rich_text",
+        "language": "en",
+        "header_params": [
+              "Nick"
+            ],
+        "body_params": [
+          "Swan Lake"
+        ],
+        "media": {
+            "type": "text"
+        }
+    }
+}

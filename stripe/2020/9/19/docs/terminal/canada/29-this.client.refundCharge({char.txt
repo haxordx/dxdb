@@ -1,0 +1,65 @@
+this.client.refundCharge({chargeId: "ch_1FLyVV2eZvKYlo2C9Z8rmX02"}).then(
+  function(refundChargeResult) {
+    return refundChargeResult;
+  },
+  function(refundChargeError) {
+    if (refundChargeError === "invalid_request_error") {
+      return this.terminal.collectRefundPaymentMethod(
+        "ch_1FLyVV2eZvKYlo2C9Z8rmX02",
+        2000,
+        "cad"
+      ).then(
+        function(collectRefundPaymentMethodResult) {
+          if (collectRefundPaymentMethodResult.error) {
+            // Placeholder for handling collectRefundPaymentMethodResult.error
+          } else {
+            return this.terminal.processRefund();
+          }
+        }
+      ).then(
+        function(processRefundResult) {
+          if (processRefundResult.error) {
+            // Placeholder for handling processRefundResult.error
+          } else {
+            console.log("Charge fully refunded!");
+            return processRefundResult;
+          }
+        }
+      )
+    } else {
+      // Placeholder for handling other refundChargeError messages
+    }
+  }
+);this.client.refundCharge({chargeId: "ch_1FLyVV2eZvKYlo2C9Z8rmX02"}).then(
+  function(refundChargeResult) {
+    return refundChargeResult;
+  },
+  function(refundChargeError) {
+    if (refundChargeError === "invalid_request_error") {
+      return this.terminal.collectRefundPaymentMethod(
+        "ch_1FLyVV2eZvKYlo2C9Z8rmX02",
+        2000,
+        "cad"
+      ).then(
+        function(collectRefundPaymentMethodResult) {
+          if (collectRefundPaymentMethodResult.error) {
+            // Placeholder for handling collectRefundPaymentMethodResult.error
+          } else {
+            return this.terminal.processRefund();
+          }
+        }
+      ).then(
+        function(processRefundResult) {
+          if (processRefundResult.error) {
+            // Placeholder for handling processRefundResult.error
+          } else {
+            console.log("Charge fully refunded!");
+            return processRefundResult;
+          }
+        }
+      )
+    } else {
+      // Placeholder for handling other refundChargeError messages
+    }
+  }
+);

@@ -1,0 +1,8 @@
+[self.transactionContext setOfflineTransactionAdditionHandler:^(PPRetailError *error, PPRetailTransactionRecord *txnRecord) {
+    // if error, handle accordingly, else pop back to view controller and handle success
+
+    [self.navigationController popToViewController:self animated:YES];
+
+    // txnRecord would have any info needed to record the successful offline saved transaction
+}];
+copy

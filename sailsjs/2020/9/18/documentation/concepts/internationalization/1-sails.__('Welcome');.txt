@@ -1,0 +1,5 @@
+sails.__('Welcome');
+// => 'Bienvenido'
+
+sails.__('Welcome, %s', 'Mary');
+// => 'Bienvenido, Mary'

@@ -1,0 +1,24 @@
+stripe.confirmCardPayment(
+  '{{PAYMENT_INTENT_CLIENT_SECRET}}',
+  {
+    payment_method: {card: cardElement},
+    return_url: 'https://example.com/return_url'
+  },
+  // Disable the default next action handling.
+  {handleActions: false}
+).then(function(result) {
+  // Handle result.error or result.paymentIntent
+  // More details in Step 2.
+});
+stripe.confirmCardPayment(
+  '{{PAYMENT_INTENT_CLIENT_SECRET}}',
+  {
+    payment_method: {card: cardElement},
+    return_url: 'https://example.com/return_url'
+  },
+  // Disable the default next action handling.
+  {handleActions: false}
+).then(function(result) {
+  // Handle result.error or result.paymentIntent
+  // More details in Step 2.
+});

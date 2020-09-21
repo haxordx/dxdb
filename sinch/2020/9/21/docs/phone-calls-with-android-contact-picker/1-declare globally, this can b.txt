@@ -1,0 +1,11 @@
+//declare globally, this can be any int
+public final int PICK_CONTACT = 2015;
+
+//onCreate
+(findViewById(R.id.button)).setOnClickListener( new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        Intent i = new Intent(Intent.ACTION_PICK, ContactsContract.CommonDataKinds.Phone.CONTENT_URI);
+        startActivityForResult(i, PICK_CONTACT);
+    }
+});

@@ -1,0 +1,13 @@
+<postback>
+    <origin>MMS_MT</origin>
+    <code>N501</code>
+    <sent-as>MMS</sent-as>
+    <status>Message Sent</status>
+    <mms-id>39755</mms-id>
+    <from>28444</from>
+    <to>12399471613</to>
+    <tracking-id>TU1TXzU5Nzg3Nw==</tracking-id>
+    <operator-id>31004</operator-id>
+    <timestamp>2014-06-07T07:27:34-05:00</timestamp>
+    <status-details></status-details>
+</postback>

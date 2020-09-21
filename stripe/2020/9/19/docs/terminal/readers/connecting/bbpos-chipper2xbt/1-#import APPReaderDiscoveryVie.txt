@@ -1,0 +1,76 @@
+#import "APPReaderDiscoveryViewController.h"
+#import <StripeTerminal/StripeTerminal.h>
+
+@interface APPReaderDiscoveryViewController () <SCPDiscoveryDelegate>
+
+@property (nonatomic, nullable, strong) SCPCancelable *discoverCancelable;
+
+// ...
+
+@end
+
+@implementation APPReaderDiscoveryViewController
+
+// Action for a "Discover Readers" button
+- (void)discoverReadersAction {
+    SCPDiscoveryConfiguration *config = [[SCPDiscoveryConfiguration alloc] initWithDiscoveryMethod:SCPDiscoveryMethodBluetoothScan
+                                                                                         simulated:NO];
+    self.discoverCancelable = [[SCPTerminal shared] discoverReaders:config
+                                                           delegate:self
+                                                         completion:^(NSError *error) {
+        if (error != nil) {
+            NSLog(@"discoverReaders failed: %@", error);
+        } else {
+            NSLog(@"discoverReaders succeeded");
+        }
+    }];
+}
+
+// ...
+
+#pragma mark - SCPDiscoveryDelegate
+
+- (void)terminal:(SCPTerminal *)terminal didUpdateDiscoveredReaders:(NSArray<SCPReader *> *)readers {
+    // In your app, display the discovered reader(s) to the user.
+    // Call `connectReader` after the user selects a reader to connect to.
+}
+
+@end
+#import "APPReaderDiscoveryViewController.h"
+#import <StripeTerminal/StripeTerminal.h>
+
+@interface APPReaderDiscoveryViewController () <SCPDiscoveryDelegate>
+
+@property (nonatomic, nullable, strong) SCPCancelable *discoverCancelable;
+
+// ...
+
+@end
+
+@implementation APPReaderDiscoveryViewController
+
+// Action for a "Discover Readers" button
+- (void)discoverReadersAction {
+    SCPDiscoveryConfiguration *config = [[SCPDiscoveryConfiguration alloc] initWithDiscoveryMethod:SCPDiscoveryMethodBluetoothScan
+                                                                                         simulated:NO];
+    self.discoverCancelable = [[SCPTerminal shared] discoverReaders:config
+                                                           delegate:self
+                                                         completion:^(NSError *error) {
+        if (error != nil) {
+            NSLog(@"discoverReaders failed: %@", error);
+        } else {
+            NSLog(@"discoverReaders succeeded");
+        }
+    }];
+}
+
+// ...
+
+#pragma mark - SCPDiscoveryDelegate
+
+- (void)terminal:(SCPTerminal *)terminal didUpdateDiscoveredReaders:(NSArray<SCPReader *> *)readers {
+    // In your app, display the discovered reader(s) to the user.
+    // Call `connectReader` after the user selects a reader to connect to.
+}
+
+@end

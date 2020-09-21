@@ -1,0 +1,7 @@
+var users = await User.find({ name: 'Finn'})
+.sort([
+  { age: 'ASC' },
+  { createdAt: 'ASC' },
+]);
+
+return res.json(users);

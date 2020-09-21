@@ -1,0 +1,47 @@
+//you'll attach an instance of this listener to individual calls
+private class SinchCallListener implements CallListener {
+    //when the call ends for any reason
+    @Override
+    public void onCallEnded(Call call) {
+        //no current call
+        currentCall = null;
+        hangupButton.setText("No call to hang up right now...");
+        pickupButton.setText("No call to pick up right now...");
+        //volume buttons go back to controlling ringtone volume
+        setVolumeControlStream(AudioManager.USE_DEFAULT_STREAM_TYPE);
+    }
+
+    //recipient picks up the call
+    @Override
+    public void onCallEstablished(Call call) {
+        hangupButton.setText("Hang up call with " + call.getRemoteUserId());
+        pickupButton.setText("No call to pick up right now...");
+        //ringtone volume buttons now control the speaker volume
+        setVolumeControlStream(AudioManager.STREAM_VOICE_CALL);
+    }
+
+    //when call is "ringing"
+    @Override
+    public void onCallProgressing(Call call) {
+        hangupButton.setText("Ringing");
+    }
+
+    //don't worry about this for now
+    @Override
+    public void onShouldSendPushNotification(Call call, List<PushPair> pushPairs) {}
+}
+
+//you'll attach an instance of this to the Sinch client
+private class SinchCallClientListener implements CallClientListener {
+    //when there is an incoming call
+    @Override
+    public void onIncomingCall(CallClient callClient, Call incomingCall) {
+        //only react if there is no current call
+        if (currentCall == null) {
+            currentCall = incomingCall;
+            currentCall.addCallListener(new SinchCallListener());
+            pickupButton.setText("Pick up call from " + incomingCall.getRemoteUserId());
+            hangupButton.setText("Ignore call from " + incomingCall.getRemoteUserId());
+        }
+    }
+}

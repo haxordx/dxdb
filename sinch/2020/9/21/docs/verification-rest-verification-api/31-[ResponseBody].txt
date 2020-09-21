@@ -1,0 +1,10 @@
+[ResponseBody]
+    VerificationResult
+
+[VerificationResult]
+    string - id
+    string - method
+    string - status
+    string? - reason
+    string? - reference
+    string? - source

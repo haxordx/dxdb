@@ -1,0 +1,16 @@
+@IBAction func verifyCode(sender: AnyObject) {
+    verification?.verify(
+        code.text,
+        completion: {
+            (success:Bool, error:NSError?) -> Void in
+            if (success)
+            {
+                self.navigationController?.popToRootViewControllerAnimated(true)
+            }
+            else
+            {
+                //display some error message here
+            }
+
+        })
+    }

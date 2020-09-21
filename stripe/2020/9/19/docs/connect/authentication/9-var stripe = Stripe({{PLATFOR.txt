@@ -1,0 +1,1 @@
+var stripe = Stripe("{{PLATFORM_PUBLISHABLE_KEY }}", { stripeAccount: "{{CONNECTED_STRIPE_ACCOUNT_ID}}"});var stripe = Stripe("{{PLATFORM_PUBLISHABLE_KEY }}", { stripeAccount: "{{CONNECTED_STRIPE_ACCOUNT_ID}}"});

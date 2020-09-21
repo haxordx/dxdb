@@ -1,0 +1,24 @@
+try {
+  // Create payment
+  Plan createdPlan = plan.create(apiContext);
+  System.out.println("Created plan with id = " + createdPlan.getId());
+  System.out.println("Plan state = " + createdPlan.getState());
+
+  // Set up plan activate PATCH request
+  List<Patch> patchRequestList = new ArrayList<Patch>();
+  Map<String, String> value = new HashMap<String, String>();
+  value.put("state", "ACTIVE");
+
+  // Create update object to activate plan
+  Patch patch = new Patch();
+  patch.setPath("/");
+  patch.setValue(value);
+  patch.setOp("replace");
+  patchRequestList.add(patch);
+
+  // Activate plan
+  createdPlan.update(apiContext, patchRequestList);
+  System.out.println("Plan state = " + createdPlan.getState());
+} catch (PayPalRESTException e) {
+  System.err.println(e.getDetails());
+}copy

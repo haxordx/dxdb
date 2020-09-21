@@ -1,0 +1,21 @@
+curl https://svcs.sandbox.paypal.com/AdaptivePayments/Preapproval \
+  -s \
+  --insecure \
+  -H "X-PAYPAL-SECURITY-USERID: api_username" \
+  -H "X-PAYPAL-SECURITY-PASSWORD: api_password" \
+  -H "X-PAYPAL-SECURITY-SIGNATURE: api_signature" \
+  -H "X-PAYPAL-REQUEST-DATA-FORMAT: NV" \
+  -H "X-PAYPAL-RESPONSE-DATA-FORMAT: NV" \
+  -H "X-PAYPAL-APPLICATION-ID: app_id" \
+  -d cancelUrl=https://example.com \
+  -d currencyCode=USD \
+  -d endingDate=2009-12-13T08%3A00%3A00.000Z \
+  -d maxAmountPerPayment=200.00 \
+  -d maxNumberOfPayments=30 \
+  -d maxTotalAmountOfAllPayments=1500.00 \
+  -d pinType=NOT_REQUIRED \
+  -d requestEnvelope.errorLanguage=en_US \
+  -d returnUrl=https://example.com \
+  -d startingDate=2009-07-13T07%3A00%3A00.000Z \
+  -d senderEmail=sender@domain
+copy

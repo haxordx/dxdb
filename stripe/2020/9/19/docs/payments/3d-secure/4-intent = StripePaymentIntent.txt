@@ -1,0 +1,12 @@
+intent = Stripe::PaymentIntent.confirm(
+  '{{PAYMENT_INTENT_ID}}',
+  {
+    return_url: 'https://example.com/return_url',
+  }
+)
+intent = Stripe::PaymentIntent.confirm(
+  '{{PAYMENT_INTENT_ID}}',
+  {
+    return_url: 'https://example.com/return_url',
+  }
+)

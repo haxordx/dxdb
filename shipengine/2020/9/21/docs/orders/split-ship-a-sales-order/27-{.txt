@@ -1,0 +1,134 @@
+{
+  "has_errors": false,
+  "shipments": [
+    {
+      "sales_order_ids": [],
+      "items": [
+        {
+          "sales_order_id": "0d3c142a-7516-5f5b-8a40-b437b5e01317",
+          "sales_order_item_id": "0399c595-774a-599b-a566-27ea86fec17d",
+          "quantity": 1,
+          "name": "",
+          "sku": null,
+          "created_at": "2019-07-25T15:24:46.657Z",
+          "modified_at": "2019-07-25T15:24:46.657Z"
+        }
+      ],
+      "errors": [],
+      "address_validation": {
+        "status": "verified",
+        "original_address": {
+          "name": "Amanda Miller",
+          "phone": "555-555-5555",
+          "address_line1": "525 S Winchester Blvd",
+          "city_locality": "San Jose",
+          "state_province": "CA",
+          "postal_code": "95128",
+          "country_code": "US",
+          "address_residential_indicator": "yes"
+        },
+        "matched_address": {
+          "name": "AMANDA MILLER",
+          "phone": "555-555-5555",
+          "address_line1": "525 S WINCHESTER BLVD",
+          "city_locality": "SAN JOSE",
+          "state_province": "CA",
+          "postal_code": "95128",
+          "country_code": "US",
+          "address_residential_indicator": "yes"
+        },
+        "messages": []
+      },
+      "shipment_id": "se-201053690",
+      "carrier_id": "se-123890",
+      "service_code": "usps_priority_mail",
+      "external_shipment_id": null,
+      "ship_date": "2019-07-25T05:00:00.000Z",
+      "created_at": "2019-07-25T15:24:46.657Z",
+      "modified_at": "2019-07-25T15:24:46.657Z",
+      "shipment_status": "pending",
+      "ship_to": {
+        "name": "Amanda Miller",
+        "phone": "555-555-5555",
+        "address_line1": "525 S Winchester Blvd",
+        "city_locality": "San Jose",
+        "state_province": "CA",
+        "postal_code": "95128",
+        "country_code": "US",
+        "address_residential_indicator": "yes"
+      },
+      "ship_from": {
+        "company_name": "Example Corp.",
+        "name": "John Doe",
+        "phone": "111-111-1111",
+        "address_line1": "4009 Marathon Blvd",
+        "address_line2": "Suite 300",
+        "city_locality": "Austin",
+        "state_province": "TX",
+        "postal_code": "78756",
+        "country_code": "US",
+        "address_residential_indicator": "no"
+      },
+      "warehouse_id": "se-241419",
+      "return_to": {
+        "name": "Example Corp. Returns",
+        "phone": "222-222-2222",
+        "company_name": "Example Corp.",
+        "address_line1": "345 Chambers Street",
+        "address_line2": "Suite 100",
+        "address_line3": null,
+        "city_locality": "New York City",
+        "state_province": "NY",
+        "postal_code": "10282",
+        "country_code": "US",
+        "address_residential_indicator": "unknown"
+      },
+      "confirmation": "none",
+      "customs": null,
+      "advanced_options": {
+        "bill_to_account": null,
+        "bill_to_country_code": null,
+        "bill_to_party": null,
+        "bill_to_postal_code": null,
+        "contains_alcohol": false,
+        "delivered_duty_paid": false,
+        "non_machinable": false,
+        "saturday_delivery": false,
+        "freight_class": null,
+        "custom_field1": null,
+        "custom_field2": null,
+        "custom_field3": null
+      },
+      "insurance_provider": "none",
+      "tags": [],
+      "packages": [
+        {
+          "package_code": "package",
+          "weight": {
+            "value": 1.0,
+            "unit": "ounce"
+          },
+          "dimensions": {
+            "unit": "inch",
+            "length": 0.0,
+            "width": 0.0,
+            "height": 0.0
+          },
+          "insured_value": {
+            "currency": "usd",
+            "amount": 0.0
+          },
+          "label_messages": {
+            "reference1": null,
+            "reference2": null,
+            "reference3": null
+          }
+        }
+      ],
+      "total_weight": {
+        "value": 1.0,
+        "unit": "ounce"
+      }
+    }
+  ]
+}

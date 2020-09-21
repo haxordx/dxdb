@@ -1,0 +1,20 @@
+{
+  "id": "ch_1HTGBx2eZvKYlo2CbBIuFQ7Q",
+  "object": "charge",
+  "customer": {
+    "id": "cu_1HTB3Y2eZvKYlo2C02dXurlX",
+    "object": "customer",
+    ...
+  },
+  "invoice": {
+    "id": "in_1036Vr2eZvKYlo2CfjuUHA94",
+    "object": "invoice",
+    "subscription": {
+      "id": "su_14J6AW2eZvKYlo2CIkSZuf2X",
+      "object": "subscription",
+      ...
+    },
+    ...
+  },
+  ...
+}

@@ -1,0 +1,25 @@
+customerParams := &stripe.CustomerParams{
+    Email: stripe.String(*request.stripeEmail),
+}
+customerParams.SetSource(*request.stripeToken)
+customer, _ := customer.New(customerParams)
+
+chargeParams := &stripe.ChargeParams{
+    Customer: stripe.String(customer.Id),
+    Description: stripe.String("T-shirt"),
+    Amount: stripe.Int64(500),
+    Currency: stripe.String(string(stripe.CurrencyUSD)),
+}
+charge, _ := charge.New(chargeParams)customerParams := &stripe.CustomerParams{
+    Email: stripe.String(*request.stripeEmail),
+}
+customerParams.SetSource(*request.stripeToken)
+customer, _ := customer.New(customerParams)
+
+chargeParams := &stripe.ChargeParams{
+    Customer: stripe.String(customer.Id),
+    Description: stripe.String("T-shirt"),
+    Amount: stripe.Int64(500),
+    Currency: stripe.String(string(stripe.CurrencyUSD)),
+}
+charge, _ := charge.New(chargeParams)

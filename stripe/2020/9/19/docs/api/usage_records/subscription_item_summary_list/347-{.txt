@@ -1,0 +1,21 @@
+{
+  "object": "list",
+  "url": "/v1/subscription_items/si_DAyhPiOTjrdfTv/usage_record_summaries",
+  "has_more": false,
+  "data": [
+    {
+      "id": "sis_1DkWqo2eZvKYlo2Cs4NSCMMw",
+      "object": "usage_record_summary",
+      "invoice": "in_1DkWqo2eZvKYlo2Cghtks5xk",
+      "livemode": false,
+      "period": {
+        "end": null,
+        "start": null
+      },
+      "subscription_item": "si_18PMl42eZvKYlo2CGduFchWC",
+      "total_usage": 1
+    },
+    {...},
+    {...}
+  ]
+}

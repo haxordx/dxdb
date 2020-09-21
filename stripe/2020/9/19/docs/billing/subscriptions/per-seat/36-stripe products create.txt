@@ -1,0 +1,7 @@
+stripe products create \
+  --name="Billing Guide: Premium Service" \
+  --description="Messaging service" \
+  -d unit_label="seat"stripe products create \
+  --name="Billing Guide: Premium Service" \
+  --description="Messaging service" \
+  -d unit_label="seat"

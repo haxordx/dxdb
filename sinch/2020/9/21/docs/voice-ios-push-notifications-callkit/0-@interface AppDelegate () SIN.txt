@@ -1,0 +1,11 @@
+@interface AppDelegate () <SINManagedPushDelegate>
+@property (nonatomic, readwrite, strong) id<SINManagedPush> push;
+@end
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)options {
+
+    self.push = [Sinch managedPushWithAPSEnvironment:SINAPSEnvironmentAutomatic];
+    self.push.delegate = self;
+
+    [self.push setDesiredPushType:SINPushTypeVoIP];
+}

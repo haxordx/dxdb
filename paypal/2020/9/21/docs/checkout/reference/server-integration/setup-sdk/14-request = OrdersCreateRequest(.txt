@@ -1,0 +1,2 @@
+request = OrdersCreateRequest()
+request.headers['prefer'] = 'return=representation'copy

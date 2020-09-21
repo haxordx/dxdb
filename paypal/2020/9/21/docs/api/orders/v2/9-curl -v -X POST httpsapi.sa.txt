@@ -1,0 +1,4 @@
+curl -v -X POST https://api.sandbox.paypal.com/v2/checkout/orders/5O190127TN364715T/capture \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer Access-Token" \
+-H "PayPal-Request-Id: 7b92603e-77ed-4896-8e78-5dea2050476a"copy

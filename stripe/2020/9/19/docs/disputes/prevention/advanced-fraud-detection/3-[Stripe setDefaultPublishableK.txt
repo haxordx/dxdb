@@ -1,0 +1,4 @@
+[Stripe setDefaultPublishableKey:@"pk_test_TYooMQauvdEDq54NiTphI7jx"];
+[Stripe setAdvancedFraudSignalsEnabled: NO];
+[Stripe setDefaultPublishableKey:@"pk_test_TYooMQauvdEDq54NiTphI7jx"];
+[Stripe setAdvancedFraudSignalsEnabled: NO];

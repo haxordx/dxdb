@@ -1,0 +1,17 @@
+responseEnvelope.timestamp=2013-04-24T14%3A39%3A26.000-07%3A00
+&responseEnvelope.ack=Success
+&responseEnvelope.correlationId=34e44c0bdbed6
+&responseEnvelope.build=5710123
+&payKey=AP-54224401WG0931234
+&paymentExecStatus=COMPLETED
+&paymentInfoList.paymentInfo(0).transactionId=1F809595PU5211234
+&paymentInfoList.paymentInfo(0).transactionStatus=COMPLETED
+&paymentInfoList.paymentInfo(0).receiver.amount=100.00
+&paymentInfoList.paymentInfo(0).receiver.email=receiver@domain
+&paymentInfoList.paymentInfo(0).receiver.primary=false
+&paymentInfoList.paymentInfo(0).receiver.accountId=7X2XKABC5Z1234
+&paymentInfoList.paymentInfo(0).pendingRefund=false
+&paymentInfoList.paymentInfo(0).senderTransactionId=5VA331617X3361234
+&paymentInfoList.paymentInfo(0).senderTransactionStatus=COMPLETED
+&sender.accountId=6VJKLRUABCDEF
+copy

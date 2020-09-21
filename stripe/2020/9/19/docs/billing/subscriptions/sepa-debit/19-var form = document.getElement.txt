@@ -1,0 +1,41 @@
+var form = document.getElementById('payment-form');
+var accountholderName = document.getElementById('accountholder-name');
+var email = document.getElementById('email');
+var submitButton = document.getElementById('submit-button');
+var clientSecret = submitButton.dataset.secret;
+
+form.addEventListener('submit', function(event) {
+  event.preventDefault();
+  stripe.confirmSepaDebitSetup(
+    clientSecret,
+    {
+      payment_method: {
+        sepa_debit: iban,
+        billing_details: {
+          name: accountholderName.value,
+          email: email.value,
+        },
+      },
+    }
+  );
+});var form = document.getElementById('payment-form');
+var accountholderName = document.getElementById('accountholder-name');
+var email = document.getElementById('email');
+var submitButton = document.getElementById('submit-button');
+var clientSecret = submitButton.dataset.secret;
+
+form.addEventListener('submit', function(event) {
+  event.preventDefault();
+  stripe.confirmSepaDebitSetup(
+    clientSecret,
+    {
+      payment_method: {
+        sepa_debit: iban,
+        billing_details: {
+          name: accountholderName.value,
+          email: email.value,
+        },
+      },
+    }
+  );
+});

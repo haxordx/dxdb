@@ -1,0 +1,7 @@
+try {
+  await Something.create({…});
+} catch (err) {
+  // err.name
+  // err.code
+  // …
+}

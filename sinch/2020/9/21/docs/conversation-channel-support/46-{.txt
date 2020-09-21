@@ -1,0 +1,11 @@
+{
+  "channel_credentials": [
+    {
+      "channel": "SMS",
+      "static_bearer": {
+        "claimed_identity": "{{SERVICE_PLAN_ID}}",
+        "token": "{{API_TOKEN}}"
+      }
+    }
+  ]
+}

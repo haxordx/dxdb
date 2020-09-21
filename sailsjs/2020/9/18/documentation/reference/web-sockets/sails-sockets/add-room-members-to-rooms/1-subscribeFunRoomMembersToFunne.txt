@@ -1,0 +1,8 @@
+subscribeFunRoomMembersToFunnerRooms: function(req, res) {
+  sails.sockets.addRoomMembersToRooms('funRoom', ['greatRoom', 'awesomeRoom'], function(err) {
+    if (err) {return res.serverError(err);}
+    res.json({
+      message: 'Subscribed all members of `funRoom` to `greatRoom` and `awesomeRoom`!'
+    });
+  });
+}

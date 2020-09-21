@@ -1,0 +1,19 @@
+order = Order.find(orderid)
+
+if order.authorize()
+  capture = order.capture({
+      :amount => {
+      :currency => "USD",
+      :total => "10"
+    },
+    :is_final_capture => true
+  })
+
+  if capture.success?
+    logger.info "Capture[#{capture.id}]"
+  else
+    logger.error capture.error.inspect
+  end
+else
+  logger.error capture.error.inspect
+endcopy

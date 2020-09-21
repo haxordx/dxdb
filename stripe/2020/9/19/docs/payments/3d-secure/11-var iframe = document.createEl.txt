@@ -1,0 +1,9 @@
+var iframe = document.createElement('iframe');
+iframe.src = paymentIntent.next_action.redirect_to_url.url;
+iframe.width = 600;
+iframe.height = 400;
+yourContainer.appendChild(iframe);var iframe = document.createElement('iframe');
+iframe.src = paymentIntent.next_action.redirect_to_url.url;
+iframe.width = 600;
+iframe.height = 400;
+yourContainer.appendChild(iframe);

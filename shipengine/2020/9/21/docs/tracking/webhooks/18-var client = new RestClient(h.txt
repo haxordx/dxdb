@@ -1,0 +1,9 @@
+var client = new RestClient("https://api.shipengine.com/v1/environment/webhooks");
+client.Timeout = -1;
+var request = new RestRequest(Method.POST);
+request.AddHeader("Host", "api.shipengine.com");
+request.AddHeader("API-Key", "__YOUR_API_KEY_HERE__");
+request.AddHeader("Content-Type", "application/json");
+request.AddParameter("application/json", "{\n  \"url\": \"https://username:password@example.com\",\n  \"event\": \"batch\"\n}",  ParameterType.RequestBody);
+IRestResponse response = client.Execute(request);
+Console.WriteLine(response.Content);

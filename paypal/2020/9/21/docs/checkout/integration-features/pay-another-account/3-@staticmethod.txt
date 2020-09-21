@@ -1,0 +1,18 @@
+@staticmethod
+def build_request_body():
+  """Method to create body with a custom PAYEE (receiver)"""
+  return \
+    {
+      "intent": "AUTHORIZE",           
+      "purchase_units": [
+        {
+          "amount": {
+            "currency_code": "USD",
+            "value": "220.00"
+          },
+          "payee": {
+            "email_address": "payee@email.com"
+          }
+        }
+      ]
+    }copy

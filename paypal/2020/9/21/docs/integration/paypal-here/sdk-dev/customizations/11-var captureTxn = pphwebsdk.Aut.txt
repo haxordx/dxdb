@@ -1,0 +1,8 @@
+var captureTxn = pphwebsdk.AuthCapture.create(identity, payment_config);
+captureTxn.captureTransaction(authTxnId)
+  .orderId(ppInvoiceId)
+  .currency("USD")
+  .totalAmount(totalAmount)
+  .gratuityAmount(0)
+  .capture();
+copy

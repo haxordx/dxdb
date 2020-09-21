@@ -1,0 +1,42 @@
+override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+    super.onActivityResult(requestCode, resultCode, data)
+    val weakActivity = WeakReference<Activity>(this)
+
+    // Handle the result of stripe.confirmSetupIntent
+    stripe.onSetupResult(requestCode, data, object : ApiResultCallback<SetupIntentResult> {
+        override fun onSuccess(result: SetupIntentResult) {
+            val setupIntent = result.intent
+            val status = setupIntent.status
+            if (status == StripeIntent.Status.Succeeded) {
+                // Setup completed successfully
+            } else if (status == StripeIntent.Status.RequiresPaymentMethod) {
+                // Setup failed
+            }
+        }
+
+        override fun onError(e: Exception) {
+            // Setup request failed
+        }
+    })
+}
+override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+    super.onActivityResult(requestCode, resultCode, data)
+    val weakActivity = WeakReference<Activity>(this)
+
+    // Handle the result of stripe.confirmSetupIntent
+    stripe.onSetupResult(requestCode, data, object : ApiResultCallback<SetupIntentResult> {
+        override fun onSuccess(result: SetupIntentResult) {
+            val setupIntent = result.intent
+            val status = setupIntent.status
+            if (status == StripeIntent.Status.Succeeded) {
+                // Setup completed successfully
+            } else if (status == StripeIntent.Status.RequiresPaymentMethod) {
+                // Setup failed
+            }
+        }
+
+        override fun onError(e: Exception) {
+            // Setup request failed
+        }
+    })
+}

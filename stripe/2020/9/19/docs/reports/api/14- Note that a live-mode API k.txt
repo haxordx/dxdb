@@ -1,0 +1,32 @@
+// Note that a live-mode API key is required.
+ReportRunCreateParams params =
+  ReportRunCreateParams.builder()
+    .setParameters(
+      ReportRunCreateParams.Parameters.builder()
+        .setIntervalStart(1577865600L)
+        .setIntervalEnd(1580544000L)
+        .setTimezone(ReportRunCreateParams.Parameters.Timezone.AMERICA_LOS_ANGELES)
+        .addColumn('created')
+        .addColumn('reporting_category')
+        .addColumn('net')
+        .build())
+    .setReportType("balance_change_from_activity.itemized.3")
+    .build();
+
+ReportRun report = ReportRun.create(params);
+// Note that a live-mode API key is required.
+ReportRunCreateParams params =
+  ReportRunCreateParams.builder()
+    .setParameters(
+      ReportRunCreateParams.Parameters.builder()
+        .setIntervalStart(1577865600L)
+        .setIntervalEnd(1580544000L)
+        .setTimezone(ReportRunCreateParams.Parameters.Timezone.AMERICA_LOS_ANGELES)
+        .addColumn('created')
+        .addColumn('reporting_category')
+        .addColumn('net')
+        .build())
+    .setReportType("balance_change_from_activity.itemized.3")
+    .build();
+
+ReportRun report = ReportRun.create(params);

@@ -1,0 +1,2 @@
+curl https://api.stripe.com/v1/customers/cus_I3HcwHEKBfQLG1/balance_transactions/cbtxn_1HTG8Z2eZvKYlo2CloOD8XXp \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc:

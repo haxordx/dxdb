@@ -1,0 +1,39 @@
+// 1. Set up your server to make calls to PayPal
+
+// 1a. Import the SDK package
+const checkoutNodeJssdk = require('@paypal/checkout-server-sdk');
+
+// 1b. Import the PayPal SDK client that was created in `Set up Server-Side SDK`.
+/**
+ *
+ * PayPal HTTP client dependency
+ */
+const payPalClient = require('../Common/payPalClient');
+
+module.exports = async function captureAuthorization() {
+
+  // 2. Get the capture ID from your database
+  const captureID = await database.lookupCaptureID();
+
+  // 3. Call PayPal to refund the transaction
+  const request = new checkoutNodeJssdk.payments.CapturesRefundRequest(captureId);
+  request.requestBody({
+    amount: {
+      currency_code: 'USD',
+      value:         '20.00'
+    }
+  });
+  const refund;
+  try {
+      refund = await payPalClient.client().execute(request);
+  } catch (err) {
+
+    // 4. Handle any errors from the call
+    console.error(err);
+  }
+  // 5. Return a successful response to the client with the order ID
+  response.send(200, {
+    refundID: refund.id
+  });
+}
+copy

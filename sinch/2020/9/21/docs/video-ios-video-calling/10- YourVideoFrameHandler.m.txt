@@ -1,0 +1,8 @@
+// YourVideoFrameHandler.m
+// Implement onFrame: callback
+@implementation YourVideoFrameHandler
+- (void)onFrame:(id<SINVideoFrame>)videoFrame callId:(NSString *)callId {
+  ... // Process videoFrame
+  [videoFrame releaseFrame]; // Release videoFrame
+}
+@end

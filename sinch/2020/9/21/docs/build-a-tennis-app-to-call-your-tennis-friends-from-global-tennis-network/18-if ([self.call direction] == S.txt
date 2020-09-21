@@ -1,0 +1,9 @@
+if ([self.call direction] == SINCallDirectionIncoming) {
+        self.AnswerButton.hidden = NO;
+        self.CallLabel.text = [NSString stringWithFormat:@"call from %@ %@", self.callingFriend.firstName, self.callingFriend.lastName];
+    } else {
+        self.AnswerButton.hidden = YES;
+        self.CallLabel.text = [NSString stringWithFormat:@"calling %@ %@...", self.callingFriend.firstName, self.callingFriend.lastName];
+    }
+
+    [self displayPictureForUser];

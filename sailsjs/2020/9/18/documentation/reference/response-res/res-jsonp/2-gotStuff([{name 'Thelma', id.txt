@@ -1,0 +1,1 @@
+gotStuff([{name: 'Thelma', id: 1}, {name: 'Louise', id: 2}])

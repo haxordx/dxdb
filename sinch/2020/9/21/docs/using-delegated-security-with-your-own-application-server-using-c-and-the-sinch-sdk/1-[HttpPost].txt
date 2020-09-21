@@ -1,0 +1,16 @@
+[HttpPost]
+public async Task<LoginObject> AuthUser(string username, string password) {
+    ///1. Verfiy user
+    var signinManager = Request.GetOwinContext().Get<ApplicationSignInManager>();
+    var result = await signinManager
+        .PasswordSignInAsync(username, password, false, shouldLockout: false);
+    if (result == SignInStatus.Success) {
+        /// 2. Create return type and sign the request
+        LoginObject loginObject = new LoginObject();
+        loginObject.UserTicket = Signature(username);
+        return loginObject;
+    } else {
+        ///wrong username and password
+        throw new HttpResponseException(HttpStatusCode.Forbidden);
+    }
+}

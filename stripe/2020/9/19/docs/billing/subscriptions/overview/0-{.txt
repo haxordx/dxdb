@@ -1,0 +1,30 @@
+{
+  "id": "sub_1ELI8bClCIKljWvsvK36TXlC",
+  "object": "subscription",
+  "status": "active",
+  ...
+  "latest_invoice": {
+    "id": "in_EmGqfJMYy3Nt9M",
+    "status": "paid",
+    ...
+    "payment_intent": {
+      "status": "succeeded",
+      ...
+    }
+  }
+}
+{
+  "id": "sub_1ELI8bClCIKljWvsvK36TXlC",
+  "object": "subscription",
+  "status": "active",
+  ...
+  "latest_invoice": {
+    "id": "in_EmGqfJMYy3Nt9M",
+    "status": "paid",
+    ...
+    "payment_intent": {
+      "status": "succeeded",
+      ...
+    }
+  }
+}

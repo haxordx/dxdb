@@ -1,0 +1,10 @@
+List<String> languages = new ArrayList();
+languages.add("es-ES");
+Verification verification = SinchVerification.createSmsVerification(config, phoneNumberInE164, null, languages, new VerificationListener() {
+    @Override
+    public void onInitiated(InitiationResult result) {
+        // Verification initiated
+        Log.i("Selected sms language: " + result.selectedLanguage());
+    }
+    ...
+});

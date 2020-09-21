@@ -1,0 +1,18 @@
+var auth = require('http-auth');
+var basic = auth.basic({
+  realm: 'admin area'
+}, function (username, password, onwards) {
+  return onwards(username === 'Tina' && password === 'Bullock');
+});
+
+//...
+module.exports.policies = {
+  '*': [true],
+
+  // Prevent end users from doing CRUD operations on products reserved for admins
+  // (uses HTTP basic auth)
+  'product/*': [auth.connect(basic)],
+
+  // Everyone can view product pages
+  'product/show': [true]
+}

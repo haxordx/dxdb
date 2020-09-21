@@ -1,0 +1,7 @@
+{
+  "name": "SENDER_EMAIL_UNCONFIRMED",
+  "message": "Authorization error occurred",
+  "debug_id": "ca787bdf80d7a",
+  "information_link": "https://developer.paypal.com/docs/api/payments.payouts-batch/#errors"
+}
+jsoncopy

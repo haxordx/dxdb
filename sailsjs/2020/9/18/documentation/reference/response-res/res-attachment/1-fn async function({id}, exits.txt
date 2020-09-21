@@ -1,0 +1,8 @@
+fn: async function({id}, exits) {
+  var file = await LegalDoc.findOne({ id });
+  if(!file) { throw 'notFound'; }
+
+  this.res.attachment(file.downloadName);
+  var downloading = await sails.startDownload(file.uploadFd);
+  return exits.success(downloading);
+}

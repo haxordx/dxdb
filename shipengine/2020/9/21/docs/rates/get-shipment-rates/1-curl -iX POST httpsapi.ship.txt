@@ -1,0 +1,2 @@
+curl -iX POST https://api.shipengine.com/v1/shipments/se-2102034/rates \
+-H 'API-Key: __YOUR_API_KEY_HERE__' \

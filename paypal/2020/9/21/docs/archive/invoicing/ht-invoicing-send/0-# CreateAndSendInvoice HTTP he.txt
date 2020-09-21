@@ -1,0 +1,12 @@
+# CreateAndSendInvoice HTTP headers (-H)
+
+-H "X-PAYPAL-SECURITY-USERID: <caller_UID>"            # UserID from the Caller account
+-H "X-PAYPAL-SECURITY-PASSWORD: <caller_PSWD>"         # Password from the Caller account
+-H "X-PAYPAL-SECURITY-SIGNATURE: <caller_Sig>"         # Signature from the Caller account
+-H "X-PAYPAL-REQUEST-DATA-FORMAT: JSON"
+-H "X-PAYPAL-RESPONSE-DATA-FORMAT: JSON"
+-H "X-PAYPAL-APPLICATION-ID: APP-80W284485P519543T"  # Sandbox app ID
+
+# Endpoint (Sandbox in the example)
+https://svcs.sandbox.paypal.com/Invoice/<strong>CreateAndSendInvoice</strong>
+copy

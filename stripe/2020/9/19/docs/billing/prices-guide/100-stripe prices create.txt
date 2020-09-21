@@ -1,0 +1,12 @@
+stripe prices create \
+  -d product={{PRODUCT_ID}} \
+  -d unit_amount=1000 \
+  -d currency=usd \
+  -d recurring[interval]=month \
+  -d lookup_key=standard_monthly
+stripe prices create \
+  -d product={{PRODUCT_ID}} \
+  -d unit_amount=1000 \
+  -d currency=usd \
+  -d recurring[interval]=month \
+  -d lookup_key=standard_monthly

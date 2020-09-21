@@ -1,0 +1,59 @@
+// Handler for a "Connect Reader" button
+public void onConnect() {
+  DiscoveryConfiguration config = new DiscoveryConfiguration(0, DeviceType.CHIPPER_2X, true);
+  Terminal.getInstance().discoverReaders(config, readers -> {
+    // Just select the first reader here.
+    Reader firstReader = readers.get(0);
+
+    Terminal.getInstance().connectReader(firstReader, new ReaderCallback() {
+      @Override
+      public void onSuccess(Reader r) {
+        System.out.println("Connected to reader");
+      }
+
+      @Override
+      public void onFailure(@Nonnull TerminalException e) {
+        e.printStackTrace();
+      }
+    });
+  }, new Callback() {
+    @Override
+    public void onSuccess() {
+      System.out.println("Finished discovering readers");
+    }
+
+    @Override
+    public void onFailure(TerminalException e) {
+      e.printStackTrace();
+    }
+  }
+}// Handler for a "Connect Reader" button
+public void onConnect() {
+  DiscoveryConfiguration config = new DiscoveryConfiguration(0, DeviceType.CHIPPER_2X, true);
+  Terminal.getInstance().discoverReaders(config, readers -> {
+    // Just select the first reader here.
+    Reader firstReader = readers.get(0);
+
+    Terminal.getInstance().connectReader(firstReader, new ReaderCallback() {
+      @Override
+      public void onSuccess(Reader r) {
+        System.out.println("Connected to reader");
+      }
+
+      @Override
+      public void onFailure(@Nonnull TerminalException e) {
+        e.printStackTrace();
+      }
+    });
+  }, new Callback() {
+    @Override
+    public void onSuccess() {
+      System.out.println("Finished discovering readers");
+    }
+
+    @Override
+    public void onFailure(TerminalException e) {
+      e.printStackTrace();
+    }
+  }
+}

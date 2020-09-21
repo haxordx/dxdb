@@ -1,0 +1,10 @@
+import com.sinch.android.rtc.video.VideoUtils; // To use I420toNV21Frame
+
+VideoFrame videoFrame = ... // Get the video frame from onFrame() callback
+VideoFrame nv21Frame = VideoUtils.I420toNV21Frame(videoFrame);
+
+YuvImage image = new YuvImage(nv21Frame.yuvPlanes()[0].array(),
+                              ImageFormat.NV21,
+                              nv21Frame.width(),
+                              nv21Frame.height(),
+                              nv21Frame.yuvStrides());

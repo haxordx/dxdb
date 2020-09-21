@@ -1,0 +1,4 @@
+curl https://api.stripe.com/v1/checkout/sessions/cs_test_MlZAaTXUMHjWZ7DcXjusJnDU4MxPalbtL5eYrmS2GKxqscDtpJq8QM0k \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc:
+curl https://api.stripe.com/v1/checkout/sessions/cs_test_MlZAaTXUMHjWZ7DcXjusJnDU4MxPalbtL5eYrmS2GKxqscDtpJq8QM0k \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc:

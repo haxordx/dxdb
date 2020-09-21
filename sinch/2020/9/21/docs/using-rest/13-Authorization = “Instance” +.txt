@@ -1,0 +1,11 @@
+Authorization = “Instance” + " " + INSTANCE_ID + “:” + INSTANCE_SIGNATURE
+
+INSTANCE_SIGNATURE = Base64 ( Hmac-Sha256 ( INSTANCE_SECRET, Utf8 (STRING_TO_SIGN ) ) )
+
+STRING_TO_SIGN = HTTP-Verb + “\n” +
+    CONTENT_MD5 + “\n” +
+    Content-Type + “\n” +
+    CanonicalizedHeaders + “\n” +
+    CanonicalizedResource;
+
+CONTENT_MD5 = Base64 ( Md5 ( [BODY] ) )

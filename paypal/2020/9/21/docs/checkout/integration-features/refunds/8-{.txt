@@ -1,0 +1,47 @@
+{
+  "id": "28R62814C3999453N",
+  "amount":
+  {
+    "currency_code": "USD",
+    "value": "20.00"
+  },
+  "seller_payable_breakdown":
+  {
+    "gross_amount":
+    {
+      "currency_code": "USD",
+      "value": "20.00"
+    },
+    "paypal_fee":
+    {
+      "currency_code": "USD",
+      "value": "0.58"
+    },
+    "net_amount":
+    {
+      "currency_code": "USD",
+      "value": "19.42"
+    },
+    "total_refunded_amount":
+    {
+      "currency_code": "USD",
+      "value": "20.00"
+    }
+  },
+  "invoice_id": "INV-HighFashions",
+  "status": "COMPLETED",
+  "create_time": "2018-05-31T20:08:19-07:00",
+  "update_time": "2018-05-31T20:08:19-07:00",
+  "links": [
+  {
+    "href": "https://api.sandbox.paypal.com/v2/payments/refunds/28R62814C3999453N",
+    "rel": "self",
+    "method": "GET"
+  },
+  {
+    "href": "https://api.sandbox.paypal.com/v2/payments/captures/1HW32023TU4585620",
+    "rel": "up",
+    "method": "GET"
+  }]
+}
+jsoncopy

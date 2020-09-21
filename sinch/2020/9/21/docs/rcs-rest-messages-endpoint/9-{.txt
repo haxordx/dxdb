@@ -1,0 +1,5 @@
+{
+  "type": "file",
+  "file": object(FileInfo),
+  "thumbnail": object(FileInfo)
+}

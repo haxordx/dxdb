@@ -1,0 +1,20 @@
+{
+  "object": "list",
+  "url": "/v1/file_links",
+  "has_more": false,
+  "data": [
+    {
+      "id": "link_1HTG7S2eZvKYlo2CNRNl8GdU",
+      "object": "file_link",
+      "created": 1600560570,
+      "expired": false,
+      "expires_at": null,
+      "file": "file_1FvSUR2eZvKYlo2C8zHSKeSA",
+      "livemode": false,
+      "metadata": {},
+      "url": "https://files.stripe.com/links/fl_test_TqRqa4GmUmlNa22VLp8Wt3BD"
+    },
+    {...},
+    {...}
+  ]
+}

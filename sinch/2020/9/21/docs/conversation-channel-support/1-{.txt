@@ -1,0 +1,14 @@
+{
+  "app_id": "{{APP}}",
+  "target": "{{WEBHOOK_URL}}",
+  "target_type": "HTTP",
+  "triggers": [
+    "MESSAGE_DELIVERY",
+    "EVENT_DELIVERY",
+    "MESSAGE_INBOUND",
+    "EVENT_INBOUND",
+    "CONVERSATION_START",
+    "CONVERSATION_STOP",
+    "UNSUPPORTED"
+  ]
+}

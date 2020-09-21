@@ -1,0 +1,11 @@
+<postback>
+    <origin>MMS_MT</origin>
+    <code>E101</code>
+    <status>Message Failed</status>
+    <mms-id>39755</mms-id>
+    <from>28444</from>
+    <to>12399471613</to>
+    <tracking-id>TU1TXzU5Nzg3Nw==</tracking-id>
+    <operator-id>31004</operator-id>
+    <status-details>Error fetching dynamic content</status-details>
+</postback>

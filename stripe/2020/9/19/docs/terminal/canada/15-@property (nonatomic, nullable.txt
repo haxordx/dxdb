@@ -1,0 +1,85 @@
+@property (nonatomic, nullable, strong) SCPCancelable *collectCancelable;
+
+// Action for a "Checkout" button
+- (void)checkoutAction {
+    // ... Fetch the client secret from your backend
+    [[SCPTerminal shared] retrievePaymentIntent:clientSecret
+                                     completion:^(SCPPaymentIntent *retrieveResult, NSError *retrieveError) {
+        if (retrieveError) {
+            NSLog(@"retrievePaymentIntent failed: %@", retrieveError);
+        } else {
+            self.collectCancelable = [[SCPTerminal shared] collectPaymentMethod:retrieveResult
+                                                                       delegate:self
+                                                                     completion:^(SCPPaymentIntent *collectResult, NSError *collectError) {
+                if (collectError) {
+                    NSLog(@"collectPaymentMethod failed: %@", collectError);
+                } else {
+                    [[SCPTerminal shared] processPayment:createResult completion:^(SCPPaymentIntent *processResult, SCPProcessPaymentError *processError) {
+                        if (processError) {
+                            NSLog(@"processPayment failed: %@", processError);
+                        } else {
+                            NSLog(@"processPayment succeeded");
+                            if (processResult.status == SCPPaymentIntentStatusRequiresCapture) {
+                                // Notify your backend to capture the PaymentIntent.
+                                // This branch *won't* get called for Interac payments.
+                                [[APPAPIClient shared] capturePaymentIntent:processResult.stripeId completion:^(NSError *captureError) {
+                                    if (captureError) {
+                                        NSLog(@"Capture failed: %@", captureError);
+                                    } else {
+                                        NSLog(@"Capture succeeded!");
+                                    }
+                                }];
+                            } else if (processResult.status == SCPPaymentIntentStatusSucceeded) {
+                                NSLog(@"Single-message payment successful!")
+                            } else {
+                                NSLog(@"Unexpected paymentIntent state %@", processResult.status)
+                            }
+                        }
+                    }];
+                }
+            }];
+        }
+    }];
+}@property (nonatomic, nullable, strong) SCPCancelable *collectCancelable;
+
+// Action for a "Checkout" button
+- (void)checkoutAction {
+    // ... Fetch the client secret from your backend
+    [[SCPTerminal shared] retrievePaymentIntent:clientSecret
+                                     completion:^(SCPPaymentIntent *retrieveResult, NSError *retrieveError) {
+        if (retrieveError) {
+            NSLog(@"retrievePaymentIntent failed: %@", retrieveError);
+        } else {
+            self.collectCancelable = [[SCPTerminal shared] collectPaymentMethod:retrieveResult
+                                                                       delegate:self
+                                                                     completion:^(SCPPaymentIntent *collectResult, NSError *collectError) {
+                if (collectError) {
+                    NSLog(@"collectPaymentMethod failed: %@", collectError);
+                } else {
+                    [[SCPTerminal shared] processPayment:createResult completion:^(SCPPaymentIntent *processResult, SCPProcessPaymentError *processError) {
+                        if (processError) {
+                            NSLog(@"processPayment failed: %@", processError);
+                        } else {
+                            NSLog(@"processPayment succeeded");
+                            if (processResult.status == SCPPaymentIntentStatusRequiresCapture) {
+                                // Notify your backend to capture the PaymentIntent.
+                                // This branch *won't* get called for Interac payments.
+                                [[APPAPIClient shared] capturePaymentIntent:processResult.stripeId completion:^(NSError *captureError) {
+                                    if (captureError) {
+                                        NSLog(@"Capture failed: %@", captureError);
+                                    } else {
+                                        NSLog(@"Capture succeeded!");
+                                    }
+                                }];
+                            } else if (processResult.status == SCPPaymentIntentStatusSucceeded) {
+                                NSLog(@"Single-message payment successful!")
+                            } else {
+                                NSLog(@"Unexpected paymentIntent state %@", processResult.status)
+                            }
+                        }
+                    }];
+                }
+            }];
+        }
+    }];
+}

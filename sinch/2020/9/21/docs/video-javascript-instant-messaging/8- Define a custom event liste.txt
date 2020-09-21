@@ -1,0 +1,8 @@
+// Define a custom event listener object
+var myEventListener = {...};
+
+// Add this listener object
+messageClient.addEventlistener(myEventListener);
+
+// Remove this listener object
+messageClient.removeEventListener(myEventListener);

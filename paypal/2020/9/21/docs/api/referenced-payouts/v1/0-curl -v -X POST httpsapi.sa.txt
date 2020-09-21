@@ -1,0 +1,17 @@
+curl -v -X POST https://api.sandbox.paypal.com/v1/payments/referenced-payouts \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer Access-Token" \
+-H "PayPal-Partner-Attribution-Id: bn1234" \
+-H "PayPal-Request-Id: idempotent1234" \
+-d '{
+  "referenced_payouts": [
+    {
+      "reference_id": "2KP03934U4415543C",
+      "reference_type": "TRANSACTION_ID"
+    },
+    {
+      "reference_id": "8TA4226978212399L",
+      "reference_type": "TRANSACTION_ID"
+    }
+  ]
+}'copy

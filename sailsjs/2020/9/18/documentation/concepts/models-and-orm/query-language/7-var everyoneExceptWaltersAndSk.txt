@@ -1,0 +1,3 @@
+var everyoneExceptWaltersAndSkylers = await Model.find({
+  name: { '!=' : ['walter', 'skyler'] }
+});

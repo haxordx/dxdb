@@ -1,0 +1,21 @@
+{
+  "balance": {
+    "currency": "USD",
+    "primary": true,
+    "total_balance": {
+      "currency_code": "USD",
+      "value": "300.00"
+    },
+    "available_balance": {
+      "currency_code": "USD",
+      "value": "100.00"
+    },
+    "withheld_balance": {
+      "currency_code": "USD",
+      "value": "200.00"
+    }
+  },
+  "account_id": "QCXKLSS8GWT22",
+  "as_of_time": "2016-10-15T13:07:00Z",
+  "last_refresh_time": "2017-02-17T05:59:59Z"
+}copy

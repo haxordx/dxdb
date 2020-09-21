@@ -1,0 +1,8 @@
+switch (req.protocol) {
+  case 'http':
+    // this is an HTTP request
+    break;
+  case 'https':
+    // this is a secure HTTPS request
+    break;
+}

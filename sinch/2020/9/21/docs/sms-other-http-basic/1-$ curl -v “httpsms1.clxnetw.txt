@@ -1,0 +1,17 @@
+$ curl -v “http://sms1.clxnetworks.net:3800/sendsms?username=user&password=pass&from=CLX&to=46700 123456&mclass=123&text=Test”
+* About to connect() to sms1.clxnetworks.net port 3800 (#0)
+*           Trying 93.158.78.4â€¦ connected
+* Connected to sms1.clxnetworks.net (93.158.78.4) port 3800 (#0)
+> GET /sendsms?username=user&password=pass&from=CLX&to=46700123456&mclass=123&text=Test HTTP/1.1
+> User-Agent: curl/7.19.7 (universal-apple-darwin10.0) libcurl/7.19.7 OpenSSL/0.9.8l zlib/1.2.3
+> Host: sms1.clxnetworks.net:3800
+> Accept: */*
+>
+< HTTP/1.1 400 Bad Request - server could not understand request
+< Date: Tue, 9 Nov 2010 12:42:41 +0100
+< Content-Length: 20
+< Content-Type: text/plain; charset=ISO-8859-1
+<
+* Connection #0 to host sms1.clxnetworks.net left intact
+* Closing connection #0
+Invalid mclass value

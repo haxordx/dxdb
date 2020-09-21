@@ -1,0 +1,9 @@
+(async () => {
+  const response = await fetch('/secret');
+  const {client_secret: clientSecret} = await response.json();
+  // Call stripe.confirmCardPayment() with the client secret.
+})();(async () => {
+  const response = await fetch('/secret');
+  const {client_secret: clientSecret} = await response.json();
+  // Call stripe.confirmCardPayment() with the client secret.
+})();

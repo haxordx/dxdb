@@ -1,0 +1,26 @@
+import Foundation
+
+var semaphore = DispatchSemaphore (value: 0)
+
+let parameters = "{\n  \"text\": \"I need to send a package to my friend Amanda Millers house at 525 Winchester Blvd in San Jose (thats california, obviously). The zip code there is 95128.\",\n  \"address\": {\n    \"name\": \"Dr. Amanda L Miller\",\n    \"country_code\": \"US\"\n  }\n}\n"
+let postData = parameters.data(using: .utf8)
+
+var request = URLRequest(url: URL(string: "https://api.shipengine.com/v1/addresses/recognize")!,timeoutInterval: Double.infinity)
+request.addValue("api.shipengine.com", forHTTPHeaderField: "Host")
+request.addValue("__YOUR_API_KEY_HERE__", forHTTPHeaderField: "API-Key")
+request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+
+request.httpMethod = "PUT"
+request.httpBody = postData
+
+let task = URLSession.shared.dataTask(with: request) { data, response, error in 
+  guard let data = data else {
+    print(String(describing: error))
+    return
+  }
+  print(String(data: data, encoding: .utf8)!)
+  semaphore.signal()
+}
+
+task.resume()
+semaphore.wait()

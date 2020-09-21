@@ -1,0 +1,9 @@
+module.exports.policies = {
+
+  '*': 'isLoggedIn', // Require user to be logged in to access any action not otherwise mapped in this config
+  'UserController': {
+    'login': true    // Always allow access to the user login action
+  }
+
+
+}

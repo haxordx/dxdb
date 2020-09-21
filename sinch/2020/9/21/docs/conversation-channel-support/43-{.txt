@@ -1,0 +1,12 @@
+{
+  "app_id": "01E3S8B6YCMRNR0GGM94H80ACX",
+  "accepted_time": "2020-04-23T09:55:04.766Z",
+  "message_delivery_report": {
+    "message_id": "01E6K7CMXY3KHH0AGCTY6D04F2",
+    "conversation_id": "01E6JY5HMCADX31SANQ0YE0CH6",
+    "status": "DELIVERED",
+    "channel": "VIBERBM",
+    "reason": "",
+    "metadata": ""
+  }
+}

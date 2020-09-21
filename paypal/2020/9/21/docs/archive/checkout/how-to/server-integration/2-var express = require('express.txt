@@ -1,0 +1,10 @@
+var express = require('express');
+var request = require('request');
+
+// Add your credentials:
+// Add your client ID and secret
+var CLIENT = //Enter your live client ID;
+var SECRET = //Enter your secret;
+
+var PAYPAL_API = 'https://api.sandbox.paypal.com';
+jscopy

@@ -1,0 +1,24 @@
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [SCPTerminal shared].delegate = self;
+}
+
+// ...
+
+#pragma mark – SCPTerminalDelegate
+
+- (void)terminal:(SCPTerminal *)terminal didReportUnexpectedReaderDisconnect:(SCPReader *)reader {
+    NSLog(@"Disconnected from reader: %@", reader);
+}
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [SCPTerminal shared].delegate = self;
+}
+
+// ...
+
+#pragma mark – SCPTerminalDelegate
+
+- (void)terminal:(SCPTerminal *)terminal didReportUnexpectedReaderDisconnect:(SCPReader *)reader {
+    NSLog(@"Disconnected from reader: %@", reader);
+}

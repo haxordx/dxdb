@@ -1,0 +1,7 @@
+<request>
+    <action>getMMSTemplates</action>
+    <api-key>qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ</api-key>
+    <start-date>2014-03-31T11:30:00+00:00</start-date>
+    <page-number>1</page-number>
+    <items-per-page>3</items-per-page>
+</request>

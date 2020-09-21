@@ -1,0 +1,56 @@
+[HttpPost("retry-invoice")]
+public ActionResult<Invoice> RetryInvoice([FromBody] RetryInvoiceRequest req)
+{
+    // Attach payment method
+    var options = new PaymentMethodAttachOptions
+    {
+        Customer = req.Customer,
+    };
+    var service = new PaymentMethodService();
+    var paymentMethod = service.Attach(req.PaymentMethod, options);
+
+    // Update customer's default invoice payment method
+    var customerOptions = new CustomerUpdateOptions
+    {
+        InvoiceSettings = new CustomerInvoiceSettingsOptions
+        {
+            DefaultPaymentMethod = paymentMethod.Id,
+        },
+    };
+    var customerService = new CustomerService();
+    customerService.Update(req.Customer, customerOptions);
+
+    var invoiceOptions = new InvoiceGetOptions();
+    invoiceOptions.AddExpand("payment_intent");
+    var invoiceService = new InvoiceService();
+    Invoice invoice = invoiceService.Get(req.Invoice, invoiceOptions);
+    return invoice;
+}
+[HttpPost("retry-invoice")]
+public ActionResult<Invoice> RetryInvoice([FromBody] RetryInvoiceRequest req)
+{
+    // Attach payment method
+    var options = new PaymentMethodAttachOptions
+    {
+        Customer = req.Customer,
+    };
+    var service = new PaymentMethodService();
+    var paymentMethod = service.Attach(req.PaymentMethod, options);
+
+    // Update customer's default invoice payment method
+    var customerOptions = new CustomerUpdateOptions
+    {
+        InvoiceSettings = new CustomerInvoiceSettingsOptions
+        {
+            DefaultPaymentMethod = paymentMethod.Id,
+        },
+    };
+    var customerService = new CustomerService();
+    customerService.Update(req.Customer, customerOptions);
+
+    var invoiceOptions = new InvoiceGetOptions();
+    invoiceOptions.AddExpand("payment_intent");
+    var invoiceService = new InvoiceService();
+    Invoice invoice = invoiceService.Get(req.Invoice, invoiceOptions);
+    return invoice;
+}

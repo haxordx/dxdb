@@ -1,0 +1,30 @@
+// Note that a live-mode API key is required.
+params := &stripe.ReportRunParams{
+  ReportType: stripe.String("balance_change_from_activity.itemized.3"),
+  Parameters: &stripe.ReportRunParametersParams{
+    IntervalStart: stripe.Int64(1577865600),
+    IntervalEnd: stripe.Int64(1580544000),
+    Timezone: stripe.String("America/Los_Angeles"),
+    Columns: []*string{
+      stripe.String("created"),
+      stripe.String("reporting_category"),
+      stripe.String("net"),
+    },
+  },
+}
+r, _ := reportrun.New(params)
+// Note that a live-mode API key is required.
+params := &stripe.ReportRunParams{
+  ReportType: stripe.String("balance_change_from_activity.itemized.3"),
+  Parameters: &stripe.ReportRunParametersParams{
+    IntervalStart: stripe.Int64(1577865600),
+    IntervalEnd: stripe.Int64(1580544000),
+    Timezone: stripe.String("America/Los_Angeles"),
+    Columns: []*string{
+      stripe.String("created"),
+      stripe.String("reporting_category"),
+      stripe.String("net"),
+    },
+  },
+}
+r, _ := reportrun.New(params)

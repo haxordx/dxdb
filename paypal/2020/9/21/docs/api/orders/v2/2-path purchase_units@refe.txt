@@ -1,0 +1,1 @@
+"path": "/purchase_units/@reference_id=='default'/{attribute-or-object}"copy

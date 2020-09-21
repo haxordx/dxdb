@@ -1,0 +1,1 @@
+[PUT] https://verificationapi-v1.sinch.com/verification/v1/verifications/number/+46700000000

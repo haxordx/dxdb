@@ -1,0 +1,11 @@
+if (numberCount > 0) {
+                CContact *newContact = [CContact createContactWithFirst:fName Last:lName MobileNumber:mNumber HomeNumber:hNumber];
+
+                if (!self.objects) {
+                    self.objects = [[NSMutableArray alloc] init];
+                }
+                [self.objects addObject:newContact];
+                NSIndexPath *indexPath = [NSIndexPath indexPathForRow:_objects.count-1 inSection:0];
+                [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+                [self.tableView reloadData];
+            }

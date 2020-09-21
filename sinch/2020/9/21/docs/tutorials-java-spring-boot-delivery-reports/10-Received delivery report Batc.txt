@@ -1,0 +1,1 @@
+Received delivery report: BatchDeliveryReport{batchId=lLyJpEI8W8hjFH9L, totalMessageCount=1, statuses=[Status{code=0, status=DeliveryStatus{status=Delivered}, count=1, recipients=[]}]}

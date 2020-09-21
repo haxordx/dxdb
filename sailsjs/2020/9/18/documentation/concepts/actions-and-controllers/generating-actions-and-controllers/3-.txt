@@ -1,0 +1,34 @@
+/**
+ * user/sign-up.js
+ *
+ * @description :: Server-side controller action for handling incoming requests.
+ * @help        :: See https://sailsjs.com/documentation/concepts/controllers
+ */
+module.exports = {
+
+
+  friendlyName: 'Sign up',
+
+
+  description: '',
+
+
+  inputs: {
+
+  },
+
+
+  exits: {
+
+  },
+
+
+  fn: function (inputs, exits) {
+
+    return exits.success();
+
+  }
+
+
+};
+

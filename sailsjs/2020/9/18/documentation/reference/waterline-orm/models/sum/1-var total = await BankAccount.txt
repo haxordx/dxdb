@@ -1,0 +1,7 @@
+var total = await BankAccount.sum('balance')
+.where({
+  or: [
+    { balance: { '<': 32000 } },
+    { suspended: true }
+  ]
+});

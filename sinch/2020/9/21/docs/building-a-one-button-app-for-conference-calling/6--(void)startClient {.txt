@@ -1,0 +1,4 @@
+-(void)startClient {
+    NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+    [[CallingManager sharedManager] startClientWithKey:yourkey secret:yoursecret userName:[defaults stringForKey:@"userName"] clientapi:NO launchOptions:nil];
+}

@@ -1,0 +1,44 @@
+fName = (__bridge NSString *)ABRecordCopyValue(thisContact, kABPersonFirstNameProperty);
+            lName = (__bridge NSString *)ABRecordCopyValue(thisContact, kABPersonLastNameProperty);
+            for (int i=0; i < ABMultiValueGetCount(phonesRef); i++) {
+                CFStringRef phoneLabel = ABMultiValueCopyLabelAtIndex(phonesRef, i);
+                CFStringRef phoneValue = ABMultiValueCopyValueAtIndex(phonesRef, i);
+
+                NSString *phoneNumber = (__bridge NSString *)phoneValue;
+
+                // parse out unwanted characters in number
+                NSString *parsedPhoneNumber;
+                for (int i = 0; i < phoneNumber.length; i++) {
+                    char currentChar = [phoneNumber characterAtIndex:i];
+                    if (currentChar >= '0' && currentChar <= '9') {
+                        NSString *digitString = [NSString stringWithFormat:@"%c",currentChar];
+                        if (parsedPhoneNumber.length == 0) {
+                            parsedPhoneNumber = [NSString stringWithString:digitString];
+                        }
+                        else{
+                            NSString * newString = [parsedPhoneNumber stringByAppendingString:digitString];
+                            parsedPhoneNumber = [NSString stringWithString:newString];
+                        }
+                    }
+                }
+
+                // check if number is foreign
+                if ((parsedPhoneNumber.length < 11)
+                    || (parsedPhoneNumber.length == 11 && [parsedPhoneNumber hasPrefix:@"1"])) {
+
+                    numberCount++;
+
+                    if (CFStringCompare(phoneLabel, kABPersonPhoneMobileLabel, 0) == kCFCompareEqualTo) {
+                        mNumber = phoneNumber;
+                    }
+
+                    if (CFStringCompare(phoneLabel, kABHomeLabel, 0) == kCFCompareEqualTo) {
+                        hNumber = phoneNumber;
+                    }
+                }
+
+                CFRelease(phoneLabel);
+                CFRelease(phoneValue);
+            }
+
+             // 2

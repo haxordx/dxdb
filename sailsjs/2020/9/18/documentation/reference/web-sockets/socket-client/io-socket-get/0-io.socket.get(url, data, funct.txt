@@ -1,0 +1,3 @@
+io.socket.get(url, data, function (resData, jwres){
+  // ...
+});

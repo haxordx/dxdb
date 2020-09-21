@@ -1,0 +1,22 @@
+public class LoginActivity extends BaseActivity implements SinchService.StartFailedListener, PushTokenRegistrationCallback {
+
+private void loginClicked() {
+       ...
+       if (!mPushTokenIsRegistered) {
+              getSinchServiceInterface().getManagedPush(userName).registerPushToken(this);
+       }
+       ...
+}
+
+@Override
+public void tokenRegistered() {
+       mPushTokenIsRegistered = true;
+       nextActivityIfReady();
+}
+
+@Override
+public void tokenRegistrationFailed(SinchError sinchError) {
+       mPushTokenIsRegistered = false;
+       Toast.makeText(this, "Push token registration failed - incoming calls can't be received!", Toast.LENGTH_LONG).show();
+}
+}

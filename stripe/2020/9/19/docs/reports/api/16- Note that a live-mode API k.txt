@@ -1,0 +1,38 @@
+// Note that a live-mode API key is required.
+var options = new ReportRunCreateOptions
+{
+  ReportType = "balance_change_from_activity.itemized.3",
+  Parameters = new ReportRunParametersOptions
+  {
+    IntervalStart = new DateTime(2020, 1, 1),
+    IntervalEnd = new DateTime(2020, 2, 1),
+    Timezone = "America/Los_Angeles",
+    Columns = new List<string>
+    {
+      "created",
+      "reporting_category",
+      "net",
+    },
+  },
+};
+var service = new ReportRunService();
+var reportRun = service.Create(options);
+// Note that a live-mode API key is required.
+var options = new ReportRunCreateOptions
+{
+  ReportType = "balance_change_from_activity.itemized.3",
+  Parameters = new ReportRunParametersOptions
+  {
+    IntervalStart = new DateTime(2020, 1, 1),
+    IntervalEnd = new DateTime(2020, 2, 1),
+    Timezone = "America/Los_Angeles",
+    Columns = new List<string>
+    {
+      "created",
+      "reporting_category",
+      "net",
+    },
+  },
+};
+var service = new ReportRunService();
+var reportRun = service.Create(options);

@@ -1,0 +1,8 @@
+[RequestBody]
+    CalloutRequest
+
+[CalloutRequest]
+    string - method
+    TtsCalloutRequest - ttsCallout
+    ConferenceCalloutRequest - conferenceCallout
+    CustomCalloutRequest - customCallout

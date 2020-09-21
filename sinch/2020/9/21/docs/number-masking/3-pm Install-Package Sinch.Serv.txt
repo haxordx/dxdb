@@ -1,0 +1,1 @@
+pm> Install-Package Sinch.ServerSdk 

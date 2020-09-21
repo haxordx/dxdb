@@ -1,0 +1,14 @@
+[Authorize]
+ [Route("~/Conference/Create")]
+ [HttpPost]
+ public async Task<ActionResult> Create(CreateConferenceModel model) {
+     using (var db = new ConferenceContext()) {
+         model.Conference.ConferenceId = Guid.NewGuid();
+         var utcdate = model.Conference.ConferenceEndDate.ToUniversalTime();
+         model.Conference.ConferenceEndDate = utcdate.Date;
+         model.Conference.OwnerId = User.Identity.Name;
+         db.Conferences.Add(model.Conference);
+         await db.SaveChangesAsync();
+     }
+     return RedirectToAction("MyConferences");
+ }

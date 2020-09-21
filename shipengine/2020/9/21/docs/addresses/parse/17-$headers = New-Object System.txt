@@ -1,0 +1,9 @@
+$headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
+$headers.Add("Host", "api.shipengine.com")
+$headers.Add("API-Key", "__YOUR_API_KEY_HERE__")
+$headers.Add("Content-Type", "application/json")
+
+$body = "{`n  `"text`": `"I need to send a package to my friend Amanda Millers house at 525 Winchester Blvd in San Jose (thats california, obviously). The zip code there is 95128.`",`n  `"address`": {`n    `"name`": `"Dr. Amanda L Miller`",`n    `"country_code`": `"US`"`n  }`n}`n"
+
+$response = Invoke-RestMethod 'https://api.shipengine.com/v1/addresses/recognize' -Method 'PUT' -Headers $headers -Body $body
+$response | ConvertTo-Json

@@ -1,0 +1,19 @@
+{
+    "message": {
+        "template_message": {
+            "channel_template": {
+                "WHATSAPP": {
+                    "template_id": "interactive_template",
+                    "language_code": "en",
+                    "parameters": {
+                        "header[1]text": "Value of header parameter",
+                        "body[1]text": "Value of first parameter",
+                        "button[0]quick_reply[1]payload": "Value of quick reply postback button 0",
+                        "button[1]url[1]text": "Value for URL suffix button 1",
+                        "button[2]url[1]text": "Value for URL suffix button 2"
+                    }
+                }
+            }
+        }
+    }
+}

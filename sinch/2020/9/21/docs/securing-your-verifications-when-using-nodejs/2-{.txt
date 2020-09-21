@@ -1,0 +1,8 @@
+{
+    "id":"1234567890",
+    "event": "VerificationRequestEvent",
+    "method": "flashCall",
+    "identity": { "type":"number", "endpoint":"+46700000000" },
+    "price": { "amount": 0.005, "currencyId":"USD" } ,
+    "custom":"your custom data, you can make json if you want"
+}

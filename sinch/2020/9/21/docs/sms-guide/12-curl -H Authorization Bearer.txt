@@ -1,0 +1,2 @@
+curl -H "Authorization: Bearer {token}" \
+  "https://us.sms.api.sinch.com/xms/v1/{service_plan_id}/batches?start_date=2014-06-23&end_date=2014-06-24"

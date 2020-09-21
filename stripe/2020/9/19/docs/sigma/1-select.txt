@@ -1,0 +1,25 @@
+select
+  date_format(date_trunc('day', balance_transactions.created), '%Y-%m-%d') as day,
+  balance_transactions.amount,
+  balance_transactions.currency,
+  balance_transactions.source_id,
+  refunds.charge_id
+from
+  balance_transactions
+inner join refunds -- Joining these tables to retrieve additional information
+on balance_transactions.source_id=refunds.id
+where balance_transactions.type = 'refund'
+order by day desc
+limit 5select
+  date_format(date_trunc('day', balance_transactions.created), '%Y-%m-%d') as day,
+  balance_transactions.amount,
+  balance_transactions.currency,
+  balance_transactions.source_id,
+  refunds.charge_id
+from
+  balance_transactions
+inner join refunds -- Joining these tables to retrieve additional information
+on balance_transactions.source_id=refunds.id
+where balance_transactions.type = 'refund'
+order by day desc
+limit 5

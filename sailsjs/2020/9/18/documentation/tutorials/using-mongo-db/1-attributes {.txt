@@ -1,0 +1,4 @@
+attributes: {
+   id: { type: 'string', columnName: '_id' },
+   //…
+ }

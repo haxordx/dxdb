@@ -1,0 +1,12 @@
+[ResponseBody]
+    QueryNumberResponse
+
+[QueryNumberResponse]
+    NumberItem - number
+
+[NumberItem]
+    string - countryId
+    string - numberType
+    string - normalizedNumber
+    bool - restricted
+    Money - rate

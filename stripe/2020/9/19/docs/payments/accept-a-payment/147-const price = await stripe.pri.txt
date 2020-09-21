@@ -1,0 +1,10 @@
+const price = await stripe.prices.create({
+  product: '{{PRODUCT_ID}}',
+  unit_amount: 2000,
+  currency: 'usd',
+});
+const price = await stripe.prices.create({
+  product: '{{PRODUCT_ID}}',
+  unit_amount: 2000,
+  currency: 'usd',
+});

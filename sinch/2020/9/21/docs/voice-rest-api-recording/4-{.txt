@@ -1,0 +1,7 @@
+{
+    "recordingOptions": {
+        "destinationUrl": "s3://sinch-storage/voice-recordings/my-recording.mp3",
+        "credentials": "AKIAIOSFODNN7EXAMPLE:wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY:eu-central-1",
+        "notificationEvents": true
+    }
+}

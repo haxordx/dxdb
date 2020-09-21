@@ -1,0 +1,1 @@
+sails new your-app-name

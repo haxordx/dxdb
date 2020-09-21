@@ -1,0 +1,18 @@
+// In `config/session.js`
+isSessionDisabled: function (req){
+
+  if (req.path.match(/\.json$/)) {
+    // Don't disable sessions.
+    return;
+  }
+
+  var seemsToWantSomeOtherStaticAsset = !!req.path.match(sails.LOOKS_LIKE_ASSET_RX);
+  if (seemsToWantSomeOtherStaticAsset) {
+    // Disable sessions.
+    return true;
+  }
+
+  // Otherwise, don't disable sessions.
+  return;
+
+}

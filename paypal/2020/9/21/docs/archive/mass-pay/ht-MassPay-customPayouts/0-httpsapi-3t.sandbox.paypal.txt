@@ -1,0 +1,7 @@
+https://api-3t.sandbox.paypal.com/nvp     # Sandbox endpoint
+USER=<var>Caller_ID</var>                            # the PayPal User ID of the caller account
+PWD=<var>Caller_Pswd</var>                           # the caller account Password
+SIGNATURE=<var>Caller_Sig</var>                      # the caller account Signature
+METHOD=MassPay                            # API operation
+VERSION=93                                # API version
+copy

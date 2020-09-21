@@ -1,0 +1,33 @@
+"requirements": {
+    ...
+    "currently_due": [
+        "business_profile.mcc",
+        "business_profile.url",
+        "company.address.city",
+        "company.address.line1",
+        "company.address.postal_code",
+        "company.address.state",
+        "company.name",
+        "company.phone",
+        "company.tax_id",
+        "relationship.representative",
+        "relationship.owner"
+    ],
+    ...
+  }"requirements": {
+    ...
+    "currently_due": [
+        "business_profile.mcc",
+        "business_profile.url",
+        "company.address.city",
+        "company.address.line1",
+        "company.address.postal_code",
+        "company.address.state",
+        "company.name",
+        "company.phone",
+        "company.tax_id",
+        "relationship.representative",
+        "relationship.owner"
+    ],
+    ...
+  }

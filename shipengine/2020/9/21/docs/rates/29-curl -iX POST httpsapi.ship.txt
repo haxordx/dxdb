@@ -1,0 +1,16 @@
+curl -iX POST https://api.shipengine.com/v1/rates \
+-H 'API-Key: __YOUR_API_KEY_HERE__' \
+-H 'Content-Type: application/json' \
+-d '{
+  "shipment_id": "se-123",
+  "rate_options": {
+    "carrier_ids": [
+      "se-123890"
+    ],
+    "service_codes": [],
+    "package_types": [
+      "flat_rate_envelope",
+      "medium_flat_rate_box"
+    ]
+  }
+}'

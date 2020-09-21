@@ -1,0 +1,34 @@
+{
+  "id": "51366113MA710110S",
+  "create_time": "2017-07-01T17:13:45Z",
+  "update_time": "2017-07-01T17:13:47Z",
+  "amount": {
+    "total": "7.00",
+    "currency": "USD"
+  },
+  "is_final_capture": false,
+  "state": "COMPLETED",
+  "parent_payment": "PAY-9N9834337A9191208KOZOQWI",
+  "links": [
+    {
+      "href": "https://api.sandbox.paypal.com/v1/payments/capture/51366113MA710110S",
+      "rel": "self",
+      "method": "GET"
+    },
+    {
+      "href": "https://api.sandbox.paypal.com/v1/payments/capture/51366113MA710110S/refund",
+      "rel": "refund",
+      "method": "POST"
+    },
+    {
+      "href": "https://api.sandbox.paypal.com/v1/payments/orders/O-3SP845109F051535C",
+      "rel": "order",
+      "method": "GET"
+    },
+    {
+      "href": "https://api.sandbox.paypal.com/v1/payments/payment/PAY-9N9834337A9191208KOZOQWI",
+      "rel": "parent_payment",
+      "method": "GET"
+    }
+  ]
+}copy

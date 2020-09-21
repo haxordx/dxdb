@@ -1,0 +1,5 @@
+curl https://api.stripe.com/v1/reporting/report_runs \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d report_type="balance.summary.1" \
+  -d "parameters[interval_start]"=1522540800 \
+  -d "parameters[interval_end]"=1525132800

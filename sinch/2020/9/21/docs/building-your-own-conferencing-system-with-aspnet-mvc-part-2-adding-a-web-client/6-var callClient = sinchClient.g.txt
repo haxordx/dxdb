@@ -1,0 +1,40 @@
+var callClient = sinchClient.getCallClient();
+var call;
+var started = false;
+var connectionId;
+var muted = false;
+var callListeners = {
+    onCallProgressing: function(call) {
+        $('audio#ringback').prop("currentTime", 0);
+        $('audio#ringback').trigger("play");
+        $('div#callLog').prepend('<div id="stats">Ringing...</div>');
+    },
+    onCallEstablished: function(call) {
+        timer();
+        $('audio#incoming').attr('src', call.incomingStreamURL);
+        $('audio#ringback').trigger("pause");
+        $('audio#ringtone').trigger("pause");
+        var callDetails = call.getDetails();
+        $('div#callLog').prepend('<div id="stats">Answered at: ' + (callDetails.establishedTime) + '</div>');
+    },
+    onCallEnded: function(call) {
+        $('audio#ringback').trigger("pause");
+        $('audio#ringtone').trigger("pause");
+        $('audio#incoming').attr('src', '');
+        showUI(false);
+        //Report call stats
+        var callDetails = call.getDetails();
+        $('div#callLog').prepend('<div id="stats">Ended: ' + callDetails.endedTime + '</div>');
+        $('div#callLog').prepend('<div id="stats">Duration (s): ' + callDetails.duration + '</div>');
+        $('div#callLog').prepend('<div id="stats">End cause: ' + call.getEndCause() + '</div>');
+        $('#timer').html('00:00:00');
+        seconds = 0;
+        minutes = 0;
+        hours = 0;
+        if (call.error) {
+            $('div#callLog').prepend('<div id="stats">Failure message: ' + call.error.message + '</div>');
+            $('#errormessage').html(call.error.message);
+            showUI(false);
+        }
+    }
+};

@@ -1,0 +1,1 @@
+@property (strong, nonatomic) id<SINService> sinch;

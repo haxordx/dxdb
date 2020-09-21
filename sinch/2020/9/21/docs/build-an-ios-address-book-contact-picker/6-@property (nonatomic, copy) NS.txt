@@ -1,0 +1,8 @@
+@property (nonatomic, copy) NSString *firstName;
+@property (nonatomic, copy) NSString *lastName;
+@property (nonatomic, copy) NSString *mobileNumber;
+@property (nonatomic, copy) NSString *homeNumber;
+
+
++ (id)createContactWithFirst:(NSString *)firstName Last:(NSString *)lastName
+                MobileNumber:(NSString *)mobileNumber HomeNumber:(NSString *)homeNumber;

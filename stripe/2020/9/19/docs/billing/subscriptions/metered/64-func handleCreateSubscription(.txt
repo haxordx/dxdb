@@ -1,0 +1,122 @@
+func handleCreateSubscription(w http.ResponseWriter, r *http.Request) {
+  if r.Method != "POST" {
+    http.Error(w, http.StatusText(http.StatusMethodNotAllowed), http.StatusMethodNotAllowed)
+    return
+  }
+  var req struct {
+    PaymentMethodID string `json:"paymentMethodId"`
+    CustomerID      string `json:"customerId"`
+    PriceID         string `json:"priceId"`
+  }
+  if err := json.NewDecoder(r.Body).Decode(&req); err != nil {
+    http.Error(w, err.Error(), http.StatusInternalServerError)
+    log.Printf("json.NewDecoder.Decode: %v", err)
+    return
+  }
+  // Attach PaymentMethod
+  params := &stripe.PaymentMethodAttachParams{
+    Customer: stripe.String(req.CustomerID),
+  }
+  pm, err := paymentmethod.Attach(
+    req.PaymentMethodID,
+    params,
+  )
+  if err != nil {
+    http.Error(w, err.Error(), http.StatusInternalServerError)
+    log.Printf("paymentmethod.Attach: %v %s", err, pm.ID)
+    return
+  }
+  // Update invoice settings default
+  customerParams := &stripe.CustomerParams{
+    InvoiceSettings: &stripe.CustomerInvoiceSettingsParams{
+      DefaultPaymentMethod: stripe.String(pm.ID),
+    },
+  }
+  c, err := customer.Update(
+    req.CustomerID,
+    customerParams,
+  )
+  if err != nil {
+    http.Error(w, err.Error(), http.StatusInternalServerError)
+    log.Printf("customer.Update: %v %s", err, c.ID)
+    return
+  }
+  // Create subscription
+  subscriptionParams := &stripe.SubscriptionParams{
+    Customer: stripe.String(req.CustomerID),
+    Items: []*stripe.SubscriptionItemsParams{
+      {
+        Plan: stripe.String(os.Getenv(req.PriceID)),
+      },
+    },
+  }
+  subscriptionParams.AddExpand("latest_invoice.payment_intent")
+  s, err := sub.New(subscriptionParams)
+  if err != nil {
+    http.Error(w, err.Error(), http.StatusInternalServerError)
+    log.Printf("sub.New: %v", err)
+    return
+  }
+  writeJSON(w, s)
+}
+func handleCreateSubscription(w http.ResponseWriter, r *http.Request) {
+  if r.Method != "POST" {
+    http.Error(w, http.StatusText(http.StatusMethodNotAllowed), http.StatusMethodNotAllowed)
+    return
+  }
+  var req struct {
+    PaymentMethodID string `json:"paymentMethodId"`
+    CustomerID      string `json:"customerId"`
+    PriceID         string `json:"priceId"`
+  }
+  if err := json.NewDecoder(r.Body).Decode(&req); err != nil {
+    http.Error(w, err.Error(), http.StatusInternalServerError)
+    log.Printf("json.NewDecoder.Decode: %v", err)
+    return
+  }
+  // Attach PaymentMethod
+  params := &stripe.PaymentMethodAttachParams{
+    Customer: stripe.String(req.CustomerID),
+  }
+  pm, err := paymentmethod.Attach(
+    req.PaymentMethodID,
+    params,
+  )
+  if err != nil {
+    http.Error(w, err.Error(), http.StatusInternalServerError)
+    log.Printf("paymentmethod.Attach: %v %s", err, pm.ID)
+    return
+  }
+  // Update invoice settings default
+  customerParams := &stripe.CustomerParams{
+    InvoiceSettings: &stripe.CustomerInvoiceSettingsParams{
+      DefaultPaymentMethod: stripe.String(pm.ID),
+    },
+  }
+  c, err := customer.Update(
+    req.CustomerID,
+    customerParams,
+  )
+  if err != nil {
+    http.Error(w, err.Error(), http.StatusInternalServerError)
+    log.Printf("customer.Update: %v %s", err, c.ID)
+    return
+  }
+  // Create subscription
+  subscriptionParams := &stripe.SubscriptionParams{
+    Customer: stripe.String(req.CustomerID),
+    Items: []*stripe.SubscriptionItemsParams{
+      {
+        Plan: stripe.String(os.Getenv(req.PriceID)),
+      },
+    },
+  }
+  subscriptionParams.AddExpand("latest_invoice.payment_intent")
+  s, err := sub.New(subscriptionParams)
+  if err != nil {
+    http.Error(w, err.Error(), http.StatusInternalServerError)
+    log.Printf("sub.New: %v", err)
+    return
+  }
+  writeJSON(w, s)
+}

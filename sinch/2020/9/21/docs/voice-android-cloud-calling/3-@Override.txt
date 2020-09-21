@@ -1,0 +1,8 @@
+@Override
+public void onIncomingCall(CallClient callClient, Call call) {
+    // Start playing ringing tone
+    ...
+
+    // Add call listener
+    call.addCallListener(...);
+}

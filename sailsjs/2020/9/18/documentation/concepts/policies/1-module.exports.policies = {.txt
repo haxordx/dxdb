@@ -1,0 +1,5 @@
+module.exports.policies = {
+  'user/*': 'isLoggedIn',
+  'user/delete': 'isAdmin',
+  'user/login': true
+}

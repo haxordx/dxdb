@@ -1,0 +1,8 @@
+<response>
+    <status>Success</status>
+    <mms-id>35674</mms-id>
+    <tracking-id>TU1TXzU5Nzg3OQ==</tracking-id>
+    <to>14044790000</to>
+    <from>28444</from>
+    <status-details>MMS request accepted and queued for delivery</status-details>
+</response>

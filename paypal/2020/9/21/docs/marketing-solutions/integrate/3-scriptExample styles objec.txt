@@ -1,0 +1,1 @@
+<script>//Example styles objectconst styles = {   button: {      color: 'red',      background: 'blue',      ':hover': {       background: 'blue'      {   {{options.styles = styles</script>copy

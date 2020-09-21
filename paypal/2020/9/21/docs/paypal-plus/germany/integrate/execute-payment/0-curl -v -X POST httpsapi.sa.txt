@@ -1,0 +1,7 @@
+curl -v -X POST https://api.sandbox.paypal.com/v1/payments/payment/PAY-91628638US182293DLN2VSXI/execute \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer Access-Token" \
+-d '{
+  "payer_id": "CR87QHB7JTRSC"
+}'
+copy

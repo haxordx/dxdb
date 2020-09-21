@@ -1,0 +1,4 @@
+<response>
+    <status>Success</status>
+    <mms-id>35674</mms-id>
+</response>

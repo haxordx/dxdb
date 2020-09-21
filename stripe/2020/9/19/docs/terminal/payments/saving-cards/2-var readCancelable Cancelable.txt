@@ -1,0 +1,50 @@
+var readCancelable: Cancelable? = nil
+
+// Action for a "Subscribe" button
+func subscribeAction() {
+    let params = ReadReusableCardParameters()
+    self.readCancelable = Terminal.shared.readReusableCard(params, delegate: self) { readResult, readError in
+        if let error = readError {
+            print("readReusableCard failed: \(error)")
+        }
+        else if let paymentMethod = readResult {
+            print("readReusableCard succeeded")
+
+            // Notify your backend to attach the PaymentMethod to a Customer
+            APIClient.shared.attachPaymentMethod(paymentMethod.stripeId) { attachError in
+                if let error = attachError {
+                    print("attach failed: \(error)")
+                }
+                else {
+                    print("attach succeeded")
+                }
+            }
+        }
+
+    }
+}
+var readCancelable: Cancelable? = nil
+
+// Action for a "Subscribe" button
+func subscribeAction() {
+    let params = ReadReusableCardParameters()
+    self.readCancelable = Terminal.shared.readReusableCard(params, delegate: self) { readResult, readError in
+        if let error = readError {
+            print("readReusableCard failed: \(error)")
+        }
+        else if let paymentMethod = readResult {
+            print("readReusableCard succeeded")
+
+            // Notify your backend to attach the PaymentMethod to a Customer
+            APIClient.shared.attachPaymentMethod(paymentMethod.stripeId) { attachError in
+                if let error = attachError {
+                    print("attach failed: \(error)")
+                }
+                else {
+                    print("attach succeeded")
+                }
+            }
+        }
+
+    }
+}

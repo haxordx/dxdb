@@ -1,0 +1,14 @@
+sinchClient.addSinchClientListener(new SinchClientListener() {
+
+    public void onClientStarted(SinchClient client) { }
+
+    public void onClientStopped(SinchClient client) { }
+
+    public void onClientFailed(SinchClient client, SinchError error) { }
+
+    public void onRegistrationCredentialsRequired(SinchClient client, ClientRegistration registrationCallback) { }
+
+    public void onLogMessage(int level, String area, String message) { }
+});
+
+sinchClient.start();

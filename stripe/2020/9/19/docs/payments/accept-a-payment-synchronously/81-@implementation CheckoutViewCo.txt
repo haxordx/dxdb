@@ -1,0 +1,96 @@
+@implementation CheckoutViewController <STPAuthenticationContext>
+
+// ...
+
+- (void)payWithPaymentMethod:(NSString *)paymentMethodId orPaymentIntent:(NSString *)paymentIntentId {
+    // ...
+            // Payment requires additional actions
+            else if (clientSecret != nil && [requiresAction isEqualToNumber:@YES]) {
+                STPPaymentHandler *paymentHandler = [STPPaymentHandler sharedHandler];
+                [paymentHandler handleNextActionForPayment:clientSecret withAuthenticationContext:self returnURL:nil completion:^(STPPaymentHandlerActionStatus status, STPPaymentIntent *paymentIntent, NSError *handleActionError) {
+                        switch (status) {
+                            case STPPaymentHandlerActionStatusFailed: {
+                                [self displayAlertWithTitle:@"Payment failed" message:handleActionError.localizedDescription ?: @"" restartDemo:NO];
+                                break;
+                            }
+                            case STPPaymentHandlerActionStatusCanceled: {
+                                [self displayAlertWithTitle:@"Payment canceled" message:handleActionError.localizedDescription ?: @"" restartDemo:NO];
+                                break;
+                            }
+                            case STPPaymentHandlerActionStatusSucceeded: {
+                                // After handling a required action on the client, the status of the PaymentIntent is
+                                // requires_confirmation. You must send the PaymentIntent ID to your backend
+                                // and confirm it to finalize the payment. This step enables your integration to
+                                // synchronously fulfill the order on your backend and return the fulfillment result
+                                // to your client.
+                                if (paymentIntent.status == STPPaymentIntentStatusRequiresConfirmation) {
+                                    NSLog(@"Re-confirming PaymentIntent after handling action");
+                                    [self payWithPaymentMethod:nil orPaymentIntent:paymentIntent.stripeId];
+                                }
+                                else {
+                                    [self displayAlertWithTitle:@"Payment succeeded" message:paymentIntent.description restartDemo:YES];
+                                }
+                                break;
+                            }
+                            default:
+                                break;
+                        }
+                }];
+            }
+    // ...
+}
+
+# pragma mark STPAuthenticationContext
+- (UIViewController *)authenticationPresentingViewController {
+    return self;
+}
+
+@end
+@implementation CheckoutViewController <STPAuthenticationContext>
+
+// ...
+
+- (void)payWithPaymentMethod:(NSString *)paymentMethodId orPaymentIntent:(NSString *)paymentIntentId {
+    // ...
+            // Payment requires additional actions
+            else if (clientSecret != nil && [requiresAction isEqualToNumber:@YES]) {
+                STPPaymentHandler *paymentHandler = [STPPaymentHandler sharedHandler];
+                [paymentHandler handleNextActionForPayment:clientSecret withAuthenticationContext:self returnURL:nil completion:^(STPPaymentHandlerActionStatus status, STPPaymentIntent *paymentIntent, NSError *handleActionError) {
+                        switch (status) {
+                            case STPPaymentHandlerActionStatusFailed: {
+                                [self displayAlertWithTitle:@"Payment failed" message:handleActionError.localizedDescription ?: @"" restartDemo:NO];
+                                break;
+                            }
+                            case STPPaymentHandlerActionStatusCanceled: {
+                                [self displayAlertWithTitle:@"Payment canceled" message:handleActionError.localizedDescription ?: @"" restartDemo:NO];
+                                break;
+                            }
+                            case STPPaymentHandlerActionStatusSucceeded: {
+                                // After handling a required action on the client, the status of the PaymentIntent is
+                                // requires_confirmation. You must send the PaymentIntent ID to your backend
+                                // and confirm it to finalize the payment. This step enables your integration to
+                                // synchronously fulfill the order on your backend and return the fulfillment result
+                                // to your client.
+                                if (paymentIntent.status == STPPaymentIntentStatusRequiresConfirmation) {
+                                    NSLog(@"Re-confirming PaymentIntent after handling action");
+                                    [self payWithPaymentMethod:nil orPaymentIntent:paymentIntent.stripeId];
+                                }
+                                else {
+                                    [self displayAlertWithTitle:@"Payment succeeded" message:paymentIntent.description restartDemo:YES];
+                                }
+                                break;
+                            }
+                            default:
+                                break;
+                        }
+                }];
+            }
+    // ...
+}
+
+# pragma mark STPAuthenticationContext
+- (UIViewController *)authenticationPresentingViewController {
+    return self;
+}
+
+@end

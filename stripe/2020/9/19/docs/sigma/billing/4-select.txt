@@ -1,0 +1,13 @@
+select
+  coupons.id,
+  coupons.amount_off,
+  coupons.percent_off
+from coupons
+where valid = false
+limit 5select
+  coupons.id,
+  coupons.amount_off,
+  coupons.percent_off
+from coupons
+where valid = false
+limit 5

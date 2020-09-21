@@ -1,0 +1,1 @@
+The archive did not contain ... .xcarchive/BCSymbolMaps/<UUID>.bcsymbolmap as expected.

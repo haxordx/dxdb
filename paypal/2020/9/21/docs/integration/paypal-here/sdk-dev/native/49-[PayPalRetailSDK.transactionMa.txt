@@ -1,0 +1,4 @@
+[PayPalRetailSDK.transactionManager createRefundTransaction:paypalInvoiceId transactionNumber:transactionNumber paymentMethod:paymentMethod callback:^(PPRetailError *error, PPRetailTransactionContext *context) {
+        // refund handler
+    }];
+copy

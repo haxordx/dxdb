@@ -1,0 +1,3 @@
+[Error]
+    int - errorCode
+    string - message

@@ -1,0 +1,54 @@
+public void startRecoveryFlow(@NonNull  String clientSecret) {
+    AsyncTask.execute(new Runnable() {
+        @Override
+        public void run() {
+            final Stripe stripe = new Stripe(
+                getApplicationContext(),
+                PaymentConfiguration.getInstance(this).getPublishableKey()
+            );
+            try {
+                final PaymentIntent paymentIntent =
+                    stripe.retrievePaymentIntentSynchronous(clientSecret);
+                final PaymentIntent.Error lastPaymentError = paymentIntent != null ?
+                    paymentIntent.getLastPaymentError() : null;
+                final String failureReason;
+                if (lastPaymentError != null &&
+                    PaymentIntent.Error.Type.CardError.equals(lastPaymentError.getType())) {
+                    failureReason = lastPaymentError.getMessage();
+                } else {
+                    failureReason = "Payment failed, try again"; // Default to a generic error message
+                }
+                // Display the failure reason to your customer
+            } catch (Exception e) {
+                // Handle error
+            }
+        }
+    });
+}
+public void startRecoveryFlow(@NonNull  String clientSecret) {
+    AsyncTask.execute(new Runnable() {
+        @Override
+        public void run() {
+            final Stripe stripe = new Stripe(
+                getApplicationContext(),
+                PaymentConfiguration.getInstance(this).getPublishableKey()
+            );
+            try {
+                final PaymentIntent paymentIntent =
+                    stripe.retrievePaymentIntentSynchronous(clientSecret);
+                final PaymentIntent.Error lastPaymentError = paymentIntent != null ?
+                    paymentIntent.getLastPaymentError() : null;
+                final String failureReason;
+                if (lastPaymentError != null &&
+                    PaymentIntent.Error.Type.CardError.equals(lastPaymentError.getType())) {
+                    failureReason = lastPaymentError.getMessage();
+                } else {
+                    failureReason = "Payment failed, try again"; // Default to a generic error message
+                }
+                // Display the failure reason to your customer
+            } catch (Exception e) {
+                // Handle error
+            }
+        }
+    });
+}

@@ -1,0 +1,15 @@
+{
+  "id": "txi_I3MgMsF4PqRdIN",
+  "object": "tax_id",
+  "country": "DE",
+  "created": 123456789,
+  "customer": "cus_I3HcwHEKBfQLG1",
+  "livemode": false,
+  "type": "eu_vat",
+  "value": "DE123456789",
+  "verification": {
+    "status": "pending",
+    "verified_address": null,
+    "verified_name": null
+  }
+}

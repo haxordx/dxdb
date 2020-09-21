@@ -1,0 +1,12 @@
+<body>
+  <script
+       src="https://www.paypal.com/sdk/js?client-id=SB_CLIENT_ID&vault=true">
+  </script>
+
+  <div id="paypal-button-container"></div>
+
+  <script>
+    paypal.Buttons().render('#paypal-button-container');
+  </script>
+</body>
+htmlcopy

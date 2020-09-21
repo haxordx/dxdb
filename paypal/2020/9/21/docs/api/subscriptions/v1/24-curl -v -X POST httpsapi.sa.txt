@@ -1,0 +1,12 @@
+curl -v -X POST https://api.sandbox.paypal.com/v1/billing/subscriptions/I-BW452GLLEP1G/capture \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer Access-Token" \
+-H "PayPal-Request-Id: CAPTURE-160919-A0051" \
+-d '{
+  "note": "Charging as the balance reached the limit",
+  "capture_type": "OUTSTANDING_BALANCE",
+  "amount": {
+    "currency_code": "USD",
+    "value": "100"
+  }
+}'copy

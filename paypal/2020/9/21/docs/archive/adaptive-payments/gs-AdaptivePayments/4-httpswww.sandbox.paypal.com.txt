@@ -1,0 +1,1 @@
+https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_ap-payment&paykey=Your-payKeycopy

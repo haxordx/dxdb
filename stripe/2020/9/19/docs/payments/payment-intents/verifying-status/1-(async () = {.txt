@@ -1,0 +1,16 @@
+(async () => {
+  const {paymentIntent, error} = await stripe.confirmCardPayment(clientSecret);
+  if (error) {
+    // Handle error here
+  } else if (paymentIntent && paymentIntent.status === 'succeeded') {
+    // Handle successful payment here
+  }
+})();
+(async () => {
+  const {paymentIntent, error} = await stripe.confirmCardPayment(clientSecret);
+  if (error) {
+    // Handle error here
+  } else if (paymentIntent && paymentIntent.status === 'succeeded') {
+    // Handle successful payment here
+  }
+})();

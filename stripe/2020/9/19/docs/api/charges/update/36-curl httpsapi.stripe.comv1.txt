@@ -1,0 +1,2 @@
+curl https://api.stripe.com/v1/charges/ch_1HTFvb2eZvKYlo2CtPr1wyaY \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc:

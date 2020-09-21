@@ -1,0 +1,8 @@
+curl https://api.stripe.com/v1/prices \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d lookup_keys[]=standard_monthly \
+  -G
+curl https://api.stripe.com/v1/prices \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d lookup_keys[]=standard_monthly \
+  -G

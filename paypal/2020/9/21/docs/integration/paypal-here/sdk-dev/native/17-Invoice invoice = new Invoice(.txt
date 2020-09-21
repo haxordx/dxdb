@@ -1,0 +1,2 @@
+Invoice invoice = new Invoice("USD");
+invoice.addItem("Item", new BigDecimal(1), new BigDecimal(1), 1, null);copy

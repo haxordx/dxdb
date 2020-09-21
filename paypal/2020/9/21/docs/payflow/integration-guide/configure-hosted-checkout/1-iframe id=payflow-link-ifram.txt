@@ -1,0 +1,2 @@
+<iframe id="payflow-link-iframe" sandbox="allow-top-navigation allow-scripts allow-same-origin allow-forms allow-modals" src="https://pilot-payflowlink.paypal.com/?SECURETOKEN=XXXXX&SECURETOKENID=XXXX"></iframe>
+copy

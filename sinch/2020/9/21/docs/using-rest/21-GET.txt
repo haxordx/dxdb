@@ -1,0 +1,5 @@
+GET
+
+application/json
+x-timestamp:2015-06-20T11:43:10.944Z
+/v1/applications/key/bb7b4e39-4227-4913-8c81-2db4abb54fb3/numbers

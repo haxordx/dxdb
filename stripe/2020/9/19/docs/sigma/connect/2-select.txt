@@ -1,0 +1,22 @@
+select
+  date_format(date_trunc('day', charges.created), '%y-%m-%d') as day,
+  charges.id,
+  charges.amount as charge_amount,
+  transfers.amount as transferred_amount,
+  transfers.destination_id
+from charges
+inner join transfers
+  on transfers.id=charges.transfer_id
+order by day desc
+limit 5
+select
+  date_format(date_trunc('day', charges.created), '%y-%m-%d') as day,
+  charges.id,
+  charges.amount as charge_amount,
+  transfers.amount as transferred_amount,
+  transfers.destination_id
+from charges
+inner join transfers
+  on transfers.id=charges.transfer_id
+order by day desc
+limit 5

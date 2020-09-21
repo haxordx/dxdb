@@ -1,0 +1,4 @@
+curl https://api.stripe.com/v1/accounts/acct_1032D82eZvKYlo2C/persons \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d first_name=Jane \
+  -d last_name=Diaz

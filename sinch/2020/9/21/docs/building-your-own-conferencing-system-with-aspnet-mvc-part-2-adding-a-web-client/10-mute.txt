@@ -1,0 +1,21 @@
+//mute 
+$('#mute').bind('click', function (event) {
+    if (muted) {
+        $('#micicon').removeClass();
+        $('#micicon').addClass('mdi-av-mic');
+        call.unmute();
+        muted = false;
+    } else {
+        $('#micicon').removeClass();
+        $('#micicon').addClass('mdi-av-mic-off');
+        call.mute();
+        muted = true;
+    }
+
+});
+
+/*** Hang up a call ***/
+$('button#hangup').click(function (event) {
+    event.preventDefault();
+    call.hangup();
+});

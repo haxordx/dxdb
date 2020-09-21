@@ -1,0 +1,35 @@
+SessionCreateParams params =
+  SessionCreateParams.builder()
+    .addPaymentMethodType(SessionCreateParams.PaymentMethodType.CARD)
+    .addLineItem(
+      SessionCreateParams.LineItem.builder()
+        .setPriceData(
+          SessionCreateParams.LineItem.PriceData.builder()
+            .setProduct(prod)
+            .setUnitAmount(1500L)
+            .setCurrency("usd")
+            .build())
+        .setQuantity(1L)
+        .build())
+    .setMode(SessionCreateParams.Mode.PAYMENT)
+    .setSuccessUrl("https://example.com/success")
+    .setCancelUrl("https://example.com/cancel")
+    .build();
+Session session = Session.create(params);SessionCreateParams params =
+  SessionCreateParams.builder()
+    .addPaymentMethodType(SessionCreateParams.PaymentMethodType.CARD)
+    .addLineItem(
+      SessionCreateParams.LineItem.builder()
+        .setPriceData(
+          SessionCreateParams.LineItem.PriceData.builder()
+            .setProduct(prod)
+            .setUnitAmount(1500L)
+            .setCurrency("usd")
+            .build())
+        .setQuantity(1L)
+        .build())
+    .setMode(SessionCreateParams.Mode.PAYMENT)
+    .setSuccessUrl("https://example.com/success")
+    .setCancelUrl("https://example.com/cancel")
+    .build();
+Session session = Session.create(params);

@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <xs:element name="reportingEngineRequest"> br
+      xs:complexType
+         xs:sequence
+            <xs:element name="authRequest">
+               xs:complexType
+                  xs:sequence
+                     <xs:element name="user" type="xs:string"/>
+                     <xs:element name="vendor" type="xs:string"/>
+                     <xs:element name="partner" type="xs:string"/>
+                     <xs:element name="password" type="xs:string"/>
+                     <xs:element name="executor" type="xs:string" minOccurs="0"/>
+                  /xs:sequence
+               /xs:complexType
+            /xs:element
+            xs:choice
+               <xs:element name="createTemplateRequest">
+                  xs:complexType
+                     xs:sequence
+                        <xs:element ref="templateDefinition"/>
+                     /xs:sequence
+                  /xs:complexType
+               /xs:element
+               <xs:element name="getTemplateRequest">
+                  xs:complexType
+                     xs:choice
+                        <xs:element ref="reportName"/>
+                        <xs:element ref="templateName"/>
+                     /xs:choice
+                  /xs:complexType
+               /xs:element
+               <xs:element name="updateTemplateRequest">
+                  xs:complexType
+                     xs:sequence
+                        <xs:element ref="templateDefinition"/>
+                     /xs:sequence
+                  /xs:complexType
+               /xs:element
+               <xs:element name="deleteTemplateRequest">
+                  xs:complexType
+                     xs:sequence
+                        <xs:element ref="templateName"/>
+                     /xs:sequence
+                  /xs:complexType
+               /xs:element
+               <xs:element name="createScheduleRequest">
+                  xs:complexType
+                     xs:sequence
+                        <xs:element ref="scheduleDefinition"/>
+                     /xs:sequence
+                  /xs:complexType
+               /xs:element
+               <xs:element name="getScheduleRequest">
+                  xs:complexType
+                     xs:choice
+                        <xs:element ref="scheduleName"/>
+                        <xs:element ref="templateName"/>
+                     /xs:choice
+                  /xs:complexType
+               /xs:element
+               <xs:element name="updateScheduleRequest">
+                  xs:complexType
+                     xs:sequence
+                        <xs:element ref="scheduleDefinition"/>
+                     /xs:sequence
+                  /xs:complexType
+               /xs:element
+               <xs:element name="deleteScheduleRequest">
+                  xs:complexType
+                     xs:sequence
+                        <xs:element ref="scheduleName"/>
+                     /xs:sequence
+                  /xs:complexType
+               /xs:element
+               <xs:element name="runReportRequest">
+                  xs:complexType
+                     xs:sequence
+                        xs:choice
+                           <xs:element ref="reportName"/>
+                           <xs:element ref="templateName"/>
+                        /xs:choice
+                        <xs:element ref="reportParam" minOccurs="0"
+                              maxOccurs="unbounded"/>
+                        <xs:element ref="notificationRequired" minOccurs="0"/>
+                        <xs:element ref="pageSize" minOccurs="0"/>
+                     /xs:sequence
+                  /xs:complexType
+               /xs:element
+               <xs:element name="runSearchRequest">
+                  xs:complexType
+                     xs:sequence
+                        <xs:element ref="searchName"/>
+                        <xs:element ref="reportParam" minOccurs="0" maxOccurs="unbounded"/>
+                        <xs:element ref="pageSize" minOccurs="0"/>
+                     /xs:sequence
+                  /xs:complexType
+               /xs:element
+               <xs:element name="getResultsRequest">
+                  xs:complexType
+                     xs:sequence
+                        <xs:choice minOccurs="0">
+                           <xs:element ref="scheduleName"/>
+                           <xs:element ref="templateName"/>
+                           <xs:element ref="reportName"/>
+                           <xs:element ref="searchName"/>
+                           <xs:element ref="reportId"/>
+                        /xs:choice
+                        <xs:choice minOccurs="0">
+                           xs:complexType
+                              xs:sequence
+                                 <xs:element name="startDate"type="xs:date"/>
+                                 <xs:element name="endDate" type="xs:date"/>
+                              /xs:sequence
+                           /xs:complexType
+                        /xs:choice
+                     /xs:sequence
+                  /xs:complexType
+               /xs:element
+               <xs:element name="getMetaDataRequest">
+                  xs:complexType
+                     xs:sequence
+                     <xs:element ref="reportId"/>
+                  /xs:sequence
+                  /xs:complexType
+               /xs:element
+               <xs:element name="getDataRequest">
+                  xs:complexType
+                     xs:sequence
+                     <xs:element ref="reportId"/>
+                     <xs:element ref="pageNum" minOccurs="0"/>
+                  /xs:sequence
+                  /xs:complexType
+               /xs:element
+            /xs:choice
+         /xs:sequence
+      /xs:complexType
+   /xs:element
+   <xs:element name="reportingEngineResponse">
+      xs:complexType
+         xs:sequence
+            <xs:element name="baseResponse">
+               xs:complexType
+                  xs:sequence
+                     <xs:element name="responseCode" type="xs:int"/>
+                     <xs:element name="responseMsg" type="xs:string"/>
+                  /xs:sequence
+               /xs:complexType
+            /xs:element
+            <xs:choice minOccurs="0">
+               <xs:element name="getTemplateResponse">
+                  xs:complexType
+                     xs:choice
+                        <xs:element ref="templateName" maxOccurs="unbounded"/>
+                        <xs:element ref="templateDefinition"/>
+                     /xs:choice
+                  /xs:complexType
+               /xs:element
+               <xs:element name="getScheduleResponse">
+                  xs:complexType
+                     xs:choice
+                        <xs:element ref="scheduleName" maxOccurs="unbounded"/>
+                        <xs:element ref="scheduleDefinition"/>
+                     /xs:choice
+                  /xs:complexType
+               /xs:element
+               <xs:element name="runReportResponse">
+                  xs:complexType
+                     xs:sequence
+                        <xs:element ref="reportId"/>
+                        <xs:element ref="statusCode"/>
+                        <xs:element ref="statusMsg"/>
+                     /xs:sequence
+                  /xs:complexType
+               /xs:element
+               <xs:element name="runSearchResponse">
+                  xs:complexType
+                     xs:sequence
+                        <xs:element ref="reportId"/>
+                        <xs:element ref="statusCode"/>
+                        <xs:element ref="statusMsg"/>
+                     /xs:sequence
+                  /xs:complexType
+               /xs:element
+               <xs:element name="getResultsResponse">
+                  xs:complexType
+                     xs:sequence
+                        <xs:element name="Results" minOccurs="0" maxOccurs="unbounded">
+                           xs:complexType
+                              xs:sequence
+                                 <xs:element ref="reportId"/>
+                                 <xs:element ref="statusCode"/>
+                                 <xs:element ref="statusMsg"/>
+                                 <xs:element name="executionTime" type="xs:dateTime"
+                                       minOccurs="0"/>
+                                 <xs:element ref="scheduleName" minOccurs="0"/>
+                                 <xs:element ref="reportName" minOccurs="0"/>
+                                 <xs:element ref="templateName" minOccurs="0"/>
+                                 <xs:element ref="searchName" minOccurs="0"/>
+                              /xs:sequence
+                           /xs:complexType
+                        /xs:element
+                     /xs:sequence
+                  /xs:complexType
+               /xs:element
+               <xs:element name="getMetaDataResponse">
+                  xs:complexType
+                     xs:sequence
+                        <xs:element name="numberOfRows" type="xs:int"/>
+                        <xs:element name="numberOfPages" type="xs:int"/>
+                        <xs:element ref="pageSize"/>
+                        <xs:element name="numberOfColumns" type="xs:int"/>
+                        <xs:element name="columnMetaData" minOccurs="0"
+                              maxOccurs="unbounded">
+                           xs:complexType
+                              xs:sequence
+                                 <xs:element name="dataName" type="xs:string"/>
+                                 <xs:element name="dataType">
+                                    xs:simpleType
+                                       <xs:restriction base="xs:string">
+                                          <xs:enumeration value="string"/>
+                                          <xs:enumeration value="number"/>
+                                          <xs:enumeration value="date"/>
+                                          <xs:enumeration value="currency"/>
+                                       /xs:restriction
+                                    /xs:simpleType
+                                 /xs:element
+                              /xs:sequence
+                           /xs:complexType
+                        /xs:element
+                     /xs:sequence
+                  /xs:complexType
+               /xs:element
+               <xs:element name="getDataResponse">
+                  xs:complexType
+                     xs:sequence
+                        <xs:element name="reportDataRow" maxOccurs="unbounded">
+                           xs:complexType
+                              xs:sequence
+                                 <xs:element name="columnData" maxOccurs="unbounded">
+                                    xs:complexType
+                                       xs:sequence
+                                          <xs:element name="data" type="xs:string" minOccurs="0"/>
+                                       /xs:sequence
+                                    /xs:complexType
+                                 /xs:element
+                              /xs:sequence
+                           /xs:complexType
+                        /xs:element
+                        <xs:element ref="pageNum"/>
+                     /xs:sequence
+                  /xs:complexType
+               /xs:element
+            /xs:choice
+         /xs:sequence
+      /xs:complexType
+   /xs:element
+   <xs:element name="reportDefinition">
+      xs:complexType
+         xs:sequence/
+      /xs:complexType
+   /xs:element
+   <xs:element name="reportId" type="xs:string"/>
+   <xs:element name="paramName" type="xs:string"/>
+   <xs:element name="paramValue" type="xs:string"/>
+   <xs:element name="templateName" type="xs:string"/>
+   <xs:element name="reportName" type="xs:string"/>
+   <xs:element name="reportParam">
+      xs:complexType
+         xs:sequence
+            <xs:element ref="paramName"/>
+            <xs:element ref="paramValue"/>
+         /xs:sequence
+      /xs:complexType
+   /xs:element
+   <xs:element name="templateDefinition">
+      xs:complexType
+         xs:sequence
+            <xs:element ref="templateName"/>
+            <xs:element ref="reportName"/>
+            <xs:element ref="reportParam" minOccurs="0" maxOccurs="unbounded"/>
+         /xs:sequence
+      /xs:complexType
+   /xs:element
+   <xs:element name="notificationRequired" type="xs:boolean"/>
+   <xs:element name="scheduleDefinition">
+      xs:complexType
+         xs:sequence
+            <xs:element ref="scheduleName"/>
+            <xs:element ref="templateName"/>
+            <xs:element ref="notificationRequired"/>
+            xs:choice
+               <xs:element name="daily">
+                  xs:complexType/
+               /xs:element
+               <xs:element name="weekly">
+                  xs:complexType
+                     xs:sequence
+                        <xs:element name="dayOfWeek">
+                           xs:simpleType
+                              <xs:restriction base="xs:string">
+                                 <xs:enumeration value="Sunday"/>
+                                 <xs:enumeration value="Monday"/>
+                                 <xs:enumeration value="Tuesday"/>
+                                 <xs:enumeration value="Wednesday"/>
+                                 <xs:enumeration value="Thursday"/>
+                                 <xs:enumeration value="Friday"/>
+                                 <xs:enumeration value="Saturday"/>
+                              /xs:restriction
+                           /xs:simpleType
+                        /xs:element
+                     /xs:sequence
+                  /xs:complexType
+               /xs:element
+               <xs:element name="monthly">
+                  xs:complexType
+                     xs:sequence
+                        <xs:element name="dayOfMonth" type="xs:int"/>
+                     /xs:sequence
+                  /xs:complexType
+               /xs:element
+            /xs:choice
+            <xs:element ref="pageSize" minOccurs="0"/>
+         /xs:sequence
+      /xs:complexType
+   /xs:element
+   <xs:element name="scheduleName" type="xs:string"/>
+   <xs:element name="pageNum" type="xs:int"/>
+   <xs:element name="searchName" type="xs:string"/>
+   <xs:element name="pageSize" type="xs:int"/>
+   <xs:element name="statusCode" type="xs:int"/>
+   <xs:element name="statusMsg" type="xs:string"/> /xs:schema
+xmlcopy

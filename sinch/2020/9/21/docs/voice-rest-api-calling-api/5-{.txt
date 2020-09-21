@@ -1,0 +1,13 @@
+{
+  "numbers": [
+    {
+      "number": "+19160001112222",
+      "capability": "voice"
+    },
+    {
+      "number": "+14151112223333",
+      "applicationkey": "11983f76-12c8-1111-9515-4785c7b49ca8",
+      "capability": "voice"
+    }
+  ]
+}

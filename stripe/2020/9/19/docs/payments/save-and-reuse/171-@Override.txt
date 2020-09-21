@@ -1,0 +1,48 @@
+@Override
+protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+    super.onActivityResult(requestCode, resultCode, data);
+    WeakReference<Activity> weakActivity = new WeakReference<>(this);
+
+    // Handle the result of stripe.confirmSetupIntent
+    stripe.onSetupResult(requestCode, data, new ApiResultCallback<SetupIntentResult>() {
+        @Override
+        public void onSuccess(@NonNull SetupIntentResult result) {
+            SetupIntent setupIntent = result.getIntent();
+            SetupIntent.Status status = setupIntent.getStatus();
+            if (status == SetupIntent.Status.Succeeded) {
+                // Setup completed successfully
+            } else if (status == SetupIntent.Status.RequiresPaymentMethod) {
+                // Setup failed – allow retrying
+            }
+        }
+
+        @Override
+        public void onError(@NonNull Exception e) {
+            // Setup request failed
+        }
+    });
+}
+@Override
+protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+    super.onActivityResult(requestCode, resultCode, data);
+    WeakReference<Activity> weakActivity = new WeakReference<>(this);
+
+    // Handle the result of stripe.confirmSetupIntent
+    stripe.onSetupResult(requestCode, data, new ApiResultCallback<SetupIntentResult>() {
+        @Override
+        public void onSuccess(@NonNull SetupIntentResult result) {
+            SetupIntent setupIntent = result.getIntent();
+            SetupIntent.Status status = setupIntent.getStatus();
+            if (status == SetupIntent.Status.Succeeded) {
+                // Setup completed successfully
+            } else if (status == SetupIntent.Status.RequiresPaymentMethod) {
+                // Setup failed – allow retrying
+            }
+        }
+
+        @Override
+        public void onError(@NonNull Exception e) {
+            // Setup request failed
+        }
+    });
+}

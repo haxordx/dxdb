@@ -1,0 +1,8 @@
+function lookUpNumber(number) {
+  for (var p in numbers) {
+    if (numbers[p] == number) {
+      return true;
+    }
+  }
+  return false;
+}

@@ -1,0 +1,4 @@
+stripe products create \
+  --name="Starter Dashboard"
+stripe products create \
+  --name="Starter Dashboard"

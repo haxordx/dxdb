@@ -1,0 +1,5 @@
+{
+    "name" : "Say",
+    "text" : "Hello, this is a text to speech message",
+    "locale" : "en-US"
+}

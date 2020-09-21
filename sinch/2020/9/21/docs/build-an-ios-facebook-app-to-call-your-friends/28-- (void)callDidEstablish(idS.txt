@@ -1,0 +1,7 @@
+- (void)callDidEstablish:(id<SINCall>)call {
+    self.detailDescriptionLabel.text = @"";
+}
+
+- (void)callDidEnd:(id<SINCall>)call {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}

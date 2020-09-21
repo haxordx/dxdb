@@ -1,0 +1,2 @@
+<script src="https://paypal.com/sdk/js?client-id=YOUR_CLIENT_ID" data-page-type="checkout"></script>
+htmlcopy

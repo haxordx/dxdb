@@ -1,0 +1,8 @@
+import com.clxcommunications.xms.ClxApi;
+
+connection.createBatch(ClxApi.batchTextSms()
+        .sender("ignored")
+        .addRecipient("{RECIPIENT_1_PHONE_NUMBER}")
+        .addRecipient("{RECIPIENT_2_PHONE_NUMBER}")
+        .body("Hello from Sinch!")
+        .build());

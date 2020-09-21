@@ -1,0 +1,22 @@
+# Not recommended: setting global API key state
+stripe.api_key = '{{CONNECTED_ACCOUNT_SECRET_KEY}}'
+stripe.Customer.create(
+  email='person@example.edu'
+)
+
+# Recommended: sending API key with every request
+stripe.Customer.create(
+  email='person@example.edu',
+  api_key='{{CONNECTED_ACCOUNT_SECRET_KEY}}' # account's access token from the Connect flow
+)
+# Not recommended: setting global API key state
+stripe.api_key = '{{CONNECTED_ACCOUNT_SECRET_KEY}}'
+stripe.Customer.create(
+  email='person@example.edu'
+)
+
+# Recommended: sending API key with every request
+stripe.Customer.create(
+  email='person@example.edu',
+  api_key='{{CONNECTED_ACCOUNT_SECRET_KEY}}' # account's access token from the Connect flow
+)

@@ -1,0 +1,66 @@
+class CheckoutViewController: UIViewController {
+    // ...
+
+    func pay() {
+        // ...
+
+        // Complete the setup
+        let paymentHandler = STPPaymentHandler.shared()
+        paymentHandler.confirmSetupIntent(withParams: setupIntentParams, authenticationContext: self) { status, setupIntent, error in
+            switch (status) {
+            case .failed:
+                // Setup failed
+                break
+            case .canceled:
+                // Setup canceled
+                break
+            case .succeeded:
+                // Setup succeeded
+                break
+            @unknown default:
+                fatalError()
+                break
+            }
+        }
+    }
+}
+
+extension CheckoutViewController: STPAuthenticationContext {
+    func authenticationPresentingViewController() -> UIViewController {
+        return self
+    }
+}
+
+class CheckoutViewController: UIViewController {
+    // ...
+
+    func pay() {
+        // ...
+
+        // Complete the setup
+        let paymentHandler = STPPaymentHandler.shared()
+        paymentHandler.confirmSetupIntent(withParams: setupIntentParams, authenticationContext: self) { status, setupIntent, error in
+            switch (status) {
+            case .failed:
+                // Setup failed
+                break
+            case .canceled:
+                // Setup canceled
+                break
+            case .succeeded:
+                // Setup succeeded
+                break
+            @unknown default:
+                fatalError()
+                break
+            }
+        }
+    }
+}
+
+extension CheckoutViewController: STPAuthenticationContext {
+    func authenticationPresentingViewController() -> UIViewController {
+        return self
+    }
+}
+

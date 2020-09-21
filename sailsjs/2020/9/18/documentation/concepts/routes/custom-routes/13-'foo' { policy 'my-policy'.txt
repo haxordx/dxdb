@@ -1,0 +1,1 @@
+'/foo': { policy: 'my-policy' }

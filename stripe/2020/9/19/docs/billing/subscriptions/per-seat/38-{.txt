@@ -1,0 +1,49 @@
+{
+  "id": "price_1H0RCyDxzApwA5wcuKfVigQ1",  "object": "price",
+  "active": true,
+  "billing_scheme": "tiered",
+  "created": 1593691684,
+  "currency": "usd",
+  "livemode": false,
+  "lookup_key": null,
+  "metadata": {
+  },
+  "nickname": null,
+  "product": "prod_HZaLjvgB83z6Kv",
+  "recurring": {
+    "aggregate_usage": null,
+    "interval": "month",
+    "interval_count": 1,
+    "trial_period_days": null,
+    "usage_type": "licensed"
+  },
+  "tiers": [
+    {
+      "flat_amount": null,
+      "flat_amount_decimal": null,
+      "unit_amount": 1500,
+      "unit_amount_decimal": "1500",
+      "up_to": 5
+    },
+    {
+      "flat_amount": null,
+      "flat_amount_decimal": null,
+      "unit_amount": 1000,
+      "unit_amount_decimal": "1000",
+      "up_to": 15
+    },
+    {
+      "flat_amount": null,
+      "flat_amount_decimal": null,
+      "unit_amount": 500,
+      "unit_amount_decimal": "500",
+      "up_to": null
+    }
+  ],
+  "tiers_mode": "volume",
+  "transform_quantity": null,
+  "type": "recurring",
+  "unit_amount": null,
+  "unit_amount_decimal": null
+}{
+  "id": "price_1H0RCyDxzApwA5wcuKfVigQ1",

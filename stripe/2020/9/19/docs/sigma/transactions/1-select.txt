@@ -1,0 +1,21 @@
+select
+  date_format(date_trunc('day', balance_transactions.created), '%Y-%m-%d') as day,
+  balance_transactions.id,
+  balance_transactions.amount,
+  balance_transactions.fee,
+  balance_transaction_fee_details.type
+from balance_transactions
+inner join balance_transaction_fee_details
+  on balance_transaction_fee_details.balance_transaction_id=balance_transactions.id
+order by day desc
+limit 5select
+  date_format(date_trunc('day', balance_transactions.created), '%Y-%m-%d') as day,
+  balance_transactions.id,
+  balance_transactions.amount,
+  balance_transactions.fee,
+  balance_transaction_fee_details.type
+from balance_transactions
+inner join balance_transaction_fee_details
+  on balance_transaction_fee_details.balance_transaction_id=balance_transactions.id
+order by day desc
+limit 5

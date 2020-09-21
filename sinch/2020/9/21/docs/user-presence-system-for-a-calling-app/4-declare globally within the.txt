@@ -1,0 +1,7 @@
+//declare globally within the MainActivity
+private Pubnub pubnub;
+
+//in onCreate
+String username = getIntent().getStringExtra("username");
+pubnub = new Pubnub("your-publish-key", "your-subscribe-key");
+pubnub.setUUID(username);

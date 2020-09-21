@@ -1,0 +1,23 @@
+[[PayPalRetailSDK transactionManager] createVaultTransaction:^(PPRetailError *error, PPRetailTransactionContext *context) {
+    if (error) {
+        vaultModel.errorMsg = [self vaultTransactionErrorMsg];
+        completion(vaultModel);
+        return;
+    }
+
+    // MARK: 2. Accept transaction by setting completion handler and calling beginPayment(options)
+    [self acceptVaultTransaction:context options:vaultModel.options completion:^(PPRetailVaultRecord *vaultRecord, ErrorMsg *errorMsg) {
+        if (errorMsg) {
+            // handle error accordingly
+            return;
+        }
+
+        // Successful vault!
+    }];
+}];
+
++ (void)acceptVaultTransaction:(PPRetailTransactionContext *)tc  options:(PPRetailTransactionBeginOptions *)options completion:(void (^)(PPRetailVaultRecord *vaultRecord, ErrorMsg *errorMsg))completion {
+
+  // set vaultCompletionHandler, transaction options, and beginPayment as outlined above  
+}
+copy

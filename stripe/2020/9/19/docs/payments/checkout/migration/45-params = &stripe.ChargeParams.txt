@@ -1,0 +1,17 @@
+params := &stripe.ChargeParams{
+    Description: stripe.String("10 cucumbers from Roger's Farm"),
+    Amount: stripe.Int64(2000),
+    Currency: stripe.String(string(stripe.CurrencyUSD)),
+    ApplicationFeeAmount: stripe.Int64(200),
+}
+params.SetSource(*request.stripeToken)
+params.SetStripeAccount("{{CONNECTED_STRIPE_ACCOUNT_ID}}")
+charge, _ := charge.New(params)params := &stripe.ChargeParams{
+    Description: stripe.String("10 cucumbers from Roger's Farm"),
+    Amount: stripe.Int64(2000),
+    Currency: stripe.String(string(stripe.CurrencyUSD)),
+    ApplicationFeeAmount: stripe.Int64(200),
+}
+params.SetSource(*request.stripeToken)
+params.SetStripeAccount("{{CONNECTED_STRIPE_ACCOUNT_ID}}")
+charge, _ := charge.New(params)

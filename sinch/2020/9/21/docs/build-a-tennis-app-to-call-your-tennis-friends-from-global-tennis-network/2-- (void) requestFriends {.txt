@@ -1,0 +1,6 @@
+- (void) requestFriends {
+    self.objects = [[NSMutableArray alloc] init];
+    NSString *devKey = @"your-gtn-key";
+    TennisParser *parser = [[TennisParser alloc] initWithKey:devKey Array:self.objects];
+    [parser parseXMLForFriendsWithUserID:self.userID];
+}

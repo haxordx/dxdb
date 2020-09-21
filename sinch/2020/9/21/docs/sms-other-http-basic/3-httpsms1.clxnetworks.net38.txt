@@ -1,0 +1,1 @@
+http://sms1.clxnetworks.net:3800/sendsms?username=userX&password=passX&from=test&to=123456&text=Hello+world&dlr-mask=7&dlr-url=http%3a%2f%2fyour.host.com%2fdlr.php%3ftype%3d%25d%26dr-%c2%admsg%3d%25A

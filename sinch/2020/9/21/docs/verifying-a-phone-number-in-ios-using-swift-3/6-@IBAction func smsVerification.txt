@@ -1,0 +1,14 @@
+@IBAction func smsVerification(_ sender: AnyObject) {
+    self.disableUI(true);
+    verification = SMSVerification(applicationKey, phoneNumber: phoneNumber.text!)
+
+    verification.initiate { (result: InitiationResult, error:Error?) -> Void in
+        self.disableUI(false);
+        if (success.success){
+            self.performSegue(withIdentifier: "enterPin", sender: sender)
+
+        } else {
+            self.status.text = error?.localizedDescription
+        }
+    }
+}

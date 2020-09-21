@@ -1,0 +1,24 @@
+curl https://api.stripe.com/v1/subscription_schedules \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d customer=cus_GBHHxuvBvO26Ea \
+  -d start_date=now \
+  -d end_behavior=release \
+  -d phases[0][items][0][price]=price_print \
+  -d phases[0][items][0][quantity]=1 \
+  -d phases[0][iterations]=6 \
+  -d phases[0][coupon]=co_50_percent_off \
+  -d phases[1][items][0][price]=price_print \
+  -d phases[1][items][0][quantity]=1 \
+  -d phases[1][iterations]=6
+curl https://api.stripe.com/v1/subscription_schedules \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d customer=cus_GBHHxuvBvO26Ea \
+  -d start_date=now \
+  -d end_behavior=release \
+  -d phases[0][items][0][price]=price_print \
+  -d phases[0][items][0][quantity]=1 \
+  -d phases[0][iterations]=6 \
+  -d phases[0][coupon]=co_50_percent_off \
+  -d phases[1][items][0][price]=price_print \
+  -d phases[1][items][0][quantity]=1 \
+  -d phases[1][iterations]=6

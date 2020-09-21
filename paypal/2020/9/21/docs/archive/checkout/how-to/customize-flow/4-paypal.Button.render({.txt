@@ -1,0 +1,36 @@
+paypal.Button.render({
+  env: 'production', // Optional: specify 'sandbox' environment
+  client: {
+    sandbox:    'xxxxxxxxx',
+    production: 'xxxxxxxxx'
+  },
+  commit: true, // Optional: show a 'Pay Now' button in the checkout flow
+  payment: function (data, actions) {
+    return actions.payment.create({
+      payment: {
+        transactions: [
+          {
+            amount: {
+              total: '1.00',
+              currency: 'USD'
+            }
+          }
+        ]
+      },
+      experience: {
+        input_fields: {
+          no_shipping: 1
+        }
+      }
+    });
+  },
+  onAuthorize: function (data, actions) {
+    // Optional: display a confirmation page here
+
+    return actions.payment.execute()
+      .then(function () {
+        // Show a success page to the buyer
+      });
+    }
+}, '#paypal-button');
+jscopy

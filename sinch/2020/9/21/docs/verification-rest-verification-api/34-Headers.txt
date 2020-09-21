@@ -1,0 +1,6 @@
+Headers:
+...
+Accept-Language: es-ES
+...
+
+[POST] https://verificationapi-v1.sinch.com/verification/v1/verifications

@@ -1,0 +1,8 @@
+curl https://api.stripe.com/v1/invoices/{INVOICE_ID} \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d application_fee_amount=100 \
+  -d "transfer_data[destination]"="{{CONNECTED_STRIPE_ACCOUNT_ID}}"
+curl https://api.stripe.com/v1/invoices/{INVOICE_ID} \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d application_fee_amount=100 \
+  -d "transfer_data[destination]"="{{CONNECTED_STRIPE_ACCOUNT_ID}}"

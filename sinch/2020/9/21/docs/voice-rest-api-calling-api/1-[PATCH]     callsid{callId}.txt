@@ -1,0 +1,12 @@
+[PATCH]     /calls/id/{callId}
+[GET]       /calls/id/{callId}
+[GET]       /conferences/id/{conferenceId}
+[PATCH]     /conferences/id/{conferenceId}/{callId}
+[DELETE]    /conferences/id/{conferenceId}
+[DELETE]    /conferences/id/{conferenceId}/{callId}
+[POST]      /callouts
+[GET]       /calls/id/{callId}
+[PATCH]     /calls/id/{callId}
+[GET]       /recording?from=timestamp&to=timestamp&page=int&pageSize=int
+[GET]       /recording/{key}
+[DELETE]    /recording/{key}

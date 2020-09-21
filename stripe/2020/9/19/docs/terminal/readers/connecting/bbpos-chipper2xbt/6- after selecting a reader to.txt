@@ -1,0 +1,23 @@
+// after selecting a reader to connect to
+Terminal.getInstance().connectReader(firstReader, new ReaderCallback() {
+  @Override
+  public void onSuccess(Reader r) {
+    System.out.println("Connected to reader");
+  }
+
+  @Override
+  public void onFailure(@Nonnull TerminalException e) {
+    e.printStackTrace();
+  }
+});// after selecting a reader to connect to
+Terminal.getInstance().connectReader(firstReader, new ReaderCallback() {
+  @Override
+  public void onSuccess(Reader r) {
+    System.out.println("Connected to reader");
+  }
+
+  @Override
+  public void onFailure(@Nonnull TerminalException e) {
+    e.printStackTrace();
+  }
+});

@@ -1,0 +1,5 @@
+// (Ensure you have created a SinchClient)
+
+if (SinchHelpers.isSinchPushPayload(remoteMessage.getData())) {
+    NotificationResult result = sinchClient.relayRemotePushNotificationPayload(remoteMessage.getData());
+}

@@ -1,0 +1,7 @@
+sails.sockets.blast('user_logged_in', {
+  msg: 'User #' + user.id + ' just logged in.',
+  user: {
+    id: user.id,
+    username: user.username
+  }
+}, req);

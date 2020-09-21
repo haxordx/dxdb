@@ -1,0 +1,8 @@
+{
+  "label_download": {
+    "pdf": "https://api.shipengine.com/v1/downloads/10/XNGDhq7uZ0CAEt5LOnCxIg/label-7764944.pdf",
+    "png": "https://api.shipengine.com/v1/downloads/10/XNGDhq7uZ0CAEt5LOnCxIg/label-7764944.png",
+    "zpl": "https://api.shipengine.com/v1/downloads/10/XNGDhq7uZ0CAEt5LOnCxIg/label-7764944.zpl",
+    "href": "https://api.shipengine.com/v1/downloads/10/XNGDhq7uZ0CAEt5LOnCxIg/label-7764944.pdf"
+  }
+}

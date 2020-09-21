@@ -1,0 +1,21 @@
+// Listener called once the transaction is completed
+tc.setCompletedHandler { (error, txnRecord) -> Void in
+
+    // if error, handle accordingly, else pop back to view controller and handle success
+
+    self.navigationController?.popToViewController(self, animated: false)
+
+    // txnRecord would have any info needed to record the successful transaction
+}
+// Setting up the options for the transaction.
+let options = PPRetailTransactionBeginOptions()
+options.showPromptInCardReader = true
+options.showPromptInApp = true
+options.preferredFormFactors = []
+options.tippingOnReaderEnabled = false
+options.amountBasedTipping = false
+options.isAuthCapture = false
+options.quickChipEnabled = false
+
+// Activates the reader to show the payment options
+tc.beginPayment(options)copy

@@ -1,0 +1,11 @@
+override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<String>, grantResults: IntArray) {
+  if (requestCode == REQUEST_CODE_LOCATION && grantResults.isNotEmpty()
+      && grantResults[0] != PackageManager.PERMISSION_GRANTED) {
+    throw RuntimeException("Location services are required in order to " + "connect to a reader.")
+  }
+}override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<String>, grantResults: IntArray) {
+  if (requestCode == REQUEST_CODE_LOCATION && grantResults.isNotEmpty()
+      && grantResults[0] != PackageManager.PERMISSION_GRANTED) {
+    throw RuntimeException("Location services are required in order to " + "connect to a reader.")
+  }
+}

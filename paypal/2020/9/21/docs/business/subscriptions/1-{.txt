@@ -1,0 +1,19 @@
+{
+    "id": "PROD-5FD60555F23244316",
+    "name": "Video Streaming Service",
+    "description": "A video streaming service",
+    "create_time": "2020-01-21T16:04:39Z",
+    "links": [
+        {
+            "href": "https://api.sandbox.paypal.com/v1/catalogs/products/PROD-5FD60555F23244316",
+            "rel": "self",
+            "method": "GET"
+        },
+        {
+            "href": "https://api.sandbox.paypal.com/v1/catalogs/products/PROD-5FD60555F23244316",
+            "rel": "edit",
+            "method": "PATCH"
+        }
+    ]
+}
+jsoncopy

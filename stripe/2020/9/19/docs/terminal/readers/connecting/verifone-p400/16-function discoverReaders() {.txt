@@ -1,0 +1,27 @@
+function discoverReaders() {
+  const config = {simulated: false}
+  terminal.discoverReaders(config).then(function(discoverResult) {
+    if (discoverResult.error) {
+      console.log('Failed to discover: ', discoverResult.error);
+    } else if (discoverResult.discoveredReaders.length === 0) {
+      console.log('No available readers.');
+    } else {
+      // You should show the list of discoveredReaders to the
+      // cashier here and let them select which to connect to (see below).
+      connectReader(discoverResult);
+    }
+  });
+}function discoverReaders() {
+  const config = {simulated: false}
+  terminal.discoverReaders(config).then(function(discoverResult) {
+    if (discoverResult.error) {
+      console.log('Failed to discover: ', discoverResult.error);
+    } else if (discoverResult.discoveredReaders.length === 0) {
+      console.log('No available readers.');
+    } else {
+      // You should show the list of discoveredReaders to the
+      // cashier here and let them select which to connect to (see below).
+      connectReader(discoverResult);
+    }
+  });
+}

@@ -1,0 +1,7 @@
+{
+    "id": "1234567123",
+    "method": "sms",
+    "status": "SUCCESSFUL",
+    "source": "manual",
+    "reference": "abc_123"
+}

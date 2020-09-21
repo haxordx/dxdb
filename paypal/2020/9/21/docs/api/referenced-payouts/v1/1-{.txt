@@ -1,0 +1,9 @@
+{
+  "links": [
+    {
+      "href": "https://api.sandbox.paypal.com/v1/payments/referenced-payouts/CDZEC5MJ8R5HY",
+      "rel": "self",
+      "method": "GET"
+    }
+  ]
+}copy

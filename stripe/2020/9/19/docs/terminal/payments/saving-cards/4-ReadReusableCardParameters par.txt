@@ -1,0 +1,29 @@
+ReadReusableCardParameters params = new ReadReusableCardParameters.Builder()
+  .build();
+Cancelable cancelable = Terminal.getInstance().readReusableCard(params,
+new MyReaderDisplayListener(),
+new PaymentMethodCallback() {
+  @Override
+  public void onSuccess(PaymentMethod paymentMethod) {
+    // Placeholder for sending paymentMethod.id to your backend.
+  }
+
+  @Override
+  public void onFailure(TerminalException exception) {
+    // Placeholder for handling the exception
+  }
+});ReadReusableCardParameters params = new ReadReusableCardParameters.Builder()
+  .build();
+Cancelable cancelable = Terminal.getInstance().readReusableCard(params,
+new MyReaderDisplayListener(),
+new PaymentMethodCallback() {
+  @Override
+  public void onSuccess(PaymentMethod paymentMethod) {
+    // Placeholder for sending paymentMethod.id to your backend.
+  }
+
+  @Override
+  public void onFailure(TerminalException exception) {
+    // Placeholder for handling the exception
+  }
+});

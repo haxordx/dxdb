@@ -1,0 +1,16 @@
+{
+  "participants": [
+    {
+      "cli": "+46708168731",
+      "id": "abcabcabcabca",
+      "duration": 14,
+      "muted": false
+    },
+    {
+      "cli": "+46708425201",
+      "id": "cdecdecdecde",
+      "duration": 12,
+      "muted": false
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+curl -v -X POST \
+  https://api.sandbox.paypal.com/v2/invoicing/invoices/INV2-Z56S-5LLA-Q52L-CPZ5/remind \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer Access-Token" \
+  -d '{
+  "subject": "Past due",
+  "note": "Please submit a payment at your earliest convenience.",
+  "send_to_invoicer": true,
+  "additional_recipients": ["recipient@example.com"]
+}'
+bashcopy

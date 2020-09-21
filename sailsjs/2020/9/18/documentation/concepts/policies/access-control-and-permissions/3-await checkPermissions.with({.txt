@@ -1,0 +1,4 @@
+await checkPermissions.with({
+  userId: this.req.session.userId,
+  orgId: inputs.orgId
+});

@@ -1,0 +1,22 @@
+curl https://api.stripe.com/v1/checkout/sessions \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d "payment_method_types[]"=card \
+  -d "line_items[0][price_data][unit_amount]"=2000 \
+  -d "line_items[0][price_data][product_data][name]"=T-shirt \
+  -d "line_items[0][price_data][currency]"=usd \
+  -d "line_items[0][quantity]"=1 \
+  -d mode=payment \
+  -d allow_promotion_codes=true \
+  -d success_url="https://example.com/success" \
+  -d cancel_url="https://example.com/cancel"
+curl https://api.stripe.com/v1/checkout/sessions \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d "payment_method_types[]"=card \
+  -d "line_items[0][price_data][unit_amount]"=2000 \
+  -d "line_items[0][price_data][product_data][name]"=T-shirt \
+  -d "line_items[0][price_data][currency]"=usd \
+  -d "line_items[0][quantity]"=1 \
+  -d mode=payment \
+  -d allow_promotion_codes=true \
+  -d success_url="https://example.com/success" \
+  -d cancel_url="https://example.com/cancel"

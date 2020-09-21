@@ -1,0 +1,30 @@
+func startRecoveryFlow(clientSecret: String) {
+    // Retrieve the PaymentIntent
+    STPAPIClient.shared().retrievePaymentIntent(withClientSecret: clientSecret) { (paymentIntent, error) in
+        guard error == nil, let lastPaymentError = paymentIntent?.lastPaymentError else {
+            // Handle error (e.g. allow your customer to retry)
+            return
+        }
+        var failureReason = "Payment failed, try again." // Default to a generic error message
+        if lastPaymentError.type == .card {
+            failureReason = lastPaymentError.message
+        }
+        // Display the failure reason to your customer
+        // ...
+    }
+}
+func startRecoveryFlow(clientSecret: String) {
+    // Retrieve the PaymentIntent
+    STPAPIClient.shared().retrievePaymentIntent(withClientSecret: clientSecret) { (paymentIntent, error) in
+        guard error == nil, let lastPaymentError = paymentIntent?.lastPaymentError else {
+            // Handle error (e.g. allow your customer to retry)
+            return
+        }
+        var failureReason = "Payment failed, try again." // Default to a generic error message
+        if lastPaymentError.type == .card {
+            failureReason = lastPaymentError.message
+        }
+        // Display the failure reason to your customer
+        // ...
+    }
+}

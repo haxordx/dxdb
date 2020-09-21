@@ -1,0 +1,19 @@
+{
+  "id": "promo_1HMxuf2eZvKYlo2CmGXSyhRx",
+  "object": "promotion_code",
+  "active": true,
+  "code": "TS0EQJHH",
+  "coupon": "25_5OFF",
+  "created": 1599060617,
+  "customer": null,
+  "expires_at": null,
+  "livemode": false,
+  "max_redemptions": null,
+  "metadata": {},
+  "restrictions": {
+    "first_time_transaction": false,
+    "minimum_amount": null,
+    "minimum_amount_currency": null
+  },
+  "times_redeemed": 0
+}

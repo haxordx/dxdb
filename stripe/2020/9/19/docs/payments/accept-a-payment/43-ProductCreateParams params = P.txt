@@ -1,0 +1,8 @@
+ProductCreateParams params = ProductCreateParams.builder()
+  .setName("T-shirt")
+  .build();
+Product product = Product.create(params);
+ProductCreateParams params = ProductCreateParams.builder()
+  .setName("T-shirt")
+  .build();
+Product product = Product.create(params);

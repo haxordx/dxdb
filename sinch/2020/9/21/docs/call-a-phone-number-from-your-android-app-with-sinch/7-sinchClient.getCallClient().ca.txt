@@ -1,0 +1,2 @@
+sinchClient.getCallClient().callPhoneNumber("+46000000000");
+callButton.setText("Hang Up");

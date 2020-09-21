@@ -1,0 +1,18 @@
+module.exports = function receiveEvent(req, res) {
+
+  if (_.isUndefined(req.options.model) || !sails.models[req.options.model]) {
+    return res.serverError(new Error('Invalid configuration: To use `github/receive-event`, please set this route's `model` to the identity of one of your app\'s models.  (Currently, it is `'+req.options.model+'`, which cannot be used.)'));
+  }
+
+  var GitHubEventModel = sails.models[req.options.model];
+  GitHubEventModel.create({
+    raw: req.allParams(),
+    githubId: req.param('id'),
+    // ...
+    // ... etc. (see https://developer.github.com/webhooks/#events)
+  }).exec(function(err) {
+    if (err) { return res.serverError(err); }
+
+    return res.ok();
+  });
+};

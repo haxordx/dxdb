@@ -1,0 +1,4 @@
+$ sails generate action user/signup
+info: Created an action!
+Using "actions2"...
+[?] https://sailsjs.com/docs/concepts/actions

@@ -1,0 +1,16 @@
+let config = ConnectionConfiguration(failIfInUse: true)
+Terminal.shared.connectReader(selectedReader, connectionConfig: config) { reader, error in
+    if let reader = reader {
+        print("Successfully connected to reader: \(reader)")
+    } else if let error = error {
+        print("connectReader failed: \(error)")
+    }
+}
+let config = ConnectionConfiguration(failIfInUse: true)
+Terminal.shared.connectReader(selectedReader, connectionConfig: config) { reader, error in
+    if let reader = reader {
+        print("Successfully connected to reader: \(reader)")
+    } else if let error = error {
+        print("connectReader failed: \(error)")
+    }
+}

@@ -1,0 +1,16 @@
+"evidence": {
+  "reason": "fraudulent",
+  "fraudulent": {
+    "additional_documentation": null,
+    "explanation": "Not shipped"
+    // ^Transferred from "not_received",
+  }
+}
+"evidence": {
+  "reason": "fraudulent",
+  "fraudulent": {
+    "additional_documentation": null,
+    "explanation": "Not shipped"
+    // ^Transferred from "not_received",
+  }
+}

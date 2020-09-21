@@ -1,0 +1,62 @@
+from paypalrestsdk import Payment
+from paypalrestsdk import Order
+
+# Create payment object
+payment = Payment({
+  "intent": "order",
+
+  # Set payment method
+  "payer": {
+    "payment_method": "paypal"
+  },
+
+  # Set redirect urls
+  "redirect_urls": {
+    "return_url": "http://localhost:3000/process",
+    "cancel_url": "http://localhost:3000/cancel"
+  },
+
+  # Set transaction object
+  "transactions": [{
+    "amount": {
+      "total": "30.03",
+      "currency": "USD",
+      "details": {
+        "subtotal": "30.00",
+        "tax": "0.03"
+      }
+    },
+    "description": "This is the payment transaction description.",
+    "invoice_number": "23423522324234234",
+    "payment_options": {
+      "allowed_payment_method": "INSTANT_FUNDING_SOURCE"
+    },
+    "item_list":{
+      "items": [{
+        "name": "hat",
+        "quantity": "5",
+        "price": "3",
+        "tax": "0.01",
+        "sku": "1",
+        "currency": "USD"
+      },{
+        "name": "handbag",
+        "quantity": "1",
+        "price": "15",
+        "tax": "0.02",
+        "sku": "product34",
+        "currency": "USD"
+      }],
+      "shipping_address":{
+        "recipient_name": "Mr. Tester",
+        "line1": "4thFloor",
+        "line2": "unit#34",
+        "city": "SAn Jose",
+        "country_code": "US",
+        "postal_code": "95131",
+        "phone": "011862212345678",
+        "state": "CA"
+      }
+    }
+  }]
+})copy

@@ -1,0 +1,2 @@
+'/alias' : '/some/other/route/url',
+'GET /google': 'http://www.google.com'

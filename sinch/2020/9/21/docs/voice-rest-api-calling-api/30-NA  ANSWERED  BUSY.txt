@@ -1,0 +1,1 @@
+"N/A" | "ANSWERED" | "BUSY" | "NOANSWER" | "FAILED"

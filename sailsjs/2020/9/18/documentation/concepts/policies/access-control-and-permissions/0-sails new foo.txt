@@ -1,0 +1,3 @@
+sails new foo
+
+# Then choose "Web App"

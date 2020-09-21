@@ -1,0 +1,42 @@
+{
+  "id": "il_tmp1HS9k12eZvKYlo2CfIBpYWkW",
+  "object": "line_item",
+  "amount": 12345,
+  "currency": "usd",
+  "description": "INVOICE ALL THE THINGS",
+  "discount_amounts": [],
+  "discountable": true,
+  "discounts": [],
+  "invoice_item": "ii_1HS9k12eZvKYlo2CfIBpYWkW",
+  "livemode": false,
+  "metadata": {},
+  "period": {
+    "end": 1600297725,
+    "start": 1600297725
+  },
+  "price": {
+    "id": "price_1HS9k12eZvKYlo2CA3qOb3PL",
+    "object": "price",
+    "active": false,
+    "billing_scheme": "per_unit",
+    "created": 1600297725,
+    "currency": "usd",
+    "livemode": false,
+    "lookup_key": null,
+    "metadata": {},
+    "nickname": null,
+    "product": "prod_I2ECI8lvUk2Tkj",
+    "recurring": null,
+    "tiers_mode": null,
+    "transform_quantity": null,
+    "type": "one_time",
+    "unit_amount": 12345,
+    "unit_amount_decimal": "12345"
+  },
+  "proration": false,
+  "quantity": 1,
+  "subscription": null,
+  "tax_amounts": [],
+  "tax_rates": [],
+  "type": "invoiceitem"
+}

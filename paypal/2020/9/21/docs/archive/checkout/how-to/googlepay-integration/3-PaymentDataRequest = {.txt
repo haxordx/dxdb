@@ -1,0 +1,32 @@
+PaymentDataRequest = {
+   "apiVersion": 2,
+   "apiVersionMinor": 0,
+   "allowedPaymentMethods": [
+   {
+      "type": "PAYPAL",
+      "parameters": {  
+        // Use the merchant account ID from https://www.paypal.com           
+        "purchase_context": [{
+          payee: {
+            merchant_id: " merchant_id"
+          }
+        }]
+      }
+   }]
+};
+
+PaymentDataResponse = {
+  "apiVersion": 2,
+  "apiVersionMinor": 0,
+  "paymentMethodData": {
+    // Common fields
+    "type": "PAYPAL",
+    "description": "PayPal: john@gmail.com",
+    "tokenizationData": {
+      "type": "DIRECT",
+      // This is the payment token you pass to the /payment call
+      "token": "xxxxxxxxxxxxxxx"
+    },
+    }
+  };
+javascriptcopy

@@ -1,0 +1,10 @@
+curl https://api.stripe.com/v1/payment_intents \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d customer="{{CUSTOMER_ID}}" \
+  -d amount=1099 \
+  -d currency=usd
+curl https://api.stripe.com/v1/payment_intents \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d customer="{{CUSTOMER_ID}}" \
+  -d amount=1099 \
+  -d currency=usd

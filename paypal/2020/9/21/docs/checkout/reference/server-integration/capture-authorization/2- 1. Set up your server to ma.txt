@@ -1,0 +1,34 @@
+// 1. Set up your server to make calls to PayPal
+
+// 1a. Import the SDK package
+const checkoutNodeJssdk = require('@paypal/checkout-server-sdk');
+
+// 1b. Import the PayPal SDK client that was created in `Set up Server-Side SDK`.
+/**
+ *
+ * PayPal HTTP client dependency
+ */
+const payPalClient = require('../Common/payPalClient');
+
+module.exports = async function captureAuthorization() {
+
+  // 2. Get the authorization ID from your database
+  const authorizationID = database.lookupAuthorizationID();
+
+  // 3. Call PayPal to capture the authorization
+  const request = new checkoutNodeJssdk.payments.AuthorizationsCaptureRequest(authorizationID);
+  request.requestBody({});
+  try {
+    const capture = await payPalClient.client().execute(request);
+
+    // 4. Save the capture ID to your database for future reference.
+    const captureID = capture.result.id;
+    //await database.saveCaptureID(captureID);
+
+  } catch (err) {
+
+    // 5. Handle any errors from the call
+    console.error(err);
+  }
+}
+copy

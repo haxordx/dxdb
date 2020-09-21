@@ -1,0 +1,17 @@
+{
+  "message": {
+    "choice_message": {
+      "text_message": {
+        "text": "What do you want to do?"
+      },
+      "choices": [
+        {
+          "call_message": {
+            "title": "Call Choice Message",
+            "phone_number": "+46732000000"
+          }
+        }
+      ]
+    }
+  }
+}

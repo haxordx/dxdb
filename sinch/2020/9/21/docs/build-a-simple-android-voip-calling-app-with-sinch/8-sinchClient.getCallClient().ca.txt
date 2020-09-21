@@ -1,0 +1,1 @@
+sinchClient.getCallClient().callUser("call-recipient-id");

@@ -1,0 +1,12 @@
+curl https://api.stripe.com/v1/issuing/cards \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d cardholder=ich_1Cm3pZIyNTgGDVfzI83rasFP \
+  -d type=virtual \
+  -d currency=usd \
+  -d status=active
+curl https://api.stripe.com/v1/issuing/cards \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d cardholder=ich_1Cm3pZIyNTgGDVfzI83rasFP \
+  -d type=virtual \
+  -d currency=usd \
+  -d status=active

@@ -1,0 +1,53 @@
+# 1. Import the PayPal SDK client that was created in `Set up Server-Side SDK`.
+require_relative '../paypal_client'
+include PayPalCheckoutSdk::Orders
+module Samples
+  module AuthorizeIntentExamples
+  class AuthorizeOrder
+
+    #2. Set up your server to receive a call from the client
+    # Use this function to authorize an approved order.
+    def authorize_order (order_id, debug=false)
+    request = OrdersAuthorizeRequest::new(order_id)
+    request.prefer("return=representation")
+    # You can update this request body with fields as needed.
+    # Refer API docs for more information.
+    request.request_body({})
+    # 3. Call PayPal to authorize an order
+    response = PayPalClient::client::execute(request)
+    # 4. Save the authorization ID to your database. Implement logic to save authorization your database for future reference.
+    if debug
+      puts "Status Code: " + response.status_code.to_s
+      puts "Status: " + response.result.status
+      puts "Order ID: " + response.result.id
+      puts "Authorization ID: " + response.result.purchase_units[0].payments.authorizations[0].id
+      puts "Intent: " + response.result.intent
+      puts "Links:"
+      for link in response.result.links
+        # This could also be named link.rel or link.href, but method
+        # is a reserved keyword for Ruby. Avoid calling link.method.
+        puts "\t#{link["rel"]}: #{link["href"]}\tCall Type: #{link["method"]}"
+      end
+      puts "Authorization Links:"
+      for link in response.result.purchase_units[0].payments.authorizations[0].links
+        # This could also be named link.rel or link.href, but method
+        # is a reserved keyword for Ruby. Avoid calling link.method.
+        puts "\t#{link["rel"]}: #{link["href"]}\tCall Type: #{link["method"]}"
+      end
+      puts "Buyer:"
+      buyer = response.result.payer
+      puts "\tEmail Address: #\n\tName: # #\n\tPhone Number: #"
+      puts PayPalClient::openstruct_to_hash(response.result).to_json
+    end
+    return response
+    end
+  end
+  end
+end
+
+# This driver function invokes the authorize_order function with
+# approved order ID. Replace order ID with a valid, approved order ID
+if __FILE__ == $0
+  Samples::AuthorizeIntentExamples::AuthorizeOrder::new::authorize_order(&apos REPLACE-WITH-VALID-APPROVED-ORDER-ID',true)
+end
+copy

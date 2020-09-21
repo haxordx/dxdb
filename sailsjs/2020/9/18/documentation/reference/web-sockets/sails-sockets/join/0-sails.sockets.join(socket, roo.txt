@@ -1,0 +1,1 @@
+sails.sockets.join(socket, roomName);

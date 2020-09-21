@@ -1,0 +1,2 @@
+await Something.update(criteria)
+.set(valuesToSet);

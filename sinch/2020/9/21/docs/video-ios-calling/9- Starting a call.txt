@@ -1,0 +1,5 @@
+// Starting a call
+id<SINCall> call = [client callUserWithId:@"<remote user id>"];
+
+// User changed his/her mind, let’s hangup
+[call hangup];

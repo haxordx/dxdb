@@ -1,0 +1,110 @@
+#import "APPReaderDiscoveryViewController.h"
+#import <StripeTerminal/StripeTerminal.h>
+
+@interface APPReaderDiscoveryViewController () <SCPDiscoveryDelegate>
+
+@property (nonatomic, nullable, strong) SCPCancelable *discoverCancelable;
+
+// ...
+
+@end
+
+@implementation APPReaderDiscoveryViewController
+
+// Action for a "Discover Readers" button
+- (void)discoverReadersAction {
+    SCPDiscoveryConfiguration *config = [[SCPDiscoveryConfiguration alloc] initWithDiscoveryMethod:SCPDiscoveryMethodBluetoothScan
+                                                                                         simulated:YES];
+
+    self.discoverCancelable = [[SCPTerminal shared] discoverReaders:config
+                                                           delegate:self 
+                                                         completion:^(NSError *error) {
+        if (error != nil) {
+            NSLog(@"discoverReaders failed: %@", error);
+        } else {
+            NSLog(@"discoverReaders succeeded");
+        }
+    }];
+}
+
+// ...
+
+#pragma mark - SCPDiscoveryDelegate
+
+// This delegate method can get called multiple times throughout the discovery process.
+// You might want to update a UITableView and display all available readers.
+// Here, we're automatically connecting to the first reader we discover.
+- (void)terminal:(SCPTerminal *)terminal didUpdateDiscoveredReaders:(NSArray<SCPReader *> *)readers {
+
+    // Select the first reader we discover
+    SCPReader *selectedReader = [readers firstObject];
+
+    // Only connect if we aren't currently connected.
+    if (terminal.connectionStatus != SCPConnectionStatusNotConnected) {
+        return;
+    }
+
+    [[SCPTerminal shared] connectReader:selectedReader
+                             completion:^(SCPReader *reader, NSError *error) {
+        if (reader != nil) {
+            NSLog(@"Successfully connected to reader: %@", reader);
+        } else {
+            NSLog(@"connectReader failed: %@", error);
+        }
+    }];
+}
+#import "APPReaderDiscoveryViewController.h"
+#import <StripeTerminal/StripeTerminal.h>
+
+@interface APPReaderDiscoveryViewController () <SCPDiscoveryDelegate>
+
+@property (nonatomic, nullable, strong) SCPCancelable *discoverCancelable;
+
+// ...
+
+@end
+
+@implementation APPReaderDiscoveryViewController
+
+// Action for a "Discover Readers" button
+- (void)discoverReadersAction {
+    SCPDiscoveryConfiguration *config = [[SCPDiscoveryConfiguration alloc] initWithDiscoveryMethod:SCPDiscoveryMethodBluetoothScan
+                                                                                         simulated:YES];
+
+    self.discoverCancelable = [[SCPTerminal shared] discoverReaders:config
+                                                           delegate:self 
+                                                         completion:^(NSError *error) {
+        if (error != nil) {
+            NSLog(@"discoverReaders failed: %@", error);
+        } else {
+            NSLog(@"discoverReaders succeeded");
+        }
+    }];
+}
+
+// ...
+
+#pragma mark - SCPDiscoveryDelegate
+
+// This delegate method can get called multiple times throughout the discovery process.
+// You might want to update a UITableView and display all available readers.
+// Here, we're automatically connecting to the first reader we discover.
+- (void)terminal:(SCPTerminal *)terminal didUpdateDiscoveredReaders:(NSArray<SCPReader *> *)readers {
+
+    // Select the first reader we discover
+    SCPReader *selectedReader = [readers firstObject];
+
+    // Only connect if we aren't currently connected.
+    if (terminal.connectionStatus != SCPConnectionStatusNotConnected) {
+        return;
+    }
+
+    [[SCPTerminal shared] connectReader:selectedReader
+                             completion:^(SCPReader *reader, NSError *error) {
+        if (reader != nil) {
+            NSLog(@"Successfully connected to reader: %@", reader);
+        } else {
+            NSLog(@"connectReader failed: %@", error);
+        }
+    }];
+}

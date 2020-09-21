@@ -1,0 +1,10 @@
+curl -v -k -X PUT 'https://api.sandbox.paypal.com/v1/shipping/trackers/8MC585209K746392H-443844607820' \
+ -H 'X-PAYPAL-SECURITY-CONTEXT: ' \
+ -H 'Content-Type: application/json' \
+ -d '{
+  "transaction_id": "8MC585209K746392H",
+  "tracking_number": "443844607820",
+  "status": "CANCELLED",
+  "carrier": "FEDEX"
+}'
+copy

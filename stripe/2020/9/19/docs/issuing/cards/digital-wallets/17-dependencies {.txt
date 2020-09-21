@@ -1,0 +1,7 @@
+dependencies {
+  [... your dependencies]
+  implementation 'com.stripe:stripe-android-issuing-push-provisioning:1.0.3'
+}dependencies {
+  [... your dependencies]
+  implementation 'com.stripe:stripe-android-issuing-push-provisioning:1.0.3'
+}

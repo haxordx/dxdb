@@ -1,0 +1,13 @@
+private IConference Getconference(string conferenceId) {
+    // 1. Create an api factory
+    var sinch = SinchFactory.CreateApiFactory(yourkey, secret);
+    // 2. Get a ConferenceApi client
+    var conferenceClient = sinch.CreateConferenceApi();
+    //fetch the conference and return
+    return conferenceClient.Conference(conferenceId);
+}
+
+private IConferenceParticipant GetParticipant(string conferenceid, string participant) {
+    // Get participant
+    return Getconference(conferenceid).Participant(participant);
+}

@@ -1,0 +1,12 @@
+curl https://api.stripe.com/v1/payment_methods \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d type=card \
+  -d "card[number]"=4000009990000006 \
+  -d "card[exp_month]"=8 \
+  -d "card[exp_year]"=2022
+curl https://api.stripe.com/v1/payment_methods \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d type=card \
+  -d "card[number]"=4000009990000006 \
+  -d "card[exp_month]"=8 \
+  -d "card[exp_year]"=2022

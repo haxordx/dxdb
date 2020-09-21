@@ -1,0 +1,7 @@
+{
+  "instructions": [],
+  "action": {
+    "name": "connectConf",
+    "conferenceId": "myConference"
+  }
+}

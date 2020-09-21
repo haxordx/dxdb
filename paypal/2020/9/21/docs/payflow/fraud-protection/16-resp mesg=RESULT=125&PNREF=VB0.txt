@@ -1,0 +1,4 @@
+resp mesg=RESULT=125&PNREF=VB0A25032282&RESPMSG=Declined by Fraud Service&PREFPSMSG=
+Reject NonUSIPAddress
+    !!ERROR 14:49:23 result=125 TRXTYPE=A!!
+copy

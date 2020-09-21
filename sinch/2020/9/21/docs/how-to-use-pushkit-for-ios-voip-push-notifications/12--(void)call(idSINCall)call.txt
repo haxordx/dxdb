@@ -1,0 +1,13 @@
+-(void)call:(id<SINCall>)call shouldSendPushNotifications:(NSArray *)pushPairs{
+    id<SINPushPair> pdata = [pushPairs lastObject];
+    NSMutableDictionary* dic = [[NSMutableDictionary alloc] init];
+    [dic setObject:pdata.pushPayload forKey:@"pushPayload"];
+    [dic setObject:pdata.pushData forKey:@"pushData"];
+    AFHTTPSessionManager* manager = [((AppDelegate*)[UIApplication sharedApplication].delegate) getJsonManager];
+    [manager POST:@"push" parameters:dic success:^(NSURLSessionDataTask *task, id responseObject) {
+            //we don’t want to do anything here
+
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+            //we don’t want to do anything here
+    }];
+}

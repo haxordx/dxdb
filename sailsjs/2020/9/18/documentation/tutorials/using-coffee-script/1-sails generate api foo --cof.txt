@@ -1,0 +1,6 @@
+sails generate api <foo> --coffee
+# Generate api/models/Foo.coffee and api/controllers/FooController.coffee
+sails generate model <foo> --coffee
+# Generate api/models/Foo.coffee
+sails generate controller <foo> --coffee
+# Generate api/controllers/FooController.coffee

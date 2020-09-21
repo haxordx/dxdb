@@ -1,0 +1,7 @@
+public ActionResult Index() {
+    using (var db = new ConferenceContext())
+    {
+        var model = db.Conferences.ToList();
+        return View(model);
+    }
+}

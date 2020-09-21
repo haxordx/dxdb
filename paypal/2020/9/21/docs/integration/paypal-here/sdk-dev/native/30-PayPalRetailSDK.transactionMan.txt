@@ -1,0 +1,4 @@
+PayPalRetailSDK.transactionManager().startOfflinePayment(callback: { (error, offlinePaymentInfo) in
+    // Code to handle success or failure
+})
+copy

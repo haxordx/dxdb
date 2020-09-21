@@ -1,0 +1,1 @@
+sinchClient.getCallClient().addCallClientListener(new SinchCallClientListener());

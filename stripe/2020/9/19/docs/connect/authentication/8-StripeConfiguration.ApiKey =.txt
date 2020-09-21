@@ -1,0 +1,26 @@
+StripeConfiguration.ApiKey = "{{PLATFORM_SECRET_KEY}}";
+var customerOptions = new CustomerCreateOptions
+{
+  Email = "person@example.edu",
+};
+var requestOptions = new RequestOptions();
+requestOptions.StripeAccount = "{{CONNECTED_ACCOUNT_ID}}";
+var customerService = new CustomerService();
+Customer customer = customerService.Create(customerOptions, requestOptions);
+
+// Fetching an account just needs the ID as a parameter
+var accountService = new AccountService();
+Account account = accountService.Get("{{CONNECTED_STRIPE_ACCOUNT_ID}}");
+StripeConfiguration.ApiKey = "{{PLATFORM_SECRET_KEY}}";
+var customerOptions = new CustomerCreateOptions
+{
+  Email = "person@example.edu",
+};
+var requestOptions = new RequestOptions();
+requestOptions.StripeAccount = "{{CONNECTED_ACCOUNT_ID}}";
+var customerService = new CustomerService();
+Customer customer = customerService.Create(customerOptions, requestOptions);
+
+// Fetching an account just needs the ID as a parameter
+var accountService = new AccountService();
+Account account = accountService.Get("{{CONNECTED_STRIPE_ACCOUNT_ID}}");

@@ -1,0 +1,6 @@
+paypal.Buttons({
+    onShippingChange: function(data, actions) {
+        // ...
+    }
+}).render('#paypal-button-container');
+jscopy

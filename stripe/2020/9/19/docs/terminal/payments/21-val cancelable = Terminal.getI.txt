@@ -1,0 +1,23 @@
+val cancelable = Terminal.getInstance().collectPaymentMethod(paymentIntent, MyReaderListener(),
+  object : PaymentIntentCallback {
+  override fun onSuccess(paymentIntent: PaymentIntent) {
+    // Placeholder for processing paymentIntent
+  }
+
+  override fun onFailure(exception: TerminalException) {
+    // Placeholder for handling exception
+  }
+})
+EOF
+).strip %>val cancelable = Terminal.getInstance().collectPaymentMethod(paymentIntent, MyReaderListener(),
+  object : PaymentIntentCallback {
+  override fun onSuccess(paymentIntent: PaymentIntent) {
+    // Placeholder for processing paymentIntent
+  }
+
+  override fun onFailure(exception: TerminalException) {
+    // Placeholder for handling exception
+  }
+})
+EOF
+).strip %>

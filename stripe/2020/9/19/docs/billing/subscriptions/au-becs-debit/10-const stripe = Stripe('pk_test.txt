@@ -1,0 +1,4 @@
+const stripe = Stripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
+const elements = stripe.elements();
+const stripe = Stripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
+const elements = stripe.elements();

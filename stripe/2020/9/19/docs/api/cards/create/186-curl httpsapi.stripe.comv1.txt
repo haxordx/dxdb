@@ -1,0 +1,3 @@
+curl https://api.stripe.com/v1/customers/cus_I3HcwHEKBfQLG1/sources/card_1HTGAH2eZvKYlo2Cpp8pDJRg \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d name="Jenny Rosen"

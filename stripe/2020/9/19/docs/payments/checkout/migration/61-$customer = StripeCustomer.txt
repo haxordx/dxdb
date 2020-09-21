@@ -1,0 +1,21 @@
+$customer = \Stripe\Customer::create([
+  'email' => 'customer@example.com',
+  'source' => $_POST['stripeToken'],
+]);
+
+$charge = \Stripe\Charge::create([
+  'customer' => $customer->id,
+  'description' => 'Cleaning service',
+  'amount' => $order->amount,
+  'currency' => 'usd',
+]);$customer = \Stripe\Customer::create([
+  'email' => 'customer@example.com',
+  'source' => $_POST['stripeToken'],
+]);
+
+$charge = \Stripe\Charge::create([
+  'customer' => $customer->id,
+  'description' => 'Cleaning service',
+  'amount' => $order->amount,
+  'currency' => 'usd',
+]);

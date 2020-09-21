@@ -1,0 +1,18 @@
+io.socket.request({
+  method: 'get',
+  url: '/user/3/friends',
+  data: {
+    limit: 15
+  },
+  headers: {
+    'x-csrf-token': 'ji4brixbiub3'
+  }
+}, function (resData, jwres) {
+  if (jwres.error) {
+    console.log(jwres.statusCode); // => e.g. 403
+    return;
+  }
+
+  console.log(jwres.statusCode); // => e.g. 200
+
+});

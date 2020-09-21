@@ -1,0 +1,9 @@
+import com.sinch.android.rtc.video.VideoFrame;
+import com.sinch.android.rtc.video.VideoFrameListener;
+
+public class YourVideoFrameHandler implements VideoFrameListener {
+    public synchronized void onFrame(String callId, VideoFrame videoFrame) {
+    ... // Process videoFrame
+    videoFrame.release(); // Release videoFrame
+    }
+}

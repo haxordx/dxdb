@@ -1,0 +1,8 @@
+params := &stripe.PaymentIntentConfirmParams{
+  ReturnUrl: stripe.String("https://example.com/return_url"),
+}
+intent, err := paymentintent.Confirm("{{PAYMENT_INTENT_ID}}", params)
+params := &stripe.PaymentIntentConfirmParams{
+  ReturnUrl: stripe.String("https://example.com/return_url"),
+}
+intent, err := paymentintent.Confirm("{{PAYMENT_INTENT_ID}}", params)

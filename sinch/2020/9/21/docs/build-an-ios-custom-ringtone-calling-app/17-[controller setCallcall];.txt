@@ -1,0 +1,2 @@
+[controller setCall:call];
+[controller setContact:[call remoteUserId]];

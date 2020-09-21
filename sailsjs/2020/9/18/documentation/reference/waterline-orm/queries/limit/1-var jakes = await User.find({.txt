@@ -1,0 +1,3 @@
+var jakes = await User.find({ name: 'Jake' }).limit(10);
+
+return res.json(jakes);

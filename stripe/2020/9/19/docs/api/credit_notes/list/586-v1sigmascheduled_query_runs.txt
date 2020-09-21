@@ -1,0 +1,1 @@
+/v1/sigma/scheduled_query_runs/:id

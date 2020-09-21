@@ -1,0 +1,11 @@
+curl -X POST \
+     -H "Authorization: Bearer {token}" \
+     -H "Content-Type: application/json"  -d '
+      {
+          "name": "My groups collection",
+          "child_groups": [
+                "dxCJTlfb1UsF",
+                "yiinTKVNAEAu"
+          ]
+}' \
+  "https://us.sms.api.sinch.com/xms/v1/{service_plan_id}/groups"

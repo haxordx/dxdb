@@ -1,0 +1,12 @@
+{
+  'get /': {
+    view: 'pages/homepage'
+  },
+  'get /signup': {
+    view: 'pages/signup/basic-info'
+  },
+  'get /signup/password': {
+    view: 'pages/signup/choose-password'
+  },
+  // and so on.
+}

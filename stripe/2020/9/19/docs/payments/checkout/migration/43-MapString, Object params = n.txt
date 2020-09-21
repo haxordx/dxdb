@@ -1,0 +1,17 @@
+Map<String, Object> params = new HashMap<String, Object>();
+params.put("source", request.stripeToken);
+params.put("description", "10 cucumbers from Roger's Farm");
+params.put("amount", 2000);
+params.put("application_fee_amount", 200);
+params.put("currency", "usd");
+
+RequestOptions requestOptions = RequestOptions.builder().setStripeAccount("{{CONNECTED_STRIPE_ACCOUNT_ID}}").build();
+Charge charge = Charge.create(params, requestOptions);Map<String, Object> params = new HashMap<String, Object>();
+params.put("source", request.stripeToken);
+params.put("description", "10 cucumbers from Roger's Farm");
+params.put("amount", 2000);
+params.put("application_fee_amount", 200);
+params.put("currency", "usd");
+
+RequestOptions requestOptions = RequestOptions.builder().setStripeAccount("{{CONNECTED_STRIPE_ACCOUNT_ID}}").build();
+Charge charge = Charge.create(params, requestOptions);

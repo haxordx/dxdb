@@ -1,0 +1,5 @@
+curl https://api.stripe.com/v1/tokens \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d "person[first_name]"=Jane \
+  -d "person[last_name]"=Doe \
+  -d "person[relationship][owner]"=true

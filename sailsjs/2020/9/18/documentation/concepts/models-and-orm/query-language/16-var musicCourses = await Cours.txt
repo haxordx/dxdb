@@ -1,0 +1,3 @@
+var musicCourses = await Course.find({
+  subject: { contains: 'music' }
+});

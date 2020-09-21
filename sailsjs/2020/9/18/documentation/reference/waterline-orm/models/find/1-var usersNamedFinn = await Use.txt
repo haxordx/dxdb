@@ -1,0 +1,2 @@
+var usersNamedFinn = await User.find({name:'Finn'});
+sails.log('Wow, there are %d users named Finn.  Check it out:', usersNamedFinn.length, usersNamedFinn);

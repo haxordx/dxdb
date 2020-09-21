@@ -1,0 +1,29 @@
+const {pending_setup_intent} = subscription;
+
+if (pending_setup_intent) {
+  const {client_secret, status} = subscription.pending_setup_intent;
+
+  if (status === "requires_action") {
+    const {setupIntent, error} = await stripe.confirmCardSetup(client_secret);
+
+    if (error) {
+      // Display error.message in your UI.
+    } else {
+      // The setup has succeeded. Display a success message.
+    }
+  }
+}const {pending_setup_intent} = subscription;
+
+if (pending_setup_intent) {
+  const {client_secret, status} = subscription.pending_setup_intent;
+
+  if (status === "requires_action") {
+    const {setupIntent, error} = await stripe.confirmCardSetup(client_secret);
+
+    if (error) {
+      // Display error.message in your UI.
+    } else {
+      // The setup has succeeded. Display a success message.
+    }
+  }
+}

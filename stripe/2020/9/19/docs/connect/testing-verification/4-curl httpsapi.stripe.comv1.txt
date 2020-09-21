@@ -1,0 +1,11 @@
+curl https://api.stripe.com/v1/accounts/acct_xxx/persons \
+  -u {PLATFORM_SECRET_KEY}: \
+  -d first_name=Jenny \
+  -d last_name=Rosen \
+  -d relationship[representative]=true \
+  -d relationship[title]=CEOcurl https://api.stripe.com/v1/accounts/acct_xxx/persons \
+  -u {PLATFORM_SECRET_KEY}: \
+  -d first_name=Jenny \
+  -d last_name=Rosen \
+  -d relationship[representative]=true \
+  -d relationship[title]=CEO

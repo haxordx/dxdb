@@ -1,0 +1,2 @@
+curl -iX GET https://api.shipengine.com/v1/carriers/se-123890/packages \
+-H 'API-Key: __YOUR_API_KEY_HERE__' \

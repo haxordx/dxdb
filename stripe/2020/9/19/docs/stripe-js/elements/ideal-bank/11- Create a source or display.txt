@@ -1,0 +1,65 @@
+// Create a source or display an error when the form is submitted.
+var form = document.getElementById('payment-form');
+
+form.addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  var sourceData = {
+    type: 'ideal',
+    amount: 1099,
+    currency: 'eur',
+    owner: {
+      name: document.querySelector('input[name="name"]').value,
+    },
+    // Specify the URL to which the customer should be redirected
+    // after paying.
+    redirect: {
+      return_url: 'https://shop.example.com/crtA6B28E1',
+    },
+  };
+
+  // Call `stripe.createSource` with the idealBank Element and
+  // additional options.
+  stripe.createSource(idealBank, sourceData).then(function(result) {
+    if (result.error) {
+      // Inform the customer that there was an error.
+      var errorElement = document.getElementById('error-message');
+      errorElement.textContent = error.message;
+    } else {
+      // Redirect the customer to the authorization URL.
+      stripeSourceHandler(result.source);
+    }
+  });
+});// Create a source or display an error when the form is submitted.
+var form = document.getElementById('payment-form');
+
+form.addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  var sourceData = {
+    type: 'ideal',
+    amount: 1099,
+    currency: 'eur',
+    owner: {
+      name: document.querySelector('input[name="name"]').value,
+    },
+    // Specify the URL to which the customer should be redirected
+    // after paying.
+    redirect: {
+      return_url: 'https://shop.example.com/crtA6B28E1',
+    },
+  };
+
+  // Call `stripe.createSource` with the idealBank Element and
+  // additional options.
+  stripe.createSource(idealBank, sourceData).then(function(result) {
+    if (result.error) {
+      // Inform the customer that there was an error.
+      var errorElement = document.getElementById('error-message');
+      errorElement.textContent = error.message;
+    } else {
+      // Redirect the customer to the authorization URL.
+      stripeSourceHandler(result.source);
+    }
+  });
+});

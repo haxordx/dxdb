@@ -1,0 +1,3 @@
+// To add a Pet to a user's `pets` collection where the User has an id of
+// 10 and the Pet has an id of 300.
+await User.addToCollection(10, 'pets', 300);

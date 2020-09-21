@@ -1,0 +1,29 @@
+package main
+
+import (
+  "fmt"
+  "net/http"
+  "io/ioutil"
+)
+
+func main() {
+
+  url := "https://api.shipengine.com/v1/shipments/se-2102034/rates"
+  method := "POST"
+
+  client := &http.Client {
+  }
+  req, err := http.NewRequest(method, url, nil)
+
+  if err != nil {
+    fmt.Println(err)
+  }
+  req.Header.Add("Host", "api.shipengine.com")
+  req.Header.Add("API-Key", "__YOUR_API_KEY_HERE__")
+
+  res, err := client.Do(req)
+  defer res.Body.Close()
+  body, err := ioutil.ReadAll(res.Body)
+
+  fmt.Println(string(body))
+}

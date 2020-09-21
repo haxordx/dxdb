@@ -1,0 +1,34 @@
+const baseOrderAmount = '15.00';
+
+paypal.Buttons({
+    onShippingChange: function(data, actions) {
+        // Reject non-US addresses
+        if (data.shipping_address.country_code !== 'US') {
+            return actions.reject();
+        }
+
+        // Patch the shipping amount
+        const shippingAmount = data.shipping_address.state === 'CA' ? '0.00' : '5.00';
+        return actions.order.patch([
+            {
+                op: 'replace',
+                path: '/purchase_units/@reference_id==\'default\'/amount',
+                value: {
+                    currency_code: 'USD',
+                    value: (parseFloat(baseOrderAmount) + parseFloat(shippingAmount)).toFixed(2),
+                    breakdown: {
+                        item_total: {
+                            currency_code: 'USD',
+                            value: baseOrderAmount
+                        },
+                        shipping: {
+                            currency_code: 'USD',
+                            value: shippingAmount
+                        }
+                    }
+                }
+            }
+        ]);
+    }
+}).render('#paypal-button-container');
+jscopy

@@ -1,0 +1,10 @@
+<%
+// A list representing the currently-logged in user's inbox.
+%><ul class="message-list"><%
+  // Display each message, with a button to delete it.
+  _.each(messages, function (message) {
+  %><li class="inbox-message" data-id="<%= message.id %>">
+    <a href="/messages/<%= message.id %>"><%= message.subject %></a>
+    <button class="fa fa-trash" is="delete-btn"></button>
+  </li><% });
+ %></ul>

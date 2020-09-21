@@ -1,0 +1,6 @@
+curl https://api.stripe.com/v1/subscriptions/sub_GTbTiykEwMRog0 \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d "pause_collection[behavior]"=void
+curl https://api.stripe.com/v1/subscriptions/sub_GTbTiykEwMRog0 \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d "pause_collection[behavior]"=void

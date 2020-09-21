@@ -1,0 +1,3 @@
+# Install through pip
+pip install --upgrade stripe# Install through pip
+pip install --upgrade stripe

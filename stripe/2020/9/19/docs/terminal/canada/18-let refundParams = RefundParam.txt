@@ -1,0 +1,47 @@
+let refundParams = RefundParameters(
+    chargeId: "ch_1FLyVV2eZvKYlo2C9Z8rmX02",
+    amount: 1000,
+    currency: "cad"
+)
+
+self.refundCancelable = Terminal.shared.collectRefundPaymentMethod(refundParams) { collectError in
+    if let error = collectError {
+        // Handle collectRefundPaymentMethod error
+        print("collectRefundPaymentMethod failed. \(error)")
+    } else {
+        // Process refund
+        Terminal.shared.processRefund { processedRefund, processError in
+            if let error = processError {
+                print("Process refund failed. \(error)")
+                // Handle process error
+            } else if let refund = processedRefund, refund.status == .succeeded {
+                print("Process refund successful! \(refund)")
+            } else {
+                print("Refund pending or unsuccessful.")
+            }
+        }
+    }
+}let refundParams = RefundParameters(
+    chargeId: "ch_1FLyVV2eZvKYlo2C9Z8rmX02",
+    amount: 1000,
+    currency: "cad"
+)
+
+self.refundCancelable = Terminal.shared.collectRefundPaymentMethod(refundParams) { collectError in
+    if let error = collectError {
+        // Handle collectRefundPaymentMethod error
+        print("collectRefundPaymentMethod failed. \(error)")
+    } else {
+        // Process refund
+        Terminal.shared.processRefund { processedRefund, processError in
+            if let error = processError {
+                print("Process refund failed. \(error)")
+                // Handle process error
+            } else if let refund = processedRefund, refund.status == .succeeded {
+                print("Process refund successful! \(refund)")
+            } else {
+                print("Refund pending or unsuccessful.")
+            }
+        }
+    }
+}

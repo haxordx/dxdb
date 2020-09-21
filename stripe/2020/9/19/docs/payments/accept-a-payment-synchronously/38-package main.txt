@@ -1,0 +1,210 @@
+package main
+
+import (
+  "encoding/json"
+  "net/http"
+  "os"
+  "fmt"
+
+  stripe "github.com/stripe/stripe-go/v71"
+  paymentintent "github.com/stripe/stripe-go/v71/paymentintent"
+)
+
+// Structs to handle request and response JSON serializations
+type ConfirmPaymentRequest struct {
+  PaymentMethodId *string `json:"payment_method_id"`
+  PaymentIntentId *string `json:"payment_intent_id"`
+}
+
+type ErrorResponse struct {
+  Message string `json:"error"`
+}
+
+type ConfirmPaymentResponse struct {
+  RequiresAction bool `json:"requires_action"`
+  PaymentIntentClientSecret *string `json:"payment_intent_client_secret"`
+}
+
+func generatePaymentResponse(intent *stripe.PaymentIntent, w http.ResponseWriter) {
+  // Note that if your API version is before 2019-02-11, PaymentIntentStatusRequiresAction
+  // appears as PaymentIntentStatusRequiresSourceAction.
+  if intent.Status == stripe.PaymentIntentStatusRequiresAction &&
+    intent.NextAction.Type == "use_stripe_sdk" {
+
+    // Tell the client to handle the action
+    w.WriteHeader(http.StatusOK)
+    json.NewEncoder(w).Encode(ConfirmPaymentResponse{
+      RequiresAction: true,
+      PaymentIntentClientSecret: &intent.ClientSecret,
+    })
+
+  } else if intent.Status == stripe.PaymentIntentStatusSucceeded {
+
+    // The payment didn’t need any additional actions and completed!
+    // Handle post-payment fulfillment
+    w.WriteHeader(http.StatusOK)
+    fmt.Fprint(w, "Success")
+
+  } else {
+
+    // Invalid status
+    w.WriteHeader(http.StatusInternalServerError)
+    fmt.Fprintf(w, "Invalid Payment Intent status: %s", intent.Status)
+
+  }
+}
+
+func main() {
+  // Initialize stripe-go with Stripe secret key from environment
+  stripe.Key = os.Getenv("STRIPE_SECRET_KEY")
+
+  // AJAX endpoint when `/pay` is called from client
+  http.HandleFunc("/pay",
+    func(w http.ResponseWriter, req *http.Request) {
+      var confirmPaymentRequest ConfirmPaymentRequest
+      json.NewDecoder(req.Body).Decode(&confirmPaymentRequest)
+
+      var intent *stripe.PaymentIntent
+      var err error
+
+      if confirmPaymentRequest.PaymentMethodId != nil {
+        // Create the PaymentIntent
+        params := &stripe.PaymentIntentParams{
+          PaymentMethod: stripe.String(*confirmPaymentRequest.PaymentMethodId),
+          Amount: stripe.Int64(1099),
+          Currency: stripe.String(string(stripe.CurrencyUSD)),
+          ConfirmationMethod: stripe.String(string(
+            stripe.PaymentIntentConfirmationMethodManual,
+          )),
+          Confirm: stripe.Bool(true),
+        }
+        intent, err = paymentintent.New(params)
+      }
+
+      if confirmPaymentRequest.PaymentIntentId != nil {
+        intent, err = paymentintent.Confirm(
+          *confirmPaymentRequest.PaymentIntentId, nil,
+        )
+      }
+
+      if err != nil {
+        if stripeErr, ok := err.(*stripe.Error); ok {
+          // Display error on client
+          w.WriteHeader(http.StatusOK)
+          json.NewEncoder(w).Encode(ErrorResponse{Message: stripeErr.Msg})
+        } else {
+          w.WriteHeader(http.StatusInternalServerError)
+          fmt.Fprintf(w, "Other error occurred, %v\n", err.Error())
+        }
+      } else {
+        generatePaymentResponse(intent, w)
+      }
+    })
+
+  http.ListenAndServe(":"+os.Getenv("PORT"), nil)
+}
+package main
+
+import (
+  "encoding/json"
+  "net/http"
+  "os"
+  "fmt"
+
+  stripe "github.com/stripe/stripe-go/v71"
+  paymentintent "github.com/stripe/stripe-go/v71/paymentintent"
+)
+
+// Structs to handle request and response JSON serializations
+type ConfirmPaymentRequest struct {
+  PaymentMethodId *string `json:"payment_method_id"`
+  PaymentIntentId *string `json:"payment_intent_id"`
+}
+
+type ErrorResponse struct {
+  Message string `json:"error"`
+}
+
+type ConfirmPaymentResponse struct {
+  RequiresAction bool `json:"requires_action"`
+  PaymentIntentClientSecret *string `json:"payment_intent_client_secret"`
+}
+
+func generatePaymentResponse(intent *stripe.PaymentIntent, w http.ResponseWriter) {
+  // Note that if your API version is before 2019-02-11, PaymentIntentStatusRequiresAction
+  // appears as PaymentIntentStatusRequiresSourceAction.
+  if intent.Status == stripe.PaymentIntentStatusRequiresAction &&
+    intent.NextAction.Type == "use_stripe_sdk" {
+
+    // Tell the client to handle the action
+    w.WriteHeader(http.StatusOK)
+    json.NewEncoder(w).Encode(ConfirmPaymentResponse{
+      RequiresAction: true,
+      PaymentIntentClientSecret: &intent.ClientSecret,
+    })
+
+  } else if intent.Status == stripe.PaymentIntentStatusSucceeded {
+
+    // The payment didn’t need any additional actions and completed!
+    // Handle post-payment fulfillment
+    w.WriteHeader(http.StatusOK)
+    fmt.Fprint(w, "Success")
+
+  } else {
+
+    // Invalid status
+    w.WriteHeader(http.StatusInternalServerError)
+    fmt.Fprintf(w, "Invalid Payment Intent status: %s", intent.Status)
+
+  }
+}
+
+func main() {
+  // Initialize stripe-go with Stripe secret key from environment
+  stripe.Key = os.Getenv("STRIPE_SECRET_KEY")
+
+  // AJAX endpoint when `/pay` is called from client
+  http.HandleFunc("/pay",
+    func(w http.ResponseWriter, req *http.Request) {
+      var confirmPaymentRequest ConfirmPaymentRequest
+      json.NewDecoder(req.Body).Decode(&confirmPaymentRequest)
+
+      var intent *stripe.PaymentIntent
+      var err error
+
+      if confirmPaymentRequest.PaymentMethodId != nil {
+        // Create the PaymentIntent
+        params := &stripe.PaymentIntentParams{
+          PaymentMethod: stripe.String(*confirmPaymentRequest.PaymentMethodId),
+          Amount: stripe.Int64(1099),
+          Currency: stripe.String(string(stripe.CurrencyUSD)),
+          ConfirmationMethod: stripe.String(string(
+            stripe.PaymentIntentConfirmationMethodManual,
+          )),
+          Confirm: stripe.Bool(true),
+        }
+        intent, err = paymentintent.New(params)
+      }
+
+      if confirmPaymentRequest.PaymentIntentId != nil {
+        intent, err = paymentintent.Confirm(
+          *confirmPaymentRequest.PaymentIntentId, nil,
+        )
+      }
+
+      if err != nil {
+        if stripeErr, ok := err.(*stripe.Error); ok {
+          // Display error on client
+          w.WriteHeader(http.StatusOK)
+          json.NewEncoder(w).Encode(ErrorResponse{Message: stripeErr.Msg})
+        } else {
+          w.WriteHeader(http.StatusInternalServerError)
+          fmt.Fprintf(w, "Other error occurred, %v\n", err.Error())
+        }
+      } else {
+        generatePaymentResponse(intent, w)
+      }
+    })
+
+  http.ListenAndServe(":"+os.Getenv("PORT"), nil)
+}

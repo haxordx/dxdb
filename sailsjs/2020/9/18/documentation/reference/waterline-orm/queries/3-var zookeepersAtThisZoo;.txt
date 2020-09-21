@@ -1,0 +1,13 @@
+var zookeepersAtThisZoo;
+try {
+  zookeepersAtThisZoo = await Zookeeper.find({
+    zoo: req.param('zoo')
+  }).limit(30);
+} catch (err) {
+  switch (err.name) {
+    case 'UsageError': return res.badRequest(err);
+    default: throw err;
+  }
+}
+
+return res.json(zookeepersAtThisZoo);

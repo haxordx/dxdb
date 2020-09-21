@@ -1,0 +1,23 @@
+function connectReader(discoverResult) {
+  // Just select the first reader here.
+  var selectedReader = discoverResult.discoveredReaders[0];
+
+  terminal.connectReader(selectedReader).then(function(connectResult) {
+    if (connectResult.error) {
+      console.log('Failed to connect: ', connectResult.error);
+    } else {
+      console.log('Connected to reader: ', connectResult.reader.label);
+    }
+  });
+}function connectReader(discoverResult) {
+  // Just select the first reader here.
+  var selectedReader = discoverResult.discoveredReaders[0];
+
+  terminal.connectReader(selectedReader).then(function(connectResult) {
+    if (connectResult.error) {
+      console.log('Failed to connect: ', connectResult.error);
+    } else {
+      console.log('Connected to reader: ', connectResult.reader.label);
+    }
+  });
+}

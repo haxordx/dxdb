@@ -1,0 +1,4 @@
+id: <the parent record's primary key value>,
+verb: 'removedFrom',
+attribute: <the parent record collection attribute name>,
+removedIds: <the now-removed child records' primary key values>

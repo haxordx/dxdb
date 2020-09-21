@@ -1,0 +1,2 @@
+var orders = await Order.find();
+// `orders` is an array of records

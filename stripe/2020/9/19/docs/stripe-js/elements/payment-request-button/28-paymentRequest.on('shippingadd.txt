@@ -1,0 +1,35 @@
+paymentRequest.on('shippingaddresschange', async (ev) => {
+  if (ev.shippingAddress.country !== 'US') {
+    ev.updateWith({status: 'invalid_shipping_address'});
+  } else {
+    // Perform server-side request to fetch shipping options
+    const response = await fetch('/calculateShipping', {
+      data: JSON.stringify({
+        shippingAddress: ev.shippingAddress
+      })
+    });
+    const result = await response.json();
+
+    ev.updateWith({
+      status: 'success',
+      shippingOptions: result.supportedShippingOptions,
+    });
+  }
+});paymentRequest.on('shippingaddresschange', async (ev) => {
+  if (ev.shippingAddress.country !== 'US') {
+    ev.updateWith({status: 'invalid_shipping_address'});
+  } else {
+    // Perform server-side request to fetch shipping options
+    const response = await fetch('/calculateShipping', {
+      data: JSON.stringify({
+        shippingAddress: ev.shippingAddress
+      })
+    });
+    const result = await response.json();
+
+    ev.updateWith({
+      status: 'success',
+      shippingOptions: result.supportedShippingOptions,
+    });
+  }
+});

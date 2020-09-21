@@ -1,0 +1,8 @@
+curl https://api.stripe.com/v1/ephemeral_keys \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d issuing_card="{{ISSUING_CARD_ID}}" \
+  -H "Stripe-Version: {{API_VERSION}}"
+curl https://api.stripe.com/v1/ephemeral_keys \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d issuing_card="{{ISSUING_CARD_ID}}" \
+  -H "Stripe-Version: {{API_VERSION}}"

@@ -1,0 +1,37 @@
+params := &stripe.CheckoutSessionParams{
+    PaymentMethodTypes: stripe.StringSlice([]string{
+        "card",
+    }),
+    SubscriptionData: &stripe.CheckoutSessionSubscriptionDataParams{
+        TrialPeriodDays: stripe.Int64(30),
+    },
+    LineItems: []*stripe.CheckoutSessionLineItemsParams{
+        &stripe.CheckoutSessionLineItemsParams{
+            Price: stripe.String("{PRICE_ID}"),
+            Quantity: stripe.Int64(1),
+        },
+    },
+    Mode: stripe.String("subscription"),
+    SuccessURL: stripe.String("https://example.com/success"),
+    CancelURL: stripe.String("https://example.com/cancel"),
+}
+
+session, err := session.New(params)params := &stripe.CheckoutSessionParams{
+    PaymentMethodTypes: stripe.StringSlice([]string{
+        "card",
+    }),
+    SubscriptionData: &stripe.CheckoutSessionSubscriptionDataParams{
+        TrialPeriodDays: stripe.Int64(30),
+    },
+    LineItems: []*stripe.CheckoutSessionLineItemsParams{
+        &stripe.CheckoutSessionLineItemsParams{
+            Price: stripe.String("{PRICE_ID}"),
+            Quantity: stripe.Int64(1),
+        },
+    },
+    Mode: stripe.String("subscription"),
+    SuccessURL: stripe.String("https://example.com/success"),
+    CancelURL: stripe.String("https://example.com/cancel"),
+}
+
+session, err := session.New(params)

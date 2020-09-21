@@ -1,0 +1,2 @@
+// Find a single user, including its pets
+var userWithPets = await User.findOne(123).populate('pets');

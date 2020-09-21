@@ -1,0 +1,14 @@
+next_action: {
+    type: 'redirect_to_url',
+    redirect_to_url: {
+      url: 'https://hooks.stripe.com/...',
+      return_url: 'https://mysite.com'
+    }
+}
+next_action: {
+    type: 'redirect_to_url',
+    redirect_to_url: {
+      url: 'https://hooks.stripe.com/...',
+      return_url: 'https://mysite.com'
+    }
+}

@@ -1,0 +1,6 @@
+reader.pendingUpdate.offer({ (error, updateComplete) in
+    // Code to handle success or failure
+    // On error, check the error and retry
+    // On success, continue with the payment flow
+})
+copy

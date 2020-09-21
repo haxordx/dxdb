@@ -1,0 +1,6 @@
+curl https://api.stripe.com/v1/accounts \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d type=standard
+curl https://api.stripe.com/v1/accounts \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d type=standard

@@ -1,0 +1,22 @@
+{
+    "requestEnvelope": {
+        "errorLanguage": "en_US"
+    },
+    "invoice": {
+        "merchantEmail": "jerry1619-facilitator@example.com",
+        "payerEmail": "sender_1335455648_per@example.com",
+        "currencyCode": "USD",
+        "paymentTerms": "Net15",
+        "itemList": {
+            "item": [{
+                "name": "Banana+Leaf+--+001",
+                "description": "Banana+Leaf",
+                "quantity": "1",
+                "unitPrice": "1",
+                "taxName": "Tax1",
+                "taxRate": "10.25"
+            }]
+        }
+    }
+}
+copy

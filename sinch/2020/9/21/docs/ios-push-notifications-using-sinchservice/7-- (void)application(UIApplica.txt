@@ -1,0 +1,4 @@
+- (void)application:(UIApplication *)application
+    didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+  [sinchService.push application:application didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
+}

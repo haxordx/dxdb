@@ -1,0 +1,25 @@
+Stripe.apiKey = "sk_live_••••••••••••••••••••••••";
+
+ApplePayDomainCreateParams params =
+  ApplePayDomainCreateParams.builder()
+    .setDomainName("example.com")
+    .build();
+
+RequestOptions requestOptions =
+  RequestOptions.builder()
+    .setStripeAccount("{{CONNECTED_STRIPE_ACCOUNT_ID}}")
+    .build();
+
+ApplePayDomain domain = ApplePayDomain.create(params, requestOptions);Stripe.apiKey = "sk_live_••••••••••••••••••••••••";
+
+ApplePayDomainCreateParams params =
+  ApplePayDomainCreateParams.builder()
+    .setDomainName("example.com")
+    .build();
+
+RequestOptions requestOptions =
+  RequestOptions.builder()
+    .setStripeAccount("{{CONNECTED_STRIPE_ACCOUNT_ID}}")
+    .build();
+
+ApplePayDomain domain = ApplePayDomain.create(params, requestOptions);

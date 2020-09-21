@@ -1,0 +1,4 @@
+# To create a requires_capture PaymentIntent, see our guide at: https://stripe.com/docs/payments/capture-later
+curl https://api.stripe.com/v1/payment_intents/pi_1HQ3bK2eZvKYlo2CvDbpXkfb/capture \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -X POST

@@ -1,0 +1,7 @@
+[[NSNotificationCenter defaultCenter] postNotificationName:@"UserDidLoginNotification"
+                                                                    object:nil
+                                                                  userInfo:@{@"userId" : twitterAccount.username}];
+
+
+                AppDelegate *SharedAppDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+                [SharedAppDelegate setTwitterAccount:twitterAccount];

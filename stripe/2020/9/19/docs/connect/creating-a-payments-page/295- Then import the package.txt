@@ -1,0 +1,7 @@
+// Then import the package
+import (
+  "github.com/stripe/stripe-go/v71"
+)// Then import the package
+import (
+  "github.com/stripe/stripe-go/v71"
+)

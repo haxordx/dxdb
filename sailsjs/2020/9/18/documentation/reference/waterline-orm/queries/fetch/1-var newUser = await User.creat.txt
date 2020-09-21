@@ -1,0 +1,2 @@
+var newUser = await User.create({ fullName: 'Alice McBailey' }).fetch();
+sails.log(`Hi, ${newUser.fullName}!  Your id is ${newUser.id}.`);

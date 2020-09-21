@@ -1,0 +1,24 @@
+{
+    "type": "delivery_report_sms",
+    "batch_id": "{batch_id}",
+    "total_message_count": 3,
+    "statuses": [
+        {
+            "code": 400,
+            "status": "Queued",
+            "count": 1,
+            "recipients": [
+                "123456789"
+            ]
+        },
+        {
+            "code": 0,
+            "status": "Delivered",
+            "count": 2,
+            "recipients": [
+                "987654321",
+                "123459876"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+{
+   "aps" : {
+      "alert" : {
+         "loc-key" : "SIN_INCOMING_CALL"
+      }
+   },
+   "sin": "<opaque push payload>"
+}

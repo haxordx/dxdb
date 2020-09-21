@@ -1,0 +1,6 @@
+'GET /csrfToken': {
+  action: 'security/grant-csrf-token',
+  cors: {
+    allowOrigins: ['http://foobar.com', 'https://owlhoot.com']
+  }
+}

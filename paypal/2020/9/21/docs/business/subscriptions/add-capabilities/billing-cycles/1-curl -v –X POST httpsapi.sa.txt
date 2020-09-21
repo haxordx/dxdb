@@ -1,0 +1,30 @@
+curl -v –X POST https://api.sandbox.paypal.com/v1/billing/plans /
+-H "Content-Type: application/json" /
+-H "Authorization: Bearer Access-Token" /
+-d '{
+    "name": "Premium Video Plus",
+    "description": "Premium plan with video download feature",
+    "product_id": "PROD-5RN21878H3527870P",
+    "billing_cycles": [
+        {
+            "frequency": {
+                "interval_unit": "MONTH",
+                "interval_count": 1
+            },
+            "tenure_type": "REGULAR",
+            "sequence": 1,
+            "total_cycles": 0,   
+            "pricing_scheme": {
+                "fixed_price": {
+                    "value": "20",
+                    "currency_code": "USD"
+                }
+            }
+        }
+    ],
+    "payment_preferences": {
+        "auto_bill_outstanding": true,
+        "payment_failure_threshold": 1
+    }
+ }'
+bashcopy

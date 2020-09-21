@@ -1,0 +1,4 @@
+if webhook.create():
+  print("Webhook[%s] created successfully" % (webhook.id))
+else:
+  print(webhook.error)copy

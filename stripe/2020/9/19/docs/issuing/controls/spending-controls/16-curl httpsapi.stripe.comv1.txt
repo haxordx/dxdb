@@ -1,0 +1,10 @@
+curl https://api.stripe.com/v1/issuing/cards/ic_1Cm3paIyNTgGDVfzBqq1uqxR \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d "spending_controls[spending_limits][0][amount]"=4000 \
+  -d "spending_controls[spending_limits][0][interval]"=weekly \
+  -d "spending_controls[spending_limits][0][categories][0]"=fast_food_restaurants
+curl https://api.stripe.com/v1/issuing/cards/ic_1Cm3paIyNTgGDVfzBqq1uqxR \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d "spending_controls[spending_limits][0][amount]"=4000 \
+  -d "spending_controls[spending_limits][0][interval]"=weekly \
+  -d "spending_controls[spending_limits][0][categories][0]"=fast_food_restaurants

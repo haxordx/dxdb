@@ -1,0 +1,5 @@
+var htmlEmailContents = await sails.renderView('emails/signup-welcome', {
+  fullName: inputs.fullName,
+  // Don't include the Sails app's default layout in the rendered template.
+  layout: false
+});

@@ -1,0 +1,33 @@
+fun startRecoveryFlow(clientSecret: String) {
+    // ...continued from previous step
+    val lastPaymentError = paymentIntent.lastPaymentError
+    val lastPaymentMethodId = lastPaymentError.paymentMethod?.id
+    if (lastPaymentError?.code == "authentication_required" && lastPaymentMethodId != null) {
+        // Payment failed because authentication is required, reuse the PaymentMethod
+        val paymentIntentParams =
+            ConfirmPaymentIntentParams.createWithPaymentMethodId(
+                lastPaymentMethodId,
+                clientSecret // Reuse the existing PaymentIntent
+            )
+        // Submit the payment...
+        stripe.confirmPayment(this, paymentIntentParams)
+    } else {
+        // Collect a new PaymentMethod from the customer...
+    }
+}fun startRecoveryFlow(clientSecret: String) {
+    // ...continued from previous step
+    val lastPaymentError = paymentIntent.lastPaymentError
+    val lastPaymentMethodId = lastPaymentError.paymentMethod?.id
+    if (lastPaymentError?.code == "authentication_required" && lastPaymentMethodId != null) {
+        // Payment failed because authentication is required, reuse the PaymentMethod
+        val paymentIntentParams =
+            ConfirmPaymentIntentParams.createWithPaymentMethodId(
+                lastPaymentMethodId,
+                clientSecret // Reuse the existing PaymentIntent
+            )
+        // Submit the payment...
+        stripe.confirmPayment(this, paymentIntentParams)
+    } else {
+        // Collect a new PaymentMethod from the customer...
+    }
+}

@@ -1,0 +1,13 @@
+OkHttpClient client = new OkHttpClient();
+
+MediaType mediaType = MediaType.parse("application/x-www-form-urlencoded");
+RequestBody body = RequestBody.create(mediaType, "grant_type=authorization_code&code={authorization_code}");
+Request request = new Request.Builder()
+  .url("https://api.sandbox.paypal.com/v1/identity/openidconnect/tokenservice")
+  .post(body)
+  .addHeader("content-type", "application/x-www-form-urlencoded")
+  .addHeader("authorization", "Basic Y2xpZW50SUQ6Y2xpZW50U2VjcmV0")
+  .build();
+
+Response response = client.newCall(request).execute();
+copy

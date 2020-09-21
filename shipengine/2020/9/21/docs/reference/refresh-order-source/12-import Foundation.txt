@@ -1,0 +1,26 @@
+import Foundation
+
+var semaphore = DispatchSemaphore (value: 0)
+
+let parameters = "{\n  \"order_source_id\": \"__YOUR_ORDER_SOURCE_ID_HERE__\",\n  \"order_source_nickname\": \"My Shopify account\",\n  \"order_source_code\": \"shopify\",\n  \"order_source_friendly_name\": \"Shopify\",\n  \"refresh_info\": {\n    \"status\": \"preparing_update\",\n    \"last_refresh_attempt\": null,\n    \"refresh_date\": \"2018-02-10T20:55:46.673Z\"\n  },\n  \"active\": true\n}"
+let postData = parameters.data(using: .utf8)
+
+var request = URLRequest(url: URL(string: "https://api.shipengine.com/v-beta/order_sources/__YOUR_ORDER_SOURCE_ID_HERE__/refresh")!,timeoutInterval: Double.infinity)
+request.addValue("api.shipengine.com", forHTTPHeaderField: "Host")
+request.addValue("__YOUR_API_KEY_HERE__", forHTTPHeaderField: "API-Key")
+request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+
+request.httpMethod = "PUT"
+request.httpBody = postData
+
+let task = URLSession.shared.dataTask(with: request) { data, response, error in 
+  guard let data = data else {
+    print(String(describing: error))
+    return
+  }
+  print(String(data: data, encoding: .utf8)!)
+  semaphore.signal()
+}
+
+task.resume()
+semaphore.wait()

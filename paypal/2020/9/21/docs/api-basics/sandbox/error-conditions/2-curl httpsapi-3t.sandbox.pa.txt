@@ -1,0 +1,10 @@
+curl https://api-3t.sandbox.paypal.com/nvp \
+  -s \
+  --insecure \
+  -d USER=yourUID \
+  -d PWD=yourPSWD \
+  -d SIGNATURE=yourSig \
+  -d METHOD=DoVoid \
+  -d VERSION=100 \
+  -d AUTHORIZATIONID=10603
+copy

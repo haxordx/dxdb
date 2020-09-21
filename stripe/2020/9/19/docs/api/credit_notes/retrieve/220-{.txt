@@ -1,0 +1,16 @@
+{
+  "id": "cnli_1HTG7s2eZvKYlo2CditfpNTk",
+  "object": "credit_note_line_item",
+  "amount": 2000,
+  "description": "My First Invoice Item (created for API docs)",
+  "discount_amount": 0,
+  "discount_amounts": [],
+  "invoice_line_item": "il_1HTG7s2eZvKYlo2CHEWxDhVE",
+  "livemode": false,
+  "quantity": 1,
+  "tax_amounts": [],
+  "tax_rates": [],
+  "type": "invoice_line_item",
+  "unit_amount": null,
+  "unit_amount_decimal": null
+}

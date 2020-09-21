@@ -1,0 +1,2 @@
+sdk-sms-1.0.3-SNAPSHOT-jar-with-dependencies.jar 
+sdk-sms-1.0.3-SNAPSHOT.jar -- Use this if you need to include version dependencies on your own.

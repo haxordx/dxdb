@@ -1,0 +1,18 @@
+currentTransaction.setCompletedHandler(new TransactionContext.TransactionCompletedCallback()
+{
+  @Override
+  public void transactionCompleted(RetailSDKException error, TransactionRecord record)
+  {
+    TransactionActivity.this.transactionCompleted(error, record);
+  }
+});
+
+TransactionBeginOptions options = new TransactionBeginOptions();
+options.setShowPromptInCardReader(true);
+options.setShowPromptInApp(false);
+options.setIsAuthCapture(false);
+options.setAmountBasedTipping(false);
+options.setQuickChipEnabled(false);
+options.setTippingOnReaderEnabled(false);
+
+currentTransaction.beginPayment(options);copy

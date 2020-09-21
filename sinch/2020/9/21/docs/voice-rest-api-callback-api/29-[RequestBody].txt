@@ -1,0 +1,11 @@
+[RequestBody]
+{
+    string - event
+    int - version
+    string - type
+    string - callid
+    int - errorCode
+    string - errorMsg
+    string - user
+    string - custom
+}

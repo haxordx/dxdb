@@ -1,0 +1,15 @@
+//in OnCreate
+findViewById(R.id.loginButton).setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+        String username = ((EditText) findViewById(R.id.usernameEditText)).getText().toString();
+        //make sure the username isn't blank!
+        if (username.length() == 0) {
+            Toast.makeText(getApplicationContext(), "Enter a username.", Toast.LENGTH_SHORT);
+        } else {
+            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+            intent.putExtra("username", username);
+            startActivity(intent);
+        }
+    }
+});

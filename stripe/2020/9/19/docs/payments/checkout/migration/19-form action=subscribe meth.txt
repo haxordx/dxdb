@@ -1,0 +1,21 @@
+<form action="/subscribe" method="POST">
+  <script
+    src="https://checkout.stripe.com/checkout.js"
+    class="stripe-button"
+    data-key="pk_test_TYooMQauvdEDq54NiTphI7jx"
+    data-name="Gold Tier"
+    data-description="Monthly subscription with 30 days trial"
+    data-amount="2000"
+    data-label="Subscribe">
+  </script>
+</form><form action="/subscribe" method="POST">
+  <script
+    src="https://checkout.stripe.com/checkout.js"
+    class="stripe-button"
+    data-key="pk_test_TYooMQauvdEDq54NiTphI7jx"
+    data-name="Gold Tier"
+    data-description="Monthly subscription with 30 days trial"
+    data-amount="2000"
+    data-label="Subscribe">
+  </script>
+</form>

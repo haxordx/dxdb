@@ -1,0 +1,5 @@
+if refund.success?
+  logger.info "Refund[#{refund.id}] Success"
+else
+  logger.error refund.error.inspect
+endcopy

@@ -1,0 +1,14 @@
+{
+  "links": [
+    {
+      "href": "https://uri.paypal.com/v2/customer/partner-referrals/ZjcyODU4ZWYtYTA1OC00ODIwLTk2M2EtOTZkZWQ4NmQwYzI3RU12cE5xa0xMRmk1NWxFSVJIT1JlTFdSbElCbFU1Q3lhdGhESzVQcU9iRT0=",
+      "rel": "self",
+      "method": "GET"
+    },
+    {
+      "href": "https://www.paypal.com/merchantsignup/partner/onboardingentry?token=ZjcyODU4ZWYtYTA1OC00ODIwLTk2M2EtOTZkZWQ4NmQwYzI3RU12cE5xa0xMRmk1NWxFSVJIT1JlTFdSbElCbFU1Q3lhdGhESzVQcU9iRT0=",
+      "rel": "action_url",
+      "method": "GET"
+    }
+  ]
+}copy

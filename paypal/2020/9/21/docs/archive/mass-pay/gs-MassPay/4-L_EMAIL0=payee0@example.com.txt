@@ -1,0 +1,5 @@
+L_EMAIL0=payee0@example.com
+L_AMT0=15.95
+L_EMAIL1=payee1@example.com
+L_AMT1=21.50
+copy

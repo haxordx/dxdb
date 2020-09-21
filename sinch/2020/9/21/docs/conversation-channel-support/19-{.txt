@@ -1,0 +1,16 @@
+{
+    "message": {
+        "template_message": {
+            "channel_template": {
+                "WHATSAPP": {
+                    "template_id": "image_template",
+                    "language_code": "en",
+                    "parameters": {
+                        "header[1]image.link": "https://example.com",
+                        "body[1]text": "Value of first parameter"
+                    }
+                }
+            }
+        }
+    }
+}

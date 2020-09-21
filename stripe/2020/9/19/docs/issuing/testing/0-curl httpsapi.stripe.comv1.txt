@@ -1,0 +1,24 @@
+curl https://api.stripe.com/v1/issuing/cardholders \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d name="Jenny Rosen" \
+  -d email="jenny.rosen@example.com" \
+  -d phone_number="+18008675309" \
+  -d status=active \
+  -d type=individual \
+  -d "billing[address][line1]"="1234 Main Street" \
+  -d "billing[address][city]"="San Francisco" \
+  -d "billing[address][state]"=CA \
+  -d "billing[address][postal_code]"=94111 \
+  -d "billing[address][country]"=US
+curl https://api.stripe.com/v1/issuing/cardholders \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d name="Jenny Rosen" \
+  -d email="jenny.rosen@example.com" \
+  -d phone_number="+18008675309" \
+  -d status=active \
+  -d type=individual \
+  -d "billing[address][line1]"="1234 Main Street" \
+  -d "billing[address][city]"="San Francisco" \
+  -d "billing[address][state]"=CA \
+  -d "billing[address][postal_code]"=94111 \
+  -d "billing[address][country]"=US

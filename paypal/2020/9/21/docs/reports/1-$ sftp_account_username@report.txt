@@ -1,0 +1,2 @@
+$ sftp_account_username@reports.paypal.com
+copy

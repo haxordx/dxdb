@@ -1,0 +1,31 @@
+// Substitute with your application name, and remember to keep it the same as your AndroidManifest.xml
+class StripeTerminalApplication : Application() {
+    private val observer: TerminalLifecycleObserver = TerminalLifecycleObserver.getInstance()
+
+    override fun onCreate() {
+        super.onCreate()
+        // Register the observer for all lifecycle hooks
+        registerActivityLifecycleCallbacks(observer)
+    }
+
+    // Don't forget to let the observer know if your application is running low on memory
+    override fun onTrimMemory(level: Int) {
+        super.onTrimMemory(level)
+        observer.onTrimMemory(level, this)
+    }
+}// Substitute with your application name, and remember to keep it the same as your AndroidManifest.xml
+class StripeTerminalApplication : Application() {
+    private val observer: TerminalLifecycleObserver = TerminalLifecycleObserver.getInstance()
+
+    override fun onCreate() {
+        super.onCreate()
+        // Register the observer for all lifecycle hooks
+        registerActivityLifecycleCallbacks(observer)
+    }
+
+    // Don't forget to let the observer know if your application is running low on memory
+    override fun onTrimMemory(level: Int) {
+        super.onTrimMemory(level)
+        observer.onTrimMemory(level, this)
+    }
+}

@@ -1,0 +1,7 @@
+var action = intent.next_action;
+if (action && action.type === 'redirect_to_url') {
+  window.location = action.redirect_to_url.url;
+}var action = intent.next_action;
+if (action && action.type === 'redirect_to_url') {
+  window.location = action.redirect_to_url.url;
+}

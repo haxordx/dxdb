@@ -1,0 +1,18 @@
+curl https://api.stripe.com/v1/tax_rates \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d display_name="Sales Tax" \
+  -d inclusive=false \
+  -d percentage="7.25" \
+  -d country=US \
+  -d state=CA \
+  -d jurisdiction="US - CA" \
+  -d description="CA Sales Tax"
+curl https://api.stripe.com/v1/tax_rates \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d display_name="Sales Tax" \
+  -d inclusive=false \
+  -d percentage="7.25" \
+  -d country=US \
+  -d state=CA \
+  -d jurisdiction="US - CA" \
+  -d description="CA Sales Tax"

@@ -1,0 +1,4 @@
+$('#hangupCall').click(function (event) {
+    event.preventDefault();
+    call && call.hangup();
+});

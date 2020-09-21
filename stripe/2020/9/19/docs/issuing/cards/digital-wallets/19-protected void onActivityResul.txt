@@ -1,0 +1,17 @@
+protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+  if (requestCode == PushProvisioningActivityStarter.REQUEST_CODE) {
+    if (resultCode == PushProvisioningActivity.RESULT_OK) {
+      PushProvisioningActivityStarter.Result success = PushProvisioningActivityStarter.Result.fromIntent(data);
+    } else if (resultCode == PushProvisioningActivity.RESULT_ERROR) {
+      PushProvisioningActivityStarter.Error error = PushProvisioningActivityStarter.Error.fromIntent(data);
+    }
+  }
+}protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+  if (requestCode == PushProvisioningActivityStarter.REQUEST_CODE) {
+    if (resultCode == PushProvisioningActivity.RESULT_OK) {
+      PushProvisioningActivityStarter.Result success = PushProvisioningActivityStarter.Result.fromIntent(data);
+    } else if (resultCode == PushProvisioningActivity.RESULT_ERROR) {
+      PushProvisioningActivityStarter.Error error = PushProvisioningActivityStarter.Error.fromIntent(data);
+    }
+  }
+}

@@ -1,0 +1,1 @@
+'GET /team': { view: 'brochure/about' }

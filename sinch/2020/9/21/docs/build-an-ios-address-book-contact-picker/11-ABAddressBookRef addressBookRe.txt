@@ -1,0 +1,23 @@
+ABAddressBookRef addressBookRef = ABAddressBookCreateWithOptions(NULL, nil);
+
+ NSArray *allContacts = (__bridge NSArray *)ABAddressBookCopyArrayOfAllPeople(addressBookRef);
+ for (id record in allContacts){
+     ABRecordRef thisContact = (__bridge ABRecordRef)record;
+
+     NSString *fName;
+     NSString *lName;
+     NSString *mNumber;
+     NSString *hNumber;
+
+     int numberCount = 0;
+
+     ABMultiValueRef phonesRef = ABRecordCopyValue(thisContact, kABPersonPhoneProperty);
+
+     if (ABMultiValueGetCount(phonesRef) > 0) {
+         // 1
+     }
+
+     CFRelease(phonesRef);
+
+
+ }

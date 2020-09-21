@@ -1,0 +1,5 @@
+{
+  "type": "suggestion_response",
+  "postback_data": string,
+  "text": string
+}

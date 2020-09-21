@@ -1,0 +1,4 @@
+$ sails new foo
+$ cd foo
+$ sails generate model purchase
+$ sails generate model employee

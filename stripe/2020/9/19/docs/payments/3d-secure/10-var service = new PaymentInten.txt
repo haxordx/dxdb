@@ -1,0 +1,12 @@
+var service = new PaymentIntentService();
+var options = new PaymentIntentConfirmOptions
+{
+  ReturnUrl = "https://example.com/return_url",
+};
+var intent = service.Confirm("{{PAYMENT_INTENT_ID}}", options);
+var service = new PaymentIntentService();
+var options = new PaymentIntentConfirmOptions
+{
+  ReturnUrl = "https://example.com/return_url",
+};
+var intent = service.Confirm("{{PAYMENT_INTENT_ID}}", options);

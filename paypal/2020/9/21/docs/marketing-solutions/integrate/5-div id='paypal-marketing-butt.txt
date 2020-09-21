@@ -1,0 +1,17 @@
+<div id='paypal-marketing-button-container'></div>
+
+<script src='https://www.paypalobjects.com/muse/partners/muse-button-bundle.js'></script>
+<script>
+  MUSEButton('paypal-marketing-button-container', {
+    onContainerCreate: (containerId) => {
+      // Optional callback. If cid property is not passed in,
+      // A container ID will be created for you.
+    },
+    host_name: 'https://example.com',
+    partner_name: 'bar',
+    bn_code: 'xyz',
+    env: 'sandbox',
+    cid: 'Merchant ContainerId',
+  })
+</script>
+htmlcopy

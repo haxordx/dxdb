@@ -1,0 +1,2 @@
+runReportRequest(templateName,reportParams,pageSize)
+copy

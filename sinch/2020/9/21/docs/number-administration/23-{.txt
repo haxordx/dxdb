@@ -1,0 +1,5 @@
+{
+    "groupId":13,
+    "quantity":1,
+    "capabilities":["voice","sms"]
+}

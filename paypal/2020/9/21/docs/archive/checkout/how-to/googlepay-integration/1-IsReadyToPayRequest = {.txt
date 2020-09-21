@@ -1,0 +1,19 @@
+IsReadyToPayRequest = {
+  "apiVersion": 2,
+  "apiVersionMinor": 0,
+  "allowedPaymentMethods": [
+    {
+      "type": "CARD",
+      "parameters": {
+        ...
+      },
+      "tokenizationSpecification": {
+        ...
+      }
+    },
+    PayPalPaymentMethod
+  ]
+};
+
+PaymentsClient.isReadyToPay(IsReadyToPayRequest);
+javascriptcopy

@@ -1,0 +1,54 @@
+# 1. Import the PayPal SDK client that was created in `Set up Server-Side SDK`.
+from sample import PayPalClient
+from paypalcheckoutsdk.orders import OrdersAuthorizeRequest
+import json
+
+class AuthorizeOrder(PayPalClient):
+
+  #2. Set up your server to receive a call from the client
+  """Use this function to authorize an approved order.
+     Pass a valid, authorized order ID as an argument to this
+     function."""
+  def authorize_order(self, order_id, debug=False):
+    """Method to authorize order using order_id"""
+    request = OrdersAuthorizeRequest(order_id)
+    request.prefer("return=representation")
+    # 3. Call PayPal to authorize an order
+    request.request_body(self.build_request_body())
+    response = self.client.execute(request)
+    # 4. Save the authorization ID to your database. Implement logic to save authorization to your database for future reference.
+    if debug:
+      print 'Status Code: ', response.status_code
+      print 'Status: ', response.result.status
+      print 'Order ID: ', response.result.id
+      print ('Authorization ID:',
+         response.result.purchase_units[0].payments.authorizations[0].id)
+      print 'Links:'
+      for link in response.result.links:
+        print('\t{}: {}\tCall Type: {}'
+              .format(link.rel, link.href, link.method))
+      print 'Authorization Links:'
+      for link in response.result.purchase_units[0].payments.authorizations[0].links:
+        print('\t{}: {}\tCall Type: {}'
+              .format(link.rel, link.href, link.method))
+      print "Buyer:"
+      print ("\tEmail Address: {}\n\tPhone Number: {}"
+          .format(response.result.payer.email_address,
+          response.result.payer.phone.phone_number.national_number))
+      json_data = self.object_to_json(response.result)
+      print "json_data: ", json.dumps(json_data,indent=4)                    
+    return response
+
+  """Sample request body to authorize order. You can update this with
+     the required fields, as needed."""
+  @staticmethod
+  def build_request_body():
+    return {}
+
+"""This driver function invokes the authorize_order function with
+   a valid, approved order ID to authorize the sample order.  
+   Replace the Order ID value with a valid, approved order ID"""
+if __name__ == "__main__":
+  order_id = &apos REPLACE-WITH-VALID-APPROVED-ORDER-ID'
+  AuthorizeOrder().authorize_order(order_id, debug=True)
+copy

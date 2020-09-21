@@ -1,0 +1,5 @@
+var sinchClient = new SinchClient({
+  applicationKey: '<application_key>',
+  capabilities: { calling: true },
+  supportActiveConnection: true,
+});

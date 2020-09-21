@@ -1,0 +1,30 @@
+class CheckoutViewController: UIViewController {
+    var paymentIntentClientSecret: String?
+
+    // ...continued from previous step
+
+    override func viewDidLoad() {
+        // ...continued from previous step
+        startCheckout()
+    }
+
+    func startCheckout() {
+        // Request a PaymentIntent from your server and store its client secret
+        // Click Open on GitHub to see a full implementation
+    }
+}
+class CheckoutViewController: UIViewController {
+    var paymentIntentClientSecret: String?
+
+    // ...continued from previous step
+
+    override func viewDidLoad() {
+        // ...continued from previous step
+        startCheckout()
+    }
+
+    func startCheckout() {
+        // Request a PaymentIntent from your server and store its client secret
+        // Click Open on GitHub to see a full implementation
+    }
+}

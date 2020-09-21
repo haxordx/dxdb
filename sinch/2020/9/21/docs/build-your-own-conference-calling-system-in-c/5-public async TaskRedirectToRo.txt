@@ -1,0 +1,11 @@
+public async Task<RedirectToRouteResult> Create(Conference model) {
+    using (var db = new ConferenceContext()) {
+        // lets add a new guid to the model to ensure that all conferences are uniq
+        model.ConferenceId = Guid.NewGuid();
+        //save it
+        db.Conferences.Add(model);
+        await db.SaveChangesAsync();
+    }
+    //return to home controller
+    return RedirectToAction("Index");
+}

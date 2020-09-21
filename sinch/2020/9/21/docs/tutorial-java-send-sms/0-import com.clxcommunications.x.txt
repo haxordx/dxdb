@@ -1,0 +1,6 @@
+import com.clxcommunications.xms.ApiConnection;
+
+ApiConnection connection = ApiConnection.builder()
+        .servicePlanId("{YOUR_SERVICE_PLAN_ID}")
+        .token("{YOUR_API_TOKEN}")
+        .start();

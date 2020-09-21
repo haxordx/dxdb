@@ -1,0 +1,46 @@
+[Authorize]
+[Route("~/Conference/{id}")]
+public async Task<ViewResult> Details(Guid id) {
+    var model = new ConferenceDetailsViewModel();
+    using (var db = new ConferenceContext())
+    {
+        var conference =
+            db.Conferences
+                .FirstOrDefault(m => m.OwnerId == User.Identity.Name 
+                && m.ConferenceId == id);
+        model.Conference = conference;
+        try
+        {
+            var conf = await Getconference(conference.ConferenceId.ToString()).Get();
+            // store the participants in the result model
+            if (conf != null)
+            {
+                model.Participants = conf.Participants;
+            }
+            else
+            {
+                model.Participants = new IParticipant[0];
+            }
+        }
+        catch (Exception)
+        {}
+
+        return View(model);
+    }
+}
+
+private IConference Getconference(string conferenceId) {
+    // 1. Create an API factory
+    var sinch = SinchFactory.CreateApiFactory(appKey, appSecret);
+    // 2. Get a ConferenceApi client
+    var conferenceClient = sinch.CreateConferenceApi();
+    //fetch the conference 
+    try
+    {
+        return conferenceClient.Conference(conferenceId);
+    }
+    catch (Exception)
+    {
+        return null;
+    }
+}

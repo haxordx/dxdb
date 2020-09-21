@@ -1,0 +1,3 @@
+// Force the language to German for the remainder of the request:
+req.setLocale('de');
+// (this will use the strings located in `config/locales/de.json` for translation)

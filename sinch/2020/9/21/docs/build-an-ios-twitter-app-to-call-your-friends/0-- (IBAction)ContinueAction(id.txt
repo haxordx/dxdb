@@ -1,0 +1,26 @@
+- (IBAction)ContinueAction:(id)sender {
+    ACAccountStore *accountStore = [[ACAccountStore alloc] init];
+    ACAccountType *accountType = [accountStore accountTypeWithAccountTypeIdentifier:ACAccountTypeIdentifierTwitter];
+    [accountStore requestAccessToAccountsWithType:accountType options:nil completion:^(BOOL granted, NSError *error){
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (granted) {
+                NSArray *accounts = [accountStore accountsWithAccountType:accountType];
+                if (accounts.count > 0)
+                {
+                    ACAccount *twitterAccount = [accounts objectAtIndex:0];
+
+                    // 1
+
+                    [self performSegueWithIdentifier:@"showMaster" sender:twitterAccount];
+
+                }
+                else {
+                    NSLog(@"no accounts");
+                }
+            } else {
+                NSLog(@"No access granted");
+            }
+
+        });
+    }];
+}

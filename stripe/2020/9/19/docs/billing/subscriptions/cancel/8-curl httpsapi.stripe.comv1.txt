@@ -1,0 +1,8 @@
+curl https://api.stripe.com/v1/subscriptions/sub_49ty4767H20z6a \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -X POST \
+  -d cancel_at_period_end=true
+curl https://api.stripe.com/v1/subscriptions/sub_49ty4767H20z6a \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -X POST \
+  -d cancel_at_period_end=true

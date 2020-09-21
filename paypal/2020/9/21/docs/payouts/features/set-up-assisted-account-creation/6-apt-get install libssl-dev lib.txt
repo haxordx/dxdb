@@ -1,0 +1,13 @@
+apt-get install libssl-dev libffi-dev
+pip install paypalrestsdk
+
+import paypalrestsdk
+from paypalrestsdk.openid_connect import Tokeninfo, Userinfo
+
+paypalrestsdk.configure({
+  "mode": "sandbox", # sandbox or live
+  "client_id": "",
+  "client_secret": "" })
+tokeninfo = Tokeninfo.create("Replace with Authorize code")
+userinfo  = tokeninfo.userinfo()
+copy

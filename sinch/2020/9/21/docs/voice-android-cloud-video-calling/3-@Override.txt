@@ -1,0 +1,9 @@
+@Override
+public void onVideoTrackPaused(Call call) {
+     // Implement what to be done when remote user pause video stream.
+}
+
+@Override
+public void onVideoTrackResumed(Call call) {
+     // Implement what to be done when remote user resumes video stream.
+}

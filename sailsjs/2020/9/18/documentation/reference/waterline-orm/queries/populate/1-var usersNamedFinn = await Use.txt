@@ -1,0 +1,6 @@
+var usersNamedFinn = await User.find({name:'Finn'}).populate('dad');
+
+sails.log('Wow, there are %d users named Finn.', usersNamedFinn.length);
+sails.log('Check it out, some of them probably have a dad named Joshua or Martin:', usersNamedFinn);
+
+return res.json(usersNamedFinn);

@@ -1,0 +1,1 @@
+await Something.destroy(criteria);

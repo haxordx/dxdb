@@ -1,0 +1,7 @@
+[Organisation]
+    int - id
+    string? - name
+    string? - website
+    string? - countryId
+    string? - phone
+    string? - vatnumber

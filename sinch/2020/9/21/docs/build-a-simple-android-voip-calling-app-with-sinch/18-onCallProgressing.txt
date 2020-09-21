@@ -1,0 +1,8 @@
+//onCallProgressing
+callState.setText("ringing");
+
+//onCallEstablished
+callState.setText("connected");
+
+//onCallEnded
+callState.setText("");

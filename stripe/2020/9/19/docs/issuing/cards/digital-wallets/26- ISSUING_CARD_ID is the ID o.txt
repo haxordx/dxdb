@@ -1,0 +1,13 @@
+// ISSUING_CARD_ID is the ID of the Issuing Card you'd like to use for
+// push provisioning.
+params := &stripe.EphemeralKeyParams{
+  IssuingCard: stripe.String("{{ISSUING_CARD_ID}}"),
+  StripeVersion: stripe.String("{{API_VERSION}}"),
+}
+key, err := ephemeralkey.New(params)// ISSUING_CARD_ID is the ID of the Issuing Card you'd like to use for
+// push provisioning.
+params := &stripe.EphemeralKeyParams{
+  IssuingCard: stripe.String("{{ISSUING_CARD_ID}}"),
+  StripeVersion: stripe.String("{{API_VERSION}}"),
+}
+key, err := ephemeralkey.New(params)

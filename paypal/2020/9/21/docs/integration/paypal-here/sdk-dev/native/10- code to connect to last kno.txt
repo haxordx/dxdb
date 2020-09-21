@@ -1,0 +1,57 @@
+// code to connect to last known reader or find another
+RetailSDK.getDeviceManager().connectToLastActiveReader(new DeviceManager.ConnectionCallback()
+{
+   @Override
+   public void connection(RetailSDKException error, PaymentDevice cardReader)
+   {
+     if (error == null && cardReader != null)
+     {
+       // Successfully connected to last active reader
+       // For a connected Bluetooth reader, check for software update
+     }
+     else if (error != null)
+     {
+       // Card reader connection failed
+     }
+     else
+     {
+       // Could not find the last card reader to connect to
+     }
+   }
+});
+// code to search and connect
+RetailSDK.getDeviceManager().searchAndConnect(new DeviceManager.ConnectionCallback()
+{
+  @Override
+  public void connection(final RetailSDKException error, final PaymentDevice cardReader)
+  {
+    if (error == null && cardReader != null)
+     {
+       // Successfully connected to card reader
+       // For a connected Bluetooth reader, check for software update
+     }
+     else if (error != null)
+     {
+       // Card reader connection failed
+     }
+  }
+});
+// code to auto-connect to the last known reader
+String lastReader = RetailSDK.getDeviceManager().getLastActiveBluetoothReader();
+  RetailSDK.getDeviceManager().scanAndAutoConnectToBluetoothReader(lastReader, new DeviceManager.ConnectionCallback()
+  {
+    @Override
+    public void connection(final RetailSDKException error, final PaymentDevice cardReader)
+    {
+      if (error == null && cardReader != null)
+       {
+         // Successfully connected to card reader
+         // For a connected Bluetooth reader, check for software update
+       }
+       else if (error != null)
+       {
+         // Card reader connection failed
+       }
+      });
+    }
+  });copy

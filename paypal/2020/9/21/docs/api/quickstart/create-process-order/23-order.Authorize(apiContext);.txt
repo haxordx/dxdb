@@ -1,0 +1,13 @@
+order.Authorize(apiContext);
+
+var amount = new Amount()
+{
+  currency = "USD",
+  total = "100.00",
+  details = details
+};
+
+var capture = new Capture();
+capture.amount = amount;
+capture.is_final_capture = true;
+order.Capture(apiContext, capture);copy

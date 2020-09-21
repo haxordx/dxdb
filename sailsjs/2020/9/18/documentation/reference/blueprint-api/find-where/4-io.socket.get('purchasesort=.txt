@@ -1,0 +1,3 @@
+io.socket.get('/purchase?sort=createdAt DESC', function (purchases) {
+  console.log(purchases);
+});

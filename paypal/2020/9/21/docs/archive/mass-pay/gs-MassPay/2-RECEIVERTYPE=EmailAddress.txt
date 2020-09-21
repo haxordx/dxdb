@@ -1,0 +1,2 @@
+RECEIVERTYPE=EmailAddress
+copy

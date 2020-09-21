@@ -1,0 +1,25 @@
+{
+  "tracking_number": "9405511899223197428490",
+  "status_code": "DE",
+  "status_description": "Delivered",
+  "carrier_status_code": "01",
+  "carrier_status_description": "Your item was delivered in or at the mailbox at 9:10 am on March 2, 2017 in AUSTIN, TX 78756.",
+  "ship_date": "2019-07-26T22:10:50.286Z",
+  "estimated_delivery_date": null,
+  "actual_delivery_date": "2019-07-26T22:10:50.286Z",
+  "exception_description": null,
+  "events": [
+    {
+      "occurred_at": "2019-09-13T12:32:00Z",
+      "carrier_occurred_at": "2019-09-13T05:32:00",
+      "description": "Arrived at USPS Facility",
+      "city_locality": "OCEANSIDE",
+      "state_province": "CA",
+      "postal_code": "92056",
+      "country_code": "",
+      "company_name": "",
+      "signer": "",
+      "event_code": "U1"
+    }
+  ]
+}

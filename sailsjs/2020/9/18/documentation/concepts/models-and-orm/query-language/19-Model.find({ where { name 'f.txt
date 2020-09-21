@@ -1,0 +1,1 @@
+Model.find({ where: { name: 'foo' }, limit: 20 });

@@ -1,0 +1,6 @@
+$ cd myProject
+$ sails new .
+info: Installing dependencies...
+Press CTRL+C to skip.
+(but if you do that, you'll need to cd in and run `npm install`)
+info: Created a new Sails app `my-project`!

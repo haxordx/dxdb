@@ -1,0 +1,17 @@
+sails> sails
+  |>   [a lifted Sails app on port 1337]
+\___/  For help, see: https://sailsjs.com/documentation/concepts/
+
+Tip: Use `sails.config` to access your app's runtime configuration.
+
+1 Models:
+User
+
+1 Controllers:
+UserController
+
+20 Hooks:
+moduleloader,logger,request,orm,views,blueprints,responses,controllers,sockets,p
+ubsub,policies,services,csrf,cors,i18n,userconfig,session,grunt,http,projecthooks
+
+sails>

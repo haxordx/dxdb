@@ -1,0 +1,6 @@
+var archive = await Archive.findOne({
+  fromModel: 'user',
+  originalRecordId: 1
+});
+
+// The data from the original record is stored as `archive.originalRecord`.

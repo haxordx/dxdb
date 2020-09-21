@@ -1,0 +1,22 @@
+RetailSDK.DeviceDiscovered += (sender, device) =>
+{
+    device.Connected += (pd) =>
+    {
+        // Device is connected
+    }
+    device.ConnectionError += (pd, error) =>
+    {
+        // Device connection was not successful
+    }
+    device.Disconnected += (pd, error) =>
+    {
+        // Device was disconnected
+    }
+    device.UpdateRequired += (pd, update) =>
+    {
+        device.PendingUpdate.Begin((error, upgraded) =>
+        {
+           // Update executed
+        });
+    }
+};copy

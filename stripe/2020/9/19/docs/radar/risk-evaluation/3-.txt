@@ -1,0 +1,20 @@
+...
+"outcome": {
+  "network_status": "approved_by_network",
+  "reason": "not_assessed_risk_level",
+  "risk_level": "not_assessed",
+  "risk_score": "nil", // Provided only with Stripe Radar for Fraud Teams
+  "seller_message": "Your business has opted out of Radar fraud risk assessments.",
+  "type": "authorized"
+}
+...
+...
+"outcome": {
+  "network_status": "approved_by_network",
+  "reason": "not_assessed_risk_level",
+  "risk_level": "not_assessed",
+  "risk_score": "nil", // Provided only with Stripe Radar for Fraud Teams
+  "seller_message": "Your business has opted out of Radar fraud risk assessments.",
+  "type": "authorized"
+}
+...

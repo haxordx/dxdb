@@ -1,0 +1,15 @@
+var terminal = StripeTerminal.create({
+  onFetchConnectionToken: fetchConnectionToken,
+  onUnexpectedReaderDisconnect: unexpectedDisconnect,
+});
+
+function unexpectedDisconnect() {
+  console.log("Disconnected from reader")
+}var terminal = StripeTerminal.create({
+  onFetchConnectionToken: fetchConnectionToken,
+  onUnexpectedReaderDisconnect: unexpectedDisconnect,
+});
+
+function unexpectedDisconnect() {
+  console.log("Disconnected from reader")
+}

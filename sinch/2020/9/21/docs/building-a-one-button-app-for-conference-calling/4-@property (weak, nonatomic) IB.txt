@@ -1,0 +1,2 @@
+@property (weak, nonatomic) IBOutlet UITextField *userName;
+- (IBAction)login:(id)sender;

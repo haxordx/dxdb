@@ -1,0 +1,45 @@
+// Custom styling can be passed to options when creating an Element.
+const style = {
+  base: {
+    // Add your base input styles here. For example:
+    fontSize: '16px',
+    color: "#32325d",
+  },
+};
+
+const options = {
+  style,
+  supportedCountries: ['SEPA'],
+  // If you know the country of the customer, you can optionally pass it to
+  // the Element as placeholderCountry. The example IBAN that is being used
+  // as placeholder will reflect the IBAN format of that country.
+  placeholderCountry: 'DE',
+}
+
+// Create an instance of the iban Element.
+const iban = elements.create('iban', options);
+
+// Add an instance of the iban Element into the `iban-element` <div>.
+iban.mount('#iban-element');// Custom styling can be passed to options when creating an Element.
+const style = {
+  base: {
+    // Add your base input styles here. For example:
+    fontSize: '16px',
+    color: "#32325d",
+  },
+};
+
+const options = {
+  style,
+  supportedCountries: ['SEPA'],
+  // If you know the country of the customer, you can optionally pass it to
+  // the Element as placeholderCountry. The example IBAN that is being used
+  // as placeholder will reflect the IBAN format of that country.
+  placeholderCountry: 'DE',
+}
+
+// Create an instance of the iban Element.
+const iban = elements.create('iban', options);
+
+// Add an instance of the iban Element into the `iban-element` <div>.
+iban.mount('#iban-element');

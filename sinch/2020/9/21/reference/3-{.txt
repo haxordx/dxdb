@@ -1,0 +1,8 @@
+{
+    "channel_identities": [
+        {
+            "channel": "SMS",
+            "identity": "+46 xxx xxx xxx"
+        }
+    ]
+}

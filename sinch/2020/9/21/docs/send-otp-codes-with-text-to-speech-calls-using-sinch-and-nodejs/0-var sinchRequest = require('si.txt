@@ -1,0 +1,35 @@
+var sinchRequest = require('sinch-request');
+var https = require('https');
+
+var creds = { key: 'your key',
+  secret: 'your secret'
+};
+
+var bodyData = JSON.stringify({ method: 'ttsCallout',
+  ttsCallout:
+   { destination: { type: 'number', endpoint: '+15551234567' },
+     domain: 'pstn',
+     custom: 'customData',
+     locale: 'en-US',
+     prompts : "#tts[Your pin code is 1234]", } });
+
+var options = {
+  method: 'POST',
+  host: 'callingapi.sinch.com',
+  port: 443,
+  path: '/v1/callouts',
+  data: bodyData
+};
+
+sinchRequest.applicationSigned(options, creds);
+var req = https.request(options, function(response) {
+  var data = '';
+  response.on('data', function (chunk) {
+    data += chunk;
+  });
+  response.on('end', function () {
+    console.log('Response body: ' + data);
+    //here you can i.e save your callid,
+  });
+});
+req.end(options.data);

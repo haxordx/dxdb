@@ -1,0 +1,19 @@
+curl https://svcs.sandbox.paypal.com/AdaptivePayments/SetPaymentOptions \
+  -s \
+  --insecure \
+  -H "X-PAYPAL-SECURITY-USERID: api_username" \
+  -H "X-PAYPAL-SECURITY-PASSWORD: api_password" \
+  -H "X-PAYPAL-SECURITY-SIGNATURE: api_signature" \
+  -H "X-PAYPAL-REQUEST-DATA-FORMAT: NV" \
+  -H "X-PAYPAL-RESPONSE-DATA-FORMAT: NV" \
+  -H "X-PAYPAL-APPLICATION-ID: app_id" \
+  -d requestEnvelope.errorLanguage=en_US \
+  -d receiverOptions[0].receiver.email=test@test.com \
+  -d receiverOptions[0].invoiceData.item[0].name=ITEM1 \
+  -d receiverOptions[0].invoiceData.item[0].price=50.0 \
+  -d receiverOptions[0].invoiceData.item[0].itemCount=2 \
+  -d receiverOptions[0].invoiceData.item[0].itemPrice=25.0 \
+  -d receiverOptions[0].invoiceData.totalTax=25.0 \
+  -d receiverOptions[0].invoiceData.totalShipping=25.0 \
+  -d payKey=...
+copy

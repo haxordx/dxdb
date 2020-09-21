@@ -1,0 +1,3 @@
+//Create a Node.js project in your directory, then run the following command to install the PayPal JavaScript SDK.
+npm install @paypal/payouts-sdk
+copy

@@ -1,0 +1,3 @@
+curl https://api.stripe.com/v1/payment_methods/pm_1HTG7b2eZvKYlo2CvXxWYwuM/attach \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d customer=cus_I3HcwHEKBfQLG1

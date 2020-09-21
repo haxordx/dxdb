@@ -1,0 +1,8 @@
+curl https://api.stripe.com/v1/accounts/{{CONNECTED_STRIPE_ACCOUNT_ID}} \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d "capabilities[transfers][requested]"=true \
+  -d "capabilities[tax_reporting_us_1099_misc][requested]"=true
+curl https://api.stripe.com/v1/accounts/{{CONNECTED_STRIPE_ACCOUNT_ID}} \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d "capabilities[transfers][requested]"=true \
+  -d "capabilities[tax_reporting_us_1099_misc][requested]"=true

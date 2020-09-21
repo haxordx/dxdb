@@ -1,0 +1,2 @@
+sails.log('This endpoint (`POST /accounts`) will be deprecated in the next few days.  Please use `POST /signup` instead. ');
+// -> debug: This endpoint (`POST /accounts`) will be deprecated in the next few days.  Please use `POST /signup` instead.

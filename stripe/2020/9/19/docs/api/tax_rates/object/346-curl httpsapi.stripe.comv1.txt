@@ -1,0 +1,3 @@
+curl https://api.stripe.com/v1/tax_rates/txr_1HTG9z2eZvKYlo2C715Ytaq5 \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d active=false

@@ -1,0 +1,33 @@
+curl -v -X POST https://api.sandbox.paypal.com/v2/customer/partner-referrals \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer Access-Token" \
+  -d '{
+    "operations": [
+      {
+        "operation": "API_INTEGRATION",
+        "api_integration_preference": {
+          "rest_api_integration": {
+            "integration_method": "PAYPAL",
+            "integration_type": "FIRST_PARTY",
+            "first_party_details": {
+              "features": [
+                "PAYMENT",
+                "REFUND"
+              ],
+              "seller_nonce": " Seller-Nonce"
+            }
+          }
+        }
+      }
+    ],
+    "products": [
+      "EXPRESS_CHECKOUT"
+    ],
+    "legal_consents": [
+      {
+        "type": "SHARE_DATA_CONSENT",
+        "granted": true
+      }
+    ]
+}'
+bashcopy

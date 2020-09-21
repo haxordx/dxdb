@@ -1,0 +1,17 @@
+Terminal.getInstance().retrievePaymentIntent(clientSecret, object: PaymentIntentCallback {
+  override fun onSuccess(paymentIntent: PaymentIntent) {
+    // Placeholder for collecting a payment method with paymentIntent
+  }
+
+  override fun onFailure(exception: TerminalException) {
+    // Placeholder for handling exception
+  }
+})Terminal.getInstance().retrievePaymentIntent(clientSecret, object: PaymentIntentCallback {
+  override fun onSuccess(paymentIntent: PaymentIntent) {
+    // Placeholder for collecting a payment method with paymentIntent
+  }
+
+  override fun onFailure(exception: TerminalException) {
+    // Placeholder for handling exception
+  }
+})

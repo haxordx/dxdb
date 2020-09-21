@@ -1,0 +1,42 @@
+[HttpPost("update-subscription")]
+public ActionResult<Subscription> UpdateSubscription([FromBody] UpdateSubscriptionRequest req)
+{
+    var service = new SubscriptionService();
+    var subscription = service.Get(req.Subscription);
+
+    var options = new SubscriptionUpdateOptions
+    {
+        CancelAtPeriodEnd = false,
+        Items = new List<SubscriptionItemOptions>
+        {
+            new SubscriptionItemOptions
+            {
+                Id = subscription.Items.Data[0].Id,
+                Price = "price_H1NlVtpo6ubk0m",
+            }
+        }
+    };
+    var updatedSubscription = service.Update(req.Subscription, options);
+    return updatedSubscription;
+}
+[HttpPost("update-subscription")]
+public ActionResult<Subscription> UpdateSubscription([FromBody] UpdateSubscriptionRequest req)
+{
+    var service = new SubscriptionService();
+    var subscription = service.Get(req.Subscription);
+
+    var options = new SubscriptionUpdateOptions
+    {
+        CancelAtPeriodEnd = false,
+        Items = new List<SubscriptionItemOptions>
+        {
+            new SubscriptionItemOptions
+            {
+                Id = subscription.Items.Data[0].Id,
+                Price = "price_H1NlVtpo6ubk0m",
+            }
+        }
+    };
+    var updatedSubscription = service.Update(req.Subscription, options);
+    return updatedSubscription;
+}

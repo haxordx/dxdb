@@ -1,0 +1,9 @@
+inputs: {
+
+  req: {
+    type: 'ref',
+    description: 'The current incoming request (req).',
+    required: true
+  }
+
+}

@@ -1,0 +1,12 @@
+curl https://api.stripe.com/v1/subscription_schedules/sub_sched_1FSRtAILNmKrzH4z9scwDpeL \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d phases[0][items][0][price]=price_1GqNdGAJVYItwOKqEHb \
+  -d phases[0][items][0][quantity]=2 \
+  -d phases[0][start_date]=1577865600 \
+  -d phases[0][end_date]=1580544000
+curl https://api.stripe.com/v1/subscription_schedules/sub_sched_1FSRtAILNmKrzH4z9scwDpeL \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d phases[0][items][0][price]=price_1GqNdGAJVYItwOKqEHb \
+  -d phases[0][items][0][quantity]=2 \
+  -d phases[0][start_date]=1577865600 \
+  -d phases[0][end_date]=1580544000

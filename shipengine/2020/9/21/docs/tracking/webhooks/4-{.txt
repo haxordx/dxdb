@@ -1,0 +1,46 @@
+{
+  "resource_url": "https://api.shipengine.com/v1/tracking?carrier_code=usps&tracking_number=9400111298370264401222",
+  "resource_type": "API_TRACK",
+  "data": {
+    "label_url": null,
+    "tracking_number": "9400111298370264401222",
+    "status_code": "IT",
+    "status_description": "In Transit",
+    "carrier_status_code": "NT",
+    "carrier_status_description": "Your package is moving within the USPS network and is on track to be delivered the expected delivery date. It is currently in transit to the next facility.",
+    "ship_date": "2020-06-30T16:09:00",
+    "estimated_delivery_date": "2020-07-06T00:00:00",
+    "actual_delivery_date": null,
+    "exception_description": null,
+    "events": [
+      {
+        "occurred_at": "2020-07-02T00:00:00Z",
+        "carrier_occurred_at": "2020-07-02T00:00:00",
+        "description": "In Transit, Arriving On Time",
+        "city_locality": "",
+        "state_province": "",
+        "postal_code": "",
+        "country_code": "",
+        "company_name": "",
+        "signer": "",
+        "event_code": "NT",
+        "latitude": null,
+        "longitude": null
+      },
+      {
+        "occurred_at": "2020-06-30T20:09:00Z",
+        "carrier_occurred_at": "2020-06-30T16:09:00",
+        "description": "Shipment Received, Package Acceptance Pending",
+        "city_locality": "VERSAILLES",
+        "state_province": "KY",
+        "postal_code": "40383",
+        "country_code": "",
+        "company_name": "",
+        "signer": "",
+        "event_code": "TM",
+        "latitude": 37.8614,
+        "longitude": -84.6646
+      }
+    ]
+  }
+}

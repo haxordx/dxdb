@@ -1,0 +1,6 @@
+{
+  id: 7,
+  verb: 'addedTo',
+  attribute: 'involvedInPurchases',
+  addedIds: [ 47 ]
+}

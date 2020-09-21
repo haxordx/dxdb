@@ -1,0 +1,15 @@
+select
+  date_format(created, '%Y-%m-%d') as day,
+  id,
+  email,
+  type
+from issuing_cardholders
+where status='active'
+limit 3select
+  date_format(created, '%Y-%m-%d') as day,
+  id,
+  email,
+  type
+from issuing_cardholders
+where status='active'
+limit 3

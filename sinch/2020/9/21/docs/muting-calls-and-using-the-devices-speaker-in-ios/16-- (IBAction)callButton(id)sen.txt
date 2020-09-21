@@ -1,0 +1,5 @@
+- (IBAction)callButton:(id)sender {
+_call = [[_client callClient] callPhoneNumber:_numberLabel.text];
+_call.delegate = self;
+_audioController = [_client audioController];
+[self presentCallScreen:_numberLabel.text];

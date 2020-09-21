@@ -1,0 +1,29 @@
+var customerOptions = new CustomerCreateOptions {
+    Email = "customer@example.com",
+    Source = request.stripeToken,
+};
+var customerService = new CustomerService();
+Customer customer = customerService.Create(customerOptions);
+
+var chargeOptions = new ChargeCreateOptions {
+    Customer = customer.Id,
+    Description = "Custom t-shirt",
+    Amount = order.amount,
+    Currency = "usd",
+};
+var chargeService = new ChargeService();
+Charge charge = chargeService.Create(chargeOptions);var customerOptions = new CustomerCreateOptions {
+    Email = "customer@example.com",
+    Source = request.stripeToken,
+};
+var customerService = new CustomerService();
+Customer customer = customerService.Create(customerOptions);
+
+var chargeOptions = new ChargeCreateOptions {
+    Customer = customer.Id,
+    Description = "Custom t-shirt",
+    Amount = order.amount,
+    Currency = "usd",
+};
+var chargeService = new ChargeService();
+Charge charge = chargeService.Create(chargeOptions);

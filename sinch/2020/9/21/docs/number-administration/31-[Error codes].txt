@@ -1,0 +1,6 @@
+[Error codes]
+    NotEnoughCredit (40200)         - Insufficient funds to complete the transaction.
+    ForbiddenRequest (40300)        - The current user is not the owner of the organisation: {ORGANISATION_ID}
+    InvalidScheme (40301)           - The authorization scheme 'instance' is required.
+    ResourceNotFound (40400)        - Unable to assign numbers to organization: reservation(s) not found or expired
+    ApplicationConfiguration (42200)- Accounting not set up for this organization.

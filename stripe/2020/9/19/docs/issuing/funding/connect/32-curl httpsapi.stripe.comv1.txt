@@ -1,0 +1,66 @@
+curl https://api.stripe.com/v1/tokens \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d "bank_account[country]"=US \
+  -d "bank_account[currency]"=usd \
+  -d "bank_account[account_holder_name]"="Jenny Rosen" \
+  -d "bank_account[account_holder_type]"=individual \
+  -d "bank_account[routing_number]"=110000000 \
+  -d "bank_account[account_number]"=000123456789
+
+curl https://api.stripe.com/v1/sources \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -H "Stripe-Account: {{CONNECTED_STRIPE_ACCOUNT_ID}}" \
+  -d type=ach_debit \
+  -d currency=usd \
+  -d token=TOKEN_ID \
+  -d "owner[address][line1]"="510 Townsend Street" \
+  -d "owner[address][city]"="San Francisco" \
+  -d "owner[address][state]"=California \
+  -d "owner[address][country]"=US \
+  -d "owner[email]"="jenny.rosen@example.com" \
+  -d "owner[name]"="Jenny Rosen" \
+  -d "owner[phone]"=5554443333 \
+  -d "mandate[reference]"=PBX765TU8945Z \
+  -d "mandate[url]"="https://acme.foo.bar/mandates/ach_debit/PBX765TU8945Z" \
+  -d "mandate[amount]"=1000 \
+  -d "mandate[currency]"=usd \
+  -d "mandate[interval]"=variable \
+  -d "mandate[acceptance][status]"=accepted \
+  -d "mandate[acceptance][type]"=online \
+  -d "mandate[acceptance][online][date]"=1516716818 \
+  -d "mandate[acceptance][online][ip]"="91.121.146.224" \
+  -d "mandate[acceptance][online][user_agent]"="Mozilla/5.0 (Macintosh%3B Intel Mac OS X 10_13_2) AppleWebKit/537.36" \
+  -d "mandate[notification_method]"=email
+curl https://api.stripe.com/v1/tokens \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d "bank_account[country]"=US \
+  -d "bank_account[currency]"=usd \
+  -d "bank_account[account_holder_name]"="Jenny Rosen" \
+  -d "bank_account[account_holder_type]"=individual \
+  -d "bank_account[routing_number]"=110000000 \
+  -d "bank_account[account_number]"=000123456789
+
+curl https://api.stripe.com/v1/sources \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -H "Stripe-Account: {{CONNECTED_STRIPE_ACCOUNT_ID}}" \
+  -d type=ach_debit \
+  -d currency=usd \
+  -d token=TOKEN_ID \
+  -d "owner[address][line1]"="510 Townsend Street" \
+  -d "owner[address][city]"="San Francisco" \
+  -d "owner[address][state]"=California \
+  -d "owner[address][country]"=US \
+  -d "owner[email]"="jenny.rosen@example.com" \
+  -d "owner[name]"="Jenny Rosen" \
+  -d "owner[phone]"=5554443333 \
+  -d "mandate[reference]"=PBX765TU8945Z \
+  -d "mandate[url]"="https://acme.foo.bar/mandates/ach_debit/PBX765TU8945Z" \
+  -d "mandate[amount]"=1000 \
+  -d "mandate[currency]"=usd \
+  -d "mandate[interval]"=variable \
+  -d "mandate[acceptance][status]"=accepted \
+  -d "mandate[acceptance][type]"=online \
+  -d "mandate[acceptance][online][date]"=1516716818 \
+  -d "mandate[acceptance][online][ip]"="91.121.146.224" \
+  -d "mandate[acceptance][online][user_agent]"="Mozilla/5.0 (Macintosh%3B Intel Mac OS X 10_13_2) AppleWebKit/537.36" \
+  -d "mandate[notification_method]"=email

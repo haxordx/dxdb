@@ -1,0 +1,3 @@
+curl -v -X POST https://api.sandbox.paypal.com/v1/invoicing/invoices/next-invoice-number \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer Access-Token"copy

@@ -1,0 +1,10 @@
+<div id="paypal-button" style="width: 200px"></div>
+
+<script>
+paypal.Button.render({
+ style: {
+ size: 'responsive'
+ }
+});
+</script>
+htmlcopy

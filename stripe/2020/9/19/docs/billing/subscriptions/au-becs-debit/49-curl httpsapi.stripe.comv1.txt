@@ -1,0 +1,10 @@
+curl https://api.stripe.com/v1/subscriptions \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d customer=cus_Gk0uVzT2M4xOKD \
+  -d "items[0][price]"=price_F52b2UdntfQsfR \
+  -d "expand[0]"="latest_invoice.payment_intent"
+curl https://api.stripe.com/v1/subscriptions \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d customer=cus_Gk0uVzT2M4xOKD \
+  -d "items[0][price]"=price_F52b2UdntfQsfR \
+  -d "expand[0]"="latest_invoice.payment_intent"

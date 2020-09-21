@@ -1,0 +1,32 @@
+import StripeTerminal
+
+class ReaderViewController: UIViewController, TerminalDelegate {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        Terminal.shared.delegate = self
+    }
+
+    // ...
+
+    // MARK: TerminalDelegate
+
+    func terminal(_ terminal: Terminal, didReportUnexpectedReaderDisconnect reader: Reader) {
+        print("Disconnected from reader: \(reader)")
+    }
+}
+import StripeTerminal
+
+class ReaderViewController: UIViewController, TerminalDelegate {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        Terminal.shared.delegate = self
+    }
+
+    // ...
+
+    // MARK: TerminalDelegate
+
+    func terminal(_ terminal: Terminal, didReportUnexpectedReaderDisconnect reader: Reader) {
+        print("Disconnected from reader: \(reader)")
+    }
+}

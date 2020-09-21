@@ -1,0 +1,6 @@
+curl https://api.stripe.com/v1/checkout/sessions/{{SESSION_ID}} \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d "expand[]"=setup_intent
+curl https://api.stripe.com/v1/checkout/sessions/{{SESSION_ID}} \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d "expand[]"=setup_intent

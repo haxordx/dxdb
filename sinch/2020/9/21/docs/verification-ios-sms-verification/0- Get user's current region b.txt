@@ -1,0 +1,25 @@
+// Get user's current region by carrier info
+NSString* defaultRegion = [SINDeviceRegion currentCountryCode];
+
+NSError *parseError = nil;
+id<SINPhoneNumber> phoneNumber = [SINPhoneNumberUtil() parse:@"<user input>"
+                                               defaultRegion:defaultRegion
+                                                       error:&parseError];
+
+if (!phoneNumber){
+  // Handle invalid user input
+}
+
+NSString *phoneNumberInE164 = [SINPhoneNumberUtil() formatNumber:phoneNumber
+                                                          format:SINPhoneNumberFormatE164];
+
+id<SINVerification> verification = [SINVerification SMSVerificationWithApplicationKey:@"<application key>"
+                                                                          phoneNumber:phoneNumberInE164];
+
+self.verification = verification; // retain the verification instance
+
+[verification initiateWithCompletionHandler:^(id<SINInitiationResult> result, NSError *error) {
+  if (result.success) {
+    // Show UI for entering the code which will be received via SMS
+  }
+}];

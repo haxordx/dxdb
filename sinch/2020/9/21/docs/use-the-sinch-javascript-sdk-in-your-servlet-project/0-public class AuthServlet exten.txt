@@ -1,0 +1,12 @@
+public class AuthServlet extends HttpServlet {
+    private static final long serialVersionUID = 1L;
+
+    public AuthServlet() {
+        super();
+    }
+}
+
+protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    // If you want to authenticate user,
+    // generate a ticket to pass to the Sinch Client
+}

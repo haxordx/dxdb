@@ -1,0 +1,6 @@
+curl https://api.stripe.com/v1/accounts/{{CONNECTED_STRIPE_ACCOUNT_ID}}/external_accounts \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d external_account=btok_9CUINZPUJnubtQ
+curl https://api.stripe.com/v1/accounts/{{CONNECTED_STRIPE_ACCOUNT_ID}}/external_accounts \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d external_account=btok_9CUINZPUJnubtQ

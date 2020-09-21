@@ -1,0 +1,12 @@
+-(void)viewDidAppear:(BOOL)animated
+{
+    NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+    if ([defaults stringForKey:@"userName"] == nil)
+    {
+        [self performSegueWithIdentifier:@"login" sender:nil];
+    }
+    else
+    {
+        [self startClient];
+    }
+}

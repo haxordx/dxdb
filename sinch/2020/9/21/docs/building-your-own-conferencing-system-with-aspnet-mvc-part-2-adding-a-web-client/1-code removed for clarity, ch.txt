@@ -1,0 +1,21 @@
+//code removed for clarity, check github for full code
+<form id="newCall" class="form-horizontal" autocomplete="off">
+    <div class="form-group-material-deep-purple-300">
+        <input type="text" class="form-control floating-label input-lg " id="userName" name="userName"
+               placeholder="E-mail or name" data-placement="right" title="Email or name"/><br/>
+        <input type="text" class="form-control floating-label input-lg" id="pinCode" name="pinCode"
+               placeholder="Conference pin:"/><br/>
+    </div>
+    <div class="clearfix"></div>
+    <div class="form-group text-center">
+        <button class="btn btn-material-deep-purple-400 btn-raised" id="call">Join conference</button>
+        <div class="text-danger" id="errormessage"></div>
+        <div class="lead">
+            Or call (415) 854-4909 to join.<br/>
+        </div>
+        <a href="" data-toggle="modal" data-target="#complete-dialog">more numbers</a>
+    </div>
+</form>
+<audio id="incoming" autoplay></audio>
+<audio id="ringback" src="~/content/ringback.wav" loop></audio>
+<audio id="ringtone" src="~/content/phone_ring.wav" loop></audio>

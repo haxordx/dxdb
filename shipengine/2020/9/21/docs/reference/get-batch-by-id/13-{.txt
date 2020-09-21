@@ -1,0 +1,29 @@
+{
+  "label_layout": null,
+  "label_format": null,
+  "batch_id": "se-1013790",
+  "external_batch_id": "1daa0c22-0519-46d0-8653-9f3dc62e7d2c",
+  "batch_notes": "2019-7-25 Morning Shipments",
+  "created_at": "2019-07-25T15:24:46.657Z",
+  "errors": 0,
+  "warnings": 0,
+  "completed": 0,
+  "forms": 0,
+  "count": 1,
+  "batch_shipments_url": {
+    "href": "https://api.shipengine.com/v1/shipments?batch_id=se-1013790"
+  },
+  "batch_labels_url": {
+    "href": "https://api.shipengine.com/v1/labels?batch_id=se-1013790"
+  },
+  "batch_errors_url": {
+    "href": "https://api.shipengine.com/v1/batches/se-1013790/errors"
+  },
+  "label_download": {
+    "href": "https://api.shipengine.com/v1/downloads/1/uths7PctKUqbM4OfmgzXLg/label-1013790.pdf"
+  },
+  "form_download": {
+    "href": "https://api.shipengine.com/v1/downloads/1/xKVZeKA650-bvQB_oriYkQ/form-1013790.pdf"
+  },
+  "status": "open"
+}

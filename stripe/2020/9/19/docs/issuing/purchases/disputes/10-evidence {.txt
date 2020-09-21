@@ -1,0 +1,16 @@
+"evidence": {
+  "reason": "not_received",
+  "not_received": {
+    "expected_at": 1590000000, // Add
+    "explanation": "Lost", // Replace
+    "product_description": "" // Remove
+  }
+}
+"evidence": {
+  "reason": "not_received",
+  "not_received": {
+    "expected_at": 1590000000, // Add
+    "explanation": "Lost", // Replace
+    "product_description": "" // Remove
+  }
+}

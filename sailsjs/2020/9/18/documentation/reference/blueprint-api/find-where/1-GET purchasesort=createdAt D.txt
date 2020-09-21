@@ -1,0 +1,1 @@
+GET /purchase?sort=createdAt DESC&limit=30

@@ -1,0 +1,13 @@
+[PATCH] https://calling.api.sinch.com/calling/v1/call/id/4398599d1ba84ef3bde0a82dfb61abed
+{
+  "instructions": [
+    {
+      "name": "say",
+      "text": "Hello, this is a text to speech message",
+      "locale": "en-US"
+    }
+  ],
+  "action": {
+    "name": "hangup"
+  }
+}

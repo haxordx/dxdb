@@ -1,0 +1,11 @@
+curl -v -X POST https://api.sandbox.paypal.com/v1/payments/orders/O-0NR488530V5211123/authorize \
+  -H 'Content-Type: application/json' \
+  -H 'Authorization: Bearer Access-Token' \
+  -d '{
+  "amount":
+  {
+    "total": "7.00",
+    "currency": "USD"
+  }
+}'
+bashcopy

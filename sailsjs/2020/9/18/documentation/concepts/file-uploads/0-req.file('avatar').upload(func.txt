@@ -1,0 +1,3 @@
+req.file('avatar').upload(function (err, uploadedFiles) {
+  // ...
+});

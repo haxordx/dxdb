@@ -1,0 +1,5 @@
+[GET] - Fetch / Query
+[POST] - Create / New / Start
+[PUT] - 'Full' Update / Alter / Modify
+[PATCH] - 'Partially' Update / Alter / Modify
+[DELETE] - Remove / Stop / Cancel

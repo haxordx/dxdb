@@ -1,0 +1,6 @@
+await User.update({ name:'Pen' })
+.set({
+  name:'Finn'
+});
+
+sails.log('Updated all users named Pen so that their new name is "Finn".  I hope they like it.');

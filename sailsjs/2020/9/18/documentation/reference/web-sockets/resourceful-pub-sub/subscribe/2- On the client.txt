@@ -1,0 +1,13 @@
+// On the client:
+
+// Send a request to the "subscribeToLouies" action, subscribing this client socket
+// to all future events that the server publishes about Louies.
+io.socket.get('/foo/bar/subscribeToLouies', function (data, jwr){
+  if (jwr.error) {
+    console.error('Could not subscribe to Louie-related notifications: '+jwr.error);
+    return;
+  }
+
+  console.log('Successfully subscribed.');
+
+});

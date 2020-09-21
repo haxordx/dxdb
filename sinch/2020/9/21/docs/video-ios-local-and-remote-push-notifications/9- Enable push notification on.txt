@@ -1,0 +1,9 @@
+// Enable push notification on Sinch client before making the call
+...
+// Set headers
+NSDictionary *headers = @{
+                          @"id" : @"0429",
+                          @"message" : @"Greetings from Alice."
+                          };
+id<SINCall> call = [self.callClient callUserWithId:@"Bob"
+                                           headers:headers];

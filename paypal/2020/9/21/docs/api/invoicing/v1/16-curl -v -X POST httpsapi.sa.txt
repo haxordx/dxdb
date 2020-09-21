@@ -1,0 +1,12 @@
+curl -v -X POST https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-T4UQ-VW4W-K7N7-XM2R/record-payment \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer Access-Token" \
+-d '{
+  "method": "CASH",
+  "date": "2013-11-06 03:30:00 PST",
+  "note": "I got the payment by cash!",
+  "amount": {
+    "currency": "USD",
+    "value": "20.00"
+  }
+}'copy

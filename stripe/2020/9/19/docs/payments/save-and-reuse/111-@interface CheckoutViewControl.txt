@@ -1,0 +1,64 @@
+@interface CheckoutViewController ()  <STPAuthenticationContext>
+@end
+
+@implementation CheckoutViewController
+
+- (void)pay {
+    // ...
+    STPPaymentHandler *paymentHandler = [STPPaymentHandler sharedHandler];
+    [paymentHandler confirmSetupIntent:setupIntentParams withAuthenticationContext:self completion:^(STPPaymentHandlerActionStatus status, STPSetupIntent *setupIntent, NSError *error) {
+        switch (status) {
+            case STPPaymentHandlerActionStatusFailed: {
+                // Setup failed
+                break;
+            }
+            case STPPaymentHandlerActionStatusCanceled: {
+                // Setup canceled
+                break;
+            }
+            case STPPaymentHandlerActionStatusSucceeded: {
+                // Setup succeeded
+                break;
+            }
+            default:
+                break;
+        }
+    }];
+}
+
+# pragma mark STPAuthenticationContext
+- (UIViewController *)authenticationPresentingViewController {
+    return self;
+}
+@interface CheckoutViewController ()  <STPAuthenticationContext>
+@end
+
+@implementation CheckoutViewController
+
+- (void)pay {
+    // ...
+    STPPaymentHandler *paymentHandler = [STPPaymentHandler sharedHandler];
+    [paymentHandler confirmSetupIntent:setupIntentParams withAuthenticationContext:self completion:^(STPPaymentHandlerActionStatus status, STPSetupIntent *setupIntent, NSError *error) {
+        switch (status) {
+            case STPPaymentHandlerActionStatusFailed: {
+                // Setup failed
+                break;
+            }
+            case STPPaymentHandlerActionStatusCanceled: {
+                // Setup canceled
+                break;
+            }
+            case STPPaymentHandlerActionStatusSucceeded: {
+                // Setup succeeded
+                break;
+            }
+            default:
+                break;
+        }
+    }];
+}
+
+# pragma mark STPAuthenticationContext
+- (UIViewController *)authenticationPresentingViewController {
+    return self;
+}

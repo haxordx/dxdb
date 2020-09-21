@@ -1,0 +1,5 @@
+<script>
+io.socket.post('/users', { name: 'Timmy Mendez' }, function (resData, jwRes) {
+  jwRes.statusCode; // => 200
+});
+</script>

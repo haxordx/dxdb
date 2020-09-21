@@ -1,0 +1,5 @@
+// Specify the component name as a dependency to your angular app:
+angular.module('myapp', ['payouts-aac])
+// Include the tag in one of your templates (don't forget to use spine case prop names):
+<payouts-aac client-id={clientIds} merchant-id="<Merchant Account ID>" env="" page-type="<signup/login>" on-login={onLogin}/>
+copy

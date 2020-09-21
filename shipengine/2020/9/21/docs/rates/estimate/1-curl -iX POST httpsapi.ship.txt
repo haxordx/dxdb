@@ -1,0 +1,26 @@
+curl -iX POST https://api.shipengine.com/v1/rates/estimate \
+-H 'API-Key: __YOUR_API_KEY_HERE__' \
+-H 'Content-Type: application/json' \
+-d '{
+  "carrier_ids": [
+    "se-123890"
+  ],
+  "from_country_code": "US",
+  "from_postal_code": "78756",
+  "to_country_code": "US",
+  "to_postal_code": "95128",
+  "to_city_locality": "San Jose",
+  "to_state_province": "CA",
+  "weight": {
+    "value": 1.0,
+    "unit": "ounce"
+  },
+  "dimensions": {
+    "unit": "inch",
+    "length": 5.0,
+    "width": 5.0,
+    "height": 5.0
+  },
+  "confirmation": "none",
+  "address_residential_indicator": "no"
+}'

@@ -1,0 +1,6 @@
+'GET /*': {
+  skipAssets: true,
+  fn: function(req, res) {
+    return res.send('hello!');
+  }
+},

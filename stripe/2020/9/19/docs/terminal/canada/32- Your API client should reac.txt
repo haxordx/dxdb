@@ -1,0 +1,65 @@
+// Your API client should reach out to your backend, which will use the
+// Refunds server-side API to attempt to refund the charge.
+[[MyAPIClient shared] tryRefund:@"ch_1FLyVV2eZvKYlo2C9Z8rmX02"
+                      completion:^(error: NSError) {
+    if (error) {
+        // Server-side refund failed, in-person refund likely necessary
+        SCPRefundParameters refundParams = [SCPRefundParameters initWithChargeId:@"ch_1FLyVV2eZvKYlo2C9Z8rmX02"
+                                                                          amount:@1000
+                                                                        currency:@"cad"];
+
+        self.refundCancelable = [[SCPTerminal shared] collectRefundPaymentMethod:refundParams
+                                                                      completion:^(SCPError *collectError) {
+            if (collectError) {
+                // Handle collect error
+                NSLog(@"collectRefundPaymentMethod failed: %@", collectError);
+            } else {
+                // Process refund
+                [[SCPTerminal shared] processRefund:^(SCPRefund *processResult, SCPProcessRefundError *processError) {
+                    if (processError) {
+                        // Handle process error
+                        NSLog(@"processRefund failed: %@", processError);
+                    } else if (processResult) {
+                        if (processResult.status == SCPRefundStatusSucceeded) {
+                            NSLog(@"Process refund successful! %@", processResult)
+                        } else {
+                            NSLog(@"Refund pending or unsuccessful.")
+                        }
+                    }
+                }];
+            }
+        }];
+    }
+}];// Your API client should reach out to your backend, which will use the
+// Refunds server-side API to attempt to refund the charge.
+[[MyAPIClient shared] tryRefund:@"ch_1FLyVV2eZvKYlo2C9Z8rmX02"
+                      completion:^(error: NSError) {
+    if (error) {
+        // Server-side refund failed, in-person refund likely necessary
+        SCPRefundParameters refundParams = [SCPRefundParameters initWithChargeId:@"ch_1FLyVV2eZvKYlo2C9Z8rmX02"
+                                                                          amount:@1000
+                                                                        currency:@"cad"];
+
+        self.refundCancelable = [[SCPTerminal shared] collectRefundPaymentMethod:refundParams
+                                                                      completion:^(SCPError *collectError) {
+            if (collectError) {
+                // Handle collect error
+                NSLog(@"collectRefundPaymentMethod failed: %@", collectError);
+            } else {
+                // Process refund
+                [[SCPTerminal shared] processRefund:^(SCPRefund *processResult, SCPProcessRefundError *processError) {
+                    if (processError) {
+                        // Handle process error
+                        NSLog(@"processRefund failed: %@", processError);
+                    } else if (processResult) {
+                        if (processResult.status == SCPRefundStatusSucceeded) {
+                            NSLog(@"Process refund successful! %@", processResult)
+                        } else {
+                            NSLog(@"Refund pending or unsuccessful.")
+                        }
+                    }
+                }];
+            }
+        }];
+    }
+}];

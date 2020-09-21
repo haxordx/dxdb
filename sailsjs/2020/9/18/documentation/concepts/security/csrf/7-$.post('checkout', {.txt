@@ -1,0 +1,5 @@
+$.post('/checkout', {
+  order: '8abfe13491afe',
+  electronicReceiptOK: true,
+  _csrf: 'USER_CSRF_TOKEN'
+}, function andThen(){ ... });

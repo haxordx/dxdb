@@ -1,0 +1,12 @@
+curl https://api.stripe.com/v1/payouts \
+  -u {PLATFORM_SECRET_KEY}: \
+  -H "Stripe-Account: {{CONNECTED_STRIPE_ACCOUNT_ID}}" \
+  -d amount=1000 \
+  -d currency=usd \
+  -d method=instant
+curl https://api.stripe.com/v1/payouts \
+  -u {PLATFORM_SECRET_KEY}: \
+  -H "Stripe-Account: {{CONNECTED_STRIPE_ACCOUNT_ID}}" \
+  -d amount=1000 \
+  -d currency=usd \
+  -d method=instant

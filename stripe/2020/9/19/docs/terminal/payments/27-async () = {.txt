@@ -1,0 +1,15 @@
+async () => {
+  const result = await terminal.processPayment(paymentIntent);
+  if (result.error) {
+    // Placeholder for handling result.error
+  } else if (result.paymentIntent) {
+    // Placeholder for notifying your backend to capture result.paymentIntent.id
+  }
+}async () => {
+  const result = await terminal.processPayment(paymentIntent);
+  if (result.error) {
+    // Placeholder for handling result.error
+  } else if (result.paymentIntent) {
+    // Placeholder for notifying your backend to capture result.paymentIntent.id
+  }
+}

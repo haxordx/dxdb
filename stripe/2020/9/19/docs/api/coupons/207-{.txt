@@ -1,0 +1,17 @@
+{
+  "id": "co_1HTFy62eZvKYlo2CD27MmoRt",
+  "object": "coupon",
+  "amount_off": null,
+  "created": 1600559990,
+  "currency": "usd",
+  "duration": "repeating",
+  "duration_in_months": 3,
+  "livemode": false,
+  "max_redemptions": null,
+  "metadata": {},
+  "name": "25.5% off",
+  "percent_off": 25,
+  "redeem_by": null,
+  "times_redeemed": 0,
+  "valid": true
+}

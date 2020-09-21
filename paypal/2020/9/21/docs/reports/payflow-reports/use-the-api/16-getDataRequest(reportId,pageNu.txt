@@ -1,0 +1,2 @@
+getDataRequest(reportId,pageNum)
+copy

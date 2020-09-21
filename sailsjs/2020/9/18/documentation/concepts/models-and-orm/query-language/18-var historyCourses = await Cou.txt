@@ -1,0 +1,3 @@
+var historyCourses = await Course.find({
+  subject: { endsWith: 'history' }
+});

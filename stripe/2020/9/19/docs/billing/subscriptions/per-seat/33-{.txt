@@ -1,0 +1,21 @@
+{
+  "id": "prod_HMElQ1d5NR6Pvr",  "object": "product",
+  "active": true,
+  "attributes": [
+
+  ],
+  "created": 1590612924,
+  "description": "Messaging service",
+  "images": [
+
+  ],
+  "livemode": false,
+  "metadata": {
+  },
+  "name": "Billing Guide: Basic Service",
+  "statement_descriptor": null,
+  "type": "service",
+  "unit_label": "seat",
+  "updated": 1590612924
+}{
+  "id": "prod_HMElQ1d5NR6Pvr",

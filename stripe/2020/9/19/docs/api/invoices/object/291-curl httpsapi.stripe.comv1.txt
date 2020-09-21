@@ -1,0 +1,3 @@
+curl https://api.stripe.com/v1/invoices/in_1036Vr2eZvKYlo2CfjuUHA94/pay \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -X POST

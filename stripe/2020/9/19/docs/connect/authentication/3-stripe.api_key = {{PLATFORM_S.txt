@@ -1,0 +1,16 @@
+stripe.api_key = "{{PLATFORM_SECRET_KEY}}"
+stripe.Customer.create(
+  email="person@example.edu",
+  stripe_account="{{CONNECTED_STRIPE_ACCOUNT_ID}}"
+)
+
+# Fetching an account just needs the ID as a parameter
+stripe.Account.retrieve("{{CONNECTED_STRIPE_ACCOUNT_ID}}")
+stripe.api_key = "{{PLATFORM_SECRET_KEY}}"
+stripe.Customer.create(
+  email="person@example.edu",
+  stripe_account="{{CONNECTED_STRIPE_ACCOUNT_ID}}"
+)
+
+# Fetching an account just needs the ID as a parameter
+stripe.Account.retrieve("{{CONNECTED_STRIPE_ACCOUNT_ID}}")

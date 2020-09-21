@@ -1,0 +1,8 @@
+callClient.addEventListener({
+    onIncomingCall: function(incomingCall) {
+        //Play some groovy tunes & show UI
+        ...
+        //Add event listeners to the new call object representing the incoming call
+        incomingCall.addEventListener(callListeners);
+    }
+});

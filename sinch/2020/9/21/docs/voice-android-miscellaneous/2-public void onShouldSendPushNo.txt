@@ -1,0 +1,4 @@
+public void onShouldSendPushNotification(Call call, List<PushPair> pushPairs) {
+    // Send payload and push data to application server
+    // which should communicate with GCM Service to send push notifications.
+}

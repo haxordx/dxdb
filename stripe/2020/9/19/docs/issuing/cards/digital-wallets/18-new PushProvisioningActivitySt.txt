@@ -1,0 +1,13 @@
+new PushProvisioningActivityStarter(
+  this, // The Activity or Fragment you are initiating the push provisioning from
+  new PushProvisioningActivityStarter.Args(
+  "Stripe Card", // The name that will appear on the push provisioning UI
+  ephemeralKeyProvider, // Your instance of EphemeralKeyProvider
+  false // If you want to enable logs or not
+)).startForResult();new PushProvisioningActivityStarter(
+  this, // The Activity or Fragment you are initiating the push provisioning from
+  new PushProvisioningActivityStarter.Args(
+  "Stripe Card", // The name that will appear on the push provisioning UI
+  ephemeralKeyProvider, // Your instance of EphemeralKeyProvider
+  false // If you want to enable logs or not
+)).startForResult();

@@ -1,0 +1,4 @@
+curl https://api.stripe.com/v1/setup_intents/seti_1EzVO3HssDVaQm2PJjXHmLlM \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc:
+curl https://api.stripe.com/v1/setup_intents/seti_1EzVO3HssDVaQm2PJjXHmLlM \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc:

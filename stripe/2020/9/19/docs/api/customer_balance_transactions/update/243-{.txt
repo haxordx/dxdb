@@ -1,0 +1,24 @@
+{
+  "object": "list",
+  "url": "/v1/customers/cus_I3HcwHEKBfQLG1/customer_balance_transactions",
+  "has_more": false,
+  "data": [
+    {
+      "id": "cbtxn_1HTGBj2eZvKYlo2CJw9m30Fa",
+      "object": "customer_balance_transaction",
+      "amount": -500,
+      "created": 1600560835,
+      "credit_note": null,
+      "currency": "usd",
+      "customer": "cus_I3HcwHEKBfQLG1",
+      "description": null,
+      "ending_balance": -500,
+      "invoice": null,
+      "livemode": false,
+      "metadata": null,
+      "type": "adjustment"
+    },
+    {...},
+    {...}
+  ]
+}

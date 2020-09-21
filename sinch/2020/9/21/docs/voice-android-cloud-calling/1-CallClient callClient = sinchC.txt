@@ -1,0 +1,3 @@
+CallClient callClient = sinchClient.getCallClient();
+Call call = callClient.callConference("<conferenceId>");
+call.addCallListener(...);

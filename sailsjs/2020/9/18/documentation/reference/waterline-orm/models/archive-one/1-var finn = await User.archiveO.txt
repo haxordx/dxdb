@@ -1,0 +1,6 @@
+var finn = await User.archiveOne({ firstName: 'Finn' });
+if (finn) {
+  sails.log('Archived the user named "Finn".');
+} else {
+  sails.log('The database does not have a user named "Finn".');
+}

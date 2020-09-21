@@ -1,0 +1,4 @@
+// Note that a live-mode API key is required.
+const reportType = await stripe.reporting.reportTypes.retrieve('balance.summary.1');
+// Note that a live-mode API key is required.
+const reportType = await stripe.reporting.reportTypes.retrieve('balance.summary.1');

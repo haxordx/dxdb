@@ -1,0 +1,13 @@
+- (void)initSinchClientWithUserId:(NSString *)userId {
+    if (!_client) {
+        _client = [Sinch clientWithApplicationKey:@"yourkey"
+                         applicationSecret:@"yoursecret"
+                         environmentHost:@"clientapi.sinch.com"
+                         userId:userId];
+        _client.delegate = self;
+        [_client setSupportCalling:YES];
+        [_client setSupportActiveConnectionInBackground:NO];
+        [_client setSupportPushNotifications:YES];
+        [_client start];
+    }
+}

@@ -1,0 +1,8 @@
+stripe customers create \
+  -d email=jenny.rosen@example.com \
+  -d payment_method=pm_card_visa \
+  -d invoice_settings[default_payment_method]=pm_card_visa
+stripe customers create \
+  -d email=jenny.rosen@example.com \
+  -d payment_method=pm_card_visa \
+  -d invoice_settings[default_payment_method]=pm_card_visa

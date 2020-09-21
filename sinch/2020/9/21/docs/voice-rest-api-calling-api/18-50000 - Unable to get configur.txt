@@ -1,0 +1,2 @@
+50000 - Unable to get configuration
+40003 - Invalid Application Key

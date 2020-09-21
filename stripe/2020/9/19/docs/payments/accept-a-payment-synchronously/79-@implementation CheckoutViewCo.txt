@@ -1,0 +1,126 @@
+@implementation CheckoutViewController
+
+// ...
+
+- (void)displayAlertWithTitle:(NSString *)title message:(NSString *)message restartDemo:(BOOL)restartDemo {
+    // ...omitted for brevity
+}
+
+- (void)payWithPaymentMethod:(NSString *)paymentMethodId orPaymentIntent:(NSString *)paymentIntentId {
+    NSDictionary *json = @{};
+    if (paymentMethodId != nil) {
+        json = @{
+            @"useStripeSdk": @YES,
+            @"paymentMethodId": paymentMethodId,
+            @"currency": @"usd",
+            @"items": @[
+                    @{@"id": @"photo_subscription"}
+            ]
+        };
+    }
+    else {
+        json = @{
+            @"paymentIntentId": paymentIntentId,
+        };
+    }
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@pay", BackendUrl]];
+    NSData *body = [NSJSONSerialization dataWithJSONObject:json options:0 error:nil];
+    NSMutableURLRequest *request = [[NSURLRequest requestWithURL:url] mutableCopy];
+    [request setHTTPMethod:@"POST"];
+    [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    [request setHTTPBody:body];
+    NSURLSessionTask *task = [[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *requestError) {
+        NSError *error = requestError;
+        NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
+        NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
+        // Request failed
+        if (error != nil || httpResponse.statusCode != 200) {
+            [self displayAlertWithTitle:@"Payment failed" message:error.localizedDescription ?: @"" restartDemo:NO];
+        }
+        else {
+            NSNumber *requiresAction = json[@"requiresAction"];
+            NSString *clientSecret = json[@"clientSecret"];
+            NSString *payError = json[@"error"];
+            // Payment failed
+            if (payError != nil) {
+                [self displayAlertWithTitle:@"Payment failed" message:payError restartDemo:NO];
+            }
+            // Payment succeeded
+            else if (clientSecret != nil && (requiresAction == nil || [requiresAction isEqualToNumber:@NO])) {
+                [self displayAlertWithTitle:@"Payment succeeded" message:clientSecret restartDemo:YES];
+            }
+            // Payment requires additional actions
+            else if (clientSecret != nil && [requiresAction isEqualToNumber:@YES]) {
+                // ...continued in the next step
+            }
+        }
+    }];
+    [task resume];
+}
+
+// ...
+
+@end
+@implementation CheckoutViewController
+
+// ...
+
+- (void)displayAlertWithTitle:(NSString *)title message:(NSString *)message restartDemo:(BOOL)restartDemo {
+    // ...omitted for brevity
+}
+
+- (void)payWithPaymentMethod:(NSString *)paymentMethodId orPaymentIntent:(NSString *)paymentIntentId {
+    NSDictionary *json = @{};
+    if (paymentMethodId != nil) {
+        json = @{
+            @"useStripeSdk": @YES,
+            @"paymentMethodId": paymentMethodId,
+            @"currency": @"usd",
+            @"items": @[
+                    @{@"id": @"photo_subscription"}
+            ]
+        };
+    }
+    else {
+        json = @{
+            @"paymentIntentId": paymentIntentId,
+        };
+    }
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@pay", BackendUrl]];
+    NSData *body = [NSJSONSerialization dataWithJSONObject:json options:0 error:nil];
+    NSMutableURLRequest *request = [[NSURLRequest requestWithURL:url] mutableCopy];
+    [request setHTTPMethod:@"POST"];
+    [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    [request setHTTPBody:body];
+    NSURLSessionTask *task = [[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *requestError) {
+        NSError *error = requestError;
+        NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
+        NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
+        // Request failed
+        if (error != nil || httpResponse.statusCode != 200) {
+            [self displayAlertWithTitle:@"Payment failed" message:error.localizedDescription ?: @"" restartDemo:NO];
+        }
+        else {
+            NSNumber *requiresAction = json[@"requiresAction"];
+            NSString *clientSecret = json[@"clientSecret"];
+            NSString *payError = json[@"error"];
+            // Payment failed
+            if (payError != nil) {
+                [self displayAlertWithTitle:@"Payment failed" message:payError restartDemo:NO];
+            }
+            // Payment succeeded
+            else if (clientSecret != nil && (requiresAction == nil || [requiresAction isEqualToNumber:@NO])) {
+                [self displayAlertWithTitle:@"Payment succeeded" message:clientSecret restartDemo:YES];
+            }
+            // Payment requires additional actions
+            else if (clientSecret != nil && [requiresAction isEqualToNumber:@YES]) {
+                // ...continued in the next step
+            }
+        }
+    }];
+    [task resume];
+}
+
+// ...
+
+@end

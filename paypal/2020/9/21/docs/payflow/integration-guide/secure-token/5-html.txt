@@ -1,0 +1,14 @@
+<html>
+ <head>
+  <title>PageTitle</title>
+ </head>
+ <body>
+  <form method="post" action="https://payflowlink.paypal.com">
+   <input type="text" name="SECURETOKEN" value="FvwEnHTYRNUSVsZRlhFpudA=="/>
+   <input type="text" name="SECURETOKENID" value="9a9ea8208de1413abc3d60c86cb1f4c5"/>
+   <input type="hidden" name="PARMLIST" value="INVNUM[8]=INV123&AMT[5]=25.50&CURRENCY[3]=USD"/>
+   <input type="submit"/>
+  </form>
+ </body>
+</html>
+copy

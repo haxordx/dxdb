@@ -1,0 +1,15 @@
+[RequestBody]
+    ResultEvent
+
+[ResultEvent]
+{
+    string - id
+    string - event
+    string - method
+    identity - identity
+    string - status
+    string? - reason
+    string? - reference
+    string? - source
+    string? - custom
+}

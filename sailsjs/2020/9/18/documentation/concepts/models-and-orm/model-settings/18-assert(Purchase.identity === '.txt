@@ -1,0 +1,3 @@
+assert(Purchase.identity === 'purchase');
+assert(sails.models.purchase.identity === 'purchase');
+assert(Purchase === sails.models.purchase);

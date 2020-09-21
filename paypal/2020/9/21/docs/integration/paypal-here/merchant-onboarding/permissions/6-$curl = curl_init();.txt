@@ -1,0 +1,18 @@
+$curl = curl_init();
+
+curl_setopt_array($curl, array(
+  CURLOPT_URL => "https://api.sandbox.paypal.com/v1/identity/openidconnect/tokenservice",
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_CUSTOMREQUEST => "POST",
+  CURLOPT_POSTFIELDS => "grant_type=refresh_token&refresh_token={refresh_token}",
+  CURLOPT_HTTPHEADER => array(
+    "authorization: Basic Y2xpZW50SUQ6Y2xpZW50U2VjcmV0",
+    "content-type: application/x-www-form-urlencoded"
+  ),
+));
+
+$response = curl_exec($curl);
+$err = curl_error($curl);
+
+curl_close($curl);
+copy

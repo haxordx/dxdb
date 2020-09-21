@@ -1,0 +1,18 @@
+var myHeaders = new Headers();
+myHeaders.append("Host", "api.shipengine.com");
+myHeaders.append("API-Key", "__YOUR_API_KEY_HERE__");
+myHeaders.append("Content-Type", "application/json");
+
+var raw = JSON.stringify({"carrier_id":"se-123890","excluded_label_ids":["se-29602037","se-29544722","se-29475869"],"warehouse_id":"se-11921","ship_date":"2019-07-25T05:00:00.000Z"});
+
+var requestOptions = {
+  method: 'POST',
+  headers: myHeaders,
+  body: raw,
+  redirect: 'follow'
+};
+
+fetch("https://api.shipengine.com/v1/manifests", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));

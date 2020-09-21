@@ -1,0 +1,4 @@
+// Initialize the sails.io.js library with the socket.io-client module,
+// which will automatically create and connect a new socket as io.socket
+// unless you configure it not to.
+var io = require('sails.io.js')( require('socket.io-client') );

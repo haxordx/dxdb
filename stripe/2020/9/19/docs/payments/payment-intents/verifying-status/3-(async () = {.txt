@@ -1,0 +1,16 @@
+(async () => {
+  const {paymentIntent} = await stripe.retrievePaymentIntent(clientSecret);
+  if (paymentIntent && paymentIntent.status === 'succeeded') {
+    // Handle successful payment here
+  } else {
+    // Handle unsuccessful, processing, or canceled payments and API errors here
+  }
+})();
+(async () => {
+  const {paymentIntent} = await stripe.retrievePaymentIntent(clientSecret);
+  if (paymentIntent && paymentIntent.status === 'succeeded') {
+    // Handle successful payment here
+  } else {
+    // Handle unsuccessful, processing, or canceled payments and API errors here
+  }
+})();

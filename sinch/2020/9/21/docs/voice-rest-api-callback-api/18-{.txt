@@ -1,0 +1,16 @@
+{
+    "instructions":
+    [{
+        "name" : "playFiles",
+        "ids" : [ "welcome" ],
+        "locale" : "en-US"
+    }],
+    "action":
+    {
+        "name" : "connectPSTN",
+        "maxDuration" : 600,
+        "number" : "+46555000111",
+        "cli" : "+46555000222",
+        "suppressCallbacks" : false
+    }
+}

@@ -1,0 +1,2 @@
+id<SINVideoController> videoController;
+videocontroller.remoteView.contentMode = UIViewContentModeScaleAspectFill;

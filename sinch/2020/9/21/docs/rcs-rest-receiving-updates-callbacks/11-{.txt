@@ -1,0 +1,14 @@
+{
+  "type": "user_agent_message_rcs",
+  "message_id": string,
+  "from": MSISDN,
+  "message": {
+    "type": enum(
+      "text",
+      "file",
+      "suggestion_response",
+      "location"
+    ),
+    ... // type specific fields
+  }
+}

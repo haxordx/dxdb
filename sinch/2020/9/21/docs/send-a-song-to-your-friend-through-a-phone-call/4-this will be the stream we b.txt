@@ -1,0 +1,15 @@
+//this will be the stream we broadcast in our call.
+
+var destination = audioCtx.createMediaStreamDestination();
+var song = audioCtx.createMediaElementSource($('audio#song')[0]);
+song.connect(compressor);
+
+// get access to the mic, and connect that to the compressor
+navigator.getUserMedia({video: false, audio: true}, function(stream) {
+    var mic = audioCtx.createMediaStreamSource(stream);
+    mic.connect(compressor);
+    compressor.connect(destination);
+
+}, function(error) {
+        console.log(error);
+});

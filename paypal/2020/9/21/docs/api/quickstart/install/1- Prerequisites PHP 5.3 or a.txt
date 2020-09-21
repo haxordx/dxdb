@@ -1,0 +1,4 @@
+// Prerequisites: PHP 5.3 or above
+// cURL, json & openssl extensions must be enabled
+
+composer require "paypal/rest-api-sdk-php:*"copy

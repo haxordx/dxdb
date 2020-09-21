@@ -1,0 +1,12 @@
+curl https://api.stripe.com/v1/topups \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d amount=2000 \
+  -d currency=usd \
+  -d description="Top-up for week of May 31" \
+  -d statement_descriptor="Weekly top-up"
+curl https://api.stripe.com/v1/topups \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d amount=2000 \
+  -d currency=usd \
+  -d description="Top-up for week of May 31" \
+  -d statement_descriptor="Weekly top-up"

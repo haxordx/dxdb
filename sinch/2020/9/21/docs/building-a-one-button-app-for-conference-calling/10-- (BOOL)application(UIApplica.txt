@@ -1,0 +1,5 @@
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    NSString *text = [[url host] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    [[CallingManager sharedManager] callConference:text];
+    return YES;
+}

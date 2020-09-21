@@ -1,0 +1,45 @@
+const stripe = Stripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
+
+const elements = stripe.elements();
+
+// Set up Stripe.js and Elements to use in checkout form
+const style = {
+  base: {
+    color: "#32325d",
+    fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
+    fontSmoothing: "antialiased",
+    fontSize: "16px",
+    "::placeholder": {
+      color: "#aab7c4"
+    }
+  },
+  invalid: {
+    color: "#fa755a",
+    iconColor: "#fa755a"
+  },
+};
+
+const cardElement = elements.create('card', {style});
+cardElement.mount('#card-element');const stripe = Stripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
+
+const elements = stripe.elements();
+
+// Set up Stripe.js and Elements to use in checkout form
+const style = {
+  base: {
+    color: "#32325d",
+    fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
+    fontSmoothing: "antialiased",
+    fontSize: "16px",
+    "::placeholder": {
+      color: "#aab7c4"
+    }
+  },
+  invalid: {
+    color: "#fa755a",
+    iconColor: "#fa755a"
+  },
+};
+
+const cardElement = elements.create('card', {style});
+cardElement.mount('#card-element');

@@ -1,0 +1,42 @@
+@interface CheckoutViewController ()
+
+// ...continued from previous step
+@property (strong) NSString *paymentIntentClientSecret;
+
+@end
+
+@implementation CheckoutViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // ...continued from previous step
+    [self startCheckout];
+}
+
+- (void)startCheckout {
+    // Request a PaymentIntent from your server and store its client secret
+    // Click Open on GitHub to see a full implementation
+}
+
+@end
+@interface CheckoutViewController ()
+
+// ...continued from previous step
+@property (strong) NSString *paymentIntentClientSecret;
+
+@end
+
+@implementation CheckoutViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // ...continued from previous step
+    [self startCheckout];
+}
+
+- (void)startCheckout {
+    // Request a PaymentIntent from your server and store its client secret
+    // Click Open on GitHub to see a full implementation
+}
+
+@end

@@ -1,0 +1,33 @@
+package main
+
+import (
+  "fmt"
+  "strings"
+  "net/http"
+  "io/ioutil"
+)
+
+func main() {
+
+  url := "https://api.shipengine.com/v-beta/shipments"
+  method := "POST"
+
+  payload := strings.NewReader("{\n  \"shipments\": [\n    {\n      \"validate_address\": \"validate_and_clean\",\n      \"carrier_id\": \"se-123890\",\n      \"service_code\": \"usps_priority_mail\",\n      \"warehouse_id\": \"se-241419\",\n      \"ship_to\": {\n        \"name\": \"Amanda Miller\",\n        \"phone\": \"555-555-5555\",\n        \"address_line1\": \"525 S Winchester Blvd\",\n        \"city_locality\": \"San Jose\",\n        \"state_province\": \"CA\",\n        \"postal_code\": \"95128\",\n        \"country_code\": \"US\",\n        \"address_residential_indicator\": \"yes\"\n      },\n      \"packages\": [\n        {\n          \"package_code\": \"package\",\n          \"weight\": {\n            \"value\": 1.0,\n            \"unit\": \"ounce\"\n          }\n        }\n      ],\n      \"items\": [\n        {\n          \"sales_order_id\": \"0d3c142a-7516-5f5b-8a40-b437b5e01317\",\n          \"sales_order_item_id\": \"0399c595-774a-599b-a566-27ea86fec17d\",\n          \"quantity\": 1\n        }\n      ]\n    }\n  ]\n}")
+
+  client := &http.Client {
+  }
+  req, err := http.NewRequest(method, url, payload)
+
+  if err != nil {
+    fmt.Println(err)
+  }
+  req.Header.Add("Host", "api.shipengine.com")
+  req.Header.Add("API-Key", "__YOUR_API_KEY_HERE__")
+  req.Header.Add("Content-Type", "application/json")
+
+  res, err := client.Do(req)
+  defer res.Body.Close()
+  body, err := ioutil.ReadAll(res.Body)
+
+  fmt.Println(string(body))
+}

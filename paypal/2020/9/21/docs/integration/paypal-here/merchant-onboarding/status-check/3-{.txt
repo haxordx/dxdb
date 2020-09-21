@@ -1,0 +1,10 @@
+{
+  "status": "ready",
+  "paymentTypes": [
+    "tab",
+    "key",
+    "card"
+  ],
+  ....
+}
+copy

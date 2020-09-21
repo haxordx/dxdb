@@ -1,0 +1,7 @@
+private void showProgressDialog() {
+    progressBar.setVisibility(ProgressBar.VISIBLE);
+}
+
+private void hideProgressDialog() {
+    progressBar.setVisibility(ProgressBar.INVISIBLE);
+}

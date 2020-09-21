@@ -1,0 +1,3 @@
+curl https://api.stripe.com/v1/refunds \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d charge=ch_1HTGDf2eZvKYlo2CxCVNsUFX

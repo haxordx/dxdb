@@ -1,0 +1,6 @@
+curl -v -X POST https://api.sandbox.paypal.com/v1/billing/subscriptions/I-BW452GLLEP1G/suspend \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer Access-Token" \
+-d '{
+  "reason": "Item out of stock"
+}'copy

@@ -1,0 +1,1 @@
+[POST] https://calling.api.sinch.com/calling/v1/callouts

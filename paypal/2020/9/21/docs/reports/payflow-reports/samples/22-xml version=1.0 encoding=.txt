@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reportingEngineRequest>
+   <authRequest>
+      <user>User</user>
+      <vendor>Vendor</vendor>
+      <partner>Partner</partner>
+      <password>Password</password>
+   </authRequest>
+   <updateScheduleRequest>
+      <scheduleDefinition>
+         <scheduleName>My Schedule</scheduleName>
+         <templateName>My Template</templateName>
+         <notificationRequired>false</notificationRequired>
+         <daily/>
+      </scheduleDefinition>
+   </updateScheduleRequest>
+</reportingEngineRequest>copy

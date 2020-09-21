@@ -1,0 +1,8 @@
+var webhook_json = {
+  url: 'https://f615ef32.ngrok.io',
+  event_types: [{
+    name: 'PAYMENT.SALE.COMPLETED'
+  },{
+    name: 'PAYMENT.SALE.DENIED'
+  }]
+};copy

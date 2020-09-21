@@ -1,0 +1,17 @@
+async () => {
+  // ...Fetch the client secret from your backend
+  const result = await terminal.collectPaymentMethod(clientSecret);
+  if (result.error) {
+    console.error("collectPaymentMethod failed", error)
+  } else {
+    // Process the payment
+  }
+}async () => {
+  // ...Fetch the client secret from your backend
+  const result = await terminal.collectPaymentMethod(clientSecret);
+  if (result.error) {
+    console.error("collectPaymentMethod failed", error)
+  } else {
+    // Process the payment
+  }
+}

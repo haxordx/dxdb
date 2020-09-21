@@ -1,0 +1,3 @@
+PPRetailInvoice invoice = [[PPRetailInvoice alloc] initWithCurrencyCode:@"USD"];
+[invoice addItem:@"Amount" quantity:1 unitPrice:1 itemId:@"Id" detailId:nil];
+[invoice number:@"unique_invoice_number"];copy

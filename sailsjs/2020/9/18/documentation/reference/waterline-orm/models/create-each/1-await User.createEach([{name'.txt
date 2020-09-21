@@ -1,0 +1,1 @@
+await User.createEach([{name:'Finn'}, {name: 'Jake'}]);

@@ -1,0 +1,9 @@
+{
+    "name" : "ConnectPstn",
+    "number" : "+461234567890",
+    "locale" : "en-US",
+    "maxDuration" : 3000,
+    "cli" : "private",
+    "suppressCallbacks" : false,
+    "indications": "se"
+}

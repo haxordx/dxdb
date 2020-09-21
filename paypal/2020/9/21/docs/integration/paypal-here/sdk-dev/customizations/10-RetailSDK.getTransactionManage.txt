@@ -1,0 +1,11 @@
+RetailSDK.getTransactionManager().captureAuthorization(authId, transactionRecord.getInvoiceId(), amountToCapture, gratuityAmount, invoice.getCurrency, new TransactionManager.CaptureAuthorizedTransactionCallback()
+{
+  @Override
+  public void captureAuthorizedTransaction(RetailSDKException error, String captureId)
+  {
+    // code to handle success or failure
+    // if error, check error and handle accordingly
+    // if success, record the capture ID for future reference
+  }
+});
+copy

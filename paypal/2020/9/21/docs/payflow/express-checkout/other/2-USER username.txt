@@ -1,0 +1,8 @@
+USER username
+VENDOR vendor
+PARTNER=PayPal
+PWD password
+TRXTYPE=V
+TENDER=C
+ORIGID=VPNE12564395
+copy

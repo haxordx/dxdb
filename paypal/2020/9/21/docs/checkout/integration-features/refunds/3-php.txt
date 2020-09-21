@@ -1,0 +1,65 @@
+<?php
+namespace Sample;
+
+require __DIR__ . '/vendor/autoload.php';
+//1. Import the PayPal SDK client that was created in `Set up Server-Side SDK`.
+use Sample\PayPalClient;
+use PayPalCheckoutSdk\Payments\CapturesRefundRequest;
+
+class RefundOrder
+{
+
+  // 2. Set up your server to receive a call from the client
+  // Use this function to perform a refund on the capture.
+
+  public static function refundOrder($captureId, $debug=false)
+  {
+    $request = new CapturesRefundRequest($captureId);
+    $request->body = self::buildRequestBody();
+    // 3. Call PayPal to refund a capture
+    $client = PayPalClient::client();
+    $response = $client->execute($request);
+
+    if ($debug)
+    {
+      print "Status Code: {$response->statusCode}\n";
+      print "Status: {$response->result->status}\n";
+      print "Order ID: {$response->result->id}\n";
+      print "Links:\n";
+      foreach($response->result->links as $link)
+      {
+        print "\t{$link->rel}: {$link->href}\tCall Type: {$link->method}\n";
+      }
+      // To toggle printing the whole response body comment/uncomment
+      // the following line
+      echo json_encode($response->result, JSON_PRETTY_PRINT), "\n";
+    }
+    return $response;
+  }
+
+  // Function to create a partial refund capture request.
+  // For full refund, pass the empty body.
+  // For more details, refer to the Payments API refund captured payment reference.
+
+  public static function buildRequestBody()
+  {
+    return array(
+      'amount' =>
+        array(
+          'value' => '20.00',
+          'currency_code' => 'USD'
+        )
+    );
+  }
+}
+
+// This driver function invokes the refund capture function with
+// Capture ID to perform refund on capture.
+//
+if (!count(debug_backtrace()))
+{
+  //Reference the capture ID from the database that stores the ID after creating the capture.
+  RefundOrder::refundOrder(&apos REPLACE-WITH-VALID-CAPTURE-ID', true);
+}
+?>
+copy

@@ -1,0 +1,3 @@
+io.socket.on('disconnect', function onDisconnect(){
+  console.log('This socket lost connection to the Sails server');
+});

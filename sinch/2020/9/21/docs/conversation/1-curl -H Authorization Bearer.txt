@@ -1,0 +1,1 @@
+curl -H "Authorization: Bearer <access token>" https://eu.conversation.api.sinch.com/v1beta/projects/<Project ID>/apps

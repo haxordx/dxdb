@@ -1,0 +1,18 @@
+paypal.Buttons({
+    onShippingChange: function(data, actions) {
+        return fetch('/my-backend/service', {
+            method: 'post',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body:    JSON.stringify(data)
+        }).then(res => {
+            if (!res || res.error) {
+                return actions.reject();
+            }
+
+            return actions.resolve();
+        });            
+    }
+}).render('#paypal-button-container');
+jscopy

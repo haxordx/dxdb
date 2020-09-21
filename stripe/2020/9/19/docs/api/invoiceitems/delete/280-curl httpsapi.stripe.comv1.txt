@@ -1,0 +1,4 @@
+curl https://api.stripe.com/v1/invoiceitems \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d customer=cus_I3HcwHEKBfQLG1 \
+  -d price=price_1HS0Qf2eZvKYlo2Cyr72xAEg

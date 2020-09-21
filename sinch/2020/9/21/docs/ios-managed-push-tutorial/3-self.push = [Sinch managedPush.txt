@@ -1,0 +1,3 @@
+self.push = [Sinch managedPushWithAPSEnvironment:SINAPSEnvironmentAutomatic];
+  self.push.delegate = self;
+  [self.push setDesiredPushTypeAutomatically];

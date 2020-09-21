@@ -1,0 +1,14 @@
+[RequestBody]
+    VerficationReportRequest
+
+[VerficationReportRequest]
+    string - method
+    SmsVerificationReportData? - sms
+    FlashCallVerificationReportData? - flashCall
+
+[SmsVerificationReportData]
+    string - code
+    string? - cli
+
+[FlashCallVerificationReportData]
+    string - cli

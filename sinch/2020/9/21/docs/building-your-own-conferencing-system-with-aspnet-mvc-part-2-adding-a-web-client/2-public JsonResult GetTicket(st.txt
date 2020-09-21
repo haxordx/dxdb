@@ -1,0 +1,6 @@
+public JsonResult GetTicket(string id) {
+    var loginObject = new LoginObject(appKey, appSecret);
+    loginObject.userTicket = loginObject.Signature(id);
+
+    return Json(loginObject, JsonRequestBehavior.AllowGet);
+}

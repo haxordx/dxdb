@@ -1,0 +1,2 @@
+first_name=Someone&account_key=AA-6N5043354R131103K&notify_version=UNVERSIONED&charset=windows-1252&email_address=abawany-20110208-01%40paypal.com&event_type=%5BLOGIN_CONFIRMED%5D&last_name=Something&verify_sign=ANqF6tuR41eB.S.2I9dCskJuSSvrAI8Monbec4U2PZCnoKYffnv156mN
+copy

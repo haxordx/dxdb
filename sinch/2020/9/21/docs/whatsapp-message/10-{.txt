@@ -1,0 +1,13 @@
+{
+  "to": [
+    "46732001122",
+    "group:447506616260-1565342732"
+  ],
+  "message": {
+    "type": "location",
+    "lat": 55.7047,
+    "lng": 13.191,
+    "name": "Sinch Ideon Lund",
+    "address": "Scheelevägen 17"
+  }
+}

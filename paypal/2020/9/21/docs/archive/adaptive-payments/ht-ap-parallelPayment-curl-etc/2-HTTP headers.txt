@@ -1,0 +1,54 @@
+HTTP headers
+------------
+-H "X-PAYPAL-SECURITY-USERID: insert_developer_user_name"
+-H "X-PAYPAL-SECURITY-PASSWORD: insert_developer_password"
+-H "X-PAYPAL-SECURITY-SIGNATURE: insert_developer_signature"
+-H "X-PAYPAL-REQUEST-DATA-FORMAT: NV"
+-H "X-PAYPAL-RESPONSE-DATA-FORMAT: NV"
+-H "X-PAYPAL-APPLICATION-ID: APP-80W284485P519543T"    #Standard sandbox app ID
+
+Endpoint
+--------
+https://svcs.sandbox.paypal.com/AdaptivePayments/PaymentDetails
+
+Input parameters
+----------------
+payKey=AP-70S20255150981234    #Value of the pay key, received in the previous `Pay` call
+&requestEnvelope.errorLanguage=en_US
+
+Response
+--------
+responseEnvelope.ack=Success
+&cancelUrl=http%3A%2F%2Fwww.yourdomain.com%2Fcancel.html
+¤cyCode=USD
+&paymentInfoList.paymentInfo(0).transactionId=5XC63659TW0721234
+&paymentInfoList.paymentInfo(0).transactionStatus=COMPLETED
+&paymentInfoList.paymentInfo(0).receiver.amount=3.00
+&paymentInfoList.paymentInfo(0).receiver.email=first_receiver_email
+&paymentInfoList.paymentInfo(0).receiver.primary=false
+&paymentInfoList.paymentInfo(0).receiver.paymentType=SERVICE
+&paymentInfoList.paymentInfo(0).refundedAmount=0.00
+&paymentInfoList.paymentInfo(0).pendingRefund=false
+&paymentInfoList.paymentInfo(0).senderTransactionId=22K52234553191234
+&paymentInfoList.paymentInfo(0).senderTransactionStatus=COMPLETED
+&paymentInfoList.paymentInfo(1).transactionId=6B499255JW1421234
+&paymentInfoList.paymentInfo(1).transactionStatus=COMPLETED
+&paymentInfoList.paymentInfo(1).receiver.amount=4.00
+&paymentInfoList.paymentInfo(1).receiver.email=second_receiver_email
+&paymentInfoList.paymentInfo(1).receiver.primary=false
+&paymentInfoList.paymentInfo(1).receiver.paymentType=SERVICE
+&paymentInfoList.paymentInfo(1).refundedAmount=0.00
+&paymentInfoList.paymentInfo(1).pendingRefund=false
+&paymentInfoList.paymentInfo(1).senderTransactionId=85M38157M2541234
+&paymentInfoList.paymentInfo(1).senderTransactionStatus=COMPLETED
+&returnUrl=http%3A%2F%2Fwww.yourdomain.com%2Fsuccess.html
+&senderEmail=sender_email
+&status=COMPLETED
+&payKey=AP-70S20255150981234
+&actionType=PAY
+&feesPayer=EACHRECEIVER
+&reverseAllParallelPaymentsOnError=false
+&sender.email=sender_email
+&sender.useCredentials=false
+...
+copy

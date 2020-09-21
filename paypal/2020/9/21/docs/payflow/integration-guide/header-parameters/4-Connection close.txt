@@ -1,0 +1,7 @@
+Connection: close
+Server: VPS-3.028.00
+Date: Mon, 16 May 2005 22:48:06 GMT
+Content-Type: text/name value
+Content-Length: 145
+X-VPS-REQUEST-ID: [Same ID as sent]
+copy

@@ -1,0 +1,5 @@
+      var reader = payment_config.reader();
+      reader.connectionType(pphwebsdk.Types.ReaderConnectionType.USB);
+      reader.manufacturer(pphwebsdk.Types.Manufacturers.MIURA);
+
+javascriptcopy

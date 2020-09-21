@@ -1,0 +1,6 @@
+curl https://api.stripe.com/v1/subscription_schedules \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d from_subscription=sub_GB98WOvaRAWPl6
+curl https://api.stripe.com/v1/subscription_schedules \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d from_subscription=sub_GB98WOvaRAWPl6

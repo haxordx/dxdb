@@ -1,0 +1,11 @@
+@Override
+    public void onRegistrationCredentialsRequired(SinchClient client, ClientRegistration clientRegistration) {
+        yourAuthServer.getRegistrationToken(userId, new YourAuthCallback() {
+            void onSuccess(String token) {
+                clientRegistration.register(token);
+            }
+            void onFailure() {
+                clientRegistration.registerFailed();
+            }
+        });
+    }

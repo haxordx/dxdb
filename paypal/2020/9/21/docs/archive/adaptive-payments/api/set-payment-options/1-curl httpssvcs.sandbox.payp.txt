@@ -1,0 +1,23 @@
+curl https://svcs.sandbox.paypal.com/AdaptivePayments/SetPaymentOptions \
+  -s \
+  --insecure \
+  -H "X-PAYPAL-SECURITY-USERID: api_username" \
+  -H "X-PAYPAL-SECURITY-PASSWORD: api_password" \
+  -H "X-PAYPAL-SECURITY-SIGNATURE: api_signature" \
+  -H "X-PAYPAL-REQUEST-DATA-FORMAT: NV" \
+  -H "X-PAYPAL-RESPONSE-DATA-FORMAT: NV" \
+  -H "X-PAYPAL-APPLICATION-ID: app_id" \
+  -d requestEnvelope.errorLanguage=en_US \
+  -d receiverList.receiver(0).email=test@test.com \
+  -d senderOptions.shippingAddress.addresseeName=John \
+  -d senderOptions.shippingAddress.city=San+Jose \
+  -d senderOptions.shippingAddress.country=US \
+  -d senderOptions.shippingAddress.phone.countryCode=91 \
+  -d senderOptions.shippingAddress.phone.phoneNumber=408123456 \
+  -d senderOptions.shippingAddress.phone.type=MOBILE \
+  -d senderOptions.shippingAddress.state=CA \
+  -d senderOptions.shippingAddress.street1=17+Magneson+St \
+  -d senderOptions.shippingAddress.street2=building+1 \
+  -d senderOptions.shippingAddress.zip=12345 \
+  -d payKey=...
+copy

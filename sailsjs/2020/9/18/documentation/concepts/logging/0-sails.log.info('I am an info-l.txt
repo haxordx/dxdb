@@ -1,0 +1,3 @@
+sails.log.info('I am an info-level message.');
+sails.log('I am a debug-level message');
+sails.log.warn('I am a warn-level message');

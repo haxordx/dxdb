@@ -1,0 +1,11 @@
+sinchClient = Sinch.getSinchClientBuilder()
+    .context(this)
+    .userId("dog")
+    .applicationKey("key")
+    .applicationSecret("secret")
+    .environmentHost("clientapi.sinch.com")
+    .build();
+
+sinchClient.setSupportCalling(true);
+sinchClient.startListeningOnActiveConnection();
+sinchClient.start();

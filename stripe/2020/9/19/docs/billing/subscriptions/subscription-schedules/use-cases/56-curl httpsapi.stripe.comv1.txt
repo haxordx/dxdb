@@ -1,0 +1,26 @@
+curl https://api.stripe.com/v1/subscription_schedules \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d customer=cus_GBHHxuvBvO26Ea \
+  -d start_date=now \
+  -d end_behavior=release \
+  -d phases[0][items][0][price]=price_digital \
+  -d phases[0][items][0][quantity]=1 \
+  -d phases[0][items][0][tax_rates][0]=txr_2J8lmBBGHJYyuUJqF6QJtaAA \
+  -d phases[0][iterations]=1 \
+  -d phases[1][items][0][price]=price_digital \
+  -d phases[1][items][0][quantity]=1 \
+  -d phases[1][items][0][tax_rates][0]=txr_1F6kmAAJVYItwOKqV9IWebBB \
+  -d phases[1][iterations]=11
+curl https://api.stripe.com/v1/subscription_schedules \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d customer=cus_GBHHxuvBvO26Ea \
+  -d start_date=now \
+  -d end_behavior=release \
+  -d phases[0][items][0][price]=price_digital \
+  -d phases[0][items][0][quantity]=1 \
+  -d phases[0][items][0][tax_rates][0]=txr_2J8lmBBGHJYyuUJqF6QJtaAA \
+  -d phases[0][iterations]=1 \
+  -d phases[1][items][0][price]=price_digital \
+  -d phases[1][items][0][quantity]=1 \
+  -d phases[1][items][0][tax_rates][0]=txr_1F6kmAAJVYItwOKqV9IWebBB \
+  -d phases[1][iterations]=11

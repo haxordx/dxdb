@@ -1,0 +1,7 @@
+get '/checkout' do
+  @intent = # ... Fetch or create the PaymentIntent
+  erb :checkout
+endget '/checkout' do
+  @intent = # ... Fetch or create the PaymentIntent
+  erb :checkout
+end

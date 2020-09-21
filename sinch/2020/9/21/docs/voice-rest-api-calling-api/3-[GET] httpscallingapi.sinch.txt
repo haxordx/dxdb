@@ -1,0 +1,1 @@
+[GET] https://callingapi.sinch.com/v1/configuration/numbers/

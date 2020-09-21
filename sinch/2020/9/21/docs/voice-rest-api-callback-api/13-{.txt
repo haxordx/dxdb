@@ -1,0 +1,8 @@
+{
+    "name": "connectSIP",
+    "destination": { "endpoint": "46708000000@sip.foo.com" },
+    "maxDuration": 3000,
+    "cli": "private",
+    "transport": "tls",
+    "suppressCallbacks": false
+}

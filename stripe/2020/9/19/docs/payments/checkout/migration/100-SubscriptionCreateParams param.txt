@@ -1,0 +1,17 @@
+SubscriptionCreateParams params =
+  SubscriptionCreateParams.builder()
+    .addItem(
+      SubscriptionCreateParams.Item.builder()
+        .setPrice("{PRICE_ID}")
+        .setQuantity(2L)
+        .build())
+    .setCustomer(customer.id)
+    .build();SubscriptionCreateParams params =
+  SubscriptionCreateParams.builder()
+    .addItem(
+      SubscriptionCreateParams.Item.builder()
+        .setPrice("{PRICE_ID}")
+        .setQuantity(2L)
+        .build())
+    .setCustomer(customer.id)
+    .build();

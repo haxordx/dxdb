@@ -1,0 +1,8 @@
+curl https://api.stripe.com/v1/terminal/connection_tokens \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d location="{LOCATION_ID}" \
+  -H "Stripe-Account: {CONNECTED_ACCOUNT_ID}"
+curl https://api.stripe.com/v1/terminal/connection_tokens \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d location="{LOCATION_ID}" \
+  -H "Stripe-Account: {CONNECTED_ACCOUNT_ID}"

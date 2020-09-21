@@ -1,0 +1,32 @@
+// Using Express
+const express = require('express');
+const app = express();
+app.use(express.json());
+const { resolve } = require("path");
+
+// Set your secret key. Remember to switch to your live secret key in production!
+// See your keys here: https://dashboard.stripe.com/account/apikeys
+const stripe = require('stripe')('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
+
+const setupIntent = await stripe.setupIntents.create({
+  payment_method_types: ['sepa_debit'],
+  customer: customer.id,
+});
+const clientSecret = setupIntent.client_secret;
+// Pass the client secret to the client
+// Using Express
+const express = require('express');
+const app = express();
+app.use(express.json());
+const { resolve } = require("path");
+
+// Set your secret key. Remember to switch to your live secret key in production!
+// See your keys here: https://dashboard.stripe.com/account/apikeys
+const stripe = require('stripe')('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
+
+const setupIntent = await stripe.setupIntents.create({
+  payment_method_types: ['sepa_debit'],
+  customer: customer.id,
+});
+const clientSecret = setupIntent.client_secret;
+// Pass the client secret to the client

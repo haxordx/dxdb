@@ -1,0 +1,55 @@
+curl -v -X POST https://api.sandbox.paypal.com/v1/invoicing/templates/ \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer Access-Token" \
+-d '{
+  "name": "Hours Template",
+  "default": true,
+  "unit_of_measure": "HOURS",
+  "template_data": {
+    "merchant_info": {
+      "email": "doctor@example.com",
+      "first_name": "Dennis",
+      "last_name": "Doctor",
+      "business_name": "Medical Professionals, LLC",
+      "phone": {
+        "country_code": "001",
+        "national_number": "5032141716"
+      },
+      "address": {
+        "line1": "1234 Main St.",
+        "city": "Portland",
+        "state": "OR",
+        "postal_code": "97217",
+        "country_code": "US"
+      }
+    },
+    "items": [
+      {
+        "name": "Nutri Bullet",
+        "quantity": 1,
+        "unit_price": {
+          "currency": "USD",
+          "value": "50.00"
+        }
+      }
+    ],
+    "tax_calculated_after_discount": false,
+    "tax_inclusive": false,
+    "note": "Thank you for your business.",
+    "logo_url": "https://example.com/v1/images/redDot.jpeg"
+  },
+  "settings": [
+    {
+      "field_name": "items.date",
+      "display_preference": {
+        "hidden": true
+      }
+    },
+    {
+      "field_name": "custom",
+      "display_preference": {
+        "hidden": true
+      }
+    }
+  ]
+}'copy

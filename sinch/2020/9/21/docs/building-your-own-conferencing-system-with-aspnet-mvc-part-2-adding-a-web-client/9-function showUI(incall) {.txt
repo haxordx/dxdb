@@ -1,0 +1,14 @@
+function showUI(incall) {
+    if (incall) {
+        $("#newCall").hide();
+        $("#incall").show();
+        $('#bg').removeClass();
+        $('#bg').addClass('bg incallBg');
+    } else {
+        $("#newCall").show();
+        $("#incall").hide();
+        $('#bg').removeClass();
+        $('#bg').addClass('bg loginBg');
+
+    }
+}

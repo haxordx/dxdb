@@ -1,0 +1,6 @@
+stripe invoiceitems create \
+  --customer={{CUSTOMER_ID}} \
+  -d price={{PRICE_ID}}
+stripe invoiceitems create \
+  --customer={{CUSTOMER_ID}} \
+  -d price={{PRICE_ID}}

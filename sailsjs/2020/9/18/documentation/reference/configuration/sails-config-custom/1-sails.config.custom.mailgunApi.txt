@@ -1,0 +1,2 @@
+sails.config.custom.mailgunApiKey;
+// -> "key-testkeyb183848139913858e8abd9a3"

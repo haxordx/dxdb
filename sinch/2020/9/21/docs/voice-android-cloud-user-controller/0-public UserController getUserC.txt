@@ -1,0 +1,8 @@
+public UserController getUserController(String userId) {
+     return Sinch.getUserControllerBuilder()
+                 .context(getApplicationContext())
+                 .applicationKey("<application key>")
+                 .userId("<user id>")
+                 .environmentHost("ocra.api.sinch.com")
+                 .build();
+}

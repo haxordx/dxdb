@@ -1,0 +1,4 @@
+# To create a PaymentIntent, see our guide at: https://stripe.com/docs/payments/payment-intents/creating-payment-intents#creating-for-automatic
+curl https://api.stripe.com/v1/payment_intents/pi_1DgjcP2eZvKYlo2CcMcqZ3qi/cancel \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -X POST

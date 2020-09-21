@@ -1,0 +1,10 @@
+curl https://api.stripe.com/v1/accounts \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d type=custom \
+  -d "capabilities[card_payments][requested]"=true \
+  -d "capabilities[transfers][requested]"=true
+curl https://api.stripe.com/v1/accounts \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d type=custom \
+  -d "capabilities[card_payments][requested]"=true \
+  -d "capabilities[transfers][requested]"=true

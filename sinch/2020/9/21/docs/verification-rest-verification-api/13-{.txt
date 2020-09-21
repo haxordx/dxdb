@@ -1,0 +1,4 @@
+{
+    "id": "1234567890",
+    "sms": { "template": "Your verfication code is {{CODE}}" }
+}

@@ -1,0 +1,3 @@
+<script src="https://js.stripe.com/v3"></script>
+<button id="checkout-button">Subscribe</button><script src="https://js.stripe.com/v3"></script>
+<button id="checkout-button">Subscribe</button>

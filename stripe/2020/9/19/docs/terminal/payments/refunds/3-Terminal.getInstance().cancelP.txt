@@ -1,0 +1,21 @@
+Terminal.getInstance().cancelPaymentIntent(paymentIntent, new PaymentIntentCallback() {
+    @Override
+    public void onSuccess(PaymentIntent paymentIntent) {
+      // Placeholder for handling a successful cancelation
+    }
+
+    @Override
+    public void onFailure(TerminalException exception) {
+      // Placeholder for handling a failed cancelation
+    }
+})Terminal.getInstance().cancelPaymentIntent(paymentIntent, new PaymentIntentCallback() {
+    @Override
+    public void onSuccess(PaymentIntent paymentIntent) {
+      // Placeholder for handling a successful cancelation
+    }
+
+    @Override
+    public void onFailure(TerminalException exception) {
+      // Placeholder for handling a failed cancelation
+    }
+})

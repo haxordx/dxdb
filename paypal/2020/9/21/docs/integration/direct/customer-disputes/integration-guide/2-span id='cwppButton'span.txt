@@ -1,0 +1,18 @@
+<span id='cwppButton'></span>
+<script src="https://www.paypalobjects.com/js/external/connect/api.js"></script>
+<script>
+        paypal.use( ['login'], function (login) {
+                login.render ({
+                        'appid': 'CLIENT_ID',
+                        'authend': 'sandbox',
+                        'scopes': 'openid https://uri.paypal.com/services/disputes/create
+                        https://uri.paypal.com/services/disputes/read-buyer',
+                        'containerid': 'cwppButton',
+                        'locale': 'en-us',
+                        'buttonType': 'CWP',
+                        'buttonSize': 'lg',
+                        'returnurl': 'URL_SET_IN_APP'
+                });
+          });
+</script>
+htmlcopy

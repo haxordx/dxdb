@@ -1,0 +1,33 @@
+class MyViewController: UIViewController {
+  var pushProvisioningContext: STPPushProvisioningContext? = nil
+  // ...
+}
+
+extension MyViewController: PKAddPaymentPassViewControllerDelegate {
+  func addPaymentPassViewController(_ controller: PKAddPaymentPassViewController, generateRequestWithCertificateChain certificates: [Data], nonce: Data, nonceSignature: Data, completionHandler handler: @escaping (PKAddPaymentPassRequest) -> Void) {
+    self.pushProvisioningContext = STPPushProvisioningContext(keyProvider: self)
+    // STPPushProvisioningContext implements this delegate method for you, by retrieving encrypted card details from the Stripe API.
+    self.pushProvisioningContext?.addPaymentPassViewController(controller, generateRequestWithCertificateChain: certificates, nonce: nonce, nonceSignature: nonceSignature, completionHandler: handler);
+  }
+
+  func addPaymentPassViewController(_ controller: PKAddPaymentPassViewController, didFinishAdding pass: PKPaymentPass?, error: Error?) {
+    // Depending on if `error` is present, show a success or failure screen.
+    self.dismiss(animated: true, completion: nil)
+  }
+}class MyViewController: UIViewController {
+  var pushProvisioningContext: STPPushProvisioningContext? = nil
+  // ...
+}
+
+extension MyViewController: PKAddPaymentPassViewControllerDelegate {
+  func addPaymentPassViewController(_ controller: PKAddPaymentPassViewController, generateRequestWithCertificateChain certificates: [Data], nonce: Data, nonceSignature: Data, completionHandler handler: @escaping (PKAddPaymentPassRequest) -> Void) {
+    self.pushProvisioningContext = STPPushProvisioningContext(keyProvider: self)
+    // STPPushProvisioningContext implements this delegate method for you, by retrieving encrypted card details from the Stripe API.
+    self.pushProvisioningContext?.addPaymentPassViewController(controller, generateRequestWithCertificateChain: certificates, nonce: nonce, nonceSignature: nonceSignature, completionHandler: handler);
+  }
+
+  func addPaymentPassViewController(_ controller: PKAddPaymentPassViewController, didFinishAdding pass: PKPaymentPass?, error: Error?) {
+    // Depending on if `error` is present, show a success or failure screen.
+    self.dismiss(animated: true, completion: nil)
+  }
+}

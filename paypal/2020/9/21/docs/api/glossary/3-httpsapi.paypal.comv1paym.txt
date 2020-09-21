@@ -1,0 +1,2 @@
+https://api.paypal.com/v1/payments/payment/
+https://api.paypal.com/v1/payments/payment payment_idcopy

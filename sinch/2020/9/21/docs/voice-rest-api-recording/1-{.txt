@@ -1,0 +1,17 @@
+{
+    "instructions": [{
+        "name": "Say",
+        "text": "Hello world, I don't want you to record this part",
+        "locale": "en-US"
+    }, {
+        "name": "StartRecording",
+        "options": [...]
+    }, {
+        "name": "Say",
+        "text": "Hello world, this part will be recorded",
+        "locale": "en-US"
+    }],
+    "action": {
+        ...
+    }
+}

@@ -1,0 +1,5 @@
+connection.createBatch(ClxApi.batchTextSms()
+        .sender("ignored")
+        .addRecipient(group.id().toString())
+        .body("Hello from Sinch!")
+        .build());

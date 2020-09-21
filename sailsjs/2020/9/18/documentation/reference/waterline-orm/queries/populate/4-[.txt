@@ -1,0 +1,21 @@
+[
+  {
+    id: 7392,
+    age: 13,
+    name: 'Finn',
+    createdAt: 1451088000000,
+    updatedAt: 1545782400000,
+    dad: 108,//<< not populated
+    swords: [//<< populated
+      {
+        id: 9,
+        title: 'Grape Soda Sword',
+        color: 'purple',
+        createdAt: 1540944000000,
+        updatedAt: 1540944000000
+      },
+      // ...more swords
+    ]
+  },
+  // ...more users
+]

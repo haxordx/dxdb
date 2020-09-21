@@ -1,0 +1,11 @@
+OkHttpClient client = new OkHttpClient();
+
+Request request = new Request.Builder()
+  .url("https://api.paypal.com/v1/sales/transactions/{paypal_invoice_id}/receipt")
+  .get()
+  .addHeader("Content-Type", "application/json")
+  .addHeader("Authorization", "Bearer {access_token}")
+  .build();
+
+Response response = client.newCall(request).execute();
+copy

@@ -1,0 +1,8 @@
+var handleError = function(error) {
+    //Enable buttons
+    $('button#createUser').prop('disabled', false);
+    $('button#loginUser').prop('disabled', false);
+    //Show error
+    $('#error').text(error.message);
+    $('#error').show();
+}

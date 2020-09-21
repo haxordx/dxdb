@@ -1,0 +1,21 @@
+Map<String, Object> customerParams = new HashMap<String, Object>();
+customerParams.put("email", "customer@example.com");
+customerParams.put("source", request.stripeToken);
+Customer customer = Customer.create(customerParams);
+
+Map<String, Object> chargeParams = new HashMap<String, Object>();
+chargeParams.put("customer", customer.id);
+chargeParams.put("description", "Cleaning service");
+chargeParams.put("amount", order.amount);
+chargeParams.put("currency", "usd");
+Charge charge = Charge.create(chargeParams);Map<String, Object> customerParams = new HashMap<String, Object>();
+customerParams.put("email", "customer@example.com");
+customerParams.put("source", request.stripeToken);
+Customer customer = Customer.create(customerParams);
+
+Map<String, Object> chargeParams = new HashMap<String, Object>();
+chargeParams.put("customer", customer.id);
+chargeParams.put("description", "Cleaning service");
+chargeParams.put("amount", order.amount);
+chargeParams.put("currency", "usd");
+Charge charge = Charge.create(chargeParams);

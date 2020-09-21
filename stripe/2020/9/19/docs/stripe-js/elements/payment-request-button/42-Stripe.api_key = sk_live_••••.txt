@@ -1,0 +1,7 @@
+Stripe.api_key = "sk_live_••••••••••••••••••••••••"
+Stripe::ApplePayDomain.create({
+  domain_name: 'example.com',
+})Stripe.api_key = "sk_live_••••••••••••••••••••••••"
+Stripe::ApplePayDomain.create({
+  domain_name: 'example.com',
+})

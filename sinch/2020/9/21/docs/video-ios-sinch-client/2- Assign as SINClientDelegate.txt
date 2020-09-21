@@ -1,0 +1,8 @@
+// Assign as SINClientDelegate
+sinchClient.delegate = ... ;
+
+// Start the Sinch Client
+[sinchClient start];
+
+// Start listening for incoming calls and messages
+[sinchClient startListeningOnActiveConnection];

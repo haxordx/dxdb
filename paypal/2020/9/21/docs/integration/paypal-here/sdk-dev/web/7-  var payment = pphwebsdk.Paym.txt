@@ -1,0 +1,3 @@
+  var payment = pphwebsdk.Payment.create(identity, payment_config);
+  payment.for(order).as(pphwebsdk.Types.PaymentMethod.CARD).sale();
+javascriptcopy

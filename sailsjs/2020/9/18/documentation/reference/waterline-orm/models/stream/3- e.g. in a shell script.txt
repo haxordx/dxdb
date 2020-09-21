@@ -1,0 +1,33 @@
+// e.g. in a shell script
+
+var numReported = 0;
+
+await Comment.stream({ author: 'Bailey Bitterbumps' })
+.limit(1000)
+.skip(40)
+.sort('title ASC')
+.populate('attachedFiles', {
+  limit: 3,
+  sort: 'updatedAt'
+})
+.populate('fromBlogPost')
+.eachRecord(async (comment)=>{
+
+  var isCreepyEnoughToWorryAbout = comment.rawMessage.match(/creepy/) && comment.attachedFiles.length > 1;
+  if (!isCreepyEnoughToWorryAbout) {
+    return;
+  }
+
+  await sails.helpers.sendTemplateEmail.with({
+    template: 'email-creepy-comment-notification',
+    templateData: {
+      url: `https://blog.example.com/${comment.fromBlogPost.slug}/comments/${comment.slug}.`
+    },
+    to: 'authorities@cannedmeat.gov',
+    subject: 'Creepy comment alert'
+  });
+
+  numReported++;
+});
+
+sails.log(`Successfully reported ${numReported} creepy comments.`);

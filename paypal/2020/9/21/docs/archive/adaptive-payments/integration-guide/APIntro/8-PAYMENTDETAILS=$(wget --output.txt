@@ -1,0 +1,16 @@
+PAYMENTDETAILS=$(wget --output-document=- \
+--quiet \
+--header="X-PAYPAL-SERVICE-VERSION: 1.0.0" \
+--header="X-PAYPAL-SECURITY-USERID: $APIUSER" \
+--header="X-PAYPAL-SECURITY-PASSWORD: $APIPASS" \
+--header="X-PAYPAL-SECURITY-SIGNATURE: $APISIG" \
+--header="X-PAYPAL-REQUEST-DATA-FORMAT: NV" \
+--header="X-PAYPAL-RESPONSE-DATA-FORMAT: NV" \
+--header="X-PAYPAL-APPLICATION-ID:  $APPLICATIONID" \
+--post-data="payKey=$PAYKEY&requestEnvelope.errorLanguage=en_US" \
+https://www.paypal.com/AdaptivePayments/PaymentDetails)
+if echo $PAYMENTDETAILS | grep -q "\&status=COMPLETED"
+then  echo "Thank you for approving pay key $PAYKEY"
+else  echo "Sorry, you were unable to approve pay key $PAYKEY.  Please try another transaction!"
+fi
+copy

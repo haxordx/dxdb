@@ -1,0 +1,19 @@
+{
+    "name": "RESOURCE_NOT_FOUND",
+    "message": "The specified resource does not exist.",
+    "debug_id": "c2d1f06c7246c",
+     "details": [
+        {
+            "issue": "INVALID_RESOURCE_ID",  
+            "description": "Requested resource ID was not found",
+            "value": "I-TT452GLLEP1G"
+        }
+    ],
+    "links": [
+        {
+            "href": "https://developer.paypal.com/docs/api/v1/billing/subscriptions#RESOURCE_NOT_FOUND,
+            "rel": "information_link"
+        }
+    ]
+}
+jsoncopy

@@ -1,0 +1,17 @@
+const charge = await stripe.charges.create({
+  source: request.body.stripeToken,
+  description: '10 cucumbers from Roger\'s Farm',
+  amount: 2000,
+  application_fee_amount: 200,
+  currency: 'usd',
+}, {
+  stripeAccount: '{{CONNECTED_STRIPE_ACCOUNT_ID}}',
+});const charge = await stripe.charges.create({
+  source: request.body.stripeToken,
+  description: '10 cucumbers from Roger\'s Farm',
+  amount: 2000,
+  application_fee_amount: 200,
+  currency: 'usd',
+}, {
+  stripeAccount: '{{CONNECTED_STRIPE_ACCOUNT_ID}}',
+});

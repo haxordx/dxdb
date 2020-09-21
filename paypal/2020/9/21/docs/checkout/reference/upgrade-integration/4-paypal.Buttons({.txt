@@ -1,0 +1,17 @@
+paypal.Buttons({
+  createOrder: function() {
+    var CREATE_PAYMENT_URL = 'https://mystore.com/api/paypal/create-payment';
+
+    return fetch(CREATE_PAYMENT_URL, {
+      method: 'post',
+      headers: {
+        'content-type': 'application/json'
+      }
+    }).then(function(res) {
+      return res.json();
+    }).then(function(data) {
+      return data.token;
+    });
+  }
+}).render('#paypal-button-container');
+copy

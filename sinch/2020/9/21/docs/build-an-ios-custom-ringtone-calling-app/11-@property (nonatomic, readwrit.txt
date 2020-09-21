@@ -1,0 +1,3 @@
+@property (nonatomic, readwrite, strong) id<SINCall> call;
+@property (strong, nonatomic) NSString *contact;
+@property (strong, nonatomic) NSString *urlString;

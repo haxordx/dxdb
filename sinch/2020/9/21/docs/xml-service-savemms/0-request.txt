@@ -1,0 +1,17 @@
+<request>
+    <action>saveMMS</action>
+    <api-key>qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ</api-key>
+    <message-subject>The subject</message-subject>
+    <name>FuelTheFire</name>
+    <slide>
+        <image><url>http://www.yoursite.com/images/1.jpg</url></image>
+        <audio><url>http://www.yoursite.com/audio/1.mp3</url></audio>
+        <message-text>Here is some text</message-text>
+        <duration>5</duration>
+    </slide>
+    <slide>
+        <message-text>My Contact</message-text>
+        <vcard><url>http://www.yoursite.com/2.vcf</url></vcard>
+        <duration>10</duration>
+    </slide>
+</request>

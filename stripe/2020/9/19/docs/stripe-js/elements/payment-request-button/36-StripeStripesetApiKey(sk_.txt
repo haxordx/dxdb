@@ -1,0 +1,13 @@
+\Stripe\Stripe::setApiKey("sk_live_••••••••••••••••••••••••");
+
+\Stripe\ApplePayDomain::create([
+  'domain_name' => 'example.com',
+],[
+  'stripe_account' => '{{CONNECTED_STRIPE_ACCOUNT_ID}}',
+]);\Stripe\Stripe::setApiKey("sk_live_••••••••••••••••••••••••");
+
+\Stripe\ApplePayDomain::create([
+  'domain_name' => 'example.com',
+],[
+  'stripe_account' => '{{CONNECTED_STRIPE_ACCOUNT_ID}}',
+]);

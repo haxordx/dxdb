@@ -1,0 +1,17 @@
+curl https://svcs.sandbox.paypal.com/Invoice/GetInvoiceDetails \
+  -s \
+  --insecure \
+  -H "X-PAYPAL-SECURITY-USERID: caller_UID" \
+  -H "X-PAYPAL-SECURITY-PASSWORD: caller_Pswd" \
+  -H "X-PAYPAL-SECURITY-SIGNATURE: caller_Sig" \
+  -H "X-PAYPAL-REQUEST-DATA-FORMAT: JSON" \
+  -H "X-PAYPAL-RESPONSE-DATA-FORMAT: JSON" \
+  -H "X-PAYPAL-APPLICATION-ID: appID" \
+  -d '{
+        "requestEnvelope": {
+          "errorLanguage":"en_US",
+          "detailLevel":"ReturnAll"
+        },
+        "invoiceID":"idOfInvoice"
+      }'
+copy

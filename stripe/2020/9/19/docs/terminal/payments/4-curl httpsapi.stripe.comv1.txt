@@ -1,0 +1,12 @@
+curl https://api.stripe.com/v1/payment_intents \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d amount=1000 \
+  -d currency=usd \
+  -d "payment_method_types[]"=card_present \
+  -d capture_method=manual
+curl https://api.stripe.com/v1/payment_intents \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d amount=1000 \
+  -d currency=usd \
+  -d "payment_method_types[]"=card_present \
+  -d capture_method=manual

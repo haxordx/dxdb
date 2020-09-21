@@ -1,0 +1,1 @@
+.intercept({ code: 'E_UNIQUE' }, ()=>{ return 'emailAlreadyInUse'; })

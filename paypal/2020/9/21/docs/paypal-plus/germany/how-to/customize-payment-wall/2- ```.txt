@@ -1,0 +1,8 @@
+ ```
+ <button>
+ type="submit"
+ id="continueButton"
+ onclick="ppp.doContinue(); return false;"> Checkout
+ </button>
+ ```
+copy

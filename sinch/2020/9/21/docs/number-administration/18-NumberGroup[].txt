@@ -1,0 +1,14 @@
+NumberGroup[]
+
+[NumberGroup]
+    int      - groupId
+    string   - country
+    string   - countryId
+    string   - city
+    string   - type
+    integer  - availability
+    string   - areaCode
+    Money    - cost
+    string[] - capabilities
+
+eg:

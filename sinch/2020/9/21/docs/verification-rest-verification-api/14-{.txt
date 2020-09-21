@@ -1,0 +1,8 @@
+{
+    "id": "1234567890",
+    "callout":{
+        "startPollingAfter":3,
+        "stopPollingAfter":30,
+        "pollingInterval":3
+        }
+}

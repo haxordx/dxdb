@@ -1,0 +1,3 @@
+//Create a DotNet project in your directory, then run the following command to install the PayPal JavaScript SDK.
+dotnet add package PayPalCheckoutSdk --version 1.0.3
+copy

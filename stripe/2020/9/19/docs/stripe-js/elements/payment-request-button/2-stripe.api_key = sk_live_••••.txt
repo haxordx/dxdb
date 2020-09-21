@@ -1,0 +1,9 @@
+stripe.api_key = "sk_live_••••••••••••••••••••••••"
+
+stripe.ApplePayDomain.create(
+  domain_name='example.com',
+)stripe.api_key = "sk_live_••••••••••••••••••••••••"
+
+stripe.ApplePayDomain.create(
+  domain_name='example.com',
+)

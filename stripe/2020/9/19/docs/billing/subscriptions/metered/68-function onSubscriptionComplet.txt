@@ -1,0 +1,16 @@
+function onSubscriptionComplete(result) {
+  // Payment was successful.
+  if (result.subscription.status === 'active') {
+    // Change your UI to show a success message to your customer.
+    // Call your backend to grant access to your service based on
+    // `result.subscription.items.data[0].price.product` the customer subscribed to.
+  }
+}
+function onSubscriptionComplete(result) {
+  // Payment was successful.
+  if (result.subscription.status === 'active') {
+    // Change your UI to show a success message to your customer.
+    // Call your backend to grant access to your service based on
+    // `result.subscription.items.data[0].price.product` the customer subscribed to.
+  }
+}

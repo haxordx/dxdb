@@ -1,0 +1,6 @@
+@interface MyViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet UIView *remoteVideoView;
+@property (weak, nonatomic) IBOutlet UIView *localVideoView;
+
+@end

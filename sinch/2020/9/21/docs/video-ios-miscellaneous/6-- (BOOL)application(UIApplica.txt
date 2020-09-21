@@ -1,0 +1,21 @@
+- (BOOL)application:(UIApplication *)app didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+
+    NSDictionary* remotePush = [launchOptions objectForKey:UIApplicationLaunchOptionsRemoteNotificationKey];
+
+    if (remotePush) {
+
+        // Extract the Sinch-specific payload from the Apple Remote Push Notification
+        NSString* payload = [remotePush objectForKey:@"SIN"];
+
+        // Get previously initiated Sinch client
+        id<SINClient> client = [self sinchClient];
+
+        id<SINNotificationResult> result = [client relayRemotePushNotificationPayload:payload];
+
+        if (result.isCall && result.callResult.isTimedOut) {
+            // Present alert notifying about missed call
+        } else if (!result.isValid) {
+            // Handle error
+        }
+    }
+}

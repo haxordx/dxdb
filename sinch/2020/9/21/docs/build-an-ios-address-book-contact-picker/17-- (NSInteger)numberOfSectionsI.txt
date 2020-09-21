@@ -1,0 +1,40 @@
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 2;
+}
+
+
+-(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    return @"Phone Numbers";
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"Cell"];
+    }
+
+    NSString *cellText = @"";
+    NSString *detailText = @"";
+
+
+    switch (indexPath.row) {
+        case 0:
+            cellText = [self.detailItem mobileNumber];
+            detailText = @"Mobile Number";
+            break;
+        case 1:
+            cellText = [self.detailItem homeNumber];
+            detailText = @"Home Number";
+            break;
+    }
+
+    cell.textLabel.text = cellText;
+    cell.detailTextLabel.text = detailText;
+
+    return cell;
+}

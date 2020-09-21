@@ -1,0 +1,72 @@
+{
+  "object": "balance",
+  "available": [
+    {
+      "amount": 0,
+      "currency": "usd",
+      "source_types": {
+        "card": 0
+      }
+    }
+  ],
+  "pending": [
+    {
+      "amount": 0,
+      "currency": "usd",
+      "source_types": {
+        "card": 0
+      }
+    }
+  ],
+  "issuing": {
+    "available": [
+      {
+        "amount": 100,
+        "currency": "usd"
+      }
+    ],
+    "pending": [
+      {
+        "amount": 0,
+        "currency": "usd"
+      }
+    ]
+  },
+  "livemode": false
+}
+{
+  "object": "balance",
+  "available": [
+    {
+      "amount": 0,
+      "currency": "usd",
+      "source_types": {
+        "card": 0
+      }
+    }
+  ],
+  "pending": [
+    {
+      "amount": 0,
+      "currency": "usd",
+      "source_types": {
+        "card": 0
+      }
+    }
+  ],
+  "issuing": {
+    "available": [
+      {
+        "amount": 100,
+        "currency": "usd"
+      }
+    ],
+    "pending": [
+      {
+        "amount": 0,
+        "currency": "usd"
+      }
+    ]
+  },
+  "livemode": false
+}

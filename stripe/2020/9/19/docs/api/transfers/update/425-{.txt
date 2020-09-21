@@ -1,0 +1,24 @@
+{
+  "id": "tr_1HSfyO2eZvKYlo2C3PtQNkbG",
+  "object": "transfer",
+  "amount": 8000,
+  "amount_reversed": 0,
+  "balance_transaction": "txn_1032HU2eZvKYlo2CEPtcnUvl",
+  "created": 1600421624,
+  "currency": "usd",
+  "description": null,
+  "destination": "acct_1AojmwI9Pbw6jkMZ",
+  "destination_payment": "py_1HSfyOI9Pbw6jkMZuWGxj1Le",
+  "livemode": false,
+  "metadata": {},
+  "reversals": {
+    "object": "list",
+    "data": [],
+    "has_more": false,
+    "url": "/v1/transfers/tr_1HSfyO2eZvKYlo2C3PtQNkbG/reversals"
+  },
+  "reversed": false,
+  "source_transaction": "ch_1HSfyO2eZvKYlo2CLTXhJJx8",
+  "source_type": "card",
+  "transfer_group": "group_pi_1HSfyO2eZvKYlo2CPUEXOi9M"
+}

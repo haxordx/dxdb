@@ -1,0 +1,12 @@
+OkHttpClient client = new OkHttpClient().newBuilder()
+  .build();
+MediaType mediaType = MediaType.parse("application/json");
+RequestBody body = RequestBody.create(mediaType, "{\n  \"tracking_pages\" :[\n  {\n    \"branded_tracking_theme_guid\"   : \"fc16e39d-9722-4514-aff5-75e1f24c5bbd\",\n    \"tracking_number\" : \"012345678910\",\n    \"carrier_code\" : \"ups\",\n    \"service_code\" : \"ups_ground\",\n    \"to_city_locality\" :\"austin\",\n    \"to_state_province\" : \"tx\",\n    \"to_postal_code\" : \"78756\",\n    \"to_country_code\" : \"US\",\n    \"from_city_locality\" :\"denver\",\n    \"from_state_province\" : \"CO\",\n      \"from_postal_code\" : \"80014\",\n    \"from_country_code\" : \"US\"\n\n  }\n  ]\n}");
+Request request = new Request.Builder()
+  .url("https://api.shipengine.com/v-beta/tracking_page")
+  .method("POST", body)
+  .addHeader("Host", "api.shipengine.com")
+  .addHeader("API-Key", "__YOUR_API_KEY_HERE__")
+  .addHeader("Content-Type", "application/json")
+  .build();
+Response response = client.newCall(request).execute();

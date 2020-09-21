@@ -1,0 +1,5 @@
+<script>
+io.socket.put('/users/9', { occupation: 'psychic' }, function (resData, jwr) {
+  resData.statusCode; // => 200
+});
+</script>

@@ -1,0 +1,40 @@
+var request = require('request');
+var Sails = require('sails').constructor;
+
+var mySailsApp = new Sails();
+mySailsApp.lift({
+  port: 1338
+  // Optionally pass in any other programmatic config overrides you like here.
+}, function(err) {
+  if (err) {
+    console.error('Failed to lift app.  Details:', err);
+    return;
+  }
+
+  // --•
+  // Make a request using the "request" library and display the response.
+  // Note that you still must have an `api/controllers/FooController.js` file
+  // under the current working directory, with an `index` action,
+  // or a `/foo` or `POST /foo` route set up in `config/routes.js`.
+  request.post('/foo', function (err, response) {
+    if (err) {
+      console.log('Could not send HTTP request.  Details:', err);
+    }
+    else {
+      console.log('Got response:', response);
+    }
+
+    // >--
+    // In any case, whether the request worked or not, now we need to call `.lower()`.
+    mySailsApp.lower(function (err) {
+      if (err) {
+        console.log('Could not lower Sails app.  Details:',err);
+        return;
+      }
+
+      // --•
+      console.log('Successfully lowered Sails app.');
+
+    });//</lower sails app>
+  });//</request.post() :: send http request>
+});//</lift sails app>

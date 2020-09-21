@@ -1,0 +1,7 @@
+Geocoder geocoder = new Geocoder(this, Locale.getDefault());
+List<Address> addresses = null;
+try {
+    addresses = geocoder.getFromLocation(latitude, longitude, 1);
+} catch (IOException e) {
+    e.printStackTrace();
+}

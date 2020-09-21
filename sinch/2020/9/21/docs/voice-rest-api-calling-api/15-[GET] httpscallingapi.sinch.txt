@@ -1,0 +1,1 @@
+[GET] https://callingapi.sinch.com/v1/configuration/callbacks/applications/94983f76-1161-6655-9515-4785c7b67dd8

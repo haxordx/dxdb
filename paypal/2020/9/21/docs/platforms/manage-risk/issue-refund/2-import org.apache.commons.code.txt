@@ -1,0 +1,15 @@
+import org.apache.commons.codec.binary.Base64;
+public class Base64Encode {
+  public static void main(String[] args)
+  {
+    String header = "{\"alg\":\"none\"}";
+    String payload = "{\"email\":\"identity_seller@paypal.com\",\"iss\":\"Acuy17p2LcOf9RMv8SUVBb3wic3FPEP2NHFFqfSCBRFrNFdmbC1JQ0w8HIKRxW3RDy2R8QTL93eptFYl\"}";
+    //iss is the client id of the actor and email is the email id of the subject
+    byte[] encodedBytes = Base64.encodeBase64(header.getBytes());
+    System.out.println("Header encoded " + new String(encodedBytes));
+    byte[] encodedBytesPayload = Base64.encodeBase64(payload.getBytes());
+    System.out.println("Payload encoded " + new String(encodedBytesPayload));
+    System.out.println("Paypal-Auth-Assertion=" + new String(encodedBytes) + "." + new String(encodedBytesPayload) + ".");
+  }
+}
+copy

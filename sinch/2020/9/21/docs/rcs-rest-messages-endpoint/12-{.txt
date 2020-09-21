@@ -1,0 +1,10 @@
+{
+  "type": "carousel_rich_card",
+  "width": enum(
+    "SMALL",
+    "MEDIUM"
+  ),
+  "contents": [
+    object(RichCardContent), ...
+  ]
+}

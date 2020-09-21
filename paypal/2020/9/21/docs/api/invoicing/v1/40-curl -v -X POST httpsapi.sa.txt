@@ -1,0 +1,10 @@
+curl -v -X POST https://api.sandbox.paypal.com/v1/invoicing/search/ \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer Access-Token" \
+-d '{
+  "start_invoice_date": "2014-01-01 PST",
+  "end_invoice_date": "2014-03-26 PST",
+  "page": 0,
+  "page_size": 3,
+  "total_count_required": true
+}'copy

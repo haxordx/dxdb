@@ -1,0 +1,27 @@
+paypal.billingPlan.create(billingPlanAttribs, function (error, billingPlan){
+  var billingPlanUpdateAttributes;
+
+  if (error){
+    console.error(JSON.stringify(error));
+    throw error;
+  } else {
+    // Create billing plan patch object
+    billingPlanUpdateAttributes = [{
+      op: 'replace',
+      path: '/',
+      value: {
+        state: 'ACTIVE'
+      }
+    }];
+
+    // Activate the plan by changing status to active
+    paypal.billingPlan.update(billingPlan.id, billingPlanUpdateAttributes, function(error, response){
+      if (error){
+        console.error(JSON.stringify(error));
+        throw error;
+      } else {
+        console.log('Billing plan created under ID: ' + billingPlan.id);
+      }
+    });
+  }
+});copy

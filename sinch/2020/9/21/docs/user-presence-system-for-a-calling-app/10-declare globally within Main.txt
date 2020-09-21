@@ -1,0 +1,23 @@
+//declare globally within MainActivity
+private SinchClient sinchClient;
+private Button pickupButton;
+private Button hangupButton;
+private Call currentCall;
+
+//in onCreate
+sinchClient = Sinch.getSinchClientBuilder()
+    .context(this)
+    .userId(username)
+    .applicationKey("your-sinch-key")
+    .applicationSecret("your-sinch-secret")
+    .environmentHost("clientapi.sinch.com")
+    .build();
+
+//use the calling feature
+sinchClient.setSupportCalling(true);
+//start listening for incoming calls
+sinchClient.startListeningOnActiveConnection();
+sinchClient.start();
+
+pickupButton = (Button) findViewById(R.id.pickupButton);
+hangupButton = (Button) findViewById(R.id.hangupButton);

@@ -1,0 +1,13 @@
+curl -X POST \
+           -H "Authorization: Bearer {API_TOKEN}" \
+           -H "Content-Type: application/json"  -d '
+            {
+                    "from": "ignored",
+                    "to": [
+                            "{PHONE_NUMBER}"
+                    ],
+                    "delivery_report": "summary",
+                    "callback_url": "https://9d62bf5a.ngrok.io/sms/deliveryReport",
+                    "body": "Hello from Sinch!"
+            }' \
+    "https://api.clxcommunications.com/xms/v1/{SERVICE_PLAN_ID}/batches"

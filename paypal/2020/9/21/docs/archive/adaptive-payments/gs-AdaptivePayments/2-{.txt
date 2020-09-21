@@ -1,0 +1,16 @@
+{
+  "actionType": "PAY", // Payment action type
+  "currencyCode": "USD", // Payment currency code
+  "receiverList": {
+    "receiver": [{
+      "amount": "1.00", // Payment amount
+      "email": "Sandbox-Receiver-eMail" // Receiver's email address
+    }]
+  },
+  "returnUrl": "https://example.com/return", // Redirect URL after approval
+  "cancelUrl": "https://example.com/cancel", // Redirect URL after cancellation
+  "requestEnvelope": {
+    "errorLanguage": "en_US", // Language used to display errors
+    "detailLevel": "ReturnAll" // Error detail level
+  }
+}copy

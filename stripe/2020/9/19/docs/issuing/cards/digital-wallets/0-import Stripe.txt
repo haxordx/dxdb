@@ -1,0 +1,29 @@
+import Stripe
+
+class MyViewController: UIViewController {
+  // ...
+  func beginPushProvisioning() {
+    let config = STPPushProvisioningContext.requestConfiguration(
+      withName: "Jenny Rosen", // the cardholder's name
+      description: "RocketRides Card", // optional; a description of your card
+      last4: "4242", // optional; the last 4 digits of the card
+      brand: .visa // optional; the brand of the card
+    )
+    let controller = PKAddPaymentPassViewController(requestConfiguration: config, delegate: self)
+    self.present(controller!, animated: true, completion: nil)
+  }
+}import Stripe
+
+class MyViewController: UIViewController {
+  // ...
+  func beginPushProvisioning() {
+    let config = STPPushProvisioningContext.requestConfiguration(
+      withName: "Jenny Rosen", // the cardholder's name
+      description: "RocketRides Card", // optional; a description of your card
+      last4: "4242", // optional; the last 4 digits of the card
+      brand: .visa // optional; the brand of the card
+    )
+    let controller = PKAddPaymentPassViewController(requestConfiguration: config, delegate: self)
+    self.present(controller!, animated: true, completion: nil)
+  }
+}

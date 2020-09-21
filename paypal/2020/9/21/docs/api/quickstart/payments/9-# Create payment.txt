@@ -1,0 +1,9 @@
+# Create payment
+if payment.create
+  # Capture redirect url
+  redirect_url = payment.links.find{|v| v.rel == "approval_url" }.href
+
+  # Redirect the customer to redirect_url
+else
+  logger.error payment.error.inspect
+endcopy

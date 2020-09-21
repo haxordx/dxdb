@@ -1,0 +1,9 @@
+GroupResult group;
+for (Page<GroupResult> page : groups.pages()) {
+    for (GroupResult currentGroup : page) {
+        if ("subscribers".equals(currentGroup.name())) {
+            group = currentGroup;
+            break;
+        }
+    }
+}

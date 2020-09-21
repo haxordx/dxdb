@@ -1,0 +1,22 @@
+from paypalrestsdk import BillingAgreement
+from paypalrestsdk import Payment
+
+billing_agreement = BillingAgreement({
+  "name": "Fast Speed Agreement",
+  "description": "Agreement for Fast Speed Plan",
+  "start_date": "2017-02-19T00:37:04Z",
+  "plan": {
+    "id": "P-0PK90852BK763535UTMSTGMQ"
+  },
+  "payer": {
+    "payment_method": "paypal"
+  },
+  "shipping_address": {
+    "line1": "StayBr111idge Suites",
+    "line2": "Cro12ok Street",
+    "city": "San Jose",
+    "state": "CA",
+    "postal_code": "95112",
+    "country_code": "US"
+  }
+})copy

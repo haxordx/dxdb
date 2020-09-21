@@ -1,0 +1,6 @@
+// Since the db connection manager exposed by `sails-mongo` is actually
+// the same as the Mongo client's `db` instance, we can treat it as such.
+var db = Pet.getDatastore().manager;
+
+// Now we can do anything we could do with a Mongo `db` instance:
+var rawMongoCollection = db.collection(Pet.tableName);

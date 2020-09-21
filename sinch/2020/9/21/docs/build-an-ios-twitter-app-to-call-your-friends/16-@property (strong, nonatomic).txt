@@ -1,0 +1,2 @@
+@property (strong, nonatomic) id<SINService> sinch;
+@property (strong, nonatomic) ACAccount *twitterAccount;

@@ -1,0 +1,20 @@
+cardElement.on('change', showCardError);
+
+function showCardError(event) {
+  let displayError = document.getElementById('card-errors');
+  if (event.error) {
+    displayError.textContent = event.error.message;
+  } else {
+    displayError.textContent = '';
+  }
+}
+cardElement.on('change', showCardError);
+
+function showCardError(event) {
+  let displayError = document.getElementById('card-errors');
+  if (event.error) {
+    displayError.textContent = event.error.message;
+  } else {
+    displayError.textContent = '';
+  }
+}

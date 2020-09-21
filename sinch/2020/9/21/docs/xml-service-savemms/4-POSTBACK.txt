@@ -1,0 +1,6 @@
+<POSTBACK>
+    <ORIGIN>MMS_MT</ORIGIN>
+    <CODE>E002</CODE>
+    <MMSID>35674</MMSID>
+    <AUDIONAME>http://www.yoursite.com/audio/1.mp3</AUDIONAME>
+</POSTBACK>

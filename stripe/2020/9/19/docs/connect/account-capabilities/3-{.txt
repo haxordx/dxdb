@@ -1,0 +1,30 @@
+{
+  "id": "card_payments",
+  "object": "capability",
+  "account": "{{CONNECTED_STRIPE_ACCOUNT_ID}}",
+  "requested": false,
+  "requested_at": null,
+  "requirements": {
+    "past_due": [],
+    "currently_due": ["company.tax_id", ...],
+    "eventually_due": [...],
+    "disabled_reason": ...,
+    "current_deadline": ...,
+  },
+  "status": "unrequested"
+}
+{
+  "id": "card_payments",
+  "object": "capability",
+  "account": "{{CONNECTED_STRIPE_ACCOUNT_ID}}",
+  "requested": false,
+  "requested_at": null,
+  "requirements": {
+    "past_due": [],
+    "currently_due": ["company.tax_id", ...],
+    "eventually_due": [...],
+    "disabled_reason": ...,
+    "current_deadline": ...,
+  },
+  "status": "unrequested"
+}

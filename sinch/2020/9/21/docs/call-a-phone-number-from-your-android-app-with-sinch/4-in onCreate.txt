@@ -1,0 +1,11 @@
+//in onCreate
+final SinchClient sinchClient = Sinch.getSinchClientBuilder()
+    .context(this)
+    .userId("current-user-id")
+    .applicationKey("your-app-key")
+    .applicationSecret("your-app-secret")
+    .environmentHost("clientapi.sinch.com")
+    .build();
+
+    sinchClient.setSupportCalling(true);
+    sinchClient.start();

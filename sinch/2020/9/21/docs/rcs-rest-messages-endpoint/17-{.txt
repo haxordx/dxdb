@@ -1,0 +1,4 @@
+{
+  "type": "dial_phone_number",
+  "phone_number": string
+}

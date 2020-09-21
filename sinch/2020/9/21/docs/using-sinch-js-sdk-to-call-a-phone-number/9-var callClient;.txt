@@ -1,0 +1,11 @@
+var callClient;
+var call;
+$('#callNumber').click(function (event) {
+    event.preventDefault();
+    callClient = sinchClient.getCallClient();
+    $('#callNumber').attr('disabled', 'disabled');
+    $('#phoneNumber').attr('disabled', 'disabled');
+    $("#hangupCall").show();
+    call = callClient.callPhoneNumber($('#phoneNumber').val());
+    call.addEventListener(callListeners);
+});

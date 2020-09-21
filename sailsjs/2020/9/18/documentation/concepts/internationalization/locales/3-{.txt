@@ -1,0 +1,4 @@
+{
+    "hello": "hello",
+    "howAreYouToday": "how are you today"
+}

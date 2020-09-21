@@ -1,0 +1,7 @@
+if ([self.call direction] == SINCallDirectionIncoming) {
+    self.AnswerButton.hidden = NO;
+    self.StatusLabel.text = @"";
+} else {
+    self.AnswerButton.hidden = YES;
+    self.StatusLabel.text = @"calling...";
+}

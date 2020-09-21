@@ -1,0 +1,6 @@
+curl https://api.stripe.com/v1/prices \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d unit_amount=100 \
+  -d currency=usd \
+  -d "recurring[interval]"=day \
+  -d product=prod_I04ayp7IIFRsfH

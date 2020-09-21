@@ -1,0 +1,36 @@
+// Not recommended: setting global API key state
+StripeConfiguration.ApiKey = "{{CONNECTED_ACCOUNT_SECRET_KEY}}";
+var options = new CustomerCreateOptions
+{
+  Email = "person@example.edu",
+};
+var service = new CustomerService();
+var customer = service.Create(options);
+
+// Recommended: sending API key with every request
+var options = new CustomerCreateOptions
+{
+  Email = "person@example.edu",
+};
+var requestOptions = new RequestOptions();
+requestOptions.ApiKey = "{{CONNECTED_ACCOUNT_SECRET_KEY}}";
+var service = new CustomerService();
+var customer = service.Create(options);
+// Not recommended: setting global API key state
+StripeConfiguration.ApiKey = "{{CONNECTED_ACCOUNT_SECRET_KEY}}";
+var options = new CustomerCreateOptions
+{
+  Email = "person@example.edu",
+};
+var service = new CustomerService();
+var customer = service.Create(options);
+
+// Recommended: sending API key with every request
+var options = new CustomerCreateOptions
+{
+  Email = "person@example.edu",
+};
+var requestOptions = new RequestOptions();
+requestOptions.ApiKey = "{{CONNECTED_ACCOUNT_SECRET_KEY}}";
+var service = new CustomerService();
+var customer = service.Create(options);

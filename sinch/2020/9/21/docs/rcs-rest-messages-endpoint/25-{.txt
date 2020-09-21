@@ -1,0 +1,14 @@
+{
+  "rcs_unavailable": {
+    "enabled": boolean
+  },
+  "capability_unsupported": {
+    "enabled": boolean
+  },
+  "expired": {
+    "enabled": boolean
+  },
+  "agent_error": {
+    "enabled": boolean
+  }
+}

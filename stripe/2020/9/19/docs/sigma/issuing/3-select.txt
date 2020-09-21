@@ -1,0 +1,19 @@
+select
+  ic.id,
+  ich.email,
+  ic.cancellation_reason,
+  ic.last4
+from issuing_cards ic
+inner join issuing_cardholders ich
+on ic.cardholder_id=ich.id
+where cancellation_reason is not null
+limit 3select
+  ic.id,
+  ich.email,
+  ic.cancellation_reason,
+  ic.last4
+from issuing_cards ic
+inner join issuing_cardholders ich
+on ic.cardholder_id=ich.id
+where cancellation_reason is not null
+limit 3

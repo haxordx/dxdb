@@ -1,0 +1,3 @@
+# Install the PHP library via Composer
+composer require stripe/stripe-php# Install the PHP library via Composer
+composer require stripe/stripe-php

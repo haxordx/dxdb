@@ -1,0 +1,12 @@
+# Verify your integration in this guide by including the metadata parameter
+curl https://api.stripe.com/v1/payment_intents \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d amount=1099 \
+  -d currency=usd \
+  -d "metadata[integration_check]"=accept_a_payment
+# Verify your integration in this guide by including the metadata parameter
+curl https://api.stripe.com/v1/payment_intents \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d amount=1099 \
+  -d currency=usd \
+  -d "metadata[integration_check]"=accept_a_payment

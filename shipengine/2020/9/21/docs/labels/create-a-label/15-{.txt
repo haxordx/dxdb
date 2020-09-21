@@ -1,0 +1,66 @@
+{
+  "label_id": "se-7764944",
+  "status": "completed",
+  "shipment_id": "se-21748537",
+  "ship_date": "2020-04-17T00:00:00Z",
+  "created_at": "2020-04-17T16:22:20.9879673Z",
+  "shipment_cost": {
+    "currency": "usd",
+    "amount": 10.1900
+  },
+  "insurance_cost": {
+    "currency": "usd",
+    "amount": 0.0
+  },
+  "charge_event": "carrier_default",
+  "tracking_number": "9405511899564088683810",
+  "is_return_label": false,
+  "rma_number": null,
+  "is_international": false,
+  "batch_id": "",
+  "carrier_id": "se-169349",
+  "service_code": "usps_priority_mail",
+  "package_code": "package",
+  "voided": false,
+  "voided_at": null,
+  "label_format": "pdf",
+  "label_layout": "4x6",
+  "trackable": true,
+  "label_image_id": null,
+  "carrier_code": "stamps_com",
+  "tracking_status": "in_transit",
+  "label_download": {
+    "pdf": "https://api.shipengine.com/v1/downloads/10/XNGDhq7uZ0CAEt5LOnCxIg/label-7764944.pdf",
+    "png": "https://api.shipengine.com/v1/downloads/10/XNGDhq7uZ0CAEt5LOnCxIg/label-7764944.png",
+    "zpl": "https://api.shipengine.com/v1/downloads/10/XNGDhq7uZ0CAEt5LOnCxIg/label-7764944.zpl",
+    "href": "https://api.shipengine.com/v1/downloads/10/XNGDhq7uZ0CAEt5LOnCxIg/label-7764944.pdf"
+  },
+  "form_download": null,
+  "insurance_claim": null,
+  "packages": [
+    {
+      "package_code": "package",
+      "weight": {
+        "value": 20.00,
+        "unit": "ounce"
+      },
+      "dimensions": {
+        "unit": "inch",
+        "length": 0.0,
+        "width": 0.0,
+        "height": 0.0
+      },
+      "insured_value": {
+        "currency": "usd",
+        "amount": 0.00
+      },
+      "tracking_number": "9405511899564088683810",
+      "label_messages": {
+        "reference1": null,
+        "reference2": null,
+        "reference3": null
+      },
+      "external_package_id": null
+    }
+  ]
+}

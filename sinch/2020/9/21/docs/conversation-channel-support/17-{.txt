@@ -1,0 +1,17 @@
+{
+    "message": {
+        "template_message": {
+            "channel_template": {
+                "WHATSAPP": {
+                    "template_id": "document_template",
+                    "language_code": "en",
+                    "parameters": {
+                        "header[1]document.link": "https://example.com",
+                        "header[1]document.filename": "document.pdf",
+                        "body[1]text": "Value of first parameter"
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+Number[]
+
+[Number]
+    long     - number
+    integer  - groupId
+    string[] - capabilities
+    string?  - applicationKey
+    string   - countryId
+    string   - city
+    string   - country
+    string   - areaCode
+    string?  - expires
+    Money    - cost
+
+eg:

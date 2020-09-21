@@ -1,0 +1,4 @@
+default: {
+   adapter: 'sails-mongo',
+   url: 'mongodb://root@localhost/foo'
+ }

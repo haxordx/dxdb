@@ -1,0 +1,14 @@
+[
+  {
+    "rate_request_id": 501846,
+    "shipment_id": "se-2127226",
+    "status": "working",
+    "created_at": "2019-07-25T15:24:46.657Z"
+  },
+  {
+    "rate_request_id": 501847,
+    "shipment_id": "se-2127227",
+    "status": "working",
+    "created_at": "2019-07-25T15:24:46.657Z"
+  }
+]

@@ -1,0 +1,43 @@
+var options = new SessionCreateOptions {
+    PaymentMethodTypes = new List<string> {
+        "card",
+    },
+    SubscriptionData = new SessionSubscriptionDataOptions {
+        TrialPeriodDays = 30,
+    },
+    LineItems = new List<SessionLineItemOptions>
+    {
+        new SessionLineItemOptions
+        {
+            Price = "{PRICE_ID}",
+            Quantity = 1,
+        },
+    },
+    Mode = "subscription",
+    SuccessUrl = "https://example.com/success",
+    CancelUrl = "https://example.com/cancel",
+};
+
+var service = new SessionService();
+var session = service.Create(options);var options = new SessionCreateOptions {
+    PaymentMethodTypes = new List<string> {
+        "card",
+    },
+    SubscriptionData = new SessionSubscriptionDataOptions {
+        TrialPeriodDays = 30,
+    },
+    LineItems = new List<SessionLineItemOptions>
+    {
+        new SessionLineItemOptions
+        {
+            Price = "{PRICE_ID}",
+            Quantity = 1,
+        },
+    },
+    Mode = "subscription",
+    SuccessUrl = "https://example.com/success",
+    CancelUrl = "https://example.com/cancel",
+};
+
+var service = new SessionService();
+var session = service.Create(options);

@@ -1,0 +1,7 @@
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+
+    CFriend *object = self.objects[indexPath.row];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@", [object friendName]];
+    return cell;
+}

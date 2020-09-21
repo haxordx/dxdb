@@ -1,0 +1,6 @@
+//Create a Java Maven or Gradle project in your directory, then add the following dependency to the project from Maven Central.
+PAYPAL PAYOUTS JAVA SDK:
+ groupId: com.paypal.sdk
+ artifactId: payouts-sdk
+ version: 1.0.0
+copy

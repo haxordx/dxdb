@@ -1,0 +1,4 @@
+pod 'SinchService'
+pod 'FBSDKCoreKit'
+pod 'FBSDKLoginKit'
+pod 'FBSDKShareKit'

@@ -1,0 +1,17 @@
+curl https://api-3t.sandbox.paypal.com/nvp \
+  -s \
+  --insecure \
+  -d USER AccountUsername         # Caller user name \
+  -d PWD AccountPassword          # Caller password \
+  -d SIGNATURE AccountSignature   # Caller signature \
+  -d METHOD=MassPay \
+  -d VERSION=90 \
+  -d RECEIVERTYPE=EmailAddress \
+  -d CURRENCYCODE=USD \
+  -d L_EMAIL0=payee1@example.com  # The first payout starts with "0" \
+  -d L_AMT0=35.95 \
+  -d L_EMAIL1=payee2@example.com \
+  -d L_AMT1=21.00 \
+  -d L_EMAIL2=payee3@example.com \
+  -d L_AMT2=45.50
+copy

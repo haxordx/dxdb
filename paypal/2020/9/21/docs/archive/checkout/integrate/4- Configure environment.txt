@@ -1,0 +1,7 @@
+// Configure environment
+env: 'production',
+  client:
+    {
+      production: 'LIVE_CLIENT_ID' //Enter your live client ID here
+    }
+jscopy

@@ -1,0 +1,5 @@
+HTTP Status Code: 401 (Unauthorized)
+{
+    "errorCode":40102,
+    "message":"Invalid Signature"
+}

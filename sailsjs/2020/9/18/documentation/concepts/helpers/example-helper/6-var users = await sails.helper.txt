@@ -1,0 +1,4 @@
+var users = await sails.helpers.getRecentUsers(10)
+.intercept('noUsersFound', ()=>{
+  return new Error('Inconceivably, no active users were found for that timeframe.');
+});

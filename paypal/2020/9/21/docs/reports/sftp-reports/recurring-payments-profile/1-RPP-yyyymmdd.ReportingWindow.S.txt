@@ -1,0 +1,1 @@
+RPP-yyyymmdd.ReportingWindow.SequenceNumber.TotalFiles.Version.Formatcopy

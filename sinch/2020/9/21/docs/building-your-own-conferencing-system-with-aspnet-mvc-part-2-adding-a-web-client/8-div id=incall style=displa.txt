@@ -1,0 +1,20 @@
+<div id="incall" style="display: none">
+    <div class="col-md-12">
+        <div class="lead text-center" id="timer">00:00:00</div>
+    </div>
+    <div class="row text-center">
+        <div class="col-md-2"></div>
+        <div class="col-md-2 text-center">
+            <button id="hangup" class="btn btn-fab btn-raised btn-material-red">
+                <i class="mdi-communication-call-end"></i>
+            </button>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-2">
+            <button id="mute" class="btn btn-fab btn-raised btn-material-grey">
+                <i id="micicon" class="mdi-av-mic"></i>
+            </button>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>

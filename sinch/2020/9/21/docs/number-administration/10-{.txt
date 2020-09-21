@@ -1,0 +1,5 @@
+{
+   "id":"00a3ffb1-0808-4dd4-9c7d-e4383d82e445",
+   "secret":"bRo76GRddEyetgJDTgkLHA==",
+   "expiresIn":172800
+}

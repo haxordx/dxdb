@@ -1,0 +1,5 @@
+id<SINClient> client = [Sinch clientWithApplicationKey:@"<application key>"
+                                       environmentHost:@"clientapi.sinch.com"
+                                                userId:@"<user id>"];
+
+[client enableManagedPushNotifications];

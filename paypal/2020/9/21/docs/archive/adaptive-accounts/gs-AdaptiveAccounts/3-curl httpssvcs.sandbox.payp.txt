@@ -1,0 +1,40 @@
+curl https://svcs.sandbox.paypal.com/AdaptiveAccounts/CreateAccount \
+  -s \
+  --insecure \
+  -H "X-PAYPAL-SECURITY-USERID: caller_1312486258_biz_api1.gmail.com" \
+  -H "X-PAYPAL-SECURITY-PASSWORD: 1312486294" \
+  -H "X-PAYPAL-SECURITY-SIGNATURE: AbtI7HV1xB428VygBUcIhARzxch4AL65.T18CTeylixNNxDZUu0iO87e" \
+  -H "X-PAYPAL-REQUEST-DATA-FORMAT: JSON" \
+  -H "X-PAYPAL-RESPONSE-DATA-FORMAT: JSON" \
+  -H "X-PAYPAL-APPLICATION-ID: APP-80W284485P519543T" \
+  -H "X-PAYPAL-DEVICE-IPADDRESS: 192.0.2.0" \
+  -H "X-PAYPAL-SANDBOX-EMAIL-ADDRESS: caller_1312486258_biz@gmail.com" \
+  -d '{
+  "sandboxEmailAddress":"sender_1312486456_per@gmail.com",
+  "accountType":"PERSONAL",
+  "name":{
+    "firstName":"Lenny",
+    "lastName":"Riceman"
+  },
+  "address":{
+    "line1":"123 Main St",
+    "city":"Austin",
+    "state":"TX",
+    "postalCode":"78759",
+    "countryCode":"US"
+  },
+  "citizenshipCountryCode":"US",
+  "contactPhoneNumber":"512-555-5555",
+  "dateOfBirth":"1968-01-01Z",
+  "createAccountWebOptions":{
+    "returnUrl":"https://example.com/success.html"
+  },
+  "currencyCode":"USD",
+  "emailAddress":"lr12345@example.com",
+  "preferredLanguageCode":"en_US",
+  "registrationType":"Web",
+  "requestEnvelope":{
+    "errorLanguage":"en_US"
+  }
+}'
+copy

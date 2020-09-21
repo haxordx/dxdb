@@ -1,0 +1,12 @@
+{
+    "from": "12345",
+    "to": [
+        "123456789",
+        "987654321"
+    ],
+    "body": "Hi there! How are you?",
+    "id": "{batch_id}",
+    "created_at": "2014-10-02T09:34:28.542Z",
+    "modified_at": "2014-10-02T09:34:28.542Z",
+    "canceled": "False"
+}

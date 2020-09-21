@@ -1,0 +1,14 @@
+curl https://api.stripe.com/v1/topups \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d destination_balance=issuing \
+  -d amount=2000 \
+  -d currency=usd \
+  -d description="Top-up for Issuing, week of September 20th" \
+  -d statement_descriptor=Top-up
+curl https://api.stripe.com/v1/topups \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d destination_balance=issuing \
+  -d amount=2000 \
+  -d currency=usd \
+  -d description="Top-up for Issuing, week of September 20th" \
+  -d statement_descriptor=Top-up

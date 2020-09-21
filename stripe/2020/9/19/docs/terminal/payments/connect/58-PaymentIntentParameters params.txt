@@ -1,0 +1,40 @@
+PaymentIntentParameters params = new PaymentIntentParameters.Builder()
+  .setAmount(1000)
+  .setCurrency("usd")
+  .setOnBehalfOf("{CONNECTED_ACCOUNT_ID}")
+  .setTransferDataDestination("{CONNECTED_ACCOUNT_ID}")
+  .setApplicationFeeAmount(200)
+  .build();
+
+Terminal.getInstance().createPaymentIntent(params, new PaymentIntentCallback() {
+    @Override
+    public void onSuccess(PaymentIntent paymentIntent) {
+      // Placeholder for collecting a payment method with paymentIntent
+    }
+
+    @Override
+    public void onFailure(TerminalException exception) {
+      // Placeholder for handling exception
+    }
+  }
+})
+PaymentIntentParameters params = new PaymentIntentParameters.Builder()
+  .setAmount(1000)
+  .setCurrency("usd")
+  .setOnBehalfOf("{CONNECTED_ACCOUNT_ID}")
+  .setTransferDataDestination("{CONNECTED_ACCOUNT_ID}")
+  .setApplicationFeeAmount(200)
+  .build();
+
+Terminal.getInstance().createPaymentIntent(params, new PaymentIntentCallback() {
+    @Override
+    public void onSuccess(PaymentIntent paymentIntent) {
+      // Placeholder for collecting a payment method with paymentIntent
+    }
+
+    @Override
+    public void onFailure(TerminalException exception) {
+      // Placeholder for handling exception
+    }
+  }
+})

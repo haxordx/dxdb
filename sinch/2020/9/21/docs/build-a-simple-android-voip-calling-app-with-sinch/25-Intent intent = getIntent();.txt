@@ -1,0 +1,3 @@
+Intent intent = getIntent();
+callerId = intent.getStringExtra("callerId");
+recipientId = intent.getStringExtra("recipientId");

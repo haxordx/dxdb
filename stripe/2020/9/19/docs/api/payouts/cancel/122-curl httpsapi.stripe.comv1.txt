@@ -1,0 +1,3 @@
+curl https://api.stripe.com/v1/payouts/po_1HTG5G2eZvKYlo2C1n4wWV74/cancel \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -X POST

@@ -1,0 +1,14 @@
+[HttpPost("retrieve-customer-payment-method")]
+public ActionResult<PaymentMethod> RetrieveCustomerPaymentMethod([FromBody] RetrieveCustomerPaymentMethodRequest req)
+{
+    var service = new PaymentMethodService();
+    var paymentMethod = service.Get(req.PaymentMethod);
+    return paymentMethod;
+}
+[HttpPost("retrieve-customer-payment-method")]
+public ActionResult<PaymentMethod> RetrieveCustomerPaymentMethod([FromBody] RetrieveCustomerPaymentMethodRequest req)
+{
+    var service = new PaymentMethodService();
+    var paymentMethod = service.Get(req.PaymentMethod);
+    return paymentMethod;
+}

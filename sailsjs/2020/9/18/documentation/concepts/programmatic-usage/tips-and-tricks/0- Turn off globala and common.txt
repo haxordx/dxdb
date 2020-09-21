@@ -1,0 +1,9 @@
+// Turn off globala and commonly unused hooks in programmatic apps
+mySailsApp.load({
+  hooks: {
+     grunt: false,
+     sockets: false,
+     pubsub: false
+  },
+  globals: false
+})

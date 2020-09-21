@@ -1,0 +1,6 @@
+const intent = await stripe.paymentIntents.confirm('{{PAYMENT_INTENT_ID}}', {
+  return_url: 'https://example.com/return_url',
+});
+const intent = await stripe.paymentIntents.confirm('{{PAYMENT_INTENT_ID}}', {
+  return_url: 'https://example.com/return_url',
+});

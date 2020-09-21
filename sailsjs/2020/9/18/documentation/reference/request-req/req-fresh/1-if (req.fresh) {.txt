@@ -1,0 +1,4 @@
+if (req.fresh) {
+  // The user-agent is asking for a more up-to-date version of the requested resource.
+  // Let's hit the database to get some stuff and send it back.
+}

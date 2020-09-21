@@ -1,0 +1,5 @@
+CallClient callClient = sinchClient.getCallClient();
+
+callClient.addEventListener({
+    onIncomingCall: function(incomingCall) {...}
+});

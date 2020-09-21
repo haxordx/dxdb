@@ -1,0 +1,9 @@
+// Readers will automatically prompt for the update if there is one available. There are two events, on the Reader object, that will fire after an update.
+pphwebsdk.Reader.subscribe
+  .firmwareUpdateSuccess(function (upgradedDevice) {
+    // Reader firmware update was a success
+  })
+  .firmwareUpdateFailure(function (err) {
+    // Reader firmware update failed - handle accordingly
+  });
+javascriptcopy

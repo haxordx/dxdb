@@ -1,0 +1,4 @@
+[RequestBody]
+    string[] - numbers
+    string - applicationkey
+    string - capability

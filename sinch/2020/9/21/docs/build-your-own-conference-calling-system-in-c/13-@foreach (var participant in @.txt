@@ -1,0 +1,16 @@
+@foreach (var participant in @Model.Participants) {
+   <tr>
+       <td>
+           @participant.Cli
+       </td>
+       <td>@participant.Muted</td>
+       <td>@TimeSpan.FromSeconds(participant.Duration)</td>
+       <td>
+           @*New code *@
+          @{
+           string muteAction = (participant.Muted ? "Unmute" : "Mute");
+           }
+           @Html.ActionLink(muteAction, muteAction, new {id = Model.Conference.Id, conferenceId = @Model.Conference.ConferenceId, participant = participant.Id}) |
+           @Html.ActionLink("Kick", "Kick", new {id = Model.Conference.Id, conferenceId = @Model.Conference.ConferenceId, participant = participant.Id})
+       </td>
+   </tr>

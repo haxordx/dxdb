@@ -1,0 +1,23 @@
+Terminal.getInstance().processPayment(paymentIntent,
+  new PaymentIntentCallback() {
+    @Override
+    public void onSuccess(PaymentIntent paymentIntent) {
+      // Placeholder for notifying your backend to capture paymentIntent.id
+    }
+
+    @Override
+    public void onFailure(TerminalException exception) {
+      // Placeholder for handling the exception
+    }
+});Terminal.getInstance().processPayment(paymentIntent,
+  new PaymentIntentCallback() {
+    @Override
+    public void onSuccess(PaymentIntent paymentIntent) {
+      // Placeholder for notifying your backend to capture paymentIntent.id
+    }
+
+    @Override
+    public void onFailure(TerminalException exception) {
+      // Placeholder for handling the exception
+    }
+});

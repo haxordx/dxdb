@@ -1,0 +1,4 @@
+var burnedBooks = await Book.destroy({
+  controversiality: { '>': 0.9 }
+}).fetch();
+sails.log('Deleted books:', burnedBooks);

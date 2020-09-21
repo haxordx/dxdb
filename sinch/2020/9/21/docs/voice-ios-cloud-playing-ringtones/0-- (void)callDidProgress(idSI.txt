@@ -1,0 +1,5 @@
+- (void)callDidProgress:(id<SINCall>)call {
+    NSString* soundFilePath = [[NSBundle mainBundle] pathForResource:@"my_progress_tone" ofType:@"wav"];
+    id<SINAudioController> audioController = [self.sinchClient audioController];
+    [audioController startPlayingSoundFile:soundFilePath loop:NO];
+}

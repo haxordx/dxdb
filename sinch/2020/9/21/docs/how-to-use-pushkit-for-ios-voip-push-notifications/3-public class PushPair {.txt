@@ -1,0 +1,6 @@
+public class PushPair {
+    [JsonProperty("pushData")]
+    public string PushData { get; set; }
+    [JsonProperty("pushPayload")]
+    public string PushPayload { get; set; }
+}

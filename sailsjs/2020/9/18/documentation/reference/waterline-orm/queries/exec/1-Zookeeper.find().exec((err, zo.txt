@@ -1,0 +1,10 @@
+Zookeeper.find().exec((err, zookeepers)=>{
+  if (err) {
+    return res.serverError(err);
+  }
+
+  // would you look at all those zookeepers?
+  return res.json(zookeepers);
+});
+//
+// (don't put code out here)

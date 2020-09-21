@@ -1,0 +1,4 @@
+stripe listen --forward-to localhost:4242/webhook
+Ready! Your webhook signing secret is '{{WEBHOOK_SIGNING_SECRET}}' (^C to quit)
+stripe listen --forward-to localhost:4242/webhook
+Ready! Your webhook signing secret is '{{WEBHOOK_SIGNING_SECRET}}' (^C to quit)

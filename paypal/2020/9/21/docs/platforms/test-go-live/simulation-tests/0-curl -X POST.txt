@@ -1,0 +1,11 @@
+curl -X POST \
+  https://api.sandbox.paypal.com/v2/invoicing/invoices \
+  -H 'Authorization: Bearer <Access Token>' \
+  -H 'Content-Type: application/json' \
+  -d '{
+          "detail":
+          {
+                    "reference": "ERRINV002"
+          }
+}'
+bashcopy

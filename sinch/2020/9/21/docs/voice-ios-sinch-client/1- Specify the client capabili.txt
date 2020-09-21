@@ -1,0 +1,4 @@
+// Specify the client capabilities.
+[sinchClient setSupportCalling:YES];
+
+[sinchClient enableManagedPushNotifications];

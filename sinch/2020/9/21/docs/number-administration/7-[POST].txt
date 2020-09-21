@@ -1,0 +1,4 @@
+[POST]
+
+URL:
+https://api.sinch.com/v1/instance

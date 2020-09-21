@@ -1,0 +1,1 @@
+var average = await Something.avg(numericAttrName, criteria);

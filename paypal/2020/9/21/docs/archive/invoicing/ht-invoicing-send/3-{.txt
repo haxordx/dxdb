@@ -1,0 +1,11 @@
+{
+  "responseEnvelope": {
+    "ack": "Success",
+    // ...
+  },
+  "invoiceID": "idNumber",
+  "invoiceNumber": "1192",
+  "invoiceURL": "PP-invoiceURL",
+  "totalAmount":"4000"
+}
+copy

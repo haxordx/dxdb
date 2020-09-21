@@ -1,0 +1,8 @@
+$('#callout').bind('click', function(event) {
+    event.preventDefault();
+    $.getJSON('CallOut?number=' + $('#number').val() + 
+    '&conferenceId=@Model.Conference.ConferenceId', 
+    null, function(data) {
+        //todo, add to list of participants
+    });
+});

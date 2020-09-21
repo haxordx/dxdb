@@ -1,0 +1,44 @@
+import stripe
+import json
+
+from flask import Flask, request, render_template
+
+app = Flask(__name__, static_folder=".",
+            static_url_path="", template_folder=".")
+
+# Set your secret key. Remember to switch to your live secret key in production!
+# See your keys here: https://dashboard.stripe.com/account/apikeys
+stripe.api_key = 'sk_test_4eC39HqLyjWDarjtT1zdp7dc'
+
+@app.route('/wallet')
+def wallet():
+  setup_intent = stripe.SetupIntent.create(
+    payment_method_types=['au_becs_debit'],
+  )
+  client_secret = setup_intent.client_secret
+  # Pass the client secret to the client
+
+if __name__ == '__main__':
+    app.run()
+import stripe
+import json
+
+from flask import Flask, request, render_template
+
+app = Flask(__name__, static_folder=".",
+            static_url_path="", template_folder=".")
+
+# Set your secret key. Remember to switch to your live secret key in production!
+# See your keys here: https://dashboard.stripe.com/account/apikeys
+stripe.api_key = 'sk_test_4eC39HqLyjWDarjtT1zdp7dc'
+
+@app.route('/wallet')
+def wallet():
+  setup_intent = stripe.SetupIntent.create(
+    payment_method_types=['au_becs_debit'],
+  )
+  client_secret = setup_intent.client_secret
+  # Pass the client secret to the client
+
+if __name__ == '__main__':
+    app.run()

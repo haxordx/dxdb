@@ -1,0 +1,2 @@
+// Get user's current region by carrier info
+String defaultRegion = PhoneNumberUtils.getDefaultCountryIso();

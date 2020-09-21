@@ -1,0 +1,10 @@
+PPRetailManuallyEnteredCard *cardInfo = [[PPRetailManuallyEnteredCard alloc] init];
+cardInfo.setCardNumber = @"1234123412341234";
+cardInfo.setExpiration = @"MMYYYY";
+cardInfo.setCVV = @"123";
+cardInfo.setPostalCode = @"12345";
+
+// Be sure to add the following options before calling `[tc beginPayment:options]`
+options.paymentType = PPRetailTransactionBeginOptionsPaymentTypeskeyIn
+options.manualCard = cardInfo
+copy

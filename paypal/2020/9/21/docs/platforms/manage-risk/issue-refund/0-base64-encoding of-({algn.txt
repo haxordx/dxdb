@@ -1,0 +1,2 @@
+<base64-encoding of-({"alg":"none"})>.<base64-encoding-of-({"iss":"client_id","payer_id":"payer_id"})>.
+copy

@@ -1,0 +1,60 @@
+[HttpPost("retrieve-upcoming-invoice")]
+public ActionResult<Invoice> RetrieveUpcomingInvoice([FromBody] RetrieveUpcomingInvoiceRequest req)
+{
+    var service = new SubscriptionService();
+    var subscription = service.Get(req.Subscription);
+
+    var invoiceService = new InvoiceService();
+    var options = new UpcomingInvoiceOptions
+    {
+        Customer = req.Customer,
+        Subscription = req.Subscription,
+        SubscriptionItems = new List<InvoiceSubscriptionItemOptions>
+        {
+            new InvoiceSubscriptionItemOptions
+            {
+                Id = subscription.Items.Data[0].Id,
+                Deleted = true,
+                ClearUsage = true,
+            },
+            new InvoiceSubscriptionItemOptions
+            {
+                // TODO: This should be Price, but isn't in Stripe.net yet.
+                Plan = Environment.GetEnvironmentVariable(req.NewPrice),
+                Deleted = false,
+            },
+        }
+    };
+    Invoice upcoming = invoiceService.Upcoming(options);
+    return upcoming;
+}
+[HttpPost("retrieve-upcoming-invoice")]
+public ActionResult<Invoice> RetrieveUpcomingInvoice([FromBody] RetrieveUpcomingInvoiceRequest req)
+{
+    var service = new SubscriptionService();
+    var subscription = service.Get(req.Subscription);
+
+    var invoiceService = new InvoiceService();
+    var options = new UpcomingInvoiceOptions
+    {
+        Customer = req.Customer,
+        Subscription = req.Subscription,
+        SubscriptionItems = new List<InvoiceSubscriptionItemOptions>
+        {
+            new InvoiceSubscriptionItemOptions
+            {
+                Id = subscription.Items.Data[0].Id,
+                Deleted = true,
+                ClearUsage = true,
+            },
+            new InvoiceSubscriptionItemOptions
+            {
+                // TODO: This should be Price, but isn't in Stripe.net yet.
+                Plan = Environment.GetEnvironmentVariable(req.NewPrice),
+                Deleted = false,
+            },
+        }
+    };
+    Invoice upcoming = invoiceService.Upcoming(options);
+    return upcoming;
+}

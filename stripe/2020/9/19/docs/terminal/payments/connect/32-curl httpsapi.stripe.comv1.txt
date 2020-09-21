@@ -1,0 +1,16 @@
+curl https://api.stripe.com/v1/terminal/locations \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d display_name="{CONNECTED_ACCOUNT_NAME}" \
+  -d "address[line1]"="1272 Valencia Street" \
+  -d "address[city]"="San Francisco" \
+  -d "address[state]"=CA \
+  -d "address[country]"=US \
+  -d "address[postal_code]"=94110
+curl https://api.stripe.com/v1/terminal/locations \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d display_name="{CONNECTED_ACCOUNT_NAME}" \
+  -d "address[line1]"="1272 Valencia Street" \
+  -d "address[city]"="San Francisco" \
+  -d "address[state]"=CA \
+  -d "address[country]"=US \
+  -d "address[postal_code]"=94110

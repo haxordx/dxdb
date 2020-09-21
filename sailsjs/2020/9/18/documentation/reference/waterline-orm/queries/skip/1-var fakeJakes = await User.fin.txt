@@ -1,0 +1,4 @@
+var fakeJakes = await User.find({ name: 'Jake' });
+.skip(1);
+
+return res.json(fakeJakes);

@@ -1,0 +1,51 @@
+terminal.processPayment(paymentIntent).then(function(processResult) {
+    if (processResult.error) {
+        // Handle confirmation error
+    } else if (processResult.paymentIntent) {
+        if (processResult.paymentIntent.status !== "succeeded") {
+            // This code branch *won't* be called for Interac payments.
+            // Capture the PaymentIntent from your backend and
+            // mark the payment as complete. Here we use a hypothetical
+            // client object, but you might choose to use webhooks or
+            // trigger your captures another way.
+            return this.apiClient.capturePaymentIntent({
+                paymentIntentId: processResult.paymentIntent.id
+            });
+        } else {
+            console.log("Single-message payment successful!");
+            return processResult;
+        }
+    }
+}).then(function(captureResult) {
+    console.log("Payment Successful!");
+    return captureResult;
+}, function(captureError) {
+    // Your backend might encounter errors while capturing the PaymentIntent.
+    // You might want to surface these API errors to your application and
+    // catch them here. See stripe.com/docs/api/errors for more information.
+});terminal.processPayment(paymentIntent).then(function(processResult) {
+    if (processResult.error) {
+        // Handle confirmation error
+    } else if (processResult.paymentIntent) {
+        if (processResult.paymentIntent.status !== "succeeded") {
+            // This code branch *won't* be called for Interac payments.
+            // Capture the PaymentIntent from your backend and
+            // mark the payment as complete. Here we use a hypothetical
+            // client object, but you might choose to use webhooks or
+            // trigger your captures another way.
+            return this.apiClient.capturePaymentIntent({
+                paymentIntentId: processResult.paymentIntent.id
+            });
+        } else {
+            console.log("Single-message payment successful!");
+            return processResult;
+        }
+    }
+}).then(function(captureResult) {
+    console.log("Payment Successful!");
+    return captureResult;
+}, function(captureError) {
+    // Your backend might encounter errors while capturing the PaymentIntent.
+    // You might want to surface these API errors to your application and
+    // catch them here. See stripe.com/docs/api/errors for more information.
+});

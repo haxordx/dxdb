@@ -1,0 +1,11 @@
+Article.update({
+  category: 'health-and-wellness',
+  status: 'draft'
+})
+.set({
+  status: 'live'
+})
+.fetch()
+.exec(function(err, updatedRecords){
+  //...
+});

@@ -1,0 +1,3 @@
+[sinchClient stopListeningOnActiveConnection];
+[sinchClient terminateGracefully]; // or invoke -[SINClient terminate]
+sinchClient = nil;

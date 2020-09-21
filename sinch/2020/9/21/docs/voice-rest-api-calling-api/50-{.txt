@@ -1,0 +1,11 @@
+{
+  "method": "ttsCallout",
+  "ttsCallout": {
+    "cli": "46000000000",
+    "destination": { "type": "number", "endpoint": "46000000001" },
+    "domain": "pstn",
+    "custom": "customData",
+    "locale": "en-US",
+    "text": "Hello, this is a synthesized message."
+  }
+}

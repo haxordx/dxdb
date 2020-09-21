@@ -1,0 +1,15 @@
+User.findOne({
+  email: req.param('email')
+})
+.then(function (user){
+  if(!user) { return res.notFound(); }
+  return res.json(user);
+})
+// If there was some kind of usage / validation error
+.catch({ name: 'UsageError' }, function (err) {
+  return res.badRequest(err);
+})
+// If something completely unexpected happened.
+.catch(function (err) {
+  return res.serverError(err);
+});

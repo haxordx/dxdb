@@ -1,0 +1,41 @@
+import java.util.HashMap;
+import java.util.Map;
+
+import com.stripe.model.PaymentIntent;
+
+import spark.ModelAndView;
+
+import static spark.Spark.get;
+
+public class StripeJavaQuickStart {
+    public static void main(String[] args) {
+        get("/checkout", (request, response) -> {
+          PaymentIntent intent = // ... Fetch or create the PaymentIntent
+
+          Map map = new HashMap();
+          map.put("client_secret", intent.getClientSecret());
+
+          return new ModelAndView(map, "checkout.hbs");
+        }, new HandlebarsTemplateEngine());
+    }
+}import java.util.HashMap;
+import java.util.Map;
+
+import com.stripe.model.PaymentIntent;
+
+import spark.ModelAndView;
+
+import static spark.Spark.get;
+
+public class StripeJavaQuickStart {
+    public static void main(String[] args) {
+        get("/checkout", (request, response) -> {
+          PaymentIntent intent = // ... Fetch or create the PaymentIntent
+
+          Map map = new HashMap();
+          map.put("client_secret", intent.getClientSecret());
+
+          return new ModelAndView(map, "checkout.hbs");
+        }, new HandlebarsTemplateEngine());
+    }
+}

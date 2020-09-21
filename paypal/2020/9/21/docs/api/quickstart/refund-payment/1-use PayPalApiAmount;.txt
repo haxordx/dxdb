@@ -1,0 +1,10 @@
+use PayPal\Api\Amount;
+use PayPal\Api\Refund;
+use PayPal\Api\Sale;
+
+$amt = new Amount();
+$amt->setTotal(1.31)
+  ->setCurrency('USD');
+
+$refund = new Refund();
+$refund->setAmount($amt);copy

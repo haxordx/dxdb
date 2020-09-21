@@ -1,0 +1,3 @@
+<h1> <%= __('Hello') %> </h1>
+<h1> <%= __('Hello %s, how are you today?', 'Mike') %> </h1>
+<p> <%= i18n('That\'s right-- you can use either i18n() or __()') %> </p>

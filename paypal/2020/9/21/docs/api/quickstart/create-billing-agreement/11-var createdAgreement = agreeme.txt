@@ -1,0 +1,11 @@
+var createdAgreement = agreement.Create(apiContext);
+
+var links = createdAgreement.links.GetEnumerator();
+while (links.MoveNext())
+{
+  var link = links.Current;
+  if (link.rel.ToLower().Trim().Equals("approval_url"))
+  {
+    this.flow.RecordRedirectUrl("Redirect to PayPal to approve billing agreement...", link.href);
+  }
+}copy

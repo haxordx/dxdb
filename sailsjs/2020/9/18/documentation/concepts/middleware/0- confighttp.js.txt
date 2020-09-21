@@ -1,0 +1,45 @@
+// config/http.js
+module.exports.http = {
+
+  middleware: {
+
+    order: [
+      'cookieParser',
+      'session',
+      'passportInit',            // <==== If you're using "passport", you'll want to have its two
+      'passportSession',         // <==== middleware functions run after "session".
+      'bodyParser',
+      'compress',
+      'foobar',                  // <==== We can put other, custom HTTP middleware like this wherever we want.
+      'poweredBy',
+      'router',
+      'www',
+      'favicon',
+    ],
+
+
+    // An example of a custom HTTP middleware function:
+    foobar: (function (){
+      console.log('Initializing `foobar` (HTTP middleware)...');
+      return function (req,res,next) {
+        console.log('Received HTTP request: '+req.method+' '+req.path);
+        return next();
+      };
+    })(),
+
+    // An example of a couple of 3rd-party HTTP middleware functions:
+    // (notice that this time we're using an existing middleware library from npm)
+    passportInit    : (function (){
+      var passport = require('passport');
+      var reqResNextFn = passport.initialize();
+      return reqResNextFn;
+    })(),
+
+    passportSession : (function (){
+      var passport = require('passport');
+      var reqResNextFn = passport.session();
+      return reqResNextFn;
+    })()
+
+  },
+}

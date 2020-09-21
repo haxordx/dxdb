@@ -1,0 +1,2 @@
+CContact *object = self.objects[indexPath.row];
+cell.textLabel.text = [NSString stringWithFormat:@"%@ %@", [object firstName], [object lastName]];

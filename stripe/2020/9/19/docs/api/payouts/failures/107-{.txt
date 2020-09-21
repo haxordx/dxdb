@@ -1,0 +1,22 @@
+{
+  "id": "po_1HTGCW2eZvKYlo2C1wDg5j49",
+  "object": "payout",
+  "amount": 1100,
+  "arrival_date": 1600560884,
+  "automatic": true,
+  "balance_transaction": "txn_1032HU2eZvKYlo2CEPtcnUvl",
+  "created": 1600560884,
+  "currency": "usd",
+  "description": "STRIPE PAYOUT",
+  "destination": "ba_1HTGCW2eZvKYlo2CPH3VOePO",
+  "failure_balance_transaction": null,
+  "failure_code": null,
+  "failure_message": null,
+  "livemode": false,
+  "metadata": {},
+  "method": "standard",
+  "source_type": "card",
+  "statement_descriptor": null,
+  "status": "in_transit",
+  "type": "bank_account"
+}

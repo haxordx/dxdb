@@ -1,0 +1,6 @@
+module.exports.policies = {
+  UserController: {
+    // Apply the 'isLoggedIn' policy to the 'update' action of 'UserController'
+    update: 'isLoggedIn'
+  }
+};

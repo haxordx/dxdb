@@ -1,0 +1,14 @@
+import requests
+
+url = "https://api.shipengine.com/v1/rates"
+
+payload = "{\n  \"rate_options\": {\n    \"carrier_ids\": [\"se-12354\", \"se-5678\"],\n    \"calculate_tax_amount\": true\n  },\n  \"shipment\": {\n    \"customs\": {\n      \"contents\": \"merchandise\",\n      \"non_delivery\": \"treat_as_abandoned\",\n      \"customs_items\": [{\n        \"harmonized_tariff_code\": \"0901.21\",\n        \"country_of_manufacture\": \"US\",\n        \"country_of_origin\": \"US\",\n        \"quantity\": 2,\n        \"value\": {\n          \"currency\": \"usd\",\n          \"amount\": 100\n        }\n      }]\n    },\n    \"ship_from\": {\n      \"company_name\": \"Example Corp.\",\n      \"name\": \"John Doe\",\n      \"phone\": \"111-111-1111\",\n      \"address_line1\": \"4009 Marathon Blvd\",\n      \"address_line2\": \"Suite 300\",\n      \"city_locality\": \"Austin\",\n      \"state_province\": \"TX\",\n      \"postal_code\": \"78756\",\n      \"country_code\": \"US\",\n      \"address_residential_indicator\": \"no\"\n    },\n    \"ship_to\": {\n      \"name\": \"Amanda Miller\",\n      \"phone\": \"20 5555 5555\",\n      \"address_line1\": \"77 Netherpark Crescent\",\n      \"address_line2\": \"Suite 100\",\n      \"city_locality\": \"London\",\n      \"state_province\": \"N/A\",\n      \"postal_code\": \"ABC 123\",\n      \"country_code\": \"GB\",\n      \"address_residential_indicator\": \"yes\"\n    },\n    \"packages\": [\n      {\n        \"weight\": {\n          \"value\": 9.6,\n          \"unit\": \"ounce\"\n        },\n        \"dimensions\": {\n          \"unit\": \"inch\",\n          \"length\": 12.0,\n          \"width\": 7.1,\n          \"height\": 6.0\n        }\n      }\n    ]\n  }\n}"
+headers = {
+  'Host': 'api.shipengine.com',
+  'API-Key': '__YOUR_API_KEY_HERE__',
+  'Content-Type': 'application/json'
+}
+
+response = requests.request("POST", url, headers=headers, data = payload)
+
+print(response.text.encode('utf8'))

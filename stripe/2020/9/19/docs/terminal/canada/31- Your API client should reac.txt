@@ -1,0 +1,53 @@
+// Your API client should reach out to your backend, which will use the
+// Refunds server-side API to attempt to refund the charge.
+APIClient.shared.refundCharge(chargeId: "ch_1FLyVV2eZvKYlo2C9Z8rmX02") { error, refund in
+    if error.message == "invalid_request_error" {
+        // Server-side refund failed, in-person refund likely necessary
+        let refundParameters = SCPRefundParameters("ch_1FLyVV2eZvKYlo2C9Z8rmX02", amount: 2000, currency: "cad")
+
+        self.refundCancelable = Terminal.shared.collectRefundPaymentMethod(refundParams) { collectError in
+            if let error = collectError {
+                // Handle collectRefundPaymentMethod error
+                print("collectRefundPaymentMethod failed. \(error)")
+            } else {
+                // Process refund
+                Terminal.shared.processRefund { processedRefund, processError in
+                    if let error = processError {
+                        print("Process refund failed. \(error)")
+                        // Handle process error
+                    } else if let refund = processedRefund, refund.status == .succeeded {
+                        print("Process refund successful! \(refund)")
+                    } else {
+                        print("Refund pending or unsuccessful.")
+                    }
+                }
+            }
+        }
+    }
+}// Your API client should reach out to your backend, which will use the
+// Refunds server-side API to attempt to refund the charge.
+APIClient.shared.refundCharge(chargeId: "ch_1FLyVV2eZvKYlo2C9Z8rmX02") { error, refund in
+    if error.message == "invalid_request_error" {
+        // Server-side refund failed, in-person refund likely necessary
+        let refundParameters = SCPRefundParameters("ch_1FLyVV2eZvKYlo2C9Z8rmX02", amount: 2000, currency: "cad")
+
+        self.refundCancelable = Terminal.shared.collectRefundPaymentMethod(refundParams) { collectError in
+            if let error = collectError {
+                // Handle collectRefundPaymentMethod error
+                print("collectRefundPaymentMethod failed. \(error)")
+            } else {
+                // Process refund
+                Terminal.shared.processRefund { processedRefund, processError in
+                    if let error = processError {
+                        print("Process refund failed. \(error)")
+                        // Handle process error
+                    } else if let refund = processedRefund, refund.status == .succeeded {
+                        print("Process refund successful! \(refund)")
+                    } else {
+                        print("Refund pending or unsuccessful.")
+                    }
+                }
+            }
+        }
+    }
+}

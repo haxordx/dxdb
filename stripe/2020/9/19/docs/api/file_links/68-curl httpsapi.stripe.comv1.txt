@@ -1,0 +1,3 @@
+curl https://api.stripe.com/v1/file_links \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d file=file_1FvSUR2eZvKYlo2C8zHSKeSA

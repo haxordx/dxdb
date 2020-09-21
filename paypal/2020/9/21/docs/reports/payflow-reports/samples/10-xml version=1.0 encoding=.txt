@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reportingEngineRequest>
+   authRequest>
+      <user>User</user>
+      <vendor>Vendor</vendor>
+      <partner>Partner</partner>
+      <password>Password</password>
+   </authRequest>
+   <createTemplateRequest>
+      <templateDefinition>
+         <templateName>My Template</templateName>
+         <reportName>DailyActivityReport</reportName>
+         <reportParam>
+            <paramName>name1</paramName>
+            <paramValue>value1</paramValue>
+         </reportParam>
+         <reportParam>
+            <paramName>name2</paramName>
+            <paramValue>value2</paramValue>
+         </reportParam>
+      </templateDefinition>
+   </createTemplateRequest>
+</reportingEngineRequest>copy

@@ -1,0 +1,6 @@
+private class SinchCallClientListener implements CallClientListener {
+    @Override
+    public void onIncomingCall(CallClient callClient, Call incomingCall) {
+        incomingCall.answer();
+    }
+}

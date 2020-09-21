@@ -1,0 +1,5 @@
+initialize: async function() {
+
+   // Do some stuff here to initialize hook
+
+}

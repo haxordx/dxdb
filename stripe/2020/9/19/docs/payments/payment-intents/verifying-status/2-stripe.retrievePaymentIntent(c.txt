@@ -1,0 +1,14 @@
+stripe.retrievePaymentIntent(clientSecret).then(function(response) {
+  if (response.paymentIntent && response.paymentIntent.status === 'succeeded') {
+    // Handle successful payment here
+  } else {
+    // Handle unsuccessful, processing, or canceled payments and API errors here
+  }
+});
+stripe.retrievePaymentIntent(clientSecret).then(function(response) {
+  if (response.paymentIntent && response.paymentIntent.status === 'succeeded') {
+    // Handle successful payment here
+  } else {
+    // Handle unsuccessful, processing, or canceled payments and API errors here
+  }
+});

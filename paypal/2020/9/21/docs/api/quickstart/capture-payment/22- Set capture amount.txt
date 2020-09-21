@@ -1,0 +1,15 @@
+// Set capture amount
+Amount amount = new Amount();
+amount.setCurrency("USD");
+amount.setTotal("4.54");
+
+Capture capture = new Capture();
+capture.setAmount(amount);
+
+// Set as final capture amount
+capture.setIsFinalCapture(true);
+
+// Capture payment
+Capture responseCapture = authorization.capture(apiContext, capture);
+
+System.out.println("Capture id = " + responseCapture.getId() + " and status = " + responseCapture.getState());copy

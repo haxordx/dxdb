@@ -1,0 +1,11 @@
+{
+  "id": "si_I3Mf9euzrUyCp1",
+  "object": "subscription_item",
+  "billing_thresholds": null,
+  "created": 1600559882,
+  "metadata": {},
+  "price": "price_1HQ4bf2eZvKYlo2CXKogKHFi",
+  "quantity": 2,
+  "subscription": "sub_4S0AFir3Rl6Zgu",
+  "tax_rates": []
+}

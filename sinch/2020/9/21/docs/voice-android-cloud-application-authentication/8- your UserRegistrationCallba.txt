@@ -1,0 +1,23 @@
+// your UserRegistrationCallback implementation
+    ...
+    @Override
+    public void onCredentialsRequired(ClientRegistration clientRegistration) {
+        yourAuthServer.getRegistrationToken(userId, new YourAuthCallback() {
+            void onSuccess(String token) {
+                clientRegistration.register(token);
+            }
+            void onFailure() {
+                clientRegistration.registerFailed();
+            }
+        });
+    }
+
+    @Override
+    public void onUserRegistered() {
+        //notify successfull registration
+    }
+
+    @Override
+    public void onUserRegistrationFailed(SinchError error) {
+        //notify failed registration
+    }

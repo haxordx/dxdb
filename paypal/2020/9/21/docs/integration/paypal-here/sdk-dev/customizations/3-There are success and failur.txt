@@ -1,0 +1,9 @@
+//There are success and failure events for vaulting that you can subscribe to with your payment configuration
+payment_config.subscribe
+  .onVaultSuccess(function (vaultRecord) {
+    // vaultRecord contains the vaultId and card object
+  })
+  .onVaultFailure(function (err) {
+    // handle vault error accordingly
+  });
+copy

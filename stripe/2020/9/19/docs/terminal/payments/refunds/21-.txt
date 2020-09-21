@@ -1,0 +1,46 @@
+
+try {
+  let refund = await this.client.refundCharge({chargeId: "ch_xxxxxxxxxx"});
+} catch (error) {
+  if (error.message === "invalid_request_error") {
+    const result = await this.terminal.collectRefundPaymentMethod(
+    "ch_xxxxxxxxxx",
+    2000,
+    "cad"
+  );
+
+  if (result.error) {
+    // Placeholder for handling result.error
+  } else {
+    const refund = await this.terminal.processRefund();
+    if (refund.error) {
+      // Placeholder for handling refund.error
+    } else {
+      console.log("Charge fully refunded!");
+      return refund;
+    }
+  }
+}
+
+try {
+  let refund = await this.client.refundCharge({chargeId: "ch_xxxxxxxxxx"});
+} catch (error) {
+  if (error.message === "invalid_request_error") {
+    const result = await this.terminal.collectRefundPaymentMethod(
+    "ch_xxxxxxxxxx",
+    2000,
+    "cad"
+  );
+
+  if (result.error) {
+    // Placeholder for handling result.error
+  } else {
+    const refund = await this.terminal.processRefund();
+    if (refund.error) {
+      // Placeholder for handling refund.error
+    } else {
+      console.log("Charge fully refunded!");
+      return refund;
+    }
+  }
+}

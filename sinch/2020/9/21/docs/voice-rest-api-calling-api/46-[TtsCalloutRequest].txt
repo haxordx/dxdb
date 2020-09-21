@@ -1,0 +1,11 @@
+[TtsCalloutRequest]
+    string - cli
+    Identity - destination
+    string - dtmf
+    string - domain
+    string - custom
+    string - locale
+    string - text
+    string - prompts
+    bool - enableAce
+    bool - enableDice

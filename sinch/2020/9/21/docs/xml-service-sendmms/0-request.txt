@@ -1,0 +1,25 @@
+<request>
+    <action>sendMMS</action>
+    <api-key>qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ</api-key>
+    <to>12399471613</to>
+    <from>28444</from>
+    <operator-id>31062</operator-id>
+    <message-subject>The subject</message-subject>
+    <service-id>32113</service-id>
+    <name>FuelTheFire</name>
+    <slide>
+        <duration>5</duration>
+        <image>
+            <url>http://www.yoursite.com/images/1.jpg</url>
+        </image>
+        <audio>
+            <url>http://www.yoursite.com/audio/1.mp3</url>
+        </audio>
+        <message-text>Here is some text blah blah ...</message-text>
+    </slide>
+    <slide>
+        <message-text>Invitation</message-text>
+        <ical><url>http://www.yoursite.com/cal/2.ics</url></ical>
+        <duration>10</duration>
+    </slide>
+</request>

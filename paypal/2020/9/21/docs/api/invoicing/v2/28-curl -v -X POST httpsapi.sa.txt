@@ -1,0 +1,19 @@
+curl -v -X POST https://api.sandbox.paypal.com/v2/invoicing/search-invoices?page=1&page_size=1&total_required=true \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer Access-Token" \
+-d '{
+  "total_amount_range": {
+    "lower_amount": {
+      "currency_code": "USD",
+      "value": "50.00"
+    },
+    "upper_amount": {
+      "currency_code": "USD",
+      "value": "50.00"
+    }
+  },
+  "invoice_date_range": {
+    "start": "2018-06-01",
+    "end": "2018-06-21"
+  }
+}'copy

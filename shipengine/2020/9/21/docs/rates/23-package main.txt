@@ -1,0 +1,33 @@
+package main
+
+import (
+  "fmt"
+  "strings"
+  "net/http"
+  "io/ioutil"
+)
+
+func main() {
+
+  url := "https://api.shipengine.com/v1/rates"
+  method := "POST"
+
+  payload := strings.NewReader("{\n  \"shipment_id\": \"se-123\",\n  \"rate_options\": {\n    \"carrier_ids\": [\n      \"se-123890\"\n    ]\n  }\n}")
+
+  client := &http.Client {
+  }
+  req, err := http.NewRequest(method, url, payload)
+
+  if err != nil {
+    fmt.Println(err)
+  }
+  req.Header.Add("Host", "api.shipengine.com")
+  req.Header.Add("API-Key", "__YOUR_API_KEY_HERE__")
+  req.Header.Add("Content-Type", "application/json")
+
+  res, err := client.Do(req)
+  defer res.Body.Close()
+  body, err := ioutil.ReadAll(res.Body)
+
+  fmt.Println(string(body))
+}

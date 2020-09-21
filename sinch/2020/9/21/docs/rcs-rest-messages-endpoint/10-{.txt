@@ -1,0 +1,6 @@
+{
+  "mime_type": string,
+  "file_size": integer,
+  "file_name": string,
+  "file_uri": string
+}

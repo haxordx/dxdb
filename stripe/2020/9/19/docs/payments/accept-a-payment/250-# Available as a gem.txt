@@ -1,0 +1,3 @@
+# Available as a gem
+gem install stripe# Available as a gem
+gem install stripe

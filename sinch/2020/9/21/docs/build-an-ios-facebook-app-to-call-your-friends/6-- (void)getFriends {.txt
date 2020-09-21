@@ -1,0 +1,34 @@
+- (void)getFriends {
+    FBSDKGraphRequest *requestFriends = [[FBSDKGraphRequest alloc]
+                                         initWithGraphPath:@"me/friends"
+                                         parameters:nil
+                                         HTTPMethod:@"GET"];
+    [requestFriends startWithCompletionHandler:^(FBSDKGraphRequestConnection *connection,
+                                                 id result,
+                                                 NSError *error) {
+        if (!error && result)
+        {
+            NSArray *allFriendsResultData = [result objectForKey:@"data"];
+
+            if ([allFriendsResultData count] > 0)
+            {
+                for (NSDictionary *friendObject in allFriendsResultData)
+                {
+                    NSString *friendName = [friendObject objectForKey:@"name"];
+                    NSString *friendID = [friendObject objectForKey:@"id"];
+
+                    CFriend *newFriend = [CFriend addFriendWithName:friendName FriendID:friendID];
+
+                    if (!self.objects) {
+                        self.objects = [[NSMutableArray alloc] init];
+                    }
+                    [self.objects addObject:newFriend];
+                    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:_objects.count-1 inSection:0];
+                    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+                    [self.tableView reloadData];
+                }
+            }
+        }
+
+    }];
+}

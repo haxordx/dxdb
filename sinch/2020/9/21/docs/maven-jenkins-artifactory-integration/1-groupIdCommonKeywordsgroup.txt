@@ -1,0 +1,4 @@
+<groupId>CommonKeywords</groupId>
+<artifactId>CommonKeywords</artifactId>
+<version>0.0.1-SNAPSHOT-${build.number}</version>
+<packaging>jar</packaging>

@@ -1,0 +1,12 @@
+var guid = Request.Params["guid"];
+
+// Using the information from the redirect, setup the payment to execute.
+var paymentId = Session[guid] as string;
+var paymentExecution = new PaymentExecution() { payer_id = payerId };
+var payment = new Payment() { id = paymentId };
+
+// Execute authorization.
+var executedPayment = payment.Execute(apiContext, paymentExecution);
+
+// Capture authorization object
+var authorization = executedPayment.transactions[0].related_resources[0].authorization;copy

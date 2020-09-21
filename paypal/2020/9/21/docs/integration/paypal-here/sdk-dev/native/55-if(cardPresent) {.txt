@@ -1,0 +1,6 @@
+if(cardPresent) {
+    currentTransaction.beginRefund(true, new BigDecimal(amount));
+} else {
+    TransactionContext noCardTransaction =  currentTransaction.beginRefund(false, new BigDecimal(amount));
+    noCardTransaction.continueWithCard(null);
+}copy

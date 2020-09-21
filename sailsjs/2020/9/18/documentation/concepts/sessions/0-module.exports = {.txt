@@ -1,0 +1,14 @@
+module.exports = {
+
+  login: function(req, res) {
+
+    // Authentication code here
+
+    // If successfully authenticated
+
+    req.session.userId = foundUser.id;   // returned from a database
+
+    return res.json(foundUser);
+
+  }
+}

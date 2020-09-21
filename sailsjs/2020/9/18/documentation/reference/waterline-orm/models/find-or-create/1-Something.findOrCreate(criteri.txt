@@ -1,0 +1,4 @@
+Something.findOrCreate(criteria, initialValues)
+.exec(function(err, newOrExistingRecord, wasCreated) {
+
+});

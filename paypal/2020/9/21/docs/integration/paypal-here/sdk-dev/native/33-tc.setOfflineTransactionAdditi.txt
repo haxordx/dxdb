@@ -1,0 +1,8 @@
+tc.setOfflineTransactionAdditionHandler({ (error, txnRecord) in
+     // if error, handle accordingly, else pop back to view controller and handle success
+
+    self.navigationController?.popToViewController(self, animated: false)
+
+    // txnRecord would have any info needed to record the successful offline saved transaction
+})
+copy

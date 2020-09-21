@@ -1,0 +1,9 @@
+<?php
+// inspect IPN validation result and act accordingly
+if (strcmp ($res, "VERIFIED") == 0) {
+  // The IPN is verified, process it
+} else if (strcmp ($res, "INVALID") == 0) {
+  // IPN invalid, log for manual investigation
+}
+?>
+copy

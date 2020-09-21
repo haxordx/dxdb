@@ -1,0 +1,1 @@
+npm install skipper-s3 --save

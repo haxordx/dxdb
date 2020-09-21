@@ -1,0 +1,4 @@
+curl -v -X GET https://api.sandbox.paypal.com/v1/reporting/balances?currency_code=USD&as_of_time=2016-10-15T06:07:00-0700 \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer Access-Token"
+bashcopy

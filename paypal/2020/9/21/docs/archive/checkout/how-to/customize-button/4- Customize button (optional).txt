@@ -1,0 +1,10 @@
+// Customize button (optional)
+style: {
+ layout: 'horizontal',
+ fundingicons: 'true',
+},
+funding: {
+ allowed: [ paypal.FUNDING.CARD ],
+ disallowed: [ paypal.FUNDING.CREDIT ]
+}
+jscopy

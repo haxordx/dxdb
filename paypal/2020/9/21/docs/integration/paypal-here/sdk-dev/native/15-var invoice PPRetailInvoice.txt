@@ -1,0 +1,4 @@
+var invoice: PPRetailInvoice?
+invoice = PPRetailInvoice.init(currencyCode: "USD")
+invoice.addItem("My Order", quantity: 1, unitPrice: 1.00, itemId: 123, detailId: nil)
+invoice.number = "unique_invoice_number"copy

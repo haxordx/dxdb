@@ -1,0 +1,5 @@
+$http.get('/purchase?sort=createdAt DESC')
+.then(function (res) {
+  var purchases = res.data;
+  console.log(purchases);
+});

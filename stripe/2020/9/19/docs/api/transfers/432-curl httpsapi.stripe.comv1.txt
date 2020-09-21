@@ -1,0 +1,2 @@
+curl https://api.stripe.com/v1/transfers/tr_1HSfyO2eZvKYlo2C3PtQNkbG \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc:

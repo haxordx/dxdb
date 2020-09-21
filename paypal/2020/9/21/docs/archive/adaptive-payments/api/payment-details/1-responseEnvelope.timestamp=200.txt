@@ -1,0 +1,18 @@
+responseEnvelope.timestamp=2009-08-14T09%3A00%3A37.748-07%3A00
+&responseEnvelope.ack=Success
+&responseEnvelope.correlationId=7967b2d03745a
+&responseEnvelope.build=DEV
+&cancelUrl=your_cancel_url
+&currencyCode=USD
+&logDefaultShippingAddress=false
+&memo=Simple payment example.
+&paymentInfoList.paymentInfo(0).receiver.amount=100.00
+&paymentInfoList.paymentInfo(0).receiver.email=receiver@domain
+&paymentInfoList.paymentInfo(0).receiver.primary=false
+&returnUrl=your_return_url
+&senderEmail=sender@domain
+&status=CREATED
+&payKey=AP-3TY011106S4428730
+&actionType=PAY
+&feesPayer=EACHRECEIVER
+copy

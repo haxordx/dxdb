@@ -1,0 +1,25 @@
+{
+  "id": "ii_1HS9k12eZvKYlo2CfIBpYWkW",
+  "object": "invoiceitem",
+  "amount": 0,
+  "currency": "usd",
+  "customer": "cus_I3HcwHEKBfQLG1",
+  "date": 1600297725,
+  "description": "INVOICE ALL THE THINGS",
+  "discountable": true,
+  "discounts": [],
+  "invoice": null,
+  "livemode": false,
+  "metadata": {},
+  "period": {
+    "end": 1600297725,
+    "start": 1600297725
+  },
+  "price": "price_1HS0Qf2eZvKYlo2Cyr72xAEg",
+  "proration": false,
+  "quantity": 1,
+  "subscription": null,
+  "tax_rates": [],
+  "unit_amount": 12345,
+  "unit_amount_decimal": "12345"
+}

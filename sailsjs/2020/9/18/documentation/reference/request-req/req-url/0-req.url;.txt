@@ -1,0 +1,3 @@
+req.url;
+
+// => "/search?q=worlds%20largest%20dogs"

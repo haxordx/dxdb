@@ -1,0 +1,7 @@
+if agreement.create
+  redirect = agreement.links.find{|v| v.rel == "approval_url" }.href
+
+  # REDIRECT USER TO redirect
+else
+  logger.error agreement.error.inspect
+endcopy

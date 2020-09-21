@@ -1,0 +1,18 @@
+// Get the named datastore
+var rdi = sails.getDatastore('default');
+
+// Grab the MySQL module from the datastore instance
+var mysql = rdi.driver.mysql;
+
+// Create a new connection
+var connection = mysql.createConnection({
+  host     : 'localhost',
+  user     : 'root',
+  password : 'password',
+  database: 'example_database'
+});
+
+// Make a query and pipe the results
+connection.query('SELECT * FROM posts')
+  .stream({highWaterMark: 5})
+  .pipe(...);

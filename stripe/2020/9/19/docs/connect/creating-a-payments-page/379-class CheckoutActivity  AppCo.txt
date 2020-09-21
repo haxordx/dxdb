@@ -1,0 +1,30 @@
+class CheckoutActivity : AppCompatActivity() {
+
+  private lateinit var paymentIntentClientSecret: String
+
+  override fun onCreate(savedInstanceState: Bundle?) {
+      super.onCreate(savedInstanceState)
+      // ...
+      startCheckout()
+  }
+
+  private fun startCheckout() {
+      // Request a PaymentIntent from your server and store its client secret in paymentIntentClientSecret
+      // Click Open on GitHub to see a full implementation
+  }
+}
+class CheckoutActivity : AppCompatActivity() {
+
+  private lateinit var paymentIntentClientSecret: String
+
+  override fun onCreate(savedInstanceState: Bundle?) {
+      super.onCreate(savedInstanceState)
+      // ...
+      startCheckout()
+  }
+
+  private fun startCheckout() {
+      // Request a PaymentIntent from your server and store its client secret in paymentIntentClientSecret
+      // Click Open on GitHub to see a full implementation
+  }
+}

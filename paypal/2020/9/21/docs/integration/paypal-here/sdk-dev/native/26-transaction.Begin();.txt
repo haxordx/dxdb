@@ -1,0 +1,11 @@
+transaction.Begin();
+transaction.SetCompletedHandler((error, record) =>
+{
+    if (error != null)
+    {
+        // Error - handle accordingly
+    } else {
+        // Success - do something with the transaction record
+    }
+
+});copy

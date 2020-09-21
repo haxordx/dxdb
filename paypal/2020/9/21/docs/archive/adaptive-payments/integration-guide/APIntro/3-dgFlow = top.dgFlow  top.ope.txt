@@ -1,0 +1,4 @@
+dgFlow = top.dgFlow || top.opener.top.dgFlow;
+dgFlow.closeFlow();
+top.close();
+copy

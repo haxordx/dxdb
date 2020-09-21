@@ -1,0 +1,5 @@
+var peoplePossiblyNamedLyra = await Model.find({
+  name : {
+    'contains' : 'yra'
+  }
+});

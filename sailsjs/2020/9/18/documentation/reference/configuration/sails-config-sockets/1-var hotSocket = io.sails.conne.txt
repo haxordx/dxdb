@@ -1,0 +1,1 @@
+var hotSocket = io.sails.connect('http://localhost:1337?cookie=smokeybear');

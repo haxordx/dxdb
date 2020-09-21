@@ -1,0 +1,13 @@
+terminal.processPayment(paymentIntent).then(function(result) {
+  if (result.error) {
+    // Placeholder for handling result.error
+  } else if (result.paymentIntent) {
+    // Placeholder for notifying your backend to capture result.paymentIntent.id
+  }
+});terminal.processPayment(paymentIntent).then(function(result) {
+  if (result.error) {
+    // Placeholder for handling result.error
+  } else if (result.paymentIntent) {
+    // Placeholder for notifying your backend to capture result.paymentIntent.id
+  }
+});

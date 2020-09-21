@@ -1,0 +1,22 @@
+<span id='cwppButton'></span>
+<html>
+<script>
+                    function base64url(source) {
+                    encodedSource = btoa(source);
+                    encodedSource = encodedSource.replace(/=+$/, ");
+                    encodedSource = encodedSource.replace(/\+/g, '-');
+                    encodedSource = encodedSource.replace(/\//g, '-');
+
+                    return encodedSource;
+            }
+            function generateJWT() {
+                    var header = {"alg": "none", "typ": "JWT"};
+                    var data = {"iss"   :"CLIENT_ID",
+                               "email" : "BUYER_EMAIL" };
+                    document.write(base64url(JSON.stringify(header)) + "." +
+                    base64url(JSON.stringify(data)) + ".");
+            }
+</script>
+<body onload="generateJWT()"/>
+
+htmlcopy

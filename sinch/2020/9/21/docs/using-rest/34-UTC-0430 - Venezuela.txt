@@ -1,0 +1,3 @@
+"UTC-04:30" - Venezuela
+"UTC-01:00" - Cape Verde
+"UTC+08:45" - Australia (Eucla)

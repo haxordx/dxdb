@@ -1,0 +1,16 @@
+// ...
+
+  csp: require('lusca').csp({
+    policy: {
+      'default-src': '*'
+    }
+  }),
+
+  // ...
+
+  order: [
+    // ...
+    'csp',
+    // ...
+  ]
+

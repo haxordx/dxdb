@@ -1,0 +1,18 @@
+{
+  "id": "re_1HTGDf2eZvKYlo2CjZMGxG4K",
+  "object": "refund",
+  "amount": 100,
+  "balance_transaction": null,
+  "charge": "ch_1HTGDf2eZvKYlo2CxCVNsUFX",
+  "created": 1600560955,
+  "currency": "usd",
+  "metadata": {
+    "order_id": "6735"
+  },
+  "payment_intent": null,
+  "reason": null,
+  "receipt_number": null,
+  "source_transfer_reversal": null,
+  "status": "succeeded",
+  "transfer_reversal": null
+}

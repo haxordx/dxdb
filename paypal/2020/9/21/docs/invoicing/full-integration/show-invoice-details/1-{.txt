@@ -1,0 +1,185 @@
+{
+
+  "id": "INV2-RF6D-L66T-D7H2-CRU7",
+  "status": "SENT",
+  "detail": {
+    "invoice_number": "s0000183",
+    "reference": "reference -10",
+    "invoice_date": "2018-04-14",
+    "currency_code": "USD",
+    "payment_term": {
+      "term_type": "NET_10",
+      "due_date": "2018-04-25"
+    },
+    "note": "receipt",
+    "term": "terms and condition",
+    "memo": "memo",
+    "metadata": {
+      "create_time": "2018-04-15T17:59:16Z",
+      "first_sent_time": "2018-04-15T17:59:16Z",
+      "last_sent_time": "2018-04-15T17:59:16Z",
+      "recipient_view_url": "https://api.paypal.com/invoice/p#INV2-MY87-9QVN-D7N4-W47D",
+      "invoicer_view_url": "https://api.paypal.com/invoice/details/INV2-MY87-9QVN-D7N4-W47D"
+    }
+  },
+  "invoicer": {
+    "name": {
+      "given_name": "Marisol",
+      "surname": "Christopher"
+    },
+    "business_name": "Montecino Color Lab",
+    "address": {
+      "address_line_1": "63497 Edgemere Road",
+      "address_line_2": "337673 Hillside Court",
+      "admin_area_2": "Mesa",
+      "admin_area_1": "AZ",
+      "postal_code": "85214",
+      "country_code": "US"
+    },
+    "email_address": "invoicer@example.com",
+    "phones": [
+      {
+        "country_code": "1",
+        "national_number": "5209792578",
+        "phone_type": "HOME"
+      }
+    ],
+    "website": "https://example.com/goods",
+    "tax_id": "ABcNkWmqtHvziJmUEtyjPAMXcrZWYBgSkkY5XSLO89n2mAdETfX8sXN6VNg97A",
+    "logo_url": "https://api.paypal.com/v1/content/media-containers/PICS/cdn-assets/00/s/NDg4WDY0N1hQTkc/p/ODRmMjEzZjAtM2Q0My00NWZlLTk4ODYtYWI5OTM0NmE5NjYx/image_109.PNG",
+    "additional_info_value": "add infor - 2 to 5"
+  },
+  "primary_recipients": [
+    {
+      "billing_info": {
+        "business_name": "",
+        "address": {
+          "country_code": "US"
+        },
+        "email": "primary_recipient@example.com",
+        "phones": [
+          {
+            "country_code": "1",
+            "national_number": "1234567890",
+            "phone_type": "MOBILE"
+          }
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "name": " ",
+      "quantity": "1.00",
+      "unit_amount": {
+        "currency_code": "USD",
+        "value": "10.00"
+      },
+      "tax": {
+        "name": "sst",
+        "percent": "5",
+        "amount": {
+          "currency_code": "USD",
+          "value": "0.40"
+        }
+      },
+      "discount": {
+        "amount": {
+          "currency_code": "USD",
+          "value": "2.00"
+        }
+      },
+      "unit_of_measure": "QUANTITY"
+    }
+  ],
+  "configuration": {
+    "partial_payment": {
+      "allow_partial_payment": true,
+      "minimum_amount_due": {
+        "currency_code": "USD",
+        "value": "5.00"
+      }
+    },
+    "allow_tip": true,
+    "tax_calculated_after_discount": true,
+    "tax_inclusive": false,
+    "template_id": "TEMP-4R676299VW6871434"
+  },
+  "amount": {
+    "currency_code": "USD",
+    "value": "11.38",
+    "breakdown": {
+      "custom": {
+        "label": "others",
+        "amount": {
+          "currency_code": "USD",
+          "value": "1.00"
+        }
+      },
+      "shipping": {
+        "amount": {
+          "currency_code": "USD",
+          "value": "2.00"
+        },
+        "tax": {
+          "name": "shipping-tax",
+          "percent": "6"
+        }
+      },
+      "discount": {
+        "invoice_discount": {
+          "percent": "1",
+          "amount": {
+            "currency_code": "USD",
+            "value": "0.08"
+          }
+        },
+        "item_discount": {
+          "currency_code": "USD",
+          "value": "-2.00"
+        }
+      },
+      "tax_total": {
+        "currency_code": "USD",
+        "value": "0.48"
+      }
+    }
+  },
+  "due_amount": {
+    "currency_code": "USD",
+    "value": "11.38"
+  },
+  "links": [
+    {
+      "href": "https://api.paypal.com/v2/invoicing/invoices/INV2-MY87-9QVN-D7N4-W47D",
+      "rel": "self",
+      "method": "GET"
+    },
+    {
+      "href": "https://api.paypal.com/v2/invoicing/invoices/INV2-MY87-9QVN-D7N4-W47D/update",
+      "rel": "replace",
+      "method": "PUT"
+    },
+    {
+      "href": "https://api.paypal.com/v2/invoicing/invoices/INV2-MY87-9QVN-D7N4-W47D/cancel",
+      "rel": "invoices.cancel",
+      "method": "POST"
+    },
+    {
+      "href": "https://api.paypal.com/v2/invoicing/invoices/INV2-MY87-9QVN-D7N4-W47D/remind",
+      "rel": "remind",
+      "method": "POST"
+    },
+    {
+      "href": "https://api.paypal.com/v2/invoicing/invoices/INV2-MY87-9QVN-D7N4-W47D/record-payment",
+      "rel": "record-payment",
+      "method": "POST"
+    },
+    {
+      "href": "https://api.paypal.com/v2/invoicing/invoices/INV2-MY87-9QVN-D7N4-W47D/generate-qr-code",
+      "rel": "qr-code",
+      "method": "POST"
+    }
+  ]
+}
+jsoncopy

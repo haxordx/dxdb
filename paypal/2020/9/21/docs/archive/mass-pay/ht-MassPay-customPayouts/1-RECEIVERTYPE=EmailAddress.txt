@@ -1,0 +1,4 @@
+RECEIVERTYPE=EmailAddress                 # set to EmailAddress, UserID, or PhoneNumber
+CURRENCYCODE=USD                          # currency code for all payouts
+EMAILSUBJECT=You have a payment from TEST # custom e-mail subject for all payouts
+copy

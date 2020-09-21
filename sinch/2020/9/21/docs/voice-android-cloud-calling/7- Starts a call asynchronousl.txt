@@ -1,0 +1,5 @@
+// Starts a call asynchronously
+Call call = callClient.callUser("<remote user id>");
+
+// User changed his/her mind, let’s hangup
+call.hangup();

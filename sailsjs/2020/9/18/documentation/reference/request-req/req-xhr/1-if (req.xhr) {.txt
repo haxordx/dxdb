@@ -1,0 +1,3 @@
+if (req.xhr) {
+  // Yup, it's AJAX alright.
+}

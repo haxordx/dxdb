@@ -1,0 +1,4 @@
+[PayPalRetailSDK.transactionManager startReplayOfflineTxns:^(PPRetailError *error, PPRetailOfflinePaymentInfo *info) {
+    // Code to handle success or failure of the offline replay
+}];
+copy

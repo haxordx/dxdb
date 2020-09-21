@@ -1,0 +1,6 @@
+if (req.wantsJSON) {
+  sails.log('This request wants JSON!');
+}
+else {
+  // `req.wantsJSON` is falsy (undefined), to this request must not want JSON.
+}

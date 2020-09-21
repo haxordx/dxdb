@@ -1,0 +1,11 @@
+// config/datastores.js
+module.exports = {
+  // ...
+
+  // Existing users are in here!
+  rustyOldMySQLDatabase: {
+    adapter: 'sails-mysql',
+    url: 'mysql://ofh:Gh19R!?@db.eleven.sameness.foo/jonas'
+  },
+  // ...
+};

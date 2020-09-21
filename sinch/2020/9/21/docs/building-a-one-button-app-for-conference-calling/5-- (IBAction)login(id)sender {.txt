@@ -1,0 +1,6 @@
+- (IBAction)login:(id)sender {
+    NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:self.userName.text forKey:@"userName"];
+    [defaults synchronize];
+    [self dismissViewControllerAnimated:YES completion:nil];
+}

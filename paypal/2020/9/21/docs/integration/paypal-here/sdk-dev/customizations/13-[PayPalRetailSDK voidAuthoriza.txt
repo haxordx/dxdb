@@ -1,0 +1,7 @@
+[PayPalRetailSDK voidAuthorization:authorizationId completionHandler:^(PPRetailError *error) {
+
+    // code to handle success or failure
+    // if error, check error and handle accordingly   
+
+}];
+copy

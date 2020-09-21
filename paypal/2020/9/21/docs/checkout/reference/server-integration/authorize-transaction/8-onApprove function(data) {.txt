@@ -1,0 +1,16 @@
+onApprove: function(data) {
+  return fetch('/my-server/authorize-paypal-transaction', {
+    method: 'post',
+    headers: {
+      'content-type': 'application/json'
+    },
+    body: JSON.stringify({
+      orderID: data.orderID
+    })
+  }).then(function(res) {
+    return res.json();
+  }).then(function(details) {
+    alert('Authorization created for ' + details.payer_given_name);
+  });
+}
+javascriptcopy

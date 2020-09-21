@@ -1,0 +1,10 @@
+TransactionContext currentTransaction;
+RetailSDK.getTransactionManager().createTransaction(invoice, new TransactionManager.TransactionCallback()
+{
+  @Override
+  public void transaction(RetailSDKException error, TransactionContext context)
+  {
+    // On error, handle error. Else, set transaction context to call beginPayment in next step
+    currentTransaction = context;
+  }
+});copy

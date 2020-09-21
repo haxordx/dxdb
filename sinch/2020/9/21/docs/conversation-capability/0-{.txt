@@ -1,0 +1,7 @@
+{
+  "app_id": "{{APP_ID}}",
+  "project_id": "{{PROJECT_ID}}",
+  "recipient": {
+    "contact_id": "{{CONTACT_ID}}"
+  }
+}

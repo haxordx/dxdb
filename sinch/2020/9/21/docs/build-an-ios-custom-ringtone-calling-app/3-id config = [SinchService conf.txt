@@ -1,0 +1,19 @@
+id config = [SinchService configWithApplicationKey:@"your-application-key"
+                                      applicationSecret:@"your-application-secret"
+                                        environmentHost:@"clientapi.sinch.com"];
+
+id<SINService> sinch = [SinchService serviceWithConfig:config];
+sinch.delegate = self;
+sinch.callClient.delegate = self;
+
+void (^onUserDidLogin)(NSString *) = ^(NSString *userId) {
+    [sinch logInUserWithId:userId];
+};
+
+self.sinch = sinch;
+
+[[NSNotificationCenter defaultCenter]
+    addObserverForName:@"UserDidLoginNotification"
+    object:nil
+    queue:nil
+    usingBlock:^(NSNotification *note) { onUserDidLogin(note.userInfo[@"userId"]); }];

@@ -1,0 +1,5 @@
+var sinchClient = new SinchClient({applicationKey: YOUR_APPLICATION_KEY})
+
+var verification = sinchClient.createCalloutVerification(PHONE_NUMBER)
+
+verification.initiate(success, fail);

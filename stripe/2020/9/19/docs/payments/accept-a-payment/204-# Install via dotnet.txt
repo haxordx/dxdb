@@ -1,0 +1,5 @@
+# Install via dotnet
+dotnet add package Stripe.net
+dotnet restore# Install via dotnet
+dotnet add package Stripe.net
+dotnet restore

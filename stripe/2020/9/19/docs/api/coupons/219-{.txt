@@ -1,0 +1,5 @@
+{
+  "id": "25_5OFF",
+  "object": "coupon",
+  "deleted": true
+}

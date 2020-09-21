@@ -1,0 +1,5 @@
+<response>
+    <status>Failure</status>
+    <error-code>E111</error-code>
+    <error-info>Invalid shortcode</error-info>
+</response>

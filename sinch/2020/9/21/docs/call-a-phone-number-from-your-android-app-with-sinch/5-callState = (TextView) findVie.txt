@@ -1,0 +1,2 @@
+callState = (TextView) findViewById(R.id.callState);
+callButton = (Button) findViewById(R.id.callButton);

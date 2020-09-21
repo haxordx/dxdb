@@ -1,0 +1,56 @@
+var plan = new Plan
+{
+  name = "T-Shirt of the Month Club Plan",
+  description = "Monthly plan for getting the t-shirt of the month.",
+  type = "fixed",
+
+  payment_definitions = new List
+  {
+    new PaymentDefinition()
+    {
+      name = "Trial Plan",
+      type = "TRIAL",
+      frequency = "MONTH",
+      frequency_interval = "1",
+      amount = GetCurrency("9.99"),
+      cycles = "1",
+      charge_models = new List
+      {
+        new ChargeModel()
+        {
+          type = "TAX",
+          amount = GetCurrency("1.65")
+        },
+        shippingChargeModel
+      }
+    },
+
+    new PaymentDefinition
+    {
+      name = "Standard Plan",
+      type = "REGULAR",
+      frequency = "MONTH",
+      frequency_interval = "1",
+      amount = GetCurrency("19.99"),
+      cycles = "11",
+      charge_models = new List
+      {
+        new ChargeModel
+        {
+          type = "TAX",
+          amount = GetCurrency("2.47")
+        }
+      }
+    }
+  },
+
+  merchant_preferences = new MerchantPreferences()
+  {
+    setup_fee = GetCurrency("1"),
+    return_url = httpContext.Request.Url.ToString(),
+    cancel_url = httpContext.Request.Url.ToString() + "?cancel",
+    auto_bill_amount = "YES",
+    initial_fail_amount_action = "CONTINUE",
+    max_fail_attempts = "0"
+  }
+};copy

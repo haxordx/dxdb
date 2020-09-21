@@ -1,0 +1,25 @@
+var sourceData = {
+  type: 'ideal',
+  amount: 1099,
+  currency: 'eur',
+  // Specify a custom statement descriptor.
+  statement_descriptor: 'ORDER AT11990',
+  owner: {
+    name: document.querySelector('input[name="name"]').value,
+  },
+  redirect: {
+    return_url: 'https://shop.example.com/crtA6B28E1',
+  },
+};var sourceData = {
+  type: 'ideal',
+  amount: 1099,
+  currency: 'eur',
+  // Specify a custom statement descriptor.
+  statement_descriptor: 'ORDER AT11990',
+  owner: {
+    name: document.querySelector('input[name="name"]').value,
+  },
+  redirect: {
+    return_url: 'https://shop.example.com/crtA6B28E1',
+  },
+};

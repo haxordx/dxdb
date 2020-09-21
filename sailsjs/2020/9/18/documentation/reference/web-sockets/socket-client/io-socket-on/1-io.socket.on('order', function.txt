@@ -1,0 +1,3 @@
+io.socket.on('order', function onServerSentEvent (msg) {
+  // msg => {...whatever the server broadcasted...}
+});

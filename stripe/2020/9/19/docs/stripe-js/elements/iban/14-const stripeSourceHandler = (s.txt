@@ -1,0 +1,23 @@
+const stripeSourceHandler = (source) => {
+  // Insert the Source ID into the form so it gets submitted to the server.
+  const form = document.getElementById('payment-form');
+  const hiddenInput = document.createElement('input');
+  hiddenInput.setAttribute('type', 'hidden');
+  hiddenInput.setAttribute('name', 'stripeSource');
+  hiddenInput.setAttribute('value', source.id);
+  form.appendChild(hiddenInput);
+
+  // Submit the form.
+  form.submit();
+}const stripeSourceHandler = (source) => {
+  // Insert the Source ID into the form so it gets submitted to the server.
+  const form = document.getElementById('payment-form');
+  const hiddenInput = document.createElement('input');
+  hiddenInput.setAttribute('type', 'hidden');
+  hiddenInput.setAttribute('name', 'stripeSource');
+  hiddenInput.setAttribute('value', source.id);
+  form.appendChild(hiddenInput);
+
+  // Submit the form.
+  form.submit();
+}

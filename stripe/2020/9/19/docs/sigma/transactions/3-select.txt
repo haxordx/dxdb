@@ -1,0 +1,21 @@
+select
+  date_format(date_trunc('day', charges.created), '%Y-%m-%d') as day,
+  customers.id,
+  customers.email,
+  charges.id
+from charges
+inner join customers
+on customers.id=charges.customer_id
+where charges.status = 'failed'
+order by day desc
+limit 5select
+  date_format(date_trunc('day', charges.created), '%Y-%m-%d') as day,
+  customers.id,
+  customers.email,
+  charges.id
+from charges
+inner join customers
+on customers.id=charges.customer_id
+where charges.status = 'failed'
+order by day desc
+limit 5

@@ -1,0 +1,11 @@
+NSArray<NSString *> *languages = @[ @"zh-CN", @"es-ES", @"en-US" ];
+id<SINVerification> verification = [SINVerification SMSVerificationWithApplicationKey:@"<APP KEY>"
+                                                                          phoneNumber:phoneNumberInE164
+                                                                            languages:languages];
+
+[verification initiateWithCompletionHandler:^(id<SINInitiationResult> result, NSError *error) {
+  if (result.success) {
+    NSLog(@"Content Language is: %@", result.contentLanguage);
+    // Show UI for entering the code which will be received via SMS
+  }
+}];

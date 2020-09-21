@@ -1,0 +1,10 @@
+curl https://api.stripe.com/v1/customers \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d name="jenny rosen" \
+  -d email="jenny.rosen@example.com" \
+  -d description="My First Test Customer (created for API docs)"
+curl https://api.stripe.com/v1/customers \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d name="jenny rosen" \
+  -d email="jenny.rosen@example.com" \
+  -d description="My First Test Customer (created for API docs)"

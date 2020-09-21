@@ -1,0 +1,1 @@
+<script src="//cdn.sinch.com/0.0.1/sinch.min.js"></script>

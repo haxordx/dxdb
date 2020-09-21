@@ -1,0 +1,3 @@
+40003 - Invalid request
+40400 - Call not found
+50000 - Internal error

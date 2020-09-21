@@ -1,0 +1,15 @@
+curl https://api.clxcommunications.com/rcs/v1/my-agent-id/messages \
+   -H "Content-Type: application/json" \
+   -H "Authorization: Bearer zIMEJGfwD4oJ4qObPPjwZxwiP5cKARXRJpt9Kf6GSv7uOesvRV" \
+   -d '{
+       "message_id": "41a54db6-6abf-48dd-8a2b-63890981d80d",
+       "to": "46555123456",
+       "message": {
+           "type": "file",
+           "thumbnail": {
+               "mime_type": "video/mpeg",
+               "file_size": 1234,
+               "file_uri": "http://example.com/my_video.mp4"
+           }
+       }
+   }'

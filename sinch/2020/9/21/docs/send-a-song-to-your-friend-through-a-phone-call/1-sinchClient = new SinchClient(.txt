@@ -1,0 +1,9 @@
+sinchClient = new SinchClient({
+    applicationKey: 'your appkey',
+    capabilities: {calling: true},
+    //supportActiveConnection: true, /* NOTE: This is only required if application is to receive calls / instant messages. */
+    //Note: For additional logging, please uncomment the three rows below
+    onLogMessage: function(message) {
+        console.log(message);
+    },
+});

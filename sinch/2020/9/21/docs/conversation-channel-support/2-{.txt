@@ -1,0 +1,15 @@
+{
+  "app_id": "01E9DQJFPWGZ2T05XTVZAD0BYB",
+  "conversation_start_notification": {
+    "conversation": {
+      "id": "01E9DV2N8C6CK41XFPGQPN0NWE",
+      "app_id": "01E9DQJFPWGZ2T05XTVZAD0BYB",
+      "contact_id": "01E9DV2N7TYPJ50V0FYC08110D",
+      "last_received": "2020-05-28T14:30:48Z",
+      "active_channel": "CHANNEL_UNSPECIFIED",
+      "active": true,
+      "metadata": "",
+      "active_channel_senders": []
+    }
+  }
+}

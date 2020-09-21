@@ -1,0 +1,12 @@
+curl -v -X POST https://api.sandbox.paypal.com/v2/invoicing/invoices/INV2-Z56S-5LLA-Q52L-CPZ5/remind \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer Access-Token" \
+-d '{
+  "subject": "Reminder: Payment due for the invoice #ABC-123",
+  "note": "Please pay before the due date to avoid incurring late payment charges which will be adjusted in the next bill generated.",
+  "send_to_invoicer": true,
+  "additional_recipients": [
+    "customer-a@example.com",
+    "customer@example.com"
+  ]
+}'copy

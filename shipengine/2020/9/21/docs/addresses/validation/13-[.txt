@@ -1,0 +1,32 @@
+[
+  {
+    "status": "verified",
+    "original_address": {
+      "name": null,
+      "phone": null,
+      "company_name": null,
+      "address_line1": "525 S Winchester Blvd",
+      "address_line2": null,
+      "address_line3": null,
+      "city_locality": "San Jose",
+      "state_province": "CA",
+      "postal_code": "95128",
+      "country_code": "US",
+      "address_residential_indicator": "unknown"
+    },
+    "matched_address": {
+      "name": null,
+      "phone": null,
+      "company_name": null,
+      "address_line1": "525 S WINCHESTER BLVD",
+      "address_line2": "",
+      "address_line3": null,
+      "city_locality": "SAN JOSE",
+      "state_province": "CA",
+      "postal_code": "95128-2537",
+      "country_code": "US",
+      "address_residential_indicator": "no"
+    },
+    "messages": []
+  }
+]

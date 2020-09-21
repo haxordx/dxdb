@@ -1,0 +1,46 @@
+{
+  "object": "list",
+  "url": "/v1/promotion_codes",
+  "has_more": false,
+  "data": [
+    {
+      "id": "promo_1HMxuf2eZvKYlo2CmGXSyhRx",
+      "object": "promotion_code",
+      "active": true,
+      "code": "TS0EQJHH",
+      "coupon": {
+        "id": "123",
+        "object": "coupon",
+        "amount_off": null,
+        "created": 1507799684,
+        "currency": null,
+        "duration": "repeating",
+        "duration_in_months": 3,
+        "livemode": false,
+        "max_redemptions": 14,
+        "metadata": {
+          "teste": "test"
+        },
+        "name": null,
+        "percent_off": 34.0,
+        "redeem_by": null,
+        "times_redeemed": 0,
+        "valid": true
+      },
+      "created": 1599060617,
+      "customer": null,
+      "expires_at": null,
+      "livemode": false,
+      "max_redemptions": null,
+      "metadata": {},
+      "restrictions": {
+        "first_time_transaction": false,
+        "minimum_amount": null,
+        "minimum_amount_currency": null
+      },
+      "times_redeemed": 0
+    },
+    {...},
+    {...}
+  ]
+}

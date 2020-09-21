@@ -1,0 +1,21 @@
+{
+  "id": "prod_H94k5odtwJXMtQ",  "object": "product",
+  "active": true,
+  "attributes": [
+
+  ],
+  "created": 1587577341,
+  "description": "Premium service with extra features",
+  "images": [
+
+  ],
+  "livemode": false,
+  "metadata": {
+  },
+  "name": "Billing Guide: Premium Service",
+  "statement_descriptor": null,
+  "type": "service",
+  "unit_label": null,
+  "updated": 1587577341
+}{
+  "id": "prod_H94k5odtwJXMtQ",

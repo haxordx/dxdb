@@ -1,0 +1,25 @@
+select
+  date_format(it.created, '%Y-%m-%d') as day,
+  it.id,
+  ia.amount as authorized_amount,
+  -1 * it.amount as captured_amount
+from issuing_transactions it
+join issuing_authorizations ia
+on it.authorization_id=ia.id
+where
+  it.type='capture' and
+  -1 * it.amount > ia.amount --- This checks if this transaction was overcaptured
+order by day desc
+limit 3select
+  date_format(it.created, '%Y-%m-%d') as day,
+  it.id,
+  ia.amount as authorized_amount,
+  -1 * it.amount as captured_amount
+from issuing_transactions it
+join issuing_authorizations ia
+on it.authorization_id=ia.id
+where
+  it.type='capture' and
+  -1 * it.amount > ia.amount --- This checks if this transaction was overcaptured
+order by day desc
+limit 3

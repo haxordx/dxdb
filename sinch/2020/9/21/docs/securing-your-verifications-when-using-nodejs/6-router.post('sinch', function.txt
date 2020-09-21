@@ -1,0 +1,13 @@
+router.post('/sinch', function (req, res) {
+  //look the type of event VerificationRequestEvent or VerificationResultEvent
+  if (req.body['event'] == 'VerificationRequestEvent') {
+    if (lookUpNumber(req.body['identity']['endpoint'])) {
+      res.json({ action: 'allow' });
+
+    } else {
+      res.json({ 'action': 'deny' });
+    }
+  }
+  else if (req.body['event'] == 'VerificationResultEvent') {
+  }
+});

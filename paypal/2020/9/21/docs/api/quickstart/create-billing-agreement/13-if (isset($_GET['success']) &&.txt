@@ -1,0 +1,17 @@
+if (isset($_GET['success']) && $_GET['success'] == 'true') {
+  $token = $_GET['token'];
+  $agreement = new \PayPal\Api\Agreement();
+
+  try {
+    // Execute agreement
+    $agreement->execute($token, $apiContext);
+  } catch (PayPal\Exception\PayPalConnectionException $ex) {
+    echo $ex->getCode();
+    echo $ex->getData();
+    die($ex);
+  } catch (Exception $ex) {
+    die($ex);
+  }
+} else {
+    echo "user canceled agreement";
+}copy

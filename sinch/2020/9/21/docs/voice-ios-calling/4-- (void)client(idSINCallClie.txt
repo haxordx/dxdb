@@ -1,0 +1,8 @@
+- (void)client:(id<SINCallClient>)client didReceiveIncomingCall:(id<SINCall>)call {
+    // Assign delegate
+    call.delegate = self;
+
+    // Play ringtone
+
+    // Present UI for call (UIViewController / segue)
+}

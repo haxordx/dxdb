@@ -1,0 +1,25 @@
+#import "AppDelegate.h"
+#import <Stripe/Stripe.h>
+
+@implementation AppDelegate
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [Stripe setDefaultPublishableKey:@"{{PLATFORM_PUBLISHABLE_KEY}}"];
+    [STPAPIClient sharedClient] setStripeAccount:@"{{CONNECTED_STRIPE_ACCOUNT_ID}}"];
+
+    // For SDK versions < v19.0.0, set this too:
+    [[STPPaymentConfiguration sharedConfiguration] setStripeAccount:@"{{CONNECTED_STRIPE_ACCOUNT_ID}}"];
+    return YES;
+}
+@end#import "AppDelegate.h"
+#import <Stripe/Stripe.h>
+
+@implementation AppDelegate
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [Stripe setDefaultPublishableKey:@"{{PLATFORM_PUBLISHABLE_KEY}}"];
+    [STPAPIClient sharedClient] setStripeAccount:@"{{CONNECTED_STRIPE_ACCOUNT_ID}}"];
+
+    // For SDK versions < v19.0.0, set this too:
+    [[STPPaymentConfiguration sharedConfiguration] setStripeAccount:@"{{CONNECTED_STRIPE_ACCOUNT_ID}}"];
+    return YES;
+}
+@end

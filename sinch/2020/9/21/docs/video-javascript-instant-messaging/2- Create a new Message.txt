@@ -1,0 +1,15 @@
+// Create a new Message
+var message = messageClient.newMessage('Alice', 'Hello World!');
+
+// Success and fail handlers
+var handleSuccess = function() {...};
+var handleFail = function() {...};
+
+// Alt 1: Send it with success and fail handler
+messageClient.send(message, handleSuccess, handleFail)
+
+// Alt 2: Send it and append handlers using the promise returned
+messageClient.send(message)
+    .then(handleSuccess)
+    .then(some_other_success)
+    .fail(handleFail);

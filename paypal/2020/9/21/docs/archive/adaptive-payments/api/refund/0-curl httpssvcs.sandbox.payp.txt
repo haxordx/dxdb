@@ -1,0 +1,12 @@
+curl https://svcs.sandbox.paypal.com/AdaptivePayments/Refund \
+  -s \
+  --insecure \
+  -H "X-PAYPAL-SECURITY-USERID: api_username" \
+  -H "X-PAYPAL-SECURITY-PASSWORD: api_password" \
+  -H "X-PAYPAL-SECURITY-SIGNATURE: api_signature" \
+  -H "X-PAYPAL-REQUEST-DATA-FORMAT: NV" \
+  -H "X-PAYPAL-RESPONSE-DATA-FORMAT: NV" \
+  -H "X-PAYPAL-APPLICATION-ID: your_app_id "   \
+  -d requestEnvelope.errorLanguage=en_US \
+  -d payKey=AP-95V43510SV018561T
+copy

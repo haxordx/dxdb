@@ -1,0 +1,34 @@
+HTTP Headers
+------------
+-H "X-PAYPAL-SECURITY-USERID: insert_developer_user_name_here"
+-H "X-PAYPAL-SECURITY-PASSWORD: insert_developer_password_here"
+-H "X-PAYPAL-SECURITY-SIGNATURE: insert_developer_signature_here"
+-H "X-PAYPAL-REQUEST-DATA-FORMAT: NV"
+-H "X-PAYPAL-RESPONSE-DATA-FORMAT: NV"
+-H "X-PAYPAL-APPLICATION-ID: APP-80W284485P519543T"     #Standard sandbox app ID
+
+Endpoint
+--------
+https://svcs.sandbox.paypal.com/AdaptivePayments/Pay
+
+Input Parameters
+----------------
+actionType=PAY     #The action taken in the Pay request (that is, the PAY action)
+¤cyCode=USD    #The currency, e.g. US dollars
+&feesPayer=EACHRECEIVER
+&memo=Example
+&preapprovalKey=PA-5KY19448VE6821234    #The pre-approval key received in a Preapproval API response
+&receiverList.receiver(0).amount=7.00    #The payment amount
+&receiverList.receiver(0).email=insert_email_of_receiver
+&senderEmail=insert_email_of_sender
+&returnUrl=https://example.com/success   #For use if the customer proceeds with payment
+&cancelUrl=https://example.com/cancel    #For use if the customer decides not to proceed with payment
+&requestEnvelope.errorLanguage=en_US
+
+Response
+--------
+responseEnvelope.ack=Success
+&payKey=AP-7L748474VE7451234    #Value of the pay key, e.g. for use in a PaymentDetails call
+&paymentExecStatus=COMPLETED
+...
+copy

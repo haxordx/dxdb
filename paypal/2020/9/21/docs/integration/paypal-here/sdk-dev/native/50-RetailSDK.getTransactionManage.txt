@@ -1,0 +1,9 @@
+RetailSDK.getTransactionManager().createRefundTransaction(transactionRecord.getInvoiceId(), transactionRecord.getTransactionNumber(), transactionRecord.getPaymentMethod(), new TransactionManager.TransactionCallback()
+{
+  @Override
+  public void transaction(RetailSDKException error, TransactionContext refundTransaction)
+  {
+    // Insert beginRefund code here
+  }
+});
+copy

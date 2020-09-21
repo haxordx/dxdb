@@ -1,0 +1,8 @@
+RetailSDK.initializeMerchantOffline(new RetailSDK.MerchantInitializedCallback()
+  {
+    @Override
+    public void merchantInitialized(RetailSDKException error, Merchant merchant)
+    {
+      // Code to handle success or failure
+    }
+  });copy

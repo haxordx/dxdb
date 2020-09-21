@@ -1,0 +1,2 @@
+openssl pkcs12 -export -in cert_key_pem.txt -inkey cert_key_pem.txt -out paypal_cert.p12
+copy

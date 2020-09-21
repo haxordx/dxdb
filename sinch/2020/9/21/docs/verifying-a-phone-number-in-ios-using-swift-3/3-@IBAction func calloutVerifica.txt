@@ -1,0 +1,9 @@
+@IBAction func calloutVerification(_ sender: AnyObject) {
+       disableUI(true);
+       verification = CalloutVerification(applicationKey,
+           phoneNumber: phoneNumber.text!);
+       verification.initiate { (result: InitiationResult, error: NSError?) -> Void in
+           self.disableUI(false);
+           self.status.text = (success.success ? "Verified" : error?.localizedDescription);
+       }
+   }

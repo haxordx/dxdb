@@ -1,0 +1,13 @@
+{
+    "ref_id": "0170a009-eafe-0dea-995f-61cdcdd1b50e",
+    "error": "Subscriber not found",
+    "error_code": 1014,
+    "field_errors": [
+        {
+            "field": "msisdn",
+            "errors": [
+                "46702955555 could not be reached by any provisioned supplier"
+            ]
+        }
+    ]
+}

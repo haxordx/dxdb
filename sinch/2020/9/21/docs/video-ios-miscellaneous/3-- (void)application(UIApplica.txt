@@ -1,0 +1,6 @@
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    // get previously initiated Sinch client
+    id<SINClient> client = [self sinchClient];
+
+    [client registerPushNotificationData:deviceToken];
+}

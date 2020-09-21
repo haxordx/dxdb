@@ -1,0 +1,2 @@
+var result = await sails.helpers.formatWelcomeMessage('Dolly');
+sails.log('Ok it worked!  The result is:', result);

@@ -1,0 +1,6 @@
+import paypalrestsdk
+
+paypalrestsdk.configure({
+  'mode': 'sandbox', #sandbox or live
+  'client_id': 'YOUR APPLICATION CLIENT ID',
+  'client_secret': 'YOUR APPLICATION CLIENT SECRET' })copy

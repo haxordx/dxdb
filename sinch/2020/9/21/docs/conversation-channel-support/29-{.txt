@@ -1,0 +1,27 @@
+{
+  "app_id": "01E8RCZPK7HFV70FFDWFFK0EXK",
+  "accepted_time": "2020-06-22T10:57:36.074692Z",
+  "message": {
+    "id": "01EBDTT89ZGTGM0P70W0RK0YR2",
+    "direction": "TO_APP",
+    "contact_message": {
+      "location_message": {
+        "title": "ICA Jägaren",
+        "coordinates": {
+          "latitude": 55.727802,
+          "longitude": 13.175061
+        },
+        "label": ""
+      }
+    },
+    "channel_identity": {
+      "channel": "WHATSAPP",
+      "identity": "46712312312",
+      "app_id": ""
+    },
+    "conversation_id": "01EB199XQ2CBY50K6WZD9S1A22",
+    "contact_id": "01EB197NDA4W7V15NPRCVV0S79",
+    "metadata": "",
+    "accept_time": "2020-06-22T10:57:36.060961Z"
+  }
+}

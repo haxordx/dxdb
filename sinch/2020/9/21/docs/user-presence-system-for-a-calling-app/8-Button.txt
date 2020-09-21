@@ -1,0 +1,12 @@
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/pickupButton"
+    android:text="No call to pick up right now..."/>
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/hangupButton"
+    android:layout_below="@id/pickupButton"
+    android:text="No call to hang up right now..."/>

@@ -1,0 +1,6 @@
+[POST] https://callingapi.sinch.com/v1/configuration/numbers/
+
+{
+    "numbers":["+14151112223333"],
+    "applicationkey":"11983f76-12c8-1111-9515-4785c7b67ca8"
+}

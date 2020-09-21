@@ -1,0 +1,19 @@
+{
+  "id": "evt_Vba1zF3tpUaez3",
+  "livemode": true,
+  "object": "event",
+  "type": "customer.created",
+  "account": "acct_NkLakrze2vwbDX",
+  "pending_webhooks": 2,
+  "created": 1349654313,
+  "data": {...}
+}{
+  "id": "evt_Vba1zF3tpUaez3",
+  "livemode": true,
+  "object": "event",
+  "type": "customer.created",
+  "account": "acct_NkLakrze2vwbDX",
+  "pending_webhooks": 2,
+  "created": 1349654313,
+  "data": {...}
+}

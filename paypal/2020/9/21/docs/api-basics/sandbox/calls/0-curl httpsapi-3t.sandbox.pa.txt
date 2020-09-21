@@ -1,0 +1,14 @@
+curl https://api-3t.sandbox.paypal.com/nvp \
+  -s \
+  --insecure \
+  -d USER YourUserID \
+  -d PWD YourPassword \
+  -d SIGNATURE YourSignature \
+  -d METHOD=SetExpressCheckout \
+  -d VERSION=98 \
+  -d PAYMENTREQUEST_0_AMT=10 \
+  -d PAYMENTREQUEST_0_CURRENCYCODE=USD \
+  -d PAYMENTREQUEST_0_PAYMENTACTION=SALE \
+  -d cancelUrl=https://example.com/cancel.html \
+  -d returnUrl=https://example.com/success.html
+copy

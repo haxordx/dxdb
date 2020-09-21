@@ -1,0 +1,23 @@
+{
+  "merchant_id": "CG5RZJV4NR5P4",
+  "tracking_id": "1537989077589",
+  "products": [
+    {
+      "name": "EXPRESS_CHECKOUT"
+    }
+  ],
+  "payments_receivable": false,
+  "primary_email_confirmed": false,
+  "oauth_integrations": [{
+    "integration_type": "OAUTH_THIRD_PARTY",
+    "integration_method": "PAYPAL",
+    "oauth_third_party": [
+      {
+        "partner_client_id": "Af1bGDNgFBtbJvzEkG25zt4SoNQQ3ustiLm84GWXxe8nq_HE_0wCQ9SH8M1ScmSBURBIzPiCjr5gu-Dq",
+        "merchant_client_id": "AQ7u3fJkUH4cdCEBidsh5U_F1RQCGjglJQdNEEsXCzvQsGsS5MmC8Dk7_ug_IlkUASJezaGqQxQQfVhQ",
+        "scopes": ["https://uri.paypal.com/services/payments/realtimepayment", "https://uri.paypal.com/services/payments/refund", "https://uri.paypal.com/services/payments/payment/authcapture"]
+      }
+    ]
+  }]
+}
+jsoncopy

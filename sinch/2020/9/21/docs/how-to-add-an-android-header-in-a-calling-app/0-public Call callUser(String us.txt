@@ -1,0 +1,3 @@
+public Call callUser(String userId, Map<String, String> headers) {
+    return mSinchClient.getCallClient().callUser(userId, headers);
+}

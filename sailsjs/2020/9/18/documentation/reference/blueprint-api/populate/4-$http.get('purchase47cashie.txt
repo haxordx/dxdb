@@ -1,0 +1,4 @@
+$http.get('/purchase/47/cashier')
+.then(function (cashier) {
+  console.log(cashier);
+});

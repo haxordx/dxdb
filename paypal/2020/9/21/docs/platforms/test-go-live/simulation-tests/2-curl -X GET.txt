@@ -1,0 +1,5 @@
+curl -X GET \
+  https://api.sandbox.paypal.com/v2/invoicing/invoices/INV2-ABCD-1234-EINV-0010 \
+  -H 'Authorization: Bearer <Access Token>' \
+  -H 'Content-Type: application/json'
+bashcopy

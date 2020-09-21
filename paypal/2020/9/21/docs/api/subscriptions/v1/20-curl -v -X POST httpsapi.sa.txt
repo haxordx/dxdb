@@ -1,0 +1,6 @@
+curl -v -X POST https://api.sandbox.paypal.com/v1/billing/subscriptions/I-BW452GLLEP1G/activate \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer Access-Token" \
+-d '{
+  "reason": "Reactivating the subscription"
+}'copy

@@ -1,0 +1,3 @@
+{
+  'GET /csrfToken': { action: 'security/grant-csrf-token' }
+}

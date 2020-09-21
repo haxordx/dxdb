@@ -1,0 +1,20 @@
+curl https://svcs.sandbox.paypal.com/AdaptivePayments/Pay \
+  -s \
+  --insecure \
+  -H "X-PAYPAL-SECURITY-USERID: api_username" \
+  -H "X-PAYPAL-SECURITY-PASSWORD: api_password" \
+  -H "X-PAYPAL-SECURITY-SIGNATURE: api_signature" \
+  -H "X-PAYPAL-REQUEST-DATA-FORMAT: NV" \
+  -H "X-PAYPAL-RESPONSE-DATA-FORMAT: NV" \
+  -H "X-PAYPAL-APPLICATION-ID: app_id" \
+  -d requestEnvelope.errorLanguage=en_US \
+  -d actionType=PAY \
+  -d receiverList.receiver(0).amount=1.00 \
+  -d currencyCode=USD \
+  -d feesPayer=EACHRECEIVER \
+  -d memo=Simple payment example. \
+  -d cancelUrl=https://example.com \
+  -d returnUrl=https://example.com \
+  -d ipnNotificationUrl=https://example.com/ipn \
+  -d receiverList.receiver(0).paymentType=DIGITALGOODS
+copy

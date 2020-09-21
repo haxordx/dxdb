@@ -1,0 +1,7 @@
+{
+  "generators": {
+    "modules": {
+      "awesome": "@my-npm-name/sails-generate-awesome"
+    }
+  }
+}

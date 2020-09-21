@@ -1,0 +1,8 @@
+// Retrieve messageClient for particular sinchClient
+var messageClient = sinchClient.getMessageClient();
+
+// Create a new message for multiple recipients, using number as their identity
+var message = messageClient.newMessage([{number: 123456}, {number: 654321}], 'Hello Alice and Bob');
+
+// Send message
+messageClient.send(message);

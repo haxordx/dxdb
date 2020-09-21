@@ -1,0 +1,4 @@
+sinchClient = new SinchClient({
+    applicationKey: 'your-app-key',
+    capabilities: {calling: true},
+});

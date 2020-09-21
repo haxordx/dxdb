@@ -1,0 +1,25 @@
+stripe prices create \
+  -d product=prod_HZaLjvgB83z6Kv \
+  -d "tiers[0][unit_amount]"=1500 \
+  -d "tiers[0][up_to]"=5 \
+  -d "tiers[1][unit_amount]"=1000 \
+  -d "tiers[1][up_to]"=15 \
+  -d "tiers[2][unit_amount]"=500 \
+  -d "tiers[2][up_to]"=inf \
+  -d tiers_mode=volume \
+  -d billing_scheme=tiered \
+  -d currency=usd \
+  -d "recurring[interval]"=month \
+  -d "expand[]"=tiersstripe prices create \
+  -d product=prod_HZaLjvgB83z6Kv \
+  -d "tiers[0][unit_amount]"=1500 \
+  -d "tiers[0][up_to]"=5 \
+  -d "tiers[1][unit_amount]"=1000 \
+  -d "tiers[1][up_to]"=15 \
+  -d "tiers[2][unit_amount]"=500 \
+  -d "tiers[2][up_to]"=inf \
+  -d tiers_mode=volume \
+  -d billing_scheme=tiered \
+  -d currency=usd \
+  -d "recurring[interval]"=month \
+  -d "expand[]"=tiers

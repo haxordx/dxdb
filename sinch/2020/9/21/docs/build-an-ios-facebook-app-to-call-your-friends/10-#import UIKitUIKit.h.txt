@@ -1,0 +1,14 @@
+#import <UIKit/UIKit.h>
+#import "CFriend.h"
+
+@interface DetailViewController : UIViewController
+
+@property (strong, nonatomic) CFriend *detailItem;
+@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+@property (weak, nonatomic) IBOutlet UIButton *AnswerButton;
+@property (weak, nonatomic) IBOutlet UIButton *HangupButton;
+
+- (IBAction)AnswerAction:(id)sender;
+- (IBAction)HangupAction:(id)sender;
+
+@end

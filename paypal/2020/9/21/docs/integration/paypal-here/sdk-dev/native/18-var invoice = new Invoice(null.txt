@@ -1,0 +1,3 @@
+var invoice = new Invoice(null);
+invoice.AddItem("Amount", decimal.One, amount, "", "");
+invoice.Number("unique_invoice_number");copy

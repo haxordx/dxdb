@@ -1,0 +1,10 @@
+RetailSDK.getTransactionManager().voidAuthorization(authId, new TransactionManager.VoidAuthorizationCallback()
+{
+  @Override
+  public void voidAuthorization(RetailSDKException error)
+  {
+    // code to handle success or failure
+    // if error, check error and handle accordingly
+  }
+});
+copy

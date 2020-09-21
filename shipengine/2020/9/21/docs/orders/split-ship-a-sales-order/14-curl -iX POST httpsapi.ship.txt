@@ -1,0 +1,39 @@
+curl -iX POST https://api.shipengine.com/v-beta/shipments \
+-H 'API-Key: __YOUR_API_KEY_HERE__' \
+-H 'Content-Type: application/json' \
+-d '{
+  "shipments": [
+    {
+      "validate_address": "validate_and_clean",
+      "carrier_id": "se-123890",
+      "service_code": "usps_priority_mail",
+      "warehouse_id": "se-241419",
+      "ship_to": {
+        "name": "Amanda Miller",
+        "phone": "555-555-5555",
+        "address_line1": "525 S Winchester Blvd",
+        "city_locality": "San Jose",
+        "state_province": "CA",
+        "postal_code": "95128",
+        "country_code": "US",
+        "address_residential_indicator": "yes"
+      },
+      "packages": [
+        {
+          "package_code": "package",
+          "weight": {
+            "value": 1.0,
+            "unit": "ounce"
+          }
+        }
+      ],
+      "items": [
+        {
+          "sales_order_id": "0d3c142a-7516-5f5b-8a40-b437b5e01317",
+          "sales_order_item_id": "0399c595-774a-599b-a566-27ea86fec17d",
+          "quantity": 1
+        }
+      ]
+    }
+  ]
+}'

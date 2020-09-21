@@ -1,0 +1,2 @@
+# Install an unreleased branch of Sails in the current directory's `node_modules`
+$ npm install sails@git://github.com/balderdashy/sails.git#nameOfDesiredBranch

@@ -1,0 +1,38 @@
+HTTP Headers
+------------
+-H "X-PAYPAL-SECURITY-USERID: insert_developer_user_name_here"
+-H "X-PAYPAL-SECURITY-PASSWORD: insert_developer_password_here"
+-H "X-PAYPAL-SECURITY-SIGNATURE: insert_developer_signature_here"
+-H "X-PAYPAL-REQUEST-DATA-FORMAT: NV"
+-H "X-PAYPAL-RESPONSE-DATA-FORMAT: NV"
+-H "X-PAYPAL-APPLICATION-ID: APP-80W284485P519543T"     #Standard sandbox app ID
+
+Endpoint
+--------
+https://svcs.sandbox.paypal.com/AdaptivePayments/Pay
+
+Input Parameters
+----------------
+actionType=PAY_PRIMARY     #The PAY_PRIMARY action type delays payment to non-primary receivers
+&clientDetails.applicationId=APP-80W284485P519543T     #Standard sandbox app ID
+&clientDetails.ipAddress=127.0.0.1     #Address from which request is sent
+¤cyCode=USD    #The currency, e.g. US dollars
+&feesPayer=EACHRECEIVER
+&memo=Example
+&receiverList.receiver(0).amount=25.00    #The payment amount for the first receiver
+&receiverList.receiver(0).email=insert_email_of_receiver1
+&receiverList.receiver(0).primary=true    #Receiver designation (there can be only 1 primary receiver)
+&receiverList.receiver(1).amount=5.00    #The payment amount for the second receiver
+&receiverList.receiver(1).email=insert_email_of_receiver2
+&receiverList.receiver(1).primary=false
+&requestEnvelope.errorLanguage=en_US
+&returnUrl=https://example.com/success   #For use if the consumer proceeds with payment
+&cancelUrl=https://example.com/cancel    #For use if the consumer decides not to proceed with payment
+
+Response
+--------
+responseEnvelope.ack=Success
+&payKey=AP-9HY848657G6071234    #Value of the pay key, for use in a redirect to the PayPal site
+&paymentExecStatus=CREATED    #Indicates that a payment is set up, ready for a sender to click Pay on the PayPal site
+...
+copy

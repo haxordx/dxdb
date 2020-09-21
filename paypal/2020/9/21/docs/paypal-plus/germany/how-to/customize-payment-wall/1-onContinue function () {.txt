@@ -1,0 +1,4 @@
+onContinue: function () {
+window.location = "nextpage.php";
+},
+copy

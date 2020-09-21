@@ -1,0 +1,19 @@
+select
+  date_trunc('month', created) as month,
+  count(case when approved then 1 end) as num_approved_authorizations,
+  count(*) as total_num_authorizations
+from issuing_authorizations
+where date_trunc('month', created) between date_trunc('month', date_add('month', -13, date(data_load_time)))
+                                        and date_trunc('month', date_add('month', -1, date(data_load_time)))
+group by 1
+order by 1 desc, 2
+limit 2select
+  date_trunc('month', created) as month,
+  count(case when approved then 1 end) as num_approved_authorizations,
+  count(*) as total_num_authorizations
+from issuing_authorizations
+where date_trunc('month', created) between date_trunc('month', date_add('month', -13, date(data_load_time)))
+                                        and date_trunc('month', date_add('month', -1, date(data_load_time)))
+group by 1
+order by 1 desc, 2
+limit 2

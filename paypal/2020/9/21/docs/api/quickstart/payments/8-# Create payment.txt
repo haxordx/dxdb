@@ -1,0 +1,12 @@
+# Create payment
+if payment.create():
+  # Extract redirect url
+  for link in payment.links:
+    if link.method == "REDIRECT":
+      # Capture redirect url
+      redirect_url = (link.href)
+
+      # Redirect the customer to redirect_url
+else:
+  print("Error while creating payment:")
+  print(payment.error)copy

@@ -1,0 +1,13 @@
+curl https://api.stripe.com/v1/payment_intents \
+-u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+-d amount=999 \
+-d currency=cad \
+-d "payment_method_types[]"=card_present \
+-d "payment_method_types[]"=interac_present \
+-d capture_method=manualcurl https://api.stripe.com/v1/payment_intents \
+-u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+-d amount=999 \
+-d currency=cad \
+-d "payment_method_types[]"=card_present \
+-d "payment_method_types[]"=interac_present \
+-d capture_method=manual

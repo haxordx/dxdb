@@ -1,0 +1,188 @@
+public class CheckoutActivity extends AppCompatActivity {
+    private static final String BACKEND_URL = "http://10.0.2.2:4242/";
+    private OkHttpClient httpClient = new OkHttpClient();
+
+    private void pay(@Nullable String paymentMethodId, @Nullable String paymentIntentId) {
+        final MediaType mediaType = MediaType.get("application/json; charset=utf-8");
+        final String json;
+        if (paymentMethodId != null) {
+            json = "{"
+                    + "\"useStripeSdk\":true,"
+                    + "\"paymentMethodId\":" + "\"" + paymentMethodId + "\","
+                    + "\"currency\":\"usd\","
+                    + "\"items\":["
+                    + "{\"id\":\"photo_subscription\"}"
+                    + "]"
+                    + "}";
+        } else {
+            json = "{"
+                    + "\"paymentIntentId\":" +  "\"" + paymentIntentId + "\""
+                    + "}";
+        }
+        RequestBody body = RequestBody.create(json, mediaType);
+        Request request = new Request.Builder()
+                .url(BACKEND_URL + "pay")
+                .post(body)
+                .build();
+        httpClient
+                .newCall(request)
+                .enqueue(new PayCallback(this, stripe));
+    }
+
+    private void displayAlert(@NonNull String title, @NonNull String message, boolean restartDemo) {
+        // ...omitted for brevity
+    }
+
+    private static final class PayCallback implements Callback {
+        @NonNull private final WeakReference<CheckoutActivity> activityRef;
+        @NonNull private final Stripe stripe;
+
+        private PayCallback(@NonNull CheckoutActivity activity, @NonNull Stripe stripe) {
+            this.activityRef = new WeakReference<>(activity);
+            this.stripe = stripe;
+        }
+
+        @Override
+        public void onFailure(@NonNull Call call, @NonNull IOException e) {
+            final CheckoutActivity activity = activityRef.get();
+            if (activity == null) {
+                return;
+            }
+
+            activity.runOnUiThread(() -> {
+                Toast.makeText(activity, "Error: " + e.toString(), Toast.LENGTH_LONG).show();
+            });
+        }
+
+        @Override
+        public void onResponse(@NonNull Call call, @NonNull final Response response)
+                throws IOException {
+            final CheckoutActivity activity = activityRef.get();
+            if (activity == null) {
+                return;
+            }
+
+            if (!response.isSuccessful()) {
+                activity.runOnUiThread(() -> {
+                    Toast.makeText(activity,
+                            "Error: " + response.toString(), Toast.LENGTH_LONG).show();
+                });
+            } else {
+                Gson gson = new Gson();
+                Type type = new TypeToken<Map<String, String>>(){}.getType();
+                Map<String, String> responseMap = gson.fromJson(response.body().string(), type);
+
+                String error = responseMap.get("error");
+                String paymentIntentClientSecret = responseMap.get("clientSecret");
+                String requiresAction = responseMap.get("requiresAction");
+
+                if (error != null) {
+                    activity.displayAlert("Error", error, false);
+                } else if (paymentIntentClientSecret != null) {
+                    if ("true".equals(requiresAction)) {
+                        // ...continued in the next step
+                    } else {
+                        activity.displayAlert("Payment succeeded",
+                                paymentIntentClientSecret, true);
+                    }
+                }
+
+            }
+        }
+    }
+
+}
+public class CheckoutActivity extends AppCompatActivity {
+    private static final String BACKEND_URL = "http://10.0.2.2:4242/";
+    private OkHttpClient httpClient = new OkHttpClient();
+
+    private void pay(@Nullable String paymentMethodId, @Nullable String paymentIntentId) {
+        final MediaType mediaType = MediaType.get("application/json; charset=utf-8");
+        final String json;
+        if (paymentMethodId != null) {
+            json = "{"
+                    + "\"useStripeSdk\":true,"
+                    + "\"paymentMethodId\":" + "\"" + paymentMethodId + "\","
+                    + "\"currency\":\"usd\","
+                    + "\"items\":["
+                    + "{\"id\":\"photo_subscription\"}"
+                    + "]"
+                    + "}";
+        } else {
+            json = "{"
+                    + "\"paymentIntentId\":" +  "\"" + paymentIntentId + "\""
+                    + "}";
+        }
+        RequestBody body = RequestBody.create(json, mediaType);
+        Request request = new Request.Builder()
+                .url(BACKEND_URL + "pay")
+                .post(body)
+                .build();
+        httpClient
+                .newCall(request)
+                .enqueue(new PayCallback(this, stripe));
+    }
+
+    private void displayAlert(@NonNull String title, @NonNull String message, boolean restartDemo) {
+        // ...omitted for brevity
+    }
+
+    private static final class PayCallback implements Callback {
+        @NonNull private final WeakReference<CheckoutActivity> activityRef;
+        @NonNull private final Stripe stripe;
+
+        private PayCallback(@NonNull CheckoutActivity activity, @NonNull Stripe stripe) {
+            this.activityRef = new WeakReference<>(activity);
+            this.stripe = stripe;
+        }
+
+        @Override
+        public void onFailure(@NonNull Call call, @NonNull IOException e) {
+            final CheckoutActivity activity = activityRef.get();
+            if (activity == null) {
+                return;
+            }
+
+            activity.runOnUiThread(() -> {
+                Toast.makeText(activity, "Error: " + e.toString(), Toast.LENGTH_LONG).show();
+            });
+        }
+
+        @Override
+        public void onResponse(@NonNull Call call, @NonNull final Response response)
+                throws IOException {
+            final CheckoutActivity activity = activityRef.get();
+            if (activity == null) {
+                return;
+            }
+
+            if (!response.isSuccessful()) {
+                activity.runOnUiThread(() -> {
+                    Toast.makeText(activity,
+                            "Error: " + response.toString(), Toast.LENGTH_LONG).show();
+                });
+            } else {
+                Gson gson = new Gson();
+                Type type = new TypeToken<Map<String, String>>(){}.getType();
+                Map<String, String> responseMap = gson.fromJson(response.body().string(), type);
+
+                String error = responseMap.get("error");
+                String paymentIntentClientSecret = responseMap.get("clientSecret");
+                String requiresAction = responseMap.get("requiresAction");
+
+                if (error != null) {
+                    activity.displayAlert("Error", error, false);
+                } else if (paymentIntentClientSecret != null) {
+                    if ("true".equals(requiresAction)) {
+                        // ...continued in the next step
+                    } else {
+                        activity.displayAlert("Payment succeeded",
+                                paymentIntentClientSecret, true);
+                    }
+                }
+
+            }
+        }
+    }
+
+}

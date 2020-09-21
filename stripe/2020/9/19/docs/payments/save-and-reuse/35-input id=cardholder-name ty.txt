@@ -1,0 +1,15 @@
+<input id="cardholder-name" type="text">
+<!-- placeholder for Elements -->
+<form id="setup-form" data-secret='@ViewData["ClientSecret"]'>
+  <div id="card-element"></div>
+  <button id="card-button">
+    Save Card
+  </button>
+</form><input id="cardholder-name" type="text">
+<!-- placeholder for Elements -->
+<form id="setup-form" data-secret='@ViewData["ClientSecret"]'>
+  <div id="card-element"></div>
+  <button id="card-button">
+    Save Card
+  </button>
+</form>

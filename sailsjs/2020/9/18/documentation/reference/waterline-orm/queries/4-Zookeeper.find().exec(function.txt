@@ -1,0 +1,18 @@
+Zookeeper.find().exec(function afterFind(err, zookeepers) {
+
+  // Careful!  Do not throw an error in here without a `try` block!
+  // (Even a simple typo or null pointer exception could crash the process!)
+
+  if (err) {
+    // uh oh
+    // (handle error; e.g. `return res.serverError(err)`)
+    return;
+  }
+
+  // would you look at all those zookeepers?
+  // (now let's do the next thing;
+  //  e.g. `_.reduce(zookeepers, ...)` and/or `return res.json(zookeepers)`)
+  // …
+});
+//
+// (don't put code out here)

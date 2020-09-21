@@ -1,0 +1,6 @@
+<response>
+    <status>Failure</status>
+    <error-code>E111</error-code>
+    <to>12399471613</to>
+    <error-info>Invalid shortcode</error-info>
+</response>

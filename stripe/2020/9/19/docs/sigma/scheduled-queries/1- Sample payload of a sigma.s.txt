@@ -1,0 +1,65 @@
+// Sample payload of a sigma.scheduled_query_run.created webhook
+
+{
+  "object": "event",
+  "pending_webhooks": 2,
+  "created": 1504794194,
+  "type": "sigma.scheduled_query_run.created",
+  "livemode": true,
+  "request": null,
+  "data": {
+    "object": {
+      "id": "sqr_f6XohdnvJ7GV1BVZ5C4i",
+      "object": "scheduled_query_run",
+      "status": "completed",
+      "data_load_time": 1504656000,
+      "file": {
+        "id": "file_BNXsUJ9i",
+        "object": "file",
+        "url": "https://files.stripe.com/v1/files/file_BNXsUJ9i/contents",
+        "created": 1507841188,
+        "purpose": "sigma_scheduled_query",
+        "size": 53075,
+        "type": "csv"
+      },
+      "title": "Scheduled Query Example",
+      "sql": "SELECT count(*) FROM charges WHERE created >= date('2017-01-01')",
+      "created": 1504794194,
+      "result_available_until": 1505398933,
+      "error": null,
+      "livemode": true
+    }
+  }
+}// Sample payload of a sigma.scheduled_query_run.created webhook
+
+{
+  "object": "event",
+  "pending_webhooks": 2,
+  "created": 1504794194,
+  "type": "sigma.scheduled_query_run.created",
+  "livemode": true,
+  "request": null,
+  "data": {
+    "object": {
+      "id": "sqr_f6XohdnvJ7GV1BVZ5C4i",
+      "object": "scheduled_query_run",
+      "status": "completed",
+      "data_load_time": 1504656000,
+      "file": {
+        "id": "file_BNXsUJ9i",
+        "object": "file",
+        "url": "https://files.stripe.com/v1/files/file_BNXsUJ9i/contents",
+        "created": 1507841188,
+        "purpose": "sigma_scheduled_query",
+        "size": 53075,
+        "type": "csv"
+      },
+      "title": "Scheduled Query Example",
+      "sql": "SELECT count(*) FROM charges WHERE created >= date('2017-01-01')",
+      "created": 1504794194,
+      "result_available_until": 1505398933,
+      "error": null,
+      "livemode": true
+    }
+  }
+}

@@ -1,0 +1,4 @@
+<script>
+  var dgFlow = new PAYPAL.apps.DGFlow({ trigger: 'submitBtn' });
+</script>
+copy

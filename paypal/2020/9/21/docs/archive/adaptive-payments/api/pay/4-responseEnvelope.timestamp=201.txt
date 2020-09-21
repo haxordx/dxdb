@@ -1,0 +1,7 @@
+responseEnvelope.timestamp=2013-04-25T14%3A39%3A26.000-07%3A00
+&responseEnvelope.ack=Success
+&responseEnvelope.correlationId=d615a365bed61
+&responseEnvelope.build=5710123
+&payKey=AP-3TY011106S4428730
+&paymentExecStatus=CREATED
+copy

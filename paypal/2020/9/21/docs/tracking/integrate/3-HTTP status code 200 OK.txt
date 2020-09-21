@@ -1,0 +1,20 @@
+HTTP status code: 200 OK
+{
+  "tracker_identifiers": [{
+    "transaction_id": "8MC585209K746392H",
+    "links": [{
+      "href": "https://api.sandbox.paypal.com/v1/shipping/trackers/8MC585209K746392H-NOTRACKER",
+      "rel": "self",
+      "method": "GET"
+    }, {
+      "href": "https://api.sandbox.paypal.com/v1/shipping/trackers/8MC585209K746392H-NOTRACKER",
+      "rel": "replace",
+      "method": "PUT"
+    }, {
+      "href": "https://api.sandbox.paypal.com/v1/shipping/trackers/8MC585209K746392H-NOTRACKER",
+      "rel": "edit",
+      "method": "PATCH"
+    }]
+  }]
+}
+copy

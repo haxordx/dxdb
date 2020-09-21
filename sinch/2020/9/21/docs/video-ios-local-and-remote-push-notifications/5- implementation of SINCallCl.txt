@@ -1,0 +1,8 @@
+// implementation of SINCallClientDelegate
+- (SINLocalNotification *)client:(id<SINClient>)client
+  localNotificationForIncomingCall:(id<SINCall>)call {
+    SINLocalNotification *notification = [[SINLocalNotification alloc] init];
+    notification.alertAction = @"Answer";
+    notification.alertBody = @"Incoming call";
+    return notification;
+}

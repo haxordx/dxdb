@@ -1,0 +1,12 @@
+curl https://api.stripe.com/v1/subscription_items/{{SUBSCRIPTION_ITEM_ID}}/usage_records \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -X POST \
+  -d quantity=100 \
+  -d timestamp=1522893428 \
+  -d action=increment
+curl https://api.stripe.com/v1/subscription_items/{{SUBSCRIPTION_ITEM_ID}}/usage_records \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -X POST \
+  -d quantity=100 \
+  -d timestamp=1522893428 \
+  -d action=increment

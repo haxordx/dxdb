@@ -1,0 +1,13 @@
+stripe.Key = "sk_live_••••••••••••••••••••••••"
+
+params := &stripe.ApplePayDomainParams{
+  DomainName: stripe.String("example.com"),
+}
+
+domain, _ := applepaydomain.New(params)stripe.Key = "sk_live_••••••••••••••••••••••••"
+
+params := &stripe.ApplePayDomainParams{
+  DomainName: stripe.String("example.com"),
+}
+
+domain, _ := applepaydomain.New(params)

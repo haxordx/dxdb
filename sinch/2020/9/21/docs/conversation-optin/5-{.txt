@@ -1,0 +1,6 @@
+{
+  "contact_id": "{{CONTACT_ID}}",
+  "channel": "WHATSAPP",
+  "identity": "46712312312",
+  "status": "OPT_OUT_SUCCEEDED"
+}

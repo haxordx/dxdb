@@ -1,0 +1,7 @@
+function stripeSourceHandler(source) {
+  // Redirect the customer to the authorization URL.
+  document.location.href = source.redirect.url;
+}function stripeSourceHandler(source) {
+  // Redirect the customer to the authorization URL.
+  document.location.href = source.redirect.url;
+}

@@ -1,0 +1,4 @@
+workEmail: {
+  type: 'string',
+  isEmail: true,
+}

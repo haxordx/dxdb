@@ -1,0 +1,25 @@
+// api/models/User.js
+module.exports = {
+  datastore: 'rustyOldMySQLDatabase',
+  tableName: 'our_users',
+  attributes: {
+    id: {
+      type: 'number',
+      unique: true,
+      columnName: 'the_primary_key'
+    },
+    name: {
+      type: 'string',
+      columnName: 'full_name'
+    },
+    password: {
+      type: 'string',
+      columnName: 'seriously_hashed_password'
+    },
+    email: {
+      type: 'string',
+      unique: true,
+      columnName: 'email_address'
+    }
+  }
+};

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<reportingEngineResponse>
+   <baseResponse>
+      <responseCode>100</responseCode>
+      <responseMsg>Request has completed successfully</responseMsg>
+   </baseResponse>
+   <runReportResponse>
+      <reportId>133</reportId>
+      <statusCode>3</statusCode>
+      <statusMsg>Report has completed successfully</statusMsg>
+   </runReportResponse>
+</reportingEngineResponse>
+xmlcopy

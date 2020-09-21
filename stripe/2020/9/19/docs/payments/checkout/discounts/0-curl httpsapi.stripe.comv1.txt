@@ -1,0 +1,8 @@
+curl https://api.stripe.com/v1/coupons \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d percent_off=20 \
+  -d duration=once
+curl https://api.stripe.com/v1/coupons \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d percent_off=20 \
+  -d duration=once

@@ -1,0 +1,2 @@
+var agreement = new Agreement() { token = token };
+var executedAgreement = agreement.Execute(apiContext);copy

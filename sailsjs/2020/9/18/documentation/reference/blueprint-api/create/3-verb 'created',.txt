@@ -1,0 +1,3 @@
+verb: 'created',
+data: <a dictionary of the attribute values of the new record (without associations)>
+id: <the new record primary key>,

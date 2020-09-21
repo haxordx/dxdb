@@ -1,0 +1,9 @@
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
+
+    if ([notification sin_isSinchNotification]){
+
+      // This will trigger -[SINClientDelegate didReceiveIncomingCall:] if the notification
+      // represents a call (i.e. contrast to that it may represent an instant-message)
+      id<SINNotificationResult> result = [client relayLocalNotification:notification];
+    }
+}

@@ -1,0 +1,28 @@
+# Plan definition
+plan = Plan.new({
+  :name => 'Food of the World Club Membership: Standard',
+  :description => 'Monthly plan for getting the t-shirt of the month.',
+  :type => 'fixed',
+  :payment_definitions => [{
+    :name => 'Standard Plan',
+    :type => 'REGULAR',
+    :frequency_interval => '1',
+    :frequency => 'MONTH',
+    :cycles => '11',
+    :amount => {
+      :currency => 'USD',
+      :value => '19.99'
+    }
+  }],
+  :merchant_preferences => {
+    :setup_fee => {
+      :currency => 'USD',
+      :value => '1'
+    },
+    :cancel_url => 'http://localhost:3000/cancel',
+    :return_url => 'http://localhost:3000/processagreement',
+    :max_fail_attempts => '0',
+    :auto_bill_amount => 'YES',
+    :initial_fail_amount_action => 'CONTINUE'
+  }
+})copy

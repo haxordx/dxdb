@@ -1,0 +1,14 @@
+{
+  "app_id": "{{APP_ID}}",
+  "project_id": "{{PROJECT_ID}}",
+  "recipient": {
+    "identified_by": {
+      "channel_identities" : [
+        {
+         "channel": "WHATSAPP",
+         "identity": "46712312312"
+        }
+      ]
+    }
+  }
+}

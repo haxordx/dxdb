@@ -1,0 +1,15 @@
+apply plugin: 'com.android.application'
+
+android { ... }
+
+dependencies {
+  implementation "com.stripe:stripeterminal:1.0.17"
+  // ...
+}apply plugin: 'com.android.application'
+
+android { ... }
+
+dependencies {
+  implementation "com.stripe:stripeterminal:1.0.17"
+  // ...
+}

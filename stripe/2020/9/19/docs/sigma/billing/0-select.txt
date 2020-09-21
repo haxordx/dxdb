@@ -1,0 +1,19 @@
+select
+  subscriptions.id,
+  subscriptions.customer_id,
+  customers.email
+from subscriptions
+inner join customers
+  on customers.id=subscriptions.customer_id
+where
+  subscriptions.status = 'unpaid'
+limit 5select
+  subscriptions.id,
+  subscriptions.customer_id,
+  customers.email
+from subscriptions
+inner join customers
+  on customers.id=subscriptions.customer_id
+where
+  subscriptions.status = 'unpaid'
+limit 5

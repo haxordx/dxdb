@@ -1,0 +1,10 @@
+// Register with the GCM service to get a device specific registrationId
+// Should be done in a background job
+GoogleCloudMessaging gcm = GoogleCloudMessaging.getInstance(context);
+String regId = gcm.register("Your-Sender-ID");
+
+...
+
+sinchClient.setSupportPushNotifications(true);
+sinchClient.start();
+sinchClient.registerPushNotificationData(regId);

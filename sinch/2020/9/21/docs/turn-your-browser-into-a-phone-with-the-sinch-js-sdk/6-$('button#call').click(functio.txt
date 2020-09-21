@@ -1,0 +1,11 @@
+$('button#call').click(function(event) {
+    event.preventDefault();
+    clearError();
+
+    $('button#call').attr('disabled', 'disabled');
+    $('button#answer').attr('disabled', 'disabled');
+    $('div#callLog').append("<div>Calling " + $('input#callUsername').val() + "</div>");
+
+    call = callClient.callUser($('input#callUsername').val());
+    call.addEventListener(callListener);
+});

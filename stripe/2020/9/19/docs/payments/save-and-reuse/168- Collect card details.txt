@@ -1,0 +1,18 @@
+// Collect card details
+val cardInputWidget =
+    findViewById<CardInputWidget>(R.id.cardInputWidget)
+cardInputWidget.paymentMethodCreateParams?.let { paymentMethodParams ->
+    // Create SetupIntent confirm parameters with the above
+    val confirmParams = ConfirmSetupIntentParams
+        .create(paymentMethodParams, setupIntentClientSecret)
+    stripe.confirmSetupIntent(this, confirmParams)
+}
+// Collect card details
+val cardInputWidget =
+    findViewById<CardInputWidget>(R.id.cardInputWidget)
+cardInputWidget.paymentMethodCreateParams?.let { paymentMethodParams ->
+    // Create SetupIntent confirm parameters with the above
+    val confirmParams = ConfirmSetupIntentParams
+        .create(paymentMethodParams, setupIntentClientSecret)
+    stripe.confirmSetupIntent(this, confirmParams)
+}

@@ -1,0 +1,2 @@
+terminal.setSimulatorConfiguration({testCardNumber: '4242424242424242'});
+terminal.setSimulatorConfiguration({testCardNumber: '4242424242424242'});

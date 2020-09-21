@@ -1,0 +1,35 @@
+using System;
+using Microsoft.AspNetCore.Mvc;
+using Stripe;
+
+namespace StripeExampleApi.Controllers
+{
+    [Route("secret")]
+    [ApiController]
+    public class CheckoutApiController : Controller
+    {
+        [HttpGet]
+        public ActionResult Get()
+        {
+            var intent = // ... Fetch or create the PaymentIntent
+            return Json(new {client_secret = intent.ClientSecret});
+        }
+    }
+}using System;
+using Microsoft.AspNetCore.Mvc;
+using Stripe;
+
+namespace StripeExampleApi.Controllers
+{
+    [Route("secret")]
+    [ApiController]
+    public class CheckoutApiController : Controller
+    {
+        [HttpGet]
+        public ActionResult Get()
+        {
+            var intent = // ... Fetch or create the PaymentIntent
+            return Json(new {client_secret = intent.ClientSecret});
+        }
+    }
+}

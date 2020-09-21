@@ -1,0 +1,3 @@
+var createdUser = await User.create({name:'Finn'}).fetch();
+
+sails.log('Finn\'s id is:', createdUser.id);

@@ -1,0 +1,11 @@
+{
+  "instructions": [
+    {
+      "name": "playFiles",
+      "ids": ["#tts[hello world]"]
+    }
+  ],
+  "action": {
+    "name": "hangup"
+  }
+}

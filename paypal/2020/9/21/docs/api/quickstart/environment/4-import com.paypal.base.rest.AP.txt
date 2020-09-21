@@ -1,0 +1,8 @@
+import com.paypal.base.rest.APIContext;
+import com.paypal.base.rest.PayPalRESTException;
+
+// Replace with your application client ID and secret
+String clientId = "YOUR APPLICATION CLIENT ID";
+String clientSecret = "YOUR APPLICATION CLIENT SECRET";
+
+APIContext context = new APIContext(clientId, clientSecret, "sandbox");copy

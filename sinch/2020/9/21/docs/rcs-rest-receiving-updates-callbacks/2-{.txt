@@ -1,0 +1,10 @@
+{
+  "type": "user_agent_message_rcs",
+  "message_id": "9lkj32asd712jkasdjkasdkhsadasd",
+  "from": "4655123456",
+  "message": {
+    "type": "suggestion_response",
+    "postback_data": "ef425f90-a27b-4956-9ba0-37cdd2d6e160_YES_CHIP",
+    "text": "Yes"
+  }
+}

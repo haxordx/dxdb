@@ -1,0 +1,14 @@
+{
+  id: 12,
+  firstName: 'John',
+  lastName: 'Doe',
+  bestFriend: null,
+  children: [
+    {
+      id: 23,
+      firstName: 'Jane',
+      lastName: 'Doe',
+      bestFriend: null
+    }
+  ]
+}

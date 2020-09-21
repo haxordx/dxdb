@@ -1,0 +1,16 @@
+curl -v -X POST https://api.sandbox.paypal.com/v1/billing/plans/P-2UF78835G6983425GLSM44MA/update-pricing-schemes \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer Access-Token" \
+-d '{
+  "pricing_schemes": [
+    {
+      "billing_cycle_sequence": 2,
+      "pricing_scheme": {
+        "fixed_price": {
+          "value": "50",
+          "currency_code": "USD"
+        }
+      }
+    }
+  ]
+}'copy

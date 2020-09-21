@@ -1,0 +1,31 @@
+function joinConference() {
+    $('div#callLog').prepend('<div id="title">Joining conference ' + $('#pinCode').val() + '</div>');
+    call = callClient.callConference($('#pinCode').val());
+    call.addEventListener(callListeners);
+}
+
+$('button#call').click(function (event) {
+    event.preventDefault();
+    //basic error handling
+    if ($('#userName').val() === "" || $('#pinCode').val() === "") {
+        $('#errormessage').html('you must enter a name and pin code that you received in the email');
+        return;
+    }
+    $('#errormessage').html('');
+    //play local file while we start the client (might take a second or two
+    $('audio#ringback').trigger("play");
+    showUI(true); //Switch to In call UI (more on that later)
+    //Check to see if the client is started, if it is just join the conference
+    if (!started) {
+        //Get the ticket
+        $.getJSON("getTicket", { id: $('#userName').val() }, function (ticket) {
+            sinchClient.start(ticket).then(
+                function () {
+                    started = true;
+                    joinConference(); //Join the conference
+                });
+        });
+    } else {
+        joinConference();
+    }
+});

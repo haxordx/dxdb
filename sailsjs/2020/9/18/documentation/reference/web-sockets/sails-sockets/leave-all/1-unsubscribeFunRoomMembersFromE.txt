@@ -1,0 +1,12 @@
+unsubscribeFunRoomMembersFromEverything: function(req, res) {
+
+  sails.sockets.leaveAll('funRoom', function(err) {
+    if (err) { return res.serverError(err); }
+
+    // Unsubscribed all sockets in "funRoom" from "funRoom".
+    // And... from every other room too.
+
+    return res.ok();
+
+  });
+}

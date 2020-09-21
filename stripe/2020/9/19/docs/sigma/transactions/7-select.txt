@@ -1,0 +1,27 @@
+select
+  date_format(date_trunc('day', balance_transactions.created), '%Y-%m-%d') as bt_created,
+  balance_transactions.source_id,
+  balance_transactions.type,
+  balance_transactions.net as net_amount,
+  balance_transactions.automatic_transfer_id as transfer_id,
+  date_format(date_trunc('day', transfers.date), '%Y-%m-%d') as transfer_date
+from balance_transactions
+inner join transfers
+on balance_transactions.automatic_transfer_id=transfers.id
+where balance_transactions.type = 'charge'
+and balance_transactions.type != 'refund'
+order by bt_created desc
+limit 5select
+  date_format(date_trunc('day', balance_transactions.created), '%Y-%m-%d') as bt_created,
+  balance_transactions.source_id,
+  balance_transactions.type,
+  balance_transactions.net as net_amount,
+  balance_transactions.automatic_transfer_id as transfer_id,
+  date_format(date_trunc('day', transfers.date), '%Y-%m-%d') as transfer_date
+from balance_transactions
+inner join transfers
+on balance_transactions.automatic_transfer_id=transfers.id
+where balance_transactions.type = 'charge'
+and balance_transactions.type != 'refund'
+order by bt_created desc
+limit 5

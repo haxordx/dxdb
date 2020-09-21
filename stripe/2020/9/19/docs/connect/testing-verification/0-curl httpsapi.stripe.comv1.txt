@@ -1,0 +1,27 @@
+curl https://api.stripe.com/v1/accounts \
+  -u {PLATFORM_SECRET_KEY}: \
+  -d type=custom \
+  -d country=US \
+  -d business_type=company \
+  -d requested_capabilities[]=card_payments \
+  -d requested_capabilities[]=transfers \
+  -d external_account[object]=bank_account \
+  -d external_account[country]=US \
+  -d external_account[currency]=usd \
+  -d external_account[routing_number]=110000000 \
+  -d external_account[account_number]=000123456789 \
+  -d tos_acceptance[date]=1547923073 \
+  -d tos_acceptance[ip]="172.18.80.19"curl https://api.stripe.com/v1/accounts \
+  -u {PLATFORM_SECRET_KEY}: \
+  -d type=custom \
+  -d country=US \
+  -d business_type=company \
+  -d requested_capabilities[]=card_payments \
+  -d requested_capabilities[]=transfers \
+  -d external_account[object]=bank_account \
+  -d external_account[country]=US \
+  -d external_account[currency]=usd \
+  -d external_account[routing_number]=110000000 \
+  -d external_account[account_number]=000123456789 \
+  -d tos_acceptance[date]=1547923073 \
+  -d tos_acceptance[ip]="172.18.80.19"

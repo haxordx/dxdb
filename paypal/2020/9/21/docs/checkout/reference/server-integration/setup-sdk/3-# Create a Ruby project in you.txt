@@ -1,0 +1,3 @@
+# Create a Ruby project in your directory, then run the following command to install the PayPal JavaScript SDK.
+gem install paypal-checkout-sdk
+copy

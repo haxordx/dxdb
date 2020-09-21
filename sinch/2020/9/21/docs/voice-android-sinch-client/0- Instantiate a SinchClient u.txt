@@ -1,0 +1,8 @@
+// Instantiate a SinchClient using the SinchClientBuilder.
+android.content.Context context = this.getApplicationContext();
+SinchClient sinchClient = Sinch.getSinchClientBuilder().context(context)
+                                                  .applicationKey("<application key>")
+                                                  .applicationSecret("<application secret>")
+                                                  .environmentHost("clientapi.sinch.com")
+                                                  .userId("<user id>")
+                                                  .build();

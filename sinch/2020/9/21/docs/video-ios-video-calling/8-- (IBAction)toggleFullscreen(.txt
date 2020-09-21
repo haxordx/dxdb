@@ -1,0 +1,13 @@
+- (IBAction)toggleFullscreen:(id)sender {
+    id<SINVideoController> videoController = ... // get video controller from SINClient.
+
+    UIView *view = videoController.remoteView;
+
+    if ([view sin_isFullscreen]) {
+      view.contentMode = UIViewContentModeScaleAspectFit;
+      [view sin_disableFullscreen:YES]; // Pass YES to animate the transition
+    } else {
+      view.contentMode = UIViewContentModeScaleAspectFill;
+      [view sin_enableFullscreen:YES];  // Pass YES to animate the transition
+    }
+  }

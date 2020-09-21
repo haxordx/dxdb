@@ -1,0 +1,6 @@
+attributes: {
+  placeInLine: {
+    type: 'number',
+    autoIncrement: true
+  }
+}

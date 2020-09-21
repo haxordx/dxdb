@@ -1,0 +1,3 @@
+//Create a DotNet project in your directory, then run the following command to install the PayPal Payouts DotNet SDK.
+dotnet add package PayoutsSdk --version 1.0.0
+copy

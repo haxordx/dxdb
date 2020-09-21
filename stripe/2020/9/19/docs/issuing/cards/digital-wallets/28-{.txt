@@ -1,0 +1,28 @@
+{
+    "id": "ephkey_1G4V6eEEs6YsaMZ2P1diLWdj",
+    "object": "ephemeral_key",
+    "associated_objects": [
+        {
+            "id": "ic_1GWQp6EESaYspYZ9uSEZOcq9",
+            "type": "issuing.card"
+        }
+    ],
+    "created": 1586556828,
+    "expires": 1586560428,
+    "livemode": false,
+    "secret": "ek_test_YWNjdF8xRmdlTjZFRHelWWxwWVo5LEtLWFk0amJ2N0JOa0htU1JzEZkd2RpYkpJdnM_00z2ftxCGG"
+}
+{
+    "id": "ephkey_1G4V6eEEs6YsaMZ2P1diLWdj",
+    "object": "ephemeral_key",
+    "associated_objects": [
+        {
+            "id": "ic_1GWQp6EESaYspYZ9uSEZOcq9",
+            "type": "issuing.card"
+        }
+    ],
+    "created": 1586556828,
+    "expires": 1586560428,
+    "livemode": false,
+    "secret": "ek_test_YWNjdF8xRmdlTjZFRHelWWxwWVo5LEtLWFk0amJ2N0JOa0htU1JzEZkd2RpYkpJdnM_00z2ftxCGG"
+}

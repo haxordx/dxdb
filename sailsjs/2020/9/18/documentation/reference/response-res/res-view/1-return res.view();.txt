@@ -1,0 +1,2 @@
+return res.view();
+// -> responds with `views/oven/cook.ejs`

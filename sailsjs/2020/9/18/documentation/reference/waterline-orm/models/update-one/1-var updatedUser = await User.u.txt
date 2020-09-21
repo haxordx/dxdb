@@ -1,0 +1,11 @@
+var updatedUser = await User.updateOne({ firstName:'Pen' })
+.set({
+  firstName:'Finn'
+});
+
+if (updatedUser) {
+  sails.log('Updated the user named "Pen" so that their new name is "Finn".');
+}
+else {
+  sails.log('The database does not contain a user named "Pen".');
+}

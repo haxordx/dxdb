@@ -1,0 +1,7 @@
+function removeNumber(number) {
+  for (var p in numbers) {
+    if (numbers[p] == number) {
+      numbers.splice(p, 1);
+    }
+  }
+}

@@ -1,0 +1,2 @@
+await User.addToCollection(3, 'pets')
+.members([99,98]);

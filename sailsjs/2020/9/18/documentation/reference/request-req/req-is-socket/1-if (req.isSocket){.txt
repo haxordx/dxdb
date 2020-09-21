@@ -1,0 +1,8 @@
+if (req.isSocket){
+  // You're a socket.  Do cool socket stuff like subscribing.
+  User.subscribe(req, [req.session.userId]);
+}
+else {
+  // Just another HTTP request.
+  // (`req.isSocket` is undefined)
+}

@@ -1,0 +1,9 @@
+id: 47,
+verb: 'created',
+data: {
+  id: 47,
+  name: 'Applejack',
+  hobby: 'pickin',
+  createdAt: 1485550575626,
+  updatedAt: 1485550603847
+}

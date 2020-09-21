@@ -1,0 +1,18 @@
+select
+  balance_transactions.id,
+  balance_transactions.amount
+from balance_transactions
+inner join refunds
+on refunds.id=balance_transactions.source_id
+where reason != 'partial_capture'
+limit 5
+
+select
+  balance_transactions.id,
+  balance_transactions.amount
+from balance_transactions
+inner join refunds
+on refunds.id=balance_transactions.source_id
+where reason != 'partial_capture'
+limit 5
+

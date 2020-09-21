@@ -1,0 +1,4 @@
+"sv-SE" - Swedish (Sweden)
+"en-US" - English (United States)
+"en-GB" - English (United Kingdom)
+"fr-FR" - French (France)

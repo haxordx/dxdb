@@ -1,0 +1,16 @@
+paypal.Buttons({
+  onApprove: function(data) {
+    var FINALIZE_BILLING_URL = 'https://mystore.com/api/paypal/finalize-billing-agreement';
+
+    return fetch(FINALIZE_BILLING_URL, {
+      method: 'post',
+      headers: {
+        'content-type': 'application/json'
+      },
+      body: JSON.stringify({
+        billingToken: data.billingToken
+      })
+    });
+  }
+}).render('#paypal-button-container');
+copy

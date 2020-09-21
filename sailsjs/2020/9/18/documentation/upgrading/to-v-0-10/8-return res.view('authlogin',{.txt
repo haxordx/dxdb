@@ -1,0 +1,3 @@
+return res.view('auth/login',{
+  layout: 'someLayout'
+});

@@ -1,0 +1,6 @@
+{
+    "rel": "self",
+    "href": "https://api.sandbox.paypal.com/v2/invoicing/templates/TEMP-4S7973887L4810214",
+    "method": "GET"
+}
+jsoncopy

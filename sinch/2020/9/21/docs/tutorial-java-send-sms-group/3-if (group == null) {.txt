@@ -1,0 +1,3 @@
+if (group == null) {
+    group = connection.createGroup(ClxApi.groupCreate().name("subscribers").build());
+}

@@ -1,0 +1,42 @@
+{
+  "id": "29V87338W7751874U",
+  "create_time": "2018-08-15T17:33:46Z",
+  "update_time": "2018-08-15T17:33:46Z",
+  "state": "COMPLETED",
+  "amount": {
+    "total": "100.00",
+    "currency": "USD"
+  },
+  "refund_from_transaction_fee": {
+    "currency": "USD",
+    "value": "2.90"
+  },
+  "total_refunded_amount": {
+    "currency": "USD",
+    "value": "100.00"
+  },
+  "refund_from_received_amount": {
+    "currency": "USD",
+    "value": "97.10"
+  },
+  "capture_id": "2F6652020G264741U",
+  "parent_payment": "PAY-22L784864U0004637LN2GCYQ",
+  "invoice_number": "INV-7654321",
+  "links": [
+    {
+      "href": "https://sandbox.paypal.com/v1/payments/refund/29V87338W7751874U",
+      "rel": "self",
+      "method": "GET"
+    },
+    {
+      "href": "https://sandbox.paypal.com/v1/payments/payment/PAY-22L784864U0004637LN2GCYQ",
+      "rel": "parent_payment",
+      "method": "GET"
+    },
+    {
+      "href": "https://sandbox.paypal.com/v1/payments/capture/2F6652020G264741U",
+      "rel": "capture",
+      "method": "GET"
+    }
+  ]
+}copy

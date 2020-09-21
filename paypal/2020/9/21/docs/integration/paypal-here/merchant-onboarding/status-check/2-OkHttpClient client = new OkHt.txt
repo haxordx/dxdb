@@ -1,0 +1,11 @@
+OkHttpClient client = new OkHttpClient();
+
+Request request = new Request.Builder()
+  .url("https://api.sandbox.paypal.com/retail/merchant/v1/status")
+  .get()
+  .addHeader("content-type", "application/json")
+  .addHeader("authorization", "Bearer {access_token_of_merchant}")
+  .build();
+
+Response response = client.newCall(request).execute();
+copy

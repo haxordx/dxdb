@@ -1,0 +1,13 @@
+if ([self.call direction] == SINCallDirectionIncoming) {
+    self.AnswerButton.hidden = NO;
+    self.ContactLabel.text = [NSString stringWithFormat:@"Call from %@", self.contact];
+    NSString *urlString = [[_call headers] objectForKey:@"url"];
+    NSURL *url = [NSURL URLWithString:urlString];
+    self.player = [[AVPlayer alloc]initWithURL:url];
+    [self.player play];
+
+} else {
+    self.AnswerButton.hidden = YES;
+    NSString *contactName = [self.call remoteUserId];
+    self.ContactLabel.text = [NSString stringWithFormat:@"Calling %@...", contactName];
+}

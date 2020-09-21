@@ -1,0 +1,5 @@
+POST /v1/sms/+46700000000
+x-timestamp: 2014-06-04T13:41:58Z
+Content-Type: application/json
+
+{“message”:“Hello world”}

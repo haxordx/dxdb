@@ -1,0 +1,11 @@
+registerActions: function(cb) {
+
+  // Register an action as `myhook/greet` that an app can bind to any route they like.
+  sails.registerAction(function greet(req, res) {
+    var name = req.param('name') || 'stranger';
+    return res.status(200).send('Hey there, ' + name + '!');
+  }, 'myhook/greet');
+
+  return cb();
+
+}

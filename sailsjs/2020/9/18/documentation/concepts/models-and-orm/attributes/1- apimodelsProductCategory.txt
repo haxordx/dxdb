@@ -1,0 +1,7 @@
+// api/models/ProductCategory.js
+module.exports = {
+  attributes: {
+    updatedAt: false,
+    label: { type: 'string', required: true },
+  }
+}

@@ -1,0 +1,4 @@
+[PayPalRetailSDK initializeMerchantOffline:^(PPRetailError *error, PPRetailMerchant *merchant) {
+    // Code to handle success or failure
+}];
+copy

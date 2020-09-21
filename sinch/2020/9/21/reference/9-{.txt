@@ -1,0 +1,15 @@
+{
+    "app_id": "CONV-APP-ID",
+    "recipient": {
+        "identified_by": {
+            "channel_identities":   [{
+            "channel": "SMS",
+            "identity": "+46 xxx xxx xxx"
+        }]}
+    },
+    "message": {
+        "text_message": {
+            "text": "Text message from Sinch Conversation API."
+        }
+    }
+}

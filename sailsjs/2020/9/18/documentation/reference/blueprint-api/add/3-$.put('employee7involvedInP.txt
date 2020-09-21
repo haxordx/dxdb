@@ -1,0 +1,3 @@
+$.put('/employee/7/involvedInPurchases/47', function (purchases) {
+  console.log(purchases);
+});

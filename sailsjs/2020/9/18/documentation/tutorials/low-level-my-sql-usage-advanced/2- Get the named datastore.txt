@@ -1,0 +1,5 @@
+// Get the named datastore
+var rdi = sails.getDatastore('default');
+
+// Get the datastore configured for a specific model
+var rdi = Product.getDatastore();

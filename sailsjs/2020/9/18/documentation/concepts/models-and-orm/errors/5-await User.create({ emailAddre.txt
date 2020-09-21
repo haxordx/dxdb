@@ -1,0 +1,12 @@
+await User.create({ emailAddress: inputs.emailAddress })
+// Uniqueness constraint violation
+.intercept('E_UNIQUE', (err)=> {
+  return 'emailAlreadyInUse';
+})
+// Some other kind of usage / validation error
+.intercept({name:'UsageError'}, (err)=> {
+  return 'invalid';
+});
+// If something completely unexpected happened, the error will be thrown as-is.
+
+return exits.success();

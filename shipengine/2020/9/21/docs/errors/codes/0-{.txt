@@ -1,0 +1,10 @@
+{
+  "error_source": "shipengine",
+  "error_type": "business_rules",
+  "error_code": "confirmation_not_supported",
+  "message": "Adult signature confirmation is not supported by Australia Post.",
+  "confirmation": "adult_signature",
+  "carrier_id": "se-123456",
+  "carrier_code": "australia_post",
+  "carrier_name": "Australia Post"
+}

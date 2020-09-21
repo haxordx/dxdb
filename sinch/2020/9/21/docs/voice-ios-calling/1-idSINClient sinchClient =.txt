@@ -1,0 +1,3 @@
+id<SINClient> sinchClient = ...; // Sinch client setup since before.
+id<SINCallClient> callClient = [sinchClient callClient];
+id<SINCall> call = [callClient callSIP:@"<SIP identity>"];

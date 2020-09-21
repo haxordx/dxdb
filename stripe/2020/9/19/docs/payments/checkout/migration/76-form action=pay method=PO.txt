@@ -1,0 +1,21 @@
+<form action="/pay" method="POST">
+  <script
+    src="https://checkout.stripe.com/checkout.js"
+    class="stripe-button"
+    data-key="pk_test_TYooMQauvdEDq54NiTphI7jx"
+    data-name="T-shirt"
+    data-description="Comfortable cotton t-shirt"
+    data-amount="500"
+    data-currency="usd">
+  </script>
+</form><form action="/pay" method="POST">
+  <script
+    src="https://checkout.stripe.com/checkout.js"
+    class="stripe-button"
+    data-key="pk_test_TYooMQauvdEDq54NiTphI7jx"
+    data-name="T-shirt"
+    data-description="Comfortable cotton t-shirt"
+    data-amount="500"
+    data-currency="usd">
+  </script>
+</form>

@@ -1,0 +1,5 @@
+{
+    "name" : "ConnectConf",
+    "conferenceId" : "myConference",
+    "moh" : "ring"
+}

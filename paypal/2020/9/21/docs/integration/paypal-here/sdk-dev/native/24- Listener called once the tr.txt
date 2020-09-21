@@ -1,0 +1,21 @@
+// Listener called once the transaction is completed
+[self.transactionContext setCompletedHandler:^(PPRetailError *error, PPRetailTransactionRecord *txnRecord) {
+    // if error, handle accordingly, else pop back to view controller and handle success
+
+    [self.navigationController popToViewController:self animated:YES];
+
+    // txnRecord would have any info needed to record the successful transaction
+}];
+
+// Setting up the options for the transaction.
+PPRetailTransactionBeginOptions *options = [[PPRetailTransactionBeginOptions alloc] init];
+options.showPromptInCardReader = YES;
+options.showPromptInApp = YES;
+options.preferredFormFactors = @[];
+options.tippingOnReaderEnabled = NO;
+options.amountBasedTipping = NO;
+options.isAuthCapture = NO;
+options.quickChipEnabled = NO;
+
+// Activates the reader to show the payment options
+[self.transactionContext beginPayment:options];copy

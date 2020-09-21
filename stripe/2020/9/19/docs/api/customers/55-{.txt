@@ -1,0 +1,5 @@
+{
+  "id": "cus_I3HcwHEKBfQLG1",
+  "object": "customer",
+  "deleted": true
+}

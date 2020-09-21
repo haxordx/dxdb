@@ -1,0 +1,7 @@
+{
+  "message": {
+    "media_message": {
+      "url": "https://1vxc0v12qhrm1e72gq1mmxkf-wpengine.netdna-ssl.com/wp-content/uploads/2018/12/favicon.png"
+    }
+  }
+}

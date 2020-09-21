@@ -1,0 +1,16 @@
+curl -X POST \
+     -H "Authorization: Bearer {token}" \
+     -H "Content-Type: application/json"  -d '
+      {
+          "name": "My auto group",
+          "auto_update": {
+                "to": "443456789012",
+                    "add": {
+                        "first_word": "join"
+                    },
+                    "remove": {
+                        "first_word": "stop"
+                    }
+                }
+}' \
+  "https://us.sms.api.sinch.com/xms/v1/{service_plan_id}/groups"

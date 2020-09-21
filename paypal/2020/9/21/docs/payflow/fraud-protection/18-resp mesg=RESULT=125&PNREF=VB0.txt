@@ -1,0 +1,4 @@
+resp mesg=RESULT=125&PNREF=VB0A25032493&RESPMSG=Declined by Fraud Service&PREFPSMSG=
+Reject InternationalOrder
+    !!ERROR 15:0:24 result=125 TRXTYPE=A!!
+copy

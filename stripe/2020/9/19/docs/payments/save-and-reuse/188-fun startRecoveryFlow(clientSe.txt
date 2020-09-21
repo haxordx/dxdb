@@ -1,0 +1,30 @@
+fun startRecoveryFlow(clientSecret: String) {
+    AsyncTask.execute {
+        val stripe = Stripe(applicationContext, PaymentConfiguration.getInstance(applicationContext).publishableKey)
+        val paymentIntent = stripe.retrievePaymentIntentSynchronous(clientSecret)
+        var failureReason = "Payment failed, try again" // Default to a generic error message
+        paymentIntent?.lastPaymentError?.let { lastPaymentError ->
+            if (lastPaymentError.type == PaymentIntent.Error.Type.CardError) {
+                lastPaymentError.message?.let { errorMessage ->
+                    failureReason = errorMessage
+                }
+            }
+        }
+        // Display the failure reason to your customer
+    }
+}
+fun startRecoveryFlow(clientSecret: String) {
+    AsyncTask.execute {
+        val stripe = Stripe(applicationContext, PaymentConfiguration.getInstance(applicationContext).publishableKey)
+        val paymentIntent = stripe.retrievePaymentIntentSynchronous(clientSecret)
+        var failureReason = "Payment failed, try again" // Default to a generic error message
+        paymentIntent?.lastPaymentError?.let { lastPaymentError ->
+            if (lastPaymentError.type == PaymentIntent.Error.Type.CardError) {
+                lastPaymentError.message?.let { errorMessage ->
+                    failureReason = errorMessage
+                }
+            }
+        }
+        // Display the failure reason to your customer
+    }
+}

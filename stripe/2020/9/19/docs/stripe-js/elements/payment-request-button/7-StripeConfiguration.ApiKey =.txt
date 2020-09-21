@@ -1,0 +1,17 @@
+StripeConfiguration.ApiKey = "sk_live_••••••••••••••••••••••••";
+
+var options = new ApplePayDomainCreateOptions
+{
+  DomainName = "example.com",
+};
+
+var service = new ApplePayDomainService();
+var domain = service.Create(options);StripeConfiguration.ApiKey = "sk_live_••••••••••••••••••••••••";
+
+var options = new ApplePayDomainCreateOptions
+{
+  DomainName = "example.com",
+};
+
+var service = new ApplePayDomainService();
+var domain = service.Create(options);

@@ -1,0 +1,7 @@
++ (id)addFriendWithName:(NSString *)friendName FriendID:(NSString *)friendID
+{
+    CFriend *newFriend = [[self alloc] init];
+    [newFriend setFriendName:friendName];
+    [newFriend setFriendID:friendID];
+    return newFriend;
+}

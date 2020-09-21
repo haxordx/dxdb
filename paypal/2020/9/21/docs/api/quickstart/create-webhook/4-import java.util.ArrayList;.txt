@@ -1,0 +1,22 @@
+import java.util.ArrayList;
+import java.util.List;
+
+import com.paypal.api.payments.EventType;
+import com.paypal.api.payments.Webhook;
+import com.paypal.base.rest.APIContext;
+import com.paypal.base.rest.PayPalRESTException;
+
+List eventTypes = new ArrayList();
+
+EventType eventType1 = new EventType();
+eventType1.setName("VAULT.CREDIT-CARD.CREATED");
+
+EventType eventType2 = new EventType();
+eventType2.setName("VAULT.CREDIT-CARD.UPDATED");
+
+eventTypes.add(eventType1);
+eventTypes.add(eventType2);
+
+Webhook webhook = new Webhook();
+webhook.setUrl("https://f6153ef32.ngrok.io");
+webhook.setEventTypes(eventTypes);copy

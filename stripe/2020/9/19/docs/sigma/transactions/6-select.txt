@@ -1,0 +1,27 @@
+select
+  date_format(date_trunc('day', disputes.created), '%Y-%m-%d') as day,
+  disputes.id,
+  disputes.charge_id,
+  disputes.amount,
+  charges.card_address_zip_check as zip,
+  charges.card_cvc_check as cvc
+from disputes
+inner join charges
+on charges.id=disputes.charge_id
+where disputes.status = 'lost'
+and disputes.reason = 'fraudulent'
+order by day desc
+limit 5select
+  date_format(date_trunc('day', disputes.created), '%Y-%m-%d') as day,
+  disputes.id,
+  disputes.charge_id,
+  disputes.amount,
+  charges.card_address_zip_check as zip,
+  charges.card_cvc_check as cvc
+from disputes
+inner join charges
+on charges.id=disputes.charge_id
+where disputes.status = 'lost'
+and disputes.reason = 'fraudulent'
+order by day desc
+limit 5

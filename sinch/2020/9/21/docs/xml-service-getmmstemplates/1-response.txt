@@ -1,0 +1,31 @@
+<response>
+    <status>Success</status>
+    <start-date>2014-03-31T11:30:00+00:00</start-date>
+    <page-number>1</page-number>
+    <items-per-page>3</items-per-page>
+    <total-results>3</total-results>
+    <mms-template>
+         <mms-id>1234</mms-id>
+         <mms-name>MMS-4</mms-name>
+         <mms-subject>mms-test-4</mms-subject>
+         <date-created>2014-10-31T09:30:00+00:00</date-created>
+         <total-slides>2</total-slides>
+         <mms-size>2048</mms-size>
+    </mms-template>
+    <mms-template>
+         <mms-id>1233</mms-id>
+         <mms-name>MMS-3</mms-name>
+         <mms-subject>mms-test-3</mms-subject>
+         <date-created>2014-10-30T19:00:00+00:00</date-created>
+         <total-slides>4</total-slides>
+         <mms-size>4096</mms-size>
+    </mms-template>
+    <mms-template>
+         <mms-id>1230</mms-id>
+         <mms-name>MMS-2</mms-name>
+         <mms-subject>mms-test-2</mms-subject>
+         <date-created>2014-10-30T08:30:00+00:00</date-created>
+         <total-slides>2</total-slides>
+         <mms-size>5126</mms-size>
+    </mms-template>
+</response>

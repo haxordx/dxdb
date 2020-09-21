@@ -1,0 +1,1 @@
+[GET] https://callingapi.sinch.com/v1/calling/query/number/+46(0)73-017-0101

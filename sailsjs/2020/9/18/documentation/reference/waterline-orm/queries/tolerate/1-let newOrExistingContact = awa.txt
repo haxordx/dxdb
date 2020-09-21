@@ -1,0 +1,12 @@
+let newOrExistingContact = await Contact.create({
+  emailAddress,
+  fullName
+})
+.fetch()
+.tolerate('E_UNIQUE');
+
+if(!newOrExistingContact) {
+  newOrExistingContact = await Contact.updateOne({ emailAddress })
+  .set({ fullName })
+  .fetch();
+}

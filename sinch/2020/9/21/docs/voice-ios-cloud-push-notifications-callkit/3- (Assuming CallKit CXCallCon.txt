@@ -1,0 +1,23 @@
+// (Assuming CallKit CXCallController accessible as self.callController)
+- (void)startOutgoingCall:(NSString *)destination {
+  NSUUID *callId = [[NSUUID alloc] init];
+
+  CXHandle *handle = [[CXHandle alloc] initWithType:CXHandleTypeGeneric value:destination];
+  CXStartCallAction *initiateCallAction =
+      [[CXStartCallAction alloc] initWithCallUUID:callId handle:handle];
+  CXTransaction *initOutgoingCall = [[CXTransaction alloc] initWithAction:initiateCallAction];
+
+  [self.callController requestTransaction:initOutgoingCall
+                           completion:^void(NSError *error) {
+                               if (error) {
+                                 NSLog(@"%@", error);
+                               }
+                             }];
+}
+
+- (void)provider:(CXProvider *)provider performStartCallAction:(CXStartCallAction *)action {
+  id<SINCall> call = [_client.callClient callUserWithId: action.handle.value];
+  [action fulfill];
+}
+
+// (For a more complete example, see the Sinch sample app SinchCallKit.xcodeproj)

@@ -1,0 +1,6 @@
+     Billing                  Shipping
+     Steve Morrison           Steve Morrison
+     4390 Ramirez             4390 Ramires
+     San Francisco, CA        San Francisco, CA
+     94114                    94113
+copy

@@ -1,0 +1,8 @@
+$intent = \Stripe\PaymentIntent::retrieve('{{PAYMENT_INTENT_ID}}');
+$intent->confirm([
+  'return_url' => 'https://example.com/return_url',
+]);
+$intent = \Stripe\PaymentIntent::retrieve('{{PAYMENT_INTENT_ID}}');
+$intent->confirm([
+  'return_url' => 'https://example.com/return_url',
+]);

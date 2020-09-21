@@ -1,0 +1,65 @@
+...
+BUTTONCODE=TOKEN
+BUTTONTYPE=PAYMENT
+L_BUTTONVAR0=subtotal=11
+L_BUTTONVAR1=tax=2
+L_BUTTONVAR2=shipping=3
+L_BUTTONVAR3=handling=4
+L_BUTTONVAR4=Smith
+L_BUTTONVAR5=last_name=Victor
+L_BUTTONVAR6=address1=Gardens
+L_BUTTONVAR7=address2=99343
+L_BUTTONVAR8=city=Paris
+L_BUTTONVAR9=state=TX
+L_BUTTONVAR10=zip=75002
+L_BUTTONVAR11=country=US
+L_BUTTONVAR12=billing_first_name=V. J.
+L_BUTTONVAR13=billing_last_name=Smith
+L_BUTTONVAR14=billing_address1=5088 - 061 Craven Hill Gardens
+L_BUTTONVAR15=billing_address2=Apt# 199343 ba
+L_BUTTONVAR16=billing_city=Wolverhampton
+L_BUTTONVAR17=billing_state=West Midlands
+L_BUTTONVAR18=billing_zip=W12 4LQ"
+L_BUTTONVAR19=billing_country=GB
+L_BUTTONVAR20=night_phone_a=408
+L_BUTTONVAR21=night_phone_b=398
+L_BUTTONVAR22=night_phone_c=3065
+L_BUTTONVAR23=notify_url=www.google.com
+L_BUTTONVAR24=custom=custom1
+L_BUTTONVAR25=cancel_return=https://example.com
+L_BUTTONVAR26=paymentaction=sale
+L_BUTTONVAR27=currency_code=GBP
+L_BUTTONVAR28=business=FLBY7TDW3HTYS
+L_BUTTONVAR29=invoice=
+L_BUTTONVAR30=lc=GB
+L_BUTTONVAR31=showBillingAddress=false
+L_BUTTONVAR32=showShippingAddress=false
+L_BUTTONVAR33=showBillingEmail=true
+L_BUTTONVAR33=showBillingPhone=true
+L_BUTTONVAR34=showCustomerName=true
+L_BUTTONVAR35=showCardInfo=true
+L_BUTTONVAR36=showHostedThankyouPage=true
+L_BUTTONVAR37=bn=GBD
+L_BUTTONVAR39=address_override=0
+L_BUTTONVAR41=logoText=MartWall
+L_BUTTONVAR42=logoImage=https://example.com/logo.gif
+L_BUTTONVAR43=logoImagePosition=center
+L_BUTTONVAR44=logoFont=Arial Bold
+L_BUTTONVAR45=logoFontSize=24px
+L_BUTTONVAR46=logoFontColor=#f0ff0f
+L_BUTTONVAR47=bodyBgImg=sdf
+L_BUTTONVAR48=bodyBgColor=#AEAEAE
+L_BUTTONVAR49=headerHeight=70px
+L_BUTTONVAR50=headerBgColor=#4B6BA1
+L_BUTTONVAR51=PageTitleTextColor=Blue
+L_BUTTONVAR52=PageCollapseBgColor=Blue
+L_BUTTONVAR53=PageCollapseTextColor=Yellow
+L_BUTTONVAR54=PageButtonBgColor=Blue
+L_BUTTONVAR55=PageButtonFgColor=White
+L_BUTTONVAR56=orderSummaryBgColor=#EDF2F7
+L_BUTTONVAR57=orderSummaryBgImage=https://example.com/ordersummary.jpg
+L_BUTTONVAR58=footerTextColor=#333333
+L_BUTTONVAR59=footerTextlinkColor=#00f00f
+L_BUTTONVAR60=template=templateC
+L_BUTTONVAR61=return=https://example.com">
+copy

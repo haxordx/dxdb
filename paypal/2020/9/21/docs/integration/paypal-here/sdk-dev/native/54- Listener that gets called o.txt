@@ -1,0 +1,12 @@
+// Listener that gets called once the refund processes
+refundTransaction.setCompletedHandler(new TransactionContext.TransactionCompletedCallback()
+{
+  @Override
+  public void transactionCompleted(RetailSDKException error, TransactionRecord record)
+  {
+    RefundActivity.this.refundCompleted(error, record);
+  }
+});
+
+// Begins refund process by asking if a card is present for the refund
+refundTransaction.beginRefund(true, currentAmount);copy

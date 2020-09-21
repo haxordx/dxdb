@@ -1,0 +1,11 @@
+- (IBAction)CallAction:(id)sender {
+    if (![self.UsernameTextField.text isEqualToString:@""]) {
+        CallViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"callScreen"];
+
+        NSDictionary *dict = [[NSDictionary alloc] initWithObjectsAndKeys:self.RingtoneTextField.text, @"url", nil];
+        id<SINCall> call = [self.callClient callUserWithId:self.UsernameTextField.text headers:dict];
+        // 2
+
+        [self presentViewController:controller animated:YES completion:nil];
+    }
+}

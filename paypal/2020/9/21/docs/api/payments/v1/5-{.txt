@@ -1,0 +1,58 @@
+{
+  "id": "PAY-5YK922393D847794YKER7MUI",
+  "intent": "authorize",
+  "create_time": "2017-04-24T14:26:59.059Z",
+  "payer": {
+    "payer_info": {
+      "country_code": "DE",
+      "email": "payer@example.com",
+      "first_name": "Gruneberg",
+      "last_name": "Anna",
+      "payer_id": "8J4VWY56VUXQ6",
+      "phone": "605-521-1234"
+    },
+    "payment_method": "paypal",
+    "status": "VERIFIED"
+  },
+  "state": "APPROVED",
+  "transactions": [
+    {
+      "amount": {
+        "total": "18.37",
+        "currency": "EUR",
+        "details": {
+          "subtotal": "13.37",
+          "shipping": "5.00"
+        }
+      },
+      "description": "Uber",
+      "item_list": {
+        "items": [
+          {
+            "currency": "EUR",
+            "name": "iPad",
+            "price": "13.37",
+            "quantity": "1"
+          }
+        ],
+        "shipping_address": {
+          "recipient_name": "Anna Gruneberg",
+          "line1": "Kathwarinenhof 1",
+          "city": "Flensburg",
+          "postal_code": "24939",
+          "country_code": "DE"
+        }
+      },
+      "payee": {
+        "email": "payee@example.com"
+      }
+    }
+  ],
+  "links": [
+    {
+      "href": "https://api.sandbox.paypal.com/v1/payments/payment/PAY-5YK922393D847794YKER7MUI",
+      "method": "GET",
+      "rel": "self"
+    }
+  ]
+}copy

@@ -1,0 +1,5 @@
+// Pause the video stream.
+[call pauseVideo];
+
+// Resume the video stream.
+[call resumeVideo];

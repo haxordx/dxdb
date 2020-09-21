@@ -1,0 +1,3 @@
+io.socket.on('connect', function onConnect(){
+  console.log('This socket is now connected to the Sails server.');
+});

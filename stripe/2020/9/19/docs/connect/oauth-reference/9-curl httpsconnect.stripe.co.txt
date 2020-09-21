@@ -1,0 +1,8 @@
+curl https://connect.stripe.com/oauth/deauthorize \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d client_id=ca_32D88BD1qLklliziD7gYQvctJIhWBSQ7 \
+  -d stripe_user_id=acct_Rashx0GUCh9bu1
+curl https://connect.stripe.com/oauth/deauthorize \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d client_id=ca_32D88BD1qLklliziD7gYQvctJIhWBSQ7 \
+  -d stripe_user_id=acct_Rashx0GUCh9bu1

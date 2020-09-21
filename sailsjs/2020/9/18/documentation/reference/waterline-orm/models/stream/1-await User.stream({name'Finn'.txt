@@ -1,0 +1,9 @@
+await User.stream({name:'Finn'})
+.eachRecord(async (user)=>{
+
+  if (Math.random() > 0.5) {
+    throw new Error('Oops!  This is a simulated error.');
+  }
+
+  sails.log(`Found a user ${user.id} named Finn.`);
+});

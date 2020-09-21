@@ -1,0 +1,32 @@
+var form = document.getElementById('payment-form');
+
+form.addEventListener('submit', function(event) {
+  // We don't want to let default form submission happen here,
+  // which would refresh the page.
+  event.preventDefault();
+
+  stripe.createPaymentMethod({
+    type: 'card',
+    card: cardElement,
+    billing_details: {
+      // Include any additional collected billing details.
+      name: 'Jenny Rosen',
+    },
+  }).then(stripePaymentMethodHandler);
+});
+var form = document.getElementById('payment-form');
+
+form.addEventListener('submit', function(event) {
+  // We don't want to let default form submission happen here,
+  // which would refresh the page.
+  event.preventDefault();
+
+  stripe.createPaymentMethod({
+    type: 'card',
+    card: cardElement,
+    billing_details: {
+      // Include any additional collected billing details.
+      name: 'Jenny Rosen',
+    },
+  }).then(stripePaymentMethodHandler);
+});

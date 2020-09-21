@@ -1,0 +1,6 @@
+attributes: {
+  ssn: {
+    type: 'string',
+    encrypt: true
+  }
+}

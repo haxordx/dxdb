@@ -1,0 +1,19 @@
+<form action="/purchase" method="POST">
+  <script
+    src="https://checkout.stripe.com/checkout.js"
+    class="stripe-button"
+    data-key="pk_test_TYooMQauvdEDq54NiTphI7jx"
+    data-name="Food Marketplace"
+    data-description="10 cucumbers from Roger's Farm"
+    data-amount="2000">
+  </script>
+</form><form action="/purchase" method="POST">
+  <script
+    src="https://checkout.stripe.com/checkout.js"
+    class="stripe-button"
+    data-key="pk_test_TYooMQauvdEDq54NiTphI7jx"
+    data-name="Food Marketplace"
+    data-description="10 cucumbers from Roger's Farm"
+    data-amount="2000">
+  </script>
+</form>

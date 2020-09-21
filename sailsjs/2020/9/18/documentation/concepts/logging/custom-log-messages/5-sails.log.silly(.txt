@@ -1,0 +1,4 @@
+sails.log.silly(
+'Successfully fetched Account record for requesting authenticated user (`%d`).',
+'Took %dms.', req.param('id'), msElapsed);
+// -> silly: Successfully fetched Account record for authenticated user (`49722`). Took 41ms.

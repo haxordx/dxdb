@@ -1,0 +1,5 @@
+StringToSign = HTTP-Verb + “\n” +
+    “\n” +
+    Content-Type + “\n” +
+    CanonicalizedHeaders + “\n” +
+    CanonicalizedResource;

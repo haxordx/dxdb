@@ -1,0 +1,14 @@
+[self.verification
+ verifyCode:code.text
+ completionHandler:^(BOOL success, NSError* error) {
+     if (success) {
+         [_spinner stopAnimating];
+         [self performSegueWithIdentifier:@"confirmedSeg" sender:nil];
+         // Phone number was successfully verified, you should
+         //probably notify your backend or use the callbacks to store that the phone is
+         //verified.
+     } else {
+         // Ask user to re-attempt verification
+         status.text = [error description];
+     }
+ }];

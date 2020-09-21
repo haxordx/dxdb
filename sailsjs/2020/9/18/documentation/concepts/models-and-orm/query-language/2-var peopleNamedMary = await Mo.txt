@@ -1,0 +1,3 @@
+var peopleNamedMary = await Model.find({
+  name: 'mary'
+});

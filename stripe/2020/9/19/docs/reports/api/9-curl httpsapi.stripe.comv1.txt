@@ -1,0 +1,26 @@
+curl https://api.stripe.com/v1/reporting/report_runs \
+  -u sk_live_123456: \
+  -d report_type="balance_change_from_activity.itemized.3" \
+  -d "parameters[interval_start]"=1577865600 \
+  -d "parameters[interval_end]"=1580544000 \
+  -d "parameters[timezone]"="America/Los_Angeles" \
+  -d "parameters[columns][]"=created \
+  -d "parameters[columns][]"=reporting_category \
+  -d "parameters[columns][]"=net
+
+# Timestamps are for 2020-01-01 00:00 PST and 2020-02-01 00:00 PST.
+# The columns parameter is optional. A default set of columns will be provided if you don't specify a value.
+# Note that a live-mode API key is required.
+curl https://api.stripe.com/v1/reporting/report_runs \
+  -u sk_live_123456: \
+  -d report_type="balance_change_from_activity.itemized.3" \
+  -d "parameters[interval_start]"=1577865600 \
+  -d "parameters[interval_end]"=1580544000 \
+  -d "parameters[timezone]"="America/Los_Angeles" \
+  -d "parameters[columns][]"=created \
+  -d "parameters[columns][]"=reporting_category \
+  -d "parameters[columns][]"=net
+
+# Timestamps are for 2020-01-01 00:00 PST and 2020-02-01 00:00 PST.
+# The columns parameter is optional. A default set of columns will be provided if you don't specify a value.
+# Note that a live-mode API key is required.

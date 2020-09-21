@@ -1,0 +1,15 @@
+{
+  "type": "status_report_rcs",
+  "message_id": string,
+  "at": timestamp,
+  "status_report": {
+    "type": enum(
+      "queued",
+      "aborted",
+      "failed",
+      "delivered",
+      "displayed"
+    ),
+    ... // type specific fields
+  }
+}

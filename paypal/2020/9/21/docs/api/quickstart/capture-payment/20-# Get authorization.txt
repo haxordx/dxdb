@@ -1,0 +1,17 @@
+# Get authorization
+authorization = Authorization.find(authid)
+
+# Set capture details
+capture = authorization.capture({
+  "amount": {
+    "currency": "USD",
+    "total": "4.54"
+  },
+  "is_final_capture": True
+})
+
+# Capture authorization
+if capture.success():
+  print("Capture[%s] successfully" % (capture.id))
+else:
+  print(capture.error)copy

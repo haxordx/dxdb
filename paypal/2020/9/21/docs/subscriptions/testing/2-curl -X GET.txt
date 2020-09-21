@@ -1,0 +1,9 @@
+curl -X GET \
+  https://api.sandbox.paypal.com/v1/billing/subscriptions/ERRSUB068/activate \
+  -H 'Authorization: Bearer <Access Token>' \
+  -H 'Content-Type: application/json' \
+  -d '{
+     "reason": "Reactivating the subscription"
+  }
+}'
+bashcopy

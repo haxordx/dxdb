@@ -1,0 +1,20 @@
+"evidence": {
+  "reason": "not_received",
+  "not_received": {
+    "additional_documentation": null, // We refer to these as "evidence fields"
+    "expected_at": null,
+    "explanation": "Not shipped",
+    "product_description": "Baseball cards",
+    "product_type": "merchandise"
+  }
+}
+"evidence": {
+  "reason": "not_received",
+  "not_received": {
+    "additional_documentation": null, // We refer to these as "evidence fields"
+    "expected_at": null,
+    "explanation": "Not shipped",
+    "product_description": "Baseball cards",
+    "product_type": "merchandise"
+  }
+}

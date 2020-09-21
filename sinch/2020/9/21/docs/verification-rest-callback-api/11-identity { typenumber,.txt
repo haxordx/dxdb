@@ -1,0 +1,1 @@
+"identity": { "type":"number", "endpoint":"+46700000000" }

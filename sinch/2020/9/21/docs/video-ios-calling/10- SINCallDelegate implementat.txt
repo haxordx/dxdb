@@ -1,0 +1,4 @@
+// SINCallDelegate implementation
+
+- (void)callDidEnd:(id<SINCall>) call {
+  // update user interface, e.g. hide the call screen.

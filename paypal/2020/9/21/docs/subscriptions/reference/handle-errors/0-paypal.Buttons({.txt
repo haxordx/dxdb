@@ -1,0 +1,6 @@
+paypal.Buttons({
+  onError: function (err) {
+    // Show an error page here, when an error occurs
+  }
+}).render('#paypal-button-container');
+copy

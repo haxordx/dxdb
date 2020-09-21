@@ -1,0 +1,32 @@
+curl https://api-3t.sandbox.paypal.com/nvp \
+  -s \
+  --insecure \
+  -d USER=yourUID \
+  -d PWD=yourPSWD \
+  -d SIGNATURE=yourSig \
+  -d METHOD=DoDirectPayment \
+  -d VERSION=100 \
+  -d CREDITCARDTYPE=VISA \
+  -d ACCT=4683075410516684 \
+  -d EXPDATE=112007 \
+  -d CVV2=116 \
+  -d AMT=1.55 \
+  -d FIRSTNAME=Designer \
+  -d LASTNAME=Fotos \
+  -d IPADDRESS=255.55.167.002 \
+  -d STREET=1234%20AVS_A%20Street \
+  -d CITY=San%20Jose \
+  -d STATE=CA \
+  -d COUNTRY=United%20States \
+  -d ZIP=95110 \
+  -d COUNTRYCODE=US \
+  -d SHIPTONAME=Lenny%20P.%20Rico \
+  -d SHIPTOSTREET=1234%20Easy%20Street \
+  -d SHIPTOSTREET2=Apt%2022%20bis \
+  -d SHIPTOCITY=New%20Orleans \
+  -d SHIPTOSTATE=LA \
+  -d SHIPTOCOUNTRY=US \
+  -d SHIPTOZIP=70114 \
+  -d PAYMENTACTION=Authorization \
+  -d FIZBIN=foo
+copy

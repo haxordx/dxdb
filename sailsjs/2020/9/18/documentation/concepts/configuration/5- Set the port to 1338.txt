@@ -1,0 +1,14 @@
+// Set the port to 1338
+sails lift --port=1338
+
+// Set a custom "email" value to "foo@bar.com":
+sails lift --custom.email='foo@bar.com'
+
+// Turn on CSRF support
+sails lift --security.csrf
+
+// Turn off CSRF support
+sails lift --no-security.csrf
+
+// This won't work; it'll just try to set the value to the string "[1,2,3]"
+sails lift --custom.array='[1,2,3]'

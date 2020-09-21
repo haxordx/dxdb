@@ -1,0 +1,10 @@
+price = stripe.Price.create(
+  product='{{PRODUCT_ID}}',
+  unit_amount=2000,
+  currency='usd',
+)
+price = stripe.Price.create(
+  product='{{PRODUCT_ID}}',
+  unit_amount=2000,
+  currency='usd',
+)

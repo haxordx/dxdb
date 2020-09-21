@@ -1,0 +1,9 @@
+-(void)initSinchClient
+{
+    _client = [Sinch clientWithApplicationKey:@"your_key"
+                            applicationSecret:@"your_secret"
+                              environmentHost:@"clientapi.sinch.com"
+                                       userId:@"anything you want"];
+    _client.callClient.delegate = self;
+    [_client setSupportCalling:YES];
+    [_client start];}

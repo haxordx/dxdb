@@ -1,0 +1,15 @@
+RetailSDK.getTransactionManager().createVaultTransaction(new TransactionManager.TransactionCallback()
+{
+    @Override
+    public void transaction(RetailSDKException e, TransactionContext context)
+    {
+        if (e != null) {
+            // handle error accordingly
+        }else{
+            currentTransaction = context;
+        }
+    }
+});
+
+// set vaultCompletedHandler, transaction options, and beginPayment as outlined above
+copy

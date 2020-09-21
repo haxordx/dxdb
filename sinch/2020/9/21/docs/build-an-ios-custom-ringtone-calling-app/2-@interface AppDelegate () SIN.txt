@@ -1,0 +1,1 @@
+@interface AppDelegate () <SINServiceDelegate, SINCallClientDelegate>

@@ -1,0 +1,28 @@
+{
+  "id": "O-0NR488530V5211123",
+  "create_time": "2017-06-28T07:35:08Z",
+  "update_time": "2017-06-28T07:36:25Z",
+  "state": "VOIDED",
+  "amount": {
+    "total": "41.15",
+    "currency": "USD",
+    "details": {
+      "subtotal": "30.00",
+      "tax": "0.15",
+      "shipping": "11.00"
+    }
+  },
+  "parent_payment": "PAY-0AY778532K612520BKOXHAKY",
+  "links": [
+    {
+      "href": "https://api.sandbox.paypal.com/v1/payments/authorization/O-0NR488530V5211123",
+      "rel": "self",
+      "method": "GET"
+    },
+    {
+      "href": "https://api.sandbox.paypal.com/v1/payments/payment/PAY-0AY778532K612520BKOXHAKY",
+      "rel": "parent_payment",
+      "method": "GET"
+    }
+  ]
+}copy

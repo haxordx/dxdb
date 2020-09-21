@@ -1,0 +1,7 @@
+{
+  "generators": {
+    "modules": {
+        "awesome": "./my-project/awesome"
+    }
+  }
+}

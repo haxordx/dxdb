@@ -1,0 +1,1 @@
+var SinchClient = require('sinch-rtc');

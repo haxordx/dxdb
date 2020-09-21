@@ -1,0 +1,4 @@
+@property (nonatomic, copy) NSString *friendName;
+@property (nonatomic, copy) NSString *friendID;
+
++ (id)addFriendWithName:(NSString *)friendName FriendID:(NSString *)friendID;

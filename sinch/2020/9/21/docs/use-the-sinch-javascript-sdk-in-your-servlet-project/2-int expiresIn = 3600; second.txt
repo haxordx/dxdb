@@ -1,0 +1,13 @@
+int expiresIn = 3600; //seconds
+String applicationKey = "YOUR_APP_KEY"; //change me!
+String applicationSecret = "YOU_APP_SECRET"; //change me!
+
+//date in iso8601 format
+Date date= new java.util.Date();
+DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'");
+dateFormat.setTimeZone(TimeZone.getTimeZone("UTC"));
+String timestamp = dateFormat.format(date);
+
+//user-submitted username and password
+String username = request.getParameter("username");
+String password = request.getParameter("password");

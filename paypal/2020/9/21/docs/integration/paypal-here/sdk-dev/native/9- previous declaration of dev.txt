@@ -1,0 +1,21 @@
+// previous declaration of deviceManager
+PPRetailDeviceManager *deviceManager = [PayPalRetailSDK deviceManager];
+// code to connect to last known reader or find another
+[deviceManager connectToLastActiveReader:^(PPRetailError *error, PPRetailPaymentDevice *cardReader) {
+    // Code to handle success or failure
+    // On error, check the error and retry
+    // On success for a Bluetooth reader, check for software update
+}];
+// code to search and connect
+[deviceManager searchAndConnect:^(PPRetailError *error, PPRetailPaymentDevice *cardReader) {
+    // Code to handle success or failure
+    // On error, check the error and retry
+    // On success for a Bluetooth reader, check for software update
+}];
+// code to auto-connect to the last known reader
+NSString *lastActiveReader = [self.deviceManager getLastActiveBluetoothReader];
+[deviceManager scanAndAutoConnectToBluetoothReader:lastActiveReader callback:^(PPRetailError *error, PPRetailPaymentDevice *cardReader) {
+    // Code to handle success or failure
+    // On error, check error and connect by another method
+    // On success for a Bluetooth reader, check for software update
+}];copy

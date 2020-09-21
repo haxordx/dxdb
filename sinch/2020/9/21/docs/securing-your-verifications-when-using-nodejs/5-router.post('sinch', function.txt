@@ -1,0 +1,7 @@
+router.post('/sinch', function (req, res) {
+  //look the type of event VerificationRequestEvent or VerificationResultEvent
+  if (req.body['event'] == 'VerificationRequestEvent') {
+  }
+  else if (req.body['event'] == 'VerificationResultEvent') {
+    }
+});

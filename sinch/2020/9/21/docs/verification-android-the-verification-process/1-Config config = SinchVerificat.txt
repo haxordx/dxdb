@@ -1,0 +1,6 @@
+Config config = SinchVerification.config().applicationKey(APPLICATION_KEY).context(getApplicationContext()).build();
+VerificationListener listener = new MyVerificationListener();
+String defaultRegion = PhoneNumberUtils.getDefaultCountryIso();
+String phoneNumberInE164 = PhoneNumberUtils.formatNumberToE164(phoneNumberString, defaultRegion);
+Verification verification = SinchVerification.createFlashCallVerification(config, phoneNumberInE164, listener);
+verification.initiate();

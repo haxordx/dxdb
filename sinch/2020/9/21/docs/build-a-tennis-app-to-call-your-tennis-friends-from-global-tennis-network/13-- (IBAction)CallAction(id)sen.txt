@@ -1,0 +1,7 @@
+- (IBAction)CallAction:(id)sender {
+    CallViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"callScreen"];
+    [controller setCallingFriend:self.detailItem];
+    id<SINCall> call = [self.callClient callUserWithId:self.detailItem.userID];
+    //[controller setCall:call];
+    [self presentViewController:controller animated:YES completion:nil];
+}

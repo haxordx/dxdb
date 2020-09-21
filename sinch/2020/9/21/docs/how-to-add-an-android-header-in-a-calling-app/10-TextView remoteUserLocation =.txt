@@ -1,0 +1,2 @@
+TextView remoteUserLocation = (TextView) findViewById(R.id.remoteUserLocation);
+remoteUserLocation.setText("Calling from " + mCallLocation);

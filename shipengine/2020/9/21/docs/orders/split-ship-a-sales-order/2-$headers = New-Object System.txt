@@ -1,0 +1,6 @@
+$headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
+$headers.Add("Host", "api.shipengine.com")
+$headers.Add("API-Key", "__YOUR_API_KEY_HERE__")
+
+$response = Invoke-RestMethod 'https://api.shipengine.com/v-beta/sales_orders/0d3c142a-7516-5f5b-8a40-b437b5e01317' -Method 'GET' -Headers $headers -Body $body
+$response | ConvertTo-Json

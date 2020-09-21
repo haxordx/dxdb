@@ -1,0 +1,2 @@
+ApplicationKey: 5F5C418A0F914BBC8234A9BF5EDDAD97
+ApplicationSecret: JViE5vDor0Sw3WllZka15Q==

@@ -1,0 +1,12 @@
+<com.paypal.soap.api.BMSetInventoryRequestType>
+  <hostedButtonID>41</hostedButtonID>
+  <trackInv>1</trackInv>
+  <trackPnl>1</trackPnl>
+  <itemTrackingDetails>
+    <itemNumber>234234</itemNumber>
+    <itemQty>10</itemQty>
+    <itemAlert>2</itemAlert>
+    <itemCost>4</itemCost>
+  </itemTrackingDetails>
+  <soldoutURL>https://example.com/soldout</soldoutURL>
+</com.paypal.soap.api.BMSetInventoryRequestType>copy

@@ -1,0 +1,132 @@
+{
+    "id": "PAY-91628638US182293DLN2VSXI",
+    "intent": "sale",
+    "state": "approved",
+    "cart": "1DC33828GX6593230",
+    "payer": {
+        "payment_method": "paypal",
+        "status": "VERIFIED",
+        "payer_info": {
+            "email": "ich@paypal.de",
+            "first_name": "Max",
+            "last_name": "Muster",
+            "payer_id": "DXG4CHYYWZ534",
+            "shipping_address": {
+                "recipient_name": "Max Muster",
+                "line1": "ESpachstr. 1",
+                "city": "Freiburg",
+                "state": "Empty",
+                "postal_code": "79111",
+                "country_code": "DE"
+            },
+            "country_code": "DE"
+        }
+    },
+    "transactions": [
+        {
+            "amount": {
+                "total": "21.50",
+                "currency": "EUR",
+                "details": {
+                    "subtotal": "15.00",
+                    "tax": "2.00",
+                    "shipping": "2.50",
+                    "insurance": "2.00",
+                    "handling_fee": "1.00",
+                    "shipping_discount": "-1.00"
+                }
+            },
+            "payee": {
+                "merchant_id": "SW6SSWCLWAPDJ",
+                "email": "haendler@paypal.de"
+            },
+            "description": "This is the payment transaction description.",
+            "custom": "This is a hidden value",
+            "invoice_number": "unique_invoice_number",
+            "item_list": {
+                "items": [
+                    {
+                        "name": "Item 1",
+                        "sku": "1",
+                        "description": "add description here",
+                        "price": "10.00",
+                        "currency": "EUR",
+                        "quantity": 2
+                    },
+                    {
+                        "name": "Voucher",
+                        "sku": "vouch1",
+                        "description": "discount on your order",
+                        "price": "-5.00",
+                        "currency": "EUR",
+                        "quantity": 1
+                    }
+                ],
+                "shipping_address": {
+                    "recipient_name": "Max Muster",
+                    "line1": "ESpachstr. 1",
+                    "city": "Freiburg",
+                    "state": "Empty",
+                    "postal_code": "79111",
+                    "country_code": "DE"
+                }
+            },
+            "related_resources": [
+                {
+                    "sale": {
+                        "id": "7BU89641MW2078643",
+                        "state": "completed",
+                        "amount": {
+                            "total": "21.50",
+                            "currency": "EUR",
+                            "details": {
+                                "subtotal": "15.00",
+                                "tax": "2.00",
+                                "shipping": "2.50",
+                                "insurance": "2.00",
+                                "handling_fee": "1.00",
+                                "shipping_discount": "-1.00"
+                            }
+                        },
+                        "payment_mode": "INSTANT_TRANSFER",
+                        "protection_eligibility": "ELIGIBLE",
+                        "protection_eligibility_type": "ITEM_NOT_RECEIVED_ELIGIBLE,UNAUTHORIZED_PAYMENT_ELIGIBLE",
+                        "transaction_fee": {
+                            "value": "0.65",
+                            "currency": "EUR"
+                        },
+                        "parent_payment": "PAY-91628638US182293DLN2VSXI",
+                        "create_time": "2018-08-16T11:02:01Z",
+                        "update_time": "2018-08-16T11:02:01Z",
+                        "links": [
+                            {
+                                "href": "https://api.sandbox.paypal.com/v1/payments/sale/7BU89641MW2078643",
+                                "rel": "self",
+                                "method": "GET"
+                            },
+                            {
+                                "href": "https://api.sandbox.paypal.com/v1/payments/sale/7BU89641MW2078643/refund",
+                                "rel": "refund",
+                                "method": "POST"
+                            },
+                            {
+                                "href": "https://api.sandbox.paypal.com/v1/payments/payment/PAY-91628638US182293DLN2VSXI",
+                                "rel": "parent_payment",
+                                "method": "GET"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
+    "create_time": "2018-08-16T11:02:03Z",
+    "links": [
+        {
+            "href": "https://api.sandbox.paypal.com/v1/payments/payment/PAY-91628638US182293DLN2VSXI",
+            "rel": "self",
+            "method": "GET"
+        }
+    ]
+}
+copy

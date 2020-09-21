@@ -1,0 +1,11 @@
+{
+    "channel_credentials": [
+        {
+            "channel": "WHATSAPP",
+            "static_bearer": {
+                "claimed_identity": "{{WHATSAPP_BOT_ID}}",
+                "token": "{{WHATSAPP_BEARER_TOKEN}}"
+            }
+        }
+    ]
+}

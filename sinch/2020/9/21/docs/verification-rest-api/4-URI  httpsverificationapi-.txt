@@ -1,0 +1,1 @@
+URI:  https://verificationapi-v1.sinch.com/verification/v1

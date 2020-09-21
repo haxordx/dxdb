@@ -1,0 +1,5 @@
+{
+  "id": "prod_I35VCWOMCTVhpP",
+  "object": "product",
+  "deleted": true
+}

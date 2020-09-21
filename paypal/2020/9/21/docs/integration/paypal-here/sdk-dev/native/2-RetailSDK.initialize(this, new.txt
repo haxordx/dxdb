@@ -1,0 +1,16 @@
+RetailSDK.initialize(this, new RetailSDK.AppState()
+{
+  /**
+   * The integrating App should return an activity on which the SDK will launch it's UI elements like card reader finder, payment processing alerts
+   */
+  @Override
+  public Activity getCurrentActivity()
+  {
+    // Return an activity for SDK UI
+  }
+  @Override
+  public boolean getIsTabletMode()
+  {
+    // return True for tablet mode
+  }
+});copy

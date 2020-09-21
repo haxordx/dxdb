@@ -1,0 +1,1 @@
+/v1/issuing/disputes/:id/submit

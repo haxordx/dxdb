@@ -1,0 +1,9 @@
+var stripe = Stripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
+
+var elements = stripe.elements();
+var cardElement = elements.create('card');
+cardElement.mount('#card-element');var stripe = Stripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
+
+var elements = stripe.elements();
+var cardElement = elements.create('card');
+cardElement.mount('#card-element');

@@ -1,0 +1,42 @@
+# Create a PaymentIntent:
+curl https://api.stripe.com/v1/payment_intents \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d amount=10000 \
+  -d currency=usd \
+  -d "payment_method_types[]"=card \
+  -d transfer_group="{ORDER10}"
+# Create a Transfer to a connected account (later):
+curl https://api.stripe.com/v1/transfers \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d amount=7000 \
+  -d currency=usd \
+  -d destination="{{CONNECTED_STRIPE_ACCOUNT_ID}}" \
+  -d transfer_group="{ORDER10}"
+# Create a second Transfer to another connected account (later):
+curl https://api.stripe.com/v1/transfers \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d amount=2000 \
+  -d currency=usd \
+  -d destination="{{OTHER_CONNECTED_STRIPE_ACCOUNT_ID}}" \
+  -d transfer_group="{ORDER10}"
+# Create a PaymentIntent:
+curl https://api.stripe.com/v1/payment_intents \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d amount=10000 \
+  -d currency=usd \
+  -d "payment_method_types[]"=card \
+  -d transfer_group="{ORDER10}"
+# Create a Transfer to a connected account (later):
+curl https://api.stripe.com/v1/transfers \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d amount=7000 \
+  -d currency=usd \
+  -d destination="{{CONNECTED_STRIPE_ACCOUNT_ID}}" \
+  -d transfer_group="{ORDER10}"
+# Create a second Transfer to another connected account (later):
+curl https://api.stripe.com/v1/transfers \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d amount=2000 \
+  -d currency=usd \
+  -d destination="{{OTHER_CONNECTED_STRIPE_ACCOUNT_ID}}" \
+  -d transfer_group="{ORDER10}"

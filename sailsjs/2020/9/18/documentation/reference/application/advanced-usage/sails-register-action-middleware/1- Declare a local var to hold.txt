@@ -1,0 +1,27 @@
+// Declare a local var to hold the number of views for each URL.
+var pageViews = {};
+
+// Register middleware to record each page view.
+sails.registerActionMiddleware(
+
+  // First argument is the middleware to run
+  function countPage (req, res, next) {
+
+    // Initialize the page counter to zero if this is the first time we've seen this URL.
+    pageViews[req.url] = pageViews[req.url] || 0;
+
+    // Increment the page counter.
+    pageViews[req.url]++;
+
+    // Add the current page count to the request, so that it can be used in other middleware / actions.
+    req.currentPageCount = pageViews[req.url];
+
+    // Continue to the next matching middleware / action
+    next();
+  },
+
+  // Second argument is the actions to apply the middleware to.  In this case, we want the
+  // hook to apply to all actions EXCEPT the `show-page-views` action supplied by this hook.
+  '*, !page-view-hook/show-page-views'
+
+);

@@ -1,0 +1,9 @@
+let uiCustomization = STPPaymentHandler.shared().threeDSCustomizationSettings.uiCustomization
+uiCustomization.textFieldCustomization.keyboardAppearance = .dark
+uiCustomization.navigationBarCustomization.barStyle = .black
+uiCustomization.navigationBarCustomization.textColor = .white
+uiCustomization.buttonCustomization(for: .cancel).textColor = .whitelet uiCustomization = STPPaymentHandler.shared().threeDSCustomizationSettings.uiCustomization
+uiCustomization.textFieldCustomization.keyboardAppearance = .dark
+uiCustomization.navigationBarCustomization.barStyle = .black
+uiCustomization.navigationBarCustomization.textColor = .white
+uiCustomization.buttonCustomization(for: .cancel).textColor = .white

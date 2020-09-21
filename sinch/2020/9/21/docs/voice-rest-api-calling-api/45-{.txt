@@ -1,0 +1,14 @@
+{
+  "method": "conferenceCallout",
+  "conferenceCallout": {
+    "cli": "46000000000",
+    "destination": { "type": "number", "endpoint": "46000000001" },
+    "domain": "pstn",
+    "custom": "customData",
+    "locale": "en-US",
+    "greeting": "Welcome to my conference",
+    "conferenceId": "my_conference_room_id",
+    "enableAce": false,
+    "enableDice": false
+  }
+}

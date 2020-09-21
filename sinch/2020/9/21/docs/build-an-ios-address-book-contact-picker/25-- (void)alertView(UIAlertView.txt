@@ -1,0 +1,3 @@
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+        [_call hangup];
+}

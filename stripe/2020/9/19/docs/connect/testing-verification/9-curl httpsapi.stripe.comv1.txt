@@ -1,0 +1,5 @@
+curl https://api.stripe.com/v1/accounts/acct_xxx \
+  -u {PLATFORM_SECRET_KEY}: \
+  -d company[owners_provided]=truecurl https://api.stripe.com/v1/accounts/acct_xxx \
+  -u {PLATFORM_SECRET_KEY}: \
+  -d company[owners_provided]=true

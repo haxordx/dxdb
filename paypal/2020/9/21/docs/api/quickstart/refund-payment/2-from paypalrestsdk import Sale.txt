@@ -1,0 +1,10 @@
+from paypalrestsdk import Sale
+
+sale = Sale.find("4ER05306238362254")
+
+refund = sale.refund({
+  "amount": {
+    "total": "1.31",
+    "currency": "USD"
+  }
+})copy

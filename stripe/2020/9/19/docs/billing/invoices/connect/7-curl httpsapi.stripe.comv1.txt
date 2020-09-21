@@ -1,0 +1,8 @@
+curl https://api.stripe.com/v1/invoices \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d customer=cus_4fdAW5ftNQow1a \
+  -d "transfer_data[destination]"="{{CONNECTED_STRIPE_ACCOUNT_ID}}"
+curl https://api.stripe.com/v1/invoices \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d customer=cus_4fdAW5ftNQow1a \
+  -d "transfer_data[destination]"="{{CONNECTED_STRIPE_ACCOUNT_ID}}"

@@ -1,0 +1,8 @@
+// Get the messageClient
+var messageClient = sinchClient.getMessageClient();
+
+// Create a new Message
+var message = messageClient.newMessage('Alice', 'Hello World!');
+
+// Send it
+messageClient.send(message);

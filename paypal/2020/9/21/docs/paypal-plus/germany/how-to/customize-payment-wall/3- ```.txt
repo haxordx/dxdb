@@ -1,0 +1,8 @@
+ ```
+ <button
+ type="button"
+ onclick="PAYPAL.apps.PPP.doCheckout();">
+ PayPal PLUS Checkout Now
+ </button>
+ ```
+copy

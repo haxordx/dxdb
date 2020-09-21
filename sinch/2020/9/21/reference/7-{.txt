@@ -1,0 +1,11 @@
+{
+    "app_id": "CONV-APP-ID",
+    "recipient": {
+        "contact_id": "01E4R9F5QWX1KR05YF31N4161J"
+    },
+    "message": {
+        "text_message": {
+            "text": "Text message from Sinch Conversation API."
+        }
+    }
+}

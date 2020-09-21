@@ -1,0 +1,14 @@
+params := &stripe.ChargeParams{
+  Amount: stripe.Int64(1500),
+  Currency: stripe.String(string(stripe.CurrencyUSD)),
+}
+params.SetSource("{{CONNECTED_STRIPE_ACCOUNT_ID}}")
+
+ch, _ := charge.New(params)
+params := &stripe.ChargeParams{
+  Amount: stripe.Int64(1500),
+  Currency: stripe.String(string(stripe.CurrencyUSD)),
+}
+params.SetSource("{{CONNECTED_STRIPE_ACCOUNT_ID}}")
+
+ch, _ := charge.New(params)

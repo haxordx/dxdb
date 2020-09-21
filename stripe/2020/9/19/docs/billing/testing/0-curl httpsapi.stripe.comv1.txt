@@ -1,0 +1,6 @@
+curl https://api.stripe.com/v1/sources/src_19Q3AILlRB0eXbMt81RVDnM9 \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d "owner[email]"="amount_1000@example.com"
+curl https://api.stripe.com/v1/sources/src_19Q3AILlRB0eXbMt81RVDnM9 \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d "owner[email]"="amount_1000@example.com"

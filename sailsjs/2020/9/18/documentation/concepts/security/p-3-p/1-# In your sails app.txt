@@ -1,0 +1,2 @@
+# In your sails app
+npm install p3p --save

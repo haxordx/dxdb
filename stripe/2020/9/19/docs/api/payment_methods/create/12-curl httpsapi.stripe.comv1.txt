@@ -1,0 +1,3 @@
+curl https://api.stripe.com/v1/charges \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -H "Stripe-Version: 2020-08-27"

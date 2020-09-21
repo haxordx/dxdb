@@ -1,0 +1,13 @@
+public string Signature(string userId) {
+    UserTicket userTicket = new UserTicket();
+    userTicket.Identity = new Identity { Type = "username", Endpoint = userId };
+    userTicket.ApplicationKey = "<yourkey>";
+    userTicket.Created = DateTime.UtcNow.ToString("O", CultureInfo.InvariantCulture);
+    Debug.WriteLine(DateTime.UtcNow.ToString("O", CultureInfo.InvariantCulture));
+    var json = JsonConvert.SerializeObject(userTicket);
+    var ticketData = Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes(json));
+    var sha256 = new HMACSHA256(Convert.FromBase64String(<yoursecret>));
+    var signature = Convert.ToBase64String(sha256.ComputeHash(Encoding.UTF8.GetBytes(json)));
+    Debug.WriteLine(json);
+    return ticketData + ":" + signature;
+}

@@ -1,0 +1,12 @@
+// api/models/User.js
+module.exports = {
+
+  attributes: {
+    emailAddress: {
+      type: 'string',
+      unique: true,
+      required: true
+    }
+  }
+
+};

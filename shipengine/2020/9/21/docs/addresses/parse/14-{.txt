@@ -1,0 +1,86 @@
+{
+    "score": 0.9710697187242877,
+    "address": {
+        "name": "Amanda Miller",
+        "address_line1": "525 Winchester Blvd",
+        "city_locality": "San Jose",
+        "state_province": "CA",
+        "postal_code": "95128",
+        "address_residential_indicator": "yes"
+    },
+    "entities": [
+        {
+            "type": "person",
+            "score": 0.9519646137063122,
+            "text": "Amanda Miller",
+            "start_index": 38,
+            "end_index": 50,
+            "result": {
+                "value": "Amanda Miller"
+            }
+        },
+        {
+            "type": "residential_indicator",
+            "score": 0.9519646137063122,
+            "text": "house",
+            "start_index": 54,
+            "end_index": 58,
+            "result": {
+                "value": "yes"
+            }
+        },
+        {
+            "type": "address_line",
+            "score": 0.9805313966503588,
+            "text": "525 Winchester Blvd",
+            "start_index": 63,
+            "end_index": 81,
+            "result": {
+                "line": 1,
+                "value": "525 Winchester Blvd"
+            }
+        },
+        {
+            "type": "number",
+            "score": 0.9805313966503588,
+            "text": "525",
+            "start_index": 63,
+            "end_index": 65,
+            "result": {
+                "type": "cardinal",
+                "value": 525
+            }
+        },
+        {
+            "type": "city_locality",
+            "score": 0.9805313966503588,
+            "text": "San Jose",
+            "start_index": 86,
+            "end_index": 93,
+            "result": {
+                "value": "San Jose"
+            }
+        },
+        {
+            "type": "state_province",
+            "score": 0.9805313966503588,
+            "text": "california",
+            "start_index": 103,
+            "end_index": 112,
+            "result": {
+                "name": "California",
+                "value": "CA"
+            }
+        },
+        {
+            "type": "postal_code",
+            "score": 0.9519646137063122,
+            "text": "95128",
+            "start_index": 149,
+            "end_index": 153,
+            "result": {
+                "value": "95128"
+            }
+        }
+    ]
+}

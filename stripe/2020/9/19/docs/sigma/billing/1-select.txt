@@ -1,0 +1,17 @@
+select
+  customers.id,
+  customers.email,
+  subscriptions.price_id
+from subscriptions
+inner join customers
+on customers.id=subscriptions.customer_id
+where subscriptions.status = 'trialing'
+limit 5select
+  customers.id,
+  customers.email,
+  subscriptions.price_id
+from subscriptions
+inner join customers
+on customers.id=subscriptions.customer_id
+where subscriptions.status = 'trialing'
+limit 5

@@ -1,0 +1,60 @@
+{
+  "id": "evt_1Ep24XHssDVaQm2PpwS19Yt0",
+  "object": "event",
+  "api_version": "2019-03-14",
+  "created": 1561420781,
+  "data": {
+    "object": {
+      "id": "cs_test_MlZAaTXUMHjWZ7DcXjusJnDU4MxPalbtL5eYrmS2GKxqscDtpJq8QM0k",
+      "object": "checkout.session",
+      "billing_address_collection": null,
+      "cancel_url": "https://example.com/cancel",
+      "client_reference_id": null,
+      "customer": "cus_FOsk5sbh3ZQpAU",
+      "customer_email": null,
+      "display_items": [],
+      "mode": "setup",
+      "setup_intent": "seti_1EzVO3HssDVaQm2PJjXHmLlM",
+      "submit_type": null,
+      "subscription": null,
+      "success_url": "https://example.com/success"
+    }
+  },
+  "livemode": false,
+  "pending_webhooks": 1,
+  "request": {
+    "id": null,
+    "idempotency_key": null
+  },
+  "type": "checkout.session.completed"
+}
+{
+  "id": "evt_1Ep24XHssDVaQm2PpwS19Yt0",
+  "object": "event",
+  "api_version": "2019-03-14",
+  "created": 1561420781,
+  "data": {
+    "object": {
+      "id": "cs_test_MlZAaTXUMHjWZ7DcXjusJnDU4MxPalbtL5eYrmS2GKxqscDtpJq8QM0k",
+      "object": "checkout.session",
+      "billing_address_collection": null,
+      "cancel_url": "https://example.com/cancel",
+      "client_reference_id": null,
+      "customer": "cus_FOsk5sbh3ZQpAU",
+      "customer_email": null,
+      "display_items": [],
+      "mode": "setup",
+      "setup_intent": "seti_1EzVO3HssDVaQm2PJjXHmLlM",
+      "submit_type": null,
+      "subscription": null,
+      "success_url": "https://example.com/success"
+    }
+  },
+  "livemode": false,
+  "pending_webhooks": 1,
+  "request": {
+    "id": null,
+    "idempotency_key": null
+  },
+  "type": "checkout.session.completed"
+}

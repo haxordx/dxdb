@@ -1,0 +1,1 @@
+await sails.helpers.getRecentUsers(10, (new Date('2017-03-17')).getTime());

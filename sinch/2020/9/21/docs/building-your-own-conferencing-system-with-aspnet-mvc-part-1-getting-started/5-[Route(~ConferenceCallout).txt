@@ -1,0 +1,30 @@
+[Route("~/Conference/Callout")]
+public async Task<JsonResult> CallOut(string number, string conferenceId) {
+    try
+    {
+        var factory = 
+            new WebApiClientFactory().CreateClient<ICalloutApiEndpoints>(
+                "https://api.sinch.com",
+                new ApplicationSigningFilter(appKey, Convert.FromBase64String(appSecret)), 
+                new RestReplyFilter());
+        number = number.StartsWith("+") ? number.Trim() : "+" + number.Trim();
+        await factory.AddParticipant(new CalloutRequest
+        {
+            method = "conferenceCallout",
+            conferenceCallout = new ConferenceCallout
+            {
+                cli = "+17864088194",
+                destination = new Destination {endpoint = number, type = "number"},
+                domain = "pstn",
+                conferenceId = conferenceId,
+                enableDice = true
+            }
+        });
+        return Json(null, JsonRequestBehavior.AllowGet);
+    }
+    catch (Exception e)
+    {
+        Debug.WriteLine(e.Message);
+    }
+    return Json(null, JsonRequestBehavior.AllowGet);
+}

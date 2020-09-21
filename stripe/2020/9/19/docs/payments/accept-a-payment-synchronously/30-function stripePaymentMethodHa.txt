@@ -1,0 +1,38 @@
+function stripePaymentMethodHandler(result) {
+  if (result.error) {
+    // Show error in payment form
+  } else {
+    // Otherwise send paymentMethod.id to your server (see Step 4)
+    fetch('/pay', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        payment_method_id: result.paymentMethod.id,
+      })
+    }).then(function(result) {
+      // Handle server response (see Step 4)
+      result.json().then(function(json) {
+        handleServerResponse(json);
+      })
+    });
+  }
+}
+function stripePaymentMethodHandler(result) {
+  if (result.error) {
+    // Show error in payment form
+  } else {
+    // Otherwise send paymentMethod.id to your server (see Step 4)
+    fetch('/pay', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        payment_method_id: result.paymentMethod.id,
+      })
+    }).then(function(result) {
+      // Handle server response (see Step 4)
+      result.json().then(function(json) {
+        handleServerResponse(json);
+      })
+    });
+  }
+}

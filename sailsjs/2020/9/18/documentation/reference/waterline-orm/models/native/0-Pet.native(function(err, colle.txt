@@ -1,0 +1,10 @@
+Pet.native(function(err, collection) {
+  if (err) return res.serverError(err);
+
+  collection.find({}, {
+    name: true
+  }).toArray(function (err, results) {
+    if (err) return res.serverError(err);
+    return res.ok(results);
+  });
+});

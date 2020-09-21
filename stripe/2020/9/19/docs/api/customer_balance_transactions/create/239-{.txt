@@ -1,0 +1,17 @@
+{
+  "id": "cbtxn_1HTG7s2eZvKYlo2CYgg9F7fN",
+  "object": "customer_balance_transaction",
+  "amount": -500,
+  "created": 1600560596,
+  "credit_note": null,
+  "currency": "usd",
+  "customer": "cus_I3HcwHEKBfQLG1",
+  "description": null,
+  "ending_balance": -500,
+  "invoice": null,
+  "livemode": false,
+  "metadata": {
+    "order_id": "6735"
+  },
+  "type": "adjustment"
+}

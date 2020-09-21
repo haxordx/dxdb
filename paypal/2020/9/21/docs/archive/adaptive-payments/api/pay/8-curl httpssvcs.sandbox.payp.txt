@@ -1,0 +1,26 @@
+curl https://svcs.sandbox.paypal.com/AdaptivePayments/Pay \
+  -s \
+  --insecure \
+  -H "X-PAYPAL-SECURITY-USERID: api_username" \
+  -H "X-PAYPAL-SECURITY-PASSWORD: api_password" \
+  -H "X-PAYPAL-SECURITY-SIGNATURE: api_signature" \
+  -H "X-PAYPAL-REQUEST-DATA-FORMAT: NV" \
+  -H "X-PAYPAL-RESPONSE-DATA-FORMAT: NV" \
+  -H "X-PAYPAL-APPLICATION-ID: app_id" \
+  -d actionType=PAY \
+  -d cancelUrl=https://example.com \
+  -d clientDetails.applicationId=fitnesse \
+  -d clientDetails.ipAddress=127.0.0.1 \
+  -d currencyCode=USD \
+  -d feesPayer=EACHRECEIVER \
+  -d memo=Parallel-payment-example \
+  -d receiverList.receiver(0).amount=100.00 \
+  -d receiverList.receiver(0).email=receiver1@domain \
+  -d receiverList.receiver(0).primary=true \
+  -d receiverList.receiver(1).amount=50.00 \
+  -d receiverList.receiver(1).email=receiver2@domain \
+  -d receiverList.receiver(1).primary=false \
+  -d requestEnvelope.errorLanguage=en_US \
+  -d returnUrl=https://example.com \
+  -d senderEmail=sender@domain
+copy

@@ -1,0 +1,5 @@
+{
+  "id": "person_I3Mkk4jOEOjTG3",
+  "object": "person",
+  "deleted": true
+}

@@ -1,0 +1,51 @@
+const cardholderName = document.getElementById('cardholder-name');
+const cardButton = document.getElementById('card-button');
+const clientSecret = cardButton.dataset.secret;
+
+cardButton.addEventListener('click', async (ev) => {
+  const {setupIntent, error} = await stripe.confirmCardSetup(
+    clientSecret,
+    {
+      payment_method: {
+        card: cardElement,
+        billing_details: {
+          name: cardholderName.value,
+        },
+      },
+    }
+  );
+
+  if (error) {
+    // Display error.message in your UI.
+  } else {
+    if (setupIntent.status === 'succeeded') {
+      // The setup has succeeded. Display a success message. Send
+      // setupIntent.payment_method to your server to save the card to a Customer
+    }
+  }
+});const cardholderName = document.getElementById('cardholder-name');
+const cardButton = document.getElementById('card-button');
+const clientSecret = cardButton.dataset.secret;
+
+cardButton.addEventListener('click', async (ev) => {
+  const {setupIntent, error} = await stripe.confirmCardSetup(
+    clientSecret,
+    {
+      payment_method: {
+        card: cardElement,
+        billing_details: {
+          name: cardholderName.value,
+        },
+      },
+    }
+  );
+
+  if (error) {
+    // Display error.message in your UI.
+  } else {
+    if (setupIntent.status === 'succeeded') {
+      // The setup has succeeded. Display a success message. Send
+      // setupIntent.payment_method to your server to save the card to a Customer
+    }
+  }
+});

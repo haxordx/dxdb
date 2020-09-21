@@ -1,0 +1,8 @@
+- (void)callDidEstablish:(id<SINCall>)call {
+    self.ContactLabel.text = [call remoteUserId];
+    [self.player pause];
+}
+
+- (void)callDidEnd:(id<SINCall>)call {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}

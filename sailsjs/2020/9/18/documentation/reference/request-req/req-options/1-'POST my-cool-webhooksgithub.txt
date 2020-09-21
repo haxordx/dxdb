@@ -1,0 +1,3 @@
+'POST /my-cool-webhooks/github/doings-and-things/incoming': {
+  action: 'github/receive-event',
+}

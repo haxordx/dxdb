@@ -1,0 +1,16 @@
+\Stripe\Stripe::setApiKey("{{PLATFORM_SECRET_KEY}}");
+\Stripe\Customer::create(
+  ["email" => "person@example.edu"],
+  ["stripe_account" => "{{CONNECTED_STRIPE_ACCOUNT_ID}}"]
+);
+
+// Fetching an account just needs the ID as a parameter
+\Stripe\Account::retrieve("{{CONNECTED_STRIPE_ACCOUNT_ID}}");
+\Stripe\Stripe::setApiKey("{{PLATFORM_SECRET_KEY}}");
+\Stripe\Customer::create(
+  ["email" => "person@example.edu"],
+  ["stripe_account" => "{{CONNECTED_STRIPE_ACCOUNT_ID}}"]
+);
+
+// Fetching an account just needs the ID as a parameter
+\Stripe\Account::retrieve("{{CONNECTED_STRIPE_ACCOUNT_ID}}");

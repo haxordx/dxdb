@@ -1,0 +1,8 @@
+{
+  "type": enum(
+    "status_report_rcs",
+    "user_agent_event_rcs",
+    "user_agent_message_rcs"
+  ),
+  ... // type specific fields
+}

@@ -1,0 +1,14 @@
+if ([urlResponse statusCode] == 429) {
+    NSLog(@"Rate limit reached");
+    return;
+}
+if (error) {
+    NSLog(@"Error: %@", error.localizedDescription);
+    return;
+}
+if (responseData) {
+    NSError *error = nil;
+    NSDictionary *TWData = [NSJSONSerialization JSONObjectWithData:responseData options:NSJSONReadingMutableLeaves error:&error];
+    NSArray *friendList = [TWData valueForKey:@"ids"];
+    [self fillTable:friendList];
+}

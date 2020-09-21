@@ -1,0 +1,66 @@
+package main
+
+import (
+  "html/template"
+  "net/http"
+
+  stripe "github.com/stripe/stripe-go/v71"
+)
+
+type WalletData struct {
+  ClientSecret string
+}
+
+func main() {
+  // Set your secret key. Remember to switch to your live secret key in production!
+  // See your keys here: https://dashboard.stripe.com/account/apikeys
+  stripe.Key = "sk_test_4eC39HqLyjWDarjtT1zdp7dc"
+
+  cardWalletTmpl := template.Must(template.ParseFiles("views/card_wallet.html"))
+
+  http.HandleFunc("/card-wallet", func(w http.ResponseWriter, r *http.Request) {
+    params := &stripe.SetupIntentParams{
+      Customer: stripe.String(customer.ID),
+    }
+    intent, err := setupintent.New(params)
+    data := WalletData{
+      ClientSecret: intent.ClientSecret,
+    }
+    cardWalletTmpl.Execute(w, data)
+  })
+
+  http.ListenAndServe(":3000", nil)
+}
+package main
+
+import (
+  "html/template"
+  "net/http"
+
+  stripe "github.com/stripe/stripe-go/v71"
+)
+
+type WalletData struct {
+  ClientSecret string
+}
+
+func main() {
+  // Set your secret key. Remember to switch to your live secret key in production!
+  // See your keys here: https://dashboard.stripe.com/account/apikeys
+  stripe.Key = "sk_test_4eC39HqLyjWDarjtT1zdp7dc"
+
+  cardWalletTmpl := template.Must(template.ParseFiles("views/card_wallet.html"))
+
+  http.HandleFunc("/card-wallet", func(w http.ResponseWriter, r *http.Request) {
+    params := &stripe.SetupIntentParams{
+      Customer: stripe.String(customer.ID),
+    }
+    intent, err := setupintent.New(params)
+    data := WalletData{
+      ClientSecret: intent.ClientSecret,
+    }
+    cardWalletTmpl.Execute(w, data)
+  })
+
+  http.ListenAndServe(":3000", nil)
+}

@@ -1,0 +1,10 @@
+{
+  "item_id": "SOMEITEMID",
+  "links": [
+    {
+      "href": "https://api.sandbox.paypal.com/v1/payments/referenced-payouts-items/SOMEITEMID",
+      "rel": "self",
+      "method": "GET"
+    }
+  ]
+}copy

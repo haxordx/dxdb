@@ -1,0 +1,31 @@
+ {
+   "accountType":"PERSONAL",  // Specify the type of account to create
+   "name": {                  // Name of the new account owner
+   "firstName":"Lenny",
+   "lastName":"Riceman"
+ },
+   "address": {               // Address of the new account owner
+   "line1":"123 Main St",
+   "city":"Austin",
+   "state":"TX",
+   "postalCode":"78759",
+   "countryCode":"US"
+ },
+ "citizenshipCountryCode":"US",         // The country in which account owner lives
+ "contactPhoneNumber":"512-555-5555",   // Phone number of the account owner
+ "dateOfBirth":"1968-01-01Z"            // Date of birth of the account owner
+// The URL to where the user is redirected after completing the PayPal account setup
+"createAccountWebOptions": {
+"returnUrl":"https://example.com/success.html"
+},
+"currencyCode":"USD",                  // Currency used by the account
+"emailAddress":"lr12345@example.com",  // eMail address of the account owner
+"preferredLanguageCode":"en_US",       // Language associated with the account
+"registrationType":"Web",              // From where the account is created
+"requestEnvelope": {
+"errorLanguage":"en_US"              // Language used to display errors
+},
+// Sandbox email address of the account owner (for testing only)
+"sandboxEmailAddress":"Sandbox-Sender-eMail-Address",
+}
+ copy

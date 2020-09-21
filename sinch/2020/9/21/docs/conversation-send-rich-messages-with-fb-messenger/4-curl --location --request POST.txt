@@ -1,0 +1,22 @@
+curl --location --request POST 'https://eu.conversation.api.sinch.com/v1beta/projects/{project_id}/messages:send' \
+-H 'Content-Type: application/json' \
+-H 'Authorization: Bearer <access token>' \
+ -d '{
+    "app_id": "{{YOUR_APP_ID}}",
+    "recipient": {
+        "contact_id": "{{YOUR_CONTACT_ID}}"
+    },
+    "message": {
+        "location_message": {
+            "title": "Location Message",
+            "label": "Enriching Engagement",
+            "coordinates": {
+                "latitude": 55.610479,
+                "longitude": 13.002873
+            }
+        }
+    },
+    "channel_priority_order": [
+        "MESSENGER"
+    ]
+}'

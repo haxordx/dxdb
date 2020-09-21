@@ -1,0 +1,2 @@
+req.subdomains;
+// -> ['ww3', 'staging']

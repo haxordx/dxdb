@@ -1,0 +1,6 @@
+[RequestBody]
+    SVAML
+
+[SVAML]
+    Instruction[] - instructions
+    Action - action

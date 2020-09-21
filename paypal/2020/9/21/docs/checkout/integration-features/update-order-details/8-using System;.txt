@@ -1,0 +1,84 @@
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+
+//1. Import the PayPal SDK client that was created in `Set up the Server SDK`.
+using BraintreeHttp;
+using PayPalCheckoutSdk.Core;
+using PayPalCheckoutSdk.Orders;
+
+namespace Samples
+{
+    public class PatchOrderSample
+    {
+
+        //2. Set up your server to receive a call from the client
+        /*
+            Use this method to patch an order by passing the order ID.
+         */
+        public async static Task<HttpResponse> PatchOrder(string orderId, bool debug = false)
+        {
+            var request = new OrdersPatchRequest<Object>(orderId);
+            request.RequestBody(BuildPatchRequest());
+            //3. Call PayPal to patch the transaction
+            var response = await PayPalClient.client().Execute(request);
+            if(debug)
+            {
+                var ordersGetRequest= new OrdersGetRequest(orderId);
+                response = await PayPalClient.client().Execute(ordersGetRequest);
+                var result = response.Result<Order>();
+                Console.WriteLine("Retrieved Order Status After Patch");
+                Console.WriteLine("Status: {0}", result.Status);
+                Console.WriteLine("Order Id: {0}", result.Id);
+                Console.WriteLine("Intent: {0}", result.Intent);
+                Console.WriteLine("Links:");
+                foreach (LinkDescription link in result.Links)
+                {
+                    Console.WriteLine("\t{0}: {1}\tCall Type: {2}", link.Rel, link.Href, link.Method);
+                }
+                AmountWithBreakdown amount = result.PurchaseUnits[0].Amount;
+                Console.WriteLine("Total Amount: {0} {1}", amount.CurrencyCode, amount.Value);
+                Console.WriteLine("Response JSON: \n {0}", PayPalClient.ObjectToJSONString(result));
+            }
+            return response;
+        }
+
+         /**
+            Use this method to build the PATCH request body.
+         */
+         private static List<Patch<Object>> BuildPatchRequest()
+         {
+             var patches = new List<Patch<Object>>
+             {
+                 new Patch<Object>
+                 {
+                     Op= "replace",
+                     Path= "/intent",
+                     Value= "CAPTURE"
+
+                 },
+                 new Patch<Object>
+                 {
+                     Op= "replace",
+                     Path= "/purchase_units/@reference_id=='PUHF'/description",
+                     Value= "Physical Goods"
+
+                 }
+
+             };
+             return patches;
+         }
+
+        /*
+            This driver method invokes the patchOrder function with order ID
+            to patch an order details.
+
+            To get the new order ID, the sample uses createOrder to create an order
+            and then uses the newly-created order ID.
+         */
+         static void Main(string[] args)
+         {
+             PatchOrder("REPLACE-WITH-VALID-ORDER-ID", true).Wait();
+         }
+    }
+copy

@@ -1,0 +1,8 @@
+<h3 is="welcome-msg">Hello <%= me.username %>!</h3>
+
+<h4><%= owner.username %>'s projects:</h4>
+<ul><% _.each(projects, function (project) { %>
+  <li>
+    <a href="/<%= owner.username %>/<%= project.slug %>"><%= project.friendlyName %></a>
+  </li>
+<% }); %></ul>

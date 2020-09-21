@@ -1,0 +1,65 @@
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+//1. Import the PayPal SDK client that was created in `Set up Server-Side SDK`.
+using PayPalCheckoutSdk.Core;
+using PayPalCheckoutSdk.Orders;
+using BraintreeHttp;
+
+namespace Samples.CaptureIntentExamples
+{
+  public class CaptureOrderSample
+  {
+
+    //2. Set up your server to receive a call from the client
+    /*
+      Method to capture order after creation. Pass a valid, approved order ID
+      as an argument to this method.
+    */
+    public async static Task<HttpResponse> CaptureOrder(string OrderId, bool debug = false)
+    {
+      var request = new OrdersCaptureRequest(OrderId);
+      request.Prefer("return=representation");
+      request.RequestBody(new OrderActionRequest());
+      //3. Call PayPal to capture an order
+      var response = await PayPalClient.client().Execute(request);
+      //4. Save the capture ID to your database. Implement logic to save capture to your database for future reference.
+      if (debug)
+      {
+        var result = response.Result<Order>();
+        Console.WriteLine("Status: {0}", result.Status);
+        Console.WriteLine("Order Id: {0}", result.Id);
+        Console.WriteLine("Intent: {0}", result.Intent);
+        Console.WriteLine("Links:");
+        foreach (LinkDescription link in result.Links)
+        {
+          Console.WriteLine("\t{0}: {1}\tCall Type: {2}", link.Rel, link.Href, link.Method);
+        }
+        Console.WriteLine("Capture Ids: ");
+        foreach (PurchaseUnit purchaseUnit in result.PurchaseUnits)
+        {
+          foreach (Capture capture in purchaseUnit.Payments.Captures)
+          {
+            Console.WriteLine("\t {0}", capture.Id);
+          }
+        }
+        AmountWithBreakdown amount = result.PurchaseUnits[0].Amount;
+        Console.WriteLine("Buyer:");
+        Console.WriteLine("\tEmail Address: {0}\n\tName: {1}\n\tPhone Number: {2}{3}", result.Payer.EmailAddress, result.Payer.Name.FullName, result.Payer.Phone.CountryCode, result.Payer.Phone.NationalNumber);
+      }
+
+      return response;
+    }
+
+    /*
+      Driver function to invoke capture payment on order.
+      Replace the order ID with the valid, approved order ID.
+    */
+    static void Main(string[] args)
+    {
+      string OrderId = "REPLACE-WITH-APPORVED-ORDER-ID";
+      CaptureOrder(OrderId, true).Wait();
+    }
+  }
+}
+copy

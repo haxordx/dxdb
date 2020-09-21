@@ -1,0 +1,13 @@
+curl -v -X PATCH https://api.sandbox.paypal.com/v2/checkout/orders/5O190127TN364715T \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer Access-Token" \
+-d '[
+  {
+"op": "add",
+"path": "/purchase_units/@reference_id=='PUHF'/invoice_id",
+"value": {
+  "integration_artifact": "INV-HighFashions"
+}
+  }
+]'
+copy

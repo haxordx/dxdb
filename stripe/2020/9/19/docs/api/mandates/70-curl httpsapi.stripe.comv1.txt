@@ -1,0 +1,2 @@
+curl https://api.stripe.com/v1/mandates/mandate_1HTGAv2eZvKYlo2CbZRMDbVP \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc:

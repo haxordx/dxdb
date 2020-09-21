@@ -1,0 +1,4 @@
+{
+  "message": object(XmsBatchMessage)
+  "conditions": object(FallbackConditions)
+}

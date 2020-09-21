@@ -1,0 +1,29 @@
+{
+  "id": "di_103Rm82eZvKYlo2CH0he3vGX",
+  "object": "discount",
+  "checkout_session": null,
+  "coupon": {
+    "id": "35OFF",
+    "object": "coupon",
+    "amount_off": null,
+    "created": 1391694467,
+    "currency": null,
+    "duration": "repeating",
+    "duration_in_months": 3,
+    "livemode": false,
+    "max_redemptions": null,
+    "metadata": {},
+    "name": null,
+    "percent_off": 25.0,
+    "redeem_by": null,
+    "times_redeemed": 1,
+    "valid": false
+  },
+  "customer": "cus_I3HcwHEKBfQLG1",
+  "end": 1399384361,
+  "invoice": null,
+  "invoice_item": null,
+  "promotion_code": null,
+  "start": 1391694761,
+  "subscription": null
+}

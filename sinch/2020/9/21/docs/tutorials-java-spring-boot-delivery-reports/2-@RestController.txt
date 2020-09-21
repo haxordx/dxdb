@@ -1,0 +1,13 @@
+@RestController
+public class DeliveryReportController {
+
+    @PostMapping(path = "/sms/deliveryReport")
+    public ResponseEntity receiveReport(@RequestBody BatchDeliveryReport report) {
+
+        System.out.println("Received delivery report: " + report);
+
+        // ... process the delivery report ...
+
+        return ResponseEntity.ok().build();
+    }
+}

@@ -1,0 +1,31 @@
+select
+  id,
+  email,
+  legal_entity_address_city as city,
+  legal_entity_address_line1 as line1,
+  legal_entity_address_postal_code as zip,
+  legal_entity_address_state as state,
+  legal_entity_dob_day as dob_day,
+  legal_entity_dob_month as dob_month,
+  legal_entity_dob_year as dob_year,  legal_entity_first_name as first_name,
+  legal_entity_last_name as last_name,
+  legal_entity_ssn_last_4_provided as ssn_provided,
+  tos_acceptance_date as tos_date,
+  tos_acceptance_ip as tos_ip,
+  legal_entity_personal_id_number_provided as id_provided,
+  legal_entity_verification_document_id as document_id
+from connected_accounts
+where type = 'custom'
+  and legal_entity_type = 'individual'
+  and payouts_enabled = false
+  and country = 'US'
+limit 5select
+  id,
+  email,
+  legal_entity_address_city as city,
+  legal_entity_address_line1 as line1,
+  legal_entity_address_postal_code as zip,
+  legal_entity_address_state as state,
+  legal_entity_dob_day as dob_day,
+  legal_entity_dob_month as dob_month,
+  legal_entity_dob_year as dob_year,

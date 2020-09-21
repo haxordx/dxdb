@@ -1,0 +1,4 @@
+Call call;
+
+//when calling
+call = sinchClient.getCallClient().callPhoneNumber("+46000000000");

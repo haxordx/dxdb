@@ -1,0 +1,7 @@
+curl -v -X POST https://api.sandbox.paypal.com/v1/customer/disputes/PP-D-27803/accept-claim \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer Access-Token" \
+-d '{
+  "note": "Full refund to the customer.",
+  "accept_claim_type": "REFUND"
+}'copy

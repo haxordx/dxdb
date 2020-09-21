@@ -1,0 +1,5 @@
+{
+  "client_id": "Ab27r3fkrQezHdcPrn2b2SYzPEldXx2dWgv76btVfI-eYF8KRAd2WxXAZyb0ETygSNeHBthzlxjlQ_qw",
+  "client_secret": "EAcTvpnDHZf4icl_2MPnt2gRpOxHVtaQJChWU3PrRbYR4uyvUXV6h4DWQjm7XOfdnk_OrEEWdxY2eUG3"
+}
+jsoncopy

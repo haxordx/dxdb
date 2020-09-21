@@ -1,0 +1,13 @@
+- (IBAction)call:(id)sender {
+    if (_call == nil)
+    {
+        _call = [[_client callClient] callPhoneNumber:phoneNumber.text];
+        [callButton setTitle:@"Hangup" forState:UIControlStateNormal];
+    }
+    else
+    {
+        [_call hangup];
+        [callButton setTitle:@"Call" forState:UIControlStateNormal];
+    }
+
+}

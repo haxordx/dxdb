@@ -1,0 +1,34 @@
+// Not recommended: setting global API key state
+stripe := &client.API{}
+stripe.Init("access_token", "{{CONNECTED_ACCOUNT_SECRET_KEY}}")
+params := &stripe.CustomerParams{
+  Email: stripe.String("person@example.edu"),
+}
+cus, _ := customer.New(params)
+
+// Recommended: custom client with the correct API key
+sc := &client.API{}
+// Set account's access token from the Connect flow
+sc.Init("{{CONNECTED_ACCOUNT_SECRET_KEY}}", nil)
+
+params := &stripe.CustomerParams{
+  Email: stripe.String("person@example.edu"),
+}
+cus, _ := sc.Customers.New(params)
+// Not recommended: setting global API key state
+stripe := &client.API{}
+stripe.Init("access_token", "{{CONNECTED_ACCOUNT_SECRET_KEY}}")
+params := &stripe.CustomerParams{
+  Email: stripe.String("person@example.edu"),
+}
+cus, _ := customer.New(params)
+
+// Recommended: custom client with the correct API key
+sc := &client.API{}
+// Set account's access token from the Connect flow
+sc.Init("{{CONNECTED_ACCOUNT_SECRET_KEY}}", nil)
+
+params := &stripe.CustomerParams{
+  Email: stripe.String("person@example.edu"),
+}
+cus, _ := sc.Customers.New(params)

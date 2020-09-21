@@ -1,0 +1,8 @@
+curl https://api.stripe.com/v1/refunds \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d charge=ch_1CmMk3IyNTgGDVfzqgWGCQr5 \
+  -d amount=2000
+curl https://api.stripe.com/v1/refunds \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d charge=ch_1CmMk3IyNTgGDVfzqgWGCQr5 \
+  -d amount=2000

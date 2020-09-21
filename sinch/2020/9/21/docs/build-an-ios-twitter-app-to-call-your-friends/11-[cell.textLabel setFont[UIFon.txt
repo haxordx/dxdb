@@ -1,0 +1,2 @@
+[cell.textLabel setFont:[UIFont systemFontOfSize:20]];
+cell.detailTextLabel.text = [NSString stringWithFormat:@"@%@", object.username];

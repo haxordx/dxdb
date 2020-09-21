@@ -1,0 +1,11 @@
+<input id="card-name" type="text">
+<!-- placeholder for Elements -->
+<div id="card-element"></div>
+<button id="card-button" data-secret="{{ .ClientSecret }}">
+  Submit Payment
+</button><input id="card-name" type="text">
+<!-- placeholder for Elements -->
+<div id="card-element"></div>
+<button id="card-button" data-secret="{{ .ClientSecret }}">
+  Submit Payment
+</button>

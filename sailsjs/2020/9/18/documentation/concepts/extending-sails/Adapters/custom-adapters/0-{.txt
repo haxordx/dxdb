@@ -1,0 +1,12 @@
+{
+  //...
+  "sails": {
+      "adapter": {
+        "sailsVersion": "^1.0.0",
+        "implements": [
+          "semantic",
+          "queryable"
+        ]
+      }
+  }
+}

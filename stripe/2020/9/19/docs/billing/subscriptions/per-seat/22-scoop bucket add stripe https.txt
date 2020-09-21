@@ -1,0 +1,1 @@
+scoop bucket add stripe https://github.com/stripe/scoop-stripe-cli.gitscoop bucket add stripe https://github.com/stripe/scoop-stripe-cli.git

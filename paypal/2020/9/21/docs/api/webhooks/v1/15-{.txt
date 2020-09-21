@@ -1,0 +1,28 @@
+{
+  "event_types": [
+    {
+      "name": "PAYMENT.AUTHORIZATION.CREATED",
+      "description": "A payment authorization was created.",
+      "status": "ENABLED",
+      "service": "amqpaymentwebhookd",
+      "owner": "Webhooks",
+      "contact": "livesupport@example.com"
+    },
+    {
+      "name": "PAYMENT.AUTHORIZATION.VOIDED",
+      "description": "A payment authorization was voided.",
+      "status": "ENABLED",
+      "service": "amqpaymentwebhookd",
+      "owner": "Webhooks",
+      "contact": "livesupport@example.com"
+    },
+    {
+      "name": "PAYMENT.CAPTURE.COMPLETED",
+      "description": "A capture payment was completed.",
+      "status": "ENABLED",
+      "service": "amqpaymentwebhookd",
+      "owner": "Webhooks",
+      "contact": "livesupport@example.com"
+    }
+  ]
+}copy

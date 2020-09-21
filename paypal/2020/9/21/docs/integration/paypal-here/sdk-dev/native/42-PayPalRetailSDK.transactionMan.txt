@@ -1,0 +1,4 @@
+PayPalRetailSDK.transactionManager().stopReplayOfflineTxns(callback: { (error, info) in
+    // Status of the remaining offline transactions
+})
+copy

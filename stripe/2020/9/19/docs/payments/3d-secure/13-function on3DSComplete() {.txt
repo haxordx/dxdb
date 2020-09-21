@@ -1,0 +1,47 @@
+function on3DSComplete() {
+  // Hide the 3DS UI
+  yourContainer.remove();
+
+  // Check the PaymentIntent
+  stripe.retrievePaymentIntent('{{PAYMENT_INTENT_CLIENT_SECRET}}')
+    .then(function(result) {
+      if (result.error) {
+        // PaymentIntent client secret was invalid
+      } else {
+        if (result.paymentIntent.status === 'succeeded') {
+          // Show your customer that the payment has succeeded
+        } else if (result.paymentIntent.status === 'requires_payment_method') {
+          // Authentication failed, prompt the customer to enter another payment method
+        }
+      }
+    });
+}
+
+window.addEventListener('message', function(ev) {
+  if (ev.data === '3DS-authentication-complete') {
+    on3DSComplete();
+  }
+}, false);function on3DSComplete() {
+  // Hide the 3DS UI
+  yourContainer.remove();
+
+  // Check the PaymentIntent
+  stripe.retrievePaymentIntent('{{PAYMENT_INTENT_CLIENT_SECRET}}')
+    .then(function(result) {
+      if (result.error) {
+        // PaymentIntent client secret was invalid
+      } else {
+        if (result.paymentIntent.status === 'succeeded') {
+          // Show your customer that the payment has succeeded
+        } else if (result.paymentIntent.status === 'requires_payment_method') {
+          // Authentication failed, prompt the customer to enter another payment method
+        }
+      }
+    });
+}
+
+window.addEventListener('message', function(ev) {
+  if (ev.data === '3DS-authentication-complete') {
+    on3DSComplete();
+  }
+}, false);

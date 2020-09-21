@@ -1,0 +1,5 @@
+unsubscribeReason: {
+  type: 'string',
+  isIn: ['boring', 'too many emails', 'recipes too difficult', 'other'],
+  required: true
+}

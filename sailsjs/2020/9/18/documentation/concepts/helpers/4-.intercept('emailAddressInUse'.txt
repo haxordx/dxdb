@@ -1,0 +1,3 @@
+.intercept('emailAddressInUse', (err)=>{
+  return 'badRequest';
+});

@@ -1,0 +1,42 @@
+import stripe
+import json
+
+from flask import request, render_template
+
+app = Flask(__name__, static_folder=".",
+            static_url_path="", template_folder=".")
+
+# Set your secret key. Remember to switch to your live secret key in production!
+# See your keys here: https://dashboard.stripe.com/account/apikeys
+stripe.api_key = 'sk_test_4eC39HqLyjWDarjtT1zdp7dc'
+
+@app.route('/card-wallet')
+def card_wallet():
+  intent = stripe.SetupIntent.create(
+    customer=customer['id']
+  )
+  return render_template('card_wallet.html', client_secret=intent.client_secret)
+
+if __name__ == '__main__':
+    app.run()
+import stripe
+import json
+
+from flask import request, render_template
+
+app = Flask(__name__, static_folder=".",
+            static_url_path="", template_folder=".")
+
+# Set your secret key. Remember to switch to your live secret key in production!
+# See your keys here: https://dashboard.stripe.com/account/apikeys
+stripe.api_key = 'sk_test_4eC39HqLyjWDarjtT1zdp7dc'
+
+@app.route('/card-wallet')
+def card_wallet():
+  intent = stripe.SetupIntent.create(
+    customer=customer['id']
+  )
+  return render_template('card_wallet.html', client_secret=intent.client_secret)
+
+if __name__ == '__main__':
+    app.run()

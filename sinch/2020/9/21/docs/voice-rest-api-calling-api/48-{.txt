@@ -1,0 +1,6 @@
+{
+  "instructions": [],
+  "action": {
+    "name": "continue"
+  }
+}

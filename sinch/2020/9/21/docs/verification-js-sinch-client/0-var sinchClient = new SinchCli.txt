@@ -1,0 +1,3 @@
+var sinchClient = new SinchClient({
+    applicationKey: '<application_key>'
+});

@@ -1,0 +1,152 @@
+class CheckoutActivity : AppCompatActivity() {
+    private val backendUrl = "http://10.0.2.2:4242/"
+    private val httpClient = OkHttpClient()
+
+    private fun displayAlert(activity: Activity?, title: String, message: String, restartDemo: Boolean = false) {
+        // omitted for brevity
+    }
+
+    private fun pay(paymentMethod: String?, paymentIntent: String?) {
+        val weakActivity = WeakReference<Activity>(this)
+        var json = ""
+        if (!paymentMethod.isNullOrEmpty()) {
+            json = """
+                {
+                    "useStripeSdk":true,
+                    "paymentMethodId":"$paymentMethod",
+                    "currency":"usd",
+                    "items": [
+                        {"id":"photo_subscription"}
+                    ]
+                }
+                """
+        }
+        else if (!paymentIntent.isNullOrEmpty()) {
+            json = """
+                {
+                    "paymentIntentId":"$paymentIntent"
+                }
+                """
+        }
+        // Create a PaymentIntent on the server
+        val mediaType = "application/json; charset=utf-8".toMediaType()
+        val body = json.toRequestBody(mediaType)
+        val request = Request.Builder()
+            .url(backendUrl + "pay")
+            .post(body)
+            .build()
+        httpClient.newCall(request)
+            .enqueue(object: Callback {
+                override fun onFailure(call: Call, e: IOException) {
+                    displayAlert(weakActivity.get(), "Payment failed", "Error: $e")
+                }
+
+                override fun onResponse(call: Call, response: Response) {
+                    // Request failed
+                    if (!response.isSuccessful) {
+                        displayAlert(weakActivity.get(), "Payment failed", "Error: $response")
+                    } else {
+                        val responseData = response.body?.string()
+                        var responseJson = JSONObject(responseData)
+                        val payError: String? = responseJson.optString("error")
+                        val clientSecret: String? = responseJson.optString("clientSecret")
+                        val requiresAction: Boolean? = responseJson.optBoolean("requiresAction")
+                        // Payment failed
+                        if (payError != null && payError.isNotEmpty()) {
+                            displayAlert(weakActivity.get(), "Payment failed", "Error: $payError")
+                        }
+                        // Payment succeeded
+                        else if ((clientSecret != null && clientSecret.isNotEmpty())
+                            && (requiresAction == null || requiresAction == false)) {
+                            displayAlert(weakActivity.get(), "Payment succeeded", "$clientSecret", restartDemo = true)
+                        }
+                        // Payment requires additional actions
+                        else if ((clientSecret != null && clientSecret.isNotEmpty())
+                            && requiresAction == true) {
+                            runOnUiThread {
+                                if (weakActivity.get() != null) {
+                                    // ...continued in the next step
+                                }
+                            }
+                        }
+                    }
+                }
+            })
+    }
+}
+class CheckoutActivity : AppCompatActivity() {
+    private val backendUrl = "http://10.0.2.2:4242/"
+    private val httpClient = OkHttpClient()
+
+    private fun displayAlert(activity: Activity?, title: String, message: String, restartDemo: Boolean = false) {
+        // omitted for brevity
+    }
+
+    private fun pay(paymentMethod: String?, paymentIntent: String?) {
+        val weakActivity = WeakReference<Activity>(this)
+        var json = ""
+        if (!paymentMethod.isNullOrEmpty()) {
+            json = """
+                {
+                    "useStripeSdk":true,
+                    "paymentMethodId":"$paymentMethod",
+                    "currency":"usd",
+                    "items": [
+                        {"id":"photo_subscription"}
+                    ]
+                }
+                """
+        }
+        else if (!paymentIntent.isNullOrEmpty()) {
+            json = """
+                {
+                    "paymentIntentId":"$paymentIntent"
+                }
+                """
+        }
+        // Create a PaymentIntent on the server
+        val mediaType = "application/json; charset=utf-8".toMediaType()
+        val body = json.toRequestBody(mediaType)
+        val request = Request.Builder()
+            .url(backendUrl + "pay")
+            .post(body)
+            .build()
+        httpClient.newCall(request)
+            .enqueue(object: Callback {
+                override fun onFailure(call: Call, e: IOException) {
+                    displayAlert(weakActivity.get(), "Payment failed", "Error: $e")
+                }
+
+                override fun onResponse(call: Call, response: Response) {
+                    // Request failed
+                    if (!response.isSuccessful) {
+                        displayAlert(weakActivity.get(), "Payment failed", "Error: $response")
+                    } else {
+                        val responseData = response.body?.string()
+                        var responseJson = JSONObject(responseData)
+                        val payError: String? = responseJson.optString("error")
+                        val clientSecret: String? = responseJson.optString("clientSecret")
+                        val requiresAction: Boolean? = responseJson.optBoolean("requiresAction")
+                        // Payment failed
+                        if (payError != null && payError.isNotEmpty()) {
+                            displayAlert(weakActivity.get(), "Payment failed", "Error: $payError")
+                        }
+                        // Payment succeeded
+                        else if ((clientSecret != null && clientSecret.isNotEmpty())
+                            && (requiresAction == null || requiresAction == false)) {
+                            displayAlert(weakActivity.get(), "Payment succeeded", "$clientSecret", restartDemo = true)
+                        }
+                        // Payment requires additional actions
+                        else if ((clientSecret != null && clientSecret.isNotEmpty())
+                            && requiresAction == true) {
+                            runOnUiThread {
+                                if (weakActivity.get() != null) {
+                                    // ...continued in the next step
+                                }
+                            }
+                        }
+                    }
+                }
+            })
+    }
+}

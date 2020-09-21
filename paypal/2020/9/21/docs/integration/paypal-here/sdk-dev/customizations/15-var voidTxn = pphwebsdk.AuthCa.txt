@@ -1,0 +1,3 @@
+var voidTxn = pphwebsdk.AuthCapture.create(identity, payment_config);
+voidTxn.voidTransaction(txnId);
+copy

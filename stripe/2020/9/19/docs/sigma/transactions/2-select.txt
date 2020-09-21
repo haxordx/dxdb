@@ -1,0 +1,19 @@
+select
+  date_format(date_trunc('day', created), '%Y-%m-%d') as day,
+  id,
+  card_brand,
+  failure_code,
+  failure_message
+from charges
+  where status = 'failed'
+order by day desc
+limit 5select
+  date_format(date_trunc('day', created), '%Y-%m-%d') as day,
+  id,
+  card_brand,
+  failure_code,
+  failure_message
+from charges
+  where status = 'failed'
+order by day desc
+limit 5

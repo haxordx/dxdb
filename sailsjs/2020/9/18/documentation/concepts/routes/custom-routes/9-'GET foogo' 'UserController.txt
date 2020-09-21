@@ -1,0 +1,1 @@
+'GET /foo/go': 'UserController.find'    // Same as above

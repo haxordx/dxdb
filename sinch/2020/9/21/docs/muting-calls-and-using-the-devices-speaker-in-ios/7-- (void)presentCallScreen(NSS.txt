@@ -1,0 +1,5 @@
+- (void)presentCallScreen:(NSString *)phoneNumber {
+UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+_callScreen = (callScreenViewController *)[storyboard instantiateViewControllerWithIdentifier:@"callScreen"];
+[self presentViewController:_callScreen animated:YES completion:nil];
+_callScreen.numberLabel.text = phoneNumber;

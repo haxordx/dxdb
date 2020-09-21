@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<reportingEngineResponse>
+   <baseResponse>
+      <responseCode>100</responseCode>
+      <responseMsg>Request has completed successfully</responseMsg>
+   </baseResponse>
+   <getScheduleResponse>
+      <scheduleDefinition>
+         <scheduleName>My Schedule</scheduleName>
+         <templateName>My Template</templateName>
+         <notificationRequired>false</notificationRequired>
+         <daily></daily>
+      </scheduleDefinition>
+   </getScheduleResponse>
+</reportingEngineResponse>
+xmlcopy

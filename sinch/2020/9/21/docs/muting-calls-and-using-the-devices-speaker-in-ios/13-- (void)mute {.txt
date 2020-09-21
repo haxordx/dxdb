@@ -1,0 +1,20 @@
+- (void)mute {
+    id<SINAudioController> audio = [_client audioController];
+    [audio mute];
+}
+- (void)unMute {
+    id<SINAudioController> audio = [_client audioController];
+    [audio unmute];
+}
+- (void)speaker {
+    id<SINAudioController> audio = [_client audioController];
+    [audio enableSpeaker];
+}
+- (void)speakerOff {
+    id<SINAudioController> audio = [_client audioController];
+    [audio disableSpeaker];
+}
+- (void)hangup {
+    [_call hangup];
+    [_callScreen dismissViewControllerAnimated:YES completion:nil];
+}

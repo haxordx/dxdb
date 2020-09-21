@@ -1,0 +1,26 @@
+// Action for a "Checkout" button
+- (void)checkoutAction {
+    // ... Fetch the client secret from your backend
+    [[SCPTerminal shared] retrievePaymentIntent:clientSecret completion:^(SCPPaymentIntent *retrieveResult, NSError *retrieveError) {
+        if (retrieveError) {
+            NSLog(@"retrievePaymentIntent failed: %@", retrieveError);
+        }
+        else {
+            NSLog(@"retrievePaymentIntent succeeded");
+            // ...
+        }
+    }];
+}
+// Action for a "Checkout" button
+- (void)checkoutAction {
+    // ... Fetch the client secret from your backend
+    [[SCPTerminal shared] retrievePaymentIntent:clientSecret completion:^(SCPPaymentIntent *retrieveResult, NSError *retrieveError) {
+        if (retrieveError) {
+            NSLog(@"retrievePaymentIntent failed: %@", retrieveError);
+        }
+        else {
+            NSLog(@"retrievePaymentIntent succeeded");
+            // ...
+        }
+    }];
+}

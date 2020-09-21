@@ -1,0 +1,15 @@
+- (void) displayPictureForUser {
+    NSURL *pictureURL = [NSURL URLWithString:self.callingFriend.picUrl];
+    NSData *imageData = [NSData dataWithContentsOfURL:pictureURL];
+    UIImage *img = [UIImage imageWithData:imageData];
+    CGSize size = img.size;
+    CGRect rectFrame = CGRectMake(self.view.frame.size.width/2 - size.width/2, size.width/2 + 50, size.width, size.height);
+    UIImageView* imgv = [[UIImageView alloc] initWithImage:img];
+    imgv.frame = rectFrame;
+
+    // make picture into circle
+    imgv.layer.cornerRadius = size.width/2;
+    imgv.layer.masksToBounds = YES;
+
+    [self.view addSubview:imgv];
+}

@@ -1,0 +1,16 @@
+var priceService = new PriceService();
+var options = new PriceCreateOptions
+{
+    Product = "{{PRODUCT_ID}}",
+    UnitAmount = 2000,
+    Currency = "usd",
+};
+var price = priceService.Create(options);
+var priceService = new PriceService();
+var options = new PriceCreateOptions
+{
+    Product = "{{PRODUCT_ID}}",
+    UnitAmount = 2000,
+    Currency = "usd",
+};
+var price = priceService.Create(options);

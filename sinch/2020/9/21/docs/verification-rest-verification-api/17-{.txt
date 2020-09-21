@@ -1,0 +1,4 @@
+{
+    "method": "flashCall",
+    "flashCall": { "cli": "+46000000000" }
+}

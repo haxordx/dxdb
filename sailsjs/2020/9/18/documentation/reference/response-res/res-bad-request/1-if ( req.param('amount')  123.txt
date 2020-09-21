@@ -1,0 +1,5 @@
+if ( req.param('amount') > 123 )
+  return res.badRequest(
+    'Transaction limit exceeded. Please try again with an amount less than $123.'
+  );
+}

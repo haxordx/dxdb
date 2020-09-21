@@ -1,0 +1,12 @@
+{
+    "name": "RESOURCE_NOT_FOUND",
+    "message": "The specified resource does not exist.",
+    "debug_id": "98b2b9d2d89cb",
+    "links": [
+        {
+            "href": "https://developer.paypal.com/docs/api/invoicing/#errors",
+            "rel": "information_link"
+        }
+    ]
+}
+jsoncopy

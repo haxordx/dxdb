@@ -1,0 +1,16 @@
+// config/datastores.js
+module.exports.datastores = {
+  default: {
+    adapter: require('sails-mysql'),
+    url: 'mysql://root@localhost:3306/dev',
+  },
+  existingEcommerceDb: {
+    adapter: require('sails-mysql'),
+    url: 'mysql://djbluegrass:0ldy3ll3r@legacy.example.com:3306/store',
+  },
+  q3PromoDb: {
+    adapter: require('sails-mongo'),
+    url: 'mongodb://djbluegrass:0ldy3ll3r@seasonal-pet-sweaters-promo.example.com:27017/promotional',
+  }
+};
+

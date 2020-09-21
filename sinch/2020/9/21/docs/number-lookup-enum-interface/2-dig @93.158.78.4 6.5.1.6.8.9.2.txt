@@ -1,0 +1,11 @@
+dig @93.158.78.4 6.5.1.6.8.9.2.9.3.3.1.e164.arpa IN NAPTR
+
+; < <>> DiG 9.8.3-P1 < <>> @93.158.78.4 6.5.1.6.8.9.2.9.3.3.1.e164.arpa IN NAPTR
+;; ->>HEADER< <- opcode: QUERY, status: NOERROR, id: 9512
+;; flags: qr; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+;; QUESTION SECTION:
+;6.5.1.6.8.9.2.9.3.3.1.e164.arpa. IN NAPTR
+;; ANSWER SECTION:
+6.5.1.6.8.9.2.9.3.3.1.e164.arpa. 3 IN NAPTR 10 50 “u” “E2U+pstn:tel”
+“!^(.*)$!tel:\\\\1\\\;mcc=310\\\;mnc=012!” .
+;; Query time: 206 msec

@@ -1,0 +1,4 @@
+{
+    "action": "allow",
+    "flashCall": { "dialTimeout": 10 }
+}

@@ -1,0 +1,12 @@
+{
+    "numberItem": {
+        "countryId": "SE",
+        "numberType": "Mobile",
+        "normalizedNumber": "+46730170101",
+        "restricted": false,
+        "rate": {
+            "currencyId": "USD",
+            "amount": 0.0368
+        }
+    }
+}

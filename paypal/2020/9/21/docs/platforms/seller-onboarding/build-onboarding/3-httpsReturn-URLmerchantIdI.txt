@@ -1,0 +1,1 @@
+https://Return-URL?merchantIdInPayPal=Merchant-ID-In-PayPal&permissionsGranted=false&accountStatus=BUSINESS_ACCOUNT&consentStatus=false&productIntentID=addipmt&isEmailConfirmed=true&returnMessage=To%20start%20accepting%20payments,%20please%20log%20in%20to%20PayPal%20and%20finish%20signing%20up.copy

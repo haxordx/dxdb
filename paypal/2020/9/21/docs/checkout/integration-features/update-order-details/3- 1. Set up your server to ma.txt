@@ -1,0 +1,54 @@
+// 1. Set up your server to make calls to PayPal
+
+// 1a. Import the SDK package
+const checkoutNodeJssdk = require('@paypal/checkout-server-sdk');
+
+// 1b. Import the PayPal SDK client that was created in `Set up the Server SDK`.
+/**
+ *
+ * PayPal HTTP client dependency
+ */
+const payPalClient = require('../Common/payPalClient');
+
+module.exports = async function patchOrder(request, response) {
+
+  // 2. Get the order ID from the request body
+  orderID = request.body.orderID;
+
+  // 3. Call PayPal to patch the transaction
+  const request = new checkoutNodeJssdk.orders.OrdersPatchRequest(orderId);
+  request.requestBody([
+        {
+            "op": "replace",
+            "path": "/intent",
+            "value": "CAPTURE"
+        },
+        {
+            "op": "replace",
+            "path": "/purchase_units/@reference_id=='PUHF'/amount",
+            "value": {
+                "currency_code": "USD",
+                "value": "200.00",
+                "breakdown": {
+                    "item_total": {
+                        "currency_code": "USD",
+                        "value": "180.00"
+                    },
+                    "tax_total": {
+                        "currency_code": "USD",
+                        "value": "20.00"
+                    }
+                }
+            }
+        }
+    ]);
+  try {
+    const response = await payPalClient.client().execute(request);
+  } catch (err) {
+
+    // 4. Handle any errors from the call
+    console.error(err);
+  }
+   // 5. Return a successful response to the client
+  response.send(200);
+copy

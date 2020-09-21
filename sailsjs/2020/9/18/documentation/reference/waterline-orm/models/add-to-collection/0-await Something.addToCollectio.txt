@@ -1,0 +1,2 @@
+await Something.addToCollection(parentId, association)
+.members(childIds);

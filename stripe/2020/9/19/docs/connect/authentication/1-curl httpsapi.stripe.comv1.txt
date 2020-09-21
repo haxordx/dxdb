@@ -1,0 +1,4 @@
+curl https://api.stripe.com/v1/accounts/{{CONNECTED_STRIPE_ACCOUNT_ID}} \
+  -u {{PLATFORM_SECRET_KEY}}:
+curl https://api.stripe.com/v1/accounts/{{CONNECTED_STRIPE_ACCOUNT_ID}} \
+  -u {{PLATFORM_SECRET_KEY}}:

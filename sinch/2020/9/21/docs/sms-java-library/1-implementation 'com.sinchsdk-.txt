@@ -1,0 +1,1 @@
+implementation 'com.sinch:sdk-sms:1.0.3'

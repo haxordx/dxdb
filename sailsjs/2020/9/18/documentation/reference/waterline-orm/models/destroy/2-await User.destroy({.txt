@@ -1,0 +1,5 @@
+await User.destroy({
+  id: { in: [ 3, 97 ] }
+});
+
+sails.log('The records for troublesome users (3 and 97) have been deleted, if they still existed.');

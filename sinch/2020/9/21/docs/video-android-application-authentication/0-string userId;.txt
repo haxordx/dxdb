@@ -1,0 +1,10 @@
+string userId;
+string applicationKey; // E.g. "196087a1-e815-4bc4-8984-60d8d8a43f1d"
+string applicationSecret; // E.g. "oYdgGRXoxEuJhGDY2KQ/HQ=="
+uint64 sequence = previous_sequence + 1; // E.g. previous_sequence = 0
+
+string stringToSign = userId + applicationKey + sequence + applicationSecret;
+
+// Use a Base64-encoder that don't introduce line-breaks,
+// or trim the output signature afterwards.
+string signature = Base64.encode(SHA1.digest(stringToSign));

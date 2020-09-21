@@ -1,0 +1,84 @@
+class CheckoutActivity : AppCompatActivity() {
+    // ...
+
+    private fun pay(paymentMethod: String?, paymentIntent: String?) {
+        // ...
+        val activity = weakActivity.get()!!
+        stripe.authenticatePayment(activity, clientSecret)
+        // ...
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        val weakActivity = WeakReference<Activity>(this)
+
+        // Handle the result of stripe.authenticatePayment
+        stripe.onPaymentResult(requestCode, data, object : ApiResultCallback<PaymentIntentResult> {
+            override fun onSuccess(result: PaymentIntentResult) {
+                val paymentIntent = result.intent
+                val status = paymentIntent.status
+                if (status == StripeIntent.Status.Succeeded) {
+                    val gson = GsonBuilder().setPrettyPrinting().create()
+                    displayAlert(weakActivity.get(), "Payment succeeded", gson.toJson(paymentIntent), restartDemo = true)
+                } else if (status == StripeIntent.Status.RequiresPaymentMethod) {
+                    // Payment failed – allow retrying using a different payment method
+                    displayAlert(weakActivity.get(), "Payment failed", paymentIntent.lastPaymentError!!.message ?: "")
+                }
+                else if (status == StripeIntent.Status.RequiresConfirmation) {
+                    print("Re-confirming PaymentIntent after handling a required action")
+                    pay(null, paymentIntent.id)
+                }
+                else {
+                    displayAlert(weakActivity.get(), "Payment status unknown", "unhandled status: $status", restartDemo = true)
+                }
+            }
+
+            override fun onError(e: Exception) {
+                // Payment request failed – allow retrying using the same payment method
+                displayAlert(weakActivity.get(), "Payment failed", e.toString())
+            }
+        })
+    }
+}
+class CheckoutActivity : AppCompatActivity() {
+    // ...
+
+    private fun pay(paymentMethod: String?, paymentIntent: String?) {
+        // ...
+        val activity = weakActivity.get()!!
+        stripe.authenticatePayment(activity, clientSecret)
+        // ...
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        val weakActivity = WeakReference<Activity>(this)
+
+        // Handle the result of stripe.authenticatePayment
+        stripe.onPaymentResult(requestCode, data, object : ApiResultCallback<PaymentIntentResult> {
+            override fun onSuccess(result: PaymentIntentResult) {
+                val paymentIntent = result.intent
+                val status = paymentIntent.status
+                if (status == StripeIntent.Status.Succeeded) {
+                    val gson = GsonBuilder().setPrettyPrinting().create()
+                    displayAlert(weakActivity.get(), "Payment succeeded", gson.toJson(paymentIntent), restartDemo = true)
+                } else if (status == StripeIntent.Status.RequiresPaymentMethod) {
+                    // Payment failed – allow retrying using a different payment method
+                    displayAlert(weakActivity.get(), "Payment failed", paymentIntent.lastPaymentError!!.message ?: "")
+                }
+                else if (status == StripeIntent.Status.RequiresConfirmation) {
+                    print("Re-confirming PaymentIntent after handling a required action")
+                    pay(null, paymentIntent.id)
+                }
+                else {
+                    displayAlert(weakActivity.get(), "Payment status unknown", "unhandled status: $status", restartDemo = true)
+                }
+            }
+
+            override fun onError(e: Exception) {
+                // Payment request failed – allow retrying using the same payment method
+                displayAlert(weakActivity.get(), "Payment failed", e.toString())
+            }
+        })
+    }
+}

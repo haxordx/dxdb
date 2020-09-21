@@ -1,0 +1,6 @@
+- (void)callDidAddVideoTrack:(id<SINCall>)call {
+  id<SINVideoController> videoController = ... // get video controller from SINClient.
+
+  // Add the video views to your view hierarchy
+  [self.remoteVideoView addSubview:[videoController remoteView]];
+}

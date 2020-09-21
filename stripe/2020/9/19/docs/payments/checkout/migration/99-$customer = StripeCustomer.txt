@@ -1,0 +1,23 @@
+$customer = \Stripe\Customer::create([
+  'email' => $_POST['stripeEmail'],
+  'source' => $_POST['stripeToken'],
+]);
+
+$subscription = \Stripe\Subscription::create([
+  'customer' => $customer->id,
+  'items' => [[
+    'price' => '{PRICE_ID}',
+    'quantity' => 2,
+  ]],
+]);$customer = \Stripe\Customer::create([
+  'email' => $_POST['stripeEmail'],
+  'source' => $_POST['stripeToken'],
+]);
+
+$subscription = \Stripe\Subscription::create([
+  'customer' => $customer->id,
+  'items' => [[
+    'price' => '{PRICE_ID}',
+    'quantity' => 2,
+  ]],
+]);

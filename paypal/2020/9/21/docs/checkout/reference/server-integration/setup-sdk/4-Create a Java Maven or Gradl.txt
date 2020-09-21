@@ -1,0 +1,15 @@
+//Create a Java Maven or Gradle project in your directory, then add the following dependency to the project from Maven Central.
+PAYPAL JAVASCRIPT SDK:
+ groupId: com.paypal.sdk
+ artifactId: checkout-sdk
+ version: 1.0.2
+// Include the following dependencies, which are used as samples only.
+JSON:
+ groupId: org.json
+ artifactId: json
+ version: 20180813
+APACHE COMMONS LANG:
+ groupId: org.apache.commons
+ artifactId: commons-lang3
+ version: 3.6
+copy

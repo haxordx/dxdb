@@ -1,0 +1,8 @@
+req.acceptsCharsets('utf-8');
+// -> 'utf-8'
+
+req.acceptsCharsets('iso-8859-1', 'utf-16', 'utf-8');
+// -> 'utf-8'
+
+req.acceptsCharsets('utf-16');
+// -> false

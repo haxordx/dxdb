@@ -1,0 +1,9 @@
+L_AMT0=1.23                                # 1st txn amount, starting at "0"
+L_EMAIL0=e-mail_1@example.com              # e-dress of 1st payee
+L_NOTE0= Thank you for our catered lunch.  # custom e-mail msg for 1st payee
+L_UNIQUEID0=TxnNo123                       # unique ID for txn
+L_AMT1=4.56                                # 2nd txn amount
+L_EMAIL1=e-mail_2@example.com
+L_NOTE1= Thank you for the Balloons!
+L_UNIQUEID1=TxnNo456
+copy

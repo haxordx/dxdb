@@ -1,0 +1,10 @@
+curl https://api.stripe.com/v1/payouts \
+  -u {PLATFORM_SECRET_KEY}: \
+  -d amount=24784 \
+  -d currency=usd \
+  -d source_type=bank_account
+curl https://api.stripe.com/v1/payouts \
+  -u {PLATFORM_SECRET_KEY}: \
+  -d amount=24784 \
+  -d currency=usd \
+  -d source_type=bank_account

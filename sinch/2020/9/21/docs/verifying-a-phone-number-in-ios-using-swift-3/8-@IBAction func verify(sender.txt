@@ -1,0 +1,18 @@
+@IBAction func verify(sender: AnyObject) {
+    spinner.startAnimating();
+    verifyButton.isEnabled = false;
+    status.text  = "";
+    pinCode.isEnabled = false;
+    verification.verify(
+        pinCode.text!, completion:
+        { (success:Bool, error:Error?) -> Void in
+            self.spinner.stopAnimating();
+            self.verifyButton.isEnabled = true;
+            self.pinCode.isEnabled = true;
+            if (success) {
+                self.status.text = "Verified";
+            } else {
+                self.status.text = error?.localizedDescription;
+            }
+    });
+}

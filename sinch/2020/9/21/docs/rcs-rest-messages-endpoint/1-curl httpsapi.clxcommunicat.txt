@@ -1,0 +1,18 @@
+curl https://api.clxcommunications.com/rcs/v1/my-agent-id/messages \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer zIMEJGfwD4oJ4qObPPjwZxwiP5cKARXRJpt9Kf6GSv7uOesvRV" \
+  -d '{
+      "message_id": "5bb77a04-78b7-41ff-abd3-a1006f8d6979",
+      "to": "46555123456",
+      "message": {
+          "type": "text",
+          "text": "Test message!"
+      },
+      "fallback": {
+          "message": {
+              "type": "mt_text",
+              "from": "MyOriginator",
+              "text": "Test message!"
+          }
+      }
+  }'

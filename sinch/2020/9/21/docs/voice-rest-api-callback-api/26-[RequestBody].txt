@@ -1,0 +1,15 @@
+[RequestBody]
+{
+    string - event
+    string - callid
+    time - timestamp
+    int - version
+    MenuResult - menuResult
+}
+
+[MenuResult]
+{
+    string - menuId
+    string - type
+    string - value
+}

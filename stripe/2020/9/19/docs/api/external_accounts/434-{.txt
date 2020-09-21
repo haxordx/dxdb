@@ -1,0 +1,5 @@
+{
+  "id": "card_1HTGOv2eZvKYlo2CUhRSwqvf",
+  "object": "card",
+  "deleted": true
+}

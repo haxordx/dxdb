@@ -1,0 +1,48 @@
+#import "APPPaymentViewController.h"
+#import <StripeTerminal/StripeTerminal.h>
+
+@implementation APPPaymentViewController
+
+// Action for a "Checkout" button
+- (void)checkoutAction {
+    SCPPaymentIntentParameters *params = [[SCPPaymentIntentParameters alloc] initWithAmount:1000
+                                                                                   currency:@"usd"];
+    params.onBehalfOf = @"{CONNECTED_ACCONT_ID}";
+    params.transferDataDestination = @"{CONNECTED_ACCONT_ID}";
+    params.applicationFeeAmount = @(200);
+    [[SCPTerminal shared] createPaymentIntent:params completion:^(SCPPaymentIntent *createResult, NSError *createError) {
+        if (createError) {
+            NSLog(@"createPaymentIntent failed: %@", createError);
+        } else {
+            NSLog(@"createPaymentIntent succeeded");
+            // ...
+        }
+}
+
+// ...
+
+@end
+#import "APPPaymentViewController.h"
+#import <StripeTerminal/StripeTerminal.h>
+
+@implementation APPPaymentViewController
+
+// Action for a "Checkout" button
+- (void)checkoutAction {
+    SCPPaymentIntentParameters *params = [[SCPPaymentIntentParameters alloc] initWithAmount:1000
+                                                                                   currency:@"usd"];
+    params.onBehalfOf = @"{CONNECTED_ACCONT_ID}";
+    params.transferDataDestination = @"{CONNECTED_ACCONT_ID}";
+    params.applicationFeeAmount = @(200);
+    [[SCPTerminal shared] createPaymentIntent:params completion:^(SCPPaymentIntent *createResult, NSError *createError) {
+        if (createError) {
+            NSLog(@"createPaymentIntent failed: %@", createError);
+        } else {
+            NSLog(@"createPaymentIntent succeeded");
+            // ...
+        }
+}
+
+// ...
+
+@end

@@ -1,0 +1,71 @@
+params := &stripe.CheckoutSessionParams{
+    PaymentMethodTypes: stripe.StringSlice([]string{
+        "card",
+    }),
+    LineItems: []*stripe.CheckoutSessionLineItemParams{
+        &stripe.CheckoutSessionLineItemParams{
+            Name: stripe.String("T-shirt"),
+            Description: stripe.String("Comfortable cotton t-shirt"),
+            Amount: stripe.Int64(2000),
+            Currency: stripe.String("usd"),
+            Quantity: stripe.Int64(1),
+        },
+    },
+    SubscriptionData: &stripe.CheckoutSessionSubscriptionDataParams{
+        Items: []*stripe.CheckoutSessionSubscriptionDataItemsParams{
+            &stripe.CheckoutSessionSubscriptionDataItemsParams{
+                Plan: stripe.String("{{RECURRING_PRICE_OR_PLAN_ID}}"),
+            },
+        },
+    },
+    LineItems: []*stripe.CheckoutSessionLineItemParams{
+        &stripe.CheckoutSessionLineItemParams{
+            Price: stripe.String("{{ONE_TIME_PRICE_ID}}"),
+            Quantity: stripe.Int64(1),
+        },
+        &stripe.CheckoutSessionLineItemParams{
+            Price: stripe.String("{{RECURRING_PRICE_OR_PLAN_ID}}"),
+            Quantity: stripe.Int64(1),
+        },
+    },
+    Mode: stripe.String("subscription"),
+    SuccessURL: stripe.String("https://example.com/success?session_id={CHECKOUT_SESSION_ID}"),
+    CancelURL: stripe.String("https://example.com/cancel"),
+}
+
+session, err := session.New(params)params := &stripe.CheckoutSessionParams{
+    PaymentMethodTypes: stripe.StringSlice([]string{
+        "card",
+    }),
+    LineItems: []*stripe.CheckoutSessionLineItemParams{
+        &stripe.CheckoutSessionLineItemParams{
+            Name: stripe.String("T-shirt"),
+            Description: stripe.String("Comfortable cotton t-shirt"),
+            Amount: stripe.Int64(2000),
+            Currency: stripe.String("usd"),
+            Quantity: stripe.Int64(1),
+        },
+    },
+    SubscriptionData: &stripe.CheckoutSessionSubscriptionDataParams{
+        Items: []*stripe.CheckoutSessionSubscriptionDataItemsParams{
+            &stripe.CheckoutSessionSubscriptionDataItemsParams{
+                Plan: stripe.String("{{RECURRING_PRICE_OR_PLAN_ID}}"),
+            },
+        },
+    },
+    LineItems: []*stripe.CheckoutSessionLineItemParams{
+        &stripe.CheckoutSessionLineItemParams{
+            Price: stripe.String("{{ONE_TIME_PRICE_ID}}"),
+            Quantity: stripe.Int64(1),
+        },
+        &stripe.CheckoutSessionLineItemParams{
+            Price: stripe.String("{{RECURRING_PRICE_OR_PLAN_ID}}"),
+            Quantity: stripe.Int64(1),
+        },
+    },
+    Mode: stripe.String("subscription"),
+    SuccessURL: stripe.String("https://example.com/success?session_id={CHECKOUT_SESSION_ID}"),
+    CancelURL: stripe.String("https://example.com/cancel"),
+}
+
+session, err := session.New(params)

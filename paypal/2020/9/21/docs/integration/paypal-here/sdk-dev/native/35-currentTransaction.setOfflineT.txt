@@ -1,0 +1,9 @@
+currentTransaction.setOfflineTransactionAdditionHandler(new TransactionContext.OfflineTransactionAddedCallback()
+{
+  @Override
+  public void offlineTransactionCompleted(RetailSDKException error, TransactionRecord record)
+  {
+    TransactionActivity.this.offlineTransactionCompleted(error, record);
+  }
+});
+copy

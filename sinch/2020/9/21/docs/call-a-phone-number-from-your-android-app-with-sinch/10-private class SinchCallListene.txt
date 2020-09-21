@@ -1,0 +1,33 @@
+private class SinchCallListener implements CallListener {
+
+    //the call is ended for any reason
+    @Override
+    public void onCallEnded(Call endedCall) {
+        call = null; //no longer a current call
+        callButton.setText("Call"); //change text on button
+        callState.setText(""); //empty call state
+        //hardware volume buttons should revert to their normal function
+        setVolumeControlStream(AudioManager.USE_DEFAULT_STREAM_TYPE);
+    }
+
+    //call is connected
+    @Override
+    public void onCallEstablished(Call establishedCall) {
+        //change the call state in the view
+        callState.setText("connected");
+        //the hardware volume buttons should control the voice stream volume
+        setVolumeControlStream(AudioManager.STREAM_VOICE_CALL);
+    }
+
+    //call is trying to connect
+    @Override
+    public void onCallProgressing(Call progressingCall) {
+        //set call state to "ringing" in the view
+        callState.setText("ringing");
+    }
+
+    @Override
+    public void onShouldSendPushNotification(Call call, List<PushPair> pushPairs) {
+        //intentionally left empty
+    }
+}

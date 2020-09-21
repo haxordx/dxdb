@@ -1,0 +1,5 @@
+public class PushKitController : ApiController {
+    [Route("sendpush")]
+    [HttpPost]
+    public HttpResponseMessage SendPush(PushPair push) { }
+}

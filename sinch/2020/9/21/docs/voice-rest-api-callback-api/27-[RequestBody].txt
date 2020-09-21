@@ -1,0 +1,8 @@
+[RequestBody]
+{
+    string - event
+    int - version
+    string - type
+    string - custom (if applicable)
+    // ... notification-specific properties
+}

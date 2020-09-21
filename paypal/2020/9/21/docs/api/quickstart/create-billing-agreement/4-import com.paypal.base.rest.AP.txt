@@ -1,0 +1,37 @@
+import com.paypal.base.rest.APIContext;
+import com.paypal.base.rest.PayPalRESTException;
+
+import java.io.UnsupportedEncodingException;
+import java.net.MalformedURLException;
+import java.net.URL;
+
+import com.paypal.api.payments.Agreement;
+import com.paypal.api.payments.Links;
+import com.paypal.api.payments.Payer;
+import com.paypal.api.payments.Plan;
+import com.paypal.api.payments.ShippingAddress;
+
+// Create new agreement
+Agreement agreement = new Agreement();
+agreement.setName("Base Agreement");
+agreement.setDescription("Basic Agreement");
+agreement.setStartDate("2020-06-17T9:45:04Z");
+
+// Set plan ID
+Plan plan = new Plan();
+plan.setId("P-0PK90852BK763535UTMSTGMQ");
+agreement.setPlan(plan);
+
+// Add payer details
+Payer payer = new Payer();
+payer.setPaymentMethod("paypal");
+agreement.setPayer(payer);
+
+// Set shipping address information
+ShippingAddress shipping = new ShippingAddress();
+shipping.setLine1("111 First Street");
+shipping.setCity("Saratoga");
+shipping.setState("CA");
+shipping.setPostalCode("95070");
+shipping.setCountryCode("US");
+agreement.setShippingAddress(shipping);copy

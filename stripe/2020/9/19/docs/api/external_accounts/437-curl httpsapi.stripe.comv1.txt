@@ -1,0 +1,5 @@
+curl https://api.stripe.com/v1/accounts/acct_1032D82eZvKYlo2C/external_accounts \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d object=card \
+  -d limit=3 \
+  -G

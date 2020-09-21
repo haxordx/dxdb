@@ -1,0 +1,40 @@
+class CheckoutViewController: UIViewController {
+    lazy var cardTextField: STPPaymentCardTextField = {
+        let cardTextField = STPPaymentCardTextField()
+        return cardTextField
+    }()
+
+    func pay() {
+        // Collect card details
+        let cardParams = cardTextField.cardParams
+        // Fill in any billing details...
+        let billingDetails = STPPaymentMethodBillingDetails()
+
+        // Create SetupIntent confirm parameters with the above
+        let paymentMethodParams = STPPaymentMethodParams(card: cardParams, billingDetails: billingDetails, metadata: nil)
+        let setupIntentParams = STPSetupIntentConfirmParams(clientSecret: setupIntentClientSecret)
+        setupIntentParams.paymentMethodParams = paymentMethodParams
+
+        // ...continued in next step
+    }
+}
+class CheckoutViewController: UIViewController {
+    lazy var cardTextField: STPPaymentCardTextField = {
+        let cardTextField = STPPaymentCardTextField()
+        return cardTextField
+    }()
+
+    func pay() {
+        // Collect card details
+        let cardParams = cardTextField.cardParams
+        // Fill in any billing details...
+        let billingDetails = STPPaymentMethodBillingDetails()
+
+        // Create SetupIntent confirm parameters with the above
+        let paymentMethodParams = STPPaymentMethodParams(card: cardParams, billingDetails: billingDetails, metadata: nil)
+        let setupIntentParams = STPSetupIntentConfirmParams(clientSecret: setupIntentClientSecret)
+        setupIntentParams.paymentMethodParams = paymentMethodParams
+
+        // ...continued in next step
+    }
+}

@@ -1,0 +1,3 @@
+/dlr.php?type=1&dr-msg=id:128fc8d26225d9e4e52097f4249028b7+sub:001+dlvrd:001+submit
++date:1006030843+done+date:1006030843+stat:DELIVRD+err:000
++text:++++++++++++++++++++

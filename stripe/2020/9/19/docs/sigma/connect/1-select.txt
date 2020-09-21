@@ -1,0 +1,21 @@
+select
+  date_format(created, '%Y-%m-%d') as day,
+  account, -- Added to include corresponding account identifier
+  id,
+  amount,
+  currency,
+  source_id,
+  type
+from connected_account_balance_transactions -- Changed to use Connect-specific table
+order by day desc
+limit 5select
+  date_format(created, '%Y-%m-%d') as day,
+  account, -- Added to include corresponding account identifier
+  id,
+  amount,
+  currency,
+  source_id,
+  type
+from connected_account_balance_transactions -- Changed to use Connect-specific table
+order by day desc
+limit 5

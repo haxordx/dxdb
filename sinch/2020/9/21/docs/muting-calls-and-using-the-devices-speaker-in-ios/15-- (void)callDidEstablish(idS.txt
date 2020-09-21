@@ -1,0 +1,6 @@
+- (void)callDidEstablish:(id<SINCall>)call {
+    _callScreen.statusLabel.text = @"Connected!";
+}
+- (void)callDidEnd:(id<SINCall>)call {
+    [_callScreen dismissViewControllerAnimated:YES completion:nil];
+}

@@ -1,0 +1,2 @@
+node app.js --prod
+# (Sails will set `NODE_ENV` automatically)

@@ -1,0 +1,35 @@
+var customerOptions = new CustomerCreateOptions {
+    Email = request.stripeEmail,
+    Source = request.stripeToken,
+};
+var customerService = new CustomerService();
+Customer customer = customerService.Create(customerOptions);
+
+var subscriptionOptions = new SubscriptionCreateOptions {
+    Customer = customer.id,
+    Items = new List<SubscriptionItemOptions> {
+        new SubscriptionItemOptions {
+            Price = "{PRICE_ID}",
+            Quantity = 2,
+        },
+    },
+};
+var subscriptionService = new SubscriptionService();
+Subscription subscription = subscriptionService.Create(subscriptionOptions);var customerOptions = new CustomerCreateOptions {
+    Email = request.stripeEmail,
+    Source = request.stripeToken,
+};
+var customerService = new CustomerService();
+Customer customer = customerService.Create(customerOptions);
+
+var subscriptionOptions = new SubscriptionCreateOptions {
+    Customer = customer.id,
+    Items = new List<SubscriptionItemOptions> {
+        new SubscriptionItemOptions {
+            Price = "{PRICE_ID}",
+            Quantity = 2,
+        },
+    },
+};
+var subscriptionService = new SubscriptionService();
+Subscription subscription = subscriptionService.Create(subscriptionOptions);

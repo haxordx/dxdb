@@ -1,0 +1,12 @@
+{
+  "capabilities": [
+    {
+      "msisdn":"46732001122",
+      "capable": true
+    },
+    {
+      "msisdn":"46732002244",
+      "capable": false
+    }
+  ]
+}

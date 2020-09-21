@@ -1,0 +1,1 @@
+git clone https://github.com/stripe/stripe-terminal-ios.gitgit clone https://github.com/stripe/stripe-terminal-ios.git

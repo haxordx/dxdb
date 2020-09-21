@@ -1,0 +1,3 @@
+curl https://api.stripe.com/v1/webhook_endpoints/we_1HTFwp2eZvKYlo2CovAiG1vC \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d url="https://example.com/new_endpoint"

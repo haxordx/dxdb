@@ -1,0 +1,6 @@
+$('button#hangup').click(function(event) {
+    event.preventDefault();
+    clearError();
+
+    call && call.hangup();
+});

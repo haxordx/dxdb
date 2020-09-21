@@ -1,0 +1,2 @@
+var embeddedPPFlow = new PAYPAL.apps.DGFlow({trigger: 'submitBtn'});
+copy

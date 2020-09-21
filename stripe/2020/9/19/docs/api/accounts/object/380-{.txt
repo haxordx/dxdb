@@ -1,0 +1,5 @@
+{
+  "object": "login_link",
+  "created": 1600560850,
+  "url": "https://connect.stripe.com/express/w1c3LChASBH1"
+}

@@ -1,0 +1,17 @@
+curl -v -X PATCH https://api.sandbox.paypal.com/v2/checkout/orders/5O190127TN364715T \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer Access-Token" \
+-d '[
+  {
+"op": "replace",
+"path": "/purchase_units/@reference_id=='PUHF'/shipping/address",
+"value": {
+  "address_line_1": "123 Townsend St",
+  "address_line_2": "Floor 6",
+  "admin_area_2": "San Francisco",
+  "admin_area_1": "CA",
+  "postal_code": "94107",
+  "country_code": "US"
+}
+  }
+]'copy

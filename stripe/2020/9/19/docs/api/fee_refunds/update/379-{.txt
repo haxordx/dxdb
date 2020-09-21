@@ -1,0 +1,12 @@
+{
+  "id": "fr_1HTFvsKbnvuxQXGuNfNCHhYS",
+  "object": "fee_refund",
+  "amount": 100,
+  "balance_transaction": "txn_1032HU2eZvKYlo2CEPtcnUvl",
+  "created": 1600559852,
+  "currency": "usd",
+  "fee": "fee_1B73DOKbnvuxQXGuhY8Aw0TN",
+  "metadata": {
+    "order_id": "6735"
+  }
+}

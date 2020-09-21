@@ -1,0 +1,6 @@
+stripe login --api-key {{TEST_API_KEY}}
+Your pairing code is: humour-nifty-finer-magic
+Press Enter to open up the browser (^C to quit)
+stripe login --api-key {{TEST_API_KEY}}
+Your pairing code is: humour-nifty-finer-magic
+Press Enter to open up the browser (^C to quit)

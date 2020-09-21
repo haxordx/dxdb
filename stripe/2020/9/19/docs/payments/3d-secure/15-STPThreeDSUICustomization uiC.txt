@@ -1,0 +1,9 @@
+STPThreeDSUICustomization *uiCustomization = [STPPaymentHandler sharedHandler].threeDSCustomizationSettings.uiCustomization;
+uiCustomization.textFieldCustomization.keyboardAppearance = UIKeyboardAppearanceDark;
+uiCustomization.navigationBarCustomization.barStyle = UIBarStyleBlack;
+uiCustomization.navigationBarCustomization.textColor = UIColor.whiteColor;
+[uiCustomization buttonCustomizationForButtonType:STPThreeDSCustomizationButtonTypeCancel].textColor = UIColor.whiteColor;STPThreeDSUICustomization *uiCustomization = [STPPaymentHandler sharedHandler].threeDSCustomizationSettings.uiCustomization;
+uiCustomization.textFieldCustomization.keyboardAppearance = UIKeyboardAppearanceDark;
+uiCustomization.navigationBarCustomization.barStyle = UIBarStyleBlack;
+uiCustomization.navigationBarCustomization.textColor = UIColor.whiteColor;
+[uiCustomization buttonCustomizationForButtonType:STPThreeDSCustomizationButtonTypeCancel].textColor = UIColor.whiteColor;

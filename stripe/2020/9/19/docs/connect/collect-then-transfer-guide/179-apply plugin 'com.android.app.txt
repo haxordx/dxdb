@@ -1,0 +1,28 @@
+apply plugin: 'com.android.application'
+
+android { ... }
+
+dependencies {
+  // ...
+
+  // Stripe Android SDK
+  implementation 'com.stripe:stripe-android:15.1.0'
+
+  // AndroidX Browser library
+  implementation 'androidx.browser:browser:1.2.0'
+
+}
+apply plugin: 'com.android.application'
+
+android { ... }
+
+dependencies {
+  // ...
+
+  // Stripe Android SDK
+  implementation 'com.stripe:stripe-android:15.1.0'
+
+  // AndroidX Browser library
+  implementation 'androidx.browser:browser:1.2.0'
+
+}

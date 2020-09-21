@@ -1,0 +1,4 @@
+PayPalRetailSDK.initializeMerchantOffline { (error, merchant) in
+    // Code to handle success or failure
+}
+copy

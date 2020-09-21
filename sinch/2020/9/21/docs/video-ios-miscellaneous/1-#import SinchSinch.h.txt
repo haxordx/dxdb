@@ -1,0 +1,12 @@
+#import <Sinch/Sinch.h>
+
+id<SINClient> client = [Sinch clientWithApplicationKey:@"<application key>"
+                                         applicationSecret:@"<application secret>"
+                                           environmentHost:@"clientapi.sinch.com"
+                                                    userId:@"<user id>"];
+
+[client setSupportPushNotifications:YES];
+
+client.delegate = ...;
+
+[client start];

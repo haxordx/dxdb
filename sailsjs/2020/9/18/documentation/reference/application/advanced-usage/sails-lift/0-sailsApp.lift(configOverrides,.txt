@@ -1,0 +1,3 @@
+sailsApp.lift(configOverrides, function (err) {
+
+});

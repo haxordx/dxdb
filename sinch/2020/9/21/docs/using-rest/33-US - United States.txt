@@ -1,0 +1,3 @@
+"US" - United States
+"SE" - Sweden
+"GB" - United Kingdom

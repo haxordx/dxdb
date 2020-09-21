@@ -1,0 +1,4 @@
+module.exports.policies = {
+  '*': 'isLoggedIn',
+  'user/login': true
+};

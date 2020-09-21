@@ -1,0 +1,12 @@
+params := &stripe.PriceParams{
+    Product: stripe.String("{{PRODUCT_ID}}"),
+    UnitAmount: stripe.Int64(2000),
+    Currency: stripe.String("usd"),
+}
+p, _ := price.New(params)
+params := &stripe.PriceParams{
+    Product: stripe.String("{{PRODUCT_ID}}"),
+    UnitAmount: stripe.Int64(2000),
+    Currency: stripe.String("usd"),
+}
+p, _ := price.New(params)

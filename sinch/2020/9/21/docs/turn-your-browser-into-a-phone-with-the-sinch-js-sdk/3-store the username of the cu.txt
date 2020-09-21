@@ -1,0 +1,55 @@
+//store the username of the current user
+var global_username = '';
+
+$('button#createUser').on('click', function(event) {
+    event.preventDefault();
+    $('button#createUser').attr('disabled', true);
+    $('button#loginUser').attr('disabled', true);
+     clearError();
+
+     var username = $('input#username').val();
+     var password = $('input#password').val();
+
+    var loginObject = {username: username, password: password};
+    sinchClient.newUser(loginObject, function(ticket) {
+          sinchClient.start(ticket, function() {
+            global_username = username;
+               showCall();
+          }).fail(handleError);
+    }).fail(handleError);
+});
+
+$('button#loginUser').on('click', function(event) {
+    event.preventDefault();
+    $('button#createUser').attr('disabled', true);
+    $('button#loginUser').attr('disabled', true);
+    clearError();
+
+    var username = $('input#username').val();
+    var password = $('input#password').val();
+
+    var loginObject = {username: username, password: password};
+    sinchClient.start(loginObject, function() {
+          global_username = username;
+        showCall();
+    }).fail(handleError);
+});
+
+//handle errors
+var handleError = function(error) {
+     $('button#createUser').attr('disabled', false);
+     $('button#loginUser').attr('disabled', false);
+     $('div.error').text(error.message);
+}
+
+//clear out old errors
+var clearError = function() {
+    $('div.error').text("");
+}
+
+//show the call screen
+var showCall = function() {
+    $('form#auth').css('display', 'none');
+    $('div#call').show();
+    $('span#username').append(global_username);
+}

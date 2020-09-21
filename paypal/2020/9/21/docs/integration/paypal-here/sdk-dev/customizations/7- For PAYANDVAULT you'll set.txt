@@ -1,0 +1,18 @@
+// For PAYANDVAULT you'll set the appropriate vault options on the payment configuration and then call either .sale() or .authorize() as normal.
+payment_config.vault(pphwebsdk.Types.VaultProvider.BRAINTREE)
+  .customerId(customerId)
+  .type(pphwebsdk.Types.VaultType.PAYANDVAULT)
+  .done();
+
+var payment = pphwebsdk.Payment.create(identity, payment_config);
+payment.for(order).as(pphwebsdk.Types.PaymentMethod.CARD).sale();
+
+// For VAULTONLY you will set the appropriate vault options on the payment configuration and then call the .vault() method of your payment
+payment_config.vault(pphwebsdk.Types.VaultProvider.BRAINTREE)
+  .customerId(customerId)
+  .type(pphwebsdk.Types.VaultType.VAULTONLY)
+  .done();
+
+var payment = pphwebsdk.Payment.create(identity, payment_config);
+payment.for(order).as(pphwebsdk.Types.PaymentMethod.CARD).vault();
+copy

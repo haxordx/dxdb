@@ -1,0 +1,6 @@
+curl https://api.stripe.com/v1/issuing/disputes/idp_1GW0GkKA9rkJS7vmeJlLI1Gp/submit \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -X POST
+curl https://api.stripe.com/v1/issuing/disputes/idp_1GW0GkKA9rkJS7vmeJlLI1Gp/submit \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -X POST

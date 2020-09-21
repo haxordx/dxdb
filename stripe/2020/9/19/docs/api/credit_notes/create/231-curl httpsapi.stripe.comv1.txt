@@ -1,0 +1,2 @@
+curl https://api.stripe.com/v1/credit_notes/cn_1HTGEw2eZvKYlo2CiY2Qhvgo \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc:

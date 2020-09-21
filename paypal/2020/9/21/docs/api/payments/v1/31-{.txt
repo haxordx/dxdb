@@ -1,0 +1,33 @@
+{
+  "id": "8F148933LY9388354",
+  "amount": {
+    "total": "110.54",
+    "currency": "USD",
+    "details": {
+      "subtotal": "110.54"
+    }
+  },
+  "state": "COMPLETED",
+  "parent_payment": "PAY-8PT597110X687430LKGECATA",
+  "transaction_fee": {
+    "value": "3.74",
+    "currency": "USD"
+  },
+  "links": [
+    {
+      "href": "https://api.sandbox.paypal.com/v1/payments/capture/8F148933LY9388354",
+      "rel": "self",
+      "method": "GET"
+    },
+    {
+      "href": "https://api.sandbox.paypal.com/v1/payments/capture/8F148933LY9388354/refund",
+      "rel": "refund",
+      "method": "POST"
+    },
+    {
+      "href": "https://api.sandbox.paypal.com/v1/payments/payment/PAY-8PT597110X687430LKGECATA",
+      "rel": "parent_payment",
+      "method": "GET"
+    }
+  ]
+}copy

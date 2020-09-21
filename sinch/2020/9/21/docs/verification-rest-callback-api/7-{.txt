@@ -1,0 +1,4 @@
+{
+    "action": "allow",
+    "flashCall": { "cli": "+4445874587" }
+}

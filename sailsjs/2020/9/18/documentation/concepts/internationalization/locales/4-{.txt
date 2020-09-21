@@ -1,0 +1,6 @@
+{
+  "editProfile.heading": "Edit your profile",
+  "editProfile.username.label": "Username",
+  "editProfile.username.description": "Choose a new unique username.",
+  "editProfile.username.placeholder": "callmethep4rtysquid"
+}

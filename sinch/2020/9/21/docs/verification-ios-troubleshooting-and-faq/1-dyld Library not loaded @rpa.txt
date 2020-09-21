@@ -1,0 +1,4 @@
+dyld: Library not loaded: @rpath/libswiftCore.dylib
+  Reason: image not found
+dyld: Library not loaded: @rpath/SinchVerification.framework/SinchVerification
+  Reason: image not found

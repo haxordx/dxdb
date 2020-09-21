@@ -1,0 +1,7 @@
+// Instantiate a SinchClient using the SinchClientBuilder.
+android.content.Context context = this.getApplicationContext();
+SinchClient sinchClient = Sinch.getSinchClientBuilder().context(context)
+                                                       .applicationKey("<application key>")
+                                                       .environmentHost("ocra.api.sinch.com")
+                                                       .userId("<user id>")
+                                                       .build();

@@ -1,0 +1,3 @@
+self.NameLabel.text = self.callFriend.name;
+self.UsernameLabel.text = [NSString stringWithFormat:@"@%@", self.callFriend.username];
+[self displayPictureForUrl:self.callFriend.picUrl];

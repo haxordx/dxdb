@@ -1,0 +1,220 @@
+{
+  "id": "INV2-PXSC-LFZ3-FDAX-HR3E",
+  "status": "DRAFT",
+  "detail": {
+    "reference": "deal-ref",
+    "currency_code": "USD",
+    "note": "Thank you for your business.",
+    "memo": "This is a long contract",
+    "additional_data": "2-4",
+    "category_code": "SHIPPABLE",
+    "invoice_number": "#12345",
+    "invoice_date": "2020-01-28",
+    "payment_term": {
+      "term_type": "NET_10",
+      "due_date": "2020-02-07"
+    },
+    "viewed_by_recipient": false,
+    "metadata": {
+      "create_time": "2020-01-28T20:54:48Z",
+      "last_update_time": "2020-01-28T20:54:48Z",
+      "created_by_flow": "REGULAR_SINGLE",
+      "recipient_view_url": "https://www.sandbox.paypal.com/invoice/p/#PXSCLFZ3FDAXHR3E",
+      "invoicer_view_url": "https://www.sandbox.paypal.com/invoice/details/INV2-PXSC-LFZ3-FDAX-HR3E"
+    },
+    "archived": false
+  },
+  "invoicer": {
+    "name": {
+      "given_name": "David",
+      "surname": "Larusso",
+      "full_name": "David Larusso"
+    },
+    "address": {
+      "address_line_1": "1234 First Street",
+      "admin_area_2": "Anytown",
+      "admin_area_1": "CA",
+      "postal_code": "98765",
+      "country_code": "US"
+    },
+    "phones": [{
+      "country_code": "001",
+      "national_number": "4085551234",
+      "phone_type": "MOBILE"
+    }],
+    "website": "www.test.com",
+    "tax_id": "ABcNkWSfb5ICTt73nD3QON1fnnpgNKBy- Jb5SeuGj185MNNw6g",
+    "additional_notes": "2-4",
+    "logo_url": "https://example.com/logo.png"
+  },
+  "primary_recipients": [{
+    "billing_info": {
+      "name": {
+        "given_name": "Stephanie",
+        "surname": "Meyers",
+        "full_name": "Stephanie Meyers"
+      },
+      "address": {
+        "address_line_1": "1234 Main Street",
+        "admin_area_2": "Anytown",
+        "admin_area_1": "CA",
+        "postal_code": "98765",
+        "country_code": "US"
+      },
+      "email_address": "bill-me@example.com"
+    },
+    "shipping_info": {
+      "name": {
+        "given_name": "Stephanie",
+        "surname": "Meyers",
+        "full_name": "Stephanie Meyers"
+      },
+      "address": {
+        "address_line_1": "1234 Main Street",
+        "admin_area_2": "Anytown",
+        "admin_area_1": "CA",
+        "postal_code": "98765",
+        "country_code": "US"
+      }
+    }
+  }],
+  "items": [{
+    "id": "ITEM-97V00660JE381301E",
+    "name": "Yoga Mat",
+    "description": "Elastic mat to practice yoga.",
+    "quantity": "1",
+    "unit_amount": {
+      "currency_code": "USD",
+      "value": "50.00"
+    },
+    "tax": {
+      "id": "TAX-7FC79953CG799523R",
+      "name": "Sales Tax",
+      "percent": "7.25",
+      "amount": {
+        "currency_code": "USD",
+        "value": "3.27"
+      }
+    },
+    "discount": {
+      "percent": "5",
+      "amount": {
+        "currency_code": "USD",
+        "value": "-2.50"
+      }
+    },
+    "unit_of_measure": "QUANTITY"
+  }, {
+    "id": "ITEM-9NY92987V15309140",
+    "name": "Yoga t-shirt",
+    "quantity": "1",
+    "unit_amount": {
+      "currency_code": "USD",
+      "value": "10.00"
+    },
+    "tax": {
+      "id": "TAX-7FC79953CG799523R",
+      "name": "Sales Tax",
+      "percent": "7.25",
+      "amount": {
+        "currency_code": "USD",
+        "value": "0.34"
+      }
+    },
+    "discount": {
+      "amount": {
+        "currency_code": "USD",
+        "value": "-5.00"
+      }
+    },
+    "unit_of_measure": "QUANTITY"
+  }],
+  "configuration": {
+    "tax_calculated_after_discount": true,
+    "tax_inclusive": false,
+    "allow_tip": true,
+    "partial_payment": {
+      "allow_partial_payment": true,
+      "minimum_amount_due": {
+        "currency_code": "USD",
+        "value": "20.00"
+      }
+    },
+    "template_id": "TEMP-2DD658352B363453P"
+  },
+  "amount": {
+    "breakdown": {
+      "item_total": {
+        "currency_code": "USD",
+        "value": "60.00"
+      },
+      "discount": {
+        "invoice_discount": {
+          "percent": "5",
+          "amount": {
+            "currency_code": "USD",
+            "value": "-2.63"
+          }
+        },
+        "item_discount": {
+          "currency_code": "USD",
+          "value": "-7.50"
+        }
+      },
+      "tax_total": {
+        "currency_code": "USD",
+        "value": "4.34"
+      },
+      "shipping": {
+        "amount": {
+          "currency_code": "USD",
+          "value": "10.00"
+        },
+        "tax": {
+          "id": "TAX-128425447T036552L",
+          "name": "Sales Tax",
+          "percent": "7.25",
+          "amount": {
+            "currency_code": "USD",
+            "value": "0.73"
+          }
+        }
+      },
+      "custom": {
+        "label": "Packing Charges",
+        "amount": {
+          "currency_code": "USD",
+          "value": "10.00"
+        }
+      }
+    },
+    "currency_code": "USD",
+    "value": "74.21"
+  },
+  "due_amount": {
+    "currency_code": "USD",
+    "value": "74.21"
+  },
+  "links": [{
+    "href": "https://api.sandbox.paypal.com/v2/invoicing/invoices/INV2-PXSC-LFZ3-FDAX-HR3E",
+    "rel": "self",
+    "method": "GET"
+  }, {
+    "href": "https://api.sandbox.paypal.com/v2/invoicing/invoices/INV2-PXSC-LFZ3-FDAX-HR3E/send",
+    "rel": "send",
+    "method": "POST"
+  }, {
+    "href": "https://api.sandbox.paypal.com/v2/invoicing/invoices/INV2-PXSC-LFZ3-FDAX-HR3E",
+    "rel": "replace",
+    "method": "PUT"
+  }, {
+    "href": "https://api.sandbox.paypal.com/v2/invoicing/invoices/INV2-PXSC-LFZ3-FDAX-HR3E",
+    "rel": "delete",
+    "method": "DELETE"
+  }, {
+    "href": "https://api.sandbox.paypal.com/v2/invoicing/invoices/INV2-PXSC-LFZ3-FDAX-HR3E/payments",
+    "rel": "record-payment",
+    "method": "POST"
+  }]
+}
+jsoncopy

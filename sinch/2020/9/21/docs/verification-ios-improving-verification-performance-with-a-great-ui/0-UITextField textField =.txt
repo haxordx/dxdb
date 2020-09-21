@@ -1,0 +1,11 @@
+UITextField* textField = ... // your text field
+NSString* defaultRegion = [SINDeviceregion currentCountryCode];
+
+SINUITextFieldPhoneNumberFormatter* formatter;
+formatter = [[SINUITextFieldPhoneNumberFormatter alloc] initWithCountryCode:defaultRegion];
+formatter.textField = textField;
+textField.placeholder = [formatter exampleNumberWithFormat:SINPhoneNumberFormatNational];
+formatter.onTextFieldTextDidChange = ^(UITextField *textField) {
+  BOOL isViablePhoneNumber = [SINPhoneNumberUtil() isPossibleNumber:textField.text fromRegion:defaultRegion error:nil]
+    // Update UI based, e.g. color text field based on result
+};

@@ -1,0 +1,25 @@
+Terminal.getInstance().retrievePaymentIntent(clientSecret,
+  new PaymentIntentCallback() {
+    @Override
+    public void onSuccess(PaymentIntent paymentIntent) {
+      // Placeholder for collecting a payment method with paymentIntent
+    }
+
+    @Override
+    public void onFailure(TerminalException exception) {
+      // Placeholder for handling exception
+    }
+  }
+})Terminal.getInstance().retrievePaymentIntent(clientSecret,
+  new PaymentIntentCallback() {
+    @Override
+    public void onSuccess(PaymentIntent paymentIntent) {
+      // Placeholder for collecting a payment method with paymentIntent
+    }
+
+    @Override
+    public void onFailure(TerminalException exception) {
+      // Placeholder for handling exception
+    }
+  }
+})

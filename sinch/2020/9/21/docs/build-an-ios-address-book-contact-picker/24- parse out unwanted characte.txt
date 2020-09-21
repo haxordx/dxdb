@@ -1,0 +1,30 @@
+// parse out unwanted characters in number
+    NSString *parsedPhoneNumber;
+    for (int i = 0; i < alertMessage.length; i++) {
+        char currentChar = [alertMessage characterAtIndex:i];
+        if (currentChar >= '0' && currentChar <= '9') {
+            NSString *digitString = [NSString stringWithFormat:@"%c",currentChar];
+            if (parsedPhoneNumber.length == 0) {
+                parsedPhoneNumber = [NSString stringWithString:digitString];
+            }
+            else{
+                NSString * newString = [parsedPhoneNumber stringByAppendingString:digitString];
+                parsedPhoneNumber = [NSString stringWithString:newString];
+            }
+        }
+    }
+
+    NSString *number;
+    if (parsedPhoneNumber.length == 10) {
+        number = [NSString stringWithFormat:@"+1%@", parsedPhoneNumber];
+    }
+    else {
+        number = [NSString stringWithFormat:@"+%@", parsedPhoneNumber];
+    }
+
+    if (_call == nil)
+    {
+        _call = [[_client callClient] callPhoneNumber:number];
+    }
+
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];

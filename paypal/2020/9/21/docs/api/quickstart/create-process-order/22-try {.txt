@@ -1,0 +1,24 @@
+try {
+  // Set auth amount
+  Amount amount = new Amount();
+  amount.setCurrency("USD");
+  amount.setTotal("4.54");
+
+  // Authorize order
+  Order order = new Order();
+  order = Order.get(apiContext, orderId);
+  order.setAmount(amount);
+  Authorization authorization = order.authorize(apiContext);
+
+  // Capture payment
+  Capture capture = new Capture();
+  capture.setAmount(amount);
+  capture.setIsFinalCapture(true);
+
+  Capture responseCapture = authorization.capture(apiContext, capture);
+
+  System.out.println("Capture id = " + responseCapture.getId()
+    + " and status = " + responseCapture.getState());
+} catch (PayPalRESTException e) {
+  System.err.println(e.getDetails());
+}copy

@@ -1,0 +1,4 @@
+curl -v -X GET https://api.sandbox.paypal.com/v1/catalogs/products?page_size=2&page=1&total_required=true \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer Access-Token"
+copy

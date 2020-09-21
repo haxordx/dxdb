@@ -1,0 +1,2 @@
+stripe listen --forward-to http://localhost:4242/webhook
+stripe listen --forward-to http://localhost:4242/webhook

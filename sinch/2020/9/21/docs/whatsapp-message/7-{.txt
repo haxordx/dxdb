@@ -1,0 +1,12 @@
+{
+  "to":[
+    "46732001122",
+    "group:447506616260-1565342732"
+  ],
+  "message":{
+    "type": "video",
+    "url": "https://example.com/video.mp4",
+    "caption": "Example Video",
+    "provider": "your-bearer-provider"
+  }
+}

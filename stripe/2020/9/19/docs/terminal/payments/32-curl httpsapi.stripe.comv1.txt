@@ -1,0 +1,4 @@
+curl https://api.stripe.com/v1/payment_intents/pi_9ODbX6MIUUEdEYHUhWeN/capture \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc:
+curl https://api.stripe.com/v1/payment_intents/pi_9ODbX6MIUUEdEYHUhWeN/capture \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc:

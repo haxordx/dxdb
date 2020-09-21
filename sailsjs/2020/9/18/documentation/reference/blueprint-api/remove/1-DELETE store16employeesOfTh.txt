@@ -1,0 +1,1 @@
+DELETE /store/16/employeesOfTheMonth/7

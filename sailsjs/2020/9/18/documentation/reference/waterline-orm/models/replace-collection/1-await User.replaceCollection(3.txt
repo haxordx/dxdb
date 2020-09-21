@@ -1,0 +1,2 @@
+await User.replaceCollection(3, 'pets')
+.members([99,98]);

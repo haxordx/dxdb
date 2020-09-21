@@ -1,0 +1,21 @@
+var express = require('express');
+var request = require('request');
+express()
+  .post('/seller-server/login-seller', function(req, res) {
+    request.post('https://api.sandbox.paypal.com/v1/oauth2/token', {
+      auth: {
+        user:  Shared-ID",
+        pass: ""
+      },
+      body: 'grant_type=authorization_code&code=<Auth-Code>&code_verifier=<Seller-Nonce>'
+    }, function(err, response, body) {
+      if (err) {
+        console.error(err);
+        return res.sendStatus(500);
+      }
+
+      // Get access token
+      console.log(body.access_token);
+      return res.end();
+    });
+  });copy

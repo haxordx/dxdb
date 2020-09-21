@@ -1,0 +1,30 @@
+[
+    {
+        "number" : 14150005550,
+        "groupId" : 13,
+        "capabilities" : ["voice"],
+        "countryId" : "US",
+        "city" : "SAN FRANCISCO",
+        "country" : "US",
+        "areaCode" : "415",
+        "expires" : "2015-12-31T23:59:59+00:00",
+        "cost":{
+            "amount":0.00,
+            "currencyId":"USD"
+        }
+    }, {
+        "number" : 14150005551,
+        "groupId" : 13,
+        "capabilities" : ["voice"],
+        "applicationKey" : "bb7b4e39-4227-4913-8c81-2db4abb54fb3",
+        "countryId" : "US",
+        "city" : "SAN FRANCISCO",
+        "country" : "US",
+        "areaCode" : "415",
+        "expires" : "2015-12-31T23:59:59+00:00",
+        "cost":{
+            "amount":0.00,
+            "currencyId":"USD"
+        }
+    }
+]

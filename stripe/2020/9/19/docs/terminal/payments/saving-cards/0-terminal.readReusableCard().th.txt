@@ -1,0 +1,13 @@
+terminal.readReusableCard().then(function(result) {
+  if (result.error) {
+    // Placeholder for handling result.error
+  } else {
+    // Placeholder for sending result.payment_method.id to your backend.
+  }
+});terminal.readReusableCard().then(function(result) {
+  if (result.error) {
+    // Placeholder for handling result.error
+  } else {
+    // Placeholder for sending result.payment_method.id to your backend.
+  }
+});

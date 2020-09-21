@@ -1,0 +1,7 @@
+socket.on('user', function(cometEvent) {
+  // Handle inbound messages related to a user record
+});
+
+socket.on('product', function (cometEvent) {
+  // Handle inbound messages related to a product record
+});

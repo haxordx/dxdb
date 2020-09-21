@@ -1,0 +1,16 @@
+// api/models/User.js
+module.exports = {
+  datastore: 'shinyNewMySQLDatabase',
+  attributes: {
+    name: {
+      type: 'string'
+    },
+    password: {
+      type: 'string'
+    },
+    email: {
+      type: 'string',
+      unique: true
+    }
+  }
+};

@@ -1,0 +1,12 @@
+// Create the new user
+User.create({
+  name: 'johnny five'
+}).exec(function(err, newUser) {
+  if (err) {
+    // Handle errors here!
+    return;
+  }
+  // Tell any socket watching the User model class
+  // that a new User has been created!
+  User.publishCreate(newUser);
+});

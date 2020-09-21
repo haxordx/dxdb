@@ -1,0 +1,14 @@
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/usernameEditText"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"/>
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Login"
+    android:id="@+id/loginButton"
+    android:layout_below="@+id/usernameEditText"
+    android:layout_centerHorizontal="true"/>

@@ -1,0 +1,41 @@
+extension MyViewController: STPIssuingCardEphemeralKeyProvider {
+  func createIssuingCardKey(withAPIVersion apiVersion: String, completion: @escaping STPJSONResponseCompletionBlock) {
+    // This example uses Alamofire for brevity, but you can make the request however you want
+    AF.request("https://myapi.com/ephemeral_keys",
+      method: .post,
+      parameters: ["api_version": apiVersion])
+    .responseJSON { response in
+        switch response.result {
+        case .success:
+        if let data = response.data {
+          do {
+            let obj = try JSONSerialization.jsonObject(with: data, options: []) as! [AnyHashable: Any]
+            completion(obj, nil)
+          } catch {
+            completion(nil, error)
+        }
+        case .failure(let error):
+          completion(nil, error)
+        }
+  }
+}extension MyViewController: STPIssuingCardEphemeralKeyProvider {
+  func createIssuingCardKey(withAPIVersion apiVersion: String, completion: @escaping STPJSONResponseCompletionBlock) {
+    // This example uses Alamofire for brevity, but you can make the request however you want
+    AF.request("https://myapi.com/ephemeral_keys",
+      method: .post,
+      parameters: ["api_version": apiVersion])
+    .responseJSON { response in
+        switch response.result {
+        case .success:
+        if let data = response.data {
+          do {
+            let obj = try JSONSerialization.jsonObject(with: data, options: []) as! [AnyHashable: Any]
+            completion(obj, nil)
+          } catch {
+            completion(nil, error)
+        }
+        case .failure(let error):
+          completion(nil, error)
+        }
+  }
+}

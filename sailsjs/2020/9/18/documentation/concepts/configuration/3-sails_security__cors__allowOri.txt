@@ -1,0 +1,1 @@
+sails_security__cors__allowOrigins='["http://somedomain.com","https://anotherdomain.com:1337"]' sails console

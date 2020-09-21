@@ -1,0 +1,4 @@
+curl https://files.stripe.com/v1/files \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -F purpose=dispute_evidence \
+  -F file="@/path/to/a/file.jpg"

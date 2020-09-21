@@ -1,0 +1,17 @@
+{
+  "batch_header": {
+    "payout_batch_id": "12345678",
+    "batch_status": "ACKNOWLEDGED",
+    "time_created": "2014-01-27T10:17:00Z",
+    "time_completed": "2014-01-27T11:17:39.00Z",
+    "sender_payout_header": {
+      "sender_batch_id": "2014021801",
+      "email_subject": "You have a payout!"
+    },
+    "amount": {
+      "value": "435.85",
+      "currency": "USD"
+    }
+  }
+}
+jsoncopy

@@ -1,0 +1,12 @@
+curl https://api.stripe.com/v1/charges \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d source=src_1Cn6EvIyNTgGDVfzosvqD8ld \
+  -d amount=2000 \
+  -d currency=usd \
+  -d capture=false
+curl https://api.stripe.com/v1/charges \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d source=src_1Cn6EvIyNTgGDVfzosvqD8ld \
+  -d amount=2000 \
+  -d currency=usd \
+  -d capture=false

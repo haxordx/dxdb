@@ -1,0 +1,9 @@
+$headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
+$headers.Add("Host", "api.shipengine.com")
+$headers.Add("API-Key", "__YOUR_API_KEY_HERE__")
+$headers.Add("Content-Type", "application/json")
+
+$body = "{`n  `"shipment`": {`n    `"service_code`": `"ups_ground`",`n    `"ship_to`": {`n      `"name`": `"Jane Doe`",`n      `"address_line1`": `"525 S Winchester Blvd`",`n      `"city_locality`": `"San Jose`",`n      `"state_province`": `"CA`",`n      `"postal_code`": `"95128`",`n      `"country_code`": `"US`",`n      `"address_residential_indicator`": `"yes`"`n    },`n    `"ship_from`": {`n      `"name`": `"John Doe`",`n      `"company_name`": `"Example Corp`",`n      `"phone`": `"555-555-5555`",`n      `"address_line1`": `"4009 Marathon Blvd`",`n      `"city_locality`": `"Austin`",`n      `"state_province`": `"TX`",`n      `"postal_code`": `"78756`",`n      `"country_code`": `"US`",`n      `"address_residential_indicator`": `"no`"`n    },`n    `"packages`": [`n      {`n        `"weight`": {`n          `"value`": 20,`n          `"unit`": `"ounce`"`n        },`n        `"dimensions`": {`n          `"height`": 6,`n          `"width`": 12,`n          `"length`": 24,`n          `"unit`": `"inch`"`n        }`n      }`n    ]`n  }`n}"
+
+$response = Invoke-RestMethod 'https://api.shipengine.com/v1/labels' -Method 'POST' -Headers $headers -Body $body
+$response | ConvertTo-Json

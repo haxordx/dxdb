@@ -1,0 +1,9 @@
+thirdPartyPaymentMethods:
+
+[{
+  "redirectUrl": " http://myshop.com/vorkasse.php",
+  "methodName": "Bank transfer",
+  "imageUrl": " https://myshop.com/logo.png",
+  "description": "my description"
+}]
+copy

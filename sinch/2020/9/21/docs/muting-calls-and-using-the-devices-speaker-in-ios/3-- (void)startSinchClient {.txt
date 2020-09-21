@@ -1,0 +1,4 @@
+- (void)startSinchClient {
+_client = [Sinch clientWithApplicationKey:@"YOUR-APP-KEY" applicationSecret:@"YOUR-APP-SECRET" environmentHost:@"ENVIRONMENT" userId:@"USER1"];
+[_client setSupportCalling:YES];
+[_client start];

@@ -1,0 +1,2 @@
+sails> var lodash = require('lodash');
+sails> console.log(lodash.range(1, 5));

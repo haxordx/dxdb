@@ -1,0 +1,8 @@
+{
+  "app_id": "01E3S8B6YCMRNR0GGM94H80ACX",
+  "accepted_time": "2020-04-24T08:06:04.078344Z",
+  "unsupported_callback": {
+    "channel": "VIBERBM",
+    "payload": "{\"message_token\":\"5434382642129923939\",\"message_status\":4,\"message_time\":1587715563958,\"phone_number\":\"46702470247\",\"service_id\":111}"
+  }
+}

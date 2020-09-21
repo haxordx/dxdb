@@ -1,0 +1,4 @@
+await sails.helpers.getRecentUsers.with({
+  numUsers: 10,
+  activeSince: (new Date('2017-03-17')).getTime()
+});

@@ -1,0 +1,7 @@
+// Assuming this is in `config/env/production.js`, and your folder of SSL cert/key files is in `config/ssl/`:
+
+ssl: {
+  ca: require('fs').readFileSync(require('path').resolve(__dirname,'../ssl/my-gd-bundle.crt')),
+  key: require('fs').readFileSync(require('path').resolve(__dirname,'../ssl/my-ssl.key')),
+  cert: require('fs').readFileSync(require('path').resolve(__dirname,'../ssl/my-ssl.crt'))
+}

@@ -1,0 +1,7 @@
+// SINManagedPushDelegate
+- (void)managedPush:(id<SINManagedPush>)unused
+    didReceiveIncomingPushWithPayload:(NSDictionary *)payload
+                              forType:(NSString *)pushType {
+    id<SINClient> client; // get previously created client
+    [client relayRemotePushNotification:userInfo];
+}

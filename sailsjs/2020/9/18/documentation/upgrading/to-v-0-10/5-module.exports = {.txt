@@ -1,0 +1,11 @@
+module.exports = {
+
+    connection: ['someMongoDatabase'],
+
+    attributes: {
+        name:{
+            type     : 'string',
+            required : true
+        }
+    }
+};

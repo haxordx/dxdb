@@ -1,0 +1,21 @@
+{
+  "type": "whatsapp",
+  "notifications": [
+    {
+      "from": "46732619989",
+      "message_id": "ACELGAWCUJAqFWkiU4IDM3N5cy0xODA1ODI1MDkwMi0xNTY5MjI1MzgyQGcudXMtMTU3MTE0NzMxMjY3Ni1hZGQtMBGGRnMmGZif",
+      "message": {
+        "type": "group_event",
+        "body": "\u200e\u200e+46 73 200 11 22 was added\u200e",
+        "members": [
+          "46732001122"
+        ],
+        "event_type": "group_user_joined",
+        "in_group": "group:18058333222-1569225382"
+      },
+      "timestamp": "2019-10-15T13:48:32Z",
+      "in_group": "group:18058333222-1569225382",
+      "to": "demo1"
+    }
+  ]
+}

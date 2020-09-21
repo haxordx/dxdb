@@ -1,0 +1,6 @@
+var waltersAndTeachers = await Model.find({
+  or : [
+    { name: 'walter' },
+    { occupation: 'teacher' }
+  ]
+});

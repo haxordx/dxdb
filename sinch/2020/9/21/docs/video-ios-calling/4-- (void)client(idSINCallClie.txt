@@ -1,0 +1,6 @@
+- (void)client:(id<SINCallClient>)client didReceiveIncomingCall:(id<SINCall>)call {
+    // Start playing ringing tone
+    ...
+
+    // Assign delegate
+    call.delegate = self;

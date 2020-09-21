@@ -1,0 +1,2 @@
+<button type="button" id='setupPPH' onclick='onSetupPayPalHereBtnClicked()'>Setup PayPal Here</button>
+htmlcopy

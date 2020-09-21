@@ -1,0 +1,7 @@
+extension: 'swig',
+getRenderFn: ()=>{
+  // Import `consolidate`.
+  var cons = require('consolidate');
+  // Return the rendering function for Swig.
+  return cons.swig;
+}

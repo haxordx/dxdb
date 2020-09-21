@@ -1,0 +1,3 @@
+https://callingapi.sinch.com/calling/[version]
+
+Current  version is "v1"

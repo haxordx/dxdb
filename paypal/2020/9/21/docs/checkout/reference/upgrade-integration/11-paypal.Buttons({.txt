@@ -1,0 +1,6 @@
+paypal.Buttons({
+  onApprove: function(data, actions) {
+    return actions.order.capture();
+  }
+}).render('#paypal-button-container');
+copy

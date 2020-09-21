@@ -1,0 +1,20 @@
+# Create plan
+if plan.create
+  # Plan update activation object
+  plan_update = {
+    :op => 'replace',
+    :path => '/',
+    :value => {
+      :state => 'ACTIVE'
+    }
+  }
+
+  # Activate plan
+  if plan.update(plan_update)
+    puts("Billing plan activated with ID [#{plan.id}]")
+  else
+    logger.error payment.error.inspect
+  end
+else
+  logger.error payment.error.inspect
+endcopy

@@ -1,0 +1,15 @@
+- (void) displayPictureForUser:(NSString *)userId {
+    NSURL *pictureURL = [NSURL URLWithString:[NSString stringWithFormat:@"https://graph.facebook.com/%@/picture?type=large&return_ssl_resources=1", userId]];
+    NSData *imageData = [NSData dataWithContentsOfURL:pictureURL];
+    UIImage *img = [UIImage imageWithData:imageData];
+    CGSize size = img.size;
+    CGRect rectFrame = CGRectMake(130, 130, size.width/2, size.height/2);
+    UIImageView* imgv = [[UIImageView alloc] initWithImage:img];
+    imgv.frame = rectFrame;
+
+    // make picture into circle
+    imgv.layer.cornerRadius = size.width/4;
+    imgv.layer.masksToBounds = YES;
+
+    [self.view addSubview:imgv];
+}

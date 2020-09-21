@@ -1,0 +1,17 @@
+paypal.Buttons({
+  onApprove: function(data) {
+    var DOEC_URL = 'https://mystore.com/api/paypal/do-express-checkout';
+
+    return fetch(DOEC_URL, {
+      method: 'post',
+      headers: {
+        'content-type': 'application/json'
+      },
+      body: JSON.stringify({
+        token:   data.orderID,
+        payerID: data.payerID
+      })
+    });
+  }
+}).render('#paypal-button-container');
+copy

@@ -1,0 +1,13 @@
+[ConferenceCalloutRequest]
+    string - cli
+    Identity - destination
+    string - dtmf
+    int - maxDuration
+    bool - enableAce
+    bool - enableDice
+    bool - enablePie
+    string - custom
+    string - locale
+    string - conferenceId
+    string - greeting
+    string - mohClass

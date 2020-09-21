@@ -1,0 +1,3 @@
+git remote add core https://github.com/balderdashy/sails.git
+git fetch core
+git merge core/master

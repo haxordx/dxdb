@@ -1,0 +1,23 @@
+select
+  subscriptions.id,
+  products.name,
+  products.statement_descriptor
+from subscriptions
+inner join prices
+  on subscriptions.price_id=prices.id
+inner join products
+  on prices.product_id=products.id
+where
+  subscriptions.status = 'active'
+limit 10select
+  subscriptions.id,
+  products.name,
+  products.statement_descriptor
+from subscriptions
+inner join prices
+  on subscriptions.price_id=prices.id
+inner join products
+  on prices.product_id=products.id
+where
+  subscriptions.status = 'active'
+limit 10

@@ -1,0 +1,6 @@
+{
+  id: 7,
+  verb: 'removedFrom',
+  attribute: 'involvedInPurchases',
+  removedIds: [ 42, 33 ]
+}

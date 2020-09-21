@@ -1,0 +1,34 @@
+OrderRequest orderRequest = new OrderRequest();
+orderRequest.checkoutPaymentIntent("CAPTURE");
+
+ApplicationContext applicationContext = new ApplicationContext().brandName("EXAMPLE INC").landingPage("BILLING")
+    .shippingPreference("SET_PROVIDED_ADDRESS");
+orderRequest.applicationContext(applicationContext);
+
+List<PurchaseUnitRequest> purchaseUnitRequests = new ArrayList<PurchaseUnitRequest>();
+PurchaseUnitRequest purchaseUnitRequest = new PurchaseUnitRequest().referenceId("PUHF")
+    .description("Sporting Goods").customId("CUST-HighFashions").softDescriptor("HighFashions")
+    .amount(new AmountWithBreakdown().currencyCode("USD").value("230.00")
+        .breakdown(new AmountBreakdown().itemTotal(new Money().currencyCode("USD").value("180.00"))
+            .shipping(new Money().currencyCode("USD").value("30.00"))
+            .handling(new Money().currencyCode("USD").value("10.00"))
+            .taxTotal(new Money().currencyCode("USD").value("20.00"))
+            .shippingDiscount(new Money().currencyCode("USD").value("10.00"))))
+    .items(new ArrayList<Item>() {
+      {
+        add(new Item().name("T-shirt").description("Green XL").sku("sku01")
+            .unitAmount(new Money().currencyCode("USD").value("90.00"))
+            .tax(new Money().currencyCode("USD").value("10.00")).quantity("1")
+            .category("PHYSICAL_GOODS"));
+        add(new Item().name("Shoes").description("Running, Size 10.5").sku("sku02")
+            .unitAmount(new Money().currencyCode("USD").value("45.00"))
+            .tax(new Money().currencyCode("USD").value("5.00")).quantity("2")
+            .category("PHYSICAL_GOODS"));
+      }
+    })
+    .shipping(new ShippingDetails().name(new Name().fullName("John Doe"))
+        .addressPortable(new AddressPortable().addressLine1("123 Townsend St").addressLine2("Floor 6")
+            .adminArea2("San Francisco").adminArea1("CA").postalCode("94107").countryCode("US")));
+purchaseUnitRequests.add(purchaseUnitRequest);
+orderRequest.purchaseUnits(purchaseUnitRequests);
+copy

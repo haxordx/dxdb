@@ -1,0 +1,13 @@
+{
+    "localizedMessage": "No permission for the requested operation. ",
+    "name": "PERMISSION_DENIED",
+    "message": "No permission for the requested operation. ",
+    "details": [
+        {
+            "issue": "No permission for the requested operation. "
+        }
+    ],
+    "information_link": "https://developer.paypal.com/docs/classic/products/permissions/",
+    "debug_id": "6e07326c281c4"
+}
+jsoncopy

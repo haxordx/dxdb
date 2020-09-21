@@ -1,0 +1,1 @@
+var newSailsSocket = io.sails.connect();

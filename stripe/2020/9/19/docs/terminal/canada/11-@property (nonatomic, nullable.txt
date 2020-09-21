@@ -1,0 +1,43 @@
+@property (nonatomic, nullable, strong) SCPCancelable *collectCancelable;
+
+// Action for a "Checkout" button
+- (void)checkoutAction {
+    // ... Fetch the client secret from your backend
+    [[SCPTerminal shared] retrievePaymentIntent:clientSecret
+                                      completion:^(SCPPaymentIntent *retrieveResult, NSError *retrieveError) {
+        if (retrieveError) {
+            NSLog(@"retrievePaymentIntent failed: %@", retrieveError);
+        } else {
+            self.collectCancelable = [[SCPTerminal shared] collectPaymentMethod:retrieveResult
+                                                                        delegate:self
+                                                                      completion:^(SCPPaymentIntent *collectResult, NSError *collectError) {
+                if (collectError) {
+                    NSLog(@"collectPaymentMethod failed: %@", collectError);
+                } else {
+                    // Process the payment
+                }
+            }];
+        }
+    }];
+}@property (nonatomic, nullable, strong) SCPCancelable *collectCancelable;
+
+// Action for a "Checkout" button
+- (void)checkoutAction {
+    // ... Fetch the client secret from your backend
+    [[SCPTerminal shared] retrievePaymentIntent:clientSecret
+                                      completion:^(SCPPaymentIntent *retrieveResult, NSError *retrieveError) {
+        if (retrieveError) {
+            NSLog(@"retrievePaymentIntent failed: %@", retrieveError);
+        } else {
+            self.collectCancelable = [[SCPTerminal shared] collectPaymentMethod:retrieveResult
+                                                                        delegate:self
+                                                                      completion:^(SCPPaymentIntent *collectResult, NSError *collectError) {
+                if (collectError) {
+                    NSLog(@"collectPaymentMethod failed: %@", collectError);
+                } else {
+                    // Process the payment
+                }
+            }];
+        }
+    }];
+}

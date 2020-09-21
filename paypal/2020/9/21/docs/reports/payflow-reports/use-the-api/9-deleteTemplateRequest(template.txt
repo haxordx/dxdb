@@ -1,0 +1,2 @@
+deleteTemplateRequest(templateName)
+copy

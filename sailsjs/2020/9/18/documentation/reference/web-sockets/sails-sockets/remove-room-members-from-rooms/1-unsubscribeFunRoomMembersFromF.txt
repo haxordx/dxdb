@@ -1,0 +1,8 @@
+unsubscribeFunRoomMembersFromFunnerRooms: function(req, res) {
+  sails.sockets.removeRoomMembersFromRooms('funRoom', ['greatRoom', 'awesomeRoom'], function(err) {
+    if (err) {return res.serverError(err);}
+    res.json({
+      message: 'Unsubscribed all members of `funRoom` from `greatRoom` and `awesomeRoom`!'
+    });
+  });
+}

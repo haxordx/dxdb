@@ -1,0 +1,2 @@
+User.validate('emailAddress', req.param('email'));
+User.validate('password', req.param('password'));

@@ -1,0 +1,11 @@
+{
+  "to": string,
+  "event_id": string,
+  "event": {
+    "type": enum(
+      "agent_composing"
+      "agent_read"
+    )
+    ... // type specific fields
+  }
+}

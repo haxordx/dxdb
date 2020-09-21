@@ -1,0 +1,2 @@
+curl https://api.stripe.com/v1/payment_methods/pm_1HTB3c2eZvKYlo2CfRG3WEtO \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc:

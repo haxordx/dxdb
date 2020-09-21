@@ -1,0 +1,5 @@
+{
+  where: { username: 'santaclaus' },
+  limit: 4,
+  select: ['beardLength', 'lat', 'long']
+}

@@ -1,0 +1,8 @@
+getProfile: function(req, res) {
+
+  // Look up the currently logged-in user's record from the database.
+  User.findOne({ id: req.session.userId }).exec(function(err, user) {
+    if (err) { return res.serverError(err); }
+    return res.json(user);
+  });
+}

@@ -1,0 +1,7 @@
+curl https://api.stripe.com/v1/credit_notes/preview/lines \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d invoice=in_1HTGEw2eZvKYlo2C32lKuGaS \
+  -d "lines[][type]"=invoice_line_item \
+  -d "lines[][invoice_line_item]"=il_1HTGEw2eZvKYlo2Ctl1ohOU9 \
+  -d "lines[][quantity]"=1 \
+  -G

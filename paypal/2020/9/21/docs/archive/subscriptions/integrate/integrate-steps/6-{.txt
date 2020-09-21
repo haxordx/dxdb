@@ -1,0 +1,136 @@
+{
+  "id": "I-1TJ3GAGG82Y9",
+  "state": "Active",
+  "description": "Monthly agreement with free trial payment definition.",
+  "payer":
+  {
+    "payment_method": "paypal",
+    "status": "unverified",
+    "payer_info":
+    {
+      "email": "johndoe@example.com",
+      "first_name": "John",
+      "last_name": "Doe",
+      "payer_id": "NEW8A85AK4ET4",
+      "shipping_address":
+      {
+        "recipient_name": "John Doe",
+        "line1": "751235 Stout Drive",
+        "line2": "0976249 Elizabeth Court",
+        "city": "Quimby",
+        "state": "IA",
+        "postal_code": "51049",
+        "country_code": "US"
+      }
+    }
+  },
+  "plan":
+  {
+    "payment_definitions": [
+    {
+      "type": "TRIAL",
+      "frequency": "Month",
+      "amount":
+      {
+        "value": "0.00",
+        "currency": "USD"
+      },
+      "cycles": "2",
+      "charge_models": [
+      {
+        "type": "TAX",
+        "amount":
+        {
+          "value": "0.00",
+          "currency": "USD"
+        }
+      },
+      {
+        "type": "SHIPPING",
+        "amount":
+        {
+          "value": "0.00",
+          "currency": "USD"
+        }
+      }],
+      "frequency_interval": "1"
+    },
+    {
+      "type": "REGULAR",
+      "frequency": "Month",
+      "amount":
+      {
+        "value": "5.99",
+        "currency": "USD"
+      },
+      "cycles": "10",
+      "charge_models": [
+      {
+        "type": "TAX",
+        "amount":
+        {
+          "value": "0.29",
+          "currency": "USD"
+        }
+      },
+      {
+        "type": "SHIPPING",
+        "amount":
+        {
+          "value": "0.20",
+          "currency": "USD"
+        }
+      }],
+      "frequency_interval": "1"
+    }],
+    "merchant_preferences":
+    {
+      "setup_fee":
+      {
+        "value": "0.40",
+        "currency": "USD"
+      },
+      "max_fail_attempts": "2",
+      "auto_bill_amount": "YES"
+    },
+    "links": [],
+    "currency_code": "USD"
+  },
+  "start_date": "2017-12-22T09:13:49Z",
+  "shipping_address":
+  {
+    "recipient_name": "John Doe",
+    "line1": "751235 Stout Drive",
+    "line2": "0976249 Elizabeth Court",
+    "city": "Quimby",
+    "state": "IA",
+    "postal_code": "51049",
+    "country_code": "US"
+  },
+  "agreement_details":
+  {
+    "outstanding_balance":
+    {
+      "value": "0.00",
+      "currency": "USD"
+    },
+    "cycles_remaining": "2",
+    "cycles_completed": "0",
+    "next_billing_date": "2017-11-22T09:13:49Z",
+    "last_payment_date": "2017-10-22T09:13:49Z",
+    "last_payment_amount":
+    {
+      "value": "0.40",
+      "currency": "USD"
+    },
+    "final_payment_date": "2017-12-22T09:13:49Z",
+    "failed_payment_count": "0"
+  },
+  "links": [
+  {
+    "href": "https://api.sandbox.paypal.com/v1/payments/billing-agreements/I-1TJ3GAGG82Y9",
+    "rel": "self",
+    "method": "GET"
+  }]
+}
+jsoncopy

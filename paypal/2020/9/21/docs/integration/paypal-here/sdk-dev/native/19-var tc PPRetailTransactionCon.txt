@@ -1,0 +1,5 @@
+var tc: PPRetailTransactionContext?
+PayPalRetailSDK.transactionManager().createTransaction(invoice, callback: { (error, context) in
+    // On error, handle error. Else, set transaction context to call beginPayment in next step
+    self.tc = context
+})copy

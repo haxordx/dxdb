@@ -1,0 +1,10 @@
+if (req.isSocket) {
+  // Low-level Socket.io methods and properties accessible on req.socket.
+  // ...
+}
+else {
+  // This is not a request from a Socket.io client, so req.socket
+  // may or may not exist.  If this is an HTTP request, req.socket is actually
+  // the underlying TCP socket.
+  // ...
+}

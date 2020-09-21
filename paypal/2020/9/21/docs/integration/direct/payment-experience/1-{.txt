@@ -1,0 +1,20 @@
+{
+  "id": "XP-RFV4-PVD8-AGHJ-8E5J",
+  "name": "ebayProfile",
+  "temporary": false,
+  "presentation":
+  {
+    "logo_image": "https://www.paypal.com"
+  },
+  "input_fields":
+  {
+    "no_shipping": 1,
+    "address_override": 1
+  },
+  "flow_config":
+  {
+    "landing_page_type": "billing",
+    "bank_txn_pending_url": "https://www.paypal.com",
+  }
+}
+jsoncopy

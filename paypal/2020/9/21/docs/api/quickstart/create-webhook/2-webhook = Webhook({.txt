@@ -1,0 +1,8 @@
+webhook = Webhook({
+  "url": "https://f615ef32.ngrok.io",
+  "event_types": [{
+    "name": "PAYMENT.SALE.CREATED"
+  },{
+    "name": "PAYMENT.SALE.DENIED"
+  }]
+})copy

@@ -1,0 +1,19 @@
+// after selecting a reader to connect to
+Terminal.getInstance().connectReader(firstReader, object : ReaderCallback {
+    override fun onSuccess(r: Reader?) {
+        System.out.println("Connected to reader")
+    }
+
+    override fun onFailure(e: TerminalException) {
+        e.printStackTrace()
+    }
+})// after selecting a reader to connect to
+Terminal.getInstance().connectReader(firstReader, object : ReaderCallback {
+    override fun onSuccess(r: Reader?) {
+        System.out.println("Connected to reader")
+    }
+
+    override fun onFailure(e: TerminalException) {
+        e.printStackTrace()
+    }
+})

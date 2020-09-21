@@ -1,0 +1,6 @@
+{
+  "contact_id": "{{CONTACT_ID}}",
+  "identity": "46712312312",
+  "channel": "WHATSAPP",
+  "capability_status": "CAPABILITY_FULL"
+}

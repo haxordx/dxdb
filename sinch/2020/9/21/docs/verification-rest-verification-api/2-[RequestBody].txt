@@ -1,0 +1,13 @@
+[RequestBody]
+    VerificationRequest
+
+[VerificationRequest]
+    identity - identity
+    string - method
+    string? - reference
+    string? - custom
+    object? - metadata
+    FlashCallOptions? - flashCallOptions
+[FlashCallOptions]
+    string? - cli
+    int? - dialTimeout

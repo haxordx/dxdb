@@ -1,0 +1,20 @@
+...
+"outcome": {
+  "network_status": "approved_by_network",
+  "reason": "unknown_risk_level",
+  "risk_level": "unknown",
+  "risk_score": "nil", // Provided only with Stripe Radar for Fraud Teams
+  "seller_message": "Something went wrong while evaluating this payment. Our engineers have been notified and we’ll look into this as soon as possible.",
+  "type": "authorized"
+}
+...
+...
+"outcome": {
+  "network_status": "approved_by_network",
+  "reason": "unknown_risk_level",
+  "risk_level": "unknown",
+  "risk_score": "nil", // Provided only with Stripe Radar for Fraud Teams
+  "seller_message": "Something went wrong while evaluating this payment. Our engineers have been notified and we’ll look into this as soon as possible.",
+  "type": "authorized"
+}
+...

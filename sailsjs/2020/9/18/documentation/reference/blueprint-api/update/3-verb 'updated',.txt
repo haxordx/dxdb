@@ -1,0 +1,4 @@
+verb: 'updated',
+id: <the record primary key>,
+data: <a dictionary of changes made to the record>,
+previous: <the record prior to the update>

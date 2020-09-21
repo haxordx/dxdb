@@ -1,0 +1,8 @@
+intent = stripe.PaymentIntent.confirm(
+  '{{PAYMENT_INTENT_ID}}',
+  return_url='https://example.com/return_url'
+)
+intent = stripe.PaymentIntent.confirm(
+  '{{PAYMENT_INTENT_ID}}',
+  return_url='https://example.com/return_url'
+)

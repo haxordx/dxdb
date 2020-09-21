@@ -1,0 +1,8 @@
+- (IBAction)AnswerAction:(id)sender {
+    [self.call answer];
+    self.AnswerButton.hidden = YES;
+}
+
+- (IBAction)HangupAction:(id)sender {
+    [self.call hangup];
+}

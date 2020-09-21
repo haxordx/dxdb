@@ -1,0 +1,12 @@
+$sale = new Sale();
+$sale->setId("4ER05306238362254");
+
+try {
+  $refundedSale = $sale->refund($refund, $apiContext);
+} catch (PayPal\Exception\PayPalConnectionException $ex) {
+  echo $ex->getCode();
+  echo $ex->getData();
+  die($ex);
+} catch (Exception $ex) {
+  die($ex);
+}copy

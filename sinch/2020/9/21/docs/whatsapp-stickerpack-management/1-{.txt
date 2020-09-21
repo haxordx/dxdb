@@ -1,0 +1,4 @@
+{
+    "publisher": "My publisher name",
+    "name": "My stickerpack"
+}

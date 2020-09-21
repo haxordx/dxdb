@@ -1,0 +1,6 @@
+curl https://api.stripe.com/v1/charges/{{CHARGE_ID}}/refunds \
+  -u {{CONNECTED_ACCOUNT_SECRET_KEY}}: \
+  -d amount=1000
+curl https://api.stripe.com/v1/charges/{{CHARGE_ID}}/refunds \
+  -u {{CONNECTED_ACCOUNT_SECRET_KEY}}: \
+  -d amount=1000

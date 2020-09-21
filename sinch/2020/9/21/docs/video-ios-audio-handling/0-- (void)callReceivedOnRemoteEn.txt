@@ -1,0 +1,6 @@
+- (void)callReceivedOnRemoteEnd:(id<SINCall>)call {
+    NSString* soundFilePath = [[NSBundle mainBundle] pathForResource:@"progresstone" ofType:@"wav"];
+    // get audio controller from SINClient
+    id<SINAudioController> audioController = [self.client audioController];
+    [audioController startPlayingSoundFile:soundFilePath loop:NO];
+}

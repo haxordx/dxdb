@@ -1,0 +1,26 @@
+// Action for a "Cancel" button
+func cancelAction() {
+    if let paymentIntent = self.paymentIntent {
+        Terminal.shared.cancelPaymentIntent(paymentIntent) { cancelResult, cancelError in
+            if let error = cancelError {
+                print("cancelPaymentIntent failed: \(error)")
+            }
+            else {
+                print("cancelPaymentIntent succeeded")
+            }
+        }
+    }
+}
+// Action for a "Cancel" button
+func cancelAction() {
+    if let paymentIntent = self.paymentIntent {
+        Terminal.shared.cancelPaymentIntent(paymentIntent) { cancelResult, cancelError in
+            if let error = cancelError {
+                print("cancelPaymentIntent failed: \(error)")
+            }
+            else {
+                print("cancelPaymentIntent succeeded")
+            }
+        }
+    }
+}

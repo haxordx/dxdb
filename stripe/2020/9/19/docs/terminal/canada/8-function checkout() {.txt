@@ -1,0 +1,19 @@
+function checkout() {
+  // ...Fetch the client secret from your backend
+  terminal.collectPaymentMethod(clientSecret).then(function(result) {
+    if (result.error) {
+      console.error("collectPaymentMethod failed", error)
+    } else {
+      // Process the payment
+    }
+  });
+}function checkout() {
+  // ...Fetch the client secret from your backend
+  terminal.collectPaymentMethod(clientSecret).then(function(result) {
+    if (result.error) {
+      console.error("collectPaymentMethod failed", error)
+    } else {
+      // Process the payment
+    }
+  });
+}

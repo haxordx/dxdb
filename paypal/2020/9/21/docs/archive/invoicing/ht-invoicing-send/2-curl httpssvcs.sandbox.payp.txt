@@ -1,0 +1,32 @@
+curl https://svcs.sandbox.paypal.com/Invoice/CreateAndSendInvoice \
+  -s \
+  --insecure \
+  -H "X-PAYPAL-SECURITY-USERID: callerUID" \
+  -H "X-PAYPAL-SECURITY-PASSWORD: callerPswd" \
+  -H "X-PAYPAL-SECURITY-SIGNATURE: callerSig" \
+  -H "X-PAYPAL-REQUEST-DATA-FORMAT: JSON" \
+  -H "X-PAYPAL-RESPONSE-DATA-FORMAT: JSON" \
+  -H "X-PAYPAL-APPLICATION-ID: appID" \
+  -d '{
+        "requestEnvelope": {
+          "errorLanguage": "en_US"
+        },
+        "invoice": {
+          "merchantEmail": " receiverEdress",
+          "payerEmail": " senderEdress",
+          "currencyCode": "USD",
+          "paymentTerms": "DueOnReceipt",
+          "itemList": {
+            "item": [{
+              "name": "BananaPlant",
+              "quantity": "1",
+              "unitPrice": "38.95"
+            }, {
+              "name": "PeachTree",
+              "quantity": "2",
+              "unitPrice": "14.95"
+            }]
+          }
+        }
+      }'
+copy

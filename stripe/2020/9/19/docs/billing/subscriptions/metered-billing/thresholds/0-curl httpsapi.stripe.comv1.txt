@@ -1,0 +1,8 @@
+curl https://api.stripe.com/v1/subscriptions/sub_49ty4767H20z6a \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d "billing_thresholds[amount_gte]"=10000 \
+  -d "billing_thresholds[reset_billing_cycle_anchor]"=false
+curl https://api.stripe.com/v1/subscriptions/sub_49ty4767H20z6a \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d "billing_thresholds[amount_gte]"=10000 \
+  -d "billing_thresholds[reset_billing_cycle_anchor]"=false

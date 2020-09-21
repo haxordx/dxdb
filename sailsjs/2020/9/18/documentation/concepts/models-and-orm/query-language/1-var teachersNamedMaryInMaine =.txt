@@ -1,0 +1,4 @@
+var teachersNamedMaryInMaine = await Model.find({
+  where: { name: 'mary', state: 'me', occupation: { contains: 'teacher' } },
+  sort: [{ firstName: 'ASC'}, { lastName: 'ASC'}]
+});

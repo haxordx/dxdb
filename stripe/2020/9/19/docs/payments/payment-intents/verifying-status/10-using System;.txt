@@ -1,0 +1,126 @@
+using System;
+using System.IO;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using Stripe;
+
+namespace StripeExampleApi.Controllers
+{
+    [Route("webhook")]
+    [ApiController]
+    public class WebhookController : Controller
+    {
+        private readonly ILogger<WebhookController> _logger;
+
+        public WebhookController(ILogger<WebhookController> logger)
+        {
+            _logger = logger;
+        }
+
+        const string secret = "whsec_...";
+
+        [HttpPost]
+        public ActionResult Post()
+        {
+            try {
+                var json = new StreamReader(HttpContext.Request.Body).ReadToEnd();
+
+                var stripeEvent = EventUtility.ConstructEvent(json,
+                    Request.Headers["Stripe-Signature"], secret);
+
+                PaymentIntent intent = null;
+
+                switch (stripeEvent.Type)
+                {
+                  case "payment_intent.succeeded":
+                    intent = (PaymentIntent)stripeEvent.Data.Object;
+                    _logger.LogInformation("Succeeded: {ID}", intent.Id);
+
+                    // Fulfil the customer's purchase
+
+                    break;
+                  case "payment_intent.payment_failed":
+                    intent = (PaymentIntent)stripeEvent.Data.Object;
+                    _logger.LogInformation("Failure: {ID}", intent.Id);
+
+                    // Notify the customer that payment failed
+
+                    break;
+                  default:
+                    // Handle other event types
+
+                    break;
+                }
+                return new EmptyResult();
+
+            }
+            catch (StripeException e) {
+                // Invalid Signature
+                return BadRequest();
+            }
+        }
+    }
+}
+using System;
+using System.IO;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using Stripe;
+
+namespace StripeExampleApi.Controllers
+{
+    [Route("webhook")]
+    [ApiController]
+    public class WebhookController : Controller
+    {
+        private readonly ILogger<WebhookController> _logger;
+
+        public WebhookController(ILogger<WebhookController> logger)
+        {
+            _logger = logger;
+        }
+
+        const string secret = "whsec_...";
+
+        [HttpPost]
+        public ActionResult Post()
+        {
+            try {
+                var json = new StreamReader(HttpContext.Request.Body).ReadToEnd();
+
+                var stripeEvent = EventUtility.ConstructEvent(json,
+                    Request.Headers["Stripe-Signature"], secret);
+
+                PaymentIntent intent = null;
+
+                switch (stripeEvent.Type)
+                {
+                  case "payment_intent.succeeded":
+                    intent = (PaymentIntent)stripeEvent.Data.Object;
+                    _logger.LogInformation("Succeeded: {ID}", intent.Id);
+
+                    // Fulfil the customer's purchase
+
+                    break;
+                  case "payment_intent.payment_failed":
+                    intent = (PaymentIntent)stripeEvent.Data.Object;
+                    _logger.LogInformation("Failure: {ID}", intent.Id);
+
+                    // Notify the customer that payment failed
+
+                    break;
+                  default:
+                    // Handle other event types
+
+                    break;
+                }
+                return new EmptyResult();
+
+            }
+            catch (StripeException e) {
+                // Invalid Signature
+                return BadRequest();
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+//Parse the saved session object
+var sessionObj = JSON.parse(localStorage['sinchSession-' + sinchClient.applicationKey] || '{}');
+
+//If there is a valid session object
+if(sessionObj.userId) {
+    sinchClient.start(sessionObj)
+        .then(handleStartSuccess)
+        .fail(showLoginUI); //On failure, the session was not valid => user must re-login
+}
+else {
+    showLoginUI(); //There is no session => user must login
+}

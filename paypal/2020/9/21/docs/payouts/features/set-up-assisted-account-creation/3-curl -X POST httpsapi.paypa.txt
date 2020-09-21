@@ -1,0 +1,4 @@
+curl -X POST https://api.paypal.com/v1/identity/openidconnect/tokenservice \
+  -H 'Authorization: Basic <Base64 Encoded client_id:secret>' \
+  -d 'grant_type=authorization_code&code code'
+bashcopy

@@ -1,0 +1,10 @@
+"RH",08/13/2012 23:53:12 -0700,"A","HEDH43SEL62QA",007,
+"FH",01
+"SH",08/08/2012 00:00:00 -0700,08/08/2012 23:59:59 -0700,"HEDH43SEL62QA" "CH","Case type","Case ID","Original transaction ID","Transaction date","Transaction invoice ID","Card type","Case reason","Claimant name","Claimant email address","Case filing date","Case status","Response due date","Disputed amount","Disputed currency","Disputed transaction ID","Money movement","Settlement type","Seller protection","Seller protection payout amount","Seller protection currency","Payment tracking ID","Buyer comments","Store ID","Chargeback Reason Code","Outcome" "SB","Claim","PP-000-000-671-683","3E503680WL249060K",08/08/2012 02:03:34 -0700,"","","Non-receipt","Joe's Generic Business","vvaradarajan-20110803-003247994-1-DE-RPP- AUTO@paypal.com",08/08/2012 02:03:34 -0700,"Case Closed",700,"USD","","","Reversal","Partially Eligible INR Only",700,"USD","","dfgdfgdf","","","Invalid Tracking" "SB","Claim","PP-000-000-671-725","2HN08243KR496901N",08/08/2012 02:05:09 -0700,"","","Not as described","Joe's Generic Business","vvaradarajan-20110803-003247994-1-DE-RPP- AUTO@paypal.com",08/08/2012 02:34:29 -
+0700,"Case Closed",700,"USD","32852380M58924706","Temp Hold Released","Reversal","Partially Eligible INR Only",,"","","tehygfhfg","","","3PL vendor lost the package"
+"SF",2
+"SC",2
+"RF",2
+"RC",2
+"FF",2
+copy

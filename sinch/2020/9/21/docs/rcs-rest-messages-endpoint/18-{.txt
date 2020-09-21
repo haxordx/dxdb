@@ -1,0 +1,6 @@
+{
+  "type": "show_location",
+  "latitude": number,
+  "longitude": number,
+  "label": string
+}

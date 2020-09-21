@@ -1,0 +1,2 @@
+40001 - Invalid number specified
+50000 - Internal error

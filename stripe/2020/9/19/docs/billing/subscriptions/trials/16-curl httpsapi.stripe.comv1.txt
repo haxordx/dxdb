@@ -1,0 +1,12 @@
+curl https://api.stripe.com/v1/subscriptions \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d customer=cus_4fdAW5ftNQow1a \
+  -d "items[0][price]"=price_CBb6IXqvTLXp3f \
+  -d trial_end=1601166751 \
+  -d billing_cycle_anchor=1601771551
+curl https://api.stripe.com/v1/subscriptions \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d customer=cus_4fdAW5ftNQow1a \
+  -d "items[0][price]"=price_CBb6IXqvTLXp3f \
+  -d trial_end=1601166751 \
+  -d billing_cycle_anchor=1601771551

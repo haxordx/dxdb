@@ -1,0 +1,5 @@
+curl -X POST https://api.sandbox.paypal.com/v1/identity/openidconnect/tokenservice \
+  -H 'authorization: Basic Y2xpZW50SUQ6Y2xpZW50U2VjcmV0' \
+  -H 'content-type: application/x-www-form-urlencoded' \
+  -d 'grant_type=refresh_token&refresh_token={refresh_token}'
+copy

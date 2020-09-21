@@ -1,0 +1,8 @@
+PayPalRetailSDK.transactionManager().captureAuthorization(authId, invoiceId: invoice.payPalId, totalAmount: amountToCapture, gratuityAmount: 0, currency: invoice.currency) { (error, captureId) in
+
+    // code to handle success or failure
+    // if error, check error and handle accordingly
+    // if success, record the capture ID for future reference
+
+}
+copy

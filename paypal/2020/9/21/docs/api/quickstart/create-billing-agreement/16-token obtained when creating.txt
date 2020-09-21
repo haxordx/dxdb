@@ -1,0 +1,10 @@
+//token obtained when creating the agreement (following redirect)
+Agreement agreement =  new Agreement();
+agreement.setToken(token);
+
+try {
+  Agreement activeAgreement = agreement.execute(apiContext, agreement.getToken());
+  System.out.println("Agreement created with ID " + activeAgreement.getId());
+} catch (PayPalRESTException e) {
+  System.err.println(e.getDetails());
+}copy

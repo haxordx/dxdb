@@ -1,0 +1,9 @@
+\Stripe\Stripe::setApiKey("sk_live_••••••••••••••••••••••••");
+
+\Stripe\ApplePayDomain::create([
+  'domain_name' => 'example.com',
+]);\Stripe\Stripe::setApiKey("sk_live_••••••••••••••••••••••••");
+
+\Stripe\ApplePayDomain::create([
+  'domain_name' => 'example.com',
+]);

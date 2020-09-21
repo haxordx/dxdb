@@ -1,0 +1,3 @@
+# Create a Python project in your directory, then run the following command to install the PayPal JavaScript SDK.
+pip install paypal-checkout-serversdk
+copy

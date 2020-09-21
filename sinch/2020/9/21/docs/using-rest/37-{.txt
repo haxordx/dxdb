@@ -1,0 +1,5 @@
+{
+    "type":"number",
+    "endpoint":"+46707123456",
+    "verified":true
+}

@@ -1,0 +1,11 @@
+// Listener that gets called once the refund processes
+[self.transactionContext setCompletedHandler:^(PPRetailError *error, PPRetailTransactionRecord *txnRecord) {
+    // if error, handle accordingly, else pop back to view controller and handle success
+
+    [self.navigationController popToViewController:self animated:YES];
+
+    // txnRecord would have any info needed to record the successful transaction
+}];
+
+// Begins refund process and asks if a card is present for the refund
+[self.transactionContext beginRefund:YES amount:refundAmount];copy

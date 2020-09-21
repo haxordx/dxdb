@@ -1,0 +1,7 @@
+root
+|- models
+|  |- Pet.js
+|  `- User.js
+`- test
+   |- mocha.opts
+   `- UserModelTest.js

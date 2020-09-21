@@ -1,0 +1,39 @@
+{
+  "id": "O-0PW72302W3743444R",
+  "create_time": "2017-06-19T22:05:06Z",
+  "update_time": "2017-06-19T22:08:36Z",
+  "state": "PENDING",
+  "amount": {
+    "total": "41.15",
+    "currency": "USD"
+  },
+  "pending_reason": "order",
+  "parent_payment": "PAY-4D805864V5423372TKOQLRUQ",
+  "links": [
+    {
+      "href": "https://api.sandbox.paypal.com/v1/payments/orders/O-0PW72302W3743444R",
+      "rel": "self",
+      "method": "GET"
+    },
+    {
+      "href": "https://api.sandbox.paypal.com/v1/payments/payment/PAY-4D805864V5423372TKOQLRUQ",
+      "rel": "parent_payment",
+      "method": "GET"
+    },
+    {
+      "href": "https://api.sandbox.paypal.com/v1/payments/orders/O-0PW72302W3743444R/authorization",
+      "rel": "authorize",
+      "method": "POST"
+    },
+    {
+      "href": "https://api.sandbox.paypal.com/v1/payments/orders/O-0PW72302W3743444R/capture",
+      "rel": "capture",
+      "method": "POST"
+    },
+    {
+      "href": "https://api.sandbox.paypal.com/v1/payments/orders/O-0PW72302W3743444R/void",
+      "rel": "void",
+      "method": "POST"
+    }
+  ]
+}copy

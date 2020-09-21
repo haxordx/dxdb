@@ -1,0 +1,30 @@
+public class CheckoutActivity extends AppCompatActivity {
+
+    private String paymentIntentClientSecret;
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        // ...
+        startCheckout();
+    }
+
+    private void startCheckout() {
+        // Request a PaymentIntent from your server and store its client secret in paymentIntentClientSecret
+        // Click Open on GitHub to see a full implementation
+    }
+}
+public class CheckoutActivity extends AppCompatActivity {
+
+    private String paymentIntentClientSecret;
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        // ...
+        startCheckout();
+    }
+
+    private void startCheckout() {
+        // Request a PaymentIntent from your server and store its client secret in paymentIntentClientSecret
+        // Click Open on GitHub to see a full implementation
+    }
+}

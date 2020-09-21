@@ -1,0 +1,4 @@
+if refund.success():
+  print("Refund[%s] Success" % (refund.id))
+else:
+  print(refund.error)copy

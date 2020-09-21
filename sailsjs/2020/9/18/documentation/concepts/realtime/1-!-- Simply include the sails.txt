@@ -1,0 +1,11 @@
+<!-- Simply include the sails.io.js script, and a client socket will be created and auto-connected for you -->
+<script type="text/javascript" src="/js/dependencies/sails.io.js"></script>
+<script type="text/javascript">
+
+// The auto-connecting socket is exposed as `io.socket`.
+
+// Use `io.socket.on()` to listen for the 'hello' event:
+io.socket.on('hello', function (data) {
+  console.log('Socket `' + data.id + '` joined the party!');
+});
+</script>

@@ -1,0 +1,7 @@
+curl https://api.stripe.com/v1/tax_rates \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d display_name=VAT \
+  -d description="VAT Germany" \
+  -d jurisdiction=DE \
+  -d percentage=19 \
+  -d inclusive=false

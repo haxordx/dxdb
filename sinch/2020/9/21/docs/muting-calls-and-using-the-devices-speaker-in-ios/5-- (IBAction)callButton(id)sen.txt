@@ -1,0 +1,3 @@
+- (IBAction)callButton:(id)sender {
+_call = [[_client callClient] callPhoneNumber:_numberLabel.text];
+}

@@ -1,0 +1,2 @@
+req.get('myField');
+// -> cat

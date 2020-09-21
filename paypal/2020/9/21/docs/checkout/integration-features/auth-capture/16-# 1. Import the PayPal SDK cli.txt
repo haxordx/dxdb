@@ -1,0 +1,52 @@
+# 1. Import the PayPal SDK client that was created in `Set up Server-Side SDK`.
+require_relative '../paypal_client'
+include PayPalCheckoutSdk::Payments
+module Samples
+  module AuthorizeIntentExamples
+    class CaptureAuthorization
+
+      #2. Set up your server to receive a call from the client
+      # Use this function to capture on an authorization.
+      # Pass a valid authorization ID as an argument.
+      def capture_auth (authorization_id, debug=false)
+        request = AuthorizationsCaptureRequest::new(authorization_id)
+        request.prefer("return=representation")
+        # You can update the fields in the following request body
+        # as needed. Refer to the Payments API reference for more information.
+        request.request_body({})
+        begin
+          # 3. Call PayPal to capture an authorization.
+          response = PayPalClient::client::execute(request)
+          # 4. Save the capture ID to your database for future reference.
+          if debug
+            puts "Status Code: " + response.status_code.to_s
+            puts "Status: " + response.result.status
+            puts "Order ID: " + response.result.id
+            puts "Intent: " + response.result.intent
+            puts "Links:"
+            for link in response.result.links
+              # This could also be called link.rel or link.href, but
+              # method is a reserved keyword for Ruby. Avoid calling link.method.
+              puts "\t#{link["rel"]}: #{link["href"]}\tCall Type: #{link["method"]}"
+            end
+            puts PayPalClient::openstruct_to_hash(response.result).to_json
+          end
+          return response
+        rescue BraintreeHttp::HttpError => ioe
+          # Exception occurred while processing the refund.
+          puts " Status Code: " + ioe.status_code.to_s
+          puts " Debug Id: " + ioe.result.debug_id
+          puts " Response: " + PayPalClient::openstruct_to_hash(ioe.result).to_json
+        end
+      end
+    end
+  end
+end
+
+# This driver function invokes the capture_order function with
+# a valid authorization ID. Replace the authorization ID with a valid
+# authorization ID.
+if __FILE__ == $0
+  Samples::AuthorizeIntentExamples::CaptureAuthorization::new::capture_auth(&apos REPLACE-WITH-VALID-APPROVED-AUTH-ID',true)
+end
+copy

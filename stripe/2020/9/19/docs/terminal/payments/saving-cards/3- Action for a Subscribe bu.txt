@@ -1,0 +1,44 @@
+// Action for a "Subscribe" button
+- (void)subscribeAction {
+    SCPReadReusableCardParameters *params = [SCPReadReusableCardParameters new];
+    self.readCancelable = [[SCPTerminal shared] readReusableCard:params delegate:self completion:^(SCPPaymentMethod *readResult, NSError *readError) {
+        if (readError) {
+            NSLog(@"readReusableCard failed: %@", readError);
+        }
+        else {
+            NSLog(@"readReusableCard succeeded");
+
+            // Notify your backend to attach the PaymentMethod to a Customer
+            [[APPAPIClient shared] attachPaymentMethod:readResult.stripeId completion:^(NSError *attachError) {
+                if (attachError) {
+                    NSLog(@"attach failed: %@", attachError);
+                }
+                else {
+                    NSLog(@"attach succeeded");
+                }
+            }];
+        }
+    }];
+}
+// Action for a "Subscribe" button
+- (void)subscribeAction {
+    SCPReadReusableCardParameters *params = [SCPReadReusableCardParameters new];
+    self.readCancelable = [[SCPTerminal shared] readReusableCard:params delegate:self completion:^(SCPPaymentMethod *readResult, NSError *readError) {
+        if (readError) {
+            NSLog(@"readReusableCard failed: %@", readError);
+        }
+        else {
+            NSLog(@"readReusableCard succeeded");
+
+            // Notify your backend to attach the PaymentMethod to a Customer
+            [[APPAPIClient shared] attachPaymentMethod:readResult.stripeId completion:^(NSError *attachError) {
+                if (attachError) {
+                    NSLog(@"attach failed: %@", attachError);
+                }
+                else {
+                    NSLog(@"attach succeeded");
+                }
+            }];
+        }
+    }];
+}

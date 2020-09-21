@@ -1,0 +1,2 @@
+  var payment_config = pphwebsdk.PaymentConfiguration.create();
+javascriptcopy

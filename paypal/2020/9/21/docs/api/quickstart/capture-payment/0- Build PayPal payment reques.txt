@@ -1,0 +1,18 @@
+// Build PayPal payment request.
+var payReq = JSON.stringify({
+  intent: 'authorize',
+  payer: {
+    payment_method: 'paypal'
+  },
+  redirect_urls: {
+    return_url: 'http://localhost:3000/process',
+    cancel_url: 'http://localhost:3000/cancel'
+  },
+  transactions: [{
+    amount: {
+      total: '5.54',
+      currency: 'USD'
+    },
+    description: 'This is the payment transaction description.',
+  }]
+});copy

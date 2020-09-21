@@ -1,0 +1,4 @@
+var clearError = function() {
+    $('#error').text('');
+    $('#error').show();
+}

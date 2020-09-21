@@ -1,0 +1,3 @@
+<form action="<%=formEndpoint.url%>" method="<%=formEndpoint.method%>">
+  <!-- ... -->
+</form>

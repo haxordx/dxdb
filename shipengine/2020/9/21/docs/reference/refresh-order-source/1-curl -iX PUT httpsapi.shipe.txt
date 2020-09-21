@@ -1,0 +1,15 @@
+curl -iX PUT https://api.shipengine.com/v-beta/order_sources/__YOUR_ORDER_SOURCE_ID_HERE__/refresh \
+-H 'API-Key: __YOUR_API_KEY_HERE__' \
+-H 'Content-Type: application/json' \
+-d '{
+  "order_source_id": "__YOUR_ORDER_SOURCE_ID_HERE__",
+  "order_source_nickname": "My Shopify account",
+  "order_source_code": "shopify",
+  "order_source_friendly_name": "Shopify",
+  "refresh_info": {
+    "status": "preparing_update",
+    "last_refresh_attempt": null,
+    "refresh_date": "2018-02-10T20:55:46.673Z"
+  },
+  "active": true
+}'

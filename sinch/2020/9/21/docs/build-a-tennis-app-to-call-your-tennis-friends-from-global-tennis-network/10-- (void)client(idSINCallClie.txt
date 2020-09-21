@@ -1,0 +1,15 @@
+- (void)client:(id<SINCallClient>)client didReceiveIncomingCall:(id<SINCall>)call {
+
+    UIViewController *top = self.window.rootViewController;
+
+    NSString *devKey = @"gtn-developer-key";
+    TennisParser *parser = [[TennisParser alloc] initWithKey:devKey];
+    CFriend *callingFriend = [parser parseXMLForFriendWithUserID:[call remoteUserId]];
+
+    if(callingFriend) {
+        CallViewController *controller = [top.storyboard instantiateViewControllerWithIdentifier:@"callScreen"];
+        [controller setCallingFriend:callingFriend];
+        [controller setCall:call];
+        [self.window.rootViewController presentViewController:controller animated:YES completion:nil];
+    }
+}

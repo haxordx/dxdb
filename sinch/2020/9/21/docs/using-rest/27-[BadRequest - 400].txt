@@ -1,0 +1,13 @@
+[BadRequest - 400]
+40001 - Parameter Validation
+
+[Unauthorized - 401]
+40100 - Authorization Header
+40101 - Timestamp Header
+40102 - Invalid Signature
+
+[InternalServerError - 500]
+50000 - Internal Server Error
+
+[ServiceUnavailable - 503]
+50300 - Temporary Down

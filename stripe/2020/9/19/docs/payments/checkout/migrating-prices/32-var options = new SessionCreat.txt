@@ -1,0 +1,73 @@
+var options = new SessionCreateOptions {
+    PaymentMethodTypes = new List<string> {
+        "card",
+    },
+    LineItems = new List<SessionLineItemOptions> {
+        new SessionLineItemOptions {
+            Name = "T-shirt",
+            Description = "Comfortable cotton t-shirt",
+            Amount = 2000,
+            Currency = "usd",
+            Quantity = 1,
+        },
+    },
+    SubscriptionData = new SessionSubscriptionDataOptions {
+        Items = new List<SessionSubscriptionDataItemOptions> {
+            new SessionSubscriptionDataItemOptions {
+                Plan = "{{RECURRING_PRICE_OR_PLAN_ID}}",
+            },
+        },
+    },
+    LineItems = new List<SessionLineItemOptions> {
+        new SessionLineItemOptions {
+            Price = "{{ONE_TIME_PRICE_ID}}",
+            Quantity = 1,
+        },
+        new SessionLineItemOptions {
+            Price = "{{RECURRING_PRICE_OR_PLAN_ID}}",
+            Quantity = 1,
+        },
+    },
+    Mode = "subscription",
+    SuccessUrl = "https://example.com/success?session_id={CHECKOUT_SESSION_ID}",
+    CancelUrl = "https://example.com/cancel",
+};
+
+var service = new SessionService();
+Session session = service.Create(options);var options = new SessionCreateOptions {
+    PaymentMethodTypes = new List<string> {
+        "card",
+    },
+    LineItems = new List<SessionLineItemOptions> {
+        new SessionLineItemOptions {
+            Name = "T-shirt",
+            Description = "Comfortable cotton t-shirt",
+            Amount = 2000,
+            Currency = "usd",
+            Quantity = 1,
+        },
+    },
+    SubscriptionData = new SessionSubscriptionDataOptions {
+        Items = new List<SessionSubscriptionDataItemOptions> {
+            new SessionSubscriptionDataItemOptions {
+                Plan = "{{RECURRING_PRICE_OR_PLAN_ID}}",
+            },
+        },
+    },
+    LineItems = new List<SessionLineItemOptions> {
+        new SessionLineItemOptions {
+            Price = "{{ONE_TIME_PRICE_ID}}",
+            Quantity = 1,
+        },
+        new SessionLineItemOptions {
+            Price = "{{RECURRING_PRICE_OR_PLAN_ID}}",
+            Quantity = 1,
+        },
+    },
+    Mode = "subscription",
+    SuccessUrl = "https://example.com/success?session_id={CHECKOUT_SESSION_ID}",
+    CancelUrl = "https://example.com/cancel",
+};
+
+var service = new SessionService();
+Session session = service.Create(options);

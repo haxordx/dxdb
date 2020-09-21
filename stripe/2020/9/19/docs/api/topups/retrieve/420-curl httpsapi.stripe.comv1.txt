@@ -1,0 +1,6 @@
+curl https://api.stripe.com/v1/topups \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d amount=2000 \
+  -d currency=usd \
+  -d description="Top-up for Jenny Rosen" \
+  -d statement_descriptor=Top-up

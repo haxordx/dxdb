@@ -1,0 +1,12 @@
+curl -v -X POST https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-WW57-VFCD-X5H4-XTUP/cancel \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer Access-Token" \
+-d '{
+  "subject": "Invoice canceled",
+  "note": "Canceling this invoice per your request.",
+  "send_to_merchant": true,
+  "send_to_payer": true,
+  "cc_emails": [
+    "cc-email@example.com"
+  ]
+}'copy

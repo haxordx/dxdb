@@ -1,0 +1,37 @@
+self.collectCancelable = nil
+
+// Action for a "Checkout" button
+func checkoutAction() {
+    // ... Fetch the client secret from your backend
+    Terminal.shared.retrievePaymentIntent(clientSecret: clientSecret) { retrieveResult, retrieveError in
+        if let error = retrieveError {
+            print("retrievePaymentIntent failed: \(error)")
+        } else if let paymentIntent = retrieveResult {
+            print("retrievePaymentIntent succeeded: \(paymentIntent)")
+            self.collectCancelable = Terminal.shared.collectPaymentMethod(paymentIntent) { intentWithPaymentMethod, collectError in
+              if let error = collectError {
+                  print("collectPaymentMethod failed: \(error)")
+              } else if let intent = intentWithPaymentMethod {
+                  // Process the payment
+            }
+        }
+    }
+}self.collectCancelable = nil
+
+// Action for a "Checkout" button
+func checkoutAction() {
+    // ... Fetch the client secret from your backend
+    Terminal.shared.retrievePaymentIntent(clientSecret: clientSecret) { retrieveResult, retrieveError in
+        if let error = retrieveError {
+            print("retrievePaymentIntent failed: \(error)")
+        } else if let paymentIntent = retrieveResult {
+            print("retrievePaymentIntent succeeded: \(paymentIntent)")
+            self.collectCancelable = Terminal.shared.collectPaymentMethod(paymentIntent) { intentWithPaymentMethod, collectError in
+              if let error = collectError {
+                  print("collectPaymentMethod failed: \(error)")
+              } else if let intent = intentWithPaymentMethod {
+                  // Process the payment
+            }
+        }
+    }
+}

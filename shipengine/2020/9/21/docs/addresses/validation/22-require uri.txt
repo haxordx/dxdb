@@ -1,0 +1,16 @@
+require "uri"
+require "net/http"
+
+url = URI("https://api.shipengine.com/v1/addresses/validate")
+
+https = Net::HTTP.new(url.host, url.port);
+https.use_ssl = true
+
+request = Net::HTTP::Post.new(url)
+request["Host"] = "api.shipengine.com"
+request["API-Key"] = "__YOUR_API_KEY_HERE__"
+request["Content-Type"] = "application/json"
+request.body = "[\n  {\n    \"address_line1\": \"525 S Winchester Blvd\",\n    \"city_locality\": \"San Jose\",\n    \"state_province\": \"CA\",\n    \"postal_code\": \"95128\",\n    \"country_code\": \"US\"\n  }\n]"
+
+response = https.request(request)
+puts response.read_body

@@ -1,0 +1,32 @@
+// Collect card details
+CardInputWidget cardInputWidget = findViewById(R.id.cardInputWidget);
+PaymentMethodCreateParams.Card card = cardInputWidget.getPaymentMethodCard();
+
+if (card != null) {
+    PaymentMethod.BillingDetails billingDetails =
+        new PaymentMethod.BillingDetails.Builder()
+            // ...
+            .build();
+    // Create SetupIntent confirm parameters with the above
+    PaymentMethodCreateParams paymentMethodParams = PaymentMethodCreateParams
+            .create(card, billingDetails);
+    ConfirmSetupIntentParams confirmParams = ConfirmSetupIntentParams
+            .create(paymentMethodParams, setupIntentClientSecret);
+    stripe.confirmSetupIntent(this, confirmParams);
+}
+// Collect card details
+CardInputWidget cardInputWidget = findViewById(R.id.cardInputWidget);
+PaymentMethodCreateParams.Card card = cardInputWidget.getPaymentMethodCard();
+
+if (card != null) {
+    PaymentMethod.BillingDetails billingDetails =
+        new PaymentMethod.BillingDetails.Builder()
+            // ...
+            .build();
+    // Create SetupIntent confirm parameters with the above
+    PaymentMethodCreateParams paymentMethodParams = PaymentMethodCreateParams
+            .create(card, billingDetails);
+    ConfirmSetupIntentParams confirmParams = ConfirmSetupIntentParams
+            .create(paymentMethodParams, setupIntentClientSecret);
+    stripe.confirmSetupIntent(this, confirmParams);
+}

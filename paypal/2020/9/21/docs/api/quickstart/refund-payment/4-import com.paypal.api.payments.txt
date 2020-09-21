@@ -1,0 +1,12 @@
+import com.paypal.api.payments.Amount;
+import com.paypal.api.payments.Refund;
+import com.paypal.api.payments.Sale;
+import com.paypal.base.rest.APIContext;
+import com.paypal.base.rest.PayPalRESTException;
+
+Refund refund = new Refund();
+
+Amount amount = new Amount();
+amount.setTotal("1.31");
+amount.setCurrency("USD");
+refund.setAmount(amount);copy

@@ -1,0 +1,12 @@
+{
+    "action": {
+        "name": "Continue",
+        "record": true,
+        "recordingOptions": {
+            "destinationUrl": "s3://my-s3-bucket",
+            "credentials": "xyz\_access\_key:wrt\_secret\_key:eu-central-1",
+            "format": "mp3",
+            "notificationEvents": true
+        }
+    }
+}

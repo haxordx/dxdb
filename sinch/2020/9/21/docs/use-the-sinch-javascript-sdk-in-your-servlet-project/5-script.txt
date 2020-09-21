@@ -1,0 +1,23 @@
+<script>
+  $('document').ready(function() {
+
+    //define the sinch client
+    sinchClient = new SinchClient({
+      applicationKey: "YOUR_APP_KEY", //change me!
+      capabilities: {calling:true, messaging: true}, //only use what you need here
+      startActiveConnection: true,
+      onLogMessage: function(message) {
+        //messages appended to the body when
+        //the state of the client changes
+        $("body").append("<p>" + message.message + "</p>");
+      },
+    });
+
+    //here's that user ticket!
+    sinchClient.start({"userTicket":"<%= session.getAttribute("ticket").toString() %>"})
+      .then(function() {
+        //now, you can start using the client to make calls & send messages
+        $("body").append("<p>SinchClient is started!</p>");
+      }); //handle error if no ticket, or ticket is no longer valid
+    });
+</script>

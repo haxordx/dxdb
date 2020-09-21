@@ -1,0 +1,3 @@
+.eachBatch(100, async (records)=>{
+  console.log(`Got ${records.length} records.`);
+})

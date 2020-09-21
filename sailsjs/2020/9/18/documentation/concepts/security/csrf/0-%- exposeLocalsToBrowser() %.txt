@@ -1,0 +1,7 @@
+<%- exposeLocalsToBrowser() %>
+<script>
+  $.post({
+    foo: 'bar',
+    _csrf: window.SAILS_LOCALS._csrf
+  })
+</script>

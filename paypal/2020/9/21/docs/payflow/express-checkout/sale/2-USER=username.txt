@@ -1,0 +1,14 @@
+USER=username
+VENDOR=vendor
+PARTNER=PayPal
+PWD=password
+TRXTYPE=S
+TENDER=P
+ACTION=S
+AMT=0.01
+CURRENCY=USD
+RETURNURL=https://www.paypal.com/checkoutnow/error
+CANCELURL=https://www.paypal.com/checkoutnow/cancel
+ORDERDESC=test order
+INVNUM=INX123
+copy

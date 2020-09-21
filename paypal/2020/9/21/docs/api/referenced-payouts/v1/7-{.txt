@@ -1,0 +1,21 @@
+{
+  "item_id": "SOMEITEMID",
+  "processing_state": {
+    "status": "PROCESSING"
+  },
+  "reference_id": "CAPTURETXNID",
+  "reference_type": "TRANSACTION_ID",
+  "payout_amount": {
+    "currency_code": "USD",
+    "value": "2.0"
+  },
+  "payout_destination": "PAYERED",
+  "payout_transaction_id": "PAYOUTTXNID",
+  "links": [
+    {
+      "href": "https://api.paypal.com/v1/payments/referenced-payouts-items/SOMEITEMID",
+      "rel": "self",
+      "method": "GET"
+    }
+  ]
+}copy

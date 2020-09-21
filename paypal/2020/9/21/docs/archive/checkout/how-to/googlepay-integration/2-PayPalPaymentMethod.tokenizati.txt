@@ -1,0 +1,4 @@
+PayPalPaymentMethod.tokenizationSpecification = {
+"type": "DIRECT"
+}
+copy

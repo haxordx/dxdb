@@ -1,0 +1,12 @@
+[POST]
+
+URL:
+https://userapi.sinch.com/v1/users/{type}/{identity}/authentication
+
+eg:
+https://userapi.sinch.com/v1/users/email/address@example.com/authentication
+
+[body]
+    string - password
+
+eg:

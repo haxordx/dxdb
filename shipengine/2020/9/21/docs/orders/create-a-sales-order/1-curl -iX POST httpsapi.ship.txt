@@ -1,0 +1,83 @@
+curl -iX POST https://api.shipengine.com/v-beta/sales_orders \
+-H 'API-Key: __YOUR_API_KEY_HERE__' \
+-H 'Content-Type: application/json' \
+-d '{
+  "external_order_id": "1111",
+  "external_order_number": "2222",
+  "order_source": {
+    "order_source_id": "9ab83300-39ba-4159-96f8-0d0ef6dfcbfa"
+  },
+  "order_date": "2019-07-25T15:24:46.657Z$",
+  "payment_details": {
+    "subtotal": {
+      "currency": "usd",
+      "amount": 200
+    },
+    "estimated_shipping": {
+      "currency": "usd",
+      "amount": 10
+    },
+    "estimated_tax": {
+      "currency": "usd",
+      "amount": 5
+    },
+    "grand_total": {
+      "currency": "usd",
+      "amount": 215
+    }
+  },
+  "customer": {
+    "name": "Amanda Miller",
+    "phone": "555-555-5555",
+    "email": "amanda.miller@email.com"
+  },
+  "bill_to": {
+    "email": "amanda.miller@email.com",
+    "address": {
+      "name": "Amanda Miller",
+      "phone": "555-555-5555",
+      "address_line1": "525 S Winchester Blvd",
+      "city_locality": "San Jose",
+      "state_province": "CA",
+      "postal_code": "95128",
+      "country_code": "US",
+      "address_residential_indicator": "yes"
+    }
+  },
+  "ship_to": {
+    "name": "Amanda Miller",
+    "phone": "555-555-5555",
+    "address_line1": "525 S Winchester Blvd",
+    "city_locality": "San Jose",
+    "state_province": "CA",
+    "postal_code": "95128",
+    "country_code": "US",
+    "address_residential_indicator": "yes"
+  },
+  "sales_order_items": [
+    {
+      "line_item_details": {
+        "name": "ball of string A",
+        "sku": "ball of string A"
+      },
+      "price_summary": {
+        "unit_price": {
+          "currency": "usd",
+          "amount": 200
+        }
+      },
+      "ship_to": {
+        "name": "Amanda Miller",
+        "phone": "555-555-5555",
+        "address_line1": "525 S Winchester Blvd",
+        "city_locality": "San Jose",
+        "state_province": "CA",
+        "postal_code": "95128",
+        "country_code": "US",
+        "address_residential_indicator": "yes"
+      },
+      "quantity": 4,
+      "is_gift": false
+    }
+  ]
+}'

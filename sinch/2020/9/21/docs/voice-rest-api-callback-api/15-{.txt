@@ -1,0 +1,6 @@
+{
+    "name"   :"Park",
+    "introPrompt" : "#tts[Welcome]",
+    "holdPrompt" : "#tts[Please wait, you are put on hold]",
+    "maxDuration" : 180
+}

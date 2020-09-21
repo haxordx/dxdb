@@ -1,0 +1,4 @@
+'GET /foo/bar': {
+  action: 'user/find',
+  model: 'user'
+}

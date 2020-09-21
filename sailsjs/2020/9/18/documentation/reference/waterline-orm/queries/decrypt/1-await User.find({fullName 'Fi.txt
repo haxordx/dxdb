@@ -1,0 +1,3 @@
+await User.find({fullName: 'Finn Mertens'}).decrypt();
+// =>
+// [ { id: 4, fullName: 'Finn Mertens', ssn: '555-55-5555' } ]

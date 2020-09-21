@@ -1,0 +1,4 @@
+@Override
+public void onCallEnded(Call call) {
+    setVolumeControlStream(AudioManager.USE_DEFAULT_STREAM_TYPE);
+}

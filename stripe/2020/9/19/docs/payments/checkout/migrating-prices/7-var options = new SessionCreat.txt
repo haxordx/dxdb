@@ -1,0 +1,59 @@
+var options = new SessionCreateOptions {
+    PaymentMethodTypes = new List<string> {
+        "card",
+    },
+    LineItems = new List<SessionLineItemOptions> {
+        new SessionLineItemOptions {
+            Name = "T-shirt",
+            Description = "Comfortable cotton t-shirt",
+            Amount = 2000,
+            Currency = "usd",
+            PriceData = new SessionLineItemPriceDataOptions
+            {
+              Currency = "usd",
+              UnitAmount = 1,
+              ProductData = new SessionLineItemPriceDataProductDataOptions
+              {
+                Name = "T-shirt",
+                Description = "Comfortable cotton t-shirt",
+              },
+            },
+            Quantity = 1,
+        },
+    },
+    Mode = "payment",
+    SuccessUrl = "https://example.com/success?session_id={CHECKOUT_SESSION_ID}",
+    CancelUrl = "https://example.com/cancel",
+};
+
+var service = new SessionService();
+Session session = service.Create(options);var options = new SessionCreateOptions {
+    PaymentMethodTypes = new List<string> {
+        "card",
+    },
+    LineItems = new List<SessionLineItemOptions> {
+        new SessionLineItemOptions {
+            Name = "T-shirt",
+            Description = "Comfortable cotton t-shirt",
+            Amount = 2000,
+            Currency = "usd",
+            PriceData = new SessionLineItemPriceDataOptions
+            {
+              Currency = "usd",
+              UnitAmount = 1,
+              ProductData = new SessionLineItemPriceDataProductDataOptions
+              {
+                Name = "T-shirt",
+                Description = "Comfortable cotton t-shirt",
+              },
+            },
+            Quantity = 1,
+        },
+    },
+    Mode = "payment",
+    SuccessUrl = "https://example.com/success?session_id={CHECKOUT_SESSION_ID}",
+    CancelUrl = "https://example.com/cancel",
+};
+
+var service = new SessionService();
+Session session = service.Create(options);

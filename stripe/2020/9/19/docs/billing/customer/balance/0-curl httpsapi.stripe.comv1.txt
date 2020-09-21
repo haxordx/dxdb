@@ -1,0 +1,8 @@
+curl https://api.stripe.com/v1/customers/cus_4fdAW5ftNQow1a/balance_transactions \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d amount=-500 \
+  -d currency=usd
+curl https://api.stripe.com/v1/customers/cus_4fdAW5ftNQow1a/balance_transactions \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d amount=-500 \
+  -d currency=usd

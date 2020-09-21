@@ -1,0 +1,13 @@
+public static Webhook GetNewWebhook(){
+  return new Webhook{
+    url = GetNewWebhookUrl(),
+    event_types = new List{
+      new WebhookEventType{
+        name = "PAYMENT.SALE.CREATED"
+      },
+      new WebhookEventType{
+        name = "PAYMENT.SALE.DENIED"
+      }
+    }
+  };
+}copy

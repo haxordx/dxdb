@@ -1,0 +1,14 @@
+-(void)pushRegistry:(PKPushRegistry *)registry didReceiveIncomingPushWithPayload:(PKPushPayload *)payload forType:(NSString *)type
+{
+    //notify
+    NSDictionary* dic = payload.dictionaryPayload;
+    NSString* sinchinfo = [dic objectForKey:@"sin"];
+    if (sinchinfo == nil)
+        return;
+    UILocalNotification* notif = [[UILocalNotification alloc] init];
+    notif.alertBody = @"incoming call";
+    [[UIApplication sharedApplication] presentLocalNotificationNow:notif];
+    dispatch_async(dispatch_get_main_queue(), ^{
+       [_client relayRemotePushNotificationPayload:sinchinfo];
+    });
+}

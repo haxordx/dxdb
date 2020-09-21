@@ -1,0 +1,35 @@
+@interface ViewController () <PKAddPaymentPassViewControllerDelegate>
+@property STPPushProvisioningContext *pushProvisioningContext;
+@end
+
+@implementation ViewController
+
+- (void)addPaymentPassViewController:(PKAddPaymentPassViewController *)controller generateRequestWithCertificateChain:(NSArray<NSData *> *)certificates nonce:(NSData *)nonce nonceSignature:(NSData *)nonceSignature completionHandler:(void (^)(PKAddPaymentPassRequest * _Nonnull))handler {
+  self.pushProvisioningContext = [[STPPushProvisioningContext alloc] initWithKeyProvider:self];
+  // STPPushProvisioningContext implements this delegate method for you, by retrieving encrypted card details from the Stripe API.
+  [self.pushProvisioningContext addPaymentPassViewController:controller generateRequestWithCertificateChain:certificates nonce:nonce nonceSignature:nonceSignature completionHandler:handler];
+}
+
+- (void)addPaymentPassViewController:(PKAddPaymentPassViewController *)controller didFinishAddingPaymentPass:(PKPaymentPass *)pass error:(NSError *)error {
+  // Depending on if `error` is present, show a success or failure screen.
+  [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+@end@interface ViewController () <PKAddPaymentPassViewControllerDelegate>
+@property STPPushProvisioningContext *pushProvisioningContext;
+@end
+
+@implementation ViewController
+
+- (void)addPaymentPassViewController:(PKAddPaymentPassViewController *)controller generateRequestWithCertificateChain:(NSArray<NSData *> *)certificates nonce:(NSData *)nonce nonceSignature:(NSData *)nonceSignature completionHandler:(void (^)(PKAddPaymentPassRequest * _Nonnull))handler {
+  self.pushProvisioningContext = [[STPPushProvisioningContext alloc] initWithKeyProvider:self];
+  // STPPushProvisioningContext implements this delegate method for you, by retrieving encrypted card details from the Stripe API.
+  [self.pushProvisioningContext addPaymentPassViewController:controller generateRequestWithCertificateChain:certificates nonce:nonce nonceSignature:nonceSignature completionHandler:handler];
+}
+
+- (void)addPaymentPassViewController:(PKAddPaymentPassViewController *)controller didFinishAddingPaymentPass:(PKPaymentPass *)pass error:(NSError *)error {
+  // Depending on if `error` is present, show a success or failure screen.
+  [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+@end

@@ -1,0 +1,23 @@
+var options = new ChargeCreateOptions {
+    Source = request.stripeToken,
+    Description = "10 cucumbers from Roger's Farm",
+    Amount = 2000,
+    Currency = "usd",
+    ApplicationFeeAmount = 200,
+};
+var requestOptions = new RequestOptions {
+    StripeAccount = "{{CONNECTED_STRIPE_ACCOUNT_ID}}",
+};
+var chargeService = new ChargeService();
+Charge charge = chargeService.Create(options, requestOptions);var options = new ChargeCreateOptions {
+    Source = request.stripeToken,
+    Description = "10 cucumbers from Roger's Farm",
+    Amount = 2000,
+    Currency = "usd",
+    ApplicationFeeAmount = 200,
+};
+var requestOptions = new RequestOptions {
+    StripeAccount = "{{CONNECTED_STRIPE_ACCOUNT_ID}}",
+};
+var chargeService = new ChargeService();
+Charge charge = chargeService.Create(options, requestOptions);

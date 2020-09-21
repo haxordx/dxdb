@@ -1,0 +1,87 @@
+import com.clxcommunications.xms.*;
+import com.clxcommunications.xms.api.GroupResult;
+import com.clxcommunications.xms.api.MtBatchTextSmsResult;
+
+import java.util.Optional;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import java.util.stream.StreamSupport;
+
+public class SendMessageToGroup {
+    private static final Logger log = Logger.getLogger(SendMessageToGroup.class.getName());
+
+    private static final String SERVICE_PLAN_ID = "{YOUR_SERVICE_PLAN_ID}";
+    private static final String API_TOKEN = "{YOUR_API_TOKEN}";
+    private static final String GROUP_NAME = "subscribers";
+    private static final String[] GROUP_MEMBERS = new String[] {
+            "{PHONE_NUMBER_1}",
+            "{PHONE_NUMBER_2}",
+            "{PHONE_NUMBER_3}"
+    };
+
+    private final ApiConnection connection;
+
+    private SendMessageToGroup(ApiConnection connection) {
+        this.connection = connection;
+    }
+
+    public static void main(String[] args) {
+        ApiConnection connection = ApiConnection.builder()
+                .servicePlanId(SERVICE_PLAN_ID)
+                .token(API_TOKEN)
+                .start();
+
+        SendMessageToGroup sendMessageToGroup = new SendMessageToGroup(connection);
+
+        try (connection) {
+            GroupResult group = sendMessageToGroup.ensureGroupExists(GROUP_NAME);
+
+            sendMessageToGroup.ensureGroupHasMembers(group, GROUP_MEMBERS);
+
+            MtBatchTextSmsResult batch = sendMessageToGroup.sendToGroup(group, "Hello from Sinch!");
+
+            log.log(Level.INFO, "SMS sent to group {0} with batch ID {1}", new Object[] {group.id(), batch.id()});
+
+        } catch (Exception e) {
+            log.log(Level.SEVERE, "Exception while communicating with Sinch REST API.", e);
+        }
+    }
+
+    private GroupResult ensureGroupExists(String groupName) {
+        return findGroupByName(groupName)
+                .orElseGet(() -> createGroup(groupName));
+    }
+
+    private void ensureGroupHasMembers(GroupResult group, String... phoneNumbers) throws ApiException, InterruptedException {
+        connection.updateGroup(group.id(), ClxApi.groupUpdate()
+                .addMemberInsertion(phoneNumbers)
+                .build());
+    }
+
+    private MtBatchTextSmsResult sendToGroup(GroupResult group, String message) throws ApiException, InterruptedException {
+        return connection.createBatch(ClxApi.batchTextSms()
+                .sender("ignored")
+                .addRecipient(group.id().toString())
+                .body(message)
+                .build());
+    }
+
+    private Optional<GroupResult> findGroupByName(String name) {
+        PagedFetcher<GroupResult> groups = connection.fetchGroups(GroupFilter.builder().build());
+
+        return StreamSupport.stream(groups.pages().spliterator(), false)
+                .flatMap(page -> page.content().stream())
+                .filter(group -> name.equals(group.name()))
+                .findFirst();
+    }
+
+    private GroupResult createGroup(String name) {
+        try {
+            GroupResult createdGroup = connection.createGroup(ClxApi.groupCreate().name(name).build());
+            log.info("Created group with ID " + createdGroup.id());
+            return createdGroup;
+        } catch (InterruptedException | ApiException e) {
+            throw new RuntimeException(e);
+        }
+    }
+}

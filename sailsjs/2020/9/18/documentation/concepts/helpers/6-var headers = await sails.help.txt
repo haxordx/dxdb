@@ -1,0 +1,1 @@
+var headers = await sails.helpers.parseMyHeaders(req);

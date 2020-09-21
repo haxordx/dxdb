@@ -1,0 +1,2 @@
+curl https://api.stripe.com/v1/reporting/report_runs/frr_1HTGMV2eZvKYlo2CqpOz9cjT \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc:

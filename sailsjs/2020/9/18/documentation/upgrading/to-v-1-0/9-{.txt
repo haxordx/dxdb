@@ -1,0 +1,7 @@
+{
+  verb: 'messaged',
+  id: 123,
+  data: {
+    owl: 'hoot'
+  }
+}

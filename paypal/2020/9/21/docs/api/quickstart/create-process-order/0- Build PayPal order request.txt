@@ -1,0 +1,43 @@
+// Build PayPal order request
+var payReq = JSON.stringify({
+  intent:'order',
+  payer: {
+    payment_method: 'paypal'
+  },
+  redirect_urls:{
+    return_url:'http://localhost:3001/process',
+    cancel_url:'http://localhost:3001/cancel'
+  },
+  transactions: [{
+    amount: {
+      total: '30.03',
+      currency: 'USD',
+      details: {
+        subtotal: '30.00',
+        tax: '0.03'
+      }
+    },
+    description: 'This is the payment transaction description.',
+    invoice_number: '485787589673',
+    payment_options: {
+      allowed_payment_method: 'INSTANT_FUNDING_SOURCE'
+    },
+    item_list:{
+      items: [{
+        name: 'hat',
+        quantity: '5',
+        price: '3',
+        tax: '0.01',
+        sku: '123123',
+        currency: 'USD'
+      },{
+        name: 'handbag',
+        quantity: '1',
+        price: '15',
+        tax: '0.02',
+        sku: '456456',
+        currency: 'USD'
+      }]
+    }
+  }]
+});copy

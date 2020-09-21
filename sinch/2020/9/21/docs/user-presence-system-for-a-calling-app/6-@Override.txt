@@ -1,0 +1,5 @@
+@Override
+public void onPause() {
+    super.onPause();
+    pubnub.unsubscribe("calling_channel");
+}

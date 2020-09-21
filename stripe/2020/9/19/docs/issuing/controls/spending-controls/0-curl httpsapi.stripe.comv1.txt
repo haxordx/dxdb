@@ -1,0 +1,8 @@
+curl https://api.stripe.com/v1/issuing/cardholders/ich_1Cm3paIyNTgGDVfzBqq1uqxR \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d "spending_controls[spending_limits][0][amount]"=300000 \
+  -d "spending_controls[spending_limits][0][interval]"=monthly
+curl https://api.stripe.com/v1/issuing/cardholders/ich_1Cm3paIyNTgGDVfzBqq1uqxR \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d "spending_controls[spending_limits][0][amount]"=300000 \
+  -d "spending_controls[spending_limits][0][interval]"=monthly

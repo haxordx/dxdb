@@ -1,0 +1,12 @@
+curl https://api.stripe.com/v1/account_links \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d account=acct_1032D82eZvKYlo2C \
+  -d refresh_url="https://example.com/reauth" \
+  -d return_url="https://example.com/return" \
+  -d type=account_onboarding
+curl https://api.stripe.com/v1/account_links \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d account=acct_1032D82eZvKYlo2C \
+  -d refresh_url="https://example.com/reauth" \
+  -d return_url="https://example.com/return" \
+  -d type=account_onboarding

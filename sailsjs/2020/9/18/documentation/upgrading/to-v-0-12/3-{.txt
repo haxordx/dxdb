@@ -1,0 +1,5 @@
+{
+  attributes: {},
+  autoCreatedAt: 'my_cool_created_when_timestamp',
+  autoUpdatedAt: 'my_cool_updated_at_timestamp'
+}

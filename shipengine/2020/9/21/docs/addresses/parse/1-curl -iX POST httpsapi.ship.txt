@@ -1,0 +1,6 @@
+curl -iX POST https://api.shipengine.com/v1/addresses/recognize \
+-H 'API-Key: __YOUR_API_KEY_HERE__' \
+-H 'Content-Type: application/json' \
+-d '{
+  "text": "I need to send a package to my friend Amanda Millers house at 525 Winchester Blvd in San Jose (thats california, obviously). The zip code there is 95128."
+}'

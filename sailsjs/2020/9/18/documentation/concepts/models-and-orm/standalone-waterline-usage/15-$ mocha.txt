@@ -1,0 +1,8 @@
+$ mocha
+
+
+  UserModel
+    ✓ should be able to create a user
+
+
+  1 passing (83ms)

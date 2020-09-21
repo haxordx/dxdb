@@ -1,0 +1,17 @@
+{
+  "id": "XP-8YTH-NNP3-WSVN-3C76",
+  "name": "exampleProfile",
+  "temporary": false,
+  "flow_config": {
+    "landing_page_type": "billing",
+    "bank_txn_pending_url": "https://example.com/flow_config/"
+  },
+  "input_fields": {
+    "no_shipping": 1,
+    "address_override": 1
+  },
+  "presentation": {
+    "logo_image": "https://example.com/logo_image/"
+  }
+}
+jsoncopy

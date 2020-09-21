@@ -1,0 +1,26 @@
+if ([urlResponse statusCode] == 429) {
+    NSLog(@"Rate limit reached");
+    return;
+}
+if (error) {
+    NSLog(@"Error: %@", error.localizedDescription);
+    return;
+}
+if (responseData) {
+    NSError *error = nil;
+    NSDictionary *TWData = [NSJSONSerialization JSONObjectWithData:responseData options:NSJSONReadingMutableLeaves error:&error];
+
+    CFriend *newFriend = [[CFriend alloc] init];
+    [newFriend setUserID:friendID];
+    [newFriend setName:[[TWData valueForKey:@"name"] objectAtIndex:0]];
+    [newFriend setUsername:[[TWData valueForKey:@"screen_name"] objectAtIndex:0]];
+    [newFriend setPicUrl:[[TWData valueForKey:@"profile_image_url"] objectAtIndex:0]];
+
+    if (!self.objects) {
+        self.objects = [[NSMutableArray alloc] init];
+    }
+    [self.objects addObject:newFriend];
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:_objects.count-1 inSection:0];
+    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+    [self.tableView reloadData];
+}

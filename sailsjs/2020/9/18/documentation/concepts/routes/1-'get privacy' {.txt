@@ -1,0 +1,6 @@
+'get /privacy': {
+    view: 'users/privacy',
+    locals: {
+      layout: 'users'
+    }
+  },

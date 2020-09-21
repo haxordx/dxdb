@@ -1,0 +1,5 @@
+{
+  "type": "reply",
+  "display_text": string,
+  "postback": object(Postback)
+}

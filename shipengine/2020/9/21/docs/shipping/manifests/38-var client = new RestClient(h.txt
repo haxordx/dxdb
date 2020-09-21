@@ -1,0 +1,9 @@
+var client = new RestClient("https://api.shipengine.com/v1/manifests");
+client.Timeout = -1;
+var request = new RestRequest(Method.POST);
+request.AddHeader("Host", "api.shipengine.com");
+request.AddHeader("API-Key", "__YOUR_API_KEY_HERE__");
+request.AddHeader("Content-Type", "application/json");
+request.AddParameter("application/json", "{\n  \"carrier_id\": \"se-123890\",\n  \"excluded_label_ids\": [\"se-29602037\", \"se-29544722\", \"se-29475869\"],\n  \"warehouse_id\": \"se-11921\",\n  \"ship_date\": \"2019-07-25T05:00:00.000Z\"\n}",  ParameterType.RequestBody);
+IRestResponse response = client.Execute(request);
+Console.WriteLine(response.Content);

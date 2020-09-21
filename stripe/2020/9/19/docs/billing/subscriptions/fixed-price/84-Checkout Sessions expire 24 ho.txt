@@ -1,0 +1,1 @@
+Checkout Sessions expire 24 hours after creation.

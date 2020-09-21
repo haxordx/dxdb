@@ -1,0 +1,5 @@
+cors: {
+  allRoutes: true,
+  allowOrigins: '*',
+  allowCredentials: false
+}

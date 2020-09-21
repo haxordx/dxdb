@@ -1,0 +1,23 @@
+var sinchClient = new SinchClient({
+  applicationKey: 'MY_APPLICATION_KEY',
+  capabilities: { messaging: true },
+});
+
+// This jQuery call is just an example how you might authenticate users and pass the ticket to Sinch.
+$.post(
+  'https://example.com/auth',
+  { username: 'alice', password: 'somethingSecure' },
+  function (authTicket) {
+    sinchClient
+      .start(authTicket)
+      .then(function () {
+        // Handle successful start, like showing the UI
+      })
+      .fail(function (error) {
+        // Handle Sinch error
+      });
+  },
+  function (error) {
+    // Handle application server error
+  }
+);

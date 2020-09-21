@@ -1,0 +1,8 @@
+{
+    "name": "StartRecording",
+    "options": [RecordingOptions]
+}
+
+{
+    "name": "StopRecording"
+}

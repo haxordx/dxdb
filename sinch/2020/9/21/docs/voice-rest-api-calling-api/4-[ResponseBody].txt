@@ -1,0 +1,7 @@
+[ResponseBody]
+    NumberItem[] numbers
+
+[NumberItem]
+    string - number
+    string - applicationkey
+    string - capability

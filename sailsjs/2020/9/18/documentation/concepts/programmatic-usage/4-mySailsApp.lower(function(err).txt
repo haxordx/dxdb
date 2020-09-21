@@ -1,0 +1,10 @@
+mySailsApp.lower(function(err) {
+  if (err) {
+     console.log('An error occured when attempting to stop app:', err);
+     return;
+  }
+
+  // --•
+  console.log('Lowered app successfully.');
+
+});

@@ -1,0 +1,3 @@
+SomeModel.query(sql, valuesToEscape, function(err, rawResult) {
+
+});

@@ -1,0 +1,12 @@
+# Get payment id from query string following redirect
+payment = Payment.find(ENV["PAYMENT_ID"])
+
+# Execute payment using payer_id obtained from query string following redirect
+if payment.execute( :payer_id => ENV["PAYER_ID"] )
+  logger.info "authorization executed successfully"
+
+  # Capture auth id
+  auth_id = payment.transactions[0].related_resources[0].authorization.id;
+else
+  logger.error payment.error.inspect
+endcopy

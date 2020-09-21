@@ -1,0 +1,4 @@
+[PayPalRetailSDK.transactionManager stopReplayOfflineTxns:^(PPRetailError *error, PPRetailOfflinePaymentInfo *info) {
+    // Status of the remaining offline transactions
+}];
+copy

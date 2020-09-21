@@ -1,0 +1,58 @@
+{
+  "referenced_payouts": [
+    {
+      "item_id": "8TA4226978212353L",
+      "processing_state": {
+        "status": "PAYOUT_INITIATED"
+      },
+      "reference_id": "2KP03934U4415543C",
+      "reference_type": "TRANSACTION_ID",
+      "payout_amount": {
+        "currency_code": "USD",
+        "value": "1.0"
+      },
+      "payout_destination": "CC-CDZEC5MJ8R5HY",
+      "payout_transaction_id": "3KP03934U4415543D",
+      "disbursement_transaction_id": "4KP03934U4415543E",
+      "links": [
+        {
+          "href": "https://api.sandbox.paypal.com/v1/payments/referenced-payouts-items/8TA4226978212353L",
+          "rel": "self",
+          "method": "GET"
+        }
+      ]
+    },
+    {
+      "item_id": "9TA4226978212353M",
+      "processing_state": {
+        "status": "PAYOUT_INITIATED"
+      },
+      "reference_id": "8TA4226978212399L",
+      "reference_type": "TRANSACTION_ID",
+      "payout_amount": {
+        "currency_code": "USD",
+        "value": "1.0"
+      },
+      "payout_destination": "CC-CDZEC5MJ8R5HY",
+      "payout_transaction_id": "4KP03934U4415543D",
+      "disbursement_transaction_id": "5KP03934U4415543E",
+      "links": [
+        {
+          "href": "https://api.sandbox.paypal.com/v1/payments/referenced-payouts-items/9TA4226978212353M",
+          "rel": "self",
+          "method": "GET"
+        }
+      ]
+    }
+  ],
+  "payout_directive": {
+    "financial_instrument_id": "CC-CDZEC5MJ8R5HY"
+  },
+  "links": [
+    {
+      "href": "https://api.sandbox.paypal.com/v1/payments/referenced-payouts/CDZEC5MJ8R5HY",
+      "rel": "self",
+      "method": "GET"
+    }
+  ]
+}copy

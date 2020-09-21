@@ -1,0 +1,4 @@
+curl https://api.stripe.com/v1/subscription_items/si_DAyhPiOTjrdfTv/usage_records \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d quantity=100 \
+  -d timestamp=1571252444

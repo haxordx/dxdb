@@ -1,0 +1,6 @@
+cd stripe-terminal-js-demo
+npm install
+npm run start
+cd stripe-terminal-js-demo
+npm install
+npm run start

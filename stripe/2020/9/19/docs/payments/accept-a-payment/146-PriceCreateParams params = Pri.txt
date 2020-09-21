@@ -1,0 +1,12 @@
+PriceCreateParams params = PriceCreateParams.builder()
+  .setProduct("{{PRODUCT_ID}}")
+  .setUnitAmount(2000)
+  .setCurrency("usd")
+  .build();
+Price price = Price.create(params);
+PriceCreateParams params = PriceCreateParams.builder()
+  .setProduct("{{PRODUCT_ID}}")
+  .setUnitAmount(2000)
+  .setCurrency("usd")
+  .build();
+Price price = Price.create(params);

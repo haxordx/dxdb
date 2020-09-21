@@ -1,0 +1,12 @@
+curl https://api.stripe.com/v1/subscription_schedules \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d customer="{{CUSTOMER_ID}}" \
+  -d start_date=1601510400 \
+  -d phases[0][items][0][price]={{RECURRING_PRICE_ID}} \
+  -d phases[0][add_invoice_items][0][price]={{PRICE_ID}}
+curl https://api.stripe.com/v1/subscription_schedules \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d customer="{{CUSTOMER_ID}}" \
+  -d start_date=1601510400 \
+  -d phases[0][items][0][price]={{RECURRING_PRICE_ID}} \
+  -d phases[0][add_invoice_items][0][price]={{PRICE_ID}}

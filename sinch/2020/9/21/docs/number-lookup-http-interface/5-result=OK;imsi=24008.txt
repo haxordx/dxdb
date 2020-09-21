@@ -1,0 +1,5 @@
+result=OK;imsi=24008
+
+or
+
+result=OK;imsi=24008;location=46

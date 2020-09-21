@@ -1,0 +1,22 @@
+# Using the customer ID returned in step 2
+
+curl https://api.stripe.com/v1/invoiceitems \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d customer=cus_4fdAW5ftNQow1a \
+  -d price=price_CBb6IXqvTLXp3f
+
+curl https://api.stripe.com/v1/invoices \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d customer=cus_4fdAW5ftNQow1a \
+  -d auto_advance=true
+# Using the customer ID returned in step 2
+
+curl https://api.stripe.com/v1/invoiceitems \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d customer=cus_4fdAW5ftNQow1a \
+  -d price=price_CBb6IXqvTLXp3f
+
+curl https://api.stripe.com/v1/invoices \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d customer=cus_4fdAW5ftNQow1a \
+  -d auto_advance=true

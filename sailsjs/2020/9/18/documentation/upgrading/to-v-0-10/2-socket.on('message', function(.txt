@@ -1,0 +1,9 @@
+socket.on('message', function(cometEvent) {
+   if (cometEvent.model == 'user') {
+     // Handle inbound messages related to a user record
+   }
+   else if (cometEvent.model === 'product') {
+     // Handle inbound messages related to a product record
+   }
+   // ...
+}

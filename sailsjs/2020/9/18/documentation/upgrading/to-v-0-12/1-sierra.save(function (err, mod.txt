@@ -1,0 +1,5 @@
+sierra.save(function (err, modifiedSierra){
+  if (err) { /* ... */  return; }
+
+  // ...
+});

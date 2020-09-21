@@ -1,0 +1,4 @@
+public async Task<RedirectToRouteResult> Kick(int id, Guid conferenceid, string participant) {
+    await GetParticipant(conferenceid.ToString(), participant).Kick();
+    return RedirectToAction("Details", new { id = id });
+}

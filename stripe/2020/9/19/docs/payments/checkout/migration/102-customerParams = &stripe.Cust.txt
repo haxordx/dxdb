@@ -1,0 +1,31 @@
+customerParams := &stripe.CustomerParams{
+    Email: stripe.String(*request.stripeEmail),
+}
+customerParams.SetSource(*request.stripeToken)
+customer, _ := customer.New(customerParams)
+
+subscriptionParams := &stripe.SubscriptionParams{
+    Customer: stripe.String(customer.Id),
+    Items: []*stripe.SubscriptionItemsParams{
+        &stripe.SubscriptionItemsParams{
+            Price: stripe.String("{PRICE_ID}"),
+            Quantity: stripe.Int64(2),
+        },
+    },
+}
+subscription, _ := subscription.New(subscriptionParams)customerParams := &stripe.CustomerParams{
+    Email: stripe.String(*request.stripeEmail),
+}
+customerParams.SetSource(*request.stripeToken)
+customer, _ := customer.New(customerParams)
+
+subscriptionParams := &stripe.SubscriptionParams{
+    Customer: stripe.String(customer.Id),
+    Items: []*stripe.SubscriptionItemsParams{
+        &stripe.SubscriptionItemsParams{
+            Price: stripe.String("{PRICE_ID}"),
+            Quantity: stripe.Int64(2),
+        },
+    },
+}
+subscription, _ := subscription.New(subscriptionParams)

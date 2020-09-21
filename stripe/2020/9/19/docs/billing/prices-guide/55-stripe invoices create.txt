@@ -1,0 +1,4 @@
+stripe invoices create \
+  --customer={{CUSTOMER_ID}}
+stripe invoices create \
+  --customer={{CUSTOMER_ID}}

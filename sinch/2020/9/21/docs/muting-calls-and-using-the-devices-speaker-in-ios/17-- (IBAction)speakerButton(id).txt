@@ -1,0 +1,33 @@
+- (IBAction)speakerButton:(id)sender {
+    if (_speaker == NO) {
+        _speaker = YES;
+        [self.delegate speaker];
+        [_speakerButton setImage:[self loadImageWithName:@"speaker_selected"] forState:UIControlStateNormal];
+    } else {
+        _speaker = NO;
+        [self.delegate speakerOff];
+        [_speakerButton setImage:[self loadImageWithName:@"speaker"] forState:UIControlStateNormal];
+    }
+}
+
+- (IBAction)muteButton:(id)sender {
+    if (_muted) {
+        _muted = NO;
+        [self.delegate unMute];
+        [_muteButton setImage:[self loadImageWithName:@"mute"] forState:UIControlStateNormal];
+    } else {
+        _muted = YES;
+        [self.delegate mute];
+        [_muteButton setImage:[self loadImageWithName:@"mute_selected"] forState:UIControlStateNormal];
+    }
+}
+- (IBAction)hangUpButton:(id)sender {
+    [self.delegate hangup];
+}
+-(UIImage*)loadImageWithName:(NSString*)imageName
+{
+    NSBundle* bundle = [NSBundle bundleWithIdentifier:@"com.zac.app2phone"];
+    NSString *imagePath = [bundle pathForResource:imageName ofType:@"png"];
+    UIImage* image = [UIImage imageWithContentsOfFile:imagePath];
+    return image;
+}

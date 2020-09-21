@@ -1,0 +1,11 @@
+{
+  "responseEnvelope": {
+    "ack": "Success",
+    # ...
+  },
+  "invoiceID": "INV2-Z3PV-QKHY-YL45",
+  "invoiceNumber": "0001",
+  "invoiceURL": "https://www.sandbox.paypal.com/us/cgi-bin/?cmd=_inv-details&id=INV2-Z3PV-QKHY-YL45",
+  "totalAmount": "6885"
+}
+copy

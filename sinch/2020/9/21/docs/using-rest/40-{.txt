@@ -1,0 +1,5 @@
+{
+    "currencyId": "USD",
+    "amount":10.25,
+    "formatted":"$10.25"
+}

@@ -1,0 +1,97 @@
+Map<String, Object> params = new HashMap<String, Object>();
+
+params.put("billing_address_collection", "auto");
+
+Map<String, Object> shipping = new HashMap<String, Object>();
+String[] allowedCountries = {"US", "CA"};
+shipping.put("allowed_countries", allowedCountries);
+params.put("shipping_address_collection", shipping);
+
+ArrayList<String> paymentMethodTypes = new ArrayList<>();
+paymentMethodTypes.add("card");
+params.put("payment_method_types", paymentMethodTypes);
+
+ArrayList<HashMap<String, Object>> lineItems = new ArrayList<>();
+
+HashMap<String, Object> lineItem = new HashMap<String, Object>();
+lineItem.put("name", "T-shirt")
+lineItem.put("description", "Comfortable cotton t-shirt")
+lineItem.put("amount", 2000)
+lineItem.put("currency", "usd")
+lineItem.put("quantity", 1);
+
+HashMap<String, Object> subscriptionData = new HashMap<String, Object>();
+HashMap<String, Object> items = new HashMap<String, Object>();
+HashMap<String, Object> item = new HashMap<String, Object>();
+item.put("plan", "{{RECURRING_PRICE_OR_PLAN_ID}}");
+items.add(item);
+subscriptionData.put("items", items);
+params.put("subscription_data", subscriptionData);
+
+HashMap<String, Object> oneTimeLineItem = new HashMap<String, Object>();
+oneTimeLineItem.put("price", '{{ONE_TIME_PRICE_ID}}');
+oneTimeLineItem.put("quantity", 1);
+
+HashMap<String, Object> recurringLineItem = new HashMap<String, Object>();
+recurringLineItem.put("price", '{{RECURRING_PRICE_OR_PLAN_ID}}');
+recurringLineItem.put("quantity", 1);
+
+lineItems.add(oneTimeLineItem);
+lineItems.add(recurringLineItem);
+
+params.put("mode", "subscription");
+
+params.put("line_items", lineItems);
+params.put("success_url", "https://example.com/success");
+params.put("cancel_url", "https://example.com/cancel");
+
+Session session = Session.create(params);
+EOFMap<String, Object> params = new HashMap<String, Object>();
+
+params.put("billing_address_collection", "auto");
+
+Map<String, Object> shipping = new HashMap<String, Object>();
+String[] allowedCountries = {"US", "CA"};
+shipping.put("allowed_countries", allowedCountries);
+params.put("shipping_address_collection", shipping);
+
+ArrayList<String> paymentMethodTypes = new ArrayList<>();
+paymentMethodTypes.add("card");
+params.put("payment_method_types", paymentMethodTypes);
+
+ArrayList<HashMap<String, Object>> lineItems = new ArrayList<>();
+
+HashMap<String, Object> lineItem = new HashMap<String, Object>();
+lineItem.put("name", "T-shirt")
+lineItem.put("description", "Comfortable cotton t-shirt")
+lineItem.put("amount", 2000)
+lineItem.put("currency", "usd")
+lineItem.put("quantity", 1);
+
+HashMap<String, Object> subscriptionData = new HashMap<String, Object>();
+HashMap<String, Object> items = new HashMap<String, Object>();
+HashMap<String, Object> item = new HashMap<String, Object>();
+item.put("plan", "{{RECURRING_PRICE_OR_PLAN_ID}}");
+items.add(item);
+subscriptionData.put("items", items);
+params.put("subscription_data", subscriptionData);
+
+HashMap<String, Object> oneTimeLineItem = new HashMap<String, Object>();
+oneTimeLineItem.put("price", '{{ONE_TIME_PRICE_ID}}');
+oneTimeLineItem.put("quantity", 1);
+
+HashMap<String, Object> recurringLineItem = new HashMap<String, Object>();
+recurringLineItem.put("price", '{{RECURRING_PRICE_OR_PLAN_ID}}');
+recurringLineItem.put("quantity", 1);
+
+lineItems.add(oneTimeLineItem);
+lineItems.add(recurringLineItem);
+
+params.put("mode", "subscription");
+
+params.put("line_items", lineItems);
+params.put("success_url", "https://example.com/success");
+params.put("cancel_url", "https://example.com/cancel");
+
+Session session = Session.create(params);
+EOF

@@ -1,0 +1,8 @@
+res.view('myView', {
+  someString: 'hello',
+  someNumber: 123,
+  someObject: { owl: 'hoot' },
+  someArray: [1, 'boot', true],
+  someBool: false
+  someXSS: '<script>alert("all your credit cards belong to me!!");</script>'
+});

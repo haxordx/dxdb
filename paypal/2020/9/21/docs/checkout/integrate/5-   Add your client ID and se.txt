@@ -1,0 +1,7 @@
+  // Add your client ID and secret
+    var PAYPAL_CLIENT = 'PAYPAL_LIVE_CLIENT';
+    var PAYPAL_SECRET = 'PAYPAL_LIVE_SECRET';
+
+  // Point your server to the PayPal API
+    var PAYPAL_ORDER_API = 'https://api.paypal.com/v2/checkout/orders/';
+copy

@@ -1,0 +1,12 @@
+curl https://api.stripe.com/v1/payment_intents \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d amount=1099 \
+  -d currency=usd \
+  -d "payment_method_types[]"=card \
+  -d statement_descriptor="Custom descriptor"
+curl https://api.stripe.com/v1/payment_intents \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d amount=1099 \
+  -d currency=usd \
+  -d "payment_method_types[]"=card \
+  -d statement_descriptor="Custom descriptor"

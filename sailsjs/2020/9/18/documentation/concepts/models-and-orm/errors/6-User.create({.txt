@@ -1,0 +1,18 @@
+User.create({
+  emailAddress: req.param('emailAddress')
+})
+.then(function (){
+  res.ok();
+})
+// Uniqueness constraint violation
+.catch({ code: 'E_UNIQUE' }, function (err) {
+  res.sendStatus(409);
+})
+// Some other kind of usage / validation error
+.catch({ name: 'UsageError' }, function (err) {
+  res.badRequest();
+})
+// If something completely unexpected happened.
+.catch(function (err) {
+  res.serverError(err);
+});

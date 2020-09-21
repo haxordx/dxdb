@@ -1,0 +1,12 @@
+{
+    "responseEnvelope": {
+        "timestamp": "2011-06-16T:12:30.861-07:00",
+        "ack": "Success",
+        "correlationId": "78733df04b1f0",
+        "build": "1942837"
+    },
+    "invoiceID": "INV2-C4AK-UU3J-5SCL-9KZY",
+    "invoiceNumber": "1192",
+    "invoiceURL": "invoiceURL"
+}
+copy

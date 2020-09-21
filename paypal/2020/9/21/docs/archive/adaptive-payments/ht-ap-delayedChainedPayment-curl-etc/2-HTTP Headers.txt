@@ -1,0 +1,50 @@
+HTTP Headers
+------------
+-H "X-PAYPAL-SECURITY-USERID: insert_developer_user_name"
+-H "X-PAYPAL-SECURITY-PASSWORD: insert_developer_password"
+-H "X-PAYPAL-SECURITY-SIGNATURE: insert_developer_signature"
+-H "X-PAYPAL-REQUEST-DATA-FORMAT: NV"
+-H "X-PAYPAL-RESPONSE-DATA-FORMAT: NV"
+-H "X-PAYPAL-APPLICATION-ID: APP-80W284485P519543T"    #Standard sandbox app ID
+
+Endpoint
+--------
+https://svcs.sandbox.paypal.com/AdaptivePayments/PaymentDetails
+
+Input Parameters
+----------------
+payKey=AP-9HY848657G6071234    #Value of the pay key, received in the Pay call above
+&requestEnvelope.errorLanguage=en_US
+
+Response
+--------
+responseEnvelope.ack=Success
+&cancelUrl=http%3A%2F%2Fwww.yourdomain.com%2Fcancel.html
+&returnUrl=http%3A%2F%2Fwww.yourdomain.com%2Fsuccess.html
+¤cyCode=USD
+&memo=example
+&paymentInfoList.paymentInfo(0).transactionId=9EM14068G28701234
+&paymentInfoList.paymentInfo(0).transactionStatus=COMPLETED
+&paymentInfoList.paymentInfo(0).receiver.amount=25.00
+&paymentInfoList.paymentInfo(0).receiver.email=email_of_receiver_number_1
+&paymentInfoList.paymentInfo(0).receiver.primary=true
+&paymentInfoList.paymentInfo(0).receiver.paymentType=SERVICE
+&paymentInfoList.paymentInfo(0).refundedAmount=0.00
+&paymentInfoList.paymentInfo(0).pendingRefund=false
+&paymentInfoList.paymentInfo(0).senderTransactionId=66E25325WG7781234
+&paymentInfoList.paymentInfo(0).senderTransactionStatus=COMPLETED
+&paymentInfoList.paymentInfo(1).receiver.amount=5.00
+&paymentInfoList.paymentInfo(1).receiver.email=email_of_receiver_number_2
+&paymentInfoList.paymentInfo(1).receiver.primary=false
+&paymentInfoList.paymentInfo(1).receiver.paymentType=SERVICE
+&paymentInfoList.paymentInfo(1).refundedAmount=0.00
+&paymentInfoList.paymentInfo(1).pendingRefund=false
+&status=INCOMPLETE    #Indicates that the secondary receiver has not been paid
+&payKey=AP-9HY848657G6071234
+&actionType=PAY_PRIMARY
+&feesPayer=EACHRECEIVER
+&reverseAllParallelPaymentsOnError=false
+&sender.email=sender_email
+&sender.useCredentials=false
+...
+copy

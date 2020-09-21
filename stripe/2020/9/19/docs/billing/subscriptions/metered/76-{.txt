@@ -1,0 +1,30 @@
+{
+  "id": "sub_1ELI8bClCIKljWvsvK36TXlC",
+  "object": "subscription",
+  "status": "incomplete",
+  ...
+  "pending_setup_intent": {
+    "status": "requires_action",
+    "client_secret": "pi_91_secret_W9",
+    "next_action": {
+      "type": "use_stripe_sdk",
+      ...
+    },
+    ...
+  }
+}
+{
+  "id": "sub_1ELI8bClCIKljWvsvK36TXlC",
+  "object": "subscription",
+  "status": "incomplete",
+  ...
+  "pending_setup_intent": {
+    "status": "requires_action",
+    "client_secret": "pi_91_secret_W9",
+    "next_action": {
+      "type": "use_stripe_sdk",
+      ...
+    },
+    ...
+  }
+}

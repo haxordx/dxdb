@@ -1,0 +1,7 @@
+// config/globals.js
+module.exports.globals = {
+  _: false,
+  async: false,
+  models: false,
+  services: false
+};

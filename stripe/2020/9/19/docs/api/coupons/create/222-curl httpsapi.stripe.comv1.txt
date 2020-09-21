@@ -1,0 +1,4 @@
+curl https://api.stripe.com/v1/coupons \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d limit=3 \
+  -G

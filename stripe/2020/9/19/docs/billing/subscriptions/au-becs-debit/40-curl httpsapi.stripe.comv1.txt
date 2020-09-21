@@ -1,0 +1,10 @@
+curl https://api.stripe.com/v1/customers \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d email="jenny.rosen@example.com" \
+  -d payment_method=pm_1FU2bgBF6ERF9jhEQvwnA7sX \
+  -d "invoice_settings[default_payment_method]"=pm_1FU2bgBF6ERF9jhEQvwnA7sX
+curl https://api.stripe.com/v1/customers \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d email="jenny.rosen@example.com" \
+  -d payment_method=pm_1FU2bgBF6ERF9jhEQvwnA7sX \
+  -d "invoice_settings[default_payment_method]"=pm_1FU2bgBF6ERF9jhEQvwnA7sX

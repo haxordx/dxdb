@@ -1,0 +1,3 @@
+if ( !_.isString( req.param('email') ) ) {
+  return res.badRequest();
+}

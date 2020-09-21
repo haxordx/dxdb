@@ -1,0 +1,18 @@
+// In your app, display the discovered reader(s) to the user.
+// Call `connectReader` with the selected reader.
+Terminal.shared.connectReader(selectedReader) { reader, error in
+    if let reader = reader {
+        print("Successfully connected to reader: \(reader)")
+    } else if let error = error {
+        print("connectReader failed: \(error)")
+    }
+}
+// In your app, display the discovered reader(s) to the user.
+// Call `connectReader` with the selected reader.
+Terminal.shared.connectReader(selectedReader) { reader, error in
+    if let reader = reader {
+        print("Successfully connected to reader: \(reader)")
+    } else if let error = error {
+        print("connectReader failed: \(error)")
+    }
+}

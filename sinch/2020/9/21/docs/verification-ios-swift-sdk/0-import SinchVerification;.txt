@@ -1,0 +1,27 @@
+import SinchVerification;
+
+do {
+
+    let input = "<user input>"
+
+    // Get user's current region by carrier info
+    let defaultRegion = DeviceRegion.currentCountryCode()
+
+    let phoneNumber = try PhoneNumberUtil().parse(input, defaultRegion:defaultRegion)
+    let phoneNumberE164 = PhoneNumberUtil().format(phoneNumber, format: PhoneNumberFormat.E164)
+
+    let verification = SMSVerification(applicationKey:"<APP KEY>", phoneNumber: phoneNumberInE164)
+
+    verification.initiate { (result: InitiationResult, error: NSError?) -> Void in
+        // handle outcome
+    }
+
+    let code = "<user input code from SMS>"
+
+    verification.verify(code, completion: { (success: Bool, error:NSError?) -> Void in
+        // handle outcome
+    })
+
+} catch let error as PhoneNumberParseError {
+    // Handle phone number parsing error, i.e. invalid user input.
+}

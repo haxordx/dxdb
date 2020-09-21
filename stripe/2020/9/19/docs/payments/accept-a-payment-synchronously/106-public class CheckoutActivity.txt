@@ -1,0 +1,126 @@
+public class CheckoutActivity extends AppCompatActivity {
+
+    // ...
+
+    private static final class PayCallback implements Callback {
+        // ...
+        activity.runOnUiThread(() ->
+                stripe.authenticatePayment(activity, paymentIntentClientSecret));
+        // ...
+    }
+
+    private static final class PaymentResultCallback
+            implements ApiResultCallback<PaymentIntentResult> {
+        private final WeakReference<CheckoutActivity> activityRef;
+
+        PaymentResultCallback(@NonNull CheckoutActivity activity) {
+            activityRef = new WeakReference<>(activity);
+        }
+
+        @Override
+        public void onSuccess(@NonNull PaymentIntentResult result) {
+            final CheckoutActivity activity = activityRef.get();
+            if (activity == null) {
+                return;
+            }
+
+            PaymentIntent paymentIntent = result.getIntent();
+            PaymentIntent.Status status = paymentIntent.getStatus();
+            if (status == PaymentIntent.Status.Succeeded) {
+                // Payment completed successfully
+                activity.runOnUiThread(() -> {
+                    Gson gson = new GsonBuilder().setPrettyPrinting().create();
+                    activity.displayAlert("Payment completed",
+                            gson.toJson(paymentIntent), true);
+                });
+            } else if (status == PaymentIntent.Status.RequiresPaymentMethod) {
+                // Payment failed – allow retrying using a different payment method
+                activity.runOnUiThread(() -> activity.displayAlert("Payment failed",
+                        paymentIntent.getLastPaymentError().message, false));
+            } else if (status == PaymentIntent.Status.RequiresConfirmation) {
+                // After handling a required action on the client, the status of the PaymentIntent is
+                // requires_confirmation. You must send the PaymentIntent ID to your backend
+                // and confirm it to finalize the payment. This step enables your integration to
+                // synchronously fulfill the order on your backend and return the fulfillment result
+                // to your client.
+                activity.pay(null, paymentIntent.getId());
+            }
+        }
+
+        @Override
+        public void onError(@NonNull Exception e) {
+            final CheckoutActivity activity = activityRef.get();
+            if (activity == null) {
+                return;
+            }
+
+            // Payment request failed – allow retrying using the same payment method
+            activity.runOnUiThread(() -> {
+                activity.displayAlert("Error", e.toString(), false);
+            });
+        }
+    }
+}
+public class CheckoutActivity extends AppCompatActivity {
+
+    // ...
+
+    private static final class PayCallback implements Callback {
+        // ...
+        activity.runOnUiThread(() ->
+                stripe.authenticatePayment(activity, paymentIntentClientSecret));
+        // ...
+    }
+
+    private static final class PaymentResultCallback
+            implements ApiResultCallback<PaymentIntentResult> {
+        private final WeakReference<CheckoutActivity> activityRef;
+
+        PaymentResultCallback(@NonNull CheckoutActivity activity) {
+            activityRef = new WeakReference<>(activity);
+        }
+
+        @Override
+        public void onSuccess(@NonNull PaymentIntentResult result) {
+            final CheckoutActivity activity = activityRef.get();
+            if (activity == null) {
+                return;
+            }
+
+            PaymentIntent paymentIntent = result.getIntent();
+            PaymentIntent.Status status = paymentIntent.getStatus();
+            if (status == PaymentIntent.Status.Succeeded) {
+                // Payment completed successfully
+                activity.runOnUiThread(() -> {
+                    Gson gson = new GsonBuilder().setPrettyPrinting().create();
+                    activity.displayAlert("Payment completed",
+                            gson.toJson(paymentIntent), true);
+                });
+            } else if (status == PaymentIntent.Status.RequiresPaymentMethod) {
+                // Payment failed – allow retrying using a different payment method
+                activity.runOnUiThread(() -> activity.displayAlert("Payment failed",
+                        paymentIntent.getLastPaymentError().message, false));
+            } else if (status == PaymentIntent.Status.RequiresConfirmation) {
+                // After handling a required action on the client, the status of the PaymentIntent is
+                // requires_confirmation. You must send the PaymentIntent ID to your backend
+                // and confirm it to finalize the payment. This step enables your integration to
+                // synchronously fulfill the order on your backend and return the fulfillment result
+                // to your client.
+                activity.pay(null, paymentIntent.getId());
+            }
+        }
+
+        @Override
+        public void onError(@NonNull Exception e) {
+            final CheckoutActivity activity = activityRef.get();
+            if (activity == null) {
+                return;
+            }
+
+            // Payment request failed – allow retrying using the same payment method
+            activity.runOnUiThread(() -> {
+                activity.displayAlert("Error", e.toString(), false);
+            });
+        }
+    }
+}

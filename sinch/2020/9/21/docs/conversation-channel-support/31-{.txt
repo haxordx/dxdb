@@ -1,0 +1,16 @@
+{
+  "app_id": "01E8RCZPK7HFV70FFDWFFK0EXK",
+  "accepted_time": "2020-06-22T11:05:53.910Z",
+  "message_delivery_report": {
+    "message_id": "01EBDV9EFP66ZA0GQJ9MCX1V9H",
+    "conversation_id": "01EB199XQ2CBY50K6WZD9S1A22",
+    "status": "READ",
+    "channel_identity": {
+      "channel": "WHATSAPP",
+      "identity": "+46702471483",
+      "app_id": ""
+    },
+    "contact_id": "01EB197NDA4W7V15NPRCVV0S79",
+    "metadata": ""
+  }
+}

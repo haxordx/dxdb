@@ -1,0 +1,9 @@
+- (IBAction)LoginAction:(id)sender {
+    if (![self.UsernameTextField.text isEqualToString:@""]) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"UserDidLoginNotification"
+                                                            object:nil
+                                                          userInfo:@{@"userId" : self.UsernameTextField.text}];
+
+        [self performSegueWithIdentifier:@"showUserRingtone" sender:nil];
+    }
+}

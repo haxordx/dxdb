@@ -1,0 +1,2 @@
+PayPalRetailSDK.transactionManager().createRefundTransaction(paypalInvoiceId, transactionNumber: transactionNumber, paymentMethod: paymentMethod, callback: refundHandler)
+copy

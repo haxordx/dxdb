@@ -1,0 +1,15 @@
+// On the client:
+
+  // Subscribe this client socket to Bob-only secrets
+  // > See the `.subscribe()` documentation for more info about subscribing to records:
+  // > https://sailsjs.com/documentation/reference/web-sockets/resourceful-pub-sub/subscribe
+  io.socket.get('/subscribeToBobSecrets');
+
+  // Whenever a `user` event is received, do something.
+  io.socket.on('user', function(msg) {
+     if (msg.verb === 'published') {
+       console.log('Got a secret only Bobs can hear:', msg.theSecret);
+     }
+     // else if (msg.verb === 'created') { ... }
+     // else if (msg.verb === 'updated') { ... }
+  });

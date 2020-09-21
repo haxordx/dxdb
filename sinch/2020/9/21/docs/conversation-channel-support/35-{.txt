@@ -1,0 +1,17 @@
+{
+  "message": {
+    "choice_message": {
+      "text_message": {
+        "text": "What do you want to do?"
+      },
+      "choices": [
+        {
+          "url_message": {
+            "title": "More info",
+            "url": "https://www.sinch.com"
+          }
+        }
+      ]
+    }
+  }
+}

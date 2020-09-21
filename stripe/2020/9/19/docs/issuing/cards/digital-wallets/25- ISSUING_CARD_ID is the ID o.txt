@@ -1,0 +1,15 @@
+// ISSUING_CARD_ID is the ID of the Issuing Card you'd like to use for
+// push provisioning.
+RequestOptions requestOptions = (new RequestOptions.RequestOptionsBuilder())
+  .setStripeVersion("{{API_VERSION}}")
+  .build();
+Map<String, Object> options = new HashMap<String, Object>();
+options.put("issuing_card", "{{ISSUING_CARD_ID}}");
+EphemeralKey key = EphemeralKey.create(options, requestOptions);// ISSUING_CARD_ID is the ID of the Issuing Card you'd like to use for
+// push provisioning.
+RequestOptions requestOptions = (new RequestOptions.RequestOptionsBuilder())
+  .setStripeVersion("{{API_VERSION}}")
+  .build();
+Map<String, Object> options = new HashMap<String, Object>();
+options.put("issuing_card", "{{ISSUING_CARD_ID}}");
+EphemeralKey key = EphemeralKey.create(options, requestOptions);

@@ -1,0 +1,6 @@
+$ sails new foo
+$ cd foo
+$ sails generate model purchase
+$ sails lift
+  # You will see a prompt about database auto-migration settings.
+  # Just choose 1 (alter) and press <ENTER>.

@@ -1,0 +1,6 @@
+var $welcomeMsg = $('#signup').find('[is="welcome-msg"]');
+welcomeMsg.text('Hello, '+window.SAILS_LOCALS.me.username+'!');
+
+// Avoid using `$(...).html()` to inject untrusted data.
+// Even if you know an XSS is not possible under particular circumstances,
+// accidental escaping issues can cause really, really annoying client-side bugs.

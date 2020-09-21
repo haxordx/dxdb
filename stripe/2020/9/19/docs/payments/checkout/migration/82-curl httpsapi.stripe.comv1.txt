@@ -1,0 +1,22 @@
+curl https://api.stripe.com/v1/customers \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d email="{{STRIPE_EMAIL}}" \
+  -d source="{{STRIPE_TOKEN}}"
+
+curl https://api.stripe.com/v1/charges \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d customer="{{CUSTOMER_ID}}" \
+  -d description=T-shirt \
+  -d amount=500 \
+  -d currency=usd
+curl https://api.stripe.com/v1/customers \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d email="{{STRIPE_EMAIL}}" \
+  -d source="{{STRIPE_TOKEN}}"
+
+curl https://api.stripe.com/v1/charges \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d customer="{{CUSTOMER_ID}}" \
+  -d description=T-shirt \
+  -d amount=500 \
+  -d currency=usd

@@ -1,0 +1,9 @@
+[PayPalRetailSDK captureAuthorizedTransaction:authorizationId invoiceId:paypalInvId totalAmount:amountToCapture gratuityAmount:0 currency:invoiceCurrency completionHandler:^(PPRetailError *error, PPRetailCaptureResponse *response) {
+    if (error == NULL) {
+
+    // code to handle success or failure
+    // if error, check error and handle accordingly
+    // if success, record the capture ID for future reference
+
+}];
+copy

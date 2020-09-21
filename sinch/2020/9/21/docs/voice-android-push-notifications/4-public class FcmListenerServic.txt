@@ -1,0 +1,10 @@
+public class FcmListenerService extends FirebaseMessagingService {
+
+@Override
+public void onNewToken(String newToken) {
+// newToken supplied here is the token for `default` FCM project.
+// but the mere fact of receiving this callback informs the application
+// that ALL tokens should be re-acquired
+       instanceOfMyPushTokenRegistrationClass.registerPushToken();
+}
+}

@@ -1,0 +1,13 @@
+extension: 'swig',
+getRenderFn: function() {
+  // Import `consolidate`.
+  var cons = require('consolidate');
+  // Import `swig`.
+  var swig = require('swig');
+  // Configure `swig`.
+  swig.setDefaults({tagControls: ['{?', '?}']});
+  // Set the module that Consolidate uses for Swig.
+  cons.requires.swig = swig;
+  // Return the rendering function for Swig.
+  return cons.swig;
+}

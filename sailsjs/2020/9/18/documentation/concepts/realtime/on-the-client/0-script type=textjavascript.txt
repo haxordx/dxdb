@@ -1,0 +1,6 @@
+<script type="text/javascript" src="/js/dependencies/sails.io.js"></script>
+<script type="text/javascript">
+io.socket.get('/hello', function responseFromServer (body, response) {
+  console.log("The server responded with status " + response.statusCode + " and said: ", body);
+});
+</script>

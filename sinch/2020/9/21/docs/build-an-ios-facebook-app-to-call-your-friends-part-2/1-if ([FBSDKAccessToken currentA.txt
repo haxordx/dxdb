@@ -1,0 +1,7 @@
+if ([FBSDKAccessToken currentAccessToken]) {
+
+    [self displayPictureForUser];
+
+    ...
+
+}

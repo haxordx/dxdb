@@ -1,0 +1,8 @@
+var updatedUsers = await User.update({name:'Finn'})
+.set({
+  name:'Jake'
+})
+.fetch();
+
+sails.log(`Updated all ${updatedUsers.length} user${updatedUsers.length===1?'':'s'} named "Finn" to have the name "Jake".  Here they are now:`);
+sails.log(updatedUsers);

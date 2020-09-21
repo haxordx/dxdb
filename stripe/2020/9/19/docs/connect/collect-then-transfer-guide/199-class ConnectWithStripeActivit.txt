@@ -1,0 +1,91 @@
+class ConnectWithStripeActivity : AppCompatActivity() {
+
+    private val viewBinding: ActivityConnectWithStripeViewBinding by lazy {
+        ActivityConnectWithStripeViewBinding.inflate(layoutInflater)
+    }
+    private val httpClient = OkHttpClient()
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(viewBinding.root)
+
+        viewBinding.connectWithStripe.setOnClickListener {
+            val weakActivity = WeakReference<Activity>(this)
+            val request = Request.Builder()
+                .url(BACKEND_URL + "onboard-user")
+                .post("".toRequestBody())
+                .build()
+            httpClient.newCall(request)
+                .enqueue(object: Callback {
+                    override fun onFailure(call: Call, e: IOException) {
+                        // Request failed
+                    }
+                    override fun onResponse(call: Call, response: Response) {
+                        if (!response.isSuccessful) {
+                            // Request failed
+                        } else {
+                            val responseData = response.body?.string()
+                            val responseJson =
+                                responseData?.let { JSONObject(it) } ?: JSONObject()
+                            val url = responseJson.getString("url")
+
+                            weakActivity.get()?.let {
+                                val builder: CustomTabsIntent.Builder = CustomTabsIntent.Builder()
+                                val customTabsIntent = builder.build()
+                                customTabsIntent.launchUrl(it, Uri.parse(url))
+                            }
+                        }
+                    }
+                })
+        }
+    }
+
+    internal companion object {
+        internal const val BACKEND_URL = "https://example-backend-url.com/"
+    }
+}class ConnectWithStripeActivity : AppCompatActivity() {
+
+    private val viewBinding: ActivityConnectWithStripeViewBinding by lazy {
+        ActivityConnectWithStripeViewBinding.inflate(layoutInflater)
+    }
+    private val httpClient = OkHttpClient()
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(viewBinding.root)
+
+        viewBinding.connectWithStripe.setOnClickListener {
+            val weakActivity = WeakReference<Activity>(this)
+            val request = Request.Builder()
+                .url(BACKEND_URL + "onboard-user")
+                .post("".toRequestBody())
+                .build()
+            httpClient.newCall(request)
+                .enqueue(object: Callback {
+                    override fun onFailure(call: Call, e: IOException) {
+                        // Request failed
+                    }
+                    override fun onResponse(call: Call, response: Response) {
+                        if (!response.isSuccessful) {
+                            // Request failed
+                        } else {
+                            val responseData = response.body?.string()
+                            val responseJson =
+                                responseData?.let { JSONObject(it) } ?: JSONObject()
+                            val url = responseJson.getString("url")
+
+                            weakActivity.get()?.let {
+                                val builder: CustomTabsIntent.Builder = CustomTabsIntent.Builder()
+                                val customTabsIntent = builder.build()
+                                customTabsIntent.launchUrl(it, Uri.parse(url))
+                            }
+                        }
+                    }
+                })
+        }
+    }
+
+    internal companion object {
+        internal const val BACKEND_URL = "https://example-backend-url.com/"
+    }
+}

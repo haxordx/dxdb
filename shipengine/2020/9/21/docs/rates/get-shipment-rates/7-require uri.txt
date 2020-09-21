@@ -1,0 +1,14 @@
+require "uri"
+require "net/http"
+
+url = URI("https://api.shipengine.com/v1/shipments/se-2102034/rates")
+
+https = Net::HTTP.new(url.host, url.port);
+https.use_ssl = true
+
+request = Net::HTTP::Post.new(url)
+request["Host"] = "api.shipengine.com"
+request["API-Key"] = "__YOUR_API_KEY_HERE__"
+
+response = https.request(request)
+puts response.read_body

@@ -1,0 +1,8 @@
+{
+    "id":"1087388",
+    "sms":
+        {
+            "template":"Tu código de verificación es {{CODE}}.",
+            "interceptionTimeout":120
+        }
+}

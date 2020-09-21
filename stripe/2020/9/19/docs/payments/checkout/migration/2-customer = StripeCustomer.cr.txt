@@ -1,0 +1,21 @@
+customer = Stripe::Customer.create(
+  email: 'customer@example.com',
+  source: data['stripeToken'],
+)
+
+charge = Stripe::Charge.create(
+  customer: customer.id,
+  description: 'Custom t-shirt',
+  amount: order.amount,
+  currency: 'usd',
+)customer = Stripe::Customer.create(
+  email: 'customer@example.com',
+  source: data['stripeToken'],
+)
+
+charge = Stripe::Charge.create(
+  customer: customer.id,
+  description: 'Custom t-shirt',
+  amount: order.amount,
+  currency: 'usd',
+)

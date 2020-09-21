@@ -1,0 +1,20 @@
+- (IBAction)CreateConference:(id)sender {
+  //First time use
+  if ([defaults stringForKey:@"conferenceId"] == nil)
+    {
+    ///create a random number that will be the conferenceId
+        NSString* conferenceId = [NSString stringWithFormat:@"%d", arc4random_uniform(9000000) + 1000000];
+        ;
+        //set the share URL that will be sent to friends (make sure you create your own prefix, more about that later in the tutorial)
+        [defaults setObject:[NSString stringWithFormat:@"%@%@", @"soapp://", conferenceId] forKey:@"conferenceURL"];
+        [defaults setObject:conferenceId forKey:@"conferenceId"];
+        [defaults synchronize];
+        //invite your friends and make the invite more people visible
+        [self inviteFriends];
+        self.invite.hidden = NO;
+    }
+    else
+    {//Not first use, just connect to the conference
+        [[CallingManager sharedManager] callConference:[defaults stringForKey:@"conferenceId"]];
+    }
+}

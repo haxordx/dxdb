@@ -1,0 +1,2 @@
+curl https://api.stripe.com/v1/customers/cus_I3HcwHEKBfQLG1/tax_ids/txi_I3N2OtwgQi5dIv \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc:

@@ -1,0 +1,1 @@
+curl https://files.stripe.com/v1/files/file_BNXsUJ9i/contents -u sk_live_XXXXXXX:curl https://files.stripe.com/v1/files/file_BNXsUJ9i/contents -u sk_live_XXXXXXX:

@@ -1,0 +1,8 @@
+curl -v -X POST https://api.sandbox.paypal.com/v1/billing/subscriptions
+-H "Content-Type: application/json" 
+-H "Authorization: Bearer Access-Token" 
+-d '{
+  "plan_id": "P-5ML4271244454362WXNWU5NQ",  
+  "start_time": "2021-11-01T00:00:00Z"
+}'
+bashcopy

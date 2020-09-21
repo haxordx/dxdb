@@ -1,0 +1,21 @@
+- (void)discoverReadersAction {
+  SCPDiscoveryConfiguration *config = [[SCPDiscoveryConfiguration alloc] initWithDeviceType:SCPDeviceTypeVerifoneP400
+                                                                            discoveryMethod:SCPDiscoveryMethodInternet
+                                                                                   location:"<LOCATION_ID>"
+                                                                                  simulated:NO];
+  self.discoverCancelable = [[SCPTerminal shared] discoverReaders:config
+                                                         delegate:self
+                                                       completion:^(NSError *error) {
+    // Handle discovery error
+  }];
+}- (void)discoverReadersAction {
+  SCPDiscoveryConfiguration *config = [[SCPDiscoveryConfiguration alloc] initWithDeviceType:SCPDeviceTypeVerifoneP400
+                                                                            discoveryMethod:SCPDiscoveryMethodInternet
+                                                                                   location:"<LOCATION_ID>"
+                                                                                  simulated:NO];
+  self.discoverCancelable = [[SCPTerminal shared] discoverReaders:config
+                                                         delegate:self
+                                                       completion:^(NSError *error) {
+    // Handle discovery error
+  }];
+}

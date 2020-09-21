@@ -1,0 +1,3 @@
+// Run in NuGet package manager
+// Prerequisites: .NET 4.6.1 or later; NuGet 2.2 or later
+PM> Install-Package PayPalcopy

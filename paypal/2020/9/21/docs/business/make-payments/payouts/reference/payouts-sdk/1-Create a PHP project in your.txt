@@ -1,0 +1,3 @@
+//Create a PHP project in your directory, then run the following command to install the PayPal Payouts PHP SDK.
+composer require paypal/paypal-payouts-sdk ~1.0.0
+copy

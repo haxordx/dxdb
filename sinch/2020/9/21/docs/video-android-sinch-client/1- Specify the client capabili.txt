@@ -1,0 +1,7 @@
+// Specify the client capabilities.
+// At least one of the calling and video capabilities should be enabled.
+sinchClient.setSupportCalling(true);
+sinchClient.setSupportManagedPush(true);
+// or
+sinchClient.setSupportActiveConnectionInBackground(true);
+sinchClient.startListeningOnActiveConnection()

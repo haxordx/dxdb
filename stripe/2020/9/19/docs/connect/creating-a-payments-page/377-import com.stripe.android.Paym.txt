@@ -1,0 +1,27 @@
+import com.stripe.android.PaymentConfiguration
+
+class MyActivity: Activity() {
+    private lateinit var stripe: Stripe
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        stripe = Stripe(
+            this,
+            PaymentConfiguration.getInstance(this).publishableKey,
+            "{{CONNECTED_STRIPE_ACCOUNT_ID}}"
+        )
+    }
+}import com.stripe.android.PaymentConfiguration
+
+class MyActivity: Activity() {
+    private lateinit var stripe: Stripe
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        stripe = Stripe(
+            this,
+            PaymentConfiguration.getInstance(this).publishableKey,
+            "{{CONNECTED_STRIPE_ACCOUNT_ID}}"
+        )
+    }
+}

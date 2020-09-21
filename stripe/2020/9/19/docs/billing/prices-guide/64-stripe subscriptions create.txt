@@ -1,0 +1,8 @@
+stripe subscriptions create \
+  -d customer={{CUSTOMER_ID}} \
+  -d items[0][price]={{RECURRING_PRICE_ID}} \
+  -d add_invoice_items[0][price]={{PRICE_ID}}
+stripe subscriptions create \
+  -d customer={{CUSTOMER_ID}} \
+  -d items[0][price]={{RECURRING_PRICE_ID}} \
+  -d add_invoice_items[0][price]={{PRICE_ID}}

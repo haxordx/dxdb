@@ -1,0 +1,10 @@
+var saleid = "4ER05306238362254";
+
+paypal.sale.refund(saleid, data, function (error, refund){
+  if (error){
+    console.error(JSON.stringify(error));
+  } else {
+    console.log("Refund Sale Response");
+    console.log(JSON.stringify(refund));
+  }
+});copy

@@ -1,0 +1,42 @@
+private class MyVerificationListener implements VerificationListener {
+        @Override
+        public void onInitiated() {}
+    
+        @Override
+        public void onInitiationFailed(Exception e) {
+            hideProgressDialog();
+            if (e instanceof InvalidInputException) {
+                Toast.makeText(MainActivity.this,"Incorrect number provided",Toast.LENGTH_LONG).show();
+            } else if (e instanceof ServiceErrorException) {
+                Toast.makeText(MainActivity.this,"Sinch service error",Toast.LENGTH_LONG).show();
+            } else {
+                Toast.makeText(MainActivity.this,"Other system error, check your network state", Toast.LENGTH_LONG).show();
+            }
+        }
+    
+        @Override
+        public void onVerified() {
+            hideProgressDialog();
+            new AlertDialog.Builder(VerificationActivity.this)
+                           .setMessage("Verification Successful!")
+                           .setPositiveButton("Done", new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int whichButton) {
+                                    dialog.cancel();
+                                }
+                            })
+                            .show();
+        }
+    
+        @Override
+        public void onVerificationFailed(Exception e) {
+            hideProgressDialog();
+            if (e instanceof CodeInterceptionException) {
+                Toast.makeText(VerificationActivity.this,"Intercepting the verification call automatically failed",Toast.LENGTH_LONG).show();
+            } else if (e instanceof ServiceErrorException) {
+                Toast.makeText(VerificationActivity.this, "Sinch service error",Toast.LENGTH_LONG).show();
+            } else {
+                Toast.makeText(VerificationActivity.this,"Other system error, check your network state", Toast.LENGTH_LONG).show();
+            }
+        }
+    }
+}

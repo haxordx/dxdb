@@ -1,0 +1,28 @@
+<%- exposeLocalsToBrowser(); %>
+
+<script>
+console.log(window.SAILS_LOCALS);
+// {
+//   me: {
+//     username: 'eleven',
+//     memberSince: '1982-08-01T05:00:00.000Z'
+//   },
+//   owner: {
+//     username: 'joyce',
+//     memberSince: '1987-11-03T05:00:00.000Z'
+//   },
+//   projects: [
+//     {
+//       slug: 'my-neat-stuff-n-things',
+//       friendlyName: 'My neat stuff & things',
+//       description: 'Yet another project.'
+//     },
+//     {
+//       slug: 'kind-of-neat-stuff-but-not-that-great',
+//       friendlyName: 'Kind of neat stuff, but not that great...',
+//       description: 'I am so sick and tired of these project. <script>alert(\'attack\');</script>'
+//     }
+//   ],
+//   _csrf: 'oon95Uac-wKfWQKC5pHx1rP3HsiN9tjqGMyE'
+// }
+</script>

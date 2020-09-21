@@ -1,0 +1,14 @@
+curl https://api.stripe.com/v1/accounts \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d country=US \
+  -d type=custom \
+  -d "requested_capabilities[]"=card_payments \
+  -d "requested_capabilities[]"=transfers \
+  -d "business_profile[mcc]"=5734
+curl https://api.stripe.com/v1/accounts \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d country=US \
+  -d type=custom \
+  -d "requested_capabilities[]"=card_payments \
+  -d "requested_capabilities[]"=transfers \
+  -d "business_profile[mcc]"=5734

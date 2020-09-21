@@ -1,0 +1,2 @@
+GET endpoint/v1/reporting/transactions
+jsoncopy

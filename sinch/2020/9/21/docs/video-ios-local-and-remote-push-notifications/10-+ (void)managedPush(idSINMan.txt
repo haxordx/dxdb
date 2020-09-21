@@ -1,0 +1,13 @@
++ (void)managedPush:(id<SINManagedPush>)unused
+didReceiveIncomingPushWithPayload:(NSDictionary *)payload
+            forType:(NSString *)pushType {
+
+  id<SINNotificationResult> result = [SINPushHelper queryPushNotificationPayload:payload];
+  if ([result isCall]) {
+    NSLog(@"%@", result.callResult.headers);
+
+    // You can then invoke relayRemotePushNotification:userInfo
+    // on a SINClient instance to further process the incoming call.
+    ...
+  }
+}

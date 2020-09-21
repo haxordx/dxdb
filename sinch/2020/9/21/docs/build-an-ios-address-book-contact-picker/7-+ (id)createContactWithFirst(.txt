@@ -1,0 +1,10 @@
++ (id)createContactWithFirst:(NSString *)firstName Last:(NSString *)lastName
+                MobileNumber:(NSString *)mobileNumber HomeNumber:(NSString *)homeNumber
+{
+    CContact *newContact = [[self alloc] init];
+    [newContact setFirstName:firstName];
+    [newContact setLastName:lastName];
+    [newContact setMobileNumber:mobileNumber];
+    [newContact setHomeNumber:homeNumber];
+    return newContact;
+}

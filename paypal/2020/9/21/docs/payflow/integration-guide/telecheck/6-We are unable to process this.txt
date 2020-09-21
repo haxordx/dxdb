@@ -1,0 +1,3 @@
+We are unable to process this transaction with the payment information provided.
+Please use a different form of payment at this time.
+copy

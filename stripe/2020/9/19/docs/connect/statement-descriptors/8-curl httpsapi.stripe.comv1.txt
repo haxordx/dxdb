@@ -1,0 +1,16 @@
+curl https://api.stripe.com/v1/accounts \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d type=custom \
+  -d country=US \
+  -d business_type=company \
+  -d "requested_capabilities[]"=card_payments \
+  -d "requested_capabilities[]"=transfers \
+  -d "settings[card_payments][statement_descriptor_prefix]"=RUNCLUB
+curl https://api.stripe.com/v1/accounts \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d type=custom \
+  -d country=US \
+  -d business_type=company \
+  -d "requested_capabilities[]"=card_payments \
+  -d "requested_capabilities[]"=transfers \
+  -d "settings[card_payments][statement_descriptor_prefix]"=RUNCLUB

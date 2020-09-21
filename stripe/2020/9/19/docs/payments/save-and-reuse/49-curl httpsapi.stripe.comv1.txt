@@ -1,0 +1,10 @@
+curl https://api.stripe.com/v1/payment_methods \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d customer="{{CUSTOMER_ID}}" \
+  -d type=card \
+  -G
+curl https://api.stripe.com/v1/payment_methods \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d customer="{{CUSTOMER_ID}}" \
+  -d type=card \
+  -G

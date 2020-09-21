@@ -1,0 +1,56 @@
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+//1. Import the PayPal SDK client that was created in `Set up Server-Side SDK`.
+using Samples;
+using PayPalCheckoutSdk.Orders;
+using BraintreeHttp;
+
+namespace Samples.AuthorizeIntentExamples
+{
+  public class AuthorizeOrderSample
+  {
+
+    //2. Set up your server to receive a call from the client
+    //Use this function to perform authorization on the approved order.
+    public async static Task<HttpResponse> AuthorizeOrder(string OrderId, bool debug = false)
+    {
+      var request = new OrdersAuthorizeRequest(OrderId);
+      request.Prefer("return=representation");
+      request.RequestBody(new OrderActionRequest());
+      //3. Call PayPal to authorization an order
+      var response = await PayPalClient.client().Execute(request);
+      //4. Save the authorization ID to your database. Implement logic to save the authorization to your database for future reference.
+      if (debug)
+      {
+        var result = response.Result<Order>();
+        Console.WriteLine("Status: {0}", result.Status);
+        Console.WriteLine("Order Id: {0}", result.Id);
+        Console.WriteLine("Authorization Id: {0}",
+                        result.PurchaseUnits[0].Payments.Authorizations[0].Id);
+        Console.WriteLine("Intent: {0}", result.Intent);
+        Console.WriteLine("Links:");
+        foreach (LinkDescription link in result.Links)
+        {
+            Console.WriteLine("\t{0}: {1}\tCall Type: {2}", link.Rel,
+                                                            link.Href,
+                                                            link.Method);
+        }
+        AmountWithBreakdown amount = result.PurchaseUnits[0].Amount;
+        Console.WriteLine("Buyer:");
+        Console.WriteLine("\tEmail Address: {0}", result.Payer.EmailAddress);
+        Console.WriteLine("Response JSON: \n {0}",
+                                    PayPalClient.ObjectToJSONString(result));
+      }
+
+      return response;
+    }
+
+    static void Main(string[] args)
+    {
+      string OrderId = " REPLACE-WITH-VALID-APPROVED-ORDER-ID";
+      AuthorizeOrder(OrderId, true).Wait();
+    }
+  }
+}
+copy

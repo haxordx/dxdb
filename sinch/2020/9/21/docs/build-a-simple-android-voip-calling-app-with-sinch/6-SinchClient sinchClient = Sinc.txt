@@ -1,0 +1,7 @@
+SinchClient sinchClient = Sinch.getSinchClientBuilder()
+        .context(this)
+        .userId("current-user-id")
+        .applicationKey("app-key")
+        .applicationSecret("app-secret")
+        .environmentHost("clientapi.sinch.com")
+        .build();

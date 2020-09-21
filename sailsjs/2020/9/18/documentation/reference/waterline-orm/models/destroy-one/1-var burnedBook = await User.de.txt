@@ -1,0 +1,6 @@
+var burnedBook = await User.destroyOne({id: 4})
+if (burnedBook) {
+  sails.log('Deleted book with `id: 4`.');
+} else {
+  sails.log('The database does not have a book with `id: 4`.');
+}

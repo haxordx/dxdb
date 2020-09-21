@@ -1,0 +1,8 @@
+// make sure you have created a SinchClient
+if (SinchHelpers.isSinchPushPayload(remoteMessage.getData())) {
+NotificationResult result = sinchClient.relayRemotePushNotificationPayload(remoteMessage.getData());
+  if (result.isCall()) {
+    CallNotificationResult callResult = result.getCallResult();
+    Map<String, String> customHeaders = callResult.getHeaders());
+  }
+}

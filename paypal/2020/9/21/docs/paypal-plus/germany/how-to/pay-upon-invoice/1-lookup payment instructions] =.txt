@@ -1,0 +1,31 @@
+lookup payment instructions] => Array
+  (
+      [reference_number] => 7FC35911MD7697828
+      [instruction_type] => PAY_UPON_INVOICE
+      [recipient_banking_instruction] => Array
+          (
+    [bank_name] => Deutsche Bank
+    [account_holder_name] => PayPal Europe
+    [international_bank_account_number] => DE07120700888000XXXXXX
+    [bank_identifier_code] => DEUTDEDBPAL
+          )
+
+      [amount] => Array
+          (
+      [value] => 4.99
+      [currency] => EUR
+          )
+
+      [payment_due_date] => 2015-09-24
+      [links] => Array
+          (
+[0] => Array
+    (
+        [href] => https://api.paypal.com/v1/payments/payment/PAY-1VG08356YH269600PKXOBRAY/payment-instruction
+        [rel] => self
+        [method] => GET
+    )
+
+          )
+)
+copy

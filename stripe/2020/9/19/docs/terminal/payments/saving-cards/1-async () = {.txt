@@ -1,0 +1,15 @@
+async () => {
+  const result = await terminal.readReusableCard()
+  if (result.error) {
+    // Placeholder for handling result.error
+  } else {
+    // Placeholder for sending result.payment_method.id to your backend.
+  }
+}async () => {
+  const result = await terminal.readReusableCard()
+  if (result.error) {
+    // Placeholder for handling result.error
+  } else {
+    // Placeholder for sending result.payment_method.id to your backend.
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "requestEnvelope": {
+    "errorLanguage": "en_US",       # Language of returned errors
+    "detailLevel": "ReturnAll"
+  },
+  "invoiceID": "idOfInvoice"
+}
+copy

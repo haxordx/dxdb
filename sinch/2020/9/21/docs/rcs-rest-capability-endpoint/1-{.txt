@@ -1,0 +1,13 @@
+{
+    "at": "2020-03-03T10:55:10.624+0000",
+    "msisdn": "447291965064",
+    "capabilities": [
+        "callComposer",
+        "videoCall",
+        "chatBotCommunication",
+        "fileTransfer",
+        "geolocationPush",
+        "chat"
+    ],
+    "rcs_enabled": true
+}

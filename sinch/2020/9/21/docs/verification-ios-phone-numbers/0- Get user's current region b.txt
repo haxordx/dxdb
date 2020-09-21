@@ -1,0 +1,7 @@
+// Get user's current region by carrier info
+NSString* defaultRegion = [SINDeviceRegion currentCountryCode];
+
+NSError *parseError = nil;
+id<SINPhoneNumber> phoneNumber = [SINPhoneNumberUtil() parse:@"<user input>"
+                                               defaultRegion:defaultRegion
+                                                       error:&parseError];

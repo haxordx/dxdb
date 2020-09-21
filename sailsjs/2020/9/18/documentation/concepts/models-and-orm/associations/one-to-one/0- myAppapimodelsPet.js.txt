@@ -1,0 +1,15 @@
+// myApp/api/models/Pet.js
+module.exports = {
+  attributes: {
+    name: {
+      type: 'string'
+    },
+    color: {
+      type: 'string'
+    },
+    owner:{
+      model:'user',
+      unique: true
+    }
+  }
+}

@@ -1,0 +1,11 @@
+// Set the vault completion handler before calling beginPayment to receive vault record with id
+currentTransaction.setVaultCompletedHandler(new TransactionContext.VaultCompletedCallback()
+{
+    @Override
+    public void vaultCompleted(RetailSDKException error, VaultRecord record)
+    {
+        // handle the error or success accordingly
+        ChargeActivity.this.vaultCompleted(error, record);
+    }
+});
+copy

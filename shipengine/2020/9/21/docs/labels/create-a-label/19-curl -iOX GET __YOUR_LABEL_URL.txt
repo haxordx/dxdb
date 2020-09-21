@@ -1,0 +1,1 @@
+curl -iOX GET __YOUR_LABEL_URL_HERE__

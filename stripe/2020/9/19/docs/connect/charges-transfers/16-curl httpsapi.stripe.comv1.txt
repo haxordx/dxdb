@@ -1,0 +1,6 @@
+curl https://api.stripe.com/v1/transfers/{TRANSFER_ID}/reversals \
+  -u {PLATFORM_SECRET_KEY}: \
+  -d amount=500
+curl https://api.stripe.com/v1/transfers/{TRANSFER_ID}/reversals \
+  -u {PLATFORM_SECRET_KEY}: \
+  -d amount=500

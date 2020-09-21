@@ -1,0 +1,20 @@
+// In your app, display the discovered reader(s) to the user.
+// Call `connectReader` with the selected reader.
+[[SCPTerminal shared] connectReader:selectedReader
+                         completion:^(SCPReader *reader, NSError *error) {
+    if (reader != nil) {
+        NSLog(@"Successfully connected to reader: %@", reader);
+    } else {
+        NSLog(@"connectReader failed: %@", error);
+    }
+}];
+// In your app, display the discovered reader(s) to the user.
+// Call `connectReader` with the selected reader.
+[[SCPTerminal shared] connectReader:selectedReader
+                         completion:^(SCPReader *reader, NSError *error) {
+    if (reader != nil) {
+        NSLog(@"Successfully connected to reader: %@", reader);
+    } else {
+        NSLog(@"connectReader failed: %@", error);
+    }
+}];

@@ -1,0 +1,7 @@
+'/foo/bar': {
+  action: 'foo/bar',
+  cors: {
+    allowOrigins: ['http://foobar.com','https://owlhoot.com'],
+    allowRequestMethods: 'GET,PUT,POST,OPTIONS,HEAD'
+  }
+}

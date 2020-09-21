@@ -1,0 +1,5 @@
+- (void)call:(id<SINCall>)call shouldSendPushNotifications:(NSArray *) pushPairs {
+    // Send payload and push data to application server
+    // which should communicate with Apple Push Notification Service
+    // to send push notifications.
+}

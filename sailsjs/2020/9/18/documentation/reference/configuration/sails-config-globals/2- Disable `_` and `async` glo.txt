@@ -1,0 +1,3 @@
+// Disable `_` and `async` globals.
+_: false,
+async: false,

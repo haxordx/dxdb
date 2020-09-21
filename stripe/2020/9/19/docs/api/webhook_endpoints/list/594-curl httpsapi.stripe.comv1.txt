@@ -1,0 +1,3 @@
+curl https://api.stripe.com/v1/webhook_endpoints/we_1HTFxc2eZvKYlo2C27oZ7ZYZ \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -X DELETE

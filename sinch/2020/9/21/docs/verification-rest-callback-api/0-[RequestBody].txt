@@ -1,0 +1,11 @@
+[RequestBody]
+{
+    string - id
+    string - event
+    string - method
+    identity - identity
+    money - price
+    string? - reference
+    string? - custom
+    string[]? - acceptLanguage
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<reportingEngineResponse>
+   <baseResponse>
+      <responseCode>113</responseCode>
+      <responseMsg>Unknown template requested</responseMsg>
+   </baseResponse>
+</reportingEngineResponse>
+xmlcopy

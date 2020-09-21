@@ -1,0 +1,4 @@
+curl --request GET \
+  --url 'https://us.sms.api.sinch.com/xms/v1/service_plan_id/batches?page_size=30' \
+  --header 'accept: application/json' \
+  --header 'authorization: Bearer {token}'

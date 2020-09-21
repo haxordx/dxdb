@@ -1,0 +1,4 @@
+curl -X GET https://api.sandbox.paypal.com/retail/merchant/v1/status \
+  -H 'authorization: Bearer {access_token_of_merchant}' \
+  -H 'content-type: application/json'
+copy

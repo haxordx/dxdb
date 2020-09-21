@@ -1,0 +1,4 @@
+$http.put('/employee/7/involvedInPurchases/47')
+.then(function (purchases) {
+  console.log(purchases);
+});

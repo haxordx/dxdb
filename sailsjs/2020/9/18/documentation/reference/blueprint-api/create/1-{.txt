@@ -1,0 +1,5 @@
+{
+  "name": "Applejack",
+  "hobby": "pickin",
+  "involvedInPurchases": [13,25]
+}

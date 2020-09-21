@@ -1,0 +1,9 @@
+$headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
+$headers.Add("Host", "api.shipengine.com")
+$headers.Add("API-Key", "__YOUR_API_KEY_HERE__")
+$headers.Add("Content-Type", "application/json")
+
+$body = "{`n  `"label_ids`": [`"se-29602037`", `"se-29544722`", `"se-29475869`"]`n}"
+
+$response = Invoke-RestMethod 'https://api.shipengine.com/v1/manifests' -Method 'POST' -Headers $headers -Body $body
+$response | ConvertTo-Json

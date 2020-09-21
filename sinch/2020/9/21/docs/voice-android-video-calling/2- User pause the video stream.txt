@@ -1,0 +1,2 @@
+// User pause the video stream
+call.pauseVideo();

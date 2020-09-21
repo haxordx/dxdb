@@ -1,0 +1,2 @@
+$ sails generate action user/signup --no-actions2
+info: Created a traditional (req,res) controller action, but as a standalone file

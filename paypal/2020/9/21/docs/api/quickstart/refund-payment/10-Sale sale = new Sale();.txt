@@ -1,0 +1,9 @@
+Sale sale = new Sale();
+sale.setId("7DY409201T7922549");
+
+try {
+  // Refund sale
+  sale.refund(apiContext, refund);
+} catch (PayPalRESTException e) {
+  System.err.println(e.getDetails());
+}copy

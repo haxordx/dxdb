@@ -1,0 +1,6 @@
+curl https://api.stripe.com/v1/subscription_items/si_CFhSgkWb0MyTWg \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d "billing_thresholds[usage_gte]"=2000
+curl https://api.stripe.com/v1/subscription_items/si_CFhSgkWb0MyTWg \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d "billing_thresholds[usage_gte]"=2000

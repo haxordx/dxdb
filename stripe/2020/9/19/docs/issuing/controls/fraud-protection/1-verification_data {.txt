@@ -1,0 +1,15 @@
+"verification_data": {
+  "address_line1_check": "not_provided",
+  "address_postal_code_check": "match",
+  "cvc_check": "match",
+  "three_d_secure": {
+    "result": "authenticated"
+  }
+},"verification_data": {
+  "address_line1_check": "not_provided",
+  "address_postal_code_check": "match",
+  "cvc_check": "match",
+  "three_d_secure": {
+    "result": "authenticated"
+  }
+},

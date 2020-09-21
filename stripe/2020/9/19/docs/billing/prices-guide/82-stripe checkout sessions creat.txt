@@ -1,0 +1,18 @@
+stripe checkout sessions create \
+  -d customer={{CUSTOMER_ID}} \
+  -d payment_method_types[]=card \
+  -d line_items[0][price]={{PRICE_ID_1}} \
+  -d line_items[0][quantity]=1 \
+  -d line_items[1][price]={{PRICE_ID_2}} \
+  -d line_items[1][quantity]=1 \
+  -d success_url="https://example.com/success" \
+  -d cancel_url="https://example.com/cancel"
+stripe checkout sessions create \
+  -d customer={{CUSTOMER_ID}} \
+  -d payment_method_types[]=card \
+  -d line_items[0][price]={{PRICE_ID_1}} \
+  -d line_items[0][quantity]=1 \
+  -d line_items[1][price]={{PRICE_ID_2}} \
+  -d line_items[1][quantity]=1 \
+  -d success_url="https://example.com/success" \
+  -d cancel_url="https://example.com/cancel"

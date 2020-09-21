@@ -1,0 +1,4 @@
+PayPalRetailSDK.transactionManager().startReplayOfflineTxns(callback: { (error, offlinePaymentInfo) in
+    // Code to handle success or failure of the offline replay
+})
+copy

@@ -1,0 +1,6 @@
+curl --request POST \
+  --url https://us.sms.api.sinch.com/xms/v1/service_plan_id/batches \
+  --header 'accept: application/json' \
+  --header 'authorization: Bearer {token}' \
+  --header 'content-type: application/json' \
+  --data '{"type":"mt_text","expire_at":"3 days after send_at","flash_message":false}'

@@ -1,0 +1,9 @@
+# Payment id obtained when creating the payment (following redirect)
+payment = Payment.find("PAY-28103131SP722473WKFD7VGQ")
+
+# Execute payment using payer_id obtained when creating the payment (following redirect)
+if payment.execute({"payer_id": "DUFRQ8GWYMJXC"}):
+  print("Payment execute successfully")
+  authid = payment.transactions[0].related_resources[0].authorization.id
+else:
+  print(payment.error)copy

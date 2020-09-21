@@ -1,0 +1,12 @@
+ // Request with minimum fields
+
+ {
+   "purchase_context": {
+     "purchase_units": [{
+       "payee": {
+         "merchant_id":"xxxxxxxxxxxxxxx"
+       }
+     }]
+   }
+ }
+shcopy

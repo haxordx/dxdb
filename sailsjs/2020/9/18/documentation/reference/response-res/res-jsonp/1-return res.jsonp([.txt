@@ -1,0 +1,9 @@
+return res.jsonp([
+  {
+    name: 'Thelma',
+    id: 1
+  }, {
+    name: 'Leonardo'
+    id: 2
+  }
+]);

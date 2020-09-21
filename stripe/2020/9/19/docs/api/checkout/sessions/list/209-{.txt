@@ -1,0 +1,37 @@
+{
+  "object": "list",
+  "url": "/v1/checkout/sessions/cs_test_vPesjGa0GMNI2pTFiMreOPPYokILKrpmkC3By5GZvtONb5DT1FeTntby/line_items",
+  "has_more": false,
+  "data": [
+    {
+      "id": "li_1HTFwe2eZvKYlo2CnnVLV4Jp",
+      "object": "item",
+      "amount_subtotal": 0,
+      "amount_total": 0,
+      "currency": "usd",
+      "description": "Blue banana",
+      "price": {
+        "id": "price_1HS0Qf2eZvKYlo2Cyr72xAEg",
+        "object": "price",
+        "active": true,
+        "billing_scheme": "per_unit",
+        "created": 1600261929,
+        "currency": "usd",
+        "livemode": false,
+        "lookup_key": null,
+        "metadata": {},
+        "nickname": null,
+        "product": "prod_I24YxTaM0KePom",
+        "recurring": null,
+        "tiers_mode": null,
+        "transform_quantity": null,
+        "type": "one_time",
+        "unit_amount": 2000,
+        "unit_amount_decimal": "2000"
+      },
+      "quantity": 1
+    },
+    {...},
+    {...}
+  ]
+}

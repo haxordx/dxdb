@@ -1,0 +1,2 @@
+await Something.removeFromCollection(parentId, association)
+.members(childIds);

@@ -1,0 +1,26 @@
+{
+  "merchant_id": "CG5RZJV4NR5P4",
+  "tracking_id": "1537989077589",
+  "products": [
+    {
+      "name": "PPCP_CUSTOM"
+    }
+  ],
+  "payments_receivable": true,
+  "primary_email_confirmed": true,
+  "products.vetting status": "SUBSCRIBED",
+  "capabilities[name==CUSTOM_CARD_PROCESSING].status": "ACTIVE",
+  "capabilities[name==CUSTOM_CARD_PROCESSING].limits": "undefined",
+  "oauth_integrations": [{
+    "integration_type": "OAUTH_THIRD_PARTY",
+    "integration_method": "PAYPAL",
+    "oauth_third_party": [
+      {
+        "partner_client_id": "Af1bGDNgFBtbJvzEkG25zt4SoNQQ3ustiLm84GWXxe8nq_HE_0wCQ9SH8M1ScmSBURBIzPiCjr5gu-Dq",
+        "merchant_client_id": "AQ7u3fJkUH4cdCEBidsh5U_F1RQCGjglJQdNEEsXCzvQsGsS5MmC8Dk7_ug_IlkUASJezaGqQxQQfVhQ",
+        "scopes": ["https://uri.paypal.com/services/payments/realtimepayment", "https://uri.paypal.com/services/payments/refund", "https://uri.paypal.com/services/payments/payment/authcapture"]
+      }
+    ]
+  }]
+}
+jsoncopy

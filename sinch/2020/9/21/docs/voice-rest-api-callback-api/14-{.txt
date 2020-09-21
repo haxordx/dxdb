@@ -1,0 +1,29 @@
+{
+    "name"   : "RunMenu",
+    "barge"  : true
+    "menus"  :
+    [
+        {
+            "id"         : "main",
+            "mainPrompt" : "#tts[Welcome to the main menu. Press 1 for support or 2 to continue.]",
+            "options"    :
+            [
+                {
+                    "dtmf"   : "1",
+                    "action" : "return(support)"
+                },
+                {
+                    "dtmf"   : "2",
+                    "action" : "menu(sub)"
+                }
+            ]
+        },
+        {
+            "id"         : "sub",
+            "mainPrompt" : "#tts[Welcome to the sub menu. Enter your 4-digit PIN.];#href[http://your.host.com/media_file.mp3]",
+            "repeatPrompt" : "#tts[Enter your 4-digit PIN.];http://your.host.com/media_file.mp3",
+            "repeats"   : 3,
+            "maxDigits" : 4
+        }
+    ]
+}

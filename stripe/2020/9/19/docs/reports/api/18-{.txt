@@ -1,0 +1,48 @@
+{
+  id: "frr_123",
+  object: "reporting.report_run",
+  livemode: true,
+  report_type: "balance_change_from_activity.itemized.3",
+  parameters: {
+    columns: [ "created", "reporting_category", "net" ],
+    interval_start: 1577865600,      # 2020-01-01 00:00 PST
+    interval_end: 1580544000,        # 2020-02-01 00:00 PST
+    timezone: "America/Los_Angeles",
+  },
+  created: 1580832900, # 2020-02-04 08:15 PST
+  status: "succeeded",
+  succeeded_at: 1580832960, # 2020-02-04 08:16 PST
+  result: {
+    id: "file_xs8vrJzC",
+    object: "file",
+    url: "https://files.stripe.com/v1/files/file_xs8vrJzC/contents",
+    created: 1580832960, # 2020-02-04 08:16 PST
+    purpose: "report_run",
+    size: 53075,
+    type: "csv"
+  },
+}
+{
+  id: "frr_123",
+  object: "reporting.report_run",
+  livemode: true,
+  report_type: "balance_change_from_activity.itemized.3",
+  parameters: {
+    columns: [ "created", "reporting_category", "net" ],
+    interval_start: 1577865600,      # 2020-01-01 00:00 PST
+    interval_end: 1580544000,        # 2020-02-01 00:00 PST
+    timezone: "America/Los_Angeles",
+  },
+  created: 1580832900, # 2020-02-04 08:15 PST
+  status: "succeeded",
+  succeeded_at: 1580832960, # 2020-02-04 08:16 PST
+  result: {
+    id: "file_xs8vrJzC",
+    object: "file",
+    url: "https://files.stripe.com/v1/files/file_xs8vrJzC/contents",
+    created: 1580832960, # 2020-02-04 08:16 PST
+    purpose: "report_run",
+    size: 53075,
+    type: "csv"
+  },
+}

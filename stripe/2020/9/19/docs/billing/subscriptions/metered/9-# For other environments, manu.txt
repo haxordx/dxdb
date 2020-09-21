@@ -1,0 +1,5 @@
+# For other environments, manually install the following JARs:
+# - The Stripe JAR from https://github.com/stripe/stripe-java/releases/latest
+# - Google Gson from https://github.com/google/gson# For other environments, manually install the following JARs:
+# - The Stripe JAR from https://github.com/stripe/stripe-java/releases/latest
+# - Google Gson from https://github.com/google/gson

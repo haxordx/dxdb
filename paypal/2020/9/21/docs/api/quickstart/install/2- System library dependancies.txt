@@ -1,0 +1,10 @@
+// System library dependancies: libssl-dev, libffi-dev
+
+// Debian systems
+apt-get install libssl-dev libffi-dev
+
+// easy_install method
+easy_install paypalrestsdk
+
+// pip method
+pip install paypalrestsdkcopy

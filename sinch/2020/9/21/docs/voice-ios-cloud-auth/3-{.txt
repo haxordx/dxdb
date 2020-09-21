@@ -1,0 +1,7 @@
+{
+  "iss": "//rtc.sinch.com/applications/a32e5a8d-f7d8-411c-9645-9038e8dd051d",
+  "sub": "//rtc.sinch.com/applications/a32e5a8d-f7d8-411c-9645-9038e8dd051d/users/foo",
+  "iat": 1514862245,
+  "exp": 1514862845,
+  "nonce":"6b438bda-2d5c-4e8c-92b0-39f20a94b34e"
+}

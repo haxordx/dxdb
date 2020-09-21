@@ -1,0 +1,9 @@
+$ sails inspect
+
+info: Running app in inspect mode...
+info: In Google Chrome, go to chrome://inspect for interactive debugging.
+info: For other options, see the link below.
+info: ( to exit, type <CTRL>+<C> )
+
+Debugger listening on ws://127.0.0.1:9229/7f984b04-b070-4497-bd15-056261a37f7c
+For help see https://nodejs.org/en/docs/inspector

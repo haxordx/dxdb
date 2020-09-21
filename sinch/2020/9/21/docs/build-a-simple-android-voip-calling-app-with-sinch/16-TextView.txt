@@ -1,0 +1,7 @@
+<TextView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"        
+    android:id="@+id/callState"
+    android:layout_above="@+id/button"
+    android:gravity="center_horizontal"
+    android:layout_marginBottom="30dp"/>

@@ -1,0 +1,19 @@
+<form action="/subscribe" method="POST">
+  <script
+    src="https://checkout.stripe.com/checkout.js"
+    class="stripe-button"
+    data-key="pk_test_TYooMQauvdEDq54NiTphI7jx"
+    data-name="Cleaning Service"
+    data-description="Charged after your home is spotless"
+    data-amount="2000">
+  </script>
+</form><form action="/subscribe" method="POST">
+  <script
+    src="https://checkout.stripe.com/checkout.js"
+    class="stripe-button"
+    data-key="pk_test_TYooMQauvdEDq54NiTphI7jx"
+    data-name="Cleaning Service"
+    data-description="Charged after your home is spotless"
+    data-amount="2000">
+  </script>
+</form>

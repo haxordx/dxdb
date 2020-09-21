@@ -1,0 +1,4 @@
+return res.view('pages/some-page-with-a-form-on-it', {
+  formEndpoint: sails.getRouteFor('SomeotherController.someAction'),
+  // ...
+});

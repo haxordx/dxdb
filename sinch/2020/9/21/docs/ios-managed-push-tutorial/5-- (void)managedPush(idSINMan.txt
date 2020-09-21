@@ -1,0 +1,5 @@
+- (void)managedPush:(id<SINManagedPush>)unused
+    didReceiveIncomingPushWithPayload:(NSDictionary *)payload
+                              forType:(NSString *)pushType {
+
+}

@@ -1,0 +1,10 @@
+TIMESTAMP=2013%2d08%2d13T20%3a16%3a56Z
+  CORRELATIONID=2499856319532
+  &ACK=Failure
+  &L_ERRORCODE0=15004
+  &L_SHORTMESSAGE0=Gateway%20Decline
+  &L_LONGMESSAGE0=This%20transaction%20cannot%20be%20processed%2e%20Please%20enter%20a%20valid%20Credit%20Card%20Verification%20Number%2e
+  &L_SEVERITYCODE0=Error
+  &VERSION=100
+  &BUILD=7161310
+copy

@@ -1,0 +1,9 @@
+NotificationResult result = sinchService.relayRemotePushNotificationPayload(payload);
+// handle result, e.g. show a notification for a missed call:
+if (result.isValid() && result.isCall()) {
+    CallNotificationResult callResult = result.getCallResult();
+    if (callResult.isCallCanceled()) {
+        // user-defined method to show notification
+        createNotification(callResult.getRemoteUserId());
+    }
+}

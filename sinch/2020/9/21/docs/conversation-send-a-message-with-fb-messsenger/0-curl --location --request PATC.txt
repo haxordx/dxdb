@@ -1,0 +1,14 @@
+curl --location --request PATCH 'https://eu.conversation.api.sinch.com/v1beta/projects/{project_id}/apps' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer <access token>' \
+--data-raw '{
+    "channel_credentials": [
+        {
+            "channel": "MESSENGER",
+            "static_token": {
+                "token": "{{YOUR_FB_PAGE_MESSENGER_TOKEN}}"
+            }
+        }
+    ],
+    "display_name": "Messages"
+}'

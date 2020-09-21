@@ -1,0 +1,52 @@
+{
+  "id": "tu_1HTGI42eZvKYlo2CzBQ2u60R",
+  "object": "topup",
+  "amount": 1000,
+  "balance_transaction": null,
+  "created": 123456789,
+  "currency": "usd",
+  "description": "Top-up description",
+  "expected_availability_date": 123456789,
+  "failure_code": null,
+  "failure_message": null,
+  "livemode": false,
+  "metadata": {
+    "order_id": "6735"
+  },
+  "source": {
+    "id": "src_1HTGI42eZvKYlo2CC7Z5iXCX",
+    "object": "source",
+    "ach_debit": {
+      "country": "US",
+      "type": "individual",
+      "routing_number": "110000000",
+      "bank_name": "STRIPE TEST BANK",
+      "fingerprint": "5Wh4KBcfDrz5IOnx",
+      "last4": "6789"
+    },
+    "amount": null,
+    "client_secret": "src_client_secret_bhXFpv2cvFU0Kpf0Md2t5gf9",
+    "created": 1600561228,
+    "currency": "usd",
+    "flow": "code_verification",
+    "livemode": false,
+    "metadata": {},
+    "owner": {
+      "address": null,
+      "email": "jenny.rosen@example.com",
+      "name": "Jenny Rosen",
+      "phone": null,
+      "verified_address": null,
+      "verified_email": null,
+      "verified_name": null,
+      "verified_phone": null
+    },
+    "statement_descriptor": null,
+    "status": "pending",
+    "type": "ach_debit",
+    "usage": "reusable"
+  },
+  "statement_descriptor": null,
+  "status": "pending",
+  "transfer_group": null
+}

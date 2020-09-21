@@ -1,0 +1,20 @@
+public class PushService {
+    private static PushService _context;
+    public static PushService Context() {
+        if (_context == null) {
+            _context = new PushService();
+        }
+        return _context;
+    }
+    public PushBroker Broker { get; set; }
+    public PushService() {
+        Broker = new PushBroker();
+        var path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"yourfile");
+        var appleCert = File.ReadAllBytes(path);
+        //its super important that you set the environment your self to
+        //clientapi and disable certificate validation
+        Broker.RegisterAppleService(
+             new ApplePushChannelSettings(false,
+                appleCert, "yourpassword", true));
+    }
+}

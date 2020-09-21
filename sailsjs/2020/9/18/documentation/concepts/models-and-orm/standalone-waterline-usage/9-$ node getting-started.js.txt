@@ -1,0 +1,14 @@
+$ node getting-started.js
+[ { pets:
+     [ { breed: 'beagle',
+         type: 'dog',
+         name: 'Astro',
+         owner: 1,
+         createdAt: Thu May 07 2015 20:44:37 GMT+1000 (AEST),
+         updatedAt: Thu May 07 2015 20:44:37 GMT+1000 (AEST),
+         id: 1 } ],
+    firstName: 'Neil',
+    lastName: 'Armstrong',
+    createdAt: Thu May 07 2015 20:44:37 GMT+1000 (AEST),
+    updatedAt: Thu May 07 2015 20:44:37 GMT+1000 (AEST),
+    id: 1 } ]

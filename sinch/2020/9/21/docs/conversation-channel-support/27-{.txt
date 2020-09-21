@@ -1,0 +1,12 @@
+{
+    "message": {
+        "location_message": {
+            "title": "Location Message",
+            "label": "Enriching Engagement",
+            "coordinates": {
+                "latitude": 55.610479,
+                "longitude": 13.002873
+            }
+        }
+    }
+}

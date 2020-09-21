@@ -1,0 +1,2 @@
+var dgFlowMini = new PAYPAL.apps.DGFlowMini({trigger: 'submitBtn'});
+copy

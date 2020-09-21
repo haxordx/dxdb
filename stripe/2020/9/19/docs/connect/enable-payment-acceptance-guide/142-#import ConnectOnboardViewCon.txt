@@ -1,0 +1,129 @@
+#import "ConnectOnboardViewController.h"
+
+#import <SafariServices/SafariServices.h>
+
+@interface ConnectOnboardViewController () <SFSafariViewControllerDelegate>
+// ...
+@end
+
+@implementation ConnectOnboardViewController 
+
+// ...
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+
+    UIButton *connectWithStripeButton = [UIButton buttonWithType:UIButtonTypeSystem];
+    [connectWithStripeButton setTitle:@"Connect with Stripe" forState:UIControlStateNormal];
+    [connectWithStripeButton addTarget:self action:@selector(_didSelectConnectWithStripe) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:connectWithStripeButton];
+
+    // ...
+}
+
+- (void)_didSelectConnectWithStripe {
+  NSURL *url = [NSURL URLWithString:[kBackendAPIBaseURL stringByAppendingPathComponent:@"onboard-user"]];
+  NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+  request.HTTPMethod = @"POST";
+  
+  NSURLSessionTask *task = [[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+      if (data != nil) {
+          NSError *jsonError = nil;
+          id json = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
+          
+          if (json != nil && [json isKindOfClass:[NSDictionary class]]) {
+              NSDictionary *jsonDictionary = (NSDictionary *)json;
+              NSURL *accountURL = [NSURL URLWithString:jsonDictionary[@"url"]];
+              if (accountURL != nil) {
+                  SFSafariViewController *safariViewController = [[SFSafariViewController alloc] initWithURL:accountURL];
+                  safariViewController.delegate = self;
+                  
+                  dispatch_async(dispatch_get_main_queue(), ^{
+                      [self presentViewController:safariViewController animated:YES completion:nil];
+                  });
+              } else {
+                  // handle  error
+              }
+          } else {
+              // handle error
+          }
+      } else {
+          // handle error
+      }
+  }];
+  [task resume];
+}
+
+// ...
+
+#pragma mark - SFSafariViewControllerDelegate
+- (void)safariViewControllerDidFinish:(SFSafariViewController *)controller {
+    // The user may have closed the SFSafariViewController instance before a redirect
+    // occurred. Sync with your backend to confirm the correct state
+}
+
+@end#import "ConnectOnboardViewController.h"
+
+#import <SafariServices/SafariServices.h>
+
+@interface ConnectOnboardViewController () <SFSafariViewControllerDelegate>
+// ...
+@end
+
+@implementation ConnectOnboardViewController 
+
+// ...
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+
+    UIButton *connectWithStripeButton = [UIButton buttonWithType:UIButtonTypeSystem];
+    [connectWithStripeButton setTitle:@"Connect with Stripe" forState:UIControlStateNormal];
+    [connectWithStripeButton addTarget:self action:@selector(_didSelectConnectWithStripe) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:connectWithStripeButton];
+
+    // ...
+}
+
+- (void)_didSelectConnectWithStripe {
+  NSURL *url = [NSURL URLWithString:[kBackendAPIBaseURL stringByAppendingPathComponent:@"onboard-user"]];
+  NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+  request.HTTPMethod = @"POST";
+  
+  NSURLSessionTask *task = [[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+      if (data != nil) {
+          NSError *jsonError = nil;
+          id json = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
+          
+          if (json != nil && [json isKindOfClass:[NSDictionary class]]) {
+              NSDictionary *jsonDictionary = (NSDictionary *)json;
+              NSURL *accountURL = [NSURL URLWithString:jsonDictionary[@"url"]];
+              if (accountURL != nil) {
+                  SFSafariViewController *safariViewController = [[SFSafariViewController alloc] initWithURL:accountURL];
+                  safariViewController.delegate = self;
+                  
+                  dispatch_async(dispatch_get_main_queue(), ^{
+                      [self presentViewController:safariViewController animated:YES completion:nil];
+                  });
+              } else {
+                  // handle  error
+              }
+          } else {
+              // handle error
+          }
+      } else {
+          // handle error
+      }
+  }];
+  [task resume];
+}
+
+// ...
+
+#pragma mark - SFSafariViewControllerDelegate
+- (void)safariViewControllerDidFinish:(SFSafariViewController *)controller {
+    // The user may have closed the SFSafariViewController instance before a redirect
+    // occurred. Sync with your backend to confirm the correct state
+}
+
+@end

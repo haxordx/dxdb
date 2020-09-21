@@ -1,0 +1,3 @@
+io.socket.get('/user', function(resData) {
+  console.log(resData);
+});

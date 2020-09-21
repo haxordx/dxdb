@@ -1,0 +1,6 @@
+{
+  "object": "account_link",
+  "created": 1600560729,
+  "expires_at": 1600561029,
+  "url": "https://connect.stripe.com/setup/s/4cwZ4l8vPKl9"
+}

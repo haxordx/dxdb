@@ -1,0 +1,9 @@
+[RequestBody]
+{
+    string - event
+    string - callid
+    time - timestamp
+    int - version
+    string - custom
+    string - user
+}

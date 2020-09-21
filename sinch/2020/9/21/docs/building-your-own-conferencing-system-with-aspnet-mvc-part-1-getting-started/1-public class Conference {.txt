@@ -1,0 +1,22 @@
+public class Conference {
+    public int Id { get; set; }
+    public string OwnerId { get; set; }
+    public string ConferenceName { get; set; }
+    [DataType(DataType.Date)]
+    [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
+    public DateTime ConferenceEndDate { get; set; }
+    [MaxLength(4)]
+    public string PinCode { get; set; }
+    public Guid ConferenceId { get; set; }
+    public bool ValidForever { get; set; }
+
+}
+
+// Invites to the conference
+public class ConferenceAtendee {
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+    public int Id { get; set; }
+    public string  Name { get; set; }
+    public string Email { get; set; }
+    public string Phone { get; set; }
+}

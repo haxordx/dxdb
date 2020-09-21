@@ -1,0 +1,9 @@
+{
+    "type": "recipient_delivery_report_sms",
+    "batch_id": "{batch_id}",
+    "recipient": "123456789",
+    "code": "0",
+    "status": "Delivered",
+    "at": "2016-10-02T09:34:18.542Z",
+    "operator_status_at": "2016-10-02T09:34:18.101Z"
+}

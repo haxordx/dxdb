@@ -1,0 +1,14 @@
+[HttpPost("cancel-subscription")]
+public ActionResult<Subscription> CancelSubscription([FromBody] CancelSubscriptionRequest req)
+{
+    var service = new SubscriptionService();
+    var subscription = service.Cancel(req.Subscription, null);
+    return subscription;
+}
+[HttpPost("cancel-subscription")]
+public ActionResult<Subscription> CancelSubscription([FromBody] CancelSubscriptionRequest req)
+{
+    var service = new SubscriptionService();
+    var subscription = service.Cancel(req.Subscription, null);
+    return subscription;
+}

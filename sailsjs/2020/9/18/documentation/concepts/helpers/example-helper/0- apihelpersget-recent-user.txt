@@ -1,0 +1,67 @@
+// api/helpers/get-recent-users.js
+module.exports = {
+
+
+  friendlyName: 'Get recent users',
+
+
+  description: 'Retrieve a list of users who were online most recently.',
+
+
+  extendedDescription: 'Use `activeSince` to only retrieve users who logged in since a certain date/time.',
+
+
+  inputs: {
+
+    numUsers: {
+      friendlyName: 'Number of users',
+      description: 'The maximum number of users to retrieve.',
+      type: 'number',
+      defaultsTo: 5
+    },
+
+    activeSince: {
+      description: 'Cut-off time to look for logins after, expressed as a JS timestamp.',
+      extendedDescription: 'Remember: A _JS timestamp_ is the number of **milliseconds** since [that fateful night in 1970](https://en.wikipedia.org/wiki/Unix_time).',
+      type: 'number',
+      defaultsTo: 0
+    }
+
+  },
+
+
+  exits: {
+
+    success: {
+      outputFriendlyName: 'Recent users',
+      outputDescription: 'An array of users who recently logged in.',
+    },
+
+    noUsersFound: {
+      description: 'Could not find any users who logged in during the specified time frame.'
+    }
+
+  },
+
+
+  fn: async function (inputs, exits) {
+
+    // Run the query
+    var users = await User.find({
+      active: true,
+      lastLogin: { '>': inputs.activeSince }
+    })
+    .sort('lastLogin DESC')
+    .limit(inputs.numUsers);
+
+    // If no users were found, trigger the `noUsersFound` exit.
+    if (users.length === 0) {
+      throw 'noUsersFound';
+    }
+
+    // Otherwise return the records through the `success` exit.
+    return exits.success(users);
+
+  }
+
+};

@@ -1,0 +1,1 @@
+await User.find({ id: req.param('emailAddress' });

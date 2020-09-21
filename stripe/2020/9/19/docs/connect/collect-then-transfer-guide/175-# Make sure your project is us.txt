@@ -1,0 +1,7 @@
+# Make sure your project is using Go Modules
+go mod init
+# Install stripe-go
+go get -u github.com/stripe/stripe-go/v71# Make sure your project is using Go Modules
+go mod init
+# Install stripe-go
+go get -u github.com/stripe/stripe-go/v71

@@ -1,0 +1,14 @@
+var values = req.allParams();
+
+// Don't allow `price` or `isAvailable` to be edited.
+delete values.price;
+delete values.isAvailable;
+
+// At this point, `values` might look something like this:
+// values ==> { displayName: 'Bubble Trouble Bubble Bath' }
+
+Product.update({sku: sku})
+.set(values)
+.exec(function (err, newProduct) {
+  // ...
+});

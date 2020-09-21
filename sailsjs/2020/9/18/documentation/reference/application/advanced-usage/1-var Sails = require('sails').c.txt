@@ -1,0 +1,4 @@
+var Sails = require('sails').constructor;
+var sails0 = new Sails();
+var sails1 = new Sails();
+var sails2 = new Sails();

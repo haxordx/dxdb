@@ -1,0 +1,14 @@
+curl https://api.stripe.com/v1/subscriptions \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d customer="{{CUSTOMER_ID}}" \
+  -d items[0][price_data][unit_amount]=5000 \
+  -d items[0][price_data][currency]=usd \
+  -d items[0][price_data][product]={{PRODUCT_ID}} \
+  -d items[0][price_data][recurring][interval]=month
+curl https://api.stripe.com/v1/subscriptions \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d customer="{{CUSTOMER_ID}}" \
+  -d items[0][price_data][unit_amount]=5000 \
+  -d items[0][price_data][currency]=usd \
+  -d items[0][price_data][product]={{PRODUCT_ID}} \
+  -d items[0][price_data][recurring][interval]=month

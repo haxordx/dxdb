@@ -1,0 +1,82 @@
+function handlePaymentThatRequiresCustomerAction({
+  subscription,
+  invoice,
+  priceId,
+  paymentMethodId
+})
+{
+  let setupIntent = subscription.pending_setup_intent;
+
+  if (setupIntent && setupIntent.status === 'requires_action')
+  {
+    return stripe
+      .confirmCardSetup(setupIntent.client_secret, {
+        payment_method: paymentMethodId,
+      })
+      .then((result) => {
+        if (result.error) {
+          // start code flow to handle updating the payment details
+          // Display error message in your UI.
+          // The card was declined (i.e. insufficient funds, card has expired, etc)
+          throw result;
+        } else {
+          if (result.setupIntent.status === 'succeeded') {
+            // There's a risk of the customer closing the window before callback
+            // execution. To handle this case, set up a webhook endpoint and
+            // listen to setup_intent.succeeded.
+            return {
+              priceId: priceId,
+              subscription: subscription,
+              invoice: invoice,
+              paymentMethodId: paymentMethodId,
+            };
+          }
+        }
+      });
+  }
+  else {
+    // No customer action needed
+    return { subscription, priceId, paymentMethodId };
+  }
+}
+function handlePaymentThatRequiresCustomerAction({
+  subscription,
+  invoice,
+  priceId,
+  paymentMethodId
+})
+{
+  let setupIntent = subscription.pending_setup_intent;
+
+  if (setupIntent && setupIntent.status === 'requires_action')
+  {
+    return stripe
+      .confirmCardSetup(setupIntent.client_secret, {
+        payment_method: paymentMethodId,
+      })
+      .then((result) => {
+        if (result.error) {
+          // start code flow to handle updating the payment details
+          // Display error message in your UI.
+          // The card was declined (i.e. insufficient funds, card has expired, etc)
+          throw result;
+        } else {
+          if (result.setupIntent.status === 'succeeded') {
+            // There's a risk of the customer closing the window before callback
+            // execution. To handle this case, set up a webhook endpoint and
+            // listen to setup_intent.succeeded.
+            return {
+              priceId: priceId,
+              subscription: subscription,
+              invoice: invoice,
+              paymentMethodId: paymentMethodId,
+            };
+          }
+        }
+      });
+  }
+  else {
+    // No customer action needed
+    return { subscription, priceId, paymentMethodId };
+  }
+}

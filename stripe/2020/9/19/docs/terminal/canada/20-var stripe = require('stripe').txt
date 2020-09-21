@@ -1,0 +1,12 @@
+var stripe = require('stripe')('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
+
+var charges = await stripe.charges.list({
+  customer: 'cus_FrhkiKbRJmwttu', // if filtering by customer
+  payment_intent: 'pi_1DatNX2eZvKYlo2C2Hx3k1gF', // if filtering by PaymentIntent
+});
+var stripe = require('stripe')('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
+
+var charges = await stripe.charges.list({
+  customer: 'cus_FrhkiKbRJmwttu', // if filtering by customer
+  payment_intent: 'pi_1DatNX2eZvKYlo2C2Hx3k1gF', // if filtering by PaymentIntent
+});

@@ -1,0 +1,6 @@
+{
+  "field": string,
+  "errors": [
+    string, ...
+  ]
+}

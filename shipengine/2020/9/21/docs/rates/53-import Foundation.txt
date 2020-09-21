@@ -1,0 +1,26 @@
+import Foundation
+
+var semaphore = DispatchSemaphore (value: 0)
+
+let parameters = "{\n  \"shipment_id\": \"se-123\",\n  \"rate_options\": {\n    \"carrier_ids\": [\n      \"se-123890\"\n    ],\n    \"service_codes\": [\n      \"usps_first_class_mail\",\n      \"usps_priority_mail\",\n      \"ups_next_day_air_early_am\"\n    ],\n    \"package_types\": []\n  }\n}"
+let postData = parameters.data(using: .utf8)
+
+var request = URLRequest(url: URL(string: "https://api.shipengine.com/v1/rates")!,timeoutInterval: Double.infinity)
+request.addValue("api.shipengine.com", forHTTPHeaderField: "Host")
+request.addValue("__YOUR_API_KEY_HERE__", forHTTPHeaderField: "API-Key")
+request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+
+request.httpMethod = "POST"
+request.httpBody = postData
+
+let task = URLSession.shared.dataTask(with: request) { data, response, error in 
+  guard let data = data else {
+    print(String(describing: error))
+    return
+  }
+  print(String(data: data, encoding: .utf8)!)
+  semaphore.signal()
+}
+
+task.resume()
+semaphore.wait()

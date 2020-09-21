@@ -1,0 +1,11 @@
+{
+  "batch_header": {
+    "sender_batch_header": {
+      "sender_batch_id": "2014021801",
+      "email_subject": "You have a payout!"
+    },
+    "payout_batch_id": "12345678",
+    "batch_status": "PENDING"
+  }
+}
+jsoncopy

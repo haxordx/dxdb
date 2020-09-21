@@ -1,0 +1,10 @@
+@Override
+public void onVideoTrackAdded(Call call) {
+    // Get a reference to your SinchClient, in the samples this is done through the service interface:
+    VideoController vc = getSinchServiceInterface().getVideoController();
+    View localPreviewView = vc.getLocalView();
+    View remoteView = vc.getRemoteView();
+
+    // Add the views to your view hierarchy
+    ...
+}

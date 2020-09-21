@@ -1,0 +1,15 @@
+- (IBAction)LoginAction:(id)sender {
+    NSString *userName = self.UsernameTextField.text;
+    NSString *password = self.PasswordTextField.text;
+    NSString *devKey = @"your-gtn-dev-key";
+    TennisParser *parser = [[TennisParser alloc] initWithKey:devKey];
+    self.username = [parser parseXMLForIDWithUsername:userName Password:password];
+
+    if (self.username) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"UserDidLoginNotification"
+                                                            object:nil
+                                                          userInfo:@{@"userId" : self.username}];
+
+        [self performSegueWithIdentifier:@"showMaster" sender:self.username];
+    }
+}

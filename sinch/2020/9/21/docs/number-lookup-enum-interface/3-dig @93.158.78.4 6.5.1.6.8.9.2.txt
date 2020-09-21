@@ -1,0 +1,4 @@
+dig @93.158.78.4 6.5.1.6.8.9.2.9.3.3.1.e164.arpa IN NAPTR
+
+; < <>> DiG 9.8.3-P1 < <>> @93.158.78.4 6.5.1.6.8.9.2.9.3.3.1.e164.arpa IN NAPTR
+;; ->>HEADER< <- opcode: QUERY, status: SERVFAIL, id: 9512 ;; flags: qr; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 0 ;; QUESTION SECTION: ;6.5.1.6.8.9.2.9.3.3.1.e164.arpa. IN NAPTR ;; Query time: 202 msec

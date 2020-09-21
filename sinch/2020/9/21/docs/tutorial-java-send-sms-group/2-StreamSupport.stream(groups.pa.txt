@@ -1,0 +1,4 @@
+StreamSupport.stream(groups.pages().spliterator(), false)
+        .flatMap(page -> page.content().stream())
+        .filter(group -> "subscribers".equals(group.name()))
+        .findFirst()

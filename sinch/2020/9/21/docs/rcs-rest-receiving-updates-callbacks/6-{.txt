@@ -1,0 +1,7 @@
+{
+  "type": "failed",
+  "revoked": boolean,
+  "expired": boolean,
+  "code": integer,
+  "reason": string
+}

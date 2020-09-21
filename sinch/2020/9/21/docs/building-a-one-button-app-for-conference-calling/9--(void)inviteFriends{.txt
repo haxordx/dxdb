@@ -1,0 +1,21 @@
+-(void)inviteFriends{
+    NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+    NSString* url = [defaults stringForKey:@"conferenceURL"];
+    NSURL *appurl = [NSURL URLWithString:url];
+    NSString *textToShare = [NSString stringWithFormat:@"Hey, So... whats up, join %@ here\n/%@", appurl, [defaults stringForKey:@"userName"]];
+    NSArray *objectsToShare = @[textToShare];
+
+    UIActivityViewController *activityVC = [[UIActivityViewController alloc] initWithActivityItems:objectsToShare applicationActivities:nil];
+
+    NSArray *excludeActivities = @[UIActivityTypeAirDrop,
+                                   UIActivityTypePrint,
+                                   UIActivityTypeAssignToContact,
+                                   UIActivityTypeSaveToCameraRoll,
+                                   UIActivityTypeAddToReadingList,
+                                   UIActivityTypePostToFlickr,
+                                   UIActivityTypePostToVimeo];
+    activityVC.excludedActivityTypes = excludeActivities;
+    [activityVC setCompletionWithItemsHandler:^(NSString *activityType, BOOL completed, NSArray *returnedItems, NSError *activityError) {
+        [[CallingManager sharedManager] callConference:[defaults stringForKey:@"conferenceId"]];
+    }];   [self presentViewController:activityVC animated:YES completion:nil];
+}

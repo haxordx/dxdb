@@ -1,0 +1,1 @@
+var greeting = sails.helpers.formatWelcomeMessage('Timothy');

@@ -1,0 +1,6 @@
+req.is('html');
+// -> true
+req.is('text/html');
+// -> true
+req.is('text/*');
+// -> true

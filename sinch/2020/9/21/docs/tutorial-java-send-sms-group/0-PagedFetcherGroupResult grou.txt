@@ -1,0 +1,1 @@
+PagedFetcher<GroupResult> groups = connection.fetchGroups(GroupFilter.builder().build());

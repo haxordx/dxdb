@@ -1,0 +1,8 @@
+stripe prices create \
+  -d product={{PRODUCT_ID}} \
+  -d unit_amount=2000 \
+  -d currency=usd
+stripe prices create \
+  -d product={{PRODUCT_ID}} \
+  -d unit_amount=2000 \
+  -d currency=usd

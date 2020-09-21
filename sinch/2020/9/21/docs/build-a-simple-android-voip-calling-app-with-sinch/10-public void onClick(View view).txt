@@ -1,0 +1,10 @@
+public void onClick(View view) {
+    if (call == null) {
+        call = sinchClient.getCallClient().callUser("call-recipient-id");
+        button.setText("Hang Up");
+    } else {
+        call.hangup();
+        call = null;
+        button.setText("Call");
+    }
+}

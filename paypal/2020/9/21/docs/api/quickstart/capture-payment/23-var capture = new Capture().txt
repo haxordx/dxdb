@@ -1,0 +1,11 @@
+var capture = new Capture()
+{
+  amount = new Amount()
+  {
+    currency = "USD",
+    total = "4.54"
+  },
+  is_final_capture = true
+};
+
+var responseCapture = authorization.Capture(apiContext, capture);copy

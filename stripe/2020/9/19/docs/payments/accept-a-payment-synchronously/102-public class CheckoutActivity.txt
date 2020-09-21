@@ -1,0 +1,64 @@
+public class CheckoutActivity extends AppCompatActivity {
+    private Stripe stripe;
+    // ...
+
+    private void pay() {
+        CardInputWidget cardInputWidget = findViewById(R.id.cardInputWidget);
+        PaymentMethodCreateParams params = cardInputWidget.getPaymentMethodCreateParams();
+
+        if (params == null) {
+            return;
+        }
+
+        // Configure the SDK with your Stripe publishable key so that it can make requests to the Stripe API
+        stripe = Stripe(applicationContext, PaymentConfiguration.getInstance(applicationContext).getPublishableKey());
+        stripe.createPaymentMethod(params, new ApiResultCallback<PaymentMethod>() {
+            @Override
+            public void onSuccess(@NonNull PaymentMethod result) {
+                // Create and confirm the PaymentIntent by calling the sample server's /pay endpoint.
+                pay(result.id, null);
+            }
+
+            @Override
+            public void onError(@NonNull Exception e) {
+
+            }
+        });
+    }
+
+    private void pay(@Nullable String paymentMethodId, @Nullable String paymentIntentId) {
+        // ...continued in the next step
+    }
+
+public class CheckoutActivity extends AppCompatActivity {
+    private Stripe stripe;
+    // ...
+
+    private void pay() {
+        CardInputWidget cardInputWidget = findViewById(R.id.cardInputWidget);
+        PaymentMethodCreateParams params = cardInputWidget.getPaymentMethodCreateParams();
+
+        if (params == null) {
+            return;
+        }
+
+        // Configure the SDK with your Stripe publishable key so that it can make requests to the Stripe API
+        stripe = Stripe(applicationContext, PaymentConfiguration.getInstance(applicationContext).getPublishableKey());
+        stripe.createPaymentMethod(params, new ApiResultCallback<PaymentMethod>() {
+            @Override
+            public void onSuccess(@NonNull PaymentMethod result) {
+                // Create and confirm the PaymentIntent by calling the sample server's /pay endpoint.
+                pay(result.id, null);
+            }
+
+            @Override
+            public void onError(@NonNull Exception e) {
+
+            }
+        });
+    }
+
+    private void pay(@Nullable String paymentMethodId, @Nullable String paymentIntentId) {
+        // ...continued in the next step
+    }
+

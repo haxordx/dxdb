@@ -1,0 +1,10 @@
+- (void) displayPictureForUser {
+    NSURL *pictureURL = [NSURL URLWithString:[NSString stringWithFormat:@"https://graph.facebook.com/%@/picture?type=large&return_ssl_resources=1", [[FBSDKAccessToken currentAccessToken] userID]]];
+    NSData *imageData = [NSData dataWithContentsOfURL:pictureURL];
+    UIImage *img = [UIImage imageWithData:imageData];
+    CGSize size = img.size;
+    CGRect rectFrame = CGRectMake(90, 100, size.width, size.height);
+    UIImageView* imgv = [[UIImageView alloc] initWithImage:img];
+    imgv.frame = rectFrame;
+    [self.view addSubview:imgv];
+}

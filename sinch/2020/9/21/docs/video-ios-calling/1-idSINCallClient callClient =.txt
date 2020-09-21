@@ -1,0 +1,3 @@
+id<SINCallClient> callClient = [sinchClient callClient];
+id<SINCall> call = [callClient callUserWithId:@"<remote user id>"];
+// Or for video call: id<SINCall> call = [callClient callUserVideoWithId:@"<remote user id>"];

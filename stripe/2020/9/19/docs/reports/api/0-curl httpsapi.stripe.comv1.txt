@@ -1,0 +1,8 @@
+curl https://api.stripe.com/v1/reporting/report_types/balance.summary.1 \
+  -u sk_live_123456:
+
+# Note that a live-mode API key is required.
+curl https://api.stripe.com/v1/reporting/report_types/balance.summary.1 \
+  -u sk_live_123456:
+
+# Note that a live-mode API key is required.

@@ -1,0 +1,4 @@
+- (void)setCall:(id<SINCall>)call {
+    _call = call;
+    _call.delegate = self;
+}

@@ -1,0 +1,13 @@
+# Get payment id from query string following redirect
+payment = Payment.find(ENV["paymentId"])
+
+# Execute payment using payer_id obtained from query string following redirect
+if payment.execute( :payer_id => ENV["PayerID"])
+  logger.info "order executed successfully"
+
+  # Capture order id
+  orderid = payment.transactions[0].related_resources[0].order.id;
+else
+  logger.error payment.error.inspect
+end
+copy

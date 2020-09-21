@@ -1,0 +1,20 @@
+[RequestBody]
+    VerificationResponse
+
+[VerificationResponse]
+    string - id
+    SmsVerificationData? - sms
+    FlashCallVerificationData? - flashCall
+    CalloutVerificationData? - callout
+
+[SmsVerificationData]
+    string - template
+
+[FlashCallVerificationData]
+    string - cliFilter
+    int - interceptionTimeout
+
+[CalloutVerificationData]
+    int - startPollingAfter
+    int - stopPollingAfter
+    int - pollingInterval

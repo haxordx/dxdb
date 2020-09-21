@@ -1,0 +1,17 @@
+curl --location --request POST 'https://eu.conversation.api.sinch.com/v1beta/projects/{project_id}/messages:send' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer <access token>' \
+--data-raw '{
+    "app_id": "{{YOUR_SINCH_APP_ID}}",
+    "recipient": {
+        "contact_id": "{{YOUR_SINCH_CONTACT_ID}}"
+    },
+    "message": {
+        "text_message": {
+            "text": "Greetings from Sinch Conversation API!"
+        }
+    },
+    "channel_priority_order": [
+        "MESSENGER"
+    ]
+}'

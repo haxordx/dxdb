@@ -1,0 +1,23 @@
+[RequestBody]
+{
+    string - event
+    string - callid
+    time - timestamp
+    string - reason
+    string - result
+    int - version
+    string - custom
+    string - user
+    money - debit
+    money - userRate
+    identity - to
+    int - duration
+    string - from
+    CallHeader[] - callHeaders
+}
+
+[CallHeader]
+{
+  string - key
+  string - value
+}

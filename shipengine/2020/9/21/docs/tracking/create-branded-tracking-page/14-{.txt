@@ -1,0 +1,15 @@
+{
+  "tracking_pages": [
+    {
+      "carrier_code": "ups",
+      "tracking_number": "012345678910",
+      "branded_tracking_theme_guid": "fc16e39d-9722-4514-aff5-75e1f24c5bbd",
+      "token": "MYkORKpDv02x-LX3yv7bdQ",
+      "url": "http://track.shipengine.com/se/v1/MYkORKpDv02x-LX3yv7bdQ",
+      "service_code": "ups_ground"
+    }
+  ],
+  "page": 0,
+  "pages": 0,
+  "total": 1
+}

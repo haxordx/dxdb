@@ -1,0 +1,2 @@
+[_numberTable setDelegate:self];
+[_numberTable setDataSource:self];

@@ -1,0 +1,9 @@
+func doVaultOnly() {
+  PayPalRetailSDK.transactionManager()?.createVaultTransaction(acceptVaultOnlyTransaction(error:tc:))
+}
+
+func acceptVaultOnlyTransaction(error: PPRetailError?, tc: PPRetailTransactionContext?) {
+  self.transactionContext = tc
+  // set vaultCompletionHandler, transaction options, and beginPayment as outlined above
+}
+copy

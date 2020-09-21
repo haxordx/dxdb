@@ -1,0 +1,14 @@
+<%
+/**
+ * views/partials/navbar.ejs
+ *
+ * > Note: This EJS comment won't show up in the ejs served to the browser.
+ * > So you can be as verbose as you like.  Just be careful not to inadvertently
+ * > type a percent sign followed by a greater-than sign (it'll bust you out of
+ * > the EJS block).
+ *
+ */%>
+<nav class="navbar">
+  <a href="/">Dashboard</a>
+  <a href="/inbox">Inbox</a>
+</nav>

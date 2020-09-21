@@ -1,0 +1,4 @@
+resp mesg=RESULT=125&PNREF=VB0A25031907&RESPMSG=Declined by Fraud Service&
+PREFPSMSG=Reject HighRiskEmailCheck
+   !!ERROR 14:20:5 result=125 TRXTYPE=A!!
+copy

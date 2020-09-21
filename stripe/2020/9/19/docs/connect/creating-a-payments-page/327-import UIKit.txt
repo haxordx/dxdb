@@ -1,0 +1,29 @@
+import UIKit
+import Stripe
+
+@UIApplicationMain
+class AppDelegate: UIResponder, UIApplicationDelegate {
+
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        Stripe.setDefaultPublishableKey("{{PLATFORM_PUBLISHABLE_KEY}}")
+        STPAPIClient.shared().stripeAccount = "{{CONNECTED_STRIPE_ACCOUNT_ID}}"
+
+        // For SDK versions < v19.0.0, set this too:
+        STPPaymentConfiguration.shared().stripeAccount = "{{CONNECTED_STRIPE_ACCOUNT_ID}}"
+        return true
+    }
+}import UIKit
+import Stripe
+
+@UIApplicationMain
+class AppDelegate: UIResponder, UIApplicationDelegate {
+
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        Stripe.setDefaultPublishableKey("{{PLATFORM_PUBLISHABLE_KEY}}")
+        STPAPIClient.shared().stripeAccount = "{{CONNECTED_STRIPE_ACCOUNT_ID}}"
+
+        // For SDK versions < v19.0.0, set this too:
+        STPPaymentConfiguration.shared().stripeAccount = "{{CONNECTED_STRIPE_ACCOUNT_ID}}"
+        return true
+    }
+}

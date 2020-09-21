@@ -1,0 +1,11 @@
+- (void)managedPush:(id<SINManagedPush>)managedPush
+    didReceiveIncomingPushWithPayload:(NSDictionary *)payload
+                              forType:(NSString *)pushType {
+
+  id<SINNotificationResult> notification = [SINPushHelper queryPushNotificationPayload:payload];
+
+  if ([notification isValid]) {
+    id<SINCallNotificationResult> callNotification = [notification callResult];
+
+    // Use SINCallNotificationResult to extract remote User ID, call headers, etc.
+  }

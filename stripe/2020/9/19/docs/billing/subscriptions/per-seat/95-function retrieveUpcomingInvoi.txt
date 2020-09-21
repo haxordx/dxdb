@@ -1,0 +1,40 @@
+function retrieveUpcomingInvoice(customerId, subscriptionId, newPriceId, quantity) {
+  return fetch('/retrieve-upcoming-invoice', {
+    method: 'post',
+    headers: {
+      'Content-type': 'application/json',
+    },
+    body: JSON.stringify({
+      customerId: customerId,
+      subscriptionId: subscriptionId,
+      newPriceId: newPriceId,
+      quantity: quantity
+    }),
+  })
+    .then((response) => {
+      return response.json();
+    })
+    .then((invoice) => {
+      return invoice;
+    });
+}
+function retrieveUpcomingInvoice(customerId, subscriptionId, newPriceId, quantity) {
+  return fetch('/retrieve-upcoming-invoice', {
+    method: 'post',
+    headers: {
+      'Content-type': 'application/json',
+    },
+    body: JSON.stringify({
+      customerId: customerId,
+      subscriptionId: subscriptionId,
+      newPriceId: newPriceId,
+      quantity: quantity
+    }),
+  })
+    .then((response) => {
+      return response.json();
+    })
+    .then((invoice) => {
+      return invoice;
+    });
+}

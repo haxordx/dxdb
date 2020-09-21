@@ -1,0 +1,9 @@
+EditText callerEditText = (TextView) findViewById(R.id.callerId));
+EditText recipientEditText = (TextView) findViewById(R.id.recipientId);
+String callerId = callerEditText.getText().toString();
+String recipientId = recipientEditText.getText().toString;
+
+Intent intent = new Intent(getApplicationContext(), CallActivity.class);
+intent.putExtra("callerId", callerId);
+intent.putExtra("recipientId", recipientId);
+startActivity(intent);

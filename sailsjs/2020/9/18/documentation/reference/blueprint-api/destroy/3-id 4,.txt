@@ -1,0 +1,8 @@
+id: 4,
+verb: 'destroyed',
+previous: {
+  name: 'Pinkie Pie',
+  hobby: 'kickin',
+  createdAt: 1485550644076,
+  updatedAt: 1485550644076
+}

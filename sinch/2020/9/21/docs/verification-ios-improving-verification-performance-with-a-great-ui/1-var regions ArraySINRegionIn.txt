@@ -1,0 +1,7 @@
+var regions: Array<SINRegionInfo> = [];
+
+let regionList = PhoneNumberUtil().regionList(forLocale: NSLocale.currentLocale());
+
+regions = regionList.entries.sort({ (a: SINRegionInfo, b: SINRegionInfo) -> Bool in
+            return a.countryDisplayName < b.countryDisplayName;
+          })

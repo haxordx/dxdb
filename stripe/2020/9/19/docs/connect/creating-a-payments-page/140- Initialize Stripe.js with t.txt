@@ -1,0 +1,10 @@
+// Initialize Stripe.js with the same connected account ID used when creating
+// the PaymentIntent.
+var stripe = Stripe('pk_test_TYooMQauvdEDq54NiTphI7jx', {
+  stripeAccount: '{{CONNECTED_STRIPE_ACCOUNT_ID}}'
+});
+// Initialize Stripe.js with the same connected account ID used when creating
+// the PaymentIntent.
+var stripe = Stripe('pk_test_TYooMQauvdEDq54NiTphI7jx', {
+  stripeAccount: '{{CONNECTED_STRIPE_ACCOUNT_ID}}'
+});

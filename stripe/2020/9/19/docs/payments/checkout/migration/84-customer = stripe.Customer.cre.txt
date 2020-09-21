@@ -1,0 +1,21 @@
+customer = stripe.Customer.create(
+  email=data['stripeEmail'],
+  source=data['stripeToken'],
+)
+
+charge = stripe.Charge.create(
+  customer=customer.id,
+  description='T-shirt',
+  amount=500,
+  currency='usd',
+)customer = stripe.Customer.create(
+  email=data['stripeEmail'],
+  source=data['stripeToken'],
+)
+
+charge = stripe.Charge.create(
+  customer=customer.id,
+  description='T-shirt',
+  amount=500,
+  currency='usd',
+)

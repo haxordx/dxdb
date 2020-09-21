@@ -1,0 +1,21 @@
+curl --location --request POST 'https://eu.conversation.api.sinch.com/v1beta/projects/{project_id}/messages:send' \
+-H 'Content-Type: application/json' \
+-H "Authorization: Bearer <access token>"
+-d '{
+    "app_id": "{{YOUR_APP_ID}}",
+    "recipient": {
+        "identified_by": {
+            channel_identities: [
+                {
+                    channel:"SMS",
+                    identity:"+15551231212"
+                }
+            ]
+        }
+    },
+    "message": {
+        "text_message": {
+            "text": "Text message from Sinch Conversation API."
+        }
+    },
+}'

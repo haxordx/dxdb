@@ -1,0 +1,3 @@
+curl -iX GET https://api.shipengine.com/v1/labels/se-324658/track \
+-H 'API-Key: __YOUR_API_KEY_HERE__' \
+-H 'Cache-Control: no-cache' \

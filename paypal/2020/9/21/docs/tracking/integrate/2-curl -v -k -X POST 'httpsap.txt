@@ -1,0 +1,11 @@
+curl -v -k -X POST 'https://api.sandbox.paypal.com/v1/shipping/trackers-batch' \
+ -H 'X-PAYPAL-SECURITY-CONTEXT: ' \
+ -H 'Content-Type: application/json' \
+ -d '{
+  "trackers": [{
+    "transaction_id": "8MC585209K746392H",
+    "status": "SHIPPED",
+    "carrier": "FEDEX"
+  }]
+}'
+copy

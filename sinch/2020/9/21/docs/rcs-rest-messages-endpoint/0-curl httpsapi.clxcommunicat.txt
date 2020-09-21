@@ -1,0 +1,11 @@
+curl https://api.clxcommunications.com/rcs/v1/my-agent-id/messages \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer zIMEJGfwD4oJ4qObPPjwZxwiP5cKARXRJpt9Kf6GSv7uOesvRV" \
+  -d '{
+      "message_id": "5f6ec22b-f03a-4961-9c57-6c4e464edae0",
+      "to": "46555123456",
+      "message": {
+          "type": "text",
+          "text": "Test message!"
+      }
+  }'

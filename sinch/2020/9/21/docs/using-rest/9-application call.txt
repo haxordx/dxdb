@@ -1,0 +1,2 @@
+//application call
+usernameAndPassword = "ApplicationKey + ":" + "ApplicationSecret"

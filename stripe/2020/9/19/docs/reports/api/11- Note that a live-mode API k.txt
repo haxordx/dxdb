@@ -1,0 +1,20 @@
+// Note that a live-mode API key is required.
+\Stripe\Reporting\ReportRun::create([
+  'report_type' => 'balance_change_from_activity.itemized.3',
+  'parameters' => [
+    'interval_start' => '1577865600',
+    'interval_end' => '1580544000',
+    'timezone' => 'America/Los_Angeles',
+    'columns' => ['created', 'reporting_category', 'net'],
+  ],
+]);
+// Note that a live-mode API key is required.
+\Stripe\Reporting\ReportRun::create([
+  'report_type' => 'balance_change_from_activity.itemized.3',
+  'parameters' => [
+    'interval_start' => '1577865600',
+    'interval_end' => '1580544000',
+    'timezone' => 'America/Los_Angeles',
+    'columns' => ['created', 'reporting_category', 'net'],
+  ],
+]);

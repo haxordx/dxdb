@@ -1,0 +1,23 @@
+<form action="/subscribe" method="POST">
+  <script
+    src="https://checkout.stripe.com/checkout.js"
+    class="stripe-button"
+    data-key="pk_test_TYooMQauvdEDq54NiTphI7jx"
+    data-name="Gold Tier"
+    data-description="Monthly subscription"
+    data-amount="2000"
+    data-currency="usd"
+    data-label="Subscribe">
+  </script>
+</form><form action="/subscribe" method="POST">
+  <script
+    src="https://checkout.stripe.com/checkout.js"
+    class="stripe-button"
+    data-key="pk_test_TYooMQauvdEDq54NiTphI7jx"
+    data-name="Gold Tier"
+    data-description="Monthly subscription"
+    data-amount="2000"
+    data-currency="usd"
+    data-label="Subscribe">
+  </script>
+</form>

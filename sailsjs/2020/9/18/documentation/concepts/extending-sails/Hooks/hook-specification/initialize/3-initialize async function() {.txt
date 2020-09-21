@@ -1,0 +1,8 @@
+initialize: async function() {
+  return new Promise((resolve)=>{
+    var eventsToWaitFor = ['hook:orm:loaded', 'hook:mygreathook:loaded'];
+    sails.after(eventsToWaitFor, ()=>{
+      resolve();
+    });
+  });
+}

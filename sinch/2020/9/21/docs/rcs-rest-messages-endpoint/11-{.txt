@@ -1,0 +1,12 @@
+{
+  "type": "standalone_rich_card",
+  "orientation": enum(
+    "HORIZONTAL",
+    "VERTICAL"
+  ),
+  "thumbnail_alignment": enum(
+    "LEFT",
+    "RIGHT"
+  ),
+  "content": object(RichCardContent)
+}

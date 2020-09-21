@@ -1,0 +1,6 @@
+attributes: {
+  phoneNumber: {
+    type: 'string',
+    allowNull: true
+  }
+}

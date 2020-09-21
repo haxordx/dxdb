@@ -1,0 +1,10 @@
+[GET]
+
+URL:
+https://api.sinch.com/v1/organisations
+
+[body]
+    empty
+
+eg:
+{}

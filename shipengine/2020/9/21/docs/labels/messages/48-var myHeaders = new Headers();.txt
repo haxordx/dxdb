@@ -1,0 +1,18 @@
+var myHeaders = new Headers();
+myHeaders.append("Host", "api.shipengine.com");
+myHeaders.append("API-Key", "__YOUR_API_KEY_HERE__");
+myHeaders.append("Content-Type", "application/json");
+
+var raw = JSON.stringify({"shipment":{"service_code":"sunrise_service","ship_from":{"company_name":"Example Corp.","name":"John Doe","phone":"111-111-1111","address_line1":"4009 Marathon Blvd","address_line2":"Suite 300","city_locality":"Austin","state_province":"TX","postal_code":"78756","country_code":"US","address_residential_indicator":"no"},"ship_to":{"name":"Return of ShipEngine","company_name":null,"phone":"512-485-4567","address_line1":"10591 N De Anza Blvd","address_line2":null,"address_line3":null,"city_locality":"Cupertino","state_province":"CA","postal_code":"95014","country_code":"US"},"confirmation":"None","packages":[{"package_code":"package","weight":{"value":1,"unit":"ounce"},"label_messages":{"reference1":"Always be closing","reference2":"Winter is here"}}]},"label_layout":"letter"});
+
+var requestOptions = {
+  method: 'POST',
+  headers: myHeaders,
+  body: raw,
+  redirect: 'follow'
+};
+
+fetch("https://api.shipengine.com/v1/labels", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));

@@ -1,0 +1,6 @@
+Request
+{
+    "identity": { "type":"number", "endpoint":"+46700000000" },
+    "method": "flashCall",
+    "flashCallOptions":{"cli":"+1234567890", "dialTimeout":10}
+}

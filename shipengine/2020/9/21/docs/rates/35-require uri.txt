@@ -1,0 +1,16 @@
+require "uri"
+require "net/http"
+
+url = URI("https://api.shipengine.com/v1/rates")
+
+https = Net::HTTP.new(url.host, url.port);
+https.use_ssl = true
+
+request = Net::HTTP::Post.new(url)
+request["Host"] = "api.shipengine.com"
+request["API-Key"] = "__YOUR_API_KEY_HERE__"
+request["Content-Type"] = "application/json"
+request.body = "{\n  \"shipment_id\": \"se-123\",\n  \"rate_options\": {\n    \"carrier_ids\": [\n      \"se-123890\"\n    ],\n    \"service_codes\": [],\n    \"package_types\": [\n      \"flat_rate_envelope\",\n      \"medium_flat_rate_box\"\n    ]\n  }\n}"
+
+response = https.request(request)
+puts response.read_body

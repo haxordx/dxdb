@@ -1,0 +1,12 @@
+- (void)client:(id<SINClient>)client didReceiveIncomingCall:(id<SINCall>)call {
+    call.delegate = self;
+
+    if (call.details.applicationStateWhenReceived == UIApplicationStateActive) {
+        // Show an answer button or similar in the UI
+    } else {
+        // Application was in not in the foreground when the call was initially received,
+        // and the user has opened the application (e.g. via a Local Notification),
+        // which we then interpret as that the user want to answer the call.
+        [call answer];
+    }
+}

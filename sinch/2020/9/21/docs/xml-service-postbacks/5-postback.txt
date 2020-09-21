@@ -1,0 +1,11 @@
+<postback>
+    <origin>MMS_MT</origin>
+    <code>E102</code>
+    <status>Message Sent/Rejected</status>
+    <mms-id>39755</mms-id>
+    <from>28444</from>
+    <to>12399471613</to>
+    <tracking-id>TU1TXzU5Nzg3Nw==</tracking-id>
+    <operator-id>31004</operator-id>
+    <status-details>Recipient blocked by mobile operator</status-details>
+</postback>

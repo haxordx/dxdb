@@ -1,0 +1,7 @@
+await Something.create({…})
+.intercept((err)=>{
+ // Return a modified error here (or a special exit signal)
+ // and .create() will throw that instead
+ err.message = 'Uh oh: '+err.message;
+ return err;
+});

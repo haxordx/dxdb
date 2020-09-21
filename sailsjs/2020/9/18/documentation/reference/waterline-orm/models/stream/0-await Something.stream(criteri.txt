@@ -1,0 +1,4 @@
+await Something.stream(criteria)
+.eachRecord(async (record)=>{
+
+});

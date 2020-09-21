@@ -1,0 +1,12 @@
+curl https://pilot-payflowpro.paypal.com \
+  -s \
+  --insecure \
+  -d PARTNER=PayPal \
+  -d PWD=MyPassword \
+  -d VENDOR=MyMerchantID \
+  -d USER=MyMerchantID \
+  -d TENDER=C \
+  -d ACCT=5105105105105100 \
+  -d TRXTYPE=S \
+  -d EXPDATE=1221 \
+  -d AMT=1.00copy

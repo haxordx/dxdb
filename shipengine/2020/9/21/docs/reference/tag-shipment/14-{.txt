@@ -1,0 +1,6 @@
+{
+  "shipment_id": "se-2102034",
+  "tag": {
+    "name": "east_warehouse"
+  }
+}

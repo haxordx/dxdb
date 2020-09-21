@@ -1,0 +1,10 @@
+let cardInfo = PPRetailManuallyEnteredCard.init()
+cardInfo.setCardNumber("1234123412341234")
+cardInfo.setExpiration("MMYYYY")
+cardInfo.setCVV("123")
+cardInfo.setPostalCode("12345")
+
+// Be sure to add the following options before calling `tc.beginPayment(options)`
+options.paymentType = PPRetailTransactionBeginOptionsPaymentTypes.typeskeyIn
+options.manualCard = cardInfo
+copy

@@ -1,0 +1,9 @@
+initialize: async function() {
+  return new Promise((resolve)=>{
+    sails.on('hook:orm:loaded', ()=>{
+      // Finish initializing custom hook
+      // Then resolve.
+      resolve();
+    });
+  });
+}

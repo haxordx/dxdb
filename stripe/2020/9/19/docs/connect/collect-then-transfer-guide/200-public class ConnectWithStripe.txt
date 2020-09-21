@@ -1,0 +1,95 @@
+public class ConnectWithStripeActivity extends AppCompatActivity {
+    private static final String BACKEND_URL = "https://example-backend-url.com/";
+    private OkHttpClient httpClient = new OkHttpClient();
+    private ActivityConnectWithStripeViewBinding viewBinding;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        viewBinding = ActivityConnectWithStripeViewBinding.inflate(getLayoutInflater());
+
+        viewBinding.connectWithStripe.setOnClickListener(view -> {
+            WeakReference<Activity> weakActivity = new WeakReference<>(this);
+            Request request = new Request.Builder()
+                    .url(BACKEND_URL + "onboard-user")
+                    .post(RequestBody.create("", MediaType.get("application/json; charset=utf-8")))
+                    .build();
+            httpClient.newCall(request)
+                    .enqueue(new Callback() {
+                        @Override
+                        public void onFailure(@NotNull Call call, @NotNull IOException e) {
+                            // Request failed
+                        }
+
+                        @Override
+                        public void onResponse(@NotNull Call call, @NotNull Response response) throws IOException {
+                            final Activity activity = weakActivity.get();
+                            if (activity == null) {
+                                return;
+                            }
+                            if (!response.isSuccessful() || response.body() == null) {
+                                // Request failed
+                            } else {
+                                String body = response.body().string();
+                                try {
+                                    JSONObject responseJson = new JSONObject(body);
+                                    String url = responseJson.getString("url");
+                                    CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();
+                                    CustomTabsIntent customTabsIntent = builder.build();
+                                    customTabsIntent.launchUrl(view.getContext(), Uri.parse(url));
+                                } catch (JSONException e) {
+                                    e.printStackTrace();
+                                }
+                            }
+                        }
+                    });
+        });
+    }
+}public class ConnectWithStripeActivity extends AppCompatActivity {
+    private static final String BACKEND_URL = "https://example-backend-url.com/";
+    private OkHttpClient httpClient = new OkHttpClient();
+    private ActivityConnectWithStripeViewBinding viewBinding;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        viewBinding = ActivityConnectWithStripeViewBinding.inflate(getLayoutInflater());
+
+        viewBinding.connectWithStripe.setOnClickListener(view -> {
+            WeakReference<Activity> weakActivity = new WeakReference<>(this);
+            Request request = new Request.Builder()
+                    .url(BACKEND_URL + "onboard-user")
+                    .post(RequestBody.create("", MediaType.get("application/json; charset=utf-8")))
+                    .build();
+            httpClient.newCall(request)
+                    .enqueue(new Callback() {
+                        @Override
+                        public void onFailure(@NotNull Call call, @NotNull IOException e) {
+                            // Request failed
+                        }
+
+                        @Override
+                        public void onResponse(@NotNull Call call, @NotNull Response response) throws IOException {
+                            final Activity activity = weakActivity.get();
+                            if (activity == null) {
+                                return;
+                            }
+                            if (!response.isSuccessful() || response.body() == null) {
+                                // Request failed
+                            } else {
+                                String body = response.body().string();
+                                try {
+                                    JSONObject responseJson = new JSONObject(body);
+                                    String url = responseJson.getString("url");
+                                    CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();
+                                    CustomTabsIntent customTabsIntent = builder.build();
+                                    customTabsIntent.launchUrl(view.getContext(), Uri.parse(url));
+                                } catch (JSONException e) {
+                                    e.printStackTrace();
+                                }
+                            }
+                        }
+                    });
+        });
+    }
+}

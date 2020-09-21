@@ -1,0 +1,2 @@
+$generator = new SinchTicketGenerator('YOUR_APP_KEY', 'YOUR_APP_SECRET');
+$signedUserTicket = $generator->generateTicket('YOUR_USERNAME', new DateTime(), 3600);

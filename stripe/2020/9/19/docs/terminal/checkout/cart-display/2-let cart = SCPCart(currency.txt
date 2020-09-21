@@ -1,0 +1,17 @@
+let cart = SCPCart(currency: "usd", tax: 1998, total: 100)
+cart.lineItems = [
+    SCPCartLineItem(displayName: "Caramel latte", quantity: 1, amount: 659),
+    SCPCartLineItem(displayName: "Dozen donuts", quantity: 1, amount: 1239)
+]
+
+Terminal.shared.setReaderDisplay(cart) { (error) in
+    // Check for errors
+}let cart = SCPCart(currency: "usd", tax: 1998, total: 100)
+cart.lineItems = [
+    SCPCartLineItem(displayName: "Caramel latte", quantity: 1, amount: 659),
+    SCPCartLineItem(displayName: "Dozen donuts", quantity: 1, amount: 1239)
+]
+
+Terminal.shared.setReaderDisplay(cart) { (error) in
+    // Check for errors
+}

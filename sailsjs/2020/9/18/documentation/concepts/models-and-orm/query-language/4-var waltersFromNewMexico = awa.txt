@@ -1,0 +1,4 @@
+var waltersFromNewMexico = await Model.find({
+  name: 'walter',
+  state: 'new mexico'
+});

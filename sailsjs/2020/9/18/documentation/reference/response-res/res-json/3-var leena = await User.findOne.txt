@@ -1,0 +1,3 @@
+var leena = await User.findOne({ firstName: 'Leena' });
+if (!leena) { return res.notFound(); }
+return res.json(leena.id);//« you can send down primitives, like numbers

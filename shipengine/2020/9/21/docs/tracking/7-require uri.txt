@@ -1,0 +1,14 @@
+require "uri"
+require "net/http"
+
+url = URI("https://api.shipengine.com/v1/tracking?carrier_code=stamps_com&tracking_number=9405511899223197428490")
+
+https = Net::HTTP.new(url.host, url.port);
+https.use_ssl = true
+
+request = Net::HTTP::Get.new(url)
+request["Host"] = "api.shipengine.com"
+request["API-Key"] = "__YOUR_API_KEY_HERE__"
+
+response = https.request(request)
+puts response.read_body

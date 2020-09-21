@@ -1,0 +1,2 @@
+req.hostname;
+// -> "ww3.staging.ibm.com"

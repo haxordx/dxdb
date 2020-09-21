@@ -1,0 +1,6 @@
+{
+    "url" : {
+                "primary" : "http://primary.com",
+                "fallback" : "http://fallback.com"
+            }
+}

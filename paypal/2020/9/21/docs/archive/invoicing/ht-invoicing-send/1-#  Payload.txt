@@ -1,0 +1,25 @@
+# ** Payload **
+{
+  "requestEnvelope": {
+    "errorLanguage": "en_US"                # Language of returned errors
+  },
+  "invoice": {
+    "merchantEmail": "caller@example.com",  # Receiver/Merchant e-ddress
+    "payerEmail": "sender@example.com",     # Sender/Buyer e-dress
+    "currencyCode": "USD",                  # Payment Currency code
+    "paymentTerms": "DueOnReceipt",
+    "itemList": {
+      "item":[{
+        "name": "BananaPlant",
+        "quantity": "1",
+        "unitPrice": "12"
+      },
+      {                                     # start second invoice item
+        "name": "PeachTree",
+        "quantity": "2",
+        "unitPrice": "14"
+      }]
+    }
+  }
+}
+copy

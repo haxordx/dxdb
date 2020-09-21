@@ -1,0 +1,4 @@
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    NSLog(@"Remote notification");
+  [self.push application:application didReceiveRemoteNotification:userInfo];
+}

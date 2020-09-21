@@ -1,0 +1,21 @@
+"request_history": [
+  {
+    "approved": false,
+    "amount": 2000,
+    "created": 1574104953,
+    "currency": "usd",
+    "merchant_amount": 2000,
+    "merchant_currency": "usd",
+    "reason": "suspected_fraud"
+  }
+],"request_history": [
+  {
+    "approved": false,
+    "amount": 2000,
+    "created": 1574104953,
+    "currency": "usd",
+    "merchant_amount": 2000,
+    "merchant_currency": "usd",
+    "reason": "suspected_fraud"
+  }
+],

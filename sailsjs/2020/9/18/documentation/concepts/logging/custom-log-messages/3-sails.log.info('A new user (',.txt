@@ -1,0 +1,2 @@
+sails.log.info('A new user (', newUser.emailAddress, ') just signed up!');
+// -> info: A new user ( irl@foobar.com ) just signed up!

@@ -1,0 +1,39 @@
+[
+  {
+    "rate_type": "check",
+    "carrier_id": "se-123890",
+    "shipping_amount": {
+      "currency": "usd",
+      "amount": 0.46
+    },
+    "insurance_amount": {
+      "currency": "usd",
+      "amount": 0.0
+    },
+    "confirmation_amount": {
+      "currency": "usd",
+      "amount": 0.0
+    },
+    "other_amount": {
+      "currency": "usd",
+      "amount": 0.0
+    },
+    "zone": 6,
+    "package_type": "letter",
+    "delivery_days": 3,
+    "guaranteed_service": false,
+    "estimated_delivery_date": "2019-07-25T05:00:00.000Z",
+    "carrier_delivery_days": "3",
+    "ship_date": "2019-07-25T05:00:00.000ZPlus3$",
+    "negotiated_rate": false,
+    "service_type": "USPS First Class Mail",
+    "service_code": "usps_first_class_mail",
+    "trackable": true,
+    "validation_status": "unknown",
+    "warning_messages": [],
+    "error_messages": [],
+    "carrier_code": "stamps_com",
+    "carrier_nickname": "Free",
+    "carrier_friendly_name": "Stamps.com"
+  }
+]

@@ -1,0 +1,42 @@
+HTTP Headers
+------------
+-H "X-PAYPAL-SECURITY-USERID: insert_developer_user_name"
+-H "X-PAYPAL-SECURITY-PASSWORD: insert_developer_password"
+-H "X-PAYPAL-SECURITY-SIGNATURE: insert_developer_signature"
+-H "X-PAYPAL-REQUEST-DATA-FORMAT: NV"
+-H "X-PAYPAL-RESPONSE-DATA-FORMAT: NV"
+-H "X-PAYPAL-APPLICATION-ID: APP-80W284485P519543T"    #Standard sandbox app ID
+
+Endpoint
+--------
+https://svcs.sandbox.paypal.com/AdaptivePayments/PreapprovalDetails
+
+Input Parameters
+----------------
+preapprovalKey=PA-5PU68213WY5961234    #Value of the pre-approval key, received in the Preapproval call above
+&requestEnvelope.errorLanguage=en_US
+
+Response
+--------
+&responseEnvelope.ack=Success
+&approved=true
+&cancelUrl=http%3A%2F%2Fwww.yourdomain.com%2Fcancel.html
+&curPayments=0
+&curPaymentsAmount=0.00
+&curPeriodAttempts=0
+¤cyCode=USD
+&dateOfMonth=0
+&dayOfWeek=NO_DAY_SPECIFIED
+&endingDate=2013-02-02T20%3A40%3A52.000Z
+&maxAmountPerPayment=35.00
+&maxNumberOfPayments=20
+&maxTotalAmountOfAllPayments=800.00
+&paymentPeriod=NO_PERIOD_SPECIFIED
+&pinType=NOT_REQUIRED
+&returnUrl=http%3A%2F%2Fwww.yourdomain.com%2Fsuccess.html
+&senderEmail=insert_sender_email
+&startingDate=2012-05-03T10%3A27%3A52.000Z
+&status=ACTIVE
+&displayMaxTotalAmount=false
+...
+copy

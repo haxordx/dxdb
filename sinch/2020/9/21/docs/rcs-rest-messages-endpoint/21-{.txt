@@ -1,0 +1,7 @@
+{
+  "type": "create_calendar_event",
+  "start_time": timestamp,
+  "end_time": timestamp,
+  "title": string,
+  "description": string
+}

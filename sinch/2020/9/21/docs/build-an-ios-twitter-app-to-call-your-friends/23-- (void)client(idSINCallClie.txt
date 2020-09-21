@@ -1,0 +1,32 @@
+- (void)client:(id<SINCallClient>)client didReceiveIncomingCall:(id<SINCall>)call {
+    UIViewController *top = self.window.rootViewController;
+    SLRequest *twitterInfoRequest = [SLRequest requestForServiceType:SLServiceTypeTwitter requestMethod:SLRequestMethodGET URL:[NSURL URLWithString:@"https://api.twitter.com/1.1/users/lookup.json?"] parameters:[NSDictionary dictionaryWithObjectsAndKeys:[NSString stringWithFormat:@"%@", [call remoteUserId]], @"screen_name", nil]];
+    [twitterInfoRequest setAccount:self.twitterAccount];
+    [twitterInfoRequest performRequestWithHandler:^(NSData *responseData, NSHTTPURLResponse *urlResponse, NSError *error) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if ([urlResponse statusCode] == 429) {
+                NSLog(@"Rate limit reached");
+                return;
+            }
+            if (error) {
+                NSLog(@"Error: %@", error.localizedDescription);
+                return;
+            }
+            if (responseData) {
+                NSError *error = nil;
+                NSDictionary *TWData = [NSJSONSerialization JSONObjectWithData:responseData options:NSJSONReadingMutableLeaves error:&error];
+
+                CFriend *callingFriend = [[CFriend alloc] init];
+                [callingFriend setUserID:[[TWData valueForKey:@"id"] objectAtIndex:0]];
+                [callingFriend setName:[[TWData valueForKey:@"name"] objectAtIndex:0]];
+                [callingFriend setUsername:[call remoteUserId]];
+                [callingFriend setPicUrl:[[TWData valueForKey:@"profile_image_url"] objectAtIndex:0]];
+
+                DetailViewController *controller = [top.storyboard instantiateViewControllerWithIdentifier:@"callScreen"];
+                [controller setCallFriend:callingFriend];
+                [controller setCall:call];
+                [self.window.rootViewController presentViewController:controller animated:YES completion:nil];
+            }
+        });
+    }];
+}

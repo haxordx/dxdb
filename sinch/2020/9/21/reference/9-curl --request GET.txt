@@ -1,0 +1,3 @@
+curl --request GET \
+  --url https://eu.conversation.api.sinch.com/v1beta/projects/project_id/messages/message_id \
+  --header 'accept: application/json'

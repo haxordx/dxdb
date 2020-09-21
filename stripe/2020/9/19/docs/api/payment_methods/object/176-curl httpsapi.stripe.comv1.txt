@@ -1,0 +1,3 @@
+curl https://api.stripe.com/v1/payment_methods/pm_1HTGAI2eZvKYlo2Cr0eaKe3v/detach \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -X POST

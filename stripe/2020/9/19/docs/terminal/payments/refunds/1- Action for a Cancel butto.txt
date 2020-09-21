@@ -1,0 +1,26 @@
+// Action for a "Cancel" button
+- (void)cancelAction {
+    if (self.paymentIntent) {
+        [[SCPTerminal shared] cancelPaymentIntent:self.paymentIntent completion:^(SCPPaymentIntent *cancelResult, NSError *cancelError) {
+            if (cancelError) {
+                NSLog(@"cancelPaymentIntent failed: %@", cancelError);
+            }
+            else {
+                NSLog(@"cancelPaymentIntent succeeded");
+            }
+        }];
+    }
+}
+// Action for a "Cancel" button
+- (void)cancelAction {
+    if (self.paymentIntent) {
+        [[SCPTerminal shared] cancelPaymentIntent:self.paymentIntent completion:^(SCPPaymentIntent *cancelResult, NSError *cancelError) {
+            if (cancelError) {
+                NSLog(@"cancelPaymentIntent failed: %@", cancelError);
+            }
+            else {
+                NSLog(@"cancelPaymentIntent succeeded");
+            }
+        }];
+    }
+}

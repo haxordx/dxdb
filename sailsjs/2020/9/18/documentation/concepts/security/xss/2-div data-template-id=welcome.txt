@@ -1,0 +1,3 @@
+<div data-template-id="welcome-box">
+  <h3 is="welcome-msg">Hello <%- me.username %>!</h3>
+</div>

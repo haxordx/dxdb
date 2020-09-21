@@ -1,0 +1,20 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const AACComponent = paypal.PayoutsAAC.driver('react', {
+  React,
+  ReactDOM
+});
+
+class OtherReactComponent extends React.Component {
+render() {
+         return (
+        <AACComponent
+clientId="<client_id>"
+merchantId="<Merchant Account ID>"
+env="<sandbox/production>"
+pageType="<signup/login>"
+onLogin={onLogin} />
+      );
+  }
+}copy

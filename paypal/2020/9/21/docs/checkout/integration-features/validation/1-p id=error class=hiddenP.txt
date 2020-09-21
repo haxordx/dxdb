@@ -1,0 +1,31 @@
+<p id="error" class="hidden">Please check your information to continue</p>
+
+<script>
+  paypal.Buttons({
+
+    // onClick is called when the button is clicked
+    onClick: function(data, actions) {
+
+      // You must return a promise from onClick to do async validation
+      return fetch('/my-api/validate', {
+        method: 'post',
+        headers: {
+          'content-type': 'application/json'
+        }
+      }).then(function(res) {
+        return res.json();
+      }).then(function(data) {
+
+        // If there is a validation error, reject, otherwise resolve
+        if (data.validationError) {
+          document.querySelector('#error').classList.remove('hidden');
+          return actions.reject();
+        } else {
+          return actions.resolve();
+        }
+      });
+    }
+
+  }).render('#paypal-button-container');
+</script>
+htmlcopy

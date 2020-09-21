@@ -1,0 +1,29 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <ns2:ExecutePaymentResponse xmlns:ns2="https://svcs.paypal.com/types/ap">
+      <responseEnvelope>
+        <timestamp>2014-02-10T21:21:51.235-08:00</timestamp>
+        <ack>Success</ack>
+        <correlationId>0bed3d804d45f</correlationId>
+        <build>9531812</build>
+      </responseEnvelope>
+      <paymentExecStatus>COMPLETED</paymentExecStatus>
+      <postPaymentDisclosureList>
+        <postPaymentDisclosure>
+          <accountIdentifier>
+            <email>lkanisettive-pl-bus@paypal.com</email>
+          </accountIdentifier>
+          <fundsAvailabilityDate>2014-08-15-07:00</fundsAvailabilityDate>
+          <fundsAvailabilityDateDisclaimerText>The payment is credited to the recipient PayPal account. The recipient can access the funds according to the terms of their PayPal User agreement. This should not impact the shipping date or any agreement you have with the seller.</fundsAvailabilityDateDisclaimerText>
+          <stateRegulatoryAgencyInfo>
+            <Name>State of New Jersey Department of Banking and Insurance</Name>
+            <PhoneNo>(609) 292-7272</PhoneNo>
+            <Website>https://example.com</Website>
+          </stateRegulatoryAgencyInfo>
+        </postPaymentDisclosure>
+      </postPaymentDisclosureList>
+    </ns2:ExecutePaymentResponse>
+  </soapenv:Body>
+</soapenv:Envelope>
+copy

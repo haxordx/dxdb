@@ -1,0 +1,20 @@
+curl https://api.stripe.com/v1/checkout/sessions \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d "payment_method_types[]"=card \
+  -d "line_items[][price]"="{{PRICE_ID}}" \
+  -d "line_items[][quantity]"=1 \
+  -d "subscription_data[application_fee_percent]"=10 \
+  -d mode=subscription \
+  -d success_url="https://example.com/success" \
+  -d cancel_url="https://example.com/cancel" \
+  -H "Stripe-Account: {{CONNECTED_STRIPE_ACCOUNT_ID}}"
+curl https://api.stripe.com/v1/checkout/sessions \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d "payment_method_types[]"=card \
+  -d "line_items[][price]"="{{PRICE_ID}}" \
+  -d "line_items[][quantity]"=1 \
+  -d "subscription_data[application_fee_percent]"=10 \
+  -d mode=subscription \
+  -d success_url="https://example.com/success" \
+  -d cancel_url="https://example.com/cancel" \
+  -H "Stripe-Account: {{CONNECTED_STRIPE_ACCOUNT_ID}}"

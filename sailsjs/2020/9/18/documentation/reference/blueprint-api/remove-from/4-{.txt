@@ -1,0 +1,6 @@
+{
+  id: 16,
+  verb: 'removedFrom',
+  attribute: 'employeesOfTheMonth',
+  removedIds: [ 7 ]
+}

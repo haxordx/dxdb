@@ -1,0 +1,2 @@
+var newUserId = sails.helpers.inviteNewUser('bubba@hawtmail.com')
+.intercept('emailAddressInUse', 'badRequest');

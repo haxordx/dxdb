@@ -1,0 +1,24 @@
+// Not recommended: setting global API key state
+const stripe = require('stripe')('{{CONNECTED_ACCOUNT_SECRET_KEY}}');
+const customer = await stripe.customers.create({
+  email: 'person@example.edu',
+});
+
+// Recommended: sending API key with every request
+const secondCustomer = await stripe.customers.create({
+  email: 'person@example.edu',
+}, {
+  api_key: '{{CONNECTED_ACCOUNT_SECRET_KEY}}', // account's access token from the Connect flow
+});
+// Not recommended: setting global API key state
+const stripe = require('stripe')('{{CONNECTED_ACCOUNT_SECRET_KEY}}');
+const customer = await stripe.customers.create({
+  email: 'person@example.edu',
+});
+
+// Recommended: sending API key with every request
+const secondCustomer = await stripe.customers.create({
+  email: 'person@example.edu',
+}, {
+  api_key: '{{CONNECTED_ACCOUNT_SECRET_KEY}}', // account's access token from the Connect flow
+});

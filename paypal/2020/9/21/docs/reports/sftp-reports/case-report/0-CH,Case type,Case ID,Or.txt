@@ -1,0 +1,2 @@
+"CH","Case type","Case ID","Original transaction ID","Transaction date","Transaction invoice ID","Card type","Case reason","Claimant name","Claimant email address","Case filing date","Case status","Response due date","Disputed amount","Disputed currency","Disputed transaction ID","Money movement","Settlement type","Seller protection","Seller protection payout amount","Seller protection currency","Payment tracking ID","Buyer comments","Store ID","Credit Card Chargeback Reason Code"
+copy

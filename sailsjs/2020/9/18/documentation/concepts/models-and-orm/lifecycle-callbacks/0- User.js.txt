@@ -1,0 +1,29 @@
+// User.js
+module.exports = {
+
+  attributes: {
+
+    username: {
+      type: 'string',
+      required: true
+    },
+
+    password: {
+      type: 'string',
+      minLength: 6,
+      required: true
+    }
+
+  },
+
+
+  beforeCreate: function (valuesToSet, proceed) {
+    // Hash password
+    sails.helpers.passwords.hashPassword(valuesToSet.password).exec((err, hashedPassword)=>{
+      if (err) { return proceed(err); }
+      valuesToSet.password = hashedPassword;
+      return proceed();
+    });//_∏_
+  }
+
+};

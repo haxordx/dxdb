@@ -1,0 +1,18 @@
+// MARK: ReaderDisplayDelegate
+
+func terminal(_ terminal: Terminal, didRequestReaderInput inputOptions: ReaderInputOptions = []) {
+    readerMessageLabel.text = Terminal.stringFromReaderInputOptions(inputOptions)
+}
+
+func terminal(_ terminal: Terminal, didRequestReaderDisplayMessage displayMessage: ReaderDisplayMessage) {
+    readerMessageLabel.text = Terminal.stringFromReaderDisplayMessage(displayMessage)
+}
+// MARK: ReaderDisplayDelegate
+
+func terminal(_ terminal: Terminal, didRequestReaderInput inputOptions: ReaderInputOptions = []) {
+    readerMessageLabel.text = Terminal.stringFromReaderInputOptions(inputOptions)
+}
+
+func terminal(_ terminal: Terminal, didRequestReaderDisplayMessage displayMessage: ReaderDisplayMessage) {
+    readerMessageLabel.text = Terminal.stringFromReaderDisplayMessage(displayMessage)
+}

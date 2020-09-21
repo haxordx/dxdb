@@ -1,0 +1,3 @@
+URI:  https://verificationapi-v1.sinch.com/verification/[version]
+
+    Version - v1

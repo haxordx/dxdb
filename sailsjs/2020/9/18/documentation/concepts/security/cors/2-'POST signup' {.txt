@@ -1,0 +1,4 @@
+'POST /signup': {
+   action: 'user/signup',
+   cors: false
+}

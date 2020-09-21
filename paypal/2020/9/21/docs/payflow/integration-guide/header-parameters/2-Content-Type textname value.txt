@@ -1,0 +1,9 @@
+Content-Type: text/name value
+Content-Length: 233
+Connection: close
+Host: payflowpro.paypal.com
+X-VPS-REQUEST-ID: [See Required Payflow Headers]
+X-VPS-CLIENT-TIMEOUT: 45
+X-VPS-VIT-[See Integrator-Provided Data]
+X-VPS-VIT-[See Integrator-Provided Data]
+copy

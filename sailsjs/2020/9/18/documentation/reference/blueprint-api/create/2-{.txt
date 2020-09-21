@@ -1,0 +1,21 @@
+{
+  "id": 47,
+  "name": "Applejack",
+  "hobby": "pickin",
+  "createdAt": 1485550575626,
+  "updatedAt": 1485550603847,
+  "involvedInPurchases": [
+    {
+      "id": 13,
+      "amount": 10000,
+      "createdAt": 1485550525451,
+      "updatedAt": 1485550544901
+    },
+    {
+      "id": 25,
+      "amount": 4.50,
+      "createdAt": 1485550561340,
+      "updatedAt": 1485550561340
+    }
+  ]
+}

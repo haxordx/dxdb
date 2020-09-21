@@ -1,0 +1,15 @@
+merchant_business_name: Fruits Packaging Inc.
+merchant_first_name: Joan
+notify_version: 3.4
+txn_type: invoice_payer_cancel
+invoice_number: 0021
+charset: windows-1252
+payer_email: payer@example.com
+payer_last_name: Bond
+merchant_last_name: Joan
+payer_first_name: Henry
+merchant_email: merchant@example.com
+verify_sign: AiPC9BjkCyDFQXbSkoZcgqH3hpacAAV9zVNI.GLTI1sLOHpeeWp3oMQZ
+invoice_id: INV2-UHWN-STXM-65B7-PT4R
+ipn_track_id: 2eKZJ-cZftAHzSWbsS7qjQ
+copy

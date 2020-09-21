@@ -1,0 +1,1 @@
+[PATCH] https://calling.api.sinch.com/v1/conferences/id/myConference/abcdef01234

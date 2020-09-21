@@ -1,0 +1,5 @@
+// Starting a call
+Call call = callClient.callUser("<remote user id>");
+
+// User changed his/her mind, let’s hangup
+call.hangup();

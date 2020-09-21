@@ -1,0 +1,17 @@
+// ISSUING_CARD_ID is the ID of the Issuing Card you'd like to use for
+// push provisioning.
+var options = new EphemeralKeyCreateOptions
+{
+  IssuingCard = "{{ISSUING_CARD_ID}}",
+  StripeVersion = "{{API_VERSION}}"
+};
+var service = new EphemeralKeyService();
+service.Create(options);// ISSUING_CARD_ID is the ID of the Issuing Card you'd like to use for
+// push provisioning.
+var options = new EphemeralKeyCreateOptions
+{
+  IssuingCard = "{{ISSUING_CARD_ID}}",
+  StripeVersion = "{{API_VERSION}}"
+};
+var service = new EphemeralKeyService();
+service.Create(options);

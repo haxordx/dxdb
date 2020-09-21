@@ -1,0 +1,10 @@
+{
+  "channel_credentials": [
+    {
+      "channel": "VIBERBM",
+      "static_bearer": {
+        "claimed_identity": "{{VBM_SERVICE_ID}}"
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+paypal.Buttons({
+  onApprove: function(data) {
+    var EXECUTE_URL = 'https://mystore.com/api/paypal/execute-payment';
+
+    return fetch(EXECUTE_URL, {
+      method: 'post',
+      headers: {
+        'content-type': 'application/json'
+      },
+      body: JSON.stringify({
+        paymentID: data.paymentID,
+        payerID:   data.payerID
+      })
+    });
+  }
+}).render('#paypal-button-container');
+copy

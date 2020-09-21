@@ -1,0 +1,11 @@
+// ISSUING_CARD_ID is the ID of the Issuing Card you'd like to use for
+// push provisioning.
+let key = await stripe.ephemeralKeys.create(
+  {issuing_card: '{{ISSUING_CARD_ID}}'},
+  {stripe_version: '{{API_VERSION}}'}
+);// ISSUING_CARD_ID is the ID of the Issuing Card you'd like to use for
+// push provisioning.
+let key = await stripe.ephemeralKeys.create(
+  {issuing_card: '{{ISSUING_CARD_ID}}'},
+  {stripe_version: '{{API_VERSION}}'}
+);

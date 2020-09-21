@@ -1,0 +1,8 @@
+<head>
+<title>Payment Setup</title>
+<script src="https://js.stripe.com/v3/"></script>
+</head>
+<head>
+<title>Payment Setup</title>
+<script src="https://js.stripe.com/v3/"></script>
+</head>

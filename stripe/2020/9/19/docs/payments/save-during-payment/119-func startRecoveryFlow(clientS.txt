@@ -1,0 +1,26 @@
+func startRecoveryFlow(clientSecret: String) {
+    // ...continued from previous step
+    // Reuse the existing PaymentIntent's client secret
+    let paymentIntentParams = STPPaymentIntentParams(clientSecret: clientSecret)
+    if paymentIntent.lastPaymentError.code == STPPaymentIntentLastPaymentErrorCodeAuthenticationFailure {
+        // Payment failed because authentication is required, reuse the PaymentMethod
+        paymentIntentParams.paymentMethodId = paymentIntent.lastPaymentError.paymentMethod.stripeId
+    } else {
+        // Collect a new PaymentMethod from the customer...
+    }
+
+    // Submit the payment...
+}
+func startRecoveryFlow(clientSecret: String) {
+    // ...continued from previous step
+    // Reuse the existing PaymentIntent's client secret
+    let paymentIntentParams = STPPaymentIntentParams(clientSecret: clientSecret)
+    if paymentIntent.lastPaymentError.code == STPPaymentIntentLastPaymentErrorCodeAuthenticationFailure {
+        // Payment failed because authentication is required, reuse the PaymentMethod
+        paymentIntentParams.paymentMethodId = paymentIntent.lastPaymentError.paymentMethod.stripeId
+    } else {
+        // Collect a new PaymentMethod from the customer...
+    }
+
+    // Submit the payment...
+}

@@ -1,0 +1,12 @@
+curl -v -X POST \
+  https://api.sandbox.paypal.com/v2/invoicing/search?page=1&page_size=1&total_required=true \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer Access-Token" \
+  -d '{
+  "start_invoice_date": "2017-01-01 PST",
+  "end_invoice_date": "2017-12-31 PST",
+  "page": 0,
+  "page_size": 3,
+  "total_count_required": true
+}'
+bashcopy

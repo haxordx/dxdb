@@ -1,0 +1,5 @@
+RESULT=126&PNREF=VFHA28926593&RESPMSG=Under review by Fraud
+Service&AUTHCODE=041PNI&AVSADDR=Y&AVSZIP=N&CVV2MATCH=X&HOSTCODE=A&PROCAVS=
+A&PROCCVV2=X&IAVS=N&PREFPSMSG=Review: More than one rule was triggered for
+Review&POSTFPSMSG=Review: More than one rule was triggered for Review
+copy

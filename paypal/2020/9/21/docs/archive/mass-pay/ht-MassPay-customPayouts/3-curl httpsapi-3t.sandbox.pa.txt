@@ -1,0 +1,24 @@
+curl https://api-3t.sandbox.paypal.com/nvp \
+  -s \
+  --insecure \
+  -d USER=<var>Caller_ID</var> \
+  -d PWD=<var>Caller_Pswd</var> \
+  -d SIGNATURE=<var>Caller_Sig</var> \
+  -d METHOD=MassPay \
+  -d VERSION=93 \
+  -d RECEIVERTYPE=EmailAddress \
+  -d CURRENCYCODE=USD \
+  -d EMAILSUBJECT= You have a new payment from TEST \
+  -d L_EMAIL0=e-mail_1@example.com \
+  -d L_AMT0=1.23 \
+  -d L_NOTE0= Thank you for our catered lunch. \
+  -d L_UNIQUEID0=TxnNo123 \
+  -d L_EMAIL1=e-mail_2@example.com \
+  -d L_AMT1=4.56 \
+  -d L_NOTE1= Thank you for the Balloons! \
+  -d L_UNIQUEID1=TxnNo456 \
+  -d L_EMAIL2=e-mail_3@example.com \
+  -d L_AMT2=7.89 \
+  -d L_NOTE2= Thank you for your cleaning service. \
+  -d L_UNIQUEID2=TxnNo789
+copy

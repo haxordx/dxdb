@@ -1,0 +1,83 @@
+var options = new ProductCreateOptions
+{
+    Name = "Starter Setup",
+};
+
+var service = new ProductService();
+var product = service.Create(options);
+
+var options = new PriceCreateOptions
+{
+    Product = "{{PRODUCT_ID}}",
+    UnitAmount = 1000,
+    Currency = "usd",
+    Recurring = new PriceRecurringOptions {
+        Interval = "month",
+    },
+};
+
+var service = new PriceService();
+var price = service.Create(options);
+
+var options = new SessionCreateOptions {
+    PaymentMethodTypes = new List<string> {
+        "card",
+    },
+    LineItems = new List<SessionLineItemOptions> {
+        new SessionLineItemOptions {
+            Name = "T-shirt",
+            Description = "Comfortable cotton t-shirt",
+            Amount = 2000,
+            Currency = "usd",
+            Price = "{{PRICE_ID}}",
+            Quantity = 1,
+        },
+    },
+    Mode = "payment",
+    SuccessUrl = "https://example.com/success?session_id={CHECKOUT_SESSION_ID}",
+    CancelUrl = "https://example.com/cancel",
+};
+
+var service = new SessionService();
+Session session = service.Create(options);var options = new ProductCreateOptions
+{
+    Name = "Starter Setup",
+};
+
+var service = new ProductService();
+var product = service.Create(options);
+
+var options = new PriceCreateOptions
+{
+    Product = "{{PRODUCT_ID}}",
+    UnitAmount = 1000,
+    Currency = "usd",
+    Recurring = new PriceRecurringOptions {
+        Interval = "month",
+    },
+};
+
+var service = new PriceService();
+var price = service.Create(options);
+
+var options = new SessionCreateOptions {
+    PaymentMethodTypes = new List<string> {
+        "card",
+    },
+    LineItems = new List<SessionLineItemOptions> {
+        new SessionLineItemOptions {
+            Name = "T-shirt",
+            Description = "Comfortable cotton t-shirt",
+            Amount = 2000,
+            Currency = "usd",
+            Price = "{{PRICE_ID}}",
+            Quantity = 1,
+        },
+    },
+    Mode = "payment",
+    SuccessUrl = "https://example.com/success?session_id={CHECKOUT_SESSION_ID}",
+    CancelUrl = "https://example.com/cancel",
+};
+
+var service = new SessionService();
+Session session = service.Create(options);

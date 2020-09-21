@@ -1,0 +1,4 @@
+// Note that a live-mode API key is required.
+r, _ := reporttype.Get("balance.summary.1", nil)
+// Note that a live-mode API key is required.
+r, _ := reporttype.Get("balance.summary.1", nil)

@@ -1,0 +1,19 @@
+//if there is an incoming call, answer it and stop listening for more incoming calls
+pickupButton.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        if (currentCall != null) {
+            currentCall.answer();
+        }
+    }
+});
+
+//if there is a current call, hang it up
+hangupButton.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        if (currentCall != null) {
+            currentCall.hangup();
+        }
+    }
+});

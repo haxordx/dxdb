@@ -1,0 +1,16 @@
+ChargeCreateParams params =
+  ChargeCreateParams.builder()
+    .setAmount(1500L)
+    .setCurrency("usd")
+    .setSource("{{CONNECTED_STRIPE_ACCOUNT_ID}}")
+    .build();
+
+Charge charge = Charge.create(params);
+ChargeCreateParams params =
+  ChargeCreateParams.builder()
+    .setAmount(1500L)
+    .setCurrency("usd")
+    .setSource("{{CONNECTED_STRIPE_ACCOUNT_ID}}")
+    .build();
+
+Charge charge = Charge.create(params);

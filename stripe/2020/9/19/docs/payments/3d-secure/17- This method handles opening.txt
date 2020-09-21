@@ -1,0 +1,52 @@
+// This method handles opening custom URL schemes (e.g., "your-app://")
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
+    BOOL stripeHandled = [Stripe handleStripeURLCallbackWithURL:url];
+    if (stripeHandled) {
+        return YES;
+    } else {
+        // This was not a Stripe url – handle the URL normally as you would
+    }
+    return NO;
+}
+
+// This method handles opening universal link URLs (e.g., "https://example.com/stripe_ios_callback")
+- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler {
+    if (userActivity.activityType == NSUserActivityTypeBrowsingWeb) {
+        if (userActivity.webpageURL) {
+            BOOL stripeHandled = [Stripe handleStripeURLCallbackWithURL:userActivity.webpageURL];
+            if (stripeHandled) {
+                return YES;
+            } else {
+                // This was not a Stripe url – handle the URL normally as you would
+            }
+            return NO;
+        }
+    }
+    return NO;
+}
+// This method handles opening custom URL schemes (e.g., "your-app://")
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
+    BOOL stripeHandled = [Stripe handleStripeURLCallbackWithURL:url];
+    if (stripeHandled) {
+        return YES;
+    } else {
+        // This was not a Stripe url – handle the URL normally as you would
+    }
+    return NO;
+}
+
+// This method handles opening universal link URLs (e.g., "https://example.com/stripe_ios_callback")
+- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler {
+    if (userActivity.activityType == NSUserActivityTypeBrowsingWeb) {
+        if (userActivity.webpageURL) {
+            BOOL stripeHandled = [Stripe handleStripeURLCallbackWithURL:userActivity.webpageURL];
+            if (stripeHandled) {
+                return YES;
+            } else {
+                // This was not a Stripe url – handle the URL normally as you would
+            }
+            return NO;
+        }
+    }
+    return NO;
+}

@@ -1,0 +1,26 @@
+curl -v -X POST https://api.sandbox.paypal.com/v2/checkout/orders \
+ -H 'Content-Type: application/json' \
+ -H 'Authorization: Bearer Access-Token' \
+ -H 'PayPal-Partner-Attribution-Id: BN-Code' \
+ -d '{
+ "intent": "CAPTURE",
+ "purchase_units": [{
+   "amount": {
+     "currency_code": "USD",
+     "value": "100.00"
+   },
+   "payee": {
+     "email_address": "seller@example.com"
+   },
+   "payment_instruction": {
+     "disbursement_mode": "INSTANT",
+     "platform_fees": [{
+       "amount": {
+         "currency_code": "USD",
+         "value": "25.00"
+       }
+     }]
+   }
+ }]
+}'
+bashcopy

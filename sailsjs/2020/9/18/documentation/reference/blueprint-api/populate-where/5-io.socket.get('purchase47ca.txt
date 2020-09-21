@@ -1,0 +1,3 @@
+io.socket.get('/purchase/47/cashier', function (cashier) {
+  console.log(cashier);
+});

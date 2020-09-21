@@ -1,0 +1,5 @@
+// setting up custom headers
+Map<String,String> headers = new HashMap<>();
+headers.put("The first value is ", "@123");
+headers.put("Custom value ", "two!");
+Call call = callClient.callUser(userId, headers);

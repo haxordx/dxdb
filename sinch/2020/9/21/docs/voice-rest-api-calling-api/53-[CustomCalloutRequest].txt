@@ -1,0 +1,9 @@
+[CustomCalloutRequest]
+    string - cli
+    Identity - destination
+    string - dtmf
+    int - maxDuration
+    string - ice
+    string - ace
+    string - pie
+    string - dice

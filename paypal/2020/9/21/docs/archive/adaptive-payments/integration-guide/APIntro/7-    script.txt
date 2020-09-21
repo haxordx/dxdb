@@ -1,0 +1,6 @@
+    <script>
+      function <<returnFunctionName>>() {
+        Your code goes here.
+      }
+    </script>
+ copy

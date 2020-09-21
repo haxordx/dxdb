@@ -1,0 +1,8 @@
+webhook = Webhook.new({
+  :url => "https://f6153ef32.ngrok.io",
+  :event_types => [{
+    :name => "PAYMENT.PAYOUTS-ITEM.FAILED"
+  },{
+    :name => "PAYMENT.PAYOUTS-ITEM.HELD"
+  }]
+})copy

@@ -1,0 +1,15 @@
+var createdPlan = plan.Create(apiContext);
+
+var patchRequest = new PatchRequest()
+{
+  new Patch()
+  {
+    op = "replace",
+    path = "/",
+    value = {
+      "state": "ACTIVE"
+    }
+  }
+};
+
+createdPlan.Update(apiContext, patchRequest);copy

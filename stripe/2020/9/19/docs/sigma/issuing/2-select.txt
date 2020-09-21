@@ -1,0 +1,23 @@
+select
+  date_trunc('month', it.created) as month,
+  fd.type as fee_type,
+  sum(fd.amount) as net_fees,
+  sum(it.amount) as net_amount
+from issuing_transactions it
+inner join balance_transactions bt
+on bt.id=it.balance_transaction_id
+inner join balance_transaction_fee_details fd
+on fd.balance_transaction_id=bt.id
+group by 1,2
+order by month desc, fee_typeselect
+  date_trunc('month', it.created) as month,
+  fd.type as fee_type,
+  sum(fd.amount) as net_fees,
+  sum(it.amount) as net_amount
+from issuing_transactions it
+inner join balance_transactions bt
+on bt.id=it.balance_transaction_id
+inner join balance_transaction_fee_details fd
+on fd.balance_transaction_id=bt.id
+group by 1,2
+order by month desc, fee_type

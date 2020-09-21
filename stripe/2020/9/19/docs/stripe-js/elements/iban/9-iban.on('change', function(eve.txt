@@ -1,0 +1,15 @@
+iban.on('change', function(event) {
+  var displayError = document.getElementById('error-message');
+  if (event.error) {
+    displayError.textContent = event.error.message;
+  } else {
+    displayError.textContent = '';
+  }
+});iban.on('change', function(event) {
+  var displayError = document.getElementById('error-message');
+  if (event.error) {
+    displayError.textContent = event.error.message;
+  } else {
+    displayError.textContent = '';
+  }
+});

@@ -1,0 +1,20 @@
+...
+"outcome": {
+  "network_status": "approved_by_network",
+  "reason": "elevated_risk_level",
+  "risk_level": "elevated",
+  "risk_score": "56", // Provided only with Stripe Radar for Fraud Teams
+  "seller_message": "Stripe evaluated this charge as having elevated risk, and placed it in your manual review queue.",
+  "type": "manual_review"
+}
+...
+...
+"outcome": {
+  "network_status": "approved_by_network",
+  "reason": "elevated_risk_level",
+  "risk_level": "elevated",
+  "risk_score": "56", // Provided only with Stripe Radar for Fraud Teams
+  "seller_message": "Stripe evaluated this charge as having elevated risk, and placed it in your manual review queue.",
+  "type": "manual_review"
+}
+...

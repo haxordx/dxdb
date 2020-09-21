@@ -1,0 +1,11 @@
+// Product.js
+module.exports = {
+  datastore: 'ourRedis',
+  attributes: {
+    name: 'string',
+    wishlistedBy: {
+      collection: 'user',
+      via: 'wishlist'
+    }
+  }
+};

@@ -1,0 +1,12 @@
+curl https://api-3t.sandbox.paypal.com/nvp \
+  -s \
+  --insecure \
+  -d USER=yourUID \
+  -d PWD=yourPSWD \
+  -d SIGNATURE=yourSig \
+  -d METHOD=RefundTransaction \
+  -d VERSION=100 \
+  -d TRANSACTIONID=6M473779DJ437830A \
+  -d REFUNDTYPE=Partial \
+  -d AMT=100.09
+copy

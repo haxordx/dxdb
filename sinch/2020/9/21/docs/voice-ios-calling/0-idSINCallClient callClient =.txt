@@ -1,0 +1,3 @@
+id<SINCallClient> callClient = [sinchClient callClient];
+id<SINCall> call = [callClient callUserWithId:@"<remote user id>"];
+call.delegate = self; // Assign delegate to observe call state changes

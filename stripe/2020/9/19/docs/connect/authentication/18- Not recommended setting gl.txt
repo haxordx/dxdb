@@ -1,0 +1,46 @@
+// Not recommended: setting global API key state
+Stripe.apiKey = "{{CONNECTED_ACCOUNT_SECRET_KEY}}";
+
+CustomerCreateParams params =
+  CustomerCreateParams.builder()
+    .setEmail("person@example.edu")
+    .build();
+
+Customer customer = Customer.create(params);
+
+// Recommended: sending API key with every request
+CustomerCreateParams params =
+  CustomerCreateParams.builder()
+    .setEmail("person@example.edu")
+    .build();
+
+RequestOptions requestOptions =
+  RequestOptions.builder()
+    // Set account's access token from the Connect flow
+    .setApiKey("{{CONNECTED_ACCOUNT_SECRET_KEY}}")
+    .build();
+
+Customer customer =  Customer.create(params, requestOptions);
+// Not recommended: setting global API key state
+Stripe.apiKey = "{{CONNECTED_ACCOUNT_SECRET_KEY}}";
+
+CustomerCreateParams params =
+  CustomerCreateParams.builder()
+    .setEmail("person@example.edu")
+    .build();
+
+Customer customer = Customer.create(params);
+
+// Recommended: sending API key with every request
+CustomerCreateParams params =
+  CustomerCreateParams.builder()
+    .setEmail("person@example.edu")
+    .build();
+
+RequestOptions requestOptions =
+  RequestOptions.builder()
+    // Set account's access token from the Connect flow
+    .setApiKey("{{CONNECTED_ACCOUNT_SECRET_KEY}}")
+    .build();
+
+Customer customer =  Customer.create(params, requestOptions);

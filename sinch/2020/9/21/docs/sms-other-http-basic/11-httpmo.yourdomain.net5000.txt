@@ -1,0 +1,1 @@
+http://mo.yourdomain.net:5000/yourGetMo.php?originator=%q&msisdn=%P&msg=%A

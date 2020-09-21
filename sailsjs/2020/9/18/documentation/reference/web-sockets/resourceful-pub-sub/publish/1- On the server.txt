@@ -1,0 +1,24 @@
+// On the server:
+
+  tellSecretToBobs: function (req, res) {
+
+    // Get the secret from the request.
+    var secret = req.param('secret');
+
+    // Look up all users named "Bob".
+    User.find({name: 'bob'}, function(err, bobs) {
+      if (err) {return res.serverError(err);}
+
+      // Tell the secret to every client who is subscribed to these users,
+      // except for the client that made this request in the first place.
+      // Note that the secret is wrapped in a dictionary with a `verb` property -- this is not
+      // required, but helpful if you'll also be listening for events from Sails blueprints.
+      User.publish(_.pluck(bobs, 'id'), {
+        verb: 'published',
+        theSecret: secret
+      }, req);
+
+      return res.send();
+    });
+
+  }

@@ -1,0 +1,20 @@
+var payer = new Payer() { payment_method = "paypal" };
+
+var shippingAddress = new ShippingAddress()
+{
+  line1 = "111 First Street",
+  city = "Saratoga",
+  state = "CA",
+  postal_code = "95070",
+  country_code = "US"
+};
+
+var agreement = new Agreement()
+{
+  name = "T-Shirt of the Month Club",
+  description = "Agreement for T-Shirt of the Month Club",
+  start_date = "2015-02-19T00:37:04Z",
+  payer = payer,
+  plan = new Plan() { id = createdPlan.id },
+  shipping_address = shippingAddress
+};copy

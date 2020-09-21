@@ -1,0 +1,15 @@
+class CheckoutActivity : AppCompatActivity() {
+   private lateinit var setupIntentClientSecret: String
+
+   private fun loadPage() {
+       // Request a SetupIntent from your server and store its client secret
+       // Click Open on GitHub to see a full implementation
+   }
+}class CheckoutActivity : AppCompatActivity() {
+   private lateinit var setupIntentClientSecret: String
+
+   private fun loadPage() {
+       // Request a SetupIntent from your server and store its client secret
+       // Click Open on GitHub to see a full implementation
+   }
+}

@@ -1,0 +1,4 @@
+paypal.Button.render({
+  commit: true
+});
+jscopy

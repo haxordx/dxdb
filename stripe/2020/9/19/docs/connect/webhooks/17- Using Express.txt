@@ -1,0 +1,103 @@
+// Using Express
+const express = require('express');
+const bodyParser = require("body-parser");
+const app = express();
+app.use(express.json());
+
+// Use JSON parser for all non-webhook routes
+app.use((req, res, next) => {
+  if (req.originalUrl === "/webhook") {
+    next();
+  } else {
+    bodyParser.json()(req, res, next);
+  }
+});
+
+// Set your secret key. Remember to switch to your live secret key in production!
+// See your keys here: https://dashboard.stripe.com/account/apikeys
+const stripe = require('stripe')('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
+
+// Uncomment and replace with a real secret. You can find your endpoint's
+// secret in your webhook settings.
+// const webhook_secret = 'whsec_...''
+
+app.post('/webhook', bodyParser.raw({type: 'application/json'}), (request, response) => {
+  const sig = request.headers['stripe-signature'];
+
+  let event;
+
+  // Verify webhook signature and extract the event.
+  // See https://stripe.com/docs/webhooks/signatures for more information.
+  try {
+    event = stripe.webhooks.constructEvent(request.body, sig, webhook_secret);
+  } catch (err) {
+    return response.status(400).send(`Webhook Error: ${err.message}`);
+  }
+
+  if (event.type === 'person.updated') {
+    const person = event.data.object;
+    const connectedAccountId = event.account;
+    handlePersonUpdate(connectedAccountId, person);
+  }
+
+  response.json({received: true});
+});
+
+const handlePersonUpdate = (connectedAccountId, person) => {
+  // Fulfill the purchase.
+  console.log('Connected account ID: ' + connectedAccountId);
+  console.log(JSON.stringify(person));
+}
+
+app.listen(4242, () => console.log(`Node server listening on port ${4242}!`));// Using Express
+const express = require('express');
+const bodyParser = require("body-parser");
+const app = express();
+app.use(express.json());
+
+// Use JSON parser for all non-webhook routes
+app.use((req, res, next) => {
+  if (req.originalUrl === "/webhook") {
+    next();
+  } else {
+    bodyParser.json()(req, res, next);
+  }
+});
+
+// Set your secret key. Remember to switch to your live secret key in production!
+// See your keys here: https://dashboard.stripe.com/account/apikeys
+const stripe = require('stripe')('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
+
+// Uncomment and replace with a real secret. You can find your endpoint's
+// secret in your webhook settings.
+// const webhook_secret = 'whsec_...''
+
+app.post('/webhook', bodyParser.raw({type: 'application/json'}), (request, response) => {
+  const sig = request.headers['stripe-signature'];
+
+  let event;
+
+  // Verify webhook signature and extract the event.
+  // See https://stripe.com/docs/webhooks/signatures for more information.
+  try {
+    event = stripe.webhooks.constructEvent(request.body, sig, webhook_secret);
+  } catch (err) {
+    return response.status(400).send(`Webhook Error: ${err.message}`);
+  }
+
+  if (event.type === 'person.updated') {
+    const person = event.data.object;
+    const connectedAccountId = event.account;
+    handlePersonUpdate(connectedAccountId, person);
+  }
+
+  response.json({received: true});
+});
+
+const handlePersonUpdate = (connectedAccountId, person) => {
+  // Fulfill the purchase.
+  console.log('Connected account ID: ' + connectedAccountId);
+  console.log(JSON.stringify(person));
+}
+
+app.listen(4242, () => console.log(`Node server listening on port ${4242}!`));

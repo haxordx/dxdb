@@ -1,0 +1,8 @@
+if (json["event"].ToString() == "ace") {
+    svaml.Action = new Action() {
+    Name = "continue",
+   };
+}
+var svamljson = JsonConvert.SerializeObject(svaml, Formatting.Indented,
+    new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
+return svaml;

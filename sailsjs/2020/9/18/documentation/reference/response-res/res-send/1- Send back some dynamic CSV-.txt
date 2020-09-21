@@ -1,0 +1,5 @@
+// Send back some dynamic CSV-formatted data.
+return res.set('text/csv').send(`
+some,csv,like,this
+or,,like,this
+`);

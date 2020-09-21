@@ -1,0 +1,125 @@
+{
+  "rate_response": {
+    "rate_request_id": 501834,
+    "shipment_id": "se-2127183",
+    "status": "completed",
+    "created_at": "2019-07-26T22:10:50.286Z",
+    "rates": [
+      {
+        "rate_id": "se-11744390",
+        "rate_type": "shipment",
+        "carrier_id": "se-123890",
+        "shipping_amount": {
+          "currency": "usd",
+          "amount": 9.37
+        },
+        "insurance_amount": {
+          "currency": "usd",
+          "amount": 0.00
+        },
+        "confirmation_amount": {
+          "currency": "usd",
+          "amount": 0.00
+        },
+        "other_amount": {
+          "currency": "usd",
+          "amount": 0.00
+        },
+        "delivery_days": 3,
+        "guaranteed_service": false,
+        "estimated_delivery_date": "2019-07-26T05:00:00.000Z",
+        "carrier_delivery_days": "Friday by 11:00 PM",
+        "ship_date": "2019-07-26T05:00:00.000Z",
+        "negotiated_rate": false,
+        "service_type": "UPS® Ground",
+        "service_code": "ups_ground",
+        "trackable": true,
+        "validation_status": "valid",
+        "warning_messages": [],
+        "error_messages": [],
+        "carrier_code": "ups",
+        "carrier_nickname": "UPS-28A1R9",
+        "carrier_friendly_name": "UPS"
+      }
+    ],
+    "invalid_rates": []
+  },
+  "shipment_id": "se-2127183",
+  "carrier_id": "",
+  "external_shipment_id": null,
+  "ship_date": "2019-07-26T05:00:00.000Z",
+  "created_at": "2019-07-26T22:10:50.286Z",
+  "modified_at": "2019-07-26T22:10:50.286Z",
+  "shipment_status": "pending",
+  "ship_to": {
+    "name": "Amanda Miller",
+    "phone": "555-555-5555",
+    "address_line1": "525 S Winchester Blvd",
+    "city_locality": "San Jose",
+    "state_province": "CA",
+    "postal_code": "95128",
+    "country_code": "US",
+    "address_residential_indicator": "yes"
+  },
+  "ship_from": {
+    "company_name": "Example Corp.",
+    "name": "John Doe",
+    "phone": "111-111-1111",
+    "address_line1": "4009 Marathon Blvd",
+    "address_line2": "Suite 300",
+    "city_locality": "Austin",
+    "state_province": "TX",
+    "postal_code": "78756",
+    "country_code": "US",
+    "address_residential_indicator": "no"
+  },
+  "return_to": {
+    "company_name": "Example Corp.",
+    "name": "John Doe",
+    "phone": "111-111-1111",
+    "address_line1": "4009 Marathon Blvd",
+    "address_line2": "Suite 300",
+    "city_locality": "Austin",
+    "state_province": "TX",
+    "postal_code": "78756",
+    "country_code": "US",
+    "address_residential_indicator": "no"
+  },
+  "confirmation": "none",
+  "advanced_options": {
+    "bill_to_account": null,
+    "bill_to_country_code": null,
+    "bill_to_party": null,
+    "bill_to_postal_code": null,
+    "contains_alcohol": false,
+    "custom_field1": null,
+    "custom_field2": null,
+    "custom_field3": null,
+    "non_machinable": false,
+    "saturday_delivery": false
+  },
+  "insurance_provider": "none",
+  "tags": [],
+  "total_weight": {
+    "value": 1.00,
+    "unit": "ounce"
+  },
+  "packages": [
+    {
+      "weight": {
+        "value": 1.00,
+        "unit": "ounce"
+      },
+      "dimensions": {
+        "unit": "inch",
+        "length": 0.0,
+        "width": 0.0,
+        "height": 0.0
+      },
+      "insured_value": {
+        "currency": "usd",
+        "amount": 0.0
+      }
+    }
+  ]
+}

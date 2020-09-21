@@ -1,0 +1,7 @@
+#import <Sinch/Sinch.h>
+
+// Instantiate a Sinch client object
+id<SINClient> sinchClient = [Sinch clientWithApplicationKey:@"<application key>"
+                                          applicationSecret:@"<application secret>"
+                                            environmentHost:@"clientapi.sinch.com"
+                                                     userId:@"<user id>"];

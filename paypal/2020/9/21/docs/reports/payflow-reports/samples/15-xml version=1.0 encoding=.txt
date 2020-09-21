@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<reportingEngineResponse>
+   <baseResponse>
+      <responseCode>100</responseCode>
+      <responseMsg>Request has completed successfully</responseMsg>
+   </baseResponse>
+   <getTemplateResponse>
+      <templateDefinition>
+         <templateName>My Template</templateName>
+         <reportName>DailyActivityReport</reportName>
+         <reportParam>
+            <paramName>name3</paramName>
+            <paramValue>value3</paramValue>
+         </reportParam>
+         <reportParam>
+            <paramName>name4</paramName>
+            <paramValue>value4</paramValue>
+         </reportParam>
+      </templateDefinition>
+   </getTemplateResponse>
+</reportingEngineResponse>
+xmlcopy

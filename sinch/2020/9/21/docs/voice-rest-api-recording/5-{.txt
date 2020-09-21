@@ -1,0 +1,6 @@
+{
+    "recordingOptions": {
+        "destinationUrl": "sdrive://my-recording.mp3",
+        "notificationEvents": true
+    }
+}

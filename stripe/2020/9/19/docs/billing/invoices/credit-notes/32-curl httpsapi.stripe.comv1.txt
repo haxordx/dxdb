@@ -1,0 +1,18 @@
+curl https://api.stripe.com/v1/credit_notes \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d invoice=in_18jwqyLlRB0eXbMtrUQ97YBw \
+  -d "lines[0][type]"=invoice_line_item \
+  -d "lines[0][invoice_line_item]"=ii_1F4CjLAJVYItwOKq8ubuinVO \
+  -d "lines[0][quantity]"=2 \
+  -d refund_amount=100 \
+  -d credit_amount=200 \
+  -d out_of_band_amount=200
+curl https://api.stripe.com/v1/credit_notes \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d invoice=in_18jwqyLlRB0eXbMtrUQ97YBw \
+  -d "lines[0][type]"=invoice_line_item \
+  -d "lines[0][invoice_line_item]"=ii_1F4CjLAJVYItwOKq8ubuinVO \
+  -d "lines[0][quantity]"=2 \
+  -d refund_amount=100 \
+  -d credit_amount=200 \
+  -d out_of_band_amount=200

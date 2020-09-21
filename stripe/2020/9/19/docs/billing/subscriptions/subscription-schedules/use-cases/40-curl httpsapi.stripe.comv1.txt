@@ -1,0 +1,22 @@
+curl https://api.stripe.com/v1/subscription_schedules \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d customer=cus_GBHHxuvBvO26Ea \
+  -d start_date=now \
+  -d end_behavior=release \
+  -d "phases[][items][][price]='price_digital'" \
+  -d phases[][items][][quantity]=1 \
+  -d phases[][iterations]=1 \
+  -d "phases[][items][][price]='price_digital'" \
+  -d phases[][items][][quantity]=2 \
+  -d phases[][iterations]=11
+curl https://api.stripe.com/v1/subscription_schedules \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d customer=cus_GBHHxuvBvO26Ea \
+  -d start_date=now \
+  -d end_behavior=release \
+  -d "phases[][items][][price]='price_digital'" \
+  -d phases[][items][][quantity]=1 \
+  -d phases[][iterations]=1 \
+  -d "phases[][items][][price]='price_digital'" \
+  -d phases[][items][][quantity]=2 \
+  -d phases[][iterations]=11

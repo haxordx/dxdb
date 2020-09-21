@@ -1,0 +1,11 @@
+// Listener that gets called once the refund processes
+tc.setCompletedHandler { (error, txnRecord) -> Void in
+    // if error, handle accordingly, else pop back to view controller and handle success
+
+    self.navigationController?.popToViewController(self, animated: false)
+
+    // txnRecord would have any info needed to record the successful refund
+}
+
+// Begins refund process and asks if a card is present for the refund
+tc.beginRefund(true, amount: refundAmount)copy

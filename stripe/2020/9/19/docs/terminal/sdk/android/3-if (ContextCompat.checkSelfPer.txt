@@ -1,0 +1,11 @@
+if (ContextCompat.checkSelfPermission(this,
+  android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+    val permissions = arrayOf(android.Manifest.permission.ACCESS_FINE_LOCATION)
+    // REQUEST_CODE_LOCATION should be defined on your app level
+    ActivityCompat.requestPermissions(this, permissions, REQUEST_CODE_LOCATION)
+}if (ContextCompat.checkSelfPermission(this,
+  android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+    val permissions = arrayOf(android.Manifest.permission.ACCESS_FINE_LOCATION)
+    // REQUEST_CODE_LOCATION should be defined on your app level
+    ActivityCompat.requestPermissions(this, permissions, REQUEST_CODE_LOCATION)
+}

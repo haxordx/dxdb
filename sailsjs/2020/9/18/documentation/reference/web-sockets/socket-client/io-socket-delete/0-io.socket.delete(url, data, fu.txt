@@ -1,0 +1,3 @@
+io.socket.delete(url, data, function (data, jwres){
+  // ...
+});

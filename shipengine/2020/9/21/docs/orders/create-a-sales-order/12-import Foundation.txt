@@ -1,0 +1,26 @@
+import Foundation
+
+var semaphore = DispatchSemaphore (value: 0)
+
+let parameters = "{\n  \"external_order_id\": \"1111\",\n  \"external_order_number\": \"2222\",\n  \"order_source\": {\n    \"order_source_id\": \"9ab83300-39ba-4159-96f8-0d0ef6dfcbfa\"\n  },\n  \"order_date\": \"2019-07-25T15:24:46.657Z$\",\n  \"payment_details\": {\n    \"subtotal\": {\n      \"currency\": \"usd\",\n      \"amount\": 200\n    },\n    \"estimated_shipping\": {\n      \"currency\": \"usd\",\n      \"amount\": 10\n    },\n    \"estimated_tax\": {\n      \"currency\": \"usd\",\n      \"amount\": 5\n    },\n    \"grand_total\": {\n      \"currency\": \"usd\",\n      \"amount\": 215\n    }\n  },\n  \"customer\": {\n    \"name\": \"Amanda Miller\",\n    \"phone\": \"555-555-5555\",\n    \"email\": \"amanda.miller@email.com\"\n  },\n  \"bill_to\": {\n    \"email\": \"amanda.miller@email.com\",\n    \"address\": {\n      \"name\": \"Amanda Miller\",\n      \"phone\": \"555-555-5555\",\n      \"address_line1\": \"525 S Winchester Blvd\",\n      \"city_locality\": \"San Jose\",\n      \"state_province\": \"CA\",\n      \"postal_code\": \"95128\",\n      \"country_code\": \"US\",\n      \"address_residential_indicator\": \"yes\"\n    }\n  },\n  \"ship_to\": {\n    \"name\": \"Amanda Miller\",\n    \"phone\": \"555-555-5555\",\n    \"address_line1\": \"525 S Winchester Blvd\",\n    \"city_locality\": \"San Jose\",\n    \"state_province\": \"CA\",\n    \"postal_code\": \"95128\",\n    \"country_code\": \"US\",\n    \"address_residential_indicator\": \"yes\"\n  },\n  \"sales_order_items\": [\n    {\n      \"line_item_details\": {\n        \"name\": \"ball of string A\",\n        \"sku\": \"ball of string A\"\n      },\n      \"price_summary\": {\n        \"unit_price\": {\n          \"currency\": \"usd\",\n          \"amount\": 200\n        }\n      },\n      \"ship_to\": {\n        \"name\": \"Amanda Miller\",\n        \"phone\": \"555-555-5555\",\n        \"address_line1\": \"525 S Winchester Blvd\",\n        \"city_locality\": \"San Jose\",\n        \"state_province\": \"CA\",\n        \"postal_code\": \"95128\",\n        \"country_code\": \"US\",\n        \"address_residential_indicator\": \"yes\"\n      },\n      \"quantity\": 4,\n      \"is_gift\": false\n    }\n  ]\n}"
+let postData = parameters.data(using: .utf8)
+
+var request = URLRequest(url: URL(string: "https://api.shipengine.com/v-beta/sales_orders")!,timeoutInterval: Double.infinity)
+request.addValue("api.shipengine.com", forHTTPHeaderField: "Host")
+request.addValue("__YOUR_API_KEY_HERE__", forHTTPHeaderField: "API-Key")
+request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+
+request.httpMethod = "POST"
+request.httpBody = postData
+
+let task = URLSession.shared.dataTask(with: request) { data, response, error in 
+  guard let data = data else {
+    print(String(describing: error))
+    return
+  }
+  print(String(data: data, encoding: .utf8)!)
+  semaphore.signal()
+}
+
+task.resume()
+semaphore.wait()

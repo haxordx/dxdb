@@ -1,0 +1,7 @@
+async () => {
+  const discoverResult = await terminal.discoverReaders({ location: "<LOCATION_ID>" });
+  // ...
+}async () => {
+  const discoverResult = await terminal.discoverReaders({ location: "<LOCATION_ID>" });
+  // ...
+}

@@ -1,0 +1,1 @@
+npm install connect-mongo@1.1.0 --save --save-exact

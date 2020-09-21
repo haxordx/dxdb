@@ -1,0 +1,5 @@
+string - string
+int - signed 32 bit number
+long - signed 64 bit number
+bool - boolean (true/false)
+decimal - decimal

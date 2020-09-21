@@ -1,0 +1,5 @@
+mkdir my-tool
+cd my-tool
+npm init
+# ...
+npm install waterline sails-disk

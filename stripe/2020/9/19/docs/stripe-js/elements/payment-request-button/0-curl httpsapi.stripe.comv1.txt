@@ -1,0 +1,5 @@
+curl https://api.stripe.com/v1/apple_pay/domains \
+ -u "sk_live_••••••••••••••••••••••••": \
+ -d domain_name="example.com"curl https://api.stripe.com/v1/apple_pay/domains \
+ -u "sk_live_••••••••••••••••••••••••": \
+ -d domain_name="example.com"

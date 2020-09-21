@@ -1,0 +1,11 @@
+async function fetchConnectionToken() {
+  // Your backend should call /v1/terminal/connection_tokens and return the JSON response from Stripe
+  const response = await fetch('https://{YOUR_BACKEND_URL}/connection_token', { method: "POST" });
+  const data = await response.json();
+  return data.secret;
+}async function fetchConnectionToken() {
+  // Your backend should call /v1/terminal/connection_tokens and return the JSON response from Stripe
+  const response = await fetch('https://{YOUR_BACKEND_URL}/connection_token', { method: "POST" });
+  const data = await response.json();
+  return data.secret;
+}

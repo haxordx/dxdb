@@ -1,0 +1,34 @@
+// myApp/api/models/User.js
+module.exports = {
+  attributes: {
+    firstName: {
+      type: 'string'
+    },
+    lastName: {
+      type: 'string'
+    },
+
+    // Add a singular reflexive association
+    bestFriend: {
+      model: 'user',
+    },
+
+    // Add one side of a plural reflexive association
+    parents: {
+      collection: 'user',
+      via: 'children'
+    },
+
+    // Add the other side of a plural reflexive association
+    children: {
+      collection: 'user',
+      via: 'parents'
+    },
+
+    // Add another plural reflexive association, this one via-less
+    bookmarkedUsers: {
+      collection: 'user'
+    }
+
+  }
+};

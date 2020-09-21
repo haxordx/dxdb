@@ -1,0 +1,2 @@
+var request = new OrdersCreateRequest();
+request.Headers.Add("prefer", "return=representation");copy

@@ -1,0 +1,2 @@
+`<script src='https://www.paypalobjects.com/muse/partners/muse-button-bundle.js'></script>`.
+copy

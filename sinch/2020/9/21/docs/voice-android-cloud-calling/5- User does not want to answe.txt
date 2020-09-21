@@ -1,0 +1,5 @@
+// User does not want to answer
+call.hangup();
+
+// Stop playing ringing tone
+...

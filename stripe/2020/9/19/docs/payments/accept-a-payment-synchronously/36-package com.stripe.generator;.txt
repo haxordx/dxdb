@@ -1,0 +1,196 @@
+package com.stripe.generator;
+
+import static spark.Spark.post;
+
+import com.google.gson.Gson;
+import com.google.gson.annotations.SerializedName;
+import com.stripe.Stripe;
+import com.stripe.model.PaymentIntent;
+
+import com.stripe.param.PaymentIntentCreateParams;
+import java.util.HashMap;
+import java.util.Map;
+import spark.Request;
+import spark.Response;
+import spark.Route;
+
+public class MyApp {
+
+  static class ConfirmPaymentRequest {
+    @SerializedName("payment_method_id")
+    String paymentMethodId;
+    @SerializedName("payment_intent_id")
+    String paymentIntentId;
+
+    public String getPaymentMethodId() {
+      return paymentMethodId;
+    }
+
+    public String getPaymentIntentId() {
+      return paymentIntentId;
+    }
+  }
+
+  /**
+   * Your application.
+   */
+  public static void main(String[] args) {
+
+    Stripe.apiKey = System.getenv("STRIPE_SECRET_KEY");
+
+    post(new Route("/pay") {
+
+      @Override
+      public Object handle(Request request, Response response) {
+        Gson gson = new Gson();
+        ConfirmPaymentRequest confirmRequest =
+            gson.fromJson(request.body(), ConfirmPaymentRequest.class);
+        PaymentIntent intent;
+        try {
+          if (confirmRequest.getPaymentMethodId() != null) {
+            PaymentIntentCreateParams createParams = PaymentIntentCreateParams.builder()
+                .setAmount(1099)
+                .setCurrency("usd")
+                .setConfirm(true)
+                .setPaymentMethod(confirmRequest.paymentMethodId)
+                .setConfirmationMethod(PaymentIntentCreateParams.ConfirmationMethod.MANUAL)
+                .build();
+            intent = PaymentIntent.create(createParams);
+          } else if (confirmRequest.getPaymentIntentId() != null) {
+            intent = PaymentIntent.retrieve(confirmRequest.getPaymentIntentId());
+            intent = intent.confirm();
+          }
+
+          Map<String, Object> responseData = generateResponse(response, intent);
+
+          return gson.toJson(responseData);
+        } catch (Exception e) {
+          response.status(500);
+          Map<String, Object> errorResponse = new HashMap<>();
+          errorResponse.put("message", e.getMessage());
+          return gson.toJson(errorResponse);
+        }
+      }
+
+      private Map<String, Object> generateResponse(Response response,
+                                                          PaymentIntent intent) {
+        response.type("application/json");
+        Map<String, Object> responseData = new HashMap<>();
+        // Note that if your API version is before 2019-02-11, 'requires_action'
+        // appears as 'requires_source_action'.
+        if (intent.getStatus().equals("requires_action")
+            && intent.getNextAction().getType().equals("use_stripe_sdk")) {
+          responseData.put("requires_action", true);
+          responseData.put("payment_intent_client_secret", intent.getClientSecret());
+        } else if (intent.getStatus().equals("succeeded")) {
+          responseData.put("success", true);
+        } else {
+          // invalid status
+          responseData.put("Error", "Invalid status");
+          response.status(500);
+          return responseData;
+        }
+        response.status(200);
+        return responseData;
+      }
+    });
+  }
+}
+package com.stripe.generator;
+
+import static spark.Spark.post;
+
+import com.google.gson.Gson;
+import com.google.gson.annotations.SerializedName;
+import com.stripe.Stripe;
+import com.stripe.model.PaymentIntent;
+
+import com.stripe.param.PaymentIntentCreateParams;
+import java.util.HashMap;
+import java.util.Map;
+import spark.Request;
+import spark.Response;
+import spark.Route;
+
+public class MyApp {
+
+  static class ConfirmPaymentRequest {
+    @SerializedName("payment_method_id")
+    String paymentMethodId;
+    @SerializedName("payment_intent_id")
+    String paymentIntentId;
+
+    public String getPaymentMethodId() {
+      return paymentMethodId;
+    }
+
+    public String getPaymentIntentId() {
+      return paymentIntentId;
+    }
+  }
+
+  /**
+   * Your application.
+   */
+  public static void main(String[] args) {
+
+    Stripe.apiKey = System.getenv("STRIPE_SECRET_KEY");
+
+    post(new Route("/pay") {
+
+      @Override
+      public Object handle(Request request, Response response) {
+        Gson gson = new Gson();
+        ConfirmPaymentRequest confirmRequest =
+            gson.fromJson(request.body(), ConfirmPaymentRequest.class);
+        PaymentIntent intent;
+        try {
+          if (confirmRequest.getPaymentMethodId() != null) {
+            PaymentIntentCreateParams createParams = PaymentIntentCreateParams.builder()
+                .setAmount(1099)
+                .setCurrency("usd")
+                .setConfirm(true)
+                .setPaymentMethod(confirmRequest.paymentMethodId)
+                .setConfirmationMethod(PaymentIntentCreateParams.ConfirmationMethod.MANUAL)
+                .build();
+            intent = PaymentIntent.create(createParams);
+          } else if (confirmRequest.getPaymentIntentId() != null) {
+            intent = PaymentIntent.retrieve(confirmRequest.getPaymentIntentId());
+            intent = intent.confirm();
+          }
+
+          Map<String, Object> responseData = generateResponse(response, intent);
+
+          return gson.toJson(responseData);
+        } catch (Exception e) {
+          response.status(500);
+          Map<String, Object> errorResponse = new HashMap<>();
+          errorResponse.put("message", e.getMessage());
+          return gson.toJson(errorResponse);
+        }
+      }
+
+      private Map<String, Object> generateResponse(Response response,
+                                                          PaymentIntent intent) {
+        response.type("application/json");
+        Map<String, Object> responseData = new HashMap<>();
+        // Note that if your API version is before 2019-02-11, 'requires_action'
+        // appears as 'requires_source_action'.
+        if (intent.getStatus().equals("requires_action")
+            && intent.getNextAction().getType().equals("use_stripe_sdk")) {
+          responseData.put("requires_action", true);
+          responseData.put("payment_intent_client_secret", intent.getClientSecret());
+        } else if (intent.getStatus().equals("succeeded")) {
+          responseData.put("success", true);
+        } else {
+          // invalid status
+          responseData.put("Error", "Invalid status");
+          response.status(500);
+          return responseData;
+        }
+        response.status(200);
+        return responseData;
+      }
+    });
+  }
+}

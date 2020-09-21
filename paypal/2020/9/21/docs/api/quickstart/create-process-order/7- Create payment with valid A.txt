@@ -1,0 +1,15 @@
+// Create payment with valid API context
+try {
+  $payment->create($apiContext);
+
+  // Get paypal redirect URL and redirect user
+  $approvalUrl = $payment->getApprovalLink();
+
+  // REDIRECT USER TO $approvalUrl
+} catch (PayPal\Exception\PayPalConnectionException $ex) {
+  echo $ex->getCode();
+  echo $ex->getData();
+  die($ex);
+} catch (Exception $ex) {
+  die($ex);
+}copy

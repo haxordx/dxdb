@@ -1,0 +1,3 @@
+# Or install via NuGet
+PM> Install-Package Stripe.net# Or install via NuGet
+PM> Install-Package Stripe.net

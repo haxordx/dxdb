@@ -1,0 +1,22 @@
+public async Task<Svaml> Post(HttpRequestMessage message) {
+    //read the response
+    String body = await message.Content.ReadAsStringAsync();
+    var json = JsonConvert.DeserializeObject<JObject>(body);
+    //create a new respone object
+    var svaml = new Svaml();
+    if (json["event"].ToString() == "ice") {
+        //only calls to my personal phone is allowed with this app
+        if (json["to"].ToString() == "+15612600684") {
+            svaml.Action = new SimpleICEAction() {
+                Name = "ConnectPSTN",
+                callback = true,
+                maxDuration = 600
+            };
+        } else {
+            //else hangup
+            svaml.Action = new Action {
+                Name = "hangup"
+            };
+        }
+    }
+}

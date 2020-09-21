@@ -1,0 +1,32 @@
+- (void)startRecoveryFlow:(NSString *)clientSecret {
+    // Retrieve the PaymentIntent
+    [[STPAPIClient sharedClient] retrievePaymentIntentWithClientSecret:clientSecret completion:^(STPPaymentIntent * _Nullable paymentIntent, NSError * _Nullable error) {
+        if (error || paymentIntent.status == STPPaymentIntentStatusSucceeded) {
+            // Handle error (e.g. allow your customer to retry)
+            return;
+        }
+        NSString *failureReason = @"Payment failed, try again."; // Default to a generic error message
+        if (paymentIntent.lastPaymentError.type == STPPaymentIntentLastPaymentErrorTypeCard) {
+            // For card errors, the error's message can be shown to your customer
+            failureReason = paymentIntent.lastPaymentError.message;
+        }
+        // Display the failure reason to your customer
+        // ...
+    }];
+}
+- (void)startRecoveryFlow:(NSString *)clientSecret {
+    // Retrieve the PaymentIntent
+    [[STPAPIClient sharedClient] retrievePaymentIntentWithClientSecret:clientSecret completion:^(STPPaymentIntent * _Nullable paymentIntent, NSError * _Nullable error) {
+        if (error || paymentIntent.status == STPPaymentIntentStatusSucceeded) {
+            // Handle error (e.g. allow your customer to retry)
+            return;
+        }
+        NSString *failureReason = @"Payment failed, try again."; // Default to a generic error message
+        if (paymentIntent.lastPaymentError.type == STPPaymentIntentLastPaymentErrorTypeCard) {
+            // For card errors, the error's message can be shown to your customer
+            failureReason = paymentIntent.lastPaymentError.message;
+        }
+        // Display the failure reason to your customer
+        // ...
+    }];
+}

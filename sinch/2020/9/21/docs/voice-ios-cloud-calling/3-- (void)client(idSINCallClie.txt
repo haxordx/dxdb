@@ -1,0 +1,7 @@
+- (void)client:(id<SINCallClient>)client didReceiveIncomingCall:(id<SINCall>)call {
+    // Assign delegate
+    call.delegate = self;
+
+    // Store in a NSDictionary for later, to be able to act on CXCallAction (CallKit action).
+    [self.calls setObject:call forKey: [[NSUUID alloc] initWithUUIDString:call.callId]];
+}

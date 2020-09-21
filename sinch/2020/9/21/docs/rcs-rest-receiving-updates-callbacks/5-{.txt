@@ -1,0 +1,5 @@
+{
+  "type": "aborted",
+  "revoked": boolean,
+  "expired": boolean
+}

@@ -1,0 +1,4 @@
+PAYOUT_SUMMARY,ASD,CURRENCY_INVALID,Currency is not valid
+PAYOUT_SUMMARY,USD,SUMMARY_AND_PAYOUT_MATCH_CONFLICT,Summary and Payout details must match
+PAYOUT,4,fourth-ref-id,PAYOUT_AMOUNT_INVALID_FORMAT,Invalid Payout amount format
+copy

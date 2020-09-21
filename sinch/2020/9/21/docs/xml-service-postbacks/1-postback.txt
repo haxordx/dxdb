@@ -1,0 +1,13 @@
+<postback>
+    <origin>MMS_MT</origin>
+    <code>N101</code>
+    <sent-as>SMS</sent-as>
+    <status>Message Sent</status>
+    <mms-id>39755</mms-id>
+    <from>28444</from>
+    <to>12399471613</to>
+    <tracking-id>TU1TXzU5Nzg3Nw==</tracking-id>
+    <operator-id>31004</operator-id>
+    <timestamp>2014-06-07T07:27:34-05:00</timestamp>
+    <status-details>Handset setting: mms with pass via HTML</status-details>
+</postback>

@@ -1,0 +1,13 @@
+paypal.Button.render({
+  env: 'production', // Specify 'sandbox' for the test environment
+  payment: function () {
+    // Set up the payment here, when the buyer clicks on the button
+  },
+  onAuthorize: function (data, actions) {
+    // Execute the payment here, when the buyer approves the transaction
+  },
+  onError: function (err) {
+    // Show an error page here, when an error occurs
+  }
+}, '#paypal-button');
+jscopy

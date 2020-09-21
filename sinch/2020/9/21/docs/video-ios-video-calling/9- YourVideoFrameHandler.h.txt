@@ -1,0 +1,5 @@
+// YourVideoFrameHandler.h
+// Conform SINVideoFrameCallback protocol
+@interface YourVideoFrameHandler : NSObject<SINVideoFrameCallback>
+    ... // Handler specific declarations
+@end

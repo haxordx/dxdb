@@ -1,0 +1,4 @@
+@Override
+public void onCallEnded(Call call) {
+    // Remove Sinch video views from your view hierarchy
+}

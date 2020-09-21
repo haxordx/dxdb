@@ -1,0 +1,20 @@
+"evidence": {
+  "reason": "not_received",
+  "not_received": {
+    "additional_documentation": null,
+    "expected_at": 1590000000,
+    "explanation": "Lost",
+    "product_description": "",
+    "product_type": "merchandise"
+  }
+}
+"evidence": {
+  "reason": "not_received",
+  "not_received": {
+    "additional_documentation": null,
+    "expected_at": 1590000000,
+    "explanation": "Lost",
+    "product_description": "",
+    "product_type": "merchandise"
+  }
+}

@@ -1,0 +1,1 @@
+npm install lodash@^4.x.x --save --save-exact

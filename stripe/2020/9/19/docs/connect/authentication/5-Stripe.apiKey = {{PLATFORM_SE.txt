@@ -1,0 +1,20 @@
+Stripe.apiKey = "{{PLATFORM_SECRET_KEY}}";
+RequestOptions requestOptions = RequestOptions.builder().setStripeAccount("{{CONNECTED_STRIPE_ACCOUNT_ID}}").build();
+
+Map<String, Object> params = new HashMap<>();
+params.put("email", "person@example.edu");
+
+Customer.create(params, requestOptions);
+
+// Fetching an account just needs the ID as a parameter
+Account.retrieve("{{CONNECTED_STRIPE_ACCOUNT_ID}}");
+Stripe.apiKey = "{{PLATFORM_SECRET_KEY}}";
+RequestOptions requestOptions = RequestOptions.builder().setStripeAccount("{{CONNECTED_STRIPE_ACCOUNT_ID}}").build();
+
+Map<String, Object> params = new HashMap<>();
+params.put("email", "person@example.edu");
+
+Customer.create(params, requestOptions);
+
+// Fetching an account just needs the ID as a parameter
+Account.retrieve("{{CONNECTED_STRIPE_ACCOUNT_ID}}");

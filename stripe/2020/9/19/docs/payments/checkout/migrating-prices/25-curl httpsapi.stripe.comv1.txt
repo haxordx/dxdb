@@ -1,0 +1,34 @@
+curl https://api.stripe.com/v1/checkout/sessions \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d "payment_method_types[]"=card \
+  -d "line_items[0][quantity]"=1 \
+  -d "line_items[0][amount]"=2000 \
+  -d "line_items[0][name]"=T-shirt \
+  -d "line_items[0][description]"="Comfortable cotton t-shirt" \
+  -d "line_items[0][images][]"="https://example.com/t-shirt.png" \
+  -d "line_items[0][currency]"=usd \
+  -d "subscription_data[items][][plan]"="{{PLAN_ID}}" \
+  -d "line_items[0][price]"="{{PRICE_OR_PLAN_ID}}" \
+  -d "line_items[0][quantity]"=1 \
+  -d "line_items[1][price]"="{{ONE_TIME_PRICE_ID}}" \
+  -d "line_items[1][quantity]"=1 \
+  -d mode=subscription \
+  -d success_url="https://example.com/success" \
+  -d cancel_url="https://example.com/cancel"
+curl https://api.stripe.com/v1/checkout/sessions \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d "payment_method_types[]"=card \
+  -d "line_items[0][quantity]"=1 \
+  -d "line_items[0][amount]"=2000 \
+  -d "line_items[0][name]"=T-shirt \
+  -d "line_items[0][description]"="Comfortable cotton t-shirt" \
+  -d "line_items[0][images][]"="https://example.com/t-shirt.png" \
+  -d "line_items[0][currency]"=usd \
+  -d "subscription_data[items][][plan]"="{{PLAN_ID}}" \
+  -d "line_items[0][price]"="{{PRICE_OR_PLAN_ID}}" \
+  -d "line_items[0][quantity]"=1 \
+  -d "line_items[1][price]"="{{ONE_TIME_PRICE_ID}}" \
+  -d "line_items[1][quantity]"=1 \
+  -d mode=subscription \
+  -d success_url="https://example.com/success" \
+  -d cancel_url="https://example.com/cancel"

@@ -1,0 +1,4 @@
+var newUser = await User.create({name: 'alice'})
+.meta({fetch: true});
+
+return res.json(newUser);

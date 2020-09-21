@@ -1,0 +1,11 @@
+// SINManagedPushDelegate
+- (void)managedPush:(id<SINManagedPush>)unused
+    didReceiveIncomingPushWithPayload:(NSDictionary *)payload
+                              forType:(NSString *)pushType {
+    id<SINClient> client; // get previously created client
+
+    id<SINNotificationResult> result = [client relayRemotePushNotification:userInfo];
+    if ([result isCall] && [[result callResult] isCallCanceled]) {
+        // present a local notification for the missed call.
+    }
+}

@@ -1,0 +1,5 @@
+<script>
+io.socket.get('/users/9', function (resData) {
+  // resData => {id:9, name: 'Timmy Mendez'}
+});
+</script>

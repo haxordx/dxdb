@@ -1,0 +1,5 @@
+var apiContext = Configuration.GetAPIContext();
+var webhook = GetNewWebhook();
+
+this.flow.AddNewRequest("Create webhook", webhook);
+var createdWebhook = webhook.Create(apiContext);copy

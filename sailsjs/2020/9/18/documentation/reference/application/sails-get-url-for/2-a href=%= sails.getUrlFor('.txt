@@ -1,0 +1,2 @@
+<a href="<%= sails.getUrlFor('entrance/view-login') %>">Login</a>
+<a href="<%= sails.getUrlFor('entrance/view-signup') %>">Signup</a>

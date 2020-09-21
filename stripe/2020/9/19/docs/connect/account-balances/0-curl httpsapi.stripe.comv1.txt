@@ -1,0 +1,6 @@
+curl https://api.stripe.com/v1/balance \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -H "Stripe-Account: CONNECTED_STRIPE_ACCOUNT_ID"
+curl https://api.stripe.com/v1/balance \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -H "Stripe-Account: CONNECTED_STRIPE_ACCOUNT_ID"

@@ -1,0 +1,1 @@
+Authorization = "Basic: " + Base64 ( usernameAndPassword )

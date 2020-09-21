@@ -1,0 +1,6 @@
+{
+    "id": "1234567890",
+    "method": "sms",
+    "status": "SUCCESSFUL",
+    "source": "intercept"
+}

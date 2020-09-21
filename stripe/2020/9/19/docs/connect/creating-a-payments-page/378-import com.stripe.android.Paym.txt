@@ -1,0 +1,29 @@
+import com.stripe.android.PaymentConfiguration;
+
+public class MyActivity extends Activity {
+    private Stripe stripe;
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstancedState) {
+        super.onCreate(savedInstancedState);
+        stripe = new Stripe(
+            this,
+            PaymentConfiguration.getInstance(this).getPublishableKey(),
+            "{{CONNECTED_STRIPE_ACCOUNT_ID}}"
+        );
+    }
+}import com.stripe.android.PaymentConfiguration;
+
+public class MyActivity extends Activity {
+    private Stripe stripe;
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstancedState) {
+        super.onCreate(savedInstancedState);
+        stripe = new Stripe(
+            this,
+            PaymentConfiguration.getInstance(this).getPublishableKey(),
+            "{{CONNECTED_STRIPE_ACCOUNT_ID}}"
+        );
+    }
+}

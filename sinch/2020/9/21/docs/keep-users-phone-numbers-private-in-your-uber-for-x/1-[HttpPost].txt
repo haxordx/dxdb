@@ -1,0 +1,10 @@
+[HttpPost]
+public void Post(string from, string to) {
+    // make sure we dont have duplicates
+    NumberConfigContext.Current().RemoveAll(n => n.From == from);
+    var config = new NumberConfig {
+        From = from,
+        To = to
+    };
+    NumberConfigContext.Current().Add(config);
+}

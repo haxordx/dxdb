@@ -1,0 +1,81 @@
+  self.collectCancelable = nil
+
+  // Action for a "Checkout" button
+  func checkoutAction() {
+      // ... Fetch the client secret from your backend
+      Terminal.shared.retrievePaymentIntent(clientSecret: clientSecret) { retrieveResult, retrieveError in
+          if let error = retrieveError {
+              print("retrievePaymentIntent failed: \(error)")
+          } else if let paymentIntent = retrieveResult {
+              print("retrievePaymentIntent succeeded: \(paymentIntent)")
+              self.collectCancelable = Terminal.shared.collectPaymentMethod(paymentIntent) { intentWithPaymentMethod, collectError in
+                  if let error = collectError {
+                      print("collectPaymentMethod failed: \(error)")
+                  } else if let intent = intentWithPaymentMethod {
+                      Terminal.shared.processPayment(intent) { processResult, processError in
+                          if let error = processError {
+                              print("processPayment failed: \(error)")
+                          } else if let paymentIntent = processResult {
+                              print("processPayment succeeded!")
+                              if paymentIntent.status == .requiresCapture {
+                                // Notify your backend to capture the PaymentIntent.
+                                // This branch *won't* get called for Interac payments.
+                                APIClient.shared.capturePaymentIntent(paymentIntent.stripeId) { captureError in
+                                    if let error = captureError {
+                                        print("Capture failed: \(error)")
+                                    } else {
+                                        print("Capture succeeded!")
+                                    }
+                                }
+                            } else if paymentIntent.status == .succeeded {
+                                print("Single-message payment successful!")
+                            } else {
+                                print("Unexpected PaymentIntent state \(paymentIntent.status)")
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}  self.collectCancelable = nil
+
+  // Action for a "Checkout" button
+  func checkoutAction() {
+      // ... Fetch the client secret from your backend
+      Terminal.shared.retrievePaymentIntent(clientSecret: clientSecret) { retrieveResult, retrieveError in
+          if let error = retrieveError {
+              print("retrievePaymentIntent failed: \(error)")
+          } else if let paymentIntent = retrieveResult {
+              print("retrievePaymentIntent succeeded: \(paymentIntent)")
+              self.collectCancelable = Terminal.shared.collectPaymentMethod(paymentIntent) { intentWithPaymentMethod, collectError in
+                  if let error = collectError {
+                      print("collectPaymentMethod failed: \(error)")
+                  } else if let intent = intentWithPaymentMethod {
+                      Terminal.shared.processPayment(intent) { processResult, processError in
+                          if let error = processError {
+                              print("processPayment failed: \(error)")
+                          } else if let paymentIntent = processResult {
+                              print("processPayment succeeded!")
+                              if paymentIntent.status == .requiresCapture {
+                                // Notify your backend to capture the PaymentIntent.
+                                // This branch *won't* get called for Interac payments.
+                                APIClient.shared.capturePaymentIntent(paymentIntent.stripeId) { captureError in
+                                    if let error = captureError {
+                                        print("Capture failed: \(error)")
+                                    } else {
+                                        print("Capture succeeded!")
+                                    }
+                                }
+                            } else if paymentIntent.status == .succeeded {
+                                print("Single-message payment successful!")
+                            } else {
+                                print("Unexpected PaymentIntent state \(paymentIntent.status)")
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

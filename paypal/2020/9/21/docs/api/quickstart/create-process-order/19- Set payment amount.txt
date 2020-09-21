@@ -1,0 +1,19 @@
+// Set payment amount
+$amount = new Amount();
+$amount->setCurrency("USD")
+  ->setTotal(20);
+
+// Set capture details
+$captureDetails = new Authorization();
+$captureDetails->setAmount($amount);
+
+try {
+  $result = $order->capture($captureDetails, $apiContext);
+  print_r($result);
+} catch (PayPal\Exception\PayPalConnectionException $ex) {
+  echo $ex->getCode();
+  echo $ex->getData();
+  die($ex);
+} catch (Exception $ex) {
+  die($ex);
+}copy

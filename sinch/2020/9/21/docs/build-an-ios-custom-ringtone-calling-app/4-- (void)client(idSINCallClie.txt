@@ -1,0 +1,6 @@
+- (void)client:(id<SINCallClient>)client didReceiveIncomingCall:(id<SINCall>)call {
+    UIViewController *top = self.window.rootViewController;
+    CallViewController *controller = [top.storyboard instantiateViewControllerWithIdentifier:@"callScreen"];
+    // 1
+    [self.window.rootViewController presentViewController:controller animated:YES completion:nil];
+}

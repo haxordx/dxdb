@@ -1,0 +1,19 @@
+{
+  "event": "ice",
+  "callid": "2DOQGZ3D2JA5JB54BI4OTPFT3I@81.201.84.195",
+  "timestamp": "2015-11-11T03:28:25Z",
+  "version": 1,
+  "userRate": {
+    "currencyId": "USD",
+    "amount": 0.0
+  },
+  "cli": "15612600684",
+  "to": {
+    "type": "did",
+    "endpoint": "+17864088196",
+    "verified": null
+  },
+  "domain": "pstn",
+  "applicationKey": "1680b6f8-aa0e-422f-bf25-932adb3a48af",
+  "originationType": "PSTN"
+}

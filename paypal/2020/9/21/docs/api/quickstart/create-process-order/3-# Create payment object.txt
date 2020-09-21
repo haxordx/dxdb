@@ -1,0 +1,53 @@
+# Create payment object
+payment = Payment.new({
+  :intent => "order",
+
+  # Set payment type
+  :payer => {
+    :payment_method => "paypal"
+  },
+
+  # Set redirect urls
+  :redirect_urls => {
+    :return_url => "http://localhost:3000/process",
+    :cancel_url => "http://localhost:3000/cancel"
+  },
+
+  # Set transaction object
+  :transactions => [{
+
+    # Items
+    :item_list => {
+      :items => [{
+        :name => "hat",
+        :quantity => "5",
+        :price => "3",
+        :tax => "0.01",
+        :sku => "1",
+        :currency => "USD"
+      },{
+        :name => "handbag",
+        :quantity => "1",
+        :price => "15",
+        :tax => "0.02",
+        :sku => "product34",
+        :currency => "USD"
+      }
+    ]},
+
+    # Amount - must match item list breakdown price
+    :amount => {
+      :total => "30.03",
+      :currency => "USD",
+      :details => {
+        :subtotal => "30.00",
+        :tax => "0.03"
+      }
+    },
+    :description => "payment description.",
+    :invoice_number => "126774445533222345",
+    :payment_options => {
+      :allowed_payment_method => "INSTANT_FUNDING_SOURCE"
+    }
+  }]
+})copy

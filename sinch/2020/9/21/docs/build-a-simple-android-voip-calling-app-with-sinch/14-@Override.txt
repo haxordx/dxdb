@@ -1,0 +1,4 @@
+@Override
+public void onCallEstablished(Call establishedCall) {
+    setVolumeControlStream(AudioManager.STREAM_VOICE_CALL);
+}

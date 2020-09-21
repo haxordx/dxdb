@@ -1,0 +1,6 @@
+pphwebsdk.Setup.isSetupComplete().then(function() {
+    // Continue to payment flow
+}).catch(function(err) {
+    // Run startUIFlow to setup SDK
+});
+javascriptcopy

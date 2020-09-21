@@ -1,0 +1,5 @@
+<postback>
+    <origin>MMS_MT</origin>
+    <code>N003</code>
+    <mms-id>35674</mms-id>
+</postback>

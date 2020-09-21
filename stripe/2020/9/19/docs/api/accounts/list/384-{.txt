@@ -1,0 +1,6 @@
+{
+  "object": "login_link",
+  "created": 1600561566,
+  "url": "https://connect.stripe.com/express/6ZaOzaE0NsJp",
+  "id": "lael_I3N7RwrB4ZGOFr"
+}

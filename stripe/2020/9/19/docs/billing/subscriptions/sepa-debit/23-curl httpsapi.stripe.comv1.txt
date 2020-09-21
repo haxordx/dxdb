@@ -1,0 +1,6 @@
+curl https://api.stripe.com/v1/customers/cus_Gk0uVzT2M4xOKD \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d "invoice_settings[default_payment_method]"=pm_1F0c9v2eZvKYlo2CJDeTrB4n
+curl https://api.stripe.com/v1/customers/cus_Gk0uVzT2M4xOKD \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d "invoice_settings[default_payment_method]"=pm_1F0c9v2eZvKYlo2CJDeTrB4n

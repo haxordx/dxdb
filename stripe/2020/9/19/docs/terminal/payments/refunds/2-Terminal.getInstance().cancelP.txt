@@ -1,0 +1,17 @@
+Terminal.getInstance().cancelPaymentIntent(paymentIntent, object: PaymentIntentCallback {
+    override fun onSuccess(paymentIntent: PaymentIntent) {
+      // Placeholder for handling a successful cancelation
+    }
+
+    override fun onFailure(exception: TerminalException) {
+      // Placeholder for handling a failed cancelation
+    }
+})Terminal.getInstance().cancelPaymentIntent(paymentIntent, object: PaymentIntentCallback {
+    override fun onSuccess(paymentIntent: PaymentIntent) {
+      // Placeholder for handling a successful cancelation
+    }
+
+    override fun onFailure(exception: TerminalException) {
+      // Placeholder for handling a failed cancelation
+    }
+})

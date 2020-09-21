@@ -1,0 +1,10 @@
+# Token obtained when creating the agreement (following redirect)
+agreement = Agreement.new()
+agreement.token = token
+
+# Execute agreement
+if agreement.execute
+  puts("billing agreement created with ID [#{agreement.id}]")
+else
+  logger.error agreement.error.inspect
+endcopy

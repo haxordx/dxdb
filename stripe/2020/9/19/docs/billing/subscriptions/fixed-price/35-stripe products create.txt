@@ -1,0 +1,7 @@
+stripe products create \
+  --name="Billing Guide: Basic Service" \
+  --type=service \
+  --description="Basic service with minimum features"stripe products create \
+  --name="Billing Guide: Basic Service" \
+  --type=service \
+  --description="Basic service with minimum features"

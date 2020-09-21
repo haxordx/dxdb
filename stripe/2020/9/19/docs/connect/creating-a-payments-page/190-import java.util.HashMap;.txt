@@ -1,0 +1,45 @@
+import java.util.HashMap;
+import java.util.Map;
+
+import com.stripe.model.PaymentIntent;
+
+import com.google.gson.Gson;
+
+import static spark.Spark.get;
+
+public class StripeJavaQuickStart {
+    public static void main(String[] args) {
+      Gson gson = new Gson();
+
+      get("/secret", (request, response) -> {
+        PaymentIntent intent = // ... Fetch or create the PaymentIntent
+
+        Map<String, String> map = new HashMap();
+        map.put("client_secret", intent.getClientSecret());
+
+        return map;
+      }, gson::toJson);
+    }
+}import java.util.HashMap;
+import java.util.Map;
+
+import com.stripe.model.PaymentIntent;
+
+import com.google.gson.Gson;
+
+import static spark.Spark.get;
+
+public class StripeJavaQuickStart {
+    public static void main(String[] args) {
+      Gson gson = new Gson();
+
+      get("/secret", (request, response) -> {
+        PaymentIntent intent = // ... Fetch or create the PaymentIntent
+
+        Map<String, String> map = new HashMap();
+        map.put("client_secret", intent.getClientSecret());
+
+        return map;
+      }, gson::toJson);
+    }
+}

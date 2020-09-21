@@ -1,0 +1,6 @@
+curl https://api.stripe.com/v1/customers/cus_Euql8T6KrknXwN/tax_ids/txi_123456789 \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -X DELETE
+curl https://api.stripe.com/v1/customers/cus_Euql8T6KrknXwN/tax_ids/txi_123456789 \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -X DELETE

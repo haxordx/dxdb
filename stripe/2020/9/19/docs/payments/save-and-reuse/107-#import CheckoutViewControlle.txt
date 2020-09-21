@@ -1,0 +1,30 @@
+#import "CheckoutViewController.h"
+#import <Stripe/Stripe.h>
+
+@interface CheckoutViewController ()  <STPAuthenticationContext>
+@property (nonatomic, copy) NSString *setupIntentClientSecret;
+@end
+
+@implementation CheckoutViewController
+
+- (void)startCheckout {
+    // Request a SetupIntent from your server and store its client secret
+    // Click Open on GitHub to see a full implementation
+}
+
+@end
+#import "CheckoutViewController.h"
+#import <Stripe/Stripe.h>
+
+@interface CheckoutViewController ()  <STPAuthenticationContext>
+@property (nonatomic, copy) NSString *setupIntentClientSecret;
+@end
+
+@implementation CheckoutViewController
+
+- (void)startCheckout {
+    // Request a SetupIntent from your server and store its client secret
+    // Click Open on GitHub to see a full implementation
+}
+
+@end

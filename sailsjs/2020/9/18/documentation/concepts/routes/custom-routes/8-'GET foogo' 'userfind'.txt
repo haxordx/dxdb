@@ -1,0 +1,1 @@
+'GET /foo/go': 'user/find'              // Return a list of users

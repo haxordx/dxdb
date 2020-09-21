@@ -1,0 +1,13 @@
+curl -v -X PATCH https://api.sandbox.paypal.com/v1/billing/subscriptions/I-BW452GLLEP1G \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer Access-Token" \
+-d '[
+  {
+    "op": "replace",
+    "path": "/billing_info/outstanding_balance",
+    "value": {
+      "currency_code": "USD",
+      "value": "50.00"
+    }
+  }
+]'copy

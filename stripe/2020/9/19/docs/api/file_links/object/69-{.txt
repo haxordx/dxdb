@@ -1,0 +1,11 @@
+{
+  "id": "link_1HTGAR2eZvKYlo2CtK86mlEi",
+  "object": "file_link",
+  "created": 1600560755,
+  "expired": false,
+  "expires_at": null,
+  "file": "file_1FvSUR2eZvKYlo2C8zHSKeSA",
+  "livemode": false,
+  "metadata": {},
+  "url": "https://files.stripe.com/links/fl_test_88E15v0FLmJsWAW4iNMr2rAo"
+}

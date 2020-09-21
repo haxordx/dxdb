@@ -1,0 +1,62 @@
+{
+  "customers": [
+    {
+      "id": "cus_abc123def456",
+      "email": "jenny.rosen@example.com",
+      "description": "Jenny Rosen",
+      "default_source": "card_edf214abc789",
+      "metadata": {
+        "color_preference": "turquoise",
+        ...
+      },
+      "cards": [
+        {
+          "id": "card_edf214abc789",
+          "number":"4242424242424242",
+          "name": "Jenny Rosen",
+          "exp_month": 1,
+          "exp_year": 2020,
+          "address_line1": "123 Main St.",
+          "address_line2": null,
+          "address_city": "Springfield",
+          "address_state": "MA",
+          "address_zip": "01101",
+          "address_country": "US"
+        },
+        ...
+      ]
+    },
+    ...
+  ]
+}
+{
+  "customers": [
+    {
+      "id": "cus_abc123def456",
+      "email": "jenny.rosen@example.com",
+      "description": "Jenny Rosen",
+      "default_source": "card_edf214abc789",
+      "metadata": {
+        "color_preference": "turquoise",
+        ...
+      },
+      "cards": [
+        {
+          "id": "card_edf214abc789",
+          "number":"4242424242424242",
+          "name": "Jenny Rosen",
+          "exp_month": 1,
+          "exp_year": 2020,
+          "address_line1": "123 Main St.",
+          "address_line2": null,
+          "address_city": "Springfield",
+          "address_state": "MA",
+          "address_zip": "01101",
+          "address_country": "US"
+        },
+        ...
+      ]
+    },
+    ...
+  ]
+}

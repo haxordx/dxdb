@@ -1,0 +1,13 @@
+SCPCart *cart = [[SCPCart alloc] initWithCurrency:@"usd" tax:100 total:1998];
+[cart.lineItems addObject:[[SCPCartLineItem alloc] initWithDisplayName:@"Caramel latte" quantity:1 amount:659]];
+[cart.lineItems addObject:[[SCPCartLineItem alloc] initWithDisplayName:@"Dozen donuts" quantity:1 amount:1239]];
+
+[SCPTerminal.shared setReaderDisplay:cart completion:^(NSError * _Nullable error) {
+    // Check for errors
+}];SCPCart *cart = [[SCPCart alloc] initWithCurrency:@"usd" tax:100 total:1998];
+[cart.lineItems addObject:[[SCPCartLineItem alloc] initWithDisplayName:@"Caramel latte" quantity:1 amount:659]];
+[cart.lineItems addObject:[[SCPCartLineItem alloc] initWithDisplayName:@"Dozen donuts" quantity:1 amount:1239]];
+
+[SCPTerminal.shared setReaderDisplay:cart completion:^(NSError * _Nullable error) {
+    // Check for errors
+}];

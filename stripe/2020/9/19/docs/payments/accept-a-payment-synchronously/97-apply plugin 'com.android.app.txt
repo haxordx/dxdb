@@ -1,0 +1,20 @@
+apply plugin: 'com.android.application'
+
+android { ... }
+
+dependencies {
+  // ...
+
+  // Stripe Android SDK
+  implementation 'com.stripe:stripe-android:15.1.0'
+}
+apply plugin: 'com.android.application'
+
+android { ... }
+
+dependencies {
+  // ...
+
+  // Stripe Android SDK
+  implementation 'com.stripe:stripe-android:15.1.0'
+}

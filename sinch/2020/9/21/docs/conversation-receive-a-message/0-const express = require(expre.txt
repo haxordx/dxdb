@@ -1,0 +1,19 @@
+const express = require("express"),
+      bodyParser = require("body-parser"),
+      app = express().use(bodyParser.json());
+      port = 3000;
+
+app.post("/webhook", (req, res) => {
+     let body = req.body;
+     let {
+     message: {
+       contact_message: {
+         text_message: { text },
+       },
+     },
+  } = body;
+  console.log(text);
+  res.sendStatus(200);
+});
+
+app.listen(port, () => console.log(`Listening to ${port}..`));

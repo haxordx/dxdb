@@ -1,0 +1,4 @@
+PayPalRetailSDK.transactionManager().stopOfflinePayment({ (error, info) in
+  // Status of the remaining offline transactions
+})
+copy

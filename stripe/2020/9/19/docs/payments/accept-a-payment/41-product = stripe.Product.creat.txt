@@ -1,0 +1,6 @@
+product = stripe.Product.create(
+  name='T-shirt',
+)
+product = stripe.Product.create(
+  name='T-shirt',
+)

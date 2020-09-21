@@ -1,0 +1,6 @@
+curl https://api.stripe.com/v1/invoices/in_1EcesDCZ6qsJgndJnyYCH9KG \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d auto_advance=true
+curl https://api.stripe.com/v1/invoices/in_1EcesDCZ6qsJgndJnyYCH9KG \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d auto_advance=true

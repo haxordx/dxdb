@@ -1,0 +1,25 @@
+Cancelable cancelable = Terminal.getInstance().collectPaymentMethod(paymentIntent,
+  new MyReaderListener(),
+  new PaymentIntentCallback() {
+    @Override
+    public void onSuccess(PaymentIntent paymentIntent) {
+      // Placeholder for processing paymentIntent
+    }
+
+    @Override
+    public void onFailure(TerminalException exception) {
+      // Placeholder for handling exception
+    }
+  });Cancelable cancelable = Terminal.getInstance().collectPaymentMethod(paymentIntent,
+  new MyReaderListener(),
+  new PaymentIntentCallback() {
+    @Override
+    public void onSuccess(PaymentIntent paymentIntent) {
+      // Placeholder for processing paymentIntent
+    }
+
+    @Override
+    public void onFailure(TerminalException exception) {
+      // Placeholder for handling exception
+    }
+  });

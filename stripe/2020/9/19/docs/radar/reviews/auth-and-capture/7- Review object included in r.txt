@@ -1,0 +1,20 @@
+// Review object included in review.closed event webhook.
+{
+  "id": "prv_08voh1589O8KAxCGPcIQpmkz",
+  "object": "review",
+  "payment_intent": "pi_1D0CsEITpIrAk4QYdrWDnbRS",
+  "created": 1474379631,
+  "livemode": false,
+  "open": false,
+  "reason": "approved"
+}
+// Review object included in review.closed event webhook.
+{
+  "id": "prv_08voh1589O8KAxCGPcIQpmkz",
+  "object": "review",
+  "payment_intent": "pi_1D0CsEITpIrAk4QYdrWDnbRS",
+  "created": 1474379631,
+  "livemode": false,
+  "open": false,
+  "reason": "approved"
+}

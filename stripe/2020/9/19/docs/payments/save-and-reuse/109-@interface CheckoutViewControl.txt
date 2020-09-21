@@ -1,0 +1,42 @@
+@interface CheckoutViewController ()
+@property (nonatomic, weak) STPPaymentCardTextField *cardTextField;
+@end
+
+@implementation CheckoutViewController
+
+- (void)pay {
+    // Collect card details
+    STPPaymentMethodCardParams *cardParams = self.cardTextField.cardParams;
+    // Fill in any billing details...
+    STPPaymentMethodBillingDetails *billingDetails = [STPPaymentMethodBillingDetails new];
+
+    // Create SetupIntent confirm parameters with the above
+    STPPaymentMethodParams *paymentMethodParams = [STPPaymentMethodParams paramsWithCard:cardParams billingDetails:billingDetails metadata:nil];
+    STPSetupIntentConfirmParams *setupIntentParams = [[STPSetupIntentConfirmParams alloc] initWithClientSecret:self.setupIntentClientSecret];
+    setupIntentParams.paymentMethodParams = paymentMethodParams;
+
+    // ...continued in next step
+}
+
+@end
+@interface CheckoutViewController ()
+@property (nonatomic, weak) STPPaymentCardTextField *cardTextField;
+@end
+
+@implementation CheckoutViewController
+
+- (void)pay {
+    // Collect card details
+    STPPaymentMethodCardParams *cardParams = self.cardTextField.cardParams;
+    // Fill in any billing details...
+    STPPaymentMethodBillingDetails *billingDetails = [STPPaymentMethodBillingDetails new];
+
+    // Create SetupIntent confirm parameters with the above
+    STPPaymentMethodParams *paymentMethodParams = [STPPaymentMethodParams paramsWithCard:cardParams billingDetails:billingDetails metadata:nil];
+    STPSetupIntentConfirmParams *setupIntentParams = [[STPSetupIntentConfirmParams alloc] initWithClientSecret:self.setupIntentClientSecret];
+    setupIntentParams.paymentMethodParams = paymentMethodParams;
+
+    // ...continued in next step
+}
+
+@end

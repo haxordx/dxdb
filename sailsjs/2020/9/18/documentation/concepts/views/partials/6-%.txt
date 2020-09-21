@@ -1,0 +1,8 @@
+<%
+// A list representing the currently-logged in user's inbox.
+%><ul class="message-list"><%
+  // Display each message, with a button to delete it.
+  _.each(messages, function (message) { %>
+  <%- partial ('../partials/inbox-message.ejs', { message: message }) %>
+  <% });
+%></ul>

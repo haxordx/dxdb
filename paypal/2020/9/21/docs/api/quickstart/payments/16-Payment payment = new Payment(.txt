@@ -1,0 +1,11 @@
+Payment payment = new Payment();
+payment.setId(req.getParameter("paymentId"));
+
+PaymentExecution paymentExecution = new PaymentExecution();
+paymentExecution.setPayerId(req.getParameter("PayerID"));
+try {
+  Payment createdPayment = payment.execute(apiContext, paymentExecution);
+  System.out.println(createdPayment);
+} catch (PayPalRESTException e) {
+  System.err.println(e.getDetails());
+}copy

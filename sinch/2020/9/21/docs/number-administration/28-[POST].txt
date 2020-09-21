@@ -1,0 +1,12 @@
+[POST]
+
+URL:
+https://portalapi.sinch.com/v1/organisations/id/{organisationId}/numbers/shop
+
+eg:
+https://portalapi.sinch.com/v1/organisations/id/8888123/numbers/shop
+
+[body]
+    string[] - referenceIds
+
+eg:

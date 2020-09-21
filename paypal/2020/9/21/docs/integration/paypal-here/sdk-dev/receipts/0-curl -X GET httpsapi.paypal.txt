@@ -1,0 +1,4 @@
+curl -X GET https://api.paypal.com/v1/sales/transactions/{paypal_invoice_id}/receipt \
+  -H 'Authorization: Bearer {access_token}' \
+  -H 'Content-Type: application/json'
+copy

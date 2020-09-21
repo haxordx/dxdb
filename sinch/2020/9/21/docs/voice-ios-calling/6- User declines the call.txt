@@ -1,0 +1,4 @@
+// User declines the call
+[call hangup];
+
+// Stop playing ringing tone

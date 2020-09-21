@@ -1,0 +1,2 @@
+<script src="https://www.paypal.com/sdk/js?client-id=sb" data-csp-nonce="xyz-123">
+copy

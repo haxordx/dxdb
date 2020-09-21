@@ -1,0 +1,14 @@
+//start the verification process with the phone number in the field
+_verification = [SINVerification
+                    SMSVerificationWithApplicationKey:@"YOURKEY"
+                    phoneNumber:_phoneNumber.text];
+//set up the initiate the process
+[_verification initiateWithCompletionHandler:^(BOOL success, NSError *error) {
+   [spinner stopAnimating];
+   if (success) {
+      [self performSegueWithIdentifier:@"verifyCodeSeg" sender:nil];
+   }
+   else {
+      _status.text = [error description];
+   }
+}];

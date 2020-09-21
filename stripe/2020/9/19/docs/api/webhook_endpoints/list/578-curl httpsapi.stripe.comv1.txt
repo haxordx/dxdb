@@ -1,0 +1,5 @@
+curl https://api.stripe.com/v1/webhook_endpoints \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d url="https://example.com/my/webhook/endpoint" \
+  -d "enabled_events[]"="charge.failed" \
+  -d "enabled_events[]"="charge.succeeded"

@@ -1,0 +1,72 @@
+curl https://api.stripe.com/v1/accounts/:account_id \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d business_type=company \
+  -d "business_profile[mcc]"=5999 \
+  -d "business_profile[url]"="https://www.wesellsocks.com" \
+  -d "company[name]"="We Sell Socks, Inc." \
+  -d "company[tax_id]"=11-3456789 \
+  -d "company[address][line1]"="185 Berry Street" \
+  -d "company[address][city]"="San Francisco" \
+  -d "company[address][state]"=CA \
+  -d "company[address][postal_code]"=94110 \
+  -d "company[address][country]"=US
+
+
+curl https://api.stripe.com/v1/accounts/:account_id/persons \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d first_name=Joe \
+  -d last_name=Smith \
+  -d "dob[day]"=12 \
+  -d "dob[month]"=11 \
+  -d "dob[year]"=1978 \
+  -d "address[line1]"="185 Berry Street" \
+  -d "address[city]"="San Francisco" \
+  -d "address[state]"=CA \
+  -d "address[postal_code]"=94110 \
+  -d "address[country]"=US \
+  -d ssn_last_4=9999 \
+  -d email="joe@wesellsocks.com" \
+  -d "relationship[representative]"=true \
+  -d "relationship[owner]"=true \
+  -d "relationship[percent_ownership]"="25.0"
+
+
+curl https://api.stripe.com/v1/accounts/:account_id \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d "company[owners_provided]"=true
+curl https://api.stripe.com/v1/accounts/:account_id \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d business_type=company \
+  -d "business_profile[mcc]"=5999 \
+  -d "business_profile[url]"="https://www.wesellsocks.com" \
+  -d "company[name]"="We Sell Socks, Inc." \
+  -d "company[tax_id]"=11-3456789 \
+  -d "company[address][line1]"="185 Berry Street" \
+  -d "company[address][city]"="San Francisco" \
+  -d "company[address][state]"=CA \
+  -d "company[address][postal_code]"=94110 \
+  -d "company[address][country]"=US
+
+
+curl https://api.stripe.com/v1/accounts/:account_id/persons \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d first_name=Joe \
+  -d last_name=Smith \
+  -d "dob[day]"=12 \
+  -d "dob[month]"=11 \
+  -d "dob[year]"=1978 \
+  -d "address[line1]"="185 Berry Street" \
+  -d "address[city]"="San Francisco" \
+  -d "address[state]"=CA \
+  -d "address[postal_code]"=94110 \
+  -d "address[country]"=US \
+  -d ssn_last_4=9999 \
+  -d email="joe@wesellsocks.com" \
+  -d "relationship[representative]"=true \
+  -d "relationship[owner]"=true \
+  -d "relationship[percent_ownership]"="25.0"
+
+
+curl https://api.stripe.com/v1/accounts/:account_id \
+  -u sk_test_4eC39HqLyjWDarjtT1zdp7dc: \
+  -d "company[owners_provided]"=true

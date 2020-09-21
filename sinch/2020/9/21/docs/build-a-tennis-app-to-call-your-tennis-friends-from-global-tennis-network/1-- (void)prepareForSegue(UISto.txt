@@ -1,0 +1,5 @@
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([[segue identifier] isEqualToString:@"showMaster"]) {
+       [[segue destinationViewController] setUserID: sender];
+    }
+}

@@ -1,0 +1,10 @@
+paypal.Buttons({
+    onShippingChange: function(data, actions) {
+        if (data.shipping_address.country_code !== 'US') {
+            return actions.reject();
+        }
+
+        return actions.resolve();
+    }
+}).render('#paypal-button-container');
+jscopy

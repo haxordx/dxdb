@@ -1,0 +1,2 @@
+request = OrdersCreateRequest::new
+request.headers["prefer"] = "return=representation"copy

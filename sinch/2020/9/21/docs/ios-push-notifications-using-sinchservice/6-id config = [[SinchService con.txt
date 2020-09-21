@@ -1,0 +1,1 @@
+id config = [[SinchService configWithApplicationKey:@"<YOUR_APP_KEY>" applicationSecret:@"<YOUR_APP_SECRET>"                                 environmentHost:@"clientapi.sinch.com"]        pushNotificationsWithEnvironment:SINAPSEnvironmentAutomatic];

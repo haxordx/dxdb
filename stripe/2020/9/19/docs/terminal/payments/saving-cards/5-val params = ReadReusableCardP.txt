@@ -1,0 +1,25 @@
+val params = ReadReusableCardParameters.Builder()
+  .build()
+val cancelable = Terminal.getInstance().readReusableCard(params,
+  MyReaderDisplayListener(),
+  object : PaymentMethodCallback {
+    override fun onSuccess(paymentMethod: PaymentMethod) {
+      // Placeholder for sending paymentMethod.id to your backend.
+    }
+
+    override fun onFailure(exception: TerminalException) {
+      // Placeholder for handling the exception
+    }
+  })val params = ReadReusableCardParameters.Builder()
+  .build()
+val cancelable = Terminal.getInstance().readReusableCard(params,
+  MyReaderDisplayListener(),
+  object : PaymentMethodCallback {
+    override fun onSuccess(paymentMethod: PaymentMethod) {
+      // Placeholder for sending paymentMethod.id to your backend.
+    }
+
+    override fun onFailure(exception: TerminalException) {
+      // Placeholder for handling the exception
+    }
+  })

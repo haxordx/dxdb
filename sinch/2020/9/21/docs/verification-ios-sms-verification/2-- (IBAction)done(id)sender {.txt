@@ -1,0 +1,14 @@
+- (IBAction)done:(id)sender {
+  // User pressed a "Done" button after entering the code from the SMS.
+
+  NSString* code = @"<get code from user input text field>";
+
+  [self.verification verifyCode:code
+              completionHandler:^(BOOL success, NSError* error) {
+                if (success) {
+                  // Phone number was successfully verified
+                } else {
+                  // Ask user to re-attempt verification
+                }
+              }];
+}

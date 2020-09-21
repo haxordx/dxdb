@@ -1,0 +1,121 @@
+{
+  "id": "INV2-RUVR-ADWQ-H89Y-ABCD",
+  "number": "INV 01256",
+  "status": "DRAFT",
+  "merchant_info": {
+    "email": "merchant@example.com",
+    "first_name": "David",
+    "last_name": "Larusso",
+    "business_name": "Mitchell & Murray",
+    "phone": {
+      "country_code": "001",
+      "national_number": "4085551234"
+    },
+    "address": {
+      "line1": "1234 First Street",
+      "city": "Anytown",
+      "state": "CA",
+      "postal_code": "98765",
+      "country_code": "US"
+    }
+  },
+  "billing_info": [
+    {
+      "email": "bill-me@example.com",
+      "first_name": "Stephanie",
+      "last_name": "Meyers"
+    }
+  ],
+  "shipping_info": {
+    "first_name": "Stephanie",
+    "last_name": "Meyers",
+    "address": {
+      "line1": "1234 Main Street",
+      "city": "Anytown",
+      "state": "CA",
+      "postal_code": "98765",
+      "country_code": "US"
+    }
+  },
+  "items": [
+    {
+      "name": "Zoom System wireless headphones",
+      "quantity": 2,
+      "unit_price": {
+        "currency": "USD",
+        "value": "120.00"
+      },
+      "tax": {
+        "name": "Tax",
+        "percent": 8,
+        "amount": {
+          "currency": "USD",
+          "value": "19.20"
+        }
+      }
+    },
+    {
+      "name": "Bluetooth speaker",
+      "quantity": 1,
+      "unit_price": {
+        "currency": "USD",
+        "value": "145.00"
+      },
+      "tax": {
+        "name": "Tax",
+        "percent": 8,
+        "amount": {
+          "currency": "USD",
+          "value": "11.60"
+        }
+      }
+    }
+  ],
+  "invoice_date": "2017-06-22 PDT",
+  "discount": {
+    "percent": 10,
+    "amount": {
+      "currency": "USD",
+      "value": "38.50"
+    }
+  },
+  "shipping_cost": {
+    "amount": {
+      "currency": "USD",
+      "value": "10.00"
+    }
+  },
+  "tax_calculated_after_discount": false,
+  "tax_inclusive": false,
+  "note": "Thank you for your business.",
+  "total_amount": {
+    "currency": "USD",
+    "value": "387.30"
+  },
+  "metadata": {
+    "created_date": "2017-06-22 09:39:04 PDT"
+  },
+  "allow_tip": false,
+  "links": [
+    {
+      "rel": "self",
+      "href": "https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-FSLW-8GKP-N3QV-QQCX",
+      "method": "GET"
+    },
+    {
+      "rel": "send",
+      "href": "https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-FSLW-8GKP-N3QV-QQCX/send",
+      "method": "POST"
+    },
+    {
+      "rel": "update",
+      "href": "https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-FSLW-8GKP-N3QV-QQCX",
+      "method": "PUT"
+    },
+    {
+      "rel": "delete",
+      "href": "https://api.sandbox.paypal.com/v1/invoicing/invoices/INV2-FSLW-8GKP-N3QV-QQCX",
+      "method": "DELETE"
+    }
+  ]
+}copy

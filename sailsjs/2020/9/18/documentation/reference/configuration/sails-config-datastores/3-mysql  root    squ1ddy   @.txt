@@ -1,0 +1,4 @@
+mysql://  root  :  squ1ddy   @  localhost  :  3306  /  my_dev_db_name
+|         |        |            |             |        |
+|         |        |            |             |        |
+protocol  user     password     host          port     database

@@ -1,0 +1,3 @@
+# Install via npm
+npm install --save stripe# Install via npm
+npm install --save stripe

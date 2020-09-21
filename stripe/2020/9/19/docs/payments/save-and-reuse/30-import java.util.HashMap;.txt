@@ -1,0 +1,56 @@
+import java.util.HashMap;
+import java.util.Map;
+
+import com.stripe.Stripe;
+import com.stripe.model.SetupIntent;
+
+import spark.ModelAndView;
+
+import static spark.Spark.get;
+
+public class StripeJavaQuickStart {
+  public static void main(String[] args) {
+    // Set your secret key. Remember to switch to your live secret key in production!
+    // See your keys here: https://dashboard.stripe.com/account/apikeys
+    Stripe.apiKey = "sk_test_4eC39HqLyjWDarjtT1zdp7dc";
+
+    get("/card-wallet", (request, response) -> {
+      Map<String, Object> params = new HashMap<>();
+      params.put("customer", customer.getId());
+      SetupIntent intent = SetupIntent.create(params);
+
+      Map<String, String> map = new HashMap();
+      map.put("client_secret", intent.getClientSecret());
+
+      return new ModelAndView(map, "card_wallet.hbs");
+    }, new HandlebarsTemplateEngine());
+  }
+}
+import java.util.HashMap;
+import java.util.Map;
+
+import com.stripe.Stripe;
+import com.stripe.model.SetupIntent;
+
+import spark.ModelAndView;
+
+import static spark.Spark.get;
+
+public class StripeJavaQuickStart {
+  public static void main(String[] args) {
+    // Set your secret key. Remember to switch to your live secret key in production!
+    // See your keys here: https://dashboard.stripe.com/account/apikeys
+    Stripe.apiKey = "sk_test_4eC39HqLyjWDarjtT1zdp7dc";
+
+    get("/card-wallet", (request, response) -> {
+      Map<String, Object> params = new HashMap<>();
+      params.put("customer", customer.getId());
+      SetupIntent intent = SetupIntent.create(params);
+
+      Map<String, String> map = new HashMap();
+      map.put("client_secret", intent.getClientSecret());
+
+      return new ModelAndView(map, "card_wallet.hbs");
+    }, new HandlebarsTemplateEngine());
+  }
+}

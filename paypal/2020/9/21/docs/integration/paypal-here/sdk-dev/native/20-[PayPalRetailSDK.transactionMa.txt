@@ -1,0 +1,4 @@
+[PayPalRetailSDK.transactionManager createTransaction:invoice callback:^(PPRetailError *error, PPRetailTransactionContext *context) {
+    // On error, handle error. Else, set transaction context to call beginPayment in next step
+    self.tc = context
+}];copy

@@ -1,0 +1,7 @@
+stripe products create \
+  --name="Billing Guide: Premium Service" \
+  --type=service \
+  --description="Premium service with extra features"stripe products create \
+  --name="Billing Guide: Premium Service" \
+  --type=service \
+  --description="Premium service with extra features"

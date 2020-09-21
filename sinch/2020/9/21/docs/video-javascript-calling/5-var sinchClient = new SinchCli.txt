@@ -1,0 +1,13 @@
+var sinchClient = new SinchClient({
+  applicationKey: '...',
+  capabilities: { calling: true },
+});
+
+var callListeners = {
+  onCallEstablished: function (call) {
+    $('audio').attr('src', call.incomingStreamURL); //If audio element has attribute "autoplay"
+  },
+};
+
+var call = callClient.callConference('CONFERENCE_ROOM_HASH');
+call.addEventListener(callListeners);

@@ -1,0 +1,21 @@
+{
+  "type":"whatsapp",
+  "notifications":[
+    {
+      "from": "0732001122",
+      "message_id": "01DPNXZ0WCF9XD19MH84XD0P62",
+      "message": {
+        "type": "button",
+        "index": "2",
+        "text": "Option 3",
+        "payload": "some_payload"
+      },
+      "timestamp": "2020-05-07T10:02:10Z",
+      "to": "sinchbot",
+      "replying_to": {
+        "from": "447537817391",
+        "message_id": "01E7Q9AVTRB5A30JD7D9ZN0HTE"
+      }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+curl -v -X PATCH https://api.sandbox.paypal.com/v1/vault/credit-cards/CARD-1SW33690TH184423CKM2ZMVY \
+-H "Content-Type: application/json" \
+-H "Authorization: Bearer Access-Token" \
+-d '[
+  {
+    "op": "replace",
+    "path": "/billing_address/line1",
+    "value": "53 N Main St."
+  }
+]'copy

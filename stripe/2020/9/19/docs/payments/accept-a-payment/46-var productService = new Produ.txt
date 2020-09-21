@@ -1,0 +1,12 @@
+var productService = new ProductService();
+var options = new ProductCreateOptions
+{
+    Name = "T-shirt",
+};
+var product = productService.Create(options);
+var productService = new ProductService();
+var options = new ProductCreateOptions
+{
+    Name = "T-shirt",
+};
+var product = productService.Create(options);

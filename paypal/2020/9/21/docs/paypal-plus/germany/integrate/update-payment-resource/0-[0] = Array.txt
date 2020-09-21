@@ -1,0 +1,46 @@
+[0] => Array
+    (
+        [op] => replace
+        [path] => /transactions/0/amount
+        [value] => Array
+            (
+                [total] => 0.01
+                [currency] => EUR
+                [details] => Array
+                    (
+                        [subtotal] => 4.99
+                        [shipping] => 1.00
+                        [shipping_discount] => -5.98
+                    )
+
+[1] => Array
+    (
+        [op] => add
+        [path] => /transactions/0/item_list/shipping_address
+        [value] => Array
+            (
+                [recipient_name] => Max Mustermann
+                [line1] => Lieferstr. 1
+                [city] => Berlin
+                [country_code] => DE
+                [postal_code] => 12345
+            )
+
+[2] => Array
+    (
+        [op] => add
+        [path] => /payer/payer_info
+        [value] => Array
+            (
+                [first_name] => Max
+                [last_name] => Mustermann
+                [email] => max@mustermann.com
+                [billing_address] => Array
+                    (
+                        [line1] => Lieferstr. 1
+                        [city] => Berlin
+                        [country_code] => DE
+                        [postal_code] => 12345
+                    )
+            )
+copy

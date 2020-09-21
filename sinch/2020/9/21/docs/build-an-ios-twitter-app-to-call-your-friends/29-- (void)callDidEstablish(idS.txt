@@ -1,0 +1,9 @@
+- (void)callDidEstablish:(id<SINCall>)call {
+    self.AnswerButton.hidden = YES;
+    [self.HangupButton setTitle:@"Hangup" forState:UIControlStateNormal];
+    self.StatusLabel.text = @"";
+}
+
+- (void)callDidEnd:(id<SINCall>)call {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}

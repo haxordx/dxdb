@@ -1,0 +1,1 @@
+https://www.paypal.com/bizsignup/partner/entry?&partnerClientId=partner_client_id&partnerId=partner_payer_id&partnerLogoUrl=partner_logo_url&returnToPartnerUrl=return_url_for_done_page_button&product=ppcp&integrationType=FO&features=PAYMENT,REFUNDcopy
