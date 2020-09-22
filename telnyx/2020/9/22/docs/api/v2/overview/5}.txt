@@ -1,0 +1,1 @@
+GET /connections?sort[]=name&sort[]=created_at HTTP/1.1

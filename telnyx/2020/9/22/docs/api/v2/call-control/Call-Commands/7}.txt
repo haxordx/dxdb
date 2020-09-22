@@ -1,0 +1,9 @@
+{
+  "data": {
+    "call_control_id": "428c31b6-7af4-4bcb-b7f5-5013ef9657c1",
+    "call_leg_id": "428c31b6-7af4-4bcb-b7f5-5013ef9657c1",
+    "call_session_id": "428c31b6-7af4-4bcb-b7f5-5013ef9657c1",
+    "is_alive": true,
+    "record_type": "call"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "data": {
+    "description": "Requirement for providing Proof of Address",
+    "field_type": "address",
+    "label": "Proof of Address",
+    "record_type": "regulatory_requirement",
+    "requirement_type": "end user proof of address"
+  }
+}

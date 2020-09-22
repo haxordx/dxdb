@@ -1,0 +1,27 @@
+{
+  "data": {
+    "active": false,
+    "anchorsite_override": "Amsterdam, Netherlands",
+    "application_name": "call-router",
+    "created_at": "2018-02-02T22:25:27.521Z",
+    "dtmf_type": "Inband",
+    "first_command_timeout": true,
+    "first_command_timeout_secs": 10,
+    "id": "1293384261075731499",
+    "inbound": {
+      "channel_limit": 10,
+      "sip_subdomain": "example",
+      "sip_subdomain_receive_settings": "only_my_connections"
+    },
+    "outbound": {
+      "channel_limit": 10,
+      "outbound_voice_profile_id": "1293384261075731499"
+    },
+    "record_type": "call_control_application",
+    "updated_at": "2018-02-02T22:25:27.521Z",
+    "webhook_api_version": "1",
+    "webhook_event_failover_url": "https://failover.example.com",
+    "webhook_event_url": "https://example.com",
+    "webhook_timeout_secs": 25
+  }
+}

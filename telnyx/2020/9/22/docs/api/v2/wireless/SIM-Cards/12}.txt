@@ -1,0 +1,6 @@
+curl -X POST \
+  --header "Content-Type: application/json" \
+  --header "Accept: application/json" \
+  --header "Authorization: Bearer YOUR_API_KEY" \
+  --data '{"registration_codes": ["1234567890, 123456332601"]}' \
+  https://api.telnyx.com/v2/actions/register/sim_cards

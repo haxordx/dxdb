@@ -1,0 +1,9 @@
+curl -X POST "https://sms.telnyx.com/messages" \
+  -H "Content-Type: application/json" \
+  -H "X-Profile-Secret: YOUR_MESSAGING_PROFILE_SECRET" \
+  -d '{
+    "from": "+13125550001",
+    "to": "+13129450002",
+    "body": "Hello!",
+    "delivery_status_webhook_url": "https://example.com/campaign/7214"
+}'

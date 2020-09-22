@@ -1,0 +1,65 @@
+{
+  "data": {
+    "event_type": "message.sent",
+    "id": "string",
+    "occurred_at": "string",
+    "payload": {
+      "completed_at": "string",
+      "cost": {
+        "amount": "string",
+        "currency": "string"
+      },
+      "direction": "outbound",
+      "encoding": "string",
+      "errors": [
+        {
+          "code": "string",
+          "detail": "string",
+          "meta": "object",
+          "source": {
+            "parameter": "string",
+            "pointer": "string"
+          },
+          "title": "string"
+        }
+      ],
+      "from": {
+        "carrier": "string",
+        "line_type": "Wireline",
+        "phone_number": "string"
+      },
+      "id": "string",
+      "media": [
+        {
+          "content_type": "string",
+          "sha256": "string",
+          "size": "integer",
+          "url": "string"
+        }
+      ],
+      "messaging_profile_id": "string",
+      "parts": "integer",
+      "received_at": "string",
+      "record_type": "message",
+      "sent_at": "string",
+      "subject": "string",
+      "tags": [
+        "string"
+      ],
+      "text": "string",
+      "to": [
+        {
+          "carrier": "string",
+          "line_type": "Wireline",
+          "phone_number": "string",
+          "status": "queued"
+        }
+      ],
+      "type": "SMS",
+      "valid_until": "string",
+      "webhook_failover_url": "string",
+      "webhook_url": "string"
+    },
+    "record_type": "event"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "data": {
+    "event_type": "fax.media.processing.started",
+    "id": "35e33b02-6365-47d0-93b7-3bfec97c467e",
+    "occurred_at": "2020-08-27T16:33:33.175396Z",
+    "payload": {
+      "connection_id": "1447842681660114324",
+      "direction": "inbound",
+      "fax_id": "f72eebbe-f9b6-4f0f-b652-03e742e110d5",
+      "from": "+16132484850",
+      "status": "media.processing",
+      "to": "+17733372863",
+      "user_id": "19a75cea-02c6-4b9a-84fa-c9bc8341feb8"
+    },
+    "record_type": "event"
+  },
+  "meta": {
+    "attempt": 1,
+    "delivered_to": "https://1a3097.ngrok.io/"
+  }
+}

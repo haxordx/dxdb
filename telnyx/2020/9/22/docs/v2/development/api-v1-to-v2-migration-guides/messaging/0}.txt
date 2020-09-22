@@ -1,0 +1,31 @@
+{
+  "type": "SMS",
+  "sms_id": "403171cc-e934-4978-bada-2701bbdb69e7",
+  "sms_gw_id": "403171cc-e934-4978-bada-2701bbdb69e7",
+  "user_id": "d63fjl62-0003-4dab-7832-29b7b22628d8",
+  "profile_id": "3dgnn65-7f81-4b71-b4g6-64a65ac29e8d",
+  "created": 1588280767640,
+  "updated": 1588280767727,
+  "date_created": "2020-04-30T21:06:07.640000",
+  "date_updated": "2020-04-30T21:06:07.727000",
+  "to": "+18005550199",
+  "from": "+18005550100",
+  "cost": null,
+  "currency": null,
+  "direction": "outbound",
+  "status": "sent",
+  "delivery_status": "",
+  "on_net": false,
+  "carrier": "OMNIPOINT COMMUNICATIONS MIDWEST OPERATIONS LLC",
+  "line_type": "Wireless",
+  "errors": [],
+  "body": {
+    "text": "Hello, World!",
+    "text_hash": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+    "coding": 0,
+    "num_chars": 4,
+    "num_bytes": 4,
+    "bytes_hash": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+    "parts": 1
+  }
+}

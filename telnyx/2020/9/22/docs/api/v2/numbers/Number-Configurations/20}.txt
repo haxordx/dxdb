@@ -1,0 +1,6 @@
+curl -X PATCH \
+  --header "Content-Type: application/json" \
+  --header "Accept: application/json" \
+  --header "Authorization: Bearer YOUR_API_KEY" \
+  --data '{"messaging_profile_id": "e51f3bde-l4b7-464d-bc90-47196f9dd36b"}' \
+  https://api.telnyx.com/v2/phone_numbers/{id}/messaging

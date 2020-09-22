@@ -1,0 +1,6 @@
+curl -X POST \
+  --header "Content-Type: application/json" \
+  --header "Accept: application/json" \
+  --header "Authorization: Bearer YOUR_API_KEY" \
+  --data '{"call_control_ids": ["891510ac-f3e4-11e8-af5b-de00688a4931"]}' \
+  https://api.telnyx.com/v2/conferences/{id}/actions/unmute

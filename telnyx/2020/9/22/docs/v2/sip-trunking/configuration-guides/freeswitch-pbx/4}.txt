@@ -1,0 +1,3 @@
+<param name="ext-rtp-ip" value="8.8.8.8"/>
+<param name="ext-sip-ip" value="8.8.8.8"/>
+<!-- Replace 8.8.8.8 with your public IP -->

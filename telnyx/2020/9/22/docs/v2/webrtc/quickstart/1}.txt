@@ -1,0 +1,14 @@
+{
+  "data": {
+    "id": "68f28076-119e-440d-bb69-9a8d359857c2",
+    "name": "2020-08-05 13:42:22.991499Z",
+    "record_type": "credential",
+    "resource_id": "connection:1431843891430033126",
+    "sip_password": "570067b6e4d7495db417e150a81380d9",
+    "sip_username": "gencredbcXbCt2uEOaD6e2VN2Bs3b2HDlQVW2v3CJFTQ6Xes9",
+    "created_at": "2020-08-05T13:42:22.992Z",
+    "expires_at": "2020-08-06T13:42:22.995Z",
+    "updated_at": "2020-08-05T13:42:22.992Z",
+    "user_id": "14c31d6d-aa05-4598-bef8-5acd2197f0c1"
+  }
+}

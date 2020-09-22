@@ -1,0 +1,2 @@
+voice translation-profile 100
+translate called 100

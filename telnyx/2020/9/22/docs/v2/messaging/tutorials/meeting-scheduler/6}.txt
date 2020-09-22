@@ -1,0 +1,4 @@
+now = datetime.now()
+if meeting_datetime - timedelta(hours=3, minutes=5) < now:
+    flash('Appointment time must be at least 3:05 hours from now')
+    return render_template('index.html')

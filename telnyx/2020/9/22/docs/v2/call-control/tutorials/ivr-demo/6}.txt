@@ -1,0 +1,5 @@
+const { data: call } = await telnyx.calls.create({
+			connection_id: g_connection_id,
+			to: g_forwarding_did,
+			from: req.body.data.payload.from,
+			client_state: `base64encodedstring`});

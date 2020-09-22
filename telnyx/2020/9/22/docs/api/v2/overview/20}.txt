@@ -1,0 +1,2 @@
+api.telnyx.com/v2/messaging_profiles
+api.telnyx.com/v2/available_phone_numbers

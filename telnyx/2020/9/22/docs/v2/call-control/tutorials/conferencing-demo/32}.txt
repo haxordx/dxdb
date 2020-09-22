@@ -1,0 +1,3 @@
+console.log("[%s] LOG - New Conference Created! - Conference ID [%s]", get_timestamp(), g_conf_id);
+res.end();
+}

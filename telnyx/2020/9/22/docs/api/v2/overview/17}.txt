@@ -1,0 +1,1 @@
+GET /phone_numbers?filter[purchased_at][eq]=2018-02-21 HTTP/1.1

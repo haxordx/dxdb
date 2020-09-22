@@ -1,0 +1,4 @@
+$app->post('/messaging/outbound', function (Request $request, Response $response) {
+    // Handle outbound DLR
+    return $response->withStatus(200);
+})->add($telnyxWebhookVerify);

@@ -1,0 +1,1 @@
+"telnyx_api_auth_v2": "<your-api-v2-key-here>"

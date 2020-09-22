@@ -1,0 +1,2 @@
+celery worker -A schedule_meeting_server.celery --loglevel=info
+python schedule_meeting_server.py

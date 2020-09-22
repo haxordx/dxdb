@@ -1,0 +1,43 @@
+if (g_conf_id == 'no-conf') {
+
+  // First participant message
+  call_control_speak(g_telnyx_api_auth_v2, l_call_control_id,
+      'Welcome to this conference demo. ' +
+      'Please wait for other participants to join. '
+  );
+
+  // Create Conference
+  call_control_create_conf(g_telnyx_api_auth_v2, l_call_control_id, 'conf-created', 'myconf', function (conf_err, conf_res) {
+
+      if (conf_res == '0') {
+          console.log("[%s] LOG - Conference Creation Failed!", get_timestamp());
+          call_control_hangup(g_telnyx_api_auth_v2, l_call_control_id);
+      } else {
+          g_conf_id = conf_res;
+
+          if (!l_client_state_64)
+              g_participants.set(l_call_control_id, l_hook_from); // add inbound participant to the list
+          else
+              g_participants.set(l_call_control_id, l_hook_to); // add outbound participant to the list
+      }
+
+  });
+
+} else {
+
+  // Consequent participants message
+  call_control_speak(g_telnyx_api_auth_v2, l_call_control_id,
+      'Welcome to this conference demo. ' +
+      'We are now putting you on the conference room. '
+  );
+
+  call_control_join_conf(g_telnyx_api_auth_v2, l_call_control_id, g_conf_id, 'agent-in');
+
+  // Add Participant to the Participant List
+  if (!l_client_state_64)
+      g_participants.set(l_call_control_id, l_hook_from); // add inbound participant to the list
+  else
+      g_participants.set(l_call_control_id, l_hook_to); // add outbound participant to the list
+}
+
+res.end();

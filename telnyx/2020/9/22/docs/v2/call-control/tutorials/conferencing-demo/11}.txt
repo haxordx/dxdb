@@ -1,0 +1,1 @@
+In this example, you can see that the `Call Control ID` and the Action name will feed the URL of the API. The Telnyx API Key is passed to the Authentication header, and the body is formed with all of the different input parameters received for that specific Command.

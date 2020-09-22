@@ -1,0 +1,6 @@
+app = Flask(__name__)
+app.secret_key = uuid.uuid4()
+app.config.from_pyfile('config_file.cfg')
+celery = Celery('schedule_meeting_server', broker='redis://localhost:6379')
+
+telnyx.api_key = app.config['API_KEY']

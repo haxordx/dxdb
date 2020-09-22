@@ -1,0 +1,3 @@
+meeting_date = datetime.strptime(request.form['meeting_date'], '%Y-%m-%d')
+meeting_time = datetime.strptime(request.form['meeting_time'], '%H:%M').time()
+meeting_datetime = datetime.combine(meeting_date, meeting_time)

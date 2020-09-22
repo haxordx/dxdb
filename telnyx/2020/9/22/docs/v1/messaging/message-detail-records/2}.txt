@@ -1,0 +1,5 @@
+curl -X GET \
+  --header "Content-Type: application/json" \
+  --header "Accept: application/json" \
+  --header "x-profile-secret: YOUR_MESSAGING_PROFILE_SECRET" \
+  "https://sms.telnyx.com/messages/834f3d53-8a3c-4aa0-a733-7f2d682a72df"

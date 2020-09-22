@@ -1,0 +1,3 @@
+rest.post('/'+g_appName+'/start', function (req, res) {
+  // APP CODE GOES HERE
+})

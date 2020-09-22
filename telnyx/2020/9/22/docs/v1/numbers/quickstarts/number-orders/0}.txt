@@ -1,0 +1,7 @@
+curl -X POST \
+  --header "Content-Type: application/json" \
+  --header "Accept: application/json" \
+  --header "x-api-token: API_TOKEN" \
+  --header "x-api-user: API_USER" \
+  --data '{"requested_numbers":"+18728880010"}' \
+  "https://api.telnyx.com/origination/number_orders"

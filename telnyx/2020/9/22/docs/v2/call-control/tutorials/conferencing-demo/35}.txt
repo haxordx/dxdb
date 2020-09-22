@@ -1,0 +1,11 @@
+} else if (l_hook_event_type == 'call.speak.ended' ||
+        l_hook_event_type == 'call.speak.started' ||
+        l_hook_event_type == 'playback.ended' ||
+        l_hook_event_type == 'call.hangup' ||
+        l_hook_event_type == 'gather.ended' ||
+        l_hook_event_type == 'call.bridged' ||
+        l_hook_event_type == 'dtmf' ||
+        l_hook_event_type == 'playback.started') { 
+        res.end();
+
+}

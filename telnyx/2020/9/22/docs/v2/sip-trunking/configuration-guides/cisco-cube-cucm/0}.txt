@@ -1,0 +1,9 @@
+dial-peer voice 100 voip        ! 100 is an arbitrary number
+translation-profile incoming 100  ! Used to translate DID to extension
+destination-pattern 1[2-9]..[2-9]...... !general pattern for an outgoing 11 digit calling
+session protocol sipv2
+voice-class sip profiles 1   ! Refers to a pre-configured SIP Profile, used to modify headers in SIP Messages
+session target ipv4:192.76.120.10  ! or replace with sip.telnyx.com
+incoming called-number 1[2-9]..[2-9]...... 
+dtmf-relay rtp-nte cisco-rtp sip-kpml sip-notify
+voice-class codec 1      ! 1 Refers to a pre-configured ordered list of codecs

@@ -1,0 +1,31 @@
+{
+  "data": {
+    "record_type": "message",
+    "id": "834f3d53-8a3c-4aa0-a733-7f2d682a72df",
+    "direction": "outbound",
+    "type": "sms",
+    "from": "+18445550001",
+    "to": [
+      {
+        "address": "+18665550002",
+        "status": "delivered",
+        "updated_at": "2019-01-23T18:10:02.574Z"
+      }
+    ],
+    "text": "Hello, World!",
+    "webhook_url": "https://www.example.com/hooks",
+    "webhook_failover_url": "https://www.example.com/callbacks",
+    "use_profile_webhooks": false,
+    "cost": {
+      "amount": "1.23",
+      "currency": "USD"
+    },
+    "parts": 1,
+    "created_at": "2019-01-23T18:10:02.574Z",
+    "updated_at": "2019-01-23T18:10:02.574Z",
+    "valid_until": "2019-01-23T18:10:02.574Z",
+    "errors": [],
+    "carrier": "Verizon",
+    "line_type": "Wireless"
+  }
+}

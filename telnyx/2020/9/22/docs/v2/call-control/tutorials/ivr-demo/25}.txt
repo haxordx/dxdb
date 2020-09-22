@@ -1,0 +1,62 @@
+ else if (l_hook_event_type == "call.gather.ended") {
+		// Receive DTMF Number
+		const l_dtmf_number = req.body.data.payload.digits;
+
+		console.log(
+			`[%s] DEBUG - RECEIVED DTMF [%s]${get_timestamp()} | ${l_dtmf_number}`
+		);
+		res.end();
+
+		// Check Users Selection for forwarded call
+		if (!l_client_state_64) {
+			res.end();
+			// Do nothing... will have state
+		} else {
+			// Selected Answer Call >> Bridge Calls
+			if (l_client_state_o.clientState == "stage-dial" && l_dtmf_number) {
+				// Bridge Call
+				if (l_dtmf_number == "1") {
+					const bridge_call = new telnyx.Call({
+						call_control_id: l_call_control_id,
+					});
+					// Bridge this call to the initial call control id which triggered our call flow which we stored in client state on the initial Dial
+					bridge_call.bridge({
+						call_control_id: l_client_state_o.bridgeId,
+					});
+					res.end();
+					console.log(
+						`[%s] LOG - EXEC BRIDGE CALLS -  [%s] ${get_timestamp()}`
+					);
+					// Call rejected >> Answer Bridge Call, You must answer the parked call before you can issue speak or play audio
+				} else if (l_dtmf_number == "2") {
+					// Set Call State so we can initiate the voicemail call flow
+					let l_client_state = {
+						clientState: "stage-voicemail-greeting",
+						bridgeId: null,
+					};
+					const answer_bridge_call = new telnyx.Call({
+						call_control_id: l_client_state_o.bridgeId,
+					});
+
+					answer_bridge_call.answer({
+						client_state: Buffer.from(
+							JSON.stringify(l_client_state)
+						).toString("base64"),
+					});
+
+					// Hangup This call now that user has responded to reject
+					const hangup_call = new telnyx.Call({
+						call_control_id: l_call_control_id,
+					});
+					hangup_call.hangup();
+					console.log(
+						`[%s] LOG - EXEC HANGUP FINDME AND SEND TO VM -  [%s] ${get_timestamp()}`
+					);
+				}
+				res.end();
+			}
+		}
+
+		res.end();
+		// Webhook Speak Ended or * received >> Record VoiceMail / Call
+	}

@@ -1,0 +1,2 @@
+<param name="password" value="abcd1234"/>
+<!-- Replace abcd1234 with a strong password -->

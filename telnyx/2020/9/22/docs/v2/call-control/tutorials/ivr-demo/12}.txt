@@ -1,0 +1,4 @@
+const hangup_call = new telnyx.Call({
+	call_control_id: l_call_control_id});
+	
+	hangup_call.hangup();

@@ -1,0 +1,6 @@
+curl -X POST \
+  --header "Content-Type: application/json" \
+  --header "Accept: application/json" \
+  --header "x-api-token: YOUR_API_TOKEN" \
+  --data '{"search_descriptor":{"consecutive":4,"city":"Chicago","state":"IL","has_any_features":["sms","voice"]},"search_type":4,"limit":1}' \
+  "https://api.telnyx.com/origination/number_searches"

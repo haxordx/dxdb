@@ -1,0 +1,22 @@
+{
+  "connection_id": null,
+  "created_at": "2018-11-19T15:55:00.319129+00:00",
+  "customer_reference": null,
+  "id": "1234-56789-6789-5678",
+  "messaging_profile_id": null,
+  "phone_numbers": [
+    {
+      "id": "123cvgbh-fvgbhn-fvgbh-vgbh",
+      "phone_number": "+15555555555",
+      "record_type": "number_order_phone_number",
+      "regulatory_requirements": [],
+      "requirements_met": true,
+      "status": "success"
+    }
+  ],
+  "phone_numbers_count": 1,
+  "record_type": "number_order",
+  "requirements_met": true,
+  "status": "success",
+  "updated_at": "2018-11-19T15:55:00.319129+00:00"
+}

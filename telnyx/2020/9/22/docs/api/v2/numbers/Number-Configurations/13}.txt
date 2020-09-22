@@ -1,0 +1,36 @@
+{
+  "data": [
+    {
+      "call_forwarding": {
+        "call_forwarding_enabled": true,
+        "forwarding_type": "always",
+        "forwards_to": "+13035559123"
+      },
+      "call_recording": {
+        "inbound_call_recording_channels": "single",
+        "inbound_call_recording_enabled": true,
+        "inbound_call_recording_format": "wav"
+      },
+      "cnam_listing": {
+        "cnam_listing_details": "example",
+        "cnam_listing_enabled": true
+      },
+      "connection_id": "1d0e6cb8-8668-462e-94c6-49ae0f0ed48b",
+      "emergency": {
+        "emergency_address_id": "1315261609962112019",
+        "emergency_enabled": true
+      },
+      "id": "1293384261075731499",
+      "media_features": {
+        "accept_any_rtp_packets_enabled": true,
+        "media_handling_mode": "default",
+        "rtp_auto_adjust_enabled": true,
+        "t38_fax_gateway_enabled": true
+      },
+      "record_type": "voice_settings",
+      "tech_prefix_enabled": false,
+      "translated_number": "+13035559999",
+      "usage_payment_method": "pay-per-minute"
+    }
+  ]
+}

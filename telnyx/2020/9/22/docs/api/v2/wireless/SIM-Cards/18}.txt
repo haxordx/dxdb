@@ -1,0 +1,5 @@
+curl -X DELETE \
+  --header "Content-Type: application/json" \
+  --header "Accept: application/json" \
+  --header "Authorization: Bearer YOUR_API_KEY" \
+  "https://api.telnyx.com/v2/sim_cards/6a09cdc3-8948-47f0-aa62-74ac943d6c58/network_preferences"

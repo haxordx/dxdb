@@ -1,0 +1,6 @@
+curl -X POST \
+  --header "Content-Type: application/json" \
+  --header "Accept: application/json" \
+  --header "Authorization: Bearer YOUR_API_KEY" \
+  --data '{"data_enabled":true,"data_limit":2048}' \
+  https://api.telnyx.com/v2/sim_card_groups

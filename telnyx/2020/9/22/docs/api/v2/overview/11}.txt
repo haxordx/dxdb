@@ -1,0 +1,12 @@
+{
+  "id": "d460a653-8ee6-4061-ae9a-5b8a52539fb4",
+  "phone_number": "18005550199",
+  "record_type": "phone_number",
+  ...
+  "voice": {
+    "e911_address_id" : "",
+    "connection_name" : false,
+    "inbound_call_recording_channels" : "single",
+    ...
+  }
+}

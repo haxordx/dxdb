@@ -1,0 +1,1 @@
+function call_control_COMMAND_NAME(f_call_control_id, f_INPUT)

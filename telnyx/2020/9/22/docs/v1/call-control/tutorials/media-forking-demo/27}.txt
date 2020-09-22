@@ -1,0 +1,1 @@
+Both `g_udp_rx` and `g_udp_tx` are two global variables also specified at the beginning of this code, having different destination ports so we can differentiate both traffic’s legs.

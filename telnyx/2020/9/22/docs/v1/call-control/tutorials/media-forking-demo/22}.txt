@@ -1,0 +1,12 @@
+else if (l_hook_event_type=='call_answered'){  
+  if (!l_client_state_64) {
+    // No State >> Incoming >> Gather Input
+      call_control_gather_using_speak(
+        l_call_control_id,
+        'Welcome to this Telnyx Demo,' +
+        'Please press 1 to transfer the call and start forking,',
+        '1', '1', 'stage-dial', ''
+      );
+  }
+  res.end();
+}

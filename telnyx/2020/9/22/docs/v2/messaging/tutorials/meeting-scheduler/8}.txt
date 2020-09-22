@@ -1,0 +1,5 @@
+return render_template('success.html',
+                       name=request.form['customer_name'],
+                       meeting_name=request.form['meeting_name'],
+                       phone=request.form['phone'],
+                       meeting_datetime=str(meeting_datetime))

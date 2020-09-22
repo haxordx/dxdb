@@ -1,0 +1,10 @@
+const record_call = new telnyx.Call({
+	call_control_id: l_call_control_id});
+
+	record_call.record_start({
+		format: "mp3",
+		channels: "single",
+		play_beep: true,
+		client_state: Buffer.from(JSON.stringify(l_client_state)).toString(
+			"base64"
+		),});

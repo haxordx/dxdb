@@ -1,0 +1,23 @@
+{
+  "data": [
+    {
+      "inbound": {
+        "received": 850
+      },
+      "messaging_profile_id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "outbound": {
+        "delivered": 990,
+        "errors": 0.01,
+        "sent": 1000
+      },
+      "phone_numbers": 250,
+      "record_type": "messaging_profile_metrics"
+    }
+  ],
+  "meta": {
+    "page_number": 2,
+    "page_size": 25,
+    "total_pages": 3,
+    "total_results": 55
+  }
+}

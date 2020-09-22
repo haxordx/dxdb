@@ -1,0 +1,2 @@
+x-api-user: example@telnyx.com
+x-api-token: MY_TOKEN

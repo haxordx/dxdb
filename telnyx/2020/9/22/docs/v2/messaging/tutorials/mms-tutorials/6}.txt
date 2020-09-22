@@ -1,0 +1,29 @@
+$app->post('/messaging/inbound', function (Request $request, Response $response) {
+    $body = $request->getParsedBody();
+    $payload = $body['data']['payload'];
+    $toNumber = $payload['to'][0]['phone_number'];
+    $fromNumber = $payload['from']['phone_number'];
+    $medias = $payload['media'];
+    $dlrUrl = http_build_url([
+        'scheme' => $request->getUri()->getScheme(),
+        'host' => $request->getUri()->getHost(),
+        'path' => '/messaging/outbound'
+    ]);
+    $mediaUrls = array_map('downloadUpload', $medias);
+    try {
+        $new_message = Message::Create([
+            'from' => $toNumber,
+            'to' => $fromNumber,
+            'text' => 'Hello, world!',
+            'media_urls' => $mediaUrls,
+            'use_profile_webhooks' => false,
+            'webhook_url' => $dlrUrl
+            ]);
+        $messageId = $new_message->id;
+        echo 'Sent message with ID: ', $messageId;
+    }
+    catch (Exception $e) {
+        echo 'Caught exception: ',  $e->getMessage(), "\n";
+    }
+    return $response->withStatus(200);
+})->add($telnyxWebhookVerify);

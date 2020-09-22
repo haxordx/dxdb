@@ -1,0 +1,55 @@
+{
+  "id": "123-45678-456789",
+  "result": [
+    {
+      "number_vanity": null,
+      "upfront_cost": "1.00000",
+      "vanity_string": null,
+      "monthly_recurring_cost": "1.00000",
+      "verification_requirements": [],
+      "regional_data": {
+        "rate_center": "CHICAGO ZONE 11",
+        "state": "IL",
+        "country_iso": "US"
+      },
+      "features": [
+        {
+          "name": "fax"
+        },
+        {
+          "name": "voice"
+        },
+        {
+          "name": "sms"
+        }
+      ],
+      "number_e164": "+17732490576",
+      "reservable": false,
+      "currency": "USD",
+      "best_effort": false
+    }
+  ],
+  "inexplicit_result": [],
+  "search_descriptor": {
+    "has_all_features": [],
+    "rc_name": null,
+    "province": "IL",
+    "consecutive": null,
+    "national_destination_codes": null,
+    "subscriber_number": null,
+    "vanity_string": null,
+    "postal_code": null,
+    "prefix": null,
+    "trailing_digits": null,
+    "has_any_features": [],
+    "user_source": "api",
+    "national_destination_code": null,
+    "city": "Chicago",
+    "placement": null,
+    "country_iso": "US",
+    "reservable": false,
+    "best_effort": true
+  },
+  "status": 2,
+  "limit": 1
+}

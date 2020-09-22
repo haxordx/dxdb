@@ -1,0 +1,6 @@
+{
+  "data": {
+    "channels": 7,
+    "record_type": "inbound_channels"
+  }
+}

@@ -1,0 +1,7 @@
+translation-rules 
+id                    includePlus 
+type                  add 
+add-string            +1 
+add-index             0 
+delete-string 
+delete-index          0

@@ -1,0 +1,6 @@
+curl -X POST \
+  --header "Content-Type: application/json" \
+  --header "Accept: application/json" \
+  --header "Authorization: Bearer YOUR_API_KEY" \
+  --data '{"messaging_profile_id":"dc8f39ac-953d-4520-b93b-786ae87db0da","phone_numbers":["+18665550001","+18665550002"]}' \
+  https://api.telnyx.com/v2/messaging_hosted_number_orders

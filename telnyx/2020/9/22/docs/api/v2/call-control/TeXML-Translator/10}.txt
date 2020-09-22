@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Say>Support line is closed. Please try again tomorrow.</Say>
+    <Hangup />
+</Response>

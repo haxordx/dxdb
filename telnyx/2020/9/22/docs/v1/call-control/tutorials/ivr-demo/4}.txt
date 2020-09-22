@@ -1,0 +1,2 @@
+const g_telnyx_key        = "dfb642e0-558d-47b1-b9da-7b84cdcf0c9a"
+const g_telnyx_secret     = "6ow9hnixSPirLvgwWPbcda"

@@ -1,0 +1,10 @@
+{
+  "requested_inexplicit_numbers": [
+    "quantity": 100,
+    "address_id": "123",
+    "national_destination_code": "9",
+    "country_iso": "FI",
+    "region_name": "Helsinki",
+    "region_type": "city"
+  ]
+}

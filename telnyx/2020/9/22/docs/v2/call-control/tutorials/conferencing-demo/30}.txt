@@ -1,0 +1,5 @@
+    if (req.body.data.payload.direction == 'incoming')
+        call_control_answer_call(g_telnyx_api_auth_v2, l_call_control_id, null);
+    else
+        call_control_answer_call(g_telnyx_api_auth_v2, l_call_control_id, 'outgoing');
+    res.end();

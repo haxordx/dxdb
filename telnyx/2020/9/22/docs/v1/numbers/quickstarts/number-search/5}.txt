@@ -1,0 +1,6 @@
+{
+  "search_descriptor": {
+    "national_destination_code": "17037",
+    "country_iso": "FR"
+  }
+}

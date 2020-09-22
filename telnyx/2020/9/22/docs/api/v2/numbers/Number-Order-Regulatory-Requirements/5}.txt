@@ -1,0 +1,24 @@
+{
+  "data": [
+    {
+      "phone_number": "+19705555098",
+      "record_type": "phone_number_regulatory_requirement",
+      "regulatory_group_id": "d70873cd-7c98-401a-81b6-b1ae08246995",
+      "regulatory_requirements": [
+        {
+          "description": "Requirement for providing Proof of Address",
+          "field_type": "address",
+          "label": "Proof of Address",
+          "record_type": "regulatory_requirement",
+          "requirement_type": "end user proof of address"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "page_number": 2,
+    "page_size": 25,
+    "total_pages": 3,
+    "total_results": 55
+  }
+}

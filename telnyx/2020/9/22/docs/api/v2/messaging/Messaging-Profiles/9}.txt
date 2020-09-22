@@ -1,0 +1,6 @@
+curl -X PATCH \
+  --header "Content-Type: application/json" \
+  --header "Accept: application/json" \
+  --header "Authorization: Bearer YOUR_API_KEY" \
+  --data '{"enabled":true,"name":"Profile for Messages"}' \
+  https://api.telnyx.com/v2/messaging_profiles/{id}

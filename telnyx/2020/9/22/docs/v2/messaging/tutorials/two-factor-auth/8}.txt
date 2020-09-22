@@ -1,0 +1,7 @@
+@app.route('/verify', methods=['POST'])
+def handle_verify():
+    token = request.form['token']
+
+    if TokenStorage.token_is_valid(token):
+        TokenStorage.clear_token(token)
+        return render_template('verify_success.html')

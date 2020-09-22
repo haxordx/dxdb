@@ -1,0 +1,3 @@
+rest.post(`/${g_appName}/followme`, async (req, res) => {
+  // APP CODE GOES HERE  
+})

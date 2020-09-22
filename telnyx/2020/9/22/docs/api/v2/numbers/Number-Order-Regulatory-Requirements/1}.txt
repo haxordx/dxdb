@@ -1,0 +1,17 @@
+{
+  "data": [
+    {
+      "description": "Requirement for providing Proof of Address",
+      "field_type": "address",
+      "label": "Proof of Address",
+      "record_type": "regulatory_requirement",
+      "requirement_type": "end user proof of address"
+    }
+  ],
+  "meta": {
+    "page_number": 2,
+    "page_size": 25,
+    "total_pages": 3,
+    "total_results": 55
+  }
+}

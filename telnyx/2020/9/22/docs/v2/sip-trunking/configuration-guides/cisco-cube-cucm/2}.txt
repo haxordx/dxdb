@@ -1,0 +1,7 @@
+voice service voip
+mode border-element  ! Required if operating in CUBE mode, as opposed to CME
+allow connections sip to sip  ! Permit SIP to SIP calls
+sip
+early-offer forced
+midcall-signaling passthru
+sip-profiles 1   ! Refers to pre-configured sip profile

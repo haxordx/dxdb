@@ -1,0 +1,10 @@
+[global]
+type=global
+[transport-udp-nat]
+type=transport
+protocol=udp
+bind=0.0.0.0:5060
+local_net=X.X.X.X/24
+external_media_address=X.X.X.X
+external_signaling_address=X.X.X.X
+allow_reload=no

@@ -1,0 +1,4 @@
+rest.get('/' + g_appName + '/record-start', function (req, res) {
+  call_control_record_start(g_telnyx_api_auth_v2, req.query.participant);
+  res.end("recording started for " + req.query.participant);
+})

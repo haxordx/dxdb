@@ -1,0 +1,20 @@
+rest.get('/' + g_appName + '/list', function (req, res) {
+
+  // Return/Display complete participant list
+
+  if (g_participants.size > 0 && g_conf_id != 'no-conf') {
+
+      var l_list = 'Conference ID: ' + g_conf_id + '\n';
+      l_list += '\n';
+      l_list += 'Participant List: \n';
+
+      for (var key of g_participants.keys()) {
+          l_list += key + ' - [' + g_participants.get(key) + '] \n';
+      }
+
+      res.end(l_list);
+
+  } else {
+    res.end("no participant or no conference exists");
+  }
+})

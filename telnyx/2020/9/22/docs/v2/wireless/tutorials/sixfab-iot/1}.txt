@@ -1,0 +1,3 @@
+sudo reboot
+sudo ifconfig ppp0 down
+sudo ifconfig ppp0 up

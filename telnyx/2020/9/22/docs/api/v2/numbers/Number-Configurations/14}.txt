@@ -1,0 +1,6 @@
+curl -X POST \
+  --header "Content-Type: application/json" \
+  --header "Accept: application/json" \
+  --header "Authorization: Bearer YOUR_API_KEY" \
+  --data '{"emergency_address_id":"53829456729313","emergency_enabled":true}' \
+  https://api.telnyx.com/v2/phone_numbers/1293384261075731499/actions/enable_emergency

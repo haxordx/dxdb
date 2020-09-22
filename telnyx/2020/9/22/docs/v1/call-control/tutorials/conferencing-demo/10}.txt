@@ -1,0 +1,4 @@
+const request = superagent
+  .auth(g_telnyx_key, g_telnyx_secret)
+  .post(`https://api.telnyx.com/calls/${f_call_control_id}/actions/${cc_action}`)
+  .send({ PARAM: f_INPUT });

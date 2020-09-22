@@ -1,0 +1,6 @@
+{
+  "data": {
+    "organization_id": "ORGANIZATION_ID",
+    "user_id": "USER_ID"
+  }
+}

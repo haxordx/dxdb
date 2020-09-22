@@ -1,0 +1,6 @@
+curl -X GET \
+  --header "Content-Type: application/json" \
+  --header "Accept: application/json" \
+  --header "x-api-user: YOUR_API_ACCESS_KEY" \
+  --header "x-api-token: YOUR_API_TOKEN" \
+  "https://api.telnyx.com/origination/1234-56789-6789-5678"

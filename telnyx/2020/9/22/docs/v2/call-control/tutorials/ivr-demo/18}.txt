@@ -1,0 +1,1 @@
+http://MY_DOMAIN_URL/telnyx-findme/followme

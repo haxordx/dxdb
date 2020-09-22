@@ -1,0 +1,7 @@
+curl -X PATCH \
+  --header "Content-Type: application/json" \
+  --header "Accept: application/json" \
+  --header "x-api-token: YOUR_TELNYX_API_TOKEN" \
+  --header "x-api-user: YOUR_TELNYX_API_USER" \
+  --data '{"alpha_sender":"Telnyx"}' \
+  "https://api.telnyx.com/messaging/profiles/{YOUR_MESSAGING_PROFILE_UUID}"

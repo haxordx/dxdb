@@ -1,0 +1,17 @@
+{
+  "data": {
+    "created_at": "2019-01-23T18:10:02.574Z",
+    "end_reason": "all_left",
+    "ended_by": {
+      "call_control_id": "AgDIxmoRX6QMuaIj_uXRXnPAXP0QlNfXczRrZvZakpWxBlpw48KyZQ==",
+      "call_session_id": "428c31b6-abf3-3bc1-b7f4-5013ef9657c1"
+    },
+    "expires_at": "2019-01-23T18:10:02.574Z",
+    "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "name": "All hands meeting",
+    "record_type": "conference",
+    "region": "sv1",
+    "status": "completed",
+    "updated_at": "2019-01-23T18:10:02.574Z"
+  }
+}

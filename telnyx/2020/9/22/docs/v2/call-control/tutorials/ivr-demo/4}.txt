@@ -1,0 +1,3 @@
+const telnyx_auth = require("./telnyx-config");
+
+const telnyx = Telnyx(telnyx_auth.api);

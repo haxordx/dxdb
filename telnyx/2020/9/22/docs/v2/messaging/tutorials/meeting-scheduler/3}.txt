@@ -1,0 +1,7 @@
+@celery.task
+def send_reminder(to, message):
+    telnyx.Message.create(
+        to=to,
+        from_=app.config['FROM_NUMBER'],
+        text=message
+    )

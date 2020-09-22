@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Dial action="/nextinstructions.php" callerId="+13120001234">
+      <Number statusCallback="https://foo.com/my_call_stats" statusCallbackEvent="initiated ringing answered completed">+19999999999</Number>
+    </Dial>
+</Response>

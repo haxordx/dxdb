@@ -1,0 +1,13 @@
+import hashlib
+import hmac
+
+# 'time', 'body', 'secret', and 'signature' are bytes specified above
+
+message = time + b"." + body
+
+computed_sig = hmac.HMAC(secret, message, hashlib.sha256).digest()
+# b'ZQ\x17\xa0K\x07...\xc3\x91\x17M'  (32 bytes)
+
+# constant-time comparison is ideal for security; the output is the
+# same as (signature == computed_signature)
+assert hmac.compare_digest(signature, computed_signature)

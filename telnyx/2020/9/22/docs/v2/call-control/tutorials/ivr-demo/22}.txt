@@ -1,0 +1,22 @@
+ else if (l_hook_event_type == "call.answered") {
+		if (l_client_state_o.clientState == "stage-bridge") {
+			let l_client_state = {
+				clientState: "stage-dial",
+				bridgeId: l_client_state_o.bridgeId,
+			};
+			// Gather Using Speak - Present Menu to Forwading destination, 1 to Accept and Bride Call, 2 to Reject and Send to System Voicemail
+			const gather = new telnyx.Call({
+				call_control_id: l_call_control_id,
+			});
+			gather.gather_using_speak({
+				payload: "Call Forwarded press 1 to accept or 2 to reject",
+				voice: g_ivr_voice,
+				language: g_ivr_language,
+				valid_digits: "123",
+				client_state: Buffer.from(
+					JSON.stringify(l_client_state)
+				).toString("base64"),
+			});
+			console.log(`[%s] LOG - EXEC GATHER -  [%s] ${get_timestamp()}`);
+			res.end();
+}

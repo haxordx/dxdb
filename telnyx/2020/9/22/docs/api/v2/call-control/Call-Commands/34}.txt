@@ -1,0 +1,6 @@
+curl -X POST \
+  --header "Content-Type: application/json" \
+  --header "Accept: application/json" \
+  --header "Authorization: Bearer YOUR_API_KEY" \
+  --data '{"client_state":"aGF2ZSBhIG5pY2UgZGF5ID1d","command_id":"891510ac-f3e4-11e8-af5b-de00688a4901"}' \
+  https://api.telnyx.com/v2/calls/{call_control_id}/actions/hangup

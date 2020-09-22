@@ -1,0 +1,2 @@
+"telnyx_api_key_v1": "<your-api-v1-key-here>"
+"telnyx_api_secret_v1": "<your-api-v1-secret-here>"

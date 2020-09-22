@@ -1,0 +1,11 @@
+{
+  "search_type": 4,
+  "search_descriptor": {
+    "fdn": "ABC*",
+    "consecutive": 4,
+    "city": "Chicago",
+    "state": "IL",
+    "has_all_features": ["sms"]
+  },
+  "limit": 50
+}

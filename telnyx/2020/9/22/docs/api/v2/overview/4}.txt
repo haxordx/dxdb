@@ -1,0 +1,1 @@
+GET /connections?sort=name HTTP/1.1

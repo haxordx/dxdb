@@ -1,0 +1,16 @@
+else if (l_hook_event_type == "call.recording.saved") {
+		//Send Text Message Alert for call recording - Ber sure to enable Link shortener in Telnyx Messaging Profile
+
+		telnyx.messages
+			.create({
+				from: g_call_control_did, // Your Telnyx number
+				to: g_forwarding_did,
+				text: `You have a new Recording ${req.body.data.payload.recording_urls.mp3}`,
+			})
+			.then(function(response) {
+				const message = response.data; // asynchronously handled
+			});
+		console.log(`[%s] LOG - EXEC SEND SMS -  [%s] ${get_timestamp()}`);
+
+		res.end();
+	}

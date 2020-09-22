@@ -1,0 +1,28 @@
+{
+  "data": {
+    "active": false,
+    "anchorsite_override": "Amsterdam, Netherlands",
+    "created_at": "2020-02-02T22:25:27.521Z",
+    "dtmf_type": "Inband",
+    "first_command_timeout": true,
+    "first_command_timeout_secs": 10,
+    "friendly_name": "call-router",
+    "id": "1293384261075731499",
+    "inbound": {
+      "channel_limit": 10,
+      "sip_subdomain": "example",
+      "sip_subdomain_receive_settings": "only_my_connections"
+    },
+    "outbound": {
+      "channel_limit": 10,
+      "outbound_voice_profile_id": "1293384261075731499"
+    },
+    "record_type": "texml_application",
+    "status_callback": "https://example.com",
+    "status_callback_method": "get",
+    "updated_at": "2020-02-03T22:25:27.521Z",
+    "voice_fallback_url": "https://fallback.example.com",
+    "voice_method": "get",
+    "voice_url": "https://example.com"
+  }
+}

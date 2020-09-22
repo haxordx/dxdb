@@ -1,0 +1,30 @@
+{
+    "sms_id": "834f3d53-8a3c-4aa0-a733-7f2d682a72df",
+    "sms_gw_id": "c51c89d9-68ad-4db2-a471-cf622d21c40d",
+    "user_id": "a9b37e61-32bc-4a03-bf90-080c3b55db6f",
+    "profile_id": "16fd2706-8baf-433b-82eb-8c7fada847da",
+    "status": "sent",
+    "delivery_status": "",
+    "date_created": "2018-03-26T20:53:16.061000",
+    "date_updated": "2018-03-26T20:53:16.060000",
+    "created": 1522097596060,
+    "updated": 1522097596061,
+    "body": {
+        "coding": 3,
+        "num_chars": 6,
+        "text": "Hello!",
+        "text_hash": "334d016f755cd6dc58c53a86e183882f8ec14f52fb05345887c8a5edd42c87b7",
+        "num_bytes": 6,
+        "bytes_hash": "334d016f755cd6dc58c53a86e183882f8ec14f52fb05345887c8a5edd42c87b7",
+        "parts": 1
+    },
+    "from": "+18445550001",
+    "to": "+18665550002",
+    "direction": "outbound",
+    "on_net": false,
+    "cost": null,
+    "currency": null,
+    "type": "SMS",
+    "carrier": "T-MOBILE USA",
+    "line_type": "Wireless"
+}

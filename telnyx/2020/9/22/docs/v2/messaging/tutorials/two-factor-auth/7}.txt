@@ -1,0 +1,7 @@
+    telnyx.Message.create(
+        to=app.config['COUNTRY_CODE'] + phone_number,
+        from_=app.config['FROM_NUMBER'],
+        text='Your token is ' + generated_token
+    )
+
+    return render_template('verify.html')

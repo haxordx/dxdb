@@ -1,0 +1,7 @@
+{
+  "sms_id":"834f3d53-8a3c-4aa0-a733-7f2d682a72df",
+  "direction": "inbound",
+  "from": "+13129450002",
+  "to": "+13125550001",
+  "body": "Hello!"
+}

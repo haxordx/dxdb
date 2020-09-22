@@ -1,0 +1,6 @@
+curl -X POST \
+-u "${organization_id}":"${auth_v2_api_key}" \
+--data-urlencode 'From=+13232209999' \
+--data-urlencode 'To=+13126858888' \
+--data-urlencode 'Body=Hello, World!' \
+https://api.telnyx.com/2010-04-01/Accounts/{organization_id}/Messages.json

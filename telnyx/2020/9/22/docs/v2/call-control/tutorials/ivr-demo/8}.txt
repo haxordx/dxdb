@@ -1,0 +1,6 @@
+const bridge_call = new telnyx.Call({
+	call_control_id: l_call_control_id,});
+	
+	bridge_call.bridge({
+		call_control_id: l_client_state_o.bridgeId,
+	});

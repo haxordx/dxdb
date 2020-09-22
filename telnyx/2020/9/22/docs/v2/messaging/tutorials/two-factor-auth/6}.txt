@@ -1,0 +1,2 @@
+    generated_token = get_random_token_hex(app.config['TOKEN_LENGTH'])
+    TokenStorage.add_token(generated_token, phone_number)

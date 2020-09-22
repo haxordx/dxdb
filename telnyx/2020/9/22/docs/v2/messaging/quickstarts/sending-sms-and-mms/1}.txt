@@ -1,0 +1,32 @@
+{
+  "data": {
+    "record_type": "message",
+    "direction": "outbound",
+    "id": "b0c7e8cb-6227-4c74-9f32-c7f80c30934b",
+    "type": "SMS",
+    "organization_id": "a9b37e61-32bc-4a03-bf90-080c3b55db6f",
+    "messaging_profile_id": "16fd2706-8baf-433b-82eb-8c7fada847da",
+    "from": "+13115552368",
+    "to": [
+      {
+        "phone_number": "+13115552367",
+        "status": "queued",
+        "carrier": "SOME CARRIER",
+        "line_type": "Wireless"
+      }
+    ],
+    "text": "Hello, world!",
+    "media": [],
+    "webhook_url": "https://www.example.com/hooks",
+    "webhook_failover_url": "https://www.example.com/callbacks",
+    "encoding": "GSM-7",
+    "parts": 1,
+    "tags": [],
+    "cost": null,
+    "received_at": "2019-01-23T18:10:02.574Z",
+    "sent_at": null,
+    "completed_at": null,
+    "valid_until": "2019-01-23T19:10:02.574Z",
+    "errors": []
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "sms_id": "834f3d53-8a3c-4aa0-a733-7f2d682a72df",
+  "gw_sms_id": "",
+  "user_id": "a9b37e61-32bc-4a03-bf90-080c3b55db6f",
+  "profile_id": "16fd2706-8baf-433b-82eb-8c7fada847da",
+  "status": "queued",
+  "delivery_status": "",
+  "msg": {
+    "src": "+13125550001",
+    "dst": "+13129450002",
+    "body": "Hello, world!",
+    "is_mms": false
+  },
+  "coding": 0,
+  "parts": 1,
+  "created": 1522097596060,
+  "updated": 1522097596061,
+  "delivery_status_webhook_url": "https://example.com/campaign/7214",
+  "delivery_status_failover_url": "",
+  "errors": [],
+  "date_created": "2018-03-26T20:53:16.060000",
+  "date_updated": "2018-03-26T20:53:16.061000",
+  "carrier": "SOME CARRIER",
+  "line_type": "Wireless"
+}

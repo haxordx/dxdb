@@ -1,0 +1,6 @@
+curl -X POST \
+  --header "Content-Type: application/json" \
+  --header "Accept: application/json" \
+  --header "Authorization: Bearer YOUR_API_KEY" \
+  --data '{"digits": "1www2WABCDw9"}' \
+  https://api.telnyx.com/v2/calls/{call_control_id}/actions/send_dtmf

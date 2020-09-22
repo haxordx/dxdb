@@ -1,0 +1,6 @@
+call_control_fork_start(
+  l_call_control_id,
+  null,
+  g_udp_rx,
+  g_udp_tx
+);

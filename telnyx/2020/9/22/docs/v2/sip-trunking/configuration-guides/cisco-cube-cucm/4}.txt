@@ -1,0 +1,9 @@
+voice class sip-profiles 1
+response ANY sip-header Contact modify "172.x.y.z" "1.2.3.4" !1.2.3.4 Public IP; 172.x.y.z Private IP of the CUBE
+request ANY sip-header Contact modify "172.x.y.z" "1.2.3.4" 
+response ANY sdp-header Audio-Connection-Info modify "172.x.y.z" "1.2.3.4"
+response ANY sdp-header Connection-Info modify "172.x.y.z" "1.2.3.4"
+response ANY sdp-header Session-Owner modify "172.x.y.z" "1.2.3.4"
+request ANY sdp-header Audio-Connection-Info modify "172.x.y.z" "1.2.3.4"
+request ANY sdp-header Connection-Info modify "172.x.y.z" "1.2.3.4"
+request ANY sdp-header Session-Owner modify "172.x.y.z" "1.2.3.4"

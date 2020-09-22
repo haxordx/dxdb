@@ -1,0 +1,15 @@
+{
+  "data": {
+    "event_type": "message.sent",
+    "id": "1f1243a9-93a5-48d1-bf4b-d680b03565a0",
+    "occurred_at": "2020-04-30T20:58:39.421+00:00",
+    "payload": {
+      ...
+    },
+    "record_type": "event"
+  },
+  "meta": {
+    "attempt": 1,
+    "delivered_to": "https://hookb.in/G9J9pghfoeZJcpadWdQoxm"
+  }
+}

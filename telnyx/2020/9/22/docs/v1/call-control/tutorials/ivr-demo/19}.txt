@@ -1,0 +1,5 @@
+if (req && req.body && req.body.event_type){
+  var l_hook_event_type = req.body.event_type;
+  var l_call_control_id = req.body.payload.call_control_id;
+  var l_client_state_64 = req.body.payload.client_state;
+} else{res.end('0');}

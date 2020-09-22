@@ -1,0 +1,10 @@
+const gather = new telnyx.Call({
+			call_control_id: l_call_control_id,});
+gather.gather_using_speak({
+		payload: "Call Forwarded press 1 to accept or 2 to reject",
+		voice: g_ivr_voice,
+		language: g_ivr_language,
+		valid_digits: "123",
+		client_state: Buffer.from(
+			JSON.stringify(l_client_state)
+		).toString("base64")});

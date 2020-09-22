@@ -1,0 +1,1 @@
+sudo qmicli -p -d /dev/cdc-wdm0 --device-open-net='net-raw-ip|net-no-qosheader' --wds-start-network="apn='YOUR_APN',username='YOUR_USERNAME',password='YOUR_PASSWORD',ip-type=4" --client-no-release-cid

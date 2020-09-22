@@ -1,0 +1,12 @@
+[from-pstn]
+exten => _+1NXXXXXXXXX,1,Dial(PJSIP/1001)
+exten => _NXXXXXXXXX,1,Dial(PJSIP/1001)
+
+
+
+[from-internal]
+exten = _NXXNXXXXXX,1,Dial(PJSIP/+1${EXTEN}@telnyx)
+ same = n,Hangup()
+
+exten = _X.,1,Dial(PJSIP/+${EXTEN}@telnyx)
+ same = n,Hangup()

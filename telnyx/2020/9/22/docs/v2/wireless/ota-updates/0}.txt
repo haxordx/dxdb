@@ -1,0 +1,16 @@
+{
+    "mobile_operator_networks_preferences": [
+        {
+            "mobile_operator_network_id": "<id>",
+            "priority": 0
+        },
+        {
+            "mobile_operator_network_id": "<id>",
+            "priority": 1
+        },
+        {
+            "mobile_operator_network_id": "<id>",
+            "priority": 2
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+curl -X POST \
+  --header "Content-Type: application/json" \
+  --header "Accept: application/json" \
+  --header "x-api-token: API_TOKEN" \
+  --header "x-api-user: API_USER" \
+  --data '{"search_descriptor":{"city":"Chicago","state":"IL"},"search_type":2,"limit":1}' \
+  "https://api.telnyx.com/origination/number_searches"

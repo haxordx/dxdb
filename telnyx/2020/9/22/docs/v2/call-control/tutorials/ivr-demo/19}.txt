@@ -1,0 +1,7 @@
+// Application:
+// Application:
+const g_appName = "telnyx-findme";
+
+// TTS Options
+const g_ivr_voice = "female";
+const g_ivr_language = "en-GB";

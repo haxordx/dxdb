@@ -1,0 +1,21 @@
+{
+  "data": {
+    "event_type": "fax.receiving.started",
+    "id": "bc004786-f166-4dd3-8c5d-737990b501bc",
+    "occurred_at": "2020-08-27T16:33:29.684247Z",
+    "payload": {
+      "connection_id": "1447842681660114324",
+      "direction": "inbound",
+      "fax_id": "9fbc3f0d-5495-42af-9a4e-c57a235d9182",
+      "from": "+16132484872",
+      "status": "receiving",
+      "to": "+17733372863",
+      "user_id": "19a75cea-02c6-4b9a-84fa-c9bc8341feb8"
+    },
+    "record_type": "event"
+  },
+  "meta": {
+    "attempt": 1,
+    "delivered_to": "https://1a3097.ngrok.io/"
+  }
+}

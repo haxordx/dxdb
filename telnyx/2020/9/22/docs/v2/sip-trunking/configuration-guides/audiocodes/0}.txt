@@ -1,0 +1,4 @@
+[ IPGroup ]
+IPGroup_Description:  Telnyx 
+IPGroup_SIPGroupName: sip.telnyx.com 
+[ \IPGroup ]

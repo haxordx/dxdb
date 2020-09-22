@@ -1,0 +1,6 @@
+reminder_datetime = meeting_datetime - timedelta(hours=3)
+
+message = "{customer_name}, you have a meeting scheduled for {meeting_time}".format(customer_name=request.form['customer_name'], meeting_time=str(meeting_datetime))
+to = "{country_code}{phone}".format(country_code=app.config['COUNTRY_CODE'], phone=request.form['phone'])
+
+send_reminder.apply_async([to, message], eta=reminder_datetime)

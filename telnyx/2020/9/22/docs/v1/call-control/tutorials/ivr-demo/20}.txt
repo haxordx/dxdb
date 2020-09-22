@@ -1,0 +1,7 @@
+if (l_hook_event_type =='call_initiated') {
+  if (req.body.payload.direction == 'incoming')
+    call_control_answer_call(l_call_control_id, null);
+  else
+    call_control_answer_call(l_call_control_id,'stage-outgoing');
+  res.end();
+}

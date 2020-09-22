@@ -1,0 +1,8 @@
+curl -X POST \
+  --header "Content-Type: application/json" \
+  --header "Accept: application/json" \
+  --header "Authorization: Bearer YOUR_API_KEY" \
+  --data '{
+    "phone_numbers": [{"phone_number": "+18665552368"}]
+  }' \
+  https://api.telnyx.com/v2/number_orders

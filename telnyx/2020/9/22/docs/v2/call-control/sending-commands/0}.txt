@@ -1,0 +1,5 @@
+curl -X POST \
+  --header "Content-Type: application/json" \
+  --header "Accept: application/json" \
+  --header "Authorization: Bearer YOUR_API_KEY" \
+  https://api.telnyx.com/v2/calls/428c31b6-7af4-4bcb-b7f5-5013ef9657c1/actions/answer

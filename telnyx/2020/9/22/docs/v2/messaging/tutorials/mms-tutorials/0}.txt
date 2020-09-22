@@ -1,0 +1,7 @@
+composer require vlucas/phpdotenv
+composer require telnyx/telnyx-php
+composer require slim/http
+composer require slim/psr7
+composer require slim/slim
+composer require aws/aws-sdk-php
+composer require jakeasmith/http_build_url

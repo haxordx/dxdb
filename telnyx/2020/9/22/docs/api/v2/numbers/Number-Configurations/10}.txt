@@ -1,0 +1,6 @@
+curl -X PATCH \
+  --header "Content-Type: application/json" \
+  --header "Accept: application/json" \
+  --header "Authorization: Bearer YOUR_API_KEY" \
+  --data '{ "tech_prefix_enabled": true }' \
+  https://api.telnyx.com/v2/phone_numbers/1293384261075731499/voice

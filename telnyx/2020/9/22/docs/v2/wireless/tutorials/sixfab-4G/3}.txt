@@ -1,0 +1,2 @@
+chmod +x install_auto_connect.sh
+sudo ./install_auto_connect.sh

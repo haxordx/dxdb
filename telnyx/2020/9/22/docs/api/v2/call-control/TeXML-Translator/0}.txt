@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- TeXML files must contain the Response element -->
+<Response>
+ <!-- Say and Dial are Verbs -->
+    <Say>Thank you for calling Telnyx. Please hold.</Say>
+    <Dial>
+   <!-- Number is a Dial Noun -->
+        <Number>+13129457420</Number>
+    </Dial>
+</Response>

@@ -1,0 +1,6 @@
+curl -X PATCH \
+  --header "Content-Type: application/json" \
+  --header "Accept: application/json" \
+  --header "Authorization: Bearer YOUR_API_KEY" \
+  --data '{"customer_reference": "MY REF"}' \
+  https://api.telnyx.com/v2/number_orders/{number_order_id}

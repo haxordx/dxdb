@@ -1,0 +1,20 @@
+user_defaults
+type = wizard
+accepts_registrations = yes
+sends_registrations = no
+accepts_auth = yes
+sends_auth = no
+endpoint/context = from-internal
+endpoint/allow = !all,ulaw,alaw,G729,G722
+endpoint/dtmf_mode = rfc4733
+endpoint/rewrite_contact = yes
+endpoint/force_rport = yes
+aor/max_contacts = 1
+aor/remove_existing = yes
+aor/minimum_expiration = 30
+
+
+1001
+endpoint/callerid = Test User <1001>
+inbound_auth/username = 1001
+inbound_auth/password = strong@pass123$

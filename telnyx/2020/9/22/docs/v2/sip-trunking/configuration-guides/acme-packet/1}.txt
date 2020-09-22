@@ -1,0 +1,15 @@
+session-agent 
+hostname              sip.telnyx.com 
+ip-address             
+port                  5060 
+state enabled 
+app-protocol          SIP 
+app-type 
+transport-method      UDP 
+realm-id              OUTSIDE 
+egress-realm-id 
+description           Telnyx 
+carriers 
+allow-next-hop-lp     enabled 
+constraints           disabled 
+...

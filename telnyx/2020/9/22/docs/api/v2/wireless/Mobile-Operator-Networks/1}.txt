@@ -1,0 +1,19 @@
+{
+  "data": [
+    {
+      "country_code": "US",
+      "id": "6a09cdc3-8948-47f0-aa62-74ac943d6c58",
+      "mcc": "310",
+      "mnc": "410",
+      "name": "AT&T Mobility (USACG)",
+      "record_type": "mobile_operator_network",
+      "tadig": "USACG"
+    }
+  ],
+  "meta": {
+    "page_number": 2,
+    "page_size": 25,
+    "total_pages": 3,
+    "total_results": 55
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "search_descriptor": {
+    "npa": "8*",
+    "nxx": "4&&",
+    "fdn": "ABC*",
+    "consecutive": 4
+  }
+}

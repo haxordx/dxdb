@@ -1,0 +1,31 @@
+INVITE sip:<your-to-number>@sip.telnyx.com SIP/2.0
+Record-Route: <sip:54.172.60.0:5060;lr>
+CSeq: 1 INVITE
+From: "<your-from-number>" <sip:<your-from-number>@sip.twilio.com>;tag=-------------
+To: <sip:<your-to-number>@sip.telnyx.com>
+Max-Forwards: 67
+Date: Wed, 16 Oct 2019 21:20:40 GMT
+Min-SE: 120
+X-Telnyx-Token: <your-token>
+Call-ID: ------------------------
+Via: SIP/2.0/UDP 54.172.60.0:5060;branch=-------------
+Via: SIP/2.0/UDP 172.18.18.112:5060;rport=5060;received=172.18.18.112;branch=----------------
+Contact: "<your-from-number>" <sip:<your-from-number>@172.18.18.112:5060;transport=udp>
+Allow: INVITE,ACK,CANCEL,OPTIONS,BYE,REFER,NOTIFY
+User-Agent: Twilio Gateway
+X-Twilio-AccountSid: <your-twilio-id>
+Content-Type: application/sdp
+X-Twilio-CallSid: --------------
+Content-Length: 238
+
+v=0
+o=root 1836844584 1836844584 IN IP4 34.203.251.66
+s=Twilio Media Gateway
+c=IN IP4 34.203.251.66
+t=0 0
+m=audio 12240 RTP/AVP 0 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-16
+a=ptime:20
+a=sendrecv

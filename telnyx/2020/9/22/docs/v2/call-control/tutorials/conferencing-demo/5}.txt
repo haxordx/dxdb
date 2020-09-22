@@ -1,0 +1,1 @@
+"telnyx_waiting_url": "<your-path-to-waiting-song-here>"

@@ -1,0 +1,20 @@
+function call_control_speak(f_call_control_id, f_tts_text ){
+  const cc_action = 'speak';
+
+  const request = superagent
+    .auth(f_telnyx_api_key_v1, f_telnyx_api_secret_v1)
+    .post(`https://api.telnyx.com/calls/${f_call_control_id}/actions/${cc_action}`)
+    .send({
+      payload: f_tts_text,
+      voice: g_ivr_voice,
+      language: g_ivr_language,
+    });
+
+  request
+    .then((response) => {
+      const body = response.body;
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+}

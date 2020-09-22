@@ -1,0 +1,22 @@
+{
+  "data": {
+    "event_type": "fax.failed",
+    "id": "1a7405a6-696c-4369-a0b1-168e4bb7e22c",
+    "occurred_at": "2020-08-27T16:17:51.844250Z",
+    "payload": {
+      "connection_id": "1447842681660114324",
+      "direction": "inbound",
+      "failure_reason": "sender_call_dropped",
+      "fax_id": "181533f3-b0b8-4bcd-ab01-b33cd8698508",
+      "from": "+16617480240",
+      "status": "failed",
+      "to": "+17733372863",
+      "user_id": "19a75cea-02c6-4b9a-84fa-c9bc8341feb8"
+    },
+    "record_type": "event"
+  },
+  "meta": {
+    "attempt": 1,
+    "delivered_to": "https://1a3097.ngrok.io/"
+  }
+}

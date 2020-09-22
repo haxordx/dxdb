@@ -1,0 +1,17 @@
+//Callback signature verification
+$telnyxWebhookVerify = function (Request $request, RequestHandler $handler) {
+    //Extract the raw contents
+    $payload = $request->getBody()->getContents();
+    //Grab the signature
+    $sigHeader = $request->getHeader('HTTP_TELNYX_SIGNATURE_ED25519')[0];
+    //Grab the timestamp
+    $timeStampHeader = $request->getHeader('HTTP_TELNYX_TIMESTAMP')[0];
+    //Construct the Telnyx event which will validate the signature and timestamp
+    $telnyxEvent = \Telnyx\Webhook::constructEvent($payload, $sigHeader, $timeStampHeader);
+    //Add the event object to the request to keep context for future middleware
+    $request = $request->withAttribute('telnyxEvent', $telnyxEvent);
+    //Send to next middleware
+    $response = $handler->handle($request);
+    //return response back to Telnyx
+    return $response;
+};

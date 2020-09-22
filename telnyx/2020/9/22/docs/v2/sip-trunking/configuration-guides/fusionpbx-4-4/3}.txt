@@ -1,0 +1,1 @@
+cd /usr/src/fusionpbx-install.sh/debian

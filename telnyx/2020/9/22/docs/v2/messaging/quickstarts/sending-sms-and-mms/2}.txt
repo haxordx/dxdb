@@ -1,0 +1,12 @@
+curl -X POST "https://api.telnyx.com/v2/messages" \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -d '{
+    "from": "+13125550001",
+    "to": "+13129450002",
+    "subject": "Picture",
+    "text": "Hello, world!",
+    "media_urls" : [
+      "https://picsum.photos/500.jpg"
+    ]
+}'

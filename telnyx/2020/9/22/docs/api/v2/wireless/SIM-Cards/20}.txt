@@ -1,0 +1,6 @@
+curl -X PUT \
+  --header "Content-Type: application/json" \
+  --header "Accept: application/json" \
+  --header "Authorization: Bearer YOUR_API_KEY" \
+  --data '{"mobile_operator_networks_preferences":"array","sim_card_ids":["6b14e151-8493-4fa1-8664-1cc4e6d14158","6b14e151-8493-4fa1-8664-1cc4e6d14158"]}' \
+  https://api.telnyx.com/v2/actions/network_preferences/sim_cards

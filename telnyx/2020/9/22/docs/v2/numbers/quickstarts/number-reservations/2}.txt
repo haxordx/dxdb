@@ -1,0 +1,31 @@
+{
+  "data": [
+    {
+      "created_at": "2019-07-16T18:47:29.861226Z",
+      "customer_reference": null,
+      "id": "12367-5678-4024-8c92-56709e67fb61",
+      "phone_numbers": [
+        {
+          "created_at": "2019-07-16T18:47:29.861226Z",
+          "expired": false,
+          "expired_at": "2019-07-21T18:47:29.783665Z",
+          "id": "567412-db32-4b27-678-50de401cab19",
+          "phone_number": "+18665552368",
+          "record_type": "reserved_phone_number",
+          "status": "success",
+          "updated_at": "2019-07-16T18:47:37.151673Z"
+        }
+      ],
+      "record_type": "number_reservation",
+      "status": "success",
+      "updated_at": "2019-07-16T18:47:37.040751Z",
+    }
+  ],
+  "meta": {
+    "page_number": 1,
+    "page_size": 25,
+    "total_pages": 1,
+    "total_results": 1
+  },
+  "url": "/v2/number_reservations"
+}

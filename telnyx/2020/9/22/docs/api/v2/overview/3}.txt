@@ -1,0 +1,8 @@
+{
+  "street_address": "311 W Superior St",
+  "extended_address": "Suite 504",
+  "locality": "Chicago",
+  "administrative_area", "IL"
+  "country_code": "US",
+  "postal_code": "60654"
+}

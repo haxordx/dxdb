@@ -1,0 +1,4 @@
+rest.get('/' + g_appName + '/record-stop', function (req, res) {
+  call_control_record_stop(g_telnyx_api_auth_v2, req.query.participant);
+  res.end("recording stopped for " + req.query.participant);
+})

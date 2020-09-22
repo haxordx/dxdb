@@ -1,0 +1,5 @@
+@app.route('/', methods=['GET', 'POST'])
+def schedule_meeting():
+    if request.method == "POST":
+        # ...
+    return render_template('index.html')

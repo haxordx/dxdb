@@ -1,0 +1,14 @@
+if (g_participants.size < 2) {
+
+    // First Participant
+    call_control_hold(g_telnyx_api_key_v1, g_telnyx_api_secret_v1, g_conf_id, [l_call_control_id], g_telnyx_waiting_url);
+    g_on_hold = l_call_control_id;
+
+} else if (g_participants.size == 2) {
+
+    // Second Participant
+    call_control_unhold(g_telnyx_api_key_v1, g_telnyx_api_secret_v1, g_conf_id, [g_on_hold]);
+    g_on_hold = 'false';
+
+}
+res.end();

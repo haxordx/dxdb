@@ -1,0 +1,15 @@
+{
+  "errors":[
+    {
+      "code":"10006",
+      "title":"Invalid resource ID",
+      "detail":"The provided resource ID was invalid",
+      "source":{
+        "pointer":"/id"
+      },
+      "meta":{
+        "url":"https://developers.telnyx.com/docs/api/v2/overview/errors/10006"
+      }
+    }
+  ]
+}

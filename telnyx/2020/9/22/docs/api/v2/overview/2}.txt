@@ -1,0 +1,9 @@
+{
+  "errors": [
+    {
+      "code": "10011",
+      "title": "Too many requests",
+      "detail": "You have exceeded the maximum number of allowed requests."
+    }
+  ]
+}

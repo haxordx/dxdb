@@ -1,0 +1,10 @@
+curl -X POST \
+  --header "Content-Type: application/json" \
+  --header "Accept: application/json" \
+  --header "Authorization: Bearer YOUR_API_KEY" \
+  --data '{
+  "from": "+18665552368",
+  "to": "+18665552367",
+  "text": "Hello, World!"
+  }' \
+  https://api.telnyx.com/v2/messages/long_code

@@ -1,0 +1,11 @@
+<?xml
+version="1.0"
+?>
+<Response>
+  <Speak>Please hold while we connect the call.</Speak>
+  <Dial>
+    <User sipHeaders="Telnyx-Token=<your-connection-token>">
+          sip:<your-destination-number>@sip.telnyx.com
+    </User>
+  </Dial>
+</Response>

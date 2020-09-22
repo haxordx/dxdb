@@ -1,0 +1,17 @@
+trunk_defaults
+type = wizard
+
+telnyx
+endpoint/transport=0.0.0.0-udp
+endpoint/allow = !all,ulaw,alaw,G729,G722
+endpoint/rewrite_contact=yes
+endpoint/dtmf_mode=rfc4733
+endpoint/context = from-pstn
+endpoint/force_rport = yes
+aor/qualify_frequency = 60
+sends_auth = yes
+sends_registrations = yes
+remote_hosts = sip.telnyx.com:5060
+outbound_auth/username = username
+outbound_auth/password = password
+registration/expiration = 600

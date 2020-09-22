@@ -1,0 +1,8 @@
+{
+  "data": {
+    "record_type": "messaging_profile",
+    "id": "123",
+    "name": "MP_one",
+    "webhook_url": "example.com/callback"
+  }
+}

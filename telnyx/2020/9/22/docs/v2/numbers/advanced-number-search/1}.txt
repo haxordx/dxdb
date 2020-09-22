@@ -1,0 +1,83 @@
+{
+  "data": [
+    {
+      "best_effort": false,
+      "cost_information": {
+        "currency": "USD",
+        "monthly_cost": "1.00000",
+        "upfront_cost": "1.00000"
+      },
+      "features": [
+        {
+          "name": "fax"
+        },
+        {
+          "name": "voice"
+        },
+        {
+          "name": "sms"
+        }
+      ],
+      "phone_number": "+18728880024",
+      "record_type": "available_phone_number",
+      "region_information": [
+        {
+          "region_name": "US",
+          "region_type": "country_code"
+        },
+        {
+          "region_name": "IL",
+          "region_type": "state"
+        },
+        {
+          "region_name": "CHICAGO ZONE 02",
+          "region_type": "rate_center"
+        }
+      ],
+      "reservable": false,
+      "vanity_format": null
+    },
+    {
+      "best_effort": false,
+      "cost_information": {
+        "currency": "USD",
+        "monthly_cost": "1.00000",
+        "upfront_cost": "1.00000"
+      },
+      "features": [
+        {
+          "name": "fax"
+        },
+        {
+          "name": "voice"
+        },
+        {
+          "name": "sms"
+        }
+      ],
+      "phone_number": "+18728880026",
+      "record_type": "available_phone_number",
+      "region_information": [
+        {
+          "region_name": "US",
+          "region_type": "country_code"
+        },
+        {
+          "region_name": "IL",
+          "region_type": "state"
+        },
+        {
+          "region_name": "CHICAGO ZONE 02",
+          "region_type": "rate_center"
+        }
+      ],
+      "reservable": false,
+      "vanity_format": null
+    }
+  ],
+  "metadata": {
+    "best_effort_results": 0,
+    "total_results": 2
+  },
+  "url": "/v2/available_phone_numbers"
+}

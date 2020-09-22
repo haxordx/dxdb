@@ -1,0 +1,1 @@
+api.telnyx.com/v2/phone_numbers?phone_number=+18005550100

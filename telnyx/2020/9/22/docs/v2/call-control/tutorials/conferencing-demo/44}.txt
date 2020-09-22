@@ -1,0 +1,4 @@
+var server = rest.listen(8081, function () {
+  var host = server.address().address
+  var port = server.address().port
+})

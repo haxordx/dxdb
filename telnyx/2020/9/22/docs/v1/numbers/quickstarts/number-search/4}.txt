@@ -1,0 +1,6 @@
+{
+  "search_descriptor": {
+    "city": "Paris",
+    "country_iso": "FR"
+  }
+}

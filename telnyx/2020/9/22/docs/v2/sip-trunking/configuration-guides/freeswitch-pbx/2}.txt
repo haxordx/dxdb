@@ -1,0 +1,7 @@
+<extension name="dial">
+    <condition field="destination_number" expression="^(1{0,1}\d{10})$">
+    <action application="set" data="effective_caller_id_number=13125489677"/>
+    <!-- Replace 3125489677 with the DID you want as CID -->
+    <action application="bridge" data="sofia/gateway/telnyx/$1"/>
+    </condition>
+</extension>

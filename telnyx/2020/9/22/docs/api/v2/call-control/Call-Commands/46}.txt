@@ -1,0 +1,6 @@
+curl -X POST \
+  --header "Content-Type: application/json" \
+  --header "Accept: application/json" \
+  --header "Authorization: Bearer YOUR_API_KEY" \
+  --data '{"format": "mp3", "channels": "single"}' \
+  https://api.telnyx.com/v2/calls/{call_control_id}/actions/record_start

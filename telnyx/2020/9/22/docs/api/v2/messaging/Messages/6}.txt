@@ -1,0 +1,10 @@
+curl -X POST \
+  --header "Content-Type: application/json" \
+  --header "Accept: application/json" \
+  --header "Authorization: Bearer YOUR_API_KEY" \
+  --data '{
+    "messaging_profile_id": "uuid",
+    "to": "+18665552367",
+    "text": "Hello, World!"
+  }' \
+  https://api.telnyx.com/v2/messages/number_pool

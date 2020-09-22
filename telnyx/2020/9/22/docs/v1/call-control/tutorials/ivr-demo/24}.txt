@@ -1,0 +1,55 @@
+else if (l_hook_event_type =='gather_ended'){
+  // Receive DTMF Option
+  var l_ivr_option = req.body.payload.digits;
+
+
+  // Check Current IVR Level
+
+  if (!l_client_state_64){ // IVR Lobby
+
+    if (l_ivr_option == '1'){ // Sales
+
+      // Speak Text
+      call_control_gather_using_speak(l_call_control_id,
+          'You reached the sales support channel,'
+        + 'To contact an Account Executive please press 1,'
+        + 'To contact a Sales Engineer, please press 2,'
+        +  '12','1','stage-sales');
+
+    } else if (l_ivr_option == '2'){  // Operations
+
+      // Speak Text
+      call_control_speak(l_call_control_id,
+          'You reached the operations support channel,'
+        + 'no operations staff is available at the moment,'
+        + 'please try again later');
+
+  } else {  // Beyond Lobby Level
+
+    // Set Client State
+    var l_client_state_buff =
+      new Buffer(l_client_state_64, 'base64');
+    var l_client_state_s =
+      l_client_state_buff.toString('ascii');
+
+    // Selected Sales >> Choose Destination
+    if (l_client_state_s == "stage-sales"){
+
+      // Select Destination
+
+      if (l_ivr_option == '1'){
+        // Dial AE
+        call_control_transfer(l_call_control_id,
+          g_sip_agent, req.body.payload.from);
+
+      } else if (l_ivr_option == '2'){
+        // Dial Sales Engineer
+        call_control_transfer(l_call_control_id,
+          g_sales_eng, req.body.payload.from);
+      }
+
+    }
+
+  }
+  res.end();
+}

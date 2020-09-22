@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+  <Dial>
+    <Number>+18775551212</Number>
+    <Sip>sip:connection@sip.telnyx.com</Sip></Sip>
+    <Number>+18771234567</Number>
+  </Dial>
+</Response>

@@ -1,0 +1,11 @@
+else if (l_hook_event_type == 'speak_ended' ||
+        l_hook_event_type == 'speak_started' ||
+        l_hook_event_type == 'speak_ended' ||
+        l_hook_event_type == 'playback_ended' ||
+        l_hook_event_type == 'call_hangup' ||
+        l_hook_event_type == 'gather_ended' ||
+        l_hook_event_type == 'call_bridged' ||
+        l_hook_event_type == 'dtmf' ||
+        l_hook_event_type == 'playback_started') {
+        res.end();
+}

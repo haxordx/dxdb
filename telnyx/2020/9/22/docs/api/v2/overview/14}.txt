@@ -1,0 +1,6 @@
+{
+  "id": "d460a653-8pp6-4061-ae9a-5b8a57339fb4",
+  "name": "conn_one",
+  "record_type": "connection",
+  ...
+}

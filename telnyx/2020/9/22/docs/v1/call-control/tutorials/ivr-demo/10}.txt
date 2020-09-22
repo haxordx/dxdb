@@ -1,0 +1,7 @@
+  request
+    .then((response) => {
+      const body = response.body;
+    })
+    .catch((error) => {
+      console.log(error);
+    });

@@ -1,0 +1,6 @@
+{
+  "search_descriptor": {
+    "npa": "312",
+    "best_effort": false
+  }
+}

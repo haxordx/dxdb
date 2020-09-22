@@ -1,0 +1,8 @@
+telnyx.messages.create({
+	from: g_call_control_did, // Your Telnyx number
+	to: g_forwarding_did,
+	text: `You have a new Voicemail${req.body.data.payload.recording_urls.mp3}`,
+	})
+	.then(function(response) {
+		const message = response.data; // asynchronously handled
+	});

@@ -1,0 +1,35 @@
+{
+  "data": [
+    {
+      "best_effort": false,
+      "cost_information": {
+        "currency": "USD",
+        "monthly_cost": "6.54",
+        "upfront_cost": "3.21"
+      },
+      "phone_number": "+19705555098",
+      "quickship": true,
+      "record_type": "available_phone_number",
+      "region_information": [
+        {
+          "region_name": "US",
+          "region_type": "country_code"
+        }
+      ],
+      "regulatory_requirements": [
+        {
+          "description": "Requirement for providing Proof of Address",
+          "field_type": "address",
+          "label": "Proof of Address",
+          "requirement_type": "end user proof of address"
+        }
+      ],
+      "reservable": true,
+      "vanity_format": ""
+    }
+  ],
+  "meta": {
+    "best_effort_results": 50,
+    "total_results": 100
+  }
+}

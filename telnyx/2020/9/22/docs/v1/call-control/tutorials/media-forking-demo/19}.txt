@@ -1,0 +1,14 @@
+// Application:
+const g_appName = "demo-mforking";
+
+// TTS Options
+const g_ivr_voice     = 'female';
+const g_ivr_language  = 'en-US';
+
+// IVR Redirect Options
+const g_pstn_phone     = '+10987654320;
+
+// Forking Destination Options
+const g_udp_target = 'udp:192.1.1.1:27000';
+const g_udp_tx     = 'udp:192.1.1.1:27001';
+const g_udp_rx     = 'udp:192.1.1.1:27002';

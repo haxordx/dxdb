@@ -1,0 +1,8 @@
+{
+  "search_descriptor": {
+    "fdn": "ABC*",
+    "consecutive": 4,
+    "city": "Chicago",
+    "state": "IL"
+  }
+}

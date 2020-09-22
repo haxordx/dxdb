@@ -1,0 +1,6 @@
+@app.route('/request', methods=['POST'])
+def handle_request():
+    phone_number = (request.form['phone']
+                    .replace('-', '').replace('.', '')
+                    .replace('(', '').replace(')', '')
+                    .replace(' ', ''))

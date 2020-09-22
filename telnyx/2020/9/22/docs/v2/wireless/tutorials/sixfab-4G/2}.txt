@@ -1,0 +1,1 @@
+sudo ./quectel-CM -s internet

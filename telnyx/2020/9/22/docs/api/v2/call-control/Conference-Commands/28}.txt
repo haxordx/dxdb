@@ -1,0 +1,6 @@
+curl -X POST \
+  --header "Content-Type: application/json" \
+  --header "Accept: application/json" \
+  --header "Authorization: Bearer YOUR_API_KEY" \
+  --data '{"audio_url":"http://www.example.com/sounds/greeting.wav"}' \
+  https://api.telnyx.com/v2/conferences/{id}/actions/play

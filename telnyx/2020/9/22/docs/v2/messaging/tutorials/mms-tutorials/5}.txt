@@ -1,0 +1,35 @@
+function downloadMedia(String $url){
+    $fileName = basename($url);
+    file_put_contents($fileName,file_get_contents($url));
+    return $fileName;
+}
+
+function uploadMedia(String $fileLocation){
+    global $AWS_REGION, $TELNYX_MMS_S3_BUCKET;
+    $s3 = new S3Client([
+        'version' => 'latest',
+        'region'  => $AWS_REGION
+    ]);
+    $keyName = basename($fileLocation);
+    try {
+        // Upload data.
+        $result = $s3->putObject([
+            'Bucket' => $TELNYX_MMS_S3_BUCKET,
+            'Key'    => $keyName,
+            'SourceFile' => $fileLocation,
+            'ACL'    => 'public-read'
+        ]);
+
+        // The URL to the object.
+        $url =  $result['ObjectURL'];
+        return $url;
+    } catch (S3Exception $e) {
+        echo $e->getMessage() . PHP_EOL;
+    }
+}
+
+function downloadUpload($media) {
+    $fileLocation = downloadMedia($media['url']);
+    $mediaUrl = uploadMedia($fileLocation);
+    return $mediaUrl;
+}

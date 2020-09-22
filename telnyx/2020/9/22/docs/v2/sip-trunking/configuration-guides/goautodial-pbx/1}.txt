@@ -1,0 +1,5 @@
+exten => _X.,1,AGI(agi://127.0.0.1:4577/call_log)
+exten => _NXXNXXXXXX.,1,Dial(SIP/${EXTEN}@telnyx)
+exten => _1NXXNXXXXXX.,1,Dial(SIP/${EXTEN}@telnyx)
+exten => _6468688074,1,Dial(SIP/8001@default)
+exten => _16468688074,1,Dial(SIP/8001@default)

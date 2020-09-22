@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Dial action="/nextinstructions.php" callerId="+13120001234">+19999999999</Dial>
+</Response>

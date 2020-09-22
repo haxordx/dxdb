@@ -1,0 +1,3 @@
+def get_random_token_hex(num_chars):
+    byte_data = secrets.token_hex(math.ceil(num_chars / 2.0))
+    return byte_data.upper()[:num_chars]

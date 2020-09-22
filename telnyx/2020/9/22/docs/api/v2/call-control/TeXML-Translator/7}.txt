@@ -1,0 +1,4 @@
+curl -X POST https://api.telnyx.com/v2/texml/calls/{connection_id} \
+--data-urlencode "To=+ 13121230000" \
+--data-urlencode "From=+ 13120001234" \
+--header "Authorization: Bearer APIAuthKey_fromPortal"

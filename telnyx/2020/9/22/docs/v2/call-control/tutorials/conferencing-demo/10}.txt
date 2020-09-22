@@ -1,0 +1,6 @@
+  const request = superagent
+    .set('Content-Type', 'application/json')
+    .set('Accept', 'application/json')
+    .set('Authorization', `Bearer ${f_telnyx_api_auth_v2}`)
+    .post(`https://api.telnyx.com/v2/calls/${f_call_control_id}/actions/${cc_action}`)
+    .send({ PARAM1: f_INPUT1 });

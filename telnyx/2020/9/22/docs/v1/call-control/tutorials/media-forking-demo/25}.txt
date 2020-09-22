@@ -1,0 +1,27 @@
+else if (l_hook_event_type =='gather_ended'){
+  // Receive DTMF Number
+  var l_dtmf_number = req.body.payload.digits;
+
+  // Set Client State
+  var l_client_state_buff = new Buffer(l_client_state_64,'base64');
+  var l_client_state_s = l_client_state_buff.toString('ascii');
+
+  if (l_client_state_s == "stage-dial" && l_dtmf_number == 1) {
+
+    // Transfer Call
+    call_control_transfer(
+      l_call_control_id,
+      g_pstn_phone,
+      req.body.payload.from
+    );
+
+  // Start Forking
+    call_control_fork_start(
+      l_call_control_id,
+      g_udp_target,
+      null,
+      null
+    );
+  }
+  res.end();
+}

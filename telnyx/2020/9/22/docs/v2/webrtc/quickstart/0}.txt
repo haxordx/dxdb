@@ -1,0 +1,7 @@
+curl -X POST \
+  --header "Content-Type: application/json" \
+  --header "Authorization: Bearer YOUR_API_KEY" \
+  --data '{
+    "connection_id": "<your connection ID>"
+  }' \
+  https://api.telnyx.com/v2/telephony_credentials

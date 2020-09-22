@@ -1,0 +1,15 @@
+{
+  "sms_id": "2c41e477-69b0-4c03-b91d-3d4a1e8f2c3b",
+  "from": "+13129450002",
+  "to": "+13125550001",
+  "direction": "inbound",
+  "body": "Hello!",
+  "media": [
+    {
+      "url": "https://example.com/media/LONG_RANDOM_STRING.jpeg",
+      "content_type": "image/jpeg",
+      "hash_sha256": "sha256 hash",
+      "size": 123456
+    }
+  ]
+}

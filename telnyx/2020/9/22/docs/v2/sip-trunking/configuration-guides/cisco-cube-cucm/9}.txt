@@ -1,0 +1,5 @@
+dial-peer voice 300 voip
+destination-pattern 3...           !Matches 3XXX numbers, as translated by the translation profile
+session protocol sipv2
+session target ipv4:172.16.8.10
+dtmf-relay rtp-nte cisco-rtp sip-kpml sip-notify

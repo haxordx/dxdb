@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Dial action="/nextinstructions.php" callerId="+13120001234" hangupOnStar="true">
+      <Sip statusCallback="https://foo.com/my_sip_call_stats" statusCallbackEvent="initiated">sip:connection@sip.telnyx.com</Sip>
+    </Dial>
+</Response>

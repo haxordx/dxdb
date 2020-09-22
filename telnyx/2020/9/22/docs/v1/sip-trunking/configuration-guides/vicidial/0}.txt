@@ -1,0 +1,22 @@
+Carrier ID: Telnyx
+Carrier Name: telnyx
+Template ID: NONE
+Reg string: register => your_user_name:your_password@sip.telnyx.com:5060
+Account Entry: [telnyx]
+disallow=all
+allow=ulaw
+allow=g729
+type=friend
+host=sip.telnyx.com
+username=your_user_name
+secret=your_password
+host=dynamic
+dtmfmode=rfc2833
+context=default
+Protocol: SIP
+Global String: Telnyx=SIP/telnyx
+
+Dial Plan:
+exten => _9NXXXXXXXXXX,1,AGI(agi://127.0.0.1:4577/call_log)
+exten => _9NXXXXXXXXXX,2,Dial(${Telnyx}/${EXTEN:1},60,tTor)
+exten => _9NXXXXXXXXXX,3,Hangup

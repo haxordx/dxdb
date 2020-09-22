@@ -1,0 +1,1 @@
+GET /comments?filter[tag]=tag_one,tag_two HTTP/1.1

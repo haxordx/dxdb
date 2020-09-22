@@ -1,0 +1,6 @@
+curl -X POST \
+  --header "Content-Type: application/json" \
+  --header "Accept: application/json" \
+  --header "Authorization: Bearer YOUR_API_KEY" \
+  --data '{"target": "udp:192.0.2.1:9000"}' \
+  https://api.telnyx.com/v2/calls/{call_control_id}/actions/fork_start

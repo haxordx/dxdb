@@ -1,0 +1,10 @@
+// Application:
+const g_appName = "demo-telnyx-ivr";
+
+// TTS Options
+const g_ivr_voice     = 'female';
+const g_ivr_language  = 'en-US';
+
+// IVR Redirect Options
+const g_account_exec  = '+12345678910';
+const g_sales_eng     = '+10987654320';

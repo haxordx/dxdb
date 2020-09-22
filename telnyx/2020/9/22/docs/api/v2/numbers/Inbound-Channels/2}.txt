@@ -1,0 +1,6 @@
+curl -X PATCH \
+  --header "Content-Type: application/json" \
+  --header "Accept: application/json" \
+  --header "Authorization: Bearer YOUR_API_KEY" \
+  --data '{"channels": 10}' \
+  https://api.telnyx.com/v2/phone_numbers/inbound_channels

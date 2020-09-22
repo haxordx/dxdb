@@ -1,0 +1,11 @@
+// Application:
+const g_appName = "telnyx-conf-v2";
+
+// TTS Options
+const g_ivr_voice     = 'female';
+const g_ivr_language = 'en-GB';
+
+// Conf Options
+var g_conf_id = 'no-conf';
+var g_on_hold = 'false';
+var g_participants = new Map();

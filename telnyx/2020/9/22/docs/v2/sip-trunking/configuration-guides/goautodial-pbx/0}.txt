@@ -1,0 +1,12 @@
+[telnyx]
+disallow=all
+allow=ulaw
+allow=alaw
+type=friend
+dtmfmode=rfc2833
+context=default
+qualify=yes
+insecure=invite
+host=sip.telnyx.com
+username=connection_username
+secret=connection_password

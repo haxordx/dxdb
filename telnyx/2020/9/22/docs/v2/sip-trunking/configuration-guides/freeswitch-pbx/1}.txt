@@ -1,0 +1,10 @@
+<include>
+  <gateway name="telnyx">
+    <param name="realm" value="sip.telnyx.com"/>
+    <param name="username" value="freesuser"/>
+    <!-- Replace freesuser with your Telnyx Portal username -->
+    <param name="password" value="freespass"/>
+    <!-- Replace freepass with your Telnyx Portal password -->
+    <param name="register" value="true"/>
+  </gateway>
+</include>

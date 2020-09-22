@@ -1,0 +1,14 @@
+sip-interface 
+state                enabled 
+realm-id             OUTSIDE 
+description 
+sip-port 
+address              X.X.X.X 
+port                 5060 
+transport-protocol   UDP 
+tls-profile 
+allow-anonymous      agents-only 
+ims-aka-profile 
+carriers 
+trans-expire         0 
+...

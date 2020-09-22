@@ -1,0 +1,46 @@
+STREP Specification
+
+  0                   1                   2                   3
+  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+ +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+ |1 1|Version|L|D|    HeaderLen  |  reserved (2 bytes)           |
+ +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+ |       reserved (4 bytes, for UDP ports or anything else)      |
+ +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+ |               The call_leg_id                                 |
+ |                   from Call Control                           |
+ |                       (128 bits / 16 bytes)                   |
+ |                           (this is binary data)               |
+ +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+ 11
+   Static bits 11, always set to 11 to easily distinguish forked media
+   from RTP (10) and T.38 media (usually 00) and SIP (which begins
+   with a capital letter, so begins with bits 01). This is a magic number.
+
+ Version
+   Four bits to indicate the version number of the protocol, starting at 0001.
+
+ L
+   One bit to represent the leg of the call (A or B).
+   0 represents the A (first) leg of the call.
+   1 represents the B (second) leg of the call.
+
+ D
+   One bit to represent the direction of this RTP stream.
+   0 represents media received by Telnyx.
+   1 represents media transmitted by Telnyx.
+
+ HeaderLen (1 byte)
+   The length of the header in bytes.
+   Note that this value does not include the length of the payload. The total
+   size of the RTP can be calculated by subtracting the HeaderLen from the UDP
+   length (minus 8 for the UDP header).
+   In version 1, this value will always be 24.
+
+ Reserved (6 bytes)
+   Reserved for future use and to make sure that the header is a multiple of 32 bits
+
+ Call Leg ID
+   A 128-bit identifier for the call leg.
+   This is the call_leg_id from Call Control.

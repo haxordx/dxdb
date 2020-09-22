@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Gather action="/processdtmf.php" finishOnKey="*" timeout="20">
+        <Say>Please press 1 for sales, or 2 for support. Press * to exit the menu.</Say>
+    </Gather>
+   <Say>We did not receive any input. Goodbye!</Say>
+</Response>

@@ -1,0 +1,5 @@
+[ CodersGroup0 ]
+CodersGroup0_Name:        g711ulaw64k 
+CodersGroup0_pTime:       20 
+CodersGroup0_PayloadType: 0
+[ \CodersGroup0 ]

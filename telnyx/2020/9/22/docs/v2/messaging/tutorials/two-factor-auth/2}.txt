@@ -1,0 +1,18 @@
+class TokenStorage():
+    tokens = {}
+
+    @classmethod
+    def add_token(cls, token, phone_number):
+        cls.tokens[token] = {
+            'phone_number': phone_number,
+            'last_updated': datetime.now(),
+            'token': token.upper()
+        }
+    
+    @classmethod
+    def token_is_valid(cls, token):
+        return token.upper() in cls.tokens
+    
+    @classmethod
+    def clear_token(cls, token):
+        del TokenStorage.tokens[token.upper()]

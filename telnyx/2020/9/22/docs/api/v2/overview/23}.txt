@@ -1,0 +1,14 @@
+$ curl -X POST https://api.telnyx.com/v2/connections \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -d '{"name": "conn_one", "active": true}'
+
+  {
+    "data": {
+      "record_type": "connection",
+      "id": "9ac0da9f-173f-4ebd-8f16-6e4d9585a0b2",
+      "name": "conn_one",
+      ...
+      "active": true
+    }
+  }

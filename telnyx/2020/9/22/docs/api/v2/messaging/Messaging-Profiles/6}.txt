@@ -1,0 +1,9 @@
+{
+  "data": {
+    "message_id": "string",
+    "record_type": "link_clicked",
+    "time_clicked": "string",
+    "to": "string",
+    "url": "link_clicked"
+  }
+}

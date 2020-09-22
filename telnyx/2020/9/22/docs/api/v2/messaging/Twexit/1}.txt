@@ -1,0 +1,24 @@
+{
+  "sid": "70995504-80ea-4616-bc00-645000000312",
+  "date_created": "Tue, 12 Nov 2019 21:17:30 +0000",
+  "date_updated": "Tue, 12 Nov 2019 21:17:30 +0000",
+  "date_sent": null,
+  "account_sid": "4e767ae7-bb87-c3b0-1999-abba00000baa",
+  "to": "+16165551111",
+  "from": "+13135556666",
+  "messaging_service_sid": "0bafa967-0bb4-4202-9100-ebd000000ef7",
+  "body": "I would indeed like a 🌮.",
+  "status": "queued",
+  "num_segments": "1",
+  "num_media": "0",
+  "direction": "outbound-api",
+  "api_version": "2010-04-01",
+  "price": null,
+  "price_unit": "USD",
+  "error_code": null,
+  "error_message": null,
+  "uri": "/2010-04-01/Accounts/4e767ae7-bb87-c3b0-9700-ab5000000baa/Messages/70995504-80ea-4616-bc00-645000000312.json",
+  "subresource_uris": {
+    "media": "/2010-04-01/Accounts/4e767ae7-bb87-c3b0-1999-abba00000baa/Messages/70995504-80ea-4616-bc00-645000000312/Media.json"
+  }
+}

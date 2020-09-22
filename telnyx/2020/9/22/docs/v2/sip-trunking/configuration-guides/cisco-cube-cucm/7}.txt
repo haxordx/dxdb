@@ -1,0 +1,2 @@
+voice translation-rule 100
+rule 1 /13125489677/ /3005/   !  Several rules can be defined. In this case, 3005 is an extension on CUCM
