@@ -1,0 +1,4 @@
+>>> imgs = torch.randn(32, 3, 128, 128, names=('N', 'C', 'H', 'W'))
+>>> flat_imgs = imgs.flatten(['C', 'H', 'W'], 'features')
+>>> flat_imgs.names, flat_imgs.shape
+(('N', 'features'), torch.Size([32, 49152]))

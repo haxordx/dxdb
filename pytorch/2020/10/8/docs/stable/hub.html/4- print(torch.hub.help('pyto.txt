@@ -1,0 +1,1 @@
+>>> print(torch.hub.help('pytorch/vision', 'resnet18', force_reload=True))

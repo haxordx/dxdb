@@ -1,0 +1,1 @@
+>>> torch.add(torch.ones(4,1), torch.randn(4))

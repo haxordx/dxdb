@@ -1,0 +1,3 @@
+>>> m = dist.VonMises(torch.tensor([1.0]), torch.tensor([1.0]))
+>>> m.sample() # von Mises distributed with loc=1 and concentration=1
+tensor([1.9777])

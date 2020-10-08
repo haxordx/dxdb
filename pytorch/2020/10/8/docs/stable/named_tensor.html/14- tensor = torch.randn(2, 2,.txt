@@ -1,0 +1,5 @@
+>>> tensor = torch.randn(2, 2, 2, 2, 2, 2)
+>>> named_tensor = tensor.refine_names('A', 'B', 'C', 'D', 'E', 'F')
+
+# Move the F and E dims to the front while keeping the rest in order
+>>> named_tensor.align_to('F', 'E', ...)

@@ -1,0 +1,51 @@
+def operator/symbolic(g, *inputs):
+  """
+  Modifies Graph (e.g., using "op"), adding the ONNX operations representing
+  this PyTorch function, and returning a Value or tuple of Values specifying the
+  ONNX outputs whose values correspond to the original PyTorch return values
+  of the autograd Function (or None if an output is not supported by ONNX).
+
+  Arguments:
+    g (Graph): graph to write the ONNX representation into
+    inputs (Value...): list of values representing the variables which contain
+        the inputs for this function
+  """
+
+class Value(object):
+  """Represents an intermediate tensor value computed in ONNX."""
+  def type(self):
+    """Returns the Type of the value."""
+
+class Type(object):
+  def sizes(self):
+    """Returns a tuple of ints representing the shape of a tensor this describes."""
+
+class Graph(object):
+  def op(self, opname, *inputs, **attrs):
+    """
+    Create an ONNX operator 'opname', taking 'args' as inputs
+    and attributes 'kwargs' and add it as a node to the current graph,
+    returning the value representing the single output of this
+    operator (see the `outputs` keyword argument for multi-return
+    nodes).
+
+    The set of operators and the inputs/attributes they take
+    is documented at https://github.com/onnx/onnx/blob/master/docs/Operators.md
+
+    Arguments:
+        opname (string): The ONNX operator name, e.g., `Abs` or `Add`.
+        args (Value...): The inputs to the operator; usually provided
+            as arguments to the `symbolic` definition.
+        kwargs: The attributes of the ONNX operator, with keys named
+            according to the following convention: `alpha_f` indicates
+            the `alpha` attribute with type `f`.  The valid type specifiers are
+            `f` (float), `i` (int), `s` (string) or `t` (Tensor).  An attribute
+            specified with type float accepts either a single float, or a
+            list of floats (e.g., you would say `dims_i` for a `dims` attribute
+            that takes a list of integers).
+        outputs (int, optional):  The number of outputs this operator returns;
+            by default an operator is assumed to return a single output.
+            If `outputs` is greater than one, this functions returns a tuple
+            of output `Value`, representing each output of the ONNX operator
+            in positional.
+    """

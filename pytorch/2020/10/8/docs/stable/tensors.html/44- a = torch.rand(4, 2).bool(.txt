@@ -1,0 +1,10 @@
+>>> a = torch.rand(4, 2).bool()
+>>> a
+tensor([[True, True],
+        [True, False],
+        [True, True],
+        [True, True]], dtype=torch.bool)
+>>> a.all(dim=1)
+tensor([ True, False,  True,  True], dtype=torch.bool)
+>>> a.all(dim=0)
+tensor([ True, False], dtype=torch.bool)

@@ -1,0 +1,1 @@
+hook(grad) -> Tensor or None

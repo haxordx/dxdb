@@ -1,0 +1,1 @@
+>>> torch.cuda.set_device(arg.local_rank)  # before your code runs

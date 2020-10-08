@@ -1,0 +1,6 @@
+>>> # On worker 0:
+>>> import torch.distributed.rpc as rpc
+>>> rpc.init_rpc("worker0", rank=0, world_size=2)
+>>> fut = rpc.rpc_async("worker1", my_script_add, args=(torch.ones(2), 3))
+>>> ret = fut.wait()
+>>> rpc.shutdown()

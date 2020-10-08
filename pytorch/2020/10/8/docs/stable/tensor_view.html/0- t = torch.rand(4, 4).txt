@@ -1,0 +1,8 @@
+>>> t = torch.rand(4, 4)
+>>> b = t.view(2, 8)
+>>> t.storage().data_ptr() == b.storage().data_ptr()  # `t` and `b` share the same underlying data.
+True
+# Modifying view tensor changes base tensor as well.
+>>> b[0][0] = 3.14
+>>> t[0][0]
+tensor(3.14)

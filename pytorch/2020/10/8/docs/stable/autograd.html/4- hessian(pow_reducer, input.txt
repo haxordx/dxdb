@@ -1,0 +1,3 @@
+>>> hessian(pow_reducer, inputs, create_graph=True)
+tensor([[[[5.2265, 0.0000],
+          [0.0000, 0.0000]],

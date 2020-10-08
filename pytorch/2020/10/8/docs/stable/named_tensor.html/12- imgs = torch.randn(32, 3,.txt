@@ -1,0 +1,9 @@
+>>> imgs = torch.randn(32, 3, 128, 128)
+>>> named_imgs = imgs.refine_names('N', 'C', 'H', 'W')
+>>> named_imgs.names
+('N', 'C', 'H', 'W')
+
+>>> tensor = torch.randn(2, 3, 5, 7, 11)
+>>> tensor = tensor.refine_names('A', ..., 'B', 'C')
+>>> tensor.names
+('A', None, None, 'B', 'C')

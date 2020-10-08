@@ -1,0 +1,11 @@
+class MyFloat32Func(torch.autograd.Function):
+    @staticmethod
+    @custom_fwd(cast_inputs=torch.float32)
+    def forward(ctx, input):
+        ctx.save_for_backward(input)
+        ...
+        return fwd_output
+    @staticmethod
+    @custom_bwd
+    def backward(ctx, grad):
+        ...

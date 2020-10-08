@@ -1,0 +1,1 @@
+torch.save(the_model.state_dict(), PATH)

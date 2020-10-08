@@ -1,0 +1,19 @@
+try:
+    from typing_extensions import Final
+except:
+    # If you don't have `typing_extensions` installed, you can use a
+    # polyfill from `torch.jit`.
+    from torch.jit import Final
+
+class MyModule(torch.nn.Module):
+
+    my_constant: Final[int]
+
+    def __init__(self):
+        super(MyModule, self).__init__()
+        self.my_constant = 2
+
+    def forward(self):
+        pass
+
+m = torch.jit.script(MyModule())

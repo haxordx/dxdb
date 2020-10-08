@@ -1,0 +1,7 @@
+params = policy_network(state)
+m = Normal(*params)
+# Any distribution with .has_rsample == True could work based on the application
+action = m.rsample()
+next_state, reward = env.step(action)  # Assuming that reward is differentiable
+loss = -reward
+loss.backward()

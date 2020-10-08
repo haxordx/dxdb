@@ -1,0 +1,1 @@
+register_kl(DerivedP, DerivedQ)(kl_version1)  # Break the tie.

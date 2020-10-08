@@ -1,0 +1,17 @@
+>>> import torch
+>>>
+>>> def callback(fut):
+>>>     print(f"RPC return value is {fut.wait()}.")
+>>>
+>>> fut = torch.futures.Future()
+>>> # The inserted callback will print the return value when
+>>> # receiving the response from "worker1"
+>>> cb_fut = fut.then(callback)
+>>> chain_cb_fut = cb_fut.then(
+>>>     lambda x : print(f"Chained cb done. {x.wait()}")
+>>> )
+>>> fut.set_result(5)
+>>>
+>>> # Outputs are:
+>>> # RPC return value is 5.
+>>> # Chained cb done. None

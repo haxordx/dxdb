@@ -1,0 +1,1 @@
+covariance_matrix = cov_factor @ cov_factor.T + cov_diag

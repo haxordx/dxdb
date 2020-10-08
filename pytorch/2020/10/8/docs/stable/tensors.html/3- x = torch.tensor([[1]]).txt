@@ -1,0 +1,10 @@
+>>> x = torch.tensor([[1]])
+>>> x
+tensor([[ 1]])
+>>> x.item()
+1
+>>> x = torch.tensor(2.5)
+>>> x
+tensor(2.5000)
+>>> x.item()
+2.5

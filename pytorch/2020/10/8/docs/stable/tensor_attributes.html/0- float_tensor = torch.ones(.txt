@@ -1,0 +1,36 @@
+>>> float_tensor = torch.ones(1, dtype=torch.float)
+>>> double_tensor = torch.ones(1, dtype=torch.double)
+>>> complex_float_tensor = torch.ones(1, dtype=torch.complex64)
+>>> complex_double_tensor = torch.ones(1, dtype=torch.complex128)
+>>> int_tensor = torch.ones(1, dtype=torch.int)
+>>> long_tensor = torch.ones(1, dtype=torch.long)
+>>> uint_tensor = torch.ones(1, dtype=torch.uint8)
+>>> double_tensor = torch.ones(1, dtype=torch.double)
+>>> bool_tensor = torch.ones(1, dtype=torch.bool)
+# zero-dim tensors
+>>> long_zerodim = torch.tensor(1, dtype=torch.long)
+>>> int_zerodim = torch.tensor(1, dtype=torch.int)
+
+>>> torch.add(5, 5).dtype
+torch.int64
+# 5 is an int64, but does not have higher category than int_tensor so is not considered.
+>>> (int_tensor + 5).dtype
+torch.int32
+>>> (int_tensor + long_zerodim).dtype
+torch.int32
+>>> (long_tensor + int_tensor).dtype
+torch.int64
+>>> (bool_tensor + long_tensor).dtype
+torch.int64
+>>> (bool_tensor + uint_tensor).dtype
+torch.uint8
+>>> (float_tensor + double_tensor).dtype
+torch.float64
+>>> (complex_float_tensor + complex_double_tensor).dtype
+torch.complex128
+>>> (bool_tensor + int_tensor).dtype
+torch.int32
+# Since long is a different kind than float, result dtype only needs to be large enough
+# to hold the float.
+>>> torch.add(long_tensor, float_tensor).dtype
+torch.float32

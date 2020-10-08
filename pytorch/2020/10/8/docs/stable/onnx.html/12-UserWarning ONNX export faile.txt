@@ -1,0 +1,2 @@
+UserWarning: ONNX export failed on elu because torch.onnx.symbolic_opset9.elu does not exist
+RuntimeError: ONNX export failed: Couldn't export operator elu

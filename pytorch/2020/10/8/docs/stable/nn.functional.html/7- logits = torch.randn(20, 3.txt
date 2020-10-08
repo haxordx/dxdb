@@ -1,0 +1,5 @@
+>>> logits = torch.randn(20, 32)
+>>> # Sample soft categorical using reparametrization trick:
+>>> F.gumbel_softmax(logits, tau=1, hard=False)
+>>> # Sample hard categorical using "Straight-through" trick:
+>>> F.gumbel_softmax(logits, tau=1, hard=True)

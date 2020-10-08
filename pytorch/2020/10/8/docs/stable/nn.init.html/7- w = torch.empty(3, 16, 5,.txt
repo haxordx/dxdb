@@ -1,0 +1,4 @@
+>>> w = torch.empty(3, 16, 5, 5)
+>>> nn.init.dirac_(w)
+>>> w = torch.empty(3, 24, 5, 5)
+>>> nn.init.dirac_(w, 3)

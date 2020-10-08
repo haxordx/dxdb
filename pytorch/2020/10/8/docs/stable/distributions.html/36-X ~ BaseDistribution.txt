@@ -1,0 +1,3 @@
+X ~ BaseDistribution
+Y = f(X) ~ TransformedDistribution(BaseDistribution, f)
+log p(Y) = log p(X) + log |det (dX/dY)|

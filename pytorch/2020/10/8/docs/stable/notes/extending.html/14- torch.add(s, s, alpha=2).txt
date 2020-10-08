@@ -1,0 +1,2 @@
+>>> torch.add(s, s, alpha=2)
+TypeError: add() got an unexpected keyword argument 'alpha'

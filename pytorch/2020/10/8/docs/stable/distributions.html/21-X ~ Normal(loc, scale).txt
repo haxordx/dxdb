@@ -1,0 +1,2 @@
+X ~ Normal(loc, scale)
+Y = exp(X) ~ LogNormal(loc, scale)

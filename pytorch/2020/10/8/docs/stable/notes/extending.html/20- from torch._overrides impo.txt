@@ -1,0 +1,6 @@
+>>> from torch._overrides import get_overridable_functions
+>>> func_dict = get_overridable_functions()
+>>> nn_funcs = func_dict[torch.nn.functional]
+>>> print([f.__name__ for f in nn_funcs[:5])
+['adaptive_avg_pool1d', 'adaptive_avg_pool2d', 'adaptive_avg_pool3d',
+ 'adaptive_max_pool1d', 'adaptive_max_pool1d_with_indices']

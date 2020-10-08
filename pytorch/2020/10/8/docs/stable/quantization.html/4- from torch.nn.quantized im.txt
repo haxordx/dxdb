@@ -1,0 +1,12 @@
+>>> from torch.nn.quantized import functional as qF
+>>> filters = torch.randn(33, 16, 3, dtype=torch.float)
+>>> inputs = torch.randn(20, 16, 50, dtype=torch.float)
+>>> bias = torch.randn(33, dtype=torch.float)
+>>>
+>>> scale, zero_point = 1.0, 0
+>>> dtype_inputs = torch.quint8
+>>> dtype_filters = torch.qint8
+>>>
+>>> q_filters = torch.quantize_per_tensor(filters, scale, zero_point, dtype_filters)
+>>> q_inputs = torch.quantize_per_tensor(inputs, scale, zero_point, dtype_inputs)
+>>> qF.conv1d(q_inputs, q_filters, bias, padding=1, scale=scale, zero_point=zero_point)

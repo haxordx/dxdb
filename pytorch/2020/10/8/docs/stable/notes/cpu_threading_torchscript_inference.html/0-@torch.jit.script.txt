@@ -1,0 +1,13 @@
+@torch.jit.script
+def compute_z(x):
+    return torch.mm(x, self.w_z)
+
+@torch.jit.script
+def forward(x):
+    # launch compute_z asynchronously:
+    fut = torch.jit._fork(compute_z, x)
+    # execute the next operation in parallel to compute_z:
+    y = torch.mm(x, self.w_y)
+    # wait for the result of compute_z:
+    z = torch.jit._wait(fut)
+    return y + z

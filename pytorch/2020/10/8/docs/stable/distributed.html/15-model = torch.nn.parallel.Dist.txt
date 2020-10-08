@@ -1,0 +1,3 @@
+model = torch.nn.parallel.DistributedDataParallel(model,
+                                                  device_ids=[arg.local_rank],
+                                                  output_device=arg.local_rank)

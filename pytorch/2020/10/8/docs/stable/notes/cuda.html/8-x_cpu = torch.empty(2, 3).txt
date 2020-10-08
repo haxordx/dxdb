@@ -1,0 +1,5 @@
+x_cpu = torch.empty(2, 3)
+x_gpu = torch.empty(2, 3)
+
+y_cpu = torch.ones_like(x_cpu)
+y_gpu = torch.zeros_like(x_gpu)

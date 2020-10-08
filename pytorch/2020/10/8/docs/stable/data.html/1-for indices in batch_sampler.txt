@@ -1,0 +1,2 @@
+for indices in batch_sampler:
+    yield collate_fn([dataset[i] for i in indices])

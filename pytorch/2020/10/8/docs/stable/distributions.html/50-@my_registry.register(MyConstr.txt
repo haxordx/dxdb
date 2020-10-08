@@ -1,0 +1,4 @@
+@my_registry.register(MyConstraintClass)
+def construct_transform(constraint):
+    assert isinstance(constraint, MyConstraint)
+    return MyTransform(constraint.arg_constraints)

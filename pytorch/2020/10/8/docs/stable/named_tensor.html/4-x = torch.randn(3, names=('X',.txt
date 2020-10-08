@@ -1,0 +1,3 @@
+x = torch.randn(3, names=('X',))
+y = torch.randn(3)
+z = torch.randn(3, names=('Z',))

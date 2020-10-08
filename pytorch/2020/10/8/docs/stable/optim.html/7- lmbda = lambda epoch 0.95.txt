@@ -1,0 +1,6 @@
+>>> lmbda = lambda epoch: 0.95
+>>> scheduler = MultiplicativeLR(optimizer, lr_lambda=lmbda)
+>>> for epoch in range(100):
+>>>     train(...)
+>>>     validate(...)
+>>>     scheduler.step()

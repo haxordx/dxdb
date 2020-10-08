@@ -1,0 +1,3 @@
+>>> jvp(exp_reducer, inputs, v, create_graph=True)
+(tensor([6.3090, 4.6742, 7.9114, 8.2106], grad_fn=<SumBackward1>),
+ tensor([6.3090, 4.6742, 7.9114, 8.2106], grad_fn=<SqueezeBackward1>))

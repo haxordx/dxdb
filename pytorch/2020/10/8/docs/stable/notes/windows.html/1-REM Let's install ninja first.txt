@@ -1,0 +1,5 @@
+REM Let's install ninja first.
+pip install ninja
+
+REM Set it as the cmake generator
+set CMAKE_GENERATOR=Ninja

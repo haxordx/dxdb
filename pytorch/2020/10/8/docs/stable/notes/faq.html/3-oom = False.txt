@@ -1,0 +1,9 @@
+oom = False
+try:
+    run_model(batch_size)
+except RuntimeError: # Out of memory
+    oom = True
+
+if oom:
+    for _ in range(batch_size):
+        run_model(1)

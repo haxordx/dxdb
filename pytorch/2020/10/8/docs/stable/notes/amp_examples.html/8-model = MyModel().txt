@@ -1,0 +1,6 @@
+model = MyModel()
+dp_model = nn.DataParallel(model)
+
+with autocast():
+    output = dp_model(input)
+    loss = loss_fn(output)

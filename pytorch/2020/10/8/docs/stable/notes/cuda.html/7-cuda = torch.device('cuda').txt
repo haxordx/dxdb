@@ -1,0 +1,23 @@
+cuda = torch.device('cuda')
+x_cpu = torch.empty(2)
+x_gpu = torch.empty(2, device=cuda)
+x_cpu_long = torch.empty(2, dtype=torch.int64)
+
+y_cpu = x_cpu.new_full([3, 2], fill_value=0.3)
+print(y_cpu)
+
+    tensor([[ 0.3000,  0.3000],
+            [ 0.3000,  0.3000],
+            [ 0.3000,  0.3000]])
+
+y_gpu = x_gpu.new_full([3, 2], fill_value=-5)
+print(y_gpu)
+
+    tensor([[-5.0000, -5.0000],
+            [-5.0000, -5.0000],
+            [-5.0000, -5.0000]], device='cuda:0')
+
+y_cpu_long = x_cpu_long.new_tensor([[1, 2, 3]])
+print(y_cpu_long)
+
+    tensor([[ 1,  2,  3]])

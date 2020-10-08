@@ -1,0 +1,37 @@
+>>> from torch.distributed import rpc
+>>>
+>>> # omitting setup and shutdown RPC
+>>>
+>>> # On all workers
+>>> class AsyncExecutionClass:
+>>>
+>>>     @staticmethod
+>>>     @rpc.functions.async_execution
+>>>     def static_async_add(to, x, y, z):
+>>>         return rpc.rpc_async(to, torch.add, args=(x, y)).then(
+>>>             lambda fut: fut.wait() + z
+>>>         )
+>>>
+>>>     @classmethod
+>>>     @rpc.functions.async_execution
+>>>     def class_async_add(cls, to, x, y, z):
+>>>         ret_fut = torch.futures.Future()
+>>>         rpc.rpc_async(to, torch.add, args=(x, y)).then(
+>>>             lambda fut: ret_fut.set_result(fut.wait() + z)
+>>>         )
+>>>         return ret_fut
+>>>
+>>> # On worker0
+>>> ret = rpc.rpc_sync(
+>>>     "worker1",
+>>>     AsyncExecutionClass.static_async_add,
+>>>     args=("worker2", torch.ones(2), 1, 2)
+>>> )
+>>> print(ret)  # prints tensor([4., 4.])
+>>>
+>>> ret = rpc.rpc_sync(
+>>>     "worker1",
+>>>     AsyncExecutionClass.class_async_add,
+>>>     args=("worker2", torch.ones(2), 1, 2)
+>>> )
+>>> print(ret)  # prints tensor([4., 4.])

@@ -1,0 +1,5 @@
+for i in range(5):
+    intermediate = f(input[i])
+    result += g(intermediate)
+output = h(result)
+return output

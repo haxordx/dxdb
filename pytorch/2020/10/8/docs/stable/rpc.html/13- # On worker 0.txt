@@ -1,0 +1,8 @@
+>>> # On worker 0:
+>>> import torch
+>>> import torch.distributed.rpc as rpc
+>>> rpc.init_rpc("worker0", rank=0, world_size=2)
+>>> rref1 = rpc.remote("worker1", torch.add, args=(torch.ones(2), 3))
+>>> rref2 = rpc.remote("worker1", torch.add, args=(torch.ones(2), 1))
+>>> x = rref1.to_here() + rref2.to_here()
+>>> rpc.shutdown()

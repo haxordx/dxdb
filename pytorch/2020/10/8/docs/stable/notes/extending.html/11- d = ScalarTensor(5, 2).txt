@@ -1,0 +1,3 @@
+>>> d = ScalarTensor(5, 2)
+>>> torch.mean(d)
+0.4

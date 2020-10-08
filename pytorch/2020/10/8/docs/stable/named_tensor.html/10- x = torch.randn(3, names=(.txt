@@ -1,0 +1,15 @@
+>>> x = torch.randn(3, names=('D',))
+>>> weight = torch.randn(3, names=('D',), requires_grad=True)
+>>> loss = (x - weight).abs()
+>>> grad_loss = torch.randn(3)
+>>> loss.backward(grad_loss)
+>>> weight.grad  # Unnamed for now. Will be named in the future
+tensor([-1.8107, -0.6357,  0.0783])
+
+>>> weight.grad.zero_()
+>>> grad_loss = grad_loss.refine_names('C')
+>>> loss = (x - weight).abs()
+# Ideally we'd check that the names of loss and grad_loss match but we don't yet.
+>>> loss.backward(grad_loss)
+>>> weight.grad
+tensor([-1.8107, -0.6357,  0.0783])

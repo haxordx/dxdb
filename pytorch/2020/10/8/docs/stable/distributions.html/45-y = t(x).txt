@@ -1,0 +1,3 @@
+y = t(x)
+z = t.inv(y)
+grad(z.sum(), [y])  # error because z is x

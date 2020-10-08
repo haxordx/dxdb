@@ -1,0 +1,21 @@
+>>> x = torch.zeros(1, requires_grad=True)
+>>> with torch.no_grad():
+...     y = x * 2
+>>> y.requires_grad
+False
+
+>>> is_train = False
+>>> with torch.set_grad_enabled(is_train):
+...     y = x * 2
+>>> y.requires_grad
+False
+
+>>> torch.set_grad_enabled(True)  # this can also be used as a function
+>>> y = x * 2
+>>> y.requires_grad
+True
+
+>>> torch.set_grad_enabled(False)
+>>> y = x * 2
+>>> y.requires_grad
+False

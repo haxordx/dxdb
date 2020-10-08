@@ -1,0 +1,8 @@
+>>> def pow_adder_reducer(x, y):
+...   return (2 * x.pow(2) + 3 * y.pow(2)).sum()
+>>> inputs = (torch.rand(2), torch.rand(2))
+>>> v = (torch.zeros(2), torch.ones(2))
+>>> hvp(pow_adder_reducer, inputs, v)
+(tensor(2.3030),
+ (tensor([0., 0.]),
+  tensor([6., 6.])))

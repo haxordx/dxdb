@@ -1,0 +1,4 @@
+>>> python -m torch.distributed.launch --nproc_per_node=NUM_GPUS_YOU_HAVE
+           --nnodes=2 --node_rank=0 --master_addr="192.168.1.1"
+           --master_port=1234 YOUR_TRAINING_SCRIPT.py (--arg1 --arg2 --arg3
+           and all other arguments of your training script)

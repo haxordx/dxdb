@@ -1,0 +1,10 @@
+from typing import Dict
+import torch
+
+class MyModule(torch.jit.ScriptModule):
+    def __init__(self):
+        super(MyModule, self).__init__()
+        self.my_dict = torch.jit.Attribute({}, Dict[str, int])
+        self.my_int = torch.jit.Attribute(20, int)
+
+m = MyModule()

@@ -1,0 +1,17 @@
+>>> import os
+>>> from torch.distributed import rpc
+>>> os.environ['MASTER_ADDR'] = 'localhost'
+>>> os.environ['MASTER_PORT'] = '29500'
+>>>
+>>> rpc.init_rpc(
+>>>     "worker1",
+>>>     rank=0,
+>>>     world_size=2,
+>>>     backend=rpc.BackendType.TENSORPIPE,
+>>>     rpc_backend_options=rpc.TensorPipeRpcBackendOptions(
+>>>         num_worker_threads=8,
+>>>         rpc_timeout=20 # 20 second timeout
+>>>     )
+>>> )
+>>>
+>>> # omitting init_rpc invocation on worker2

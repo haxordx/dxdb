@@ -1,0 +1,6 @@
+>>> Foo.with_args = classmethod(_with_args)
+>>> foo_builder = Foo.with_args(a=3, b=4).with_args(answer=42)
+>>> foo_instance1 = foo_builder()
+>>> foo_instance2 = foo_builder()
+>>> id(foo_instance1) == id(foo_instance2)
+False

@@ -1,0 +1,5 @@
+>>> scheduler = CosineAnnealingWarmRestarts(optimizer, T_0, T_mult)
+>>> for epoch in range(20):
+>>>     scheduler.step()
+>>> scheduler.step(26)
+>>> scheduler.step() # scheduler.step(27), instead of scheduler(20)

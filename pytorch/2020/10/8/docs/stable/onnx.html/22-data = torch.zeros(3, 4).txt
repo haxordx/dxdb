@@ -1,0 +1,24 @@
+data = torch.zeros(3, 4)
+new_data = torch.arange(4).to(torch.float32)
+
+# Assigning to left hand side indexing is supported in ONNX opset >= 11.
+class InPlaceIndexedAssignment(torch.nn.Module):
+    def forward(self, data, new_data):
+        data[1] = new_data
+        return data
+
+out = InPlaceIndexedAssignment()(data, new_data)
+
+data = torch.zeros(3, 4)
+new_data = torch.arange(4).to(torch.float32)
+torch.onnx.export(InPlaceIndexedAssignment(), (data, new_data), 'inplace_assign.onnx', opset_version=11)
+
+# onnxruntime
+import onnxruntime
+sess = onnxruntime.InferenceSession('inplace_assign.onnx')
+out_ort = sess.run(None, {
+    sess.get_inputs()[0].name: torch.zeros(3, 4).numpy(),
+    sess.get_inputs()[1].name: new_data.numpy(),
+})
+
+assert torch.all(torch.eq(out, torch.tensor(out_ort)))

@@ -1,0 +1,15 @@
+Example torch ir graph:
+
+  graph(%0 : Float(2:12, 3:4, 4:1),
+        %1 : Float(2:12, 3:4, 4:1)):
+    %6 : Float(2:12, 3:4, 4:1) = foo_namespace::bar(%0, %1) # custom op
+    %7 : Float(2:12, 3:4, 4:1) = aten::div(%6, %0) # registered op
+    return (%7))
+
+is exported as:
+
+  graph(%0 : Float(2:12, 3:4, 4:1),
+        %1 : Float(2:12, 3:4, 4:1)):
+    %2 : Float(2:12, 3:4, 4:1) = foo_namespace::bar(%0, %1) # custom op
+    %3 : Float(2:12, 3:4, 4:1) = onnx::Div(%2, %0) # registered op
+    return (%3

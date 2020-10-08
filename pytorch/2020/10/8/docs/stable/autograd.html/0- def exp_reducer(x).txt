@@ -1,0 +1,6 @@
+>>> def exp_reducer(x):
+...   return x.exp().sum(dim=1)
+>>> inputs = torch.rand(2, 2)
+>>> jacobian(exp_reducer, inputs)
+tensor([[[1.4917, 2.4352],
+         [0.0000, 0.0000]],

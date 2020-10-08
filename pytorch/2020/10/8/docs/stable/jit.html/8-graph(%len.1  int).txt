@@ -1,0 +1,24 @@
+graph(%len.1 : int):
+  %24 : int = prim::Constant[value=1]()
+  %17 : bool = prim::Constant[value=1]() # test.py:10:5
+  %12 : bool? = prim::Constant()
+  %10 : Device? = prim::Constant()
+  %6 : int? = prim::Constant()
+  %1 : int = prim::Constant[value=3]() # test.py:9:22
+  %2 : int = prim::Constant[value=4]() # test.py:9:25
+  %20 : int = prim::Constant[value=10]() # test.py:11:16
+  %23 : float = prim::Constant[value=1]() # test.py:12:23
+  %4 : int[] = prim::ListConstruct(%1, %2)
+  %rv.1 : Tensor = aten::zeros(%4, %6, %6, %10, %12) # test.py:9:10
+  %rv : Tensor = prim::Loop(%len.1, %17, %rv.1) # test.py:10:5
+    block0(%i.1 : int, %rv.14 : Tensor):
+      %21 : bool = aten::lt(%i.1, %20) # test.py:11:12
+      %rv.13 : Tensor = prim::If(%21) # test.py:11:9
+        block0():
+          %rv.3 : Tensor = aten::sub(%rv.14, %23, %24) # test.py:12:18
+          -> (%rv.3)
+        block1():
+          %rv.6 : Tensor = aten::add(%rv.14, %23, %24) # test.py:14:18
+          -> (%rv.6)
+      -> (%17, %rv.13)
+  return (%rv)

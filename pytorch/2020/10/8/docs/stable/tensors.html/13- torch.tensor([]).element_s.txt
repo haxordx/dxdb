@@ -1,0 +1,4 @@
+>>> torch.tensor([]).element_size()
+4
+>>> torch.tensor([], dtype=torch.uint8).element_size()
+1

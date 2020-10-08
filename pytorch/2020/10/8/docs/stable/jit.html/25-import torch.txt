@@ -1,0 +1,11 @@
+import torch
+from typing import Dict, Optional
+
+@torch.jit.script
+def make_dict(flag: bool):
+    x: Dict[str, int] = {}
+    x['hi'] = 2
+    b: Optional[int] = None
+    if flag:
+        b = 2
+    return x, b

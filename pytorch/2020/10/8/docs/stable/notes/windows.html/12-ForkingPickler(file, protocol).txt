@@ -1,0 +1,3 @@
+ForkingPickler(file, protocol).dump(obj)
+
+BrokenPipeError: [Errno 32] Broken pipe

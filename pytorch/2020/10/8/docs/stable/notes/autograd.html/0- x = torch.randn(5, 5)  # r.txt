@@ -1,0 +1,9 @@
+>>> x = torch.randn(5, 5)  # requires_grad=False by default
+>>> y = torch.randn(5, 5)  # requires_grad=False by default
+>>> z = torch.randn((5, 5), requires_grad=True)
+>>> a = x + y
+>>> a.requires_grad
+False
+>>> b = a + z
+>>> b.requires_grad
+True

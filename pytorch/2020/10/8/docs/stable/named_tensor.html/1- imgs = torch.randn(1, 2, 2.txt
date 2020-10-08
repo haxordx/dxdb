@@ -1,0 +1,7 @@
+>>> imgs = torch.randn(1, 2, 2, 3 , names=('N', 'C', 'H', 'W'))
+>>> imgs.names
+('N', 'C', 'H', 'W')
+
+>>> renamed_imgs = imgs.rename(H='height', W='width')
+>>> renamed_imgs.names
+('N', 'C', 'height', 'width)

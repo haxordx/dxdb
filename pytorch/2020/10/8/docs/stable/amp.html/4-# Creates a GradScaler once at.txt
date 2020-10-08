@@ -1,0 +1,19 @@
+# Creates a GradScaler once at the beginning of training.
+scaler = GradScaler()
+
+for epoch in epochs:
+    for input, target in data:
+        optimizer.zero_grad()
+        output = model(input)
+        loss = loss_fn(output, target)
+
+        # Scales loss.  Calls backward() on scaled loss to create scaled gradients.
+        scaler.scale(loss).backward()
+
+        # scaler.step() first unscales gradients of the optimizer's params.
+        # If gradients don't contain infs/NaNs, optimizer.step() is then called,
+        # otherwise, optimizer.step() is skipped.
+        scaler.step(optimizer)
+
+        # Updates the scale for next iteration.
+        scaler.update()

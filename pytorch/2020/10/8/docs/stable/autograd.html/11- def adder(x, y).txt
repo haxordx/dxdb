@@ -1,0 +1,7 @@
+>>> def adder(x, y):
+...   return 2 * x + 3 * y
+>>> inputs = (torch.rand(2), torch.rand(2))
+>>> v = (torch.ones(2), torch.ones(2))
+>>> jvp(adder, inputs, v)
+(tensor([2.2399, 2.5005]),
+ tensor([5., 5.]))

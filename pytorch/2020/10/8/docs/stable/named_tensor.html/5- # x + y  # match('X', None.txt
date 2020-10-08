@@ -1,0 +1,6 @@
+>>> # x + y  # match('X', None) is True
+>>> # x + z  # match('X', 'Z') is False
+>>> # x + x  # match('X', 'X') is True
+
+>>> x + z
+Error when attempting to broadcast dims ['X'] and dims ['Z']: dim 'X' and dim 'Z' are at the same position from the right but do not match.

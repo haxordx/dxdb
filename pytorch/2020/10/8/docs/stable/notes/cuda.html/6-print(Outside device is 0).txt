@@ -1,0 +1,4 @@
+print("Outside device is 0")  # On device 0 (default in most scenarios)
+with torch.cuda.device(1):
+    print("Inside device is 1")  # On device 1
+print("Outside device is still 0")  # On device 0

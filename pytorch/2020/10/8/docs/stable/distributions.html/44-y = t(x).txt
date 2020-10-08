@@ -1,0 +1,2 @@
+y = t(x)
+t.log_abs_det_jacobian(x, y).backward()  # x will receive gradients.

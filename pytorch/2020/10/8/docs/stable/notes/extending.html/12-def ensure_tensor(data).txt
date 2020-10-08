@@ -1,0 +1,14 @@
+def ensure_tensor(data):
+    if isinstance(data, ScalarTensor):
+        return data.tensor()
+    return torch.as_tensor(data)
+
+@implements(torch.add)
+def add(input, other):
+   try:
+       if input._N == other._N:
+           return ScalarTensor(input._N, input._value + other._value)
+       else:
+           raise ValueError("Shape mismatch!")
+   except AttributeError:
+       return torch.add(ensure_tensor(input), ensure_tensor(other))

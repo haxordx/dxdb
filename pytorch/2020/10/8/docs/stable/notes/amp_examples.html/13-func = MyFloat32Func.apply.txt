@@ -1,0 +1,5 @@
+func = MyFloat32Func.apply
+
+with autocast():
+    # func will run in float32, regardless of the surrounding autocast state
+    output = func(input)

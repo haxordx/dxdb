@@ -1,0 +1,3 @@
+def entrypoint_name(*args, **kwargs):
+    # args & kwargs are optional, for models which take positional/keyword arguments.
+    ...

@@ -1,0 +1,6 @@
+# tensor: Tensor[   N, None]
+# other:  Tensor[None,    C]
+>>> tensor = torch.randn(3, 3, names=('N', None))
+>>> other = torch.randn(3, 3, names=(None, 'C'))
+>>> (tensor + other).names
+('N', 'C')

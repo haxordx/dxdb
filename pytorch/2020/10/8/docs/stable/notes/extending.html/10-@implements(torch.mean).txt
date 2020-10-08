@@ -1,0 +1,3 @@
+@implements(torch.mean)
+def mean(input):
+    return float(input._value) / input._N

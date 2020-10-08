@@ -1,0 +1,4 @@
+>>> def run(rref, func_name, args, kwargs):
+>>>   return getattr(rref.local_value(), func_name)(*args, **kwargs)
+>>>
+>>> rpc.rpc_sync(rref.owner(), run, args=(rref, func_name, args, kwargs))

@@ -1,0 +1,2 @@
+X ~ Cauchy(0, scale)
+Y = |X| ~ HalfCauchy(scale)

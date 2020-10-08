@@ -1,0 +1,4 @@
+>>> hvp(pow_reducer, inputs, v, create_graph=True)
+(tensor(0.1448, grad_fn=<SumBackward0>),
+ tensor([[2.0239, 1.6456],
+         [2.4988, 1.4310]], grad_fn=<MulBackward0>))

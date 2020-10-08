@@ -1,0 +1,17 @@
+from typing import Dict
+
+class MyModule(torch.nn.Module):
+    my_dict: Dict[str, int]
+
+    def __init__(self):
+        super(MyModule, self).__init__()
+        # This type cannot be inferred and must be specified
+        self.my_dict = {}
+
+        # The attribute type here is inferred to be `int`
+        self.my_int = 20
+
+    def forward(self):
+        pass
+
+m = torch.jit.script(MyModule())

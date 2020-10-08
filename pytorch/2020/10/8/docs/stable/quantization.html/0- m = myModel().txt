@@ -1,0 +1,11 @@
+>>> m = myModel()
+>>> # m is a module containing  the sub-modules below
+>>> modules_to_fuse = [ ['conv1', 'bn1', 'relu1'], ['submodule.conv', 'submodule.relu']]
+>>> fused_m = torch.quantization.fuse_modules(m, modules_to_fuse)
+>>> output = fused_m(input)
+
+>>> m = myModel()
+>>> # Alternately provide a single list of modules to fuse
+>>> modules_to_fuse = ['conv1', 'bn1', 'relu1']
+>>> fused_m = torch.quantization.fuse_modules(m, modules_to_fuse)
+>>> output = fused_m(input)

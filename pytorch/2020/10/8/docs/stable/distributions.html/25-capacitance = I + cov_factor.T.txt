@@ -1,0 +1,1 @@
+capacitance = I + cov_factor.T @ inv(cov_diag) @ cov_factor

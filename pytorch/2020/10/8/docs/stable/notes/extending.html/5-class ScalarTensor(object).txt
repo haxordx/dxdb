@@ -1,0 +1,10 @@
+class ScalarTensor(object):
+   def __init__(self, N, value):
+       self._N = N
+       self._value = value
+
+   def __repr__(self):
+       return "DiagonalTensor(N={}, value={})".format(self._N, self._value)
+
+   def tensor(self):
+       return self._value * torch.eye(self._N)

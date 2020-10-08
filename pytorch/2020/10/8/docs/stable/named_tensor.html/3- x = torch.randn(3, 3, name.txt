@@ -1,0 +1,3 @@
+>>> x = torch.randn(3, 3, names=('N', 'C'))
+>>> x.abs().names
+('N', 'C')

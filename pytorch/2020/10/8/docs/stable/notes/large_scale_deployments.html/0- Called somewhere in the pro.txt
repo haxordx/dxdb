@@ -1,0 +1,22 @@
+// Called somewhere in the program beginning
+void init() {
+    // Sample one in a hundred operator runs randomly
+    addGlobalCallback(
+      RecordFunctionCallback(
+        &onFunctionEnter,
+        &onFunctionExit)
+      .needsInputs(true)
+      .samplingProb(0.01)
+    );
+    // Note, to enable observers in the model calling thread,
+    // call enableRecordFunction() in the thread before running a model
+}
+
+void onFunctionEnter(const RecordFunction& fn) {
+    std::cerr << "Before function " << fn.name()
+              << " with " << fn.inputs().size() << " inputs" << std::endl;
+}
+
+void onFunctionExit(const RecordFunction& fn) {
+    std::cerr << "After function " << fn.name();
+}

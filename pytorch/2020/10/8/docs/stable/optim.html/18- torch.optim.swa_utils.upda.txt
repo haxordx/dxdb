@@ -1,0 +1,1 @@
+>>> torch.optim.swa_utils.update_bn(loader, swa_model)

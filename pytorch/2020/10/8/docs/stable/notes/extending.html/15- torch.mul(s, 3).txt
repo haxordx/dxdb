@@ -1,0 +1,3 @@
+>>> torch.mul(s, 3)
+TypeError: no implementation found for 'torch.mul' on types that
+implement __torch_function__: [ScalarTensor]

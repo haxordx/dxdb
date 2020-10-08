@@ -1,0 +1,10 @@
+graph(%input_data : Long(2, 3),
+      %loop_range : Long()):
+  %2 : Long() = onnx::Constant[value={1}](), scope: LoopModel2/loop
+  %3 : Tensor = onnx::Cast[to=9](%2)
+  %4 : Long(2, 3) = onnx::Loop(%loop_range, %3, %input_data), scope: LoopModel2/loop # custom_loop.py:240:5
+    block0(%i.1 : Long(), %cond : bool, %x.6 : Long(2, 3)):
+      %8 : Long(2, 3) = onnx::Add(%x.6, %i.1), scope: LoopModel2/loop # custom_loop.py:241:13
+      %9 : Tensor = onnx::Cast[to=9](%2)
+      -> (%9, %8)
+  return (%4)

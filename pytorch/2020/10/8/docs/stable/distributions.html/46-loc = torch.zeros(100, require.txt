@@ -1,0 +1,4 @@
+loc = torch.zeros(100, requires_grad=True)
+unconstrained = torch.zeros(100, requires_grad=True)
+scale = transform_to(Normal.arg_constraints['scale'])(unconstrained)
+loss = -Normal(loc, scale).log_prob(data).sum()

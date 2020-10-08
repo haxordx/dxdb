@@ -1,0 +1,4 @@
+@transform_to.register(MyConstraintClass)
+def my_factory(constraint):
+    assert isinstance(constraint, MyConstraintClass)
+    return MyTransform(constraint.param1, constraint.param2)

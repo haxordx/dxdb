@@ -1,0 +1,1 @@
+conda install -c defaults intel-openmp -f

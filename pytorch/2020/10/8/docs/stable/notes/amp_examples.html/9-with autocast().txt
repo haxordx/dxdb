@@ -1,0 +1,4 @@
+with autocast():
+    ...
+    with autocast(enabled=False):
+        output = imported_function(input1.float(), input2.float())

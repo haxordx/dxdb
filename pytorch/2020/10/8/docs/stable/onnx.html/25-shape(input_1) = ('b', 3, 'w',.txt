@@ -1,0 +1,3 @@
+shape(input_1) = ('b', 3, 'w', 'h')
+and shape(input_2) = ('b', 4)
+and shape(output)  = ('b', 'd', 5)
