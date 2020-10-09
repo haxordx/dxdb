@@ -1,0 +1,7 @@
+probs = policy_network(state)
+# Note that this is equivalent to what used to be called multinomial
+m = Categorical(probs)
+action = m.sample()
+next_state, reward = env.step(action)
+loss = -m.log_prob(action) * reward
+loss.backward()

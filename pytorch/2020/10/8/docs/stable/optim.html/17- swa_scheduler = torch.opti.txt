@@ -1,0 +1,2 @@
+>>> swa_scheduler = torch.optim.swa_utils.SWALR(optimizer, \
+>>>         anneal_strategy="linear", anneal_epochs=5, swa_lr=0.05)

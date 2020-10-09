@@ -1,0 +1,8 @@
+total_loss = 0
+for i in range(10000):
+    optimizer.zero_grad()
+    output = model(input)
+    loss = criterion(output)
+    loss.backward()
+    optimizer.step()
+    total_loss += loss

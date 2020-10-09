@@ -1,0 +1,3 @@
+Couldn’t open shared file mapping: <torch_14808_1591070686>, error code: <1455> at torch\lib\TH\THAllocator.c:154
+
+[windows] driver shut down

@@ -1,0 +1,4 @@
+>>> tensor = torch.tensor((), dtype=torch.int32)
+>>> tensor.new_ones((2, 3))
+tensor([[ 1,  1,  1],
+        [ 1,  1,  1]], dtype=torch.int32)

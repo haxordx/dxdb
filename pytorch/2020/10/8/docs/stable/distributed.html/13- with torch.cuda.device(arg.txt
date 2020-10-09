@@ -1,0 +1,2 @@
+>>> with torch.cuda.device(arg.local_rank):
+>>>    # your code to run

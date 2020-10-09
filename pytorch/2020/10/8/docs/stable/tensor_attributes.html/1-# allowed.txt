@@ -1,0 +1,15 @@
+# allowed:
+>>> float_tensor *= double_tensor
+>>> float_tensor *= int_tensor
+>>> float_tensor *= uint_tensor
+>>> float_tensor *= bool_tensor
+>>> float_tensor *= double_tensor
+>>> int_tensor *= long_tensor
+>>> int_tensor *= uint_tensor
+>>> uint_tensor *= int_tensor
+
+# disallowed (RuntimeError: result type can't be cast to the desired output type):
+>>> int_tensor *= float_tensor
+>>> bool_tensor *= int_tensor
+>>> bool_tensor *= uint_tensor
+>>> float_tensor *= complex_float_tensor

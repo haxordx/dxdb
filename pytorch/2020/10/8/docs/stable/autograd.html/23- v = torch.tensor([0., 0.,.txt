@@ -1,0 +1,11 @@
+>>> v = torch.tensor([0., 0., 0.], requires_grad=True)
+>>> h = v.register_hook(lambda grad: grad * 2)  # double the gradient
+>>> v.backward(torch.tensor([1., 2., 3.]))
+>>> v.grad
+
+ 2
+ 4
+ 6
+[torch.FloatTensor of size (3,)]
+
+>>> h.remove()  # removes the hook

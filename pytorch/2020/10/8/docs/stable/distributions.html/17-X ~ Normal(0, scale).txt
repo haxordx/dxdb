@@ -1,0 +1,2 @@
+X ~ Normal(0, scale)
+Y = |X| ~ HalfNormal(scale)

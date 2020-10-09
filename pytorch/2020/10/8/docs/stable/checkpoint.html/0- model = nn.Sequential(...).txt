@@ -1,0 +1,2 @@
+>>> model = nn.Sequential(...)
+>>> input_var = checkpoint_sequential(model, chunks, input_var)

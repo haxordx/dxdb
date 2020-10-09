@@ -1,0 +1,5 @@
+>>> a = torch.rand(1, 2).bool()
+>>> a
+tensor([[False, True]], dtype=torch.bool)
+>>> a.all()
+tensor(False, dtype=torch.bool)

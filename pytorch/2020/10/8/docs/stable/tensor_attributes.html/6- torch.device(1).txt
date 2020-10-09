@@ -1,0 +1,2 @@
+>>> torch.device(1)
+device(type='cuda', index=1)

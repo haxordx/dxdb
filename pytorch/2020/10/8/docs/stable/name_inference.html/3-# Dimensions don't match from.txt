@@ -1,0 +1,19 @@
+# Dimensions don't match from the right:
+# tensor: Tensor[N, C]
+# other:  Tensor[   N]
+>>> tensor = torch.randn(3, 3, names=('N', 'C'))
+>>> other = torch.randn(3, names=('N',))
+>>> (tensor + other).names
+RuntimeError: Error when attempting to broadcast dims ['N', 'C'] and dims
+['N']: dim 'C' and dim 'N' are at the same position from the right but do
+not match.
+
+# Dimensions aren't aligned when matching tensor.names[-1] and other.names[-1]:
+# tensor: Tensor[N, None]
+# other:  Tensor[      N]
+>>> tensor = torch.randn(3, 3, names=('N', None))
+>>> other = torch.randn(3, names=('N',))
+>>> (tensor + other).names
+RuntimeError: Misaligned dims when attempting to broadcast dims ['N'] and
+dims ['N', None]: dim 'N' appears in a different position from the right
+across both lists.

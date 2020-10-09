@@ -1,0 +1,28 @@
+>>> input
+tensor([0, 1, 2, 3, 4, 5])                                       # Rank 0
+tensor([10, 11, 12, 13, 14, 15, 16, 17, 18])                     # Rank 1
+tensor([20, 21, 22, 23, 24])                                     # Rank 2
+tensor([30, 31, 32, 33, 34, 35, 36])                             # Rank 3
+>>> input_splits
+[2, 2, 1, 1]                                                     # Rank 0
+[3, 2, 2, 2]                                                     # Rank 1
+[2, 1, 1, 1]                                                     # Rank 2
+[2, 2, 2, 1]                                                     # Rank 3
+>>> output_splits
+[2, 3, 2, 2]                                                     # Rank 0
+[2, 2, 1, 2]                                                     # Rank 1
+[1, 2, 1, 2]                                                     # Rank 2
+[1, 2, 1, 1]                                                     # Rank 3
+>>> input = list(input.split(input_splits))
+>>> input
+[tensor([0, 1]), tensor([2, 3]), tensor([4]), tensor([5])]                   # Rank 0
+[tensor([10, 11, 12]), tensor([13, 14]), tensor([15, 16]), tensor([17, 18])] # Rank 1
+[tensor([20, 21]), tensor([22]), tensor([23]), tensor([24])]                 # Rank 2
+[tensor([30, 31]), tensor([32, 33]), tensor([34, 35]), tensor([36])]         # Rank 3
+>>> output = ...
+>>> dist.all_to_all(output, input)
+>>> output
+[tensor([0, 1]), tensor([10, 11, 12]), tensor([20, 21]), tensor([30, 31])]   # Rank 0
+[tensor([2, 3]), tensor([13, 14]), tensor([22]), tensor([32, 33])]           # Rank 1
+[tensor([4]), tensor([15, 16]), tensor([23]), tensor([34, 35])]              # Rank 2
+[tensor([5]), tensor([17, 18]), tensor([24]), tensor([36])]                  # Rank 3

@@ -1,0 +1,4 @@
+dist = Exponential(rate)
+unconstrained = torch.zeros(100, requires_grad=True)
+sample = biject_to(dist.support)(unconstrained)
+potential_energy = -dist.log_prob(sample).sum()

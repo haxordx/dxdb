@@ -1,0 +1,5 @@
+import torch.distributed as dist
+
+# Use address of one of the machines
+dist.init_process_group(backend, init_method='tcp://10.1.1.20:23456',
+                        rank=args.rank, world_size=4)

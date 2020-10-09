@@ -1,0 +1,6 @@
+>>> import inspect
+>>> from torch._overrides import get_testing_overrides
+>>> override_dict = get_testing_overrides()
+>>> dummy_add = override_dict[torch.add]
+>>> inspect.signature(dummy_add)
+<Signature (input, other, out=None)>

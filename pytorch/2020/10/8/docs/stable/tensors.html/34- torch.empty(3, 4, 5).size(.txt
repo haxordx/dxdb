@@ -1,0 +1,2 @@
+>>> torch.empty(3, 4, 5).size()
+torch.Size([3, 4, 5])

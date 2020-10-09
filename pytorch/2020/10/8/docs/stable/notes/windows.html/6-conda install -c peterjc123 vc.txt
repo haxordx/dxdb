@@ -1,0 +1,2 @@
+conda install -c peterjc123 vc vs2017_runtime
+conda install mkl_fft intel_openmp numpy mkl

@@ -1,0 +1,5 @@
+>>> torch.sparse.FloatTensor(2, 3)
+SparseFloatTensor of size 2x3 with indices:
+[torch.LongTensor with no dimension]
+and values:
+[torch.FloatTensor with no dimension]

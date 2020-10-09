@@ -1,0 +1,5 @@
+>>> x = torch.tensor([1, 2, 3, 4, 5])
+>>> x.storage_offset()
+0
+>>> x[3:].storage_offset()
+3

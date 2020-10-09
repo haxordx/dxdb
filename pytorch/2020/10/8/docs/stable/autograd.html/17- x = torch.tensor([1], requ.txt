@@ -1,0 +1,11 @@
+>>> x = torch.tensor([1], requires_grad=True)
+>>> with torch.no_grad():
+...   y = x * 2
+>>> y.requires_grad
+False
+>>> @torch.no_grad()
+... def doubler(x):
+...     return x * 2
+>>> z = doubler(x)
+>>> z.requires_grad
+False

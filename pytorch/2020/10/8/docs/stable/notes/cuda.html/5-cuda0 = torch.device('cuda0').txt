@@ -1,0 +1,3 @@
+cuda0 = torch.device('cuda:0')  # CUDA GPU 0
+for i, x in enumerate(train_loader):
+    x = x.to(cuda0)

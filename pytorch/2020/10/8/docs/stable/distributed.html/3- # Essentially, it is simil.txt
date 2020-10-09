@@ -1,0 +1,5 @@
+>>> # Essentially, it is similar to following operation:
+>>> scatter_list = input
+>>> gather_list  = output
+>>> for i in range(world_size):
+>>>   dist.scatter(gather_list[i], scatter_list if i == rank else [], src = i)

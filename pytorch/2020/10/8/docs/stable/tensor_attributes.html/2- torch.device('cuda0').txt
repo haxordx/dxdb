@@ -1,0 +1,8 @@
+>>> torch.device('cuda:0')
+device(type='cuda', index=0)
+
+>>> torch.device('cpu')
+device(type='cpu')
+
+>>> torch.device('cuda')  # current cuda device
+device(type='cuda')

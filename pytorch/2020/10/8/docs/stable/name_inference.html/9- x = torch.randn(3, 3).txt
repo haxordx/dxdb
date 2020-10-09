@@ -1,0 +1,8 @@
+>>> x = torch.randn(3, 3)
+>>> y = torch.randn(3, 3, names=('N', 'C'))
+>>> x.names
+(None, None)
+
+>>> x += y
+>>> x.names
+('N', 'C')

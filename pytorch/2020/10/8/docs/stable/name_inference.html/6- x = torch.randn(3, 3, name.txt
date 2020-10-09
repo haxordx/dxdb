@@ -1,0 +1,4 @@
+>>> x = torch.randn(3, 3, names=('N', 'D'))
+>>> y = torch.randn(3, names=('something',))
+>>> x.mv(y).names
+('N',)

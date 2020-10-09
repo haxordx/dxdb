@@ -1,0 +1,5 @@
+>>> tensor = torch.ones((2,), dtype=torch.int8)
+>>> data = [[0, 1], [2, 3]]
+>>> tensor.new_tensor(data)
+tensor([[ 0,  1],
+        [ 2,  3]], dtype=torch.int8)

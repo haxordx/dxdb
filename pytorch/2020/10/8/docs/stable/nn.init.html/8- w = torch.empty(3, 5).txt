@@ -1,0 +1,2 @@
+>>> w = torch.empty(3, 5)
+>>> nn.init.xavier_uniform_(w, gain=nn.init.calculate_gain('relu'))

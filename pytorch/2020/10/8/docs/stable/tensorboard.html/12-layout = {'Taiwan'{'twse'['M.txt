@@ -1,0 +1,5 @@
+layout = {'Taiwan':{'twse':['Multiline',['twse/0050', 'twse/2330']]},
+             'USA':{ 'dow':['Margin',   ['dow/aaa', 'dow/bbb', 'dow/ccc']],
+                  'nasdaq':['Margin',   ['nasdaq/aaa', 'nasdaq/bbb', 'nasdaq/ccc']]}}
+
+writer.add_custom_scalars(layout)

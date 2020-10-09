@@ -1,0 +1,2 @@
+for index in sampler:
+    yield collate_fn(dataset[index])

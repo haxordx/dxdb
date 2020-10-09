@@ -1,0 +1,10 @@
+class MyModule(torch.jit.ScriptModule):
+    __constants__ = ['my_constant']
+
+    def __init__(self):
+        super(MyModule, self).__init__()
+        self.my_constant = 2
+
+    def forward(self):
+        pass
+m = MyModule()

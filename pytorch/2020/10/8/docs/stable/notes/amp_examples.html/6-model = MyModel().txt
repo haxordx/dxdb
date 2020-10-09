@@ -1,0 +1,9 @@
+model = MyModel()
+dp_model = nn.DataParallel(model)
+
+# Sets autocast in the main thread
+with autocast():
+    # dp_model's internal threads won't autocast.  The main thread's autocast state has no effect.
+    output = dp_model(input)
+    # loss_fn still autocasts, but it's too late...
+    loss = loss_fn(output)

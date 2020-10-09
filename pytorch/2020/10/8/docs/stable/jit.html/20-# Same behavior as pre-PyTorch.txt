@@ -1,0 +1,23 @@
+# Same behavior as pre-PyTorch 1.2
+@torch.jit.script
+def some_fn():
+    return 2
+
+# Marks a function as ignored, if nothing
+# ever calls it then this has no effect
+@torch.jit.ignore
+def some_fn2():
+    return 2
+
+# As with ignore, if nothing calls it then it has no effect.
+# If it is called in script it is replaced with an exception.
+@torch.jit.unused
+def some_fn3():
+  import pdb; pdb.set_trace()
+  return 4
+
+# Doesn't do anything, this function is already
+# the main entry point
+@torch.jit.export
+def some_fn4():
+    return 2

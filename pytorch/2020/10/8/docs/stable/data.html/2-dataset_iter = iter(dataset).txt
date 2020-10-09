@@ -1,0 +1,3 @@
+dataset_iter = iter(dataset)
+for indices in batch_sampler:
+    yield collate_fn([next(dataset_iter) for _ in indices])

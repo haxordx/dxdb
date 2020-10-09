@@ -1,0 +1,23 @@
+>>> from torch.distributed import rpc
+>>>
+>>> # omitting setup and shutdown RPC
+>>>
+>>> # On all workers
+>>> @torch.jit.script
+>>> def script_add(x, y):
+>>>     # type: (Tensor, Tensor) -> Tensor
+>>>     return x + y
+>>>
+>>> @rpc.functions.async_execution
+>>> @torch.jit.script
+>>> def async_add(to, x, y):
+>>>     # type: (str, Tensor, Tensor) -> Future[Tensor]
+>>>     return rpc.rpc_async(to, script_add, (x, y))
+>>>
+>>> # On worker0
+>>> ret = rpc.rpc_sync(
+>>>     "worker1",
+>>>     async_add,
+>>>     args=("worker2", torch.ones(2), 1)
+>>> )
+>>> print(ret)  # prints tensor([2., 2.])

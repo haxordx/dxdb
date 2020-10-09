@@ -1,0 +1,10 @@
+def foo(len: int) -> Tensor:
+    rv = torch.zeros([3, 4], dtype=None, layout=None, device=None, pin_memory=None)
+    rv0 = rv
+    for i in range(len):
+        if torch.lt(i, 10):
+            rv1 = torch.sub(rv0, 1., 1)
+        else:
+            rv1 = torch.add(rv0, 1., 1)
+        rv0 = rv1
+    return rv0

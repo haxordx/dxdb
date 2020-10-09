@@ -1,0 +1,7 @@
+>>> sampler = DistributedSampler(dataset) if is_distributed else None
+>>> loader = DataLoader(dataset, shuffle=(sampler is None),
+...                     sampler=sampler)
+>>> for epoch in range(start_epoch, n_epochs):
+...     if is_distributed:
+...         sampler.set_epoch(epoch)
+...     train(loader)

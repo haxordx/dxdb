@@ -1,0 +1,3 @@
+>>> torch.randn((2,3), device=torch.device('cuda:1'))
+>>> torch.randn((2,3), device='cuda:1')
+>>> torch.randn((2,3), device=1)  # legacy

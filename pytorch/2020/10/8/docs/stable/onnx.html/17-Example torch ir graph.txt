@@ -1,0 +1,15 @@
+Example torch ir graph:
+
+  graph(%0 : Float):
+    %3 : int = prim::Constant[value=0]()
+    %4 : Float = aten::triu(%0, %3) # unsupported op
+    %5 : Float = aten::mul(%4, %0) # registered op
+    return (%5)
+
+is exported as:
+
+  graph(%0 : Float):
+    %1 : Long() = onnx::Constant[value={0}]()
+    %2 : Float = aten::ATen[operator="triu"](%0, %1) # unsupported op
+    %3 : Float = onnx::Mul(%2, %0) # registered op
+    return (%3)

@@ -1,0 +1,8 @@
+>>> # Assuming optimizer has two groups.
+>>> lambda1 = lambda epoch: epoch // 30
+>>> lambda2 = lambda epoch: 0.95 ** epoch
+>>> scheduler = LambdaLR(optimizer, lr_lambda=[lambda1, lambda2])
+>>> for epoch in range(100):
+>>>     train(...)
+>>>     validate(...)
+>>>     scheduler.step()

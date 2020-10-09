@@ -1,0 +1,12 @@
+>>> vhp(pow_reducer, inputs, v, create_graph=True)
+(tensor(0.5591, grad_fn=<SumBackward0>),
+ tensor([[1.0689, 1.2431],
+         [3.0989, 4.4456]], grad_fn=<MulBackward0>))
+>>> def pow_adder_reducer(x, y):
+...   return (2 * x.pow(2) + 3 * y.pow(2)).sum()
+>>> inputs = (torch.rand(2), torch.rand(2))
+>>> v = (torch.zeros(2), torch.ones(2))
+>>> vhp(pow_adder_reducer, inputs, v)
+(tensor(4.8053),
+ (tensor([0., 0.]),
+  tensor([6., 6.])))

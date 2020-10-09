@@ -1,0 +1,4 @@
+mymm = MyMM.apply
+
+with autocast():
+    output = mymm(input1, input2)

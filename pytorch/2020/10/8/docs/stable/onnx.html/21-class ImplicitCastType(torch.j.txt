@@ -1,0 +1,14 @@
+class ImplicitCastType(torch.jit.ScriptModule):
+    @torch.jit.script_method
+    def forward(self, x):
+        # Exporter knows x is float32, will export '2' as float32 as well.
+        y = x + 2
+        # Without type propagation, exporter doesn't know the datatype of y.
+        # Thus '3' is exported as int64 by default.
+        return y + 3
+        # The following will export correctly.
+        # return y + torch.tensor([3], dtype=torch.float32)
+
+x = torch.tensor([1.0], dtype=torch.float32)
+torch.onnx.export(ImplicitCastType(), x, 'models/implicit_cast.onnx',
+                  example_outputs=ImplicitCastType()(x))

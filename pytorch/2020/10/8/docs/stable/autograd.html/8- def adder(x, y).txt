@@ -1,0 +1,7 @@
+>>> def adder(x, y):
+...   return 2 * x + 3 * y
+>>> inputs = (torch.rand(2), torch.rand(2))
+>>> v = torch.ones(2)
+>>> vjp(adder, inputs, v)
+(tensor([2.4225, 2.3340]),
+ (tensor([2., 2.]), tensor([3., 3.])))

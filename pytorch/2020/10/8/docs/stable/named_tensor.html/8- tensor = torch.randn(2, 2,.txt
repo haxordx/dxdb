@@ -1,0 +1,7 @@
+>>> tensor = torch.randn(2, 2, 2, 2, 2, 2)
+>>> named_tensor = tensor.refine_names('A', 'B', 'C', 'D', 'E', 'F')
+
+# Move the F (dim 5) and E dimension (dim 4) to the front while keeping
+# the rest in the same order
+>>> tensor.permute(5, 4, 0, 1, 2, 3)
+>>> named_tensor.align_to('F', 'E', ...)

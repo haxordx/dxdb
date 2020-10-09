@@ -1,0 +1,4 @@
+>>> f_add = FloatFunctional()
+>>> a = torch.tensor(3.0)
+>>> b = torch.tensor(4.0)
+>>> f_add.add(a, b)  # Equivalent to ``torch.add(a, b)``

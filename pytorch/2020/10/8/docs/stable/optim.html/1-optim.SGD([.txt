@@ -1,0 +1,4 @@
+optim.SGD([
+                {'params': model.base.parameters()},
+                {'params': model.classifier.parameters(), 'lr': 1e-3}
+            ], lr=1e-2, momentum=0.9)

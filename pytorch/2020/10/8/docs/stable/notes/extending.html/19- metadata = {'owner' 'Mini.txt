@@ -1,0 +1,17 @@
+>>> metadata = {'owner': 'Ministry of Silly Walks'}
+>>> m = MetadataTensor([[1, 2], [3, 4]], metadata=metadata)
+>>> t = torch.tensor([[1, 2], [1, 2]]])
+>>> torch.add(t, m)
+Metadata:
+{'owner': 'Ministry of Silly Walks'}
+
+data:
+tensor([[2, 4],
+        [4, 6]])
+>>> torch.mul(t, m)
+Metadata:
+{'owner': 'Ministry of Silly Walks'}
+
+data:
+tensor([[1, 4],
+        [3, 8]])

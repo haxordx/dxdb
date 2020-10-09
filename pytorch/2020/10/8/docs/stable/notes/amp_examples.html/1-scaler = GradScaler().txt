@@ -1,0 +1,22 @@
+scaler = GradScaler()
+
+for epoch in epochs:
+    for input, target in data:
+        optimizer.zero_grad()
+        with autocast():
+            output = model(input)
+            loss = loss_fn(output, target)
+        scaler.scale(loss).backward()
+
+        # Unscales the gradients of optimizer's assigned params in-place
+        scaler.unscale_(optimizer)
+
+        # Since the gradients of optimizer's assigned params are unscaled, clips as usual:
+        torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm)
+
+        # optimizer's gradients are already unscaled, so scaler.step does not unscale them,
+        # although it still skips optimizer.step() if the gradients contain infs or NaNs.
+        scaler.step(optimizer)
+
+        # Updates the scale for next iteration.
+        scaler.update()

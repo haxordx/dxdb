@@ -1,0 +1,8 @@
+>>> def exp_adder(x, y):
+...   return 2 * x.exp() + 3 * y
+>>> inputs = (torch.rand(2), torch.rand(2))
+>>> jacobian(exp_adder, inputs)
+(tensor([[2.8052, 0.0000],
+        [0.0000, 3.3963]]),
+ tensor([[3., 0.],
+         [0., 3.]]))

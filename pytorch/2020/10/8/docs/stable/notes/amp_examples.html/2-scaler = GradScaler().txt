@@ -1,0 +1,18 @@
+scaler = GradScaler()
+
+for epoch in epochs:
+    for i, (input, target) in enumerate(data):
+        with autocast():
+            output = model(input)
+            loss = loss_fn(output, target)
+            loss = loss / iters_to_accumulate
+
+        # Accumulates scaled gradients.
+        scaler.scale(loss).backward()
+
+        if (i + 1) % iters_to_accumulate == 0:
+            # may unscale_ here if desired (e.g., to allow clipping unscaled gradients)
+
+            scaler.step(optimizer)
+            scaler.update()
+            optimizer.zero_grad()

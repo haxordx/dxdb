@@ -1,0 +1,10 @@
+>>> a = torch.randn(4, 2) < 0
+>>> a
+tensor([[ True,  True],
+        [False,  True],
+        [ True,  True],
+        [False, False]])
+>>> a.any(1)
+tensor([ True,  True,  True, False])
+>>> a.any(0)
+tensor([True, True])

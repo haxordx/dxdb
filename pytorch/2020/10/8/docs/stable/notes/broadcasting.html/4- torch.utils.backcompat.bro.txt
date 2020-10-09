@@ -1,0 +1,4 @@
+>>> torch.utils.backcompat.broadcast_warning.enabled=True
+>>> torch.add(torch.ones(4,1), torch.ones(4))
+__main__:1: UserWarning: self and other do not have the same shape, but are broadcastable, and have the same number of elements.
+Changing behavior in a backwards incompatible manner to broadcasting rather than viewing as 1-dimensional.

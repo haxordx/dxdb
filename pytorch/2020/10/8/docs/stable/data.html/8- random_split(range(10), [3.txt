@@ -1,0 +1,1 @@
+>>> random_split(range(10), [3, 7], generator=torch.Generator().manual_seed(42))

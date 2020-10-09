@@ -1,0 +1,3 @@
+SetAPIUsageLogger([](const std::string& event_name) {
+    std::cerr << "API was used: " << event_name << std::endl;
+});

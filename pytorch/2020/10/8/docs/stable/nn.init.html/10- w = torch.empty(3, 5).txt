@@ -1,0 +1,2 @@
+>>> w = torch.empty(3, 5)
+>>> nn.init.kaiming_uniform_(w, mode='fan_in', nonlinearity='relu')

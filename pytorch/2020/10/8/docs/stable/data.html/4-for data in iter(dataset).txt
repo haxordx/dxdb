@@ -1,0 +1,2 @@
+for data in iter(dataset):
+    yield collate_fn(data)

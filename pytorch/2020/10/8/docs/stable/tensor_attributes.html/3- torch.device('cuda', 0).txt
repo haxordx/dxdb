@@ -1,0 +1,5 @@
+>>> torch.device('cuda', 0)
+device(type='cuda', index=0)
+
+>>> torch.device('cpu', 0)
+device(type='cpu', index=0)

@@ -1,0 +1,25 @@
+layer_count = 4
+
+model = nn.LSTM(10, 20, num_layers=layer_count, bidirectional=True)
+model.eval()
+
+with torch.no_grad():
+    input = torch.randn(5, 3, 10)
+    h0 = torch.randn(layer_count * 2, 3, 20)
+    c0 = torch.randn(layer_count * 2, 3, 20)
+    output, (hn, cn) = model(input, (h0, c0))
+
+    # default export
+    torch.onnx.export(model, (input, (h0, c0)), 'lstm.onnx')
+    onnx_model = onnx.load('lstm.onnx')
+    # input shape [5, 3, 10]
+    print(onnx_model.graph.input[0])
+
+    # export with `dynamic_axes`
+    torch.onnx.export(model, (input, (h0, c0)), 'lstm.onnx',
+                    input_names=['input', 'h0', 'c0'],
+                    output_names=['output', 'hn', 'cn'],
+                    dynamic_axes={'input': {0: 'sequence'}, 'output': {0: 'sequence'}})
+    onnx_model = onnx.load('lstm.onnx')
+    # input shape ['sequence', 3, 10]
+    print(onnx_model.graph.input[0])

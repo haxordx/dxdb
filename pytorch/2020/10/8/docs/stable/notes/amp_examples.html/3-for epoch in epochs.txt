@@ -1,0 +1,21 @@
+for epoch in epochs:
+    for input, target in data:
+        optimizer.zero_grad()
+        output = model(input)
+        loss = loss_fn(output, target)
+
+        # Creates gradients
+        grad_params = torch.autograd.grad(loss, model.parameters(), create_graph=True)
+
+        # Computes the penalty term and adds it to the loss
+        grad_norm = 0
+        for grad in grad_params:
+            grad_norm += grad.pow(2).sum()
+        grad_norm = grad_norm.sqrt()
+        loss = loss + grad_norm
+
+        loss.backward()
+
+        # clip gradients here, if desired
+
+        optimizer.step()

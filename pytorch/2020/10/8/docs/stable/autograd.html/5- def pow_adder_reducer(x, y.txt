@@ -1,0 +1,12 @@
+>>> def pow_adder_reducer(x, y):
+...   return (2 * x.pow(2) + 3 * y.pow(2)).sum()
+>>> inputs = (torch.rand(2), torch.rand(2))
+>>> hessian(pow_adder_reducer, inputs)
+((tensor([[4., 0.],
+          [0., 4.]]),
+  tensor([[0., 0.],
+          [0., 0.]])),
+ (tensor([[0., 0.],
+          [0., 0.]]),
+  tensor([[6., 0.],
+          [0., 6.]])))

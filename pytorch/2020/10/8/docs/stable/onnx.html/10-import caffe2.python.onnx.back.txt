@@ -1,0 +1,19 @@
+import caffe2.python.onnx.backend as backend
+import numpy as np
+import onnx
+model = onnx.load('loop.onnx')
+
+rep = backend.prepare(model)
+outputs = rep.run((dummy_input.numpy(), np.array(9).astype(np.int64)))
+print(outputs[0])
+#[[37 37 37]
+# [37 37 37]]
+
+
+import onnxruntime as ort
+ort_sess = ort.InferenceSession('loop.onnx')
+outputs = ort_sess.run(None, {'input_data': dummy_input.numpy(),
+                              'loop_range': np.array(9).astype(np.int64)})
+print(outputs)
+#[array([[37, 37, 37],
+#       [37, 37, 37]], dtype=int64)]

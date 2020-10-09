@@ -1,0 +1,8 @@
+import torch
+
+def main()
+    for i, data in enumerate(dataloader):
+        # do something here
+
+if __name__ == '__main__':
+    main()

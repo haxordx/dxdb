@@ -1,0 +1,11 @@
+class MyMM(torch.autograd.Function):
+    @staticmethod
+    @custom_fwd
+    def forward(ctx, a, b):
+        ctx.save_for_backward(a, b)
+        return a.mm(b)
+    @staticmethod
+    @custom_bwd
+    def backward(ctx, grad):
+        a, b = ctx.saved_tensors
+        return grad.mm(b.t()), a.t().mm(grad)

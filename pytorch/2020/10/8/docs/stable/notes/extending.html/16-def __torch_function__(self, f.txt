@@ -1,0 +1,10 @@
+def __torch_function__(self, func, types, args=(), kwargs=None):
+    if kwargs is None:
+        kwargs = {}
+    if func not in HANDLED_FUNCTIONS or not all(
+            issubclass(t, (torch.Tensor, ScalarTensor))
+            for t in types
+        ):
+        args = [a.tensor() if hasattr(a, 'tensor') else a for a in args]
+        return func(*args, **kwargs)
+    return HANDLED_FUNCTIONS[func](*args, **kwargs)

@@ -1,0 +1,4 @@
+>>> s = ScalarTensor(2, 2)
+>>> torch.mul(s, s)
+tensor([[4., 0.],
+        [0., 4.]])

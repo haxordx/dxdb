@@ -1,0 +1,4 @@
+>>> # On worker 1:
+>>> import torch.distributed.rpc as rpc
+>>> rpc.init_rpc("worker1", rank=1, world_size=2)
+>>> rpc.shutdown()

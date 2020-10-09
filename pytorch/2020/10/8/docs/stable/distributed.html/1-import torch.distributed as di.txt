@@ -1,0 +1,5 @@
+import torch.distributed as dist
+
+# rank should always be specified
+dist.init_process_group(backend, init_method='file:///mnt/nfs/sharedfile',
+                        world_size=4, rank=args.rank)
