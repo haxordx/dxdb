@@ -1,0 +1,1 @@
+pubnub.objects.setUUIDMetadata({    data: {        name: "John Doe",        email: "johndoe@pubnub.com",        custom: {            "nickname": "Mr. Mysterious"        }    }});Copy

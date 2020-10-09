@@ -1,0 +1,1 @@
+@Overridepublic void presence(PubNub pubnub, PNPresenceEventResult presence) {  String action = presence.getEvent();  String channel = presence.getChannel();  String occupantUUID = presence.getUuid();  String eventTimetoken = presence.getTimetoken();  String occupancy = presence.getOccupancy();  Object state = presence.getState();}Copy

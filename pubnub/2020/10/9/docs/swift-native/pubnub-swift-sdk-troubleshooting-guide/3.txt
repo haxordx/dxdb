@@ -1,0 +1,3 @@
+if let url = URL(string: "file:///path/to/pubnub/logs/") {
+  PubNub.log.writers = [FileLogWriter(logDirectory: url)]
+}

@@ -1,0 +1,1 @@
+JsonObject clearData = new JsonObject();clearData.addProperty("test_name", "pregnancy");clearData.addProperty("results", "positive");clearData.addProperty("notes", "You are having twins!");String cipherKey = "pubnubrealtimecommunicationplatf";String secureText = pubnub.encrypt(clearData.toString(), cipherKey);Copy

@@ -1,0 +1,10 @@
+{
+   "type":"error",
+   "platform":"apns",
+   "timestamp":"16008987759817415",
+   "msg":"APNS2 payload error: pn_push must be a list",
+   "channel":"mangai2",
+   "sub_key":"sub-c-4db1663a-b2f4-11e9-ab7b-1ef11a8ab0d1",
+   "devices":""
+}
+Copy

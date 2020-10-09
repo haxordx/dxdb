@@ -1,0 +1,7 @@
+ def _callback(message, channel):
+   print(message)
+ 
+ def _error(message):
+     print(message)
+ 
+ pubnub.here_now(channel="my_channel", callback=_callback, error=_error)

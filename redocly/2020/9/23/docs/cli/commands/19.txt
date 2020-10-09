@@ -1,0 +1,13 @@
+Positionals:
+  entrypoint                                                 [string] [required]
+
+Options:
+  --version                Show version number.                        [boolean]
+  --help                   Show help.                                  [boolean]
+  --port, -p               Preview port.                [number] [default: 8080]
+  --skip-preprocessor      Ignore certain preprocessors.                 [array]
+  --skip-decorator         Ignore certain decorators.                    [array]
+  --use-community-edition  Force using Redoc CE for docs preview.      [boolean]
+  --force, -f              Produce bundle output even when errors occur.
+                                                                       [boolean]
+  --config                 Specify path to the config file.             [string]

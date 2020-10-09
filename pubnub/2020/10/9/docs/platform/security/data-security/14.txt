@@ -1,0 +1,1 @@
+NSString *cipherKey = @"pubnubrealtimecommunicationplatf";NSData *clearData =  @{@"test_name":@"pregnancy",@"results":@"positive",@"notes":@"You are having twins!"}*clearData = [clearData dataUsingEncoding:NSUTF8StringEncoding];NSString *secureText = [PNAES encrypt:clearData withKey:cipherKey];Copy

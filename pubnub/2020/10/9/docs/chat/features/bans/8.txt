@@ -1,0 +1,1 @@
+res, status, err := pn.Grant().    Channels([]string{"ch-1"}). // channels to allow grant on    AuthKeys([]string{"key1"}). // the keys we are provisioning    Write(false). // allow those keys to manage channel groups (false by default)    Execute()fmt.Println(res, status, err)Copy

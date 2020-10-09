@@ -1,0 +1,16 @@
+{
+   "channel":"ch-1",
+   "message":{
+      "event":"set",
+      "type":"channel",
+      "data":{
+         "id":"ch-1",
+         "name":"main channel",
+         "description":"A meeting room for the team",
+         "updated":"2020-02-20T23:11:20.893755"
+      }
+   },
+   "subscription":null,
+   "timetoken":"15119446002445794"
+}
+Copy

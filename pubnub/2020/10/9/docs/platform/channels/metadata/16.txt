@@ -1,0 +1,1 @@
+PNResult<PNRemoveChannelMetadataResult> removeChannelMetadataResponse = await pubnub.RemoveChannelMetadata()    .Channel("my_channel")    .ExecuteAsync();PNRemoveChannelMetadataResult removeChannelMetadataResult = removeChannelMetadataResponse.Result;PNStatus status = removeChannelMetadataResponse.Status;Copy

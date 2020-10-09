@@ -1,0 +1,1 @@
+$ blockstack-cli names ID-1FpBChfzHG3TdQQRKWAipbLragCUArueG9$ blockstack-cli names ID-1FpBChfzHG3TdQQRKWAipbLragCUArueG9

@@ -1,0 +1,1 @@
+[self.pubnub subscribeToChannelGroups:@["cg_user123"] withPresence:true];Copy

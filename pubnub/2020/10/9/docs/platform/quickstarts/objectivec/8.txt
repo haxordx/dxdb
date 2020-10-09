@@ -1,0 +1,8 @@
+- (void)client:(PubNub *)pubnub didReceiveMessage:(PNMessageResult *)event {
+  NSString *text = [NSString stringWithFormat:@"entry: %@, update: %@",
+                    event.data.message[@"entry"],
+                    event.data.message[@"update"]];
+
+  [self displayMessage:text asType:@"[MESSAGE: received]"];
+}
+Copy

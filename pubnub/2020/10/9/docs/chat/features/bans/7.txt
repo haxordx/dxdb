@@ -1,0 +1,1 @@
+pubnub.Grant()    .Channels(new string[]{        "ch-1"    })    .AuthKeys(new string[] {        "key1"    })    .Write(false) // allow those keys to write (false by default)    .Execute(new PNAccessManagerGrantResultExt(        (result, status) => {            // PNAccessManagerGrantResult is a parsed and abstracted response from server        }    ));Copy

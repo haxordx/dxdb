@@ -1,0 +1,1 @@
+pubnub.subscribe(to: ["ch-1"], withPresence: true) { result in  switch result {  case let .success(response):    print("Successful Response: \(response)")  case let .failure(error):    print("Failed Response: \(error.localizedDescription)")  }}Copy

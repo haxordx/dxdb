@@ -1,0 +1,9 @@
+listener.didReceiveStatus = { [weak self] event in
+  switch event {
+  case .success(let connection):
+    self?.display(Message(messageType: "[STATUS: connection]", messageText: "state: \(connection)"))
+  case .failure(let error):
+    print("Status Error: \(error.localizedDescription)")
+  }
+}
+Copy

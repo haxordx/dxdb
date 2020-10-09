@@ -1,0 +1,13 @@
+$ export BACKUP_PHRASE="one race buffalo dynamic icon drip width lake extra forest fee kit"
+$ blockstack-cli get_app_keys "$BACKUP_PHRASE" example.id.blockstack https://my.cool.dapp
+{
+  "keyInfo": {
+    "privateKey": "TODO",
+    "address": "TODO"
+  },
+  "legacyKeyInfo": {
+    "privateKey": "90f9ec4e13fb9a00243b4c1510075157229bda73076c7c721208c2edca28ea8b",
+    "address": "1Lr8ggSgdmfcb4764woYutUfFqQMjEoKHc"
+  },
+  "ownerKeyIndex": 0
+}$ export BACKUP_PHRASE="one race buffalo dynamic icon drip width lake extra forest fee kit"$ blockstack-cli get_app_keys "$BACKUP_PHRASE" example.id.blockstack https://my.cool.dapp{  "keyInfo": {    "privateKey": "TODO",    "address": "TODO"  },  "legacyKeyInfo": {    "privateKey": "90f9ec4e13fb9a00243b4c1510075157229bda73076c7c721208c2edca28ea8b",    "address": "1Lr8ggSgdmfcb4764woYutUfFqQMjEoKHc"  },  "ownerKeyIndex": 0}

@@ -1,0 +1,1 @@
+#import <PubNub/PubNub.h>PNConfiguration *pnconfig = [PNConfiguration configurationWithPublishKey:@"myPublishKey"                                             subscribeKey:@"mySubscribeKey"];pnconfig.uuid = "theClientUUID";PubNub *pubnub = [PubNub clientWithConfiguration:pnconfig];Copy

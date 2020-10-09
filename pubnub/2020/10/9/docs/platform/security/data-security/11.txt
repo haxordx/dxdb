@@ -1,0 +1,14 @@
+{
+  "pn_apns": {
+    "aps": {
+      "alert": "Your test results are available.",
+      "sound" : "bingbong.aiff"
+    }
+  },
+  "results": {
+    "test_name": "pregnancy",
+    "results": "positive",
+    "notes": "You are having twins!"
+  }
+}
+Copy

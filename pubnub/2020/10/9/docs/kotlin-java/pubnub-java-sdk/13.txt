@@ -1,0 +1,15 @@
+pubnub.hereNow().apply {
+    channels = listOf("my_channel")
+    includeUUIDs = true
+}.async { result, status ->
+    if (!status.error) {
+        result!!.channels.forEach { (_, v) ->
+            println("Channel name: ${v.channelName}")
+            println("Occupancy: ${v.occupancy}")
+            println("Occupants: ")
+            v.occupants.forEach { o ->
+                println("UUID ${o.uuid}")
+            }
+        }
+    }
+}

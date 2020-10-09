@@ -1,0 +1,18 @@
+export default (request) => {
+    const xhr = require("xhr");
+    const http_options = {
+        "method": "POST",
+        "headers": {
+            'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        "body": "foo=bar&z=x&abc=123"
+    };
+
+    const url = "http://httpbin.org/post";
+    
+    return xhr.fetch(url, http_options).then((x) => {
+        const body = JSON.parse(x.body);
+        console.log(body);
+        return request.ok();
+    });
+};

@@ -1,0 +1,6 @@
+this.$pnGetMessage(
+    'ch1',
+    null,
+    10,
+    'instance2'
+)

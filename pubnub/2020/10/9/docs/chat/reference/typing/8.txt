@@ -1,0 +1,1 @@
+pubnub.SubscribeCallback += SubscribeCallbackHandler;//Handlervoid SubscribeCallbackHandler(object sender, EventArgs e) {    SubscribeEventEventArgs mea = e as SubscribeEventEventArgs;    if (mea.SignalEventResult != null) {        Debug.Log ("SubscribeCallback in SignalEventResult" + mea.SignalEventResult.Channel + mea.SignalEventResult.Payload);    }}Copy

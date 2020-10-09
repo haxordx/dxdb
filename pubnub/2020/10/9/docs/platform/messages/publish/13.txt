@@ -1,0 +1,1 @@
+let gps = ["35.9296","-78.9482"];pubnub.signal(  {    channel: "locations.route1",    message: gps  },  function(status, response) {    console.log(status, response);  });Copy

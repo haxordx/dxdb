@@ -1,0 +1,10 @@
+displayMessage = function(messageType, aMessage) {
+  let pmessage = document.createElement('p');
+  let br = document.createElement('br');
+
+  messagesTop.after(pmessage);
+  pmessage.appendChild(document.createTextNode(messageType));
+  pmessage.appendChild(br);
+  pmessage.appendChild(document.createTextNode(aMessage));
+}
+Copy

@@ -1,0 +1,17 @@
+{
+   "channel":"ch-1",
+   "message":{
+      "event":"set",
+      "type":"uuid",
+      "data":{
+         "id":"uuid-1",
+         "name":"John Doe",
+         "email":"john@email.com",
+         "updated":"2020-06-10T16:22:11.035374Z",
+         "eTag":"AY39mJKK//C0VA"
+      }
+   },
+   "subscription":null,
+   "timetoken":"15119446002445794"
+}
+show all 16 lineshide 1 linesCopy

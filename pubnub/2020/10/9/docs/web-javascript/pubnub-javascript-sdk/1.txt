@@ -1,0 +1,2 @@
+https://cdn.pubnub.com/sdk/javascript/pubnub.4.29.8.js
+https://cdn.pubnub.com/sdk/javascript/pubnub.4.29.8.min.js

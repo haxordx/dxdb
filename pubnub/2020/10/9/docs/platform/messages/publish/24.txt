@@ -1,0 +1,1 @@
+meta = {"uuid": pubnub.get_uuid()}pubnub.publish()\  .channel("chats.room1")\  .meta(meta)\  .message("Hello to everyone (except me)")\  .sync()Copy

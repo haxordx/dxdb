@@ -1,0 +1,1 @@
+pubnub.publish(  {    channel: "chats.room1",    message: "Hello to everyone (except me)",    meta: "uuid": pubnub.getUUID()  },  function(status, response) {console.log(status, response)};);Copy

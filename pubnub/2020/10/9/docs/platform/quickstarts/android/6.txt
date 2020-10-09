@@ -1,0 +1,37 @@
+public class MainActivity extends AppCompatActivity implements View.OnClickListener
+{
+  private EditText entryUpdateText;
+  private TextView messagesText;
+
+  private PubNub pubnub;
+  private String theChannel = "the_guide";
+  private String theEntry = "Earth";
+
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
+
+    PNConfiguration pnConfiguration = new PNConfiguration();
+    // replace the key placeholders with your own PubNub publish and subscribe keys
+    pnConfiguration.setPublishKey("myPublishKey");
+    pnConfiguration.setSubscribeKey("mySubscribeKey");
+    pnConfiguration.setUuid("theClientUUID");
+
+    pubnub = new PubNub(pnConfiguration);
+
+    pubnub.addListener(new SubscribeCallback() {
+      @Override
+      public void message(PubNub pubnub, PNMessageResult event) {
+          JsonObject message = event.getMessage().getAsJsonObject();
+          String entryVal = message.get("entry").getAsString();
+          String updateVal = message.get("update").getAsString();
+
+          displayMessage("[MESSAGE: received]",entryVal + ": " + updateVal);
+      }
+
+  :::tip Replace the key placeholders
+  Remember to replace the "myPublishKey" and "mySubscribeKey" placeholders with your own PubNub publish and subscribe keys.
+  :::
+
+show all 36 lineshide 21 linesCopy

@@ -1,0 +1,1 @@
+pubnub.grant({  channels: ["chats.room1"],  channelGroups: ["cg_user123"]  authKeys: ["myAuthKey"],  read: false, // false to disallow  write: false, // false to disallow}, (status) => {  // handle status});Copy

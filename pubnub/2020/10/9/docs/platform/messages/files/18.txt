@@ -1,0 +1,1 @@
+resListFile, statusListFile, errListFile := pn.ListFiles().  Channel("my_channel").Execute()fmt.Println(resListFile, statusListFile, errListFile)if resListFile != nil {    for _, m := range resListFile.Data {        fmt.Println(m.ID, m.Created, m.Name, m.Size)    }}Copy

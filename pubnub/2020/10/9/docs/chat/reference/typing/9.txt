@@ -1,0 +1,10 @@
+{
+    "actualChannel": null,
+    "channel": "ch-1",
+    "message": "typing_on",
+    "publisher": "user-456",
+    "subscribedChannel": "my_channel_1",
+    "subscription": null,
+    "timetoken": "14966804541029440"
+}
+Copy

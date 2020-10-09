@@ -1,0 +1,6 @@
+def callback(result, status):
+    if status.is_error():
+        print("Error %s" % str(status.error_data.exception))
+        print("Error category #%d" % status.category)
+    else:
+        print(str(result))

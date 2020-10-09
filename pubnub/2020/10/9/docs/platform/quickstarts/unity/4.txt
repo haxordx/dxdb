@@ -1,0 +1,8 @@
+// Use this for initialization
+PNConfiguration pnConfiguration = new PNConfiguration();
+pnConfiguration.PublishKey = "myPublishKey";
+pnConfiguration.SubscribeKey = "mySubscribeKey";
+pnConfiguration.LogVerbosity = PNLogVerbosity.BODY;
+pnConfiguration.UUID = "user-1";
+pubnub = new PubNub(pnConfiguration);
+Copy

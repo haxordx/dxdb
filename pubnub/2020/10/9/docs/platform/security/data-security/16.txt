@@ -1,0 +1,10 @@
+{
+  "pn_apns": {
+    "aps": {
+      "alert": "Your test results are available.",
+      "sound" : "bingbong.aiff"
+    }
+  },
+  "results": "Nio2At2uvQzteLoSqznLkZQ3dlFlMzLGlUwbsMndZ7/7tllq2joJw6WcUv3XpMdEugYRnoEvsrlhEVkSnBibxaxDDWMFEDvKS+VLlA8mfmg="
+}
+Copy

@@ -1,0 +1,2 @@
+  let contentView = ContentView(pubnubStore: PubNubStore())
+Copy

@@ -1,0 +1,1 @@
+res, status, err := pn.Grant()  .Channels([]string{"chats.room1", "chats.room2"})  .Read(true)  .Write(true)  .AuthKeys([]string{"myAuthKey"})  .TTL(1440)  .Execute()fmt.Println(res, status, err)Copy

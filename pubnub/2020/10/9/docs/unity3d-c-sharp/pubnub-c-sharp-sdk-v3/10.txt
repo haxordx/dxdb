@@ -1,0 +1,7 @@
+pubnub.Unsubscribe<string>(
+      "my_channel",
+      DisplayReturnMessage,
+      DisplaySubscribeConnectStatusMessage,
+      DisplaySubscribeDisconnectStatusMessage,
+      DisplayErrorMessage
+);

@@ -1,0 +1,14 @@
+pubnub.Unsubscribe()
+	.ChannelGroups(new List<string>(){
+		"my_channel_group"
+	})
+	.Channels(new List<string>() {
+		"my_channel"
+	})
+	.Async((result, status) => {          
+		if (status.Error) {
+			Debug.Log(string.Format("Unsubscribe Error: {0} {1} {2}", status.StatusCode, status.ErrorData, status.Category));
+		} else {
+			Debug.Log(string.Format("DateTime {0}, In Unsubscribe, result: {1}", DateTime.UtcNow, result.Message));
+		}
+	});

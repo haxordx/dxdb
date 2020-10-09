@@ -1,0 +1,4 @@
+Channel Timeline
+oldest-message --------------- end-timetoken --------------- newest-message
+                               [                    <---------------------]
+Copy

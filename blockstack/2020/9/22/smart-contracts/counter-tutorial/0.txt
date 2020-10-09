@@ -1,0 +1,3 @@
+# create and go to new `counter` project folder
+mkdir counter; cd counter
+npm init clarity-starter# create and go to new `counter` project foldermkdir counter; cd counternpm init clarity-starter

@@ -1,0 +1,5 @@
+export default (request) => {
+    console.log(request) // show what we have inside
+    return request.ok()  // done
+};
+Copy

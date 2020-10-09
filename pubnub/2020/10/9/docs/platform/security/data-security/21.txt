@@ -1,0 +1,1 @@
+ import fs from 'fs'; const myFile = fs.readFileSync('./cat_picture.jpg'); const result = await pubnub.sendFile({   channel: 'my_channel',   message: 'Look at this photo!',   file: { data: myFile, name: 'cat_picture.jpg', mimeType: 'application/json' },   cipherKey: 'my_cipher_key', });Copy

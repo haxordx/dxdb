@@ -1,0 +1,3 @@
+PNConfiguration pnConfiguration = new PNConfiguration();
+
+pnConfiguration.setLogVerbosity(PNLogVerbosity.BODY);

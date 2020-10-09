@@ -1,0 +1,3 @@
+from pubnub import PubNubAsyncio
+
+PubNubAsyncio.SDK_VERSION

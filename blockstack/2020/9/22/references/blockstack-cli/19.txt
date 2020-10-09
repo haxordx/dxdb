@@ -1,0 +1,13 @@
+$ blockstack-cli -t get_account_at SP2NTAQFECYGSTE1W47P71FG21H8F00KZZWFGEVKQ 56789
+[
+  {
+    "debit_value": "0",
+    "block_id": 56789
+    "lock_transfer_block_id": 0,
+    "txid": "291817c78a865c1f72938695218a48174265b2358e89b9448edc89ceefd66aa0",
+    "address": "SP2NTAQFECYGSTE1W47P71FG21H8F00KZZWFGEVKQ",
+    "credit_value": "1000000000000000000",
+    "type": "STACKS",
+    "vtxindex": 0
+  }
+]$ blockstack-cli -t get_account_at SP2NTAQFECYGSTE1W47P71FG21H8F00KZZWFGEVKQ 56789[  {    "debit_value": "0",    "block_id": 56789    "lock_transfer_block_id": 0,    "txid": "291817c78a865c1f72938695218a48174265b2358e89b9448edc89ceefd66aa0",    "address": "SP2NTAQFECYGSTE1W47P71FG21H8F00KZZWFGEVKQ",    "credit_value": "1000000000000000000",    "type": "STACKS",    "vtxindex": 0  }]

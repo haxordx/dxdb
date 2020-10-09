@@ -1,0 +1,1 @@
+BLOCKSTACK_DEBUG=1 stacks-node argonBLOCKSTACK_DEBUG=1 stacks-node argon

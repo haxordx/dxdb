@@ -1,0 +1,1 @@
+pubnub.addListener({    status: function(event) {},    message: function(event) {        var channel = event.channel; // Channel        var pubTT = event.timetoken; // Publish timetoken        var msg = event.message; // Message Payload        var publisher = event.publisher; //The Publisher    }})//subscribe to channelpubnub.subscribe({    channels: ['notification']});Copy

@@ -1,0 +1,17 @@
+pubnub.Presence<string>(
+    "my_channel",
+    DisplayPresenceReturnMessage,
+    DisplayPresenceConnectStatusMessage,
+    DisplayErrorMessage1);
+
+void DisplayPresenceReturnMessage(string result) {
+	UnityEngine.Debug.Log("PRESENCE REGULAR CALLBACK:");
+	UnityEngine.Debug.Log(result);
+}
+void DisplayPresenceConnectStatusMessage(string result) {
+	UnityEngine.Debug.Log("PRESENCE CONNECT CALLBACK:");
+	UnityEngine.Debug.Log(result);
+}
+void DisplayErrorMessage1(PubnubClientError pubnubError) {
+	UnityEngine.Debug.Log(pubnubError.StatusCode);
+}

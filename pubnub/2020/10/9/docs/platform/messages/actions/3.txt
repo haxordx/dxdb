@@ -1,0 +1,1 @@
+PNAddMessageActionRequest *request =    [PNAddMessageActionRequest requestWithChannel:@"chats.room1"      messageTimetoken:@(1234567890)];request.type = @"reaction";request.value = @"smile";[self.pubnub addMessageActionWithRequest:request  completion:^(PNAddMessageActionStatus *status) {  if (!status.isError) {  }  else {  }}];show all 17 lineshide 2 linesCopy

@@ -1,0 +1,1 @@
+dependencies {  // some existing dependencies  implementation fileTree(dir: 'libs', include: ['*.jar'])  // add PubNub Android-Java SDK here at the bottom  implementation group: 'com.pubnub', name: 'pubnub-gson', version: '4.+'}Copy

@@ -1,0 +1,1 @@
+pubnub.fetchMessageHistory(  for: ["ch-1"],  end: 15343325004275466,  max: 100) { result in  switch result {  case let .success(response):    print("Successful History Fetch Response: \(response)")  case let .failure(error):    print("Failed History Fetch Response: \(error.localizedDescription)")  }}Copy

@@ -1,0 +1,5 @@
+pubnub.Subscribe()
+    .Channels(new List<string>() {
+        "my_channel"
+    })
+    .Execute();

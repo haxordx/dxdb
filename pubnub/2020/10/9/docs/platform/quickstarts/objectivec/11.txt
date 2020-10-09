@@ -1,0 +1,2 @@
+[self.pubnub subscribeToChannels: @[kChannelGuide] withPresence:YES];
+Copy

@@ -1,0 +1,1 @@
+resDLFile, statusDLFile, errDLFile := pn.DownloadFile().  Channel("my_channel").  ID("d9515cb7-48a7-41a4-9284-f4bf331bc770").  Name("cat_picture.jpg").Execute()if resDLFile != nil {    filepathOutput := "cat_picture.jpg"    out, _ := os.Create(filepathOutput)    _, err := io.Copy(out, resDLFile.File)    if err != nil {        fmt.Println(err)    }}Copy

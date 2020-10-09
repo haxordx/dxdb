@@ -1,0 +1,1 @@
+function login() {  // calls your server and returns the authKey  return authKey;}const authKey = login();var pubnub = new PubNub({  publishKey: "myPublishKey",  subscribeKey: "mySubscribeKey",  uuid: "theClientUUID"  authKey: authKey});Copy

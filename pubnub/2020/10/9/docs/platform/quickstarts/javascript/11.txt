@@ -1,0 +1,18 @@
+submitUpdate = function(anEntry, anUpdate) {
+  pubnub.publish({
+    channel : theChannel,
+    message : {'entry' : anEntry, 'update' : anUpdate}
+  },
+  function(status, response) {
+    if (status.error) {
+      console.log(status)
+    }
+    else {
+      displayMessage('[PUBLISH: sent]',
+        'timetoken: ' + response.timetoken);
+
+      updateText.value="";
+    }
+  });
+};
+show all 17 lineshide 2 linesCopy

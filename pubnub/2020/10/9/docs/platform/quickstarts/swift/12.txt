@@ -1,0 +1,4 @@
+func subscribe(to channel: String) {
+  pubnub.subscribe(to: [channel], withPresence: true)
+}
+Copy

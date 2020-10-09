@@ -1,0 +1,12 @@
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+  return self.messages.count;
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell
+                        forRowAtIndexPath:(NSIndexPath *)indexPath {
+
+  NSDictionary *updateEntry = [self.messages objectAtIndex:indexPath.row];
+  cell.detailTextLabel.text = updateEntry[kUpdateEntryMessage];
+  cell.textLabel.text = updateEntry[kUpdateEntryType];
+}
+Copy

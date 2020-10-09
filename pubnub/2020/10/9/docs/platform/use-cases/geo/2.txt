@@ -1,0 +1,1 @@
+public void onMapReady(GoogleMap googleMap) {  mMap = googleMap;  // Receive payload from a subscribe call  // Initial coordinates in S.F.♥︎  JsonArray payload = new JsonArray();  payload.add(37.782486);  payload.add(-122.395344);  placeMarker(payload);}Copy

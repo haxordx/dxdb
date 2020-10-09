@@ -1,0 +1,13 @@
+{
+  "pn_gcm" : {
+    "notification": {
+      "title":"Portugal vs Denmark",
+      "body":"great match!"
+    },
+    "data" : {
+      "room" : "Portugal vs Denmark",
+      "body" : "great match!"
+    }
+  }
+}
+Copy

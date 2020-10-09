@@ -1,0 +1,1 @@
+[self.pubnub addListener:self];- (void)client:(PubNub *)pubnub didReceiveStatus:(PNStatus *)event {    NSString *operation = event.operation;    NSString *category = event.category;}Copy

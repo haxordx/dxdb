@@ -1,0 +1,1 @@
+PNResult<PNGetAllUuidMetadataResult> getAllUuidMetadataResponse = await pubnub.GetAllUuidMetadata()    .IncludeCustom(true)    .IncludeCount(true)    .ExecuteAsync();PNGetAllUuidMetadataResult getAllUuidMetadataResult = getAllUuidMetadataResponse.Result;PNStatus status = getAllUuidMetadataResponse.Status;Copy

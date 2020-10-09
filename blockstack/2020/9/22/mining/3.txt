@@ -1,0 +1,1 @@
+stacks-node start --config=./testnet/stacks-node/conf/testnet-miner-conf.tomlstacks-node start --config=./testnet/stacks-node/conf/testnet-miner-conf.toml

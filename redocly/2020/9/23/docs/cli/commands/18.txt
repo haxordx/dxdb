@@ -1,0 +1,1 @@
+openapi bundle --dereferenced --output dist --ext json openapi/openapi.yaml openapi/petstore.yaml

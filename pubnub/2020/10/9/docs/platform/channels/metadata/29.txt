@@ -1,0 +1,1 @@
+pubnub.objects.setChannelMembers({  channel: "my_channel",  uuids: [    'johndoe_1',    { id: 'janedoe_1', custom: { trialPeriod: false } },  ],});Copy

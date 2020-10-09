@@ -1,0 +1,1 @@
+pubnub.whereNow({uuid: pubnub.uuid},  function (status, response) {    // handle status, response  });Copy

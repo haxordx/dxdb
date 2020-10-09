@@ -1,0 +1,1 @@
+def login():  authKey = ""  # calls your server and returns the authKey  return authKeyauthKey = login()pnconfig = PNConfiguration()pnconfig.publish_key = "myPublishKey"pnconfig.subscribe_key = "mySubscribeKey"pnconfig.uuid = "theClientUUID"pnconfig.auth_key = authKeypubnub = PubNub(pnconfig)Copy

@@ -1,0 +1,6 @@
+var config = PubNubConfiguration(
+  publishKey: "demo",
+  subscribeKey: "demo",
+  uuid: "myUniqueUUID"
+)
+let pubnub = PubNub(configuration: config)

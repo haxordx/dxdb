@@ -1,0 +1,1 @@
+var pubnub = new PubNub({  publishKey: 'myPublishKey',  subscribeKey: 'mySubscribeKey',  secretKey: 'mySecretKey',  uuid: 'theServerUUID'})Copy

@@ -1,0 +1,2 @@
+$ # Tip: you can get the owner key from your 12-word backup phrase using the get_owner_keys command
+$ blockstack-cli profile_sign /path/to/profile.json 0ffd299af9c257173be8486ef54a4dd1373407d0629ca25ca68ff24a76be09fb01$ # Tip: you can get the owner key from your 12-word backup phrase using the get_owner_keys command$ blockstack-cli profile_sign /path/to/profile.json 0ffd299af9c257173be8486ef54a4dd1373407d0629ca25ca68ff24a76be09fb01

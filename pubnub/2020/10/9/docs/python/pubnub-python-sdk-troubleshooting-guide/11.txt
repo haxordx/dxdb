@@ -1,0 +1,9 @@
+@gen.coroutine
+def publish_result():
+    try:
+        result = yield pubnub.publish().channel("my_channel").message("hello!").result()
+        print(str(result))
+    except PubNubException as e:
+        print("Error %s" % str(e))
+        if e.status is not None:
+            print("Error category #%d" % e.status.category)

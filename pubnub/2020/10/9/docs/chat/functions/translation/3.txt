@@ -1,0 +1,7 @@
+{
+    "text": "Hola",
+    "input_lang": "en",
+    "original_text": "Hi",
+    "output_lang": "es"
+}
+Copy

@@ -1,0 +1,1 @@
+pubnub = Pubnub(publish_key='demo', subscribe_key='demo')

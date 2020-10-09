@@ -1,0 +1,1 @@
+npx blockstack-cli@1.1.0-beta.1 make_keychain -tnpx blockstack-cli@1.1.0-beta.1 make_keychain -t

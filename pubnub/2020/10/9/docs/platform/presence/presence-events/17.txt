@@ -1,0 +1,1 @@
+// do listen for presence events for these channelspubnub.Subscribe<string>()  .Channels(new string[] {"chats.team1", "chats.dept5"})  .WithPresence()  .Execute();// do not listen for presence events for these channelspubnub.Subscribe<string>()  .Channels(new string[] {"alerts.system", "alerts.team1"})  .Execute();Copy

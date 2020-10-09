@@ -1,0 +1,1 @@
+dependencies: [  .package(url: "https://github.com/pubnub/swift.git", from: "2.5.1")]Copy

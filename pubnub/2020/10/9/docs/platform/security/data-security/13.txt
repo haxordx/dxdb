@@ -1,0 +1,1 @@
+let crypto = Crypto(key: "pubnubrealtimecommunicationplatf")let clearData =  {"test_name":"pregnancy","results":"positive","notes":"You are having twins!"}let secureText = crypto?.encrypt(plaintext: clearData).get()Copy

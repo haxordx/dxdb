@@ -1,0 +1,1 @@
+pubnub.objects.setMemberships({      channels: [{          id: "channel-1",          custom: {            lastReadTimetoken: 15518041524300120          },          {            id: "channel-2",            custom: {              lastReadTimetoken: 15518041524300251            }          }]      });Copy

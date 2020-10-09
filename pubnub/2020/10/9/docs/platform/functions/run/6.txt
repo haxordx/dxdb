@@ -1,0 +1,2 @@
+const xhr = require(xhr); // Example of importing a library
+Copy

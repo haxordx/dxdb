@@ -1,0 +1,1 @@
+// do listen for presence events for these channelspubnub.subscribe(  to: ["chats.team1", "chats.dept5"]  withPresence: true)// do not listen for presence events for these channelspubnub.subscribe(to: ["alerts.system", "alerts.team1"])Copy

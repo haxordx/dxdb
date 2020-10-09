@@ -1,0 +1,3 @@
+pubnub.unsubscribe().apply { 
+    channels = listOf("my_channel")
+}.execute()

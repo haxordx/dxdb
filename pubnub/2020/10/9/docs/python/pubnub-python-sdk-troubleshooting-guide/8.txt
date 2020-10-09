@@ -1,0 +1,4 @@
+import pubnub
+import logging
+
+pubnub.set_stream_logger('pubnub', logging.DEBUG)

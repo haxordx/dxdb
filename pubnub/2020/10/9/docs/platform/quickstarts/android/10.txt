@@ -1,0 +1,9 @@
+@Override
+public void message(PubNub pubnub, PNMessageResult event) {
+  JsonObject message = event.getMessage().getAsJsonObject();
+  String entryVal = message.get("entry").getAsString();
+  String updateVal = message.get("update").getAsString();
+
+  displayMessage("[MESSAGE: received]",entryVal + ": " + updateVal);
+}
+Copy

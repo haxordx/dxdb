@@ -1,0 +1,15 @@
+//Handler
+void SubscribeCallbackHandler(object sender, EventArgs e) {
+      SubscribeEventEventArgs mea = e as SubscribeEventEventArgs;
+      if (mea.MessageResult != null) {
+          // Format data into a readable format
+          JSONInformation chatmessage = JsonUtility.FromJson<JSONInformation>(message.MessageResult.Payload.ToString());
+
+          // Call the function to display the message in plain text
+          CreateChat(chatmessage);
+
+          // When a new chat is created, remove the first chat and transform all the messages on the page up
+          SyncChat();
+     }
+}
+Copy

@@ -1,0 +1,18 @@
+{
+   "channel":"my_channel",
+   "subscription":null,
+   "timetoken":"15871508399473609",
+   "publisher":"user-1",
+   "message":{
+      "source":"actions",
+      "version":"1.0",
+      "action":"added",
+      "data":{
+         "type":"flagged",
+         "value":"message is inappropriate",
+         "messageTimetoken":"15632184115444390",
+         "actionTimetoken":"15632184115444394"
+      }
+   }
+}
+show all 17 lineshide 2 linesCopy

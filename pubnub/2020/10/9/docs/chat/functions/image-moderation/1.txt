@@ -1,0 +1,55 @@
+// Require the console module
+const console = require('console');
+const query = require('codec/query_string');
+// Require the xhr module. We'll be using a third-party REST endpoint for
+// image nudity detection. We need to make a GET request to the endpoint
+// with parameters, and we'll get back the results in the response.
+// The xhr module helps in sending out HTTP requests.
+const xhr = require('xhr');
+const pubnub = require('pubnub');
+export default (request) => {
+  // nudity detection API URL
+  var apiUrl = 'https://api.sightengine.com/1.0/nudity.json';
+  var apiKey = 'API_KEY'; // API key
+  // Since this is a before publish event handler, we can modify the
+  // message and subscribers will receive the modified version.
+  var fileUrl = '';
+  if (request.message.file) {
+    //File uploaded successfully
+    const channel = request.channels[0];
+    const fileId = request.message.file.id;
+    const fileName = request.message.file.name;
+    console.log("fileId:", fileId); //file id
+    console.log("fileName:", fileName); //file name
+    //Construct file url
+    fileUrl = pubnub.getFileUrl({
+      channel: channel,
+      id: fileId,
+      name: fileName
+    });
+  }
+  // HTTP options to be passed to the xhr module's fetch method
+  const queryParams = {
+    'mashape-key': apiKey,
+    url: fileUrl
+  };
+  // This is a before publish event handler. Since we can't return the
+  // request before modifying it, we have to make a synchronous GET
+  // request. This is done using .done() at the end.
+  //
+  // Note that in all before publish handlers, where you want to
+  // modify the message based on content from an external source,
+  // you need to make synchronous requests since we can't return the
+  // request before modifying it.
+  return xhr.fetch(apiUrl + '?' + query.stringify(queryParams)).then(function(r) {
+    // Read the response and add the nudity data returned by the
+    // third-party service to the message.
+    console.log(r);
+    const body = JSON.parse(r.body || r);
+    request.message.nudity = body.nudity;
+    return request.ok();
+  }).catch(function(e) {
+    console.error(e);
+  });
+}
+show all 54 lineshide 39 linesCopy

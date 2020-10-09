@@ -1,0 +1,1 @@
+pubnub.publish(  channel: "chats.room1",  message: "Hello to everyone (except me)",  meta: ["uuid": pubnub.configuration.uuid]) { result in  switch result {  case let .success(response):    print("Successful Publish Response: \(response)")  case let .failure(error):    print("Failed Publish Response: \(error.localizedDescription)")  }}Copy

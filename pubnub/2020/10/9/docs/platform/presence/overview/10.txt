@@ -1,0 +1,1 @@
+pubnub.whereNow()  .async(new PNCallback<PNWhereNowResult>() {    @Override    public void onResponse(PNWhereNowResult result, PNStatus status) {      if (status.isError()) {        System.outprintln(status);      }      else {        System.outprintln(result);      }    }  });Copy

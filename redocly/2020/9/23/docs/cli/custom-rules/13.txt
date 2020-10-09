@@ -1,0 +1,9 @@
+exports.typeExtension = {
+  oas3(types) {
+    // modify types here
+    return {
+      ...types,
+      // TBD
+    };
+  },
+};

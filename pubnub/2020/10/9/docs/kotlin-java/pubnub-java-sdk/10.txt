@@ -1,0 +1,4 @@
+pubnub.time()
+    .async { result, _ ->
+        println("Server time: ${result?.timetoken}")
+    }

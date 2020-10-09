@@ -1,0 +1,2 @@
+pubnub.subscribe().channels(Arrays.asList(theChannel)).withPresence().execute();
+Copy

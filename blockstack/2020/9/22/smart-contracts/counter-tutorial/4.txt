@@ -1,0 +1,1 @@
+cat test/counter.tscat test/counter.ts

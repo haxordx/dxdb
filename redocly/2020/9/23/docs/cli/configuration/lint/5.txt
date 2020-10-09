@@ -1,0 +1,5 @@
+lint:
+  resolve:
+    http:
+      headers:
+        - # header configuration

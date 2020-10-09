@@ -1,0 +1,9 @@
+e = yield from pubnub.publish().message('hey').channel('blah').future()
+
+if e.is_error():
+    print("Error: %s" % e)
+    print("category id: #%d" % e.status.category)
+    print("operation id: #%d" % e.status.operation)
+    _handle_error(e)
+else:
+    print(e.result)

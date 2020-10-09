@@ -1,0 +1,9 @@
+// src/components/Signin.jsx
+
+import { useConnect } from '@blockstack/connect';
+
+export const Signin = () => {
+  const { doOpenAuth } = useConnect();
+
+  return <Button onClick={() => doOpenAuth()}>Get Started</Button>;
+};// src/components/Signin.jsximport { useConnect } from '@blockstack/connect';export const Signin = () => {  const { doOpenAuth } = useConnect();  return <Button onClick={() => doOpenAuth()}>Get Started</Button>;};

@@ -1,0 +1,1 @@
+pubnub.subscribe()\  .channels("alerts.*", "chats.team1.*")\  .with_presence()\  .execute()Copy

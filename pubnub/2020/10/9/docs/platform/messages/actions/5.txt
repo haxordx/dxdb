@@ -1,0 +1,1 @@
+pubnub.AddMessageAction()  .Channel("chats.room1")  .MessageTimetoken(5610547826969050)  .Action(new PNMessageAction { Type = "reaction", Value = "smiley_face" })  .Execute(new PNAddMessageActionResultExt((result, status) =>  {  }));Copy

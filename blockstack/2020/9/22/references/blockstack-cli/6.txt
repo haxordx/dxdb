@@ -1,0 +1,10 @@
+$ blockstack-cli balance 16pm276FpJYpm7Dv3GEaRqTVvGPTdceoY4
+{
+  "BTC": "123456"
+  "STACKS": "123456"
+}
+$ blockstack-cli balance SPZY1V53Z4TVRHHW9Z7SFG8CZNRAG7BD8WJ6SXD0
+{
+  "BTC": "123456"
+  "STACKS": "123456"
+}$ blockstack-cli balance 16pm276FpJYpm7Dv3GEaRqTVvGPTdceoY4{  "BTC": "123456"  "STACKS": "123456"}$ blockstack-cli balance SPZY1V53Z4TVRHHW9Z7SFG8CZNRAG7BD8WJ6SXD0{  "BTC": "123456"  "STACKS": "123456"}

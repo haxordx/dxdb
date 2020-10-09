@@ -1,0 +1,1 @@
+import paho.mqtt.client as mqttpublish_key = "<your publish key>"subscribe_key = "<your subscribe key>"client_id = "<your unique client identifier>"client = mqtt.Client(client_id=publish_key + "/" + subscribe_key + "/" + client_id)client.connect("mqtt.pndsn.com", 1883, 60)client.publish("<topic to publish>", json.dumps({ "hi": 10 }))Copy

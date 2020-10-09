@@ -1,0 +1,1 @@
+pubnub.RemoveMessageAction()  .Channel("chats.room1")  .MessageTimetoken(15701761818730000)  .ActionTimetoken(15701775691010001)  .Execute(new PNRemoveMessageActionResultExt((result, status) =>  {  }));Copy

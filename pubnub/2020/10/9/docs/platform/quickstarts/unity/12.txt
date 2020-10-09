@@ -1,0 +1,18 @@
+void SyncChat() {
+// If more maxMessagesToDisplay objects are on the screen, we need to start removing them
+if (indexcounter > maxMessagesToDisplay)
+{
+        // Delete the first gameobject in the queue
+        GameObject deleteChat = chatMessageQueue.Dequeue();
+        Destroy(deleteChat);
+        // Move all existing text gameobjects up the Y axis
+        int c = 0;
+        foreach (GameObject moveChat in chatMessageQueue)
+        {
+            RectTransform moveText = moveChat.GetComponent<RectTransform>();
+            moveText.position = new Vector3(canvasObject.transform.position.x - paddingX, canvasObject.transform.position.y - paddingY + padding - (c * height), 1F);
+            c++;
+        }
+    }
+}
+show all 17 lineshide 2 linesCopy

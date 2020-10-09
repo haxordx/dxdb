@@ -1,0 +1,6 @@
+@Override
+public void presence(PubNub pubnub, PNPresenceEventResult event) {
+  displayMessage("[PRESENCE: " + event.getEvent() + ']',
+    "uuid: " + event.getUuid() + ", channel: " + event.getChannel());
+}
+Copy

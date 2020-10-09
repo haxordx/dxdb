@@ -1,0 +1,1 @@
+cargo install --path ./testnet/stacks-nodecargo install --path ./testnet/stacks-node

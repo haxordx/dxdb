@@ -1,0 +1,9 @@
+> This is a standard blockquote (non-alert).
+
+-> This will be a standard note style alert.
+
+=> This will be a success style alert.
+
+~> This will be a warning style alert!
+
+!> This will be a danger style alert!!!> This is a standard blockquote (non-alert).-> This will be a standard note style alert.=> This will be a success style alert.~> This will be a warning style alert!!> This will be a danger style alert!!!

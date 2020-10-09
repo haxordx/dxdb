@@ -1,0 +1,4 @@
+def presence(self, pubnub, event):
+  print("[PRESENCE: {}]".format(event.event))
+  print("uuid: {}, channel: {}".format(event.uuid, event.channel))
+Copy

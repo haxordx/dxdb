@@ -1,0 +1,1 @@
+pubnub.fetchMessageHistory(  for: ["chats.room1", "chats.room2"],  end: "15343325004275466") { result in  switch result {    case let .success(response):      print("Successful History Fetch Response: \(response)")    case let .failure(error):      print("Failed History Fetch Response: \(error.localizedDescription)")  }}Copy

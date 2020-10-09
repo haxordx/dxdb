@@ -1,0 +1,20 @@
+function publishSampleMessage() {
+        console.log("Publish to a channel 'hello_world'");
+
+        // With the right payload, you can publish a message, add a reaction to a message, 
+        // send a push notification, or send a small payload called a signal.
+        var publishPayload = {
+            channel : "hello_world",
+            message: {
+                title: "greeting",
+                description: "This is my first message!"
+            }
+        }
+        pubnub.publish(publishPayload, function(status, response) {
+            console.log(status, response);
+        })
+    }
+
+    pubnub.subscribe({
+        channels: ["hello_world"]
+    });

@@ -1,0 +1,17 @@
+module.exports = {
+  id: 'my-local-plugin`,
+  preprocessors: {
+    oas3: {
+      "processor-id": () => {
+        // ...
+      }
+    }
+  },
+  decorators: {
+    oas3: {
+      "decorator-id": () => {
+        // ...
+      }
+    }
+  }
+}

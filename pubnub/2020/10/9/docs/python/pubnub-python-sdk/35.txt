@@ -1,0 +1,4 @@
+envelope = yield pubnub.history()\
+    .channel("history_channel")\
+    .count(100)\
+    .future()

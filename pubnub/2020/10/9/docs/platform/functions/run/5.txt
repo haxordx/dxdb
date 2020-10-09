@@ -1,0 +1,21 @@
+export default (request) => {
+    const store = require('kvstore');
+    const xhr = require("xhr");
+
+    const fullName = store.get('fullName');
+    const ipAddress = xhr.fetch("https://httpbin.org/ip");
+
+    return Promise.all([fullName, ipAddress])
+        .then((values) => {
+
+            request.message.fullNameResult = values[0];
+            request.message.ip = JSON.parse(values[1].body).origin;
+
+            return request.ok();
+        })
+        .catch((err) => {
+            console.log(err);
+            return request.abort(err);
+        });
+};
+show all 20 lineshide 5 linesCopy

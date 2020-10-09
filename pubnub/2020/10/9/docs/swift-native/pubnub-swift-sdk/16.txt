@@ -1,0 +1,9 @@
+pubnub.fetchMessageHistory(for: ["my_channel"]) { result in
+  switch result {
+  case let .success(messagesByChannelId, nextPage):
+    print("Successful History Fetch Response: \(messagesByChannelId)")
+    print("The start/end values for the next page: \(nextPage)")
+  case let .failure(error):
+    print("Failed History Fetch Response: \(error.localizedDescription)")
+  }
+})

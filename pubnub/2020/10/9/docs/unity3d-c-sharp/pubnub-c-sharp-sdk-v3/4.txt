@@ -1,0 +1,13 @@
+pubnub.Time<string>(
+    DisplayReturnMessage,
+    DisplayErrorMessage
+);
+void DisplayReturnMessage(string result)
+{
+    UnityEngine.Debug.Log("TIME CALLBACK");
+    UnityEngine.Debug.Log(result);
+}
+void DisplayErrorMessage(PubnubClientError pubnubError)
+{
+    UnityEngine.Debug.Log(pubnubError.StatusCode);
+}

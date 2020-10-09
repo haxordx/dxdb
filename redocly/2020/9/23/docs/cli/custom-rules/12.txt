@@ -1,0 +1,12 @@
+module.exports = {
+  id: 'my-local-plugin',
+  typeExtension: {
+    oas3(types) {
+      // modify types here
+      return {
+        ...types,
+        // add new or modify existing
+      };
+    },
+  }
+};

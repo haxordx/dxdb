@@ -1,0 +1,1 @@
+envelope = PubNub(pnconf).delete_messages().channel('chats.room1') \  .start(15526611838554310) \  .end(15526611838554309) \  .sync()Copy

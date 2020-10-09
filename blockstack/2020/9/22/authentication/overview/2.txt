@@ -1,0 +1,14 @@
+const requestPayload = {
+  jti, // UUID
+  iat, // JWT creation time in seconds
+  exp, // JWT expiration time in seconds
+  iss, // legacy decentralized identifier generated from transit key
+  public_keys, // single entry array with public key of transit key
+  domain_name, // app origin
+  manifest_uri, // url to manifest file - must be hosted on app origin
+  redirect_uri, // url to which the Blockstack App redirects user on auth approval - must be hosted on app origin
+  version, // version tuple
+  do_not_include_profile, // a boolean flag asking Blockstack App to send profile url instead of profile object
+  supports_hub_url, // a boolean flag indicating gaia hub support
+  scopes, // an array of string values indicating scopes requested by the app
+};const requestPayload = {  jti, // UUID  iat, // JWT creation time in seconds  exp, // JWT expiration time in seconds  iss, // legacy decentralized identifier generated from transit key  public_keys, // single entry array with public key of transit key  domain_name, // app origin  manifest_uri, // url to manifest file - must be hosted on app origin  redirect_uri, // url to which the Blockstack App redirects user on auth approval - must be hosted on app origin  version, // version tuple  do_not_include_profile, // a boolean flag asking Blockstack App to send profile url instead of profile object  supports_hub_url, // a boolean flag indicating gaia hub support  scopes, // an array of string values indicating scopes requested by the app};

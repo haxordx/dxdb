@@ -1,0 +1,1 @@
+PNFetchMessageActionsRequest *request =    [PNFetchMessageActionsRequest requestWithChannel:@"chats.room1"];request.start = @(1234567891);request.limit = 100;[self.pubnub fetchMessageActionsWithRequest:request      completion:^(PNFetchMessageActionsResult *result, PNErrorStatus *status) {  if (!status.isError) {  }  else {  }}];show all 16 lineshide 1 linesCopy

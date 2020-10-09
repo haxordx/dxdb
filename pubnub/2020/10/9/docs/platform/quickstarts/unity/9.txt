@@ -1,0 +1,8 @@
+// Subscribe to a PubNub channel to receive messages when they're sent on that channel
+pubnub.Subscribe()
+    .Channels(new List<string>() {
+        channel
+    })
+    .WithPresence()
+    .Execute();
+Copy

@@ -1,0 +1,9 @@
+def message(self, pubnub, event):
+  print("[MESSAGE received]")
+
+  if event.message["update"] == "42":
+    print "The publisher has ended the session."
+    os._exit(0)
+  else:
+    print("{}: {}".format(event.message["entry"], event.message["update"]))
+Copy

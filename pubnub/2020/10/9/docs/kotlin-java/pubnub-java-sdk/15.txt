@@ -1,0 +1,7 @@
+pubnub.history().apply {
+    channel = "my_channel" // where to fetch history from
+}.async { result, status ->
+    result?.messages?.forEach {
+        println("Message: ${it.entry}")
+    }
+}

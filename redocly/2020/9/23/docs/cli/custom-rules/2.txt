@@ -1,0 +1,15 @@
+function ExampleRule() {
+  const seen = {};
+  return {
+    DefinitionRoot: {
+      leave() {
+        // check something and report
+      }
+    }
+    Operation: {
+      enter(operation, ctx) {
+        seen[operation.operationId] = true;
+      },
+    }
+  };
+}

@@ -1,0 +1,1 @@
+ [self.pubnub stateForUUID:@"anotherClientUUID" onChannel:@"chats.room1"      withCompletion:^(PNChannelClientStateResult *result, PNErrorStatus *status) {  if (!status) {  }  else {  }}];Copy

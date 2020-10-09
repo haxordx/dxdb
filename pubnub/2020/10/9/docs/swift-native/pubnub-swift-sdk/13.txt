@@ -1,0 +1,8 @@
+pubnub.publish(channel: "my_channel", message: "Test Message!") { result in
+  switch result {
+  case let .success(timetoken):
+    print("The message was successfully published at: \(timetoken)")
+  case let .failure(error):
+    print("Handle response error: \(error.localizedDescription)")
+  }
+}

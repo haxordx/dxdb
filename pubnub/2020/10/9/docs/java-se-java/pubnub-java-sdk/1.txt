@@ -1,0 +1,5 @@
+ <dependency>
+  <groupId>com.pubnub</groupId>
+  <artifactId>pubnub-gson</artifactId>
+  <version>4.33.1</version>
+</dependency>

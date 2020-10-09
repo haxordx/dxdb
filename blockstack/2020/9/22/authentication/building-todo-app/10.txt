@@ -1,0 +1,7 @@
+export const fetchTasks = async (userSession, username) => {
+  const tasksJSON = await userSession.getFile(TASKS_FILENAME, {
+    decrypt: false,
+    username: username || undefined,
+  });
+  // code to format and return the tasks
+};export const fetchTasks = async (userSession, username) => {  const tasksJSON = await userSession.getFile(TASKS_FILENAME, {    decrypt: false,    username: username || undefined,  });  // code to format and return the tasks};

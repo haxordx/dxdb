@@ -1,0 +1,17 @@
+module.exports = {
+  id: 'my-local-plugin'
+  configs: {
+    all: {
+      rules: {
+        'operation-id-not-test': 'error',
+        'boolean-parameter-prefixes': 'error',
+      },
+    },
+    minimal: {
+      rules: {
+        'operation-id-not-test': 'off',
+        'boolean-parameter-prefixes': 'error',
+      },
+    }
+  }
+};

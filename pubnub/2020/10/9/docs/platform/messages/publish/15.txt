@@ -1,0 +1,1 @@
+NSArray *gps = [NSArray arrayWithObjects:@"35.9296,@"-78.9482",nil];[self signal: gps toChannel: @"locations.route1"    completion:^(PNPublishStatus *status) {  NSLog(@"%@status '%@'", status);}];Copy

@@ -1,0 +1,1 @@
+import com.pubnub.api;PNConfiguration pnconfig = new PNConfiguration();pnconfig.setPublishKey("myPublishKey");pnconfig.setSubscribeKey("mySubscribeKey");pnconfig.setUuid("theClientUUID");PubNub pubnub = new PubNub(pnconfig);Copy

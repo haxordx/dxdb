@@ -1,0 +1,1 @@
+pubnub.UnsubscribeAll().Async((result, status) => {        if (!status.Error) {            Debug.Log(result.Message);        } else {            Debug.Log(status.Error);            Debug.Log(status.ErrorData.Info);        }});Copy

@@ -1,0 +1,1 @@
+let gps = ["35.9296","-78.9482"]pubnub.signal(  channel: "locations.route1",  message: gps) { result in  switch result {  case let .success(response):    print("succeeded: \(response)")  case let .failure(error):    print("failed: \(error.localizedDescription)")  }}Copy

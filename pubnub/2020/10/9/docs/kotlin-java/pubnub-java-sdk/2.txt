@@ -1,0 +1,1 @@
+implementation 'com.pubnub:pubnub-kotlin:5.0.1'

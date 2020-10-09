@@ -1,0 +1,17 @@
+async function publishSampleMessage() {
+  console.log(
+    "Since we're publishing on subscribe connectEvent, we're sure we'll receive the following publish."
+  );
+  const result = await pubnub.publish({
+    channel: "hello_world",
+    message: {
+      title: "greeting",
+      description: "hello world!",
+    },
+  });
+  console.log(result);
+}
+
+pubnub.subscribe({
+  channels: ["hello_world"],
+});

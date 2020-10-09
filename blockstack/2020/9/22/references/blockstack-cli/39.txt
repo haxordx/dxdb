@@ -1,0 +1,3 @@
+$ export ID_ADDRESS="ID-18e1bqU7B5qUPY3zJgMLxDnexyStTeSnvV"
+$ export PAYMENT="bfeffdf57f29b0cc1fab9ea197bb1413da2561fe4b83e962c7f02fbbe2b1cd5401"
+$ blockstack-cli register_addr example.id "$ID_ADDRESS" "$PAYMENT" https://gaia.blockstack.org/hub$ export ID_ADDRESS="ID-18e1bqU7B5qUPY3zJgMLxDnexyStTeSnvV"$ export PAYMENT="bfeffdf57f29b0cc1fab9ea197bb1413da2561fe4b83e962c7f02fbbe2b1cd5401"$ blockstack-cli register_addr example.id "$ID_ADDRESS" "$PAYMENT" https://gaia.blockstack.org/hub

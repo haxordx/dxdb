@@ -1,0 +1,1 @@
+import PubNubvar pnconfig = PubNubConfiguration(  publishKey: "myPublishKey",  subscribeKey: "mySubscribeKey")pnconfig.uuid = "theClientUUID"let pubnub = PubNub(configuration: pnconfig)Copy

@@ -1,0 +1,1 @@
+// FCMpn.AddPushNotificationsOnChannels().    Channels([]string{"ch1"}).    DeviceIDForPush("device_id").    PushType(pubnub.PNPushTypeFCM).    Execute()Copy

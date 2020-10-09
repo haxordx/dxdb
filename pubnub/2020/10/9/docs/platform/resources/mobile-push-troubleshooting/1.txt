@@ -1,0 +1,27 @@
+{
+"pn_debug":true,
+"pn_gcm":{
+  "data":{
+     "message":"hello"
+  }
+},
+"pn_apns":{
+  "aps":{
+     "alert":"hello"
+  },
+  "pn_push":[
+     {
+        "push_type":"alert",
+        "auth_method":"token",
+        "targets":[
+           {
+              "environment":"development",
+              "topic":"com.PubNub.MobilePushTest"
+           }
+        ],
+        "version":"v2"
+     }
+  ]
+}
+}
+show all 26 lineshide 11 linesCopy

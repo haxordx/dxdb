@@ -1,0 +1,1 @@
+pubnub.GetPresenceState()  .Channels(new string[] {"chats.room1"})  .Uuid(clientUUID)  .Execute(new PNGetStateResultExt((result, status) => {    if (status.IsError()) {      Console.WriteLine("GetPresenceState error:" + status);    }    else {      Console.WriteLine("GetPresenceState success:" + result);    }  }));Copy

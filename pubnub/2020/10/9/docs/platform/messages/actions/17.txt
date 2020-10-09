@@ -1,0 +1,1 @@
+pubnub.GetMessageActions()  .Channel("chats.room1")  .Execute(new PNGetMessageActionsResultExt((result, status) =>  {  }));Copy

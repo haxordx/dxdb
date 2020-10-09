@@ -1,0 +1,4 @@
+lint:
+  boolean-parameter-prefixes:
+    severity: {severity}
+    prefixes: ["can", "is"]

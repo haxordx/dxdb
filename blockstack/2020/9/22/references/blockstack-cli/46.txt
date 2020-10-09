@@ -1,0 +1,16 @@
+$ blockstack-cli whois example.id
+{
+  "address": "1ArdkA2oLaKnbNbLccBaFhEV4pYju8hJ82",
+  "block_renewed_at": 567890,
+  "blockchain": "bitcoin",
+  "expire_block": 687010,
+  "grace_period": false,
+  "last_transaction_height": "567891",
+  "last_txid": "a564aa482ee43eb2bdfb016e01ea3b950bab0cfa39eace627d632e73c7c93e48",
+  "owner_script": "76a9146c1c2fc3cf74d900c51e9b5628205130d7b98ae488ac",
+  "renewal_deadline": 692010,
+  "resolver": null,
+  "status": "registered",
+  "zonefile": "$ORIGIN example.id\n$TTL 3600\n_http._tcp URI 10 1 \"https://gaia.blockstack.org/hub/1ArdkA2oLaKnbNbLccBaFhEV4pYju8hJ82/profile.json\"\n",
+  "zonefile_hash": "ae4ee8e7f30aa890468164e667e2c203266f726e"
+}$ blockstack-cli whois example.id{  "address": "1ArdkA2oLaKnbNbLccBaFhEV4pYju8hJ82",  "block_renewed_at": 567890,  "blockchain": "bitcoin",  "expire_block": 687010,  "grace_period": false,  "last_transaction_height": "567891",  "last_txid": "a564aa482ee43eb2bdfb016e01ea3b950bab0cfa39eace627d632e73c7c93e48",  "owner_script": "76a9146c1c2fc3cf74d900c51e9b5628205130d7b98ae488ac",  "renewal_deadline": 692010,  "resolver": null,  "status": "registered",  "zonefile": "$ORIGIN example.id\n$TTL 3600\n_http._tcp URI 10 1 \"https://gaia.blockstack.org/hub/1ArdkA2oLaKnbNbLccBaFhEV4pYju8hJ82/profile.json\"\n",  "zonefile_hash": "ae4ee8e7f30aa890468164e667e2c203266f726e"}

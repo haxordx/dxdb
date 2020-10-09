@@ -1,0 +1,3 @@
+var pnconfig = PubNubConfiguration(publishKey: "myPublishKey", subscribeKey: "mySubscribeKey")
+pnconfig.uuid = clientUUID
+Copy

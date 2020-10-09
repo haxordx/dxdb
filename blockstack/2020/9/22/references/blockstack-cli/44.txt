@@ -1,0 +1,6 @@
+$ # Tip: you can get your owner key from your backup phrase with "get_owner_keys".
+$ # Tip: you can get your payment key from your backup phrase with "get_payment_key".
+$ export OWNER="136ff26efa5db6f06b28f9c8c7a0216a1a52598045162abfe435d13036154a1b01"
+$ export PAYMENT="bfeffdf57f29b0cc1fab9ea197bb1413da2561fe4b83e962c7f02fbbe2b1cd5401"
+$ blockstack-cli transfer example.id ID-1HJA1AJvWef21XbQVL2AcTv71b6JHGPfDX true "$OWNER" "$PAYMENT"
+e09dc158e586d0c09dbcdcba917ec394e6c6ac2b9c91c4b55f32f5973e4f08fc$ # Tip: you can get your owner key from your backup phrase with "get_owner_keys".$ # Tip: you can get your payment key from your backup phrase with "get_payment_key".$ export OWNER="136ff26efa5db6f06b28f9c8c7a0216a1a52598045162abfe435d13036154a1b01"$ export PAYMENT="bfeffdf57f29b0cc1fab9ea197bb1413da2561fe4b83e962c7f02fbbe2b1cd5401"$ blockstack-cli transfer example.id ID-1HJA1AJvWef21XbQVL2AcTv71b6JHGPfDX true "$OWNER" "$PAYMENT"e09dc158e586d0c09dbcdcba917ec394e6c6ac2b9c91c4b55f32f5973e4f08fc

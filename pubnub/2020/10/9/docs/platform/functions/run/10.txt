@@ -1,0 +1,32 @@
+export default (request) => {
+    const db = require('kvstore');
+    const pubnub = require('pubnub');
+
+    console.log('The message ', request.message, ' was published on ', request.channels[0], ' via ', request.meta.clientip);
+
+    request.message.hello = 'world!'; // augment hello = world
+
+    // To fork return pubnub.publish and include request.ok in the .then()
+    return pubnub.publish({
+        "channel": "hello_universe",
+        "message": request.message
+    }).then((publishResponse) => {
+        console.log(`Publish Status: ${publishResponse[0]}:${publishResponse[1]} with TT ${publishResponse[2]}`);
+        return request.ok();
+    }).catch((err) => {
+        console.error(err);
+    });
+
+    // To chain functions make pubnub.publish a synchronous operation. Meaning dont return the pubnub.publish, let pubnub publish
+    // the message and then only `return` request.ok().
+    // pubnub.publish({
+    //     "channel": "hello-logger",
+    //     "message":request.message
+    // }).then((publishResponse) => {
+    //     console.log(`Publish Status: ${publishResponse[0]}:${publishResponse[1]} with TT ${publishResponse[2]}`);
+    // }).catch((err) => {
+    //      console.error(err);
+    //    });
+    // return request.ok();
+};
+show all 31 lineshide 16 linesCopy

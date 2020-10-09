@@ -1,0 +1,2 @@
+cd testnet/stacks-node
+cargo build --release --bin stacks-nodecd testnet/stacks-nodecargo build --release --bin stacks-node

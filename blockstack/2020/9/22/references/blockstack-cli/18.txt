@@ -1,0 +1,43 @@
+$ blockstack-cli get_account_history SP2H7VMY13ESQDAD5808QEY1EMGESMHZWBJRTN2YA 0
+[
+  {
+    "address": "SP2H7VMY13ESQDAD5808QEY1EMGESMHZWBJRTN2YA",
+    "block_id": 56789
+    "credit_value": "100000000000",
+    "debit_value": "0",
+    "lock_transfer_block_id": 0,
+    "txid": "0e5db84d94adff5b771262b9df015164703b39bb4a70bf499a1602b858a0a5a1",
+    "type": "STACKS",
+    "vtxindex": 0
+  },
+  {
+    "address": "SP2H7VMY13ESQDAD5808QEY1EMGESMHZWBJRTN2YA",
+    "block_id": 56790,
+    "credit_value": "100000000000",
+    "debit_value": "64000000000",
+    "lock_transfer_block_id": 0,
+    "txid": "5a0c67144626f7bd4514e4de3f3bbf251383ca13887444f326bac4bc8b8060ee",
+    "type": "STACKS",
+    "vtxindex": 1
+  },
+  {
+    "address": "SP2H7VMY13ESQDAD5808QEY1EMGESMHZWBJRTN2YA",
+    "block_id": 56791,
+    "credit_value": "100000000000",
+    "debit_value": "70400000000",
+    "lock_transfer_block_id": 0,
+    "txid": "e54c271d6a9feb4d1859d32bc99ffd713493282adef5b4fbf50bca9e33fc0ecc",
+    "type": "STACKS",
+    "vtxindex": 2
+  },
+  {
+    "address": "SP2H7VMY13ESQDAD5808QEY1EMGESMHZWBJRTN2YA",
+    "block_id": 56792,
+    "credit_value": "100000000000",
+    "debit_value": "76800000000",
+    "lock_transfer_block_id": 0,
+    "txid": "06e0d313261baefec1e59783e256ab487e17e0e776e2fdab0920cc624537e3c8",
+    "type": "STACKS",
+    "vtxindex": 3
+  }
+]$ blockstack-cli get_account_history SP2H7VMY13ESQDAD5808QEY1EMGESMHZWBJRTN2YA 0[  {    "address": "SP2H7VMY13ESQDAD5808QEY1EMGESMHZWBJRTN2YA",    "block_id": 56789    "credit_value": "100000000000",    "debit_value": "0",    "lock_transfer_block_id": 0,    "txid": "0e5db84d94adff5b771262b9df015164703b39bb4a70bf499a1602b858a0a5a1",    "type": "STACKS",    "vtxindex": 0  },  {    "address": "SP2H7VMY13ESQDAD5808QEY1EMGESMHZWBJRTN2YA",    "block_id": 56790,    "credit_value": "100000000000",    "debit_value": "64000000000",    "lock_transfer_block_id": 0,    "txid": "5a0c67144626f7bd4514e4de3f3bbf251383ca13887444f326bac4bc8b8060ee",    "type": "STACKS",    "vtxindex": 1  },  {    "address": "SP2H7VMY13ESQDAD5808QEY1EMGESMHZWBJRTN2YA",    "block_id": 56791,    "credit_value": "100000000000",    "debit_value": "70400000000",    "lock_transfer_block_id": 0,    "txid": "e54c271d6a9feb4d1859d32bc99ffd713493282adef5b4fbf50bca9e33fc0ecc",    "type": "STACKS",    "vtxindex": 2  },  {    "address": "SP2H7VMY13ESQDAD5808QEY1EMGESMHZWBJRTN2YA",    "block_id": 56792,    "credit_value": "100000000000",    "debit_value": "76800000000",    "lock_transfer_block_id": 0,    "txid": "06e0d313261baefec1e59783e256ab487e17e0e776e2fdab0920cc624537e3c8",    "type": "STACKS",    "vtxindex": 3  }]

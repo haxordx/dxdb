@@ -1,0 +1,1 @@
+from pubnub.pnconfiguration import PNConfigurationfrom pubnub.pubnub import PubNubpnconfig = PNConfiguration()pnconfig.publish_key = "myPublishKey"pnconfig.subscribe_key = "mySubscribeKey"pnconfig.uuid = "theClientUUID"pnconfig.ssl = False # default Truepubnub = PubNub(pnconfig)Copy

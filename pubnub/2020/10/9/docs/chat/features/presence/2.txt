@@ -1,0 +1,1 @@
+pubnub.hereNow(on: ["ch-1"], also: true) { result in  switch result {  case let .success(response):    print("Successful HereNow Response: \(response)")  case let .failure(error):    print("Failed HereNow Response: \(error.localizedDescription)")  }}Copy

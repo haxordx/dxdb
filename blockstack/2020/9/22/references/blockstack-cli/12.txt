@@ -1,0 +1,6 @@
+$ # Get an encrypted file without decrypting
+$ blockstack-cli gaia_getfile ryan.id https://app.graphitedocs.com documentscollection.json
+    $ # Get an encrypted file, and decrypt it
+$ # Tip: You can obtain the app key with the get_app_keys command
+$ export APP_KEY="3ac770e8c3d88b1003bf4a0a148ceb920a6172bdade8e0325a1ed1480ab4fb19"
+$ blockstack-cli gaia_getfile ryan.id https://app.graphitedocs.com documentscollection.json "$APP_KEY" 1 0$ # Get an encrypted file without decrypting$ blockstack-cli gaia_getfile ryan.id https://app.graphitedocs.com documentscollection.json    $ # Get an encrypted file, and decrypt it$ # Tip: You can obtain the app key with the get_app_keys command$ export APP_KEY="3ac770e8c3d88b1003bf4a0a148ceb920a6172bdade8e0325a1ed1480ab4fb19"$ blockstack-cli gaia_getfile ryan.id https://app.graphitedocs.com documentscollection.json "$APP_KEY" 1 0

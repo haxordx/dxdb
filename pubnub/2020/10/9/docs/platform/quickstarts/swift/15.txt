@@ -1,0 +1,6 @@
+struct Message: Identifiable {
+  var id = UUID()
+  var messageType: String
+  var messageText: String
+}
+Copy

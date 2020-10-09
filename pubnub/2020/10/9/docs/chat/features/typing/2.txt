@@ -1,0 +1,1 @@
+pubnub.signal(  channel: "ch-1",  message: "typing_on") { result in  switch result {  case let .success(response):    print("Successful Response: \(response)")  case let .failure(error):    print("Failed Response: \(error.localizedDescription)")  }}Copy

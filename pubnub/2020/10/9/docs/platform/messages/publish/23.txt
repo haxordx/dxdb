@@ -1,0 +1,1 @@
+Dictionary<string, object> meta = new Dictionary<string, object>();meta.Add("uuid", pubnub.GetUuid());pubnub.Publish().Channel("chats.room1").Meta(meta)  .Message("Hello to everyone (except me)")  .Execute(new DemoPublishResult());Copy

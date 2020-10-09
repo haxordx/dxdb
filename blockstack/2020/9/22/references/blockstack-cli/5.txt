@@ -1,0 +1,6 @@
+$ export BACKUP_PHRASE="oak indicate inside poet please share dinner monitor glow hire source perfect"
+$ export APP_GAIA_HUB="https://1.2.3.4"
+$ export PROFILE_GAIA_HUB="https://hub.blockstack.org"
+$ blockstack-cli authenticator "$APP_GAIA_HUB" "$BACKUP_PHRASE" "$PROFILE_GAIA_HUB" 8888
+Press Ctrl+C to exit
+Authentication server started on 8888$ export BACKUP_PHRASE="oak indicate inside poet please share dinner monitor glow hire source perfect"$ export APP_GAIA_HUB="https://1.2.3.4"$ export PROFILE_GAIA_HUB="https://hub.blockstack.org"$ blockstack-cli authenticator "$APP_GAIA_HUB" "$BACKUP_PHRASE" "$PROFILE_GAIA_HUB" 8888Press Ctrl+C to exitAuthentication server started on 8888

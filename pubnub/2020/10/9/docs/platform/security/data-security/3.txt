@@ -1,0 +1,1 @@
+PNConfiguration *pnconfig = [PNConfiguration configurationWithPublishKey:@"myPublishKey"                                             subscribeKey:@"mySubscribeKey"];pnconfig.uuid = "theClientUUID"pnconfig.TLSEnabled = NO; // default YESself.client = [PubNub clientWithConfiguration:pnconfig];Copy

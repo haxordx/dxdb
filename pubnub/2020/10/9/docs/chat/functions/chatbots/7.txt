@@ -1,0 +1,4 @@
+document.addEventListener('DOMContentLoaded', function(){
+    ng.platformBrowserDynamic.platformBrowserDynamic().bootstrapModule(app.main_module);
+});
+Copy

@@ -1,0 +1,5 @@
+pubnub.subscribe({
+  channels: ['the_guide'],
+  withPresence: true
+});
+Copy

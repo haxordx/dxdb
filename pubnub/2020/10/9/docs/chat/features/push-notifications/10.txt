@@ -1,0 +1,1 @@
+// FCMpn.RemovePushNotificationsFromChannels().    Channels([]string{"ch-1", "ch-2"}).    DeviceIDForPush("myDeviceId").    PushType(pubnub.PNPushTypeFCM).    Execute()Copy

@@ -1,0 +1,1 @@
+//fcmpubnub.push.listChannels(  {    device: deviceToken,    pushGateway: "gcm"  },  function(status) {    console.log(status);  });//apns2pubnub.push.listChannels(  {    device: deviceToken,    pushGateway: "apns2",    topic: "com.mycompany.mybundleid",    environment: "production"  },  function(status) {    console.log(status);  });show all 23 lineshide 8 linesCopy

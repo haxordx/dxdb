@@ -1,0 +1,1 @@
+pubnub.unsubscribe(channel='my_channel')

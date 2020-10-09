@@ -1,0 +1,5 @@
+{
+  "from": "user123",
+  "message": "Hello, how are you?"
+}
+Copy

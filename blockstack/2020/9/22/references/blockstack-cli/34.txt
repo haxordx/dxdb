@@ -1,0 +1,6 @@
+$ # get the price of the .hello namespace
+$ blockstack-cli price_namespace hello
+{
+  "units": "BTC",
+  "amount": "40000000"
+}$ # get the price of the .hello namespace$ blockstack-cli price_namespace hello{  "units": "BTC",  "amount": "40000000"}

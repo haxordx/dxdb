@@ -1,0 +1,15 @@
+{
+   "channel":"my_channel",
+   "timetoken":"15871508399473609",
+   "message":{
+      "source":"actions",
+      "action":"added",
+      "data":{
+         "type":"receipt",
+         "value":"message_read",
+         "messageTimetoken":"15632184115444390",
+         "actionTimetoken":"15632184115444394"
+      }
+   }
+}
+Copy

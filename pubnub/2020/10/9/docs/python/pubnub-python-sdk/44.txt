@@ -1,0 +1,2 @@
+envelope = await pubnub.time().future()
+    print('current time: %d' % envelope.result)

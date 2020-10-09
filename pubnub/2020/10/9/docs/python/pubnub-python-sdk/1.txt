@@ -1,0 +1,1 @@
+pip install 'pubnub>=4.5.4'

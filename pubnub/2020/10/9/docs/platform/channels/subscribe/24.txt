@@ -1,0 +1,1 @@
+pubnub.add_channel_to_channel_group()\  .channels(["chats.room1", "chats.room2", "alerts.system"])\  .channel_group("cg_user123")\  .sync()Copy

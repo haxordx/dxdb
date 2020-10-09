@@ -1,0 +1,2 @@
+/pets/{id}
+/pets/{hash}

@@ -1,0 +1,12 @@
+final String channelName = "myChannel";
+
+// create message payload using Gson
+final JsonObject messageJsonObject = new JsonObject();
+messageJsonObject.addProperty("msg", "Hello World");
+
+// optionally print the message 
+// System.out.println("Message to send: " + messageJsonObject.toString());
+
+pubnub.subscribe()
+        .channels(Collections.singletonList(channelName))
+        .execute();

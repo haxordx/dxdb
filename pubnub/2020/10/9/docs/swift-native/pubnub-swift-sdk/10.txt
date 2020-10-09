@@ -1,0 +1,21 @@
+// Create a new listener instance
+let listener = SubscriptionListener()
+
+// Add listener event callbacks
+listener.didReceiveSubscription = { event in
+  switch event {
+  case let .messageReceived(message):
+    print("Message Received: \(message) Publisher: \(message.publisher ?? "defaultUUID")")
+  case let .connectionStatusChanged(status):
+    print("Status Received: \(status)")
+  case let .presenceChanged(presence):
+    print("Presence Received: \(presence)")
+  case let .subscribeError(error):
+    print("Subscription Error \(error)")
+  default:
+    break
+  }
+}
+
+// Start receiving subscription events
+pubnub.add(listener)

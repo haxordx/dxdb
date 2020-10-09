@@ -1,0 +1,15 @@
+const responsePayload = {
+  jti, // UUID
+  iat, // JWT creation time in seconds
+  exp, // JWT expiration time in seconds
+  iss, // legacy decentralized identifier (string prefix + identity address) - this uniquely identifies the user
+  private_key, // encrypted private key payload
+  public_keys, // single entry array with public key
+  profile, // profile object or null if passed by profile_url
+  username, // blockstack username (if any)
+  core_token, // encrypted core token payload
+  email, // email if email scope is requested & email available
+  profile_url, // url to signed profile token
+  hubUrl, // url pointing to user's gaia hub
+  version, // version tuple
+};const responsePayload = {  jti, // UUID  iat, // JWT creation time in seconds  exp, // JWT expiration time in seconds  iss, // legacy decentralized identifier (string prefix + identity address) - this uniquely identifies the user  private_key, // encrypted private key payload  public_keys, // single entry array with public key  profile, // profile object or null if passed by profile_url  username, // blockstack username (if any)  core_token, // encrypted core token payload  email, // email if email scope is requested & email available  profile_url, // url to signed profile token  hubUrl, // url pointing to user's gaia hub  version, // version tuple};

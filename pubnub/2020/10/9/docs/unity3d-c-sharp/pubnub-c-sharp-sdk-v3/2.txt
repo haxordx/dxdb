@@ -1,0 +1,46 @@
+Pubnub pubnub = new Pubnub( "demo", "demo");
+
+pubnub.Subscribe<string>(
+	"my_channel", 
+	DisplaySubscribeReturnMessage, 
+	DisplaySubscribeConnectStatusMessage, 
+	DisplayErrorMessage); 
+
+void DisplaySubscribeConnectStatusMessage(string connectMessage)
+{
+    UnityEngine.Debug.Log("SUBSCRIBE CONNECT CALLBACK");
+    pubnub.Publish<string>(
+		"my_channel", 
+		"Hello from the PubNub C# SDK", 
+		DisplayReturnMessage, 
+		DisplayErrorMessage); 
+}
+
+void DisplaySubscribeReturnMessage(string result) {
+    UnityEngine.Debug.Log("SUBSCRIBE REGULAR CALLBACK:"); 
+    UnityEngine.Debug.Log(result);
+    if (!string.IsNullOrEmpty(result) && !string.IsNullOrEmpty(result.Trim()))
+            {
+                List<object> deserializedMessage = pubnub.JsonPluggableLibrary.DeserializeToListOfObject(result);
+                if (deserializedMessage != null && deserializedMessage.Count > 0)
+                {
+                    object subscribedObject = (object)deserializedMessage[0];
+                    if (subscribedObject != null)
+                    {
+                        //IF CUSTOM OBJECT IS EXCEPTED, YOU CAN CAST THIS OBJECT TO YOUR CUSTOM CLASS TYPE
+                        string resultActualMessage = pubnub.JsonPluggableLibrary.SerializeToJsonString(subscribedObject);
+                   }
+                }
+            }
+}
+
+void DisplayErrorMessage(PubnubClientError pubnubError)
+{
+    UnityEngine.Debug.Log(pubnubError.StatusCode);
+}
+
+void DisplayReturnMessage(string result)
+{
+    UnityEngine.Debug.Log("PUBLISH STATUS CALLBACK");
+    UnityEngine.Debug.Log(result);
+}

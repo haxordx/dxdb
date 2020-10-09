@@ -1,0 +1,1 @@
+pubnub.WhereNow()  .Execute(new PNWhereNowResultExt((result, status) => {    if (status.isError) {      Console.WriteLine(status.ErrorData.Information);    }    else {      Console.WriteLine(result);    }  }));Copy

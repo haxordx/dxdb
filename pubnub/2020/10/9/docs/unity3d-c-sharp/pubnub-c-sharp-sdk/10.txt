@@ -1,0 +1,17 @@
+pubnub.HereNow()
+	.Channels(new List<string>(){
+		"my_channel"
+	})
+	.ChannelGroups(new List<string>() {
+		"my_channel_group"
+	})
+	.IncludeState(true)
+	.IncludeUUIDs(true)
+	.Async((result, status) => {
+		if (status.Error) {
+			Debug.Log(string.Format("HereNow Error: {0} {1} {2}", status.StatusCode, status.ErrorData, status.Category));
+		} else {               
+			Debug.Log(string.Format("DateTime {0}, In Example, Channels: {1} {2}", DateTime.UtcNow , result.TotalChannels, result.TotalOccupancy));
+		}
+		Debug.Log(status.Error);
+	});

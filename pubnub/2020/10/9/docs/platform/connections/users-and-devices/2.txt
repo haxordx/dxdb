@@ -1,0 +1,1 @@
+var pnconfig = PubNubConfiguration(  publishKey: "myPublishKey",  subscribeKey: "mySubscribeKey",)pnconfig.uuid = uuidlet pubnub = PubNub(configuration: pnconfig)Copy

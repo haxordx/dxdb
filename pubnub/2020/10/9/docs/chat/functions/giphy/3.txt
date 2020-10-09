@@ -1,0 +1,5 @@
+{
+    "text": "hello",
+    "gifs": ["http://media1.giphy.com/media/xTiTngMMCIt7FramOc/200.gif"]
+}
+Copy

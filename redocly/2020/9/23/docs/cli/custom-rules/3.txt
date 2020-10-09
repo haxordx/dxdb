@@ -1,0 +1,12 @@
+function ExampleRule() {
+  const seen = {};
+  return {
+    Operation: {
+      // skip: (value, key) => ... // if needed
+      // enter(operation) {} // if needed
+      Schema(schema, ctx, parents) {
+        console.log(`type ${schema.type} from ${parents.Operation.operationId}`)
+      }
+    }
+  };
+}

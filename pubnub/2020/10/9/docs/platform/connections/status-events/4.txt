@@ -1,0 +1,1 @@
+pubnub.addListener(new SubscribeCallback() {  @Override  public void status(PubNub pubnub, PNStatus event) {        String operation = event.getOperation();        String category = event.getCategory();  }});Copy

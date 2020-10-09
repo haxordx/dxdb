@@ -1,0 +1,5 @@
+const messagesTop = document.getElementById('messages-top');
+const updateText = document.getElementById('update-text');
+const sendButton = document.getElementById('publish-button');
+sendButton.addEventListener('click', () => {submitUpdate(theEntry, updateText.value)});
+Copy

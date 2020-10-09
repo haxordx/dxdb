@@ -1,0 +1,3 @@
+import PubNubVue from 'pubnub-vue';
+
+const instance = PubNubVue.getInstance();

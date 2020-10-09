@@ -1,0 +1,1 @@
+pubnub.whereNow(for: pubnub.uuid) { result in  switch result {  case let .success(response):    print("Successful WhereNow Response: \(response)")  case let .failure(error):    print("Failed WhereNow Response: \(error.localizedDescription)")  }}Copy

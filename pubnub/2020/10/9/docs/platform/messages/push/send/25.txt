@@ -1,0 +1,1 @@
+{   "pn_gcm":{      "notification":{         "title":"Chat invitation",         "body":"John invited you to chat",         "sound":"default"      },      "pn_exceptions" : [         "2643d955c7f2506e55f225b56da7eb8676cced80de93df51aad7569ee833b92f"      ]   }}Copy

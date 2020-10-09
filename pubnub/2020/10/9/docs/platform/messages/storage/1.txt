@@ -1,0 +1,1 @@
+pubnub.fetchMessages(  {    channels: ["chats.room1", "chats.room2"],    end: '15343325004275466',    count: 25 // default/max is 25  },  function(status, response) {    console.log(status, response);  });Copy

@@ -1,0 +1,24 @@
+app.post("/chatterbox/api/v1/wh/presence", (request, response) => {
+    var event = request.body;
+    console.info('entering presence webhook for uuid/user: ' + event.uuid);
+
+    if ((!event) || (!event.action) || (!event.uuid)) {
+        console.info("could not process event: " + JSON.stringify(event));
+        response.status(200).end();
+        return;
+    }
+    if (event.action === "join") {
+        console.info(event.uuid + " has join " + event.channel);
+    }
+
+    if (event.action === "state-change" && event.state) {
+        console.info("state changed for " + event.uuid + " new state " + event.state);
+    }
+
+    if ((event.action === "leave") || (event.action === "timeout")) {
+        console.info(event.uuid + " has left or isn't reachable);
+        // use pubnub.wherenow() if needed.
+    }
+    response.status(200).end();
+});
+show all 23 lineshide 8 linesCopy

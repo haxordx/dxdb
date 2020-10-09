@@ -1,0 +1,1 @@
+// the uuid value is received from your servervar pnconfig = PubNubConfiguration(  publishKey: "myPublishKey",  subscribeKey: "mySubscribeKey",)pnconfig.uuid: uuidpnconfig.filterExpression: "uuid != \(uuid)"var pubnub = PubNub(configuration: pnconfig)Copy

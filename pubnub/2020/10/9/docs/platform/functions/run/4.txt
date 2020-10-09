@@ -1,0 +1,2 @@
+const Promise = require('promise'); // No need to add this line
+Copy

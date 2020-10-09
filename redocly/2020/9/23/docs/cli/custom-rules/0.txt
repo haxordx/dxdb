@@ -1,0 +1,6 @@
+lint:
+  plugins:
+    - 'my-plugin.js'
+  extends:
+    - recommended
+    - my-plugin/all

@@ -1,0 +1,2 @@
+<button class="btn btn-primary" (click)="publish()">Get Time from Bot!</button>
+Copy

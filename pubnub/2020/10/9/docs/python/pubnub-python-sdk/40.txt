@@ -1,0 +1,10 @@
+from pubnub.pnconfiguration import PNConfiguration
+from pubnub.pubnub_asyncio import PubNubAsyncio
+
+pnconfig = PNConfiguration()
+pnconfig.subscribe_key = "my_subkey"
+pnconfig.publish_key = "my_pubkey"
+pnconfig.uuid = "my_custom_uuid"
+pnconfig.ssl = False
+
+pubnub = PubNubAsyncio(pnconfig)

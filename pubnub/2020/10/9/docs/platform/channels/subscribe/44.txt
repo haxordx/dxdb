@@ -1,0 +1,1 @@
+pubnub.unsubscribe(from: ["ch-1"])Copy

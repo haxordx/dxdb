@@ -1,0 +1,7 @@
+try:
+    e = pubnub.publish().channel("my_channel").message("hello!").sync()
+    print(str(e.result))
+except PubNubException as e:
+    print("Error %s" % str(e))
+    if status is not None:
+        print("Error category #%d" % e.status.category)

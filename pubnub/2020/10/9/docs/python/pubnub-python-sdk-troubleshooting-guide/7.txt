@@ -1,0 +1,9 @@
+def publish():
+    def succ(envelope):
+        print(str(envelope.result))
+
+    def errback(error):
+        print("Error %s" % str(e))
+        print("Error category #%d" % e.status.category)
+
+    pubnub.publish().channel("my_channel").message("hello!").deferred().addCallback(succ).addErrback(errback)

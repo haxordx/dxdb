@@ -1,0 +1,1 @@
+using PubnubApi;PNConfiguration pnconfig = new PNConfiguration();pnconfig.PublishKey = "myPublishKey";pnconfig.SubscribeKey = "mySubscribeKey";pnconfig.Uuid = "theClientUUID";Pubnub pubnub = new Pubnub(pnconfig);Copy

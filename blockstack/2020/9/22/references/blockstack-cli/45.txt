@@ -1,0 +1,22 @@
+$ # Tip: you can get your owner and payment keys from your 12-word backup phrase using the get_owner_keys and get_payment_key commands.
+$ export OWNER="6e50431b955fe73f079469b24f06480aee44e4519282686433195b3c4b5336ef01"
+$ export PAYMENT="bfeffdf57f29b0cc1fab9ea197bb1413da2561fe4b83e962c7f02fbbe2b1cd5401"
+$ # make a new zone file
+$ blockstack-cli make_zonefile example.id ID-1ArdkA2oLaKnbNbLccBaFhEV4pYju8hJ82 https://my.gaia.hub/hub > /tmp/zonefile.txt
+
+$ # update the name to reference this new zone file
+$ blockstack-cli update example.id /tmp/zonefile.txt "$OWNER" "$PAYMENT"
+8e94a5b6647276727a343713d3213d587836e1322b1e38bc158406f5f8ebe3fd
+
+$ # check confirmations
+$ blockstack-cli get_confirmations e41ce043ab64fd5a5fd382fba21acba8c1f46cbb1d7c08771ada858ce7d29eea
+{
+  "blockHeight": 567890,
+  "confirmations": 7,
+}
+
+$ # send out the new zone file to a Blockstack peer
+$ blockstack-cli -H https://core.blockstack.org zonefile_push /tmp/zonefile.txt
+[
+  "https://core.blockstack.org"
+]$ # Tip: you can get your owner and payment keys from your 12-word backup phrase using the get_owner_keys and get_payment_key commands.$ export OWNER="6e50431b955fe73f079469b24f06480aee44e4519282686433195b3c4b5336ef01"$ export PAYMENT="bfeffdf57f29b0cc1fab9ea197bb1413da2561fe4b83e962c7f02fbbe2b1cd5401"$ # make a new zone file$ blockstack-cli make_zonefile example.id ID-1ArdkA2oLaKnbNbLccBaFhEV4pYju8hJ82 https://my.gaia.hub/hub > /tmp/zonefile.txt$ # update the name to reference this new zone file$ blockstack-cli update example.id /tmp/zonefile.txt "$OWNER" "$PAYMENT"8e94a5b6647276727a343713d3213d587836e1322b1e38bc158406f5f8ebe3fd$ # check confirmations$ blockstack-cli get_confirmations e41ce043ab64fd5a5fd382fba21acba8c1f46cbb1d7c08771ada858ce7d29eea{  "blockHeight": 567890,  "confirmations": 7,}$ # send out the new zone file to a Blockstack peer$ blockstack-cli -H https://core.blockstack.org zonefile_push /tmp/zonefile.txt[  "https://core.blockstack.org"]

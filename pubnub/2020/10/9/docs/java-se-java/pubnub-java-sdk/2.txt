@@ -1,0 +1,1 @@
+compile group: 'com.pubnub', name: 'pubnub-gson', version: '4.33.2'

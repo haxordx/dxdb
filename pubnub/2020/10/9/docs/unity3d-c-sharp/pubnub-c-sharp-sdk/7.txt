@@ -1,0 +1,8 @@
+pubnub.Time()
+	.Async((result, status) => {              
+		if (status.Error) {
+			Debug.Log(string.Format("Time Error: {0} {1} {2}", status.StatusCode, status.ErrorData, status.Category));
+		} else {
+			Debug.Log(string.Format("DateTime {0}, In Example, result: {1}", DateTime.UtcNow ,result.TimeToken));
+		}
+	});

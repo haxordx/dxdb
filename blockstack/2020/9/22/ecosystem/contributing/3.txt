@@ -1,0 +1,16 @@
+docs.blockstack/
+  .github/
+  lib/
+  node_modules/
+  public/
+  src/
+    _data/
+    _includes/
+    common/
+      routes/
+        all-routes.json
+        get-routes.js
+        index.ts
+    components/
+    pages/
+  types/docs.blockstack/  .github/  lib/  node_modules/  public/  src/    _data/    _includes/    common/      routes/        all-routes.json        get-routes.js        index.ts    components/    pages/  types/

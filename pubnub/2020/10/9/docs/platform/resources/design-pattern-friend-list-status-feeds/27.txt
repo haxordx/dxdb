@@ -1,0 +1,1 @@
+// Get Status Feed Messages[self.pubnub addListener:self];[self.pubnub subscribeToChannelGroups:@[@"cg-user-a-friends"] withPresence:YES];- (void)client:(PubNub *)client didReceiveMessage:(PNMessageResult *)message {  NSLog(@"Status: %@", message.data.message);}Copy

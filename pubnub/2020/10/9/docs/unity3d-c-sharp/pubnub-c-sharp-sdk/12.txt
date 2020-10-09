@@ -1,0 +1,12 @@
+pubnub.History()
+	.Channel("history_channel")
+	.Count(100)
+	.Async ((result, status) => {                
+		if(status.Error){
+			Debug.Log (string.Format("History Error: {0} {1} {2}", status.StatusCode, status.ErrorData, status.Category));
+		} else {
+			foreach (PNHistoryItemResult histItem in result.Messages){
+				Debug.Log(string.Format("histItem: {0}, {1}", histItem.Entry.ToString(), histItem.Timetoken.ToString()));
+			}
+		}
+	});

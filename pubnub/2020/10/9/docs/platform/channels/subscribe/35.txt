@@ -1,0 +1,1 @@
+pubnub.Subscribe<string>()  .Channels(new string[] {"alerts.*", "chats.team1.*"})  .WithPresence()  .Execute();Copy

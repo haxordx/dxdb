@@ -1,0 +1,29 @@
+void CreateChat(JSONInformation payLoad){
+    // Create a string with the username and text
+    string currentObject = string.Concat(payLoad.username, payLoad.text);
+
+    // Create a new gameobject that will display text of the data sent via PubNub
+    GameObject chatMessage = new GameObject(currentObject);
+    chatMessage.transform.SetParent(canvasObject.GetComponent<Canvas>().transform);
+    chatMessage.transform.localPosition = Vector3.zero;
+    chatMessage.transform.position = new Vector3(canvasObject.transform.position.x - paddingX, canvasObject.transform.position.y - paddingY + padding - (indexcounter * height), 1F);
+    chatMessage.AddComponent<Text>().text = currentObject;
+
+    // Assign text to the gameobject. Add visual properties to text
+    var chatText = chatMessage.GetComponent<Text>();
+    chatText.font = customFont;
+    chatText.color = UnityEngine.Color.blue;
+    chatText.fontSize = 25;
+
+    // Assign a RectTransform to gameobject to manipulate positioning of chat.
+    RectTransform rectTransform;
+    rectTransform = chatText.GetComponent<RectTransform>();
+    rectTransform.sizeDelta = new Vector2(435, height);
+
+    // Assign the gameobject to the queue of chatmessages
+    chatMessageQueue.Enqueue(chatMessage);
+
+    // Keep track of how many objects we have displayed on the screen
+    indexcounter++;
+}
+show all 28 lineshide 13 linesCopy

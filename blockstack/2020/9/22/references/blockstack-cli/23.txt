@@ -1,0 +1,23 @@
+$ # get the first 3 owner keys and addresses for a backup phrase
+$ export BACKUP_PHRASE="soap fog wealth upon actual blossom neither timber phone exile monkey vocal"
+$ blockstack-cli get_owner_keys "$BACKUP_PHRASE" 3
+[
+  {
+    "privateKey": "14b0811d5cd3486d47279d8f3a97008647c64586b121e99862c18863e2a4183501",
+    "version": "v0.10-current",
+    "index": 0,
+    "idAddress": "ID-1ArdkA2oLaKnbNbLccBaFhEV4pYju8hJ82"
+  },
+  {
+    "privateKey": "1b3572d8dd6866828281ac6cf135f04153210c1f9b123743eccb795fd3095e4901",
+    "version": "v0.10-current",
+    "index": 1,
+    "idAddress": "ID-18pR3UpD1KFrnk88a3MGZmG2dLuZmbJZ25"
+  },
+  {
+    "privateKey": "b19b6d62356db96d570fb5f08b78f0aa7f384525ba3bdcb96fbde29b8e11710d01",
+    "version": "v0.10-current",
+    "index": 2,
+    "idAddress": "ID-1Gx4s7ggkjENw3wSY6bNd1CwoQKk857AqN"
+  }
+]$ # get the first 3 owner keys and addresses for a backup phrase$ export BACKUP_PHRASE="soap fog wealth upon actual blossom neither timber phone exile monkey vocal"$ blockstack-cli get_owner_keys "$BACKUP_PHRASE" 3[  {    "privateKey": "14b0811d5cd3486d47279d8f3a97008647c64586b121e99862c18863e2a4183501",    "version": "v0.10-current",    "index": 0,    "idAddress": "ID-1ArdkA2oLaKnbNbLccBaFhEV4pYju8hJ82"  },  {    "privateKey": "1b3572d8dd6866828281ac6cf135f04153210c1f9b123743eccb795fd3095e4901",    "version": "v0.10-current",    "index": 1,    "idAddress": "ID-18pR3UpD1KFrnk88a3MGZmG2dLuZmbJZ25"  },  {    "privateKey": "b19b6d62356db96d570fb5f08b78f0aa7f384525ba3bdcb96fbde29b8e11710d01",    "version": "v0.10-current",    "index": 2,    "idAddress": "ID-1Gx4s7ggkjENw3wSY6bNd1CwoQKk857AqN"  }]

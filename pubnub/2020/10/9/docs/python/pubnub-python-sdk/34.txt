@@ -1,0 +1,4 @@
+pubnub.subscribe()\
+    .channels("my_channel")\
+    .with_presence()\
+    .execute()

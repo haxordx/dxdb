@@ -1,0 +1,12 @@
+@gen.coroutine
+def publish_snippet():
+    def publish_callback(result, status):
+        if not status.is_error():
+            envelope = result
+            pass  # Message successfully published to specified channel.
+        else:
+            pass  # Handle message publish error. Check 'category' property to find out possible issue
+            # because of which request did fail.
+            # Request can be resent using: [status retry];
+
+    pubnub.publish().channel('such_channel').message(['hello', 'there']).pn_async(publish_callback)

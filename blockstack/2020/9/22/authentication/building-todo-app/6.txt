@@ -1,0 +1,3 @@
+// src/assets/constants.js
+
+export const appConfig = new AppConfig(['store_write', 'publish_data']);// src/assets/constants.jsexport const appConfig = new AppConfig(['store_write', 'publish_data']);

@@ -1,0 +1,7 @@
+import PubNubVue from 'pubnub-vue';
+
+const pubnub = PubNubVue.getInstance();
+
+pubnub.subscribe({ 
+	channels: ['my_channel'] 
+});

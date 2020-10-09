@@ -1,0 +1,1 @@
+pubnub.publish({    message: "Your order is ready.",    channel: 'notification',}, (status) => {    // handle publish status});Copy

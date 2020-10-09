@@ -1,0 +1,23 @@
+- (IBAction)sendButtonTapped:(id)sender {
+    NSLog(@"Button Pressed");
+
+    if (self.entryUpdateText.text.length > 0) {
+        [self submitUpdate:self.entryUpdateText.text forEntry:kEntryEarth toChannel:kChannelGuide];
+        self.entryUpdateText.text = nil;
+    }
+    else {
+        NSLog(@"Message field is empty.");
+    }
+
+    [self.entryUpdateText resignFirstResponder];
+}
+
+- (void)submitUpdate:(NSString *)update forEntry:(NSString *)entry toChannel:(NSString *)channel {
+    [self.pubnub publish: @{ @"entry": entry, @"update": update } toChannel:kChannelGuide
+          withCompletion:^(PNPublishStatus *status) {
+
+        NSString *text = [@"timetoken: " stringByAppendingString:status.data.timetoken.stringValue];
+        [self displayMessage:text asType:@"[PUBLISH: sent]"];
+    }];
+}
+show all 22 lineshide 7 linesCopy

@@ -1,0 +1,7 @@
+pnconfig = PNConfiguration()
+pnconfig.publish_key = "demo-36"
+pnconfig.subscribe_key = "demo-36"
+pnconfig.uuid = "serverUUID-SUB"
+
+pubnub = PubNub(pnconfig)
+Copy

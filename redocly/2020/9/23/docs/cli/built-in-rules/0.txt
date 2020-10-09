@@ -1,0 +1,4 @@
+rule-name:
+severity: {severity}
+rule-option-one: value
+rule-option-two: value

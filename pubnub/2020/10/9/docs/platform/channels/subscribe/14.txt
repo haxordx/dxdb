@@ -1,0 +1,1 @@
+pubnub.subscribe(to: ["chats.room2"])Copy

@@ -1,0 +1,29 @@
+void TaskOnClick()
+{
+  // When the user clicks the Submit button,
+  // create a JSON object from input field input
+  JSONInformation publishMessage = new JSONInformation();
+  publishMessage.username = string.Concat(UsernameInput.text, ": ");
+  publishMessage.text = TextInput.text;
+  string publishMessageToJSON = JsonUtility.ToJson(publishMessage);
+
+  // Publish the JSON object to the assigned PubNub Channel
+  pubnub.Publish()
+      .Channel("chatchannel3")
+      .Message(publishMessageToJSON)
+      .Async((result, status) =>
+      {
+          if (status.Error)
+          {
+              Debug.Log(status.Error);
+              Debug.Log(status.ErrorData.Info);
+          }
+          else
+          {
+            Debug.Log(string.Format("Publish Timetoken: {0}", result.Timetoken));
+          }
+      });
+
+  TextInput.text = "";
+}
+show all 28 lineshide 13 linesCopy

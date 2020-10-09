@@ -1,0 +1,10 @@
+lint:
+  resolve:
+    http:
+      headers:
+        - matches: https://api.example.com/v2/**
+          name: X-API-KEY
+          envVariable: SECRET_KEY
+        - matches: https://example.com/*/test.yaml
+          name: Authorization
+          envVariable: SECRET_AUTH

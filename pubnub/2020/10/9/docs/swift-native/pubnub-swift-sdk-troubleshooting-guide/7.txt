@@ -1,0 +1,1 @@
+PubNub.log.levels = [.log, .error, .warn, .event, .info]

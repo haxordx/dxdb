@@ -1,0 +1,4 @@
+$ blockstack-cli get_zonefile ee77ad484b7b229f09461e4c2b6d3bd3e152ba95
+$ORIGIN ryanshea.id
+$TTL 3600
+_http._tcp URI 10 1 "https://gaia.blockstack.org/hub/15BcxePn59Y6mYD2fRLCLCaaHScefqW2No/1/profile.json"$ blockstack-cli get_zonefile ee77ad484b7b229f09461e4c2b6d3bd3e152ba95$ORIGIN ryanshea.id$TTL 3600_http._tcp URI 10 1 "https://gaia.blockstack.org/hub/15BcxePn59Y6mYD2fRLCLCaaHScefqW2No/1/profile.json"

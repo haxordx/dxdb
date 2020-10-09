@@ -1,0 +1,1 @@
+self.client.messageCounts().channels(@[@"chats.room1", @"chats.room2"])  .timetokens(@[@(15495750401727535)])  .performWithCompletion(^(PNMessageCountResult *result, PNErrorStatus *status) {    if (!status.isError) {      // Client state retrieved number of messages for channels.    }    else {      // handler error condition    }  });Copy

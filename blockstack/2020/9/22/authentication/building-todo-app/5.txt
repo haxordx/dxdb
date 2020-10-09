@@ -1,0 +1,6 @@
+import { UserSession } from 'blockstack';
+import { appConfig } from '../assets/constants';
+
+// ...
+
+const userSession = new UserSession({ appConfig });import { UserSession } from 'blockstack';import { appConfig } from '../assets/constants';// ...const userSession = new UserSession({ appConfig });

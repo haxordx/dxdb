@@ -1,0 +1,14 @@
+pubnub.addListener({
+        status: function(statusEvent) {
+            if (statusEvent.category === "PNConnectedCategory") {
+                publishSampleMessage();
+            }
+        },
+        message: function(msg) {
+            console.log(msg.message.title);
+            console.log(msg.message.description);
+        },
+        presence: function(presenceEvent) {
+            // This is where you handle presence. Not important for now :)
+        }
+    })

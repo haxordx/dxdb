@@ -1,0 +1,5 @@
+message: function(event) {
+  displayMessage('[MESSAGE: received]',
+    event.message.entry + ': ' + event.message.update);
+}
+Copy

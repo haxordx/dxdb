@@ -1,0 +1,40 @@
+import UIKit
+import PubNub
+
+@UIApplicationMain
+class AppDelegate: UIResponder, UIApplicationDelegate {
+
+  var pubnub: PubNub!
+  var window: UIWindow?
+
+  func application(_ application: UIApplication,
+                  willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+    PubNub.log.levels = [.all]
+    PubNub.log.writers = [ConsoleLogWriter(), FileLogWriter()]
+
+    var config = PubNubConfiguration(publishKey: "demo", subscribeKey: "demo")
+    pubnub = PubNub(configuration: config)
+
+    if #available(iOS 13.0, *) {
+      // no-op - UI created in scene delegate
+    } else if let rootVC = self.window?.rootViewController as? ViewController {
+      rootVC.pubnub = pubnub
+    }
+
+    return true
+  }
+
+  // MARK: UISceneSession Lifecycle
+
+  @available(iOS 13.0, *)
+  func application(_ application: UIApplication,
+                  configurationForConnecting connectingSceneSession: UISceneSession,
+                  options: UIScene.ConnectionOptions) -> UISceneConfiguration {
+    return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
+  }
+
+  @available(iOS 13.0, *)
+  func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
+    // no-op
+  }
+}

@@ -1,0 +1,4 @@
+func display(_ message: Message) {
+    self.messages.append(message)
+  }
+Copy

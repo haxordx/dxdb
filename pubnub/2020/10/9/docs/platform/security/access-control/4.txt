@@ -1,0 +1,1 @@
+pnconfig = PNConfiguration()pnconfig.publish_key = "myPublishKey"pnconfig.subscribe_key = "mySubscribeKey"pnconfig.secret_key = "mySecretKey"pnconfig.uuid = "theServerUUID"pubnub = PubNub(pnconfig)Copy

@@ -1,0 +1,14 @@
+{
+  "jti": "f65f02db-9f42-4523-bfa9-8034d8edf459",
+  "iat": 1555641911,
+  "exp": 1555645511,
+  "iss": "did:btc-addr:1ANL7TNdT7TTcjVnrvauP7Mq3tjcb8TsUX",
+  "public_keys": ["02f08d5541bf611ded745cc15db08f4447bfa55a55a2dd555648a1de9759aea5f9"],
+  "domain_name": "http://localhost:8080",
+  "manifest_uri": "http://localhost:8080/manifest.json",
+  "redirect_uri": "http://localhost:8080",
+  "version": "1.3.1",
+  "do_not_include_profile": true,
+  "supports_hub_url": true,
+  "scopes": ["store_write", "publish_data"]
+}{  "jti": "f65f02db-9f42-4523-bfa9-8034d8edf459",  "iat": 1555641911,  "exp": 1555645511,  "iss": "did:btc-addr:1ANL7TNdT7TTcjVnrvauP7Mq3tjcb8TsUX",  "public_keys": ["02f08d5541bf611ded745cc15db08f4447bfa55a55a2dd555648a1de9759aea5f9"],  "domain_name": "http://localhost:8080",  "manifest_uri": "http://localhost:8080/manifest.json",  "redirect_uri": "http://localhost:8080",  "version": "1.3.1",  "do_not_include_profile": true,  "supports_hub_url": true,  "scopes": ["store_write", "publish_data"]}

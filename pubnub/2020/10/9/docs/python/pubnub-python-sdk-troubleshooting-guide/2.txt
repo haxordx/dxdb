@@ -1,0 +1,3 @@
+from pubnub import PubNub
+
+PubNub.SDK_VERSION

@@ -1,0 +1,13 @@
+counter contract test suite
+    ✓ should have a valid syntax
+    deploying an instance of the contract
+    1) should start at zero
+    2) should increment
+    3) should decrement
+
+1 passing (734ms)
+3 failing
+
+... # error details
+
+npm ERR! Test failed.  See above for more details.counter contract test suite    ✓ should have a valid syntax    deploying an instance of the contract    1) should start at zero    2) should increment    3) should decrement1 passing (734ms)3 failing... # error detailsnpm ERR! Test failed.  See above for more details.

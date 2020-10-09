@@ -1,0 +1,2 @@
+pubnub.subscribe().channels(CHANNEL).with_presence().execute()
+Copy

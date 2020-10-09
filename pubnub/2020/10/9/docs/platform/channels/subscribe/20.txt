@@ -1,0 +1,1 @@
+pubnub.add(  channels: ["chats.room1", "chats.room2", "alerts.system"],  to: "cg_user123") { result in  switch result {    case let .success(response):      print("succeeded: \(response)")    case let .failure(error):      print("failed: \(error.localizedDescription)")  }}Copy

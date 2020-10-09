@@ -1,0 +1,7 @@
+$ export BACKUP_PHRASE="section amount spend resemble spray verify night immune tattoo best emotion parrot
+$ blockstack-cli gaia_dump_bucket hello.id.blockstack https://sample.app https://hub.blockstack.org "$BACKUP_PHRASE" ./backups
+Download 3 files...
+Download hello_world to ./backups/hello_world
+Download dir/format to ./backups/dir\x2fformat
+Download /.dotfile to ./backups/\x2f.dotfile
+3$ export BACKUP_PHRASE="section amount spend resemble spray verify night immune tattoo best emotion parrot$ blockstack-cli gaia_dump_bucket hello.id.blockstack https://sample.app https://hub.blockstack.org "$BACKUP_PHRASE" ./backupsDownload 3 files...Download hello_world to ./backups/hello_worldDownload dir/format to ./backups/dir\x2fformatDownload /.dotfile to ./backups/\x2f.dotfile3

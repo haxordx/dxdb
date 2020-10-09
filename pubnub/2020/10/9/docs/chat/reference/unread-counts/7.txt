@@ -1,0 +1,1 @@
+self.client.objects().memberships()    .includeFields(PNMembershipCustomField)    .performWithCompletion(^(PNFetchMembershipsResult *result, PNErrorStatus *status) {    });Copy

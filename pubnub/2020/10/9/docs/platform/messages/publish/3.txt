@@ -1,0 +1,1 @@
+[self publish: @{@"text" : @"Hello World!"} toChannel:@"my_channel"    completion:^(PNPublishStatus *status) {    NSLog(@"%@status '%@'", status);}];Copy

@@ -1,0 +1,2 @@
+openapi/core.yaml:
+  183:5  error  spec  Property `nam` is not expected here.

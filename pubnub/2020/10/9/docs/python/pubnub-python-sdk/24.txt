@@ -1,0 +1,11 @@
+try:
+    result = yield pubnub.publish().message('hey').channel('blah').result()
+    print(result)
+except PubNubException as e:
+    print("PubNubException: %s" % e)
+    print("category id: #%d" % e.status.category)
+    print("operation id: #%d" % e.status.operation)
+    _handle_error(e)
+except Exception as e:
+    print("Error: %s" % e)
+    _handle_error(e)

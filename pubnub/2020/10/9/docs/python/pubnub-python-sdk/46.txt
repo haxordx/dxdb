@@ -1,0 +1,15 @@
+def publish_callback(task):
+    exception = task.exception()
+
+    if exception is None:
+        envelope = task.result()
+        # Handle PNPublishResult(envelope.result) and PNStatus (envelope.status)
+        pass
+    else:
+        # Handle exception
+        pass
+
+asyncio.ensure_future(pubnub.publish().channel('such_channel').message(['hello', 'there']).future()) \
+    .add_done_callback(publish_callback)
+
+await asyncio.sleep(10)

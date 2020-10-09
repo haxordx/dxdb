@@ -1,0 +1,1 @@
+pubnub.Subscribe<string>()  .ChannelGroups(new string[] {"cg_user123"})  .WithPresence()  .Execute();Copy

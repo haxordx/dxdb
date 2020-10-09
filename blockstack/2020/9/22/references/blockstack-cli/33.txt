@@ -1,0 +1,5 @@
+$ blockstack-cli price example.id
+{
+  "units": "BTC",
+  "amount": "5500"
+}$ blockstack-cli price example.id{  "units": "BTC",  "amount": "5500"}

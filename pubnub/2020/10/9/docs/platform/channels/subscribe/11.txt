@@ -1,0 +1,1 @@
+pubnub.Subscribe<string>()  .Channels(new string[] {"chats.room1"})  .Execute();Copy

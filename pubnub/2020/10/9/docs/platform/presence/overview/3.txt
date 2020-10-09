@@ -1,0 +1,1 @@
+[self.pubnub hereNowForChannel: @[@"chats.room1", "chats.room2"]    withVerbosity:PNHereNowState    completion:^(PNPresenceChannelHereNowResult *result, PNErrorStatus *status) {  // parse the HereNow result parameter}];Copy

@@ -1,0 +1,1 @@
+pubnub.deleteMessages()  .channels(Arrays.asList("chats.room1"))  .start(15526611838554310L)  .end(15526611838554309L)  .async(new PNCallback<PNDeleteMessagesResult>() {    @Override    public void onResponse(PNDeleteMessagesResult result, PNStatus status) {      // handle success or failure of the delete    }  });Copy

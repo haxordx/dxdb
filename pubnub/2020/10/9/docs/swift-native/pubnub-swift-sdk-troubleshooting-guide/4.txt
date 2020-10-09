@@ -1,0 +1,1 @@
+PubNub.log.writers = [FileLogWriter(inside: .allDomainsMask, at: .applicationDirectory, with: 'directoryName')]

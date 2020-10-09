@@ -1,0 +1,1 @@
+pubnub.publish(  {    channel: "my_channel",    message: {"text": "Hello World!"}  },  function(status, response) {    console.log(status);    console.log(response);  });Copy

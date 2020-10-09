@@ -1,0 +1,1 @@
+[self.client deleteMessagesFromChannel:@"chats.room1"    start:@15526611838554310 end:@15526611838554309    withCompletion:^(PNAcknowledgmentStatus *status) {  if (status.isError) {    // handle error condtion  }  else {    // confirm delete success  }}];Copy

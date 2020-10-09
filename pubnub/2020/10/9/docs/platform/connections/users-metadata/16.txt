@@ -1,0 +1,1 @@
+PNResult<PNRemoveUuidMetadataResult> removeUuidMetadataResponse = await pubnub.RemoveUuidMetadata()    .ExecuteAsync();PNRemoveUuidMetadataResult removeUuidMetadataResult = removeUuidMetadataResponse.Result;PNStatus status = removeUuidMetadataResponse.Status;Copy

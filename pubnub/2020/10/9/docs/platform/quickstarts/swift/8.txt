@@ -1,0 +1,9 @@
+listener.didReceiveMessage = { [weak self] event in
+  if let entry = try? event.payload.codableValue.decode(EntryUpdate.self) {
+
+    self?.display(
+      Message(messageType: "[MESSAGE: received]", messageText: "entry: \(entry.entry), update: \(entry.update)")
+    )
+  }
+}
+Copy

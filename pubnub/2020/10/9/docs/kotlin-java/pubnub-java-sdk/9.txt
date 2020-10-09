@@ -1,0 +1,11 @@
+pubnub.addListener(object : SubscribeCallback() {
+
+    override fun status(pubnub: PubNub, status: PNStatus) {
+        if (status.category == PNStatusCategory.PNUnexpectedDisconnectCategory ||
+            status.category == PNStatusCategory.PNTimeoutCategory
+        ) {
+            pubnub.reconnect()
+        }
+    }
+    
+})

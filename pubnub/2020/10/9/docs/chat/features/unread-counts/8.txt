@@ -1,0 +1,1 @@
+PNResult<PNGetMembershipsResult> getMembershipsResponse = await pubnub.GetMemberships()    .Include(new PNMembershipField[] { PNMembershipField.CUSTOM })    .IncludeCount(true)    .Page(new PNPageObject() { Next = "", Prev = "" })    .ExecuteAsync();PNGetMembershipsResult getMembershipsResult = getMembershipsResponse.Result;PNStatus status = getMembershipsResponse.Status;Copy

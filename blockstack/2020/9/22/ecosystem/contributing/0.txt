@@ -1,0 +1,10 @@
+➜  docs.blockstack git:(feat/my-helpful-contribution) ✗ yarn dev
+yarn run v1.22.4
+$ yarn clean:build-files && next dev
+$ rimraf .next
+ready - started server on http://localhost:3000
+warn  - You have enabled experimental feature(s).
+warn  - Experimental features are not covered by semver, and may cause unexpected or broken application behavior. Use them at your own risk.
+
+info  - Using external babel configuration from /Users/YOUR_USERNAME/oss/docs.blockstack/babel.config.js
+event - compiled successfully➜  docs.blockstack git:(feat/my-helpful-contribution) ✗ yarn devyarn run v1.22.4$ yarn clean:build-files && next dev$ rimraf .nextready - started server on http://localhost:3000warn  - You have enabled experimental feature(s).warn  - Experimental features are not covered by semver, and may cause unexpected or broken application behavior. Use them at your own risk.info  - Using external babel configuration from /Users/YOUR_USERNAME/oss/docs.blockstack/babel.config.jsevent - compiled successfully

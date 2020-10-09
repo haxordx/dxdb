@@ -1,0 +1,27 @@
+export default (request) => {
+    var console = require('console');
+    var pubnub = require('pubnub');
+
+    try {
+        var message = request.message;
+        var pattern = /\B@[a-z0-9_-]+/gi;
+        var usernames = message.match(pattern);
+
+        // for every username found, forward the message to a channel
+        // with the same name (ex: "@username")
+        usernames.forEach(function(username) {
+            pubnub.publish({
+                channel: username,
+                message: message
+            });
+        });
+
+        return request.ok();
+
+    } catch (e) {
+        // This is the place for exception handling.
+        // Be sure to make best use of this ;)
+        console.error('Uncaught exception:', e);
+    }
+};
+show all 26 lineshide 11 linesCopy

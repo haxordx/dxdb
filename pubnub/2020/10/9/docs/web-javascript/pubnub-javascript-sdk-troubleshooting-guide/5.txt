@@ -1,0 +1,6 @@
+Vue.use(PubNubVue, {
+    subscribeKey: "mySubscribeKey",
+    publishKey: "myPublishKey",
+    logVerbosity: true,
+    uuid: "myUniqueUUID"
+});

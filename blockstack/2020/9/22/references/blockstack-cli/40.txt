@@ -1,0 +1,3 @@
+$ export OWNER="6e50431b955fe73f079469b24f06480aee44e4519282686433195b3c4b5336ef01"
+$ # NOTE: https://registrar.blockstack.org is the registrar for personal.id!
+$ blockstack-cli register_subdomain hello.personal.id "$OWNER" https://hub.blockstack.org https://registrar.blockstack.org$ export OWNER="6e50431b955fe73f079469b24f06480aee44e4519282686433195b3c4b5336ef01"$ # NOTE: https://registrar.blockstack.org is the registrar for personal.id!$ blockstack-cli register_subdomain hello.personal.id "$OWNER" https://hub.blockstack.org https://registrar.blockstack.org

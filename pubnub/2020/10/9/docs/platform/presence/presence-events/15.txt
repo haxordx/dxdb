@@ -1,0 +1,1 @@
+// do listen for presence events for these channels[self.pubnub subscribeToChannels: @[@"chats.team1", @"chats.dept5"] withPresence:true];// do not listen for presence events for these channels[self.pubnub subscribeToChannels: @[@"chats.team1", @"chats.dept5"] withPresence:false];Copy

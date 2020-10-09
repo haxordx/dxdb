@@ -1,0 +1,1 @@
+// Create a new listener instancelet listener = SubscriptionListener()// Add listener event callbackslistener.didReceiveSubscription = { event in  switch event {  case signalReceived(signal):    print("Signal Received: \(signal)")   default:    break  }}// Start receiving signal eventspubnub.add(listener)Copy

@@ -1,0 +1,28 @@
+<template>
+    <div id="app">
+        <ol>
+            <li v-for="msg in ch1">{{ msg.message }}</li>
+        </ol>
+    </div>
+</template>
+<script>
+export default {
+    name: 'app',
+    data() {
+        return {
+            ch1: this.$pnGetMessage('ch1', null, 10, 'instance2'),
+        };
+    },
+    mounted() {
+        this.$pnSubscribe(
+            {
+                channels: ['ch1']
+            },
+            'instance2'
+        );
+    },
+    created() {
+        this.$pnGetInstance('instance2');
+    },
+};
+</script>

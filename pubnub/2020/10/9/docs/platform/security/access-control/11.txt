@@ -1,0 +1,1 @@
+pubnub.grant(  {    channels: ["alerts.*"],    channelGroups: ["cg_user123"],    authKeys: ["myAuthKey"],    ttl: 1440,    read: true  },  function (status) {    console.log(status);  });Copy

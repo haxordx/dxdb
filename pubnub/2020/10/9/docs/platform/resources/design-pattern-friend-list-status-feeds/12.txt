@@ -1,0 +1,1 @@
+# Add ch-user-a-present to cg-user-a-friendspubnub.add_channel_to_channel_group()\  .channels(["ch-user-a-present"])\  .channel_group("cg-user-a-friends")\  .sync()# Add ch-user-a-present to cg-user-a-status-feedpubnub.add_channel_to_channel_group()\  .channels(["ch-user-a-present"])\  .channel_group("cg-user-a-status-feed")\  .sync()Copy

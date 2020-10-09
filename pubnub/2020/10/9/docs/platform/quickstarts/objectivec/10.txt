@@ -1,0 +1,9 @@
+- (void)client:(PubNub *)pubnub didReceivePresenceEvent:(PNPresenceEventResult *)event {
+  NSString *text = [NSString stringWithFormat:@"event uuid: %@, channel: %@",
+                    event.data.presence.uuid,
+                    event.data.channel];
+
+  NSString *type = [NSString stringWithFormat:@"[PRESENCE: %@]", event.data.presenceEvent];
+  [self displayMessage:text asType: type];
+}
+Copy

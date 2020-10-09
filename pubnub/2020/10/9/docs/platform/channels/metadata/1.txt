@@ -1,0 +1,1 @@
+pubnub.objects.setChannelMetadata({    channel: "my_channel",    data: {      name: "main channel",      description: "This channel is for company wide chatter.",      custom: { "owner": "johndoe_1" }    }});Copy

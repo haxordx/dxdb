@@ -1,0 +1,12 @@
+{
+  "action":"interval",
+  "channel": "chats.megachat",
+  "occupancy":27,
+  "join":["user123","user88"],
+  "leave":["user20", "user11", "user14"],
+  "timeout":["user42"],
+  "subscribedChannel":"chats.megachat-pnpres",
+  "timestamp":1511947739,
+  "timetoken": "15119477396210903"
+}
+Copy

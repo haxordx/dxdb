@@ -1,0 +1,11 @@
+module.exports = {
+  id: 'my-local-plugin',
+  rules: {
+    oas3: {
+      'tag-name': () => {
+        //...
+      },
+    }
+    oas2: {}
+  }
+}

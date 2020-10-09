@@ -1,0 +1,1 @@
+class MessageListener(SubscribeCallback):  def status(self, pubnub, status):    pass  def message(self, pubnub, message):    print("MESSAGE: %s" % message)  def presence(self, pubnub, presence):    passpubnub.add_listener(my_listener)pubnub.subscribe()\  .channel_groups("cg-user-a-friends")\  .execute()Copy

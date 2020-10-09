@@ -1,0 +1,1 @@
+pubNub.subscribe()        .channels(Arrays.asList("ch-1"))        .withPresence()        .execute();Copy

@@ -1,0 +1,4 @@
+while the_update != "42":
+    the_update = input("Enter an update for Earth: ")
+    # more code goes here
+Copy

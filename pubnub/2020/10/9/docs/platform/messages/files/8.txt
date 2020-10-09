@@ -1,0 +1,1 @@
+resGetFile, statusGetFile, errGetFile := pn.GetFileURL().  Channel("my_channel").  ID("d9515cb7-48a7-41a4-9284-f4bf331bc770").  Name("cat_picture.jpg").Execute()fmt.Println(resGetFile, statusGetFile, errGetFile)fmt.Println(resGetFile.URL)Copy

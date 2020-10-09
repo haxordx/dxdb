@@ -1,0 +1,1 @@
+# do listen for presence events for these channelspubnub.subscribe()\  .channels("chats.team1", "chats.dept5")\  .with_presence()\  .execute()# do not listen for presence events for these channelspubnub.subscribe().channels("alerts.system", "alerts.team1").execute()Copy

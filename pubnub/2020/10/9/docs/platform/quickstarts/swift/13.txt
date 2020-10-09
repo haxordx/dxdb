@@ -1,0 +1,18 @@
+Button(action: submitUpdate) {
+  Text("SUBMIT UPDATE TO THE GUIDE")
+  .padding()
+  .foregroundColor(Color.white)
+  .background(entry.isEmpty ? Color.secondary : Color.red)
+  .cornerRadius(40)
+}
+
+func submitUpdate() {
+  if !self.entry.isEmpty {
+    pubnubStore.publish(update: EntryUpdate(update: self.entry))
+    self.entry = ""
+  }
+
+  // Hides keyboard
+  UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+}
+show all 17 lineshide 2 linesCopy

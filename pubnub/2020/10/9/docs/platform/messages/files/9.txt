@@ -1,0 +1,1 @@
+NSURL *url = [self.client downloadURLForFileWithName:@"cat_picture.jpg"                                          identifier:@"<file-identifier>"                                           inChannel:@"my_channel"];Copy

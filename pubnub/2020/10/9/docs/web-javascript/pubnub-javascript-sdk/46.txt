@@ -1,0 +1,16 @@
+import Vue from 'vue';
+import PubNubVue from 'pubnub-vue';
+import App from './App';
+
+Vue.use(PubNubVue, {
+    subscribeKey: 'YOUR SUBSCRIBE KEY HERE',
+    publishKey: 'YOUR PUBLISH KEY HERE'
+});
+
+new Vue({
+    el: '#app',
+    template: '<App/>',
+    components: {
+        App
+    },
+});

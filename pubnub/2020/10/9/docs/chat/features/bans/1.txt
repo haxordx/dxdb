@@ -1,0 +1,1 @@
+pubnub.grant({  channels: ['ch-1','ch-2'], //channels to allow grant on  authKeys: ['key1'], // the keys we are provisioning  read: false,  write: false,}, (status) => {  // handle status});Copy

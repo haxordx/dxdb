@@ -1,0 +1,7 @@
+this.$pnPublish(
+    {
+        channel: 'ch1',
+        message: Date.now()
+    },
+    (status, response) => console.log(status, response)
+);

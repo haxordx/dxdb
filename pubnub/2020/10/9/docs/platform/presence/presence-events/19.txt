@@ -1,0 +1,1 @@
+{  "action": "join",  "channel": "chats.room1",  "subscribedChannel": "chats.room1-pnpres",  "timetoken": "15119466699655811",  "occupancy": 2,  "uuid": "user123",  "timestamp": 1511946669}Copy

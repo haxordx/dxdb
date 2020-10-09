@@ -1,0 +1,1 @@
+const pubnub = new PubNub({  publishKey: "myPublishKey",  subscribeKey: "mySubscribeKey",  uuid: "server-1"});Copy

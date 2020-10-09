@@ -1,0 +1,18 @@
+from tornado import gen
+
+@gen.coroutine
+def publish_snippet():
+    def publish_callback(task):
+        exception = task.exception()
+
+        if exception is None:
+            envelope = task.result()
+            # Handle PNPublishResult(envelope.result) and PNStatus (envelope.status)
+            pass
+        else:
+            # Handle exception
+            pass
+
+    pubnub.publish().channel('such_channel').message(['hello', 'there']).future().add_done_callback(publish_callback)
+
+    yield gen.sleep(10)

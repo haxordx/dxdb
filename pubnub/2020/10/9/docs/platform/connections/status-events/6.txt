@@ -1,0 +1,1 @@
+class SubscribeHandler(SubscribeCallback):  def status(self, pubnub, event):    passpubnub.add_listener(SubscribeHandler())Copy

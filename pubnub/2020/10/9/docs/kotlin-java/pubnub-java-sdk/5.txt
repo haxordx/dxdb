@@ -1,0 +1,6 @@
+val config = PNConfiguration().apply {
+    subscribeKey = "mySubKey"
+    publishKey = "myPubKey"
+    uuid = "myUniqueUuid"
+}
+val pubnub = PubNub(config)

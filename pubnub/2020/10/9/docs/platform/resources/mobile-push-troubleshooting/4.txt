@@ -1,0 +1,8 @@
+{
+   "sub_key":"sub-c-e1559b02-3320-11ea-b686-76f717eaed2c",
+   "timestamp":"16007987966269679",
+   "platform":"apns2",
+   "action":"remove",
+   "device":"f3b26d22f3b26d22f3b26d22f3b26d22f3b26d22f3b26d22f3b26d22f3b26d22"
+}
+Copy

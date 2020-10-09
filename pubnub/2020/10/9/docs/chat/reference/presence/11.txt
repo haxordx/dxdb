@@ -1,0 +1,1 @@
+pubnub.setPresence(  state: ["New": "State"],  on: ["ch-1"]) { result in  switch result {  case let .success(response):    print("Successful Set State Response: \(response)")  case let .failure(error):    print("Failed Set State Response: \(error.localizedDescription)")  }}Copy

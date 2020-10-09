@@ -1,0 +1,1 @@
+{   "pn_apns":{      "aps":{         "alert":{            "title":"Chat invite",            "body":"John invited you to chat"         },         "badge":2,         "sound":"melody"      }   }}Copy

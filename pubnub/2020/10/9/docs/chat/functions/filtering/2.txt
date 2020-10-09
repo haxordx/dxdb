@@ -1,0 +1,4 @@
+{
+    "text": "profanity message here"
+}
+Copy

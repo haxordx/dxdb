@@ -1,0 +1,5 @@
+pubnub = new PubNub({
+        publishKey : "myPublishKey",
+        subscribeKey : "mySubscribeKey",
+        uuid: "myUniqueUUID"
+    })

@@ -1,0 +1,9 @@
+{
+  "mnemonic": "exhaust spin topic distance hole december impulse gate century absent breeze ostrich armed clerk oak peace want scrap auction sniff cradle siren blur blur",
+  "keyInfo": {
+    "privateKey": "2033269b55026ff2eddaf06d2e56938f7fd8e9d697af8fe0f857bb5962894d5801",
+    "address": "STTX57EGWW058FZ6WG3WS2YRBQ8HDFGBKEFBNXTF",
+    "btcAddress": "mkRYR7KkPB1wjxNjVz3HByqAvVz8c4B6ND",
+    "index": 0
+  }
+}{  "mnemonic": "exhaust spin topic distance hole december impulse gate century absent breeze ostrich armed clerk oak peace want scrap auction sniff cradle siren blur blur",  "keyInfo": {    "privateKey": "2033269b55026ff2eddaf06d2e56938f7fd8e9d697af8fe0f857bb5962894d5801",    "address": "STTX57EGWW058FZ6WG3WS2YRBQ8HDFGBKEFBNXTF",    "btcAddress": "mkRYR7KkPB1wjxNjVz3HByqAvVz8c4B6ND",    "index": 0  }}

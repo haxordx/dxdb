@@ -1,0 +1,1 @@
+PNConfiguration pnConfiguration = new PNConfiguration();pnConfiguration.SubscribeKey = "mySubscribeKey";pnConfiguration.PublishKey = "myPublishKey";pnConfiguration.UUID = "user-1";PubNub pubnub = new PubNub(pnConfiguration);Copy

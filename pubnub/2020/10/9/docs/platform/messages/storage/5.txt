@@ -1,0 +1,1 @@
+pubnub.FetchHistory()  .Channels(new string[] { "my_channel" })  .MaximumPerChannel(25)  .End(15343325004275466)  .Execute(new PNFetchHistoryResultExt((result, status) => {    // handle returned messages in result  }));Copy

@@ -1,0 +1,1 @@
+import (    pubnub "github.com/pubnub/go")config := pubnub.NewConfig()config.PublishKey = "myPublishKey"config.SubscribeKey = "mySubscribeKey"config.UUID = "server-1"pn := pubnub.NewPubNub(config)Copy

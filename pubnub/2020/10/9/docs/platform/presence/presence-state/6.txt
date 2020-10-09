@@ -1,0 +1,1 @@
+my_state = {"mood": "pumped", "workingFrom": "Home"}envelope = pubnub.set_state()\  .channels(["chats.room1"]) \  .channel_groups(["cg_user123_friends"])\  .state(my_state)\  .sync()Copy

@@ -1,0 +1,10 @@
+@Override
+public void status(PubNub pubnub, PNStatus event) {
+  displayMessage("[STATUS: " + event.getCategory() + "]",
+    "connected to channels: " + event.getAffectedChannels());
+
+  if (event.getCategory().equals(PNStatusCategory.PNConnectedCategory)){
+    submitUpdate(theEntry, "Harmless.");
+  }
+}
+Copy

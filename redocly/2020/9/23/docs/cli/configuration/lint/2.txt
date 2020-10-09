@@ -1,0 +1,8 @@
+lint:
+  extends:
+    - recommended
+  rules:
+    boolean-parameter-prefixes:
+      severity: warn
+    no-unused-components:
+      severity: error

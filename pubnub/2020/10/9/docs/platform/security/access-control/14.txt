@@ -1,0 +1,1 @@
+pubnub.grant()\  .channels(["alerts.*"])\  .channel_groups(["cg_user123"])\  .auth_keys(["myAuthKey"])\  .read(True)\  .sync()Copy

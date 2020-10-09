@@ -1,0 +1,32 @@
+// retrieve last 100 messages
+
+pubnub.DetailedHistory<string>(
+	"history_channel",
+	100,
+	DisplayReturnMessage,
+	DisplayErrorMessage);
+void DisplayReturnMessage(string result)
+{
+	UnityEngine.Debug.Log(result);
+	if (!string.IsNullOrEmpty(result) && !string.IsNullOrEmpty(result.Trim()))
+	{
+		List<object> deserializedMessage = pubnub.JsonPluggableLibrary.DeserializeToListOfObject(result);
+		if (deserializedMessage != null && deserializedMessage.Count > 0)
+		{
+			object[] message = (from item in deserializedMessage select item as object).ToArray ();
+			if ((message != null)&&(message.Length >= 0))
+			{
+				IList<object> enumerable = message [0] as IList<object>;
+				foreach (object item in enumerable)
+				{
+					UnityEngine.Debug.Log (string.Format ("Message: {0}", item.ToString()));
+					//IF CUSTOM OBJECT IS EXCEPTED, YOU CAN CAST THIS OBJECT TO YOUR CUSTOM CLASS TYPE
+				}
+			}
+		}
+	}
+}
+void DisplayErrorMessage(PubnubClientError pubnubError)
+{
+    UnityEngine.Debug.Log(pubnubError.StatusCode);
+}

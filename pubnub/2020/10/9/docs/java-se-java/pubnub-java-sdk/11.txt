@@ -1,0 +1,3 @@
+pubnub.subscribe()
+        .channels(Collections.singletonList(channelName))
+        .execute();

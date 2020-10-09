@@ -1,0 +1,1 @@
+NSDictionary *meta = @{@"uuid": self.pubnub.uuid};[self.pubnub publish:@"Hello to everyone (except me)"      toChannel:@"chats.room1" withMetadata:meta      completion:^(PNPublishStatus *status) {  NSLog(@"%@status '%@'", status);}];Copy

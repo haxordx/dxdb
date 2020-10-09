@@ -1,0 +1,1 @@
+$ blockstack-cli lookup example.id$ blockstack-cli lookup example.id

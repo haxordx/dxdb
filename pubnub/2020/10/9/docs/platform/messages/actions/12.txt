@@ -1,0 +1,1 @@
+ pubnub.remove_message_action()        .channel('chats.room1')        .action_timetoken(15901706735798836) # Some action timetoken        .message_timetoken(15901706735798837) # Some message timetoken        .pn_async(message_action_callback)Copy

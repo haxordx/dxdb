@@ -1,0 +1,11 @@
+pubnub.Publish()
+	.Channel("channel1")
+	.Message("test message")
+	.Async((result, status) => {    
+		if (!status.Error) {
+			Debug.Log(string.Format("Publish Timetoken: {0}", result.Timetoken));
+		} else {
+			Debug.Log(status.Error);
+			Debug.Log(status.ErrorData.Info);
+		}
+	});

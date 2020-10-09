@@ -1,0 +1,1 @@
+pubnub.grant()\  .channels(["chats.room1", "chats.room2"])\  .auth_keys(["myAuthKey"])\  .read(True)  .write(True)\  .sync()Copy

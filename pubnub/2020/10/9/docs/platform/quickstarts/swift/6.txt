@@ -1,0 +1,3 @@
+// Create a new listener instance
+let listener = SubscriptionListener()
+Copy

@@ -1,0 +1,39 @@
+var PubNub = require('pubnub');
+
+var pubnub = new PubNub({
+    subscribeKey: 'YOUR SUBSCRIBE KEY HERE',
+    publishKey: 'YOUR PUBLISH KEY HERE'
+});
+
+function publishSampleMessage() {
+    console.log("Since we're publishing on subscribe connectEvent, we're sure we'll receive the following publish.");
+    var publishConfig = {
+        channel : "hello_world",
+        message : {
+            title: "greeting",
+            description: "hello world!"
+        }
+    }
+    pubnub.publish(publishConfig, function(status, response) {
+        console.log(status, response);
+    })
+}
+
+pubnub.addListener({
+    status: function (st) {
+        if (st.category === "PNConnectedCategory") {
+            publishSampleMessage();
+        }
+    },
+    message: function (m) {
+        console.log(m.message.title);
+        console.log(m.message.description);
+    },
+    presence: function (ps) {
+        console.log(ps);
+    }
+});
+
+pubnub.subscribe({
+    channels: ['hello_world']
+});

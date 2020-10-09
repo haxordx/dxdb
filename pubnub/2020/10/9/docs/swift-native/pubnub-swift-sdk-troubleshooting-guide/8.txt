@@ -1,0 +1,5 @@
+PubNub.log.levels = [.none]
+
+// Or this:
+
+PubNub.log.levels = []

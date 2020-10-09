@@ -1,0 +1,3 @@
+$ # Get an unencrypted, unsigned file
+$ blockstack-cli gaia_getfile ryan.id http://public.ykliao.com statuses.json
+[{"id":0,"text":"Hello, Blockstack!","created_at":1515786983492}]$ # Get an unencrypted, unsigned file$ blockstack-cli gaia_getfile ryan.id http://public.ykliao.com statuses.json[{"id":0,"text":"Hello, Blockstack!","created_at":1515786983492}]

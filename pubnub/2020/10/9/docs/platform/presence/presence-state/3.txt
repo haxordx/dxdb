@@ -1,0 +1,1 @@
+[self.pubnub setState: @{@"mood": @"pumped", @"workingFrom": @"Home"}      forUUID:self.pubnub.uuid onChannel: @"chats.room1"      withCompletion:^(PNClientStateUpdateStatus *status) {    // handle status}];Copy

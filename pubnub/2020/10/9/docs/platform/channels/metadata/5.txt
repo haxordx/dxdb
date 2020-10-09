@@ -1,0 +1,1 @@
+pubnub.objects.getChannelMetadata({        channel: "my_channel"});Copy

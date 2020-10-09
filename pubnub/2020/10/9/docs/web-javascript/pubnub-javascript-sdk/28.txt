@@ -1,0 +1,11 @@
+pubnub.hereNow(
+    {
+        channels: ["ch1"], 
+        channelGroups : ["cg1"],
+        includeUUIDs: true,
+        includeState: true 
+    },
+    function (status, response) {
+        // handle status, response
+    }
+);

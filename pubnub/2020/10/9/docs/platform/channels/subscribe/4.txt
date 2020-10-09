@@ -1,0 +1,1 @@
+pubnub.subscribe().channels(Arrays.asList("chats.room1", "alerts.system"));Copy

@@ -1,0 +1,5 @@
+presence: function(event) {
+  displayMessage('[PRESENCE: ' + event.action + ']',
+    'uuid: ' + event.uuid + ', channel: ' + event.channel);
+}
+Copy

@@ -1,0 +1,11 @@
+$ blockstack-cli get_payment_key "soap fog wealth upon actual blossom neither timber phone exile monkey vocal"
+[
+  {
+    "privateKey": "4023435e33da4aff0775f33e7b258f257fb20ecff039c919b5782313ab73afb401",
+    "address": {
+      "BTC": "1ybaP1gaRwRSWRE4f8JXo2W8fiTZmA4rV",
+      "STACKS": "SP5B89ZJAQHBRXVYP15YB5PAY5E24FEW9K4Q63PE"
+    },
+    "index": 0
+  }
+]$ blockstack-cli get_payment_key "soap fog wealth upon actual blossom neither timber phone exile monkey vocal"[  {    "privateKey": "4023435e33da4aff0775f33e7b258f257fb20ecff039c919b5782313ab73afb401",    "address": {      "BTC": "1ybaP1gaRwRSWRE4f8JXo2W8fiTZmA4rV",      "STACKS": "SP5B89ZJAQHBRXVYP15YB5PAY5E24FEW9K4Q63PE"    },    "index": 0  }]

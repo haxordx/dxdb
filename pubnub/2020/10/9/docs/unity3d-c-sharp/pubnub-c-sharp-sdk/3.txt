@@ -1,0 +1,6 @@
+PNConfiguration pnConfiguration = new PNConfiguration();
+pnConfiguration.SubscribeKey = "my_subkey";
+pnConfiguration.PublishKey = "my_pubkey";
+pnConfiguration.Secure = true;
+pnConfiguration.UUID = "myUniqueUUID";
+pubnub = new PubNub(pnConfiguration);

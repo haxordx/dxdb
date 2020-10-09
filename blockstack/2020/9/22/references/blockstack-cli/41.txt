@@ -1,0 +1,5 @@
+$ # Tip: you can get your owner and payment keys from your 12-word backup phrase using the get_owner_keys and get_payment_key commands.
+$ export OWNER="6e50431b955fe73f079469b24f06480aee44e4519282686433195b3c4b5336ef01"
+$ export PAYMENT="bfeffdf57f29b0cc1fab9ea197bb1413da2561fe4b83e962c7f02fbbe2b1cd5401"
+$ blockstack-cli revoke example.id "$OWNER" "$PAYMENT"
+233b559c97891affa010567bd582110508d0236b4e3f88d3b1d0731629e030b0$ # Tip: you can get your owner and payment keys from your 12-word backup phrase using the get_owner_keys and get_payment_key commands.$ export OWNER="6e50431b955fe73f079469b24f06480aee44e4519282686433195b3c4b5336ef01"$ export PAYMENT="bfeffdf57f29b0cc1fab9ea197bb1413da2561fe4b83e962c7f02fbbe2b1cd5401"$ blockstack-cli revoke example.id "$OWNER" "$PAYMENT"233b559c97891affa010567bd582110508d0236b4e3f88d3b1d0731629e030b0

@@ -1,0 +1,18 @@
+constructor: [PubNubAngular, function(pubnubService){
+    var self = this;
+    self.pubnubService = pubnubService;
+    self.channelName = 'gupshup-input';
+
+    pubnubService.init({
+        publishKey:   'YOUR_PUB_KEY',
+        subscribeKey: 'YOUR_SUB_KEY',
+        ssl:true
+    });
+
+    pubnubService.subscribe({channels: [self.channelName], triggerEvents: true});
+
+    self.messages = pubnubService.getMessage(this.channelName,function(msg){
+        // no handler necessary, dynamic collection of msg objects
+    });
+}];
+show all 17 lineshide 2 linesCopy

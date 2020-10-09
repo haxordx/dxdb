@@ -1,0 +1,1 @@
+pubnub.addMessageAction(  {    channel: 'chats.room1'    messageTimetoken: '15610547826970040',    action: {      type: 'reaction',      value: 'smiley_face',    }  },  function(status, response) {    console.log(status, response);  });Copy

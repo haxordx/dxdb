@@ -1,0 +1,1 @@
+pubnub.addListener(new SubscribeCallback() {  @Override  public void message(PubNub pubnub, PNMessageResult message) {    System.out.println("STATUS" + message);  }});// Get Status Feed Messagespubnub.subscribe()  .channelGroups(Arrays.asList("cg-user-a-friends"))  .execute();Copy

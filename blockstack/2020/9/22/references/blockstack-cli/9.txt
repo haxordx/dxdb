@@ -1,0 +1,5 @@
+ $ # password is "asdf"
+ $ blockstack-cli encrypt_keychain "section amount spend resemble spray verify night immune tattoo best emotion parrot"
+ Enter password:
+ Enter password again:
+ M+DnBHYb1fgw4N3oZ+5uTEAua5bAWkgTW/SjmmBhGGbJtjOtqVV+RrLJEJOgT35hBon4WKdGWye2vTdgqDo7+HIobwJwkQtN2YF9g3zPsKk= $ # password is "asdf" $ blockstack-cli encrypt_keychain "section amount spend resemble spray verify night immune tattoo best emotion parrot" Enter password: Enter password again: M+DnBHYb1fgw4N3oZ+5uTEAua5bAWkgTW/SjmmBhGGbJtjOtqVV+RrLJEJOgT35hBon4WKdGWye2vTdgqDo7+HIobwJwkQtN2YF9g3zPsKk=

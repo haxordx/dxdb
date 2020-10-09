@@ -1,0 +1,1 @@
+pubnub.getUUIDMetadata().async(new PNCallback<PNGetUUIDMetadataResult>() {    @Override    public void onResponse(@Nullable final PNGetUUIDMetadataResult result, @NotNull final PNStatus status) {        if (status.isError()) {            //handle error        }        else {            //handle result        }    }});Copy

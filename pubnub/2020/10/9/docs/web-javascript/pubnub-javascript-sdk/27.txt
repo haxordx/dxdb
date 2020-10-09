@@ -1,0 +1,16 @@
+pubnub.publish(
+    {
+        message: {
+            such: 'object'
+        },
+        channel: 'ch1',
+        sendByPost: false, // true to send via POST
+        storeInHistory: false, //override default storage options
+        meta: {
+            "cool": "meta"
+        } // publish extra meta with the request
+    },
+    function (status, response) {
+        // handle status, response
+    }
+);

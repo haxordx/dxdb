@@ -1,0 +1,9 @@
+from pubnub.pubnub_twisted import PubNubTwisted
+from pubnub.pnconfiguration import PNConfiguration
+
+pnconfig = PNConfiguration()
+pnconfig.subscribe_key = "my_subkey"
+pnconfig.publish_key = "my_pubkey"
+pnconfig.ssl = False
+pnconfig.uuid = "my_custom_uuid"
+pubnub = PubNubTwisted(pnconfig)

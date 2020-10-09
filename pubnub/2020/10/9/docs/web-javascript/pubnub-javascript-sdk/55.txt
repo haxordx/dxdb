@@ -1,0 +1,4 @@
+this.$pnSubscribe({
+    channels: ['ch1'],
+    autoload: 100
+});

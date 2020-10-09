@@ -1,0 +1,1 @@
+pubnub.Grant()  .Channels(new string[]{"chats.room1", "chats.room2"})  .AuthKeys(new string[] {"myAuthKey"})  .Write(true)  .Read(true)  .TTL(1440)  .Execute(new PNAccessManagerGrantResultExt(    (result, status) => {      // handle result/status    }  ));Copy

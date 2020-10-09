@@ -1,0 +1,22 @@
+protected void submitUpdate(String anEntry, String anUpdate) {
+  JsonObject entryUpdate = new JsonObject();
+  entryUpdate.addProperty("entry", anEntry);
+  entryUpdate.addProperty("update", anUpdate);
+
+  pubnub.publish().channel(theChannel).message(entryUpdate)
+    .async(new PNCallback<PNPublishResult>() {
+      @Override
+      public void onResponse(PNPublishResult result, PNStatus status) {
+        if (status.isError()) {
+            status.getErrorData().getThrowable().printStackTrace();
+        }
+        else {
+          displayMessage("[PUBLISH: sent]",
+            "timetoken: " + result.getTimetoken());
+
+          entryUpdateText.setText("");
+        }
+      }
+    });
+}
+show all 21 lineshide 6 linesCopy

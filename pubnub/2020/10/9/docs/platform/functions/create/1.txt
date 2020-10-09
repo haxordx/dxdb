@@ -1,0 +1,9 @@
+export default (request) => {
+
+    console.log('request', request);
+    request.message.hello = 'world!'; // augment hello = world
+    console.log('The message: ', request.message, ' was published on ', request.channels[0], ' via', request.meta.clientip);
+
+    return request.ok(); // Return a promise when you're done
+}
+Copy

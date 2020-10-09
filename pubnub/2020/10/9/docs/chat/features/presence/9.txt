@@ -1,0 +1,1 @@
+pubnub.Subscribe()  .Channels(new List<string>() {    "ch-1"  })  .WithPresence()  .Execute();Copy

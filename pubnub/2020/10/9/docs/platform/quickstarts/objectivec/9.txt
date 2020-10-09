@@ -1,0 +1,7 @@
+- (void)client:(PubNub *)pubnub didReceiveStatus:(PNStatus *)event {
+    NSString *text = [NSString stringWithFormat:@"status: %@", event.stringifiedCategory];
+
+    [self displayMessage:text asType:@"[STATUS: connection]"];
+    [self submitUpdate:@"Harmless." forEntry:kEntryEarth toChannel:kChannelGuide];
+}
+Copy

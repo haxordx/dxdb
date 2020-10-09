@@ -1,0 +1,1 @@
+pubnub.setState({  state: {    mood: 'grumpy',  },  channels: ['room-1'],}, (status, response) => {  // handle state setting response});Copy

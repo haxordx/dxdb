@@ -1,0 +1,17 @@
+envelope = await pubnub.here_now()\
+        .channels(['cool_channel1', 'cool_channel2'])\
+        .include_uuids(True)\
+        .future()
+
+if envelope.status.is_error():
+    # handle error
+    return
+
+for channel_data in envelope.result.channels:
+    print("---")
+    print("channel: %s" % channel_data.channel_name)
+    print("occupancy: %s" % channel_data.occupancy)
+
+    print("occupants: %s" % channel_data.channel_name)
+for occupant in channel_data.occupants:
+    print("uuid: %s, state: %s" % (occupant.uuid, occupant.state))

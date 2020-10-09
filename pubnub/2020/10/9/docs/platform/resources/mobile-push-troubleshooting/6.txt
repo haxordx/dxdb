@@ -1,0 +1,9 @@
+{
+"sub_key" : "sub-c-...",
+"action" : "update",
+"old_device": "APA91bEgK4D",
+"device" : "ta28zYhV",
+"platform" : "gcm",
+"timestamp" : 1441230130
+}
+Copy

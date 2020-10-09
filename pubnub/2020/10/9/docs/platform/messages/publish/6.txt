@@ -1,0 +1,1 @@
+def publish_callback(result, status):  if status.isError:    print status.statusCode  elif    print result.timetokenpubnub.publish()\  .channel("my_channel") \  .message({"text": "Hello World!"})\  .pn_async(publish_callback)Copy

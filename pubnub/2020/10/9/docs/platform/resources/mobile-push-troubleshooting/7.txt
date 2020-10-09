@@ -1,0 +1,2 @@
+curl 'http://ps.pndsn.com/v1/push/sub-key/{your_sub_key}/devices/{device_token}?type={push_type}'
+Copy

@@ -1,0 +1,5 @@
+$ blockstack-cli get_confirmations e41ce043ab64fd5a5fd382fba21acba8c1f46cbb1d7c08771ada858ce7d29eea
+{
+  "blockHeight": 567890,
+  "confirmations": 7,
+}$ blockstack-cli get_confirmations e41ce043ab64fd5a5fd382fba21acba8c1f46cbb1d7c08771ada858ce7d29eea{  "blockHeight": 567890,  "confirmations": 7,}

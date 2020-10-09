@@ -1,0 +1,45 @@
+PNConfiguration pnConfiguration = new PNConfiguration();
+pnConfiguration.SubscribeKey = "my_subkey";
+pnConfiguration.PublishKey = "my_pubkey";
+pnConfiguration.SecretKey = "my_secretkey";
+pnConfiguration.LogVerbosity = PNLogVerbosity.BODY;
+pnConfiguration.UUID = "myUniqueUUID"; 
+
+Dictionary<string, string> message = new Dictionary<string, string>();
+message.Add("msg", "hello");
+
+PubNub pubnub = new PubNub(pnConfiguration);
+
+pubnub.SubscribeCallback += (sender, e) => { 
+	SubscribeEventEventArgs mea = e as SubscribeEventEventArgs;
+
+	if (mea.Status != null) {
+		if (mea.Status.Category.Equals(PNStatusCategory.PNConnectedCategory)) {
+			pubnub.Publish()
+				.Channel("my_channel")
+				.Message(message)
+				.Async((result, status) => {
+					if (!status.Error) {
+						Debug.Log(string.Format("DateTime {0}, In Publish Example, Timetoken: {1}", DateTime.UtcNow , result.Timetoken));
+					} else {
+						Debug.Log(status.Error);
+						Debug.Log(status.ErrorData.Info);
+					}
+				});
+		}
+	}
+	if (mea.MessageResult != null) {
+		Debug.Log("In Example, SubscribeCallback in message" + mea.MessageResult.Channel);
+		Dictionary<string, object> msg = mea.MessageResult.Payload as Dictionary<string, object>;
+		Debug.Log("msg: " + msg["msg"]);
+	}
+	if (mea.PresenceEventResult != null) {
+		Debug.Log("In Example, SubscribeCallback in presence" + mea.PresenceEventResult.Channel + mea.PresenceEventResult.Occupancy + mea.PresenceEventResult.Event);
+	}
+};
+
+pubnub.Subscribe()
+	.Channels(new List<string>(){
+		"my_channel"
+	})
+	.Execute();

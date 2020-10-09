@@ -1,0 +1,2 @@
+openapi lint --format=codeframe
+## equivalent to: openapi lint

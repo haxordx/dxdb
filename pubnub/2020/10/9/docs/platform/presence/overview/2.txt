@@ -1,0 +1,1 @@
+pubnub.hereNow(on: ["chats.room1", "chats.room2"]), and: [],  includeUUIDs: true, also: true { result in    switch result {      case let .success(response):        print("Successful hereNow Response: \(response)")      case let .failure(error):        print("Failed hereNow Response: \(error.localizedDescription)")    }})Copy

@@ -1,0 +1,4 @@
+pubnub.subscribe(
+  to: ["my_channel"],
+  withPresence: true
+)

@@ -1,0 +1,1 @@
+pubnub.publish({  message: {    type: 'announcement',    text: 'Hello, this is an announcement'  },  channel: 'ch-1',}, (status, response) => {  // handle status, response});Copy

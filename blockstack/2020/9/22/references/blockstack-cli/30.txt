@@ -1,0 +1,1 @@
+ {GAIA_URL_PREFIX}/{ADDRESS}/profile.json {GAIA_URL_PREFIX}/{ADDRESS}/profile.json

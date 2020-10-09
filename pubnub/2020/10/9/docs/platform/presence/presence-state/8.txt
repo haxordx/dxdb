@@ -1,0 +1,1 @@
+pubnub.getPresenceState(  for: "anotherClientUUID",  on: ["chats.room1"],  and: ["cg_user123_friends"]) { result in  switch result {  case let .success(response):    print("Successful Get State Response: \(response)")  case let .failure(error):    print("Failed Get State Response: \(error.localizedDescription)")  }}Copy

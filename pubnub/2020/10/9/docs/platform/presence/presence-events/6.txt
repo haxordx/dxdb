@@ -1,0 +1,1 @@
+class SubscribeHandler(SubscribeCallback):  def presence(self, pubnub, event):    action = event.event    channel = event.channel    occupantUUID = event.uuid    eventTimetoken = event.timetoken    occupancy = event.occupancy    state = event.user_metadata    passpubnub.add_listener(SubscribeHandler())Copy

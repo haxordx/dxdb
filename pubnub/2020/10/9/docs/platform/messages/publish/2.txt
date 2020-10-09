@@ -1,0 +1,1 @@
+pubnub.publish(  channel: "my_channel",  message: ["text": "Hello World!"]){ result in  switch result {    case let .success(response):      print("succeeded: \(response)")    case let .failure(error):      print("failed: \(error.localizedDescription)")  }}Copy

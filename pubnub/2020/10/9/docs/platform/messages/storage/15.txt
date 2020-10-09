@@ -1,0 +1,1 @@
+envelope = pubnub.message_counts()\  .channel("chats.room1", "chats.room2") \  .channel_timetokens([15495750401727535])  .sync()print(envelope.result.channels)Copy

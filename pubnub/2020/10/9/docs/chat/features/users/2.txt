@@ -1,0 +1,1 @@
+var config = PubNubConfiguration(publishKey: "myPublishKey", subscribeKey: "mySubscribeKey")config.uuid = "user-1"config.catchUpOnSubscriptionRestore = true // enable catchup on missed messageslet pubnub = PubNub(configuration: config)Copy

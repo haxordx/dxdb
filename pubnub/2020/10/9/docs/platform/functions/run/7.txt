@@ -1,0 +1,19 @@
+export default (request, response) => {
+
+    const db = require('kvstore');
+    const username = request.params.username;
+
+    return db.get(username).then((dataFromDb) => {
+        if (!dataFromDb) {
+            console.log('The username does not exist.');
+            db.set(username, {});
+            response.status = 200;
+            return response.send('Username is available');
+        } else {
+            console.log('The username already exists.');
+            response.status = 409;
+            return response.send('Username already exists');
+        }
+    });
+};
+show all 18 lineshide 3 linesCopy

@@ -1,0 +1,1 @@
+var pubnub = new PubNub({  publishKey: "myPublishKey",  subscribeKey: "mySubscribeKey"  uuid: uuid})pubnub.setFilterExpression("uuid != '" + pubnub.getUUID() + "'");Copy

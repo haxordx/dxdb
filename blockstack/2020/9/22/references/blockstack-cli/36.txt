@@ -1,0 +1,4 @@
+$ # get the raw profile JWT
+$ curl -sL https://raw.githubusercontent.com/jcnelson/profile/master/judecn.id > /tmp/judecn.id.jwt
+$ # Tip: you can get the ID-address for a name with the "whois" command
+$ blockstack-cli profile_verify /tmp/judecn.id.jwt ID-16EMaNw3pkn3v6f2BgnSSs53zAKH4Q8YJg$ # get the raw profile JWT$ curl -sL https://raw.githubusercontent.com/jcnelson/profile/master/judecn.id > /tmp/judecn.id.jwt$ # Tip: you can get the ID-address for a name with the "whois" command$ blockstack-cli profile_verify /tmp/judecn.id.jwt ID-16EMaNw3pkn3v6f2BgnSSs53zAKH4Q8YJg

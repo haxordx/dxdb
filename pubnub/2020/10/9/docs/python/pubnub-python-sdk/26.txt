@@ -1,0 +1,12 @@
+from pubnub.pnconfiguration import PNConfiguration
+from pubnub.pubnub_tornado import PubNubTornado
+
+pnconfig = PNConfiguration()
+
+pnconfig.subscribe_key = 'my_subscribe_key'
+pnconfig.publish_key = 'my_publish_key'
+pnconfig.secret_key = 'my_secret_key'
+pnconfig.uuid = "my_custom_uuid"
+pnconfig.ssl = False
+
+pubnub = PubNubTornado(pnconfig)

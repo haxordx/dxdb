@@ -1,0 +1,6 @@
+Subscribing...
+Since we're publishing on subscribe connectEvent, we're sure we'll receive the following publish.
+Object { error: false, operation: "PNPublishOperation", statusCode: 200 }
+Object { timetoken: "15885924757665604" }
+greeting
+This is my first message!

@@ -1,0 +1,1 @@
+PNRemoveMessageActionRequest *request =      [PNRemoveMessageActionRequest requestWithChannel:@"chats.room1",          messageTimetoken:@(1234567890)];request.actionTimetoken = @(1234567891);[self.pubnub removeMessageActionWithRequest:request      completion:^(PNAcknowledgmentStatus *status) {  if (!status.isError) {  }  else {  }}];show all 16 lineshide 1 linesCopy

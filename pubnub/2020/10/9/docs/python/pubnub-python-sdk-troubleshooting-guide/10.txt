@@ -1,0 +1,9 @@
+@gen.coroutine
+def publish_future():
+	e = yield pubnub.publish().channel("my_channel").message("hello!").future()
+	if e.is_error():
+		print("Error %s" % str(e))
+		print("Error category #%d" % e.status.category)
+		return
+	else:
+		print(str(e.result))

@@ -1,0 +1,1 @@
+pubnub.messageCounts(  channels: ["chats.room1", "chats.room2"]),  timetoken: 15495750401727535) { result in  switch result {    case let .success(response):      print("Successful Message Count Response: \(response)")    case let .failure(error):      print("Failed Message Count Response: \(error.localizedDescription)")  }}Copy

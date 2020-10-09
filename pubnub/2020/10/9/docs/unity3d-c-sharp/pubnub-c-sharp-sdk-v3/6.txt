@@ -1,0 +1,4 @@
+pubnub.EnableJsonEncodingForPublish = false;
+object message = "{'operation':'ReturnData','channel':'Mobile1','sequenceNumber':0,'data':['ping 1.0.0.1']}";
+serializedObjectMessageForPublish = message.ToString();
+pubnub.Publish<string>(channel, message, ReturnSuccessSerializedObjectMessageForPublishCallback, DummyErrorCallback);

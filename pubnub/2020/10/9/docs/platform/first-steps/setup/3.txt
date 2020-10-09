@@ -1,0 +1,1 @@
+platform :ios, '9.0' # (or '10.0')target 'MyObjcProject' do  use_frameworks!  pod "PubNub", "~> 4"endCopy

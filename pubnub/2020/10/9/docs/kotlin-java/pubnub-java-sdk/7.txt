@@ -1,0 +1,10 @@
+val listener = object : SubscribeCallback() {
+    override fun status(pubnub: PubNub, pnStatus: PNStatus) {}
+    override fun message(pubnub: PubNub, pnMessageResult: PNMessageResult) {}
+    // and other callbacks
+}
+
+pubnub.addListener(listener)
+
+// some time later
+pubnub.removeListener(listener)

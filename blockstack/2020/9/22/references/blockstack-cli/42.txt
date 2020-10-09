@@ -1,0 +1,3 @@
+$ export PAYMENT="bfeffdf57f29b0cc1fab9ea197bb1413da2561fe4b83e962c7f02fbbe2b1cd5401"
+$ blockstack-cli send_btc 18qTSE5PPQmypwKKej7QX5Db2XAttgYeA1 123456 "$PAYMENT"
+c7e239fd24da30e36e011e6bc7db153574a5b40a3a8dc3b727adb54ad038acc5$ export PAYMENT="bfeffdf57f29b0cc1fab9ea197bb1413da2561fe4b83e962c7f02fbbe2b1cd5401"$ blockstack-cli send_btc 18qTSE5PPQmypwKKej7QX5Db2XAttgYeA1 123456 "$PAYMENT"c7e239fd24da30e36e011e6bc7db153574a5b40a3a8dc3b727adb54ad038acc5

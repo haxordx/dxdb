@@ -1,0 +1,12 @@
+// src/components/App.jsx
+
+componentDidMount() {
+  if (userSession.isSignInPending()) {
+    userSession.handlePendingSignIn().then((userData) => {
+      window.history.replaceState({}, document.title, "/")
+      this.setState({ userData: userData})
+    });
+  } else if (userSession.isUserSignedIn()) {
+    this.setState({ userData: userSession.loadUserData() });
+  }
+}// src/components/App.jsxcomponentDidMount() {  if (userSession.isSignInPending()) {    userSession.handlePendingSignIn().then((userData) => {      window.history.replaceState({}, document.title, "/")      this.setState({ userData: userData})    });  } else if (userSession.isUserSignedIn()) {    this.setState({ userData: userSession.loadUserData() });  }}

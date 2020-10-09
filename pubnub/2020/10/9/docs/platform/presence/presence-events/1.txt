@@ -1,0 +1,1 @@
+pubnub.addListener({  presence: function(event) {    var action = event.action;    var channelName = event.channel;    var occupancy = event.occupancy;    var eventTimetoken = event.timetoken;    var occupantUUID = event.uuid;    var state = event.state;    var subscribeManager = event.subscription;  }});Copy

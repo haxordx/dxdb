@@ -1,0 +1,3 @@
+from pubnub import PubNubTwisted
+
+PubNubTwisted.SDK_VERSION

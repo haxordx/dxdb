@@ -1,0 +1,6 @@
+var pubnub = new PubNub({
+	subscribeKey: "mySubscribeKey",
+	publishKey: "myPublishKey",
+	uuid: "myUniqueUUID",
+	ssl: true
+})

@@ -1,0 +1,1 @@
+pubnub.removeUUIDMetadata()    .async(new PNCallback<PNRemoveUUIDMetadataResult>() {        @Override        public void onResponse(@Nullable final PNRemoveUUIDMetadataResult result, @NotNull final PNStatus status) {            if (status.isError()) {                //handle error            }            else {                //handle result            }        }    });Copy

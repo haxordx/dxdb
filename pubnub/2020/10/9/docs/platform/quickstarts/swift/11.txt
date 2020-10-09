@@ -1,0 +1,8 @@
+listener.didReceivePresence = { [weak self] event in
+  let userChannelDescription = "event uuid: \(event.metadata?.codableValue["pn_uuid"] ?? "null"), channel: \(event.channel)"
+
+  self?.display(
+    Message(messageType: "[PRESENCE: \(event.metadata?.codableValue["pn_action"] ?? "null")]", messageText: userChannelDescription)
+  )
+}
+Copy

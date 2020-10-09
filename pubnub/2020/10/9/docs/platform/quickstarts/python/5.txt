@@ -1,0 +1,12 @@
+class MySubscribeCallback(SubscribeCallback):
+    def presence(self, pubnub, event):
+      """handle presence events"""
+
+    def status(self, pubnub, event):
+      """handle status events"""
+
+    def message(self, pubnub, event):
+      """handle message events"""
+
+pubnub.add_listener(MySubscribeCallback())
+Copy

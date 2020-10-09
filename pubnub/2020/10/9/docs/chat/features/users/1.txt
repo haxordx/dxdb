@@ -1,0 +1,1 @@
+const pubnub = new PubNub({  subscribeKey: "mySubscribeKey",  publishKey: "myPublishKey",  uuid: "user-1",  autoNetworkDetection: true, // enable for non-browser environment automatic reconnection  restore: true, // enable catchup on missed messages});Copy

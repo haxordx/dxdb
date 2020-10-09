@@ -1,0 +1,8 @@
+<template>
+    <div id="app">
+        <ol>
+            <li v-for="msg in ch1">{{msg.message}}</li>
+        </ol>
+        <button v-on:click="push">push</button>
+    </div>
+</template>

@@ -1,0 +1,1 @@
+pubnub.Signal()    .Message("typing_on")    .Channel("ch-1")    .Execute(new PNPublishResultExt((result, status) => {        if (status.Error) {            Console.WriteLine(status.ErrorData.Information);        } else {            Console.WriteLine(result.Timetoken);        }    }));Copy

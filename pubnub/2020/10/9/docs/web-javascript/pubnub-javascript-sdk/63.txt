@@ -1,0 +1,9 @@
+import Vue from 'vue';
+import PubNubVue from 'pubnub-vue';
+
+Vue.use(PubNubVue, {
+    subscribeKey: "mySubscribeKey",
+    publishKey: "myPublishKey",
+    uuid: "myUniqueUUID",
+    ssl: true
+});

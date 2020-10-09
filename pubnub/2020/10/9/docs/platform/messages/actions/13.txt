@@ -1,0 +1,1 @@
+pubnub.getMessageActions(  {    channel: 'chats.room1',    start: '15610547826970041',    end: '15610547826970040',    limit: 100,  },  function(status, response) {    console.log(status, response);  });Copy

@@ -1,0 +1,1 @@
+const cipherKey = "pubnubrealtimecommunicationplatf";const clearText = JSON.stringify(  {"test_name":"pregnancy","results":"positive","notes":"You are having twins!"});const secureText = pubnub.encrypt(cipherKey, clearText);Copy

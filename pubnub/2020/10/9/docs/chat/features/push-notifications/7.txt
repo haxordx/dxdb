@@ -1,0 +1,1 @@
+// APNs2pubnub.removeAPNSDevicesOnChannels(  ["ch-1"],  for: deviceToken,  on: "com.app.bundle",  environment: .production ) { result in  switch result {  case let .success(channels):    print("The list of channels disabled for push: \(channels)")  case let .failure(error):    print("Failed Push List Response: \(error.localizedDescription)")  }}Copy

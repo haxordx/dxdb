@@ -1,0 +1,2 @@
+if (status.getCategory() == PNStatusCategory.PNConnectedCategory) {
+                        pubnub.publish().channel(channelName).message(messageJsonObject).async(new PNCallback<PNPublishResult>(){

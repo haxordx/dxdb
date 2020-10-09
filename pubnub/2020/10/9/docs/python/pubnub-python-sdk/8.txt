@@ -1,0 +1,1 @@
+pubnub.publish().channel('my_channel').message('Hello world!').pn_async(my_publish_callback)

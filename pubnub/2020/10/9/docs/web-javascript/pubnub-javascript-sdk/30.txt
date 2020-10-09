@@ -1,0 +1,10 @@
+pubnub.history(
+    {
+        channel: 'history_channel',
+        count: 100, // how many items to fetch
+        stringifiedTimeToken: true, // false is the default
+    },
+    function (status, response) {
+        // handle status, response
+    }
+);

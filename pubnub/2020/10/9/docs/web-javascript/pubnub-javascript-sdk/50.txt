@@ -1,0 +1,28 @@
+<template>
+    <div id="app">
+        <span>occupancy: {{ occupancy }}</span>
+    </div>
+</template>
+<script>
+    export default {
+        name: 'app',
+        data() {
+            return {
+                occupancy: 0,
+            };
+        },
+        methods: {
+            presence(ps) {
+                this.occupancy = ps.occupancy;
+                console.log(ps);
+            },
+        },
+        mounted() {
+            this.$pnSubscribe({
+                channels: ['ch1'],
+                withPresence: true
+            });
+            this.$pnGetPresence('ch1', this.presence);
+        },
+    };
+</script>

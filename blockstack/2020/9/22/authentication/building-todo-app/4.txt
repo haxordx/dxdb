@@ -1,0 +1,6 @@
+// src/components/App.jsx
+
+appDetails: {
+    name: 'Blockstack App',
+    icon: window.location.origin + '/favicon.ico'
+}// src/components/App.jsxappDetails: {    name: 'Blockstack App',    icon: window.location.origin + '/favicon.ico'}

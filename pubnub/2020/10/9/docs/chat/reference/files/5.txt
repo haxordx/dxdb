@@ -1,0 +1,13 @@
+{
+"channel":"demo-channel",
+"message": null,
+"subscription": null,
+"timetoken":"15958540412130227",
+"publisher":"javascript-fileUploadApiV1-tests-main",
+"file":{
+    "id":"t35t-f1l3-1d",
+    "name":"testFile.json",
+    "url":"example.com/v1/files/your-key/channels/demo-channel/files/t35t-f1l3-1d/testFile.json"
+    }
+}
+Copy

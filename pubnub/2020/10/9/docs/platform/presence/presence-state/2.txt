@@ -1,0 +1,1 @@
+pubnub.setPresence(  state: ["mood": "pumped", "workingFrom": "Home"],  on: ["chats.room1"],  and: ["cg_user123_friends"]) { result in  switch result {    case let .success(response):      print("Successful Set State Response: \(response)")    case let .failure(error):      print("Failed Set State Response: \(error.localizedDescription)")  }}Copy

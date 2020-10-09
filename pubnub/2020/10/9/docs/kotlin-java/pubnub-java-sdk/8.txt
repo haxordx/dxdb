@@ -1,0 +1,8 @@
+pubnub.configuration.reconnectionPolicy = PNReconnectionPolicy.LINEAR
+// choose between LINEAR and EXPONENTIAL
+// default is NONE
+
+pubnub.configuration.maximumReconnectionRetries = 10
+// how many times the client will try to reconnect
+// until giving up
+// default is infinite

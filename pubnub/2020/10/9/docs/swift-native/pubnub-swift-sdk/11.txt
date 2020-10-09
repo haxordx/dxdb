@@ -1,0 +1,8 @@
+pubnub.time { result in
+  switch result {
+  case let .success(timetoken):
+    print("Handle downloaded server time token: \(timetoken)")
+  case let .failure(error):
+    print("Handle response error: \(error.localizedDescription)")
+  }
+}

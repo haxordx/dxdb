@@ -1,0 +1,59 @@
+ <!DOCTYPE html>
+<head>
+<meta charset="utf-8"/>
+<title>Hello, PubNub</title>
+<!-- Update this block with the URL to the content delivery network version of the SDK -->
+<script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.29.9.js"></script>
+</head>
+<body>
+<script>
+
+function letsGo() {
+
+    // Update this block with your publish/subscribe keys
+    pubnub = new PubNub({
+        publishKey : "myPublishKey",
+        subscribeKey : "mySubscribeKey",
+        uuid: "myUniqueUUID"
+    })
+
+    function publishSampleMessage() {
+        console.log("Publish to a channel 'hello_world'");
+        // With the right payload, you can publish a message, add a reaction to a message, 
+        // send a push notification, or send a small payload called a signal.
+        var publishPayload = {
+            channel : "hello_world",
+            message: {
+                title: "greeting",
+                description: "This is my first message!"
+            }
+        }
+        pubnub.publish(publishPayload, function(status, response) {
+            console.log(status, response);
+        })
+    }
+
+    pubnub.addListener({
+        status: function(statusEvent) {
+            if (statusEvent.category === "PNConnectedCategory") {
+                publishSampleMessage();
+            }
+        },
+        message: function(msg) {
+            console.log(msg.message.title);
+            console.log(msg.message.description);
+        },
+        presence: function(presenceEvent) {
+            // This is where you handle presence. Not important for now :)
+        }
+    })
+
+    console.log("Subscribing...");
+
+    pubnub.subscribe({
+        channels: ['hello_world'] 
+    });
+};
+</script>
+</body>
+

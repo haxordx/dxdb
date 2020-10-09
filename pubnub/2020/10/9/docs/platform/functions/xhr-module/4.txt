@@ -1,0 +1,16 @@
+export default (request) => {
+    const xhr = require("xhr");
+    const http_options = {
+        "method": "POST", // or PUT
+        "body": "foo=bar&baz=faz"
+    };
+     
+    const url = "http://httpbin.org/post";
+ 
+    return xhr.fetch(url, http_options).then((x) => {
+        const body = JSON.parse(x.body);
+        console.log(body);
+        return request.ok();
+    });
+
+};

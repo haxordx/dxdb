@@ -1,0 +1,6 @@
+# This file instructs Redocly's linter to ignore the rules contained for specific parts of your API.
+# See https://redoc.ly/docs/cli/ for more information.
+openapi/core.yaml:
+  spec:
+    - '#/tags/23'
+    - '#/tags/55'

@@ -1,0 +1,1 @@
+openapi bundle --output dist/openapi.json openapi/openapi.yaml

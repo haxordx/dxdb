@@ -1,0 +1,7 @@
+PNConfiguration pnConfiguration = new PNConfiguration();
+pnConfiguration.setPublishKey("myPublishKey");
+pnConfiguration.setSubscribeKey("mySubscribeKey");
+pnConfiguration.setUuid("theClientUUID");
+
+pubnub = new PubNub(pnConfiguration);
+Copy

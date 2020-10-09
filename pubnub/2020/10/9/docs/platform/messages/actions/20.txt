@@ -1,0 +1,1 @@
+pubnub.deleteMessages(  {    channels: 'chats.room1',    start: "15526611838554309",    end: "15526611838554310",  },  function (status, response) {    console.log(status, response);  });Copy

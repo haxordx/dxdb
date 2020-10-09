@@ -1,0 +1,1 @@
+pod 'PubNubSwift', '~> 3.0.1'

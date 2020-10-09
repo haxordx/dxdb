@@ -1,0 +1,4 @@
+ $ blockstack-cli make_zonefile example.id ID-1ArdkA2oLaKnbNbLccBaFhEV4pYju8hJ82 https://my.gaia.hub/hub
+ $ORIGIN example.id
+ $TTL 3600
+ _http._tcp      IN      URI     10      1       "https://my.gaia.hub/hub/1ArdkA2oLaKnbNbLccBaFhEV4pYju8hJ82/profile.json" $ blockstack-cli make_zonefile example.id ID-1ArdkA2oLaKnbNbLccBaFhEV4pYju8hJ82 https://my.gaia.hub/hub $ORIGIN example.id $TTL 3600 _http._tcp      IN      URI     10      1       "https://my.gaia.hub/hub/1ArdkA2oLaKnbNbLccBaFhEV4pYju8hJ82/profile.json"

@@ -1,0 +1,1 @@
+self.pubnub.history()  .channels(@[@"chats.room1", @"chats.room2"])  .end(15343325004275466).limit(25)  .performWithCompletion(^(PNHistoryResult *result, PNErrorStatus *status) {    // handle returned messages in result});Copy

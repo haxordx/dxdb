@@ -1,0 +1,10 @@
+{
+    "category": "PNConnectedCategory",
+    "operation": "PNSubscribeOperation",
+    "affectedChannels": ["ch3", "ch4"],
+    "subscribedChannels": ["ch1", "ch2", "ch3", "ch4"],
+    "affectedChannelGroups": [],
+    "lastTimetoken": "15856996387695942",
+    "currentTimetoken": "15856996387695942"
+}
+Copy

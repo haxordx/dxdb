@@ -1,0 +1,3 @@
+the_message = {"entry": ENTRY, "update": the_update}
+envelope = pubnub.publish().channel(CHANNEL).message(the_message).sync()
+Copy

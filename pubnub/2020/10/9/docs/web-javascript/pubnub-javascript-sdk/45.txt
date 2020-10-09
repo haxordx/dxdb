@@ -1,0 +1,24 @@
+<script>
+    export default {
+        name: 'app',
+        data() {
+            return {
+                ch1: this.$pnGetMessage('ch1'),
+            },
+        },
+        methods: {
+            push() {
+                this.$pnPublish({
+                    channel: 'ch1',
+                    message: Date.now()
+                },
+                (status, response) => console.log(status, response));
+            },
+        },
+        mounted() {
+            this.$pnSubscribe({
+				channels: ['ch1']
+			});
+        },
+    };
+</script>

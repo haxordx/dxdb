@@ -1,0 +1,1 @@
+pubnub.messageCounts({  channels: ['ch-1', 'ch-2'],  channelTimetokens: ['15518041524300251'],}, (status, results) => {  // handle status, response  console.log(status);  console.log(results);});Copy

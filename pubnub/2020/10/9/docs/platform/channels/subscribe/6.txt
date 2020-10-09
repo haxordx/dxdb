@@ -1,0 +1,1 @@
+pubnub.subscribe()\  .channels("chats.room1", "alerts.system")\  .execute()Copy

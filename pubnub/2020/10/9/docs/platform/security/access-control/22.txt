@@ -1,0 +1,1 @@
+res, status, err := pn.Grant()  .Channels([]string{"chats.room1", "chats.room2"})  .ChannelGroups([]string{"cg_user123"})  .AuthKeys([]string{authKey})  .Read(false)  .Write(false)  .Execute()fmt.Println(res, status, err)Copy

@@ -1,0 +1,5 @@
+def status(self, pubnub, event):
+  if event.category == PNStatusCategory.PNConnectedCategory:
+    print("[STATUS: PNConnectedCategory]")
+    print("connected to channels: {}".format(event.affected_channels))
+Copy

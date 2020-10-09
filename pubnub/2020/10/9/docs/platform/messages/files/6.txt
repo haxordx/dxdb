@@ -1,0 +1,1 @@
+const result = pubnub.getFileUrl({ channel: 'my_channel', id: 'd9515cb7-48a7-41a4-9284-f4bf331bc770', name: 'cat_picture.jpg' });Copy

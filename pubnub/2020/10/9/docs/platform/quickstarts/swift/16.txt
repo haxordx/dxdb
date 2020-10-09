@@ -1,0 +1,9 @@
+List {
+  ForEach(pubnubStore.messages.reversed()) { message in
+    VStack(alignment: .leading) {
+      Text(message.messageType)
+      Text(message.messageText)
+    }
+  }
+}
+Copy

@@ -1,0 +1,3 @@
+from pubnub import PubNubTornado
+
+PubNubTornado.SDK_VERSION

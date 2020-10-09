@@ -1,0 +1,18 @@
+void SubscribeCallbackHandler(object sender, EventArgs e) {
+	SubscribeEventEventArgs mea = e as SubscribeEventEventArgs;
+
+	if (mea.Status != null) {
+		switch (mea.Status.Category) {
+			case PNStatusCategory.PNUnexpectedDisconnectCategory:
+			case PNStatusCategory.PNTimeoutCategory:
+				pubnub.Reconnect();
+			break;
+		}
+	}
+	if (mea.MessageResult != null) {
+		Debug.Log("SubscribeCallback in message" + mea.MessageResult.Channel + mea.MessageResult.Payload);
+	}
+	if (mea.PresenceEventResult != null) {
+		Debug.Log("SubscribeCallback in presence" + mea.PresenceEventResult.Channel + mea.PresenceEventResult.Occupancy + mea.PresenceEventResult.Event);
+	}
+}

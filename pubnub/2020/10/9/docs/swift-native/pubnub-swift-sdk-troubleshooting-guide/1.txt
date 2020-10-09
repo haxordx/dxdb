@@ -1,0 +1,2 @@
+PubNub.log.levels = [.all]
+PubNub.log.writers = [ConsoleLogWriter(), FileLogWriter()]

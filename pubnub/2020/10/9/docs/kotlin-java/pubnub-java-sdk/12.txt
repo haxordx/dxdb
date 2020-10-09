@@ -1,0 +1,16 @@
+pubnub.publish().apply {
+    channel = "my_channel"
+    message = "hello"
+}.async { result, status ->
+    // the result is always of a nullable type
+    // it's null if there were errors (status.error)
+    // otherwise it's usable
+
+    // handle publish result
+    if (!status.error) {
+        println("Message timetoken: ${result!!.timetoken}")
+    } else {
+        // handle error
+        status.exception.printStackTrace()
+    }
+}

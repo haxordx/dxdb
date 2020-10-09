@@ -1,0 +1,15 @@
+export default (request) => {
+    const pubnub = require('pubnub');
+
+    pubnub.publish({
+        "channel": "hello-logger",
+        "message":request.message
+    }).then((publishResponse) => {
+        console.log(`Publish Status: ${publishResponse[0]}:${publishResponse[1]} with TT ${publishResponse[2]}`);
+    }).catch((err) => {
+        console.error(err);
+    });
+
+    return request.ok(); // Return a promise when you're done
+};
+Copy

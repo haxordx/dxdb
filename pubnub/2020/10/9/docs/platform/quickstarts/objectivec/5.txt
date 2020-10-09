@@ -1,0 +1,5 @@
+PNConfiguration *pnconfig = [PNConfiguration configurationWithPublishKey:@"myPublishKey"
+                                                        subscribeKey:@"mySubscribeKey"];
+pnconfig.uuid = @"theClientUUID";
+self.pubnub = [PubNub clientWithConfiguration:pnconfig];
+Copy

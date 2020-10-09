@@ -1,0 +1,1 @@
+pubnub.addListener({    signal: function(s) {        // handle signal        var channelName = s.channel; // The channel        var channelGroup = s.subscription; // The channel group        var timetoken = s.timetoken; // Publish timetoken        var message = s.message; // The Payload        var publisher = s.publisher; //The Publisher    }});Copy

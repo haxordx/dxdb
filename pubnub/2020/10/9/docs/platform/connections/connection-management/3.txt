@@ -1,0 +1,10 @@
+{
+    "error": false,
+    "operation": "PNUnsubscribeOperation",
+    "statusCode": 200,
+    "affectedChannels": ["ch1", "ch2"],
+    "affectedChannelGroups": [],
+    "currentTimetoken": "15856996387695942",
+    "lastTimetoken": "15856996387695942"
+}
+Copy

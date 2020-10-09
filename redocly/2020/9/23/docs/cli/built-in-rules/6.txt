@@ -1,0 +1,2 @@
+  /{entity}/me
+  /books/{id}

@@ -1,0 +1,7 @@
+counter contract test suite
+    ✓ should have a valid syntax (39ms)
+    deploying an instance of the contract
+    ✓ should start at zero
+    ✓ should increment (133ms)
+    ✓ should decrement (177ms)
+    4 passing (586ms)counter contract test suite    ✓ should have a valid syntax (39ms)    deploying an instance of the contract    ✓ should start at zero    ✓ should increment (133ms)    ✓ should decrement (177ms)    4 passing (586ms)

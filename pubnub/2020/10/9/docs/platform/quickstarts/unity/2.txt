@@ -1,0 +1,45 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using PubNubAPI;
+using UnityEngine.UI;
+public class JSONInformation
+{
+    public string username;
+    public string text;
+}
+public class SendMessage : MonoBehaviour {
+    public static PubNub pubnub;
+    public Font customFont;
+    public Button SubmitButton;
+    public Canvas canvasObject;
+    public InputField UsernameInput;
+    public InputField TextInput;
+    public int indexcounter = 0;
+    public Text deleteText;
+    public Text moveTextUpwards;
+    private Text text;
+
+    float paddingX = 0F;
+    float paddingY = 300F;
+    float padding = 600F;
+    float height = 30;
+    ushort maxMessagesToDisplay = 15;
+
+    // The Channel to use
+    string channel = "chatchannel3";
+
+    // Create a chat message queue so we can iterate through all the messages
+    Queue<GameObject> chatMessageQueue = new Queue<GameObject>();
+
+    void Start(){}
+
+    void CreateChat(JSONInformation payLoad){}
+
+    void SyncChat() {}
+
+    void Update () {}
+
+    void TaskOnClick(){}
+}
+show all 44 lineshide 29 linesCopy

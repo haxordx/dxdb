@@ -1,0 +1,4 @@
+$ blockstack-cli -H https://core.blockstack.org zonefile_push /path/to/zonefile.txt
+[
+  "https://core.blockstack.org"
+]$ blockstack-cli -H https://core.blockstack.org zonefile_push /path/to/zonefile.txt[  "https://core.blockstack.org"]

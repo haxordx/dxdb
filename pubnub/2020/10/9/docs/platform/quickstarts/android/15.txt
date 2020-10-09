@@ -1,0 +1,18 @@
+protected void displayMessage(String messageType, String aMessage) {
+  final String newLine = "\n";
+
+  final StringBuilder textBuilder = new StringBuilder()
+    .append(messageType)
+    .append(newLine)
+    .append(aMessage)
+    .append(newLine).append(newLine)
+    .append(messagesText.getText().toString());
+
+  runOnUiThread(new Runnable() {
+    @Override
+    public void run() {
+      messagesText.setText(textBuilder.toString());
+    }
+  });
+}
+show all 17 lineshide 2 linesCopy

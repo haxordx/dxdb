@@ -1,0 +1,1 @@
+msg_action = PNMessageAction()msg_action.type = "reaction"msg_action.value = "smiley_face"msg_action.message_timetoken = str(int(time.time()))pubnub.add_message_action()\  .channel("chats.room1")\  .message_action(msg_action)\  .pn_async(message_action_callback)Copy

@@ -1,0 +1,2 @@
+  /pets/{petId}
+  /pets/mine

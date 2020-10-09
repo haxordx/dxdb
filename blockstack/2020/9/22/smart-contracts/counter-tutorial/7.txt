@@ -1,0 +1,8 @@
+ ;; define counter variable
+ (define-data-var counter int 0)
+
+ ...
+
+ ;; counter getter
+ (define-public (get-counter)
+   (ok (var-get counter))) ;; define counter variable (define-data-var counter int 0) ... ;; counter getter (define-public (get-counter)   (ok (var-get counter)))

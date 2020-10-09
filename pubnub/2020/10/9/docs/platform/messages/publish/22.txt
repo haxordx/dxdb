@@ -1,0 +1,1 @@
+Map<String, Object> meta = new HashMap<>();meta.put("uuid", pubnub.getUuid());pubnub.publish().channel("chats.room1").meta(meta)  .message("Hello to everyone (except me)")  .async(new PNCallback<PNPublishResult>() {    @Override    public void onResponse(PNPublishResult result, PNStatus status) {      System.out.println(status);      System.out.println(result);  }});Copy

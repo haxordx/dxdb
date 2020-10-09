@@ -1,0 +1,3 @@
+? Select a project template: (Use arrow keys)
+  Hello World
+❯ Counter? Select a project template: (Use arrow keys)  Hello World❯ Counter

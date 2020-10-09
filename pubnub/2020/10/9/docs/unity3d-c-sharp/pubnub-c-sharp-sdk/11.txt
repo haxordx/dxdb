@@ -1,0 +1,6 @@
+pubnub.Subscribe()
+	.Channels(new List<string>() {
+		"my_channel"
+	})
+	.WithPresence()
+	.Execute();

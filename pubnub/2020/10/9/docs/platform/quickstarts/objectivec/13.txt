@@ -1,0 +1,13 @@
+- (void)displayMessage:(NSString *)message asType:(NSString *)type {
+  NSDictionary *updateEntry = @{ kUpdateEntryType: type, kUpdateEntryMessage: message };
+
+  [self.messages insertObject:updateEntry atIndex:0];
+  NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+
+  [self.tableView beginUpdates];
+  [self.tableView insertRowsAtIndexPaths:@[indexPath]
+                        withRowAnimation:UITableViewRowAnimationBottom];
+
+  [self.tableView endUpdates];
+}
+Copy

@@ -1,0 +1,3 @@
+pubnub.subscribe({
+  channels: ["hello_world"],
+});

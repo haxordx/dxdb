@@ -1,0 +1,12 @@
+docs.blockstack/
+  .github/
+  lib/
+  node_modules/
+  public/
+  src/
+    _data/
+    _includes/
+    common/
+    components/
+    pages/
+  types/docs.blockstack/  .github/  lib/  node_modules/  public/  src/    _data/    _includes/    common/    components/    pages/  types/

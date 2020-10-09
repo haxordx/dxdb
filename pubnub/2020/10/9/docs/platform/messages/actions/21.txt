@@ -1,0 +1,1 @@
+pubnub.deleteMessageHistory(  from: "chats.room1",  start: 15526611838554310,  end: 15526611838554309) { result in  switch result {    case let .success(response):      print("Successful Message Deletion Response: \(response)")    case let .failure(error):      print("Failed Message Deletion Response: \(error.localizedDescription)")  }}Copy

@@ -1,0 +1,1 @@
+pubnub.channelGroups.addChannels({    channels: ["chats.room1", "chats.room2", "alerts.system"]    channelGroup: "cg_user123"  },  function(status) {      console.log(status);  });Copy

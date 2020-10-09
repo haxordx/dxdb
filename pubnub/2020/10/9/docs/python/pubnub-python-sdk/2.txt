@@ -1,0 +1,6 @@
+pnconfig = PNConfiguration()
+
+pnconfig.subscribe_key = 'mySubscribeKey'
+pnconfig.publish_key = 'myPublishKey'
+pnconfig.uuid = 'myUniqueUUID'
+pubnub = PubNub(pnconfig)

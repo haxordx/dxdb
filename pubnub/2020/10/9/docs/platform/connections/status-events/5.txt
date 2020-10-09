@@ -1,0 +1,1 @@
+SubscribeCallbackExt subscribeCallack = new SubscribeCallbackExt(  delegate (Pubnub pubnubObj, PNStatus event) {        string operation = event.Operation;        string category = event.category;  });pubnub.AddListener(subscribeCallack);Copy

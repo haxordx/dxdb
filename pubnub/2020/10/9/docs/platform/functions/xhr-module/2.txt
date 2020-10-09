@@ -1,0 +1,7 @@
+xhr.fetch("https://neutrinoapi.com/geocode-address").then((serverResponse) => {
+    // handle server response
+}).catch((err) => {
+    // handle request failure
+});
+
+

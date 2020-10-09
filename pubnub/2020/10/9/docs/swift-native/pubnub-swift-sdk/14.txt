@@ -1,0 +1,13 @@
+pubnub.hereNow(on: ["my_channel"]) { result in
+  switch result {
+  case let .success(presenceByChannel):
+    print("Total channels \(presenceByChannel.totalChannels)")
+    print("Total occupancy across all channels \(presenceByChannel.totalOccupancy)")
+    if let myChannelPresence = presenceByChannel["my_channel"] {
+      print("The occupancy for `my_channel` is \(myChannelPresence.occupancy)")
+      print("The list of occupants for `my_channel` are \(myChannelPresence.occupants)")
+    }
+  case let .failure(error):
+    print("Failed hereNow Response: \(error.localizedDescription)")
+  }
+})

@@ -1,0 +1,1 @@
+def signal_callback(result, status):  if status.isError:    print status.statusCode  elif    print result.timetokenpubnub.signal()\  .channel("locations.route1") \  .message({"msg": "Hello, my friend!"})\  .pn_async(signal_callback)Copy

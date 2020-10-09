@@ -1,0 +1,5 @@
+// src/components/App.jsx
+
+finished: ({ userSession }) => {
+  this.setState({ userData: userSession.loadUserData() });
+};// src/components/App.jsxfinished: ({ userSession }) => {  this.setState({ userData: userSession.loadUserData() });};

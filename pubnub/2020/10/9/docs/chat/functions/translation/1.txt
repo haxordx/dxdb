@@ -1,0 +1,65 @@
+// Require the console module
+const console = require('console');
+
+// Example languages to translate to: English, Spanish, French
+// ['en', 'es', 'fr']
+
+// Require the xhr module. We'll be using a third-party REST endpoint for
+// translation. We need to make a GET request to the endpoint with
+// parameters and we will get back the translated text in the response.
+// The xhr module helps in sending out HTTP requests.
+const xhr = require('xhr');
+
+const query = require('codec/query_string');
+const base64 = require('codec/base64');
+
+// Store your API key securely in the vault using the MY SECRETS button.
+// The vault get param for your IBM key should be `ibm_translate_api_key`
+const vault = require('vault');
+
+export default (request) => {
+    //API key
+    return vault.get('ibm_translate_api_key').then((apiKey) => {
+
+        // translation API URL
+        const apiUrl = 'https://api.us-east.language-translator.watson.cloud.ibm.com/language-translator/api/v3/translate?version=2018-05-01';
+
+        // extract from request, channel on which the message was published
+        const channel = request.channels[0];
+
+        // language to translate to
+        const outputLang = 'es'; // spanish
+
+        // Set the body's `model_id` to `input-output` format with 2 letter
+        // language codes. Example: English to Spanish would be 'en-es'
+
+        const body = {
+            model_id: request.message.input_lang + '-' + outputLang,
+            text: [request.message.text]
+        };
+
+        const httpOptions = {
+            method: 'POST',
+            headers: {
+                'Authorization': 'Basic ' + base64.btoa('apikey:' + apiKey),
+                'Content-Type': 'application/json'
+            },
+            body
+        };
+
+        // Invoke xhr fetch to get the HTTP response
+        return xhr.fetch(apiUrl, httpOptions)
+            .then(r => {
+                const body = JSON.parse(r.body);
+                request.message.original_text = request.message.text;
+                request.message.output_lang = outputLang;
+                request.message.text = body.translations[0].translation;
+                return request.ok();
+            })
+            .catch((e) => {
+                console.error(e);
+                return request.abort();
+            });
+    });
+};
+show all 64 lineshide 49 linesCopy

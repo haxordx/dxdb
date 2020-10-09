@@ -1,0 +1,5 @@
+envelope = await pubnub.history()\ 
+    .channel('history_channel')\
+    .count(100).future()
+# handle messages stored at evelope.result.messages
+# status is available as envelope.status

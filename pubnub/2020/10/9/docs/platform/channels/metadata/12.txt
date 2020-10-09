@@ -1,0 +1,1 @@
+PNResult<PNGetAllChannelMetadataResult> getAllChannelMetadataResponse = await pubnub.GetAllChannelMetadata()    .IncludeCustom(true)    .ExecuteAsync();PNGetAllChannelMetadataResult getAllChannelMetadataResult = getAllChannelMetadataResponse.Result;PNStatus status2 = getAllChannelMetadataResponse.Status;Copy

@@ -1,0 +1,22 @@
+get:
+  operationId: get
+  parameters:
+    - name: a
+      in: path
+      schema:
+        type: string
+  requestBody:
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            a:
+              type: boolean
+put:
+  operationId: put
+  parameters:
+    - name: a
+      in: path
+      schema:
+        type: number

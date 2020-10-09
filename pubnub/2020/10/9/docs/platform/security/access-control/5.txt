@@ -1,0 +1,1 @@
+pnconfig := pubnublib.NewConfig()pnconfig.PublishKey = "myPublishKey"pnconfig.SubscribeKey = "mySubscribeKey"pnconfig.SecretKey = "mySecretKey"pnconfig.Uuid = "theServerUUID"pubnub := pubnublib.NewPubNub(pnconfig)Copy

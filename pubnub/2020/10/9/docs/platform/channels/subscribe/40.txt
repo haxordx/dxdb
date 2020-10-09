@@ -1,0 +1,1 @@
+// the uuid value is received from your serverPNConfiguration pnconfig = new PNConfiguration();pnconfig.setPublishKey("myPublishKey");pnconfig.setSubscribeKey("mySubscribeKey");pnconfig.setUuid(uuid);pnconfig.setFilterExpression("uuid != '" + uuid +"'");PubNub pubnub = new PubNub(pnconfig);Copy

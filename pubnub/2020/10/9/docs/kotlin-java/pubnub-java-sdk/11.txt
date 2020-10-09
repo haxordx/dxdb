@@ -1,0 +1,3 @@
+pubnub.subscribe().apply { 
+    channels = listOf("my_channel")
+}.execute()

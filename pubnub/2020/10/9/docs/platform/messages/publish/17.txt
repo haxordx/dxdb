@@ -1,0 +1,1 @@
+string[] arrayMessage = new string[] {"35.9296","-78.9482"};pubnub.Signal()  .Message(data)  .Channel("locations.route1")  .Execute(new PNPublishResultExt(    (result, status) => {      if (status.isError) {        Console.WriteLine("status code: " + status.ErrorData.Information);      }      else {        Console.WriteLine("timetoken: " + result.Timetoken);      }    }  ));Copy

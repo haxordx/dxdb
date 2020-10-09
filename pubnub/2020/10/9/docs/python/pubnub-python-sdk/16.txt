@@ -1,0 +1,2 @@
+d = pubnub.time().deferred()
+d.addCallback(my_callback)

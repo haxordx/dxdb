@@ -1,0 +1,27 @@
+<template>
+    <div id="app">
+        <span>category: {{ category }}</span>
+    </div>
+</template>
+<script>
+export default {
+    name: 'app',
+    data() {
+        return {
+            category: '',
+        };
+    },
+    methods: {
+        status(st) {
+            console.log(st);
+            this.category = st.category;
+        },
+    },
+    mounted() {
+        this.$pnSubscribe({
+            channels: ['ch1']
+        });
+        this.$pnGetStatus(this.status);
+    },
+};
+</script>

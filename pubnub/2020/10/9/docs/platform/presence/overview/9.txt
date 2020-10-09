@@ -1,0 +1,1 @@
+[self.pubnub whereNowUUID:self.pubnub.uuid withCompletion:      ^(PNPresenceWhereNowResult *result, PNErrorStatus *status) {  if (!status) {    NSLog(status);  }  else {    NSLog(result);  }}];Copy

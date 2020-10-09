@@ -1,0 +1,1 @@
+[self.pubnub subscribeToChannels: @[@"alerts.*", @"chats.team1.*"] withPresence:YES];Copy

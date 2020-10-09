@@ -1,0 +1,14 @@
+export default request => {
+    const xhr  = require('xhr');
+    const post = { method : "POST", body : request.message };
+    const url  = "https://my.company.com/save";
+    // save message asynchronously
+    return xhr.fetch( url, post ).then( serverResponse => {
+        // Save Success!
+        return request.ok();
+    }).catch( err => {
+        // Save Failed! handle err
+        return request.abort();
+    });
+}
+Copy

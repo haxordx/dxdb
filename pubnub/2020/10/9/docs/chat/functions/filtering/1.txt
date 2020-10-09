@@ -1,0 +1,26 @@
+export default (request) => {
+    if (request.channels[0].endsWith('-pnpres') || request.channels[0].startsWith("blocks-output") ) {
+        return request.ok();
+    }
+// The code in the linked gist has the real list of
+// profanity to be blocked. Don't use this code as-is!
+var badWords =new RegExp(/.*\b(hello|world)\b.*/,"i");
+
+    //Option 1 - Replace profanity text with * and allow the publish
+    if(request.message && request.message.text && badWords.test(request.message.text)){
+        var newString = request.message.text;
+        newString = newString.replace(badWords, "***");
+        request.message.text = newString;
+        return request.ok(); // Return a promise when you're done
+    }
+
+    //Option 2 - Block message and return a publish error if the text includes profanity
+    /*if(badWords.test(request["message"]["text"])) {
+        console.log('moderated message: ' + request["message"]["text"]);
+        return request.abort("moderated message")
+        return request.ok();
+    }*/
+
+    return request.ok(); // Return a promise when you're done
+};
+show all 25 lineshide 10 linesCopy

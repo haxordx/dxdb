@@ -1,0 +1,1 @@
+res, status, err := pn.Grant()  .ChannelGroups([]string{"cg_user123"})  .Read(true)  .AuthKeys([]string{"myAuthKey"})  .TTL(1440)  .Execute()fmt.Println(res, status, err)Copy

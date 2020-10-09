@@ -1,0 +1,4 @@
+{
+    "text" : "/gif hello"
+}
+Copy

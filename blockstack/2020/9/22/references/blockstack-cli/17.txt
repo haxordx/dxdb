@@ -1,0 +1,16 @@
+$ export BACKUP_PHRASE="soap fog wealth upon actual blossom neither timber phone exile monkey vocal"
+$ blockstack-cli gaia_sethub hello_world.id https://hub.blockstack.org https://my.cool.app https://my.app.gaia.hub "$BACKUP_PHRASE"
+{
+  "profileUrls": {
+    "error": null,
+    "dataUrls": [
+      "https://gaia.blockstack.org/hub/1ArdkA2oLaKnbNbLccBaFhEV4pYju8hJ82/profile.json"
+    ]
+  }
+}
+
+$ # You can check the new apps entry with curl and jq as follows:
+$ curl -sL https://gaia.blockstack.org/hub/1ArdkA2oLaKnbNbLccBaFhEV4pYju8hJ82/profile.json | jq ".[0].decodedToken.payload.claim.apps"
+{
+  "https://my.cool.app": "https://my.app.gaia.hub/hub/1EqzyQLJ15KG1WQmi5cf1HtmSeqS1Wb8tY/"
+}$ export BACKUP_PHRASE="soap fog wealth upon actual blossom neither timber phone exile monkey vocal"$ blockstack-cli gaia_sethub hello_world.id https://hub.blockstack.org https://my.cool.app https://my.app.gaia.hub "$BACKUP_PHRASE"{  "profileUrls": {    "error": null,    "dataUrls": [      "https://gaia.blockstack.org/hub/1ArdkA2oLaKnbNbLccBaFhEV4pYju8hJ82/profile.json"    ]  }}$ # You can check the new apps entry with curl and jq as follows:$ curl -sL https://gaia.blockstack.org/hub/1ArdkA2oLaKnbNbLccBaFhEV4pYju8hJ82/profile.json | jq ".[0].decodedToken.payload.claim.apps"{  "https://my.cool.app": "https://my.app.gaia.hub/hub/1EqzyQLJ15KG1WQmi5cf1HtmSeqS1Wb8tY/"}

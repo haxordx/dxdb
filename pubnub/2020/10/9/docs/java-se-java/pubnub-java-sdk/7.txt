@@ -1,0 +1,3 @@
+Message to send: {"msg":"Hello World"}
+Received message: {"msg":"Hello World"}
+The content of the message is: Hello World

@@ -1,0 +1,9 @@
+listener.didReceiveSubscriptionChange = { [weak self] event in
+  switch event {
+  case .subscribed(let channels, _):
+    self?.display(Message(messageType: "[SUBSCRIPTION CHANGED: new channels]", messageText: "channels added: \(channels[0].id)"))
+    self?.publish(update: EntryUpdate(update: "Harmless."))
+  default: break
+  }
+}
+Copy

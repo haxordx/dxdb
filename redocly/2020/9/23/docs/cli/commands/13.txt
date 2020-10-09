@@ -1,0 +1,16 @@
+Positionals:
+  entrypoints                                              [array] [default: []]
+Options:
+  --version            Show version number.                            [boolean]
+  --help               Show help.                                      [boolean]
+  --output, -o                                                          [string]
+  --format             Use a specific output format.
+                        [choices: "stylish", "codeframe"] [default: "codeframe"]
+  --max-problems       Reduce output to max N problems.  [number] [default: 100]
+  --ext                Bundle file extension.   [choices: "json", "yaml", "yml"]
+  --skip-rule          Ignore certain rules.                             [array]
+  --skip-preprocessor  Ignore certain preprocessors.                     [array]
+  --skip-decorator     Ignore certain decorators.                        [array]
+  --dereferenced, -d   Produce fully dereferenced bundle.              [boolean]
+  --force, -f          Produce bundle output even when errors occur.   [boolean]
+  --config             Specify path to the config file.                 [string]
